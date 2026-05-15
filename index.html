@@ -479,17 +479,31 @@
     }
   }
 
-  function toggleTheme() {
+  function applyTheme(theme) {
     const html = document.documentElement;
     const btn = document.querySelector('.theme-toggle');
-    if (html.getAttribute('data-theme') === 'light') {
-      html.removeAttribute('data-theme');
-      btn.textContent = '◐ DARK';
-    } else {
+    if (theme === 'light') {
       html.setAttribute('data-theme', 'light');
       btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
     }
   }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  // Restore saved theme on load
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
 
   loadReports();
 </script>
