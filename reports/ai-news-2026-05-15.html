@@ -52,6 +52,23 @@
     padding: 48px 24px 60px;
   }
 
+  /* ===== BACK LINK ===== */
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--primary);
+    text-decoration: none;
+    margin-bottom: 16px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  .back-link:hover {
+    opacity: 1;
+  }
+
   /* ===== HEADER ===== */
   .header {
     position: relative;
@@ -64,7 +81,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 20px;
+    gap: 12px;
+    flex-wrap: wrap;
   }
 
   .header .category {
@@ -175,7 +193,6 @@
     align-items: center;
     gap: 10px;
   }
-
   .section-label::after {
     content: "";
     flex: 1;
@@ -332,6 +349,7 @@
 </head>
 <body>
   <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
     <div class="header" style="position:relative;">
       <div class="field-mark"></div>
 
