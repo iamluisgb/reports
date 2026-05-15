@@ -308,10 +308,16 @@
             return new Date(0);
         }
 
+        function getPagesUrl(filename) {
+            // GitHub Pages URL: https://iamluisgb.github.io/reports/reports/filename.html
+            return `https://iamluisgb.github.io/reports/reports/${filename}`;
+        }
+
         function renderCard(item, type) {
             const isNew = item.name === 'ai-news-2026-05-15.html';
+            const pagesUrl = getPagesUrl(item.name);
             return `
-                <a class="card" href="${item.html_url}" target="_blank">
+                <a class="card" href="${pagesUrl}" target="_blank">
                     <div class="icon">${icons[type]}</div>
                     <div class="content">
                         <div class="title">${type === 'daily' ? 'AI News Daily' : item.name.replace('.html', '')}</div>
