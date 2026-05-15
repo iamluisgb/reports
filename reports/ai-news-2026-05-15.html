@@ -6,234 +6,511 @@
 <title>AI News Daily — 15 May 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
     --bg: #10141a;
+    --bg-card: #161c25;
+    --bg-card-hover: #1a2230;
     --primary: #00ff9d;
+    --primary-dim: rgba(0,255,157,0.12);
     --on-surface: #dfe2eb;
     --on-surface-variant: #9a9e96;
-    --outline-faint: rgba(132,149,135,0.15);
+    --border: rgba(132,149,135,0.12);
+    --wash-green: rgba(0,255,157,0.04);
+    --wash-gray: rgba(123,143,163,0.03);
+    --field-opacity: 0.5;
+    --shadow: 0 1px 3px rgba(0,0,0,0.3);
   }
+
+  [data-theme="light"] {
+    --bg: #f5f5f0;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f0f0eb;
+    --primary: #0a8a54;
+    --primary-dim: rgba(10,138,84,0.1);
+    --on-surface: #1a1e26;
+    --on-surface-variant: #5a6068;
+    --border: rgba(0,0,0,0.08);
+    --wash-green: rgba(10,138,84,0.05);
+    --wash-gray: rgba(0,0,0,0.02);
+    --field-opacity: 0.35;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
 
   html, body {
     background: var(--bg);
     font-family: 'Inter', -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
-    width: 1080px;
-    min-height: 1080px;
-    overflow-x: hidden;
+    min-height: 100vh;
+    transition: background 0.3s, color 0.3s;
   }
 
-  .card {
-    position: relative;
-    width: 1080px;
-    min-height: 1080px;
-    background: var(--bg);
-    display: flex;
-    flex-direction: column;
-    padding: 56px 60px 52px;
-    overflow: hidden;
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 60px;
   }
 
-  /* Washes asimétricos */
-  .card::after {
-    content: "";
-    position: absolute;
-    width: 600px; height: 500px;
-    border-radius: 50%;
-    background: radial-gradient(ellipse, rgba(0,255,157,0.04) 0%, transparent 70%);
-    filter: blur(60px);
-    bottom: -120px; left: -80px;
-    pointer-events: none; z-index: 0;
-  }
-  .card::before {
-    content: "";
-    position: absolute;
-    width: 500px; height: 400px;
-    border-radius: 50%;
-    background: radial-gradient(ellipse, rgba(123,143,163,0.03) 0%, transparent 70%);
-    filter: blur(60px);
-    top: -100px; right: -60px;
-    pointer-events: none; z-index: 0;
-  }
-
-  /* Field mark */
-  .field-mark {
-    position: absolute;
-    top: 40px; right: 48px;
-    width: 24px; height: 24px;
-    border-top: 2px solid var(--primary);
-    border-right: 2px solid var(--primary);
-    opacity: 0.5;
-    z-index: 1;
-  }
-
-  /* Header */
+  /* ===== HEADER ===== */
   .header {
-    z-index: 1;
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--border);
   }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
   .header .category {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 0.08em;
+    font-size: 12px;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--primary);
   }
+
   .header h1 {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
-    font-size: 52px;
+    font-size: 3rem;
     color: var(--on-surface);
     line-height: 1.1;
-    letter-spacing: -0.01em;
-    margin-top: 14px;
+    letter-spacing: -0.02em;
+    margin-top: 8px;
   }
+
   .header h1 em {
     font-style: italic;
     color: var(--primary);
   }
+
+  .header .date-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--on-surface-variant);
+    margin-top: 12px;
+    letter-spacing: 0.02em;
+  }
+
   .header .subtitle {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--on-surface-variant);
-    margin-top: 12px;
-    line-height: 1.4;
+    margin-top: 10px;
+    line-height: 1.45;
   }
 
-  /* News grid */
-  .news-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    column-gap: 48px;
-    row-gap: 28px;
-    flex: 1;
-    padding-top: 36px;
-    z-index: 1;
+  /* Washes */
+  .header::after {
+    content: "";
+    position: absolute;
+    width: 400px; height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, var(--wash-green) 0%, transparent 70%);
+    filter: blur(40px);
+    bottom: -80px; left: -60px;
+    pointer-events: none; z-index: 0;
   }
-  .news-item {
+  .header::before {
+    content: "";
+    position: absolute;
+    width: 300px; height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, var(--wash-gray) 0%, transparent 70%);
+    filter: blur(40px);
+    top: -60px; right: -40px;
+    pointer-events: none; z-index: 0;
+  }
+
+  /* ===== THEME TOGGLE ===== */
+  .theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--on-surface-variant);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .theme-toggle:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  /* ===== FIELD MARK ===== */
+  .field-mark {
+    position: absolute;
+    top: 0; right: 0;
+    width: 20px; height: 20px;
+    border-top: 1.5px solid var(--primary);
+    border-right: 1.5px solid var(--primary);
+    opacity: var(--field-opacity);
+  }
+
+  /* ===== SECTION ===== */
+  .section {
+    margin-bottom: 36px;
+  }
+
+  .section-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 20px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
+
+  .section-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ===== NEWS ITEM ===== */
+  .news-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 12px;
+    transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    position: relative;
+    overflow: hidden;
+  }
+  .news-item:hover {
+    background: var(--bg-card-hover);
+    border-color: rgba(0,255,157,0.2);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+  }
+
   .news-item .num {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--primary);
     margin-bottom: 8px;
-    opacity: 0.7;
+    opacity: 0.75;
   }
+
   .news-item .title {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.45rem;
     color: var(--on-surface);
-    line-height: 1.2;
+    line-height: 1.25;
     margin-bottom: 8px;
   }
+
   .news-item .desc {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
+    color: var(--on-surface-variant);
+    line-height: 1.55;
+  }
+
+  .news-item .sources {
+    margin-top: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+  }
+  .news-item .sources a {
+    color: var(--primary);
+    text-decoration: none;
+    margin-right: 12px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  .news-item .sources a:hover {
+    opacity: 1;
+  }
+
+  /* ===== STATS ===== */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .stat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    transition: background 0.2s;
+  }
+  .stat-card .label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--on-surface-variant);
+    margin-bottom: 4px;
+  }
+  .stat-card .value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  /* ===== FOLLOW UP ===== */
+  .follow-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
     color: var(--on-surface-variant);
     line-height: 1.5;
   }
+  .follow-item:last-child { border-bottom: none; }
+  .follow-item .bullet {
+    color: var(--primary);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
 
-  /* Footer */
+  /* ===== FOOTER ===== */
   .footer {
-    margin-top: auto;
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    border-top: 1px solid var(--outline-faint);
-    padding-top: 16px;
-    z-index: 1;
+    align-items: center;
+    font-size: 12px;
+    color: var(--on-surface-variant);
   }
   .footer .handle {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-size: 14px;
     letter-spacing: 0.04em;
-    color: var(--on-surface-variant);
   }
   .footer .date {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: var(--on-surface-variant);
     opacity: 0.6;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .page { padding: 32px 16px 48px; }
+    .header h1 { font-size: 2.2rem; }
+    .news-item { padding: 20px; }
+    .news-item .title { font-size: 1.2rem; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .footer { flex-direction: column; gap: 8px; align-items: flex-start; }
+    .header-top { flex-direction: column; gap: 12px; }
+  }
+
+  @media (max-width: 480px) {
+    .header h1 { font-size: 1.8rem; }
+    .news-item .title { font-size: 1.1rem; }
+    .stat-card .value { font-size: 16px; }
   }
 </style>
 </head>
 <body>
-  <div class="card">
-    <div class="field-mark"></div>
+  <div class="page">
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
 
-    <header class="header">
-      <div class="category">AI NEWS DAILY</div>
-      <h1>The <em>AI</em> Briefing</h1>
-      <div class="subtitle">15 May 2026 — Anthropic surpasses OpenAI in business adoption, Daybreak launches, Codex goes mobile</div>
-    </header>
-
-    <div class="news-grid">
-      <div class="news-item">
-        <div class="num">01</div>
-        <div class="title">Anthropic surpasses OpenAI in business AI adoption</div>
-        <div class="desc">Anthropic hits 34.4% enterprise adoption vs OpenAI's decline. Ramp AI Index May 2026 shows first crossover.</div>
-      </div>
-      <div class="news-item">
-        <div class="num">02</div>
-        <div class="title">$30B round at $900B valuation</div>
-        <div class="desc">Anthropic nears $30B funding round that could value it above OpenAI. Deal expected to close this month.</div>
-      </div>
-      <div class="news-item">
-        <div class="num">03</div>
-        <div class="title">Musk vs OpenAI trial closes</div>
-        <div class="desc">Closing arguments heard. The verdict could define OpenAI's governance and the future of the for-profit shift.</div>
-      </div>
-      <div class="news-item">
-        <div class="num">04</div>
-        <div class="title">OpenAI launches Daybreak</div>
-        <div class="desc">AI-powered cyber defense with GPT-5.5 and Codex Security. Partners: Cloudflare, Cisco, CrowdStrike.</div>
-      </div>
-      <div class="news-item">
-        <div class="num">05</div>
-        <div class="title">Codex comes to mobile</div>
-        <div class="desc">Preview on iOS and Android. Supervise coding agents, review code, remote SSH from your phone.</div>
-      </div>
-      <div class="news-item">
-        <div class="num">06</div>
-        <div class="title">$4B deployment unit</div>
-        <div class="desc">OpenAI Deployment Company backed by TPG, Bain Capital. Sends engineers to embed AI in enterprises.</div>
-      </div>
-      <div class="news-item">
-        <div class="num">07</div>
-        <div class="title">First AI-generated zero-day</div>
-        <div class="desc">Google detects a zero-day exploit believed to be built with AI. Criminal group nearly exploited critical vuln.</div>
-      </div>
-      <div class="news-item">
-        <div class="num">08</div>
-        <div class="title">IREN's $3.1B expansion</div>
-        <div class="desc">150K GPUs, 480MW capacity by 2026. Acquires Nostrum data centers in Spain for 490MW.</div>
-      </div>
-      <div class="news-item">
-        <div class="num">09</div>
-        <div class="title">OpenAI in Pentagon, Anthropic out</div>
-        <div class="desc">NYT reports OpenAI integrated at Pentagon while Anthropic excluded. Defense contract war intensifies.</div>
-      </div>
-      <div class="news-item">
-        <div class="num">10</div>
-        <div class="title">Trump-Xi: no chip deal</div>
-        <div class="desc">Summit ends without agreement. Nvidia H200 deliveries to China stalled. Rare earths uncertain.</div>
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">15 MAY 2026 · THURSDAY</div>
+          <div class="subtitle">Anthropic surpasses OpenAI in business adoption · Daybreak launches · Codex goes mobile</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
       </div>
     </div>
 
-    <footer class="footer">
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Anthropic surpasses OpenAI in business AI adoption</div>
+        <div class="desc">Anthropic hits 34.4% enterprise adoption vs OpenAI's decline. Ramp AI Index May 2026 shows first crossover. Overall AI adoption reached 50.6%.</div>
+        <div class="sources">
+          <a href="https://venturebeat.com/ai/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead/">VentureBeat</a>
+          <a href="https://invezz.com/news/2026/05/15/anthropic-surpasses-openai-in-value-as-900b-round-nears-close/">Invezz</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">$30B round at $900B valuation</div>
+        <div class="desc">Anthropic nears a $30B funding round that could value it above OpenAI. The deal is expected to close as early as this month.</div>
+        <div class="sources">
+          <a href="https://invezz.com/news/2026/05/15/anthropic-surpasses-openai-in-value-as-900b-round-nears-close/">Invezz</a>
+          <a href="https://www.siliconrepublic.com/business/anthropic-upcoming-raise-could-value-it-above-openai-reports">Silicon Republic</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Musk vs OpenAI trial closes</div>
+        <div class="desc">Closing arguments heard Thursday. A lawyer for Musk hammered Altman's credibility while OpenAI's team argued changes were necessary to scale technology.</div>
+        <div class="sources">
+          <a href="https://www.theguardian.com/technology/2026/may/14/sam-altman-elon-musk-openai-lawsuit">The Guardian</a>
+          <a href="https://apnews.com/article/musk-sam-altman-openai-trial-closing-arguments-3bda5ebbec28c23ac9e481a4edcad725">AP News</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">OpenAI launches Daybreak</div>
+        <div class="desc">AI-powered cyber defense with GPT-5.5 and Codex Security. Partners with Cloudflare, Cisco and CrowdStrike to detect and patch vulnerabilities.</div>
+        <div class="sources">
+          <a href="https://openai.com/daybreak/">OpenAI</a>
+          <a href="https://www.cybersecuritydive.com/news/OpenAI-Daybreak-cyber-threats/820122/">Cybersecurity Dive</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Codex comes to mobile</div>
+        <div class="desc">Preview on iOS and Android. Supervise coding agents, review code, remote SSH from your phone — synced with desktop environments.</div>
+        <div class="sources">
+          <a href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/">TechCrunch</a>
+          <a href="https://openai.com/index/introducing-the-codex-app/">OpenAI Blog</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">$4B deployment unit</div>
+        <div class="desc">OpenAI Deployment Company backed by TPG and Bain Capital. Sends engineers to embed AI frontier models into enterprise environments.</div>
+        <div class="sources">
+          <a href="https://finance.yahoo.com/sectors/technology/articles/openai-creates-unit-4-billion-130102076.html">Yahoo Finance</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">07</div>
+        <div class="title">First AI-generated zero-day</div>
+        <div class="desc">Google's TIG detected a zero-day exploit believed to be built with AI. A criminal group was on the verge of exploiting a critical vulnerability at industrial scale.</div>
+        <div class="sources">
+          <a href="https://www.bloomberg.com/news/articles/2026-05-11/hackers-used-ai-to-build-zero-day-attack-google-researchers-say">Bloomberg</a>
+          <a href="https://www.securityweek.com/google-detects-first-ai-generated-zero-day-exploit/">SecurityWeek</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">08</div>
+        <div class="title">IREN's $3.1B expansion</div>
+        <div class="desc">150K GPUs deployed, 480MW capacity target by 2026. Acquires Nostrum data centers in Spain for 490MW additional capacity.</div>
+        <div class="sources">
+          <a href="https://www.investing.com/news/company-news/iren-q3-fy2026-slides-5gw-ai-expansion-despite-earnings-miss-93CH-4671031">Investing.com</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">09</div>
+        <div class="title">OpenAI in Pentagon, Anthropic out</div>
+        <div class="desc">NYT reports OpenAI integrated at Pentagon while Anthropic excluded. Reflects intensifying competition for government and defense contracts.</div>
+        <div class="sources">
+          <a href="https://www.nytimes.com/2026/05/15/podcasts/ai-safety-is-so-back-mythos-mayhem-with-nikesh-arora-hot-mess-express.html">NYT</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">10</div>
+        <div class="title">Trump-Xi: no chip deal</div>
+        <div class="desc">Summit ends without agreement on chip exports. Nvidia H200 deliveries to China stalled. Rare earths deal still uncertain.</div>
+        <div class="sources">
+          <a href="https://www.cnbc.com/2026/05/15/the-tech-download-trump-xi-talks-chips-rare-earths.html">CNBC</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">In Numbers</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="label">Anthropic valuation</div>
+          <div class="value">$900B</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Anthropic enterprise adoption</div>
+          <div class="value">34.4%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">OpenAI Deployment Co.</div>
+          <div class="value">$4B</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">IREN contracts</div>
+          <div class="value">$3.1B</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Watch</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Anthropic commits $200B to Google cloud and chips partnership</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>OpenAI may raise more capital as compute crunch deepens</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>AI Safety returns to center of US regulatory debate</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>New lawsuit: OpenAI allegedly shared ChatGPT data with Google and Meta</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Google overhauling Android with massive AI integration</span>
+      </div>
+    </div>
+
+    <div class="footer">
       <span class="handle">@iamluisgb</span>
-      <span class="date">15 MAY 2026</span>
-    </footer>
+      <span class="date">GENERATED AUTOMATICALLY · 15 MAY 2026</span>
+    </div>
   </div>
+
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const btn = document.querySelector('.theme-toggle');
+  if (html.getAttribute('data-theme') === 'light') {
+    html.removeAttribute('data-theme');
+    btn.textContent = '◐ DARK';
+  } else {
+    html.setAttribute('data-theme', 'light');
+    btn.textContent = '◑ LIGHT';
+  }
+}
+</script>
 </body>
 </html>
