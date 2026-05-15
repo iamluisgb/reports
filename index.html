@@ -279,8 +279,14 @@
         }
 
         function getReportDate(filename) {
-            const match = filename.match(/(\d{4}-\d{2}-\d{2})/);
-            if (match) return new Date(match[1]);
+            // Format: ai-news-YYYY-MM-DD.html
+            const parts = filename.replace('.html', '').split('-');
+            if (parts.length >= 3) {
+                const y = parts[parts.length - 3];
+                const m = parts[parts.length - 2];
+                const d = parts[parts.length - 1];
+                return new Date(`${y}-${m}-${d}T00:00:00`);
+            }
             return new Date(0);
         }
 
