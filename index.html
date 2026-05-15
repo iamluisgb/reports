@@ -254,7 +254,7 @@
         const REPO_OWNER = 'iamluisgb';
         const REPO_NAME = 'reports';
         const BRANCH = 'master';
-        const API_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents`;
+        const API_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/reports?ref=${BRANCH}`;
 
         const icons = {
             'daily': '📰',
@@ -300,16 +300,18 @@
 
         async function loadReports() {
             try {
-                const res = await fetch(`${API_URL}?ref=${BRANCH}`);
+                const res = await fetch(API_URL);
                 if (!res.ok) throw new Error('API error');
                 const files = await res.json();
 
+                console.log('Files from API:', files.map(f => f.name));
+
                 const dailyFiles = files
-                    .filter(f => f.type === 'file' && isDaily(f.name))
+                    .filter(f => f.type === 'file' && f.name !== 'index.html' && isDaily(f.name))
                     .sort((a, b) => getReportDate(b.name) - getReportDate(a.name));
 
                 const specialFiles = files
-                    .filter(f => f.type === 'file' && isSpecial(f.name))
+                    .filter(f => f.type === 'file' && f.name !== 'index.html' && isSpecial(f.name))
                     .sort((a, b) => getReportDate(b.name) - getReportDate(a.name));
 
                 // Render daily
