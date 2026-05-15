@@ -335,7 +335,197 @@ html, body {
   }
 
 /* ===== RESPONSIVE ===== */
-  @media (max-width: 768px) {
+  
+/* ===== BADGES ===== */
+.badge-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.badge {
+    background: var(--primary-dim);
+    border: 1px solid rgba(0,255,157,0.2);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--primary);
+}
+
+/* ===== TOC ===== */
+.toc {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 24px 0;
+}
+
+.toc h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    border: none;
+    padding: 0;
+}
+
+.toc ol {
+    padding-left: 20px;
+}
+
+.toc li {
+    margin-bottom: 8px;
+}
+
+.toc a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+/* ===== DIVIDER ===== */
+.divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 36px 0;
+}
+
+/* ===== REF SECTION ===== */
+.ref-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ref-section li {
+    margin-bottom: 0.5rem;
+}
+
+.ref-section li::before {
+    content: "▸ ";
+    color: var(--primary);
+}
+
+.ref-section h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--on-surface);
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+
+/* ===== TABLES ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+thead {
+    background: var(--bg-card);
+}
+
+th {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary);
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--on-surface-variant);
+    font-size: 13px;
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===== CODE ===== */
+code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: var(--code-bg, var(--bg-card));
+    color: var(--code-text, var(--primary));
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+pre {
+    background: var(--code-bg, var(--bg-card));
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    overflow-x: auto;
+}
+
+pre code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--on-surface);
+    background: none;
+    padding: 0;
+}
+
+/* ===== BLOCKQUOTE ===== */
+blockquote {
+    border-left: 3px solid var(--primary);
+    padding: 14px 20px;
+    margin: 20px 0;
+    background: var(--primary-dim);
+    border-radius: 0 10px 10px 0;
+    color: var(--on-surface-variant);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+blockquote strong {
+    color: var(--primary);
+}
+
+/* ===== H3 ===== */
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--on-surface);
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+/* ===== STRONG ===== */
+strong {
+    color: var(--on-surface);
+}
+
+
+/* ===== TABLE ROWS ===== */
+tr {
+    transition: background 0.2s;
+}
+
+tbody {
+}
+
+@media (max-width: 768px) {
     .page { padding: 32px 16px 48px; }
     .header h1 { font-size: 2.2rem; }
     .news-item { padding: 20px; }
