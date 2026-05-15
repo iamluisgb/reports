@@ -384,27 +384,6 @@
     </div>
 
 
-  
-    
-      <h1>Estado del Arte: Sistemas de Memoria para Agentes de IA Autónomos</h1>
-      <p class="subtitle">Informe técnico · Mayo 2026 · Investigación y análisis de arquitectura</p>
-      <div class="badge-row">
-        <span class="badge">5 dimensiones técnicas</span>
-        <span class="badge">7 sistemas comparados</span>
-        <span class="badge">20+ referencias</span>
-      </div>
-    
-
-    <div class="toc">
-      <h2>Tabla de Contenidos</h2>
-      <ol>
-        <li><a href="#tipos">Tipos de Memoria</a></li>
-        <li><a href="#retrieval">Arquitecturas de Retrieval</a></li>
-        <li><a href="#actualizacion">Técnicas de Actualización y Evolución</a></li>
-        <li><a href="#evaluation">Evaluation y Benchmarks</a></li>
-        <li><a href="#comparativa">Comparativa Práctica</a></li>
-      </ol>
-    </div>
 
     <!-- SECTION 1 -->
     <div class="section"><div class="section-label"></div><h2 id="tipos">1. Tipos de Memoria</h2>
@@ -804,12 +783,7 @@ Router → "episódica" → Session search → logs del martes</code></pre>
       </ul>
     </div>
 
-    <footer>
-      <p>Informe generado por Hermes Agent · Mayo 2026 · <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent</a> · <a href="https://github.com/iamluisgb/reports">Reports Repo</a></p>
-    </footer>
-  </div>
-
-
+    
     <div class="footer">
       Informe generado por Hermes Agent · Mayo 2026 · <a href="https://github.com/NousResearch/hermes-agent">Hermes Agent</a> · <a href="https://github.com/iamluisgb/reports">Reports Repo</a>
     </div>
@@ -818,26 +792,26 @@ Router → "episódica" → Session search → logs del martes</code></pre>
 <script>
   function applyTheme(theme) {
     const html = document.documentElement;
-    const btn = document.querySelector(".theme-toggle");
-    if (theme === "light") {
-      html.setAttribute("data-theme", "light");
-      btn.textContent = "◑ LIGHT";
+    const btn = document.querySelector('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
     } else {
-      html.removeAttribute("data-theme");
-      btn.textContent = "◐ DARK";
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
     }
   }
 
   function toggleTheme() {
     const html = document.documentElement;
-    const current = html.getAttribute("data-theme");
-    const next = current === "light" ? "dark" : "light";
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
     applyTheme(next);
-    localStorage.setItem("ai-reports-theme", next);
+    localStorage.setItem('ai-reports-theme', next);
   }
 
   (function() {
-    const saved = localStorage.getItem("ai-reports-theme");
+    const saved = localStorage.getItem('ai-reports-theme');
     if (saved) applyTheme(saved);
   })();
 </script>
