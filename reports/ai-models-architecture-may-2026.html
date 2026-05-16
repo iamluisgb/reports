@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Models & Architecture — May 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI MODELS & ARCHITECTURE</div>
+          <h1>El frente se <em>ensancha</em></h1>
+          <div class="date-line">MAY 2026 · SPECIAL REPORT</div>
+          <div class="subtitle">GPT-5.5 Instant se convierte en el nuevo default · Google MTP acelera inferencia 3x · DeepSeek V4 reescribe la arquitectura MoE · NVIDIA unifica vision-audio-lenguaje en un modelo</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Model Releases</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">GPT-5.5 Instant — el nuevo default de ChatGPT</div>
+        <div class="desc">OpenAI lanza GPT-5.5 Instant el 5 de mayo como el nuevo modelo por defecto en ChatGPT. Optimizado para latencia ultrabaja manteniendo capacidad de razonamiento comparable a GPT-5.5 estándar. Marca un giro estratégico: la velocidad como diferenciador frente a Claude y Gemini.</div>
+        <div class="sources">
+          <a href="https://whatllm.org/blog/new-ai-models-may-2026">WhatLLM.org</a>
+          <a href="https://whatllm.org/best-ai-models">WhatLLM Best Models 2026</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Gemma 4 + MTP: Google revoluciona la inferencia</div>
+        <div class="desc">Google lanza Gemma 4 con Multi-Token Prediction (MTP), un mecanismo de speculative decoding integrado que permite al modelo predecir múltiples tokens de una vez. El resultado: hasta 3x más rápido en inferencia sin pérdida de calidad. MTP usa un "drafter" interno que predice bloques de tokens y el modelo objetivo los verifica en paralelo.</div>
+        <div class="sources">
+          <a href="https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/">Google AI Blog</a>
+          <a href="https://ai.google.dev/gemma/docs/mtp/overview">Google AI for Developers</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">DeepSeek V4: arquitectura MoE reescrita desde cero</div>
+        <div class="desc">DeepSeek lanza V4 con dos variantes: V4-Pro (1.6T params, 49B active) y V4-Flash (284B, 13B active). La arquitectura tiene tres innovaciones independientes: (1) reescritura del mecanismo de attention, (2) "Engram Memory" como primitiva de memoria a largo plazo, (3) estabilización para training con tokens de 1M+. Usa el optimizador Muon y se entrena en Megatron-LM con ops custom.</div>
+        <div class="sources">
+          <a href="https://lmsys.org/blog/2026-04-25-deepseek-v4/">LMSys Blog</a>
+          <a href="https://www.morphllm.com/deepseek-v4">MorphLLM</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">NVIDIA Nemotron 3 Nano Omni: un modelo para todo</div>
+        <div class="desc">NVIDIA lanza Nemotron 3 Nano Omni, un modelo open-weights que unifica vision, audio y lenguaje en un solo sistema. Diseñado para agentes multimodales con 9x más throughput que pipelines separados. Entrenado con datos de video, audio y texto simultáneamente. Disponible en OCI Enterprise AI.</div>
+        <div class="sources">
+          <a href="https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/">NVIDIA Blog</a>
+          <a href="https://blogs.oracle.com/ai-and-datascience/whats-new-in-ai-may-2026">Oracle AI</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">SubQ 1M-Preview: atención subcuadrática</div>
+        <div class="desc">Subquadratic lanza SubQ 1M-Preview, un modelo con mecanismo de atención que rompe la complejidad O(n²) del transformer estándar. Permite contextos de 1M+ tokens con costo de inferencia sublineal. Es la confirmación de que la atención sparse/low-rank está dejando de ser experimental.</div>
+        <div class="sources">
+          <a href="https://whatllm.org/blog/new-ai-models-may-2026">WhatLLM.org</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">AMD entrena su primer MoE de 8B</div>
+        <div class="desc">Un nuevo modelo MoE de 8B parámetros se entrena en infraestructura AMD — el primero de envergadura en hacerlo. Todas las releases notables de 2026 han sido NVIDIA-trained o Huawei Ascend-trained. Este modelo marca un punto de inflexión en la independencia de hardware.</div>
+        <div class="sources">
+          <a href="https://whatllm.org/blog/new-ai-models-may-2026">WhatLLM.org</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Architecture Innovations</div>
+
+      <div class="news-item">
+        <div class="num">07</div>
+        <div class="title">MTP: el speculative decoding nativo gana terreno</div>
+        <div class="desc">Google MTP no es el único. El paradigma de Multi-Token Prediction se está extendiendo: múltiples labs están implementando drafters internos para acelerar inferencia sin hardware custom. Es la respuesta a la "pared de compute" que OpenAI describe como "vertical". Si el modelo predice 3 tokens de golpe, la inferencia se vuelve 3x más barata.</div>
+        <div class="sources">
+          <a href="https://ai.google.dev/gemma/docs/mtp/mtp">Google AI</a>
+          <a href="https://github.com/Xiaohao-Liu/Awesome-Multi-Token-Prediction">Awesome MTP (GitHub)</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">08</div>
+        <div class="title">Attention subcuadrática: el fin de O(n²)</div>
+        <div class="desc">SubQ y otros enfoques de atención sparse/low-rank están madurando. La atención transformer estándar escala O(n²) con la longitud del contexto — el cuello de botella principal para contextos largos. Los mecanismos subcuadráticos prometen scaling lineal o sublineal, habilitando contextos de millones de tokens sin explosión de costo.</div>
+        <div class="sources">
+          <a href="https://whatllm.org/blog/new-ai-models-may-2026">WhatLLM.org</a>
+          <a href="https://arxiv.org/html/2507.19595v3">Efficient Attention Survey (arXiv)</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">09</div>
+        <div class="title">Meta TRIBE v2: gemelo digital de actividad neural</div>
+        <div class="desc">Meta FAIR lanza TRIBE v2, un modelo fundacional predictivo entrenado sobre respuestas neurales humanas reales — no sobre internet. Predice cómo el cerebro humano reacciona a imágenes, videos, podcasts y textos. No es un LLM para generar texto: es un modelo para entender procesamiento neural. Aplicable a neurotech, BCIs y neurociencia computacional.</div>
+        <div class="sources">
+          <a href="https://ai.meta.com/blog/tribe-v2-brain-predictive-foundation-model/">Meta AI</a>
+          <a href="https://medium.com/codetodeploy/deep-dive-meta-tribe-v2-the-dawn-of-the-digital-brain-twin-0d252104f167">Deep Dive (Medium)</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Training & Optimization</div>
+
+      <div class="news-item">
+        <div class="num">10</div>
+        <div class="title">On-Policy Self-Distillation: el modelo se enseña a sí mismo</div>
+        <div class="desc">Nuevo framework presentado en arXiv (abril 2026): un modelo actúa como teacher y student simultáneamente, usando ground-truth answers para auto-enseñar reasoning chains más largas. Cierra la brecha entre off-policy training y deployment-time states. Primera técnica que no requiere un modelo teacher externo.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/html/2604.00626v2">arXiv:2604.00626</a>
+          <a href="https://openreview.net/pdf?id=31wkVZXEaJ">OpenReview</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">11</div>
+        <div class="title">CompreSSM (MIT): poda durante el training</div>
+        <div class="desc">MIT CSAIL presenta CompreSSM, un algoritmo que elimina "dead weight" de modelos mientras siguen aprendiendo — no post-training pruning sino in-training sparsification. Los modelos quedan más ligeros y más rápidos durante el propio proceso de entrenamiento.</div>
+        <div class="sources">
+          <a href="https://news.mit.edu/2026/new-technique-makes-ai-models-leaner-faster-while-still-learning-0409">MIT News</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">12</div>
+        <div class="title">Tufts: IA logic-driven, 100x menos energía</div>
+        <div class="desc">Investigadores de Tufts desarrollan un enfoque de IA logic-driven que reduce el consumo energético 100x mientras mejora la precisión. En lugar de escalar parámetros, usan razonamiento lógico como primitiva — un cambio de paradigma del "más grande" al "más inteligente".</div>
+        <div class="sources">
+          <a href="https://www.sciencedaily.com/releases/2026/04/260405003952.htm">ScienceDaily</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">In Numbers</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="label">Aceleración MTP (Gemma 4)</div>
+          <div class="value">3x</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Params V4-Pro / Active</div>
+          <div class="value">1.6T / 49B</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Throughput Nemotron Omni</div>
+          <div class="value">9x</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Reducción energía Tufts</div>
+          <div class="value">100x</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Watch</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>MTP se convertirá en estándar para todos los modelos open-weight en Q3 2026</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>AMD training ecosystem: si el primer MoE funciona, más labs seguirán</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>On-policy distillation podría reemplazar a PPO/DPO como técnica estándar de alignment</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>TRIBE v2 → BCIs comerciales en 2-3 años si predice actividad neural con precisión</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>La eficiencia de inferencia (no la capacidad) es el nuevo battlefield — MTP, subquadratic, quantization</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">SPECIAL REPORT · MAY 2026</span>
+    </div>
+  </div>
+
+<script>
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+  }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
+</script>
+</body>
+</html>
