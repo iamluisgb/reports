@@ -112,10 +112,15 @@
     return `https://iamluisgb.github.io/reports/reports/${filename}`;
   }
 
+  const specialTitles = {
+    'ai-agent-memory-sota.html': 'AI Agent Memory: SOTA',
+    'ai-models-architecture-may-2026.html': 'AI Models Architecture — May 2026',
+  };
+
   function renderCard(item, type, index) {
     const isNew = type === 'daily' && index === 0;
     const pagesUrl = getPagesUrl(item.name);
-    const title = type === 'daily' ? 'AI News Daily' : item.name.replace('.html', '');
+    const title = type === 'daily' ? 'AI News Daily' : (specialTitles[item.name] || item.name.replace('.html', '').replace(/-/g, ' '));
     const badgeHtml = isNew
       ? '<span class="badge new">Nuevo</span>'
       : (type === 'special' ? '<span class="badge special">Special</span>' : '');
