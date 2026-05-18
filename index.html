@@ -112,8 +112,8 @@
     return `https://iamluisgb.github.io/reports/reports/${filename}`;
   }
 
-  function renderCard(item, type) {
-    const isNew = item.name === 'ai-news-2026-05-15.html';
+  function renderCard(item, type, index) {
+    const isNew = type === 'daily' && index === 0;
     const pagesUrl = getPagesUrl(item.name);
     const title = type === 'daily' ? 'AI News Daily' : item.name.replace('.html', '');
     const badgeHtml = isNew
@@ -149,14 +149,14 @@
       if (dailyFiles.length === 0) {
         dailyList.innerHTML = '<div class="empty">No hay informes diarios aún.</div>';
       } else {
-        dailyList.innerHTML = dailyFiles.map(f => renderCard(f, 'daily')).join('');
+        dailyList.innerHTML = dailyFiles.map((f, i) => renderCard(f, 'daily', i)).join('');
       }
 
       const specialList = document.getElementById('special-list');
       if (specialFiles.length === 0) {
         specialList.innerHTML = '<div class="empty">No hay informes especiales aún.</div>';
       } else {
-        specialList.innerHTML = specialFiles.map(f => renderCard(f, 'special')).join('');
+        specialList.innerHTML = specialFiles.map((f, i) => renderCard(f, 'special', i)).join('');
       }
 
       document.getElementById('daily-count').textContent = dailyFiles.length;
