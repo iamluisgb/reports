@@ -41,7 +41,7 @@ html, body {
 .page {
     max-width: 720px;
     margin: 0 auto;
-    padding: 48px 24px 60px;
+    padding: 56px 32px 64px;
   }
 
 /* ===== BACK LINK ===== */
@@ -757,7 +757,7 @@ tbody {
 }
 
 @media (max-width: 768px) {
-    .page { padding: 32px 16px 48px; }
+    .page { padding: 40px 24px 56px; }
     .header h1 { font-size: 2.2rem; }
     .news-item { padding: 20px; }
     .news-item .title { font-size: 1.2rem; }
@@ -767,14 +767,16 @@ tbody {
   }
 
 @media (max-width: 480px) {
+    .page { padding: 32px 20px 48px; }
     .header h1 { font-size: 1.8rem; }
+    .news-item { padding: 16px 18px; }
     .news-item .title { font-size: 1.1rem; }
     .stat-card .value { font-size: 16px; }
   }
 /* ===== HERO ===== */
   .hero {
     position: relative;
-    padding: 56px 0 40px;
+    padding: 64px 0 48px;
     border-bottom: 1px solid var(--border);
     margin-bottom: 40px;
     overflow: hidden;
@@ -1020,7 +1022,7 @@ tbody {
 
 /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
-    .hero { padding: 40px 0 32px; }
+    .hero { padding: 48px 0 40px; }
     .hero h1 { font-size: 1.8rem; }
     .hero .logo { font-size: 2.2rem; }
     .stats { gap: 16px; }
@@ -1028,4 +1030,16 @@ tbody {
     .card { padding: 14px 16px; }
     .card .title { font-size: 1.05rem; }
     .hero-top { flex-direction: column; gap: 12px; }
+  }
+
+  @media (max-width: 480px) {
+    .page { padding: 32px 20px 48px; }
+    .header h1 { font-size: 1.8rem; }
+    .news-item { padding: 16px 18px; }
+    .news-item .title { font-size: 1.1rem; }
+    .stat-card .value { font-size: 16px; }
+    .hero h1 { font-size: 1.5rem; }
+    .hero .logo { font-size: 2rem; }
+    .card .title { font-size: 1rem; }
+    .card { padding: 12px 14px; }
   }
