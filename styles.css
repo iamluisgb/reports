@@ -390,10 +390,16 @@ html, body {
 }
 
 /* ===== DIVIDER ===== */
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+}
+
 .divider {
     border: none;
     border-top: 1px solid var(--border);
-    margin: 36px 0;
+    margin: 32px 0;
 }
 
 /* ===== REF SECTION ===== */
@@ -425,7 +431,7 @@ html, body {
 .table-wrapper {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    margin: 20px 0;
+    margin: 24px 0;
     border-radius: 10px;
     border: 1px solid var(--border);
     background: var(--bg-card);
@@ -449,6 +455,7 @@ table {
     border-collapse: collapse;
     font-size: 13px;
     min-width: 500px;
+    margin: 24px 0;
 }
 
 thead {
@@ -496,7 +503,7 @@ pre {
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 16px 20px;
-    margin: 16px 0;
+    margin: 24px 0;
     overflow-x: auto;
 }
 
@@ -514,7 +521,7 @@ pre code {
 blockquote {
     border-left: 3px solid var(--primary);
     padding: 14px 20px;
-    margin: 20px 0;
+    margin: 24px 0;
     background: var(--primary-dim);
     border-radius: 0 10px 10px 0;
     color: var(--on-surface-variant);
@@ -591,8 +598,8 @@ h3 {
     font-size: 1.45rem;
     color: var(--on-surface);
     line-height: 1.25;
-    margin-top: 28px;
-    margin-bottom: 12px;
+    margin-top: 40px;
+    margin-bottom: 16px;
     letter-spacing: -0.01em;
 }
 
@@ -602,8 +609,8 @@ h3 {
     font-weight: 600;
     font-size: 1rem;
     color: var(--on-surface);
-    margin-top: 20px;
-    margin-bottom: 8px;
+    margin-top: 32px;
+    margin-bottom: 12px;
 }
 
 .section > .special-content p,
@@ -613,15 +620,15 @@ h3 {
     font-size: 14px;
     color: var(--on-surface-variant);
     line-height: 1.6;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .section > .special-content hr,
 .section > .special-content > hr {
     border: none;
     border-top: 1px solid var(--border);
-    margin: 24px 0;
+    margin: 32px 0;
 }
 
 .section > .special-content strong,
