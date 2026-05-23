@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre AI Reports — Luis GB</title>
+<meta name="description" content="Sobre AI Reports: informes diarios de inteligencia artificial generados por Hermes Agent.">
+<meta property="og:title" content="Sobre AI Reports — Luis GB">
+<meta property="og:description" content="Informes diarios y especiales de inteligencia artificial generados por Hermes Agent.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iamluisgb.github.io/reports/about.html">
+<meta name="twitter:card" content="summary">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="index.html">← AI Reports</a>
+
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+      <div class="header-top">
+        <div>
+          <div class="category">About</div>
+          <h1>Sobre <em>AI Reports</em></h1>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Qué es</div>
+      <p>AI Reports es un boletín automatizado de inteligencia artificial. Cada día, <a href="https://github.com/iamluisgb/quiron" target="_blank">Hermes Agent</a> recopila, analiza y genera informes sobre las noticias más relevantes del mundo de la IA: lanzamientos de modelos, adquisiciones, seguridad, investigación y tendencias de AI engineering.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Quién lo hace</div>
+      <div class="about-card">
+        <p>Soy <strong>Luis González</strong>, SRE de profesión, ingeniero agrónomo de origen. Construyo agentes de IA con LangGraph, gestiono observabilidad a escala (Splunk, PagerDuty) y escribo sobre la intersección entre operaciones, inteligencia artificial y pensamiento sistémico.</p>
+        <p>De agrónomo a SRE, de SRE a AI engineer. Esta web es mi laboratorio — informes generados por agentes que yo mismo construyo.</p>
+        <div class="about-links">
+          <a href="https://x.com/iamluisgb" target="_blank">X / Twitter</a>
+          <a href="https://www.linkedin.com/in/iamluisgb" target="_blank">LinkedIn</a>
+          <a href="https://github.com/iamluisgb" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Stack</div>
+      <div class="tags-row">
+        <span class="tag">Python</span>
+        <span class="tag">LangGraph</span>
+        <span class="tag">Claude Code</span>
+        <span class="tag">GitHub Pages</span>
+        <span class="tag">Splunk</span>
+        <span class="tag">Kubernetes</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Suscribirse</div>
+      <p>Puedes seguir las novedades a través del <a href="/reports/rss.xml">feed RSS</a> o directamente en <a href="https://github.com/iamluisgb/reports" target="_blank">GitHub</a>.</p>
+    </div>
+
+    <div class="footer">
+      <div class="footer-left">
+        <a href="index.html">← Volver a AI Reports</a>
+      </div>
+      <div class="footer-right">
+        <span class="footer-handle">@iamluisgb</span>
+      </div>
+    </div>
+  </div>
+
+<script>
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const btns = document.querySelectorAll('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btns.forEach(btn => btn.textContent = '◑ LIGHT');
+    } else {
+      html.removeAttribute('data-theme');
+      btns.forEach(btn => btn.textContent = '◐ DARK');
+    }
+  }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
+</script>
+</body>
+</html>
