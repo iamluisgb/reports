@@ -260,36 +260,6 @@ html, body {
     opacity: 1;
   }
 
-/* ===== STATS ===== */
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-.stat-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 16px 20px;
-    transition: background 0.2s;
-  }
-
-.stat-card .label {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    color: var(--on-surface-variant);
-    margin-bottom: 4px;
-  }
-
-.stat-card .value {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--primary);
-  }
-
 /* ===== FOLLOW UP ===== */
   .follow-item {
     display: flex;
@@ -766,7 +736,7 @@ tbody {
     .header h1 { font-size: 2.2rem; }
     .news-item { padding: 20px; }
     .news-item .title { font-size: 1.2rem; }
-    .stats-grid { grid-template-columns: 1fr; }
+
     .footer { flex-direction: column; gap: 8px; align-items: flex-start; }
     .header-top { flex-direction: column; gap: 12px; }
   }
@@ -1031,13 +1001,23 @@ tbody {
     opacity: 0.7;
   }
 
+
+  /* Stats responsive */
+  @media (max-width: 600px) {
+    .hero .stats { flex-direction: column; width: 100%; }
+    .hero .stat { border-right: none; border-bottom: 1px solid var(--border); padding: 12px 20px; flex-direction: row; justify-content: space-between; width: 100%; }
+    .hero .stat:last-child { border-bottom: none; }
+    .hero .stat .num { font-size: 1.2rem; }
+    .hero .stat .label { margin-top: 0; }
+  }
+
 /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
     .page { padding: 40px 24px 56px; }
     .header h1 { font-size: 2.2rem; }
     .news-item { padding: 20px; }
     .news-item .title { font-size: 1.2rem; }
-    .stats-grid { grid-template-columns: 1fr; }
+
     .footer { flex-direction: column; gap: 8px; align-items: flex-start; }
     .header-top { flex-direction: column; gap: 12px; }
     .hero-top { flex-direction: column; gap: 12px; }
@@ -1049,7 +1029,7 @@ tbody {
     .header h1 { font-size: 1.8rem; }
     .news-item { padding: 16px 18px; }
     .news-item .title { font-size: 1.1rem; }
-    .stat-card .value { font-size: 16px; }
+
     .hero h1 { font-size: 1.5rem; }
     .hero .logo { font-size: 2rem; }
     .card .title { font-size: 1rem; }
@@ -1134,6 +1114,51 @@ tbody {
     margin-top: 10px;
     position: relative;
     z-index: 1;
+  }
+
+.hero .stats {
+    display: flex;
+    gap: 0;
+    margin-top: 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 4px;
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+  }
+
+.hero .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 28px;
+    min-width: 80px;
+    border-right: 1px solid var(--border);
+  }
+
+.hero .stat:last-child {
+    border-right: none;
+  }
+
+.hero .stat .num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--on-surface);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+.hero .stat .label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--on-surface-variant);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 6px;
   }/* ===== SECTIONS ===== */
   .section {
     margin-bottom: 40px;
@@ -1836,12 +1861,22 @@ tbody {
     [data-type="special"] td, [data-type="special"] th { padding: 10px 12px; }
   }
 
+
+  /* Stats responsive */
+  @media (max-width: 600px) {
+    .hero .stats { flex-direction: column; width: 100%; }
+    .hero .stat { border-right: none; border-bottom: 1px solid var(--border); padding: 12px 20px; flex-direction: row; justify-content: space-between; width: 100%; }
+    .hero .stat:last-child { border-bottom: none; }
+    .hero .stat .num { font-size: 1.2rem; }
+    .hero .stat .label { margin-top: 0; }
+  }
+
 /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
     .hero { padding: 48px 0 40px; }
     .hero h1 { font-size: 1.8rem; }
     .hero .logo { font-size: 2.2rem; }
-    .stats { gap: 16px; }
+
     .stat .num { font-size: 1.3rem; }
     .card { padding: 14px 16px; }
     .card .title { font-size: 1.05rem; }
@@ -1853,7 +1888,7 @@ tbody {
     .header h1 { font-size: 1.8rem; }
     .news-item { padding: 16px 18px; }
     .news-item .title { font-size: 1.1rem; }
-    .stat-card .value { font-size: 16px; }
+
     .hero h1 { font-size: 1.5rem; }
     .hero .logo { font-size: 2rem; }
     .card .title { font-size: 1rem; }
