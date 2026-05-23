@@ -251,7 +251,7 @@
     });
 
     if (html === '') {
-      html = '<div class="empty">No hay reports para esta página.</div>';
+      html = '<div class="empty">No reports for this page.</div>';
     }
 
     container.innerHTML = html;
@@ -307,7 +307,7 @@
 
       const specialList = document.getElementById('special-list');
       if (allSpecialFiles.length === 0) {
-        specialList.innerHTML = '<div class="empty">No hay reports especiales aún.</div>';
+        specialList.innerHTML = '<div class="empty">No special reports yet.</div>';
       } else {
         specialList.innerHTML = allSpecialFiles.map((f, i) => renderCard(f, 'special', i)).join('');
       }
