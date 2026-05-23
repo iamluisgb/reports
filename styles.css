@@ -312,31 +312,6 @@ html, body {
     margin-top: 2px;
   }
 
-/* ===== FOOTER ===== */
-  .footer {
-    margin-top: 48px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    color: var(--on-surface-variant);
-  }
-
-.footer .handle {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-  }
-
-.footer .date {
-    font-family: 'JetBrains Mono', monospace;
-    opacity: 0.6;
-  }
-
-/* ===== RESPONSIVE ===== */
-  
 /* ===== BADGES ===== */
 .badge-row {
     display: flex;
@@ -796,12 +771,289 @@ tbody {
     .header-top { flex-direction: column; gap: 12px; }
   }
 
+/* ===== SEARCH BAR ===== */
+  .search-bar {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+.search-input {
+    width: 100%;
+    padding: 12px 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--on-surface);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    transition: border-color 0.2s;
+    outline: none;
+  }
+
+.search-input:focus {
+    border-color: var(--primary);
+  }
+
+.search-input::placeholder {
+    color: var(--on-surface-variant);
+    opacity: 0.6;
+  }
+
+/* ===== HERO NAV ===== */
+  .hero-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+.hero-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--on-surface-variant);
+    text-decoration: none;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+
+.hero-link:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+  }
+
+/* ===== MONTH GROUPING ===== */
+  .month-group {
+    margin-bottom: 8px;
+  }
+
+.month-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+    margin-bottom: 4px;
+  }
+
+.month-label:hover {
+    background: var(--bg-card-hover);
+  }
+
+.month-arrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--primary);
+    transition: transform 0.2s;
+  }
+
+.month-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.1rem;
+    color: var(--on-surface);
+    text-transform: capitalize;
+  }
+
+.month-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--on-surface-variant);
+    margin-left: auto;
+  }
+
+.month-body {
+    padding-left: 4px;
+  }
+
+/* ===== PAGINATION ===== */
+  .month-nav {
+    margin-bottom: 16px;
+  }
+
+.pagination {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+.page-btn {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--on-surface-variant);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+.page-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+.page-btn.active {
+    background: var(--primary-dim);
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+/* ===== TAGS ===== */
+  .card-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+
+.tag {
+    background: var(--primary-dim);
+    border: 1px solid rgba(0,255,157,0.15);
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--primary);
+  }
+
+.tags-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+/* ===== ABOUT PAGE ===== */
+  .about-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px 28px;
+    line-height: 1.6;
+  }
+
+.about-card p {
+    margin-bottom: 12px;
+  }
+
+.about-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+
+.about-links a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+
+.about-links a:hover {
+    border-color: var(--primary);
+  }
+
+/* ===== REPORT NAVIGATION (prev/next) ===== */
+  .report-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+.report-nav-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: all 0.2s;
+  }
+
+.report-nav-link:hover {
+    border-color: var(--primary);
+  }
+
+/* ===== FOOTER ===== */
+  .footer {
+    margin-top: 48px;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: var(--on-surface-variant);
+  }
+
+.footer-left,
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+.footer a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+.footer a:hover {
+    text-decoration: underline;
+  }
+
+.footer-sep {
+    opacity: 0.3;
+  }
+
+.footer-handle {
+    font-family: 'JetBrains Mono', monospace;
+    opacity: 0.7;
+  }
+
+/* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .page { padding: 40px 24px 56px; }
+    .header h1 { font-size: 2.2rem; }
+    .news-item { padding: 20px; }
+    .news-item .title { font-size: 1.2rem; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .footer { flex-direction: column; gap: 8px; align-items: flex-start; }
+    .header-top { flex-direction: column; gap: 12px; }
+    .hero-top { flex-direction: column; gap: 12px; }
+    .report-nav { flex-wrap: wrap; justify-content: center; }
+  }
+
 @media (max-width: 480px) {
     .page { padding: 32px 20px 48px; }
     .header h1 { font-size: 1.8rem; }
     .news-item { padding: 16px 18px; }
     .news-item .title { font-size: 1.1rem; }
     .stat-card .value { font-size: 16px; }
+    .hero h1 { font-size: 1.5rem; }
+    .hero .logo { font-size: 2rem; }
+    .card .title { font-size: 1rem; }
+    .card { padding: 12px 14px; }
   }
 /* ===== HERO ===== */
   .hero {
@@ -1030,25 +1282,6 @@ tbody {
   }
 
 @keyframes spin { to { transform: rotate(360deg); } }
-
-/* ===== FOOTER ===== */
-  .footer {
-    margin-top: 48px;
-    padding: 24px 0;
-    border-top: 1px solid var(--border);
-    text-align: center;
-    font-size: 12px;
-    color: var(--on-surface-variant);
-  }
-
-.footer a {
-    color: var(--primary);
-    text-decoration: none;
-  }
-
-.footer a:hover {
-    text-decoration: underline;
-  }
 
 /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {

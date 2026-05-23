@@ -4,6 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Reports — Luis GB</title>
+<meta name="description" content="Informes diarios y especiales de inteligencia artificial, generados por Hermes Agent. Sigue las últimas novedades en IA, agentes, modelos y AI engineering.">
+<meta property="og:title" content="AI Reports — Luis GB">
+<meta property="og:description" content="Informes diarios y especiales de inteligencia artificial. Sigue las últimas novedades en IA, agentes, modelos y AI engineering.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iamluisgb.github.io/reports/">
+<meta property="og:image" content="https://iamluisgb.github.io/reports/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Reports — Luis GB">
+<meta name="twitter:description" content="Informes diarios y especiales de inteligencia artificial, generados por Hermes Agent.">
+<link rel="alternate" type="application/rss+xml" title="AI Reports RSS" href="/reports/rss.xml">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,7 +26,11 @@
           <h1>AI Reports</h1>
           <div class="tagline">Informes diarios y especiales de inteligencia artificial</div>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+        <nav class="hero-nav">
+          <a href="/reports/about.html" class="hero-link">About</a>
+          <a href="/reports/rss.xml" class="hero-link">RSS</a>
+          <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+        </nav>
       </div>
       <div class="stats">
         <div class="stat">
@@ -32,17 +46,8 @@
           <div class="label">Total</div>
         </div>
       </div>
-    </div>
-
-    <div class="section">
-      <div class="section-label">
-        📰 Informes Diarios <span class="count" id="daily-badge">0</span>
-      </div>
-      <div id="daily-list">
-        <div class="loading">
-          <div class="spinner"></div>
-          <p>Cargando informes...</p>
-        </div>
+      <div class="search-bar">
+        <input type="text" id="search-input" class="search-input" placeholder="Buscar por título, mes o año..." oninput="filterReports()">
       </div>
     </div>
 
@@ -58,8 +63,27 @@
       </div>
     </div>
 
+    <div class="section">
+      <div class="section-label">
+        📰 Informes Diarios <span class="count" id="daily-badge">0</span>
+      </div>
+      <div class="month-nav" id="month-nav"></div>
+      <div id="daily-grouped"></div>
+    </div>
+
     <div class="footer">
-      Generados automáticamente por <a href="https://github.com/iamluisgb/quiron" target="_blank">Hermes Agent</a> · <a href="https://github.com/iamluisgb/reports" target="_blank">GitHub</a>
+      <div class="footer-left">
+        Generados automáticamente por <a href="https://github.com/iamluisgb/quiron" target="_blank">Hermes Agent</a>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/iamluisgb/reports" target="_blank">GitHub</a>
+        <span class="footer-sep">·</span>
+        <a href="/reports/about.html">About</a>
+        <span class="footer-sep">·</span>
+        <a href="/reports/rss.xml">RSS</a>
+        <span class="footer-sep">·</span>
+        <span class="footer-handle">@iamluisgb</span>
+      </div>
     </div>
   </div>
 
@@ -68,6 +92,10 @@
   const REPO_NAME = 'reports';
   const BRANCH = 'master';
   const API_URL = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/reports?ref=${BRANCH}`;
+  const PER_PAGE = 10;
+
+  let allDailyFiles = [];
+  let allSpecialFiles = [];
 
   function extractDateFromFilename(filename) {
     const match = filename.match(/(\d{4})-(\d{2})-(\d{2})/);
@@ -87,6 +115,14 @@
       });
     }
     return '—';
+  }
+
+  function monthKey(date) {
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+  }
+
+  function monthLabel(date) {
+    return date.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
   }
 
   function isDaily(filename) {
@@ -115,25 +151,144 @@
   const specialTitles = {
     'ai-agent-memory-sota.html': 'AI Agent Memory: SOTA',
     'ai-models-architecture-may-2026.html': 'AI Models Architecture — May 2026',
+    'ai-engineering-adoption-frameworks-2026-en.html': 'AI Engineering Adoption Frameworks',
   };
+
+  function estimateReadingTime(title) {
+    const words = title.split(' ').length;
+    return Math.max(1, Math.ceil(words / 200));
+  }
+
+  function getTags(filename, type) {
+    const tags = [];
+    if (type === 'daily') {
+      tags.push('noticias');
+    }
+    const lower = filename.toLowerCase();
+    if (lower.includes('agent')) tags.push('agentes');
+    if (lower.includes('memory')) tags.push('memoria');
+    if (lower.includes('model')) tags.push('modelos');
+    if (lower.includes('architecture')) tags.push('arquitectura');
+    if (lower.includes('engineering')) tags.push('engineering');
+    if (lower.includes('framework')) tags.push('frameworks');
+    if (lower.includes('adoption')) tags.push('adopción');
+    return tags;
+  }
 
   function renderCard(item, type, index) {
     const isNew = type === 'daily' && index === 0;
     const pagesUrl = getPagesUrl(item.name);
     const title = type === 'daily' ? 'AI News Daily' : (specialTitles[item.name] || item.name.replace('.html', '').replace(/-/g, ' '));
+    const readingTime = estimateReadingTime(item.name);
+    const tags = getTags(item.name, type);
     const badgeHtml = isNew
       ? '<span class="badge new">Nuevo</span>'
       : (type === 'special' ? '<span class="badge special">Special</span>' : '');
+
+    const tagsHtml = tags.length > 0
+      ? `<div class="card-tags">${tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>`
+      : '';
+
     return `
-      <a class="card" href="${pagesUrl}">
+      <a class="card" href="${pagesUrl}" data-search="${title.toLowerCase()} ${formatDate(item.name).toLowerCase()} ${tags.join(' ')}">
         <div class="icon">${type === 'daily' ? '📰' : '⭐'}</div>
         <div class="content">
           <div class="title">${title}</div>
-          <div class="meta">${formatDate(item.name)}</div>
+          <div class="meta">${formatDate(item.name)} · ${readingTime} min lectura</div>
+          ${tagsHtml}
         </div>
         ${badgeHtml}
       </a>
     `;
+  }
+
+  function filterReports() {
+    const q = document.getElementById('search-input').value.toLowerCase().trim();
+    const cards = document.querySelectorAll('.card');
+    const months = document.querySelectorAll('.month-group');
+
+    cards.forEach(card => {
+      const searchData = card.getAttribute('data-search') || '';
+      const match = !q || searchData.includes(q);
+      card.style.display = match ? '' : 'none';
+    });
+
+    months.forEach(group => {
+      const visible = Array.from(group.querySelectorAll('.card')).some(c => c.style.display !== 'none');
+      group.style.display = visible ? '' : 'none';
+    });
+  }
+
+  function renderGroupedDaily(files, page) {
+    const container = document.getElementById('daily-grouped');
+
+    const groups = {};
+    files.forEach((f, i) => {
+      const d = getReportDate(f.name);
+      const mk = monthKey(d);
+      if (!groups[mk]) groups[mk] = { label: monthLabel(d), files: [] };
+      groups[mk].files.push({ file: f, index: i });
+    });
+
+    const sortedMonths = Object.keys(groups).sort().reverse();
+    const totalPages = Math.ceil(sortedMonths.length / PER_PAGE);
+    const pageMonths = sortedMonths.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+
+    let html = '';
+    pageMonths.forEach(mk => {
+      const g = groups[mk];
+      html += `<div class="month-group" data-month="${mk}">`;
+      html += `<div class="month-label" onclick="toggleMonth(this)">
+        <span class="month-arrow">▾</span>
+        <span class="month-name">${g.label}</span>
+        <span class="month-count">${g.files.length} informes</span>
+      </div>`;
+      html += '<div class="month-body">';
+      g.files.forEach(({ file, index }) => {
+        html += renderCard(file, 'daily', index);
+      });
+      html += '</div></div>';
+    });
+
+    if (html === '') {
+      html = '<div class="empty">No hay informes para esta página.</div>';
+    }
+
+    container.innerHTML = html;
+
+    const nav = document.getElementById('month-nav');
+    if (totalPages > 1) {
+      let navHtml = '<div class="pagination">';
+      for (let i = 1; i <= totalPages; i++) {
+        navHtml += `<button class="page-btn ${i === page ? 'active' : ''}" onclick="loadPage(${i})">${i}</button>`;
+      }
+      navHtml += '</div>';
+      nav.innerHTML = navHtml;
+    } else {
+      nav.innerHTML = '';
+    }
+
+    window.currentPage = page;
+    window.totalPages = totalPages;
+  }
+
+  function toggleMonth(el) {
+    el.classList.toggle('collapsed');
+    const body = el.nextElementSibling;
+    const arrow = el.querySelector('.month-arrow');
+    if (el.classList.contains('collapsed')) {
+      body.style.display = 'none';
+      arrow.textContent = '▸';
+    } else {
+      body.style.display = '';
+      arrow.textContent = '▾';
+    }
+  }
+
+  function loadPage(page) {
+    window.currentPage = page;
+    renderGroupedDaily(allDailyFiles, page);
+    window.scrollTo({ top: document.getElementById('daily-grouped').offsetTop - 80, behavior: 'smooth' });
   }
 
   async function loadReports() {
@@ -142,50 +297,45 @@
       if (!res.ok) throw new Error('API error');
       const files = await res.json();
 
-      const dailyFiles = files
-        .filter(f => f.type === 'file' && f.name !== 'index.html' && isDaily(f.name))
+      allDailyFiles = files
+        .filter(f => f.type === 'file' && isDaily(f.name))
         .sort((a, b) => getReportDate(b.name) - getReportDate(a.name));
 
-      const specialFiles = files
-        .filter(f => f.type === 'file' && f.name !== 'index.html' && isSpecial(f.name))
+      allSpecialFiles = files
+        .filter(f => f.type === 'file' && isSpecial(f.name))
         .sort((a, b) => getReportDate(b.name) - getReportDate(a.name));
-
-      const dailyList = document.getElementById('daily-list');
-      if (dailyFiles.length === 0) {
-        dailyList.innerHTML = '<div class="empty">No hay informes diarios aún.</div>';
-      } else {
-        dailyList.innerHTML = dailyFiles.map((f, i) => renderCard(f, 'daily', i)).join('');
-      }
 
       const specialList = document.getElementById('special-list');
-      if (specialFiles.length === 0) {
+      if (allSpecialFiles.length === 0) {
         specialList.innerHTML = '<div class="empty">No hay informes especiales aún.</div>';
       } else {
-        specialList.innerHTML = specialFiles.map((f, i) => renderCard(f, 'special', i)).join('');
+        specialList.innerHTML = allSpecialFiles.map((f, i) => renderCard(f, 'special', i)).join('');
       }
 
-      document.getElementById('daily-count').textContent = dailyFiles.length;
-      document.getElementById('special-count').textContent = specialFiles.length;
-      document.getElementById('total-count').textContent = dailyFiles.length + specialFiles.length;
-      document.getElementById('daily-badge').textContent = dailyFiles.length;
-      document.getElementById('special-badge').textContent = specialFiles.length;
+      renderGroupedDaily(allDailyFiles, 1);
+
+      document.getElementById('daily-count').textContent = allDailyFiles.length;
+      document.getElementById('special-count').textContent = allSpecialFiles.length;
+      document.getElementById('total-count').textContent = allDailyFiles.length + allSpecialFiles.length;
+      document.getElementById('daily-badge').textContent = allDailyFiles.length;
+      document.getElementById('special-badge').textContent = allSpecialFiles.length;
 
     } catch (err) {
       console.error(err);
-      document.getElementById('daily-list').innerHTML = '<div class="empty">Error al cargar los informes.</div>';
+      document.getElementById('daily-grouped').innerHTML = '<div class="empty">Error al cargar los informes.</div>';
       document.getElementById('special-list').innerHTML = '<div class="empty">Error al cargar los informes.</div>';
     }
   }
 
   function applyTheme(theme) {
     const html = document.documentElement;
-    const btn = document.querySelector('.theme-toggle');
+    const btns = document.querySelectorAll('.theme-toggle');
     if (theme === 'light') {
       html.setAttribute('data-theme', 'light');
-      btn.textContent = '◑ LIGHT';
+      btns.forEach(btn => btn.textContent = '◑ LIGHT');
     } else {
       html.removeAttribute('data-theme');
-      btn.textContent = '◐ DARK';
+      btns.forEach(btn => btn.textContent = '◐ DARK');
     }
   }
 
@@ -197,7 +347,6 @@
     localStorage.setItem('ai-reports-theme', next);
   }
 
-  // Restore saved theme on load
   (function() {
     const saved = localStorage.getItem('ai-reports-theme');
     if (saved) applyTheme(saved);
