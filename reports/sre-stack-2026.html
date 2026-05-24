@@ -1,91 +1,93 @@
-<!DOCTYPE html>
 <html lang="en" data-type="special">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SRE Stack 2026 — Strategic Synthesis</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css?v=2">
-</head>
-<body class="report-page">
-    <div id="progress-bar"></div>
-    <div id="page-wrapper">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SRE Stack 2026 — Strategic Synthesis</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=2">
+</head><body>
+<div class="progress-bar" id="progress-bar"></div>
+  <div class="page">
+    
+    <nav class="report-nav" style="display:none" id="report-nav">
+      <a id="prev-report" class="report-nav-link" href="#">← Previous</a>
+      <a class="report-nav-link" href="../index.html">Index</a>
+      <a id="next-report" class="report-nav-link" href="#">Next →</a>
+    </nav>
+    <a class="back-link" href="../index.html">← Index</a>
 
-        <nav id="report-nav">
-            <a href="../index.html" class="back-link" id="back-link">← Back to reports</a>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
-        </nav>
+    <div class="special-header">
+      <div class="field-mark"></div>
 
-        <!-- Special Header -->
-        <header class="special-header">
-            <div class="field-mark">
-                <span class="field-mark-dot"></span>
-                <span class="field-mark-line"></span>
-                <span class="field-mark-dot"></span>
-            </div>
-            <div class="special-category">AI Research · Special Report</div>
-            <h1 class="special-title">SRE Stack 2026 — Strategic Synthesis</h1>
-            <div class="special-date">May 2026</div>
-            <p class="special-subtitle">Unified document: AIOps + Platform Engineering + SRE Agents</p>
-            <div class="badge-group">
-                <span class="badge">3 technical areas</span>
-                <span class="badge">37+ sources referenced</span>
-                <span class="badge">9-section report</span>
-                <span class="badge">25+ vendors analyzed</span>
-            </div>
-        </header>
+      <div class="header-top">
+        <div>
+          <div class="special-category">AI Research · Special Report</div>
+          <h1>SRE Stack 2026 — <em>Strategic Synthesis</em></h1>
+          <div class="special-date">May 2026</div>
+          <div class="special-subtitle">Unified document synthesizing AIOps + Platform Engineering + SRE Agents for the modern Senior SRE.</div>
+          <div class="badge-row">
+            <span class="badge">3 technical areas</span>
+            <span class="badge">37+ sources referenced</span>
+            <span class="badge">9-section report</span>
+            <span class="badge">25+ vendors analyzed</span>
+          </div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
 
-        <!-- Table of Contents -->
-        <section id="toc">
-            <h2 class="section-title">Table of Contents</h2>
-            <div class="toc-cards">
-                <a href="#executive-summary" class="toc-card">
-                    <span class="toc-num">1</span>
-                    <span class="toc-label">Executive Summary</span>
-                </a>
-                <a href="#comparative-table" class="toc-card">
-                    <span class="toc-num">2</span>
-                    <span class="toc-label">Comparative Trends by Area</span>
-                </a>
-                <a href="#dependency-map" class="toc-card">
-                    <span class="toc-num">3</span>
-                    <span class="toc-label">Dependency Map</span>
-                </a>
-                <a href="#recommended-stack" class="toc-card">
-                    <span class="toc-num">4</span>
-                    <span class="toc-label">Recommended Stack for Senior SRE 2026</span>
-                </a>
-                <a href="#risks" class="toc-card">
-                    <span class="toc-num">5</span>
-                    <span class="toc-label">Risks & Considerations</span>
-                </a>
-                <a href="#roadmap" class="toc-card">
-                    <span class="toc-num">6</span>
-                    <span class="toc-label">Adoption Roadmap</span>
-                </a>
-                <a href="#hermes-recommendations" class="toc-card">
-                    <span class="toc-num">7</span>
-                    <span class="toc-label">Hermes-Specific Recommendations</span>
-                </a>
-                <a href="#conclusion" class="toc-card">
-                    <span class="toc-num">8</span>
-                    <span class="toc-label">Conclusion</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- Content Sections -->
-        <div class="report-content">
-
-            <!-- 1. Executive Summary -->
+    <section id="toc">
+      <h2>Table of Contents</h2>
+      <div class="toc-cards">
+        <a class="toc-card" href="#executive-summary">
+          <span class="toc-num">01</span>
+          <span class="toc-title">Executive Summary</span>
+          <span class="toc-desc">SRE role redefined by 3 converging forces</span>
+        </a>
+        <a class="toc-card" href="#comparative-table">
+          <span class="toc-num">02</span>
+          <span class="toc-title">Comparative Trends</span>
+          <span class="toc-desc">AIOps · Platform Engineering · SRE Agents</span>
+        </a>
+        <a class="toc-card" href="#dependency-map">
+          <span class="toc-num">03</span>
+          <span class="toc-title">Dependency Map</span>
+          <span class="toc-desc">OTel → AIOps + IDP → SRE Agents → K8s</span>
+        </a>
+        <a class="toc-card" href="#recommended-stack">
+          <span class="toc-num">04</span>
+          <span class="toc-title">Recommended Stack</span>
+          <span class="toc-desc">OSS · Enterprise · Minimum Viable</span>
+        </a>
+        <a class="toc-card" href="#risks">
+          <span class="toc-num">05</span>
+          <span class="toc-title">Risks & Considerations</span>
+          <span class="toc-desc">Technical · Organizational · Security</span>
+        </a>
+        <a class="toc-card" href="#roadmap">
+          <span class="toc-num">06</span>
+          <span class="toc-title">Adoption Roadmap</span>
+          <span class="toc-desc">0-3 · 3-6 · 6-12 months</span>
+        </a>
+        <a class="toc-card" href="#hermes-recommendations">
+          <span class="toc-num">07</span>
+          <span class="toc-title">Hermes-Specific</span>
+          <span class="toc-desc">Multi-agent · Lab · Pipeline · Stack</span>
+        </a>
+        <a class="toc-card" href="#conclusion">
+          <span class="toc-num">08</span>
+          <span class="toc-title">Conclusion</span>
+          <span class="toc-desc">OTel → Platform → Agents</span>
+        </a>
+      </div>
+    </section>
+<!-- 1. Executive Summary -->
             <section id="executive-summary">
                 <h2>Executive Summary</h2>
                 <p>In 2026, the role of the Senior SRE is being redefined by three converging forces: the graduation of OpenTelemetry as the universal telemetry standard (CNCF, May 2026), the maturation of Internal Developer Platforms (IDPs) that elevate platform engineering from experiment to standard practice (80% projected adoption), and the emergence of AI agents that automate the full detection-diagnosis-remediation lifecycle of incidents. The convergence of these three areas produces a new profile: the SRE who not only operates infrastructure, but designs, orchestrates, and supervises autonomous reliability systems. The winning stack is not a single tool but a composed ecosystem: OTel as the data backbone, an IDP (Backstage + orchestrator) as the abstraction layer, and SRE agents (LangGraph/CrewAI + platforms like Metoro or Datadog Bits) as the operational intelligence layer. Organizations that integrate these three layers will see 40-75% reductions in MTTR, 60-80% reduction in alert noise, and a fundamental shift in the SRE role: from reactive operator to architect of resilient systems.</p>
             </section>
 
-            <hr>
+            <hr class="section-divider">
 
             <!-- 2. Comparative Table -->
             <section id="comparative-table">
@@ -154,7 +156,7 @@
                 </div>
             </section>
 
-            <hr>
+            <hr class="section-divider">
 
             <!-- 3. Dependency Map -->
             <section id="dependency-map">
@@ -204,7 +206,7 @@
                 </ol>
             </section>
 
-            <hr>
+            <hr class="section-divider">
 
             <!-- 4. Recommended Stack -->
             <section id="recommended-stack">
@@ -338,7 +340,7 @@
                 </ol>
             </section>
 
-            <hr>
+            <hr class="section-divider">
 
             <!-- 5. Risks & Considerations -->
             <section id="risks">
@@ -370,7 +372,7 @@
                 </ul>
             </section>
 
-            <hr>
+            <hr class="section-divider">
 
             <!-- 6. Adoption Roadmap -->
             <section id="roadmap">
@@ -512,7 +514,7 @@
                 </div>
             </section>
 
-            <hr>
+            <hr class="section-divider">
 
             <!-- 7. Hermes-Specific Recommendations -->
             <section id="hermes-recommendations">
@@ -554,7 +556,7 @@
                 </ul>
             </section>
 
-            <hr>
+            <hr class="section-divider">
 
             <!-- 8. Conclusion -->
             <section id="conclusion">
@@ -564,70 +566,92 @@
             </section>
 
         </div>
-
-        <!-- Report Nav Footer -->
-        <div class="report-nav-footer">
-            <hr>
-            <p><em>Document generated by Hermes (synthesizer) · May 24, 2026</em></p>
-            <p><em>Sources: R1 (AIOps, 10 sources, 17KB), R2 (Platform Engineering, 12 sources, 16.5KB), R3 (SRE Agents, 15 sources, 24KB)</em></p>
-            <p><em>Total sources consulted: 37+ articles, 25+ vendor documentation, 9 agentic frameworks analyzed</em></p>
-            <p><em>For: Luis González · Based on R1, R2, R3</em></p>
+        <hr class="section-divider">
+        <div style="margin-top: 3rem; font-size: 0.85rem; color: var(--text-secondary, #888);">
+          <p><em>Document generated by Hermes (synthesizer) · May 24, 2026</em></p>
+          <p><em>Sources: R1 (AIOps, 10 sources, 17KB), R2 (Platform Engineering, 12 sources, 16.5KB), R3 (SRE Agents, 15 sources, 24KB)</em></p>
+          <p><em>Total sources consulted: 37+ articles, 25+ vendor documentation, 9 agentic frameworks analyzed</em></p>
+          <p><em>For: Luis González · Based on R1, R2, R3</em></p>
         </div>
 
-        <footer class="report-footer">
-            <hr>
-            <p class="footer-text">SRE Stack 2026 — Strategic Synthesis · May 2026</p>
-        </footer>
+<script>
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+  }
 
-    </div>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
 
-    <!-- Theme Toggle + Progress Bar JS -->
-    <script>
-        const CURRENT_FILE = 'sre-stack-2026.html';
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
+</script>
 
-        // Theme toggle
-        const themeToggle = document.getElementById('theme-toggle');
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌓';
+<script>
+  const NAV_API_URL = 'https://api.github.com/repos/iamluisgb/reports/contents/reports?ref=master';
+  const CURRENT_FILE = 'sre-stack-2026.html';
 
-        themeToggle.addEventListener('click', () => {
-            const current = document.documentElement.getAttribute('data-theme');
-            const next = current === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', next);
-            localStorage.setItem('theme', next);
-            themeToggle.textContent = next === 'dark' ? '☀️' : '🌓';
+  async function loadReportNav() {
+    try {
+      const res = await fetch(NAV_API_URL + '&t=' + Date.now());
+      if (!res.ok) throw new Error('API error');
+      const files = await res.json();
+      const htmlFiles = files
+        .filter(f => f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html')
+        .sort((a, b) => {
+          const da = a.name.replace('.html', '').split('-').slice(-3).join('');
+          const db = b.name.replace('.html', '').split('-').slice(-3).join('');
+          return db.localeCompare(da);
         });
+      const idx = htmlFiles.findIndex(f => f.name === CURRENT_FILE);
+      if (idx === -1) return;
+      const nav = document.getElementById('report-nav');
+      if (nav) nav.style.display = '';
+      if (idx > 0) {
+        const prev = document.getElementById('prev-report');
+        if (prev) prev.href = prev.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx - 1].name;
+      } else {
+        const prev = document.getElementById('prev-report');
+        if (prev) prev.style.display = 'none';
+      }
+      if (idx < htmlFiles.length - 1) {
+        const next = document.getElementById('next-report');
+        if (next) next.href = next.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx + 1].name;
+      } else {
+        const next = document.getElementById('next-report');
+        if (next) next.style.display = 'none';
+      }
+    } catch (e) {
+      console.error('Nav error:', e);
+    }
+  }
+  loadReportNav();
+</script>
 
-        // Progress bar
-        const progressBar = document.getElementById('progress-bar');
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-            progressBar.style.width = scrollPercent + '%';
-        });
+<script>
+  // Progress bar on scroll
+  const progressBar = document.getElementById('progress-bar');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = scrollPercent + '%';
+  });
+</script>
 
-        // Back link
-        document.getElementById('back-link').addEventListener('click', (e) => {
-            e.preventDefault();
-            const backPath = '../index.html';
-            window.location.href = backPath;
-        });
-
-        // Smooth scroll for TOC links
-        document.querySelectorAll('.toc-card').forEach(link => {
-            link.addEventListener('click', (e) => {
-                const href = link.getAttribute('href');
-                if (href && href.startsWith('#')) {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                }
-            });
-        });
-    </script>
 </body>
 </html>
