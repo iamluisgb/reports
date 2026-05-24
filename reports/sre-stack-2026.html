@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" data-type="special">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRE Stack 2026 — Strategic Synthesis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css?v=2">
+</head>
+<body class="report-page">
+    <div id="progress-bar"></div>
+    <div id="page-wrapper">
+
+        <nav id="report-nav">
+            <a href="../index.html" class="back-link" id="back-link">← Back to reports</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+        </nav>
+
+        <!-- Special Header -->
+        <header class="special-header">
+            <div class="field-mark">
+                <span class="field-mark-dot"></span>
+                <span class="field-mark-line"></span>
+                <span class="field-mark-dot"></span>
+            </div>
+            <div class="special-category">AI Research · Special Report</div>
+            <h1 class="special-title">SRE Stack 2026 — Strategic Synthesis</h1>
+            <div class="special-date">May 2026</div>
+            <p class="special-subtitle">Unified document: AIOps + Platform Engineering + SRE Agents</p>
+            <div class="badge-group">
+                <span class="badge">3 technical areas</span>
+                <span class="badge">37+ sources referenced</span>
+                <span class="badge">9-section report</span>
+                <span class="badge">25+ vendors analyzed</span>
+            </div>
+        </header>
+
+        <!-- Table of Contents -->
+        <section id="toc">
+            <h2 class="section-title">Table of Contents</h2>
+            <div class="toc-cards">
+                <a href="#executive-summary" class="toc-card">
+                    <span class="toc-num">1</span>
+                    <span class="toc-label">Executive Summary</span>
+                </a>
+                <a href="#comparative-table" class="toc-card">
+                    <span class="toc-num">2</span>
+                    <span class="toc-label">Comparative Trends by Area</span>
+                </a>
+                <a href="#dependency-map" class="toc-card">
+                    <span class="toc-num">3</span>
+                    <span class="toc-label">Dependency Map</span>
+                </a>
+                <a href="#recommended-stack" class="toc-card">
+                    <span class="toc-num">4</span>
+                    <span class="toc-label">Recommended Stack for Senior SRE 2026</span>
+                </a>
+                <a href="#risks" class="toc-card">
+                    <span class="toc-num">5</span>
+                    <span class="toc-label">Risks & Considerations</span>
+                </a>
+                <a href="#roadmap" class="toc-card">
+                    <span class="toc-num">6</span>
+                    <span class="toc-label">Adoption Roadmap</span>
+                </a>
+                <a href="#hermes-recommendations" class="toc-card">
+                    <span class="toc-num">7</span>
+                    <span class="toc-label">Hermes-Specific Recommendations</span>
+                </a>
+                <a href="#conclusion" class="toc-card">
+                    <span class="toc-num">8</span>
+                    <span class="toc-label">Conclusion</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <div class="report-content">
+
+            <!-- 1. Executive Summary -->
+            <section id="executive-summary">
+                <h2>Executive Summary</h2>
+                <p>In 2026, the role of the Senior SRE is being redefined by three converging forces: the graduation of OpenTelemetry as the universal telemetry standard (CNCF, May 2026), the maturation of Internal Developer Platforms (IDPs) that elevate platform engineering from experiment to standard practice (80% projected adoption), and the emergence of AI agents that automate the full detection-diagnosis-remediation lifecycle of incidents. The convergence of these three areas produces a new profile: the SRE who not only operates infrastructure, but designs, orchestrates, and supervises autonomous reliability systems. The winning stack is not a single tool but a composed ecosystem: OTel as the data backbone, an IDP (Backstage + orchestrator) as the abstraction layer, and SRE agents (LangGraph/CrewAI + platforms like Metoro or Datadog Bits) as the operational intelligence layer. Organizations that integrate these three layers will see 40-75% reductions in MTTR, 60-80% reduction in alert noise, and a fundamental shift in the SRE role: from reactive operator to architect of resilient systems.</p>
+            </section>
+
+            <hr>
+
+            <!-- 2. Comparative Table -->
+            <section id="comparative-table">
+                <h2>Comparative Trends by Area</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Dimension</th>
+                                <th>AIOps (R1)</th>
+                                <th>Platform Engineering (R2)</th>
+                                <th>SRE Agents (R3)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Market Status</strong></td>
+                                <td>Massive M&A consolidation (Splunk+Cisco, Palo Alto+Chronosphere, Snowflake+Observe)</td>
+                                <td>IDP as de facto standard (80% projected adoption)</td>
+                                <td>Evaluation → early production phase (12-18 months behind AI coding)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Disruptive Technology</strong></td>
+                                <td>OTel graduated CNCF (May 2026)</td>
+                                <td>Gateway API v1.2+ as new ingress standard</td>
+                                <td>MCP as LLM→tools integration standard</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dominant Paradigm</strong></td>
+                                <td>From predictive analytics to agentic AI</td>
+                                <td>Platform as Internal Product</td>
+                                <td>Augmented SRE, not replaced</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Key KPIs</strong></td>
+                                <td>MTTR, noise reduction, cost per GB</td>
+                                <td>DORA metrics, SPACE framework, dev adoption</td>
+                                <td>MTTR, confidence scoring, HITL compliance</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Leading Vendor</strong></td>
+                                <td>Splunk (security+observability), Datadog (ecosystem)</td>
+                                <td>Backstage (dominant OSS), Humanitec (orchestration)</td>
+                                <td>Metoro (K8s-first, eBPF), Datadog Bits, PagerDuty</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Open Source</strong></td>
+                                <td>VictoriaMetrics, SigNoz, OpenObserve, Grafana LGTM</td>
+                                <td>Backstage, Kratix, OpenTofu, Argo CD</td>
+                                <td>LangGraph, CrewAI, AutoGen, RunWhen (OSS)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Main Risk</strong></td>
+                                <td>Vendor lock-in (Datadog/Splunk expensive), sampled data</td>
+                                <td>Platform team as bottleneck (45% of teams)</td>
+                                <td>Hallucinations, fixation problem, agent security</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reported ROI</strong></td>
+                                <td>50% faster MTTR, 30-40% lower observability cost</td>
+                                <td>2.3x more adoption with product approach</td>
+                                <td>40-75% MTTR reduction, 36K hours saved/year (DigitalOcean)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <hr>
+
+            <!-- 3. Dependency Map -->
+            <section id="dependency-map">
+                <h2>Dependency Map</h2>
+                <p>The three areas are not silos — they feed each other in a feedback cycle:</p>
+
+                <div class="ascii-diagram">
+                    <pre><code>                    ┌─────────────────────────┐
+                    │   OTel (Backbone)            │
+                    │   Traces + Metrics + Logs   │
+                    └────┬──────────────┬───────┘
+                         │              │
+                   telemetry data    telemetry data
+                         │              │
+            ┌────────────▼──────┐  ┌────▼──────────────┐
+            │  AIOps Platform   │  │   IDP / Platform   │
+            │  (Splunk, Datadog,│  │   (Backstage,      │
+            │   OpenObserve,    │  │    Humanitec,      │
+            │   Grafana LGTM)   │  │    Crossplane)     │
+            └────┬──────────────┘  └────┬──────────────┘
+                 │                      │
+         data + context        service catalog + golden paths
+                 │                      │
+            ┌────▼──────────────────────▼──────┐
+            │    SRE Agents (Intelligence Layer)      │
+            │  LangGraph/CrewAI + Metoro/Datadog      │
+            │  Bits/PagerDuty/Azure SRE Agent         │
+            └────┬───────────────────────────────────┘
+                 │
+          remediation actions
+                 │
+            ┌────▼────┐
+            │Kubernetes│
+            │Gateway  │
+            │eBPF/    │
+            │Cilium   │
+            └─────────┘</code></pre>
+                </div>
+
+                <h3>Key Dependencies</h3>
+                <ol>
+                    <li><strong>SRE Agents → AIOps:</strong> Agents need quality telemetry data (OTel) to perform RCA. Without complete (non-sampled) data, agents fail on edge cases (R1).</li>
+                    <li><strong>AIOps → Platform Engineering:</strong> Observability feeds service catalog scorecards (DORA, SPACE, production readiness) (R2).</li>
+                    <li><strong>Platform Engineering → SRE Agents:</strong> The service catalog and golden paths provide the context agents need for RAG (service topology, runbooks, ownership) (R3).</li>
+                    <li><strong>All → OTel:</strong> It is the common data layer. Without OTel standardization, none of the three layers work well.</li>
+                    <li><strong>All → MCP:</strong> The Model Context Protocol is the new LLM→tools integration standard, connecting IDEs, chat platforms and observability tools (R1, R3).</li>
+                </ol>
+            </section>
+
+            <hr>
+
+            <!-- 4. Recommended Stack -->
+            <section id="recommended-stack">
+                <h2>Recommended Stack for Senior SRE 2026</h2>
+
+                <h3>Option A: Open-Source / Cost Controlled (Recommended for Most)</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Layer</th>
+                                <th>Technology</th>
+                                <th>Justification</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Telemetry</strong></td>
+                                <td>OpenTelemetry SDKs + VictoriaMetrics (metrics) + Loki (logs) + Tempo (traces)</td>
+                                <td>OTel graduated, VM cost-efficient, open stack without vendor lock-in</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Visualization</strong></td>
+                                <td>Grafana Cloud (or self-hosted)</td>
+                                <td>Dashboards, alerts, service catalog plugins</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AIOps</strong></td>
+                                <td>OpenObserve (self-hosted) or Grafana SRE Agent</td>
+                                <td>140x cheaper than Splunk/Datadog, native MCP, O2 SRE Agent with transparency</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IDP</strong></td>
+                                <td>Backstage (portal) + Crossplane (infra orchestrator)</td>
+                                <td>Dominant OSS + K8s-native infra abstraction</td>
+                            </tr>
+                            <tr>
+                                <td><strong>GitOps</strong></td>
+                                <td>Argo CD + External Secrets Operator + Vault</td>
+                                <td>Git as source of truth, secure secrets, auto-rollback with SLIs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SRE Agents</strong></td>
+                                <td>LangGraph (framework) + Metoro Guardian (K8s-first)</td>
+                                <td>LangGraph for complex workflows with durable state; Metoro for eBPF zero-code on K8s</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Incident Mgmt</strong></td>
+                                <td>PagerDuty (alerts) + incident.io (post-mortem)</td>
+                                <td>PagerDuty for routing, incident.io for Scribe (war room transcription)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Networking</strong></td>
+                                <td>Cilium Service Mesh (eBPF)</td>
+                                <td>Zero sidecars, native performance, integrated observability</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IaC</strong></td>
+                                <td>Pulumi (Python/TypeScript) or OpenTofu (if legacy Terraform)</td>
+                                <td>Pulumi for greenfield (native testing, real languages); OpenTofu for safe migration</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><strong>Estimated monthly cost (300 services):</strong> $1K-4K (infra) + $500-2K (SaaS tools)</p>
+
+                <h3>Option B: Enterprise / Full SaaS</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Layer</th>
+                                <th>Technology</th>
+                                <th>Justification</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Telemetry</strong></td>
+                                <td>OpenTelemetry SDKs → Datadog</td>
+                                <td>OTel for ingestion, Datadog as backend (integrated AI SRE bits)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AIOps</strong></td>
+                                <td>Datadog Bits AI SRE</td>
+                                <td>Evaluation with incident replays, cross-silo correlation, Agent Trace view</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IDP</strong></td>
+                                <td>Backstage (portal) + Humanitec (orchestrator)</td>
+                                <td>Middle path: OSS portal + commercial orchestrator</td>
+                            </tr>
+                            <tr>
+                                <td><strong>GitOps</strong></td>
+                                <td>Argo CD + Port (scorecards)</td>
+                                <td>Argo for CD, Port for service catalog + scorecards + self-service</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SRE Agents</strong></td>
+                                <td>Datadog Bits AI + PagerDuty SRE Agents</td>
+                                <td>Bits for diagnosis, PagerDuty for routing and virtual responder</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Networking</strong></td>
+                                <td>Istio Ambient Mesh (sidecar-less)</td>
+                                <td>No sidecars, less overhead, production-proven</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IaC</strong></td>
+                                <td>Pulumi + Spacelift</td>
+                                <td>Pulumi for IaC, Spacelift for control plane and state management</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Security+Obs</strong></td>
+                                <td>Splunk + Cisco AI Canvas</td>
+                                <td>If compliance and SecOps are critical</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p><strong>Estimated monthly cost (300 services):</strong> $15K-40K (Datadog) + $2K-5K (Port/Humanitec) + $5K-20K (Splunk if applicable)</p>
+
+                <h3>Minimum Viable Stack (If Starting from Scratch)</h3>
+                <ol>
+                    <li>OTel SDKs on all services</li>
+                    <li>Grafana Cloud (Loki + Tempo + Mimir + dashboards)</li>
+                    <li>Backstage (minimum: service catalog + scaffolder)</li>
+                    <li>Argo CD (basic GitOps)</li>
+                    <li>LangGraph + Claude/Codex CLI for diagnostic agents</li>
+                    <li>PagerDuty for alerts and routing</li>
+                </ol>
+            </section>
+
+            <hr>
+
+            <!-- 5. Risks & Considerations -->
+            <section id="risks">
+                <h2>Risks & Considerations</h2>
+
+                <h3>Technical Risks</h3>
+                <ol>
+                    <li><strong>Sampled data kills AI agents.</strong> Platforms that force sampling (Datadog, Splunk at scale) give AI an incomplete view. Agents fail on edge cases. Solution: full-retention platforms (OpenObserve, VictoriaMetrics).</li>
+                    <li><strong>Fixation problem (tunnel vision).</strong> Individual agents fixate on a single hypothesis. Solution: multi-agent architectures (CrewAI, AutoGen) with diverse perspectives + a supervisor agent.</li>
+                    <li><strong>Vendor lock-in on SaaS platforms.</strong> Datadog and Splunk are expensive at scale ($15K-50K+/month for 300 services). Post-adoption migration is costly. Solution: OTel as abstraction layer from day 1.</li>
+                    <li><strong>eBPF in production.</strong> Cilium and Pixie are mature but require kernel 5.10+. Not all environments can upgrade kernels.</li>
+                    <li><strong>Hallucinations in diagnosis.</strong> An LLM that hallucinates a diagnosis can lead to unnecessary rollback or remediation that worsens the problem. Solution: mandatory RAG, confidence scoring, replay evaluation.</li>
+                </ol>
+
+                <h3>Organizational Risks</h3>
+                <ol>
+                    <li><strong>Developer adoption.</strong> 45.3% of platform teams cite developer adoption as their biggest challenge. A platform no one uses is worse than none at all.</li>
+                    <li><strong>Platform team as bottleneck.</strong> 45% of teams cite this as a problem. Solution: self-service golden paths, not approval gates for every change.</li>
+                    <li><strong>Excessive dependence (automation complacency).</strong> The SRE stops thinking critically because "the agent said so." Solution: HITL patterns, continuous education, keep-alive drills.</li>
+                    <li><strong>Institutional knowledge in vendor.</strong> If Cleric learns from every incident but the company changes vendors, everything is lost. Solution: export knowledge to own runbooks, don't depend on vendor-locked learning.</li>
+                </ol>
+
+                <h3>Security Considerations</h3>
+                <ul>
+                    <li><strong>Least privilege for agents.</strong> Each SRE agent must have exactly the permissions it needs, nothing more.</li>
+                    <li><strong>Approval gates before execution.</strong> Routine actions pass automatically; destructive ones require human review.</li>
+                    <li><strong>Audit trails.</strong> Every agent action is logged for forensic review.</li>
+                    <li><strong>Read-only first.</strong> Diagnosis in read-only mode; only after approval does it switch to execution mode.</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <!-- 6. Adoption Roadmap -->
+            <section id="roadmap">
+                <h2>Adoption Roadmap</h2>
+
+                <h3>Phase 0-3 Months: Foundations</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Owner</th>
+                                <th>Impact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Instrument all services with OTel SDKs</td>
+                                <td>Devs + SRE</td>
+                                <td>Unified data foundation for all layers</td>
+                            </tr>
+                            <tr>
+                                <td>Migrate to OTel semantic conventions</td>
+                                <td>SRE</td>
+                                <td>Compatibility with any backend</td>
+                            </tr>
+                            <tr>
+                                <td>Deploy Argo CD + External Secrets Operator</td>
+                                <td>SRE</td>
+                                <td>Basic GitOps, secure secrets</td>
+                            </tr>
+                            <tr>
+                                <td>Evaluate 2-3 AI SRE tools with incident replays</td>
+                                <td>SRE Lead</td>
+                                <td>Concrete data for purchase decision</td>
+                            </tr>
+                            <tr>
+                                <td>Define DORA metrics baseline</td>
+                                <td>Platform</td>
+                                <td>Measure current state before improvement</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Phase 3-6 Months: Platform + Observability</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Owner</th>
+                                <th>Impact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Deploy Backstage or Port (service catalog)</td>
+                                <td>Platform Team</td>
+                                <td>Service visibility, ownership</td>
+                            </tr>
+                            <tr>
+                                <td>Implement production readiness scorecards</td>
+                                <td>Platform Team</td>
+                                <td>Automatic gate for deploys</td>
+                            </tr>
+                            <tr>
+                                <td>Evaluate Pulumi vs OpenTofu for IaC</td>
+                                <td>SRE Lead</td>
+                                <td>IaC decision for next phase</td>
+                            </tr>
+                            <tr>
+                                <td>Deploy OpenObserve or Grafana Cloud (AIOps)</td>
+                                <td>SRE</td>
+                                <td>Multi-signal correlation, noise reduction</td>
+                            </tr>
+                            <tr>
+                                <td>Implement HITL patterns for SRE agents</td>
+                                <td>SRE Lead</td>
+                                <td>Safety before autonomy</td>
+                            </tr>
+                            <tr>
+                                <td>POC of Cilium or Istio Ambient (service mesh)</td>
+                                <td>SRE</td>
+                                <td>Sidecar-less evaluation for production</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Phase 6-12 Months: Automation + Agents</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Owner</th>
+                                <th>Impact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Deploy AI SRE Agent in diagnostic mode</td>
+                                <td>SRE</td>
+                                <td>Automated RCA, MTTR reduction</td>
+                            </tr>
+                            <tr>
+                                <td>Implement golden paths with Backstage Scaffolder</td>
+                                <td>Platform Team</td>
+                                <td>Self-service for devs, reduced yak shaving</td>
+                            </tr>
+                            <tr>
+                                <td>Migrate IaC to Pulumi or OpenTofu</td>
+                                <td>SRE</td>
+                                <td>Native testing, real languages</td>
+                            </tr>
+                            <tr>
+                                <td>Implement multi-agent SRE (LangGraph/CrewAI)</td>
+                                <td>SRE Lead</td>
+                                <td>War rooms with diverse perspectives</td>
+                            </tr>
+                            <tr>
+                                <td>Platform as Product: assign platform PM</td>
+                                <td>Management</td>
+                                <td>Adoption-driven design, 2.3x more adoption</td>
+                            </tr>
+                            <tr>
+                                <td>AI Agent Monitoring: monitor the monitors</td>
+                                <td>SRE</td>
+                                <td>Traceability of agent decisions</td>
+                            </tr>
+                            <tr>
+                                <td>POC of auto-remediation for known cases</td>
+                                <td>SRE</td>
+                                <td>Automatic rollback, proactive scaling</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <hr>
+
+            <!-- 7. Hermes-Specific Recommendations -->
+            <section id="hermes-recommendations">
+                <h2>Hermes-Specific Recommendations</h2>
+                <p>Operating in a multi-agent playground with Hermes, we have unique advantages that traditional organizations do not have:</p>
+
+                <h3>1. Native Multi-Agent Architecture</h3>
+                <p>Our environment is essentially an implementation of the multi-agent architecture that R3 describes as the future of SRE:</p>
+                <ul>
+                    <li><strong>Hermes as orchestrator agent:</strong> It can decompose complex tasks into specialized sub-agents (research, code, synthesis) — exactly the LangGraph/CrewAI pattern that R3 recommends.</li>
+                    <li><strong>Kanban as coordination system:</strong> The t_33a4c0c4 board is an example of multi-agent incident management that no current commercial tool offers (R3: "No current tool does incident management").</li>
+                    <li><strong>Cross-session persistence:</strong> The <code>quiron</code> repo acts as a shared institutional knowledge corpus between sessions — equivalent to the RAG corpus that R3 recommends for SRE agents.</li>
+                </ul>
+
+                <h3>2. SRE Agent Lab</h3>
+                <p>We can use the playground as a sandbox for:</p>
+                <ul>
+                    <li><strong>Evaluating agentic frameworks</strong> (LangGraph vs CrewAI vs AutoGen) in real SRE scenarios with our own data.</li>
+                    <li><strong>Testing HITL patterns</strong> without production risk — simulate incidents and validate that approval gates work.</li>
+                    <li><strong>Benchmarking AI SRE tools</strong> with incident replays from your real infrastructure (the methodology Datadog uses for Bits AI).</li>
+                </ul>
+
+                <h3>3. Continuous Research Pipeline</h3>
+                <p>The R1→R2→R3→S4 pattern (research → synthesis) is reusable:</p>
+                <ul>
+                    <li>Each quarter: launch research tasks on new tools/trends.</li>
+                    <li>Each synthesis feeds the adoption roadmap.</li>
+                    <li>The <code>quiron/inbox/</code> repo becomes an accumulating knowledge base.</li>
+                </ul>
+
+                <h3>4. Minimum Stack for the Playground</h3>
+                <p>Given that we operate in an ephemeral environment:</p>
+                <ul>
+                    <li><strong>OTel SDKs</strong> on everything we deploy (even if ephemeral).</li>
+                    <li><strong>Minimal Backstage</strong> to practice service catalog patterns.</li>
+                    <li><strong>LangGraph</strong> as primary agentic framework (durable state, native HITL).</li>
+                    <li><strong>OpenObserve</strong> self-hosted for low-cost AIOps.</li>
+                    <li><strong>Kanban + Cron Jobs</strong> for recurring automation (equivalent to a simplified IDP).</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <!-- 8. Conclusion -->
+            <section id="conclusion">
+                <h2>Conclusion</h2>
+                <p>The SRE of 2026 is not a role defined by tools, but by layers of abstraction. The three layers — data (OTel + AIOps), platform (IDP + GitOps), and intelligence (SRE agents) — converge into a new standard: the SRE who designs systems where observability is automatic, the platform is self-service, and agents augment (not replace) human judgment.</p>
+                <p>The final recommendation: start with OTel (non-negotiable), build the platform as an internal product (not top-down), and adopt SRE agents in diagnostic mode first (not remediation). The rest follows naturally.</p>
+            </section>
+
+        </div>
+
+        <!-- Report Nav Footer -->
+        <div class="report-nav-footer">
+            <hr>
+            <p><em>Document generated by Hermes (synthesizer) · May 24, 2026</em></p>
+            <p><em>Sources: R1 (AIOps, 10 sources, 17KB), R2 (Platform Engineering, 12 sources, 16.5KB), R3 (SRE Agents, 15 sources, 24KB)</em></p>
+            <p><em>Total sources consulted: 37+ articles, 25+ vendor documentation, 9 agentic frameworks analyzed</em></p>
+            <p><em>For: Luis González · Based on R1, R2, R3</em></p>
+        </div>
+
+        <footer class="report-footer">
+            <hr>
+            <p class="footer-text">SRE Stack 2026 — Strategic Synthesis · May 2026</p>
+        </footer>
+
+    </div>
+
+    <!-- Theme Toggle + Progress Bar JS -->
+    <script>
+        const CURRENT_FILE = 'sre-stack-2026.html';
+
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌓';
+
+        themeToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            themeToggle.textContent = next === 'dark' ? '☀️' : '🌓';
+        });
+
+        // Progress bar
+        const progressBar = document.getElementById('progress-bar');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            progressBar.style.width = scrollPercent + '%';
+        });
+
+        // Back link
+        document.getElementById('back-link').addEventListener('click', (e) => {
+            e.preventDefault();
+            const backPath = '../index.html';
+            window.location.href = backPath;
+        });
+
+        // Smooth scroll for TOC links
+        document.querySelectorAll('.toc-card').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
