@@ -3,91 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⭐ GBrain & State of the Art: AI Agent Memory Systems (2026)</title>
-<link rel="stylesheet" href="https://iamluisgb.github.io/reports/styles.css">
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; max-width: 900px; margin: 0 auto; padding: 2rem; }
-  h1, h2, h3 { border-bottom: 1px solid #30363d; padding-bottom: 0.3rem; }
-  h1 { font-size: 1.8rem; }
-  h2 { font-size: 1.4rem; margin-top: 2rem; }
-  h3 { font-size: 1.15rem; border-bottom: none; margin-top: 1.5rem; }
-  .meta { color: #8b949e; font-size: 0.9rem; margin-bottom: 2rem; }
-  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.85rem; }
-  th, td { border: 1px solid #30363d; padding: 0.5rem 0.75rem; text-align: left; }
-  th { background: #161b22; color: #58a6ff; }
-  tr:nth-child(even) { background: #0d1117; }
-  code { background: #161b22; padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.85rem; }
-  pre { background: #161b22; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.8rem; }
-  blockquote { border-left: 3px solid #58a6ff; margin: 1rem 0; padding: 0.5rem 1rem; background: #161b22; border-radius: 0 6px 6px 0; }
-  .tag { display: inline-block; background: #1f6feb; color: #fff; padding: 0.15rem 0.6rem; border-radius: 10px; font-size: 0.75rem; margin: 0.15rem; }
-  .tag-entity { background: #238636; }
-  .tag-media { background: #9e6a03; }
-  .tag-concept { background: #6e40c9; }
-  .tag-temporal { background: #d29922; }
-  .tag-annotation { background: #f78166; }
-  .divider { border: none; border-top: 1px solid #30363d; margin: 2rem 0; }
-  .comparison { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
-  .card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1rem; flex: 1 1 200px; }
-  .card h4 { margin: 0 0 0.5rem 0; color: #58a6ff; }
-  .card .stat { font-size: 1.2rem; font-weight: bold; }
-  .card .label { font-size: 0.75rem; color: #8b949e; }
-  ul { padding-left: 1.2rem; }
-  li { margin-bottom: 0.4rem; }
-  .star { color: #d29922; }
-</style>
+<title>⭐ GBrain & State of AI Agent Memory (2026)</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+      <div class="header-top">
+        <div>
+          <div class="category">⭐ SPECIAL REPORT</div>
+          <h1>GBrain & The State of AI Agent Memory</h1>
+          <div class="date-line">27 MAY 2026</div>
+          <div class="subtitle">Deep analysis of Garry Tan's gbrain · 8 frameworks compared · Architecture taxonomy · Where the field is heading</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
 
-<h1>⭐ GBrain and the State of the Art: Persistent Memory Systems for AI Agents (2026)</h1>
-<p class="meta">📅 May 27, 2026 — 📍 Special report · Curated by Quirón</p>
+    <div class="section">
+      <div class="section-label">Summary</div>
+      <div class="special-content">
 
-<p>This report covers two things: a deep analysis of <strong>GBrain</strong> (the agent memory system by Garry Tan, CEO of Y Combinator), and a mapping of the state of the art of persistent memory systems for AI agents in 2026. The goal is to understand where GBrain fits, what makes it unique, and how it compares to the ecosystem.</p>
+<p>This report covers two things: a deep analysis of <strong>GBrain</strong> — the persistent memory system for AI agents by Garry Tan (President &amp; CEO, Y Combinator) — and a mapping of the state of the art of agent memory systems in 2026. The goal is to understand where GBrain fits, what makes it unique, and how it compares to the ecosystem.</p>
 
-<hr class="divider">
+      </div>
+    </div>
 
-<h2>Part I: GBrain in Depth</h2>
+    <div class="section">
+      <div class="section-label">Part I</div>
+      <div class="special-content">
+
+<h2>GBrain in Depth</h2>
 
 <h3>What is GBrain?</h3>
-<p><strong>GBrain</strong> is a persistent memory system for AI agents — the "brain" layer between the agent and its data. It is not a traditional RAG. It is a knowledge base that <strong>synthesizes answers</strong> instead of just retrieving chunks, maintains a <strong>self-wiring knowledge graph</strong> with typed edges, and performs <strong>gap analysis</strong> — it explicitly tells you what it does not know.</p>
+
+<p><strong>GBrain</strong> is a persistent memory system for AI agents — the "brain" layer between an agent and its data. It is not a traditional RAG. It is a knowledge base that <strong>synthesizes answers</strong> instead of just retrieving chunks, maintains a <strong>self-wiring knowledge graph</strong> with typed edges, and performs <strong>gap analysis</strong> — it explicitly tells you what it does not know.</p>
 
 <blockquote><em>"Search finds the pages. The brain reads them for you and writes the answer."</em> — Garry Tan</blockquote>
 
-<p><strong>Creator:</strong> Garry Tan, President and CEO of Y Combinator. <strong>Repo:</strong> <code>github.com/garrytan/gbrain</code> — 19.4K⭐, 2.7K forks, 268 commits. <strong>Current version:</strong> v0.41.26.0 (commit hours ago — hyperactive repo, 5-10 commits/day).</p>
-
-<p><strong>Garry's production numbers:</strong> 146,646 indexed pages, 24,585 people, 5,339 companies, 66 autonomous cron jobs. His agent ingests meetings, emails, tweets, voice calls, and original ideas while he sleeps.</p>
+<p><strong>Creator:</strong> Garry Tan, President and CEO of Y Combinator.<br>
+<strong>Repo:</strong> <code>github.com/garrytan/gbrain</code> — 19.4K⭐, 2.7K forks, 268 commits<br>
+<strong>Current version:</strong> v0.41.26.0 (hyperactive — 5-10 commits/day)<br>
+<strong>Production scale:</strong> 146,646 indexed pages, 24,585 people, 5,339 companies, 66 autonomous cron jobs<br>
+<strong>License:</strong> MIT</p>
 
 <h3>The 15 Canonical Entity Types (gbrain-base-v2)</h3>
-<p>The current schema collapsed <strong>94 redundant types → 15 canonical ones</strong> (14 + <code>note</code> as catch-all). Each is defined by its <strong>path prefixes</strong> (directories), <strong>aliases</strong> (legacy names), <strong>primitive</strong> (base nature), <strong>subtypes</strong> (internal variants), and <strong>extractable</strong>/<strong>expert_routing</strong> flags.</p>
+
+<p>The current schema collapsed <strong>94 redundant types → 15 canonical ones</strong> (14 + <code>note</code> as catch-all). Each is defined by its <strong>path prefixes</strong>, <strong>aliases</strong>, <strong>primitive</strong>, <strong>subtypes</strong>, and <strong>extractable</strong>/<strong>expert_routing</strong> flags.</p>
 
 <table>
   <tr><th>#</th><th>Type</th><th>Primitive</th><th>Paths</th><th>Extract</th><th>Expert</th></tr>
-  <tr><td>1</td><td><code>person</code></td><td><span class="tag tag-entity">entity</span></td><td>people/, person/</td><td>❌</td><td>✅</td></tr>
-  <tr><td>2</td><td><code>company</code></td><td><span class="tag tag-entity">entity</span></td><td>companies/, products/, orgs/</td><td>❌</td><td>✅</td></tr>
-  <tr><td>3</td><td><code>media</code></td><td><span class="tag tag-media">media</span></td><td>media/, articles/, videos/, books/, podcasts/, blog/</td><td>✅</td><td>❌</td></tr>
-  <tr><td>4</td><td><code>tweet</code></td><td><span class="tag tag-media">media</span></td><td>tweets/, twitter/</td><td>✅</td><td>❌</td></tr>
-  <tr><td>5</td><td><code>social-digest</code></td><td><span class="tag tag-temporal">temporal</span></td><td>digests/social/</td><td>❌</td><td>❌</td></tr>
-  <tr><td>6</td><td><code>analysis</code></td><td><span class="tag tag-media">media</span></td><td>wiki/analysis/, analysis/</td><td>✅</td><td>❌</td></tr>
-  <tr><td>7</td><td><code>atom</code></td><td><span class="tag tag-annotation">annotation</span></td><td>atoms/</td><td>❌</td><td>❌</td></tr>
-  <tr><td>8</td><td><code>concept</code></td><td><span class="tag tag-concept">concept</span></td><td>wiki/concepts/</td><td>✅</td><td>❌</td></tr>
-  <tr><td>9</td><td><code>source</code></td><td><span class="tag tag-media">media</span></td><td>sources/, source/</td><td>✅</td><td>❌</td></tr>
-  <tr><td>10</td><td><code>deal</code></td><td><span class="tag tag-temporal">temporal</span></td><td>deals/, deal/</td><td>❌</td><td>❌</td></tr>
-  <tr><td>11</td><td><code>email</code></td><td><span class="tag tag-temporal">temporal</span></td><td>emails/, email/</td><td>✅</td><td>❌</td></tr>
-  <tr><td>12</td><td><code>slack</code></td><td><span class="tag tag-temporal">temporal</span></td><td>slack/</td><td>✅</td><td>❌</td></tr>
-  <tr><td>13</td><td><code>writing</code></td><td><span class="tag tag-media">media</span></td><td>writing/</td><td>✅</td><td>❌</td></tr>
-  <tr><td>14</td><td><code>project</code></td><td><span class="tag tag-concept">concept</span></td><td>projects/, project/</td><td>❌</td><td>❌</td></tr>
-  <tr><td>15</td><td><code>note</code> (catch-all)</td><td><span class="tag tag-concept">concept</span></td><td>notes/, note/</td><td>✅</td><td>❌</td></tr>
+  <tr><td>1</td><td><code>person</code></td><td>entity</td><td><code>people/</code></td><td>❌</td><td>✅</td></tr>
+  <tr><td>2</td><td><code>company</code></td><td>entity</td><td><code>companies/</code>, <code>products/</code>, <code>orgs/</code></td><td>❌</td><td>✅</td></tr>
+  <tr><td>3</td><td><code>media</code></td><td>media</td><td><code>media/</code>, <code>videos/</code>, <code>articles/</code>, <code>books/</code>, <code>podcasts/</code></td><td>✅</td><td>❌</td></tr>
+  <tr><td>4</td><td><code>tweet</code></td><td>media</td><td><code>tweets/</code>, <code>twitter/</code></td><td>✅</td><td>❌</td></tr>
+  <tr><td>5</td><td><code>social-digest</code></td><td>temporal</td><td><code>digests/social/</code></td><td>❌</td><td>❌</td></tr>
+  <tr><td>6</td><td><code>analysis</code></td><td>media</td><td><code>wiki/analysis/</code></td><td>✅</td><td>❌</td></tr>
+  <tr><td>7</td><td><code>atom</code></td><td>annotation</td><td><code>atoms/</code></td><td>❌</td><td>❌</td></tr>
+  <tr><td>8</td><td><code>concept</code></td><td>concept</td><td><code>wiki/concepts/</code></td><td>✅</td><td>❌</td></tr>
+  <tr><td>9</td><td><code>source</code></td><td>media</td><td><code>sources/</code>, <code>source/</code></td><td>✅</td><td>❌</td></tr>
+  <tr><td>10</td><td><code>deal</code></td><td>temporal</td><td><code>deals/</code>, <code>deal/</code></td><td>❌</td><td>❌</td></tr>
+  <tr><td>11</td><td><code>email</code></td><td>temporal</td><td><code>emails/</code>, <code>email/</code></td><td>✅</td><td>❌</td></tr>
+  <tr><td>12</td><td><code>slack</code></td><td>temporal</td><td><code>slack/</code></td><td>✅</td><td>❌</td></tr>
+  <tr><td>13</td><td><code>writing</code></td><td>media</td><td><code>writing/</code></td><td>✅</td><td>❌</td></tr>
+  <tr><td>14</td><td><code>project</code></td><td>concept</td><td><code>projects/</code></td><td>❌</td><td>❌</td></tr>
+  <tr><td>15</td><td><code>note</code> (catch-all)</td><td>concept</td><td><code>notes/</code></td><td>✅</td><td>❌</td></tr>
 </table>
 
 <h3>The 5 Ontological Primitives</h3>
+
 <ul>
-  <li><strong>entity</strong> — people, companies. Have identity, aliases, lifecycle</li>
-  <li><strong>media</strong> — published or consumed content (articles, videos, podcasts)</li>
-  <li><strong>temporal</strong> — timestamped things: events, deals, emails, digests</li>
-  <li><strong>concept</strong> — abstract ideas: frameworks, notes, projects</li>
-  <li><strong>annotation</strong> — pure metadata: atoms, extracts, lore</li>
+  <li><strong>entity</strong> — people, companies. Identity, aliases, lifecycle.</li>
+  <li><strong>media</strong> — published or consumed content (articles, videos, podcasts).</li>
+  <li><strong>temporal</strong> — timestamped things: events, deals, emails, digests.</li>
+  <li><strong>concept</strong> — abstract ideas: frameworks, notes, projects.</li>
+  <li><strong>annotation</strong> — pure metadata: atoms, extracts, lore.</li>
 </ul>
 
-<h3>Link Types (Graph Edges)</h3>
+<h3>Graph Edge Types (Link Types)</h3>
+
 <table>
   <tr><th>Edge</th><th>Inverse</th><th>Usage</th></tr>
   <tr><td><code>partner_of</code></td><td><code>partner_of</code></td><td>Symmetric relationship</td></tr>
@@ -107,6 +104,7 @@
 </table>
 
 <h3>Technical Architecture</h3>
+
 <ul>
   <li><strong>Default engine:</strong> PGLite (Postgres 17 via WASM, zero-config) for ~50K pages</li>
   <li><strong>Scaled engine:</strong> Postgres + pgvector (Supabase or self-hosted)</li>
@@ -114,154 +112,189 @@
   <li><strong>Hybrid search:</strong> Vector (HNSW, pgvector) + BM25 + RRF + source-tier boost + ZeroEntropy reranker</li>
   <li><strong>Benchmark:</strong> P@5 49.1%, R@5 97.9% on BrainBench (+31.4 points over vector-only)</li>
   <li><strong>MCP:</strong> 30+ tools exposed over MCP (stdio and HTTP with OAuth 2.1)</li>
-  <li><strong>Two query modes:</strong> <code>gbrain search</code> (raw retrieval) vs <code>gbrain think</code> (synthesis with citations + gap analysis)</li>
+  <li><strong>Two query modes:</strong> <code>gbrain search</code> (raw retrieval) vs <code>gbrain think</code> (synthesis + gap analysis)</li>
 </ul>
 
 <h3>Key Differentiators</h3>
+
 <ol>
-  <li><strong>Synthesis layer + gap analysis</strong> — Doesn't return chunks; returns an answer with citations and an explicit note on what it doesn't know</li>
-  <li><strong>Self-wiring knowledge graph</strong> — Every page write extracts entities and creates typed edges with zero LLM calls</li>
-  <li><strong>Dream cycle</strong> — Overnight process that enriches, deduplicates, fixes citations, and finds contradictions automatically</li>
-  <li><strong>Agent-authored schema</strong> — The agent can evolve the ontology through atomic mutations with full audit trail</li>
-  <li><strong>43 curated skills</strong> — Signal, ingest, enrichment, query, reports, voice, etc.</li>
-  <li><strong>Company brain</strong> — Multi-user with OAuth scoping, zero leaks in fuzz testing</li>
+  <li><strong>Synthesis layer + gap analysis</strong> — returns an answer with citations and notes on what the brain doesn't know</li>
+  <li><strong>Self-wiring knowledge graph</strong> — every page write extracts entities &amp; creates edges with zero LLM calls</li>
+  <li><strong>Dream cycle</strong> — overnight enrichment, dedup, citation fixing, and contradiction detection</li>
+  <li><strong>Agent-authored schema</strong> — agent evolves the ontology through atomic mutations with full audit trail</li>
+  <li><strong>43 curated skills</strong> — signal capture, ingest, enrichment, query, reports, voice</li>
+  <li><strong>Company brain</strong> — multi-user with OAuth scoping, zero leaks in fuzz testing</li>
   <li><strong>7-tier resolution chain</strong> for schema packs (per-call → env → per-source → brain-wide → YAML → config → default)</li>
 </ol>
 
-<hr class="divider">
+      </div>
+    </div>
 
-<h2>Part II: State of the Art — AI Agent Memory Systems (2026)</h2>
+    <div class="section">
+      <div class="section-label">Part II</div>
+      <div class="special-content">
+
+<h2>State of the Art — AI Agent Memory Systems (2026)</h2>
 
 <h3>The Problem</h3>
-<p>Most AI agents are effectively <strong>stateless</strong>: they reason well in the moment but forget everything once execution ends. Until 2024, the standard solution was the <strong>chat history buffer</strong> — store the last N messages, summarize older ones, move on. That worked for glorified chatbots. When agents moved to real workflows (procurement, code review, research, operations), buffers stopped being enough.</p>
 
-<p>The field split into <strong>two categories</strong>:</p>
+<p>Most AI agents are effectively <strong>stateless</strong>: they reason well in the moment but forget everything once execution ends. The field has split into two categories:</p>
+
 <table>
   <tr><th>Category</th><th>Problem</th><th>Example</th></tr>
-  <tr><td><strong>Personalization</strong></td><td>Agent doesn't remember who it's talking to</td><td>"Use the same shipping address as last time"</td></tr>
-  <tr><td><strong>Institutional Knowledge</strong></td><td>Agent doesn't accumulate learning between sessions</td><td>Fixing the same procurement error every week</td></tr>
+  <tr><td><strong>Personalization</strong></td><td>Agent doesn't remember who it's talking to</td><td>"Use the same shipping address"</td></tr>
+  <tr><td><strong>Institutional Knowledge</strong></td><td>Agent doesn't accumulate learning across sessions</td><td>Same procurement error every week</td></tr>
 </table>
 
 <h3>The 8 Main Frameworks (2026)</h3>
+
 <table>
   <tr><th>Framework</th><th>Class</th><th>Architecture</th><th>⭐</th><th>License</th></tr>
   <tr><td><strong>Mem0</strong></td><td>Personalization + some institutional</td><td>Vector + Graph (Pro)</td><td>~48K</td><td>Apache 2.0</td></tr>
   <tr><td><strong>Hindsight</strong></td><td>Both (institutional first)</td><td>Multi-strategy hybrid</td><td>~4K</td><td>MIT</td></tr>
-  <tr><td><strong>Letta (ex-MemGPT)</strong></td><td>Both</td><td>Tiered (OS-inspired)</td><td>~21K</td><td>Apache 2.0</td></tr>
+  <tr><td><strong>Letta</strong> (ex-MemGPT)</td><td>Both</td><td>Tiered (OS-inspired)</td><td>~21K</td><td>Apache 2.0</td></tr>
   <tr><td><strong>Zep / Graphiti</strong></td><td>Both (temporal KG)</td><td>Temporal Knowledge Graph</td><td>~24K</td><td>Open core</td></tr>
   <tr><td><strong>Cognee</strong></td><td>Institutional</td><td>KG + Vector</td><td>~12K</td><td>Open core</td></tr>
   <tr><td><strong>SuperMemory</strong></td><td>Personalization</td><td>Memory + RAG</td><td>—</td><td>Proprietary</td></tr>
-  <tr><td><strong>LangMem</strong></td><td>Personalization</td><td>KV + Vector</td><td>~1.3K</td><td>MIT</td></tr>
+  <tr><td><strong>LangMem</strong></td><td>Personalization</td><td>Flat KV + Vector</td><td>~1.3K</td><td>MIT</td></tr>
   <tr><td><strong>LlamaIndex Memory</strong></td><td>Personalization</td><td>Composable buffers</td><td>~48K</td><td>MIT</td></tr>
   <tr><td><strong>Cloudflare Agent Memory</strong></td><td>Both</td><td>Typed (Facts/Events/Instructions/Tasks)</td><td>—</td><td>Managed (beta)</td></tr>
 </table>
 
-<h3>Memory Architectures</h3>
+<h3>Architecture Patterns</h3>
+
 <p>Four architectural patterns dominate the landscape:</p>
 
-<div class="comparison">
-<div class="card">
-  <h4>🧩 Vector Only</h4>
-  <p class="stat">~10-50ms</p>
-  <p class="label">Fast retrieval. Simple, cheap, but low recall quality. Eg: LangMem.</p>
-</div>
-<div class="card">
-  <h4>🕸️ Vector + Graph</h4>
-  <p class="stat">~50-150ms</p>
-  <p class="label">Semantic search + entity traversal. The 2026 standard. Eg: Mem0, Cognee.</p>
-</div>
-<div class="card">
-  <h4>🏛️ Tiered Memory</h4>
-  <p class="stat">~100-600ms</p>
-  <p class="label">OS-inspired: main context = RAM, archival = disk. Agent manages own memory. Eg: Letta.</p>
-</div>
-<div class="card">
-  <h4>⏳ Temporal KG</h4>
-  <p class="stat">~50-200ms</p>
-  <p class="label">Edges with validity windows. Ideal for changing relationships. Eg: Zep/Graphiti.</p>
-</div>
-</div>
+<table>
+  <tr><th>Pattern</th><th>Latency</th><th>Description</th><th>Example</th></tr>
+  <tr><td><strong>Vector only</strong></td><td>~10-50ms</td><td>Fast but low recall quality</td><td>LangMem</td></tr>
+  <tr><td><strong>Vector + Graph</strong></td><td>~50-150ms</td><td>Semantic + entity traversal. The 2026 standard</td><td>Mem0, Cognee</td></tr>
+  <tr><td><strong>Tiered (OS-style)</strong></td><td>~100-600ms</td><td>Main context = RAM, archival = Disk. Agent self-manages</td><td>Letta</td></tr>
+  <tr><td><strong>Temporal KG</strong></td><td>~50-200ms</td><td>Edges with validity windows. For changing relationships</td><td>Zep / Graphiti</td></tr>
+</table>
 
 <h3>Standardized Benchmarks</h3>
-<p>Three benchmarks define the measurement landscape in 2026:</p>
-<ul>
-  <li><strong>LoCoMo</strong> — 1,540 questions across 4 categories: single-hop, multi-hop, open-domain, temporal. The most established.</li>
-  <li><strong>LongMemEval</strong> — 500 questions across 6 categories: includes knowledge update and multi-session recall. More demanding.</li>
-  <li><strong>BEAM</strong> — The newest (2026). Evaluates memory in task execution context, not just conversation.</li>
-</ul>
-<p>Composite metric: <strong>BLEU + F1 + LLM Score + Token consumption + Latency</strong>. This prevents optimizing one axis at the expense of others.</p>
 
-<h3>Key Research Trends (2025-2026)</h3>
 <ul>
-  <li><strong>Graph-based memory is winning</strong> — The survey "Graph-based Agent Memory" (arXiv:2602.05665, Feb 2026) establishes a unified taxonomy showing graph-augmented memory outperforms vector-only by +31% on multi-hop queries</li>
-  <li><strong>Mem0's State of AI Agent Memory 2026</strong> (May 2026) — First-party benchmark across 10 approaches and 21 integrations. Biggest gains: +29.6 points on temporal reasoning, +23.1 on multi-hop</li>
-  <li><strong>Agent-managed memory tiers</strong> — Letta's OS-inspired architecture (main context ↔ archival storage) is becoming an influential pattern</li>
-  <li><strong>Knowledge graph + temporal awareness</strong> — Zep's paper (arXiv:2501.13956, Jan 2025) showed temporal KG beats MemGPT on DMR; Graphiti open-sourced the pattern</li>
+  <li><strong>LoCoMo</strong> — 1,540 questions: single-hop, multi-hop, open-domain, temporal. The most established.</li>
+  <li><strong>LongMemEval</strong> — 500 questions across 6 categories. More demanding (knowledge update, multi-session).</li>
+  <li><strong>BEAM</strong> — Newest (2026). Evaluates memory in task execution context, not just conversation.</li>
+</ul>
+
+<p>Composite metric: <strong>BLEU + F1 + LLM Score + Token consumption + Latency</strong>. Prevents optimizing one axis at expense of another.</p>
+
+<h3>Key Research (2025-2026)</h3>
+
+<ul>
+  <li><strong>Graph-based memory is winning</strong> — Survey "Graph-based Agent Memory" (arXiv:2602.05665, Feb 2026) shows graph-augmented memory outperforms vector-only by +31% on multi-hop</li>
+  <li><strong>Mem0 State of AI Agent Memory 2026</strong> — +29.6 points on temporal reasoning, +23.1 on multi-hop across 10 approaches and 21 integrations</li>
+  <li><strong>Agent-managed memory tiers</strong> — Letta's OS-inspired architecture becoming an influential pattern</li>
+  <li><strong>Temporal KG beats MemGPT</strong> — Zep paper (arXiv:2501.13956, Jan 2025); Graphiti open-sourced the pattern</li>
   <li><strong>Memory staleness</strong> identified as the hardest open problem across all major frameworks</li>
 </ul>
 
-<h3>The 4 Open Problems (per Mem0 State of AI Agent Memory 2026)</h3>
+<h3>The 4 Open Problems</h3>
+
 <ol>
-  <li><strong>Cross-session identity</strong> — Resolving that "Alice", "our CTO", and "alice@acme.com" are the same entity across sessions</li>
-  <li><strong>Temporal abstraction at scale</strong> — Extracting evolving knowledge without saturating the graph with stale edges</li>
-  <li><strong>Memory staleness detection</strong> — Knowing when a stored fact has become obsolete without verifying everything</li>
-  <li><strong>Privacy-preserving memory</strong> — Shared memory between agents without leaking sensitive data across users</li>
+  <li><strong>Cross-session identity</strong> — resolving "Alice", "our CTO", and "alice@acme.com" as the same entity</li>
+  <li><strong>Temporal abstraction at scale</strong> — extracting evolving knowledge without saturating the graph</li>
+  <li><strong>Memory staleness detection</strong> — knowing when a fact is obsolete without re-verifying everything</li>
+  <li><strong>Privacy-preserving memory</strong> — shared agent memory without leaking data across users</li>
 </ol>
 
-<hr class="divider">
+      </div>
+    </div>
 
-<h2>Part III: Where GBrain Fits</h2>
+    <div class="section">
+      <div class="section-label">Part III</div>
+      <div class="special-content">
+
+<h2>Where GBrain Fits</h2>
 
 <h3>What GBrain Does That Nobody Else Does</h3>
+
 <ul>
-  <li><strong>Synthesis + gap analysis</strong> in one step — No other system explicitly tells you what it doesn't know</li>
-  <li><strong>Zero-LLM graph wiring</strong> — The graph self-constructs through pure pattern matching, not model calls</li>
-  <li><strong>Autonomous dream cycle</strong> — Enrichment, dedup, citation fixing, and contradiction detection while you sleep</li>
+  <li><strong>Synthesis + gap analysis</strong> in one step — no other system explicitly tells you what it doesn't know</li>
+  <li><strong>Zero-LLM graph wiring</strong> — graph self-constructs through pattern matching, not model calls</li>
+  <li><strong>Autonomous dream cycle</strong> — enrichment, dedup, citation fixing, contradiction detection while you sleep</li>
   <li><strong>Two engines in one</strong> — PGLite (WASM, zero-config) for personal, Postgres+pgvector for production</li>
-  <li><strong>Agent co-curates the ontology</strong> — You don't need to be an ontologist; your agent proposes types and you approve</li>
+  <li><strong>Agent co-curates the ontology</strong> — agent proposes types, you approve, it applies atomically</li>
 </ul>
 
 <h3>Comparison vs. Ecosystem</h3>
+
 <table>
-  <tr><th>Dimension</th><th>GBrain</th><th>Mem0</th><th>Letta</th><th>Zep/Graphiti</th><th>Hindsight</th></tr>
+  <tr><th>Dimension</th><th>GBrain</th><th>Mem0</th><th>Letta</th><th>Zep</th><th>Hindsight</th></tr>
   <tr><td>Synthesis + gap analysis</td><td>✅ Core</td><td>❌</td><td>❌</td><td>❌</td><td>Partial</td></tr>
-  <tr><td>Self-wiring graph (zero LLM)</td><td>✅</td><td>❌ (Pro)</td><td>❌</td><td>✅</td><td>❌</td></tr>
-  <tr><td>Autonomous night cycle</td><td>✅ Dream cycle</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr>
+  <tr><td>Zero-LLM graph wiring</td><td>✅</td><td>❌ (Pro)</td><td>❌</td><td>✅</td><td>❌</td></tr>
+  <tr><td>Autonomous night cycle</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr>
   <tr><td>Native MCP (30+ tools)</td><td>✅</td><td>❌</td><td>Partial</td><td>Partial</td><td>❌</td></tr>
-  <tr><td>Multi-user enterprise</td><td>✅ Company brain</td><td>❌</td><td>❌</td><td>✅</td><td>Partial</td></tr>
-  <tr><td>Schema evolution by agent</td><td>✅ Atomic + audit</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr>
-  <tr><td>Voice/text integration</td><td>✅ Twilio + webhooks</td><td>API only</td><td>API only</td><td>API only</td><td>API only</td></tr>
-  <tr><td>Documented production scale</td><td>✅ 146K pages</td><td>✅</td><td>✅</td><td>✅</td><td>Growing</td></tr>
+  <tr><td>Multi-user enterprise</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td>Partial</td></tr>
+  <tr><td>Agent evolves schema</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr>
+  <tr><td>Voice + webhook ingest</td><td>✅</td><td>API</td><td>API</td><td>API</td><td>API</td></tr>
+  <tr><td>Prod scale documented</td><td>146K pages</td><td>✅</td><td>✅</td><td>✅</td><td>Growing</td></tr>
 </table>
 
 <h3>Applications to Your Stack</h3>
+
 <ul>
-  <li><strong>Your Second Brain (Notion)</strong> — GBrain could be the retrieval+synth engine underneath your current taxonomy. Gap analysis would tell you what knowledge holes you have</li>
-  <li><strong>Quirón/Alfred (LangGraph)</strong> — Could act as the persistent memory layer for your agent, replacing ephemeral session context with a brain that remembers</li>
-  <li><strong>Daily digests</strong> — The dream cycle is exactly the kind of pipeline you already run, but generalized: enrich, deduplicate, detect contradictions</li>
-  <li><strong>Autodispatcher</strong> — Typed entities (incident, service, runbook) and the temporal graph could model relationships between incidents, services, and teams better than a flat classifier</li>
-  <li><strong>Barra Libre</strong> — Could serve as the knowledge backend for training plans, logging progress, injuries, load adjustments with full traceability</li>
+  <li><strong>Second Brain (Notion)</strong> — GBrain as the retrieval+synth engine underneath your taxonomy. Gap analysis surfaces knowledge holes</li>
+  <li><strong>Quirón / Alfred (LangGraph)</strong> — Persistent memory layer replacing ephemeral session context</li>
+  <li><strong>Daily digests</strong> — Dream cycle generalizes the enrichment, dedup, and contradiction detection you already run</li>
+  <li><strong>Autodispatcher</strong> — Typed entities (incident, service, runbook) + temporal graph for incident relationships</li>
+  <li><strong>Barra Libre</strong> — Knowledge backend for training plans with full traceability</li>
 </ul>
 
-<h3>Risks and Considerations</h3>
+<h3>Risks</h3>
+
 <ul>
-  <li><strong>Schema pack v2 maturity</strong> — The 15-type version is very recent (v0.42). Migration from 94 types is ambitious and may have rough edges</li>
-  <li><strong>Bun/TypeScript dependency</strong> — Your stack is Python. The cost of integrating a TS system needs evaluation</li>
-  <li><strong>Scale</strong> — PGLite handles ~50K pages. Your ~3K jobs/day + digests + notes pipeline would fit that margin, but needs measurement</li>
-  <li><strong>Single-creator risk</strong> — It's a one-person project with active community. Low risk due to MIT/open source, but non-zero</li>
+  <li><strong>Schema v2 maturity</strong> — 15-type version is recent (v0.42), migration from 94 types is ambitious</li>
+  <li><strong>Bun/TypeScript dependency</strong> — your stack is Python; integration cost needs evaluation</li>
+  <li><strong>Single-creator risk</strong> — Garry Tan's project; low risk (MIT) but non-zero</li>
 </ul>
 
-<hr class="divider">
+<hr>
 
 <h2>Conclusion</h2>
-<p>GBrain arrives at a moment when the agent memory market is boiling but fragmented. Mem0 has the largest community, Letta the most elegant architecture (OS-tiered), Zep/Graphiti the best temporal handling, and GBrain... GBrain is the only one that <strong>synthesizes, graphs, and analyzes gaps</strong> in a single system with an autonomous maintenance cycle.</p>
+
+<p>GBrain arrives when the agent memory market is boiling but fragmented. Mem0 has the community, Letta the architecture, Zep the temporal handling, and GBrain is the only one that <strong>synthesizes, graphs, and analyzes gaps</strong> in a single system with an autonomous maintenance cycle.</p>
 
 <p>What Garry Tan built is infrastructure that attacks the problem from the right angle: not "how to stuff more context into the prompt," but "how to build a brain that maintains itself, knows what it knows and what it doesn't, and makes its owner smarter every day."</p>
 
 <p>It is no coincidence he built it for himself first. Like the centaur who sharpens his own arrows.</p>
 
-<hr class="divider">
-<p style="color: #8b949e; font-size: 0.8rem;">Report generated by Quirón · Sources: github.com/garrytan/gbrain, vectorize.io, fountaincity.tech, machinelearningmastery.com, mem0.ai, arxiv.org/abs/2602.05665, arxiv.org/abs/2501.13956</p>
+<p style="color: var(--on-surface-variant); font-size: 12px; margin-top: 40px;">Sources: <code>github.com/garrytan/gbrain</code> · vectorize.io · fountaincity.tech · mem0.ai · arxiv.org/abs/2602.05665 · arxiv.org/abs/2501.13956</p>
 
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+  </script>
 </body>
 </html>
