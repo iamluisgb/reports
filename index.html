@@ -106,7 +106,16 @@
     return null;
   }
 
-  function formatDate(dateStr) {
+  function formatDate(dateStr, type) {
+    // Special reports use the specialDates map
+    if (type === 'special' && specialDates[dateStr]) {
+      const d = new Date(specialDates[dateStr] + 'T12:00:00');
+      return d.toLocaleDateString('en-US', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric'
+      });
+    }
     const d = extractDateFromFilename(dateStr);
     if (d) {
       return d.toLocaleDateString('en-US', {
@@ -156,6 +165,7 @@
     'gbrain-2026-05-27.html': 'GBrain Deep Dive: 15 Entity Types That Redefine Agent Memory',
     'palantir-playbook-2026.html': 'What AI Startups Stole From Palantir\'s Playbook',
     'sre-stack-2026.html': 'SRE Stack 2026: Open Source vs. Enterprise — Two Paths, One Answer',
+    'hermes-sre-aiops.html': 'Hermes Models + Agent Framework for SRE/AIOps Workflows',
   };
 
   const specialDates = {
@@ -203,11 +213,11 @@
       : '';
 
     return `
-      <a class="card" href="${pagesUrl}" data-search="${title.toLowerCase()} ${formatDate(item.name).toLowerCase()} ${tags.join(' ')}">
+      <a class="card" href="${pagesUrl}" data-search="${title.toLowerCase()} ${formatDate(item.name, type).toLowerCase()} ${tags.join(' ')}">
         <div class="icon">${type === 'daily' ? '📰' : '⭐'}</div>
         <div class="content">
           <div class="title">${title}</div>
-          <div class="meta">${formatDate(item.name)} · ${readingTime} min read</div>
+          <div class="meta">${formatDate(item.name, type)} · ${readingTime} min read</div>
           ${tagsHtml}
         </div>
         ${badgeHtml}
