@@ -158,6 +158,15 @@
     'sre-stack-2026.html': 'SRE Stack 2026: Open Source vs. Enterprise — Two Paths, One Answer',
   };
 
+  const specialDates = {
+    'ai-agent-memory-sota.html': '2026-05-29',
+    'ai-models-architecture-may-2026.html': '2026-05-29',
+    'ai-engineering-adoption-frameworks-2026-en.html': '2026-05-20',
+    'gbrain-2026-05-27.html': '2026-05-27',
+    'palantir-playbook-2026.html': '2026-05-29',
+    'sre-stack-2026.html': '2026-05-29',
+  };
+
   function estimateReadingTime(title) {
     const words = title.split(' ').length;
     return Math.max(1, Math.ceil(words / 200));
@@ -307,7 +316,11 @@
 
       allSpecialFiles = files
         .filter(f => f.type === 'file' && isSpecial(f.name))
-        .sort((a, b) => getReportDate(b.name) - getReportDate(a.name));
+        .sort((a, b) => {
+          const da = specialDates[a.name] || '0000-00-00';
+          const db = specialDates[b.name] || '0000-00-00';
+          return db.localeCompare(da);
+        });
 
       const specialList = document.getElementById('special-list');
       if (allSpecialFiles.length === 0) {
