@@ -106,10 +106,19 @@
     return null;
   }
 
-  function formatDate(dateStr) {
+  function formatDate(dateStr, type) {
+    // Special reports use the specialDates map
+    if (type === 'special' && specialDates[dateStr]) {
+      const d = new Date(specialDates[dateStr] + 'T12:00:00');
+      return d.toLocaleDateString('en-US', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric'
+      });
+    }
     const d = extractDateFromFilename(dateStr);
     if (d) {
-      return d.toLocaleDateString('es-ES', {
+      return d.toLocaleDateString('en-US', {
         day: 'numeric',
         month: 'short',
         year: 'numeric'
@@ -123,7 +132,7 @@
   }
 
   function monthLabel(date) {
-    return date.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
+    return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
   }
 
   function isDaily(filename) {
@@ -150,9 +159,23 @@
   }
 
   const specialTitles = {
-    'ai-agent-memory-sota.html': 'AI Agent Memory: SOTA',
-    'ai-models-architecture-may-2026.html': 'AI Models Architecture — May 2026',
-    'ai-engineering-adoption-frameworks-2026-en.html': 'AI Engineering Adoption Frameworks',
+    'ai-agent-memory-sota.html': 'AI Agent Memory 2026: 8 Architectures Compared',
+    'ai-models-architecture-may-2026.html': 'AI Models & Architecture: The Landscape in May 2026',
+    'ai-engineering-adoption-frameworks-2026-en.html': 'How Elite Engineering Teams Are Adopting AI (2026)',
+    'gbrain-2026-05-27.html': 'GBrain Deep Dive: 15 Entity Types That Redefine Agent Memory',
+    'palantir-playbook-2026.html': 'What AI Startups Stole From Palantir\'s Playbook',
+    'sre-stack-2026.html': 'SRE Stack 2026: Open Source vs. Enterprise — Two Paths, One Answer',
+    'hermes-sre-aiops.html': 'Hermes Models + Agent Framework for SRE/AIOps Workflows',
+  };
+
+  const specialDates = {
+    'ai-agent-memory-sota.html': '2026-05-29',
+    'ai-models-architecture-may-2026.html': '2026-05-29',
+    'ai-engineering-adoption-frameworks-2026-en.html': '2026-05-20',
+    'gbrain-2026-05-27.html': '2026-05-27',
+    'palantir-playbook-2026.html': '2026-05-29',
+    'sre-stack-2026.html': '2026-05-29',
+    'hermes-sre-aiops.html': '2026-05-29',
   };
 
   function estimateReadingTime(title) {
@@ -191,11 +214,11 @@
       : '';
 
     return `
-      <a class="card" href="${pagesUrl}" data-search="${title.toLowerCase()} ${formatDate(item.name).toLowerCase()} ${tags.join(' ')}">
+      <a class="card" href="${pagesUrl}" data-search="${title.toLowerCase()} ${formatDate(item.name, type).toLowerCase()} ${tags.join(' ')}">
         <div class="icon">${type === 'daily' ? '📰' : '⭐'}</div>
         <div class="content">
           <div class="title">${title}</div>
-          <div class="meta">${formatDate(item.name)} · ${readingTime} min read</div>
+          <div class="meta">${formatDate(item.name, type)} · ${readingTime} min read</div>
           ${tagsHtml}
         </div>
         ${badgeHtml}
@@ -304,7 +327,11 @@
 
       allSpecialFiles = files
         .filter(f => f.type === 'file' && isSpecial(f.name))
-        .sort((a, b) => getReportDate(b.name) - getReportDate(a.name));
+        .sort((a, b) => {
+          const da = specialDates[a.name] || '0000-00-00';
+          const db = specialDates[b.name] || '0000-00-00';
+          return db.localeCompare(da);
+        });
 
       const specialList = document.getElementById('special-list');
       if (allSpecialFiles.length === 0) {
@@ -323,8 +350,8 @@
 
     } catch (err) {
       console.error(err);
-      document.getElementById('daily-grouped').innerHTML = '<div class="empty">Error al cargar los reports.</div>';
-      document.getElementById('special-list').innerHTML = '<div class="empty">Error al cargar los reports.</div>';
+      document.getElementById('daily-grouped').innerHTML = '<div class="empty">Error loading reports.</div>';
+      document.getElementById('special-list').innerHTML = '<div class="empty">Error loading reports.</div>';
     }
   }
 
