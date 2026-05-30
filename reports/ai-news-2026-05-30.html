@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 30 May 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">30 May 2026 · Saturday</div>
+          <div class="subtitle">Anthropic surpasses OpenAI · Mistral Summit · Agent guardrails · SQLite workflows</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Anthropic hits $965B valuation, surpasses OpenAI for the first time</div>
+        <div class="desc">Anthropic's valuation overtakes OpenAI's as Claude Opus 4.8 launches — a signal that the AI power dynamics are shifting. Nvidia and Microsoft invested up to $15B in Anthropic, which committed $30B in Azure compute.</div>
+        <div class="sources">
+          <a href="https://m.economictimes.com/news/international/us/who-truly-leads-the-ai-industry-now-anthropics-965-billion-valuation-and-claude-opus-4-8-launch-reignite-the-battle-for-ai-supremacy-beyond-openais-early-lead/articleshow/131391633.cms">Economic Times</a>
+          <a href="https://www.brusselstimes.com/business/2160043/capital-operation-raises-anthropics-value-to-nearly-1000-billion">Brussels Times</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Notes from the Mistral AI Now Summit</div>
+        <div class="desc">Comprehensive notes from the Mistral AI Now Summit hit the front page of HN with 331 points and 122 comments — covering Mistral's latest direction, open-weight releases, and European AI strategy.</div>
+        <div class="sources">
+          <a href="https://news.ycombinator.com/item?id=42630697">Hacker News</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">"MCP is dead?" sparks 144-comment HN debate</div>
+        <div class="desc">A provocatively-titled piece questioning the future of the Model Context Protocol triggers heated discussion on HN — 151 points, 144 comments. The thread reveals deep divisions on whether MCP is the right abstraction for agent-tool communication.</div>
+        <div class="sources">
+          <a href="https://news.ycombinator.com/item?id=42630733">Hacker News</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">The dead economy theory dominates HN</div>
+        <div class="desc">The top story on Hacker News with 876 points and 1,044 comments — a provocative essay arguing that economic dynamism has been systematically replaced by rent extraction and regulatory capture. The most commented post of the day.</div>
+        <div class="sources">
+          <a href="https://news.ycombinator.com/item?id=42630482">Hacker News</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Guardrails Beat Guidance: Random rules outperform expert-curated ones for coding agents</div>
+        <div class="desc">A large-scale study (2604.11088) finds that random negative constraints improve coding agent performance as much as expert-curated rules (both +13.8pp on SWE-bench), and every individually beneficial rule is a "do not" constraint. Implications for agent configuration design.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2604.11088">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">How Coding Agents Fail Their Users: 20,574 real-world sessions analyzed</div>
+        <div class="desc">An observational study of developer-agent misalignment across 20K+ real coding sessions. Finds that benchmark trajectories miss how developers actually experience agent failures — the gap between benchmark success and real-world satisfaction is large.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2605.29442">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Notation Matters: Are JSON and token-optimized formats better for agentic AI?</div>
+        <div class="desc">Benchmark study comparing JSON against token-optimized formats for tool invocation in LLM agents. JSON was designed for app-to-app interchange, not for LLM consumption — the study quantifies the overhead and proposes alternatives.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2605.29676">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">SkillTrojan: Backdoor attacks on skill-based agent systems</div>
+        <div class="desc">A novel attack vector targeting modular agent systems that compose reusable skills. SkillTrojan demonstrates how compromised skill implementations can backdoor the entire agent pipeline — a new security surface largely unexamined until now.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2604.06811">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">AgentDoG 1.5: A Lightweight Alignment Framework for AI Agent Safety</div>
+        <div class="desc">Addresses safety risks in open-world agents like OpenClaw. Proposes a scalable alignment framework that works with frontier LLMs that lower attack barriers. <strong>[agents, safety, alignment]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2605.29801">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Meta-Cognitive Memory Policy Optimization for Long-Horizon LLM Agents</div>
+        <div class="desc">Improves how memory-augmented agents summarize interaction trajectories. Shows outcome-based RL is insufficient for training memory policies — proposes meta-cognitive optimization. <strong>[agents, memory, RL]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2605.30159">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Relevance as a Vulnerability: Web Retrieval Degrades LLM Safety Alignment</div>
+        <div class="desc">External web retrieval weakens the safety alignment of LLM agents. Grounded responses come at a cost — incorporating external content bypasses alignment mechanisms that govern LLM-only outputs. <strong>[safety, RAG, agents]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2605.29224">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">How Reliable Are AI Attackers? A 400-Run Study of LLM Penetration Testing</div>
+        <div class="desc">First large-scale measurement of LLM attack consistency. Shows that LLMs can autonomously conduct multi-stage cyber attacks, but consistency varies dramatically across trials — with implications for autonomous red-teaming. <strong>[security, pentesting]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2605.30096">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Governing Technical Debt in Agentic AI Systems</div>
+        <div class="desc">Agentic AI systems used as production infrastructure create governance challenges: multi-step reasoning, tool calling, memory, and feedback loops introduce technical debt patterns unique to agent architectures. <strong>[SRE, governance, infrastructure]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2605.29129">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">SkillTrojan: Backdoor Attacks on Skill-Based Agent Systems</div>
+        <div class="desc">Targets the modular skill-composition paradigm of modern agent frameworks. Demonstrates that compromised skill implementations create a new, largely unexamined security attack surface. <strong>[security, agents, backdoor]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2604.06811">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">07</div>
+        <div class="title">Toward AI Systems That Understand Self and Others: World-Model Alignment</div>
+        <div class="desc">Multi-phase inference framework for human cognitive diversity. Addresses mutual misunderstanding not just as disagreement but as different inferential targets, state representations, and prediction errors. <strong>[alignment, cognition]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2605.29930">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">SQLite is all you need for durable workflows</div>
+        <div class="desc">Hacker News front page with 455 points — makes the case that SQLite's durability model is sufficient for workflow orchestration, challenging the assumption that you need Postgres or a dedicated workflow engine. Directly relevant to distributed systems design.</div>
+        <div class="sources">
+          <a href="https://news.ycombinator.com/item?id=42630184">Hacker News</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Show HN: Tiny-vLLM — high performance LLM inference in C++ and CUDA</div>
+        <div class="desc">A lightweight, high-performance LLM inference engine built entirely in C++ and CUDA. Targets self-hosting and edge inference use cases. From the filtered blogwatcher articles.</div>
+        <div class="sources">
+          <a href="https://github.com/jmaczan/tiny-vllm">GitHub</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Framework 12: Hard to justify buying, says Jeff Geerling</div>
+        <div class="desc">264 points, 431 comments on HN. Geerling's honest take on the Framework 12 laptop — praised for repairability but criticized for performance compromises. A data point for anyone evaluating reliable hardware for development workflows.</div>
+        <div class="sources">
+          <a href="https://news.ycombinator.com/item?id=42630269">Hacker News</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">SQLite is all you need for durable workflows</div>
+        <div class="desc">455 points — using SQLite's built-in durability for reliable workflow orchestration. A minimalist approach to a traditionally complex problem.</div>
+        <div class="sources">
+          <a href="https://news.ycombinator.com/item?id=42630184">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Notes from the Mistral AI Now Summit</div>
+        <div class="desc">331 points, 122 comments — detailed coverage of Mistral's vision, new model capabilities, and the European AI ecosystem.</div>
+        <div class="sources">
+          <a href="https://news.ycombinator.com/item?id=42630697">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">"MCP is dead?"</div>
+        <div class="desc">151 points, 144 comments — contentious debate about the future of Model Context Protocol and whether better alternatives exist for agent-tool communication.</div>
+        <div class="sources">
+          <a href="https://news.ycombinator.com/item?id=42630733">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The agent safety landscape is maturing fast — Guardrails, SkillTrojan, and the 20K-session analysis of coding agent failures all point to a systemic truth: we're building agentic systems faster than we understand their failure modes. Every paper this week is about what goes wrong, not what goes right.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Anthropic's $965B valuation — surpassing OpenAI — signals a realignment of AI's center of gravity. Claude Opus 4.8 isn't just another model release; it's the marker that frontier capabilities are no longer OpenAI's domain. For anyone building on LLMs, diversifying model strategy is no longer optional.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">30 May 2026</span>
+    </div>
+  </div>
+
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>
