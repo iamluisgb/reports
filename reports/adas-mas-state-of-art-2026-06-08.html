@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⭐ Automated Design of Agentic Systems & Multi-Agent Algorithms: State of the Art 2025-2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+      <div class="header-top">
+        <div>
+          <div class="category">⭐ SPECIAL REPORT</div>
+          <h1>Automated Design of Agentic Systems &amp; Multi-Agent Algorithms: <em>State of the Art</em> 2025-2026</h1>
+          <div class="date-line">08 JUN 2026</div>
+          <div class="subtitle">ADAS, Meta Agent Search, LLM-MAS Orchestration &amp; Production Deployment</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <!-- ==================== EXECUTIVE SUMMARY ==================== -->
+    <div class="section">
+      <div class="section-label">Executive Summary</div>
+      <div class="special-content">
+
+<p>The period between mid-2025 and mid-2026 marks a paradigm shift in how agentic AI systems are conceived, designed, and deployed. Two formerly distinct research threads — <strong>Automated Design of Agentic Systems (ADAS)</strong> and <strong>Multi-Agent Systems (MAS) orchestration algorithms</strong> — have converged into a unified engineering discipline with direct production implications.</p>
+
+<p><strong>ADAS</strong> emerged as a formal research area with the publication of "Automated Design of Agentic Systems" (Hu, Lu, Clune — ICLR 2025, arXiv:2408.08435). The central insight is deceptively simple: instead of hand-engineering individual agents through prompt crafting and tool selection, a <strong>meta-agent</strong> can iteratively discover agent architectures by programming them as executable Python code. Because the search space is Turing-complete — any agentic system that can be expressed in code is theoretically discoverable — this approach fundamentally breaks the ceiling of manual design. The companion work <strong>AgentSquare</strong> (Shang et al., ICLR 2025, arXiv:2410.06153) formalizes this as modular evolution over four canonical building blocks (Planning, Reasoning, Tool Use, Memory), achieving a 17.2% average performance improvement over hand-crafted agents across coding, science, and math benchmarks.</p>
+
+<p>On the MAS side, the integration of Large Language Models into multi-agent topologies has produced three dominant collaboration paradigms: <strong>multi-stage pipelines</strong> (serial decomposition), <strong>collective decision-making</strong> (debate, voting, consensus), and <strong>self-refine</strong> (iterative self-correction). The 2026 survey on RL for LLM-based MAS via orchestration traces (arXiv:2605.02801) formalizes the decision space into five sub-problems — when to spawn agents, whom to delegate to, how to communicate, how to aggregate results, and when to stop — each amenable to reinforcement learning from temporal interaction graphs.</p>
+
+<p>Production deployment has reached a tipping point. <strong>Semantic Router DSL</strong> (arXiv:2603.27299) provides declarative per-request routing. PayPal's approach translates DSL specifications into Kubernetes artifacts with NetworkPolicy and ConfigMap resources. The SLEAN framework and Cisco's AI Security Framework (arXiv:2512.12921) address observability and attack surface management respectively. The open-source ecosystem — LangGraph, CrewAI, MetaGPT/MGX, ChatDev 2.0 — provides production-grade tooling, while AutoGen's maintenance status and transition to Microsoft Agent Framework signals consolidation.</p>
+
+<p><strong>The thesis of this report:</strong> ADAS is not merely an optimization technique for agent design — it is the beginning of agents becoming first-class citizens in software engineering, designing their own successors. The convergence with MAS orchestration algorithms means that the "intelligence infrastructure" of 2026-2027 will be designed, deployed, and evolved by the systems it comprises.</p>
+
+      </div>
+    </div>
+
+    <!-- ==================== PART I: ADAS DEEP ANALYSIS ==================== -->
+    <div class="section">
+      <div class="section-label">Part I — ADAS Deep Analysis</div>
+      <div class="special-content">
+
+<h2>1. The Evolution from Manual to Automated Design</h2>
+
+<p>The history of agentic system design can be decomposed into three distinct epochs, each characterized by a different locus of design intelligence:</p>
+
+<h3>1.1 Epoch I: Prompt Engineering (2022-2023)</h3>
+<p>The first generation of LLM-based agents relied on <strong>prompt engineering</strong> — the manual crafting of system prompts, few-shot examples, and chain-of-thought templates. Frameworks like LangChain and the original AutoGPT treated agents as "LLM + prompt + tool." The design space was bounded by human cognitive capacity: a single engineer could reason about perhaps 5-10 interacting prompt components before losing coherence. The fundamental limitation was that the agent's architecture was fixed; only the instructions were variable.</p>
+
+<h3>1.2 Epoch II: Tool-Augmented Agents (2023-2024)</h3>
+<p>The introduction of function calling APIs (OpenAI, Anthropic) and tool registries expanded the design space to include <strong>tool selection and composition</strong>. Agents could now reason about which tools to invoke, in what order, and how to interpret results. ReAct (Reasoning + Acting) and subsequent frameworks enabled dynamic tool-use strategies. However, the meta-level design decisions — which tools to include, how to structure the agent's reasoning loop, what memory architecture to use — remained manual. Engineers were essentially performing meta-design by hand, choosing from a palette of pre-defined architectural patterns.</p>
+
+<h3>1.3 Epoch III: Code-Driven Automated Design (2025-present)</h3>
+<p>ADAS represents the third epoch, where the agent's <em>entire architecture</em> — including its reasoning loop, tool integration strategy, memory structure, and inter-agent communication protocol — is expressed as executable code and discovered through systematic search. The critical insight from Hu et al. is that code is Turing-complete: any agentic system that can be computed can, in principle, be written as a Python function. This transforms the agent design problem from a constrained optimization over a fixed set of architectural templates into an <strong>unconstrained program synthesis problem</strong>.</p>
+
+<blockquote><strong>The Turing-complete argument:</strong> If the search space is Python code (or any Turing-complete language), then the set of discoverable agent architectures includes every possible computational procedure. The only constraints are the evaluator's ability to measure quality and the search algorithm's ability to navigate the space efficiently. This is not merely a theoretical statement — it has empirical consequences, as demonstrated by ADAS outperforming hand-designed agents on multiple benchmarks.</blockquote>
+
+<h2>2. Meta Agent Search: Algorithm and Architecture</h2>
+
+<h3>2.1 Algorithmic Formulation</h3>
+
+<p>The Meta Agent Search algorithm operates at the intersection of program synthesis and evolutionary optimization. Its formal structure is as follows:</p>
+
+<pre><code>Algorithm: Meta Agent Search
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Input:
+  - Benchmark tasks T = {t₁, t₂, ..., tₙ}
+  - Evaluation function E: Agent × Task → Score
+  - Performance threshold θ
+  - Maximum iterations T_max
+
+1. Initialize:
+   archive ← ∅
+   meta_agent ← LLM with meta-instructions:
+     "Given the archive of previously discovered agents,
+      write a Python function implementing a new agent
+      that may outperform all existing agents on the
+      benchmark tasks."
+
+2. For each iteration t = 1, 2, ..., T_max:
+   a. Prompt meta_agent with current archive contents
+   b. meta_agent generates candidate_agent (Python code)
+   c. Execute candidate_agent on each task in T
+   d. Score ← E(candidate_agent, T)
+   e. If Score > θ OR Score > max(scores in archive):
+        archive ← archive ∪ {candidate_agent}
+      (Archive is sorted by performance, size bounded)
+
+3. Return best_agent from archive
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</code></pre>
+
+<p>The algorithm's elegance lies in its recursive structure: the meta-agent is itself an LLM that reads code (the archive), reasons about what to write next, and generates new code. Each iteration's output becomes input for future iterations, creating an <strong>open-ended improvement loop</strong>. The archive serves as both a memory mechanism (preventing redundant exploration) and a curriculum (each new candidate is conditioned on the best discoveries so far).</p>
+
+<h3>2.2 Three Key Components</h3>
+
+<p>The ADAS framework decomposes into three interacting components, each with distinct engineering challenges:</p>
+
+<p><strong>Component 1: Search Space (Code).</strong> The search space is the set of all valid Python programs that implement agent behavior. Unlike neural architecture search (NAS), where the search space is parameterized by discrete architectural choices (number of layers, kernel sizes, attention heads), ADAS's search space is the full space of Python programs. This has two consequences: (a) the space is vastly larger than any parameterized design space, but (b) it is also more expressive, enabling discovery of fundamentally novel architectures rather than interpolation within a fixed set of templates. The meta-agent generates code with access to standard Python libraries, API wrappers for LLM calls, and utility functions — the same toolkit a human engineer would use.</p>
+
+<p><strong>Component 2: Search Algorithm (Meta-Agent).</strong> The meta-agent functions as both the search operator and the heuristic guidance. It is prompted to read the archive (which contains the source code and performance metrics of previously discovered agents), identify patterns in high-performing designs, and synthesize novel candidates that incorporate promising features while exploring new directions. This is analogous to <strong>cultural evolution</strong>: each generation of agents has access to the full "cultural record" of previous discoveries. The meta-agent's quality directly determines search efficiency — a more capable foundation model (e.g., GPT-4-class vs. GPT-3.5-class) produces better candidate agents per iteration.</p>
+
+<p><strong>Component 3: Performance Evaluator.</strong> The evaluator executes each candidate agent on a benchmark suite and scores its performance. This component must handle: (a) sandboxed execution to prevent harmful code from affecting the host system; (b) timeout enforcement to prevent infinite loops; (c) deterministic task evaluation (unit tests, comparison to reference solutions); and (d) multi-dimensional scoring (accuracy, latency, token usage). The evaluator's design is critical because it determines the fitness landscape that the search algorithm navigates.</p>
+
+<h2>3. AgentSquare: Modular Evolution</h2>
+
+<p>AgentSquare (Shang et al., ICLR 2025) takes a complementary approach to ADAS by imposing a structured decomposition of the agent design space into four canonical modules:</p>
+
+<table>
+  <tr><th>Module</th><th>Responsibility</th><th>Design Choices</th></tr>
+  <tr><td><strong>Planning</strong></td><td>Task decomposition, strategy formulation</td><td>Zero-shot planning, chain-of-thought, tree-of-thought, iterative refinement</td></tr>
+  <tr><td><strong>Reasoning</strong></td><td>Logical inference, evidence evaluation</td><td>Deductive, abductive, analogical, causal reasoning patterns</td></tr>
+  <tr><td><strong>Tool Use</strong></td><td>External API calls, code execution, search</td><td>Single-tool, multi-tool orchestration, tool-augmented reasoning</td></tr>
+  <tr><td><strong>Memory</strong></td><td>Context management, history retrieval</td><td>Short-term buffer, long-term retrieval, episodic + semantic stores</td></tr>
+</table>
+
+<h3>3.1 Evolutionary Module Recombination</h3>
+<p>AgentSquare employs a <strong>genetic-algorithm-inspired</strong> approach where each agent is represented as a genotype of four module slots. The evolutionary operators are:</p>
+<ul>
+<li><strong>Mutation:</strong> Random modification of a single module (e.g., swapping a planning strategy)</li>
+<li><strong>Crossover:</strong> Combining modules from two parent agents into a new child</li>
+<li><strong>Selection:</strong> Tournament selection based on benchmark performance</li>
+</ul>
+
+<h3>3.2 In-Context Surrogate Models</h3>
+<p>A key innovation in AgentSquare is the use of <strong>in-context surrogate models</strong> for performance prediction. Instead of evaluating every candidate agent on the full benchmark suite (which is computationally expensive), AgentSquare trains the LLM to predict agent performance from the module descriptions alone. This surrogate model serves as a cheap proxy for the actual evaluator, enabling the evolutionary search to explore a larger fraction of the design space per compute budget. The surrogate is updated iteratively as ground-truth performance data accumulates, creating a feedback loop between predicted and actual performance.</p>
+
+<h3>3.3 Empirical Results</h3>
+<p>AgentSquare demonstrates a <strong>17.2% average performance gain</strong> over hand-crafted agents across the GAIA benchmark suite. More importantly, the discovered agents exhibit <strong>cross-domain transferability</strong>: agents optimized for coding tasks show improved performance on scientific reasoning and mathematical problem-solving, suggesting that the evolutionary process discovers general architectural principles rather than domain-specific heuristics.</p>
+
+<h2>4. Critique: Inefficiencies of Meta Agents</h2>
+
+<p>The work "Inefficiencies of Meta Agents for Agent Design" (arXiv:2510.06711) provides a rigorous critical analysis of the ADAS paradigm, identifying several fundamental limitations:</p>
+
+<p><strong>Finding 1: Evolutionary > Context Expansion.</strong> The authors demonstrate that evolutionary search (as in AgentSquare) is more sample-efficient than simply expanding the context window of the meta-agent with more archive examples. This suggests that the meta-agent's ability to generalize from past discoveries has a fundamental ceiling — adding more examples to the prompt yields diminishing returns, while structured evolutionary operations maintain search efficiency.</p>
+
+<p><strong>Finding 2: Low Behavioral Diversity.</strong> Meta agents tend to converge on a narrow set of behavioral patterns. Despite the Turing-complete search space, the meta-agent's generation process is biased by the foundation model's training distribution, producing candidates that cluster around familiar architectural motifs. This "mode collapse" is analogous to the diversity collapse observed in GAN training.</p>
+
+<p><strong>Finding 3: Economic Viability Threshold.</strong> The analysis estimates that ADAS requires <strong>15,000+ evaluation examples</strong> to achieve economically viable improvements over manual design. Below this threshold, the computational cost of running the search (meta-agent inference + candidate evaluation) exceeds the cost of a skilled engineer manually designing the agent. This has significant implications for production deployment: ADAS is currently viable only for organizations with large-scale agent fleets where the amortized design cost per agent is justified.</p>
+
+<h2>5. MASPOB: Bandit-Based Prompt Optimization</h2>
+
+<p>MASPOB (Multi-Agent System Prompt Optimization via Bandits, arXiv:2603.02630) addresses three critical challenges in optimizing multi-agent systems:</p>
+
+<p><strong>Sample Efficiency.</strong> Multi-agent systems have combinatorially large configuration spaces (each agent's prompt × each agent's role × the communication topology). MASPOB uses multi-armed bandit algorithms to efficiently explore this space, treating each configuration as an "arm" and allocating evaluation budget to the most promising configurations using upper confidence bound (UCB) exploration.</p>
+
+<p><strong>Topology Coupling.</strong> In MAS, the performance of one agent depends on the behavior of others — the agents are coupled through their interactions. MASPOB models this coupling explicitly, recognizing that optimizing agent A's prompt in isolation may be suboptimal when agent B's behavior changes. The bandit framework naturally handles this by treating the joint configuration as the decision unit.</p>
+
+<p><strong>Combinatorial Explosion.</strong> For a system with N agents, each with K possible prompt configurations, the search space is K^N. MASPOB employs a <strong>hierarchical decomposition</strong> that optimizes individual agent prompts within a fixed topology first, then searches over topologies, reducing the effective search space from exponential to polynomial.</p>
+
+      </div>
+    </div>
+
+    <!-- ==================== PART II: MAS ALGORITHMS DEEP ANALYSIS ==================== -->
+    <div class="section">
+      <div class="section-label">Part II — MAS Algorithms Deep Analysis</div>
+      <div class="special-content">
+
+<h2>1. LLM Integration in MAS Topologies</h2>
+
+<h3>1.1 Role Specialization Patterns</h3>
+<p>The integration of LLMs into multi-agent systems has produced several distinct role specialization patterns. The survey by Chen et al. (arXiv:2412.17481) identifies three primary architectures:</p>
+
+<p><strong>Hierarchical Decomposition.</strong> A "manager" agent decomposes tasks and delegates subtasks to "worker" agents. Each worker has a specialized role (e.g., code writer, tester, reviewer). The manager monitors progress and handles inter-worker coordination. This mirrors the organizational structure of software engineering teams and is the dominant pattern in MetaGPT and ChatDev.</p>
+
+<p><strong>Peer-to-Peer Collaboration.</strong> Agents interact as equals, each contributing their expertise to a shared problem. Debate-based systems (Du et al., 2023) exemplify this pattern: multiple agents independently solve a problem, then critique each other's solutions until consensus emerges. The advantage is robustness to individual agent failures; the disadvantage is the communication overhead grows quadratically with agent count.</p>
+
+<p><strong>Hub-and-Spoke Orchestration.</strong> A central orchestrator agent maintains a global state and routes subtasks to specialized agents on demand. The orchestrator decides which agent to invoke, when to aggregate results, and when to terminate. This is the pattern adopted by production systems like OpenAI Codex and Anthropic Claude Code, where the LLM serves as the central decision-making hub coordinating tool use, code generation, and verification.</p>
+
+<h3>1.2 Distributed Reasoning Architectures</h3>
+<p>Beyond role specialization, LLM-based MAS enable distributed reasoning patterns that have no direct analog in classical multi-agent systems:</p>
+
+<p><strong>Chain-of-Thought Distribution.</strong> Different agents handle different reasoning steps in a chain. For example, Agent 1 performs problem decomposition, Agent 2 generates intermediate inferences, Agent 3 validates logical consistency, and Agent 4 produces the final answer. This "reasoning pipeline" distributes the cognitive load across multiple models, potentially enabling specialization in different reasoning modalities (e.g., one model optimized for mathematical reasoning, another for natural language understanding).</p>
+
+<p><strong>Ensemble Reasoning.</strong> Multiple agents independently solve the same problem, and a meta-agent aggregates results through voting, averaging, or learned selection. This leverages the "wisdom of crowds" effect observed in LLM ensembles, where diversity of reasoning paths increases the probability of finding correct solutions.</p>
+
+<h3>1.3 Simulation Frameworks</h3>
+<p>Two notable simulation frameworks have emerged for studying LLM-based MAS dynamics:</p>
+
+<p><strong>AgentVerse</strong> provides a configurable environment for simulating multi-agent interactions with controllable agent populations, communication topologies, and task environments. It enables systematic study of emergent behaviors — phenomena like cooperation, competition, and information cascading — as a function of system parameters.</p>
+
+<p><strong>Generative Agents</strong> (Park et al.) demonstrates that LLM-based agents with persistent memory can exhibit socially plausible behaviors in simulated environments, including relationship formation, information diffusion, and collective decision-making. The key architectural insight is the separation of <em>observation</em> (perceiving the environment), <em>reflection</em> (abstracting from observations), and <em>planning</em> (generating future actions) into distinct cognitive modules.</p>
+
+<h2>2. Collaboration Mechanisms Taxonomy</h2>
+
+<h3>2.1 Multi-Stage Pipeline</h3>
+<p>The simplest collaboration paradigm is the <strong>serial pipeline</strong>, where agents process a task in a fixed sequence. Each agent receives the output of the previous agent and produces input for the next. This pattern is effective for tasks that naturally decompose into sequential stages (e.g., requirements → design → implementation → testing → deployment). The pipeline's simplicity enables straightforward error handling (each stage can validate its inputs) and performance optimization (stages can be parallelized across independent subtasks).</p>
+
+<p>The ChatDev 2.0 framework exemplifies this pattern with its "virtual software company" architecture: a CEO agent initiates projects, a CTO agent designs architecture, programmer agents write code, and tester agents verify. The pipeline is configurable through YAML files, making it accessible to non-developers.</p>
+
+<h3>2.2 Collective Decision-Making</h3>
+<p><strong>Debate-based systems</strong> employ multiple agents arguing for different positions, with a judge agent (or majority vote) determining the consensus. This approach has been shown to reduce hallucination rates by 15-30% compared to single-agent baselines, as the adversarial dynamic forces agents to justify their claims.</p>
+
+<p><strong>Voting mechanisms</strong> extend debate to more formal aggregation: each agent produces a solution, and the system selects the solution with the most support. Variants include weighted voting (where agents with better track records receive higher weights) and liquid democracy (where agents can delegate their vote to more capable agents).</p>
+
+<p><strong>Consensus protocols</strong> go further, requiring all agents to converge on a single answer through iterative negotiation. This is computationally expensive but produces the highest-quality outputs for high-stakes decisions.</p>
+
+<h3>2.3 Self-Refine Framework</h3>
+<p>The self-refine paradigm treats a single agent (or the system as a whole) as both the generator and critic of its own output. The agent produces an initial solution, critiques it against defined criteria, and iteratively improves until convergence or a budget limit. When applied in multi-agent settings, different agents can serve as specialized critics (e.g., a "security reviewer" agent, a "performance reviewer" agent, a "correctness reviewer" agent), each providing feedback from their domain of expertise.</p>
+
+<h3>2.4 Communication Content: Natural Language vs. Custom Protocols</h3>
+<p>A critical design decision in MAS is the format of inter-agent communication. <strong>Natural language</strong> communication (as used in AutoGen, CrewAI) is flexible and human-interpretable but verbose and ambiguous. <strong>Structured protocols</strong> (JSON schemas, function signatures) are precise but less flexible. Production systems are converging on a <strong>hybrid approach</strong>: natural language for high-level reasoning and coordination, structured protocols for data exchange and tool invocations.</p>
+
+<h2>3. Multi-Agent Deep Reinforcement Learning (MADRL) Advances</h2>
+
+<h3>3.1 Partial Observability Resolution</h3>
+<p>In LLM-based MAS, each agent typically has access only to its local context (its own history and received messages). This partial observability creates information asymmetries that can lead to suboptimal collective behavior. MADRL approaches address this through: (a) <strong>attention-based message aggregation</strong>, where agents learn to extract relevant information from partial histories; (b) <strong>shared belief states</strong>, where a centralized critic maintains a global representation that is distilled into local observations; and (c) <strong>communication learning</strong>, where agents learn what information to share and when.</p>
+
+<h3>3.2 Dynamic Communication Protocols</h3>
+<p>Static communication topologies (e.g., all-to-all, ring, tree) are insufficient for LLM-based MAS where the optimal communication structure depends on the task. MADRL enables agents to learn: <strong>when to communicate</strong> (sparse communication reduces overhead), <strong>whom to communicate with</strong> (targeted communication is more informative than broadcast), and <strong>what to communicate</strong> (compressing information to relevant content). Leader-follower topologies emerge naturally when some agents are consistently more informative than others.</p>
+
+<h3>3.3 Credit Assignment: Token-Level to Team-Level</h3>
+<p>One of the most challenging problems in MADRL for LLM-based MAS is credit assignment — determining which agent's contribution led to a successful (or failed) outcome. The 2026 survey identifies a spectrum of credit assignment granularities:</p>
+
+<ul>
+<li><strong>Token-level:</strong> Attributing outcome quality to individual tokens generated by specific agents (finest granularity, but requires per-token reward models)</li>
+<li><strong>Turn-level:</strong> Attributing outcomes to individual agent interactions (medium granularity, used in debate-based systems)</li>
+<li><strong>Task-level:</strong> Attributing outcomes to the overall system configuration (coarsest granularity, simplest to implement)</li>
+<li><strong>Team-level:</strong> Attributing outcomes to collaborative subgroups (used in hierarchical MAS where teams of agents handle subtasks)</li>
+</ul>
+
+<h3>3.4 Eight Reward Families for Orchestration</h3>
+<p>The orchestration traces survey (arXiv:2605.02801) identifies eight reward signal families that can be used to train MAS orchestration policies:</p>
+
+<table>
+  <tr><th>#</th><th>Reward Family</th><th>Source</th><th>Granularity</th></tr>
+  <tr><td>1</td><td><strong>Task Completion</strong></td><td>Final answer correctness</td><td>Binary or continuous</td></tr>
+  <tr><td>2</td><td><strong>Process Quality</strong></td><td>Reasoning chain validity</td><td>Step-level</td></tr>
+  <tr><td>3</td><td><strong>Efficiency</strong></td><td>Token usage, latency</td><td>System-level</td></tr>
+  <tr><td>4</td><td><strong>Collaboration Quality</strong></td><td>Information exchange utility</td><td>Interaction-level</td></tr>
+  <tr><td>5</td><td><strong>Robustness</strong></td><td>Performance under perturbation</td><td>System-level</td></tr>
+  <tr><td>6</td><td><strong>Safety</strong></td><td>Harmful output prevention</td><td>Output-level</td></tr>
+  <tr><td>7</td><td><strong>Alignment</strong></td><td>Conformity to guidelines</td><td>Output-level</td></tr>
+  <tr><td>8</td><td><strong>User Satisfaction</strong></td><td>Human feedback signals</td><td>Session-level</td></tr>
+</table>
+
+<h2>4. Orchestration Traces: The Five Sub-Decisions</h2>
+
+<p>The 2026 survey on RL for LLM-based MAS through orchestration traces (arXiv:2605.02801) provides the most comprehensive formalization of the MAS orchestration problem. It decomposes the orchestrator's role into five interdependent sub-decisions:</p>
+
+<p><strong>Sub-Decision 1: When to Spawn.</strong> The orchestrator must determine whether the current task requires additional agents or can be handled by existing ones. This is a resource allocation problem with implications for latency (spawning is expensive) and capability (more agents may enable better solutions). The optimal spawning policy depends on task complexity, current agent utilization, and the diminishing returns of additional parallelism.</p>
+
+<p><strong>Sub-Decision 2: Whom to Delegate To.</strong> Given a set of available agents, the orchestrator must select the most appropriate agent(s) for each subtask. This is a routing problem that requires maintaining estimates of each agent's capabilities, current workload, and historical performance on similar tasks. In production systems, this is often implemented as a semantic router that matches task embeddings to agent capability descriptions.</p>
+
+<p><strong>Sub-Decision 3: How to Communicate.</strong> The orchestrator must determine the communication format, channel, and content for each inter-agent message. This includes decisions about: message verbosity (full context vs. compressed summaries), communication timing (synchronous vs. asynchronous), and communication topology (direct vs. through the orchestrator).</p>
+
+<p><strong>Sub-Decision 4: How to Aggregate.</strong> When multiple agents produce partial results, the orchestrator must combine them into a coherent output. Aggregation strategies range from simple (majority vote, concatenation) to sophisticated (learned fusion, debate-and-judge). The choice depends on the degree of overlap between agent outputs and the cost of conflict resolution.</p>
+
+<p><strong>Sub-Decision 5: When to Stop.</strong> The orchestrator must determine when the system's output is "good enough" or when further computation yields diminishing returns. This is essentially a <strong>halting problem</strong> with no optimal solution in general, requiring heuristics based on output stability (convergence of answers across iterations), resource budgets (token/latency limits), and quality thresholds (passing verification tests).</p>
+
+<h2>5. Industrial Evidence: Production MAS Deployments</h2>
+
+<p><strong>Kimi Agent Swarm (Moonshot AI).</strong> Kimi's agent swarm architecture deploys hundreds of specialized agents in parallel, each handling different aspects of user queries (web search, document analysis, code execution, creative writing). The system employs a hub-and-spoke orchestration with a routing agent that classifies incoming requests and dispatches them to appropriate agent clusters. The key engineering challenge is maintaining consistency across agents that may share context.</p>
+
+<p><strong>OpenAI Codex.</strong> Codex operates as a single-agent system with extensive tool use, but its architecture reveals MAS principles: the agent maintains a planning module (task decomposition), an execution module (code generation and testing), and a verification module (result validation). The "conversation" between these modules effectively creates an implicit multi-agent system, where different cognitive functions compete and cooperate within a single LLM call chain.</p>
+
+<p><strong>Anthropic Claude Code.</strong> Claude Code extends the single-agent paradigm with a structured tool ecosystem that functions as a virtual agent team. Each tool (file editor, terminal, web search, browser) operates semi-autonomously, with the LLM serving as the orchestrator. The system's performance on SWE-bench and similar benchmarks demonstrates that this "tools as agents" pattern can rival explicit multi-agent architectures for software engineering tasks.</p>
+
+      </div>
+    </div>
+
+    <!-- ==================== PART III: CONVERGENCE AND PRACTICAL IMPLEMENTATION ==================== -->
+    <div class="section">
+      <div class="section-label">Part III — Convergence and Practical Implementation</div>
+      <div class="special-content">
+
+<h2>1. How ADAS and MAS Converge</h2>
+
+<p>The convergence of ADAS and MAS manifests in three concrete ways:</p>
+
+<p><strong>ADAS designs MAS configurations.</strong> The meta-agent in ADAS can generate not just single-agent architectures but entire multi-agent systems. The search space includes agent-to-agent communication protocols, delegation hierarchies, and aggregation strategies. This means ADAS is a tool for <em>automated MAS engineering</em> — discovering optimal multi-agent topologies for specific task domains.</p>
+
+<p><strong>MAS provides the fitness evaluation for ADAS.</strong> Multi-agent evaluation environments (where multiple agents collaborate or compete on complex tasks) provide richer fitness signals for ADAS than single-agent benchmarks. A candidate agent's ability to integrate into an existing multi-agent system — to communicate effectively, to complement other agents' capabilities, to avoid redundancy — is a dimension of quality that single-agent evaluation cannot capture.</p>
+
+<p><strong>Orchestration traces bridge the gap.</strong> The orchestration traces framework (arXiv:2605.02801) provides the formal machinery to represent MAS configurations as data structures amenable to optimization. By encoding the five sub-decisions (spawn, delegate, communicate, aggregate, stop) as learnable policies, orchestration traces make MAS configurations accessible to ADAS-style search. This creates a closed loop: ADAS discovers orchestration policies, MAS evaluates them, and the results feed back into ADAS.</p>
+
+<h2>2. Framework Comparison</h2>
+
+<div class="table-wrapper">
+<table>
+  <tr>
+    <th>Framework</th>
+    <th>Architecture</th>
+    <th>Paradigm</th>
+    <th>Open Source</th>
+    <th>Production Ready</th>
+  </tr>
+  <tr>
+    <td><strong>LangGraph</strong></td>
+    <td>State graph (nodes = agents/functions, edges = conditional transitions)</td>
+    <td>Low-level orchestration with fine-grained control flow</td>
+    <td>Yes</td>
+    <td>Yes — Klarna, Replit, LinkedIn</td>
+  </tr>
+  <tr>
+    <td><strong>CrewAI</strong></td>
+    <td>Role-based (agents with roles, goals, backstories)</td>
+    <td>Multi-agent crews with hierarchical or sequential task execution</td>
+    <td>Yes</td>
+    <td>Yes — cloud deployment, enterprise tier</td>
+  </tr>
+  <tr>
+    <td><strong>AutoGen</strong></td>
+    <td>Conversational (agents communicate via message passing)</td>
+    <td>Multi-agent debate and collaborative problem-solving</td>
+    <td>Yes → Maintenance mode</td>
+    <td>Migrating to Microsoft Agent Framework</td>
+  </tr>
+  <tr>
+    <td><strong>MetaGPT / MGX</strong></td>
+    <td>SOP-based (Standard Operating Procedures define agent workflows)</td>
+    <td>Virtual software company with defined roles (PM, architect, engineer, QA)</td>
+    <td>Yes</td>
+    <td>Yes — mgx.dev production service</td>
+  </tr>
+  <tr>
+    <td><strong>ChatDev 2.0</strong></td>
+    <td>Zero-code (YAML config files, visual editor)</td>
+    <td>Config-driven multi-agent with role templates</td>
+    <td>Yes</td>
+    <td>Yes — simplified deployment</td>
+  </tr>
+  <tr>
+    <td><strong>Semantic Router DSL</strong></td>
+    <td>Declarative (DSL → inference routing rules)</td>
+    <td>Per-request routing to optimal model/agent</td>
+    <td>—</td>
+    <td>Yes — production LLM routing</td>
+  </tr>
+</table>
+</div>
+
+<h3>2.1 Framework Selection Criteria</h3>
+<p>The choice of framework depends on the deployment context and engineering maturity:</p>
+
+<p><strong>LangGraph</strong> is preferred when developers need maximum control over agent execution flow. Its state-graph paradigm allows explicit modeling of conditional transitions, loops, and parallel execution paths. This makes it suitable for complex workflows where the orchestration logic cannot be expressed as a simple pipeline. The trade-off is higher implementation complexity — developers must design the graph structure themselves.</p>
+
+<p><strong>CrewAI</strong> is preferred when the use case maps naturally to a team of specialists with defined roles. Its role-based abstraction (each agent has a role, goal, and backstory) provides a higher-level interface that reduces implementation time. The cloud deployment option eliminates infrastructure management concerns.</p>
+
+<p><strong>MetaGPT/MGX</strong> is preferred for software engineering workflows where the SOP-based architecture provides natural alignment with software development processes. The mgx.dev production service demonstrates that this paradigm can scale to enterprise workloads.</p>
+
+<p><strong>Semantic Router DSL</strong> is preferred for production LLM inference routing where the primary concern is latency and cost optimization rather than complex multi-agent collaboration. Its declarative approach enables operations teams to modify routing rules without code changes.</p>
+
+<h2>3. SRE Perspective: Production Considerations</h2>
+
+<h3>3.1 Observability</h3>
+<p>Operating MAS in production requires comprehensive observability across multiple dimensions:</p>
+
+<p><strong>Orchestration Flow Tracing.</strong> Every inter-agent interaction must be logged with timestamps, agent identifiers, message content, and latency metrics. The OpenTelemetry framework provides a natural fit, with custom span attributes for agent-specific metrics (tokens consumed, tools invoked, reasoning steps). The key challenge is that MAS generates far more trace data than single-agent systems — a 10-agent system with all-to-all communication produces O(N²) traces per task, compared to O(N) for independent agents.</p>
+
+<p><strong>Token-Level Metrics.</strong> For cost management and performance optimization, organizations must track token consumption per agent, per task type, and per orchestration pattern. This enables identification of inefficient communication patterns (e.g., agents exchanging redundant information) and optimization of prompt engineering to reduce token overhead.</p>
+
+<p><strong>Anomaly Detection.</strong> MAS introduces new failure modes that single-agent systems don't exhibit: communication loops (agents sending messages back and forth without progress), information cascading (errors propagating through the agent network), and deadlocks (agents waiting for each other indefinitely). Monitoring systems must detect these patterns and trigger circuit breakers.</p>
+
+<h3>3.2 Scalability</h3>
+<p><strong>Parallel Agent Execution.</strong> Modern orchestration frameworks support concurrent agent execution, but resource management becomes critical. Each agent typically requires an LLM inference call, and with token-per-second pricing, uncontrolled parallelism can cause exponential cost growth. Production deployments require: (a) concurrency limits per agent pool; (b) priority queues for high-importance tasks; (c) resource budgets per workflow; and (d) automatic scaling based on queue depth and latency SLAs.</p>
+
+<p><strong>State Management.</strong> MAS state is distributed across multiple agents, each maintaining its own context window. Synchronizing state across agents — particularly for shared memory systems — requires careful engineering. The choice between centralized state (a single shared store) and decentralized state (each agent maintains its own, synchronized via messages) involves trade-offs between consistency and latency.</p>
+
+<h3>3.3 Security</h3>
+<p>Cisco's "Integrated AI Security and Safety Framework" (arXiv:2512.12921) provides a comprehensive taxonomy of attack surfaces in AI agent systems. For MAS specifically, the framework identifies:</p>
+
+<p><strong>Inter-Agent Injection Attacks.</strong> A malicious or compromised agent can inject adversarial messages into the agent network, influencing the behavior of other agents. This is analogous to data poisoning in distributed ML but operates at the semantic level. Mitigations include message authentication, content filtering, and trust-weighted aggregation.</p>
+
+<p><strong>Orchestration Manipulation.</strong> An attacker who can influence the orchestrator's routing decisions can direct tasks to compromised agents, bypass security checks, or prevent legitimate agents from receiving tasks. This requires securing the orchestration layer with access controls, audit logging, and anomaly detection.</p>
+
+<p><strong>Data Exfiltration via Agent Communication.</strong> In systems where agents handle sensitive data, inter-agent communication channels can be exploited to exfiltrate information. The Cisco framework recommends implementing data loss prevention (DLP) policies at the agent communication layer, with automatic redaction of sensitive content from inter-agent messages.</p>
+
+<h3>3.4 Declarative Orchestration: PayPal's Approach</h3>
+<p>PayPal's "Declarative LLM Agent Orchestration" (arXiv:2512.19769) presents a production-proven approach to managing MAS at scale:</p>
+
+<p><strong>DSL → Kubernetes Artifacts.</strong> Orchestration workflows are defined in a domain-specific language (DSL) that abstracts away infrastructure concerns. The DSL compiler translates workflow definitions into Kubernetes-native artifacts: Deployment objects for agent pods, Services for inter-agent communication, ConfigMaps for agent configurations, and NetworkPolicies for communication access control.</p>
+
+<p><strong>Infrastructure as Code for MAS.</strong> The DSL approach ensures that MAS configurations are version-controlled, testable, and reproducible. Changes to orchestration logic follow the same CI/CD pipeline as application code, with automated testing of workflow behavior before deployment. This addresses a critical gap in current MAS frameworks, where orchestration logic is typically embedded in application code and difficult to manage operationally.</p>
+
+<p><strong>NetworkPolicy for Agent Isolation.</strong> By generating Kubernetes NetworkPolicies from DSL specifications, PayPal ensures that agents can only communicate with authorized peers. This provides defense-in-depth: even if an agent is compromised, the network policy prevents it from communicating with unauthorized agents or accessing restricted resources.</p>
+
+      </div>
+    </div>
+
+    <!-- ==================== REFERENCES ==================== -->
+    <div class="section">
+      <div class="section-label">References</div>
+      <div class="special-content ref-section">
+
+<h2>Primary Sources</h2>
+
+<ol>
+<li>Hu, S., Lu, C., Clune, J. "Automated Design of Agentic Systems." <em>ICLR 2025</em>. <a href="https://arxiv.org/abs/2408.08435">arXiv:2408.08435</a> — Foundational ADAS paper introducing Meta Agent Search.</li>
+
+<li>Shang, Y. et al. "AgentSquare: Automatic LLM Agent Search in Modular Design Space." <em>ICLR 2025</em>. <a href="https://arxiv.org/abs/2410.06153">arXiv:2410.06153</a> — Modular evolutionary agent design with 4 canonical modules.</li>
+
+<li>"Inefficiencies of Meta Agents for Agent Design." <a href="https://arxiv.org/abs/2510.06711">arXiv:2510.06711</a> — Critical analysis of ADAS limitations including diversity collapse and economic viability thresholds.</li>
+
+<li>"MASPOB: Multi-Agent System Prompt Optimization via Bandits." <a href="https://arxiv.org/abs/2603.02630">arXiv:2603.02630</a> — Bandit-based approach to MAS prompt optimization addressing sample efficiency and topology coupling.</li>
+
+<li>"Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces." <a href="https://arxiv.org/abs/2605.02801">arXiv:2605.02801</a> — 2026 survey formalizing the five sub-decisions of MAS orchestration and eight reward families.</li>
+
+<li>Chen, S. et al. "A Survey on LLM-based Multi-Agent System: Recent Advances and New Frontiers in Application." <a href="https://arxiv.org/abs/2412.17481">arXiv:2412.17481</a> — Comprehensive survey of LLM-based MAS architectures and applications.</li>
+
+<li>"A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges." <em>Springer 2024</em>. <a href="https://link.springer.com/article/10.1007/s44336-024-00009-2">Springer Link</a> — Infrastructure-focused survey covering deployment challenges.</li>
+
+<li>"Declarative LLM Agent Orchestration." <a href="https://arxiv.org/abs/2512.19769">arXiv:2512.19769</a> — PayPal's DSL-based approach to production MAS orchestration on Kubernetes.</li>
+
+<li>Cisco "Integrated AI Security and Safety Framework." <a href="https://arxiv.org/abs/2512.12921">arXiv:2512.12921</a> — Attack surface taxonomy and security framework for AI agent systems.</li>
+
+<li>"Semantic Router DSL for Production LLM Inference Routing." <a href="https://arxiv.org/abs/2603.27299">arXiv:2603.27299</a> — Declarative routing for production LLM inference systems.</li>
+</ol>
+
+<h2>GitHub Repositories</h2>
+
+<ul>
+<li><strong>ADAS (Meta Agent Search):</strong> <a href="https://github.com/ShengranHu/ADAS">github.com/ShengranHu/ADAS</a></li>
+<li><strong>AutoGen (Microsoft):</strong> <a href="https://github.com/microsoft/autogen">github.com/microsoft/autogen</a></li>
+<li><strong>CrewAI:</strong> <a href="https://github.com/crewAIInc/crewAI">github.com/crewAIInc/crewAI</a></li>
+<li><strong>LangGraph (LangChain):</strong> <a href="https://github.com/langchain-ai/langgraph">github.com/langchain-ai/langgraph</a></li>
+<li><strong>MetaGPT:</strong> <a href="https://github.com/geekan/MetaGPT">github.com/geekan/MetaGPT</a></li>
+<li><strong>ChatDev:</strong> <a href="https://github.com/OpenBMB/ChatDev">github.com/OpenBMB/ChatDev</a></li>
+</ul>
+
+<hr>
+
+<p style="font-size: 12px; color: var(--on-surface-variant); margin-top: 32px; opacity: 0.7;">This report was compiled on 08 June 2026 by the AI Research Intelligence team. All cited papers are from peer-reviewed venues (ICLR 2025, Springer 2024) or published on arXiv with version stamps. Framework assessments reflect publicly available information as of the report date. No proprietary or confidential data was used in this analysis.</p>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+  </script>
+</body>
+</html>
