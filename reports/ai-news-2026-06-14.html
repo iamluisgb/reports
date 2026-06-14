@@ -3,338 +3,227 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The AI Briefing — 14 June 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #0d1117;
-    --surface: #161b22;
-    --border: #30363d;
-    --text: #e6edf3;
-    --text-secondary: #8b949e;
-    --accent: #58a6ff;
-    --accent-green: #3fb950;
-    --accent-orange: #d29922;
-    --accent-purple: #bc8cff;
-    --accent-red: #f85149;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Inter', -apple-system, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    padding: 0;
-  }
-  .page {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 32px 20px;
-  }
-  .back-link {
-    display: inline-block;
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-size: 14px;
-    margin-bottom: 24px;
-    font-weight: 500;
-  }
-  .back-link:hover { color: var(--accent); }
-  .header {
-    margin-bottom: 40px;
-  }
-  .header h1 {
-    font-size: 36px;
-    font-weight: 800;
-    letter-spacing: -1px;
-    line-height: 1.2;
-    margin-bottom: 8px;
-  }
-  .header h1 em { color: var(--accent); font-style: normal; }
-  .date-line {
-    color: var(--text-secondary);
-    font-size: 15px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-  .date-line .tag {
-    display: inline-block;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 2px 12px;
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--accent);
-  }
-  .theme-toggle {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    color: var(--text-secondary);
-    padding: 6px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 500;
-    margin-left: auto;
-  }
-  .theme-toggle:hover { border-color: var(--accent); color: var(--text); }
-  .section {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 24px;
-    margin-bottom: 24px;
-  }
-  .section h2 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--border);
-    letter-spacing: -0.3px;
-  }
-  .news-item {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(48,54,61,0.5);
-  }
-  .news-item:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-  }
-  .item-number {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--accent);
-    min-width: 28px;
-    line-height: 1.6;
-  }
-  .item-content h3 {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 6px;
-    line-height: 1.4;
-  }
-  .item-content p {
-    font-size: 14px;
-    color: var(--text-secondary);
-    line-height: 1.6;
-  }
-  .source {
-    display: block;
-    font-size: 12px;
-    color: var(--accent-green);
-    margin-top: 6px;
-    font-weight: 500;
-  }
-  .follow-item {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 16px;
-    align-items: flex-start;
-  }
-  .follow-item:last-child { margin-bottom: 0; }
-  .bullet {
-    color: var(--accent-orange);
-    font-size: 16px;
-    line-height: 1.6;
-    min-width: 16px;
-  }
-  .follow-item p {
-    font-size: 14px;
-    color: var(--text-secondary);
-    line-height: 1.6;
-  }
-  .footer {
-    text-align: center;
-    padding: 32px 0;
-    color: var(--text-secondary);
-    font-size: 13px;
-    border-top: 1px solid var(--border);
-    margin-top: 8px;
-  }
-  .footer a {
-    color: var(--accent);
-    text-decoration: none;
-  }
-  @media (max-width: 600px) {
-    .page { padding: 20px 16px; }
-    .header h1 { font-size: 28px; }
-    .section { padding: 16px; }
-    .news-item { gap: 12px; }
-  }
-</style>
+<title>AI News Daily — 14 Jun 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-<div class="page">
-  <a class="back-link" href="https://iamluisgb.github.io/reports/">← Back to Reports</a>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">14 Jun 2026 · Sunday</div>
+          <div class="subtitle">KPMG Pulls AI Report on Hallucinations · Rio LLM Provenance Drama · ArXiv Agent Surge</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
 
-  <div class="header">
-    <h1>The <em>AI</em> Briefing</h1>
-    <div class="date-line">
-      <span>Saturday, 14 June 2026</span>
-      <span class="tag">Daily Report</span>
-      <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">KPMG pulls report on AI usage due to apparent hallucinations</div>
+        <div class="desc">KPMG retracted an AI-focused report after discovering hallucinated citations and fabricated data points, raising questions about AI trust in consulting.</div>
+        <div class="sources"><a href="https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/">TechCrunch</a> · <a href="https://news.ycombinator.com/item?id=48527297">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Rio de Janeiro&rsquo;s &ldquo;homegrown&rdquo; LLM is a merge of an existing model — and still beats Qwen3.7</div>
+        <div class="desc">Rio&rsquo;s city government claimed a proprietary LLM, but the model appears to be a merge of existing open models. Despite the controversy, it outperforms Qwen3.7 in local benchmarks. Provenance matters.</div>
+        <div class="sources"><a href="https://github.com/nex-agi/Nex-N2/issues/4">GitHub Issue</a> · <a href="https://twitter.com/zenmagnets/status/2065796012820848699">Twitter</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">AI is code and can&rsquo;t be prompted into being smarter</div>
+        <div class="desc">The Register argues that treating AI as a promptable oracle obscures its fundamental nature as deterministic code. A call for engineering rigor over mysticism.</div>
+        <div class="sources"><a href="https://www.theregister.com/ai-and-ml/2026/06/14/ai-is-code-and-cant-be-prompted-into-being-smarter/">The Register</a> · <a href="https://news.ycombinator.com/item?id=48529112">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">No, everyone is not using AI for everything</div>
+        <div class="desc">Gabriel Weinberg (DuckDuckGo CEO) pushes back on the hype, citing data showing most people are consuming AI-like content, not actively using AI tools.</div>
+        <div class="sources"><a href="https://gabrielweinberg.com/p/people-are-consuming-ai-like-they">Blog</a> · <a href="https://news.ycombinator.com/item?id=48527700">HN</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Don&rsquo;t trust large context windows</div>
+        <div class="desc">An empirical analysis of LLM performance degradation as context windows grow. Models lose recall and accuracy beyond ~32K tokens, challenging the &lsquo;infinite context&rsquo; narrative.</div>
+        <div class="sources"><a href="https://garrit.xyz/posts/2026-05-06-dont-trust-large-context-windows">Blog</a> · <a href="https://news.ycombinator.com/item?id=48524620">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Dual YOLOv8n UAV Detection on RK3588S at 42 FPS Using NPU</div>
+        <div class="desc">Real-time UAV detection running on a Rockchip NPU at 42 FPS. Practical edge AI deployment with YOLO and hardware acceleration.</div>
+        <div class="sources"><a href="https://github.com/alebal123bal/khadas_yolov8n_multithread">GitHub</a> · <a href="https://news.ycombinator.com/item?id=48527623">HN Show</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">FTX&rsquo;s former Anthropic stake would be worth $75B at today&rsquo;s valuation</div>
+        <div class="desc">FTX&rsquo;s 2022 investment in Anthropic, seized by DOJ, would now be worth ~$75B — highlighting the insane ROI trajectory of frontier AI investments.</div>
+        <div class="sources"><a href="https://news.ycombinator.com/item?id=48529190">HN</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">SpatialClaw: Rethinking Action Interface for Agentic Spatial Reasoning</div>
+        <div class="desc">A novel action interface for spatial reasoning in AI agents, treating 3D interaction as a learned skill rather than a pipeline of perception-planning-execution. Achieves SOTA on EmbodiedQA.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.13673">arXiv</a> <strong>[Jun 2026]</strong>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Finetuning</div>
+        <div class="desc">Combines RAG with RL finetuning to teach LLMs analogical reasoning. The model retrieves structurally-similar problems and learns to map solutions across domains. Strong gains on GSM8K and MATH.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.13680">arXiv</a> <strong>[Jun 2026]</strong>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Influcoder: Distilling Decoders&rsquo; Gradient Influence Rankings into an Encoder</div>
+        <div class="desc">Distills gradient-based data influence from a large decoder into an efficient encoder for data curation at scale. Enables training data quality filtering without expensive backward passes.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.13668">arXiv</a> <strong>[Jun 2026]</strong>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents</div>
+        <div class="desc">Introduces hyper-tool calls that batch multiple tool invocations into a single planning step, reducing latency by 40% in agentic workflows. Tested on GAIA and ToolBench.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.13663">arXiv</a> <strong>[Jun 2026]</strong>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Recursive Agent Harnesses Recursive LM Calls for Long-Context Reasoning</div>
+        <div class="desc">Shows that structured recursion over model calls outperforms monolithic long-context processing on multi-hop reasoning benchmarks. A practical alternative to context window scaling.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.13643">arXiv</a> <strong>[Jun 2026]</strong>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">Beyond the Commitment Boundary: Probing Epiphenomenal Chain-of-Thought</div>
+        <div class="desc">Investigates whether CoT reasoning is causal or epiphenomenal via intervention experiments. Finds that human-interpretable CoT steps are often post-hoc rationalizations, not actual reasoning traces.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.13603">arXiv</a> <strong>[Jun 2026]</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Caddy compatibility for zeroserve: 3x throughput and 70% lower latency</div>
+        <div class="desc">The zeroserve toolkit now integrates with Caddy as a TLS frontend, delivering 3x throughput improvement and 70% latency reduction over baseline reverse proxy setups.</div>
+        <div class="sources"><a href="https://su3.io/posts/zeroserve-caddy-compat">Blog</a> · <a href="https://news.ycombinator.com/item?id=48527145">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">The only scalable delete in Postgres is DROP TABLE</div>
+        <div class="desc">PlanetScale argues that standard DELETE in Postgres doesn&rsquo;t scale past a few GB due to MVGC overhead, and that DROP TABLE + partition switching is the only viable pattern for large-scale deletions.</div>
+        <div class="sources"><a href="https://planetscale.com/blog/the-only-scalable-delete">PlanetScale</a> · <a href="https://news.ycombinator.com/item?id=48492822">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Linux 7.1 released</div>
+        <div class="desc">Linus Torvalds announced Linux 7.1 with improved scheduler heuristics, better NUMA handling, and new BPF features for observability. The first major release in the 7.x line.</div>
+        <div class="sources"><a href="https://lore.kernel.org/lkml/CAHk-=wi4BF4bMhZNZ1tqs+FFV4OuZRe3ZqdWB+LxRLmRweUzQw@mail.gmail.com/T/#u">LKML</a> · <a href="https://news.ycombinator.com/item?id=48528729">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Free SQL-to-ER diagram tool — runs entirely in the browser, nothing uploaded</div>
+        <div class="desc">A no-server SQL parser that generates ER diagrams client-side. Privacy-first: all parsing happens in-browser, no data leaves your machine.</div>
+        <div class="sources"><a href="https://sqltoerdiagram.com/">App</a> · <a href="https://news.ycombinator.com/item?id=48523992">HN</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Formal Methods and the Future of Programming</div>
+        <div class="desc">Jane Street shares their decade of experience with formal verification in production trading systems. OCaml + Coq for correctness-critical code paths.</div>
+        <div class="sources"><a href="https://blog.janestreet.com/formal-methods-at-jane-street-index/?from_theconsensus=1">Jane Street</a> · <a href="https://news.ycombinator.com/item?id=48526633">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Lisp&rsquo;s Influence on Ruby</div>
+        <div class="desc">Deep analysis of how Lisp&rsquo;s macros, closures, and homoiconicity shaped Ruby&rsquo;s design. Includes Matz&rsquo;s own commentary on Lisp as a primary influence.</div>
+        <div class="sources"><a href="https://blog.tacoda.dev/lisps-influence-on-ruby-6a54f1a7740e">Blog</a> · <a href="https://news.ycombinator.com/item?id=48491048">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Quivers: A year of linear algebra by drawing arrows</div>
+        <div class="desc">Interactive visual exploration of representation theory through quiver diagrams. A pedagogical tool for visualising algebraic structures.</div>
+        <div class="sources"><a href="https://lisyarus.github.io/blog/posts/quivers-a-year-of-linear-algebra-by-drawing-arrows.html">Blog</a> · <a href="https://news.ycombinator.com/item?id=48474982">HN</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>▸ The KPMG hallucination incident confirms that AI-generated content in professional settings requires rigorous human validation — even from the auditors themselves.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>▸ Rio&rsquo;s LLM provenance drama shows that &lsquo;homegrown&rsquo; AI claims are under increasing scrutiny. Model transparency and reproducible benchmarks are becoming regulatory expectations.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>▸ ArXiv is flooded with agentic AI papers — SpatialClaw, HyperTool, Recursive Agents — signaling that 2026 is the year agents move from research demos to production infrastructure.</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">14 Jun 2026</span>
     </div>
   </div>
 
-          <div class="section">
-            <h2>🔴 Headlines</h2>
-                        <div class="news-item">
-              <div class="item-number">01</div>
-              <div class="item-content">
-                <h3>OpenAI bajo investigación de fiscales generales de EE.UU.</h3>
-                <p>Una coalición de fiscales generales estatales — liderada por Nueva York — abrió una investigación masiva contra OpenAI. Sirvieron una citación exigiendo documentos sobre publicidad, datos de menores, manejo de salud, y modelos de deep learning. El movimiento amenaza el roadmap de productos y la IPO de la compañía.</p>
-                <span class="source">Reuters / TechCrunch / Bloomberg — 12-13 Jun</span>
-              </div>
-            </div>
-            <div class="news-item">
-              <div class="item-number">02</div>
-              <div class="item-content">
-                <h3>Trump firma orden ejecutiva sobre IA y seguridad nacional</h3>
-                <p>El presidente Trump firmó el 2 de junio una EO que promueve innovación en IA avanzada y refuerza ciberseguridad federal. Establece plazos de 30 y 60 días para que agencias endurezcan sistemas con defensas potenciadas por IA y crea un marco voluntario para despliegue seguro de modelos frontier.</p>
-                <span class="source">White House — 2 Jun</span>
-              </div>
-            </div>
-            <div class="news-item">
-              <div class="item-number">03</div>
-              <div class="item-content">
-                <h3>DXC Technology y Anthropic sellan alianza global</h3>
-                <p>DXC entrenará a decenas de miles de ingenieros certificados en Claude para integrar IA en sistemas de misión crítica: bancos, aerolíneas, aseguradoras y gobiernos. La alianza multi-anual se apoya en DXC Xponential y su plataforma OASIS, ya desplegada en más de 50 clientes.</p>
-                <span class="source">Anthropic Newsroom / DXC — 11 Jun</span>
-              </div>
-            </div>
-          </div>
-          <div class="section">
-            <h2>🧠 AI / LLM / Agents</h2>
-                        <div class="news-item">
-              <div class="item-number">04</div>
-              <div class="item-content">
-                <h3>Google Cloud Next 2026: nace Gemini Enterprise Agent Platform</h3>
-                <p>Google renombró Vertex AI como Gemini Enterprise Agent Platform, absorbiendo Agentspace en un producto unificado. La keynote incluyó el protocolo A2A, agentes multi-paso, y sesiones de Anthropic sobre cuándo usar (y no) arquitecturas multi-agente.</p>
-                <span class="source">Google Cloud Blog / TNW — May 2026</span>
-              </div>
-            </div>
-            <div class="news-item">
-              <div class="item-number">05</div>
-              <div class="item-content">
-                <h3>Anthropic expande partnership con Google y Broadcom</h3>
-                <p>Anthropic profundiza su colaboración con Google Cloud (más capacidad TPU) y Broadcom para múltiples gigawatts de cómputo de próxima generación. Claude sigue siendo el único modelo frontier disponible en las tres grandes nubes: AWS, GCP y Azure.</p>
-                <span class="source">Anthropic Newsroom — Jun 2026</span>
-              </div>
-            </div>
-            <div class="news-item">
-              <div class="item-number">06</div>
-              <div class="item-content">
-                <h3>Claude Opus 4.7 y la fiabilidad en entredicho</h3>
-                <p>Claude Opus 4.7 acumula cuatro incidentes de fiabilidad en siete días, según reportes en r/ClaudeAI. Anthropic lo promociona como un 14% mejor que Opus 4.6 en workflows multi-paso, pero los errores elevados generan preocupación en producción.</p>
-                <span class="source">AI Weekly / Reddit — Jun 2026</span>
-              </div>
-            </div>
-          </div>
-          <div class="section">
-            <h2>🛠️ Infra / SRE / DevOps</h2>
-                        <div class="news-item">
-              <div class="item-number">07</div>
-              <div class="item-content">
-                <h3>Caddy + zeroserve: 3x throughput, 70% menos latencia</h3>
-                <p>Nueva compatibilidad de Caddy con zeroserve permite multiplicar por 3 el rendimiento y reducir la latencia un 70%. Un avance directo para servir modelos y APIs en edge.</p>
-                <span class="source">HN #8 — su3.io</span>
-              </div>
-            </div>
-            <div class="news-item">
-              <div class="item-number">08</div>
-              <div class="item-content">
-                <h3>Postgres: la única forma escalable de borrar es DROP TABLE</h3>
-                <p>Un análisis de PlanetScale explica por qué DELETE en Postgres no escala — MVVM, vacuum, índices. La solución pasa por particionado y DROP PARTITION o tablas temporales. Relevante para SREs con bases de alta rotación.</p>
-                <span class="source">HN #9 — planetscale.com</span>
-              </div>
-            </div>
-            <div class="news-item">
-              <div class="item-number">09</div>
-              <div class="item-content">
-                <h3>White House EO: implicaciones para infraestructura cloud</h3>
-                <p>La orden ejecutiva del 2 de junio exige a agencias federales adoptar defensas potenciadas por IA y endurecer infraestructura crítica en plazos de 30-60 días. Impacta a proveedores cloud y equipos de SRE que trabajan con el sector público.</p>
-                <span class="source">Hogan Lovells / A&O Shearman</span>
-              </div>
-            </div>
-          </div>
-          <div class="section">
-            <h2>💻 Hacker News</h2>
-                        <div class="news-item">
-              <div class="item-number">10</div>
-              <div class="item-content">
-                <h3>"No, everyone is not using AI for everything"</h3>
-                <p>Gabriel Weinberg (DuckDuckGo) escribe que el bombo mediático infla la adopción real de IA. 185 puntos, 173 comentarios. Un contrapunto necesario al ruido.</p>
-                <span class="source">HN #2 — 185 pts</span>
-              </div>
-            </div>
-            <div class="news-item">
-              <div class="item-number">11</div>
-              <div class="item-content">
-                <h3>Rio de Janeiro: su LLM 'propio' es un merge de otro modelo</h3>
-                <p>La ciudad de Río presentó Rio3.5 como un modelo 'desarrollado localmente', pero la comunidad descubrió que es un merge de modelos existentes (nex-agi). Segundos titulares: Rio3.5 supera a Qwen3.7 en benchmarks.</p>
-                <span class="source">HN #1 / HN #11</span>
-              </div>
-            </div>
-            <div class="news-item">
-              <div class="item-number">12</div>
-              <div class="item-content">
-                <h3>AI boom explicado con 6 gráficos — The Guardian</h3>
-                <p>Gasto en IA creciendo rápido, adopción de consumo acelerándose, pero alarmas de rentabilidad sonando. Un análisis visual del estado actual del boom de IA.</p>
-                <span class="source">The Guardian — 7 Jun</span>
-              </div>
-            </div>
-          </div>
-          <div class="section">
-            <h2>💡 Why It Matters</h2>
-            <div class="follow-item">
-              <span class="bullet">▸</span>
-              <p><strong>Regulación vs innovación:</strong> La investigación a OpenAI y la EO de Trump representan dos polos — escrutinio estatal vs impulso federal. La tensión define el clima regulatorio para el resto de 2026.</p>
-            </div>
-            <div class="follow-item">
-              <span class="bullet">▸</span>
-              <p><strong>Enterprise IA se acelera:</strong> DXC + Anthropic (miles de inges certificados) y Google Cloud Next (plataforma unificada de agentes) apuntan a 2026 como el año de despliegues enterprise reales, no solo PoCs.</p>
-            </div>
-            <div class="follow-item">
-              <span class="bullet">▸</span>
-              <p><strong>Infraestructura como cuello de botella:</strong> La fiabilidad de Claude Opus 4.7 y el análisis de Postgres DELETE recuerdan que el código corre sobre sistemas reales — la excelencia en SRE separa a los que entregan de los que prometen.</p>
-            </div>
-          </div>
-
-  <div class="footer">
-    Curated by <a href="https://x.com/iamluisgb">@iamluisgb</a> · Quirón · 14 June 2026
-  </div>
-</div>
-
 <script>
-function toggleTheme() {
-  const btn = document.querySelector('.theme-toggle');
-  const root = document.documentElement;
-  if (root.style.getPropertyValue('--bg') === '#f5f5f0') {
-    btn.textContent = '◐ DARK';
-    root.style.setProperty('--bg', '#0d1117');
-    root.style.setProperty('--surface', '#161b22');
-    root.style.setProperty('--border', '#30363d');
-    root.style.setProperty('--text', '#e6edf3');
-    root.style.setProperty('--text-secondary', '#8b949e');
-  } else {
-    btn.textContent = '◐ LIGHT';
-    root.style.setProperty('--bg', '#f5f5f0');
-    root.style.setProperty('--surface', '#ffffff');
-    root.style.setProperty('--border', '#e1e4e8');
-    root.style.setProperty('--text', '#1f2328');
-    root.style.setProperty('--text-secondary', '#656d76');
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
   }
-}
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
 </script>
 </body>
 </html>
