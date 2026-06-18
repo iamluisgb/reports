@@ -3,198 +3,209 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI News — Daily Digest — 18 June 2026</title>
-<style>
-:root {
-  --bg: #f5f0eb;
-  --text: #1a1a2e;
-  --accent: #c0392b;
-  --accent2: #e74c3c;
-  --muted: #7f8c8d;
-  --card-bg: #fff;
-  --border: #e0d6ce;
-  --radius: 8px;
-}
-[data-theme="dark"] {
-  --bg: #0d1117;
-  --text: #c9d1d9;
-  --accent: #ff6b6b;
-  --accent2: #ff4757;
-  --muted: #8b949e;
-  --card-bg: #161b22;
-  --border: #30363d;
-}
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-.page { max-width: 720px; margin: 0 auto; padding: 24px 16px; }
-.back-link { margin-bottom: 24px; }
-.back-link a { color: var(--accent); text-decoration: none; font-size: 14px; }
-.header { margin-bottom: 32px; }
-.header h1 { font-size: 28px; font-weight: 700; }
-.header h1 em { font-style: normal; color: var(--accent); }
-.date-line { color: var(--muted); font-size: 14px; margin: 4px 0 16px; }
-.section { margin-bottom: 32px; }
-.section h2 { font-size: 18px; font-weight: 600; margin-bottom: 12px; color: var(--accent2); border-bottom: 2px solid var(--border); padding-bottom: 6px; }
-.news-item { display: flex; gap: 12px; align-items: flex-start; padding: 8px 0; }
-.news-item .rank { font-family: 'SF Mono', monospace; font-size: 13px; color: var(--muted); min-width: 28px; }
-.news-item h3 { font-size: 15px; font-weight: 500; margin: 0; }
-.news-item h3 a { color: var(--text); text-decoration: none; }
-.news-item h3 a:hover { color: var(--accent); text-decoration: underline; }
-.news-item .meta { font-size: 12px; color: var(--muted); }
-.paper .abstract { font-size: 13px; color: var(--muted); margin: 4px 0 0; }
-.footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); }
-.footer a { color: var(--accent); text-decoration: none; }
-</style>
+<title>AI News Daily — 18 Jun 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-<div class="page">
-<div class="back-link"><a href="/">&larr; Home</a></div>
-<div class="header">
-  <h1>The <em>AI</em> Briefing</h1>
-  <div class="date-line">Thursday, 18 June 2026</div>
-</div>
-<div class="section">
-  <h2>🔴 Headlines</h2>
-<div class="news-item">
-  <span class="rank">01</span>
-  <h3><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/" target="_blank">White House issues executive order on AI innovation and security</a></h3>
-  <span class="meta">Policy</span>
-</div>
-<div class="news-item">
-  <span class="rank">02</span>
-  <h3><a href="https://www.cnet.com/tech/services-and-software/anthropic-claude-code-design-june-2026-news/" target="_blank">Anthropic brings together AI design and coding in Claude</a></h3>
-  <span class="meta">CNET</span>
-</div>
-<div class="news-item">
-  <span class="rank">03</span>
-  <h3><a href="https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/" target="_blank">US holds off blacklisting DeepSeek; 100+ firms deemed security risks</a></h3>
-  <span class="meta">Reuters</span>
-</div>
-</div>
-<div class="section">
-  <h2>🧠 AI / LLM / Agents</h2>
-<div class="news-item">
-  <span class="rank">01</span>
-  <h3><a href="https://blog.alexellis.io/local-ai-is-not-opus/" target="_blank">Local Qwen isn't a worse Opus — it's a different tool</a></h3>
-  <span class="meta">Alex Ellis</span>
-</div>
-<div class="news-item">
-  <span class="rank">02</span>
-  <h3><a href="https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index" target="_blank">GLM-5.2 becomes the new leading open weights model on Artificial Analysis</a></h3>
-  <span class="meta">Artificial Analysis</span>
-</div>
-<div class="news-item">
-  <span class="rank">03</span>
-  <h3><a href="https://www.midjourney.com/medical/blogpost" target="_blank">Midjourney launches medical imaging platform</a></h3>
-  <span class="meta">Midjourney</span>
-</div>
-<div class="news-item">
-  <span class="rank">04</span>
-  <h3><a href="https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1" target="_blank">LLM Research Papers 2026 — January to May (Raschka)</a></h3>
-  <span class="meta">Sebastian Raschka</span>
-</div>
-</div>
-<div class="section">
-  <h2>📄 Papers — ArXiv CS.AI</h2>
-<div class="news-item paper">
-  <span class="rank">01</span>
-  <h3><a href="https://arxiv.org/abs/2606.19317" target="_blank">Explaining Attention with Program Synthesis</a></h3>
-  <p class="abstract">A novel approach to replace opaque neural computations with human-meaningful symbolic descriptions using program synthesis for interpretability.</p>
-  <span class="meta">ArXiv CS.AI</span>
-</div>
-<div class="news-item paper">
-  <span class="rank">02</span>
-  <h3><a href="https://arxiv.org/abs/2606.19327" target="_blank">Rethinking Reward Supervision: Rubric-Conditioned Self-Distillation</a></h3>
-  <p class="abstract">Post-training of reasoning LMs via supervised distillation and RL with verifiable rewards — chain-of-thought annotations meet rubric-conditioned self-distillation.</p>
-  <span class="meta">ArXiv CS.AI</span>
-</div>
-<div class="news-item paper">
-  <span class="rank">03</span>
-  <h3><a href="https://arxiv.org/abs/2606.19336" target="_blank">Learning User Simulators with Turing Rewards</a></h3>
-  <p class="abstract">Training agent assistants by simulating human users in interactive settings with Turing Reward-based learning — advancing personalization and social science research.</p>
-  <span class="meta">ArXiv CS.AI</span>
-</div>
-<div class="news-item paper">
-  <span class="rank">04</span>
-  <h3><a href="https://arxiv.org/abs/2606.19308" target="_blank">Enhancing Decision-Making with LLMs through Multi-Agent Fictitious Play</a></h3>
-  <p class="abstract">LLM-based multi-agent systems (MAS) for complex tasks — distributing subtasks across cooperative agents with fictitious play for better coordination.</p>
-  <span class="meta">ArXiv CS.AI</span>
-</div>
-<div class="news-item paper">
-  <span class="rank">05</span>
-  <h3><a href="https://arxiv.org/abs/2606.19297" target="_blank">Does VLA Even Know the Basics? Measuring Knowledge in VLA Models</a></h3>
-  <p class="abstract">Embodied Vision-Language-Action models fine-tuned on robotics — measuring how much commonsense and factual knowledge they retain after fine-tuning.</p>
-  <span class="meta">ArXiv CS.AI</span>
-</div>
-<div class="news-item paper">
-  <span class="rank">06</span>
-  <h3><a href="https://arxiv.org/abs/2606.19315" target="_blank">Diffusion-Proof: Recipe for Formal Theorem Proving</a></h3>
-  <p class="abstract">Enhancing formal math reasoning in LLMs — diffusion-proof methods for theorem proving beyond auto-regressive generation.</p>
-  <span class="meta">ArXiv CS.AI</span>
-</div>
-</div>
-<div class="section">
-  <h2>🛠️ Infra / SRE / DevOps</h2>
-<div class="news-item">
-  <span class="rank">01</span>
-  <h3><a href="https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/" target="_blank">Tesco moving 40K server workloads off VMware amid Broadcom's abusive conduct</a></h3>
-  <span class="meta">Ars Technica</span>
-</div>
-<div class="news-item">
-  <span class="rank">02</span>
-  <h3><a href="https://browser-use.com/posts/firecracker-browser-infra" target="_blank">How we run Firecracker VMs inside EC2 — browsers in <1s</a></h3>
-  <span class="meta">Browser Use</span>
-</div>
-<div class="news-item">
-  <span class="rank">03</span>
-  <h3><a href="https://x86ecosystem.org/resource/ai-compute-extensions-ace-specification/" target="_blank">x86 AI Compute Extensions (ACE) Specification released</a></h3>
-  <span class="meta">x86 Ecosystem</span>
-</div>
-</div>
-<div class="section">
-  <h2>💻 Hacker News</h2>
-<div class="news-item">
-  <span class="rank">01</span>
-  <h3><a href="https://www.rfc-editor.org/info/rfc10008/" target="_blank">RFC 10008: The new HTTP Query Method</a></h3>
-  <span class="meta">IETF</span>
-</div>
-<div class="news-item">
-  <span class="rank">02</span>
-  <h3><a href="https://www.mindfruit.co.uk/posts/2025/10/magic-buffers-and-io-uring-write-fixed/" target="_blank">Magic Buffers and io_uring Registered Buffers</a></h3>
-  <span class="meta">Mindfruit</span>
-</div>
-<div class="news-item">
-  <span class="rank">03</span>
-  <h3><a href="https://store.steampowered.com/news/app/1675200/view/697641379212298072" target="_blank">SteamOS Linux 3.8 released as stable</a></h3>
-  <span class="meta">Valve</span>
-</div>
-</div>
-<div class="section">
-  <h2>💡 Why It Matters</h2>
-  <div class="follow-item">
-<div class="news-item">
-  <span class="rank">▸</span>
-  <p>The White House AI order signals that regulation is coming — SRE teams should pre-audit their AI pipelines for compliance.</p>
-</div>
-<div class="news-item">
-  <span class="rank">▸</span>
-  <p>Anthropic's Claude Code+Design convergence means the next year of AI-assisted development will blur the line between IDE and design tool.</p>
-</div>
-<div class="news-item">
-  <span class="rank">▸</span>
-  <p>GLM-5.2 (open weights) now leads Artificial Analysis; open models are catching up to closed ones faster than expected.</p>
-</div>
-</div>
-</div>
-<div class="footer">
-  <p>Curated by <a href="https://x.com/iamluisgb" target="_blank">@iamluisgb</a> · Thursday, 18 June 2026 · <a href="https://github.com/iamluisgb/reports">source</a></p>
-  <p><button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button></p>
-</div>
-</div>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">18 Jun 2026 · Thursday</div>
+          <div class="subtitle">White House AI Order · Anthropic Claude Design · DeepSeek Blacklist Delay</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">White House issues executive order on AI innovation and security</div>
+        <div class="desc">New executive order promoting advanced AI innovation while establishing security guardrails for federal AI deployments.</div>
+        <div class="sources"><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White House</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Anthropic brings together AI design and coding in Claude</div>
+        <div class="desc">Anthropic converges design and coding capabilities in Claude, signaling a shift toward multimodal AI-assisted development workflows.</div>
+        <div class="sources"><a href="https://www.cnet.com/tech/services-and-software/anthropic-claude-code-design-june-2026-news/">CNET</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">US holds off blacklisting DeepSeek; 100+ firms deemed security risks</div>
+        <div class="desc">The US delays blacklisting China's DeepSeek while adding over 100 firms to security risk lists, balancing trade and national security concerns.</div>
+        <div class="sources"><a href="https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/">Reuters</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Local Qwen isn't a worse Opus — it's a different tool</div>
+        <div class="desc">Alex Ellis argues local Qwen models serve a fundamentally different use case than cloud Opus — offline-first, privacy-preserving, and increasingly capable.</div>
+        <div class="sources"><a href="https://blog.alexellis.io/local-ai-is-not-opus/">Alex Ellis</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">GLM-5.2 becomes the new leading open weights model on Artificial Analysis</div>
+        <div class="desc">Zhipu's GLM-5.2 tops the Artificial Analysis intelligence index for open weights models, closing the gap with proprietary frontier models.</div>
+        <div class="sources"><a href="https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index">Artificial Analysis</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">Midjourney launches medical imaging platform</div>
+        <div class="desc">Midjourney expands beyond art generation into medical imaging, launching a platform for healthcare visualization and diagnostics.</div>
+        <div class="sources"><a href="https://www.midjourney.com/medical/blogpost">Midjourney</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">07</div>
+        <div class="title">LLM Research Papers 2026 — January to May (Raschka)</div>
+        <div class="desc">Sebastian Raschka compiles the most important LLM research papers from the first half of 2026, covering architectures, training, and alignment.</div>
+        <div class="sources"><a href="https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1">Sebastian Raschka</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+      <div class="news-item">
+        <div class="num">08</div>
+        <div class="title">Explaining Attention with Program Synthesis</div>
+        <div class="desc">A novel approach to replace opaque neural computations with human-meaningful symbolic descriptions using program synthesis for interpretability. <strong>[arXiv CS.AI]</strong></div>
+        <div class="sources"><a href="https://arxiv.org/abs/2606.19317">arXiv</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">09</div>
+        <div class="title">Rethinking Reward Supervision: Rubric-Conditioned Self-Distillation</div>
+        <div class="desc">Post-training of reasoning LMs via supervised distillation and RL with verifiable rewards — chain-of-thought annotations meet rubric-conditioned self-distillation. <strong>[arXiv CS.AI]</strong></div>
+        <div class="sources"><a href="https://arxiv.org/abs/2606.19327">arXiv</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">10</div>
+        <div class="title">Learning User Simulators with Turing Rewards</div>
+        <div class="desc">Training agent assistants by simulating human users in interactive settings with Turing Reward-based learning — advancing personalization and social science research. <strong>[arXiv CS.AI]</strong></div>
+        <div class="sources"><a href="https://arxiv.org/abs/2606.19336">arXiv</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">11</div>
+        <div class="title">Enhancing Decision-Making with LLMs through Multi-Agent Fictitious Play</div>
+        <div class="desc">LLM-based multi-agent systems (MAS) for complex tasks — distributing subtasks across cooperative agents with fictitious play for better coordination. <strong>[arXiv CS.AI]</strong></div>
+        <div class="sources"><a href="https://arxiv.org/abs/2606.19308">arXiv</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">12</div>
+        <div class="title">Does VLA Even Know the Basics? Measuring Knowledge in VLA Models</div>
+        <div class="desc">Embodied Vision-Language-Action models fine-tuned on robotics — measuring how much commonsense and factual knowledge they retain after fine-tuning. <strong>[arXiv CS.AI]</strong></div>
+        <div class="sources"><a href="https://arxiv.org/abs/2606.19297">arXiv</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">13</div>
+        <div class="title">Diffusion-Proof: Recipe for Formal Theorem Proving</div>
+        <div class="desc">Enhancing formal math reasoning in LLMs — diffusion-proof methods for theorem proving beyond auto-regressive generation. <strong>[arXiv CS.AI]</strong></div>
+        <div class="sources"><a href="https://arxiv.org/abs/2606.19315">arXiv</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+      <div class="news-item">
+        <div class="num">14</div>
+        <div class="title">Tesco moving 40K server workloads off VMware amid Broadcom's abusive conduct</div>
+        <div class="desc">Tesco migrates 40,000 server workloads away from VMware following Broadcom's controversial licensing changes and pricing increases.</div>
+        <div class="sources"><a href="https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/">Ars Technica</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">15</div>
+        <div class="title">How we run Firecracker VMs inside EC2 — browsers in <1s</div>
+        <div class="desc">Browser Use details their infrastructure for running Firecracker microVMs inside EC2, achieving sub-second browser startup times for AI agents.</div>
+        <div class="sources"><a href="https://browser-use.com/posts/firecracker-browser-infra">Browser Use</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">16</div>
+        <div class="title">x86 AI Compute Extensions (ACE) Specification released</div>
+        <div class="desc">The x86 ecosystem releases the AI Compute Extensions specification, adding dedicated instructions for AI inference workloads to the architecture.</div>
+        <div class="sources"><a href="https://x86ecosystem.org/resource/ai-compute-extensions-ace-specification/">x86 Ecosystem</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+      <div class="news-item">
+        <div class="num">17</div>
+        <div class="title">RFC 10008: The new HTTP Query Method</div>
+        <div class="desc">IETF publishes RFC 10008 introducing a formal HTTP Query method, standardizing a long-overdue capability for REST APIs.</div>
+        <div class="sources"><a href="https://www.rfc-editor.org/info/rfc10008/">IETF</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">18</div>
+        <div class="title">Magic Buffers and io_uring Registered Buffers</div>
+        <div class="desc">Deep dive into io_uring registered buffers — how zero-copy I/O patterns can dramatically reduce syscall overhead in high-performance networking.</div>
+        <div class="sources"><a href="https://www.mindfruit.co.uk/posts/2025/10/magic-buffers-and-io-uring-write-fixed/">Mindfruit</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">19</div>
+        <div class="title">SteamOS Linux 3.8 released as stable</div>
+        <div class="desc">Valve releases SteamOS 3.8 as stable, bringing improved hardware support and performance optimizations for the Steam Deck ecosystem.</div>
+        <div class="sources"><a href="https://store.steampowered.com/news/app/1675200/view/697641379212298072">Valve</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The White House AI order signals that regulation is coming — SRE teams should pre-audit their AI pipelines for compliance.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Anthropic's Claude Code+Design convergence means the next year of AI-assisted development will blur the line between IDE and design tool.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>GLM-5.2 (open weights) now leads Artificial Analysis; open models are catching up to closed ones faster than expected.</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">18 Jun 2026</span>
+    </div>
+  </div>
+
 <script>
-const saved = localStorage.getItem('theme');
-if (saved === 'dark') document.body.setAttribute('data-theme', 'dark');
-function toggleTheme() { const d = document.body.getAttribute('data-theme') ? '' : 'dark'; document.body.setAttribute('data-theme', d); localStorage.setItem('theme', d); }
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
 </script>
 </body>
 </html>
