@@ -1235,6 +1235,18 @@ tbody {
     color: var(--on-surface-variant);
   }
 
+.card-summary {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: var(--on-surface-variant);
+    margin-top: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
 .card .badge {
     font-size: 9px;
     padding: 3px 8px;
