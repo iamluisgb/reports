@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 22 Jun 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">22 Jun 2026 · Sunday</div>
+          <div class="subtitle">Anthropic ID Verification · Apertus Open Model · Sakana Fugu · Agent Verification Frameworks</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Identity verification on Claude</div>
+        <div class="desc">Anthropic now requires identity verification to access Claude, citing security and compliance. The move sparks debate on privacy, surveillance, and AI regulation as the line between consumer and enterprise AI hardens.</div>
+        <div class="sources"><a href="https://support.claude.com/en/articles/14328960-identity-verification-on-claude">Anthropic</a> · <a href="https://news.ycombinator.com/item?id=48618455">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Apertus – Open Foundation Model for Sovereign AI</div>
+        <div class="desc">Apertus launches as an open-weight foundation model built for sovereign AI — designed to run entirely within national or organisational infrastructure, independent of US cloud providers.</div>
+        <div class="sources"><a href="https://apertvs.ai/">Apertus</a> · <a href="https://news.ycombinator.com/item?id=48622778">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Sakana Fugu: Evolved Neural Architecture</div>
+        <div class="desc">Sakana AI unveils Fugu, their latest evolved neural architecture model. Built on evolutionary search principles, it promises strong performance with efficient inference — relevant for on-premise and edge deployments.</div>
+        <div class="sources"><a href="https://sakana.ai/fugu/">Sakana AI</a> · <a href="https://news.ycombinator.com/item?id=48624782">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">There is minimal downside to switching to open models</div>
+        <div class="desc">A data-backed argument that open-weight models now match or exceed proprietary ones for most workloads, with significant cost, flexibility, and control advantages. Timely given the Claude ID verification controversy.</div>
+        <div class="sources"><a href="https://www.marble.onl/posts/cancel_claude.html">Marble</a> · <a href="https://news.ycombinator.com/item?id=48622518">HN</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">LedgerAgent: Structured State for Policy-Adherent Agents</div>
+        <div class="desc">Novel agent architecture that maintains structured task state across turns while enforcing policy constraints for safe tool-calling in customer-service domains. The ledger pattern is a practical design for production agent systems.</div>
+        <div class="sources"><a href="https://arxiv.org/abs/2606.20529v1">arXiv</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">Probe-and-Refine Tuning of Repository Guidance for Coding Agents</div>
+        <div class="desc">Improves LLM-based coding agents by tuning them to understand repo-level structure — which files house which subsystems — leading to better code generation without needing to reprocess the entire codebase each turn.</div>
+        <div class="sources"><a href="https://arxiv.org/abs/2606.20512v1">arXiv</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">07</div>
+        <div class="title">UltraQuant: 4-bit KV Caching for Context-Heavy Agents</div>
+        <div class="desc">Context-heavy agents place extreme pressure on KV caches due to long prefix reuse. UltraQuant quantizes KV cache entries to 4-bit, achieving dramatic memory reduction with minimal accuracy loss — directly applicable to agent serving infrastructure.</div>
+        <div class="sources"><a href="https://arxiv.org/abs/2606.20474v1">arXiv</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">08</div>
+        <div class="title">LLM Alignment Using Implicit User Feedback</div>
+        <div class="desc">Novel alignment approach using implicit user signals (mouse movements, eye tracking) instead of explicit preference labels. Could reduce the cost and bias of RLHF data collection pipelines.</div>
+        <div class="sources"><a href="https://arxiv.org/abs/2606.20482v1">arXiv</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+      <div class="news-item">
+        <div class="num">09</div>
+        <div class="title">LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents</div>
+        <div class="desc">Policy-adherent tool-calling agents in customer-service domains must maintain task states across turns while calling tools safely. The LedgerAgent architecture introduces a structured state ledger that tracks compliance boundaries explicitly. <strong>[Jun 2026]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.20529v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">10</div>
+        <div class="title">Sovereign Execution Brokers: Certificate-Bound Authority in Agentic Control Planes</div>
+        <div class="desc">Autonomous agents are increasingly connected to cloud, deployment, and data-control workflows, but production mutation authority remains an unsolved security problem. This paper introduces certificate-bound execution brokers for fine-grained agent permissions. <strong>[Jun 2026]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.20520v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">11</div>
+        <div class="title">Probe-and-Refine Tuning of Repository Guidance for Coding Agents</div>
+        <div class="desc">LLM-based coding agents need higher-level operational knowledge about a repository — which files house which subsystems, how modules connect — to generate coherent code. This work proposes a probe-and-refine tuning approach. <strong>[Jun 2026]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.20512v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">12</div>
+        <div class="title">Efficient and Sound Probabilistic Verification for AI Agents</div>
+        <div class="desc">Securing AI agents that operate in complex digital environments has become a critical need. This paper presents a runtime monitoring approach that provides probabilistic guarantees about agent behaviour. <strong>[Jun 2026]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.20510v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">13</div>
+        <div class="title">Contagion Networks: Evaluator Bias Propagation in Multi-Agent LLM Systems</div>
+        <div class="desc">When large language models serve as evaluators in multi-agent systems, their systematic evaluation biases propagate through the network. This paper models and measures bias contagion in multi-agent evaluation pipelines. <strong>[Jun 2026]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.20493v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">14</div>
+        <div class="title">What Do Safety-Aligned LLMs Learn From Mixed Compliance Demonstrations?</div>
+        <div class="desc">Prior work has shown that in-context demonstrations can jailbreak language models, but it remains unclear how models internalise mixed compliance signals. This paper analyses the mechanism behind demonstration-based jailbreaks. <strong>[Jun 2026]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.20508v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">15</div>
+        <div class="title">UltraQuant: 4-bit KV Caching for Context-Heavy Agents</div>
+        <div class="desc">Context-heavy agents place unusual pressure on the key-value (KV) cache: long prefixes are reused across many short turns. UltraQuant applies 4-bit quantization to KV entries, dramatically reducing memory footprint. <strong>[Jun 2026]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.20474v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">16</div>
+        <div class="title">Multi-LCB: Extending LiveCodeBench to Multiple Programming Languages</div>
+        <div class="desc">LiveCodeBench is extended to multiple programming languages, providing a more comprehensive evaluation benchmark for code-generating LLMs and coding agents across Python, JavaScript, Java, C++, and Rust. <strong>[Jun 2026]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.20517v1">arXiv</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+      <div class="news-item">
+        <div class="num">17</div>
+        <div class="title">Sovereign Execution Brokers: Agentic Control Planes</div>
+        <div class="desc">Production-ready framework for enforcing certificate-bound authority over what autonomous agents can mutate in cloud/deployment workflows. Directly applicable to SRE agent systems.</div>
+        <div class="sources"><a href="https://arxiv.org/abs/2606.20520v1">arXiv</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">18</div>
+        <div class="title">Memory Safe Inline Assembly</div>
+        <div class="desc">A technique to write inline assembly that maintains memory safety guarantees — bridging the gap between low-level performance optimisation and safe systems programming. Relevant for performance-critical SRE tooling.</div>
+        <div class="sources"><a href="https://fil-c.org/inlineasm">fil-c</a> · <a href="https://news.ycombinator.com/item?id=48606096">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">19</div>
+        <div class="title">Efficient C++ Programming — CPU Clock Cycle Costs</div>
+        <div class="desc">Detailed infographic-style reference showing operation latency in CPU clock cycles for modern C++. Practical reference for anyone writing latency-sensitive infrastructure code.</div>
+        <div class="sources"><a href="https://6it.dev/blog/infographics-operation-costs-in-cpu-clock-cycles-take-2-80736">6it.dev</a> · <a href="https://news.ycombinator.com/item?id=48605085">HN</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+      <div class="news-item">
+        <div class="num">20</div>
+        <div class="title">Beyond All Reason — Free Total Annihilation Inspired RTS</div>
+        <div class="desc">A fully open-source RTS game inspired by Total Annihilation, built on the Spring engine. Cross-platform, with Vulkan support, and constantly evolving.</div>
+        <div class="sources"><a href="https://www.beyondallreason.info">B.A.R.</a> · <a href="https://news.ycombinator.com/item?id=48617990">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">21</div>
+        <div class="title">PowerFox Browser</div>
+        <div class="desc">A privacy-focused Firefox fork that strips telemetry, removes Pocket, and adds built-in container tabs, uBlock Origin, and strict tracking protection out of the box.</div>
+        <div class="sources"><a href="https://powerfox.jazzzny.me/">PowerFox</a> · <a href="https://news.ycombinator.com/item?id=48622731">HN</a></div>
+      </div>
+      <div class="news-item">
+        <div class="num">22</div>
+        <div class="title">Fine-tuning Qwen 3:0.6B to Categorise Questions</div>
+        <div class="desc">A practical walkthrough of fine-tuning a small local LLM (Qwen 3 0.6B) for question categorisation — demonstrating that tiny models can perform well on specific tasks with proper fine-tuning.</div>
+        <div class="sources"><a href="https://www.teachmecoolstuff.com/viewarticle/fine-tuning-a-local-llm-to-categorize-questions">Teach Me Cool Stuff</a> · <a href="https://news.ycombinator.com/item?id=48623434">HN</a></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Anthropic's ID verification signals a regulatory tightening trend. As AI platforms demand identity, production systems must design for identity-aware agents, audit trails, and compliance — the era of anonymous API access is ending.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The Apertus + Sakana Fugu wave confirms open model momentum. For SRE and platform teams, this means self-hosted inference is increasingly viable — plan for on-prem model serving, KV cache optimisation (UltraQuant), and agent policy enforcement (Sovereign Execution Brokers).</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">22 Jun 2026</span>
+    </div>
+  </div>
+
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>
