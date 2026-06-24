@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Briefing — Wednesday, June 24, 2026</title>
+  <style>
+    :root {
+      --bg: #f5f0eb;
+      --card: #ffffff;
+      --text: #1a1a2e;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --border: #e5e7eb;
+      --tag-bg: #eef2ff;
+      --tag-text: #4338ca;
+      --headline-border: #2563eb;
+      --follow-bg: #fffbeb;
+      --follow-border: #f59e0b;
+    }
+    .dark {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #60a5fa;
+      --accent-hover: #93c5fd;
+      --border: #334155;
+      --tag-bg: #1e1b4b;
+      --tag-text: #a5b4fc;
+      --headline-border: #60a5fa;
+      --follow-bg: #451a03;
+      --follow-border: #f59e0b;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    .back-link {
+      display: inline-block;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+    }
+    .back-link:hover { color: var(--accent); }
+    .header {
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .header h1 em { font-style: italic; color: var(--accent); }
+    .header .date {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0.25rem;
+    }
+    .header .subtitle {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+      max-width: 500px;
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+    .theme-toggle:hover { border-color: var(--accent); }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .news-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .news-item:last-child { border-bottom: none; }
+    .item-number {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      opacity: 0.4;
+      min-width: 2rem;
+      line-height: 1.2;
+    }
+    .item-content h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    .item-content h3 a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .item-content h3 a:hover { color: var(--accent); }
+    .item-content p {
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+    .source-tag {
+      display: inline-block;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      font-size: 0.7rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      margin-left: 0.5rem;
+      font-weight: 500;
+      vertical-align: middle;
+    }
+    .hn-links { margin-top: 0.25rem; }
+    .hn-links a {
+      color: var(--accent);
+      font-size: 0.8rem;
+      text-decoration: none;
+    }
+    .hn-links a:hover { text-decoration: underline; }
+    .follow-item {
+      background: var(--follow-bg);
+      border-left: 3px solid var(--follow-border);
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.875rem;
+      border-radius: 0 6px 6px 0;
+    }
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .footer a { color: var(--accent); text-decoration: none; }
+    @media (max-width: 600px) {
+      .page { padding: 1rem; }
+      .header h1 { font-size: 1.5rem; }
+      .item-number { font-size: 1.2rem; min-width: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="https://luisgonzalezbernal.com/reports/">← Reports Archive</a>
+
+    <div class="header">
+      <h1>The <em>AI</em> Briefing</h1>
+      <div class="date">Wednesday, June 24, 2026</div>
+      <div class="subtitle">Daily intelligence on AI, agents, infrastructure, and engineering.</div>
+      <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🔴 Headlines</div>
+            <div class="news-item">
+              <span class="item-number">01</span>
+              <div class="item-content">
+                <h3><a href="https://words.filippo.io/vuln-reports/" target="_blank">Vulnerability reports are not special anymore</a></h3>
+                <p>Filippo Valsorda argues that automated vulnerability reporting has reached a tipping point — security scanners now find so many issues that the signal-to-noise ratio has fundamentally changed, and traditional disclosure norms no longer scale.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">02</span>
+              <div class="item-content">
+                <h3><a href="https://arxiv.org/abs/2606.24597" target="_blank">Qwen-AgentWorld: Language World Models for General Agents</a></h3>
+                <p>Alibaba's Qwen team proposes language-based world models that let LLM agents simulate environments internally, enabling planning, reasoning, and action synthesis without external simulators — a step toward generalist agents.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">03</span>
+              <div class="item-content">
+                <h3><a href="https://swiftpackageindex.com/blog/swift-package-index-joins-apple" target="_blank">Swift Package Index joins Apple</a></h3>
+                <p>The Swift Package Index, the community-curated search engine for Swift packages, is being acquired by Apple — signaling deeper investment in the Swift ecosystem and package management infrastructure.</p>
+              </div>
+            </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🧠 AI / LLM / Agents</div>
+            <div class="news-item">
+              <span class="item-number">01</span>
+              <div class="item-content">
+                <h3><a href="https://arxiv.org/abs/2606.24597" target="_blank">Qwen-AgentWorld: Language World Models for General Agents</a><span class="source-tag">ArXiv CS.AI</span></h3>
+                <p>Alibaba Qwen team introduces language-based world models enabling LLM agents to simulate environments through text alone — planning, reasoning, and acting without external simulators. Directly relevant to agent architecture design.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">02</span>
+              <div class="item-content">
+                <h3><a href="https://github.com/End2End-Diffusion/diffusion-bench" target="_blank">DiffusionBench: Towards Holistic Evaluation of Generative Diffusion Transformers</a><span class="source-tag">GitHub</span></h3>
+                <p>A comprehensive benchmark for evaluating diffusion transformers across generation quality, efficiency, and controllability — filling a gap in standardised evaluation for this rapidly evolving model class.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">03</span>
+              <div class="item-content">
+                <h3><a href="https://swipe.futo.tech/" target="_blank">FUTO Swipe – A new swipe typing model</a><span class="source-tag">FUTO</span></h3>
+                <p>FUTO releases a new swipe typing engine, aiming to rival proprietary keyboards with an open-source, privacy-first approach to mobile text input.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">04</span>
+              <div class="item-content">
+                <h3><a href="https://tikz.dev/editor/" target="_blank">Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX</a><span class="source-tag">HN</span></h3>
+                <p>A WYSIWYG editor for TikZ figures, built almost entirely by coding agents (Codex). Simultaneously edits source code and rendered output — a case study in what agent-built software enables.</p>
+              </div>
+            </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📄 Papers — ArXiv CS.AI</div>
+            <div class="news-item">
+              <span class="item-number">01</span>
+              <div class="item-content">
+                <h3><a href="https://arxiv.org/abs/2606.24820" target="_blank">SHERLOC: Structured Diagnostic Localization for Code Repair Agents</a> <span class="source-tag">ArXiv</span></h3>
+                <p>LLM agents spend ~50% of their budget locating faults before editing. SHERLOC shifts from file-level retrieval to actionable, structured diagnosis — producing specific location descriptions that directly feed repair. Score: 8/20 keywords.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">02</span>
+              <div class="item-content">
+                <h3><a href="https://arxiv.org/abs/2606.24775" target="_blank">Are We Ready For An Agent-Native Memory System?</a> <span class="source-tag">ArXiv</span></h3>
+                <p>A survey of emergent memory architectures for LLM agents — from simple RAG to persistent data management with update, consolidation, and lifecycle governance. Asks whether the field needs a dedicated 'memory system' akin to database systems. Score: 7/20.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">03</span>
+              <div class="item-content">
+                <h3><a href="https://arxiv.org/abs/2606.24855" target="_blank">OpenThoughts-Agent: Data Recipes for Agentic Models</a> <span class="source-tag">ArXiv</span></h3>
+                <p>Explores how to curate training data for broadly capable agentic models — going beyond single-benchmark approaches to build data recipes that generalise across SWE-bench, agent tasks, and tool use. Score: 4/20.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">04</span>
+              <div class="item-content">
+                <h3><a href="https://arxiv.org/abs/2606.24839" target="_blank">Grading the Grader: Lessons from Evaluating an Agentic Data Analysis System</a> <span class="source-tag">ArXiv</span></h3>
+                <p>Agentic data analysis systems produce code, numbers, and diagnostics — making evaluation harder than single-turn LLM responses. Distinguishes genuine disagreement from evaluation noise in agent output assessment. Score: 3/20.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">05</span>
+              <div class="item-content">
+                <h3><a href="https://arxiv.org/abs/2606.24790" target="_blank">Grad Detect: Gradient-Based Hallucination Detection in LLMs</a> <span class="source-tag">ArXiv</span></h3>
+                <p>A gradient-based method for detecting hallucinations in LLM outputs — leveraging internal model gradients rather than external verification, enabling real-time hallucination detection during inference. Score: 3/20.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">06</span>
+              <div class="item-content">
+                <h3><a href="https://arxiv.org/abs/2606.24773" target="_blank">Posterior Refinement: Fast Language Generation via Any-Order Flow Maps</a> <span class="source-tag">ArXiv</span></h3>
+                <p>Non-autoregressive generation via any-order flow maps — models can recursively critique, erase, and regenerate arbitrary token subsets, addressing limitations of masked diffusion models. Score: 3/20.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">07</span>
+              <div class="item-content">
+                <h3><a href="https://arxiv.org/abs/2606.24752" target="_blank">Can Scale Save Us From Plasticity Loss in Large Language Models?</a> <span class="source-tag">ArXiv</span></h3>
+                <p>Investigates whether simply scaling model size can overcome the loss of plasticity — the inability to learn new information after pre-training. A fundamental question for continual learning in LLMs. Score: 4/20.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">08</span>
+              <div class="item-content">
+                <h3><a href="https://arxiv.org/abs/2606.24783" target="_blank">Paying to Know: Micro-Transaction Markets for Verified Product Information in Agentic E-Commerce</a> <span class="source-tag">ArXiv</span></h3>
+                <p>Proposes micro-payment markets for verified product information when autonomous agents shop — leveraging agent-native payment rails (x402, AP2) to buy ground-truth data instead of relying on recommender systems. Score: 4/20.</p>
+              </div>
+            </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🛠️ Infra / SRE / DevOps</div>
+            <div class="news-item">
+              <span class="item-number">01</span>
+              <div class="item-content">
+                <h3><a href="https://gitlab.com/baiyibai/pico-usb-wifi" target="_blank">Raspberry Pi Pico W as USB Wi-Fi Adapter</a></h3>
+                <p>Turn a $6 Raspberry Pi Pico W into a USB Wi-Fi adapter — practical embedded networking that exemplifies the kind of low-cost infrastructure hacking that SREs appreciate.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">02</span>
+              <div class="item-content">
+                <h3><a href="https://ps.tc/pages/blog-usbliter8.html" target="_blank">Usbliter8: an A12/A13 SecureROM Exploit</a></h3>
+                <p>A publicly disclosed SecureROM exploit affecting A12 and A13 chips — significant for iOS security research and device forensics, with implications for mobile device management.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">03</span>
+              <div class="item-content">
+                <h3><a href="https://blog.racket-lang.org/2026/06/rhombus-v1.0.html" target="_blank">Rhombus Language 1.0</a></h3>
+                <p>Rhombus, the new language from the Racket ecosystem, reaches 1.0 — a language designed for language-oriented programming with a modern syntax, expanding the PL landscape.</p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">04</span>
+              <div class="item-content">
+                <h3><a href="https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451" target="_blank">In memory of the man who put red and green squiggles under words</a></h3>
+                <p>Raymond Chen pays tribute to the engineer behind spell-check's iconic red and green underlines — a piece of computing history that shaped every modern text interface.</p>
+              </div>
+            </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">💻 Hacker News</div>
+            <div class="news-item">
+              <span class="item-number">01</span>
+              <div class="item-content">
+                <h3><a href="https://swipe.futo.tech/" target="_blank">FUTO Swipe – A new swipe typing model</a> <span class="source-tag">HN</span></h3>
+                <p class="hn-links"><a href="https://news.ycombinator.com/item?id=48648619" target="_blank">Discuss on HN →</a></p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">02</span>
+              <div class="item-content">
+                <h3><a href="https://tikz.dev/editor/" target="_blank">Show HN: TikZ Editor – WYSIWYG editor for figures in LaTeX</a> <span class="source-tag">HN</span></h3>
+                <p class="hn-links"><a href="https://news.ycombinator.com/item?id=48645437" target="_blank">Discuss on HN →</a></p>
+              </div>
+            </div>
+            <div class="news-item">
+              <span class="item-number">03</span>
+              <div class="item-content">
+                <h3><a href="https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451" target="_blank">In memory of the man who put red and green squiggles under words</a> <span class="source-tag">HN</span></h3>
+                <p class="hn-links"><a href="https://news.ycombinator.com/item?id=48648959" target="_blank">Discuss on HN →</a></p>
+              </div>
+            </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">💡 Why It Matters</div>
+              <div class="follow-item">▸ Agent-native memory is emerging as a distinct research area — directly relevant to Quirón's agent architecture and how persistent context should be managed across agent sessions.</div>
+              <div class="follow-item">▸ Code repair agents are moving from file-level to diagnostic-level localization — a shift that mirrors how SRE incident response evolved from log scraping to structured runbook automation.</div>
+    </div>
+
+    <div class="footer">
+      Curated by <a href="https://x.com/iamluisgb" target="_blank">@iamluisgb</a> · Wednesday, June 24, 2026 · <a href="https://luisgonzalezbernal.com/reports/" target="_blank">All Reports</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const btn = document.querySelector('.theme-toggle');
+      btn.textContent = document.body.classList.contains('dark') ? '◐ LIGHT' : '◐ DARK';
+    }
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.classList.add('dark');
+      document.querySelector('.theme-toggle').textContent = '◐ LIGHT';
+    }
+  </script>
+</body>
+</html>
