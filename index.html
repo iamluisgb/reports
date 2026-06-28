@@ -58,6 +58,7 @@
       <div class="search-bar">
         <input type="text" id="search-input" class="search-input" placeholder="Search by title, month or tag..." oninput="filterReports()">
       </div>
+      <div class="topic-filter" id="topic-filter" aria-label="Filter by topic"></div>
     </div>
 
     <div class="section">
@@ -144,7 +145,7 @@
       : (type === 'special' ? '<span class="badge special">Special</span>' : '');
 
     const tagsHtml = tags.length > 0
-      ? `<div class="card-tags">${tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('')}</div>`
+      ? `<div class="card-tags">${tags.map(t => `<span class="tag" data-topic="${escapeHtml(t)}" role="button" tabindex="0">${escapeHtml(topicLabel(t))}</span>`).join('')}</div>`
       : '';
 
     const summaryHtml = summary
@@ -154,7 +155,7 @@
     const searchData = `${title} ${dateLabel} ${summary} ${tags.join(' ')}`.toLowerCase();
 
     return `
-      <a class="card" href="${escapeHtml(pagesUrl)}" data-search="${escapeHtml(searchData)}">
+      <a class="card" href="${escapeHtml(pagesUrl)}" data-search="${escapeHtml(searchData)}" data-tags="${escapeHtml(tags.join(' '))}">
         <div class="icon">${type === 'daily' ? '📰' : '⭐'}</div>
         <div class="content">
           <div class="title">${escapeHtml(title)}</div>
@@ -167,6 +168,63 @@
     `;
   }
 
+  // --- Topic filter (multi-select OR, URL-addressable via ?topic=a,b) ---
+  const activeTopics = new Set();
+
+  function topicLabel(slug) {
+    return String(slug).replace(/-/g, ' ');
+  }
+
+  function readTopicsFromUrl() {
+    const param = new URLSearchParams(location.search).get('topic');
+    if (!param) return;
+    param.split(',').map(t => t.trim().toLowerCase()).filter(Boolean)
+      .forEach(t => activeTopics.add(t));
+  }
+
+  function syncTopicsToUrl() {
+    const url = new URL(location.href);
+    if (activeTopics.size) {
+      url.searchParams.set('topic', Array.from(activeTopics).join(','));
+    } else {
+      url.searchParams.delete('topic');
+    }
+    history.replaceState(null, '', url);
+  }
+
+  function renderTopicFilter() {
+    const counts = {};
+    [...allDailyFiles, ...allSpecialFiles].forEach(r => {
+      (r.tags || []).forEach(t => { counts[t] = (counts[t] || 0) + 1; });
+    });
+    const topics = Object.keys(counts).sort((a, b) => counts[b] - counts[a] || a.localeCompare(b));
+
+    const bar = document.getElementById('topic-filter');
+    if (!topics.length) { bar.innerHTML = ''; return; }
+
+    let html = topics.map(t => {
+      const on = activeTopics.has(t) ? ' active' : '';
+      return `<button class="topic-chip${on}" data-topic="${escapeHtml(t)}" onclick="toggleTopic('${escapeHtml(t)}')" aria-pressed="${activeTopics.has(t)}">${escapeHtml(topicLabel(t))}<span class="topic-chip-count">${counts[t]}</span></button>`;
+    }).join('');
+    html += `<button class="topic-chip clear${activeTopics.size ? '' : ' hidden'}" id="topic-clear" onclick="clearTopics()">✕ Clear</button>`;
+    bar.innerHTML = html;
+  }
+
+  function toggleTopic(topic) {
+    if (activeTopics.has(topic)) activeTopics.delete(topic);
+    else activeTopics.add(topic);
+    syncTopicsToUrl();
+    renderTopicFilter();
+    filterReports();
+  }
+
+  function clearTopics() {
+    activeTopics.clear();
+    syncTopicsToUrl();
+    renderTopicFilter();
+    filterReports();
+  }
+
   function filterReports() {
     const q = document.getElementById('search-input').value.toLowerCase().trim();
     const cards = document.querySelectorAll('.card');
@@ -174,15 +232,42 @@
 
     cards.forEach(card => {
       const searchData = card.getAttribute('data-search') || '';
-      const match = !q || searchData.includes(q);
-      card.style.display = match ? '' : 'none';
+      const cardTopics = (card.getAttribute('data-tags') || '').split(' ').filter(Boolean);
+      const textMatch = !q || searchData.includes(q);
+      const topicMatch = activeTopics.size === 0
+        || cardTopics.some(t => activeTopics.has(t));   // OR across selected topics
+      card.style.display = (textMatch && topicMatch) ? '' : 'none';
     });
 
     months.forEach(group => {
       const visible = Array.from(group.querySelectorAll('.card')).some(c => c.style.display !== 'none');
       group.style.display = visible ? '' : 'none';
     });
+
+    document.querySelectorAll('.section').forEach(section => {
+      const cardsIn = section.querySelectorAll('.card');
+      if (!cardsIn.length) return;
+      const anyVisible = Array.from(cardsIn).some(c => c.style.display !== 'none');
+      const empty = section.querySelector('.filter-empty');
+      if (!anyVisible && !empty) {
+        const el = document.createElement('div');
+        el.className = 'empty filter-empty';
+        el.textContent = 'No reports match this filter.';
+        (section.querySelector('#daily-grouped') || section).appendChild(el);
+      } else if (anyVisible && empty) {
+        empty.remove();
+      }
+    });
   }
+
+  // Clicking a tag chip inside a card toggles that topic instead of opening the report.
+  document.addEventListener('click', e => {
+    const tag = e.target.closest('.card .tag[data-topic]');
+    if (!tag) return;
+    e.preventDefault();
+    e.stopPropagation();
+    toggleTopic(tag.getAttribute('data-topic'));
+  });
 
   function renderGroupedDaily(files, page) {
     const container = document.getElementById('daily-grouped');
@@ -253,6 +338,7 @@
   function loadPage(page) {
     window.currentPage = page;
     renderGroupedDaily(allDailyFiles, page);
+    filterReports();
     window.scrollTo({ top: document.getElementById('daily-grouped').offsetTop - 80, behavior: 'smooth' });
   }
 
@@ -285,6 +371,10 @@
       document.getElementById('total-count').textContent = allDailyFiles.length + allSpecialFiles.length;
       document.getElementById('daily-badge').textContent = allDailyFiles.length;
       document.getElementById('special-badge').textContent = allSpecialFiles.length;
+
+      readTopicsFromUrl();
+      renderTopicFilter();
+      filterReports();
 
     } catch (err) {
       console.error(err);

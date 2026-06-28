@@ -45,16 +45,44 @@ SUBTITLE = re.compile(r'class="subtitle">\s*(.*?)\s*</div>', re.IGNORECASE | re.
 TAG_STRIP = re.compile(r"<(script|style)\b.*?</\1>", re.IGNORECASE | re.DOTALL)
 ANY_TAG = re.compile(r"<[^>]+>")
 
-TAG_KEYWORDS = {
-    "agent": "agents",
-    "memory": "memory",
-    "model": "models",
-    "architecture": "architecture",
-    "engineering": "engineering",
-    "framework": "frameworks",
-    "adoption": "adoption",
-    "security": "security",
-    "sre": "sre",
+# Topic taxonomy for the homepage filter. Each topic maps to keywords matched
+# (whole-word, case-insensitive) against the report's full text — not just the
+# title — so daily reports get real topics instead of a generic "news" tag.
+# A report keeps its top MAX_TAGS topics by match count. Order here breaks ties.
+MAX_TAGS = 5
+
+TOPIC_KEYWORDS: dict[str, list[str]] = {
+    "agents": ["agent", "agentic", "autonomous", "mcp", "agent2agent", "a2a", "multi-agent"],
+    "models": ["model", "llm", "gpt", "claude", "gemini", "llama", "deepseek", "qwen",
+               "mistral", "opus", "sonnet", "fable", "mythos", "frontier"],
+    "security": ["security", "vulnerability", "exploit", "malware", "prompt injection",
+                 "backdoor", "breach", "cve", "trojan", "jailbreak", "attack"],
+    "hardware": ["chip", "gpu", "silicon", "nvidia", "tpu", "semiconductor", "wafer",
+                 "nanometer", "accelerator", "ascend"],
+    "funding": ["funding", "raise", "raised", "ipo", "valuation", "series a", "series b",
+                "series c", "series d", "round", "investment", "capex", "billion",
+                "acquire", "acquisition", "merger"],
+    "research": ["arxiv", "paper", "benchmark", "sota", "research", "study", "preprint"],
+    "open-source": ["open source", "open-source", "open weights", "open-weight", "open model"],
+    "regulation": ["regulation", "regulatory", "ai act", "policy", "white house",
+                   "executive order", "lawsuit", "compliance", "gdpr", "antitrust"],
+    "infrastructure": ["data center", "datacenter", "kubernetes", "infrastructure",
+                       "compute", "inference", "serving", "cloud"],
+    "coding": ["coding", "developer", "programming", "software engineering", "github",
+               "copilot", "cursor", "refactor", "codebase", "devin"],
+    "memory": ["memory", "rag", "retrieval", "vector", "embedding", "knowledge graph",
+               "context window"],
+    "multimodal": ["multimodal", "vision", "image generation", "video", "audio",
+                   "speech", "voice"],
+    "robotics": ["robot", "robotics", "humanoid", "embodied"],
+    "business": ["enterprise", "revenue", "adoption", "productivity", "layoff",
+                 "startup", "customer"],
+}
+
+# Precompile one whole-word (plural-tolerant) pattern per keyword.
+TOPIC_PATTERNS: dict[str, list[re.Pattern]] = {
+    topic: [re.compile(r"\b" + re.escape(kw) + r"s?\b", re.IGNORECASE) for kw in kws]
+    for topic, kws in TOPIC_KEYWORDS.items()
 }
 
 
@@ -117,13 +145,22 @@ def reading_time(content: str) -> int:
     return max(1, round(words / WORDS_PER_MINUTE))
 
 
-def derive_tags(name: str, title: str, kind: str) -> list[str]:
-    tags = ["news"] if kind == "daily" else []
-    haystack = f"{name} {title}".lower()
-    for needle, tag in TAG_KEYWORDS.items():
-        if needle in haystack and tag not in tags:
-            tags.append(tag)
-    return tags
+def plain_text(content: str) -> str:
+    """Visible text of a report (scripts/styles and tags stripped)."""
+    return html.unescape(ANY_TAG.sub(" ", TAG_STRIP.sub(" ", content)))
+
+
+def derive_tags(text: str) -> list[str]:
+    """Top topics by keyword match count over the report's full text."""
+    scores: dict[str, int] = {}
+    for topic, patterns in TOPIC_PATTERNS.items():
+        count = sum(len(p.findall(text)) for p in patterns)
+        if count:
+            scores[topic] = count
+    # Sort by score desc, then by taxonomy order (stable) for deterministic ties.
+    order = list(TOPIC_KEYWORDS)
+    ranked = sorted(scores, key=lambda t: (-scores[t], order.index(t)))
+    return ranked[:MAX_TAGS]
 
 
 def build_entry(path: Path) -> dict:
@@ -145,7 +182,7 @@ def build_entry(path: Path) -> dict:
         "date": resolve_date(name, content, path),
         "summary": summary,
         "readingTime": reading_time(content),
-        "tags": derive_tags(name, title, kind),
+        "tags": derive_tags(plain_text(content)),
     }
 
 
