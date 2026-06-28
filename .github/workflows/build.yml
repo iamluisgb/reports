@@ -1,8 +1,14 @@
 name: Build manifest
 
-# Regenerates reports.json, sitemap.xml and rss.xml whenever a report is added
-# or changed under reports/. The generated files live at the repo root, so the
-# commit-back below does NOT re-trigger this workflow (no infinite loop).
+# Regenerates reports.json, sitemap.xml and rss.xml, builds the per-report Open
+# Graph images (og/) and injects social meta tags into each report's <head>
+# whenever a report is added or changed under reports/.
+#
+# Loop safety: both build steps are idempotent. The first run after a new report
+# injects meta into reports/*.html and commits it, which re-triggers this
+# workflow once; the second run finds the meta already present (no diff) and the
+# `git diff --staged --quiet` guard skips the commit, so it converges. OG images
+# live at the repo root under og/ and never re-trigger the workflow.
 
 on:
   push:
@@ -10,6 +16,8 @@ on:
     paths:
       - 'reports/**'
       - 'scripts/generate_manifest.py'
+      - 'scripts/build_social.py'
+      - 'assets/fonts/**'
   workflow_dispatch:
 
 permissions:
@@ -31,17 +39,23 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install dependencies
+        run: pip install --quiet Pillow
+
       - name: Generate manifest, sitemap and RSS
         run: python3 scripts/generate_manifest.py
+
+      - name: Build OG images and inject social meta
+        run: python3 scripts/build_social.py
 
       - name: Commit generated files
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports.json sitemap.xml rss.xml
+          git add reports.json sitemap.xml rss.xml og reports
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "🤖 Rebuild manifest, sitemap and RSS"
+            git commit -m "🤖 Rebuild manifest, RSS, OG images and social meta"
             git push
           fi
