@@ -163,6 +163,30 @@ def derive_tags(text: str) -> list[str]:
     return ranked[:MAX_TAGS]
 
 
+# Curated series used to group special reports on the homepage. First matching
+# rule wins, so order matters (more specific buckets first). Future specials are
+# auto-assigned; anything unmatched falls into SERIES_FALLBACK.
+SERIES_RULES = [
+    ("Memory & Engineering", ["memory", "skill"]),
+    ("Reliability & Security", ["sre", "aiops", "security", "reliability", "observability"]),
+    ("Agents & Multi-Agent", ["multi-agent", "agentic system", "run businesses",
+                               "autonomous executive", "adas", "orchestration"]),
+    ("Models & Research", ["model", "architecture", "frontier", "arxiv", "trend",
+                           "papers", "benchmark"]),
+    ("Enterprise & Adoption", ["enterprise", "adoption", "palantir", "playbook",
+                               "engineering teams", "elite"]),
+]
+SERIES_FALLBACK = "Deep Dives"
+
+
+def derive_series(name: str, title: str) -> str:
+    haystack = f"{name} {title}".lower()
+    for series, keywords in SERIES_RULES:
+        if any(kw in haystack for kw in keywords):
+            return series
+    return SERIES_FALLBACK
+
+
 def build_entry(path: Path) -> dict:
     content = path.read_text(encoding="utf-8", errors="replace")
     name = path.name
@@ -175,7 +199,7 @@ def build_entry(path: Path) -> dict:
     subtitle_match = SUBTITLE.search(content)
     summary = clean_text(subtitle_match.group(1)) if subtitle_match else ""
 
-    return {
+    entry = {
         "file": name,
         "type": kind,
         "title": title,
@@ -184,6 +208,9 @@ def build_entry(path: Path) -> dict:
         "readingTime": reading_time(content),
         "tags": derive_tags(plain_text(content)),
     }
+    if kind == "special":
+        entry["series"] = derive_series(name, title)
+    return entry
 
 
 def main() -> None:

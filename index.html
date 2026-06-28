@@ -269,6 +269,49 @@
     toggleTopic(tag.getAttribute('data-topic'));
   });
 
+  // Display order for special-report series; unknown series append after these.
+  const SPECIAL_SERIES_ORDER = [
+    'Agents & Multi-Agent',
+    'Memory & Engineering',
+    'Models & Research',
+    'Reliability & Security',
+    'Enterprise & Adoption',
+    'Deep Dives',
+  ];
+
+  function renderGroupedSpecials(files) {
+    const container = document.getElementById('special-list');
+    if (!files.length) {
+      container.innerHTML = '<div class="empty">No special reports yet.</div>';
+      return;
+    }
+
+    const groups = {};
+    files.forEach(f => {
+      const s = f.series || 'Deep Dives';
+      (groups[s] = groups[s] || []).push(f);
+    });
+
+    const order = SPECIAL_SERIES_ORDER.filter(s => groups[s])
+      .concat(Object.keys(groups).filter(s => !SPECIAL_SERIES_ORDER.includes(s)).sort());
+
+    let html = '';
+    order.forEach(s => {
+      const items = groups[s];
+      html += `<div class="month-group" data-series="${escapeHtml(s)}">`;
+      html += `<div class="month-label" onclick="toggleMonth(this)">
+        <span class="month-arrow">▾</span>
+        <span class="month-name">${escapeHtml(s)}</span>
+        <span class="month-count">${items.length} report${items.length > 1 ? 's' : ''}</span>
+      </div>`;
+      html += '<div class="month-body">';
+      items.forEach((f, i) => { html += renderCard(f, 'special', i); });
+      html += '</div></div>';
+    });
+
+    container.innerHTML = html;
+  }
+
   function renderGroupedDaily(files, page) {
     const container = document.getElementById('daily-grouped');
 
@@ -357,12 +400,7 @@
         .filter(r => r.type === 'special')
         .sort((a, b) => reportDate(b) - reportDate(a));
 
-      const specialList = document.getElementById('special-list');
-      if (allSpecialFiles.length === 0) {
-        specialList.innerHTML = '<div class="empty">No special reports yet.</div>';
-      } else {
-        specialList.innerHTML = allSpecialFiles.map((f, i) => renderCard(f, 'special', i)).join('');
-      }
+      renderGroupedSpecials(allSpecialFiles);
 
       renderGroupedDaily(allDailyFiles, 1);
 
