@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-type="special">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Memory in 2026: Architectures, Frameworks & Trade-offs</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=2">
+<!-- og:start -->
+<meta name="description" content="The memory taxonomy · Vector vs graph vs OS-tiered · Mem0 vs Zep vs Letta on the benchmarks · Temporal knowledge graphs · How to choose">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-agent-memory-2026-06-28.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="AI Agent Memory in 2026: Architectures, Frameworks &amp; Trade-offs">
+<meta property="og:description" content="The memory taxonomy · Vector vs graph vs OS-tiered · Mem0 vs Zep vs Letta on the benchmarks · Temporal knowledge graphs · How to choose">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-agent-memory-2026-06-28.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-agent-memory-2026-06-28.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="AI Agent Memory in 2026: Architectures, Frameworks &amp; Trade-offs">
+<meta name="twitter:description" content="The memory taxonomy · Vector vs graph vs OS-tiered · Mem0 vs Zep vs Letta on the benchmarks · Temporal knowledge graphs · How to choose">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-agent-memory-2026-06-28.png">
+<!-- og:end -->
+</head>
+<body>
+<div class="progress-bar" id="progress-bar"></div>
+  <div class="page">
+
+    <nav class="report-nav" style="display:none" id="report-nav">
+      <a id="prev-report" class="report-nav-link" href="#">← Prev</a>
+      <a class="report-nav-link" href="../index.html">Index</a>
+      <a id="next-report" class="report-nav-link" href="#">Next →</a>
+    </nav>
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="special-header">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="special-category">Agent Memory · Special Report</div>
+          <h1>AI Agent Memory in <em>2026</em>: Architectures, Frameworks & Trade-offs</h1>
+          <div class="special-date">June 2026</div>
+          <div class="special-subtitle">The memory taxonomy · Vector vs graph vs OS-tiered · Mem0 vs Zep vs Letta on the benchmarks · Temporal knowledge graphs · How to choose</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Executive Summary</div>
+      <div class="special-content">
+
+<p>Memory is where most agents fail in production. An agent without persistent memory is an employee who forgets everything the moment the session ends. In 2026 the question is no longer "should agents have memory" but <strong>which memory architecture</strong> — and the choice has hardened into three production patterns with measurably different trade-offs.</p>
+
+<p>The headline tension is <strong>recall quality vs. cost</strong>. Graph-native temporal memory (Zep/Graphiti) leads on temporal benchmarks but can balloon to <strong>~600,000 tokens per conversation</strong>; vector-first extraction (Mem0) keeps that to <strong>~1,800 tokens</strong> at lower temporal accuracy; OS-tiered runtimes (Letta) let the agent manage its own allocation. There is no free lunch — only the right lunch for your workload.</p>
+
+<p>This report consolidates the memory taxonomy, the retrieval architectures, a head-to-head of the leading frameworks with their benchmark numbers, and a decision guide for picking one.</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part I</div>
+      <div class="special-content">
+
+<h2>The Memory Taxonomy</h2>
+
+<p>Borrowed from cognitive science and now standard across the field, a production agent juggles several distinct memory <em>types</em>, layered across two <em>tiers</em>.</p>
+
+<h3>1.1 Memory types</h3>
+<table>
+  <tr><th>Type</th><th>What it holds</th><th>Analogy</th></tr>
+  <tr><td><strong>Working / short-term</strong></td><td>Current task state, scratchpad, recent turns</td><td>RAM</td></tr>
+  <tr><td><strong>Episodic</strong></td><td>Specific past events & interactions, chronological</td><td>A journal</td></tr>
+  <tr><td><strong>Semantic</strong></td><td>Distilled facts and concepts, derived from experience</td><td>An encyclopedia</td></tr>
+  <tr><td><strong>Procedural</strong></td><td>Learned behaviors / "how-to" knowledge</td><td>Muscle memory</td></tr>
+  <tr><td><strong>Tool</strong></td><td>Function schemas the agent can call</td><td>A toolbox manifest</td></tr>
+</table>
+
+<h3>1.2 The two tiers</h3>
+<ul>
+  <li><strong>Tier 1 — Context window as RAM:</strong> recent turns, the current scratchpad, and the 5–10 retrieved memories relevant to <em>this</em> prompt.</li>
+  <li><strong>Tier 2 — Persistent layer:</strong> a SQL store, vector index, or dedicated framework holding everything else, queried to refill Tier 1 on each turn.</li>
+</ul>
+
+<p>A common production layout maps tiers to backends by latency: <strong>Redis</strong> for L1 hot state (sub-1 ms), <strong>Qdrant</strong> for L2 semantic retrieval (~20 ms p99), and an elastic store like <strong>Pinecone Serverless</strong> for the L3 episodic log.</p>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">The consolidation step everyone forgets</div>
+  <div class="desc">When a session ends, a background "cognitive compression" job — usually a smaller, cheaper local model — scans the raw episodic history, extracts structured facts, maps entity relationships, and writes distilled knowledge into the semantic store. Without this sleep-time consolidation, episodic logs grow unbounded and retrieval quality decays.</div>
+  <div class="sources">
+    <a href="https://machinelearningmastery.com/beyond-short-term-memory-the-3-types-of-long-term-memory-ai-agents-need/">The 3 Types of Long-Term Memory</a>
+    <a href="https://www.analyticsvidhya.com/blog/2026/04/memory-systems-in-ai-agents/">Memory Systems in AI Agents</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part II</div>
+      <div class="special-content">
+
+<h2>Three Retrieval Architectures</h2>
+
+<p>By mid-2026, industry comparisons converged on three production patterns. The difference isn't cosmetic — it determines temporal accuracy, token cost, and who controls memory allocation.</p>
+
+<table>
+  <tr><th>Pattern</th><th>Representative</th><th>How it works</th><th>Best for</th></tr>
+  <tr><td><strong>Vector-first extraction</strong></td><td>Mem0</td><td>Extract structured facts from conversation → store in vector DB → retrieve by semantic similarity</td><td>Lean, fast personalization</td></tr>
+  <tr><td><strong>Graph-native temporal</strong></td><td>Zep / Graphiti</td><td>Build a temporal knowledge graph with fact-validity windows; query relationships over time</td><td>Facts that change; temporal reasoning</td></tr>
+  <tr><td><strong>OS-inspired tiered</strong></td><td>Letta (ex-MemGPT)</td><td>Main context = RAM, archival = disk; the agent self-manages allocation via memory tools</td><td>Long-running stateful services</td></tr>
+</table>
+
+<p>The mental model: Mem0 optimizes for <strong>cheapness and speed</strong>, Zep for <strong>temporal correctness</strong>, and Letta for <strong>agent autonomy over its own memory</strong>.</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part III</div>
+      <div class="special-content">
+
+<h2>Frameworks Head-to-Head</h2>
+
+<table>
+  <tr><th>Framework</th><th>Architecture</th><th>LongMemEval</th><th>Token footprint / conv</th><th>Notes</th></tr>
+  <tr><td><strong>Mem0</strong></td><td>Hybrid vector + graph + key-value</td><td>49.0%</td><td>~1,800</td><td>~47K GitHub stars, free tier; fact extraction + similarity retrieval</td></tr>
+  <tr><td><strong>Zep (Graphiti)</strong></td><td>Temporal knowledge graph</td><td><strong>63.8%</strong></td><td>~600,000</td><td>+15 pts on temporal retrieval; tracks fact-validity windows</td></tr>
+  <tr><td><strong>Letta</strong></td><td>OS-style tiered (RAM/disk)</td><td>—</td><td>Agent-managed</td><td>MemGPT lineage; REST API; self-managed allocation</td></tr>
+</table>
+
+<blockquote><em>📌 The core trade-off:</em> Zep's Graphiti wins temporal accuracy by ~15 points on LongMemEval — but Mem0's published critique notes Zep's footprint can exceed <strong>600K tokens per conversation vs Mem0's ~1,800</strong>, an order-of-magnitude gap consistent across third-party reports. You're paying for that temporal recall in context budget.</blockquote>
+
+<h3>3.1 Temporal knowledge graphs, explained</h3>
+<p>The most important idea from the graph camp is the <strong>fact-validity window</strong>. A naïve memory store says "the user lives in Madrid." A temporal knowledge graph says "the user lived in Madrid <em>from 2023 to 2026</em>, now lives in Lisbon" — edges carry <strong>when a fact became true and when it expired</strong>. This is what lets an agent answer "where did they used to live?" without contradicting "where do they live now?"</p>
+
+<p>Graphiti — the engine inside Zep — synthesizes both unstructured conversation and structured business data into one temporally-aware graph, maintaining historical relationships rather than overwriting them. Modeling rich <strong>entity and relationship types</strong> (people, orgs, preferences, events, and the edges between them) is what separates a knowledge graph from a flat fact list, and it's the reason graph memory leads on temporal questions.</p>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">Why graphs beat flat vectors on time</div>
+  <div class="desc">Vector stores retrieve by similarity and have no native notion of "this fact superseded that one." Temporal graphs encode supersession as a first-class edge property, so they don't return stale facts as if they were current — the single biggest failure mode of vector-only memory in long relationships.</div>
+  <div class="sources">
+    <a href="https://arxiv.org/abs/2501.13956">Zep: Temporal KG for Agent Memory (arXiv)</a>
+    <a href="https://particula.tech/blog/agent-memory-frameworks-tested-mem0-zep-letta-cognee-2026">Mem0 vs Zep vs Letta, tested</a>
+    <a href="https://arxiv.org/pdf/2601.07468">Temporal Semantic Memory (arXiv)</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part IV</div>
+      <div class="special-content">
+
+<h2>Evaluation — How Memory Is Measured</h2>
+
+<p>The benchmark that anchors the conversation is <strong>LongMemEval</strong>: it tests whether an agent can recall and reason over facts spread across long, multi-session histories — including questions that require knowing <em>when</em> something was true. It's why the Mem0-vs-Zep gap (49.0% vs 63.8%) is quoted so often: temporal reasoning is exactly where flat retrieval breaks.</p>
+
+<p>What to actually measure when evaluating a memory system:</p>
+<ul>
+  <li><strong>Recall accuracy</strong> — does it surface the right past fact? (needle-in-a-haystack over sessions)</li>
+  <li><strong>Temporal correctness</strong> — does it respect when facts were valid?</li>
+  <li><strong>Token cost per turn</strong> — how much context budget does retrieval consume?</li>
+  <li><strong>Write/consolidation latency</strong> — can it keep up with session volume?</li>
+  <li><strong>Contradiction handling</strong> — what happens when new info conflicts with old?</li>
+</ul>
+
+<blockquote><em>⚠️ Watch the denominator:</em> a framework can post a great recall number while quietly spending 100× the tokens to get it. Always read accuracy and footprint together.</blockquote>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part V</div>
+      <div class="special-content">
+
+<h2>How to Choose</h2>
+
+<ul>
+  <li><strong>Pick Mem0</strong> if you want lean, fast personalization and a tight token budget, and your facts don't change much over time.</li>
+  <li><strong>Pick Zep / Graphiti</strong> if facts evolve and temporal reasoning matters (CRM, support over long relationships, anything where "used to" vs "now" is a real question) — and you can afford the context budget.</li>
+  <li><strong>Pick Letta</strong> for long-running stateful services where you want the agent itself to manage allocation through memory tools, OS-style.</li>
+</ul>
+
+<p>The pragmatic 2026 default for serious systems is <strong>hybrid</strong>: vector for semantic recall + a temporal graph for relationships and supersession, with a cheap local model running consolidation between sessions. Match the backend to the latency tier (Redis hot / vector warm / elastic cold), and budget tokens for retrieval the same way you budget for generation.</p>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">The one rule</div>
+  <div class="desc">Design for forgetting, not just remembering. Unbounded episodic logs are the silent killer — consolidate aggressively, expire stale facts with validity windows, and retrieve the fewest, freshest memories that answer the prompt.</div>
+  <div class="sources">
+    <a href="https://atlan.com/know/best-ai-agent-memory-frameworks-2026/">Best Agent Memory Frameworks 2026</a>
+    <a href="https://mem0.ai/blog/short-term-vs-long-term-memory-in-ai">Short-Term vs Long-Term Memory</a>
+    <a href="https://fountaincity.tech/resources/blog/agent-memory-knowledge-systems-compared/">Agent Memory Systems Compared</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">In Numbers</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="label">Zep LongMemEval</div>
+          <div class="value">63.8%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Mem0 LongMemEval</div>
+          <div class="value">49.0%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Zep tokens / conversation</div>
+          <div class="value">~600K</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Mem0 tokens / conversation</div>
+          <div class="value">~1.8K</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Watch</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Hybrid vector + temporal-graph memory becomes the default for production agents</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Token footprint becomes a first-class memory metric, not just recall accuracy</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Sleep-time consolidation with small local models becomes standard infrastructure</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Fact-validity windows (temporal edges) move from research into mainstream frameworks</span>
+      </div>
+    </div>
+
+    <div class="special-content">
+      <p style="color: var(--on-surface-variant); font-size: 12px; margin-top: 40px;">
+Sources: Zep — Temporal KG for Agent Memory (arXiv:2501.13956) · Mem0 vs Zep vs Letta, tested (particula.tech) · Best Agent Memory Frameworks 2026 (atlan.com) · Memory Systems in AI Agents (analyticsvidhya.com) · The 3 Types of Long-Term Memory (machinelearningmastery.com) · Short-Term vs Long-Term Memory (mem0.ai) · Agent Memory Systems Compared (fountaincity.tech) · Top AI Agent Memory Tools 2026 (tacnode.io) · Temporal Semantic Memory (arXiv:2601.07468)
+      </p>
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">SPECIAL REPORT · JUNE 2026</span>
+    </div>
+  </div>
+
+<script>
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+  }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
+
+  (function() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+      bar.style.width = (scrolled * 100) + '%';
+    });
+  })();
+</script>
+
+  <script>
+    const NAV_API_URL = 'https://api.github.com/repos/iamluisgb/reports/contents/reports?ref=master';
+    const CURRENT_FILE = 'ai-agent-memory-2026-06-28.html';
+
+    async function loadReportNav() {
+      try {
+        const res = await fetch(NAV_API_URL + '&t=' + Date.now());
+        if (!res.ok) throw new Error('API error');
+        const files = await res.json();
+        const htmlFiles = files
+          .filter(f => f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html')
+          .sort((a, b) => {
+            const da = a.name.replace('.html', '').split('-').slice(-3).join('');
+            const db = b.name.replace('.html', '').split('-').slice(-3).join('');
+            return db.localeCompare(da);
+          });
+        const idx = htmlFiles.findIndex(f => f.name === CURRENT_FILE);
+        if (idx === -1) return;
+        const nav = document.getElementById('report-nav');
+        if (nav) nav.style.display = '';
+        if (idx > 0) {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.href = prev.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx - 1].name;
+        } else {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.style.display = 'none';
+        }
+        if (idx < htmlFiles.length - 1) {
+          const next = document.getElementById('next-report');
+          if (next) next.href = next.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx + 1].name;
+        } else {
+          const next = document.getElementById('next-report');
+          if (next) next.style.display = 'none';
+        }
+      } catch (e) {
+        console.error('Nav error:', e);
+      }
+    }
+    loadReportNav();
+  </script>
+</body>
+</html>

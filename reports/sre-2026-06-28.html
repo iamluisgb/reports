@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-type="special">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SRE in 2026: The AI Teammate, the Stack, and the Governance Line</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=2">
+<!-- og:start -->
+<meta name="description" content="AI SRE agents hit GA · The incident loop, automated · Where autonomy stops · The OpenTelemetry-native stack · Open source vs. enterprise">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/sre-2026-06-28.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="SRE in 2026: The AI Teammate, the Stack, and the Governance Line">
+<meta property="og:description" content="AI SRE agents hit GA · The incident loop, automated · Where autonomy stops · The OpenTelemetry-native stack · Open source vs. enterprise">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/sre-2026-06-28.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/sre-2026-06-28.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="SRE in 2026: The AI Teammate, the Stack, and the Governance Line">
+<meta name="twitter:description" content="AI SRE agents hit GA · The incident loop, automated · Where autonomy stops · The OpenTelemetry-native stack · Open source vs. enterprise">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/sre-2026-06-28.png">
+<!-- og:end -->
+</head>
+<body>
+<div class="progress-bar" id="progress-bar"></div>
+  <div class="page">
+
+    <nav class="report-nav" style="display:none" id="report-nav">
+      <a id="prev-report" class="report-nav-link" href="#">← Prev</a>
+      <a class="report-nav-link" href="../index.html">Index</a>
+      <a id="next-report" class="report-nav-link" href="#">Next →</a>
+    </nav>
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="special-header">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="special-category">SRE / AIOps · Special Report</div>
+          <h1>SRE in <em>2026</em>: The AI Teammate, the Stack, and the Governance Line</h1>
+          <div class="special-date">June 2026</div>
+          <div class="special-subtitle">AI SRE agents hit GA · The incident loop, automated · Where autonomy stops · The OpenTelemetry-native stack · Open source vs. enterprise</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Executive Summary</div>
+      <div class="special-content">
+
+<p>2026 is the year the "AI SRE" stopped being a demo. <strong>AWS DevOps Agent and Microsoft Azure SRE Agent both reached GA in March 2026</strong>, both pitched as incident-response teammates that read telemetry, code, deployment data and resource context to investigate and remediate. The early numbers are real — and so are the limits.</p>
+
+<p>The honest picture is two-sided. Vendors report up to <strong>75% lower MTTR and 94% root-cause accuracy</strong>; meanwhile the Catchpoint SRE Report 2026 (418 practitioners) finds median toil still at <strong>34% of working time</strong>, with only about half of respondents saying AI actually reduced their toil. The technology works where it's bounded; it disappoints where it's over-trusted.</p>
+
+<p>This report covers both halves of the modern SRE practice: the <strong>AI teammate</strong> (what it automates and where governance must stop it) and the <strong>observability stack</strong> it runs on (now decisively OpenTelemetry-native, and the open-source-vs-enterprise decision that comes with it).</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part I</div>
+      <div class="special-content">
+
+<h2>The AI SRE Has Arrived</h2>
+
+<p>An AI SRE is an operational teammate that works the incident lifecycle the way a human on-call does — but in seconds, in parallel, across more signals than a person can hold. The canonical loop:</p>
+
+<table>
+  <tr><th>Stage</th><th>What the agent does</th><th>Maturity</th></tr>
+  <tr><td><strong>Detection</strong></td><td>Spot anomalies across metrics/logs/traces</td><td>High</td></tr>
+  <tr><td><strong>Correlation</strong></td><td>Collapse alert storms into a single incident</td><td>Highest — earliest value</td></tr>
+  <tr><td><strong>Investigation</strong></td><td>Multi-source root-cause analysis</td><td>High</td></tr>
+  <tr><td><strong>Remediation</strong></td><td>Apply or propose a fix</td><td>Guarded — governance boundary</td></tr>
+  <tr><td><strong>Verification</strong></td><td>Confirm the fix resolved the issue</td><td>Medium</td></tr>
+  <tr><td><strong>Learning</strong></td><td>Feed outcomes back into future handling</td><td>Emerging</td></tr>
+</table>
+
+<p>Operational value shows up <strong>earliest in alert correlation</strong> — killing the 2am pager storm — and governance is required <strong>strongest at the remediation boundary</strong>, where an agent acts on production.</p>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">The numbers, with sources</div>
+  <div class="desc">Cambia Health ran BigPanda's AIOps in its NOC and auto-handled 83% of alerts, surfacing critical ones within 30 seconds at 95% SLA compliance. AWS DevOps Agent preview users report up to 75% lower MTTR, 80% faster investigations, 94% RCA accuracy, and 3–5× faster resolution. A 2026 arXiv architecture (RC-LLM) reframes root-cause analysis as temporal causal reasoning, fusing trace, metric and log data.</div>
+  <div class="sources">
+    <a href="https://aws.amazon.com/blogs/devops/leverage-agentic-ai-for-autonomous-incident-response-with-aws-devops-agent/">AWS DevOps Agent</a>
+    <a href="https://www.augmentcode.com/guides/ai-sre-incident-management">AI SRE in Incident Management</a>
+    <a href="https://incident.io/blog/what-is-ai-sre-complete-guide-2026">What is AI SRE (incident.io)</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part II</div>
+      <div class="special-content">
+
+<h2>The Governance Line — Where Autonomy Stops</h2>
+
+<p>The most important design decision in AI SRE isn't the model — it's <strong>where you let it act unsupervised</strong>. The evidence supports a <strong>governed human-agent model, not full on-call replacement</strong>. Autonomy expands one failure class at a time, only after that class proves reliable.</p>
+
+<p>The control surface that makes this safe:</p>
+<ul>
+  <li><strong>Permission boundaries</strong> — what the agent may touch (read-only vs. restart vs. rollback vs. infra change)</li>
+  <li><strong>Confidence routing</strong> — high-confidence, low-risk actions auto-execute; everything else proposes-and-waits</li>
+  <li><strong>Escalation thresholds</strong> — clear lines where a human is paged regardless</li>
+  <li><strong>Blast-radius limits</strong> — caps on how much an automated remediation can change at once</li>
+</ul>
+
+<blockquote><em>⚠️ Reality check:</em> the Catchpoint SRE Report 2026 (418 practitioners) puts median toil at 34% of working time, with roughly half saying AI reduced it and half reporting no change — or <em>more</em> work. AI SRE is a force multiplier on bounded, high-volume failure classes; it is not a headcount eraser, and treating it as one creates new toil (tuning, reviewing, cleaning up over-eager automation).</blockquote>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">The maturity curve</div>
+  <div class="desc">Start the agent at correlation + investigation (advisory), promote individual remediations to auto-execute only after they've proven safe under permission boundaries. Read-only triage first; write-actions last; irreversible actions never without a human.</div>
+  <div class="sources">
+    <a href="https://www.augmentcode.com/guides/ai-sre-ai-powered-site-reliability-engineering">AI SRE 2026 Guide</a>
+    <a href="https://resolve.ai/glossary/what-is-ai-sre">What is an AI SRE</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part III</div>
+      <div class="special-content">
+
+<h2>The Stack — OpenTelemetry-Native by Default</h2>
+
+<p>None of the AI above works without good telemetry, and the telemetry layer settled hard in 2026: <strong>OpenTelemetry consolidated the ecosystem</strong>, providing one SDK for metrics, logs and traces. Even the long-running Prometheus/OpenTelemetry friction is now largely resolved.</p>
+
+<table>
+  <tr><th>Layer</th><th>Open-source default</th><th>2026 shift</th></tr>
+  <tr><td><strong>Instrumentation</strong></td><td>OpenTelemetry SDK; eBPF (Beyla, Pixie)</td><td>Auto-instrumentation with no code changes via eBPF</td></tr>
+  <tr><td><strong>Metrics</strong></td><td>Prometheus</td><td>Native OTel interop</td></tr>
+  <tr><td><strong>Logs</strong></td><td>Loki</td><td>Unified pipelines</td></tr>
+  <tr><td><strong>Traces</strong></td><td>Tempo / Jaeger</td><td>Trace–metric–log correlation for RCA</td></tr>
+  <tr><td><strong>Pipeline</strong></td><td>Grafana Alloy</td><td>One agent for metrics, logs, traces, profiling</td></tr>
+  <tr><td><strong>Visualization</strong></td><td>Grafana</td><td>"Full-stack observability for the agentic era"</td></tr>
+</table>
+
+<p>Two developments matter most. <strong>eBPF auto-instrumentation</strong> (Grafana Beyla, Pixie) captures metrics and traces at the kernel level without touching application code — which is exactly the unified, low-friction signal an AI SRE needs to reason across. And <strong>Grafana Alloy</strong> collapses the collector zoo into a single telemetry pipeline (Prometheus + OTel + Loki + Pyroscope).</p>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">Why this matters for AI SRE</div>
+  <div class="desc">Agentic RCA is only as good as the correlated signal it gets. A unified OTel + eBPF stack gives the agent trace/metric/log data already joined — the precondition for the 94% RCA-accuracy claims to hold outside a demo.</div>
+  <div class="sources">
+    <a href="https://thenewstack.io/prometheus-and-opentelemetry-love-each-other-more-than-in-the-past/">Prometheus + OpenTelemetry</a>
+    <a href="https://grafana.com/docs/opentelemetry/">OpenTelemetry at Grafana</a>
+    <a href="https://oneuptime.com/blog/post/2026-02-06-complete-observability-stack-opentelemetry-open-source/view">Complete OTel Stack</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part IV</div>
+      <div class="special-content">
+
+<h2>Open Source vs. Enterprise — The Real Question Changed</h2>
+
+<p>The old debate ("should we use open-source observability?") is over — the answer is almost universally <strong>yes</strong>. The 2026 question is sharper:</p>
+
+<blockquote><em>"Should <strong>we</strong> be the ones running it?"</em></blockquote>
+
+<p>Self-hosting the OTel + Prometheus + Loki + Grafana stack gives maximum control and zero per-GB vendor tax, but the operational burden — scaling, retention, upgrades, on-call for your monitoring — is real. <strong>Managed open-source</strong> splits the difference: the same OSS tools and data portability, without running them yourself. For Kubernetes-native and air-gapped environments, self-hostable AI-SRE-plus-observability options (e.g. eBPF-based, in-environment) have matured.</p>
+
+<table>
+  <tr><th>Path</th><th>You get</th><th>You pay in</th></tr>
+  <tr><td><strong>Self-hosted OSS</strong></td><td>Full control, no data tax, portability</td><td>Operational burden, your own monitoring on-call</td></tr>
+  <tr><td><strong>Managed OSS</strong></td><td>OSS tooling + portability, no ops burden</td><td>Service cost, some control</td></tr>
+  <tr><td><strong>Proprietary enterprise</strong></td><td>Turnkey, integrated AI features</td><td>Lock-in, per-GB pricing, data egress friction</td></tr>
+</table>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">The pragmatic answer</div>
+  <div class="desc">Standardize on OpenTelemetry so your data is portable regardless of where it lands. Then choose run-it-yourself vs. managed by your team's appetite for operational toil — not by feature checklists, since the OSS feature gap to enterprise has largely closed.</div>
+  <div class="sources">
+    <a href="https://stackgen.com/blog/top-10-managed-open-source-observability-solutions-2026">Managed OSS Observability 2026</a>
+    <a href="https://metoro.io/blog/self-hosted-kubernetes-observability-tools">Self-Hosted K8s Observability</a>
+    <a href="https://github.com/agamm/awesome-ai-sre">Awesome AI SRE</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">In Numbers</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="label">AWS DevOps Agent — MTTR reduction</div>
+          <div class="value">up to 75%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">BigPanda @ Cambia — alerts auto-handled</div>
+          <div class="value">83%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Reported RCA accuracy</div>
+          <div class="value">94%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Median SRE toil (Catchpoint 2026)</div>
+          <div class="value">34%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Watch</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>AI SRE autonomy expands failure-class by failure-class, gated by permission boundaries</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>eBPF auto-instrumentation becomes the default signal source for agentic RCA</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>OpenTelemetry portability becomes the hedge against observability lock-in</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>"Managed OSS" eats the middle between self-hosting and proprietary platforms</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Toil reduction stays uneven — measure it, don't assume the AI delivered it</span>
+      </div>
+    </div>
+
+    <div class="special-content">
+      <p style="color: var(--on-surface-variant); font-size: 12px; margin-top: 40px;">
+Sources: AWS DevOps Agent — autonomous incident response (aws.amazon.com) · AI SRE in Incident Management (augmentcode.com) · What is AI SRE — complete guide 2026 (incident.io) · AI SRE 2026 Guide (augmentcode.com) · What is an AI SRE (resolve.ai) · Awesome AI SRE (github.com/agamm) · Prometheus + OpenTelemetry (thenewstack.io) · OpenTelemetry at Grafana (grafana.com) · Complete OTel Stack (oneuptime.com) · Managed OSS Observability 2026 (stackgen.com) · Self-Hosted K8s Observability (metoro.io)
+      </p>
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">SPECIAL REPORT · JUNE 2026</span>
+    </div>
+  </div>
+
+<script>
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+  }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
+
+  (function() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+      bar.style.width = (scrolled * 100) + '%';
+    });
+  })();
+</script>
+
+  <script>
+    const NAV_API_URL = 'https://api.github.com/repos/iamluisgb/reports/contents/reports?ref=master';
+    const CURRENT_FILE = 'sre-2026-06-28.html';
+
+    async function loadReportNav() {
+      try {
+        const res = await fetch(NAV_API_URL + '&t=' + Date.now());
+        if (!res.ok) throw new Error('API error');
+        const files = await res.json();
+        const htmlFiles = files
+          .filter(f => f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html')
+          .sort((a, b) => {
+            const da = a.name.replace('.html', '').split('-').slice(-3).join('');
+            const db = b.name.replace('.html', '').split('-').slice(-3).join('');
+            return db.localeCompare(da);
+          });
+        const idx = htmlFiles.findIndex(f => f.name === CURRENT_FILE);
+        if (idx === -1) return;
+        const nav = document.getElementById('report-nav');
+        if (nav) nav.style.display = '';
+        if (idx > 0) {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.href = prev.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx - 1].name;
+        } else {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.style.display = 'none';
+        }
+        if (idx < htmlFiles.length - 1) {
+          const next = document.getElementById('next-report');
+          if (next) next.href = next.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx + 1].name;
+        } else {
+          const next = document.getElementById('next-report');
+          if (next) next.style.display = 'none';
+        }
+      } catch (e) {
+        console.error('Nav error:', e);
+      }
+    }
+    loadReportNav();
+  </script>
+</body>
+</html>

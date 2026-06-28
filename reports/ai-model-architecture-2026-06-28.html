@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-type="special">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Architecture of Frontier AI in 2026: Five Shifts</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=2">
+<!-- og:start -->
+<meta name="description" content="MoE is the default · Test-time compute is the new scaling axis · Efficient attention breaks the context ceiling · Speculative decoding ships in the weights · The frontier is contested across five labs">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-model-architecture-2026-06-28.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="The Architecture of Frontier AI in 2026: Five Shifts">
+<meta property="og:description" content="MoE is the default · Test-time compute is the new scaling axis · Efficient attention breaks the context ceiling · Speculative decoding ships in the weights · The frontier is contested across five labs">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-model-architecture-2026-06-28.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-model-architecture-2026-06-28.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="The Architecture of Frontier AI in 2026: Five Shifts">
+<meta name="twitter:description" content="MoE is the default · Test-time compute is the new scaling axis · Efficient attention breaks the context ceiling · Speculative decoding ships in the weights · The frontier is contested across five labs">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-model-architecture-2026-06-28.png">
+<!-- og:end -->
+</head>
+<body>
+<div class="progress-bar" id="progress-bar"></div>
+  <div class="page">
+
+    <nav class="report-nav" style="display:none" id="report-nav">
+      <a id="prev-report" class="report-nav-link" href="#">← Prev</a>
+      <a class="report-nav-link" href="../index.html">Index</a>
+      <a id="next-report" class="report-nav-link" href="#">Next →</a>
+    </nav>
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="special-header">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="special-category">Model Architecture · Special Report</div>
+          <h1>The Architecture of Frontier AI in <em>2026</em>: Five Shifts</h1>
+          <div class="special-date">June 2026</div>
+          <div class="special-subtitle">MoE is the default · Test-time compute is the new scaling axis · Efficient attention breaks the context ceiling · Speculative decoding ships in the weights · The frontier is contested across five labs</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Executive Summary</div>
+      <div class="special-content">
+
+<p>The 2026 frontier doesn't look like the 2023 one. The "bigger dense transformer" recipe has been replaced by a stack of independent architectural bets that compound: <strong>sparse Mixture-of-Experts</strong> for capacity-per-FLOP, <strong>test-time compute</strong> for reasoning, <strong>efficient attention</strong> for context length, and <strong>speculative decoding baked into the checkpoint</strong> for throughput. None of these is a single vendor's trick anymore — they're table stakes.</p>
+
+<p>The strategic shift underneath all of them: <strong>inference, not training, is now where the cost and the differentiation live</strong>. Analysts project inference will be ~75% of total AI compute by 2030, a complete inversion of the training-dominated early 2020s. Every architecture choice below is, at bottom, an inference-economics choice.</p>
+
+<p>And for the first time, the "best model" crown is genuinely contested in a single quarter — OpenAI, Google, Anthropic, Meta, Microsoft, xAI and DeepSeek are all shipping simultaneously rather than sequentially.</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Shift 1</div>
+      <div class="special-content">
+
+<h2>Mixture-of-Experts Is the Default, Not the Exception</h2>
+
+<p>MoE has gone from experimental to the dominant architecture for state-of-the-art models. The move is simple: replace each dense feed-forward layer with a <strong>router + many experts</strong>, and activate only a few experts per token (top-k routing). The result is capacity that grows with total parameters while compute grows only with <em>active</em> parameters.</p>
+
+<p>That total-vs-active split is the number that now matters on every model card:</p>
+<ul>
+  <li>A model can hold <strong>400B+ total parameters but activate ~50B per forward pass</strong> — dense models pay for all of them on every token.</li>
+  <li>Meta's Llama 4 Maverick popularized the pattern in the open: <strong>17B active parameters across 128 experts</strong>, natively multimodal.</li>
+  <li>The catch is memory: sparse <em>compute</em> doesn't mean sparse <em>storage</em>. All experts must sit in VRAM even though only a fraction fire per token — so MoE shifts the bottleneck from FLOPs to memory bandwidth and capacity.</li>
+</ul>
+
+<blockquote><em>📌 Takeaway:</em> MoE is why a lab can advertise a "trillion-parameter" model that costs roughly the same to serve as a 30–50B dense one. Read the <strong>active</strong> parameter count, not the headline.</blockquote>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">Why it dominates</div>
+  <div class="desc">Sparse activation decouples capacity from per-token cost; top-k routing learns to send tokens to specialized experts. The open ecosystem (Mixtral, Llama 4, DeepSeek, Qwen) standardized the pattern, and frontier closed models (Gemini, and reportedly OpenAI) are widely understood to be MoE.</div>
+  <div class="sources">
+    <a href="https://callsphere.ai/blog/mixture-of-experts-architecture-why-moe-dominates-2026-llms">Why MoE Dominates 2026 LLMs</a>
+    <a href="https://sebastianraschka.com/llm-architecture-gallery/moe/">Raschka — MoE</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Shift 2</div>
+      <div class="special-content">
+
+<h2>Test-Time Compute Is the New Scaling Axis</h2>
+
+<p>The biggest capability jumps of the last 18 months didn't come from bigger pre-training runs — they came from letting models <strong>think longer at inference</strong>. Reasoning models spend meaningful compute <em>when you ask the question</em>, not only when they're trained.</p>
+
+<table>
+  <tr><th>Model</th><th>Signal</th><th>What it shows</th></tr>
+  <tr><td><strong>OpenAI o3</strong></td><td>75.7% on ARC-AGI-2 at high compute; ~57M tokens & ~14 min per hard question</td><td>Accuracy can be <em>bought</em> with inference compute</td></tr>
+  <tr><td><strong>DeepSeek-R1</strong></td><td>Reasoning emerged from pure RL (GRPO), no SFT; open chain-of-thought</td><td>Reasoning is trainable cheaply and openly</td></tr>
+</table>
+
+<p>DeepSeek-R1 was the proof that mattered for the rest of the field: reasoning capability can <strong>emerge from reinforcement learning alone</strong>, rewarded purely for correct final answers — no supervised reasoning traces required. That collapsed the cost of building a reasoning model and is why nearly every lab now ships a "thinking" variant.</p>
+
+<blockquote><em>⚠️ The counter-signal:</em> more inference compute is not monotonically better. Research on the "test-time compute paradox" shows that beyond a point, longer reasoning chains can <strong>degrade</strong> accuracy (overthinking, error accumulation). The frontier is learning <em>when to stop</em>, not just how to think longer.</blockquote>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">The economic consequence</div>
+  <div class="desc">If accuracy scales with inference compute, then compute budget per query becomes a product decision — and inference comes to dominate total AI spend (projected ~75% by 2030). This is the single biggest reason the rest of this report is about efficiency.</div>
+  <div class="sources">
+    <a href="https://zylos.ai/research/2026-01-24-ai-reasoning-models">Reasoning Models 2026 (Zylos)</a>
+    <a href="https://arxiv.org/html/2501.12948v1">DeepSeek-R1 (arXiv)</a>
+    <a href="https://www.arturmarkus.com/the-test-time-compute-paradox-why-reasoning-models-like-o1-and-deepseek-r1-are-proving-that-more-inference-compute-can-destroy-accuracy/">The Test-Time Compute Paradox</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Shift 3</div>
+      <div class="special-content">
+
+<h2>Efficient Attention Breaks the Context Ceiling</h2>
+
+<p>Standard transformer attention scales <strong>O(n²)</strong> with context length, and the KV cache grows linearly — together they make million-token contexts expensive even on datacenter GPUs (doubling to 2M tokens quadruples attention FLOPs). 2026 is the year that ceiling cracked.</p>
+
+<ul>
+  <li><strong>Subquadratic (SubQ)</strong> shipped the first frontier LLM with a <strong>12M-token context window</strong>, using "Subquadratic Selective Attention" that scales linearly — claiming ~52× faster attention at 1M tokens and 92.1% needle-in-a-haystack recall at 12M.</li>
+  <li>Crucially, unlike SSMs/linear-attention models that compress history into a fixed state (and lose precise long-range recall), SSA keeps recall <strong>near-exact</strong> while dropping the quadratic cost.</li>
+  <li>The practical payoff is memory: a linear KV cache lets a 1M-token context fit on a <strong>single H200 node</strong> instead of a multi-node tensor-parallel setup. DeepSeek-V4's reception drove the same lesson home — million-token context needs <em>efficient attention, not just a bigger window</em>.</li>
+</ul>
+
+<blockquote><em>📌 Takeaway:</em> "Context length" is now an attention-architecture and KV-cache problem, not a marketing number. The labs winning long-context are the ones who changed the attention math, not the ones who merely raised the limit.</blockquote>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">Watch the KV cache</div>
+  <div class="desc">KV-cache optimization (quantized caches, eviction, paged attention) is now a first-class research area because at long context the cache, not the weights, dominates memory. Expect KV efficiency to be a headline spec, not a footnote.</div>
+  <div class="sources">
+    <a href="https://thenewstack.io/subquadratic-12-million-context-window/">The New Stack — 12M window</a>
+    <a href="https://artgor.medium.com/deepseek-v4-review-why-million-token-context-needs-efficient-attention-not-just-larger-windows-6dc8e74a00b1">DeepSeek-V4: efficient attention</a>
+    <a href="https://arxiv.org/html/2603.20397v1">KV Cache Optimization (arXiv)</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Shift 4</div>
+      <div class="special-content">
+
+<h2>Speculative Decoding Ships Inside the Weights</h2>
+
+<p>Throughput got a free lunch, and it's now baked into checkpoints. <strong>Speculative decoding</strong> drafts several tokens and verifies them in parallel — 2–3× faster generation with <em>no</em> quality loss. The 2026 evolution is that you no longer need a separate draft model:</p>
+
+<ul>
+  <li><strong>Multi-Token Prediction (MTP)</strong> ships the draft heads <em>inside</em> the checkpoint, generating 2–4 tokens per forward pass and breaking the memory-bandwidth limit without an external drafter.</li>
+  <li>As of 2026, <strong>DeepSeek V3.x / V4, GLM-5.1 and several Llama 4 variants publish MTP heads in their weights</strong> — speculative decoding has become a property of the model, not just the serving stack.</li>
+  <li>It composes with quantization: frameworks like QSpec, QuantSpec and ML-SpecQD combine 4-bit weights/KV caches with speculative drafts for compounding speedups.</li>
+</ul>
+
+<blockquote><em>📌 Takeaway:</em> Inference efficiency is migrating from the serving layer (vLLM/TensorRT tricks) into the model architecture itself. "Does it have MTP heads?" is becoming a real procurement question.</blockquote>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">The efficiency battlefield</div>
+  <div class="desc">MTP + speculative decoding + quantization + efficient attention stack multiplicatively. Combined with reasoning's appetite for tokens (Shift 2), this is the arms race that actually determines unit economics — not raw benchmark scores.</div>
+  <div class="sources">
+    <a href="https://www.spheron.network/blog/multi-token-prediction-mtp-gpu-cloud-deployment-guide/">MTP for 2–3× Inference</a>
+    <a href="https://openreview.net/pdf?id=i6nuapVUDZ">Fast & Expressive Multi-Token Prediction</a>
+    <a href="https://arxiv.org/pdf/2505.22179">Speculative Decoding Meets Quantization</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Shift 5</div>
+      <div class="special-content">
+
+<h2>The Frontier Is Contested — Five Labs, One Quarter</h2>
+
+<p>The most underappreciated change is structural: the model race is now <strong>parallel, not sequential</strong>. In a single quarter the best-model crown is genuinely disputed across multiple labs shipping at once.</p>
+
+<table>
+  <tr><th>Lab</th><th>2026 move</th><th>Architectural angle</th></tr>
+  <tr><td><strong>Google DeepMind</strong></td><td>Gemini 3.5 Pro (2M context, "Deep Think") + Gemini 3.5 Flash</td><td>Long context + a fast/cheap tier ~4× quicker inference</td></tr>
+  <tr><td><strong>Microsoft</strong></td><td>Seven in-house "MAI" models; flagship MAI-Thinking-1</td><td>Reasoning at a competitive token cost; vertical independence</td></tr>
+  <tr><td><strong>Meta</strong></td><td>Llama 4 family (MoE, multimodal); Muse Spark (first closed model)</td><td>Open MoE leadership + a proprietary tier</td></tr>
+  <tr><td><strong>DeepSeek</strong></td><td>V4 with efficient attention + MTP heads</td><td>Efficiency-first; open weights pressuring price</td></tr>
+</table>
+
+<p>The pattern across all of them: <strong>differentiation has moved from "who has the biggest model" to "who serves capability cheapest"</strong> — via the four architectural shifts above. A fast/cheap tier (Flash-class) next to a deep-reasoning tier is now the standard product shape.</p>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">What it means for builders</div>
+  <div class="desc">Pick models by the axis you're bottlenecked on: reasoning depth (test-time compute), context (efficient attention), or throughput/cost (MTP + quantization). The "one model for everything" era is over; routing across tiers is the default.</div>
+  <div class="sources">
+    <a href="https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/">Microsoft MAI models</a>
+    <a href="https://fourweekmba.com/ai-model-race-tracker-summer-2026/">Frontier Model Race Tracker</a>
+    <a href="https://llm-stats.com/llm-updates">AI Model Updates (June 2026)</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">In Numbers</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="label">Inference share of AI compute by 2030 (proj.)</div>
+          <div class="value">~75%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">SubQ context window</div>
+          <div class="value">12M</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">o3 on ARC-AGI-2 (high compute)</div>
+          <div class="value">75.7%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Speculative decoding / MTP speedup</div>
+          <div class="value">2-3x</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Watch</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Active-parameter counts, not totals, become the standard way to compare model cost</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>"When to stop reasoning" controllers — adaptive test-time compute beats fixed-length thinking</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>KV-cache efficiency (quantized/paged) becomes a headline spec for long-context models</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>MTP heads in the checkpoint turn into a procurement checkbox alongside context length</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Two-tier product shape (fast/cheap + deep/reasoning) becomes universal; clients route between them</span>
+      </div>
+    </div>
+
+    <div class="special-content">
+      <p style="color: var(--on-surface-variant); font-size: 12px; margin-top: 40px;">
+Sources: Microsoft AI — MAI models (microsoft.ai) · Frontier Model Race Tracker (fourweekmba.com) · AI Model Updates June 2026 (llm-stats.com) · Why MoE Dominates 2026 LLMs (callsphere.ai) · Sebastian Raschka — MoE (sebastianraschka.com) · Reasoning Models 2026 (zylos.ai) · DeepSeek-R1 (arXiv:2501.12948) · The Test-Time Compute Paradox (arturmarkus.com) · Subquadratic 12M context (thenewstack.io) · DeepSeek-V4 efficient attention (artgor.medium.com) · KV Cache Optimization (arXiv:2603.20397) · Multi-Token Prediction deployment (spheron.network) · Fast & Expressive MTP (openreview.net) · Speculative Decoding Meets Quantization (arXiv:2505.22179)
+      </p>
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">SPECIAL REPORT · JUNE 2026</span>
+    </div>
+  </div>
+
+<script>
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+  }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
+
+  (function() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+      bar.style.width = (scrolled * 100) + '%';
+    });
+  })();
+</script>
+
+  <script>
+    const NAV_API_URL = 'https://api.github.com/repos/iamluisgb/reports/contents/reports?ref=master';
+    const CURRENT_FILE = 'ai-model-architecture-2026-06-28.html';
+
+    async function loadReportNav() {
+      try {
+        const res = await fetch(NAV_API_URL + '&t=' + Date.now());
+        if (!res.ok) throw new Error('API error');
+        const files = await res.json();
+        const htmlFiles = files
+          .filter(f => f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html')
+          .sort((a, b) => {
+            const da = a.name.replace('.html', '').split('-').slice(-3).join('');
+            const db = b.name.replace('.html', '').split('-').slice(-3).join('');
+            return db.localeCompare(da);
+          });
+        const idx = htmlFiles.findIndex(f => f.name === CURRENT_FILE);
+        if (idx === -1) return;
+        const nav = document.getElementById('report-nav');
+        if (nav) nav.style.display = '';
+        if (idx > 0) {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.href = prev.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx - 1].name;
+        } else {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.style.display = 'none';
+        }
+        if (idx < htmlFiles.length - 1) {
+          const next = document.getElementById('next-report');
+          if (next) next.href = next.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx + 1].name;
+        } else {
+          const next = document.getElementById('next-report');
+          if (next) next.style.display = 'none';
+        }
+      } catch (e) {
+        console.error('Nav error:', e);
+      }
+    }
+    loadReportNav();
+  </script>
+</body>
+</html>

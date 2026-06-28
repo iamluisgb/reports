@@ -1,7 +1,37 @@
 {
-  "generated": "2026-06-28T14:27:36+00:00",
-  "count": 57,
+  "generated": "2026-06-28T14:54:10+00:00",
+  "count": 55,
   "reports": [
+    {
+      "file": "sre-2026-06-28.html",
+      "type": "special",
+      "title": "SRE in 2026: The AI Teammate, the Stack, and the Governance Line",
+      "date": "2026-06-28",
+      "summary": "AI SRE agents hit GA · The incident loop, automated · Where autonomy stops · The OpenTelemetry-native stack · Open source vs. enterprise",
+      "readingTime": 6,
+      "tags": [
+        "agents",
+        "open-source",
+        "business",
+        "models",
+        "research"
+      ]
+    },
+    {
+      "file": "building-agent-skills-2026-06-28.html",
+      "type": "special",
+      "title": "Building Agent Skills in 2026: Progressive Disclosure as a Design Pattern",
+      "date": "2026-06-28",
+      "summary": "What a Skill is · Skills vs. tools · The three-tier disclosure model · How to author one · The context-tax discipline · Security",
+      "readingTime": 7,
+      "tags": [
+        "agents",
+        "models",
+        "security",
+        "funding",
+        "research"
+      ]
+    },
     {
       "file": "ai-news-2026-06-28.html",
       "type": "daily",
@@ -15,6 +45,36 @@
         "research",
         "security",
         "coding"
+      ]
+    },
+    {
+      "file": "ai-model-architecture-2026-06-28.html",
+      "type": "special",
+      "title": "The Architecture of Frontier AI in 2026: Five Shifts",
+      "date": "2026-06-28",
+      "summary": "MoE is the default · Test-time compute is the new scaling axis · Efficient attention breaks the context ceiling · Speculative decoding ships in the weights · The frontier is contested across five labs",
+      "readingTime": 8,
+      "tags": [
+        "models",
+        "infrastructure",
+        "research",
+        "memory",
+        "multimodal"
+      ]
+    },
+    {
+      "file": "ai-agent-memory-2026-06-28.html",
+      "type": "special",
+      "title": "AI Agent Memory in 2026: Architectures, Frameworks & Trade-offs",
+      "date": "2026-06-28",
+      "summary": "The memory taxonomy · Vector vs graph vs OS-tiered · Mem0 vs Zep vs Letta on the benchmarks · Temporal knowledge graphs · How to choose",
+      "readingTime": 7,
+      "tags": [
+        "memory",
+        "agents",
+        "research",
+        "models",
+        "infrastructure"
       ]
     },
     {
@@ -438,21 +498,6 @@
       ]
     },
     {
-      "file": "gbrain-skillify-2026-06-02-en.html",
-      "type": "special",
-      "title": "Skillify: gbrain's Meta-Skill",
-      "date": "2026-06-02",
-      "summary": "The 11-point framework for building production-grade agent skills · Cross-modal evaluation · The definitive checklist",
-      "readingTime": 10,
-      "tags": [
-        "models",
-        "agents",
-        "coding",
-        "memory",
-        "funding"
-      ]
-    },
-    {
       "file": "enterprise-ai-agent-security-2026-06-02.html",
       "type": "special",
       "title": "Enterprise AI Agent Security — Deep Research Report",
@@ -543,21 +588,6 @@
       ]
     },
     {
-      "file": "hermes-sre-aiops.html",
-      "type": "special",
-      "title": "Hermes Models + Agent Framework for SRE/AIOps: A Staff SRE Analysis",
-      "date": "2026-05-29",
-      "summary": "",
-      "readingTime": 20,
-      "tags": [
-        "agents",
-        "models",
-        "infrastructure",
-        "security",
-        "hardware"
-      ]
-    },
-    {
       "file": "ai-news-2026-05-29.html",
       "type": "daily",
       "title": "AI News Daily",
@@ -585,21 +615,6 @@
         "research",
         "infrastructure",
         "security"
-      ]
-    },
-    {
-      "file": "gbrain-2026-05-27.html",
-      "type": "special",
-      "title": "GBrain Deep Dive: 15 Entity Types That Redefine Agent Memory",
-      "date": "2026-05-27",
-      "summary": "Deep analysis of Garry Tan's gbrain · 8 frameworks compared · Architecture taxonomy · Where the field is heading",
-      "readingTime": 7,
-      "tags": [
-        "memory",
-        "agents",
-        "research",
-        "models",
-        "multimodal"
       ]
     },
     {
@@ -645,21 +660,6 @@
         "security",
         "research",
         "coding"
-      ]
-    },
-    {
-      "file": "sre-stack-2026.html",
-      "type": "special",
-      "title": "SRE Stack 2026: Open Source vs. Enterprise — Two Paths, One Answer",
-      "date": "2026-05-24",
-      "summary": "",
-      "readingTime": 10,
-      "tags": [
-        "agents",
-        "business",
-        "infrastructure",
-        "models",
-        "security"
       ]
     },
     {
@@ -813,21 +813,6 @@
       ]
     },
     {
-      "file": "ai-models-architecture-may-2026.html",
-      "type": "special",
-      "title": "AI Models & Architecture: The Landscape in May 2026",
-      "date": "2026-05-16",
-      "summary": "",
-      "readingTime": 4,
-      "tags": [
-        "models",
-        "infrastructure",
-        "multimodal",
-        "hardware",
-        "research"
-      ]
-    },
-    {
       "file": "ai-news-2026-05-15.html",
       "type": "daily",
       "title": "AI News Daily",
@@ -840,21 +825,6 @@
         "hardware",
         "models",
         "security"
-      ]
-    },
-    {
-      "file": "ai-agent-memory-sota.html",
-      "type": "special",
-      "title": "AI Agent Memory 2026: 8 Architectures Compared",
-      "date": "2026-05-15",
-      "summary": "",
-      "readingTime": 11,
-      "tags": [
-        "memory",
-        "agents",
-        "models",
-        "research",
-        "coding"
       ]
     }
   ]

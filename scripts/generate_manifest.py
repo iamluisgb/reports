@@ -41,7 +41,7 @@ MONTHS = {
 DATE_IN_NAME = re.compile(r"(\d{4})-(\d{2})-(\d{2})")
 DATE_LINE = re.compile(r'date-line">\s*([^<]+)', re.IGNORECASE)
 TITLE_TAG = re.compile(r"<title>(.*?)</title>", re.IGNORECASE | re.DOTALL)
-SUBTITLE = re.compile(r'class="subtitle">\s*(.*?)\s*</div>', re.IGNORECASE | re.DOTALL)
+SUBTITLE = re.compile(r'class="[^"]*subtitle">\s*(.*?)\s*</div>', re.IGNORECASE | re.DOTALL)
 TAG_STRIP = re.compile(r"<(script|style)\b.*?</\1>", re.IGNORECASE | re.DOTALL)
 ANY_TAG = re.compile(r"<[^>]+>")
 

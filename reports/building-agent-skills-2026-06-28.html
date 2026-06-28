@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-type="special">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Building Agent Skills in 2026: Progressive Disclosure as a Design Pattern</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=2">
+<!-- og:start -->
+<meta name="description" content="What a Skill is · Skills vs. tools · The three-tier disclosure model · How to author one · The context-tax discipline · Security">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/building-agent-skills-2026-06-28.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="Building Agent Skills in 2026: Progressive Disclosure as a Design Pattern">
+<meta property="og:description" content="What a Skill is · Skills vs. tools · The three-tier disclosure model · How to author one · The context-tax discipline · Security">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/building-agent-skills-2026-06-28.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/building-agent-skills-2026-06-28.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="Building Agent Skills in 2026: Progressive Disclosure as a Design Pattern">
+<meta name="twitter:description" content="What a Skill is · Skills vs. tools · The three-tier disclosure model · How to author one · The context-tax discipline · Security">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/building-agent-skills-2026-06-28.png">
+<!-- og:end -->
+</head>
+<body>
+<div class="progress-bar" id="progress-bar"></div>
+  <div class="page">
+
+    <nav class="report-nav" style="display:none" id="report-nav">
+      <a id="prev-report" class="report-nav-link" href="#">← Prev</a>
+      <a class="report-nav-link" href="../index.html">Index</a>
+      <a id="next-report" class="report-nav-link" href="#">Next →</a>
+    </nav>
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="special-header">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="special-category">Agent Engineering · Special Report</div>
+          <h1>Building Agent Skills in <em>2026</em>: Progressive Disclosure as a Design Pattern</h1>
+          <div class="special-date">June 2026</div>
+          <div class="special-subtitle">What a Skill is · Skills vs. tools · The three-tier disclosure model · How to author one · The context-tax discipline · Security</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Executive Summary</div>
+      <div class="special-content">
+
+<p>In December 2025 Anthropic released the <strong>SKILL.md</strong> format; within weeks OpenAI, Google, GitHub and Cursor adopted it. That speed is the story: agent <strong>Skills</strong> became the first mainstream, cross-vendor implementation of <strong>progressive disclosure</strong> — the discipline of loading the right context at the right moment instead of stuffing everything into the prompt.</p>
+
+<p>A Skill is deceptively simple — a folder with a markdown file (YAML frontmatter + instructions) plus optional scripts, templates and data. The depth is in <em>how it loads</em>: the agent reads only a Skill's name and description at startup (~80 tokens median), pulls in the full body (275–8,000 tokens) only when it's relevant, and touches scripts/references only during execution. That tiering is what makes a library of dozens of capabilities feasible without drowning the context window.</p>
+
+<p>This report covers what Skills are, how they differ from tools, the disclosure model, a battle-tested authoring process, and the operational discipline (the "context tax") that separates a useful Skill library from an expensive one.</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part I</div>
+      <div class="special-content">
+
+<h2>What a Skill Is — and Isn't</h2>
+
+<p>A Skill packages <strong>instructions, metadata and optional resources</strong> (scripts, templates) that an agent invokes automatically when relevant. Concretely, it's a directory containing a <code>SKILL.md</code> with YAML frontmatter and markdown, plus anything else the task needs.</p>
+
+<p>The crucial conceptual move is <strong>Skills vs. Tools</strong>:</p>
+<table>
+  <tr><th></th><th>Tool</th><th>Skill</th></tr>
+  <tr><td><strong>What it does</strong></td><td>Executes an action and returns a result</td><td>Injects procedural knowledge & modifies how the agent works</td></tr>
+  <tr><td><strong>Shape</strong></td><td>A function with a schema</td><td>A folder of instructions + resources</td></tr>
+  <tr><td><strong>Effect on context</strong></td><td>Adds a result to context</td><td>Enables progressive disclosure of know-how</td></tr>
+  <tr><td><strong>Analogy</strong></td><td>A power tool</td><td>The craftsman's playbook for using it</td></tr>
+</table>
+
+<blockquote><em>📌 Takeaway:</em> Tools let an agent <em>do</em> things; Skills teach it <em>how and when</em>. A skill is "just markdown," but the folder can carry scripts, templates, data and images — the agent reads them, runs them, and uses them to do real work.</blockquote>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">Why it standardized so fast</div>
+  <div class="desc">A universal, plain-text, vendor-neutral format (SKILL.md) made Skills portable across agents overnight. By March 2026 the ecosystem spanned official, verified third-party, and thousands of community Skills — all on the same format.</div>
+  <div class="sources">
+    <a href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview">Agent Skills — Docs</a>
+    <a href="https://www.newsletter.swirlai.com/p/agent-skills-progressive-disclosure">Progressive Disclosure as a Pattern</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part II</div>
+      <div class="special-content">
+
+<h2>The Three-Tier Disclosure Model</h2>
+
+<p>Progressive disclosure loads information in tiers by relevance. This is the engine that makes Skills scale:</p>
+
+<table>
+  <tr><th>Tier</th><th>Loaded when</th><th>What loads</th><th>Token cost</th></tr>
+  <tr><td><strong>1. Discovery</strong></td><td>Always (startup)</td><td>Name + description only</td><td>~80 tokens median / skill</td></tr>
+  <tr><td><strong>2. Activation</strong></td><td>When the model judges it relevant</td><td>Full instruction body</td><td>275–8,000 tokens</td></tr>
+  <tr><td><strong>3. Execution</strong></td><td>Only during the task</td><td>Scripts, templates, reference files</td><td>On demand</td></tr>
+</table>
+
+<p>The payoff: an agent can carry a <strong>lightweight index</strong> of many capabilities and pay the full cost of only the one it actually uses. Models also simply <em>perform better</em> when they get relevant information at the right moment — which is why context engineering is now considered as critical as prompt engineering.</p>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">Design implication</div>
+  <div class="desc">Your Skill's <strong>description</strong> is the most important line you write — it's the only thing the agent sees until activation. A vague description means the Skill never triggers; a precise, trigger-rich one means it fires exactly when needed.</div>
+  <div class="sources">
+    <a href="https://www.mindstudio.ai/blog/progressive-disclosure-ai-agent-skill-design">Progressive Disclosure in Skill Design</a>
+    <a href="https://www.newsletter.swirlai.com/p/state-of-context-engineering-in-2026">State of Context Engineering 2026</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part III</div>
+      <div class="special-content">
+
+<h2>How to Author a Skill That Actually Triggers</h2>
+
+<p>The most effective authoring loop documented in 2026 is <strong>Claude-to-Claude development</strong>: one instance ("Claude A") helps you design and refine the Skill; another instance ("Claude B"), with the Skill loaded, tests it on real tasks. You watch where B struggles, succeeds, or makes unexpected choices, and feed that back to A.</p>
+
+<p>The repeatable recipe:</p>
+<ol>
+  <li><strong>Do the task without a Skill first.</strong> As you work, you naturally supply context, preferences and procedure — notice what you provide <em>repeatedly</em>.</li>
+  <li><strong>Extract the reusable pattern</strong> from that repeated context. That pattern is the Skill.</li>
+  <li><strong>Write a precise, trigger-rich description</strong> (Tier 1) so the agent discovers it at the right time.</li>
+  <li><strong>Keep the body concise and well-structured</strong> (Tier 2); push scripts, long references and templates into separate files (Tier 3).</li>
+  <li><strong>Test with real tasks, not test scenarios</strong> (Claude B). Iterate on actual failure modes.</li>
+</ol>
+
+<blockquote><em>⚠️ Common failure:</em> authoring from imagination instead of from real, repeated work. Skills written for hypothetical scenarios are either never triggered or over-broad. The strongest Skills are crystallized from tasks you've actually done by hand.</blockquote>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">Structure for disclosure</div>
+  <div class="desc">A good Skill front-loads the "when to use me" in the description, keeps the body lean and procedural, and offloads heavy material (reference docs, code, datasets) to files the agent only reads at execution time. Design the file layout around the three tiers, not around documentation neatness.</div>
+  <div class="sources">
+    <a href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices">Skill Authoring Best Practices</a>
+    <a href="https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf">Complete Guide to Building Skills</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part IV</div>
+      <div class="special-content">
+
+<h2>The Context Tax — Operating a Skill Library</h2>
+
+<p>Skills are not free even when unused: every loaded Skill's Tier-1 index consumes tokens whether it helps or not. The 2026 rule of thumb is blunt:</p>
+
+<ul>
+  <li><strong>8–12 well-chosen Skills</strong> cover most of a senior developer's day.</li>
+  <li>Beyond that, you start <strong>paying context tax</strong> — index bloat that crowds out useful context and can degrade triggering accuracy.</li>
+  <li>Run a <strong>monthly skill audit</strong>: delete anything you haven't triggered in 30 days.</li>
+</ul>
+
+<p>Treat a Skill library like a dependency list, not a junk drawer. More Skills is not more capability past the point where the index noise makes the agent worse at choosing.</p>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">The discipline</div>
+  <div class="desc">Curate ruthlessly. A small library of sharp, well-described, real-task Skills beats a large one of speculative ones — both for token cost and for the agent's ability to pick the right Skill at the right moment.</div>
+  <div class="sources">
+    <a href="https://medium.com/engineering-playbook/10-must-have-skills-for-claude-and-any-coding-agent-in-2026-0bb577fbb440">10 Must-Have Skills (and the audit rule)</a>
+    <a href="https://medium.com/@tahirbalarabe2/9-tips-for-building-claude-agent-skills-3bca85c47a26">9 Tips for Building Skills</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part V</div>
+      <div class="special-content">
+
+<h2>Security — The Part People Skip</h2>
+
+<p>Because a Skill can ship <strong>executable scripts</strong> that the agent will run, a Skill is also an <strong>attack surface</strong>. The same properties that make Skills powerful (auto-discovery, code execution, third-party sharing) make a malicious or compromised Skill dangerous. Research in 2026 explicitly frames Skill architecture alongside <strong>acquisition and security</strong> as co-equal concerns.</p>
+
+<ul>
+  <li><strong>Provenance:</strong> treat third-party Skills like dependencies — review the scripts before installing.</li>
+  <li><strong>Least privilege:</strong> a Skill should only reach the tools and data its task needs.</li>
+  <li><strong>Auditability:</strong> know which Skill ran, when, and what it executed.</li>
+</ul>
+
+<blockquote><em>📌 Bottom line:</em> "It's just markdown" is true until the markdown points at a script. Govern Skill acquisition the way you govern packages.</blockquote>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">Where this is heading</div>
+  <div class="desc">Skills sit alongside memory and protocols (like MCP) as the externalized building blocks of agent systems — the durable knowledge and capability layer that outlives any single model. Expect Skill registries, signing/verification, and capability scoping to mature next.</div>
+  <div class="sources">
+    <a href="https://arxiv.org/html/2602.12430v3">Agent Skills: Architecture, Acquisition, Security</a>
+    <a href="https://arxiv.org/pdf/2604.08224">Externalization in LLM Agents</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">In Numbers</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="label">Tier-1 index cost / skill (median)</div>
+          <div class="value">~80 tok</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Tier-2 body when activated</div>
+          <div class="value">275–8K tok</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Sweet spot for a daily library</div>
+          <div class="value">8–12</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Audit cadence (delete if untriggered)</div>
+          <div class="value">30 days</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Watch</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>SKILL.md stays the cross-vendor standard; registries and signing emerge next</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Skill descriptions become the highest-leverage thing you write (Tier-1 discovery)</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Context tax pushes teams toward small, audited libraries over sprawling ones</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Skill security (provenance, least privilege) becomes a real governance topic</span>
+      </div>
+    </div>
+
+    <div class="special-content">
+      <p style="color: var(--on-surface-variant); font-size: 12px; margin-top: 40px;">
+Sources: Agent Skills — Claude Platform Docs (platform.claude.com) · Skill Authoring Best Practices (platform.claude.com) · The Complete Guide to Building Skills (resources.anthropic.com) · Agent Skills: Progressive Disclosure (swirlai.com) · State of Context Engineering 2026 (swirlai.com) · Progressive Disclosure in Skill Design (mindstudio.ai) · 9 Tips for Building Skills (medium.com) · 10 Must-Have Skills + audit rule (medium.com) · Agent Skills: Architecture, Acquisition, Security (arXiv:2602.12430) · Externalization in LLM Agents (arXiv:2604.08224)
+      </p>
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">SPECIAL REPORT · JUNE 2026</span>
+    </div>
+  </div>
+
+<script>
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+  }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
+
+  (function() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+      bar.style.width = (scrolled * 100) + '%';
+    });
+  })();
+</script>
+
+  <script>
+    const NAV_API_URL = 'https://api.github.com/repos/iamluisgb/reports/contents/reports?ref=master';
+    const CURRENT_FILE = 'building-agent-skills-2026-06-28.html';
+
+    async function loadReportNav() {
+      try {
+        const res = await fetch(NAV_API_URL + '&t=' + Date.now());
+        if (!res.ok) throw new Error('API error');
+        const files = await res.json();
+        const htmlFiles = files
+          .filter(f => f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html')
+          .sort((a, b) => {
+            const da = a.name.replace('.html', '').split('-').slice(-3).join('');
+            const db = b.name.replace('.html', '').split('-').slice(-3).join('');
+            return db.localeCompare(da);
+          });
+        const idx = htmlFiles.findIndex(f => f.name === CURRENT_FILE);
+        if (idx === -1) return;
+        const nav = document.getElementById('report-nav');
+        if (nav) nav.style.display = '';
+        if (idx > 0) {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.href = prev.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx - 1].name;
+        } else {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.style.display = 'none';
+        }
+        if (idx < htmlFiles.length - 1) {
+          const next = document.getElementById('next-report');
+          if (next) next.href = next.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx + 1].name;
+        } else {
+          const next = document.getElementById('next-report');
+          if (next) next.style.display = 'none';
+        }
+      } catch (e) {
+        console.error('Nav error:', e);
+      }
+    }
+    loadReportNav();
+  </script>
+</body>
+</html>
