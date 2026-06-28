@@ -64,7 +64,7 @@
 
 <p>The business-agent market has fractured into 9 categories, each with an emerging leader and a distinct architecture. Classifying by <strong>level of autonomy</strong> is more revealing than classifying by industry:</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Category</th><th>Leaders</th><th>Autonomy Level</th><th>Typical Stack</th></tr>
   <tr><td><strong>Code</strong></td><td>Devin, Factory, Cursor</td><td>High (bugs → PR)</td><td>LLM + sandbox + git</td></tr>
   <tr><td><strong>Sales / SDR</strong></td><td>11x.ai, Artisan, Regie.ai</td><td>High (prospecting → qualifying)</td><td>LLM + CRM + email</td></tr>
@@ -75,7 +75,7 @@
   <tr><td><strong>Browser / Computer Use</strong></td><td>OpenAI Operator, Claude Computer Use, Mariner</td><td>High (navigates any software)</td><td>VLM + browser automation</td></tr>
   <tr><td><strong>Orchestration</strong></td><td>LangGraph, CrewAI, AutoGen, Hermes</td><td>Framework (the agent defines)</td><td>Multi-agent orchestration</td></tr>
   <tr><td><strong>Chinese</strong></td><td>Manus, Kimi, Qwen Agent</td><td>High (complex multi-step)</td><td>Long-context + tool use</td></tr>
-</table>
+</table></div>
 
 <h3>1.2 The Big Players</h3>
 
@@ -95,7 +95,7 @@
 
 <p>The flow of capital into agents is unprecedented. In 2024-2025 alone, the $100M+ rounds in the space:</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Company</th><th>Round</th><th>Amount</th><th>Valuation</th></tr>
   <tr><td>Ambience Healthcare</td><td>Series C</td><td>$270M</td><td>$2.75B</td></tr>
   <tr><td>Augment Code</td><td>Series B</td><td>$252M</td><td>$977M+</td></tr>
@@ -106,7 +106,7 @@
   <tr><td>Poolside AI</td><td>Series A</td><td>$126M</td><td>$3B</td></tr>
   <tr><td>Harvey AI</td><td>Series C</td><td>$100M+</td><td>$2B+</td></tr>
   <tr><td>Decagon</td><td>Series B</td><td>$100M+</td><td>$1B+</td></tr>
-</table>
+</table></div>
 
 <blockquote><em>📌 Signal:</em> Sierra's valuation ($4.5B) and Poolside's ($3B at Series A) show the market is pricing in the expectation that <strong>support and code agents will become $10B+ categories</strong>. The overvaluation risk is real, but the direction of capital is unambiguous.</blockquote>
 
@@ -135,13 +135,13 @@
 
 <p>The architectural choice defines everything: latency, cost, scalability, and how autonomous the agent can be. There are 4 dominant patterns:</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Pattern</th><th>Framework</th><th>When to Use It</th><th>Complexity</th></tr>
   <tr><td><strong>Sequential Pipeline</strong></td><td>LangGraph</td><td>Linear workflows with conditional logic</td><td>Low-Medium</td></tr>
   <tr><td><strong>Role-Based Teams</strong></td><td>CrewAI</td><td>Tasks that need multiple expert perspectives</td><td>Medium</td></tr>
   <tr><td><strong>Multi-Agent Conversation</strong></td><td>AutoGen</td><td>Decisions that need debate/consensus</td><td>High</td></tr>
   <tr><td><strong>Lightweight Handoff</strong></td><td>Swarm, Hermes</td><td>Support routing, simple tasks</td><td>Low</td></tr>
-</table>
+</table></div>
 
 <p><strong>LangGraph</strong> is the de facto standard for agents in production. State graphs with checkpointing, persistence and conditional routing. Its advantage: execution is <strong>deterministic and auditable</strong> — every state transition is an explicit line of code.</p>
 
@@ -153,13 +153,13 @@
 
 <p>Memory is where most production agents fail. An agent without persistent memory is an employee who forgets everything every time they close their eyes.</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Layer</th><th>Duration</th><th>Example</th><th>Technology</th></tr>
   <tr><td><strong>Working Memory</strong></td><td>Current interaction</td><td>Conversation context</td><td>Context window</td></tr>
   <tr><td><strong>Short-Term</strong></td><td>Session</td><td>Recent history, tool outputs</td><td>Redis / session state</td></tr>
   <tr><td><strong>Long-Term</strong></td><td>Permanent</td><td>Preferences, past interactions</td><td>PostgreSQL</td></tr>
   <tr><td><strong>Semantic</strong></td><td>Permanent</td><td>Knowledge base, RAG retrieval</td><td>Vector DB (Pinecone, pgvector)</td></tr>
-</table>
+</table></div>
 
 <p>The 2026 standard is <strong>Vector + Graph</strong>: embeddings for semantic retrieval + a knowledge graph for temporal relationships. Zep/Graphiti opened up the "temporal knowledge graph" pattern — edges with validity windows that know when a fact expired.</p>
 
@@ -190,13 +190,13 @@
 
 <p>The autonomy spectrum runs from "human does everything" to "fully autonomous agent." In practice, the winning pattern is <strong>risk-based routing</strong>:</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Risk Level</th><th>Example</th><th>Action</th></tr>
   <tr><td><strong>Low</strong></td><td>Answer FAQ, format data</td><td>Autonomous execution</td></tr>
   <tr><td><strong>Medium</strong></td><td>Send email, create invoice</td><td>Auto + notification</td></tr>
   <tr><td><strong>High</strong></td><td>Payment &gt;$1K, delete data</td><td>Mandatory human approval</td></tr>
   <tr><td><strong>Critical</strong></td><td>Bank transfer, legal decision</td><td>Escalate to human</td></tr>
-</table>
+</table></div>
 
 <p>Guardrails aren't optional — they're the reason an agent works in production without anyone losing the house.</p>
 
@@ -211,15 +211,15 @@
 
 <h3>3.1 The Real Cost of a 24/7 Agent</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Agent Type</th><th>Tokens/day</th><th>API cost/month</th><th>Infra/month</th><th>Total/month</th></tr>
   <tr><td><strong>Light monitoring</strong> (triage, routing)</td><td>50K-200K</td><td>$10-$30</td><td>$50-$100</td><td>$60-$130</td></tr>
   <tr><td><strong>Medium operations</strong> (support, sales)</td><td>500K-2M</td><td>$97-$300</td><td>$100-$300</td><td>$200-$600</td></tr>
   <tr><td><strong>Heavy agent</strong> (financial, legal analysis)</td><td>2M-10M</td><td>$500-$5,000</td><td>$300-$1,000</td><td>$800-$6,000</td></tr>
-</table>
+</table></div>
 
 <p>Reference prices (mid-2025):</p>
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Model</th><th>Input/1M tokens</th><th>Output/1M tokens</th><th>Context</th></tr>
   <tr><td>GPT-4o</td><td>$2.50</td><td>$10.00</td><td>128K</td></tr>
   <tr><td>GPT-4o-mini</td><td>$0.15</td><td>$0.60</td><td>128K</td></tr>
@@ -228,18 +228,18 @@
   <tr><td>Claude Opus 4</td><td>$15.00</td><td>$75.00</td><td>200K</td></tr>
   <tr><td>Gemini 2.5 Pro</td><td>$1.25</td><td>$10.00</td><td>1M</td></tr>
   <tr><td>Gemini 2.0 Flash</td><td>$0.10</td><td>$0.40</td><td>1M</td></tr>
-</table>
+</table></div>
 
 <h3>3.2 vs. Human Cost</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Role</th><th>Annual Cost (US)</th><th>Equivalent Agent Cost</th><th>Ratio</th></tr>
   <tr><td>Customer Support Rep</td><td>$35K-$55K</td><td>$500-$3,000/yr</td><td>10-100x</td></tr>
   <tr><td>Junior Analyst</td><td>$50K-$75K</td><td>$1,000-$5,000/yr</td><td>10-75x</td></tr>
   <tr><td>Bookkeeper</td><td>$40K-$55K</td><td>$500-$2,000/yr</td><td>20-110x</td></tr>
   <tr><td>Paralegal</td><td>$55K-$80K</td><td>$2,000-$10,000/yr</td><td>5-40x</td></tr>
   <tr><td>Financial Advisor</td><td>$80K-$120K</td><td>$3,000-$15,000/yr</td><td>5-40x</td></tr>
-</table>
+</table></div>
 
 <blockquote><em>📌 Signal:</em> The 10-100x ratio in raw costs is misleading. It doesn't include: error correction, supervision, legal liability, integration costs, or the "last 5% problem" where agents fail on edge cases. Real ROI materializes only on <strong>repetitive, high-volume, low-risk</strong> tasks.</blockquote>
 
@@ -307,13 +307,13 @@
 
 <h3>4.2 Hallucinations in a Business Context</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Domain</th><th>Risk Level</th><th>Real Example</th></tr>
   <tr><td><strong>Financial decisions</strong></td><td>🔴 Critical</td><td>Agent fabricates market data, approves fraudulent transactions</td></tr>
   <tr><td><strong>Legal / compliance</strong></td><td>🔴 Critical</td><td>Agent cites nonexistent case law. <strong>Mata v. Avianca (2023): lawyers sanctioned for briefs with cases fabricated by ChatGPT</strong></td></tr>
   <tr><td><strong>Customer-facing</strong></td><td>🟠 High</td><td><strong>Air Canada (2024):</strong> chatbot invented a refund policy. The court ruled Air Canada was legally bound by what the bot said. <strong>Landmark precedent.</strong></td></tr>
   <tr><td><strong>Internal reporting</strong></td><td>🟡 Medium</td><td>Agent generates inaccurate summaries, leadership makes decisions based on invented data</td></tr>
-</table>
+</table></div>
 
 <blockquote><em>⚠️ Critical warning:</em> Hallucinations aren't bugs — they're fundamental to how LLMs work. Any business application requires <strong>external verification mechanisms</strong>. The architecture must assume the agent will invent data and design guardrails accordingly.</blockquote>
 
@@ -339,13 +339,13 @@
 
 <h3>4.4 Documented Production Failures</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Case</th><th>What Happened</th><th>Lesson</th></tr>
   <tr><td><strong>Air Canada (2024)</strong></td><td>Chatbot invented a refund policy. The court said: the company is liable.</td><td>An agent's representations are legally binding on the company.</td></tr>
   <tr><td><strong>DPD (2024)</strong></td><td>Delivery chatbot tricked into swearing, writing poems criticizing the company, and giving discount codes it shouldn't have.</td><td>Prompt injection is a real attack vector in customer-facing agents.</td></tr>
   <tr><td><strong>Mata v. Avianca (2023)</strong></td><td>Lawyers filed briefs with case law fabricated by ChatGPT. Sanctioned.</td><td>Output verification is not optional in critical domains.</td></tr>
   <tr><td><strong>Crypto trading bots</strong></td><td>Multiple cases of agents executing bad trades during flash crashes. One bot lost $50M in minutes.</td><td>Edge cases in markets = existential risk.</td></tr>
-</table>
+</table></div>
 
 <h3>4.5 The Most Common Anti-Pattern</h3>
 
@@ -392,13 +392,13 @@
 
 <h3>5.3 Regulation</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Jurisdiction</th><th>Status</th><th>Impact on Agents</th></tr>
   <tr><td><strong>EU — AI Act</strong></td><td>In force Aug 2024, full enforcement Aug 2026</td><td>Autonomous agents = likely "high-risk." Penalties: up to €35M or 7% of global revenue.</td></tr>
   <tr><td><strong>US — SEC/CFTC</strong></td><td>No agent-specific regulation</td><td>Existing rules apply. Financial agents treated as "electronic traders."</td></tr>
   <tr><td><strong>UK</strong></td><td>"Proportionate" approach</td><td>No AI-specific liability law yet.</td></tr>
   <tr><td><strong>Japan</strong></td><td>Favorable to open-source</td><td>Lighter regulation.</td></tr>
-</table>
+</table></div>
 
 <p><strong>The unresolved legal question:</strong></p>
 
@@ -408,14 +408,14 @@
 
 <h3>5.4 Leaders' Predictions</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Figure</th><th>Prediction</th><th>Timeline</th></tr>
   <tr><td>Sam Altman (OpenAI)</td><td>"AI will handle most white-collar work in 5-10 years"</td><td>2025-2030</td></tr>
   <tr><td>Dario Amodei (Anthropic)</td><td>"AI could automate 50%+ of entry-level white-collar jobs"</td><td>2025-2027</td></tr>
   <tr><td>Jensen Huang (NVIDIA)</td><td>"Every company will have AI agents; the next wave is agentic AI"</td><td>2025-2026</td></tr>
   <tr><td>Satya Nadella (Microsoft)</td><td>"Agents are the new apps"</td><td>2025</td></tr>
   <tr><td>Marc Andreessen (a16z)</td><td>"AI agents will be economic actors — buying, selling, creating"</td><td>2025-2028</td></tr>
-</table>
+</table></div>
 
 <h3>5.5 The Agent Economy Thesis</h3>
 

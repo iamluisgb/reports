@@ -100,11 +100,11 @@
 
 <p>The biggest capability jumps of the last 18 months didn't come from bigger pre-training runs — they came from letting models <strong>think longer at inference</strong>. Reasoning models spend meaningful compute <em>when you ask the question</em>, not only when they're trained.</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Model</th><th>Signal</th><th>What it shows</th></tr>
   <tr><td><strong>OpenAI o3</strong></td><td>75.7% on ARC-AGI-2 at high compute; ~57M tokens & ~14 min per hard question</td><td>Accuracy can be <em>bought</em> with inference compute</td></tr>
   <tr><td><strong>DeepSeek-R1</strong></td><td>Reasoning emerged from pure RL (GRPO), no SFT; open chain-of-thought</td><td>Reasoning is trainable cheaply and openly</td></tr>
-</table>
+</table></div>
 
 <p>DeepSeek-R1 was the proof that mattered for the rest of the field: reasoning capability can <strong>emerge from reinforcement learning alone</strong>, rewarded purely for correct final answers — no supervised reasoning traces required. That collapsed the cost of building a reasoning model and is why nearly every lab now ships a "thinking" variant.</p>
 
@@ -192,13 +192,13 @@
 
 <p>The most underappreciated change is structural: the model race is now <strong>parallel, not sequential</strong>. In a single quarter the best-model crown is genuinely disputed across multiple labs shipping at once.</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Lab</th><th>2026 move</th><th>Architectural angle</th></tr>
   <tr><td><strong>Google DeepMind</strong></td><td>Gemini 3.5 Pro (2M context, "Deep Think") + Gemini 3.5 Flash</td><td>Long context + a fast/cheap tier ~4× quicker inference</td></tr>
   <tr><td><strong>Microsoft</strong></td><td>Seven in-house "MAI" models; flagship MAI-Thinking-1</td><td>Reasoning at a competitive token cost; vertical independence</td></tr>
   <tr><td><strong>Meta</strong></td><td>Llama 4 family (MoE, multimodal); Muse Spark (first closed model)</td><td>Open MoE leadership + a proprietary tier</td></tr>
   <tr><td><strong>DeepSeek</strong></td><td>V4 with efficient attention + MTP heads</td><td>Efficiency-first; open weights pressuring price</td></tr>
-</table>
+</table></div>
 
 <p>The pattern across all of them: <strong>differentiation has moved from "who has the biggest model" to "who serves capability cheapest"</strong> — via the four architectural shifts above. A fast/cheap tier (Flash-class) next to a deep-reasoning tier is now the standard product shape.</p>
 

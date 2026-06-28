@@ -58,7 +58,7 @@
 
 <h3>1.1 Startup Taxonomy by Approach</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Focus</th><th>Company</th><th>HQ</th><th>Key Signal</th><th>URL</th></tr>
   <tr><td><strong>Agentic Workflows</strong></td><td>Tomoro → OpenAI</td><td>Edinburgh</td><td>~150 FDEs acquired as founding piece of OpenAI Deployment Company. Clients: Mattel, Tesco. May 2026.</td><td><a href="https://tomoro.ai">tomoro.ai</a></td></tr>
   <tr><td>Agentic Workflows</td><td>Faculty → Accenture</td><td>London</td><td>Frontier Decision Intelligence platform. Acquired Jan 2026. NHS use case. ~$1B.</td><td><a href="https://faculty.ai">faculty.ai</a></td></tr>
@@ -75,16 +75,16 @@
   <tr><td><strong>Vertical Solutions</strong></td><td>QuantumBlack (McKinsey)</td><td>London/Global</td><td><strong>Hiring "Senior Forward Deployment Engineer"</strong> — same title as Palantir. Combines McKinsey strategic access + AI deployment.</td><td><a href="https://mckinsey.com/quantumblack">quantumblack</a></td></tr>
   <tr><td>Vertical Solutions</td><td>Innovaccer</td><td>San Francisco</td><td>Healthcare. Gravity platform + AI FDEs. >$375M raised, ~$3.2B valuation.</td><td><a href="https://innovaccer.com">innovaccer.com</a></td></tr>
   <tr><td>Vertical Solutions</td><td>Resilinc</td><td>Milpitas, CA</td><td>Supply Chain. Agentic AI for disruption intelligence. Hiring Software Engineer FDE.</td><td><a href="https://resilinc.com">resilinc.com</a></td></tr>
-</table>
+</table></div>
 
 <h3>1.2 Positioning Against the Giants</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Competitor</th><th>Strength</th><th>Weakness vs FDE Startups</th><th>Exploitable Gap</th></tr>
   <tr><td><strong>Palantir Foundry/Gotham</strong></td><td>Mature ontology, AIP (LLM layer), gov/defense ecosystem, $2.8B revenue</td><td>Vendor lock-in perceived, high cost ($25M+ initial contracts), long sales cycle (12-18 months)</td><td>Startups offer ontology+LLM at 1/10 the cost with onsite FDEs building trust faster</td></tr>
   <tr><td><strong>Accenture / McKinsey</strong></td><td>C-suite access, global scale, massive delivery capacity</td><td>Hourly billing misaligned with AI outcomes; heavy project management structures</td><td>Startups offer outcome-based pricing + shared IP; faster 2-week iteration cycles</td></tr>
   <tr><td><strong>Hyperscalers (AWS/GCP/Azure)</strong></td><td>Infrastructure, models (Bedrock, Vertex), distribution</td><td>Don't do implementation. Sell tools, not solutions. The "integration gap" is enormous.</td><td>FDE startups are the glue hyperscalers cannot (or will not) provide</td></tr>
-</table>
+</table></div>
 
 <blockquote><em>📌 Market Signal:</em> a16z published "Trading Margin for Moat: Why the Forward Deployed Engineer Is the Hottest Job in Startups" (June 2025). Thesis: sacrificing PLG margins early for heavy implementation creates deeper moats. Salesforce, ServiceNow, and Workday did it in the cloud transition. AI startups are doing it now.</blockquote>
 
@@ -107,7 +107,7 @@
 
 <h3>2.3 Ontology+Graph+LLM vs. Vector Search + Basic RAG</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Dimension</th><th>Vector Search + RAG</th><th>Ontology + Graph + LLM (GraphRAG)</th></tr>
   <tr><td><strong>Factual accuracy</strong></td><td>Depends on chunking + cosine similarity. Approximate semantic retrieval. Fails on multi-layer joins.</td><td>Facts retrieved via SPARQL/Cypher = deterministic exactness. LLM only reformats.</td></tr>
   <tr><td><strong>Hallucinations</strong></td><td>High. LLM "fills in" when top-K chunks miss relevant context.</td><td>Low. Ontology constrains answer space to verified facts. GraphRAG reduces hallucinations ~40-60% (Microsoft 2024, NebulaGraph 2025 studies).</td></tr>
@@ -116,7 +116,7 @@
   <tr><td><strong>Data model evolution</strong></td><td>Massive re-embedding when schema changes. Weeks of reprocessing.</td><td>Ontology evolves incrementally. New classes/subclasses without reindexing.</td></tr>
   <tr><td><strong>Audit trail / Traceability</strong></td><td>No inherent traceability. "LLM used chunk X, but we don't know why it weighted more than Y."</td><td>Every answer maps to concrete graph nodes/edges. Full traceability.</td></tr>
   <tr><td><strong>Operational cost</strong></td><td>Low initial. High at scale (embedding millions of docs, GPUs for inference).</td><td>High initial (ontological modeling). Low marginal. Graph is queryable without LLM for simple queries.</td></tr>
-</table>
+</table></div>
 
 <blockquote><em>📌 Architectural Decision:</em> Ontology+Graph+LLM doesn't replace vector RAG — it complements it. The emerging pattern (Digetiers, Stardog, Microsoft GraphRAG) is <strong>Hybrid GraphRAG</strong> = graph retrieval for exact facts + vector search for fuzzy semantic context. A router decides which channel to use based on the query.</blockquote>
 
@@ -166,14 +166,14 @@ graph.add_conditional_edges(
 
 <h3>3.1 Forward Deployed Engineer Profile</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Dimension</th><th>Typical Profile</th></tr>
   <tr><td><strong>Background</strong></td><td>CS/Engineering. 3-7 years experience. Former Palantir, FAANG, technical consulting.</td></tr>
   <tr><td><strong>Stack</strong></td><td>Python, TypeScript, SQL, REST APIs, GraphQL, Docker, Kubernetes, CI/CD. Plus: LangChain/LangGraph, Neo4j/SPARQL, ontological modeling.</td></tr>
   <tr><td><strong>Soft skills</strong></td><td>Communication with non-technical stakeholders. Ability to translate "I need to know when the order arrives" into "SPARQL query against supply chain ontology."</td></tr>
   <tr><td><strong>Pace</strong></td><td>1-2 week cycles. Monday: understand problem with domain experts. Wednesday: ontology + agent POC. Friday: C-level demo.</td></tr>
   <tr><td><strong>Ratio</strong></td><td>1 FDE per 1-2 simultaneous clients. More than 3 = integration quality drops.</td></tr>
-</table>
+</table></div>
 
 <h3>3.2 Economics of the FDE Model for a Startup</h3>
 
@@ -215,14 +215,14 @@ graph.add_conditional_edges(
 
 <h3>4.2 Observability and Traceability of AI Decisions</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Layer</th><th>What to Monitor</th><th>Tools/Systems</th><th>Key Metric</th></tr>
   <tr><td><strong>LLM Calls</strong></td><td>Prompt input/output, tokens, latency, cost, model used</td><td>LangSmith, Helicone, Langfuse, W&B</td><td><code>accuracy_rate</code> · <code>hallucination_rate</code> · <code>cost_per_query</code></td></tr>
   <tr><td><strong>Agent Steps</strong></td><td>Each state graph transition: node, duration, decision</td><td>OpenTelemetry + custom spans, LangGraph callbacks</td><td><code>step_success_rate</code> · <code>avg_steps_per_task</code> · <code>loop_detection</code></td></tr>
   <tr><td><strong>Ontology Queries</strong></td><td>SPARQL/Cypher queries executed, results returned, response time</td><td>Prometheus + custom exporter in Neo4j/Stardog</td><td><code>query_latency_p99</code> · <code>cache_hit_ratio</code></td></tr>
   <tr><td><strong>System Writes</strong></td><td>Each write to legacy system: endpoint, payload, status, rollback status</td><td>Custom middleware on integration layer + structured logs</td><td><code>write_success_rate</code> · <code>rollback_rate</code> · <code>human_override_count</code></td></tr>
   <tr><td><strong>Business Outcome</strong></td><td>Final business metric: was the invoice processed? Was inventory updated?</td><td>Dashboard in Superset/Grafana fed by legacy system + ontology</td><td><code>completion_time</code> · <code>error_downstream</code> · <code>manual_interventions</code></td></tr>
-</table>
+</table></div>
 
 <h3>4.3 RBAC and Security at the Ontology Layer</h3>
 

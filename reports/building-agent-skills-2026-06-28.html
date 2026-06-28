@@ -71,13 +71,13 @@
 <p>A Skill packages <strong>instructions, metadata and optional resources</strong> (scripts, templates) that an agent invokes automatically when relevant. Concretely, it's a directory containing a <code>SKILL.md</code> with YAML frontmatter and markdown, plus anything else the task needs.</p>
 
 <p>The crucial conceptual move is <strong>Skills vs. Tools</strong>:</p>
-<table>
+<div class="table-wrapper"><table>
   <tr><th></th><th>Tool</th><th>Skill</th></tr>
   <tr><td><strong>What it does</strong></td><td>Executes an action and returns a result</td><td>Injects procedural knowledge & modifies how the agent works</td></tr>
   <tr><td><strong>Shape</strong></td><td>A function with a schema</td><td>A folder of instructions + resources</td></tr>
   <tr><td><strong>Effect on context</strong></td><td>Adds a result to context</td><td>Enables progressive disclosure of know-how</td></tr>
   <tr><td><strong>Analogy</strong></td><td>A power tool</td><td>The craftsman's playbook for using it</td></tr>
-</table>
+</table></div>
 
 <blockquote><em>📌 Takeaway:</em> Tools let an agent <em>do</em> things; Skills teach it <em>how and when</em>. A skill is "just markdown," but the folder can carry scripts, templates, data and images — the agent reads them, runs them, and uses them to do real work.</blockquote>
 
@@ -102,12 +102,12 @@
 
 <p>Progressive disclosure loads information in tiers by relevance. This is the engine that makes Skills scale:</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Tier</th><th>Loaded when</th><th>What loads</th><th>Token cost</th></tr>
   <tr><td><strong>1. Discovery</strong></td><td>Always (startup)</td><td>Name + description only</td><td>~80 tokens median / skill</td></tr>
   <tr><td><strong>2. Activation</strong></td><td>When the model judges it relevant</td><td>Full instruction body</td><td>275–8,000 tokens</td></tr>
   <tr><td><strong>3. Execution</strong></td><td>Only during the task</td><td>Scripts, templates, reference files</td><td>On demand</td></tr>
-</table>
+</table></div>
 
 <p>The payoff: an agent can carry a <strong>lightweight index</strong> of many capabilities and pay the full cost of only the one it actually uses. Models also simply <em>perform better</em> when they get relevant information at the right moment — which is why context engineering is now considered as critical as prompt engineering.</p>
 
