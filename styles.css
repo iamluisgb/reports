@@ -17,8 +17,8 @@
     --bg: #f5f5f0;
     --bg-card: #ffffff;
     --bg-card-hover: #f0f0eb;
-    --primary: #0a8a54;
-    --primary-dim: rgba(10,138,84,0.1);
+    --primary: #097347;
+    --primary-dim: rgba(9,115,71,0.1);
     --on-surface: #1a1e26;
     --on-surface-variant: #5a6068;
     --border: rgba(0,0,0,0.08);
@@ -43,6 +43,7 @@ html, body {
     max-width: 720px;
     margin: 0 auto;
     padding: 56px 32px 64px;
+    overflow-x: clip;   /* contain scrollable tables; no phantom horizontal page scroll */
   }
 
 /* ===== BACK LINK ===== */
@@ -399,8 +400,14 @@ table {
     width: 100%;
     border-collapse: collapse;
     font-size: 13px;
-    min-width: 500px;
     margin: 24px 0;
+}
+
+/* Scroll wide tables inside the wrapper; raw (unwrapped) tables wrap to fit
+   so they never force horizontal page scroll on mobile. */
+.table-wrapper table {
+    min-width: 500px;
+    margin: 0;
 }
 
 thead {
@@ -1966,3 +1973,78 @@ tbody {
     .card .title { font-size: 1rem; }
     .card { padding: 12px 14px; }
   }
+/* ===== UX/UI IMPROVEMENTS ===== */
+
+/* Visible, high-contrast keyboard focus (UA default is inconsistent on dark bg) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+.card:focus-visible,
+.topic-chip:focus-visible,
+.tag:focus-visible,
+.month-label:focus-visible,
+.hero-link:focus-visible,
+.theme-toggle:focus-visible,
+.page-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+.card:focus-visible,
+.month-label:focus-visible {
+  outline-offset: 3px;
+}
+
+/* Skip-to-content link (visible only on focus) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  background: var(--primary);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 8px;
+}
+
+/* Result count under the search/filter */
+.result-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--on-surface-variant);
+  margin-top: 12px;
+  min-height: 16px;
+}
+
+/* Larger touch targets on mobile (WCAG 2.5.5) */
+@media (max-width: 768px) {
+  .topic-chip { padding: 10px 14px; min-height: 44px; }
+  .hero-link { padding: 11px 14px; min-height: 44px; display: inline-flex; align-items: center; }
+  .theme-toggle { padding: 11px 14px; min-height: 44px; }
+  .tag { padding: 6px 11px; font-size: 11px; min-height: 32px; align-items: center; }
+  .card-tags { gap: 8px; }
+}
+
+/* Wider, two-column homepage on large screens (report pages stay narrow) */
+@media (min-width: 1024px) {
+  .page.home { max-width: 980px; }
+  .home .month-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 16px;
+    align-items: start;
+  }
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

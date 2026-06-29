@@ -26,7 +26,8 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
+  <a href="#main" class="skip-link">Skip to reports</a>
+  <div class="page home">
     <div class="hero">
       <div class="hero-accent"></div>
       <div class="hero-top">
@@ -59,9 +60,18 @@
         <input type="text" id="search-input" class="search-input" placeholder="Search by title, month or tag..." oninput="filterReports()">
       </div>
       <div class="topic-filter" id="topic-filter" aria-label="Filter by topic"></div>
+      <div class="result-count" id="result-count" role="status" aria-live="polite"></div>
     </div>
 
-    <div class="section">
+    <noscript>
+      <div class="empty" style="padding:24px;border:1px solid var(--border);border-radius:10px;margin-bottom:24px;">
+        This index needs JavaScript to list reports. You can still browse via the
+        <a href="/reports/rss.xml" style="color:var(--primary)">RSS feed</a> or read
+        <a href="/reports/about.html" style="color:var(--primary)">About</a>.
+      </div>
+    </noscript>
+
+    <div class="section" id="main" tabindex="-1">
       <div class="section-label">
         ⭐ Special Reports <span class="count" id="special-badge">0</span>
       </div>
@@ -111,7 +121,8 @@
   function formatDate(item) {
     const d = reportDate(item);
     if (isNaN(d)) return '—';
-    return d.toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' });
+    // Day-month-year to match the report pages (e.g. "27 Jun 2026").
+    return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
   }
 
   function monthKey(date) {
@@ -145,7 +156,7 @@
       : (type === 'special' ? '<span class="badge special">Special</span>' : '');
 
     const tagsHtml = tags.length > 0
-      ? `<div class="card-tags">${tags.map(t => `<span class="tag" data-topic="${escapeHtml(t)}" role="button" tabindex="0">${escapeHtml(topicLabel(t))}</span>`).join('')}</div>`
+      ? `<div class="card-tags">${tags.map(t => `<span class="tag" data-topic="${escapeHtml(t)}" role="button" tabindex="0" title="Filter by ${escapeHtml(topicLabel(t))}" aria-label="Filter by ${escapeHtml(topicLabel(t))}">${escapeHtml(topicLabel(t))}</span>`).join('')}</div>`
       : '';
 
     const summaryHtml = summary
@@ -194,10 +205,15 @@
 
   function renderTopicFilter() {
     const counts = {};
+    const total = allDailyFiles.length + allSpecialFiles.length;
     [...allDailyFiles, ...allSpecialFiles].forEach(r => {
       (r.tags || []).forEach(t => { counts[t] = (counts[t] || 0) + 1; });
     });
-    const topics = Object.keys(counts).sort((a, b) => counts[b] - counts[a] || a.localeCompare(b));
+    // Hide near-ubiquitous topics (>90% of reports) — they don't discriminate —
+    // unless they're currently selected (e.g. from a shared ?topic= URL).
+    const topics = Object.keys(counts)
+      .filter(t => counts[t] <= total * 0.9 || activeTopics.has(t))
+      .sort((a, b) => counts[b] - counts[a] || a.localeCompare(b));
 
     const bar = document.getElementById('topic-filter');
     if (!topics.length) { bar.innerHTML = ''; return; }
@@ -258,16 +274,32 @@
         empty.remove();
       }
     });
+
+    updateResultCount();
   }
 
-  // Clicking a tag chip inside a card toggles that topic instead of opening the report.
-  document.addEventListener('click', e => {
+  function updateResultCount() {
+    const el = document.getElementById('result-count');
+    if (!el) return;
+    const q = document.getElementById('search-input').value.trim();
+    const filtering = q || activeTopics.size > 0;
+    if (!filtering) { el.textContent = ''; return; }
+    const all = document.querySelectorAll('.card');
+    const shown = Array.from(all).filter(c => c.style.display !== 'none').length;
+    el.textContent = `Showing ${shown} of ${all.length} reports`;
+  }
+
+  // Clicking (or Enter/Space on) a card tag toggles that topic instead of opening the report.
+  function handleTagActivate(e) {
     const tag = e.target.closest('.card .tag[data-topic]');
     if (!tag) return;
+    if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return;
     e.preventDefault();
     e.stopPropagation();
     toggleTopic(tag.getAttribute('data-topic'));
-  });
+  }
+  document.addEventListener('click', handleTagActivate);
+  document.addEventListener('keydown', handleTagActivate);
 
   // Display order for special-report series; unknown series append after these.
   const SPECIAL_SERIES_ORDER = [

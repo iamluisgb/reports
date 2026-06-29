@@ -42,7 +42,7 @@
         <div>
           <div class="special-category">Agent Memory · Special Report</div>
           <h1>AI Agent Memory in <em>2026</em>: Architectures, Frameworks & Trade-offs</h1>
-          <div class="special-date">June 2026</div>
+          <div class="special-date">28 Jun 2026</div>
           <div class="special-subtitle">The memory taxonomy · Vector vs graph vs OS-tiered · Mem0 vs Zep vs Letta on the benchmarks · Temporal knowledge graphs · How to choose</div>
         </div>
         <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
@@ -71,14 +71,14 @@
 <p>Borrowed from cognitive science and now standard across the field, a production agent juggles several distinct memory <em>types</em>, layered across two <em>tiers</em>.</p>
 
 <h3>1.1 Memory types</h3>
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Type</th><th>What it holds</th><th>Analogy</th></tr>
   <tr><td><strong>Working / short-term</strong></td><td>Current task state, scratchpad, recent turns</td><td>RAM</td></tr>
   <tr><td><strong>Episodic</strong></td><td>Specific past events & interactions, chronological</td><td>A journal</td></tr>
   <tr><td><strong>Semantic</strong></td><td>Distilled facts and concepts, derived from experience</td><td>An encyclopedia</td></tr>
   <tr><td><strong>Procedural</strong></td><td>Learned behaviors / "how-to" knowledge</td><td>Muscle memory</td></tr>
   <tr><td><strong>Tool</strong></td><td>Function schemas the agent can call</td><td>A toolbox manifest</td></tr>
-</table>
+</table></div>
 
 <h3>1.2 The two tiers</h3>
 <ul>
@@ -109,12 +109,12 @@
 
 <p>By mid-2026, industry comparisons converged on three production patterns. The difference isn't cosmetic — it determines temporal accuracy, token cost, and who controls memory allocation.</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Pattern</th><th>Representative</th><th>How it works</th><th>Best for</th></tr>
   <tr><td><strong>Vector-first extraction</strong></td><td>Mem0</td><td>Extract structured facts from conversation → store in vector DB → retrieve by semantic similarity</td><td>Lean, fast personalization</td></tr>
   <tr><td><strong>Graph-native temporal</strong></td><td>Zep / Graphiti</td><td>Build a temporal knowledge graph with fact-validity windows; query relationships over time</td><td>Facts that change; temporal reasoning</td></tr>
   <tr><td><strong>OS-inspired tiered</strong></td><td>Letta (ex-MemGPT)</td><td>Main context = RAM, archival = disk; the agent self-manages allocation via memory tools</td><td>Long-running stateful services</td></tr>
-</table>
+</table></div>
 
 <p>The mental model: Mem0 optimizes for <strong>cheapness and speed</strong>, Zep for <strong>temporal correctness</strong>, and Letta for <strong>agent autonomy over its own memory</strong>.</p>
 
@@ -127,12 +127,12 @@
 
 <h2>Frameworks Head-to-Head</h2>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Framework</th><th>Architecture</th><th>LongMemEval</th><th>Token footprint / conv</th><th>Notes</th></tr>
   <tr><td><strong>Mem0</strong></td><td>Hybrid vector + graph + key-value</td><td>49.0%</td><td>~1,800</td><td>~47K GitHub stars, free tier; fact extraction + similarity retrieval</td></tr>
   <tr><td><strong>Zep (Graphiti)</strong></td><td>Temporal knowledge graph</td><td><strong>63.8%</strong></td><td>~600,000</td><td>+15 pts on temporal retrieval; tracks fact-validity windows</td></tr>
   <tr><td><strong>Letta</strong></td><td>OS-style tiered (RAM/disk)</td><td>—</td><td>Agent-managed</td><td>MemGPT lineage; REST API; self-managed allocation</td></tr>
-</table>
+</table></div>
 
 <blockquote><em>📌 The core trade-off:</em> Zep's Graphiti wins temporal accuracy by ~15 points on LongMemEval — but Mem0's published critique notes Zep's footprint can exceed <strong>600K tokens per conversation vs Mem0's ~1,800</strong>, an order-of-magnitude gap consistent across third-party reports. You're paying for that temporal recall in context budget.</blockquote>
 

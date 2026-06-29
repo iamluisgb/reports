@@ -42,7 +42,7 @@
         <div>
           <div class="special-category">SRE / AIOps · Special Report</div>
           <h1>SRE in <em>2026</em>: The AI Teammate, the Stack, and the Governance Line</h1>
-          <div class="special-date">June 2026</div>
+          <div class="special-date">28 Jun 2026</div>
           <div class="special-subtitle">AI SRE agents hit GA · The incident loop, automated · Where autonomy stops · The OpenTelemetry-native stack · Open source vs. enterprise</div>
         </div>
         <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
@@ -70,7 +70,7 @@
 
 <p>An AI SRE is an operational teammate that works the incident lifecycle the way a human on-call does — but in seconds, in parallel, across more signals than a person can hold. The canonical loop:</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Stage</th><th>What the agent does</th><th>Maturity</th></tr>
   <tr><td><strong>Detection</strong></td><td>Spot anomalies across metrics/logs/traces</td><td>High</td></tr>
   <tr><td><strong>Correlation</strong></td><td>Collapse alert storms into a single incident</td><td>Highest — earliest value</td></tr>
@@ -78,7 +78,7 @@
   <tr><td><strong>Remediation</strong></td><td>Apply or propose a fix</td><td>Guarded — governance boundary</td></tr>
   <tr><td><strong>Verification</strong></td><td>Confirm the fix resolved the issue</td><td>Medium</td></tr>
   <tr><td><strong>Learning</strong></td><td>Feed outcomes back into future handling</td><td>Emerging</td></tr>
-</table>
+</table></div>
 
 <p>Operational value shows up <strong>earliest in alert correlation</strong> — killing the 2am pager storm — and governance is required <strong>strongest at the remediation boundary</strong>, where an agent acts on production.</p>
 
@@ -135,7 +135,7 @@
 
 <p>None of the AI above works without good telemetry, and the telemetry layer settled hard in 2026: <strong>OpenTelemetry consolidated the ecosystem</strong>, providing one SDK for metrics, logs and traces. Even the long-running Prometheus/OpenTelemetry friction is now largely resolved.</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Layer</th><th>Open-source default</th><th>2026 shift</th></tr>
   <tr><td><strong>Instrumentation</strong></td><td>OpenTelemetry SDK; eBPF (Beyla, Pixie)</td><td>Auto-instrumentation with no code changes via eBPF</td></tr>
   <tr><td><strong>Metrics</strong></td><td>Prometheus</td><td>Native OTel interop</td></tr>
@@ -143,7 +143,7 @@
   <tr><td><strong>Traces</strong></td><td>Tempo / Jaeger</td><td>Trace–metric–log correlation for RCA</td></tr>
   <tr><td><strong>Pipeline</strong></td><td>Grafana Alloy</td><td>One agent for metrics, logs, traces, profiling</td></tr>
   <tr><td><strong>Visualization</strong></td><td>Grafana</td><td>"Full-stack observability for the agentic era"</td></tr>
-</table>
+</table></div>
 
 <p>Two developments matter most. <strong>eBPF auto-instrumentation</strong> (Grafana Beyla, Pixie) captures metrics and traces at the kernel level without touching application code — which is exactly the unified, low-friction signal an AI SRE needs to reason across. And <strong>Grafana Alloy</strong> collapses the collector zoo into a single telemetry pipeline (Prometheus + OTel + Loki + Pyroscope).</p>
 
@@ -173,12 +173,12 @@
 
 <p>Self-hosting the OTel + Prometheus + Loki + Grafana stack gives maximum control and zero per-GB vendor tax, but the operational burden — scaling, retention, upgrades, on-call for your monitoring — is real. <strong>Managed open-source</strong> splits the difference: the same OSS tools and data portability, without running them yourself. For Kubernetes-native and air-gapped environments, self-hostable AI-SRE-plus-observability options (e.g. eBPF-based, in-environment) have matured.</p>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Path</th><th>You get</th><th>You pay in</th></tr>
   <tr><td><strong>Self-hosted OSS</strong></td><td>Full control, no data tax, portability</td><td>Operational burden, your own monitoring on-call</td></tr>
   <tr><td><strong>Managed OSS</strong></td><td>OSS tooling + portability, no ops burden</td><td>Service cost, some control</td></tr>
   <tr><td><strong>Proprietary enterprise</strong></td><td>Turnkey, integrated AI features</td><td>Lock-in, per-GB pricing, data egress friction</td></tr>
-</table>
+</table></div>
 
 <div class="news-item">
   <div class="num">→</div>

@@ -34,7 +34,7 @@
         <div>
           <div class="category">⭐ SPECIAL REPORT</div>
           <h1>6 Signals From <em>3,862 Papers</em>: What CS.AI Is Actually Working On</h1>
-          <div class="date-line">27 JUN 2026</div>
+          <div class="date-line">27 Jun 2026</div>
           <div class="subtitle">ArXiv CS.AI trend analysis · May–Jun 2026 · Cluster mapping · Emerging vs established · What matters for builders</div>
         </div>
         <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
@@ -64,7 +64,7 @@
 
 <h3>Cluster Distribution (n = 3,862)</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>#</th><th>Cluster</th><th>Papers</th><th>%</th><th>Momentum</th></tr>
   <tr><td>1</td><td>Agentic Workflows</td><td>1,023</td><td>26.5%</td><td>🔥 Dominant</td></tr>
   <tr><td>2</td><td>Efficiency & Optimization</td><td>592</td><td>15.3%</td><td>🔥 Established</td></tr>
@@ -80,11 +80,11 @@
   <tr><td>12</td><td>World Models & Simulation</td><td>188</td><td>4.9%</td><td>📈 Emerging</td></tr>
   <tr><td>13</td><td>Multi-Agent Systems</td><td>146</td><td>3.8%</td><td>📈 Rising fast</td></tr>
   <tr><td>14</td><td>Security & Adversarial</td><td>129</td><td>3.3%</td><td>📈 Rising</td></tr>
-</table>
+</table></div>
 
 <h3>Top Keywords in Titles</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Word</th><th>Count</th><th>Signal</th></tr>
   <tr><td><code>models</code></td><td>527</td><td>Baseline — everyone studies models</td></tr>
   <tr><td><code>language</code></td><td>448</td><td>LLM remains the substrate</td></tr>
@@ -100,11 +100,11 @@
   <tr><td><code>self</code></td><td>122</td><td>Self-evolving, self-refining</td></tr>
   <tr><td><code>memory</code></td><td>113</td><td>Agent memory is a real problem</td></tr>
   <tr><td><code>retrieval</code></td><td>91</td><td>RAG is infrastructure now</td></tr>
-</table>
+</table></div>
 
 <h3>Top Bigrams (Two-Word Phrases)</h3>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Phrase</th><th>Count</th><th>What It Means</th></tr>
   <tr><td>multi agent</td><td>124</td><td>Multi-agent is a first-class research category</td></tr>
   <tr><td>llm agents</td><td>67</td><td>"LLM agents" has its own vocabulary now</td></tr>
@@ -116,7 +116,7 @@
   <tr><td>world models</td><td>24</td><td>Simulation for planning</td></tr>
   <tr><td>self evolving</td><td>23</td><td>Agents that improve themselves</td></tr>
   <tr><td>mixture experts</td><td>20</td><td>MoE is the efficiency architecture</td></tr>
-</table>
+</table></div>
 
       </div>
     </div>
@@ -259,7 +259,7 @@
 
 <h2>What This Means If You're Shipping AI Systems</h2>
 
-<table>
+<div class="table-wrapper"><table>
   <tr><th>Trend</th><th>Relevance</th><th>Action</th></tr>
   <tr><td>Agent safety kernels</td><td>High — any agent with tool access</td><td>Evaluate execution-time controls vs prompt-level. The "Unfireable Safety Kernel" paper is the blueprint.</td></tr>
   <tr><td>Speculative decoding</td><td>High — inference cost optimization</td><td>DSpark is production-ready. Test with your serving stack before the next cost review.</td></tr>
@@ -269,7 +269,7 @@
   <tr><td>Component-level evaluation</td><td>High — testing strategy</td><td>Stop testing end-to-end. Test retrieval, reasoning, and tool use separately. The failures hide at the seams.</td></tr>
   <tr><td>Benchmark saturation</td><td>Low — don't chase leaderboards</td><td>Ignore new benchmarks unless they test something you actually ship. Focus on production metrics.</td></tr>
   <tr><td>Agent memory</td><td>High — any long-running agent</td><td>Memory is a real engineering problem now, not a research curiosity. Budget for it.</td></tr>
-</table>
+</table></div>
 
 <blockquote><em>📌 Bottom line:</em> The research mass confirms what production builders already know: agents work, but operating them safely and efficiently is the hard part. The field is building the tooling for that. Pay attention to the safety and efficiency papers — they're the ones that will matter in 6 months.</blockquote>
 
