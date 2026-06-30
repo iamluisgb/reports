@@ -17,7 +17,7 @@
           <div class="category">AI NEWS DAILY</div>
           <h1>The <em>AI</em> Briefing</h1>
           <div class="date-line">30 Jun 2026 · Tuesday</div>
-          <div class="subtitle">Anthropic expands compute partnership · AI chatbot market share · South Korea $1T chip investment · Mythos in gov systems</div>
+          <div class="subtitle">Anthropic expands compute partnership · AI chatbot market share · South Korea $1T chip investment · 8 ArXiv papers on agents &amp; security</div>
         </div>
         <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
       </div>
@@ -105,26 +105,84 @@
 
     </div>
 
-    <div class="section">
+        <div class="section">
       <div class="section-label">Papers — ArXiv CS.AI</div>
 
       <div class="news-item">
         <div class="num">01</div>
-        <div class="title">Apple Neural Engine: Architecture, Programming, and Performance</div>
-        <div class="desc">Reverse-engineered account of the ANE fixed-function matrix accelerator in Apple A11+ and M1+ chips. Covers architecture, Core ML exposure, and performance characteristics. <strong>[systems-arch]</strong></div>
+        <div class="title">ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents</div>
+        <div class="desc">LLMs now invoke external tools and execute multi-step tasks, but benchmarks only measure task completion — not privacy. Introduces a framework evaluating whether agents leak sensitive data across tool calls. <strong>[agents, privacy]</strong></div>
         <div class="sources">
-          <a href="https://arxiv.org/abs/2606.22283">arXiv</a>
+          <a href="https://arxiv.org/abs/2606.28061">arXiv</a>
         </div>
       </div>
 
       <div class="news-item">
         <div class="num">02</div>
-        <div class="title">No ArXiv papers from filtered sources today</div>
-        <div class="desc">Check <a href="https://arxiv.org/list/cs.AI/recent">arXiv cs.AI</a> directly for latest submissions — blogwatcher returned 0 articles this cycle.</div>
+        <div class="title">LiveClawBench: Benchmarking LLM Agents on Complex, Real-World Assistant Tasks</div>
+        <div class="desc">Evaluates LLM assistants in open-ended, stateful, personalized software environments. Addresses the fidelity problem — benchmarks must match real assistant task distributions and execution environments. <strong>[agents, benchmark]</strong></div>
         <div class="sources">
-          <a href="https://arxiv.org/list/cs.AI/recent">arXiv CS.AI</a>
+          <a href="https://arxiv.org/abs/2604.13072">arXiv</a>
         </div>
       </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Just Ask: Curious Code Agents Reveal System Prompts in Frontier LLMs</div>
+        <div class="desc">Autonomous code agents can extract system prompts from frontier LLMs through agentic interaction — a previously unrecognized security risk that expands the attack surface beyond traditional prompt injection. <strong>[agents, security]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2601.21233">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Hierarchical Control in Multi-Agent Games: LLM-based Planning and RL Execution</div>
+        <div class="desc">Proposes a hierarchical architecture combining LLM high-level planning with RL execution for multi-agent coordination. Tackles sparse rewards and large state-action spaces in complex environments. <strong>[agents, RL]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.20014">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Grounded Iterative Language Planning: Parameterized World Models Reduce Hallucination in LLM Agents</div>
+        <div class="desc">Compares agent-based vs. parameterized world models for language agents. Parameterized models reduce hallucinated state changes that compound over multi-step planning. <strong>[agents, hallucination]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.27806">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">When Does Personality Composition Matter for Multi-Agent LLM Teams?</div>
+        <div class="desc">Personality prompting (agreeableness, etc.) shapes agent communication but its effect on objective task outcomes is under-explored. Tests whether personality composition in multi-agent teams affects performance. <strong>[agents, multi-agent]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.27443">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">07</div>
+        <div class="title">Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents</div>
+        <div class="desc">LLM agents fail when facts change across sessions — user moves, prices update, plans revised. Introduces benchmarks and training methods for agents to correctly use current values and discard superseded ones. <strong>[agents, memory]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.27472">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">08</div>
+        <div class="title">Contagion Networks: Evaluator Preference Propagation in Multi-Agent LLM Systems</div>
+        <div class="desc">When LLMs serve as evaluators in multi-agent systems, their strategy preferences propagate through the network. Formal framework for measuring how evaluator biases cascade. <strong>[agents, evaluation]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2606.20493">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+
 
     </div>
 
