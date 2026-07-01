@@ -238,7 +238,28 @@
       </div>
     </div>
 
+    
     <div class="section">
+      <div class="section-label">Anti-Patterns</div>
+      <div class="special-content">
+
+<h2>Where Model Architecture Decisions Go Wrong</h2>
+
+<table>
+<tr><th>ANTI-PATTERN</th><th>WHY IT FAILS</th><th>WHAT TO DO INSTEAD</th></tr>
+<tr><td>Comparing models by total parameter count</td><td>MoE means a "trillion-parameter" model may only activate 30-50B at inference. Total params are a marketing number, not a cost predictor.</td><td>Track <strong>active parameters</strong> and inference FLOPs per token. That's what determines serving cost.</td></tr>
+<tr><td>Throwing more test-time compute at every problem</td><td>The test-time compute paradox: more reasoning steps don't monotonically improve accuracy. Some tasks degrade with over-thinking — the model second-guesses correct answers.</td><td>Use adaptive compute controllers that learn <em>when to stop</em>. Benchmark with and without extended reasoning per task type.</td></tr>
+<tr><td>Ignoring KV cache memory when scaling context</td><td>Linear context length means quadratic KV cache memory. A 1M-token context window is useless if the GPU OOMs at 200K tokens of actual usage.</td><td>Profile KV cache footprint separately from model size. Consider efficient attention variants (gated attention, sliding window) for production long-context.</td></tr>
+<tr><td>Treating speculative decoding as a free lunch</td><td>Acceptance rate depends on draft model quality. A weak draft model can actually <em>slow down</em> inference by generating rejected tokens. Quality can degrade on edge cases.</td><td>Benchmark end-to-end latency, not just throughput. Measure acceptance rates per task domain. Don't use spec decoding for low-temperature or deterministic outputs.</td></tr>
+<tr><td>Chasing the frontier model for every use case</td><td>Frontier models are 10-50x more expensive than needed for most tasks. The gap between frontier and mid-tier models has narrowed to statistical noise on many benchmarks.</td><td>Route by task complexity. Use mid-tier models (70B class) as default; escalate to frontier only when quality gates fail.</td></tr>
+</table>
+
+<blockquote><strong>Key insight:</strong> The biggest architectural mistake in 2026 is not technical — it's organizational. Teams that benchmark models on synthetic leaderboards instead of their own eval sets end up overpaying for capability they don't need and underinvesting in the infrastructure (caching, routing, observability) that actually moves the needle.</blockquote>
+
+      </div>
+    </div>
+
+<div class="section">
       <div class="section-label">Watch</div>
 
       <div class="follow-item">

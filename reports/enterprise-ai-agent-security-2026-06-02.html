@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-type="special">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://iamluisgb.github.io/reports/reports/enterprise-ai-agent-security-2026-06-02.html">
 <meta name="twitter:card" content="summary">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../styles.css?v=2">
 <!-- og:start -->
 <meta name="description" content="OpenShell, NemoClaw, Hermes Agent, and the new runtime security layer for autonomous agents">
 <link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/enterprise-ai-agent-security-2026-06-02.html">
@@ -32,17 +32,24 @@
 <!-- og:end -->
 </head>
 <body>
+<div class="progress-bar" id="progress-bar"></div>
   <div class="page">
+
+    <nav class="report-nav" style="display:none" id="report-nav">
+      <a id="prev-report" class="report-nav-link" href="#">← Prev</a>
+      <a class="report-nav-link" href="../index.html">Index</a>
+      <a id="next-report" class="report-nav-link" href="#">Next →</a>
+    </nav>
     <a class="back-link" href="../index.html">← Index</a>
 
-    <div class="header" style="position:relative;">
+    <div class="special-header">
       <div class="field-mark"></div>
       <div class="header-top">
         <div>
-          <div class="category">🔬 DEEP RESEARCH</div>
+          <div class="special-category">Agent Security · Special Report</div>
           <h1>Enterprise AI Agent Security</h1>
-          <div class="date-line">02 Jun 2026</div>
-          <div class="subtitle">OpenShell, NemoClaw, Hermes Agent, and the new runtime security layer for autonomous agents</div>
+          <div class="special-date">02 Jun 2026</div>
+          <div class="special-subtitle">OpenShell, NemoClaw, Hermes Agent, and the new runtime security layer for autonomous agents</div>
         </div>
         <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
       </div>
@@ -493,7 +500,28 @@ curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash
       </div>
     </div>
 
+    
     <div class="section">
+      <div class="section-label">Anti-Patterns</div>
+      <div class="special-content">
+
+<h2>How Agent Security Deployments Fail</h2>
+
+<table>
+<tr><th>ANTI-PATTERN</th><th>WHY IT FAILS</th><th>WHAT TO DO INSTEAD</th></tr>
+<tr><td>"We'll add security after the POC"</td><td>Runtime security retrofitted onto a working agent means rewriting tool calls, re-plumbing the execution sandbox, and re-training the team. The POC becomes production before security ships.</td><td>Deploy OpenShell or equivalent from day one. The policy engine starts permissive (allow-all) and tightens — not the reverse.</td></tr>
+<tr><td>Over-trusting agent autonomy without policy guardrails</td><td>Agents that can read, write, and execute without policy boundaries will eventually do something catastrophic. "Eventually" is usually sooner than expected.</td><td>Define explicit policy boundaries per tool: read-only by default, write with approval, execute with human-in-the-loop for production systems.</td></tr>
+<tr><td>Building custom security per agent instead of using a unified runtime</td><td>Every team builds their own guardrails. Inconsistencies emerge. Security review becomes impossible because there's no single policy plane.</td><td>Standardize on one runtime security layer (OpenShell, NemoClaw, or equivalent). All agents go through the same policy engine regardless of framework.</td></tr>
+<tr><td>Policy engine too permissive ("allow-all for now")</td><td>The "temporary" allow-all policy becomes permanent. No one wants to tighten policies because something might break. The agent effectively runs unsandboxed.</td><td>Set a hard deadline (2 weeks) for tightening from allow-all. Use policy templates per agent type (data-reader, code-executor, external-caller).</td></tr>
+<tr><td>Treating agent memory as untrusted input</td><td>Memory poisoning: if an attacker can inject into the agent's memory store, they control future behavior across sessions. Most teams don't sanitize memory reads.</td><td>Treat memory as untrusted input. Validate retrieved memories before injection into context. Use signed memory entries for high-trust operations.</td></tr>
+</table>
+
+<blockquote><strong>Key insight:</strong> The most dangerous anti-pattern is treating agent security as a feature to add later. The teams that succeed treat the runtime security layer as <em>infrastructure</em> — it exists before the first agent is deployed, and every agent is built assuming it's there.</blockquote>
+
+      </div>
+    </div>
+
+<div class="section">
       <div class="section-label">Sources</div>
       <div class="special-content">
         <ul>
@@ -514,17 +542,88 @@ curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash
         </ul>
       </div>
     </div>
-
-    <div class="footer" style="margin-top:48px;padding:24px 0;border-top:1px solid var(--border);color:var(--on-surface-variant);font-size:14px;">
-      <p>Generated by <strong>Quirón</strong> (Hermes Agent) · 2 JUN 2026 · <a href="https://iamluisgb.github.io/reports">iamluisgb.github.io/reports</a></p>
+<div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">SPECIAL REPORT · JUNE 2026</span>
     </div>
-
   </div>
 
-  <script>
-    (function(){let t=localStorage.getItem('theme');if(t==='light'){document.documentElement.setAttribute('data-theme','light')}})()
-    function toggleTheme(){let e=document.documentElement;let t=e.getAttribute('data-theme')==='light';e.setAttribute('data-theme',t?'dark':'light');localStorage.setItem('theme',t?'dark':'light')}
-  </script>
+<script>
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+  }
 
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
+
+  (function() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+      bar.style.width = (scrolled * 100) + '%';
+    });
+  });
+</script>
+
+  <script>
+    const NAV_API_URL = 'https://api.github.com/repos/iamluisgb/reports/contents/reports?ref=master';
+    const CURRENT_FILE = 'enterprise-ai-agent-security-2026-06-02.html';
+
+    async function loadReportNav() {
+      try {
+        const res = await fetch(NAV_API_URL + '&t=' + Date.now());
+        if (!res.ok) throw new Error('API error');
+        const files = await res.json();
+        const htmlFiles = files
+          .filter(f => f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html')
+          .sort((a, b) => {
+            const da = a.name.replace('.html', '').split('-').slice(-3).join('');
+            const db = b.name.replace('.html', '').split('-').slice(-3).join('');
+            return db.localeCompare(da);
+          });
+        const idx = htmlFiles.findIndex(f => f.name === CURRENT_FILE);
+        if (idx === -1) return;
+        const nav = document.getElementById('report-nav');
+        if (nav) nav.style.display = '';
+        if (idx > 0) {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.href = prev.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx - 1].name;
+        } else {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.style.display = 'none';
+        }
+        if (idx < htmlFiles.length - 1) {
+          const next = document.getElementById('next-report');
+          if (next) next.href = next.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx + 1].name;
+        } else {
+          const next = document.getElementById('next-report');
+          if (next) next.style.display = 'none';
+        }
+      } catch (e) {
+        console.error('Nav error:', e);
+      }
+    }
+    loadReportNav();
+  </script>
 </body>
 </html>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-type="special">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What AI Startups Stole From Palantir's Playbook</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../styles.css?v=2">
 <!-- og:start -->
 <meta name="description" content="Forward Deployed Engineers · Ontological/Semantic Layers · Agentic Orchestration on Enterprise Legacy Systems · Market Map 2025-2026">
 <link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/palantir-playbook-2026.html">
@@ -26,16 +26,23 @@
 <!-- og:end -->
 </head>
 <body>
+<div class="progress-bar" id="progress-bar"></div>
   <div class="page">
+
+    <nav class="report-nav" style="display:none" id="report-nav">
+      <a id="prev-report" class="report-nav-link" href="#">← Prev</a>
+      <a class="report-nav-link" href="../index.html">Index</a>
+      <a id="next-report" class="report-nav-link" href="#">Next →</a>
+    </nav>
     <a class="back-link" href="../index.html">← Index</a>
-    <div class="header" style="position:relative;">
+    <div class="special-header">
       <div class="field-mark"></div>
       <div class="header-top">
         <div>
-          <div class="category">⭐ SPECIAL REPORT</div>
+          <div class="special-category">Market Analysis · Special Report</div>
           <h1>What AI Startups <em>Stole From Palantir's</em> Playbook</h1>
-          <div class="date-line">29 May 2026</div>
-          <div class="subtitle">Forward Deployed Engineers · Ontological/Semantic Layers · Agentic Orchestration on Enterprise Legacy Systems · Market Map 2025-2026</div>
+          <div class="special-date">29 May 2026</div>
+          <div class="special-subtitle">Forward Deployed Engineers · Ontological/Semantic Layers · Agentic Orchestration on Enterprise Legacy Systems · Market Map 2025-2026</div>
         </div>
         <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
       </div>
@@ -296,34 +303,88 @@ Sources: a16z · openai.com · accenture.com · digetiers-dap.com · invisiblete
 
       </div>
     </div>
-
+<div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">SPECIAL REPORT · MAY 2026</span>
+    </div>
   </div>
 
-  <script>
-  function toggleTheme() {
+<script>
+  function applyTheme(theme) {
     const html = document.documentElement;
     const btn = document.querySelector('.theme-toggle');
-    const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-    if (next === 'light') {
+    if (theme === 'light') {
       html.setAttribute('data-theme', 'light');
       btn.textContent = '◑ LIGHT';
     } else {
       html.removeAttribute('data-theme');
       btn.textContent = '◐ DARK';
     }
+  }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
     localStorage.setItem('ai-reports-theme', next);
   }
+
   (function() {
     const saved = localStorage.getItem('ai-reports-theme');
-    if (saved) {
-      const html = document.documentElement;
-      const btn = document.querySelector('.theme-toggle');
-      if (saved === 'light') {
-        html.setAttribute('data-theme', 'light');
-        btn.textContent = '◑ LIGHT';
+    if (saved) applyTheme(saved);
+  })();
+
+  (function() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+      bar.style.width = (scrolled * 100) + '%';
+    });
+  });
+</script>
+
+  <script>
+    const NAV_API_URL = 'https://api.github.com/repos/iamluisgb/reports/contents/reports?ref=master';
+    const CURRENT_FILE = 'palantir-playbook-2026.html';
+
+    async function loadReportNav() {
+      try {
+        const res = await fetch(NAV_API_URL + '&t=' + Date.now());
+        if (!res.ok) throw new Error('API error');
+        const files = await res.json();
+        const htmlFiles = files
+          .filter(f => f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html')
+          .sort((a, b) => {
+            const da = a.name.replace('.html', '').split('-').slice(-3).join('');
+            const db = b.name.replace('.html', '').split('-').slice(-3).join('');
+            return db.localeCompare(da);
+          });
+        const idx = htmlFiles.findIndex(f => f.name === CURRENT_FILE);
+        if (idx === -1) return;
+        const nav = document.getElementById('report-nav');
+        if (nav) nav.style.display = '';
+        if (idx > 0) {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.href = prev.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx - 1].name;
+        } else {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.style.display = 'none';
+        }
+        if (idx < htmlFiles.length - 1) {
+          const next = document.getElementById('next-report');
+          if (next) next.href = next.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx + 1].name;
+        } else {
+          const next = document.getElementById('next-report');
+          if (next) next.style.display = 'none';
+        }
+      } catch (e) {
+        console.error('Nav error:', e);
       }
     }
-  })();
+    loadReportNav();
   </script>
 </body>
 </html>
