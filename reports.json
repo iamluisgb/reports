@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-01T06:04:06+00:00",
+  "generated": "2026-07-01T11:22:40+00:00",
   "count": 58,
   "reports": [
     {
@@ -100,13 +100,13 @@
       "title": "The Architecture of Frontier AI in 2026: Five Shifts",
       "date": "2026-06-28",
       "summary": "MoE is the default · Test-time compute is the new scaling axis · Efficient attention breaks the context ceiling · Speculative decoding ships in the weights · The frontier is contested across five labs",
-      "readingTime": 8,
+      "readingTime": 9,
       "tags": [
         "models",
         "infrastructure",
         "research",
         "memory",
-        "multimodal"
+        "hardware"
       ],
       "series": "Models & Research"
     },
@@ -158,7 +158,7 @@
       ]
     },
     {
-      "file": "agentes-gobiernan-negocios-2026-06-27.html",
+      "file": "agents-running-businesses-2026-06-27.html",
       "type": "special",
       "title": "Agents That Run Businesses: The New Autonomous Executive",
       "date": "2026-06-27",
@@ -555,13 +555,13 @@
       "title": "Enterprise AI Agent Security — Deep Research Report",
       "date": "2026-06-02",
       "summary": "OpenShell, NemoClaw, Hermes Agent, and the new runtime security layer for autonomous agents",
-      "readingTime": 11,
+      "readingTime": 13,
       "tags": [
         "agents",
         "security",
+        "regulation",
         "business",
-        "hardware",
-        "models"
+        "hardware"
       ],
       "series": "Reliability & Security"
     },
@@ -797,13 +797,13 @@
       "title": "How Elite Engineering Teams Are Adopting AI (2026)",
       "date": "2026-05-20",
       "summary": "AI Adoption Frameworks in High-Performance Engineering Teams",
-      "readingTime": 9,
+      "readingTime": 10,
       "tags": [
         "coding",
         "business",
+        "security",
         "models",
-        "agents",
-        "security"
+        "agents"
       ],
       "series": "Enterprise & Adoption"
     },
