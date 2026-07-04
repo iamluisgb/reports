@@ -276,6 +276,79 @@
 <li><strong>AI usage tagging</strong>: Mark all AI-generated code in the VCS for specific debt tracking</li>
 </ul>
 
+<h2>3.5. AI Coding Tools Landscape — Comparative Analysis</h2>
+
+<p>The adoption frameworks above describe <em>how</em> teams integrate AI. The table below compares <em>what</em> they integrate. The landscape fragmented hard in 2025-2026; these are the tools that matter for engineering teams today:</p>
+
+<div class="table-wrapper">
+<table class="data-table">
+<tr>
+<th>Tool</th>
+<th>Type</th>
+<th>IDE Integration</th>
+<th>Agent Mode</th>
+<th>Context Awareness</th>
+<th>Best For</th>
+<th>Key Risk</th>
+</tr>
+<tr>
+<td><strong>GitHub Copilot</strong></td>
+<td>Completion + Chat</td><td>VS Code, JetBrains, Vim</td>
+<td>Copilot Workspace (limited)</td>
+<td>Repo-level (with Enterprise)</td>
+<td>Enterprise teams on GitHub</td>
+<td>Vendor lock-in; metrics measure adoption not impact</td>
+</tr>
+<tr>
+<td><strong>Cursor</strong></td>
+<td>AI-native IDE</td>
+<td>Fork of VS Code</td>
+<td>Yes — Composer agent</td>
+<td>Multi-file, repo-wide</td>
+<td>Individual devs wanting tight AI loop</td>
+<td>IDE lock-in; less mature enterprise governance</td>
+</tr>
+<tr>
+<td><strong>Claude Code</strong></td>
+<td>CLI agent</td>
+<td>Terminal-native</td>
+<td>Yes — full autonomous</td>
+<td>Repo + filesystem</td>
+<td>Backend/SRE workflows, CI pipelines</td>
+<td>Unbounded file access; needs explicit permission boundaries</td>
+</tr>
+<tr>
+<td><strong>OpenAI Codex CLI</strong></td>
+<td>CLI agent</td>
+<td>Terminal-native</td>
+<td>Yes — task-level</td>
+<td>Repo + filesystem</td>
+<td>Quick PRs, multi-file refactors</td>
+<td>OpenAI dependency; cost scales with context size</td>
+</tr>
+<tr>
+<td><strong>Aider</strong></td>
+<td>CLI + editor</td>
+<td>Terminal + git integration</td>
+<td>Yes — pair programming</td>
+<td>Repo + git history</td>
+<td>Open-source teams wanting local control</td>
+<td>Smaller model context; less polished UX</td>
+</tr>
+<tr>
+<td><strong>Windsurf (Codeium)</strong></td>
+<td>AI-native IDE</td>
+<td>Fork of VS Code</td>
+<td>Yes — Cascade agent</td>
+<td>Multi-file + terminal</td>
+<td>Teams wanting enterprise-grade AI IDE</td>
+<td>Newer platform; enterprise features still maturing</td>
+</tr>
+</table>
+</div>
+
+<blockquote><strong>Anti-pattern alert:</strong> Teams that adopt 3+ of these tools simultaneously without a "paved road" policy end up with context fragmentation, duplicated costs, and zero ability to measure which tool actually improves outcomes. Pick one primary tool per workflow (IDE completion, CLI agent, CI integration) and standardize. Let teams experiment with alternatives, but make the paved path dramatically easier.</blockquote>
+
 <h2>4. Adoption Models</h2>
 
 <h3>Approach Comparison</h3>

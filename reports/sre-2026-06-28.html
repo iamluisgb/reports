@@ -225,6 +225,44 @@
     </div>
 
     <div class="section">
+      <div class="section-label">Part V</div>
+      <div class="special-content">
+
+<h2>Anti-Patterns: How AI SRE Deployments Fail</h2>
+
+<p>The 50% of teams reporting no toil reduction (Catchpoint 2026) aren't unlucky — they're hitting predictable failure modes. Five patterns explain most AI SRE disappointments:</p>
+
+<div class="table-wrapper"><table>
+  <tr><th>Anti-pattern</th><th>What happens</th><th>Why it fails</th><th>Fix</th></tr>
+  <tr><td><strong>Full autonomy on day one</strong></td><td>Agent gets write permissions to production immediately</td><td>Unbounded blast radius; one bad remediation cascades into a larger incident</td><td>Start read-only. Earn write access per failure class, gated by proven reliability.</td></tr>
+  <tr><td><strong>Trusting the RCA blindly</strong></td><td>94% accuracy sounds high — until you're in the 6%</td><td>False confidence removes human verification; wrong fix deployed to production</td><td>Require human approval for first-of-kind remediations. Auto-execute only on repeat patterns.</td></tr>
+  <tr><td><strong>Telemetry debt first</strong></td><td>Agent deployed on fragmented, uncorrelated telemetry</td><td>Garbage in, garbage out — RCA accuracy drops to ~60% on non-OTel stacks</td><td>Unify on OpenTelemetry <em>before</em> deploying AI SRE, not after. The agent is only as good as the signal it gets.</td></tr>
+  <tr><td><strong>Automation toil creep</strong></td><td>Tuning, reviewing, and cleaning up agent actions creates new work</td><td>Net toil doesn't decrease — it shifts from incident response to agent babysitting</td><td>Measure <em>net</em> toil (response + agent maintenance), not just incident-response toil. If agent maintenance > response time saved, roll back autonomy.</td></tr>
+  <tr><td><strong>Vendor lock-in via AI</strong></td><td>Proprietary AI SRE agent tied to specific observability platform</td><td>Switching costs skyrocket; data portability lost; pricing leverage erodes</td><td>Standardize on OTel for data. Keep the AI reasoning layer swappable — it's the fastest-moving component.</td></tr>
+</table></div>
+
+<blockquote><strong>Key insight:</strong> The teams getting 75% MTTR reduction didn't deploy an AI agent — they deployed an AI agent <em>on top of a mature OTel stack with clear governance boundaries</em>. The agent is the last 20%; the foundation is the first 80%. Teams that skip the foundation get a demo that works in staging and fails in production.</blockquote>
+
+<h3>The Maturity Trap</h3>
+
+<p>A subtle but common failure: deploying an AI SRE agent at the wrong maturity level. The maturity curve isn't linear — it's <strong>per failure class</strong>. A team might have the agent auto-remediating pod restarts (high confidence, low risk) while still requiring human approval for database rollbacks (low frequency, high risk). The trap is treating maturity as a single dial instead of a per-class matrix:</p>
+
+<div class="table-wrapper"><table>
+  <tr><th>Failure class</th><th>Frequency</th><th>Risk</th><th>Recommended autonomy</th></tr>
+  <tr><td>Pod crash loops</td><td>High</td><td>Low</td><td>Auto-remediate</td></tr>
+  <tr><td>Memory pressure (OOM)</td><td>Medium</td><td>Low-Medium</td><td>Auto-remediate with limits</td></tr>
+  <tr><td>Deployment rollback</td><td>Medium</td><td>Medium</td><td>Propose + auto-execute after 3 successful proposals</td></tr>
+  <tr><td>Database failover</td><td>Low</td><td>High</td><td>Propose only — human approves</td></tr>
+  <tr><td>Network policy changes</td><td>Low</td><td>High</td><td>Propose only — human approves</td></tr>
+  <tr><td>Cloud account-level actions</td><td>Very low</td><td>Critical</td><td>Never automate — human-only</td></tr>
+</table></div>
+
+<p>Teams that grant blanket autonomy across all classes are the ones in the Catchpoint 6% — the ones where AI made things worse. The matrix above is not theoretical; it's the pattern that separates the 75% MTTR reduction teams from the 0% teams.</p>
+
+      </div>
+    </div>
+
+    <div class="section">
       <div class="section-label">In Numbers</div>
       <div class="stats-grid">
         <div class="stat-card">
