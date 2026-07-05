@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 05 Jul 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">05 Jul 2026 · Sunday</div>
+          <div class="subtitle">Claude Sonnet 5 · GPT-5.5 Codex regression · California-Anthropic deal · Agent benchmarking explosion</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Claude Sonnet 5 launches with 1M-token context window</div>
+        <div class="desc">Now the default model in Claude Code. Native 1M-token context, promotional pricing $2/$10 per Mtok through August 31.</div>
+        <div class="sources">
+          <a href="https://www.anthropic.com/news/claude-sonnet-5">Anthropic</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">GPT-5.5 Codex suffers from reasoning-token clustering bug</div>
+        <div class="desc">OpenAI investigating reports that reasoning-token clustering in Codex is leading to degraded performance. 213 points, 75 comments on HN.</div>
+        <div class="sources">
+          <a href="https://github.com/openai/codex/issues/30364">GitHub</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">California signs landmark $600M AI deal with Anthropic</div>
+        <div class="desc">Covers all state agencies at 50% discount through SITeS portal. Includes DMV, Medicaid, cybersecurity (Claude Security/Clyde), and workforce training.</div>
+        <div class="sources">
+          <a href="https://www.buildfastwithai.com/blogs/ai-news-today-july-1-2026">BuildFastWithAI</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Claude Fable 5 restored globally; Mythos 5 returns to US organizations</div>
+        <div class="desc">After June 30 cybersecurity review, Anthropic redeployed Fable 5 with updated safeguards. Mythos 5 access restored for select US orgs.</div>
+        <div class="sources">
+          <a href="https://releasebot.io/updates/anthropic">Releasebot</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">"The Log Is the Agent" — log-first architecture for LLM agents</div>
+        <div class="desc">Proposes treating the structured log as the central abstraction for agent state, replacing prompt stuffing. Log entries determine context — agents read from and write to the log.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2605.21997">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">"Better Models: Worse Tools" — Armin Ronacher on the AI tooling paradox</div>
+        <div class="desc">Argues that as models get smarter, tool quality degrades — developers over-rely on AI and skip traditional engineering rigor. Strong HN discussion.</div>
+        <div class="sources">
+          <a href="https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/">lucumr.pocoo.org</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Mouse — Precision Editing Tools for AI Coding Agents</div>
+        <div class="desc">New tooling layer designed to give AI coding agents fine-grained editing capabilities, beyond line-level diffs.</div>
+        <div class="sources">
+          <a href="https://hic-ai.com/">hic-ai.com</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Claude Code session/cache leakage between workspace instances</div>
+        <div class="desc">Reported on GitHub: potential cross-instance cache contamination in Claude Code workspaces. Privacy concern for multi-tenant environments.</div>
+        <div class="sources">
+          <a href="https://github.com/anthropics/claude-code/issues/74066">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents</div>
+        <div class="desc">Tests agent memory contracts: what each future decision can see. Proposes bounded-memory setup beyond naive prompt-stuffing. <strong>[agent, memory]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.02255">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">AgenticDataBench: A Comprehensive Benchmark for Data Agents</div>
+        <div class="desc">Benchmarks for automating data science pipelines — from raw heterogeneous data to actionable insights. <strong>[agent, benchmark]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.01647">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">SkillCoach: Self-Evolving Rubrics for Evaluating Agentic Skill-Use</div>
+        <div class="desc">Addresses overlapping skills in repositories — self-evolving rubrics for evaluating how well agents apply skills. <strong>[agent, evaluation]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.01874">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Are Performance-Optimization Benchmarks Reliably Measuring Coding Agents?</div>
+        <div class="desc">Questions whether benchmarks like GSO, SWE-Perf, SWE-fficiency actually measure coding agent capability through runtime optimization patches. <strong>[benchmark, coding]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.01211">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">PACE: A Proxy for Agentic Capability Evaluation</div>
+        <div class="desc">Cheaper proxy evaluations for SWE-Bench and GAIA — full runs cost thousands and days; PACE aims to approximate results faster. <strong>[agent, evaluation]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.02032">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">Multi-Resolution Flow Matching: Training-Free Diffusion Acceleration</div>
+        <div class="desc">Hardware-agnostic staged sampling for text-to-image diffusion — reduces inference without custom kernels or system-level optimization. <strong>[diffusion, inference]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.01642">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">07</div>
+        <div class="title">WorldDirector: Controllable World Simulators with Persistent Dynamic Memory</div>
+        <div class="desc">Video world model with persistent object memory and unrestricted viewpoint — beyond single-video generation. <strong>[world models, rl]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.02517">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Zig moves all package management from compiler to build system</div>
+        <div class="desc">Architecture change decoupling package management from the Zig compiler, simplifying the compiler and opening build system to more contributors.</div>
+        <div class="sources">
+          <a href="https://ziglang.org/devlog/2026/#2026-06-30">Zig Devlog</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Backon — Python retry with zero deps, circuit breaker, async native</div>
+        <div class="desc">Lightweight retry library for Python with circuit breaker pattern, native async support, and zero external dependencies.</div>
+        <div class="sources">
+          <a href="https://github.com/Llucs/backon">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Shadcn/UI now defaults to Base UI instead of Radix</div>
+        <div class="desc">Major shift in the UI component ecosystem: Shadcn/UI replaces Radix with Base UI as the default primitive layer.</div>
+        <div class="sources">
+          <a href="https://ui.shadcn.com/docs/changelog">shadcn.com</a> · <a href="https://news.ycombinator.com/item?id=48791328">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Leaking YouTube creators' private videos</div>
+        <div class="desc">Security researcher discovers method to leak private/unlisted YouTube videos. 551 points, 314 comments — major privacy discussion.</div>
+        <div class="sources">
+          <a href="https://javoriuski.com/post/youtube">javoriuski</a> · <a href="https://news.ycombinator.com/item?id=48786781">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Google Books — $200k bounty for all book scans</div>
+        <div class="desc">Anna's Archive offers $200k reward for complete Google Books dataset. 406 points, 222 comments. Legal and ethical debate on digital book preservation.</div>
+        <div class="sources">
+          <a href="https://software.annas-archive.gl/AnnaArchivist/annas-archive/-/work_items/234">Anna's Archive</a> · <a href="https://news.ycombinator.com/item?id=48786838">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Agent evaluation is getting serious.</strong> Three papers this week alone (PACE, AgenticDataBench, Performance-Optimization Benchmarks) tackle the same hard problem: how do we reliably measure agent capability? The subtext is clear — current benchmarks are too expensive, too narrow, or both.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Anthropic's week: Sonnet 5, Fable 5, Mythos 5, and a state-level deal.</strong> Three models restored/released plus California's $600M commitment signals Anthropic is betting big on government + enterprise. Meanwhile the Claude Code cache leakage issue (#74066) is a reminder that agent tooling security is still catching up to ambition.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>"Better Models: Worse Tools" resonates.</strong> Armin Ronacher's thesis — smarter models lead to sloppier engineering — mirrors a concern the SRE community has been quietly voicing. Worth reading the HN thread.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">05 Jul 2026</span>
+    </div>
+  </div>
+
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>
