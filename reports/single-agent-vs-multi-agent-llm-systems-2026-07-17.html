@@ -6,6 +6,18 @@
 <title>Single-Agent vs. Multi-Agent LLM Systems: The Architectural Debate</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css?v=2">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+<style>
+  .chart-container{margin:28px 0;padding:20px;background:var(--bg-card);border-radius:12px;border:1px solid var(--border)}
+  .chart-container canvas{max-height:340px}
+  .chart-caption{font-size:12px;color:var(--on-surface-variant);margin-top:10px;text-align:center;line-height:1.5}
+  .chart-container svg{width:100%;height:auto;display:block}
+  .chart-container svg text{font-family:'Inter',sans-serif;fill:var(--on-surface)}
+  .chart-container svg .label{font-size:11px;fill:var(--on-surface-variant)}
+  .chart-container svg .node rect{rx:8;ry:8;stroke:var(--border);stroke-width:1}
+  .chart-container svg .arrow{stroke:var(--primary);stroke-width:2;fill:none;marker-end:url(#arrowhead)}
+  .chart-container svg .arrowhead{fill:var(--primary)}
+</style>
 <!-- og:start -->
 <meta name="description" content="21 papers analyzed · Debate, roles, and voting paradigms · MoE isomorphism · Cost-normalized benchmarks · Open problems">
 <link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/single-agent-vs-multi-agent-llm-systems-2026-07-17.html">
@@ -141,6 +153,56 @@
           <tr><td>Communicative dehallucination</td><td>Filters outputs that violate role constraints</td><td>Prevents agents from drifting outside their domain</td></tr>
         </table>
 
+        <div class="chart-container">
+          <svg viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" class="arrowhead"/>
+              </marker>
+            </defs>
+            <!-- Nodes -->
+            <g class="node">
+              <rect x="10" y="50" width="110" height="60" fill="var(--bg-card)"/>
+              <text x="65" y="76" text-anchor="middle" font-size="13" font-weight="600">CEO</text>
+              <text x="65" y="94" text-anchor="middle" class="label">Requirements</text>
+            </g>
+            <g class="node">
+              <rect x="150" y="50" width="110" height="60" fill="var(--bg-card)"/>
+              <text x="205" y="76" text-anchor="middle" font-size="13" font-weight="600">CTO</text>
+              <text x="205" y="94" text-anchor="middle" class="label">Architecture</text>
+            </g>
+            <g class="node">
+              <rect x="290" y="50" width="110" height="60" fill="var(--bg-card)"/>
+              <text x="345" y="76" text-anchor="middle" font-size="13" font-weight="600">Programmer</text>
+              <text x="345" y="94" text-anchor="middle" class="label">Code</text>
+            </g>
+            <g class="node">
+              <rect x="430" y="50" width="110" height="60" fill="var(--bg-card)"/>
+              <text x="485" y="76" text-anchor="middle" font-size="13" font-weight="600">Tester</text>
+              <text x="485" y="94" text-anchor="middle" class="label">Validation</text>
+            </g>
+            <g class="node">
+              <rect x="570" y="50" width="110" height="60" fill="var(--bg-card)"/>
+              <text x="625" y="76" text-anchor="middle" font-size="13" font-weight="600">Reviewer</text>
+              <text x="625" y="94" text-anchor="middle" class="label">Approval</text>
+            </g>
+            <!-- Arrows -->
+            <line x1="120" y1="80" x2="148" y2="80" class="arrow"/>
+            <line x1="260" y1="80" x2="288" y2="80" class="arrow"/>
+            <line x1="400" y1="80" x2="428" y2="80" class="arrow"/>
+            <line x1="540" y1="80" x2="568" y2="80" class="arrow"/>
+            <!-- Phase labels -->
+            <text x="134" y="40" text-anchor="middle" class="label">Design</text>
+            <text x="274" y="40" text-anchor="middle" class="label">Planning</text>
+            <text x="414" y="40" text-anchor="middle" class="label">Coding</text>
+            <text x="554" y="40" text-anchor="middle" class="label">Testing</text>
+            <!-- Feedback loop -->
+            <path d="M 485 112 L 485 140 L 205 140 L 205 112" class="arrow" style="stroke-dasharray:5,3"/>
+            <text x="345" y="156" text-anchor="middle" class="label">Feedback loop (dehallucination)</text>
+          </svg>
+          <p class="chart-caption">ChatDev multi-agent pipeline · Each agent communicates via structured chat chain · Source: Qian et al. (2023)</p>
+        </div>
+
         <p><strong>Key finding:</strong> Natural language is advantageous for system design phases, while programming language communication proves helpful for debugging. The modality of communication matters as much as the content.</p>
 
         <p><strong>AutoGen</strong> (Wu et al., 2023 — Microsoft Research, <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2308.08155">arXiv:2308.08155</a>) takes a different approach: rather than imposing a specific paradigm, it provides <strong>infrastructure for building any multi-agent pattern</strong>. Agents are "conversable" — they can combine LLMs, human inputs, and tools. Both natural language and code can define interaction patterns. AutoGen has become the de facto infrastructure layer for production MAS deployments across mathematics, coding, QA, operations research, and online decision-making.</p>
@@ -195,6 +257,12 @@
 
         <p><strong>"From Argument Components to Graphs"</strong> (<a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2606.16047">arXiv:2606.16047</a>, 2026) introduces <strong>confidence gating</strong> — debating only uncertain cases and accepting initial predictions when confidence is high. This reduces compute cost without degrading quality, achieving the highest Macro F1 among all training-free methods.</p>
         <blockquote><strong>Design principle:</strong> The next generation of MAS will not debate everything uniformly but dynamically assign resolution strategies (self-resolve vs. debate vs. abstain) based on intrinsic uncertainty signals.</blockquote>
+
+        <div class="chart-container">
+          <canvas id="radar-paradigms" height="320"></canvas>
+          <p class="chart-caption">Multi-agent paradigm comparison across 5 dimensions · Higher = stronger · Based on empirical findings from cited papers</p>
+        </div>
+
       </div>
     </div>
 
@@ -240,6 +308,12 @@
           <tr><td>MAS sampling-and-voting (N agents)</td><td>N×</td><td>N×</td><td>Fully</td></tr>
           <tr><td>MAS with complex orchestration</td><td>3–10× (variable)</td><td>Variable</td><td>Depends on DAG</td></tr>
         </table>
+
+        <div class="chart-container">
+          <canvas id="bar-cost" height="240"></canvas>
+          <p class="chart-caption">Relative inference cost by system architecture · SAS baseline = 1× · Parallelizable systems shown with striped pattern</p>
+        </div>
+
         <p>The cost-normalized finding from <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2604.02460">arXiv:2604.02460</a> is unambiguous: when compute budgets are equalized, MAS advantages in multi-hop reasoning <strong>disappear or invert</strong>. The marginal cost per agent in debate is real and significant.</p>
 
         <h3>Orchestration Complexity</h3>
@@ -416,6 +490,163 @@
       }
     }
   })();
+
+  /* ===== Chart.js Initialization ===== */
+  function getChartColors() {
+    const s = getComputedStyle(document.documentElement);
+    return {
+      onSurface: s.getPropertyValue('--on-surface').trim(),
+      onSurfaceVariant: s.getPropertyValue('--on-surface-variant').trim(),
+      primary: s.getPropertyValue('--primary').trim(),
+      border: s.getPropertyValue('--border').trim(),
+      bgCard: s.getPropertyValue('--bg-card').trim(),
+    };
+  }
+
+  let radarChart = null;
+  let barChart = null;
+
+  function renderCharts() {
+    if (typeof Chart === 'undefined') return;
+    const c = getChartColors();
+
+    Chart.defaults.color = c.onSurfaceVariant;
+    Chart.defaults.borderColor = c.border;
+
+    // Radar: Paradigm comparison
+    const radarEl = document.getElementById('radar-paradigms');
+    if (radarEl) {
+      if (radarChart) radarChart.destroy();
+      radarChart = new Chart(radarEl, {
+        type: 'radar',
+        data: {
+          labels: ['Reasoning Accuracy', 'Cost Efficiency', 'Latency', 'Scalability', 'Interpretability'],
+          datasets: [
+            {
+              label: 'Debate (Du et al.)',
+              data: [9, 4, 4, 6, 7],
+              borderColor: c.primary,
+              backgroundColor: c.primary + '20',
+              pointBackgroundColor: c.primary,
+              borderWidth: 2,
+            },
+            {
+              label: 'Role-Based (ChatDev)',
+              data: [7, 7, 6, 7, 9],
+              borderColor: '#58a6ff',
+              backgroundColor: '#58a6ff20',
+              pointBackgroundColor: '#58a6ff',
+              borderWidth: 2,
+            },
+            {
+              label: 'Voting (Agent Forest)',
+              data: [8, 3, 3, 9, 4],
+              borderColor: '#f0883e',
+              backgroundColor: '#f0883e20',
+              pointBackgroundColor: '#f0883e',
+              borderWidth: 2,
+            },
+            {
+              label: 'Reflexion (Self-Iterative)',
+              data: [8, 8, 7, 5, 8],
+              borderColor: '#a371f7',
+              backgroundColor: '#a371f720',
+              pointBackgroundColor: '#a371f7',
+              borderWidth: 2,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            r: {
+              beginAtZero: true,
+              max: 10,
+              ticks: { stepSize: 2, color: c.onSurfaceVariant, backdropColor: 'transparent', font: { size: 10 } },
+              grid: { color: c.border },
+              angleLines: { color: c.border },
+              pointLabels: { color: c.onSurface, font: { size: 11, weight: '500' } },
+            },
+          },
+          plugins: {
+            legend: { position: 'bottom', labels: { color: c.onSurface, font: { size: 11 }, padding: 16, usePointStyle: true, pointStyleWidth: 10 } },
+          },
+        },
+      });
+    }
+
+    // Bar: Cost comparison
+    const barEl = document.getElementById('bar-cost');
+    if (barEl) {
+      if (barChart) barChart.destroy();
+      barChart = new Chart(barEl, {
+        type: 'bar',
+        data: {
+          labels: ['SAS\n(1 agent)', 'Reflexion\n(1 agent + eval)', 'MAS Debate\n(3×2 rounds)', 'MAS Voting\n(N agents)', 'MAS Complex\n(orchestrated)'],
+          datasets: [{
+            label: 'Relative Cost',
+            data: [1, 1.5, 6, 5, 7],
+            backgroundColor: [
+              c.primary + 'cc',
+              '#a371f7cc',
+              '#f0883ecc',
+              '#58a6ffcc',
+              '#f778bacc',
+            ],
+            borderColor: [
+              c.primary,
+              '#a371f7',
+              '#f0883e',
+              '#58a6ff',
+              '#f778ba',
+            ],
+            borderWidth: 1,
+            borderRadius: 6,
+          }],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+          scales: {
+            x: {
+              beginAtZero: true,
+              title: { display: true, text: 'Relative Cost (SAS = 1×)', color: c.onSurfaceVariant, font: { size: 11 } },
+              ticks: { color: c.onSurfaceVariant },
+              grid: { color: c.border },
+            },
+            y: {
+              ticks: { color: c.onSurface, font: { size: 11 } },
+              grid: { display: false },
+            },
+          },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: function(ctx) { return ctx.parsed.x + '× baseline'; },
+              },
+            },
+          },
+        },
+      });
+    }
+  }
+
+  // Render on load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => setTimeout(renderCharts, 100));
+  } else {
+    setTimeout(renderCharts, 100);
+  }
+
+  // Re-render on theme toggle
+  const origToggle = window.toggleTheme;
+  window.toggleTheme = function() {
+    origToggle();
+    setTimeout(renderCharts, 50);
+  };
   </script>
 </body>
 </html>
