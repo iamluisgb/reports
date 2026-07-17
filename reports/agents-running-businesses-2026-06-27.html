@@ -6,6 +6,12 @@
 <title>⭐ Agents That Run Businesses: The New Autonomous Executive</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css?v=2">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+<style>
+  .chart-container{margin:28px 0;padding:20px;background:var(--bg-card);border-radius:12px;border:1px solid var(--border)}
+  .chart-container canvas{max-height:340px}
+  .chart-caption{font-size:12px;color:var(--on-surface-variant);margin-top:10px;text-align:center;line-height:1.5}
+</style>
 <!-- og:start -->
 <meta name="description" content="Full landscape · 40+ companies · Technical architecture · Real economics · Anti-patterns · Where it&#x27;s heading">
 <link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/agents-running-businesses-2026-06-27.html">
@@ -145,6 +151,11 @@
   <tr><td>Decagon</td><td>Series B</td><td>$100M+</td><td>$1B+</td></tr>
 </table></div>
 
+<div class="chart-container">
+  <canvas id="chart-funding" height="300"></canvas>
+  <p class="chart-caption">$100M+ funding rounds in autonomous agents (2024–2025) · Source: Crunchbase, public filings</p>
+</div>
+
 <blockquote><em>📌 Signal:</em> Sierra's valuation ($4.5B) and Poolside's ($3B at Series A) show the market is pricing in the expectation that <strong>support and code agents will become $10B+ categories</strong>. The overvaluation risk is real, but the direction of capital is unambiguous.</blockquote>
 
 <h3>1.4 Documented Real-World Cases</h3>
@@ -255,6 +266,11 @@
   <tr><td><strong>Heavy agent</strong> (financial, legal analysis)</td><td>2M-10M</td><td>$500-$5,000</td><td>$300-$1,000</td><td>$800-$6,000</td></tr>
 </table></div>
 
+<div class="chart-container">
+  <canvas id="chart-agent-cost" height="220"></canvas>
+  <p class="chart-caption">Monthly cost breakdown by agent intensity · Token API cost vs. infrastructure · Source: mid-2025 reference pricing</p>
+</div>
+
 <p>Reference prices (mid-2025):</p>
 <div class="table-wrapper"><table>
   <tr><th>Model</th><th>Input/1M tokens</th><th>Output/1M tokens</th><th>Context</th></tr>
@@ -277,6 +293,11 @@
   <tr><td>Paralegal</td><td>$55K-$80K</td><td>$2,000-$10,000/yr</td><td>5-40x</td></tr>
   <tr><td>Financial Advisor</td><td>$80K-$120K</td><td>$3,000-$15,000/yr</td><td>5-40x</td></tr>
 </table></div>
+
+<div class="chart-container">
+  <canvas id="chart-human-vs-agent" height="260"></canvas>
+  <p class="chart-caption">Annual cost: Human role vs. equivalent AI agent · Log scale · Source: US salary data + agent pricing (mid-2025)</p>
+</div>
 
 <blockquote><em>📌 Signal:</em> The 10-100x ratio in raw costs is misleading. It doesn't include: error correction, supervision, legal liability, integration costs, or the "last 5% problem" where agents fail on edge cases. Real ROI materializes only on <strong>repetitive, high-volume, low-risk</strong> tasks.</blockquote>
 
@@ -533,6 +554,109 @@ Sources: Sierra AI (sierra.ai) · Cognition Labs (cognition.ai) · 11x.ai · Fac
       bar.style.width = (scrolled * 100) + '%';
     });
   });
+
+  /* ===== Chart.js Initialization ===== */
+  function getChartColors() {
+    const s = getComputedStyle(document.documentElement);
+    return {
+      onSurface: s.getPropertyValue('--on-surface').trim(),
+      onSurfaceVariant: s.getPropertyValue('--on-surface-variant').trim(),
+      primary: s.getPropertyValue('--primary').trim(),
+      border: s.getPropertyValue('--border').trim(),
+      bgCard: s.getPropertyValue('--bg-card').trim(),
+    };
+  }
+
+  let fundingChart = null, agentCostChart = null, humanAgentChart = null;
+
+  function renderCharts() {
+    if (typeof Chart === 'undefined') return;
+    const c = getChartColors();
+    Chart.defaults.color = c.onSurfaceVariant;
+    Chart.defaults.borderColor = c.border;
+
+    // 1. Funding horizontal bar
+    const fundEl = document.getElementById('chart-funding');
+    if (fundEl) {
+      if (fundingChart) fundingChart.destroy();
+      fundingChart = new Chart(fundEl, {
+        type: 'bar',
+        data: {
+          labels: ['Ambience Healthcare', 'Augment Code', 'Abridge', 'EvenUp', 'Sierra AI', 'Cognition (Devin)', 'Poolside AI', 'Harvey AI', 'Decagon'],
+          datasets: [{
+            label: 'Funding ($M)',
+            data: [270, 252, 250, 235, 175, 175, 126, 100, 100],
+            backgroundColor: ['#3fb950cc','#58a6ffcc','#a371f7cc','#f0883ecc','#f778bacc','#79c0ffcc','#d2a8ffcc','#ffa657cc','#ff7b72cc'],
+            borderColor: ['#3fb950','#58a6ff','#a371f7','#f0883e','#f778ba','#79c0ff','#d2a8ff','#ffa657','#ff7b72'],
+            borderWidth: 1, borderRadius: 6,
+          }],
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false, indexAxis: 'y',
+          scales: {
+            x: { beginAtZero: true, title: { display: true, text: 'Funding ($M)', color: c.onSurfaceVariant, font: { size: 11 } }, ticks: { color: c.onSurfaceVariant }, grid: { color: c.border } },
+            y: { ticks: { color: c.onSurface, font: { size: 11 } }, grid: { display: false } },
+          },
+          plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => '$' + ctx.parsed.x + 'M' } } },
+        },
+      });
+    }
+
+    // 2. Agent cost stacked bar
+    const costEl = document.getElementById('chart-agent-cost');
+    if (costEl) {
+      if (agentCostChart) agentCostChart.destroy();
+      agentCostChart = new Chart(costEl, {
+        type: 'bar',
+        data: {
+          labels: ['Light monitoring', 'Medium operations', 'Heavy agent'],
+          datasets: [
+            { label: 'Token API cost', data: [20, 198, 2750], backgroundColor: c.primary + 'cc', borderColor: c.primary, borderWidth: 1, borderRadius: 4 },
+            { label: 'Infrastructure', data: [75, 200, 650], backgroundColor: '#58a6ffcc', borderColor: '#58a6ff', borderWidth: 1, borderRadius: 4 },
+          ],
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          scales: {
+            x: { stacked: true, ticks: { color: c.onSurface }, grid: { display: false } },
+            y: { stacked: true, beginAtZero: true, title: { display: true, text: 'Monthly Cost ($)', color: c.onSurfaceVariant, font: { size: 11 } }, ticks: { color: c.onSurfaceVariant }, grid: { color: c.border } },
+          },
+          plugins: { legend: { position: 'bottom', labels: { color: c.onSurface, font: { size: 11 }, usePointStyle: true } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': $' + ctx.parsed.y } } },
+        },
+      });
+    }
+
+    // 3. Human vs Agent grouped bar (log scale)
+    const hvEl = document.getElementById('chart-human-vs-agent');
+    if (hvEl) {
+      if (humanAgentChart) humanAgentChart.destroy();
+      humanAgentChart = new Chart(hvEl, {
+        type: 'bar',
+        data: {
+          labels: ['Support Rep', 'Junior Analyst', 'Bookkeeper', 'Paralegal', 'Financial Advisor'],
+          datasets: [
+            { label: 'Human (annual)', data: [45000, 62500, 47500, 67500, 100000], backgroundColor: '#f85149cc', borderColor: '#f85149', borderWidth: 1, borderRadius: 4 },
+            { label: 'AI Agent (annual)', data: [1750, 3000, 1250, 6000, 9000], backgroundColor: c.primary + 'cc', borderColor: c.primary, borderWidth: 1, borderRadius: 4 },
+          ],
+        },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          scales: {
+            x: { ticks: { color: c.onSurface, font: { size: 11 } }, grid: { display: false } },
+            y: { type: 'logarithmic', title: { display: true, text: 'Annual Cost ($) — log scale', color: c.onSurfaceVariant, font: { size: 11 } }, ticks: { color: c.onSurfaceVariant, callback: v => v >= 1000 ? '$' + (v/1000) + 'K' : '$' + v }, grid: { color: c.border } },
+          },
+          plugins: { legend: { position: 'bottom', labels: { color: c.onSurface, font: { size: 11 }, usePointStyle: true } } },
+        },
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => setTimeout(renderCharts, 100));
+  } else { setTimeout(renderCharts, 100); }
+
+  const origToggle = window.toggleTheme;
+  window.toggleTheme = function() { origToggle(); setTimeout(renderCharts, 50); };
 </script>
 
   <script>
