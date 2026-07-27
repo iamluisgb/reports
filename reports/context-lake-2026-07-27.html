@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⭐ Context Lake: La Infraestructura para Agentes de IA Autónomos</title>
+<title>⭐ Context Lake: The Infrastructure for Autonomous AI Agents</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Context Lake: La Infraestructura para Agentes de IA Autónomos",
-  "description": "Análisis profundo del Context Lake: definición, arquitectura, plataformas, y su impacto en AIOps y agentes empresariales.",
+  "headline": "Context Lake: The Infrastructure for Autonomous AI Agents",
+  "description": "Deep analysis of the Context Lake: definition, architecture, platforms, and its impact on AIOps and enterprise agents.",
   "datePublished": "2026-07-27",
   "author": {
     "@type": "Person",
@@ -26,23 +26,23 @@
   },
   "mainEntityOfPage": "https://luisgonzalezbernal.com/reports/reports/context-lake-2026-07-27.html",
   "articleSection": "Special Report",
-  "inLanguage": "es",
+  "inLanguage": "en",
   "isAccessibleForFree": true
 }
 </script>
 <!-- og:start -->
-<meta name="description" content="Análisis del Context Lake: la capa de infraestructura que sirve contexto en tiempo real a agentes de IA autónomos. Arquitectura, plataformas, papers y caso de uso AIOps.">
+<meta name="description" content="Deep analysis of the Context Lake: the infrastructure layer that serves real-time context to autonomous AI agents. Architecture, platforms, papers, and AIOps use case.">
 <link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/context-lake-2026-07-27.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AI Reports — Luis GB">
-<meta property="og:title" content="⭐ Context Lake: La Infraestructura para Agentes de IA Autónomos">
-<meta property="og:description" content="Análisis del Context Lake: la capa de infraestructura que sirve contexto en tiempo real a agentes de IA autónomos.">
+<meta property="og:title" content="⭐ Context Lake: The Infrastructure for Autonomous AI Agents">
+<meta property="og:description" content="Deep analysis of the Context Lake: the infrastructure layer that serves real-time context to autonomous AI agents.">
 <meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/context-lake-2026-07-27.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@iamluisgb">
 <meta name="twitter:creator" content="@iamluisgb">
-<meta name="twitter:title" content="⭐ Context Lake: La Infraestructura para Agentes de IA Autónomos">
-<meta name="twitter:description" content="Análisis del Context Lake: la capa de infraestructura que sirve contexto en tiempo real a agentes de IA autónomos.">
+<meta name="twitter:title" content="⭐ Context Lake: The Infrastructure for Autonomous AI Agents">
+<meta name="twitter:description" content="Deep analysis of the Context Lake: the infrastructure layer that serves real-time context to autonomous AI agents.">
 <!-- og:end -->
 </head>
 <body>
@@ -53,57 +53,57 @@
       <div class="header-top">
         <div>
           <div class="category">⭐ SPECIAL REPORT</div>
-          <h1>Context Lake: La Infraestructura para Agentes de IA Autónomos</h1>
+          <h1>Context Lake: The Infrastructure for Autonomous AI Agents</h1>
           <div class="date-line">27 Jul 2026</div>
-          <div class="subtitle">Definición · Arquitectura · Plataformas · Caso AIOps</div>
+          <div class="subtitle">Definition · Architecture · Platforms · AIOps Use Case</div>
         </div>
         <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
       </div>
     </div>
 
     <div class="section">
-      <div class="section-label">Resumen Ejecutivo</div>
+      <div class="section-label">Executive Summary</div>
       <div class="special-content">
-        <p>El <strong>Context Lake</strong> es una nueva clase de infraestructura diseñada para servir contexto en tiempo real a agentes de IA autónomos. No es un data lake rebrandeado — es un sistema con fundamentos académicos formales (arXiv:2601.17019) que aborda un problema que los data lakes, warehouses y lakehouses no pueden resolver: <strong>coherencia decisional</strong> cuando múltiples agentes toman decisiones irreversibles concurrentes.</p>
+        <p>The <strong>Context Lake</strong> is a new class of infrastructure designed to serve real-time context to autonomous AI agents. It is not a rebranded data lake — it is a system with formal academic foundations (arXiv:2601.17019) that addresses a problem data lakes, warehouses, and lakehouses cannot solve: <strong>decision coherence</strong> when multiple agents make concurrent irreversible decisions.</p>
 
-        <p>Forrester Research lo posiciona como el principio arquitectónico fundamental para el agentic AI. Tacnode, Zep, Port.io y RisingWave ya lo implementan. Samsung, Zscaler y Fortune 500 ya lo adoptan. Y el paper de Jiang formaliza por qué es <em>necesario</em> — no solo útil.</p>
+        <p>Forrester Research positions it as the fundamental architectural principle for agentic AI. Tacnode, Zep, Port.io, and RisingWave already implement it. Samsung, Zscaler, and Fortune 500 companies are already adopting it. And Jiang's paper formalizes <em>why</em> it is necessary — not just useful.</p>
 
-        <p>Para equipos de AIOps, la relevancia es directa: tus agentes de triaje, runbook y escalación necesitan acceder al mismo estado vivo de incidentes. El Context Lake es la capa que lo hace posible.</p>
+        <p>For AIOps teams, the relevance is direct: your triage, runbook, and escalation agents need to access the same live state of incidents. The Context Lake is the layer that makes it possible.</p>
       </div>
     </div>
 
     <div class="section">
-      <div class="section-label">Parte I — Fundamentos</div>
+      <div class="section-label">Part I — Foundations</div>
       <div class="special-content">
-        <h2>¿Qué es un Context Lake?</h2>
-        <p>Un Context Lake es una capa de infraestructura que prepara, gestiona y sirve datos contextualizados en tiempo real para sistemas de IA. A diferencia de un data lake —que almacena datos pasivamente— un Context Lake <strong>entrega activamente</strong> la información precisa que un agente necesita en el momento exacto de tomar una decisión.</p>
+        <h2>What Is a Context Lake?</h2>
+        <p>A Context Lake is an infrastructure layer that prepares, manages, and serves contextualized data in real time to AI systems. Unlike a data lake — which stores data passively — a Context Lake <strong>actively delivers</strong> the precise information an agent needs at the exact moment it makes a decision.</p>
 
-        <h2>El fundamento académico: Decision Coherence Law</h2>
-        <p>Xiaowei Jiang formalizó el concepto en enero 2026 con el paper <em>"Context Lake: A System Class Defined by Decision Coherence"</em>. El resultado central es un <strong>Teorema de Imposibilidad de Composición</strong>: los sistemas existentes que avanzan de forma independiente <em>no pueden</em> componerse para proporcionar Coherencia Decisional mientras preservan sus clases de sistema nativas.</p>
+        <h2>The Academic Foundation: Decision Coherence Law</h2>
+        <p>Xiaowei Jiang formalized the concept in January 2026 with the paper <em>"Context Lake: A System Class Defined by Decision Coherence"</em>. The central result is an <strong>Impossibility Theorem of Composition</strong>: existing systems that operate independently <em>cannot</em> be composed to provide Decision Coherence while preserving their native system classes.</p>
 
-        <p>De esta imposibilidad se deriva el Context Lake como clase de sistema con tres requisitos fundamentales:</p>
+        <p>From this impossibility, the Context Lake is derived as a system class with three fundamental requirements:</p>
 
         <ol>
-          <li><strong>Operaciones semánticas como capacidades nativas</strong> — no como capa añadida</li>
-          <li><strong>Consistencia transaccional</strong> sobre todo el estado relevante para decisiones</li>
-          <li><strong>Envolventes operacionales</strong> que limiten el desfase y la degradación bajo carga</li>
+          <li><strong>Semantic operations as native capabilities</strong> — not as an added layer</li>
+          <li><strong>Transactional consistency</strong> over all state relevant to decisions</li>
+          <li><strong>Operational envelopes</strong> that bound degradation and drift under load</li>
         </ol>
 
-        <blockquote>"Para agentes que toman acciones irreversibles cuyos efectos interactúan, la corrección requiere que las decisiones que interactúan sean evaluadas contra una representación coherente de la realidad en el momento en que se toman." — Xiaowei Jiang, 2026</blockquote>
+        <blockquote>"For agents taking irreversible actions whose effects interact, correctness requires that interacting decisions be evaluated against a coherent representation of reality at the time they are made." — Xiaowei Jiang, 2026</blockquote>
 
         <h2>Context Lake vs. Data Lake</h2>
         <div class="table-wrapper">
         <table>
           <thead>
-            <tr><th>Dimensión</th><th>Data Lake</th><th>Context Lake</th></tr>
+            <tr><th>Dimension</th><th>Data Lake</th><th>Context Lake</th></tr>
           </thead>
           <tbody>
-            <tr><td>Propósito</td><td>Almacenar y analizar datos históricos</td><td>Servir contexto en tiempo real para decisiones</td></tr>
-            <tr><td>Consumidores</td><td>Humanos (analistas, data scientists)</td><td>Agentes de IA, sistemas autónomos</td></tr>
-            <tr><td>Temporalidad</td><td>Snapshots, datos por lotes</td><td>Tiempo real, evaluación al momento de la decisión</td></tr>
-            <tr><td>Consultas</td><td>Analíticas, batch (segundos a minutos)</td><td>Baja latencia, alta concurrencia (milisegundos)</td></tr>
-            <tr><td>Consistencia</td><td>Eventual, reconciliación post-hoc</td><td>Transaccional, coherente al momento de decisión</td></tr>
-            <tr><td>Concurrencia</td><td>100-500 QPS</td><td>10,000+ QPS</td></tr>
+            <tr><td>Purpose</td><td>Store and analyze historical data</td><td>Serve real-time context for decisions</td></tr>
+            <tr><td>Consumers</td><td>Humans (analysts, data scientists)</td><td>AI agents, autonomous systems</td></tr>
+            <tr><td>Temporal model</td><td>Snapshots, batch data</td><td>Real-time, evaluated at decision moment</td></tr>
+            <tr><td>Query pattern</td><td>Analytics, batch (seconds to minutes)</td><td>Low latency, high concurrency (milliseconds)</td></tr>
+            <tr><td>Consistency</td><td>Eventual, post-hoc reconciliation</td><td>Transactional, coherent at decision time</td></tr>
+            <tr><td>Concurrency</td><td>100–500 QPS</td><td>10,000+ QPS</td></tr>
           </tbody>
         </table>
         </div>
@@ -111,58 +111,58 @@
     </div>
 
     <div class="section">
-      <div class="section-label">Parte II — Arquitectura</div>
+      <div class="section-label">Part II — Architecture</div>
       <div class="special-content">
-        <h2>Componentes Fundamentales</h2>
-        <p>Un Context Lake se compone de cinco capas:</p>
+        <h2>Fundamental Components</h2>
+        <p>A Context Lake is composed of five layers:</p>
 
         <ol>
-          <li><strong>Capa de Ingestión</strong> — Procesa datos continuamente desde fuentes diversas (DBs estructuradas, logs, flujos de eventos) en tiempo real</li>
-          <li><strong>Motor de Transformación</strong> — Convierte datos en contextos listos para IA mediante pipelines de特征 engineering y extracción de señales</li>
-          <li><strong>Capa de Consulta</strong> — Interfaz unificada (compatible SQL) para que los agentes accedan al contexto transformado</li>
-          <li><strong>Motor de Recuperación</strong> — Optimizado para latencia sub-milisegundos, permitiendo acceso en el momento exacto de la decisión</li>
-          <li><strong>Operadores Semánticos</strong> — Capacidades nativas para razonar sobre datos estructurados y no estructurados</li>
+          <li><strong>Ingestion Layer</strong> — Continuously processes data from diverse sources (structured DBs, logs, event streams) in real time</li>
+          <li><strong>Transformation Engine</strong> — Converts raw data into IA-ready context via feature engineering pipelines and signal extraction</li>
+          <li><strong>Query Layer</strong> — Unified interface (typically SQL-compatible) for agents to access transformed context</li>
+          <li><strong>Retrieval Engine</strong> — Optimized for sub-millisecond latency, enabling access at the exact moment of decision</li>
+          <li><strong>Semantic Operators</strong> — Native capabilities for reasoning over structured and unstructured data</li>
         </ol>
 
-        <h2>El rol de RAG</h2>
-        <p>La tecnología central que potencia el Context Lake es <strong>RAG (Retrieval-Augmented Generation)</strong>. En lugar de depender de la memoria pre-entrenada del LLM, RAG permite que la IA "consulte" el Context Lake antes de responder:</p>
+        <h2>The Role of RAG</h2>
+        <p>The core technology powering the Context Lake is <strong>Retrieval-Augmented Generation (RAG)</strong>. Instead of relying solely on the LLM's pre-trained memory, RAG allows the AI to "query" the Context Lake before responding:</p>
         <ol>
-          <li>El usuario formula una pregunta</li>
-          <li>El sistema realiza una búsqueda ultrarrápida en el Context Lake</li>
-          <li>La pregunta se aumenta con el contexto recuperado</li>
-          <li>El LLM genera una respuesta fundamentada en hechos verificables</li>
+          <li>The user poses a question</li>
+          <li>The system performs an ultra-fast search in the Context Lake</li>
+          <li>The original question is augmented with the retrieved context</li>
+          <li>The LLM generates a response grounded in verifiable facts</li>
         </ol>
 
-        <h2>Grafos de Contexto Temporales</h2>
-        <p>Para agentes de larga duración, el Context Lake implementa <strong>grafos de contexto temporales</strong> que capturan conversaciones, documentos, eventos y datos de negocio asociados a cada entidad, junto con las relaciones entre ellos. Zep gestiona millones de estos grafos —uno por usuario, cliente, equipo o tema— con recuperación en menos de 200ms.</p>
+        <h2>Temporal Context Graphs</h2>
+        <p>For long-running agents, the Context Lake implements <strong>temporal context graphs</strong> that capture conversations, documents, events, and business data associated with each entity, along with the relationships between them. Zep manages millions of these graphs — one per user, customer, team, or topic — with retrieval under 200ms.</p>
       </div>
     </div>
 
     <div class="section">
-      <div class="section-label">Parte III — Plataformas</div>
+      <div class="section-label">Part III — Platforms</div>
       <div class="special-content">
         <h2>Tacnode</h2>
-        <p>Plataforma construida sobre AWS que ofrece latencia sub-milisegundo, escalabilidad horizontal y compatibilidad nativa con PostgreSQL. Se integra con Amazon Bedrock, EKS y Graviton. Disponible en AWS Marketplace. Es la implementación más completa y con soporte MCP nativo (contextlake.org).</p>
+        <p>A platform built on AWS offering sub-millisecond latency, horizontal scalability, and native PostgreSQL compatibility. Integrates with Amazon Bedrock, EKS, and Graviton. Available on AWS Marketplace. The most complete implementation with native MCP support (contextlake.org).</p>
 
         <h2>Zep</h2>
-        <p>Infraestructura empresarial para memoria de agentes. Implementa grafos de contexto temporales (Graphiti) con aislamiento multi-tenant, gobernanza ABAC, y recuperación sub-200ms. Reconocido por S&P Global Market Intelligence. Adoptado por Samsung, Zscaler y Fortune 500.</p>
+        <p>Enterprise infrastructure for agent memory. Implements temporal context graphs (Graphiti) with multi-tenant isolation, ABAC governance, and sub-200ms retrieval. Recognized by S&P Global Market Intelligence. Adopted by Samsung, Zscaler, and Fortune 500 companies.</p>
 
         <h2>Port.io</h2>
-        <p>Define el Context Lake como la capa de orquestación dentro de una plataforma de ingeniería agentiva. Mapea el entorno de ingeniería en un lago de contexto vivo, permitiendo que agentes operen con conocimiento compartido del catálogo de software y automatizaciones.</p>
+        <p>Defines the Context Lake as the orchestration layer within an agentic engineering platform. Maps the engineering environment into a live context lake, enabling agents to operate with shared knowledge of software catalogs, scorecards, and automations.</p>
 
         <h2>RisingWave</h2>
-        <p>Base de datos de streaming que ha escrito extensamente sobre el Context Lake, describiéndolo como el puente entre el potencial genérico de la IA y su aplicación experta dentro de la empresa. Su contribución principal es la perspectiva de streaming como mecanismo de ingesta.</p>
+        <p>A streaming database that has written extensively about the Context Lake, describing it as the bridge between AI's generic potential and its expert application within the enterprise. Its main contribution is the streaming perspective as an ingestion mechanism.</p>
 
         <div class="table-wrapper">
         <table>
           <thead>
-            <tr><th>Plataforma</th><th>Enfoque</th><th>Latencia</th><th>Diferenciador</th></tr>
+            <tr><th>Platform</th><th>Focus</th><th>Latency</th><th>Differentiator</th></tr>
           </thead>
           <tbody>
-            <tr><td>Tacnode</td><td>Plataforma completa</td><td>Sub-ms</td><td>MCP nativo, AWS Marketplace</td></tr>
-            <tr><td>Zep</td><td>Memoria empresarial</td><td>&lt;200ms</td><td>Grafos temporales, multi-tenant</td></tr>
-            <tr><td>Port.io</td><td>Orquestación SDLC</td><td>Baja</td><td>Ingeniería agentiva</td></tr>
-            <tr><td>RisingWave</td><td>Streaming backend</td><td>Sub-ms</td><td>Database de streaming</td></tr>
+            <tr><td>Tacnode</td><td>Full platform</td><td>Sub-ms</td><td>Native MCP, AWS Marketplace</td></tr>
+            <tr><td>Zep</td><td>Enterprise memory</td><td>&lt;200ms</td><td>Temporal graphs, multi-tenant</td></tr>
+            <tr><td>Port.io</td><td>SDLC orchestration</td><td>Low</td><td>Agentic engineering</td></tr>
+            <tr><td>RisingWave</td><td>Streaming backend</td><td>Sub-ms</td><td>Streaming database</td></tr>
           </tbody>
         </table>
         </div>
@@ -170,42 +170,42 @@
     </div>
 
     <div class="section">
-      <div class="section-label">Parte IV — Casos de Uso</div>
+      <div class="section-label">Part IV — Use Cases</div>
       <div class="special-content">
-        <h2>Detección de Fraude en Tiempo Real</h2>
-        <p>Un nuevo usuario se registra, añade una tarjeta y trata de retirar una suma grande. Docenas de señales de riesgo aparecen, pero los datos en el data warehouse se actualizaron hace 5 minutos. En fraude, 5 minutos es una eternidad. Un Context Lake evalúa estas señales en milisegundos con contexto fresco y coherente.</p>
+        <h2>Real-Time Fraud Detection</h2>
+        <p>A new user signs up, adds a credit card, and attempts a large withdrawal. Dozens of risk signals appear — high-risk subnet IP, card flagged on another account, device linked to a fraud network — but the data warehouse updated 5 minutes ago. In fraud, 5 minutes is an eternity. A Context Lake evaluates these signals in milliseconds with fresh, coherent context.</p>
 
-        <h2>Agentes de Atención al Cliente</h2>
-        <p>Un chatbot potenciado por Context Lake accede a políticas de garantía, historial del cliente, manuales de producto y procedimientos de devolución en tiempo real, eliminando alucinaciones y proporcionando respuestas fundamentadas.</p>
+        <h2>AI Customer Service Agents</h2>
+        <p>A chatbot powered by a Context Lake accesses warranty policies, customer history, product manuals, and return procedures in real time, eliminating hallucinations and delivering grounded, precise answers.</p>
 
-        <h2>Automatización de SDLC</h2>
-        <p>Port.io implementa el Context Lake como el "sistema de registros y sistema de acciones" para agentes que operan sobre el ciclo de vida del desarrollo de software. El Context Lake auto-descubre agentes, MCPs y habilidades para aplicar gobernanza.</p>
+        <h2>SDLC Automation</h2>
+        <p>Port.io implements the Context Lake as the "record system and action system" for agents operating across the software development lifecycle. The Context Lake auto-discovers agents, MCPs, and skills to apply governance.</p>
 
-        <h2>Orquestación Omnicanal Multi-Agente</h2>
-        <p>Cuando múltiples agentes de IA deben coordinarse a través de diferentes canales actuando sobre el mismo estado en vivo, el Context Lake proporciona la capa de memoria compartida que evita decisiones contradictorias.</p>
+        <h2>Multi-Agent Omnichannel Orchestration</h2>
+        <p>When multiple AI agents must coordinate across different channels acting on the same live state, the Context Lake provides the shared memory layer that prevents contradictory decisions.</p>
       </div>
     </div>
 
     <div class="section">
-      <div class="section-label">Parte V — Impacto en AIOps</div>
+      <div class="section-label">Part V — AIOps Impact</div>
       <div class="special-content">
-        <h2>¿Por qué los agentes de AIOps necesitan un Context Lake?</h2>
-        <p>Un equipo de AIOps típicamente despliega múltiples agentes especializados:</p>
+        <h2>Why AIOps Agents Need a Context Lake</h2>
+        <p>A typical AIOps team deploys multiple specialized agents:</p>
         <ul>
-          <li><strong>Agente de triaje</strong> — Clasifica y prioriza alertas</li>
-          <li><strong>Agente de análisis de logs</strong> — Busca patrones en logs y métricas</li>
-          <li><strong>Agente de runbook</strong> — Ejecuta pasos de remediación</li>
-          <li><strong>Agente de escalación</strong> — Decide cuándo intervención humana</li>
+          <li><strong>Triage agent</strong> — Classifies and prioritizes alerts</li>
+          <li><strong>Log analysis agent</strong> — Searches patterns in logs and metrics</li>
+          <li><strong>Runbook agent</strong> — Executes remediation steps</li>
+          <li><strong>Escalation agent</strong> — Decides when human intervention is needed</li>
         </ul>
 
-        <p>El problema: cada agente opera sobre su propia visión parcial de la realidad. Un agente de triaje ve la alerta pero no el historial de incidentes similares. Un agente de runbook ejecuta remediation pero no sabe que otro agente ya está trabajando en la misma infraestructura. Resultado: <strong>decisiones contradictorias, remediación redundante, y contexto perdido entre transiciones</strong>.</p>
+        <p>The problem: each agent operates on its own partial view of reality. A triage agent sees the alert but not the history of similar incidents. A runbook agent executes remediation but doesn't know another agent is already working on the same infrastructure. The result: <strong>contradictory decisions, redundant remediation, and lost context across handoffs</strong>.</p>
 
-        <h2>Arquitectura AIOps con Context Lake</h2>
+        <h2>AIOps Architecture with Context Lake</h2>
         <pre><code>Alert Ingress (webhook/PagerDuty)
         │
         ▼
    ┌─────────────┐
-   │  Triaje      │ ← Lee y escribe al Context Lake
+   │  Triage      │ ← Reads and writes to Context Lake
    │  Agent       │
    └───┬─────┬───┘
        │     │
@@ -215,7 +215,7 @@
   └───┬───┘ └──┬─────────┘
       │        │
       │   ┌────▼────────┐
-      │   │ Log Analysis │ ← Consulta historial via Context Lake
+      │   │ Log Analysis │ ← Queries history via Context Lake
       │   │ + RAG Agent  │
       │   └──┬───────┬──┘
       │      │       │
@@ -228,48 +228,48 @@
         │              │
    ┌────┴──────────────┴────┐
    │     CONTEXT LAKE        │
-   │  Estado vivo compartido │
-   │  Grafos temporales      │
-   │  Recuperación &lt;200ms    │
+   │  Shared live state      │
+   │  Temporal graphs        │
+   │  Retrieval &lt;200ms      │
    └─────────────────────────┘</code></pre>
 
-        <h2>Beneficios concretos para AIOps</h2>
+        <h2>Concrete Benefits for AIOps</h2>
         <ul>
-          <li><strong>Coherencia entre agentes</strong> — Todos ven el mismo estado de incidentes</li>
-          <li><strong>Historial persistente</strong> — Los agentes aprenden de incidentes pasados sin re-entrenamiento</li>
-          <li><strong>Memoria compartida</strong> — Un agente puede delegar a otro sin perder contexto</li>
-          <li><strong>Auditoría</strong> — Cada decisión es trazable contra el contexto que la motivó</li>
-          <li><strong>Remediación más rápida</strong> — Sub-milisegundos vs. batch queries al data warehouse</li>
+          <li><strong>Agent coherence</strong> — All agents see the same incident state</li>
+          <li><strong>Persistent history</strong> — Agents learn from past incidents without retraining</li>
+          <li><strong>Shared memory</strong> — An agent can delegate to another without losing context</li>
+          <li><strong>Auditability</strong> — Every decision is traceable against the context that motivated it</li>
+          <li><strong>Faster remediation</strong> — Sub-millisecond vs. batch queries to the data warehouse</li>
         </ul>
       </div>
     </div>
 
     <div class="section">
-      <div class="section-label">Parte VI — Limitaciones</div>
+      <div class="section-label">Part VI — Limitations</div>
       <div class="special-content">
-        <h2>Lo que aún no funciona</h2>
+        <h2>What Doesn't Work Yet</h2>
         <ul>
-          <li><strong>Madurez incipiente</strong> — El concepto tiene menos de 18 meses. No existen estándares ampliamente adoptados.</li>
-          <li><strong>Complejidad arquitectónica</strong> — Integrar streaming, transformación, recuperación semántica y gobernanza en un solo sistema añade complejidad operativa significativa.</li>
-          <li><strong>Costo</strong> — Mantener una capa en memoria con recuperación sub-ms y alta concurrencia es más costoso que un data lake de objetos.</li>
-          <li><strong>Dependencia de proveedor</strong> — Tacnode/AWS, Zep, Port.io — cada implementación es una apuesta tecnológica.</li>
-          <li><strong>Definición fragmentada</strong> — Para Port.io es orquestación; para Zep es memoria; para Tacnode es plataforma de datos. La definición converge pero no es idéntica.</li>
+          <li><strong>Immature ecosystem</strong> — The concept is under 18 months old. No widely adopted standards exist.</li>
+          <li><strong>Architectural complexity</strong> — Integrating streaming, transformation, semantic retrieval, and governance into one system adds significant operational complexity.</li>
+          <li><strong>Cost</strong> — Maintaining an in-memory layer with sub-ms retrieval and high concurrency is more expensive than an object data lake.</li>
+          <li><strong>Vendor lock-in</strong> — Tacnode/AWS, Zep, Port.io — each implementation is a technology bet.</li>
+          <li><strong>Fragmented definitions</strong> — For Port.io it's orchestration; for Zep it's memory; for Tacnode it's a data platform. Definitions converge but are not identical.</li>
         </ul>
 
-        <h2>Alternativas parciales hoy</h2>
-        <p>Mientras el ecosistema madura, se puede aproximar un Context Lake con:</p>
+        <h2>Partial Alternatives Today</h2>
+        <p>While the ecosystem matures, you can approximate a Context Lake with:</p>
         <ul>
-          <li><strong>LangGraph Store</strong> — Para memoria persistente entre sesiones de agentes</li>
-          <li><strong>Vector DB (Pinecone/Qdrant)</strong> — Para RAG semántico</li>
-          <li><strong>Redis/Kafka</strong> — Para estado compartido de baja latencia</li>
-          <li><strong>Temporal.io</strong> — Para workflow orchestration con estado</li>
+          <li><strong>LangGraph Store</strong> — For persistent memory across agent sessions</li>
+          <li><strong>Vector DB (Pinecone/Qdrant)</strong> — For semantic RAG</li>
+          <li><strong>Redis/Kafka</strong> — For low-latency shared state</li>
+          <li><strong>Temporal.io</strong> — For workflow orchestration with state</li>
         </ul>
-        <p>Pero esto es un ensamblaje manual, no una clase de sistema integrada.</p>
+        <p>But this is manual assembly, not an integrated system class.</p>
       </div>
     </div>
 
     <div class="section">
-      <div class="section-label">Fuentes</div>
+      <div class="section-label">Sources</div>
       <div class="special-content">
         <ol>
           <li>Jiang, X. (2026). <em>Context Lake: A System Class Defined by Decision Coherence</em>. arXiv:2601.17019. <a href="https://arxiv.org/abs/2601.17019">arxiv.org</a></li>
@@ -284,7 +284,7 @@
           <li>RisingWave. <em>What Is a Context Lake and Why You Need One</em>. <a href="https://risingwave.com/blog/what-is-a-context-lake/">risingwave.com</a></li>
           <li>AWS Blog. <em>Powering Real-Time AI with Tacnode Context Lake on AWS</em>. <a href="https://aws.amazon.com/blogs/apn/powering-real-time-ai-with-tacnode-context-lake-on-aws/">aws.amazon.com</a></li>
         </ol>
-        <p style="margin-top: 20px; color: var(--text-muted); font-size: 12px;">Generado por Deep Research Agent · LangChain DeepAgents + NaN Builders · 27 Jul 2026</p>
+        <p style="margin-top: 20px; color: var(--text-muted); font-size: 12px;">Generated by Deep Research Agent · LangChain DeepAgents + NaN Builders · 27 Jul 2026</p>
       </div>
     </div>
 
