@@ -50,7 +50,7 @@
 </script>
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to reports</a>
+  <a href="#special" class="skip-link">Skip to reports</a>
   <div class="page home">
     <div class="hero">
       <div class="hero-accent"></div>
@@ -87,6 +87,11 @@
       <div class="result-count" id="result-count" role="status" aria-live="polite"></div>
     </div>
 
+    <nav class="view-switch" id="view-switch" aria-label="Jump to report section">
+      <a class="view-pill" href="#special">⭐ Special <span class="pill-count" id="pill-special-count"></span></a>
+      <a class="view-pill" href="#daily">📰 Daily <span class="pill-count" id="pill-daily-count"></span></a>
+    </nav>
+
     <noscript>
       <div class="empty" style="padding:24px;border:1px solid var(--border);border-radius:10px;margin-bottom:24px;">
         This index needs JavaScript to list reports. You can still browse via the
@@ -95,7 +100,7 @@
       </div>
     </noscript>
 
-    <div class="section" id="main" tabindex="-1">
+    <div class="section" id="special" tabindex="-1">
       <div class="section-label">
         ⭐ Special Reports <span class="count" id="special-badge">0</span>
       </div>
@@ -107,7 +112,7 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="daily">
       <div class="section-label">
         📰 Daily Reports <span class="count" id="daily-badge">0</span>
       </div>
@@ -325,6 +330,16 @@
   document.addEventListener('click', handleTagActivate);
   document.addEventListener('keydown', handleTagActivate);
 
+  // Enter/Space on a month/series label toggles it instead of doing nothing.
+  function handleMonthKeydown(e) {
+    const label = e.target.closest('.month-label');
+    if (!label) return;
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    e.preventDefault();
+    toggleMonth(label);
+  }
+  document.addEventListener('keydown', handleMonthKeydown);
+
   // Display order for special-report series; unknown series append after these.
   const SPECIAL_SERIES_ORDER = [
     'Agents & Multi-Agent',
@@ -355,12 +370,12 @@
     order.forEach(s => {
       const items = groups[s];
       html += `<div class="month-group" data-series="${escapeHtml(s)}">`;
-      html += `<div class="month-label" onclick="toggleMonth(this)">
-        <span class="month-arrow">▾</span>
+      html += `<div class="month-label collapsed" onclick="toggleMonth(this)" role="button" tabindex="0" aria-expanded="false">
+        <span class="month-arrow">▸</span>
         <span class="month-name">${escapeHtml(s)}</span>
         <span class="month-count">${items.length} report${items.length > 1 ? 's' : ''}</span>
       </div>`;
-      html += '<div class="month-body">';
+      html += '<div class="month-body" style="display:none">';
       items.forEach((f, i) => { html += renderCard(f, 'special', i); });
       html += '</div></div>';
     });
@@ -387,7 +402,7 @@
     pageMonths.forEach(mk => {
       const g = groups[mk];
       html += `<div class="month-group" data-month="${mk}">`;
-      html += `<div class="month-label" onclick="toggleMonth(this)">
+      html += `<div class="month-label" onclick="toggleMonth(this)" role="button" tabindex="0" aria-expanded="true">
         <span class="month-arrow">▾</span>
         <span class="month-name">${g.label}</span>
         <span class="month-count">${g.files.length} reports</span>
@@ -425,13 +440,15 @@
     el.classList.toggle('collapsed');
     const body = el.nextElementSibling;
     const arrow = el.querySelector('.month-arrow');
-    if (el.classList.contains('collapsed')) {
+    const collapsed = el.classList.contains('collapsed');
+    if (collapsed) {
       body.style.display = 'none';
       arrow.textContent = '▸';
     } else {
       body.style.display = '';
       arrow.textContent = '▾';
     }
+    el.setAttribute('aria-expanded', String(!collapsed));
   }
 
   function loadPage(page) {
@@ -440,6 +457,23 @@
     filterReports();
     window.scrollTo({ top: document.getElementById('daily-grouped').offsetTop - 80, behavior: 'smooth' });
   }
+
+  // Highlight the active pill based on which section is in view.
+  function updateViewSwitch() {
+    const bar = document.getElementById('view-switch');
+    if (!bar) return;
+    let active = 'special';
+    const offset = 140;
+    ['special', 'daily'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.getBoundingClientRect().top <= offset) active = id;
+    });
+    bar.querySelectorAll('.view-pill').forEach(p => {
+      p.classList.toggle('active', p.getAttribute('href') === '#' + active);
+    });
+  }
+  window.addEventListener('scroll', updateViewSwitch, { passive: true });
+  window.addEventListener('resize', updateViewSwitch);
 
   async function loadReports() {
     try {
@@ -465,10 +499,13 @@
       document.getElementById('total-count').textContent = allDailyFiles.length + allSpecialFiles.length;
       document.getElementById('daily-badge').textContent = allDailyFiles.length;
       document.getElementById('special-badge').textContent = allSpecialFiles.length;
+      document.getElementById('pill-daily-count').textContent = allDailyFiles.length;
+      document.getElementById('pill-special-count').textContent = allSpecialFiles.length;
 
       readTopicsFromUrl();
       renderTopicFilter();
       filterReports();
+      updateViewSwitch();
 
     } catch (err) {
       console.error(err);

@@ -853,6 +853,59 @@ tbody {
     border-color: var(--primary);
   }
 
+/* ===== VIEW SWITCH ===== */
+  .view-switch {
+    position: sticky;
+    top: 12px;
+    z-index: 40;
+    display: flex;
+    gap: 6px;
+    width: fit-content;
+    max-width: 100%;
+    padding: 5px;
+    margin: 0 0 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    box-shadow: var(--shadow);
+  }
+
+.view-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    line-height: 1;
+    color: var(--on-surface-variant);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.2s;
+  }
+
+.view-pill:hover {
+    color: var(--on-surface);
+  }
+
+.view-pill.active {
+    background: var(--primary);
+    color: #fff;
+  }
+
+.pill-count {
+    font-size: 10px;
+    opacity: 0.75;
+    min-width: 16px;
+    text-align: center;
+  }
+
+#special,
+#daily {
+    scroll-margin-top: 72px;
+  }
+
 /* ===== MONTH GROUPING ===== */
   .month-group {
     margin-bottom: 8px;
@@ -2027,6 +2080,7 @@ input:focus-visible,
   .theme-toggle { padding: 11px 14px; min-height: 44px; }
   .tag { padding: 6px 11px; font-size: 11px; min-height: 32px; align-items: center; }
   .card-tags { gap: 8px; }
+  .view-pill { padding: 12px 18px; }
 }
 
 /* Wider, two-column homepage on large screens (report pages stay narrow) */
