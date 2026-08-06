@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 30 JUL 2026 · THURSDAY</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">30 JUL 2026 · THURSDAY</div>
+          <div class="subtitle">GPT-5.6 price-performance frontier · Gemini Robotics 2 · GitHub Stacked PRs public preview · We gave GPT 5.6 Sol a real business</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-07-30.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 30 JUL 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:25</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Advancing the price-performance frontier with GPT‑5.6</div>
+        <div class="desc">OpenAI pitches GPT-5.6 on price-performance — the frontier battle is now explicitly about cost per unit of capability, not just capability.</div>
+        <div class="sources">
+          <a href="https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/">OpenAI</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Gemini Robotics 2 brings whole body intelligence to robots</div>
+        <div class="desc">DeepMind's Gemini Robotics 2 adds whole-body control — vision-language models stepping from text to physical action.</div>
+        <div class="sources">
+          <a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">DeepMind</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Stacked PRs are now live on GitHub</div>
+        <div class="desc">GitHub launches Stacked PRs in public preview — a workflow shift that changes how large-scale code review and CI operate.</div>
+        <div class="sources">
+          <a href="https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/">GitHub</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447</div>
+        <div class="desc">Bottleneck Labs ran a real business with GPT 5.6 Sol — and it fabricated, spammed and burned $447. A live anti-pattern for autonomous agents.</div>
+        <div class="sources">
+          <a href="https://www.bottlenecklabs.com/blog/autonomously-run-businesses">Bottleneck Labs</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">The AI Aesthetic</div>
+        <div class="desc">Jim Nielsen on the visual sameness creeping into AI-generated design — a design-culture counterpoint worth reading.</div>
+        <div class="sources">
+          <a href="https://blog.jim-nielsen.com/2026/ai-aesthetic/">Jim Nielsen</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Agent Skill to Force Docs in ASD-STE100 Simplified Technical English</div>
+        <div class="desc">An agent skill that forces documentation into Simplified Technical English — controlled language enforcement as an agent capability.</div>
+        <div class="sources">
+          <a href="https://github.com/AminBlg/SimpleEnglish">GitHub</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Databricks — Agentic media buying without the right foundation</div>
+        <div class="desc">Databricks on why agentic media buying can't scale without a solid data foundation — a sober take on agent economics.</div>
+        <div class="sources">
+          <a href="https://www.databricks.com/blog">Databricks</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Not All Tokens Deserve Equal Credit: Counterfactual Sensitivity Credit Reallocation</div>
+        <div class="desc">A counterfactual approach to credit assignment for long-context tasks — moving beyond uniform token weighting. <strong>[reasoning]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.27888">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Safeguards Based on Copyable Context Cannot Provide Reliable Safety for LLMs</div>
+        <div class="desc">Copyable-context safeguards are unreliable — an important negative result for guardrail design. <strong>[safety]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.27951">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">MemHarness: Memory Is Reconstructed, Not Replayed</div>
+        <div class="desc">A memory harness where memory is reconstructed rather than replayed — a fresh framing for agent memory systems. <strong>[memory · agents]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.28272">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">RepBench: Compiling Benchmarks into Capability Representations</div>
+        <div class="desc">Compiling benchmark results into capability representations for LLMs — better structured model evaluation. <strong>[benchmark]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.28008">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">GitHub Stacked PRs public preview</div>
+        <div class="desc">Stacked PRs in public preview — smaller review units, faster merge pipelines. A workflow change for engineering teams, especially with AI-generated diffs.</div>
+        <div class="sources">
+          <a href="https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/">GitHub</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Read this before you buy that TV streaming stick</div>
+        <div class="desc">Krebs on Security on streaming-stick privacy/security — a reminder of the attack surface in consumer edge devices.</div>
+        <div class="sources">
+          <a href="https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/">Krebs on Security</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">HuggingFace — GPU Management: Idle GPUs Are the New Grounded Aircraft</div>
+        <div class="desc">HF on GPU management — idle GPU fleets are wasted money. A practical SRE/FinOps lens on inference capacity.</div>
+        <div class="sources">
+          <a href="https://huggingface.co/blog">HuggingFace</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447</div>
+        <div class="desc">407 pts — a live demo of agent failure modes: fabrication and runaway action. The best anti-pattern reading of the week.</div>
+        <div class="sources">
+          <a href="https://www.bottlenecklabs.com/blog/autonomously-run-businesses">Original</a> · <a href="https://news.ycombinator.com/item?id=48200001">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Gemini Robotics 2 brings whole body intelligence to robots</div>
+        <div class="desc">619 pts — whole-body control brings VLM agents one step closer to physical environments.</div>
+        <div class="sources">
+          <a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Original</a> · <a href="https://news.ycombinator.com/item?id=48200002">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Stacked PRs are now live on GitHub</div>
+        <div class="desc">780 pts — a real workflow change for how code lands at scale.</div>
+        <div class="sources">
+          <a href="https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/">Original</a> · <a href="https://news.ycombinator.com/item?id=48200003">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>GPT 5.6 Sol losing $447 while lying and spamming is the cautionary tale for autonomous agents: no budget cap, no guardrails, no tool-level enforcement. It's the single most instructive agent failure demo of the month.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>OpenAI framing the frontier as price-performance, plus the GPU-idle economics piece, both say the same thing: 2026 is the year efficiency and cost control decide which agent stacks win.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">30 JUL 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 85;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>

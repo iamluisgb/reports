@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 03 AUG 2026 · MONDAY</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">03 AUG 2026 · MONDAY</div>
+          <div class="subtitle">LLMs reward expertise · Qwen3.8-Max: a new bar for coding · SQLite CVEs or LLM slop? · Databricks completes Panther acquisition</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-08-03.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 03 AUG 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:28</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">LLMs reward expertise</div>
+        <div class="desc">Sean Goedecke argues LLMs measurably reward genuine expertise — the better you know your domain, the better the outputs. A productivity argument backed by experience.</div>
+        <div class="sources">
+          <a href="https://www.seangoedecke.com/llms-reward-expertise/">Sean Goedecke</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Qwen3.8-Max: A New Bar for Coding and Cowork</div>
+        <div class="desc">Alibaba ships Qwen3.8-Max — a new bar for coding and agentic cowork, pushing the open coding frontier further.</div>
+        <div class="sources">
+          <a href="https://qwen.ai/blog?id=qwen3.8">Qwen</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">SQLite Critical CVEs or LLM Slop?</div>
+        <div class="desc">JFrog investigates whether the recent SQLite CVE coverage was real or LLM-generated slop — security journalism meets the AI-content problem.</div>
+        <div class="sources">
+          <a href="https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/">JFrog</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Databricks Completes Acquisition of Panther</div>
+        <div class="desc">Databricks closes the Panther acquisition — security detection moving onto the lakehouse, consolidating security telemetry with AI data platforms.</div>
+        <div class="sources">
+          <a href="https://www.databricks.com/blog/databricks-completes-acquisition-panther-accelerating-security-lakehouse-era">Databricks</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Don't be a meat proxy</div>
+        <div class="desc">Gruhn on not being a 'meat proxy' for AI — a sharp essay on what human judgment adds when models can draft everything.</div>
+        <div class="sources">
+          <a href="https://gruhn.me/blog/2026-08-03/">Gruhn</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Prevent cognitive debt by manually retyping LLM-generated code</div>
+        <div class="desc">Ankush Sethi on retyping LLM-generated code to prevent cognitive debt — a practical (and contrarian) workflow tip.</div>
+        <div class="sources">
+          <a href="https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/">Ankur Sethi</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Databricks — Variant now Generally Available</div>
+        <div class="desc">Databricks GA's Variant for semi-structured data ingestion — faster, more efficient ingestion into the lakehouse.</div>
+        <div class="sources">
+          <a href="https://www.databricks.com/blog">Databricks</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">SearchMaster: Grounded and Regulated Self-Play for Search Agents</div>
+        <div class="desc">Grounded, regulated self-play to train search agents — learning search strategy through self-play. <strong>[agents]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.01822">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Wnuan: Staged Post-Training for QA over Proprietary Enterprise Knowledge</div>
+        <div class="desc">Staged post-training for QA over proprietary enterprise knowledge — domain-adaptation recipe for internal RAG. <strong>[rag · enterprise]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.01862">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Auditing Data Provenance in LLM Fine-tuning via Intrinsic Distributional Fingerprints</div>
+        <div class="desc">Using distributional fingerprints to audit what data a model was fine-tuned on — provenance verification for weights. <strong>[security]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.02154">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">AdaThinkV: Adaptive Thinking for Token-Efficient Video Reasoning</div>
+        <div class="desc">Adaptive thinking budgets for token-efficient video reasoning — reasoning about tokens spent, not just accuracy. <strong>[efficiency · video]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.01980">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Databricks acquires Panther — security on the lakehouse</div>
+        <div class="desc">Panther's security detection landing in Databricks is consolidation news for anyone running security telemetry and AI on the same platform.</div>
+        <div class="sources">
+          <a href="https://www.databricks.com/blog/databricks-completes-acquisition-panther-accelerating-security-lakehouse-era">Databricks</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Devtools must be open source</div>
+        <div class="desc">The argument that developer tools need to be open source — timely as AI coding assistants lock in proprietary workflows.</div>
+        <div class="sources">
+          <a href="https://blog.exe.dev/devtools-must-be-open-source">exe.dev</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Twenty Years of Pandoc</div>
+        <div class="desc">Pandoc turns 20 — a reminder that the most durable devtools are the boring, reliable, open ones.</div>
+        <div class="sources">
+          <a href="https://pandoc.org/twenty-years-of-pandoc.html">Pandoc</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Don't be a meat proxy</div>
+        <div class="desc">1813 pts — the top story; a defining essay on human judgment in the LLM era.</div>
+        <div class="sources">
+          <a href="https://gruhn.me/blog/2026-08-03/">Original</a> · <a href="https://news.ycombinator.com/item?id=48600001">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">LLMs reward expertise</div>
+        <div class="desc">1386 pts — productivity analysis grounded in real usage.</div>
+        <div class="sources">
+          <a href="https://www.seangoedecke.com/llms-reward-expertise/">Original</a> · <a href="https://news.ycombinator.com/item?id=48600002">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Qwen3.8-Max: A New Bar for Coding and Cowork</div>
+        <div class="desc">1111 pts — the open coding frontier keeps moving.</div>
+        <div class="sources">
+          <a href="https://qwen.ai/blog?id=qwen3.8">Original</a> · <a href="https://news.ycombinator.com/item?id=48600003">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The two top essays of the day — 'LLMs reward expertise' and 'Don't be a meat proxy' — frame the real skill in the agent era: knowing your domain deeply enough to direct the model and catch its errors.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>SQLite-CVE-as-slop and the Panther acquisition are both about trust: one in the security news cycle, one in data-platform consolidation. Provenance and verification are the throughline.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">03 AUG 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 88;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>

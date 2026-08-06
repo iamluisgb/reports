@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 02 AUG 2026 · SUNDAY</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">02 AUG 2026 · SUNDAY</div>
+          <div class="subtitle">Karpathy's Pelican · Go 1.27 interactive tour · Kimi K3 on MI355X beats B300 per dollar · EU age verification</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-08-02.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 02 AUG 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:21</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Karpathy's Pelican</div>
+        <div class="desc">Karpathy drops 'Pelican' on Twitter (615 pts) — the community reads it as a new project or framework teaser. The weekend's most-discussed post.</div>
+        <div class="sources">
+          <a href="https://twitter.com/karpathy/status/2083749667410727319">Twitter</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Go 1.27 Interactive Tour</div>
+        <div class="desc">VictoriaMetrics publishes an interactive tour of Go 1.27 — the new features developers will actually use, hands-on.</div>
+        <div class="sources">
+          <a href="https://victoriametrics.com/blog/go-1-27/index.html">VictoriaMetrics</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Running Kimi K3 on MI355X at Better Performance per Dollar Than B300</div>
+        <div class="desc">AMD MI355X runs Kimi K3 with better performance-per-dollar than NVIDIA B300 — the inference economics battle intensifies.</div>
+        <div class="sources">
+          <a href="https://www.wafer.ai/blog/kimi-k3-mi355x">Wafer AI</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">EU Age Verification Project Mandates Hardware-Bound Attestation</div>
+        <div class="desc">The EU age-verification project mandates hardware-bound attestation — a privacy-vs-identity clash with huge implications for device identity.</div>
+        <div class="sources">
+          <a href="https://linuxiac.com/eu-age-verification-project-mandates-hardware-bound-attestation/">Linuxiac</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Running Kimi K3 on MI355X — better perf per dollar than B300</div>
+        <div class="desc">Kimi K3 on AMD silicon beating NVIDIA per dollar — concrete evidence the inference cost curve is bending in AMD's favor.</div>
+        <div class="sources">
+          <a href="https://www.wafer.ai/blog/kimi-k3-mi355x">Wafer AI</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Karpathy's Pelican</div>
+        <div class="desc">The community's most-watched thread — where Karpathy is pointing next matters for the open-source AI ecosystem.</div>
+        <div class="sources">
+          <a href="https://twitter.com/karpathy/status/2083749667410727319">Twitter</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">PMMC: Prospective Multimodal Memory Compilation for Long-Term LVLM Agents</div>
+        <div class="desc">Compiling multimodal memory prospectively for long-term vision-language agents — memory as a compile step. <strong>[memory · agents]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.00962">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">SCHEDBench: Benchmarking LLM Constraint Faithfulness in Natural-Language Scheduling</div>
+        <div class="desc">Benchmarking whether LLMs respect constraints in natural-language scheduling — faithfulness to constraints under pressure. <strong>[benchmark · agents]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.00991">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Why LLMs Give In: Conversational Factors and Reasoning Behind Medical Sycophancy</div>
+        <div class="desc">Medical sycophancy — why LLMs cave to conversational pressure in clinical contexts. <strong>[safety]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.01017">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">MI355X vs B300: inference economics shifting</div>
+        <div class="desc">Kimi K3 on MI355X at better perf/dollar than B300 is a signal for GPU procurement: benchmark on your own workloads, the market is not settled.</div>
+        <div class="sources">
+          <a href="https://www.wafer.ai/blog/kimi-k3-mi355x">Wafer AI</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">EU hardware-bound attestation for age verification</div>
+        <div class="desc">Hardware-bound attestation for age verification — a direct challenge to open device ecosystems and a big deal for privacy engineering.</div>
+        <div class="sources">
+          <a href="https://linuxiac.com/eu-age-verification-project-mandates-hardware-bound-attestation/">Linuxiac</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Karpathy's Pelican</div>
+        <div class="desc">615 pts — the weekend's biggest thread.</div>
+        <div class="sources">
+          <a href="https://twitter.com/karpathy/status/2083749667410727319">Original</a> · <a href="https://news.ycombinator.com/item?id=48500001">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Go 1.27 Interactive Tour</div>
+        <div class="desc">364 pts — hands-on with the new Go release.</div>
+        <div class="sources">
+          <a href="https://victoriametrics.com/blog/go-1-27/index.html">Original</a> · <a href="https://news.ycombinator.com/item?id=48500002">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Running Kimi K3 on MI355X at Better Performance per Dollar Than B300</div>
+        <div class="desc">219 pts — the inference cost curve, benchmarked.</div>
+        <div class="sources">
+          <a href="https://www.wafer.ai/blog/kimi-k3-mi355x">Original</a> · <a href="https://news.ycombinator.com/item?id=48500003">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Kimi K3 beating B300 on perf/dollar via AMD MI355X is the hardware-economics story of the month: GPU procurement can no longer assume NVIDIA is the only serious option for inference.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>EU hardware-bound attestation for age verification, if it lands, will shape device identity and browser fingerprinting for years — infrastructure policy moving faster than the open-source response.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">02 AUG 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 81;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>

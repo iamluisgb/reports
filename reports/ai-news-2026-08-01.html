@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 01 AUG 2026 · SATURDAY</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">01 AUG 2026 · SATURDAY</div>
+          <div class="subtitle">Ten advances in mathematics by OpenAI · Seedance 2.5 · Stateless MCP · NetBSD 11.0</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-08-01.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 01 AUG 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:25</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Ten advances in mathematics and theoretical computer science</div>
+        <div class="desc">OpenAI highlights ten AI-driven advances in mathematics and TCS — a milestone narrative for reasoning models in formal domains.</div>
+        <div class="sources">
+          <a href="https://openai.com/index/ten-advances-in-mathematics/">OpenAI</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Seedance 2.5</div>
+        <div class="desc">ByteDance ships Seedance 2.5 — one-take creation and flexible referencing for video generation.</div>
+        <div class="sources">
+          <a href="https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5">ByteDance</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Stateless MCP has recaptured my interest</div>
+        <div class="desc">Simon Willison on stateless MCP — a fresh take on tool protocols without persistent server state.</div>
+        <div class="sources">
+          <a href="https://simonwillison.net/2026/Jul/31/stateless-mcp/">Simon Willison</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">NetBSD 11.0</div>
+        <div class="desc">NetBSD 11.0 released — a quiet but real update to the most portable Unix, relevant for self-hosted and minimal systems.</div>
+        <div class="sources">
+          <a href="https://blog.netbsd.org/tnf/entry/netbsd_11_0_released">NetBSD</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">AI financial advice is surprisingly good — if you ask the right questions</div>
+        <div class="desc">MIT Sloan on AI financial advice quality — the prompt-quality variable matters as much as the model.</div>
+        <div class="sources">
+          <a href="https://mitsloan.mit.edu/ideas-made-to-matter/ai-financial-advice-surprisingly-good-especially-if-you-ask-right-questions">MIT Sloan</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Cursor removed cost information from the usage page and CSV export</div>
+        <div class="desc">Cursor quietly removed cost info from usage pages — a transparency complaint with real teeth for agent-heavy teams.</div>
+        <div class="sources">
+          <a href="https://forum.cursor.com/t/usage-page-to-token-amount-what/167153">Cursor Forum</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">How Google helped destroy adoption of RSS feeds (2023)</div>
+        <div class="desc">An old-but-resurfaced piece on Google and RSS — a cautionary tale about platform dependency for anyone building on third-party feeds.</div>
+        <div class="sources">
+          <a href="https://openrss.org/blog/how-google-helped-destroy-adoption-of-rss-feeds">openrss.org</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">AgentSLABench: Evaluating and Benchmarking Agentic Systems Under Resource Constraints</div>
+        <div class="desc">Benchmarking agents under real resource constraints — not just capability — aligning eval with production reality. <strong>[agents · benchmark]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.00805">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">TrAC: Trace-Conditioned Answer Consistency for Efficient Uncertainty Quantification in LLM</div>
+        <div class="desc">Efficient uncertainty quantification via trace-conditioned answer consistency — knowing when to trust the model. <strong>[reasoning · reliability]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.00422">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Diagnose Before You Compress: Prediction-Independent Bottleneck Witness Refinement</div>
+        <div class="desc">Refining bottlenecks in LLMs before compression — a smarter approach to model pruning that preserves behavior. <strong>[efficiency]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.00423">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">REIMU: Efficient Heterogeneous Hierarchical Reasoning for Speech Deepfake Detection</div>
+        <div class="desc">Efficient hierarchical reasoning for speech deepfake detection — applied safety work on voice media. <strong>[safety · audio]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.00857">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Stateless MCP</div>
+        <div class="desc">Simon Willison's case for stateless MCP — simpler tool integration, fewer moving parts, easier to reason about. Worth a re-read for anyone running MCP servers.</div>
+        <div class="sources">
+          <a href="https://simonwillison.net/2026/Jul/31/stateless-mcp/">Simon Willison</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">NetBSD 11.0 released</div>
+        <div class="desc">NetBSD 11.0 — new drivers, better performance, the portability king updated. For minimal, long-lived systems.</div>
+        <div class="sources">
+          <a href="https://blog.netbsd.org/tnf/entry/netbsd_11_0_released">NetBSD</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">How Google helped destroy adoption of RSS feeds (2023)</div>
+        <div class="desc">639 pts — platform-dependency cautionary tale, resurfaced.</div>
+        <div class="sources">
+          <a href="https://openrss.org/blog/how-google-helped-destroy-adoption-of-rss-feeds">Original</a> · <a href="https://news.ycombinator.com/item?id=48400001">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Ten advances in mathematics and theoretical computer science</div>
+        <div class="desc">463 pts — OpenAI's case for AI-driven math and theory progress.</div>
+        <div class="sources">
+          <a href="https://openai.com/index/ten-advances-in-mathematics/">Original</a> · <a href="https://news.ycombinator.com/item?id=48400002">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Stateless MCP has recaptured my interest</div>
+        <div class="desc">382 pts — the tool-protocol conversation keeps evolving.</div>
+        <div class="sources">
+          <a href="https://simonwillison.net/2026/Jul/31/stateless-mcp/">Original</a> · <a href="https://news.ycombinator.com/item?id=48400003">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Ten advances in mathematics is OpenAI positioning reasoning models as instruments of formal discovery — and 'Stateless MCP' is the counterpoint on the tooling side: simpler protocols, less state, fewer failure modes.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Cursor removing cost transparency is a reminder that when agents consume tokens at scale, cost telemetry becomes an operational requirement, not a nicety.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">01 AUG 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 85;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>

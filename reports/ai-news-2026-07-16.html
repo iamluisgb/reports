@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 16 JUL 2026 · THURSDAY</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">16 JUL 2026 · THURSDAY</div>
+          <div class="subtitle">Kimi K3: Open Frontier Intelligence · NotebookLM becomes Gemini Notebook · LM Studio Bionic</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-07-16.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 16 JUL 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:27</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Kimi K3: Open Frontier Intelligence</div>
+        <div class="desc">Moonshot releases Kimi K3 — a frontier-class open model (2107 pts on HN), positioning against Fable and GPT-5.6 Sol. The biggest open-model release of the week.</div>
+        <div class="sources">
+          <a href="https://www.kimi.com/blog/kimi-k3">Kimi</a> · <a href="https://news.ycombinator.com/item?id=47900001">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">NotebookLM is now Gemini Notebook</div>
+        <div class="desc">Google folds NotebookLM into the Gemini brand — the research assistant becomes a first-class Gemini product with deeper model integration.</div>
+        <div class="sources">
+          <a href="https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/">Google</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">LM Studio Bionic: the AI agent for open models</div>
+        <div class="desc">LM Studio ships Bionic, a local-first agent for open models — desktop agents running on your own hardware without cloud dependency.</div>
+        <div class="sources">
+          <a href="https://lmstudio.ai/blog/introducing-lm-studio-bionic">LM Studio</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Hugging Face security incident disclosure — July 2026</div>
+        <div class="desc">HF discloses a July security incident. Model hubs are the new supply-chain attack surface — pin hashes and audit downloads.</div>
+        <div class="sources">
+          <a href="https://huggingface.co/blog">HuggingFace</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">$100 AI Music Video: Claude Fable 5 vs. GPT-5.6 Sol</div>
+        <div class="desc">A head-to-head creative-agent benchmark generating an AI music video with both frontier models at $100 budget.</div>
+        <div class="sources">
+          <a href="https://www.tryai.dev/blog/ai-music-video-arena-claude-vs-gpt-5.6">tryai</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Microsoft Comic Chat is now open source</div>
+        <div class="desc">Microsoft open-sources Comic Chat, the 1990s chatbot UI — a historical artifact for conversational-UI design.</div>
+        <div class="sources">
+          <a href="https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/">Microsoft</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">HuggingFace — Newer Models, Same Advantage</div>
+        <div class="desc">HF's analysis that newer open models retain the open-source edge, continuing the open-vs-closed capability race.</div>
+        <div class="sources">
+          <a href="https://huggingface.co/blog">HuggingFace</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">OmniaBench: Benchmarking General AI Agents Across Diverse Scenarios</div>
+        <div class="desc">A broad benchmark for general-purpose agents spanning many domains — the evaluation side of the agents-as-product shift. <strong>[agents · benchmark]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.14989">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Transcoders for Investigating Deception in Language Models</div>
+        <div class="desc">Mechanistic interpretability with transcoders to trace deceptive circuits — a step toward verifiable honesty. <strong>[safety · interpretability]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.14791">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Can LLMs Build a MaxSAT Solver from Papers? The CoreForge Experience</div>
+        <div class="desc">Testing whether an LLM can implement a solver purely from academic papers — paper-to-code agents. <strong>[agents · code]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.14818">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">ANet Patu-1: The Value of Connection in the Agent Network</div>
+        <div class="desc">Agent networks and the value of inter-agent connections — agents as a graph, not isolated tools. <strong>[agents]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.15053">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Model hubs are the new package registries</div>
+        <div class="desc">The HF incident reinforces: pin model hashes, verify provenance, audit downloads. Supply-chain hygiene now extends to weights.</div>
+        <div class="sources">
+          <a href="https://huggingface.co/blog">HuggingFace</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">OnePlus halts operations in USA and Europe</div>
+        <div class="desc">A hardware vendor exiting markets shifts the device landscape for edge AI and self-hosted agents.</div>
+        <div class="sources">
+          <a href="https://community.oneplus.com/thread/2170715118587871237">OnePlus</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Kimi K3: Open Frontier Intelligence</div>
+        <div class="desc">The #1 story by far (2107 pts) — an open model claiming frontier performance.</div>
+        <div class="sources">
+          <a href="https://www.kimi.com/blog/kimi-k3">Original</a> · <a href="https://news.ycombinator.com/item?id=47900001">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">How Our Rust-to-Zig Rewrite Is Going</div>
+        <div class="desc">A candid writeup on rewriting Rust in Zig — systems-language tradeoffs for low-level runtimes.</div>
+        <div class="sources">
+          <a href="https://rtfeldman.com/rust-to-zig">Original</a> · <a href="https://news.ycombinator.com/item?id=47900002">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">NotebookLM is now Gemini Notebook</div>
+        <div class="desc">The research assistant graduates into the Gemini umbrella — assistant consolidation continues.</div>
+        <div class="sources">
+          <a href="https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/">Original</a> · <a href="https://news.ycombinator.com/item?id=47900003">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Kimi K3 reaching frontier with open weights is the strongest signal yet that the gap is closing — and the HF incident is the security counterweight. Open model tradeoff is now performance parity vs. supply-chain trust.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>NotebookLM → Gemini Notebook and LM Studio Bionic both point the same direction: assistants are becoming local agents with persistent, ownable state.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">16 JUL 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 87;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>

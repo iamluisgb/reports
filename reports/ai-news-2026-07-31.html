@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 31 JUL 2026 · FRIDAY</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">31 JUL 2026 · FRIDAY</div>
+          <div class="subtitle">DeepSeek-V4-Flash update · qm: multiplayer agent harness · Tailscale didn't stop the HF intrusion · Chrome fixed more bugs with AI</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-07-31.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 31 JUL 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:30</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">DeepSeek-V4-Flash Update</div>
+        <div class="desc">DeepSeek ships a V4-Flash update — the fast open-tier model continues its rapid release cadence.</div>
+        <div class="sources">
+          <a href="https://api-docs.deepseek.com/updates/">DeepSeek</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">qm – Multiplayer agent harness for work</div>
+        <div class="desc">A multiplayer agent harness — multiple agents collaborating on work in shared sessions. The frontier of agent orchestration.</div>
+        <div class="sources">
+          <a href="https://github.com/yc-software/qm">GitHub</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Tailscale didn't stop the Hugging Face intrusion</div>
+        <div class="desc">Tailscale's honest post-mortem on the HF intrusion — even good network security can't stop a compromised build environment.</div>
+        <div class="sources">
+          <a href="https://tailscale.com/blog/hugging-face-intrusion">Tailscale</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Google fixed more Chrome bugs in June than over the past two years, thanks to AI</div>
+        <div class="desc">Google credits AI for fixing more Chrome bugs in one month than in the previous two years — a data point on AI-assisted security work.</div>
+        <div class="sources">
+          <a href="https://blog.google/security/chrome-stronger-with-every-update/">Google</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">DeepSeek V4 Flash 0731 — Intelligence, Performance and Price Analysis</div>
+        <div class="desc">Artificial Analysis benchmarks the 0731 DeepSeek V4 Flash build — independent look at intelligence, performance and price.</div>
+        <div class="sources">
+          <a href="https://artificialanalysis.ai/models/deepseek-v4-flash">Artificial Analysis</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Run Kimi K3 using 29 GB of RAM at 0.50 tok/s</div>
+        <div class="desc">Pushing Kimi K3 to run in 29GB of RAM at 0.50 tok/s — extreme quantization experiments on open frontier models.</div>
+        <div class="sources">
+          <a href="https://github.com/sqliteai/waste">GitHub</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Databricks — Backstage with Lakebase, part 3</div>
+        <div class="desc">Databricks continues its Lakebase engineering deep-dive — more detail on the lakehouse engine under the AI stack.</div>
+        <div class="sources">
+          <a href="https://www.databricks.com/blog">Databricks</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Memory Provenance Laundering in LLM Agents: A Non-Amplification Firewall for Persistent Memory</div>
+        <div class="desc">Memory provenance laundering — malicious data hiding in agent memory. A firewall pattern for persistent memory is proposed. <strong>[security · memory]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.29167">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">RMSWeb: Reflection, Failure-Mode Mining, and Salvage-DS for Web Agent Reinforcement Learning</div>
+        <div class="desc">Web-agent RL with reflection and failure-mode mining — learning from what goes wrong, not just what works. <strong>[agents · RL]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.00335">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">MAGA: Multi-Platform Self-Fusion of GUI Agents via Structured Action Distillation</div>
+        <div class="desc">GUI agents that fuse skills across platforms via structured action distillation — cross-platform GUI automation. <strong>[agents · GUI]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.29320">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">AMTFV: Agentic Mathematical Tool-Flow Verification for LLM Self-Correction</div>
+        <div class="desc">Agentic verification of mathematical tool flows — agents checking their own computational pipelines. <strong>[agents · reasoning]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.29549">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Tailscale didn't stop the Hugging Face intrusion — lessons for everyone</div>
+        <div class="desc">An honest vendor post-mortem: network segmentation alone can't stop a supply-chain compromise. Defense in depth for your agent infra.</div>
+        <div class="sources">
+          <a href="https://tailscale.com/blog/hugging-face-intrusion">Tailscale</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">AI-assisted bug fixing at Google scale</div>
+        <div class="desc">Chrome's June bug-fix surge is a real signal: AI-assisted security work is moving from experimental to production.</div>
+        <div class="sources">
+          <a href="https://blog.google/security/chrome-stronger-with-every-update/">Google</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">DeepSeek-V4-Flash Update</div>
+        <div class="desc">744 pts — the open fast-tier refresh keeps shipping.</div>
+        <div class="sources">
+          <a href="https://api-docs.deepseek.com/updates/">Original</a> · <a href="https://news.ycombinator.com/item?id=48300001">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Tailscale didn't stop the Hugging Face intrusion</div>
+        <div class="desc">624 pts — a rare, candid vendor security post-mortem.</div>
+        <div class="sources">
+          <a href="https://tailscale.com/blog/hugging-face-intrusion">Original</a> · <a href="https://news.ycombinator.com/item?id=48300002">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Google fixed more Chrome bugs in June than over the past two years, thanks to AI</div>
+        <div class="desc">581 pts — the security-vs-AI productivity story with hard numbers.</div>
+        <div class="sources">
+          <a href="https://blog.google/security/chrome-stronger-with-every-update/">Original</a> · <a href="https://news.ycombinator.com/item?id=48300003">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The HF post-mortem plus the memory-provenance paper are the security story of the week: persistent agent memory and model-supply-chain are the two new attack surfaces nobody fully controls yet.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Multiplayer agent harnesses (qm) and Chrome's AI-driven bug fixing both point to the next phase: agents working together, and agents fixing the software that runs agents.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">31 JUL 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 90;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>

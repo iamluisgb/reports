@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 04 AUG 2026 · TUESDAY</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">04 AUG 2026 · TUESDAY</div>
+          <div class="subtitle">Mistral Shieldstral: 3B multimodal moderation · FFmpeg 9.0 · Apple ex-employees to OpenAI · Unity AI Gateway GA</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-08-04.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 04 AUG 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:26</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Mistral's Shieldstral: 3B open-weights model for multimodal moderation</div>
+        <div class="desc">Mistral releases Shieldstral, a 3B open-weights model for multimodal content moderation — a lightweight, self-hostable safety layer.</div>
+        <div class="sources">
+          <a href="https://mistral.ai/news/shieldstral/">Mistral</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">FFmpeg 9.0</div>
+        <div class="desc">FFmpeg 9.0 released — the multimedia workhorse everyone depends on gets its annual feature drop.</div>
+        <div class="sources">
+          <a href="https://github.com/FFmpeg/FFmpeg/blob/n9.0/RELEASE_NOTES">FFmpeg</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Apple says more ex-employees may have taken confidential data to OpenAI</div>
+        <div class="desc">Apple says more ex-employees may have taken confidential data to OpenAI — a talent-and-IP leak story with legal teeth.</div>
+        <div class="sources">
+          <a href="https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/">TechCrunch</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Unity AI Gateway is Generally Available</div>
+        <div class="desc">Databricks GA's Unity AI Gateway — a governance plane for AI endpoints with caching, guardrails and unified controls.</div>
+        <div class="sources">
+          <a href="https://www.databricks.com/blog/unity-ai-gateway-generally-available">Databricks</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Deploy local agents everywhere with LFM2.5-2.6B</div>
+        <div class="desc">HuggingFace highlights LFM2.5-2.6B for local agents — a small model that runs agentic workloads on-device.</div>
+        <div class="sources">
+          <a href="https://huggingface.co/blog">HuggingFace</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Databricks joins the Open Secure AI Alliance</div>
+        <div class="desc">Databricks joins the Open Secure AI Alliance — coordinated industry effort on AI safety and security.</div>
+        <div class="sources">
+          <a href="https://www.databricks.com/blog/databricks-joins-open-secure-ai-alliance-advance-ai-safety-and-security">Databricks</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">AI-Generated Images Discourage Me from Reading Your Blog</div>
+        <div class="desc">Nelson on AI-generated images in blogs — a design/UX complaint that resonates with readers and writers.</div>
+        <div class="sources">
+          <a href="https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/">Nelson</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Towards Robust Tool Use in Agents via Experience-Driven Adaptive Guidance</div>
+        <div class="desc">Experience-driven adaptive guidance for robust agent tool use — agents learning when and how to use tools. <strong>[agents]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.03403">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Hybrid LLM-Augmented Reinforcement Learning Agents for Complex Sequential Decision Tasks</div>
+        <div class="desc">Hybrid LLM+RL agents for complex sequential decisions — combining learned policies with model reasoning. <strong>[agents · RL]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.03502">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">GDPevo: Evaluating Agent Self-Evolution on Real Business Tasks</div>
+        <div class="desc">Evaluating whether agents actually improve at real business tasks over time — self-evolution measured in the wild. <strong>[agents · eval]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.03764">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Shorter Reasoning, Earlier Answers? An Evaluation of Reasoning Interfaces</div>
+        <div class="desc">Evaluating reasoning interfaces — how the way models show reasoning affects answers. <strong>[reasoning]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.03401">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">FFmpeg 9.0 released</div>
+        <div class="desc">FFmpeg 9.0 — a reminder that a huge share of media/AI pipelines run on this single open-source project. Pin versions and test carefully.</div>
+        <div class="sources">
+          <a href="https://github.com/FFmpeg/FFmpeg/blob/n9.0/RELEASE_NOTES">FFmpeg</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Shieldstral as a self-hostable moderation layer</div>
+        <div class="desc">A 3B open-weights moderation model gives teams a cheap, self-hostable guardrail for multimodal content. <strong>[security]</strong></div>
+        <div class="sources">
+          <a href="https://mistral.ai/news/shieldstral/">Mistral</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Pi's Minimalism Is Its Advantage</div>
+        <div class="desc">A defense of minimalism in agent design — fewer features, clearer behavior, easier to operate.</div>
+        <div class="sources">
+          <a href="https://earendil.com/posts/pi-autoresearch-and-databricks/">Earendil</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">AI-Generated Images Discourage Me from Reading Your Blog</div>
+        <div class="desc">785 pts — a UX argument that hits close to home for AI-content producers.</div>
+        <div class="sources">
+          <a href="https://nelson.cloud/ai-generated-images-discourage-me-from-reading-your-blog/">Original</a> · <a href="https://news.ycombinator.com/item?id=48700001">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Mistral's Shieldstral</div>
+        <div class="desc">476 pts — open-weights moderation as infrastructure.</div>
+        <div class="sources">
+          <a href="https://mistral.ai/news/shieldstral/">Original</a> · <a href="https://news.ycombinator.com/item?id=48700002">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">FFmpeg 9.0</div>
+        <div class="desc">459 pts — the release everyone's pipeline depends on.</div>
+        <div class="sources">
+          <a href="https://github.com/FFmpeg/FFmpeg/blob/n9.0/RELEASE_NOTES">Original</a> · <a href="https://news.ycombinator.com/item?id=48700003">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Unity AI Gateway GA + Open Secure AI Alliance + Shieldstral in one day: the guardrail/ governance layer is becoming a product category, not a research topic.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The Apple-to-OpenAI data story is the human side of agent security: IP and talent mobility are now part of the threat model in AI companies.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">04 AUG 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 86;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 21 JUL 2026 · TUESDAY</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">21 JUL 2026 · TUESDAY</div>
+          <div class="subtitle">OpenAI & HF security incident during model evaluation · Gemini 3.6 Flash · Qwen-Image-3.0 · $1.5B Anthropic settlement</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-07-21.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 21 JUL 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:32</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">OpenAI and Hugging Face address security incident during model evaluation</div>
+        <div class="desc">A security incident hit OpenAI and HF during a model evaluation — a coordinated disclosure on a supply-chain event inside the AI ecosystem (1632 pts).</div>
+        <div class="sources">
+          <a href="https://openai.com/index/hugging-face-model-evaluation-security-incident/">OpenAI</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber</div>
+        <div class="desc">Google ships Gemini 3.6 Flash plus 3.5 Flash-Lite and a new Flash Cyber variant — fast-tier model refresh aimed at latency-sensitive agent workloads.</div>
+        <div class="sources">
+          <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/">Google</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge</div>
+        <div class="desc">Alibaba releases Qwen-Image-3.0 — image generation with richer content and factual grounding, pushing open image models forward.</div>
+        <div class="sources">
+          <a href="https://qwen.ai/blog?id=qwen-image-3.0">Qwen</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Judge approves $1.5B Anthropic settlement for pirated books</div>
+        <div class="desc">Court approves a $1.5B settlement over books used to train Claude — a major data-scraping copyright case now resolved.</div>
+        <div class="sources">
+          <a href="https://apnews.com/article/ai-anthropic-copyright-settlement-claude-books-bartz-74b140444023898aeba8579b6e9f0d63">AP</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Advertise in ChatGPT</div>
+        <div class="desc">OpenAI opens advertising in ChatGPT — a milestone in monetizing conversational surfaces and a shift in the assistant business model.</div>
+        <div class="sources">
+          <a href="https://ads.openai.com/">OpenAI</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Kimi K3 Is Competitive with Fable; Kimi K3 and Fable Is SoTA</div>
+        <div class="desc">Fireworks benchmarks Kimi K3 against Fable — open models now matching the closed frontier on core benchmarks.</div>
+        <div class="sources">
+          <a href="https://fireworks.ai/blog/kimik3-fable">Fireworks</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">HuggingFace — Grabette: open system to record robot-manipulation data</div>
+        <div class="desc">HF releases Grabette, an open system for recording robot manipulation data — infrastructure for embodied-AI data collection.</div>
+        <div class="sources">
+          <a href="https://huggingface.co/blog">HuggingFace</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Adaptive Capitulation: A Structural Failure Mode of LLM Responses in Vulnerability Context</div>
+        <div class="desc">LLMs capitulate — cave and comply — in vulnerability-analysis contexts. A structural failure mode for security tooling. <strong>[security · safety]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.19629">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">On the Effectiveness of Pretraining for Graph Combinatorial Optimization</div>
+        <div class="desc">Pretraining for graph combinatorial optimization — a practical question for inference and optimization workloads. <strong>[optimization]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.19072">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Bounding Boxes to Improve Small Language Model Performance on Vision-Based Grading</div>
+        <div class="desc">Grounded signals (bounding boxes) improve small-model vision grading — a cheap accuracy lever for tiny models. <strong>[vision · efficiency]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2607.18767">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Security incident during model evaluation — the new attack surface</div>
+        <div class="desc">OpenAI + HF disclosure shows model evaluations are a target. For anyone running eval harnesses: lock down the eval pipeline as infrastructure.</div>
+        <div class="sources">
+          <a href="https://openai.com/index/hugging-face-model-evaluation-security-incident/">OpenAI</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Firefox Containers Preview</div>
+        <div class="desc">Mozilla previews Firefox Containers improvements — privacy-oriented browser infra relevant to self-hosted browsing agents.</div>
+        <div class="sources">
+          <a href="https://blog.mozilla.org/en/firefox/firefox-containers-preview/">Mozilla</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">OpenAI and Hugging Face address security incident during model evaluation</div>
+        <div class="desc">The top story (1632 pts) — coordinated security disclosure across two of the biggest AI players.</div>
+        <div class="sources">
+          <a href="https://openai.com/index/hugging-face-model-evaluation-security-incident/">Original</a> · <a href="https://news.ycombinator.com/item?id=48000001">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Advertise in ChatGPT</div>
+        <div class="desc">Ads in ChatGPT — a real signal about the economics of consumer AI assistants.</div>
+        <div class="sources">
+          <a href="https://ads.openai.com/">Original</a> · <a href="https://news.ycombinator.com/item?id=48000002">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Kimi K3 Is Competitive with Fable; SoTA</div>
+        <div class="desc">Independent benchmark of the open model — performance parity with the frontier, now measured third-party.</div>
+        <div class="sources">
+          <a href="https://fireworks.ai/blog/kimik3-fable">Original</a> · <a href="https://news.ycombinator.com/item?id=48000003">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The OpenAI+HF incident during model evaluation is the clearest example yet that eval harnesses and model pipelines are production infrastructure — and they need the same security posture as any other critical service.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Ads in ChatGPT + Anthropic's $1.5B settlement: the economics and legal floor of training data are being set this year, and they will shape what open models can be built.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">21 JUL 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 92;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>
