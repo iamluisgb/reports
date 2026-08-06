@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-06T06:48:20+00:00",
-  "count": 89,
+  "generated": "2026-08-06T08:08:43+00:00",
+  "count": 99,
   "reports": [
     {
       "file": "ai-news-2026-08-06.html",
@@ -15,6 +15,126 @@
         "research",
         "security",
         "memory"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-05.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-05",
+      "summary": "DeepMind reorg: Hassabis to Chair, Jeff Dean out · Cloudflare OS · Zed DeltaDB · Beating GPT-5.6 Sol on retrieval 100x cheaper",
+      "readingTime": 3,
+      "tags": [
+        "agents",
+        "models",
+        "research",
+        "memory",
+        "coding"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-04.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-04",
+      "summary": "Mistral Shieldstral: 3B multimodal moderation · FFmpeg 9.0 · Apple ex-employees to OpenAI · Unity AI Gateway GA",
+      "readingTime": 3,
+      "tags": [
+        "agents",
+        "models",
+        "research",
+        "multimodal",
+        "open-source"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-03.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-03",
+      "summary": "LLMs reward expertise · Qwen3.8-Max: a new bar for coding · SQLite CVEs or LLM slop? · Databricks completes Panther acquisition",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "security",
+        "coding",
+        "agents",
+        "research"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-02.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-02",
+      "summary": "Karpathy's Pelican · Go 1.27 interactive tour · Kimi K3 on MI355X beats B300 per dollar · EU age verification",
+      "readingTime": 3,
+      "tags": [
+        "hardware",
+        "research",
+        "infrastructure",
+        "agents",
+        "models"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-01.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-01",
+      "summary": "Ten advances in mathematics by OpenAI · Seedance 2.5 · Stateless MCP · NetBSD 11.0",
+      "readingTime": 3,
+      "tags": [
+        "agents",
+        "models",
+        "research",
+        "multimodal",
+        "coding"
+      ]
+    },
+    {
+      "file": "ai-news-2026-07-31.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-07-31",
+      "summary": "DeepSeek-V4-Flash update · qm: multiplayer agent harness · Tailscale didn't stop the HF intrusion · Chrome fixed more bugs with AI",
+      "readingTime": 3,
+      "tags": [
+        "agents",
+        "models",
+        "security",
+        "research",
+        "memory"
+      ]
+    },
+    {
+      "file": "ai-news-2026-07-30.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-07-30",
+      "summary": "GPT-5.6 price-performance frontier · Gemini Robotics 2 · GitHub Stacked PRs public preview · We gave GPT 5.6 Sol a real business",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "agents",
+        "research",
+        "coding",
+        "robotics"
+      ]
+    },
+    {
+      "file": "ai-news-2026-07-29.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-07-29",
+      "summary": "Gemma 4 26B in 2GB RAM on M-series Macs · AI startups stop publishing research · Kimi K3-256k · LLM Honeypot",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "research",
+        "agents",
+        "multimodal",
+        "open-source"
       ]
     },
     {
@@ -154,6 +274,21 @@
       ]
     },
     {
+      "file": "ai-news-2026-07-21.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-07-21",
+      "summary": "OpenAI & HF security incident during model evaluation · Gemini 3.6 Flash · Qwen-Image-3.0 · $1.5B Anthropic settlement",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "security",
+        "research",
+        "multimodal",
+        "infrastructure"
+      ]
+    },
+    {
       "file": "ai-news-2026-07-20.html",
       "type": "daily",
       "title": "AI News Daily",
@@ -244,6 +379,21 @@
         "models"
       ],
       "series": "Deep Dives"
+    },
+    {
+      "file": "ai-news-2026-07-16.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-07-16",
+      "summary": "Kimi K3: Open Frontier Intelligence · NotebookLM becomes Gemini Notebook · LM Studio Bionic",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "agents",
+        "research",
+        "open-source",
+        "security"
+      ]
     },
     {
       "file": "ai-news-16-Jul-2026.html",
