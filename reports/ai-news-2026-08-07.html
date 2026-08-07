@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 07 Aug 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">07 AUG 2026 · FRIDAY</div>
+          <div class="subtitle">EU AI Act high-risk obligations enter force · Anthropic open-weights Fable 3 · Agent reliability papers</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-08-07.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 07 AUG 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 3:02</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">EU AI Act high-risk obligations enter force</div>
+        <div class="desc">The first binding high-risk obligations under the EU AI Act bite today: providers and deployers of high-risk systems now face conformity assessments, logging duties and human-oversight requirements. Brussels frames it as the start of the enforcement era.</div>
+        <div class="sources">
+          <a href="https://digital-strategy.ec.europa.eu/en/policies/ai-act">European Commission</a> · <a href="https://news.ycombinator.com/item?id=49206541">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Anthropic open-weights Fable 3 for self-hosted agent deployments</div>
+        <div class="desc">Anthropic publishes open weights for Fable 3, a compact model aimed at on-prem and edge agent workloads, with a license that permits self-hosting — its first open-weights release since the export-control episode.</div>
+        <div class="sources">
+          <a href="https://www.anthropic.com/news/fable-3-open-weights">Anthropic</a> · <a href="https://news.ycombinator.com/item?id=49205877">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">MCP 1.2 adds cross-server delegation and audit trails</div>
+        <div class="desc">The Model Context Protocol ships 1.2: servers can delegate tool calls to one another and emit auditable trace IDs, tightening the multi-agent toolchain for production workloads.</div>
+        <div class="sources">
+          <a href="https://modelcontextprotocol.io/announcements">MCP</a> · <a href="https://news.ycombinator.com/item?id=49207123">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Qwen 3.5-Coder tops SWE-bench Verified</div>
+        <div class="desc">Alibaba's Qwen 3.5-Coder claims the top open-weight result on SWE-bench Verified, with a 100K-context variant aimed at repository-scale agentic coding.</div>
+        <div class="sources">
+          <a href="https://qwenlm.github.io/blog/qwen3.5-coder/">Qwen</a> · <a href="https://news.ycombinator.com/item?id=49206885">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Mistral open-sources Mesmer, a lightweight orchestration layer</div>
+        <div class="desc">Mistral releases Mesmer, a small agent orchestration runtime — task routing, checkpointing and memory — designed to run on-prem next to the model.</div>
+        <div class="sources">
+          <a href="https://mistral.ai/news/mesmer-orchestration">Mistral</a> · <a href="https://news.ycombinator.com/item?id=49206340">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Agentic RAG: Self-Verifying Retrieval Loops</div>
+        <div class="desc">Retrieval in agentic loops is one-shot and unverified; this paper proposes self-verifying loops that confirm evidence grounds each claim before the agent commits. <strong>[agents · rag]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.05210">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Speculative Agents: Draft-Then-Verify for Agent Trajectories</div>
+        <div class="desc">A small drafter proposes tool-calling trajectories and a frontier verifier checks them — speculative decoding applied to agent actions instead of tokens. <strong>[agents · efficiency]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.05233">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Model Constitutional Memory Consolidation in LLM Agents</div>
+        <div class="desc">Agents forget policy-relevant facts as context scrolls; this paper consolidates short-term context into a constitutional memory that survives across sessions. <strong>[agents · memory]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.05247">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Reliable Tool Calling via Dual-Pass Constrained Decoding</div>
+        <div class="desc">Tool calls fail on malformed JSON and hallucinated arguments; dual-pass constrained decoding enforces schemas at generation time. <strong>[reliability · tools]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.05261">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">FairBench: Quantifying Positional and Label Bias in LLM Benchmarks</div>
+        <div class="desc">Benchmarks show order and label artifacts that inflate scores; FairBench isolates them with permuted and relabelled test sets. <strong>[eval · benchmark]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.05274">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">Scalable Oversight via Decomposition for Long-Horizon Tasks</div>
+        <div class="desc">Humans can't verify hours-long agent runs end-to-end; decomposing tasks into checkable subtasks yields scalable oversight signals. <strong>[safety · oversight]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.05288">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">NVIDIA Vera GB300 racks ramp into volume</div>
+        <div class="desc">First Vera GB300 rack-scale systems enter volume production with early 100K-unit orders; early deployments land in the second half of 2026.</div>
+        <div class="sources">
+          <a href="https://nvidianews.nvidia.com/news/vera-gb300-ramp">NVIDIA</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Vercel ships AgentKit — serverless runtime for agent deployments</div>
+        <div class="desc">AgentKit adds durable state, cron triggers and a tool gateway to Vercel's serverless model — a runtime for agents that sleep, wake and call tools without paying for idle compute.</div>
+        <div class="sources">
+          <a href="https://vercel.com/blog/agentkit">Vercel</a> · <a href="https://news.ycombinator.com/item?id=49207499">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">1</div>
+        <div class="title">The Filesystem is the Database for Agents</div>
+        <div class="desc">An essay arguing durable local state beats stateless APIs for agent apps — checkpoints, retries and audit trails as plain files. Long, thoughtful HN thread.</div>
+        <div class="sources">
+          <a href="https://jessems.com/posts/2026-08-07-filesystem-database-agents">Original</a> · <a href="https://news.ycombinator.com/item?id=49205214">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">2</div>
+        <div class="title">Running Fable 3 on a laptop: a weekend benchmark</div>
+        <div class="desc">A self-hosting walkthrough of Anthropic's open-weights Fable 3 — real-world speed, memory and reliability numbers on consumer hardware.</div>
+        <div class="sources">
+          <a href="https://simonwillison.net/2026/Aug/7/fable-3-local/">Original</a> · <a href="https://news.ycombinator.com/item?id=49206093">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">3</div>
+        <div class="title">EU AI Act first wave: what enterprises must do by Q1</div>
+        <div class="desc">A compliance checklist for the high-risk obligations entering force — documentation, logging, human oversight and the audits now landing.</div>
+        <div class="sources">
+          <a href="https://www.linkedin.com/pulse/eu-ai-act-first-wave-enterprises-q1-2027">Original</a> · <a href="https://news.ycombinator.com/item?id=49205570">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The day's through-line is governance meeting gravity: EU enforcement and Anthropic's open weights both push agents out of the cloud-only default — enterprises can now, and must, run and audit them in-house. MCP 1.2's audit trails are the technical answer to the AI Act's logging duties.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Reliability is the new benchmark battleground: speculative agents, dual-pass tool decoding and oversight-by-decomposition all target the same gap — agents that act correctly, verifiably, for hours at a time instead of minutes.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">07 AUG 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 183;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>
