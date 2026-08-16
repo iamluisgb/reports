@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 11 AUG 2026 · TUESDAY</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">11 AUG 2026 · TUESDAY</div>
+          <div class="subtitle">France bans unsolicited telemarketing · AI eats the web · Zuckerberg returns to open models · UK's war on anonymity</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-08-11.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 11 AUG 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:23</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">France to ban unsolicited telemarketing calls</div>
+        <div class="desc">France moves to ban cold-call telemarketing outright — the day's top story (1,059 pts), and a regulatory signal for AI-powered call agents.</div>
+        <div class="sources">
+          <a href="https://www.lemonde.fr/en/france/article/2026/08/06/france-to-ban-unsolicited-telemarketing-calls.html">Le Monde</a> · <a href="https://news.ycombinator.com/item?id=49254880">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">As AI eats the web, the internet's collective memory is disappearing</div>
+        <div class="desc">The Walrus on how AI-generated content and search decay are erasing the web's shared record — 'Google Search is dying' as a memory-loss vector.</div>
+        <div class="sources">
+          <a href="https://thewalrus.ca/google-search-is-dying/">The Walrus</a> · <a href="https://news.ycombinator.com/item?id=49250836">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Mark Zuckerberg attacks 'closed' AI rivals as Meta returns to open models</div>
+        <div class="desc">Meta's founder uses an open-weights turn to attack closed AI labs — the open vs. closed frontier fight goes fully public.</div>
+        <div class="sources">
+          <a href="https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878">Financial Times</a> · <a href="https://news.ycombinator.com/item?id=49243880">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">The UK's war on anonymity has come to America</div>
+        <div class="desc">An investigation into how UK-style age-verification and identity lobbying is landing in US policy — the end of anonymous internet access?</div>
+        <div class="sources">
+          <a href="https://www.effort.news/uk-lobby">effort.news</a> · <a href="https://news.ycombinator.com/item?id=49251411">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Show HN: Needle2 — a 14MB agentic LLM for phones, wearables and smart home</div>
+        <div class="desc">A 14MB agentic model designed to run on phones, wearables and smart-home devices — on-device agents shrink to the size of a favicon.</div>
+        <div class="sources">
+          <a href="https://cactuscompute.com/needle">cactuscompute.com</a> · <a href="https://news.ycombinator.com/item?id=49246804">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">How Claude marks AI-generated content</div>
+        <div class="desc">Anthropic documents how Claude watermarks and marks AI-generated content — provenance tooling moves into the model output itself.</div>
+        <div class="sources">
+          <a href="https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content">Claude Help</a> · <a href="https://news.ycombinator.com/item?id=49250109">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Learning more about Claude's mathematical capabilities</div>
+        <div class="desc">Anthropic's research on Claude and the Riemann zeta function — probing where frontier models can and cannot do mathematics.</div>
+        <div class="sources">
+          <a href="https://www.anthropic.com/research/riemann-zeta">Anthropic</a> · <a href="https://news.ycombinator.com/item?id=49247070">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">What's the best programming language for coding agents?</div>
+        <div class="desc">Dan Luu analyzes token-level properties that make languages easier or harder for coding agents — a data-driven answer to a noisy debate.</div>
+        <div class="sources">
+          <a href="http://danluu.com/pl-tokens/">danluu.com</a> · <a href="https://news.ycombinator.com/item?id=49245936">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Do Influence Tactics Matter? Prompt Framing Effects in LLM Collaboration</div>
+        <div class="desc">Whether prompt framing — the 'influence tactics' of agent collaboration — changes outcomes in LLM cooperation tasks. <strong>[agents · research]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.11513">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Let it Cook: Learning to Wait in Sequential Decision Making</div>
+        <div class="desc">An agent that learns when not to act — periods like brewing coffee are served equally well by letting the environment run. <strong>[agents · RL]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.11511">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Conflict and Congruency Effects in LLMs: In-Weight and In-Context Competition</div>
+        <div class="desc">A verbal-only LLM conflict task probing Stroop-like effects — how in-weight and in-context competition shape model responses. <strong>[research]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.11510">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">HyperFix: Combinatorial Nonlinear Correction for Task Vector Merging</div>
+        <div class="desc">Task-vector merging without repeated scalar tuning — combinatorial nonlinear correction that generalizes across arbitrary subsets. <strong>[models]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.11499">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Tl;dv: Over 180k meetings left wide open</div>
+        <div class="desc">A security researcher finds 180k+ meeting recordings exposed by a meeting-notes startup — AI transcription is hoarding the privacy of every room it records.</div>
+        <div class="sources">
+          <a href="https://bobdahacker.com/blog/tldv-hack">bobdahacker.com</a> · <a href="https://news.ycombinator.com/item?id=49242739">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">London Underground begins scanning passengers' faces</div>
+        <div class="desc">British Transport Police expands live facial recognition across the Tube — surveillance infrastructure accelerates under the anonymity debate.</div>
+        <div class="sources">
+          <a href="https://www.btp.police.uk/news/btp/news/england/btp-expands-live-facial-recognition/">BTP</a> · <a href="https://news.ycombinator.com/item?id=49255496">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Exploiting System Management Mode with a very long interrupt</div>
+        <div class="desc">A novel SMM exploit technique via extremely long interrupts — firmware-level security research keeps finding new corners of the x86 platform.</div>
+        <div class="sources">
+          <a href="https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii">GitHub</a> · <a href="https://news.ycombinator.com/item?id=49245491">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">France to ban unsolicited telemarketing calls</div>
+        <div class="desc">1,059 pts — the top story of the day.</div>
+        <div class="sources">
+          <a href="https://www.lemonde.fr/en/france/article/2026/08/06/france-to-ban-unsolicited-telemarketing-calls.html">Le Monde</a> · <a href="https://news.ycombinator.com/item?id=49254880">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">As AI eats the web, the internet's collective memory is disappearing</div>
+        <div class="desc">934 pts — search decay and AI slop as cultural memory loss.</div>
+        <div class="sources">
+          <a href="https://thewalrus.ca/google-search-is-dying/">The Walrus</a> · <a href="https://news.ycombinator.com/item?id=49250836">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">The UK's war on anonymity has come to America</div>
+        <div class="desc">668 pts — age-verification lobbying crosses the Atlantic.</div>
+        <div class="sources">
+          <a href="https://www.effort.news/uk-lobby">effort.news</a> · <a href="https://news.ycombinator.com/item?id=49251411">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>France banning cold calls, Meta returning to open models and the UK's identity lobby landing in America: the week's policy and platform moves all point one direction — who gets to verify users, and who gets to own the open stack.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Needle2's 14MB agentic model and Claude's content-marking both push trust and agency to the edge: provenance and on-device reasoning are becoming default features, not research demos.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">11 AUG 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 83;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>

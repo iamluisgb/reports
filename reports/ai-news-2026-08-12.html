@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 12 AUG 2026 · WEDNESDAY</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">12 AUG 2026 · WEDNESDAY</div>
+          <div class="subtitle">Stealing reasoning traces from LLM APIs · uBlock Origin gives up on Facebook · OpenAI ethics head leaves · Compression is prediction</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-08-12.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 12 AUG 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:20</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Stealing Reasoning Traces from Proprietary LLM APIs</div>
+        <div class="desc">Research documents extracting hidden reasoning traces from proprietary LLM APIs — model internals leak through logit and token behavior.</div>
+        <div class="sources">
+          <a href="https://stolen-thoughts.com/">stolen-thoughts.com</a> · <a href="https://news.ycombinator.com/item?id=49257876">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">uBlock Origin is giving up the fight to keep ads off Facebook</div>
+        <div class="desc">The ad-blocker concedes the Facebook fight — a reminder that platform-controlled surfaces are increasingly immune to client-side blocking.</div>
+        <div class="sources">
+          <a href="https://digitalescapetools.com/2026/08/ublock-origin-stops-chasing-facebook-ads.html">digitalescapetools.com</a> · <a href="https://news.ycombinator.com/item?id=49270726">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">OpenAI's head of ethics leaves less than a year after joining</div>
+        <div class="desc">OpenAI's ethics chief departs under a year in — the latest sign of turbulence in AI governance roles as labs scale.</div>
+        <div class="sources">
+          <a href="https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0">Financial Times</a> · <a href="https://news.ycombinator.com/item?id=49257160">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Compression is prediction</div>
+        <div class="desc">ngrok's deep dive connecting compression theory to prediction — why LLMs, log loss and zip files share the same math.</div>
+        <div class="sources">
+          <a href="https://ngrok.com/blog/compression-is-prediction">ngrok</a> · <a href="https://news.ycombinator.com/item?id=49263497">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Go is an ideal language for AI-assisted software engineering</div>
+        <div class="desc">Google makes the case for Go in the agentic-coding era — static typing, simple concurrency and readability as LLM-friendly properties.</div>
+        <div class="sources">
+          <a href="https://developers.googleblog.com/why-go-is-an-ideal-language-for-ai-assisted-software-engineering/">Google Developers Blog</a> · <a href="https://news.ycombinator.com/item?id=49261133">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Mojo 1.0</div>
+        <div class="desc">Modular ships Mojo 1.0 with a new SDK — the Python-superset language for AI compute reaches a stability milestone.</div>
+        <div class="sources">
+          <a href="https://www.modular.com/blog/modular-26-5-mojo-1-0-is-here">Modular</a> · <a href="https://news.ycombinator.com/item?id=49261128">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Nvidia Nemotron 3.5 Lightning and NeMo Switchyard</div>
+        <div class="desc">Nvidia releases Nemotron 3.5 Lightning and NeMo Switchyard — open reasoning models and orchestration for the RTX/DGX ecosystem.</div>
+        <div class="sources">
+          <a href="https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx/">NVIDIA Blog</a> · <a href="https://news.ycombinator.com/item?id=49263340">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">What sort of maths are LLMs good at?</div>
+        <div class="desc">Tim Gowers evaluates LLM mathematical capabilities — a mathematician's careful taxonomy of where models genuinely reason vs. retrieve.</div>
+        <div class="sources">
+          <a href="https://gowers.wordpress.com/2026/08/12/what-sort-of-maths-are-llms-good-at/">Gowers's Weblog</a> · <a href="https://news.ycombinator.com/item?id=49270022">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries</div>
+        <div class="desc">The pre-commit steering decision — proceed or hold for human review before an agent sends an email, merges a PR or wires a payment. <strong>[agents · eval]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.12654">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Jagged Judges: Epistemic Stability Under Silence, Pressure, and Persistence</div>
+        <div class="desc">LLM judges are validated on accuracy, but accuracy says little about stability under re-prompting, challenge or sustained pressure. <strong>[eval · reliability]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.12645">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Egocentric Memory</div>
+        <div class="desc">Fixes two bottlenecks in long-horizon egocentric memory: context-poor caption indices and time-blind retrieval for agentic search. <strong>[memory · agents]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.12627">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">General Probabilities of Causation with Causal Knowledge</div>
+        <div class="desc">Extends Tian and Pearl's bounds on probabilities of causation using available causal knowledge — sharper partial identification for individual responses. <strong>[research · theory]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.12657">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">llama.cpp</div>
+        <div class="desc">The llama.cpp project's new site lands with llama.app — local inference keeps maturing as a mainstream distribution channel.</div>
+        <div class="sources">
+          <a href="https://llama.app">llama.app</a> · <a href="https://news.ycombinator.com/item?id=49267928">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Apple Silicon and macOS VMs: faster LLM inference with llama.cpp</div>
+        <div class="desc">GPU passthrough for macOS VMs enables faster llama.cpp inference on Apple Silicon — virtualization and local AI finally meet.</div>
+        <div class="sources">
+          <a href="https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md">trycua/cua</a> · <a href="https://news.ycombinator.com/item?id=49259339">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">CFTC declares market emergency, orders Kalshi to continue operations</div>
+        <div class="desc">The CFTC steps into prediction-market turmoil — an infrastructure-level signal that AI-driven event markets now move regulatory gears.</div>
+        <div class="sources">
+          <a href="https://www.cftc.gov/PressRoom/PressReleases/9281-26">CFTC</a> · <a href="https://news.ycombinator.com/item?id=49266277">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">uBlock Origin is giving up the fight to keep ads off Facebook</div>
+        <div class="desc">717 pts — platform-controlled surfaces beat client-side blocking.</div>
+        <div class="sources">
+          <a href="https://digitalescapetools.com/2026/08/ublock-origin-stops-chasing-facebook-ads.html">digitalescapetools.com</a> · <a href="https://news.ycombinator.com/item?id=49270726">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Stealing Reasoning Traces from Proprietary LLM APIs</div>
+        <div class="desc">695 pts — extracting hidden chain-of-thought from closed models.</div>
+        <div class="sources">
+          <a href="https://stolen-thoughts.com/">stolen-thoughts.com</a> · <a href="https://news.ycombinator.com/item?id=49257876">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Compression is prediction</div>
+        <div class="desc">667 pts — the information-theory bridge to LLMs.</div>
+        <div class="sources">
+          <a href="https://ngrok.com/blog/compression-is-prediction">ngrok</a> · <a href="https://news.ycombinator.com/item?id=49263497">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Stealing reasoning traces + uBlock giving up on Facebook in one day: proprietary surfaces — model internals and platform feeds — are both closing, and the open alternatives are the ones left to build on.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Go as the LLM-friendly language and Mojo 1.0 shipping the same day frame the real contest of the agentic era: not model vs. model, but which programming languages and toolchains agents can reliably own.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">12 AUG 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 80;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>

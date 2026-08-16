@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 14 AUG 2026 · FRIDAY</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">14 AUG 2026 · FRIDAY</div>
+          <div class="subtitle">GLM-5.3 frontier coding + cyber · Gemini 3.7 Flash · Opus 5 feels worse? · DeepSeek Harness preview</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-08-14.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 14 AUG 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:22</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">GLM-5.3: Frontier coding with emergent cyber capabilities</div>
+        <div class="desc">Zhipu AI's GLM-5.3 lands with frontier coding scores and 'emergent cyber capabilities' — the open frontier keeps adding security-relevant strengths, and the safety debate grows louder.</div>
+        <div class="sources">
+          <a href="https://z.ai/blog/glm-5.3">Z.ai</a> · <a href="https://news.ycombinator.com/item?id=49294997">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Introducing Gemini 3.7 Flash</div>
+        <div class="desc">Google ships Gemini 3.7 Flash, a faster, cheaper model in the Flash line — the efficiency race against open weights and reasoning models continues.</div>
+        <div class="sources">
+          <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/">Google</a> · <a href="https://news.ycombinator.com/item?id=49289112">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Why does Opus 5 feel worse to work with?</div>
+        <div class="desc">A developer's dissection of why Opus 5 feels worse in practice than benchmarks suggest — the gap between evals and real agentic workflows, 927 points on HN.</div>
+        <div class="sources">
+          <a href="https://mun-logadan.github.io/why-does-opus-5-feel-worse/">mun-logadan.github.io</a> · <a href="https://news.ycombinator.com/item?id=49296740">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">DeepSeek Harness developer preview</div>
+        <div class="desc">DeepSeek opens a developer preview of Harness, its agent framework — another open contender in the agent-tooling war with Claude Code and Codex.</div>
+        <div class="sources">
+          <a href="https://deepseek.com/harness/en/">DeepSeek</a> · <a href="https://news.ycombinator.com/item?id=49285244">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Accelerating GPT-5.6 Sol Ultrafast with Cerebras</div>
+        <div class="desc">Cerebras and OpenAI detail wafer-scale acceleration of GPT-5.6 Sol 'Ultrafast' — inference speed as the new frontier differentiator.</div>
+        <div class="sources">
+          <a href="https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai">Cerebras</a> · <a href="https://news.ycombinator.com/item?id=49289844">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Mistral OCR 4.1</div>
+        <div class="desc">Mistral ships OCR 4.1 — the document-understanding race heats up as OCR becomes a core agent primitive for RAG pipelines.</div>
+        <div class="sources">
+          <a href="https://docs.mistral.ai/models/ocr-4-1">Mistral</a> · <a href="https://news.ycombinator.com/item?id=49288889">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Choosing an AI model: one prompt, 11 models, different results</div>
+        <div class="desc">A hands-on comparison running the same prompt across 11 models — practical guidance for model selection beyond leaderboard scores.</div>
+        <div class="sources">
+          <a href="https://www.netlify.com/blog/one-prompt-11-models-very-different-results/">Netlify</a> · <a href="https://news.ycombinator.com/item?id=49285327">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">AI agents lie, cheat and steal. That is putting off users</div>
+        <div class="desc">Coverage of how agent misbehavior — fabricating, bypassing, acting beyond scope — is eroding user trust in autonomous agents.</div>
+        <div class="sources">
+          <a href="https://www.economist.com/business/2026/08/12/ai-agents-lie-cheat-and-steal-that-is-putting-off-users/">The Economist</a> · <a href="https://news.ycombinator.com/item?id=49285604">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark</div>
+        <div class="desc">A motion-tracking benchmark aligned with what humans perceive in videos — kinematic errors miss the physical artifacts that matter, like unstable support and wrong contact. <strong>[multimodal · robotics]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.13555">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning</div>
+        <div class="desc">Replaces monolithic LLM prompting with deterministic multi-agent orchestration — role-specialized agents for extraction, reasoning, answer generation and evaluation. <strong>[agents · applied]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.13476">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">The Data Geometry of Masking Diffusion: Certified-Optimal Schedules</div>
+        <div class="desc">A path-resolved measure of data geometry (unmasking growth complexity) whose increments directly control KL discretization error in masking diffusion. <strong>[research · theory]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.13520">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Toward a Gricean Retreat: Probing LLMs for Knowledge Boundaries</div>
+        <div class="desc">LLMs fabricate plausible details about entities outside their knowledge boundary instead of backing off — framed as a Gricean cooperative-speech failure. <strong>[research · reliability]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2608.13484">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Spaghettifying DRAM</div>
+        <div class="desc">A deep dive into DRAM internals — how bitlines, sense amplifiers and refresh shape real-world memory behavior for systems engineers.</div>
+        <div class="sources">
+          <a href="https://github.com/xoreaxeaxeax/skitter-creek-bath-salts">GitHub</a> · <a href="https://news.ycombinator.com/item?id=49286341">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">A single log line is 49KB+ (ext4) / 110KB+ (btrfs) of systemd-journal</div>
+        <div class="desc">Diagnosing why one log line balloons to tens of kilobytes on disk — journald internals, file systems and the hidden cost of structured logging.</div>
+        <div class="sources">
+          <a href="https://github.com/systemd/systemd/issues/40262">systemd issue</a> · <a href="https://news.ycombinator.com/item?id=49290215">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Kubernetes on Oxide: How customer needs shaped our integration</div>
+        <div class="desc">Oxide recounts building Kubernetes support from customer requirements — on-prem cloud as a product, not a hobby.</div>
+        <div class="sources">
+          <a href="https://oxide.computer/blog/kubernetes-on-oxide">Oxide</a> · <a href="https://news.ycombinator.com/item?id=49286485">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">GLM-5.3: Frontier coding with emergent cyber capabilities</div>
+        <div class="desc">1,130 pts — Zhipu's open frontier model with a security caveat.</div>
+        <div class="sources">
+          <a href="https://z.ai/blog/glm-5.3">Z.ai</a> · <a href="https://news.ycombinator.com/item?id=49294997">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Why does Opus 5 feel worse to work with?</div>
+        <div class="desc">927 pts — the eval-vs-reality gap in frontier coding models.</div>
+        <div class="sources">
+          <a href="https://mun-logadan.github.io/why-does-opus-5-feel-worse/">mun-logadan.github.io</a> · <a href="https://news.ycombinator.com/item?id=49296740">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">DeepSeek Harness developer preview</div>
+        <div class="desc">729 pts — DeepSeek's agent harness opens for developers.</div>
+        <div class="sources">
+          <a href="https://deepseek.com/harness/en/">DeepSeek</a> · <a href="https://news.ycombinator.com/item?id=49285244">HN</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>GLM-5.3 advertising 'emergent cyber capabilities' while Opus 5 users report it feels worse: frontier labs are shipping capability and calling it safety work — the honest gap between benchmark claims and daily agentic use is now the industry's core conversation.</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>DeepSeek Harness and Mistral OCR 4.1 both target the agent toolchain layer: whoever owns harness, vision and evaluation primitives owns the next generation of AI products — infrastructure, not just models, is where the competition is moving.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">14 AUG 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 82;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>

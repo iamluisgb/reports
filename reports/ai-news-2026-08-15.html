@@ -6,24 +6,6 @@
 <title>AI News Daily — 15 AUG 2026 · SATURDAY</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
-<!-- og:start -->
-<meta name="description" content="Qwen 3.8 27B open weights · Firefox last with uBlock Origin · Google homomorphic encryption · France blocks social media ban for under-15s">
-<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-08-15.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="AI Reports — Luis GB">
-<meta property="og:title" content="AI News Daily — 15 Aug 2026">
-<meta property="og:description" content="Qwen 3.8 27B open weights · Firefox last with uBlock Origin · Google homomorphic encryption · France blocks social media ban for under-15s">
-<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-08-15.html">
-<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-08-15.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@iamluisgb">
-<meta name="twitter:creator" content="@iamluisgb">
-<meta name="twitter:title" content="AI News Daily — 15 Aug 2026">
-<meta name="twitter:description" content="Qwen 3.8 27B open weights · Firefox last with uBlock Origin · Google homomorphic encryption · France blocks social media ban for under-15s">
-<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-08-15.png">
-<!-- og:end -->
 </head>
 <body>
   <div class="page">
@@ -42,6 +24,28 @@
       </div>
     </div>
 
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-08-15.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 15 AUG 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 1:39</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
     <div class="section">
       <div class="section-label">Headlines</div>
 
