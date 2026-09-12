@@ -1,20 +1,425 @@
 {
-  "generated": "2026-08-29T07:02:59+00:00",
-  "count": 109,
+  "generated": "2026-09-12T09:53:32+00:00",
+  "count": 136,
   "reports": [
+    {
+      "file": "ai-news-2026-09-12.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-12",
+      "summary": "Google's /goto anti-scraping links · Clay's Navier–Stokes announcement · Minitap vs Google over Artemis code · Starlink leakage vs radio astronomy",
+      "readingTime": 3,
+      "tags": [
+        "research",
+        "models",
+        "multimodal",
+        "memory",
+        "open-source"
+      ]
+    },
+    {
+      "file": "ai-news-2026-09-11.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-11",
+      "summary": "AI's misalignment with mathematics · Ask HN on the AI news flood · An undisclosed agent attack on RubyGems · Google app ads and their bot-install problem",
+      "readingTime": 3,
+      "tags": [
+        "research",
+        "models",
+        "multimodal",
+        "agents",
+        "security"
+      ]
+    },
+    {
+      "file": "ai-news-2026-09-10.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-10",
+      "summary": "Shopify moves from React Native back to Swift and Kotlin · DeepSeek ships v4.1 Flash · Questions mount over OpenAI's unpublished math · Cognition launches SWE-2",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "research",
+        "multimodal",
+        "memory",
+        "agents"
+      ]
+    },
+    {
+      "file": "ai-news-2026-09-09.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-09",
+      "summary": "Apple's iPhone Duo tops the day · Claude rewrites an add-to-cart button · Shopify acquires Tailwind CSS · An Anthropic researcher resigns publicly",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "research",
+        "agents",
+        "memory",
+        "robotics"
+      ]
+    },
+    {
+      "file": "ai-news-2026-09-08.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-08",
+      "summary": "OpenAI's Navier–Stokes write-up tops HN · Mistral raises €3B · LibreOffice breaks download records after declaring it has no AI features · Meta launches Muse, a personal AI agent",
+      "readingTime": 4,
+      "tags": [
+        "research",
+        "agents",
+        "models",
+        "security",
+        "open-source"
+      ]
+    },
+    {
+      "file": "ai-news-2026-09-07.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-07",
+      "summary": "LG smart TVs caught logging audio with the screen off · Internet Archive asks for recurring donors to keep servers running · bzip3 ships a modern block-sorting compressor · Stockfish 19 lands a new neural network",
+      "readingTime": 3,
+      "tags": [
+        "research",
+        "agents",
+        "multimodal",
+        "models",
+        "infrastructure"
+      ]
+    },
+    {
+      "file": "ai-news-2026-09-06.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-06",
+      "summary": "QBittorrent escapes its sandbox · Nitter and XCancel resume service · Cloud in a Bottle opens up self-hosting · Isar Aerospace reaches orbit",
+      "readingTime": 3,
+      "tags": [
+        "research",
+        "models",
+        "agents",
+        "memory",
+        "security"
+      ]
+    },
+    {
+      "file": "ai-news-2026-09-05.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-05",
+      "summary": "Private German rocket reaches orbit from European soil · Nitter instances outnumber pre-takedown levels · Chrome again exempts Google from user data settings · AI incident response erodes engineers' system knowledge",
+      "readingTime": 3,
+      "tags": [
+        "research",
+        "models",
+        "agents",
+        "infrastructure",
+        "memory"
+      ]
+    },
+    {
+      "file": "ai-news-2026-09-04.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-04",
+      "summary": "A new OpenAI agent message board surfaces · Sandbox RCE exploited in all Chromium versions · Anthropic formalizes Fermat's Last Theorem · Gallup: 89% see government corruption as widespread",
+      "readingTime": 3,
+      "tags": [
+        "research",
+        "agents",
+        "models",
+        "infrastructure",
+        "memory"
+      ]
+    },
+    {
+      "file": "ai-news-2026-09-03.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-03",
+      "summary": "GPT-6 Astra leads the day on Hacker News · The .name domain faces termination · Audacity 4.0 released · Nvidia to acquire Hugging Face",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "research",
+        "agents",
+        "infrastructure",
+        "hardware"
+      ]
+    },
+    {
+      "file": "ai-news-2026-09-02.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-02",
+      "summary": "Gemini 3.8 Flash ships · Meta's Muse Spark 1.3 · Perplexity cites 215,128 manufactured \"best software\" pages · LWN on subscription prices",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "research",
+        "agents",
+        "memory",
+        "coding"
+      ]
+    },
+    {
+      "file": "ai-news-2026-09-01.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-09-01",
+      "summary": "Anthropic ships Claude Fable 5.1 and Mythos 5.1 · Hang on to Your Firefox · AnkiDroid's donation link blocked on Google Play · How accurate Ed Zitron's AI predictions were",
+      "readingTime": 4,
+      "tags": [
+        "models",
+        "research",
+        "agents",
+        "regulation",
+        "infrastructure"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-31.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-31",
+      "summary": "Chrome drops MV2 extensions including uBlock Origin · Apple blindsided by AI-driven Mac Mini and Studio demand · Claude Code Opus 5 Auto Mode broken · OpenShot 4.0 ships",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "agents",
+        "research",
+        "security",
+        "memory"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-30.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-30",
+      "summary": "“I just chose words carefully” · California’s Linux exemption from age verification · Terence Tao on six essential math concepts · Claude Code commits now carry session URLs",
+      "readingTime": 4,
+      "tags": [
+        "models",
+        "research",
+        "agents",
+        "infrastructure",
+        "security"
+      ]
+    },
     {
       "file": "ai-news-2026-08-29.html",
       "type": "daily",
       "title": "AI News Daily",
       "date": "2026-08-29",
-      "summary": "The Agentic Shift: From Chatbots to Autonomous Workforce",
-      "readingTime": 1,
+      "summary": "Creepy Crawlies · OpenAI's decision on Cursor after SpaceX · Debian votes to allow generative AI · Good culture beats AI",
+      "readingTime": 3,
       "tags": [
         "agents",
-        "infrastructure",
-        "hardware",
+        "research",
         "models",
-        "research"
+        "coding",
+        "memory"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-28.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-28",
+      "summary": "GUIs should be fully keyboard-driven · Htmx 4.0 is released · GLM-5.3 goes open-weight · Judge rules Anthropic blacklisting unlawful",
+      "readingTime": 4,
+      "tags": [
+        "models",
+        "research",
+        "infrastructure",
+        "agents",
+        "open-source"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-27.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-27",
+      "summary": "Nvidia agrees to buy Hugging Face for $13B · Cloudflare saves 100 TB of memory in 1.1.1.1's DNS cache · Small models have arrived · Developers answer AI layoffs with an open-source AI CEO",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "research",
+        "agents",
+        "hardware",
+        "open-source"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-26.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-26",
+      "summary": "Z.ai ships GLM-5.3-Flash · AWS acquires DuckLabs · State Department pauses immigrant visas · Qwen3.8-Flash-Next lands",
+      "readingTime": 3,
+      "tags": [
+        "research",
+        "models",
+        "infrastructure",
+        "agents",
+        "funding"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-25.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-25",
+      "summary": "Dolly Parton has died · Apple introduces M6 and M5 Ultra · Nitter and XCancel receive cease and desist notices · OpenAI Jalapeño claims to beat Nvidia Blackwell",
+      "readingTime": 3,
+      "tags": [
+        "research",
+        "models",
+        "hardware",
+        "agents",
+        "security"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-24.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-24",
+      "summary": "Europe's maker rules and the cost of compliance · Xiaomi's new CPU trades blows with Apple silicon · a16z's billions and the future they buy · Windows image tools hide a GUID watermark in local output",
+      "readingTime": 3,
+      "tags": [
+        "agents",
+        "models",
+        "research",
+        "memory",
+        "security"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-23.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-23",
+      "summary": "Everything I own, owned · Anthropic's best model struggles as cheaper tools thrive · $266 and four AI models to own a tablet",
+      "readingTime": 4,
+      "tags": [
+        "models",
+        "agents",
+        "research",
+        "memory",
+        "regulation"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-22.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-22",
+      "summary": "Canada to match US tariffs dollar for dollar · There's no reason for software to be slow · Why your local LLM feels dumber than it is · ElevenLabs, TwelveLabs, ThirteenLabs",
+      "readingTime": 4,
+      "tags": [
+        "models",
+        "research",
+        "agents",
+        "infrastructure",
+        "memory"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-21.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-21",
+      "summary": "Kagi adds a toggle to hide paywalled results · Felony charges for deleting phone data at the US border · DeepSeek ships an experimental vision model · A Rust LSP that uses 100x less RAM",
+      "readingTime": 4,
+      "tags": [
+        "models",
+        "research",
+        "agents",
+        "memory",
+        "multimodal"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-20.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-20",
+      "summary": "Aaron Swartz's prosecution and Meta's scraping · Don't paste the AI, please · AliExpress's silent WebAudio fingerprinting · A 125M piano model that autocompletes on-device",
+      "readingTime": 3,
+      "tags": [
+        "agents",
+        "models",
+        "research",
+        "multimodal",
+        "memory"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-19.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-19",
+      "summary": "OpenRouter is joining Stripe · Go 1.27 released · A joke domain purchase turns geopolitical · AI homework gains don't survive exams",
+      "readingTime": 3,
+      "tags": [
+        "agents",
+        "models",
+        "research",
+        "infrastructure",
+        "hardware"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-18.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-18",
+      "summary": "Google buys failed airline Spirit's data at auction · Linux 7.3 tames VRAM overcommit · Netflix's LLM judges in production · Mojo goes open source",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "research",
+        "agents",
+        "open-source",
+        "coding"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-17.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-17",
+      "summary": "AI;DR and the cost of never reading · Israel's fake think tank aimed at chatbots · DuckDB v2.0 preview · GitHub outage puts platform alternatives on the table",
+      "readingTime": 3,
+      "tags": [
+        "models",
+        "coding",
+        "research",
+        "multimodal",
+        "agents"
+      ]
+    },
+    {
+      "file": "ai-news-2026-08-16.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-08-16",
+      "summary": "Claude’s watermark backlash · Qwen 3.8 27B overthinks · Stripe to buy OpenRouter for $7B+ · Firefox iOS ships a native adblocker",
+      "readingTime": 4,
+      "tags": [
+        "models",
+        "research",
+        "multimodal",
+        "infrastructure",
+        "agents"
       ]
     },
     {
