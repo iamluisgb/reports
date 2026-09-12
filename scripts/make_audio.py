@@ -31,7 +31,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 API = os.environ.get("NAN_BASE_URL", "https://api.nan.builders/v1") + "/audio/speech"
-VOICES = {"FENRIR": "am_fenrir", "SARAH": "af_sarah"}
+# The quirón skill `media/long-audio` writes dialogue as [HOST_A]/[HOST_B];
+# both spellings map to the same English dialogue pair it standardises on.
+VOICES = {
+    "HOST_A": "am_fenrir", "A": "am_fenrir", "FENRIR": "am_fenrir",
+    "HOST_B": "af_sarah", "B": "af_sarah", "SARAH": "af_sarah",
+}
+# media/long-audio: news digests and daily briefings must be >= 3 minutes.
+MIN_SECONDS = 180
+# Same loudness target as that skill, so a briefing sits level with the rest.
+LOUDNORM = "I=-16:TP=-1.5:LRA=11"
 # Kokoro is capped at 15 RPM; stay under it without making a 12-segment
 # briefing take a minute to build.
 MIN_INTERVAL = 4.5
@@ -171,6 +180,24 @@ def concat(parts, out):
             dst.write(Path(p).read_bytes())
 
 
+def normalise(path):
+    """Bring the briefing to the standard loudness target.
+
+    Skipped without ffmpeg — a briefing that is merely un-normalised still
+    plays, and the alternative is publishing no audio at all."""
+    if not have("ffmpeg"):
+        return False
+    tmp = Path(str(path) + ".norm.mp3")
+    r = subprocess.run(["ffmpeg", "-y", "-i", str(path), "-af", f"loudnorm={LOUDNORM}",
+                        "-b:a", "128k", "-ar", "24000", "-ac", "1", str(tmp)],
+                       capture_output=True)
+    if r.returncode != 0 or not tmp.exists() or tmp.stat().st_size < 500:
+        tmp.unlink(missing_ok=True)
+        return False
+    tmp.replace(path)
+    return True
+
+
 def duration(path):
     """Real duration when ffprobe is available, else estimated from the bitrate.
 
@@ -220,6 +247,8 @@ def main():
     ap.add_argument("day")
     ap.add_argument("--script", help="briefing script (default: audio/ai-news-<day>.txt)")
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--allow-short", action="store_true",
+                    help=f"do not fail when the briefing is under {MIN_SECONDS}s")
     args = ap.parse_args()
 
     report = ROOT / "reports" / f"ai-news-{args.day}.html"
@@ -231,9 +260,12 @@ def main():
 
     if args.check:
         html = report.read_text(encoding="utf-8")
+        secs = duration(mp3) if mp3.exists() else 0
         print(f"{args.day}: mp3={'yes' if mp3.exists() else 'NO':3} "
               f"section={'yes' if 'Audio Briefing' in html else 'NO':3} "
-              f"script={'yes' if script.exists() else 'NO'}")
+              f"script={'yes' if script.exists() else 'NO':3} "
+              f"duration={int(secs // 60)}:{int(secs % 60):02d}"
+              f"{'' if secs >= MIN_SECONDS else f'  ⚠ under {MIN_SECONDS}s'}")
         return
 
     key = os.environ.get("NAN_API_KEY", "").strip()
@@ -257,9 +289,16 @@ def main():
                 time.sleep(MIN_INTERVAL)
         concat(parts, mp3)
 
+    normalised = normalise(mp3)
     secs = duration(mp3)
     mmss = inject(report, args.day, secs)
-    print(f"{args.day}: {len(segments)} segments, {mmss}, {mp3.stat().st_size // 1024} KB -> {mp3.relative_to(ROOT)}")
+    words = sum(len(t.split()) for _, t in segments)
+    flag = "" if secs >= MIN_SECONDS else f"  ⚠ under the {MIN_SECONDS}s minimum — expand the script"
+    print(f"{args.day}: {len(segments)} segments, {words} words, {mmss}, "
+          f"{mp3.stat().st_size // 1024} KB, loudnorm={'yes' if normalised else 'SKIPPED'}"
+          f" -> {mp3.relative_to(ROOT)}{flag}")
+    if secs < MIN_SECONDS and not args.allow_short:
+        sys.exit(2)
 
 
 if __name__ == "__main__":
