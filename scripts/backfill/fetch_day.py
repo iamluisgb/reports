@@ -21,6 +21,7 @@ import time
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 UA = "reports-backfill/1.0 (+https://luisgonzalezbernal.com/reports/)"
 
@@ -102,7 +103,22 @@ def fetch_hn(day, min_points):
     return stories
 
 
-def arxiv_query(lo, hi, max_results):
+def arxiv_query(lo, hi, max_results, attempts=3):
+    """A rate-limited reply and a genuinely empty day both come back with zero
+    <entry> elements; only opensearch:totalResults tells them apart. Without
+    this check a throttled query looks like "no papers that day" and the caller
+    silently walks back to another date."""
+    for attempt in range(attempts):
+        xml = _arxiv_get(lo, hi, max_results)
+        total = re.search(r"opensearch:totalResults[^>]*>(\d+)", xml or "")
+        entries = xml.count("<entry>") if xml else 0
+        if entries or not total or total.group(1) == "0":
+            return xml
+        time.sleep(5 * (attempt + 1))
+    return xml
+
+
+def _arxiv_get(lo, hi, max_results):
     return get(
         "https://export.arxiv.org/api/query",
         {
@@ -137,22 +153,37 @@ def parse_arxiv(xml):
     return papers
 
 
-def fetch_arxiv(day, want=8):
-    """ArXiv only publishes on weekdays; walk back up to 4 days for a real batch."""
+def already_cited(reports_dir):
+    """Every source URL that appears in an already-published report."""
+    used = set()
+    for f in Path(reports_dir).glob("ai-news-*.html"):
+        used.update(re.findall(r'href="(http[^"]+)"', f.read_text(encoding="utf-8", errors="replace")))
+    # Strip only a trailing version suffix (…/2609.11900v2): splitting on "v"
+    # would cut at the v in "arxiv" and collapse every paper onto one key.
+    return {re.sub(r"v\d+$", "", u) if "arxiv.org/abs/" in u else u for u in used}
+
+
+def fetch_arxiv(day, want=8, used=frozenset()):
+    """ArXiv has no submissions at weekends and lags 1-2 days on indexing, so a
+    recent date often comes back empty and we walk back for a real batch. Papers
+    already cited in another report are dropped: without this, consecutive days
+    that all fall back to the same batch publish the same five papers."""
     d = datetime.strptime(day, "%Y-%m-%d").replace(tzinfo=timezone.utc)
     for back in range(4):
         probe = d - timedelta(days=back)
         lo = probe.strftime("%Y%m%d") + "0000"
         hi = probe.strftime("%Y%m%d") + "2359"
-        papers = parse_arxiv(arxiv_query(lo, hi, 60))
-        if papers:
+        papers = parse_arxiv(arxiv_query(lo, hi, 120))
+        fresh = [p for p in papers if re.sub(r"v\d+$", "", p["url"]) not in used]
+        if fresh:
             return {
                 "date": probe.strftime("%Y-%m-%d"),
                 "is_fallback": back > 0,
-                "items": papers[:want],
+                "dropped_as_already_cited": len(papers) - len(fresh),
+                "items": fresh[:want],
             }
         time.sleep(3)
-    return {"date": day, "is_fallback": False, "items": []}
+    return {"date": day, "is_fallback": False, "dropped_as_already_cited": 0, "items": []}
 
 
 def main():
@@ -160,14 +191,20 @@ def main():
     ap.add_argument("day")
     ap.add_argument("-o", "--output")
     ap.add_argument("--min-points", type=int, default=40)
+    ap.add_argument("--exclude-used", action="store_true",
+                    help="drop items already cited in reports/ (use when backfilling near other days)")
     args = ap.parse_args()
 
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", args.day):
         raise SystemExit("day must be YYYY-MM-DD")
 
+    used = already_cited(Path(__file__).resolve().parents[2] / "reports") if args.exclude_used else frozenset()
+
     stories = fetch_hn(args.day, args.min_points)
     if len(stories) < 8 and args.min_points > 10:
         stories = fetch_hn(args.day, 10)
+    if used:
+        stories = [s for s in stories if s["url"] not in used and s["hn_url"] not in used]
 
     dt = datetime.strptime(args.day, "%Y-%m-%d")
     out = {
@@ -180,7 +217,7 @@ def main():
             "other": [s for s in stories if s["bucket"] == "hn"][:8],
             "count": len(stories),
         },
-        "papers": fetch_arxiv(args.day),
+        "papers": fetch_arxiv(args.day, used=used),
     }
     text = json.dumps(out, indent=2, ensure_ascii=False)
     if args.output:

@@ -9,6 +9,8 @@
 #
 #   ./scripts/backfill/orca_run.sh                     # every missing day
 #   ./scripts/backfill/orca_run.sh --days 2026-08-20
+#   ./scripts/backfill/orca_run.sh --script scripts/backfill/review_one.sh \
+#       --label dedup --days 2026-09-11,2026-09-12    # run the dedup reviewer
 #   JOBS=6 MODEL=nan/deepseek-v4-flash ./scripts/backfill/orca_run.sh
 #   KEEP=1 ./scripts/backfill/orca_run.sh              # keep worktrees to debug
 set -uo pipefail
@@ -19,13 +21,23 @@ cd "$REPO_DIR"
 JOBS="${JOBS:-4}"
 MODEL="${MODEL:-nan/glm5.3-flash}"
 KEEP="${KEEP:-0}"
+# Orca branches a new worktree off the repo's default base ref (origin/master),
+# so a worktree would not see commits that only exist locally — including this
+# tooling. Branch off the local master instead.
+BASE_BRANCH="${BASE_BRANCH:-master}"
+# What each agent runs, and how its commits are labelled. Defaults to generating
+# a missing day; point it at review_one.sh to run the dedup reviewer instead.
+SCRIPT="${SCRIPT:-scripts/backfill/one_day.sh}"
+LABEL="${LABEL:-backfill}"
 TIMEOUT_MS="${TIMEOUT_MS:-900000}"
 STATE="$REPO_DIR/.backfill/orca"
 DAYS_ARG=""
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --days) DAYS_ARG="$2"; shift 2 ;;
+    --days)   DAYS_ARG="$2"; shift 2 ;;
+    --script) SCRIPT="$2"; shift 2 ;;
+    --label)  LABEL="$2"; shift 2 ;;
     *) echo "unknown option: $1" >&2; exit 2 ;;
   esac
 done
@@ -60,7 +72,7 @@ fi
 
 COUNT=$(wc -l <<< "$DAYS" | tr -d ' ')
 mkdir -p "$STATE"
-echo "$COUNT day(s) via orca, $JOBS at a time, model $MODEL"
+echo "$COUNT day(s) via orca, $JOBS at a time, model $MODEL, running $SCRIPT"
 
 # ── one worktree + agent terminal per day ───────────────────────────────────
 launch_day() {
@@ -70,13 +82,21 @@ launch_day() {
   local name="backfill-$day"
   local wt=""
   local term=""
-  wt=$(orca worktree create --name "$name" --repo "id:$REPO_ID" --setup skip --json 2>/dev/null \
+  wt=$(orca worktree create --name "$name" --repo "id:$REPO_ID" --setup skip \
+       --base-branch "$BASE_BRANCH" --json 2>/dev/null \
        | python3 -c "import sys,json; print(json.load(sys.stdin)['result']['worktree']['path'])" 2>/dev/null)
   if [[ -z "$wt" ]]; then echo "  ✗ $day — worktree create failed"; return 1; fi
   echo "$wt" > "$STATE/$day.worktree"
 
+  # Fail loudly here rather than as a 200ms terminal death nobody reads.
+  if [[ ! -f "$wt/$SCRIPT" ]]; then
+    echo "  ✗ $day — worktree lacks $SCRIPT (base ref $BASE_BRANCH is behind)"
+    [[ "$KEEP" != "1" ]] && orca worktree rm --worktree "path:$wt" --force --json >/dev/null 2>&1
+    return 1
+  fi
+
   term=$(MODEL="$MODEL" orca terminal create --worktree "path:$wt" --title "backfill $day" \
-          --command "MODEL=$MODEL bash scripts/backfill/one_day.sh $day" --json 2>/dev/null \
+          --command "MODEL=$MODEL bash $SCRIPT $day; exit" --json 2>/dev/null \
         | python3 -c "import sys,json; print(json.load(sys.stdin)['result']['terminal']['handle'])" 2>/dev/null)
   if [[ -z "$term" ]]; then echo "  ✗ $day — terminal create failed"; return 1; fi
   echo "$term" > "$STATE/$day.terminal"
@@ -123,7 +143,12 @@ for DAY in $(tr ' ' '\n' <<< "$DAYS" | sort); do
   fi
   git add "$FILE"
   if git diff --staged --quiet -- "$FILE"; then echo "· $DAY — unchanged"; continue; fi
-  git commit --quiet -m "📰 AI News Daily — $(date -j -f %Y-%m-%d "$DAY" "+%d %b %Y") (backfill)"
+  PRETTY=$(date -j -f %Y-%m-%d "$DAY" "+%d %b %Y")
+  if [[ "$LABEL" == "dedup" ]]; then
+    git commit --quiet -m "🔁 dedup — AI News Daily $PRETTY (items ya citados en otro día)"
+  else
+    git commit --quiet -m "📰 AI News Daily — $PRETTY (backfill)"
+  fi
   echo "✓ $DAY — committed"; OK=$((OK + 1))
 done
 
