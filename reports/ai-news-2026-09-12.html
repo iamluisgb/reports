@@ -117,10 +117,10 @@
 
       <div class="news-item">
         <div class="num">01</div>
-        <div class="title">COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization</div>
-        <div class="desc">COBRA-Skills treats agent skill optimization as budgeted sequential search: a contextual bandit decides which candidate skills are worth an execution run, and evidence-grounded evolution keeps refining the skill pool from the feedback. Across six agent benchmarks and three models it tops the comparison while cutting optimization cost 55–58% versus SkillOpt, using only 50 examples per benchmark. <strong>[agents, skills, contextual-bandit]</strong></div>
+        <div class="title">MAPLE: Memory-Augmented Planning with Language and Evolution</div>
+        <div class="desc">MAPLE is an agent for maintaining optimization problems across successive natural-language requests: it retains the program, accepted plans and candidate solutions in memory, pairing language-based problem construction with mathematical programming and evolutionary search. On the NLDO benchmark — 15 trajectories and 180 updates spanning scheduling, rostering, routing and resource placement — it completes every trajectory with online plan quality of 0.951. <strong>[agents, optimization, memory]</strong></div>
         <div class="sources">
-          <a href="http://arxiv.org/abs/2609.11682v1">arXiv</a>
+          <a href="http://arxiv.org/abs/2609.11636v1">arXiv</a>
         </div>
       </div>
 
@@ -135,28 +135,28 @@
 
       <div class="news-item">
         <div class="num">03</div>
-        <div class="title">Beyond Confidence: Stability-Aware Test-Time Adaptation for LLM Reasoning</div>
-        <div class="desc">TASCO adds stability to confidence-guided test-time adaptation: high confidence predicts correctness only when it survives local perturbations, so a lightweight task-level prefix is optimized under random or sharpness-aware perturbations while the LLM stays frozen, improving reasoning accuracy and token efficiency. <strong>[reasoning, test-time-adaptation, efficiency]</strong></div>
+        <div class="title">ReGround: Grounding Reviewer Comments in Multimodal Evidence</div>
+        <div class="desc">ReGround links 10,267 peer-reviewer comments to 16,274 pieces of evidence across 3,656 anonymized submissions, mined from rebuttals that explicitly cite the parts of the paper under discussion. Casting grounding as retrieval shows full-paper retrieval performs poorly, evidence-type inference is the bottleneck, and multimodal evidence adds signals text alone misses. <strong>[benchmark, peer-review, multimodal]</strong></div>
         <div class="sources">
-          <a href="http://arxiv.org/abs/2609.11393v1">arXiv</a>
+          <a href="http://arxiv.org/abs/2609.11460v1">arXiv</a>
         </div>
       </div>
 
       <div class="news-item">
         <div class="num">04</div>
-        <div class="title">X-AuT: Progressive Audio-Encoder Compression for Speech LLMs with Cross-Scale Distillation</div>
-        <div class="desc">X-AuT compresses speech-LLM audio encoders progressively: short behavioral probes pick which layer combinations survive, and cross-scale distillation plus LoRA finetuning restore quality with the backbone frozen. Pruning Qwen3-ASR-0.6B from 18 to 14 audio-encoder layers keeps error near baseline while dropping 20.7% of audio-tower parameters. <strong>[speech, compression, distillation]</strong></div>
+        <div class="title">Data Scarcity and Model Sparsity: Mixtures-of-Experts Overfit More to Repeated Data</div>
+        <div class="desc">As human-written text runs out, training corpora get repeated — and this study finds MoEs degrade faster under repetition than dense models: dense 80M-parameter models tolerate 8x repetition with minimal loss while MoEs start suffering at 4x, with the effect governed by total rather than active parameters. Strong masking-based regularization lets MoEs beat dense models even past 64x, but nothing matches all-unique data. <strong>[moe, data-repetition, overfitting]</strong></div>
         <div class="sources">
-          <a href="http://arxiv.org/abs/2609.11412v1">arXiv</a>
+          <a href="http://arxiv.org/abs/2609.11917v1">arXiv</a>
         </div>
       </div>
 
       <div class="news-item">
         <div class="num">05</div>
-        <div class="title">Biology-in-the-loop: Amortized Adaptive Hit Discovery in CRISPR Screens</div>
-        <div class="desc">AssayBench-Loop packages 1,389 CRISPR screens as a benchmark for adaptive hit discovery, and AssayLoop learns an amortized acquisition policy across historical experiments, handing off to LLM-derived biological priors. On held-out screens it recovers 27.7% of hits after assaying ~5% of the library — a 5.67x enrichment over random selection. <strong>[benchmark, bio-ml, experimental-design]</strong></div>
+        <div class="title">Artificial Id: Drive and Persistent Alignment in Agentic AI</div>
+        <div class="desc">Proposes an artificial id — an adaptive internal drive for deciding whether agent behavior should continue, stop or change across task boundaries, instead of hand-specifying objectives, retries and stopping rules in the harness. In a minimal virtual experiment a tiny controller with no task objective develops useful control through differential persistence, and the same persistence can carry misalignment across boundaries. <strong>[agentic-ai, alignment, control]</strong></div>
         <div class="sources">
-          <a href="http://arxiv.org/abs/2609.11877v1">arXiv</a>
+          <a href="http://arxiv.org/abs/2609.11911v1">arXiv</a>
         </div>
       </div>
 
@@ -221,7 +221,7 @@
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span>The paper slate leans applied: agent skill libraries, runtime harnesses, test-time adaptation and audio-encoder compression all try to squeeze more out of already-trained models, and the CRISPR-screen benchmark ships its 1,389-experiment corpus alongside the method — eval harnesses are the useful output when capabilities plateau.</span>
+        <span>The paper slate leans agentic and diagnostic: MAPLE keeps memory-backed optimization state across natural-language requests, Ecdysis trains runtime harnesses from aggregated failures, and one paper argues agent drive itself should persist across task boundaries, while a data-repetition study finds sparse MoEs overfit faster than dense ones — benchmarks and failure analysis are the useful output when capabilities plateau.</span>
       </div>
 
     </div>
