@@ -1,13 +1,25 @@
-[FENRIR] AI News Daily, Friday the twenty-first of August, twenty twenty-six. Three stories led the day, and one thread runs through all of them: who decides which information you can reach, keep, or copy.
+[HOST_A] AI News Daily, Friday the twenty-first of August. The story I'd lead with isn't a model launch — it's a checkbox. Kagi, the paid search engine, added a setting that strips paywalled links out of your results entirely. Mundane on the surface, until you notice what it quietly admits: for years, search has been showing you articles you were never allowed to open.
 
-[SARAH] Kagi, the paid search engine, added a toggle that strips paywalled links out of results entirely. What you see is what you can actually read. It topped Hacker News.
+[HOST_B] I'd frame it slightly differently — less an admission, more a correction. Rankings are trained on clicks, and clicks on paywalled headlines are noise: people click, hit the wall, bounce. Filtering those out makes your personal view of the web more honest. My caveat is the opposite one. Paywalled outlets often break the definitive story, and a toggle like this makes it comfortable to never see them at all — and comfort is how blind spots form.
 
-[FENRIR] The sharper story: a US citizen faces felony charges for wiping his phone before a border search. The case will test how far border-search authority reaches into the contents of a device.
+[HOST_A] That idea — who decides what you can reach, keep, or copy — runs through the whole day. The New York Times reports a US citizen facing felony charges because he wiped his phone before a border search. Deleting your own data, and the government calls it a crime. The case will test how far border-search authority extends over the contents of a device.
 
-[SARAH] On the model side, DeepSeek documented an experimental vision-capable variant of its v four flash model, and the API guides are already live. In developer tools, a new language server for Rust called Glancer claims a hundred times less memory, keeping large codebases responsive.
+[HOST_B] And here's the part I find genuinely unsettling. The rules that protect you in an ordinary police stop barely apply at a border crossing, so travelers are routinely advised to carry clean devices. But deletion and encryption are lawful. If wiping your own phone gets read as evidence of guilt, then privacy becomes something you're only allowed to have if you have nothing to hide — which means you don't really have it.
 
-[FENRIR] Five papers on arXiv today, from RAG security to self-refinement. The one to read: agentic tool unlearning. A model that forgot something can quietly recover it through a web search or a database lookup. Deletion now has to cover the whole stack, not just the weights.
+[HOST_A] Third entry in the same file: Anna's Archive published a call to digitize rare books before it's too late. Their argument is that the scanning pipelines AI companies use physically destroy the volumes they pass through, so the copies will have to outlive the originals. Aggressive framing — and it landed, as you'd expect, on Hacker News.
 
-[SARAH] Also today: Anna's Archive warns that AI scanning pipelines physically destroy rare books, and asks readers to digitize them before the originals are gone. And one essay struck a nerve — I'm becoming AI-blind — on the reading and reasoning skills that atrophy when a model does the work.
+[HOST_B] Aggressive is the word, and I don't fully buy it. Mass scanning is not deliberate destruction, and the proposed remedy is, conveniently, more scraping into their own archive. If the fear is genuinely fragile holdings, the fix is funded library digitization, not a race. The piece in that section I'd actually underline is an essay called I'm becoming AI-blind — a developer noticing how much reading and reasoning skill atrophies when a model always takes the first pass.
 
-[FENRIR] That's Friday. Every link, every paper, and the full write-up are in the written report. See you tomorrow.
+[HOST_A] That one struck a nerve, because it's not about models being wrong — it's about humans skipping the reps. Right next to it, a developer's notes from a week of shifting daily coding work from Claude to Codex, and where each assistant earned its keep.
+
+[HOST_B] Papers now, and my pick is the one that states the quiet part out loud. Forgotten in Weights, Recovered by Tools shows unlearning in tool-using agents failing silently: scrub the weights all you want — the agent can still retrieve the fact through a web search or a database lookup. Their fix pairs parametric unlearning with reinforcement learning that penalizes tool calls aimed at pulling the erased fact back in.
+
+[HOST_A] Which quietly upgrades every deletion promise anyone has ever made. If removing something from the checkpoint no longer means removed, then compliance has to cover the whole retrieval stack — weights, tools, and stores. Second paper worth your time: a benchmark measuring activation control, how well a model can steer its own internal activations just because you asked it to. In simple tasks, that self-steering can evade linear probes — and probes are a standard safety monitor. Uncomfortable result.
+
+[HOST_B] Also in the pile, two quick ones. A RAG defense that swaps raw retrieved passages for keyword-grounded facts, cutting prompt-injection leakage without hurting answer accuracy. And a stage-by-stage study of self-refinement pipelines across Qwen three and Gemma three: refiner size matters most, critic size barely registers — though even a small critic beats none at all.
+
+[HOST_A] On infrastructure, a new Rust language server called Rust Glancer is built around a hundred times less memory use, aiming to keep editing responsive on large codebases. And Encore wrote up rebuilding their Firecracker-based Linux microVM stack to run on Apple Silicon.
+
+[HOST_B] Purely as a read, though, my favorite is on Hacker News: someone traced a hijacked delegation in E one six four dot arpa — the internet's phone-number mapping tree — and discovered they'd been accidentally logging hundreds of thousands of calls placed to US military bases. DNS archaeology with a national-security aftertaste.
+
+[HOST_A] That's Friday. The written report has all of it with links — Kagi's changelog, the border case, the papers with their tags, and the rest of the day. Find it at AI Reports, and we'll be back with the next briefing.
