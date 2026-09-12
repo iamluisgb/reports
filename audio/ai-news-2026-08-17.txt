@@ -1,13 +1,29 @@
-[FENRIR] AI News Daily, Monday the seventeenth of August, twenty twenty-six. Three stories led the day, and one theme runs through all of them: trust.
+[HOST_A] AI News Daily, Monday, August the seventeenth, twenty twenty-six. The story everybody led with today isn't a model launch — it's a confession about how we read. Or rather, how we've quietly stopped.
 
-[SARAH] The top story is A I D R, which stands for AI didn't read. When AI summaries stand in for reading, the source document goes unread by human and model alike. If nobody reads the original, who is actually checking?
+[HOST_B] Right. The piece making the rounds is titled AI;DR — as in, AI didn't read. The argument is that when a summary stands in for the source, the original document ends up unread by human and machine alike. A model condenses text nobody has read, and you read the condensation of that. It's a chain of paraphrase with no ground truth at either end.
 
-[FENRIR] That question has a sharper edge. Responsible Statecraft reports an Israeli influence operation built a fake think tank, apparently designed to be scraped and cited by AI chatbots as an authoritative source.
+[HOST_A] And the workflow it describes is quietly damning. Someone ships a long spec, an assistant boils it down, a busy manager skims the boiled-down version, and decisions get made on top. Everyone did their job, and no one ever touched the source. The Hacker News thread ran with exactly that: summarization is becoming the default interface to information, not a convenience on the side.
 
-[SARAH] In AI news, Wiz reconstructed how an AI-generated Copilot Autofix change created the opening attackers used to compromise Snowflake's Jira. And on a lighter note, OpenRouter halved the price of G P T five point six Sol.
+[HOST_B] I'd push back a little on the fatalism, though. My read is that the failure isn't summarizing — it's skipping the option to verify. A summary with a good citation trail is a map. A summary that replaces the territory is a trap. And that's precisely why the second story today lands so hard, because some actors have found the trapdoor and are walking straight through it.
 
-[FENRIR] On Hacker News, perfect timing. Cursor launched Origin, its own code-hosting service, the same day GitHub went down. When the whole AI dev stack routes through one forge, its uptime is everyone's uptime.
+[HOST_A] Responsible Statecraft reports that an Israeli influence operation built a fake think tank, apparently designed to be scraped and cited by AI chatbots as an authoritative source. Not aimed at readers. Aimed at the machines that read on our behalf.
 
-[SARAH] For anyone closer to the data, the DuckDB team published a preview of version two point zero of their in-process analytics engine. And five papers landed on ArXiv, covering safer RAG, looped models for tool calling, and Q-learning with world models.
+[HOST_B] Which is a genuinely new genre of lobbying. A classic influence campaign had to convince journalists, or at least ranking algorithms. This one only has to sound authoritative enough to end up in a training corpus or a retrieval index. And if AI;DR is how people now consume information, then whoever shapes the corpus shapes the conclusion — the chatbot doesn't check its sources, it quotes them.
 
-[FENRIR] That's the day. The written report has every link and the papers in detail. You can read it, or hand it to a model. Preferably read it. See you tomorrow.
+[HOST_A] The same trust problem shows up in the security news. Wiz reconstructed how an AI-generated GitHub Copilot Autofix change created the opening attackers used to compromise Snowflake's Jira instance. So a tool that exists to write fixes wrote the fix that opened the door.
+
+[HOST_B] That one deserves a slow read, because the irony is thick — automated remediation expanding the attack surface it was meant to shrink. But there's a pattern underneath: every new writer in your pipeline, human or model, is a new way to make a mistake that is now executable. And it rhymes with one of today's ArXiv papers, which argues that only agents capable of System 2 reasoning should be allowed to touch untrusted documents, because reasoning-capable models are substantially more robust to knowledge poisoning in retrieval-augmented generation.
+
+[HOST_A] The papers were strong today. There's also Q W M, Q-learning with world models, which runs test-time search over imagined trajectories while training only on real transitions — that avoids compounding model bias and beats prior state of the art on robotics benchmarks like Robomimic and LIBERO. And ScenarioDiff turns noisy documents into scenario descriptions that condition a diffusion transformer for event-driven forecasting.
+
+[HOST_B] On the release side, OpenRouter is now listing G P T five point six Sol at half its previous price — a steep cut for a frontier-tier model, and a signal about where aggregator margins and competition are heading. Meanwhile Qwen's new twenty-seven-billion-parameter open model posted a score of fifty-two on Artificial Analysis's index, keeping real pressure on the middle of the market where most deployments actually live.
+
+[HOST_A] Infra had two good reads: turbopuffer explaining the control-plane architecture that lets it ship a database release into production every single day, and a delightful piece on how Bluesky draws its logo onto screenshots — one of those platform details almost nobody gets right.
+
+[HOST_B] But the news that rewired the day was on Hacker News. GitHub went down — and Cursor picked that same morning to launch Origin, its own code-hosting service. An editor vendor turning into a platform competitor, timed against the outage of the incumbent forge.
+
+[HOST_A] Coincidence or not, it sharpened the debate about concentration. When the whole AI development stack routes through one forge, its uptime is everyone's uptime.
+
+[HOST_B] My closing thought: three separate stories today — a fake think tank, a poisoned autofix, a paper about untrusted documents — are really one story. Adversaries now target what models read and what they write. Trust the pipeline, not the paragraph.
+
+[HOST_A] That's the briefing. Every story here is in the full written report with its sources — find it on the site, and we'll be back tomorrow.
