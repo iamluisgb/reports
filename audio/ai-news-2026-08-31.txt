@@ -1,17 +1,27 @@
-[FENRIR] AI News Daily, Monday the thirty-first of August, twenty twenty-six. Chrome says goodbye to an old friend, Apple can't build fast enough, and someone breaks Claude Code's Auto Mode.
+[HOST_A] AI News Daily, Monday the thirty-first of August, twenty twenty-six. The story everyone led with wasn't a model launch. It was Chrome finally pulling the plug: Google has removed Manifest V two extensions from the Chrome Web Store, and that list includes uBlock Origin.
 
-[SARAH] The top story: Google has removed Manifest V2 extensions from the Chrome Web Store. That retires uBlock Origin and other legacy add-ons, after a years-long policy fight. Ad blocking in Chrome now depends on what the platform allows. For a lot of users, the practical answer is a different browser.
+[HOST_B] And I'd push back on anyone calling this routine housekeeping. Google warned for years and there was a migration path, but the effect is blunt: the most famous ad blocker on the platform is gone, and whatever ad blocking survives in Chrome now depends on what the platform allows. For a lot of people the practical answer isn't a new extension. It's a different browser.
 
-[FENRIR] And on the hardware side, Apple got a surprise.
+[HOST_A] That's the honest read, and the written report frames it exactly that way: a years-long policy fight turned into a migration decision. Meanwhile Apple has the opposite problem, which is too much demand. MacRumors reports the company was caught off guard by AI-driven interest in the Mac Mini and the Mac Studio.
 
-[SARAH] MacRumors reports demand for the Mac Mini and Mac Studio, driven by AI, caught Apple off guard. Those are the same machines developers buy to run models locally. The demand showed up without a supply plan behind it.
+[HOST_B] That one is my favorite signal of the day. Think about who's buying: those are the machines developers pick to run models locally. So this isn't just a sales spike, it's a demand signal for local inference, and it arrived without a supply plan behind it.
 
-[FENRIR] In AI, let's start with security.
+[HOST_A] In AI news, the sharpest item is a security writeup that takes apart Claude Code Opus five's Auto Mode, the automation layer that lets the agent act without asking first. What the researcher found is worth your time.
 
-[SARAH] A security writeup takes apart Claude Code Opus 5's Auto Mode, showing how the automation can be pushed further than it was designed to go. A reminder that agent autonomy is an attack surface. Also today, Simon Willison explains what ChatGPT Work actually is.
+[HOST_B] And the lesson I'd underline there: if you ship an agent with autonomy, that autonomy is an attack surface. Security researchers will probe exactly where the guardrails end, and the very convenience that makes Auto Mode attractive is what makes it a target. Convenient defaults are not a security model.
 
-[FENRIR] And how should an agent remember? Cal Paterson has an idea, plus five papers on arXiv.
+[HOST_A] Simon Willison also has a piece up on ChatGPT Work, explaining what it is and how it behaves in practice. And Cal Paterson has a proposal on agent memory: treat it as a file format rather than an opaque service. I'm only half sold. Most users will never open those files.
 
-[SARAH] Paterson argues agent memory should be a file format you can open and inspect, not an opaque service. As for the papers: one squeezes large language models onto custom chips, two rethink how agents plan and how they're tested, one helps small models retrieve better, and one makes jailbreak scoring more honest.
+[HOST_B] They won't, but that's not the point. If your agent's memory is a file, someone can open it. You can back it up, diff it, audit it, or carry it to another tool. If it's a hosted blob behind an API, you're renting your agent's past. That's vendor lock-in, but for cognition.
 
-[FENRIR] That's the day. The full written report has every link and every detail. See you tomorrow.
+[HOST_A] Fair. To the papers, and today's batch runs on efficiency and honesty. The quantization one is the standout: a hierarchical block scheme that reaches the accuracy of four-bit weights with sixteen-bit activations while running on just five-bit activations, on a twenty-eight nanometer chip, with up to four point six times better area and energy efficiency than current weight-only methods.
+
+[HOST_B] The safety paper is the sleeper. It scores jailbreak attempts by decomposing responses into ordered steps and checking whether each one is actually valid. That cuts false positives by nearly fifteen percentage points, and it reclassifies twenty-two to fifty-one percent of previously counted jailbreak successes as invalid. Translation: we may have been grading the test wrong.
+
+[HOST_A] Also in the batch: agents that plan from a maintained belief about the world instead of only simulating candidate actions, a benchmark that throws ninety-two non-convergent power-flow cases at single-agent and multi-agent systems across two grids, and typed knowledge-graph retrieval that lifts an eight-billion-parameter Llama three model by about fourteen point seven percent on scientific questions.
+
+[HOST_B] On the infra side, my favorite read: Jason Tucker turned his home security cameras into an automatic bird identification system with BirdNET-Go. Same hardware, completely different job. And for something more ambitious, Darling is a translation layer that runs macOS software on Linux.
+
+[HOST_A] From Hacker News: OpenShot four point zero ships with a reworked record, edit and color pipeline for the open-source editor. And Ars Technica covers a twelve-terabyte Steam leak spilling more than a decade of lost PC gaming history, builds and depots that were gone until now.
+
+[HOST_B] A gaming archive surfacing by accident while an ad blocker dies on purpose. That's the day in one line. The full written report has every story and every link. It's the one worth keeping.
