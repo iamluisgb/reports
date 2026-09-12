@@ -1,17 +1,17 @@
-[FENRIR] AI News Daily, Tuesday the eighteenth of August, twenty twenty-six. Three stories led the day, and one of them is about a dead airline.
+[HOST_A] AI News Daily, Tuesday the eighteenth of August, twenty twenty-six. The story that opens today's report isn't a model launch — it's an auction. Google bought the data of Spirit, the failed US airline, out of bankruptcy. Records from a dead airline, purchased because AI.
 
-[SARAH] Google bought the data of Spirit, the failed U S airline, at auction. The reason? AI. Data once written off as worthless now has a buyer.
+[HOST_B] And what fascinates me is the pricing, not the buyer. For years, bankruptcy courts couldn't give that stuff away — customer lists, booking histories, route data were treated as scrap. The Register framed it exactly right: Google bought a crashed airline's data at auction, because AI. The moment training data becomes a strategic input, assets nobody wanted suddenly get a bid. That's a brand-new floor under the word worthless.
 
-[FENRIR] Also up top: Seth Godin on the cut Amazon takes from the businesses that sell on its platform. And an essay defending thick writing, framed as an apology to the author's English teachers.
+[HOST_A] I'd push back a little — airline booking data is old and messy, and it's not obviously gold for training anything. But that proves your point rather than breaking it. The market is pricing possibility, not quality. Data is turning into the new strategic reserve. And it rhymes with the other headline: Seth Godin on the Amazon tax, the cut Amazon takes from every business that sells on its platform.
 
-[SARAH] In agents: one developer got Claude to write a working mac O S driver for an HP printer that never shipped with Mac support. And there's fx, a tiny open-source coding agent that runs natively on your machine.
+[HOST_B] Those two connect more than they look. Google is bidding for raw material; Amazon levies rent from sellers with nowhere else to go. Whether you're a merchant or a bankrupt airline, the real question is who owns the exhaust your operation produces. From there, the AI section has my favorite experiment of the day — a developer got Claude to write a working macOS driver for an obscure HP printer that only ever shipped with Windows support.
 
-[FENRIR] Five papers landed today, and one is already running at serious scale.
+[HOST_A] That's the unglamorous version of AI that actually changes lives. Nobody demos printer drivers, but reverse-engineering a Windows-only driver into something that compiles for the Mac is weeks of thankless work compressed into an afternoon. Right next to it sits fx, a tiny open-source coding agent that runs natively on your own machine. So tooling is splitting two ways at once: cloud giants, and small local agents you fully control.
 
-[SARAH] Netflix walks through the full lifecycle of the LLM judges that grade its recommendation explanations. Training, deployment, drift monitoring. All validated in a five-week A B test across tens of millions of members. The rest of the pile covers malaria drug discovery, nanophotonics, tokenizers, and computer-use agents.
+[HOST_B] Which tees up the papers, because Netflix published the most production-grade thing in the report. The full lifecycle of their LLM judges — the models that grade recommendation explanations — from birth through training, deployment, and drift monitoring, validated in a five-week A/B test across tens of millions of members. That's not a benchmark toy; that's infrastructure with an on-call rotation.
 
-[FENRIR] On the infra side, Linux seven point three got smarter about GPU memory overcommit. Running out of V R A M is far less punishing now.
+[HOST_A] The malaria paper is the counterintuitive one. Fine-tuned open-source models beat the frontier APIs: TxGemma, nine billion parameters, scored roughly zero point seven three ROC-AUC on out-of-distribution malaria screening — ahead of Gemini two point five and o three. Domain fit beat raw scale. And ComponentBench stings too: the same model swings more than thirty percent in success rate depending only on its observation and action space, and the fastest setup still runs nearly four times slower than a human at a computer.
 
-[SARAH] And from Hacker News: Mojo, the programming language from Modular, is now open source. Plus Hister, a self-hosted search index you fully control.
+[HOST_B] Which is why the infra story lands. Linux seven point three gets much smarter about GPU memory overcommit, so the moment a box runs out of VRAM stops being catastrophic. Every workstation is quietly becoming a GPU host, and the kernel is catching up. Meanwhile on Hacker News, Mojo — Modular's performance language built for AI workloads — went fully open source.
 
-[FENRIR] That's Tuesday. Every link is in the written report — worth the read.
+[HOST_A] So the through-line today: data is the new reserve, and open weights are production-grade, not a compromise. The full report has every link, every paper, all the numbers. Read it at the site — and we'll see you tomorrow.
