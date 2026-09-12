@@ -1,27 +1,72 @@
-[FENRIR] AI News Daily, Friday the twenty-eighth of August, twenty twenty-six. Three stories
-led the day, and one question runs through all of them: who gets to decide who can use AI.
+[HOST_A] AI News Daily, Friday the twenty-eighth of August, twenty twenty-six. The story I'd
+lead with isn't a model launch — it's a courtroom. A federal judge has ruled that the
+administration's blacklisting of Anthropic was illegal, and the New York Times has the ruling.
 
-[SARAH] First, the front-end. An essay arguing that every graphical interface should be fully
-keyboard-driven topped Hacker News. Menus, dialogs, even copy-paste. All without touching the
-mouse. And H T M X shipped a new major release. Version four point oh, for the hypermedia fans.
+[HOST_B] And don't file it alone, because the same question shows up twice more today. The A I
+Collective — the network behind Inventati — published its own notice about United States
+sanctions against it, and that thread pulled one of the biggest comment counts of the day on
+Hacker News. Sanctions, blacklisting — both are answers to the same question: who can be cut
+off from computing, and by whom.
 
-[FENRIR] Then the AI news. And it is less about models than about power.
+[HOST_A] Which brings us to the third leg: Z.ai has published G L M five point three as open
+weights on Hugging Face. On a day about access being revoked, a flagship you can just download
+starts to look like the cheapest hedge available.
 
-[SARAH] G L M five point three is now open-weight. The Chinese lab behind it published the full
-model on Hugging Face, free to download. The same day, a federal judge ruled that the Trump
-administration's blacklisting of Anthropic was illegal. And the A I Collective announced it is
-under U.S. sanctions. Three stories, one theme. Access can be revoked. And open weights are the
-cheapest hedge against that.
+[HOST_B] I'd frame it differently, though. A hedge sounds defensive, and I don't think that's
+the read. Publishing the weights is a market move — it buys distribution, developer goodwill,
+and a seat in every stack that doesn't want a single point of failure. The timing being
+institutional chaos is almost a bonus.
 
-[FENRIR] Five papers on arXiv today, and three of them hunt the same thing: where efficiency
-tricks quietly break.
+[HOST_A] Fair — charity versus strategy. Either way, the effect on the board is the same.
+Lighter fare now: Htmx shipped version four point oh, a new major release of the hypermedia
+front-end library, announced on its own site.
 
-[SARAH] A rigor-matched audit of layer skipping for inference. A post-mortem on ternary
-quantization. And a reward scheme for more decisive reasoning. The shared finding: headline
-speedups come with capability that degrades unevenly, not uniformly. Which is exactly what a
-benchmark average hides.
+[HOST_B] And next to it, the best-argued essay of the day: graphical interfaces should be fully
+keyboard-driven. Menus, dialogs, even copy-paste — everything reachable without the mouse, not
+just the text boxes. The Hacker News crowd read it as a usability piece, but I think it's an
+automation piece. A control that's keyboard-reachable is a control a script or an agent can
+drive.
 
-[FENRIR] Quick hits to finish. The E P A issued guidance letting data center generators bypass
-parts of pollution permitting. And if you care about performance, one benchmark piece says skip
-musl. That's the briefing. The full written report has every link, and all five papers in
-detail. See you tomorrow.
+[HOST_A] I'll push back on the strong version of that — half the mouse-bound interfaces out
+there aren't technically impossible to script, they're just missing accelerators nobody cared to
+write. The essay is really asking designers to treat the keyboard as a first-class citizen, not
+an afterthought.
+
+[HOST_B] Agreed on the diagnosis, then. Now the papers, because three of today's five hunt the
+same prey: where efficiency tricks quietly break. My pick is a rigor-matched audit of
+periodic-step layer skipping — three seeds, two small Qwen models, math and summarization
+benchmarks. Once the authors separate online-search overhead from real inference cost, S W I F
+T turns out five to twenty-one percent faster and wins accuracy in three of four settings,
+which reverses the naive wall-clock ranking. The trained-router supplements only manage
+speedups of roughly one point one to one point three three times, at much lower accuracy.
+
+[HOST_A] The ternary paper tells the same story from the quantization side. They converted an
+eight-hundred-million-parameter Qwen three point five using about seventy million tokens of
+quantization-aware training, then probed what actually survived. A linear probe recovered
+around forty-four percent of M M L U answers from the teacher's representations, but only about
+twenty-six percent from the ternary model. And in e-commerce, M E R I T attacks exposure bias
+in generative product matching — at least eleven point nine percent better global recall over
+a category space of more than two hundred and fifty thousand, plus a small conversion lift in
+production A B tests.
+
+[HOST_B] The shared finding is the one that should make you suspicious of every efficiency
+headline: capability degrades unevenly, not uniformly, and a benchmark average is exactly
+where that damage goes to hide.
+
+[HOST_A] Infra round, briefly. The E P A issued permitting guidance to speed up power for data
+centers, letting generators bypass parts of the pollution-permitting process.
+
+[HOST_B] And in software, a benchmark-driven piece argues you shouldn't use musl if you care
+about performance — that the convenience of static linking costs more than it looks. Different
+layer, same instinct: measure the trade you're actually making instead of the one you assumed.
+
+[HOST_A] One from Hacker News to close the loop: "It works better in the app." An essay on the
+pattern of sites that quietly degrade their own web pages to push visitors into installing an
+app.
+
+[HOST_B] Which rhymes with where we started. The keyboard essay, the app-pushing essay, even
+the sanctions stories — all of them are about someone deciding which interface, or which model,
+you're allowed to reach, and quietly making the alternative worse on purpose.
+
+[HOST_A] That's the briefing. The full written report is right below the player — every story,
+every source, and all five papers in detail.
