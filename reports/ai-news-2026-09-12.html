@@ -117,46 +117,46 @@
 
       <div class="news-item">
         <div class="num">01</div>
-        <div class="title">MindTopo: Can Foundation Models Reason in Topological Space?</div>
-        <div class="desc">Submissions from 10 Sep — ArXiv does not publish on weekends. MindTopo benchmarks topological intuition across continuity, separation, order, enclosure and knots at reasoning and closed-loop planning levels, with 11,030 procedurally generated instances; across 14 MLLMs, reasoning beats planning and the best model stays far below human performance. <strong>[benchmark, spatial-reasoning, eval]</strong></div>
+        <div class="title">COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization</div>
+        <div class="desc">COBRA-Skills treats agent skill optimization as budgeted sequential search: a contextual bandit decides which candidate skills are worth an execution run, and evidence-grounded evolution keeps refining the skill pool from the feedback. Across six agent benchmarks and three models it tops the comparison while cutting optimization cost 55–58% versus SkillOpt, using only 50 examples per benchmark. <strong>[agents, skills, contextual-bandit]</strong></div>
         <div class="sources">
-          <a href="http://arxiv.org/abs/2609.11900v1">arXiv</a>
+          <a href="http://arxiv.org/abs/2609.11682v1">arXiv</a>
         </div>
       </div>
 
       <div class="news-item">
         <div class="num">02</div>
-        <div class="title">Domain-Specific Hallucination Detection in Large Language Models</div>
-        <div class="desc">A response-level detection pipeline combining a fine-tuned DeBERTa-v3 classifier, MC Dropout uncertainty and temperature-scaled calibration reaches F1=0.915 / AUROC=0.977 on HaluEval, while DPO on a Qwen2.5-0.5B generator cuts its hallucination rate from 85.5% to 37.7%; transfer to the biomedical SciFact benchmark is weak (F1=0.52). <strong>[hallucination, calibration, eval]</strong></div>
+        <div class="title">Ecdysis: Efficient and Effective Training of Runtime Harnesses for LLM Agents</div>
+        <div class="desc">Ecdysis trains runtime harnesses for LLM agents instead of evolving them by brute-force search: it aggregates failures across task instances to separate model-specific misses from systematic harness defects, then repairs only the harness. It reports up to 1.84x faster harness training and +18.56% reasoning accuracy over prior harness-evolution methods. <strong>[agents, harness, failure-analysis]</strong></div>
         <div class="sources">
-          <a href="http://arxiv.org/abs/2609.11878v1">arXiv</a>
+          <a href="http://arxiv.org/abs/2609.11677v1">arXiv</a>
         </div>
       </div>
 
       <div class="news-item">
         <div class="num">03</div>
-        <div class="title">RetroThinker: Enabling Retrospective Thinking in Speech LLMs</div>
-        <div class="desc">RetroThinker post-trains the streaming Moshi model to self-verify and forward-correct its chain-of-thought while the user is still speaking, pairing SFT on retrospective data with length-based DPO; on GSM8K it reports an 11% absolute accuracy gain at comparable latency. <strong>[speech, reasoning, dpo]</strong></div>
+        <div class="title">Beyond Confidence: Stability-Aware Test-Time Adaptation for LLM Reasoning</div>
+        <div class="desc">TASCO adds stability to confidence-guided test-time adaptation: high confidence predicts correctness only when it survives local perturbations, so a lightweight task-level prefix is optimized under random or sharpness-aware perturbations while the LLM stays frozen, improving reasoning accuracy and token efficiency. <strong>[reasoning, test-time-adaptation, efficiency]</strong></div>
         <div class="sources">
-          <a href="http://arxiv.org/abs/2609.11864v1">arXiv</a>
+          <a href="http://arxiv.org/abs/2609.11393v1">arXiv</a>
         </div>
       </div>
 
       <div class="news-item">
         <div class="num">04</div>
-        <div class="title">RAG-Safety-Bench: Reliable Evaluation of Retrieval-Augmented LLM Safety</div>
-        <div class="desc">A benchmark that isolates retrieval's effect on safety across four conditions — no RAG, an oracle document, related-but-answerless documents, and random safe documents — and across five open-source LLMs finds an inverse relationship between benign and unsafe capability, with baseline guardrails giving no downstream safety guarantee. <strong>[rag, safety, benchmark]</strong></div>
+        <div class="title">X-AuT: Progressive Audio-Encoder Compression for Speech LLMs with Cross-Scale Distillation</div>
+        <div class="desc">X-AuT compresses speech-LLM audio encoders progressively: short behavioral probes pick which layer combinations survive, and cross-scale distillation plus LoRA finetuning restore quality with the backbone frozen. Pruning Qwen3-ASR-0.6B from 18 to 14 audio-encoder layers keeps error near baseline while dropping 20.7% of audio-tower parameters. <strong>[speech, compression, distillation]</strong></div>
         <div class="sources">
-          <a href="http://arxiv.org/abs/2609.11758v1">arXiv</a>
+          <a href="http://arxiv.org/abs/2609.11412v1">arXiv</a>
         </div>
       </div>
 
       <div class="news-item">
         <div class="num">05</div>
-        <div class="title">Nuha-Speech: Building General-Purpose Arabic Speech-LLMs</div>
-        <div class="desc">Nuha-Speech builds a 1.5M-sample Arabic speech question-answering corpus, instruction-tunes Qwen-Omni variants at several scales on it, and adds a task-and-metric evaluation framework for Arabic speech LLMs. <strong>[speech, multilingual, fine-tuning]</strong></div>
+        <div class="title">Biology-in-the-loop: Amortized Adaptive Hit Discovery in CRISPR Screens</div>
+        <div class="desc">AssayBench-Loop packages 1,389 CRISPR screens as a benchmark for adaptive hit discovery, and AssayLoop learns an amortized acquisition policy across historical experiments, handing off to LLM-derived biological priors. On held-out screens it recovers 27.7% of hits after assaying ~5% of the library — a 5.67x enrichment over random selection. <strong>[benchmark, bio-ml, experimental-design]</strong></div>
         <div class="sources">
-          <a href="http://arxiv.org/abs/2609.11892v1">arXiv</a>
+          <a href="http://arxiv.org/abs/2609.11877v1">arXiv</a>
         </div>
       </div>
 
@@ -221,7 +221,7 @@
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span>The paper slate is all measurement: topological reasoning benchmarks, hallucination detection, RAG safety and self-distillation report where current methods fall short, and several of them ship the eval harness alongside the method — the useful output when capabilities plateau.</span>
+        <span>The paper slate leans applied: agent skill libraries, runtime harnesses, test-time adaptation and audio-encoder compression all try to squeeze more out of already-trained models, and the CRISPR-screen benchmark ships its 1,389-experiment corpus alongside the method — eval harnesses are the useful output when capabilities plateau.</span>
       </div>
 
     </div>
