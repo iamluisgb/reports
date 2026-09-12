@@ -1,17 +1,25 @@
-[FENRIR] AI News Daily, Friday the fourth of September, twenty twenty-six. Three stories led the day, and none of them was a model launch.
+[HOST_A] AI News Daily — Friday, the fourth of September, twenty twenty-six. The story that pulled the biggest thread of the day isn't a model launch. Someone published a public wiki documenting what looks like a message board used by OpenAI's own agents. Not a leaked chat log — a forum. A place where agents apparently post to each other.
 
-[SARAH] A public wiki surfaced what looks like a message board used by OpenAI agents. Agents, with their own forum. It drew the largest thread of the day on Hacker News.
+[HOST_B] And that distinction matters. Weights and benchmarks leak all the time; this is a leak of behavior. You can go read what autonomous agents do when they think nobody is watching. My take: agent activity is quietly becoming observable infrastructure, and someone will build the monitoring stack for it, the way we once built logging for servers.
 
-[FENRIR] From curious to concerning.
+[HOST_A] Second story, and this one is urgent rather than curious. A sandbox escape with remote code execution, tracked as CVE twenty twenty-six, eighty-five oh four six, is being actively exploited in the wild — and it affects every version of Chromium. Every Chromium-based browser you and I use daily sits on that codebase, so update today.
 
-[SARAH] A sandbox escape with remote code execution is being actively exploited in the wild, across every Chromium version. Every Chromium-based browser is affected, so patch today.
+[HOST_B] I would rank this above the agent board. Agent gossip is fun; patching is boring. And here is the combination that should make security teams sweat: we are shipping autonomous agents that browse the web inside Chromium sandboxes, and that exact sandbox has a known, exploited escape. Together, the two stories are worse than either one alone.
 
-[FENRIR] On the research side, Anthropic published work on machine-assisted formalization of Fermat's Last Theorem. The interesting part is what it implies for proof-oriented AI systems.
+[HOST_A] From security to pure research. Anthropic published a piece on machine-assisted formalization of Fermat's Last Theorem — taking one of the most famous proofs in mathematics and making it machine-checkable.
 
-[SARAH] On the AI front, a study compared Google's AI Mode with traditional search, and found the same products listed about twenty-one point six percent more expensive in AI Mode.
+[HOST_B] I will push back on the framing here. Formalization is not discovery; the theorem was proved by hand decades ago. What is new is the translation into a form a proof assistant can verify line by line. That sounds like bookkeeping until you remember what it buys: every claim becomes auditable. If proof-oriented systems mature, the answer is not "trust me" — it is a certificate any machine can check.
 
-[FENRIR] Five papers today, and they share a theme: evaluation and inference cost. Multi-agent workflows compiled into graphs at inference time. An enterprise benchmark where models score just thirty-two percent. Parallel decoding inside a single prompt, for up to seven times throughput. And an audit finding frontier models reciting published molecular values verbatim.
+[HOST_A] In the AI section, a study compared Google's AI Mode against traditional search for shopping, and found the same products listed twenty-one point six percent more expensive in AI Mode. Same items, systematically pricier results. That is not rounding error.
 
-[SARAH] One more before we go. Gallup records a new high: eighty-nine percent of Americans now say government corruption is widespread. That's the highest share yet.
+[HOST_B] Small enough to be believable, big enough to matter. A ranking correlation does not prove intent — it could be merchant feeds or ad economics. But functionally, the outcome is what counts. People treat AI answers as neutral curation, and if that curation drifts toward the expensive end of the shelf, that is a consumer problem whether or not anybody designed it that way.
 
-[FENRIR] That's the briefing. The full written report, with every link and every detail, is on the site.
+[HOST_A] Five papers landed today, and two stuck with me. DI-Bench generates enterprise data-intelligence tasks — seven hundred and thirty-one of them — and when retrieved business rules change how the numbers should be computed, the models score just thirty-two percent. And an audit called Molecular Déjà Vu checked twenty-two frontier models across twelve molecular benchmarks, and found five datasets where they reproduce published values verbatim, digit for digit. Higher reasoning levels flagged that retrieval eighty-nine percent more often.
+
+[HOST_B] Read those next to the efficiency work and the theme writes itself. One paper answers several questions that share a single context inside one prompt, for up to seven times the effective throughput. Another distills a retrieval-augmented reasoner into a fifteen-and-a-half-million-parameter student that matches the teacher's recommendation scores and runs roughly five thousand times faster than calling the big model. None of this is about size. It is about whether outputs are genuinely computed, honestly produced, and cheap enough to ship.
+
+[HOST_A] A quick sweep of the rest. A benchmark called EEBench asked whether AI can design working circuit boards, or just plausible-looking schematics. The Rust implementation of the React compiler now ships natively inside Vite. And Quad9, the nonprofit resolver offering free, security- and privacy-filtered DNS, had its moment on the front page.
+
+[HOST_B] One more from Hacker News worth sitting with: hackers had a live feed of every identity document an ID-verification company scanned — for over a year. Hold that next to the agent story. We are wiring machine-mediated identity checks into everything, and the pipe itself was being watched the whole time. Alongside it, Gallup hit a record: eighty-nine percent of Americans say government corruption is widespread, the highest share yet. Not an AI story, but it is the mood music every deployment lands in.
+
+[HOST_A] That is the briefing. The written report on the site has every item with its links and full context — the agent message board, the Chromium advisory, the Fermat post, the papers and the rest. Read it there, and we will see you for the next day's news.
