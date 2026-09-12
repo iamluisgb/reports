@@ -71,6 +71,15 @@ fi
 [[ -z "$DAYS" ]] && { echo "nothing missing"; exit 0; }
 
 COUNT=$(wc -l <<< "$DAYS" | tr -d ' ')
+
+# Dedup review must be serial. Each reviewer computes "already used" by scanning
+# reports/, so two running at once cannot see each other's new picks and will
+# happily choose the same replacement papers — the very collision being fixed.
+if [[ "$LABEL" == "dedup" && "$JOBS" != "1" ]]; then
+  echo "dedup review is serial by construction — forcing JOBS=1"
+  JOBS=1
+fi
+
 mkdir -p "$STATE"
 echo "$COUNT day(s) via orca, $JOBS at a time, model $MODEL, running $SCRIPT"
 
