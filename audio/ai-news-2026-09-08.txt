@@ -1,28 +1,21 @@
-[FENRIR] AI News Daily, Tuesday the eighth of September, twenty twenty-six.
-Three stories led the day, and the top two weren't about AI at all.
+[HOST_A] AI News Daily — Tuesday, September the eighth, twenty twenty-six. The story everyone led with isn't a model launch, and it isn't funding. It's mathematics. Hacker News opened with two posts about the same thing: the Navier Stokes Millennium Prize problem — one from the mathematician Tristan Buckmaster, and one written up by OpenAI.
 
-[SARAH] Hacker News was all math. A PDF statement by Tristan Buckmaster on the
-Navier Stokes problem was the day's most-voted post, at over two thousand
-points. Right behind it, OpenAI's own write-up on the same Millennium Prize
-problem. That thread passed eleven hundred comments.
+[HOST_B] And the Buckmaster statement was the day's most-voted submission — over two thousand points — while OpenAI's write-up pulled a thread past eleven hundred comments. That tells you something. A century-old set of partial differential equations outperformed every product announcement of the week. I'd call that the healthiest signal on the whole page: the community still gets genuinely excited about hard problems, not just demos.
 
-[FENRIR] Underneath, the money and the mood pointed in opposite directions.
+[HOST_A] Fair, though I'd push back a little — a lab publishing a math write-up is also, conveniently, excellent positioning. It says we hire people who can touch Millennium Prize problems. Both things can be true: it's substantive, and it's PR. But the comments engaged with the math itself, so I'll grant it.
 
-[SARAH] Mistral announced a three-billion-euro raise, positioning its
-open-weight models as sovereign AI that can still reach the frontier. And
-LibreOffice broke its download records after publicly declaring the suite
-ships no AI features. Capital and user sentiment, rewarding opposite bets on
-the same day.
+[HOST_B] Underneath the math, the money. Mistral announced a three-billion-euro raise, and the framing is sovereign open-weight AI that can reach the frontier. Three billion is a statement that Europe intends to keep a lab of its own at the table, rather than settling for running everyone else's models.
 
-[FENRIR] In agent land, Meta opened a door, and one repo pushed back on
-chatty coding agents.
+[HOST_A] And here's the contradiction that makes the day interesting: within the same twenty-four hours, LibreOffice publicly declared that its suite ships no AI features at all — and broke its download records. Capital is betting three billion euros on more AI; users are celebrating a tool with none. Both happened the same day, and I don't think either crowd is wrong.
 
-[SARAH] Meta published a landing page for Muse, the personal AI agent it is
-pushing to users. And an open repo called I have ADHD does exactly one job:
-stop coding agents from burying the answer inside walls of text.
+[HOST_B] I'd actually argue they're not betting on opposite things at all. Mistral is selling capability to enterprises and governments; LibreOffice is selling calm and trust to people who just want to write a letter without a copilot. Different products, different fears — that's why both wins can coexist.
 
-[FENRIR] The papers, five of them, were mostly about trust boundaries: prompt
-injection hidden in images, an audit arguing MMLU measures recall more than
-reasoning, and agents that must carry constraints between the open web and a
-database. That's the day. Every link is in the written report — find it on
-the site.
+[HOST_A] In agent news, Meta opened a landing page for Muse, the personal AI agent it's pushing to consumers. And the small-but-fun one: an open repo called I Have A D H D, a skill that stops coding agents from burying the answer inside long walls of text. It resonated because everyone who has read an agent's final summary has lived that exact pain.
+
+[HOST_B] The papers were mostly about trust boundaries. The one I'd single out is M M P I Bench, an evaluation of multimodal prompt injection. It takes a fixed attack set and hides it in six visual carriers — text for optical recognition, overlays, camera metadata, QR codes, fake interfaces, hybrids — then tracks how far the injected instruction travels: from perception, through planning, all the way to an actual tool call. The scary part isn't that a model sees the injection; it's how deep into the tool chain it survives.
+
+[HOST_A] The other trust paper worth naming is a psychometric audit of M M L U. Item response theory over more than fourteen thousand test items and a thousand open-weight models, and the finding is that the aggregate score mostly tracks factual retrieval — recall — rather than reasoning. Which should make everyone quoting leaderboard points a little nervous. There was also a neat self-play result: an agent that writes and evaluates its own optimizers, then distills that practice into a harness of just under two hundred words, cutting Gemini Flash regret by forty-eight percent.
+
+[HOST_B] On infrastructure, two numbers worth holding together. Among European companies that use a C D N, nearly nine in ten use Cloudflare — that's a single point of concentration for a continent's traffic. And an essay argues we have roughly a year to fix security across the stack. The day's best security story backed that up: someone factored the R S A keys of a certificate authority from the nineteen-nineties. Old keys don't rot gracefully — they just wait.
+
+[HOST_A] A quick nod too to Jellyfin shipping version twelve of its open-source media server — the quiet, useful kind of release. That's the briefing for today. Every number and every story we mentioned is in the written report, so read it for the details and the links. See you tomorrow.
