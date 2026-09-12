@@ -80,6 +80,13 @@ if [[ "$LABEL" == "dedup" && "$JOBS" != "1" ]]; then
   JOBS=1
 fi
 
+# Kokoro allows 15 requests/min and one briefing already spends ~6-9 of them
+# inside half a minute. A second agent in parallel would spend the whole budget.
+if [[ "$LABEL" == "audio" && "$JOBS" != "1" ]]; then
+  echo "Kokoro is rate-limited to 15 RPM — forcing JOBS=1"
+  JOBS=1
+fi
+
 mkdir -p "$STATE"
 echo "$COUNT day(s) via orca, $JOBS at a time, model $MODEL, running $SCRIPT"
 
@@ -121,6 +128,12 @@ print('\n'.join(t.get('tail', [])))" > "$STATE/$day.log" 2>/dev/null
 
   if [[ -f "$wt/reports/ai-news-$day.html" ]]; then
     cp "$wt/reports/ai-news-$day.html" "$REPO_DIR/reports/ai-news-$day.html"
+    # The audio briefing writes an mp3 and its script next to the report; both
+    # live in the worktree and are lost with it unless copied back.
+    mkdir -p "$REPO_DIR/audio"
+    for ext in mp3 txt; do
+      [[ -f "$wt/audio/ai-news-$day.$ext" ]] && cp "$wt/audio/ai-news-$day.$ext" "$REPO_DIR/audio/"
+    done
     echo "  · $day generated"
   else
     echo "  · $day produced nothing (see $STATE/$day.log)"
@@ -151,10 +164,15 @@ for DAY in $(tr ' ' '\n' <<< "$DAYS" | sort); do
     FAILED+=("$DAY"); continue
   fi
   git add "$FILE"
-  if git diff --staged --quiet -- "$FILE"; then echo "· $DAY — unchanged"; continue; fi
+  for ext in mp3 txt; do
+    [[ -f "audio/ai-news-$DAY.$ext" ]] && git add "audio/ai-news-$DAY.$ext"
+  done
+  if git diff --staged --quiet; then echo "· $DAY — unchanged"; continue; fi
   PRETTY=$(date -j -f %Y-%m-%d "$DAY" "+%d %b %Y")
   if [[ "$LABEL" == "dedup" ]]; then
     git commit --quiet -m "🔁 dedup — AI News Daily $PRETTY (items ya citados en otro día)"
+  elif [[ "$LABEL" == "audio" ]]; then
+    git commit --quiet -m "🔊 Audio briefing — AI News Daily $PRETTY (Kokoro, Fenrir/Sarah)"
   else
     git commit --quiet -m "📰 AI News Daily — $PRETTY (backfill)"
   fi
