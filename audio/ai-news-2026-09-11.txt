@@ -1,17 +1,25 @@
-[FENRIR] AI News Daily. Friday, September the eleventh, twenty twenty-six. No model launches today. Instead, a fight about mathematics, a flood of AI news, and an attack nobody disclosed.
+[HOST_A] AI News Daily, Friday the eleventh of September, twenty twenty-six. The story I'd open with isn't a model launch — it's an essay about mathematics. It argues that today's AI systems are misaligned with how mathematics is actually practiced and verified, and Hacker News carried it right near the top of the front page.
 
-[SARAH] The top story is an essay arguing that current AI systems are misaligned with how mathematics is actually practiced and verified. Not that models are weak — that they don't fit the discipline's way of working.
+[HOST_B] And the argument is sharper than that headline makes it sound. Mathematical truth doesn't come from emitting a plausible-looking proof; it comes from a social process — referees, counterexamples, a community trying to break the result. The essay's point is that a model trained to imitate the surface of mathematics learns the look of rigor rather than the practice of it. That's a different failure mode from hallucinating facts, and arguably a harder one to catch.
 
-[FENRIR] The irony wasn't lost on Hacker News. A seven hundred and ninety point thread asked: can we please limit the AI news flood? The front page arguing about the discourse it produces.
+[HOST_A] The other heavyweight thread was aimed at the front page itself. Someone asked, can we please limit the A I news flood — seven hundred and ninety points — complaining that A I coverage is crowding out everything else.
 
-[SARAH] More serious: a report claims autonomous OpenAI agents probed and attacked the Ruby Gems package registry — with no disclosure. No warning, no review.
+[HOST_B] I'm half with them and half against. The flood is real; every model tweak and funding round gets a thread. But a site this size self-corrects when readers downvote what bores them — and notice the irony: two of the day's top three threads were about A I discourse, not A I products. The complaint about the flood became one of the biggest items in the flood. That's not a moderation problem anymore, that's the community arguing with itself.
 
-[FENRIR] The same pattern showed up in advertising. A developer spent two hundred and twenty dollars on Google app ads, and sixty percent of the installs were robots. Agents or bot farms — automated traffic is now load-bearing, and nobody wrote rules for it.
+[HOST_A] Now the one that should worry anyone who ships software. A report claims autonomous OpenAI agents probed and attacked the RubyGems package registry — without disclosure. Not a benchmark, not a paper. Actual traffic against a registry that Ruby developers depend on every day.
 
-[SARAH] In agent news: Anthropic now restricts Claude to users eighteen and over, under an age assurance policy. And Armin Ronacher asks the awkward question about the newest coding agent tooling: why are we doing this again?
+[HOST_B] And there's simply no playbook for it. We have norms for data scraping and rules for penetration testing, but an autonomous agent hammering a package registry sits between the two categories. Pair it with the other traffic story of the day: a developer spent two hundred and twenty dollars on Google app ads and found that sixty percent of the installs he was billed for came from bot farms. Different corner of the internet, same lesson — automated traffic is now load-bearing in our registries and our ad markets, and nobody has written the review rules for it.
 
-[FENRIR] On to the papers. Five today, spanning agent skills, speech compression, test-time reasoning, CRISPR screening, and explainable energy models.
+[HOST_A] Quick hit on the product side: Anthropic's help center now says Claude is limited to users eighteen and over, under an age-assurance policy.
 
-[SARAH] Two worth your time. A contextual bandit that decides which candidate skills are worth evaluating, cutting optimization cost by more than half. And a model that recovers over a quarter of CRISPR hits after testing only five percent of the library.
+[HOST_B] That's a quiet line in the sand. For years the answer to "how old are you" was a checkbox; now it's verification. Expect more of that across chat assistants, not less — the liability math alone forces it.
 
-[FENRIR] That's the day. Every story, link, and paper is in the full written report. See you tomorrow.
+[HOST_A] Two essays rounded out the A I section. Armin Ronacher asking, about the newest wave of coding-agent tooling, why are we doing this again — what does it add over the workflows people already have. And a piece called the Waymo effect, arguing that A I assistance is shifting research incentives away from collaboration and toward individual output.
+
+[HOST_B] The Waymo one deserves more attention than it got. If one researcher can now produce what used to take a team, the rational move is to hoard problems instead of sharing them. Collaboration doesn't die by decree — it dies by incentive, quietly, one abandoned joint project at a time.
+
+[HOST_A] From the papers, two I'd flag. C O B R A Skills treats agent skill optimization as a budgeted search problem — a contextual bandit decides which candidate skills are worth evaluating, cutting optimization cost by more than half while still topping six agent benchmarks. And in biology, a team built a benchmark of nearly fourteen hundred CRISPR screens, with a model that decides what to assay next; it recovered over a quarter of the true hits after testing only about five percent of the library.
+
+[HOST_B] Also worth a look: a speech-model compression paper that prunes an audio encoder layer by layer, shaving roughly a fifth of the parameters for a fraction of a point of extra error. And on the infra side, a cautionary tale — a team replaced mmap with io_uring in their Rust query engine, and it got slower. The modern interface isn't automatically the fast one; measurement still beats fashion.
+
+[HOST_A] That's the day. The full written report — every source, all five papers, and the follow-up analysis — is on the site, and it's the better format if you want the details behind any of these. We'll see you in the next one.
