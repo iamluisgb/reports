@@ -1,13 +1,27 @@
-[FENRIR] AI News Daily, Tuesday the first of September, twenty twenty-six. Three stories led the day, and only one of them was a model launch.
+[HOST_A] AI News Daily, Tuesday the first of September, twenty twenty-six. The story everyone led with isn't a flashy new model — it's a point release. Anthropic shipped Claude Fable five point one and Claude Mythos five point one, and it was the most-voted story of the day by a wide margin.
 
-[SARAH] Anthropic shipped Claude Fable five point one and Claude Mythos five point one, the day's most-voted story by a wide margin. And there's already a field test: a developer used Fable to port sixty-five thousand lines of Go to Rust for roughly four hundred dollars, and he's honest about where it helped and where it didn't.
+[HOST_B] And a wide margin is interesting on its own. A dot-release topping the front page tells you the audience has moved past launch-day hype and is now watching iteration velocity. What I find more telling is where Fable showed up later in the same feed: a developer used it to port sixty-five thousand lines of Go to Rust for about four hundred dollars, and then wrote up honestly where it helped and where it didn't.
 
-[FENRIR] On the platforms, a funding fight. Google Play is no longer allowing AnkiDroid's Open Collective donation link. That's a key funding route for one of the largest open-source Android projects. There's also a piece making the case to hang on to Firefox, as default search deals come under pressure.
+[HOST_A] That write-up deserves more attention than the price tag. Sixty-five thousand lines is a real codebase, and the honest part is the breakdown — the model was genuinely good at the mechanical translation, less good at the judgment calls Rust demands, like ownership and lifetime decisions where the compiler disagrees with what you meant.
 
-[SARAH] In AI commentary, Dan Luu checks Ed Zitron's past skeptic predictions against what actually happened. And a small transformer, trained from scratch in about ninety minutes for the A R C benchmark, reportedly beats many general-purpose L L Ms.
+[HOST_B] I'd push back on reading the four hundred dollars as the headline, though. Money isn't the bottleneck in a port — review is. The Rust compiler is a merciless checker, which makes this the friendliest possible case for a model: errors are loud and objective. Try the same trick on a language where wrong code compiles quietly, and the economics look very different.
 
-[FENRIR] The papers lean toward measurement today. There are five. A pragmatics benchmark for Indic languages. A compact reranker distilled to beat bigger baselines on retrieval. And a study where reasoning models' thinking effort tracks human reaction times.
+[HOST_A] Fair. From ports to platforms: Newsonaut has a piece called Hang on to Your Firefox, making the case for staying put while browser competition and the default search deals come under pressure.
 
-[SARAH] One more from the tools desk: Simon Willison dug into the Codex desktop app and found it ships a full copy of LibreOffice. The whole office suite, inside a coding app.
+[HOST_B] It pairs, maybe uncomfortably, with the AnkiDroid story. Google Play is no longer allowing the app's Open Collective donation link — which means one of the largest open-source Android projects is losing a funding route, not to a court ruling, but to a store policy. Browser engines and app stores are really the same argument: who decides what you're allowed to run, and who gets paid.
 
-[FENRIR] That's the day. The full written report has every story, all five papers, and the links. Worth a slow read.
+[HOST_A] Meanwhile the front page was also auditing its own skepticism. Dan Luu went back through Ed Zitron's past A I skeptic predictions and checked them against what actually happened since he made them.
+
+[HOST_B] Which is the exercise almost nobody does in either direction. Bulls never grade their own forecasts, and neither do skeptics. Whatever your priors are, a track-record audit raises the floor of the whole conversation.
+
+[HOST_A] Also in A I: someone trained a small transformer from scratch in about ninety minutes for the A R C benchmark, and reports it beating many general-purpose L L M s. And Simon Willison dug into the Codex desktop app and found it ships an entire copy of Libre Office inside.
+
+[HOST_B] Both stories cut the same way. The general-purpose giant isn't always the right tool for a narrow job — and when you do ship the giant, you ship everything it drags along. Bundling a whole office suite into a coding app is how desktop software gets heavy again.
+
+[HOST_A] Papers, briefly. There's a first pragmatic benchmark for Hindi, Punjabi, Tamil and Malayalam, and multilingual models fail consistently on meanings rooted in Indic conventions. And a harness called HEART swaps rigid tool schemas for natural-language interfaces, retrieving from over twenty-five thousand functions, beating supervised baselines by ten percent and frontier models by six, while cutting A P I cost by up to eighty-five percent.
+
+[HOST_B] The distillation paper is the quietly practical one: a four-billion-parameter teacher reranker sharpened with reinforcement learning from an L L M judge, then a one-billion-parameter student trained on its own rankings. It lands four point six points ahead of offline distillation on the MAIR benchmark, and the gains show up exactly where it's hardest — under distribution shift.
+
+[HOST_A] One security note before we close: Krebs on Security reports the F B I is investigating a service selling access to more than a hundred and fifty-three million driver's license records.
+
+[HOST_B] The through-line today was measurement. A point release judged by what it ships, a skeptic graded on his record, and a stack of benchmarks asking what models actually understand. If you want the links and the full detail, the written report has everything — this was just the conversation.
