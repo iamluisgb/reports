@@ -14,5 +14,5 @@ fi
 opencode run --agent audio-briefing --model "${MODEL:-nan/deepseek-v4-flash}" \
   --title "audio $DAY" "Escribe y genera el briefing en audio de $DAY."
 
-python3 scripts/backfill/make_audio.py "$DAY" --check
+python3 scripts/make_audio.py "$DAY" --check
 python3 scripts/backfill/verify_report.py "reports/ai-news-$DAY.html"

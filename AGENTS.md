@@ -19,6 +19,26 @@ generated automatically by CI.
    `rss.xml`, the `og/` images, or the `<!-- og:start -->…<!-- og:end -->` meta block
    in each report; CI regenerates them all on push.
 
+## Audio briefing
+
+Each daily report carries a spoken briefing: `audio/ai-news-YYYY-MM-DD.mp3`, plus the
+script it was read from in `audio/ai-news-YYYY-MM-DD.txt` (versioned, so what was said
+can be audited without listening).
+
+Write the script — one segment per paragraph, opened by its voice — then run:
+
+```bash
+python3 scripts/make_audio.py YYYY-MM-DD        # reads audio/ai-news-YYYY-MM-DD.txt
+python3 scripts/make_audio.py YYYY-MM-DD --check
+```
+
+It synthesises each segment with Kokoro (`FENRIR` → `am_fenrir`, `SARAH` → `af_sarah`),
+concatenates them, and injects the "Audio Briefing" section and its player JS into the
+report with the real duration. Idempotent: re-running replaces, never stacks.
+
+Needs `NAN_API_KEY` and `ffmpeg`/`ffprobe`. Kokoro is capped at 15 requests/minute, so
+never run two days at once.
+
 ## Social cards (Open Graph / Twitter)
 
 `scripts/build_social.py` runs in CI and makes every report shareable:

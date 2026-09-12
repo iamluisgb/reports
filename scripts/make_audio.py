@@ -29,7 +29,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 API = os.environ.get("NAN_BASE_URL", "https://api.nan.builders/v1") + "/audio/speech"
 VOICES = {"FENRIR": "am_fenrir", "SARAH": "af_sarah"}
 # Kokoro is capped at 15 RPM; stay under it without making a 12-segment

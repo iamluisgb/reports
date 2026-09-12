@@ -60,7 +60,7 @@ Reglas:
 ## 3. Sintetizar
 
 ```bash
-python3 scripts/backfill/make_audio.py <YYYY-MM-DD>
+python3 scripts/make_audio.py <YYYY-MM-DD>
 ```
 
 Lee tu guion, sintetiza cada segmento con Kokoro, los concatena, escribe el mp3 e inyecta la
@@ -73,7 +73,7 @@ segmento, reintenta el comando entero — no trocees la síntesis a mano.
 ## 4. Verificar
 
 ```bash
-python3 scripts/backfill/make_audio.py <YYYY-MM-DD> --check
+python3 scripts/make_audio.py <YYYY-MM-DD> --check
 python3 scripts/backfill/verify_report.py reports/ai-news-<YYYY-MM-DD>.html
 ```
 
