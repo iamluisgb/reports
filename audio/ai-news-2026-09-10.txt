@@ -1,17 +1,25 @@
-[FENRIR] AI News Daily, Thursday the tenth of September, twenty twenty-six. Three stories led the day, and the ones drawing the most comments were not model launches. They were about trust.
+[HOST_A] AI News Daily, Thursday, September the tenth, twenty twenty-six. Two model launches topped the feed today, but the stories that kept Hacker News arguing longest were not about capability. They were about consent — who gets to use your words, and whether a setting you switch off actually stays off.
 
-[SARAH] The top headline: Shopify is taking its mobile apps back to native Swift and Kotlin, after years on React Native. The engineering team published the full reasoning, and Hacker News had plenty to say.
+[HOST_B] The toggle story is the one I'd put on the front page. ChatGPT has an allow-training setting, and users report that when they turn it off, it quietly turns itself back on. The thread debates whether it's a sync bug or a deliberate default, but that distinction barely matters. Consent that doesn't stick isn't consent — it's a preference the vendor is free to ignore. And if it is a bug, it's the kind you fix the week you find out.
 
-[FENRIR] On the model side, two ships in one day.
+[HOST_A] It also pairs awkwardly with the second trust story: a mathematician is publicly questioning whether researchers should hand OpenAI their unpublished results at all, after its recent proof claims. In mathematics, priority is the whole credit system — being first is what gets your name on the theorem. So feeding a lab a conjecture before publication means handing over your claim to it.
 
-[SARAH] DeepSeek announced v four point one Flash, a faster lightweight variant sitting below its flagship. And Cognition launched S W E two, a coding model it says matches or beats Fable five point one and G P T Astra on software engineering tasks.
+[HOST_B] I'll push back a little on the panic, though. Researchers will keep sharing, because collaboration has always been worth it. What changes is where the burden of proof sits. It used to be "why wouldn't you trust the lab?" Now the lab has to demonstrate it won't train on, or publish around, what it's handed. Attribution is becoming the currency of research, and nobody has priced it yet.
 
-[FENRIR] Now, the trust stories.
+[HOST_A] On to the launches. DeepSeek shipped version four point one Flash — a faster, lighter variant positioned just below its flagship model.
 
-[SARAH] A mathematician is raising new doubts about handing unpublished results to OpenAI, after its recent proof claims. And users report that ChatGPT's allow training toggle turns itself back on after they switch it off. OpenAI also published developer docs for its Agents API, covering hosted agent workflows and orchestration.
+[HOST_B] But the Flash tier is where the real competition lives. Flagship scores are the press release; the small, fast model is what people actually run at scale, where cost and latency decide deployments. A cheaper DeepSeek is a price signal to every frontier lab, not just another product.
 
-[FENRIR] Papers. There were five, and they leaned toward failure modes rather than gains.
+[HOST_A] The other launch is Cognition introducing S W E two, a coding model it says matches or beats Fable five point one and G P T Astra on software engineering tasks. OpenAI, meanwhile, published developer documentation for its Agents API — hosted agent workflows, tools, and orchestration.
 
-[SARAH] One benchmarks fourteen multimodal models on topological reasoning, and even the best falls short of humans. Another shows hallucination detectors struggle to transfer across domains. And RAG Safety Bench finds baseline guardrails give no guarantee once retrieval is switched on.
+[HOST_B] I'm always skeptical when a launch puts "rivaling" in its own title — those numbers are curated, and the test that matters is whether the model holds up in real, messy repositories over weeks of use. But the Agents API is the more strategic move. When a platform vendor owns hosting, tool-calling, and orchestration, agents stop being something you build and become something you rent.
 
-[FENRIR] Quick infra note: Microsoft now treats Rust as a tier one language, and PlanetScale launched Neki, a sharded Postgres. That's the day. The full written report has every link and detail. Read it on the site.
+[HOST_A] Papers next, and this batch leans toward failure modes rather than gains. MindTopo benchmarks fourteen multimodal models on five topological properties — continuity, separation, order, enclosure, and knots — across some eleven thousand reasoning and planning instances. Every model scores higher on reasoning than on planning, and the best still falls well short of human performance. RetroThinker, meanwhile, post-trains a streaming speech model to check and correct its own reasoning mid-answer, gaining eleven percent absolute accuracy on the G S M eight K math benchmark at comparable latency.
+
+[HOST_B] My pick is the hallucination work: a fine-tuned detector with uncertainty estimates reaches point nine one five F one on the Halu Eval benchmark, yet when transferred to biomedical text it drops to zero point five two. And RAG Safety Bench finds that guardrails tuned without retrieval give no downstream safety guarantee once retrieval is switched on. That reframes retrieval as a risk surface, not just an accuracy boost — and honestly, a field benchmarking its own failures is a field growing up.
+
+[HOST_A] Infra, briefly: a Rust Foundation guest post says Microsoft now treats Rust as a tier-one language across its platforms and tooling, and PlanetScale introduced Neki, sharded Postgres spread across nodes behind a routing layer.
+
+[HOST_B] Two lighter threads closed the day: an essay defending everyone's big box of assorted cables as a feature worth defending, not clutter — and an interactive simulation that slows the speed of light to five kilometers an hour, so you can watch relativistic effects unfold at walking pace.
+
+[HOST_A] The argument has moved from what models can do to who owns what they learn from — and if today proves anything, it's that trust is now a benchmark too. The full written report has every story and every link — find it on the site.
