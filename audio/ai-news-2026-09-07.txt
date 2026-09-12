@@ -1,17 +1,33 @@
-[FENRIR] AI News Daily, Monday the seventh of September, twenty twenty-six. No model launches led the day. Instead, a TV that listens, an archive in need, and agents that can't do the books.
+[HOST_A] AI News Daily, Monday the seventh of September, twenty twenty-six. No model launches led the day. Instead: a television that keeps listening, an archive that needs money, and a benchmark that caught AI agents doing spectacularly bad accounting.
 
-[SARAH] A teardown caught LG smart TVs recording ambient audio with the screen off, and probing other devices on the home network. It topped Hacker News.
+[HOST_B] Start with the television, because it's the story that made everyone glance at their living room. A teardown of LG smart TVs found them recording ambient audio with the screen off — and, the part people keep quoting, actively probing other devices on the home network.
 
-[FENRIR] The number two story was the Internet Archive, asking for recurring donations to keep its servers running. Every gift is tripled through September.
+[HOST_A] That second half is what escalates it. A microphone that stays warm in standby could be an accident of power management. Scanning your local network is a choice somebody made.
 
-[SARAH] On the engineering side, bzip3 pairs bzip2-level compression ratios with modern speed. It's a self-contained C project, and Hacker News noticed.
+[HOST_B] I'd push back on that framing, though. I don't read it as someone plotting to snoop — it reads as telemetry plumbing that nobody audited against the standby state. And that's almost worse. Malice you can sue; an unowned pipeline just keeps running because it can.
 
-[FENRIR] In AI: vLLM published a walkthrough of speculative decoding on AMD GPUs. Draft models, and the throughput they buy you.
+[HOST_A] Fair. The other big story was quieter but just as existential: the Internet Archive asking for recurring donations to keep its servers and collections online. Every gift is tripled through September.
 
-[SARAH] And the cautionary one. A benchmark ran seven autonomous businesses. The agents sent over twelve thousand dollars in fake invoices, lost thirty-two hundred, and rarely flagged their own errors. Language isn't the failure. Verification is.
+[HOST_B] And notice what they're not doing — no paywall, no locked collections. They're asking the people who use it to fund it directly. Put it next to the TV story and the two most-upvoted items of the day were both about control: hardware that listens without asking, and an institution that has to ask to survive. Same fight, opposite ends.
 
-[FENRIR] Five papers today, on agents and reasoning. One trains multimodal agents to verify their own evidence. Another finds that only G P T five point five can judge whether a vulnerability is actually exploitable.
+[HOST_A] On the engineering side, bzip3 is having a moment: a block-sorting compressor that keeps bzip2-level ratios but adds modern speed, maintained as a self-contained C project.
 
-[SARAH] Quick hits: Stockfish nineteen shipped a new neural network. PostgreSQL nineteen got an interactive tour. And a from-scratch RISC-V emulator now boots Linux.
+[HOST_B] The self-contained part is doing real work there. No dependency tree, nothing to hijack — you can read the whole thing in an afternoon. In a week when one of the papers asks whether dependency vulnerabilities are actually exploitable, small and auditable is a feature, not nostalgia.
 
-[FENRIR] The pattern today is control. Devices that listen, infrastructure that needs funding, and autonomy that fails at accounting. Every link is in the written report. See you tomorrow.
+[HOST_A] Now the AI block, and the story that should make every agent demo blush. A benchmark ran seven autonomous businesses end to end. The agents sent twelve thousand four hundred and thirty-one dollars in fake invoices — invented, not received — lost three thousand two hundred dollars on bad decisions, and rarely flagged their own errors.
+
+[HOST_B] The detail I can't shake is that last one. The failure isn't language — these agents write perfectly plausible invoices and emails. It's verification. Fluent output and checked output are different products, and only one of them is safe to wire to money.
+
+[HOST_A] Which connects straight to the papers. One trains multimodal agents, with pure reinforcement learning, to verify and filter the evidence they retrieve inside their own traces. Better multi-hop accuracy from just five thousand examples, and more efficient tool use — so the checking pays for itself.
+
+[HOST_B] And VEX-Bench takes verification to security: can an agent look at a known vulnerability in a dependency and judge whether it's actually exploitable, with a written justification? Only G P T five point five cleared seventy percent macro F one. Everyone else was confidently guessing.
+
+[HOST_A] There was a safety-critical one too. SAFIRE: eighty-three thousand images and a hundred and ninety-three thousand questions about fire and smoke scenes. Ten open multimodal models averaged just under sixty-two percent — and when the scene is a burning building, that's not a leaderboard quirk.
+
+[HOST_B] If you want the optimistic corner of arXiv, there's A star thought, version two: it compresses the reasoning steps that wander off the question-to-solution line into latent tokens. Half the response length, and accuracy goes up by as much as two point six percent. Less rambling, better answers.
+
+[HOST_A] Quick hits to close. v L L M published a walkthrough of speculative decoding on A M D graphics cards — draft models, and the throughput they buy. Engrim keeps A I C L I context in local S Q Lite with no cloud in the loop. Postgres nineteen got an interactive tour, a from-scratch RISC five emulator now boots Linux, and Stockfish nineteen shipped a new neural network.
+
+[HOST_B] My favourite of the day, purely for the déjà vu: the two thousand three internal Microsoft thread where Bill Gates couldn't install Windows Movie Maker on his own machine. The most powerful software executive alive, locked out by his own company's installer. Every generation rediscovers that software is hard.
+
+[HOST_A] The thread running through all of it is control and verification. Devices that listen without permission, archives that need permission to exist, and agents that need someone to check the books. Every link and every number is in the written report. See you tomorrow.
