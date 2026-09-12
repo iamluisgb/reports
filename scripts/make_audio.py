@@ -146,20 +146,41 @@ def speak(text, voice, out, key):
             time.sleep(10 * (attempt + 1))
 
 
+def have(tool):
+    return subprocess.run(["which", tool], capture_output=True).returncode == 0
+
+
 def concat(parts, out):
-    with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as fh:
+    """ffmpeg when it is there; otherwise append the frames.
+
+    The cron host is not guaranteed to have ffmpeg, and MP3 is a frame stream:
+    appending files of the same codec and sample rate plays correctly in every
+    browser. Kokoro returns a constant 128 kbps 24 kHz mono, so this holds.
+    """
+    if have("ffmpeg"):
+        with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False) as fh:
+            for p in parts:
+                fh.write(f"file '{p}'\n")
+            listing = fh.name
+        subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", listing,
+                        "-c", "copy", str(out)], check=True, capture_output=True)
+        os.unlink(listing)
+        return
+    with open(out, "wb") as dst:
         for p in parts:
-            fh.write(f"file '{p}'\n")
-        listing = fh.name
-    subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", listing,
-                    "-c", "copy", str(out)], check=True, capture_output=True)
-    os.unlink(listing)
+            dst.write(Path(p).read_bytes())
 
 
 def duration(path):
-    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
-                          "-of", "csv=p=0", str(path)], capture_output=True, text=True, check=True)
-    return float(out.stdout.strip())
+    """Real duration when ffprobe is available, else estimated from the bitrate.
+
+    The estimate only seeds the player's fallback `total`; the browser replaces
+    it with the true duration on loadedmetadata."""
+    if have("ffprobe"):
+        out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                              "-of", "csv=p=0", str(path)], capture_output=True, text=True, check=True)
+        return float(out.stdout.strip())
+    return Path(path).stat().st_size * 8 / 128_000
 
 
 def inject(report, day, seconds):
