@@ -24,6 +24,10 @@ on:
         description: 'Skip the audio briefing'
         type: boolean
         default: false
+      dry_run:
+        description: 'Build to /tmp and publish nothing'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -58,6 +62,10 @@ jobs:
           DAY="$REQUESTED"
           [ -n "$DAY" ] || DAY=$(date -u +%F)
           echo "day=$DAY" >> "$GITHUB_OUTPUT"
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            echo "dry run: building $DAY to /tmp, publishing nothing"
+            exit 0
+          fi
           if [ -f "reports/ai-news-$DAY.html" ]; then
             echo "::error::reports/ai-news-$DAY.html already exists — delete it to rebuild"
             exit 1
@@ -69,10 +77,16 @@ jobs:
       - name: Write the report
         env:
           NAN_API_KEY: ${{ secrets.NAN_API_KEY }}
-        run: python3 scripts/write_report.py --bundle /tmp/candidates.json
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python3 -u scripts/write_report.py --bundle /tmp/candidates.json \
+              --dry-run --skip-audio-script
+          else
+            python3 -u scripts/write_report.py --bundle /tmp/candidates.json
+          fi
 
       - name: Audio briefing
-        if: ${{ !inputs.skip_audio }}
+        if: ${{ !inputs.skip_audio && !inputs.dry_run }}
         env:
           NAN_API_KEY: ${{ secrets.NAN_API_KEY }}
         # A failed briefing must not cost us the report, which is already on
@@ -82,17 +96,20 @@ jobs:
         run: python3 scripts/make_audio.py "${{ steps.resolve.outputs.day }}"
 
       - name: Rebase onto anything pushed meanwhile
+        if: ${{ !inputs.dry_run }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash origin master
 
       - name: Rebuild manifest, RSS, sitemap and social cards
+        if: ${{ !inputs.dry_run }}
         run: |
           python3 scripts/generate_manifest.py
           python3 scripts/build_social.py
 
       - name: Commit and push
+        if: ${{ !inputs.dry_run }}
         run: |
           DAY="${{ steps.resolve.outputs.day }}"
           git add reports audio reports.json sitemap.xml rss.xml og
@@ -104,7 +121,7 @@ jobs:
           git push
 
       - name: Summary
-        if: always()
+        if: ${{ always() && !inputs.dry_run }}
         run: |
           DAY="${{ steps.resolve.outputs.day }}"
           {
