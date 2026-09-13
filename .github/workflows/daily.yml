@@ -1,0 +1,124 @@
+name: Daily report
+
+# Collects the day's candidates, writes the report and its briefing script with
+# NaN, synthesises the audio, and publishes — the whole pipeline that used to
+# run from a laptop.
+#
+# Why this workflow rebuilds the manifest itself instead of letting build.yml
+# do it: a commit pushed with GITHUB_TOKEN does NOT trigger other workflows.
+# If this job just committed the report and walked away, reports.json, the RSS
+# feed and the OG image would never be generated and the homepage would not
+# list the report at all. So the build steps run here, in the same job.
+
+on:
+  schedule:
+    # 06:17 UTC. Not on the hour: GitHub queues scheduled workflows hardest at
+    # :00, and a cron here can already drift 5-30 minutes under load.
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+    inputs:
+      day:
+        description: 'Day to build (YYYY-MM-DD, default: today)'
+        required: false
+      skip_audio:
+        description: 'Skip the audio briefing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # generate_manifest dates undated specials from git history
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install --quiet Pillow
+          ffmpeg -version >/dev/null 2>&1 || sudo apt-get install -y --no-install-recommends ffmpeg
+
+      - name: Resolve the day
+        id: resolve
+        env:
+          REQUESTED: ${{ inputs.day }}
+        run: |
+          DAY="$REQUESTED"
+          [ -n "$DAY" ] || DAY=$(date -u +%F)
+          echo "day=$DAY" >> "$GITHUB_OUTPUT"
+          if [ -f "reports/ai-news-$DAY.html" ]; then
+            echo "::error::reports/ai-news-$DAY.html already exists — delete it to rebuild"
+            exit 1
+          fi
+
+      - name: Collect candidates
+        run: python3 scripts/collect.py --day "${{ steps.resolve.outputs.day }}" --out /tmp/candidates.json
+
+      - name: Write the report
+        env:
+          NAN_API_KEY: ${{ secrets.NAN_API_KEY }}
+        run: python3 scripts/write_report.py --bundle /tmp/candidates.json
+
+      - name: Audio briefing
+        if: ${{ !inputs.skip_audio }}
+        env:
+          NAN_API_KEY: ${{ secrets.NAN_API_KEY }}
+        # A failed briefing must not cost us the report, which is already on
+        # disk by now. make_audio.py is idempotent, so a later manual re-run
+        # adds the player without duplicating anything.
+        continue-on-error: true
+        run: python3 scripts/make_audio.py "${{ steps.resolve.outputs.day }}"
+
+      - name: Rebase onto anything pushed meanwhile
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash origin master
+
+      - name: Rebuild manifest, RSS, sitemap and social cards
+        run: |
+          python3 scripts/generate_manifest.py
+          python3 scripts/build_social.py
+
+      - name: Commit and push
+        run: |
+          DAY="${{ steps.resolve.outputs.day }}"
+          git add reports audio reports.json sitemap.xml rss.xml og
+          if git diff --staged --quiet; then
+            echo "::error::nothing to commit — the report was not written"
+            exit 1
+          fi
+          git commit -m "📰 AI News Daily — $DAY"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          DAY="${{ steps.resolve.outputs.day }}"
+          {
+            echo "### AI News Daily — $DAY"
+            echo
+            if [ -f "reports/ai-news-$DAY.html" ]; then
+              echo "- Report: https://luisgonzalezbernal.com/reports/reports/ai-news-$DAY.html"
+              echo "- Size: $(wc -c < "reports/ai-news-$DAY.html") bytes"
+            else
+              echo "- No report was written."
+            fi
+            if [ -f "audio/ai-news-$DAY.mp3" ]; then
+              echo "- Audio: $(du -h "audio/ai-news-$DAY.mp3" | cut -f1)"
+            else
+              echo "- No audio briefing (run make_audio.py locally to add one)."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"

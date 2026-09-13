@@ -4,6 +4,16 @@ This repo is a **GitHub Pages static site**. It has no build step for the agent 
 and no server. The agent's job is to publish report HTML files; everything else is
 generated automatically by CI.
 
+## Who writes what
+
+Since 13 Sep 2026 the daily report builds itself: `.github/workflows/daily.yml`
+runs `collect.py` and `write_report.py` at 06:17 UTC. You are writing a report
+by hand when the cron failed, when a day needs redoing, or for a **special**
+report — the automation only ever produces dailies.
+
+Before writing one by hand, check whether `reports/ai-news-<day>.html` already
+exists; the workflow refuses to overwrite, and so should you.
+
 ## Publishing a report
 
 1. Write the report as a self-contained HTML file in `reports/`:

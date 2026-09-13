@@ -18,7 +18,10 @@ reports/                One HTML file per report
 reports.json            Generated manifest consumed by index.html
 sitemap.xml             Generated sitemap
 rss.xml                 Generated feed
+scripts/collect.py             Gathers the day's candidates (HN + arXiv), no LLM
+scripts/write_report.py        Writes the report and briefing script via NaN
 scripts/generate_manifest.py   Builds the three generated files above
+.github/workflows/daily.yml    Builds and publishes the daily report on a cron
 .github/workflows/build.yml    Runs the generator on every push to reports/
 ```
 
@@ -33,6 +36,49 @@ Instead, `index.html` now fetches a static **`reports.json`** (same-origin, no l
 **real reading time from the word count** — then writes `reports.json`, `sitemap.xml`
 and `rss.xml`. A report is **daily** if its filename starts with `ai-news-`, otherwise
 **special**.
+
+## The daily build
+
+`daily.yml` runs at 06:17 UTC and does the whole pipeline unattended:
+
+```
+collect.py  →  write_report.py  →  make_audio.py  →  generate_manifest + build_social  →  commit
+```
+
+`collect.py` does all the fetching and no judging: three Hacker News pages with
+every story id checked against the Firebase API, the latest arXiv cs.AI listing
+ranked by keyword relevance, and cross-dedup against the last three reports. It
+writes a JSON bundle where every candidate has an id.
+
+`write_report.py` makes three calls to NaN (`glm5.3-flash`, falling back to
+`deepseek-v4-flash`) — news, then papers plus *Why It Matters*, then the spoken
+script. **The model returns JSON that selects candidates by id; it never writes
+HTML and never writes a URL.** The page is rendered from a fixed template using
+the URLs `collect.py` already verified, so a hallucinated link cannot appear.
+
+Three calls rather than one because these are reasoning models with a hard
+16k completion cap that spend five to eight tokens thinking per token written:
+the whole report in one call reasons past the cap and returns truncated JSON.
+
+Needs one secret, `NAN_API_KEY`. To build a day by hand:
+
+```bash
+python3 scripts/collect.py --day 2026-09-13 --out /tmp/c.json
+NAN_API_KEY=... python3 scripts/write_report.py --bundle /tmp/c.json --dry-run
+```
+
+`--dry-run` writes to `/tmp` instead of the repo.
+
+### Known limits
+
+- It sees Hacker News once, at 06:17. A story that breaks later, or that is
+  still at five points on page two, can be missed entirely — this happened on
+  13 Sep with the RubyGems attribution. Judgement about *what* to cover is only
+  as good as the snapshot.
+- arXiv does not announce at weekends, so Saturday and Sunday reuse Friday's
+  batch minus whatever cross-dedup already removed.
+- The audio step is `continue-on-error`: a failed briefing never costs the
+  report. Re-run `make_audio.py <day>` locally to add the player afterwards.
 
 ## Adding a report
 
