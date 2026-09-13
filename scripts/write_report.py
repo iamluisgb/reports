@@ -150,18 +150,44 @@ REPORT:
 
 
 def post(payload, key, timeout=240):
-    """A working glm5.3-flash call lands in ~70s; past four minutes it is hung,
-    and waiting is worse than moving to the next model."""
-    body = json.dumps(payload).encode()
-    req = urllib.request.Request(API, data=body, method="POST", headers={
+    """Stream the completion, and reassemble it into a normal response.
+
+    Streaming is not for show. glm5.3-flash thinks for 95-110 seconds on these
+    prompts, and NaN sits behind Cloudflare, whose proxy gives up at 100s with a
+    524 — so the strongest model on the plan fails most of the time when asked
+    for a whole answer at once. Streaming starts the bytes flowing immediately
+    and the timeout that matters becomes the gap between chunks, not the total.
+    """
+    payload = dict(payload, stream=True, stream_options={"include_usage": True})
+    req = urllib.request.Request(API, data=json.dumps(payload).encode(),
+                                 method="POST", headers={
         "Authorization": f"Bearer {key}",
         "Content-Type": "application/json",
         # NaN's edge answers 403/1010 to non-browser user agents, and urllib
         # announces itself as Python-urllib by default.
         "User-Agent": UA,
     })
+    chunks, usage, finish = [], {}, None
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.load(r)
+        for line in r:
+            line = line.decode("utf-8", "replace").strip()
+            if not line.startswith("data:"):
+                continue
+            data = line[5:].strip()
+            if data == "[DONE]":
+                break
+            try:
+                event = json.loads(data)
+            except json.JSONDecodeError:
+                continue
+            if event.get("usage"):
+                usage = event["usage"]
+            for choice in event.get("choices", []):
+                chunks.append(choice.get("delta", {}).get("content") or "")
+                finish = choice.get("finish_reason") or finish
+    return {"choices": [{"message": {"content": "".join(chunks)},
+                         "finish_reason": finish}],
+            "usage": usage}
 
 
 def complete(prompt, key, label, tries=2):
