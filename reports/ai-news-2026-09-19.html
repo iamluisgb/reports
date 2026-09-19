@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 19 Sep 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<!-- og:start -->
+<meta name="description" content="US military&#x27;s AI intel near-miss · Android 17 withholds new APIs from AOSP · Claude Code falls back to AGENTS.md · Cloudflare trims another 100TB of RAM">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-09-19.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="AI News Daily — 19 Sep 2026">
+<meta property="og:description" content="US military&#x27;s AI intel near-miss · Android 17 withholds new APIs from AOSP · Claude Code falls back to AGENTS.md · Cloudflare trims another 100TB of RAM">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-09-19.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-09-19.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="AI News Daily — 19 Sep 2026">
+<meta name="twitter:description" content="US military&#x27;s AI intel near-miss · Android 17 withholds new APIs from AOSP · Claude Code falls back to AGENTS.md · Cloudflare trims another 100TB of RAM">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-09-19.png">
+<!-- og:end -->
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">19 Sep 2026 · SATURDAY</div>
+          <div class="subtitle">US military's AI intel near-miss · Android 17 withholds new APIs from AOSP · Claude Code falls back to AGENTS.md · Cloudflare trims another 100TB of RAM</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-09-19.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 19 SEP 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 7:21</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">US military's close call with a hallucinated intelligence report</div>
+        <div class="desc">The US military ran AI in its intelligence workflow and got a fabricated report concerning a Chinese ship, CNN reports — a near miss, not an incident, this time. The freshest argument for keeping analysts upstream of the model.</div>
+        <div class="sources">
+          <a href="https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49757520">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Claude Code now reads AGENTS.md when CLAUDE.md is missing</div>
+        <div class="desc">The changelog adds a fallback to AGENTS.md, the vendor-neutral agent-instructions file — one less per-tool config to maintain across agent CLIs.</div>
+        <div class="sources">
+          <a href="https://code.claude.com/docs/en/changelog">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49760187">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Android 17 ships new APIs without releasing them to AOSP</div>
+        <div class="desc">GrapheneOS flags that Android 17 is the first release since 3.x to add new APIs with no corresponding AOSP release. For anyone who still describes Android as open-source-first, the gap is now the story.</div>
+        <div class="sources">
+          <a href="https://grapheneos.social/@GrapheneOS/117282080803799576">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49758736">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">ZCode caught silently uploading your Git history to the cloud</div>
+        <div class="desc">A teardown of ZCode, found quietly snapshotting and uploading developers' Git history without disclosure — worth checking what else in your toolchain phones home.</div>
+        <div class="sources">
+          <a href="https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49750694">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Laser fault injection opens the RP2350's secure debug</div>
+        <div class="desc">Ledger's Donjon lab uses photon-emission-guided laser fault injection to enable RP2350 secure debug — a demonstration that physical attacks sit inside the threat model for secure MCUs, whether you modelled them or not.</div>
+        <div class="sources">
+          <a href="https://donjon.ledger.com/blog/rp2350-secure-debug-laser-fault-injection/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49757050">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">GPT-6 Astra solves a WWI German radio cipher</div>
+        <div class="desc">A worked account of GPT-6 'Astra' cracking a First World War German radio cipher — cryptographic reasoning as an early, concrete datapoint for the new model.</div>
+        <div class="sources">
+          <a href="https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49763987">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">How OpenAI used its own LLMs to design its jalapeño chip</div>
+        <div class="desc">IEEE Spectrum goes inside OpenAI's use of its own models to design a custom chip, nicknamed the jalapeño chip — LLM-driven hardware design demonstrated at frontier-lab scale.</div>
+        <div class="sources">
+          <a href="https://spectrum.ieee.org/llms-for-chip-design">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49761432">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Cactus Needle 3: 8–29MB automation models claimed to match DeepSeek V4 Flash</div>
+        <div class="desc">Show HN: automation models at 8–29MB claiming parity with DeepSeek V4 Flash — a size class worth benchmarking before believing, and notable even as a claim.</div>
+        <div class="sources">
+          <a href="https://cactuscompute.com/needle">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49748553">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">A Mac computer-use agent at a fiftieth of a cent per step</div>
+        <div class="desc">typesafe-computer-use is an open-source agent that drives a macOS UI toward a goal for 1/50th of a cent per step — cost per action as the headline spec for computer use.</div>
+        <div class="sources">
+          <a href="https://github.com/awlevin/typesafe-computer-use">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49733647">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">I vibed a proof of Conway's conjecture</div>
+        <div class="desc">An account of using LLMs to reach a proof of a Conway conjecture — AI-assisted maths as practice rather than promise, and the day's liveliest overlap of Hacker News and the frontiers of notation.</div>
+        <div class="sources">
+          <a href="https://overreacted.io/how-i-vibed-a-proof-of-conways-conjecture/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49755024">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">AI-generated posters don't have to be horrible</div>
+        <div class="desc">A practical argument that AI-generated event posters can be made to look designed rather than generated — top of the front page within hours of posting.</div>
+        <div class="sources">
+          <a href="https://john.hartnup.uk/2026/06/07/ai-event-posters.html">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49764791">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">A Dual-Process Perspective on Nudge Susceptibility in LLM-Based GUI Agents</div>
+        <div class="desc">GUI agents act inside interfaces engineered to steer human judgement, and how much resistance reasoning capability buys against that steering is barely measured. Drawing on dual-process theory, the study separates automatic (Type 1) from reflective (Type 2) digital nudges and runs a randomised online-shopping experiment with 3,600 agents making 21,600 simulated decisions, varying reasoning configuration to isolate what moderates susceptibility. If you deploy computer-use agents, this is the threat model your vendor isn't testing. <strong>[gui-agents, safety, evaluation]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.19843v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">UnifiedPlayers: Enhance Tool-Integrated Reasoning in Agentic Reinforcement Learning</div>
+        <div class="desc">Self-evolving agent training cuts dependence on human-annotated trajectories, but the standard split — one process generates trajectories, a static verifier judges them — misses failure modes the verifier was never built for, and self-consistency voting entrenches errors shared across trajectories. UnifiedPlayers instead runs three cooperative roles: a Planning Player that generates tasks, an Execution Player that produces multi-turn Python-tool trajectories, and an Evaluation Player that writes executable verifiers, each with role-specific rewards. The hard problem is that every component keeps changing the data and feedback the others train on — the reward design is the proposed answer. <strong>[agents, reinforcement-learning, verifiers]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.20089v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Dual-Axis Policy Optimization for LLM Agents</div>
+        <div class="desc">RL for LLM agents contains two optimisation problems that most recipes collapse into one: how environment feedback is attributed to actions within a trajectory, and how complete trajectories are weighted across a batch. BATON attacks both axes — a Bayesian feedback-conditioned posterior over sampled actions, plus Trajectory Mass Normalization giving every complete trajectory equal optimisation mass. On ALFWorld, WebShop, and SearchQA with GRPO and GiGPO, each axis delivers independent gains and the combination is consistently strongest. <strong>[reinforcement-learning, agents, credit-assignment]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.19830v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">A Unified Evaluation Framework for Trustworthy Large Language Models, Agentic AI, and Multimodal Systems</div>
+        <div class="desc">Benchmark scores are a thin basis for deciding whether a system can be trusted in deployment, and LLMs, agents, and multimodal models each need different evidence. This framework maps output-level, trajectory-level, and cross-modal measurements onto eight trustworthiness dimensions — capability, robustness, safety, fairness, transparency, governance, oversight, efficiency — preserving native metrics while normalising them into common performance bands with uncertainty estimates and traceable evidence. A meta-evaluation layer then audits the evaluation itself for validity, reliability, and reproducibility. <strong>[evaluation, trustworthiness, governance]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.19524v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">TRACE: Accountable Agentic Retrieval for Source Discovery in Digital Archives</div>
+        <div class="desc">Historical archives break RAG twice: OCR-degraded, genre-heterogeneous text wrecks retrieval, and scholarly use demands provenance a vector store never recorded. TRACE is a training-free agentic retrieval framework for accountable source discovery, built for a project on French Third Republic political discourse and already deployed to 24 researchers across six partner institutions. It is evaluated on HistoriQA-ThirdRepublic — 1,752 French historical questions over digitised parliamentary debates. <strong>[retrieval, provenance, rag]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.19897v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">Beyond Depth Truncation: Controlled Evaluation of Depth Utilization in Recursive Language Models</div>
+        <div class="desc">The standard test of whether a depth-recurrent model uses its depth — truncate at inference, plot quality against retained depth, read the slope — is broken: truncation simultaneously reduces block applications, reduces distinct computation, and pushes the readout head onto an out-of-distribution residual stream. The convention reads that compound slope as measuring the middle factor alone. This paper's controlled evaluation separates the three, so the slope can finally be evidence about depth utilisation rather than an artefact of the intervention. <strong>[recurrent-models, evaluation, methodology]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.19934v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Cloudflare Quick Tunnels: a public URL for any local port</div>
+        <div class="desc">One command puts a local service behind an ephemeral public URL on Cloudflare's edge, no account or config — a hosted ngrok at 714 points of obvious demand.</div>
+        <div class="sources">
+          <a href="https://try.cloudflare.com/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49754785">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Cloudflare saves another 100TB of RAM with maths</div>
+        <div class="desc">The follow-up on algorithmic memory reduction: another 100TB of RAM avoided through data-structure work rather than procurement. Still cheaper than DRAM.</div>
+        <div class="sources">
+          <a href="https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49758580">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Git on object storage, if you remake packfiles</div>
+        <div class="desc">Tigris demonstrates Git running directly on object storage by rebuilding the packfile layer — dropping the POSIX filesystem assumption baked into Git's backend.</div>
+        <div class="sources">
+          <a href="https://www.tigrisdata.com/blog/objgit-packfiles/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49730069">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Goroutine leak profiles</div>
+        <div class="desc">The Go blog documents goroutine leak profiles — first-class visibility into goroutines that never exit, the leak class a heap profile won't show you.</div>
+        <div class="sources">
+          <a href="https://go.dev/blog/goroutine-leak-profiles">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49726773">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">C++26: trivial infinite loops are no longer undefined behaviour</div>
+        <div class="desc">Compilers can no longer assume trivial infinite loops terminate and delete your spin-wait on forward-progress grounds. A small wording change with a 248-comment paper trail.</div>
+        <div class="sources">
+          <a href="https://www.sandordargo.com/blog/2026/09/16/cpp26-trivial-infinite-loops">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49746406">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">The human brain is two separate organs, Stanford-led research finds</div>
+        <div class="desc">Stanford Medicine-led research concludes the human brain is two separate organs rather than one unified structure.</div>
+        <div class="sources">
+          <a href="https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49763697">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">The first new cat species described in a century</div>
+        <div class="desc">National Geographic introduces the first new cat species discovered in 100 years.</div>
+        <div class="sources">
+          <a href="https://www.nationalgeographic.com/animals/article/meet-the-first-new-cat-species-discovered-in-100-years">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49744704">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Onion futures, on sale in San Francisco</div>
+        <div class="desc">A San Francisco company selling onion futures — the only commodity whose futures trading is banned outright under US law, since 1958.</div>
+        <div class="sources">
+          <a href="https://onionfutures.com/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49763296">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">I don't like passkeys</div>
+        <div class="desc">A practitioner's case against passkeys, and the day's biggest argument on the site — 778 points, 767 comments.</div>
+        <div class="sources">
+          <a href="https://hawksley.dev/blog/i-dont-like-passkeys">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49753211">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Border agents can search phones without a warrant, court rules</div>
+        <div class="desc">The Second Circuit holds that border agents may search cellphones without a warrant or reasonable suspicion — travel-device hygiene graduates from paranoia to procedure.</div>
+        <div class="sources">
+          <a href="https://lawandcrime.com/high-profile/the-government-was-entitled-trumps-border-agents-can-now-search-cellphones-without-a-warrant-probable-cause-or-reasonable-suspicion-2nd-circuit-rules/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49758028">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The military's hallucinated report is being read as an argument for keeping analysts upstream of the model — the sharper lesson is that the verifier, not the placement, is the missing component. A fabricated report is precisely the failure mode a review process sized for human-sourced material won't catch, which is UnifiedPlayers' opening premise restated in training-data terms: static verifiers miss emerging failure modes, and self-consistency entrenches errors shared across trajectories. The trust framework's meta-evaluation layer and the depth-truncation critique make the same move from different directions — the thing checking the system needs checking too.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The nudge study gives the computer-use cost curve its missing risk line: at a fiftieth of a cent per step, agent fleets will navigate interfaces engineered to manipulate whoever clicks, and 3,600 agents making 21,600 simulated purchases at least turns susceptibility into a measurable quantity. ZCode's silent Git upload and the Second Circuit's border-search ruling are the same fact at other layers — the systems around your data do not share your constraints, and the model's reasoning is not a control. Provenance logging and policy enforcement have to live outside the model, because inside is exactly where the nudges land.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Android 17 shipping APIs with no AOSP release and Claude Code adopting the vendor-neutral AGENTS.md point in opposite directions, and together they confirm that openness is now a per-layer property rather than a product attribute. The papers supply the toolkit for the unauditable half: TRACE anchors every retrieval to the parent-case trajectory at the matched state, and the trust framework demands traceable evidence behind every score. Expect provenance to arrive as a procurement requirement long before it becomes a research fashion.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">19 Sep 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 441;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
+</body>
+</html>
