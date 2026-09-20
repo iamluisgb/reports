@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Sunday the twentieth of September, twenty twenty-six. Lead story: a builder's retrospective on non-autoregressive decision models trained with reinforcement learning has topped Hacker News, a year after the work — one thousand two hundred and thirty-eight points, two hundred and ninety-five comments.
+
+[HOST_B] Read it for the lesson about training signal, not architecture. The interesting engineering sits in the schedule — when the model gets dense supervision, when it falls back to sparse reward. That thread runs through everything today, starting with a paper.
+
+[HOST_A] The paper is Retire O P D. Multi-turn agents trained with reinforcement learning see one scalar reward per trajectory — thin signal for long-horizon credit assignment. The fix is on-policy distillation: train a skill-conditioned teacher on environment rewards, distil dense token-level supervision into a skill-free student, then retire the teacher once student–teacher discrepancy stops shrinking.
+
+[HOST_B] Most distillation pipelines hard-code that retirement as a fixed schedule and hope. Retire O P D measures it — track the discrepancy, cut the teacher at plateau. Expect retirement criteria to become a first-class hyperparameter wherever dense supervision is bolted onto reinforcement learning. The paper is honest that privilege doesn't guarantee a reliable teacher, which is why the signal matters.
+
+[HOST_A] Three attacks on one bottleneck. Browserbase's Stagehand reports Playwright running twice as fast with eighty percent fewer tokens. The Cache-to-Cache paper moves K V state directly between models — semantic communication without decoding to text. And RAFT, for troubleshooting agents, abstracts closed support cases into chains of timeline entries, retrieves at entry level, and returns the parent trajectory anchored at the matched state.
+
+[HOST_B] The shared bet: text is an inefficient protocol between systems already carrying richer internal state, and granularity — tokens, cache entries, timeline states — is where the wins live. RAFT scores its retrieval layer directly, no production deployment needed; that's the discipline to copy. StepFun is the counterexample, and we'll get there.
+
+[HOST_A] Here it is: StepFun previewed Step five, claiming advances on the Pareto frontier — no released model, no numbers. Separately, Terry Tao published an essay asking whether we still need human mathematicians as AI systems improve. It sat near the top of Hacker News.
+
+[HOST_B] A frontier claim with no numbers is unfalsifiable — file it under marketing until benchmarks land. Tao's essay is the better artefact, and it's Retire O P D's question at human altitude: when does the supervisor's signal stop adding information, and can you measure that instead of guessing? Watch for retirement criteria everywhere, not just in distillation code.
+
+[HOST_A] The legal cluster. Briefs in the New York Times lawsuit quote a Microsoft director calling AI scraping the largest theft of labour in human history — OpenAI's head calls ChatGPT an existential threat to publishers. Spain has ordered blocks on Archive dot today and its mirrors. A site on exfiltrating model weights drew four hundred and seventy points, and a post on R S A eight ninety-six, the eight-ninety-six-bit modulus, drew one hundred and sixty-three.
+
+[HOST_B] Largest theft of labour in human history is litigation rhetoric — written for a judge. The exfiltration material makes the sharper point: the binding constraint on taking weights is operational security and logistics, not copyright. Spain's block is the same fight from the archive side — what may be copied, and who verifies. That verification layer is being rebuilt in public right now.
+
+[HOST_A] On trust: T M L R is asking authors questions about their own papers — one hundred and seventy-nine points, ninety-six comments. MaSCoD supplies structural hypotheses before direct-edge judgement in causal discovery, and on Auto-M P G, D W D and Sachs beats its ablation on mean recall and F one across all six dataset-backbone settings — G P T five point four primary — while raising false positives. An essay arguing AI should almost never write drew three hundred and eight points.
+
+[HOST_B] Both point the same way: trust comes from verifiable provenance and honest trade-offs, not confident declarations. A recall gain that costs precision is a result; a recall gain with no cost named is a pitch. Apply that filter to the whole briefing.
+
+[HOST_A] Infra and the sweep. PlanetScale shipped Tin, full-text search for Postgres — two hundred and eighteen points. A benchmark puts B t r f s, Z F S and b-cache-F S under workloads the classics skip — one hundred and forty-four. O O N I's guide to measuring censorship from your own network drew one hundred and sixty-nine. And the day's biggest number belongs to an e-ink frame that hears birds and draws them as nineteenth-century illustrations — two thousand three hundred and sixty-six points.
+
+[HOST_B] Sunday's through-line: measure the hand-off — teacher to student, cache to cache, document to state. Every link, every paper and every comment count is in the written report; read it there. Back tomorrow.
