@@ -37,8 +37,10 @@ VOICES = {
     "HOST_A": "am_fenrir", "A": "am_fenrir", "FENRIR": "am_fenrir",
     "HOST_B": "af_sarah", "B": "af_sarah", "SARAH": "af_sarah",
 }
-# media/long-audio: news digests and daily briefings must be >= 3 minutes.
-MIN_SECONDS = 180
+# media/long-audio asks for >= 3 minutes; the briefings deliberately sit in a
+# tighter four-to-five minute window so the read never overstays.
+MIN_SECONDS = 240
+MAX_SECONDS = 300
 # Same loudness target as that skill, so a briefing sits level with the rest.
 LOUDNORM = "I=-16:TP=-1.5:LRA=11"
 # Kokoro is capped at 15 RPM; stay under it without making a 12-segment
@@ -210,6 +212,30 @@ def duration(path):
     return Path(path).stat().st_size * 8 / 128_000
 
 
+def fit(seconds, path):
+    """Pull the briefing into the four-to-five minute window with atempo.
+
+    The script is written to land there on its own; this only catches the day
+    Kokoro reads faster or slower than usual. atempo shifts pacing without
+    touching pitch, and the correction is small (0.8-1.4x) because the word
+    target is already right. Without ffmpeg there is nothing to do but report
+    the real duration and let the caller decide.
+    """
+    if MIN_SECONDS <= seconds <= MAX_SECONDS or not have("ffmpeg"):
+        return seconds
+    target = MIN_SECONDS if seconds < MIN_SECONDS else MAX_SECONDS
+    factor = min(2.0, max(0.5, seconds / target))
+    tmp = Path(str(path) + ".fit.mp3")
+    r = subprocess.run(["ffmpeg", "-y", "-i", str(path), "-filter:a", f"atempo={factor:.4f}",
+                        "-b:a", "128k", "-ar", "24000", "-ac", "1", str(tmp)],
+                       capture_output=True)
+    if r.returncode != 0 or not tmp.exists() or tmp.stat().st_size < 500:
+        tmp.unlink(missing_ok=True)
+        return seconds
+    tmp.replace(path)
+    return duration(path)
+
+
 def inject(report, day, seconds):
     html = report.read_text(encoding="utf-8")
     mmss = f"{int(seconds // 60)}:{int(seconds % 60):02d}"
@@ -248,7 +274,8 @@ def main():
     ap.add_argument("--script", help="briefing script (default: audio/ai-news-<day>.txt)")
     ap.add_argument("--check", action="store_true")
     ap.add_argument("--allow-short", action="store_true",
-                    help=f"do not fail when the briefing is under {MIN_SECONDS}s")
+                    help=f"do not fail when the briefing falls outside "
+                         f"{MIN_SECONDS}-{MAX_SECONDS}s")
     args = ap.parse_args()
 
     report = ROOT / "reports" / f"ai-news-{args.day}.html"
@@ -265,7 +292,7 @@ def main():
               f"section={'yes' if 'Audio Briefing' in html else 'NO':3} "
               f"script={'yes' if script.exists() else 'NO':3} "
               f"duration={int(secs // 60)}:{int(secs % 60):02d}"
-              f"{'' if secs >= MIN_SECONDS else f'  ⚠ under {MIN_SECONDS}s'}")
+              f"{'' if MIN_SECONDS <= secs <= MAX_SECONDS else f'  ⚠ outside {MIN_SECONDS}-{MAX_SECONDS}s'}")
         return
 
     key = os.environ.get("NAN_API_KEY", "").strip()
@@ -290,14 +317,17 @@ def main():
         concat(parts, mp3)
 
     normalised = normalise(mp3)
-    secs = duration(mp3)
+    secs = fit(duration(mp3), mp3)
     mmss = inject(report, args.day, secs)
     words = sum(len(t.split()) for _, t in segments)
-    flag = "" if secs >= MIN_SECONDS else f"  ⚠ under the {MIN_SECONDS}s minimum — expand the script"
+    in_range = MIN_SECONDS <= secs <= MAX_SECONDS
+    flag = ("" if in_range
+            else f"  ⚠ {mmss} is outside the {MIN_SECONDS}-{MAX_SECONDS}s window "
+                 f"— {'expand' if secs < MIN_SECONDS else 'cut'} the script")
     print(f"{args.day}: {len(segments)} segments, {words} words, {mmss}, "
           f"{mp3.stat().st_size // 1024} KB, loudnorm={'yes' if normalised else 'SKIPPED'}"
           f" -> {mp3.relative_to(ROOT)}{flag}")
-    if secs < MIN_SECONDS and not args.allow_short:
+    if not in_range and not args.allow_short:
         sys.exit(2)
 
 

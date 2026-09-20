@@ -42,8 +42,13 @@ MODELS = os.environ.get("NAN_MODELS", "glm5.3-flash,deepseek-v4-flash").split(",
 # keeping each call's job small, and complete() treats a short answer as a
 # failure rather than publishing it.
 CALL_TOKENS = 16000
+CALL_MIN_CHARS = 400           # below this an answer is reasoning, not output
 MIN_REPORT_CHARS = 1200
-MIN_AUDIO_WORDS = 700          # ~160 wpm, comfortably over make_audio's 180s floor
+# The spoken briefing should run four to five minutes. Kokoro reads these
+# scripts at roughly 0.44 s/word plus a fixed close, so 720-820 words lands at
+# about 4:05-4:50. make_audio.py enforces the same window on real seconds.
+MIN_AUDIO_WORDS = 700
+MAX_AUDIO_WORDS = 860
 # More than this and the prompt is mostly noise the model has to wade through.
 # Two orderings, unioned: points finds what the day voted for, rank finds what
 # it is voting for right now. Points alone buried the RubyGems attribution — the
@@ -142,7 +147,8 @@ matters, what to watch, where to disagree. Alternate; never let one run twice.
 - It is read aloud by a TTS model: spell numbers as words ("thirty-eight point eight \
 percent", "twenty twenty-six"), expand acronyms it would garble (S W E, N L D O), \
 and never use a bullet, a heading, a URL or a bracket.
-- 900-1300 words, 12-18 segments. Under 700 words the audio is rejected.
+- 720-820 words, 10-14 segments: this has to run four to five minutes aloud. The \
+script is rejected outside that range, so cut rather than pad.
 - Cover the headlines and the papers properly; sweep the rest in one segment.
 
 REPORT:
@@ -190,14 +196,18 @@ def post(payload, key, timeout=240):
             "usage": usage}
 
 
-def complete(prompt, key, label, tries=2):
+def complete(prompt, key, label, tries=2, parse=None):
     """Ask each model in turn until one returns something substantial.
 
-    Two things go wrong in practice and both are survivable by moving on: the
-    edge answers 524 when a model thinks for longer than it will wait, and a
-    model that spends its whole budget reasoning returns 200 OK with an empty
-    string. NaN also rejects concurrent calls on one key, so this is serial by
-    construction, not by accident.
+    Three things go wrong in practice and all are survivable by moving on: the
+    edge answers 524 when a model thinks for longer than it will wait; a model
+    that spends its whole budget reasoning returns 200 OK with an empty string;
+    and — the one that bit us — when reasoning eats most of the 16k ceiling the
+    answer is a *truncated* 200 OK, long enough to pass a length check but not
+    valid JSON. `parse` is therefore what decides an attempt was good, not the
+    character count, so a cut-off answer falls through to the next model
+    instead of aborting the run. NaN also rejects concurrent calls on one key,
+    so this is serial by construction, not by accident.
     """
     for model in MODELS:
         for attempt in range(tries):
@@ -212,20 +222,35 @@ def complete(prompt, key, label, tries=2):
                 time.sleep(5)
                 continue
             text = (data["choices"][0]["message"].get("content") or "").strip()
+            finish = data["choices"][0].get("finish_reason")
             usage = data.get("usage", {})
             reasoning = usage.get("completion_tokens_details", {}).get("reasoning_tokens", 0)
             print(f"  {label}: {model} {time.time() - started:.0f}s "
-                  f"{usage.get('completion_tokens', 0)} tok ({reasoning} reasoning) "
-                  f"-> {len(text)} chars", file=sys.stderr)
-            if len(text) >= 400:
-                return text, model
-            print(f"  ! {label}: {model} returned {len(text)} chars — "
-                  f"budget went to reasoning", file=sys.stderr)
-    raise SystemExit(f"{label}: every model failed or returned nothing")
+                  f"{usage.get('completion_tokens', 0)} tok ({reasoning} reasoning, "
+                  f"finish={finish}) -> {len(text)} chars", file=sys.stderr)
+            if len(text) < CALL_MIN_CHARS:
+                print(f"  ! {label}: {model} returned {len(text)} chars — "
+                      f"budget went to reasoning", file=sys.stderr)
+                continue
+            if parse is not None:
+                try:
+                    return parse(text), model
+                except ValueError as exc:
+                    why = ("hit the token ceiling, answer truncated"
+                           if finish == "length" else str(exc))
+                    print(f"  ! {label}: {model} answer unusable — {why}", file=sys.stderr)
+                    time.sleep(2)
+                    continue
+            return text, model
+    raise SystemExit(f"{label}: every model failed or returned nothing usable")
 
 
 def parse_json(text):
-    """Pull the JSON object out of a reply that may be fenced or chatty."""
+    """Pull the JSON object out of a reply that may be fenced or chatty.
+
+    Raises ValueError, not SystemExit: complete() catches it to try the next
+    model, and only gives up once every model has produced something unusable.
+    """
     text = re.sub(r"^\s*```(?:json)?\s*|\s*```\s*$", "", text.strip())
     try:
         return json.loads(text)
@@ -244,7 +269,7 @@ def parse_json(text):
                     return json.loads(text[start:i + 1])
                 except json.JSONDecodeError:
                     start = None
-    raise SystemExit("model did not return parseable JSON")
+    raise ValueError("model did not return parseable JSON")
 
 
 def esc(text):
@@ -381,8 +406,11 @@ def keep_valid(items, index, used, label, want_paper):
 def check_audio(script):
     words = len(re.sub(r"\[\w+\]", " ", script).split())
     speakers = set(re.findall(r"\[(\w+)\]", script))
+    window = f"{MIN_AUDIO_WORDS}-{MAX_AUDIO_WORDS}"
     if words < MIN_AUDIO_WORDS:
-        return f"only {words} words (need {MIN_AUDIO_WORDS})"
+        return f"only {words} words (need {window}, ~4-5 minutes)"
+    if words > MAX_AUDIO_WORDS:
+        return f"{words} words, too long (need {window}, ~4-5 minutes)"
     if not {"HOST_A", "HOST_B"} <= speakers:
         return f"speakers were {sorted(speakers) or 'none'}, need HOST_A and HOST_B"
     return ""
@@ -414,10 +442,10 @@ def main():
     listing = "\n".join(
         f'{s["id"]} | rank {s["rank"]} | {s["points"]}pts {s["comments"]}c | '
         f'{s["title"]} | {s["url"]}' for s in stories)
-    raw, model = complete(NEWS_PROMPT.format(
+    reply, model = complete(NEWS_PROMPT.format(
         voice=VOICE, day=day, weekday=bundle["weekday"],
-        sections=", ".join(NEWS_SECTIONS), candidates=listing), key, "news")
-    reply = parse_json(raw)
+        sections=", ".join(NEWS_SECTIONS), candidates=listing), key, "news",
+        parse=parse_json)
     subtitle = str(reply.get("subtitle", "")).strip() or "The day in AI"
 
     chosen = []
@@ -436,9 +464,9 @@ def main():
                            for p in papers)
     why = []
     if papers:
-        raw, model = complete(PAPERS_PROMPT.format(
-            voice=VOICE, news=summary, candidates=candidates), key, "papers")
-        reply = parse_json(raw)
+        reply, model = complete(PAPERS_PROMPT.format(
+            voice=VOICE, news=summary, candidates=candidates), key, "papers",
+            parse=parse_json)
         items = keep_valid(reply.get("papers", []), index, used,
                            PAPERS_LABEL, want_paper=True)
         if items:
