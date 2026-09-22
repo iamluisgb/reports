@@ -41,6 +41,11 @@ VOICES = {
 # tighter four-to-five minute window so the read never overstays.
 MIN_SECONDS = 240
 MAX_SECONDS = 300
+# MP3 frame granularity and container-duration rounding differ between ffprobe
+# versions, and an atempo fit that lands on the boundary measures a hair past
+# it. Treat the window as inclusive with a second of slack, and aim the fit
+# just inside it so the next measurement cannot tip out again.
+WINDOW_SLACK = 1.0
 # Same loudness target as that skill, so a briefing sits level with the rest.
 LOUDNORM = "I=-16:TP=-1.5:LRA=11"
 # Kokoro is capped at 15 RPM; stay under it without making a 12-segment
@@ -212,6 +217,10 @@ def duration(path):
     return Path(path).stat().st_size * 8 / 128_000
 
 
+def in_window(seconds):
+    return MIN_SECONDS - WINDOW_SLACK <= seconds <= MAX_SECONDS + WINDOW_SLACK
+
+
 def fit(seconds, path):
     """Pull the briefing into the four-to-five minute window with atempo.
 
@@ -221,9 +230,11 @@ def fit(seconds, path):
     target is already right. Without ffmpeg there is nothing to do but report
     the real duration and let the caller decide.
     """
-    if MIN_SECONDS <= seconds <= MAX_SECONDS or not have("ffmpeg"):
+    if in_window(seconds) or not have("ffmpeg"):
         return seconds
-    target = MIN_SECONDS if seconds < MIN_SECONDS else MAX_SECONDS
+    # Aim a second inside the bound so the re-measure cannot land just past it.
+    target = (MIN_SECONDS + WINDOW_SLACK if seconds < MIN_SECONDS
+              else MAX_SECONDS - WINDOW_SLACK)
     factor = min(2.0, max(0.5, seconds / target))
     tmp = Path(str(path) + ".fit.mp3")
     r = subprocess.run(["ffmpeg", "-y", "-i", str(path), "-filter:a", f"atempo={factor:.4f}",
@@ -292,7 +303,7 @@ def main():
               f"section={'yes' if 'Audio Briefing' in html else 'NO':3} "
               f"script={'yes' if script.exists() else 'NO':3} "
               f"duration={int(secs // 60)}:{int(secs % 60):02d}"
-              f"{'' if MIN_SECONDS <= secs <= MAX_SECONDS else f'  ⚠ outside {MIN_SECONDS}-{MAX_SECONDS}s'}")
+              f"{'' if in_window(secs) else f'  ⚠ outside {MIN_SECONDS}-{MAX_SECONDS}s'}")
         return
 
     key = os.environ.get("NAN_API_KEY", "").strip()
@@ -320,7 +331,7 @@ def main():
     secs = fit(duration(mp3), mp3)
     mmss = inject(report, args.day, secs)
     words = sum(len(t.split()) for _, t in segments)
-    in_range = MIN_SECONDS <= secs <= MAX_SECONDS
+    in_range = in_window(secs)
     flag = ("" if in_range
             else f"  ⚠ {mmss} is outside the {MIN_SECONDS}-{MAX_SECONDS}s window "
                  f"— {'expand' if secs < MIN_SECONDS else 'cut'} the script")
