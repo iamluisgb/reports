@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Institutionalization and Physicalization of AI</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        :root {
+            --bg: #10141a;
+            --accent: #00ff9d;
+            --text: #e0e0e0;
+            --muted: #888;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+        article {
+            max-width: 650px;
+            width: 100%;
+        }
+        h1, h2 {
+            font-family: 'DM Serif Display', serif;
+            color: var(--accent);
+        }
+        .subtitle {
+            font-style: italic;
+            color: var(--muted);
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+        }
+        .date {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 3rem;
+        }
+        section {
+            margin-bottom: 4rem;
+        }
+        .section-label {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.8rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+        .news-item {
+            margin-bottom: 2rem;
+            border-left: 2px solid #2a2f3a;
+            padding-left: 1.5rem;
+        }
+        .news-item .title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .news-item .desc {
+            color: #ccc;
+            margin-bottom: 0.5rem;
+        }
+        .news-item .sources {
+            font-size: 0.85rem;
+            color: var(--accent);
+        }
+        .news-item .sources a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+        .stat-card {
+            background: #1a1f26;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #2a2f3a;
+        }
+        .stat-card .num {
+            display: block;
+            font-size: 2rem;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent);
+            font-weight: bold;
+        }
+        .stat-card .label {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-top: 0.5rem;
+        }
+        .watch-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: rgba(0, 255, 157, 0.05);
+            border-radius: 4px;
+        }
+        .watch-item strong {
+            color: var(--accent);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        footer {
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid #2a2f3a;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--muted);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>The Institutionalization and Physicalization of AI</h1>
+            <div class="subtitle">AI moves beyond software, embedding itself into hardware, energy grids, and global legal frameworks.</div>
+            <div class="date">22 SEP 2026 · TUESDAY</div>
+        </header>
+
+        <section>
+            <div class="section-label">Headlines</div>
+            
+            <div class="news-item">
+                <div class="title">OpenAI Resolves 100+ Mathematical Frontiers</div>
+                <div class="desc">OpenAI has formed a dedicated math advisory group following reports that its latest AI models have successfully resolved more than 100 previously open mathematical problems.</div>
+                <div class="sources">Source: <a href="https://techcrunch.com">TechCrunch</a></div>
+            </div>
+
+            <div class="news-item">
+                <div class="title">Meta’s 'Muse' Challenges Mobile Dominance</div>
+                <div class="desc">Meta's 'Muse' AI is reportedly outpacing ChatGPT in its early mobile launch phase, signaling a shift in the competition for mobile-first AI dominance.</div>
+                <div class="sources">Source: <a href="https://techcrunch.com">TechCrunch</a></div>
+            </div>
+
+            <div class="news-item">
+                <div class="title">Google Unveils $899 AI-Native 'Googlebook'</div>
+                <div class="desc">Google has entered the specialized AI hardware market with the 'Googlebook,' a laptop designed specifically to optimize the Gemini AI experience.</div>
+                <div class="sources">Source: <a href="https://techcrunch.com">TechCrunch</a></div>
+            </div>
+
+            <div class="news-item">
+                <div class="title">California Implements AI Energy Grid Mandate</div>
+                <div class="desc">In a significant regulatory move, California has implemented new rules requiring AI data centers to fund upgrades to local energy grids to manage massive power demands.</div>
+                <div class="sources">Source: <a href="https://theverge.com">The Verge</a></div>
+            </div>
+
+            <div class="news-item">
+                <div class="title">Apple Begins Siri AI Settlement Claims</div>
+                <div class="desc">The process for iPhone owners to submit claims in Apple’s $250 million Siri AI-related settlement has officially begun.</div>
+                <div class="sources">Source: <a href="https://theverge.com">The Verge</a></div>
+            </div>
+
+            <div class="news-item">
+                <div class="title">UN Warns of Immediate AI Safeguard Necessity</div>
+                <div class="desc">The UN has issued a warning that AI safeguards cannot wait for absolute certainty, amid rising geopolitical tensions and US 'AI Forces' proposals.</div>
+                <div class="sources">Source: <a href="https://theverge.com">The Verge</a></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-label">In Numbers</div>
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <div class="num">100+</div>
+                    <div class="label">Math Problems Solved</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">$250M</div>
+                    <div class="label">Apple Siri Settlement</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">$899</div>
+                    <div class="label">Googlebook Price</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-label">Watch</div>
+            <div class="watch-item">
+                <strong>Infrastructure Regulation</strong>
+                Escalating tension between tech giants and state governments over energy and water resource management.
+            </div>
+            <div class="watch-item">
+                <strong>AI-Centric Hardware</strong>
+                The transition from 'AI in the browser' to 'AI as the core operating system' of physical consumer devices.
+            </div>
+            <div class="watch-item">
+                <strong>Global Governance</strong>
+                The struggle to balance UN-led safeguard calls with the rapid, uninhibited deployment of frontier models.
+            </div>
+            <div class="watch-item">
+                <strong>Professional Automation</strong>
+                Increasing implementation of AI in specialized fields like accounting, potentially disrupting labor markets.
+            </div>
+            <div class="watch-item">
+                <strong>Political Integration</strong>
+                The emergence of government-led 'AI Forces' to manage and leverage national technological interests.
+            </div>
+        </section>
+
+        <footer>
+            22 SEP 2026
+        </footer>
+    </article>
+</body>
+</html>
