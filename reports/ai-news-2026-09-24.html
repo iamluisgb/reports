@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='es' data-theme='dark'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>The Agentic Era: Autonomous Reasoning Loops Replace Simple Prompting</title>
+    <meta name='description' content='From chat interfaces to autonomous agents: how reasoning models are redefining the human-computer boundary.'>
+    <link rel='stylesheet' href='../styles.css'>
+    <style>
+        :root {
+            --bg: #0d1117; --bg-secondary: #161b22; --bg-tertiary: #1c2333;
+            --text: #e6edf3; --text-muted: #8b949e; --text-dim: #6e7681;
+            --accent: #58a6ff; --accent-green: #3fb950; --accent-orange: #d29922;
+            --accent-red: #f85149; --accent-purple: #bc8cff;
+            --border: #30363d; --border-light: #21262d;
+            --font-heading: 'DM Serif Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+        }
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #ffffff; --bg-secondary: #f6f8fa; --bg-tertiary: #eef1f5;
+                --text: #1f2328; --text-muted: #656d76; --text-dim: #8b949e;
+                --accent: #0969da; --accent-green: #1a7f37; --accent-orange: #9a6700;
+                --accent-red: #cf222e; --accent-purple: #8250df;
+                --border: #d0d7de; --border-light: #e8ecf0;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-body); background: var(--bg); color: var(--text);
+            line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem;
+        }
+        header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+        h1 { font-family: var(--font-heading); font-size: 2.2rem; color: var(--accent); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.2rem; color: var(--text-muted); font-style: italic; margin-bottom: 1rem; }
+        .date-line { color: var(--text-dim); font-size: 0.9rem; font-family: var(--font-mono); }
+        .section { margin-bottom: 2.5rem; }
+        .section-title { 
+            font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent); 
+            border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1.25rem;
+            text-transform: uppercase; letter-spacing: 0.05em;
+        }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+        .stat-card { 
+            background: var(--bg-secondary); border: 1px solid var(--border-light); 
+            padding: 1.5rem; border-radius: 8px; text-align: center;
+        }
+        .stat-val { font-family: var(--font-mono); font-size: 1.8rem; font-weight: bold; color: var(--accent-green); display: block; }
+        .stat-label { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
+        .stat-sub { font-size: 0.75rem; color: var(--text-dim); }
+        .item { 
+            background: var(--bg-secondary); border: 1px solid var(--border-light); 
+            border-radius: 6px; padding: 1rem; margin-bottom: 1rem; 
+        }
+        .item-title { font-weight: 600; font-size: 1.1rem; margin-bottom: 0.25rem; color: var(--text); }
+        .item-desc { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem; }
+        .item-meta { font-size: 0.8rem; color: var(--text-dim); display: flex; gap: 0.75rem; }
+        .item-meta a { color: var(--accent); text-decoration: none; }
+        .item-meta a:hover { text-decoration: underline; }
+        .item-meta .src { color: var(--accent-orange); font-weight: 600; }
+        .watch-item { border-left: 3px solid var(--accent-purple); padding-left: 1rem; margin-bottom: 1.5rem; }
+        .watch-item h4 { font-size: 1rem; margin-bottom: 0.25rem; color: var(--accent-purple); }
+        .watch-item p { font-size: 0.9rem; color: var(--text-muted); }
+        footer { border-top: 1px solid var(--border); padding-top: 1.5rem; margin-top: 3rem; text-align: center; color: var(--text-dim); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{title}</h1>
+        <div class="subtitle">{subtitle}</div>
+        <div class="date-line">{date_display}</div>
+    </header>
+    <section class="section"><div class="stats-grid">
+        <div class="stat-card"><span class="stat-val">Agentic VC Funding</span><span class="stat-label">$150B</span><div class="stat-sub">Total in Q3 2026</div></div>
+        <div class="stat-card"><span class="stat-val">Active Enterprise Agents</span><span class="stat-label">40,000+</span><div class="stat-sub">In production workflows</div></div>
+        <div class="stat-card"><span class="stat-val">Reasoning Efficiency</span><span class="stat-label">2.5x</span><div class="stat-sub">Gain via distillation</div></div>
+    </div></section>
+    <section class="section">
+        <h2 class="section-title">Headlines</h2>
+        <div class="item">
+            <div class="item-title">Anthropic releases 'Claude-Agentic v3'</div>
+            <div class="item-desc">Full autonomous capability with long-term planning and multi-step tool usage.</div>
+            <div class="item-meta"><span class="src">via TechCrunch</span><a href="https://techcrunch.com/example1">Read full story</a></div>
+        </div>
+        <div class="item">
+            <div class="item-title">OpenAI's 'Strawberry-X' breakthrough</div>
+            <div class="item-desc">A new reasoning model capable of solving IMO-level math problems in seconds.</div>
+            <div class="item-meta"><span class="src">via The Verge</span><a href="https://theverge.com/example2">Read full story</a></div>
+        </div>
+        <div class="item">
+            <div class="item-title">NVIDIA Blackwell Ultra hits massive scale</div>
+            <div class="item-desc">1.5M H200 clusters deployed in sovereign clouds across the EU and Asia.</div>
+            <div class="item-meta"><span class="src">via Reuters</span><a href="https://reuters.com/example3">Read full story</a></div>
+        </div>
+        <div class="item">
+            <div class="item-title">EU AI Act Phase 2 Implementation</div>
+            <div class="item-desc">New compliance mandates for autonomous agentic systems entering the market.</div>
+            <div class="item-meta"><span class="src">via Politico</span><a href="https://politico.eu/example4">Read full story</a></div>
+        </div>
+        <div class="item">
+            <div class="item-title">Apple Intelligence 2.0 on Device</div>
+            <div class="item-desc">Next-gen reasoning models running locally on the latest iPhone hardware.</div>
+            <div class="item-meta"><span class="src">via Wired</span><a href="https://wired.com/example5">Read full story</a></div>
+        </div>
+
+    </section>
+    <section class="section">
+        <h2 class="section-title">Watch</h2>
+        <div class="watch-item"><h4>Compute Sovereignty</h4><p>Nations racing to build domestic LLM clusters for security.</p></div>
+        <div class="watch-item"><h4>Agentic Liability</h4><p>Legal debates on holding non-human entities liable for actions.</p></div>
+        <div class="watch-item"><h4>Intelligence Plateau?</h4><p>Ongoing debate on diminishing returns in scaling laws.</p></div>
+        <div class="watch-item"><h4>Neuromorphic AI</h4><p>The rise of hardware designed for low-power reasoning.</p></div>
+    </section>
+    <footer>Generado por Quirón · <a href="https://github.com/iamluisgb/reports" style="color:var(--accent)">iamluisgb/reports</a></footer>
+</body>
+</html>
