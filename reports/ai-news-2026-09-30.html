@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily Report · 30 SEP 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #10141a;
+            --accent: #00ff9d;
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --card-bg: #1e293b;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 650px;
+            width: 100%;
+        }
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 3.5rem;
+            color: var(--accent);
+            margin: 0;
+            line-height: 1;
+        }
+        .date {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .subtitle {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--text);
+            opacity: 0.9;
+        }
+        .section {
+            margin-bottom: 4rem;
+        }
+        .section-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .section-label::after {
+            content: "";
+            flex-grow: 1;
+            height: 1px;
+            background: #334155;
+            margin-left: 1rem;
+        }
+        .news-item {
+            display: grid;
+            grid-template-columns: 3rem 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            align-items: start;
+        }
+        .num {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+        .title {
+            font-weight: 700;
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+        .desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        .sources {
+            font-size: 0.8rem;
+        }
+        .sources a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        .sources a:hover {
+            text-decoration: underline;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        .stat-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+        .stat-val {
+            display: block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        .stat-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+        .watch-item {
+            padding-left: 1rem;
+            border-left: 2px solid var(--accent);
+            margin-bottom: 1.5rem;
+        }
+        .watch-title {
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        .watch-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        footer {
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 2.5rem; }
+            .news-item { grid-template-columns: 1fr; }
+            .num { margin-bottom: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="date">30 SEP 2026 · WEDNESDAY</span>
+            <h1>AI Daily</h1>
+            <div class="subtitle">Efficiency over Ego: The race for low-cost intelligence and agentic security.</div>
+        </header>
+
+        <div class="section">
+            <div class="section-label">Headlines</div>
+            
+            <div class="news-item">
+                <div class="num">01</div>
+                <div>
+                    <div class="title">OpenAI launches GPT-6.1 Sol</div>
+                    <div class="desc">A strategic pivot toward high-intelligence capabilities at a fraction of the cost, targeting mass-scale deployment.</div>
+                    <div class="sources"><a href="https://techcrunch.com" target="_blank">Source: TechCrunch</a></div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="num">02</div>
+                <div>
+                    <div class="title">Tesla secures $30B liquidity injection</div>
+                    <div class="desc">Massive capital boost aimed at scaling Cybercab and Optimus robotics production.</div>
+                    <div class="sources"><a href="https://techcrunch.com" target="_blank">Source: TechCrunch</a></div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="num">03</div>
+                <div>
+                    <div class="title">EliseAI hits $4B valuation</div>
+                    <div class="desc">The a16z-backed startup raised $350M in its latest funding round.</div>
+                    <div class="sources"><a href="https://techcrunch.com" target="_blank">Source: TechCrunch</a></div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="num">04</div>
+                <div>
+                    <div class="title">Anthropic scales enterprise focus</div>
+                    <div class="desc">Key presentations at Disrupt highlight the transition from chatbot to enterprise utility.</div>
+                    <div class="sources"><a href="https://techcrunch.com" target="_blank">Source: TechCrunch</a></div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="num">05</div>
+                <div>
+                    <div class="title">Security Alert: Rogue AI Agents</div>
+                    <div class="desc">Experts warn of systemic vulnerabilities as unmanaged autonomous agents gain enterprise access.</div>
+                    <div class="sources"><a href="https://theverge.com" target="_blank">Source: The Verge</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-label">In Numbers</div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-val">$30B</span>
+                    <span class="stat-label">Tesla Liquidity</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-val">$350M</span>
+                    <span class="stat-label">EliseAI Round</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-val">$4B</span>
+                    <span class="stat-label">EliseAI Valuation</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-label">Watch</div>
+            <div class="watch-item">
+                <div class="watch-title">Rogue Agent Proliferation</div>
+                <div class="watch-desc">The security implications of unmanaged agents interacting with enterprise systems.</div>
+            </div>
+            <div class="watch-item">
+                <div class="watch-title">OpenAI vs. App Ecosystems</div>
+                <div class="watch-desc">How GPT-6.1 Sol's pricing and features might disrupt traditional mobile apps.</div>
+            </div>
+            <div class="watch-item">
+                <<div class="watch-title">Physical AI Scaling</div>
+                <div class="watch-desc">The speed of Tesla's integration of new capital into hardware deployment.</div>
+            </div>
+            <div class="watch-item">
+                <div class="watch-title">Enterprise Adoption Rates</div>
+                <div class="watch-desc">Measuring the shift from experimental pilots to production-grade agentic workflows.</div>
+            </div>
+        </div>
+
+        <footer>
+            AI DAILY REPORT · 30 SEP 2026 · GENERATED BY HERMES
+        </footer>
+    </div>
+</body>
+</html>
