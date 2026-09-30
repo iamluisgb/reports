@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Tuesday the twenty-ninth of September, twenty twenty-six. Lead story — OpenAI ships G P T six point one Sol, positioned as near-Astra intelligence at a fifth of Astra's price. Eight hundred and twenty points and seven hundred and fifty-two comments on Hacker News make it the day's most-discussed launch.
+
+[HOST_B] Two releases in one day — Dots is separate, an always-on agent product that persists rather than answering per prompt. Read together, the pitch is that agent reliability is a distribution problem already solved. The papers today argue it is a measurement problem barely started. Hold that thought.
+
+[HOST_A] Anthropic published research arguing G L M five point three widens access to advanced offensive cyber capabilities beyond well-resourced labs. The finding bears directly on model access controls and monitoring.
+
+[HOST_B] Note the source — one lab flagging a rival's model as a proliferation risk. The operational claim still stands — capability is spreading faster than the controls around it. Watch whether access tiers and monitoring actually change, or whether this remains a warning label.
+
+[HOST_A] A live facial-recognition trial across U K stations logged five hundred thousand scans, zero arrests from matches, and one false positive. Separately, E F F reports DraftKings is using A I behavioural targeting on gamblers already showing chronic-use patterns.
+
+[HOST_B] Both are deployment outrunning evidence. Half a million scans for no arrests and one false positive makes the operational case hard to argue. DraftKings is optimising engagement against the most vulnerable users. Cal Newport's essay calling for formal investigation of the labs sits at five hundred and ninety-seven points — the industry keeps supplying its own exhibits.
+
+[HOST_A] Papers. UserProxyBench evaluates the L L M user simulators that agent benchmarks rely on. Holding the agent fixed at G P T five point five and swapping only the simulated user across three hundred and seventy-five enterprise tasks moves mean reward by fifteen point two points. Twenty-four point four percent of successful episodes contain a user-specification violation — the dominant failure is premature disclosure.
+
+[HOST_B] Sit with that last number. A quarter of episodes scored as successes broke the user's actual instructions — the benchmark was grading a conversation with a badly played user. Any leaderboard built on simulated users inherits that error bar, usually invisibly.
+
+[HOST_A] Two papers on execution. One has models declare one of four planning modes, then checks whether they keep them — generic Plan plus ReAct frequently fails to preserve the structure it declared, and the gap widens on longer plans. The other splits long agent runs — workers do task computation while a controller consolidates progress, prices each next option against the remaining budget, and dispatches with context from persistent memory.
+
+[HOST_B] The harness is the counterpoint to Dots. Always-on agents accumulate history, and history is where cost and failure compound. Cheap tokens make long runs affordable — which makes sloppy harnesses expensive. In the always-on regime the scarce resource is execution control — when to build on partial work, when to restart, when to stop.
+
+[HOST_A] FOCUS reframes context compression as decision preservation — keep only the past interactions that causally shape future decisions, computed at test time with no fine-tuning. On uncertainty, a pilot study shows even coarse substitutes for key-token probabilities improve calibration, so the signal is not what it appears to be. Their Divergent Token Confidence counts the decoding steps where two models disagree, found via Jensen–Shannon divergence along one trajectory.
+
+[HOST_B] That paper and Livenerf — a GitHub tool for detecting silent degradation in Opus five point five — tell the same story from two directions. Providers change model behaviour without versioning it, and token probabilities will not tell you. Verification is becoming the political story as fast as the technical one. Alex Ewerlöf's case that coding is not solved drew five hundred and forty-eight points and five hundred and thirty-three comments.
+
+[HOST_A] Sweep. World Labs, the spatial-intelligence startup, is joining A M D. Google ends Chrome O S support two years early — re-plan refresh cycles. OpenAI listed a ChatGPT Pro five hundred tier above Pro. A paper profiles tracking and privacy leakage in web and mobile conversational agents. Backblaze's second-quarter drive stats are out. Vermont is coordinating home batteries as a virtual power plant. T C L and T K nine point one shipped. macOS Golden Gate is reportedly unstable — pin your upgrades. Deser questions serde's trade-offs in Rust. Outside A I — Derek Thompson on the collapse of hosting leads at seven hundred and fifty-six, Pirating the Pirates follows at six hundred and eighty-eight, one in eight cancer cases worldwide is caused by infection, and Delhi cut electricity losses from fifty percent to five.
+
+[HOST_B] That is the briefing. The full written report carries the links, the abstracts and the numbers behind today's calls — read it before the comment threads.
