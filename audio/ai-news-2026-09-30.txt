@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Wednesday the thirtieth of September, twenty twenty-six. Lead story — a public release of machine-generated mathematical results, published under a responsible-release policy. Early norms for machine-generated maths, worked out in the open. The Hacker News thread is hours old and thirty-eight comments deep — the discussion has outrun the voting.
+
+[HOST_B] Why it leads — publication norms are being improvised in public, one thread at a time. Pair it with Nicholas Polson's count — two hundred and fifty-eight papers in nine months, roughly one per calendar day. The number is the story — the AI-authorship question is the discussion. Watch whether release policies for maths converge before someone ships a wrong proof at scale.
+
+[HOST_A] OpenAI posted its own DevDay twenty twenty-six recap — the canonical summary of the developer-conference announcements if you skipped the keynotes. No numbers in the roundup itself — treat it as the vendor's edit of its own event.
+
+[HOST_B] Read the recap against what shipped, not what was promised — vendor roundups are marketing with a changelog attached. The interesting test is which announcements get third-party benchmarks within a fortnight. Where to disagree — anyone calling DevDay a developer event should note the audience is increasingly models, which brings us to Cloudflare.
+
+[HOST_A] Cloudflare shipped C F — an agentic command line interface for its A P I, built for L L M agents rather than humans. The whole A P I surface wrapped so a model can operate it directly.
+
+[HOST_B] Vendor tooling is starting to treat the model as the primary user — that is the through-line of the day. Cloudflare ships a C L I whose customer is a model — the papers below supply the theory. Once a model commits rather than answers, the failure that matters shifts from a wrong fact to a wrong commitment.
+
+[HOST_A] The N R C issued the first United States construction permit for a small modular reactor — G E Vernova's B W R X three hundred, a three-hundred-megawatt boiling-water design, at T V A's Clinch River site.
+
+[HOST_B] The power half of the AI buildout just got its first permitted project — the buildout reaching the meter. Grid connection queues, not model weights, are the constraint most likely to bite first. What to watch — whether permit two takes years or months.
+
+[HOST_A] Papers. First, routing — the same open-weight model is effectively a different product per provider. Across three waves of live measurement, quality, latency, availability and price all vary sharply by endpoint. Pricier providers are consistently faster, but price predicts neither quality nor availability, and one deployment is near-normal on knowledge tasks yet collapses on multi-step reasoning.
+
+[HOST_B] So which model is the wrong unit of procurement — which model, served where, is the right one. From the other end, HARISSA — a small local model reads its own hidden states to decide when extra reasoning compute pays and when to defer to a human. Privacy preserved without blanket escalation to the cloud.
+
+[HOST_A] Three more papers worth your time. A C T R finds reasoning models that flag a jailbreak risk in their own chain of thought, then ignore it when answering in lower-resource languages — the signal exists, the wiring does not. EnterpriseBench scores agents on decisions with missing information, uncertainty and feedback. And a probabilistic-reasoning paper splits decision loss into believing wrongly versus choosing badly.
+
+[HOST_B] That last split is the eval gap — most suites in production still measure the answer engine, not the committer. A C T R is the failure you would predict once models act instead of advise — delegation is outrunning verification. Also on the pile, ReMem — a recommendation agent that reads screenshots via O C R and keeps a time-evolving memory for long horizons.
+
+[HOST_A] Quick sweep. P S S A — a non-transformer language model from scratch in Rust. Sebastian Raschka on text classification, bag-of-words to Jev. PostHog open-sourced Jeeves — L L M reasoning over Jev-style decision models. N S L is W S L in reverse — Linux reaching Windows tooling. Two essays — load-bearing code nobody tests, and staff engineers inventing their own scope. A sixteen-bit computer built from two hundred and seventy-seven thousand two hundred and forty-eight NAND gates. A PlayStation five exploit on GitHub. NASA quietly recruiting ex S R seventy-one crew — nobody saying why. Five hundred and twenty-six thousand asteroids tracked live. And the reading thread at four hundred and ninety-five comments.
+
+[HOST_B] The pattern across all of it — models moving from answering to operating, and every layer beneath them, power included, being rebuilt to match. The full links, tags and written version are in the report — AI News Daily, thirtieth of September. Read it before the discussion outruns you.

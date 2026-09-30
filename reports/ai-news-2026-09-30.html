@@ -1,174 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Daily Report · 30 SEP 2026</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #10141a;
-            --accent: #00ff9d;
-            --text: #e2e8f0;
-            --text-muted: #94a3b8;
-            --card-bg: #1e293b;
-        }
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 2rem 1rem;
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            max-width: 650px;
-            width: 100%;
-        }
-        header {
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-        h1 {
-            font-family: 'DM Serif Display', serif;
-            font-size: 3.5rem;
-            color: var(--accent);
-            margin: 0;
-            line-height: 1;
-        }
-        .date {
-            font-family: 'JetBrains Mono', monospace;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5rem;
-            display: block;
-        }
-        .subtitle {
-            font-family: 'DM Serif Display', serif;
-            font-size: 1.5rem;
-            font-style: italic;
-            color: var(--text);
-            opacity: 0.9;
-        }
-        .section {
-            margin-bottom: 4rem;
-        }
-        .section-label {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
-            color: var(--accent);
-            text-transform: uppercase;
-            border-bottom: 1px solid #334155;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-        }
-        .section-label::after {
-            content: "";
-            flex-grow: 1;
-            height: 1px;
-            background: #334155;
-            margin-left: 1rem;
-        }
-        .news-item {
-            display: grid;
-            grid-template-columns: 3rem 1fr;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            align-items: start;
-        }
-        .num {
-            font-family: 'JetBrains Mono', monospace;
-            color: var(--text-muted);
-            font-size: 1.2rem;
-        }
-        .title {
-            font-weight: 700;
-            font-size: 1.15rem;
-            margin-bottom: 0.5rem;
-            line-height: 1.3;
-        }
-        .desc {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-bottom: 0.5rem;
-        }
-        .sources {
-            font-size: 0.8rem;
-        }
-        .sources a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-        .sources a:hover {
-            text-decoration: underline;
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-        }
-        .stat-card {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            text-align: center;
-        }
-        .stat-val {
-            display: block;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--accent);
-            margin-bottom: 0.5rem;
-        }
-        .stat-label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-        .watch-item {
-            padding-left: 1rem;
-            border-left: 2px solid var(--accent);
-            margin-bottom: 1.5rem;
-        }
-        .watch-title {
-            font-weight: 700;
-            font-size: 1rem;
-            margin-bottom: 0.25rem;
-        }
-        .watch-desc {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-        footer {
-            text-align: center;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px solid #334155;
-        }
-        @media (max-width: 480px) {
-            h1 { font-size: 2.5rem; }
-            .news-item { grid-template-columns: 1fr; }
-            .num { margin-bottom: 0.5rem; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 30 Sep 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
 <!-- og:start -->
-<meta name="description" content="Efficiency over Ego: The race for low-cost intelligence and agentic security.">
+<meta name="description" content="Responsible release of AI-generated mathematics · OpenAI posts its DevDay 2026 recap · Cloudflare ships Cf, an agentic CLI for its API · NRC issues first US permit for a BWRX-300 small modular reactor">
 <link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-09-30.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AI Reports — Luis GB">
 <meta property="og:title" content="AI News Daily — 30 Sep 2026">
-<meta property="og:description" content="Efficiency over Ego: The race for low-cost intelligence and agentic security.">
+<meta property="og:description" content="Responsible release of AI-generated mathematics · OpenAI posts its DevDay 2026 recap · Cloudflare ships Cf, an agentic CLI for its API · NRC issues first US permit for a BWRX-300 small modular reactor">
 <meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-09-30.html">
 <meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-09-30.png">
 <meta property="og:image:width" content="1200">
@@ -177,108 +21,389 @@
 <meta name="twitter:site" content="@iamluisgb">
 <meta name="twitter:creator" content="@iamluisgb">
 <meta name="twitter:title" content="AI News Daily — 30 Sep 2026">
-<meta name="twitter:description" content="Efficiency over Ego: The race for low-cost intelligence and agentic security.">
+<meta name="twitter:description" content="Responsible release of AI-generated mathematics · OpenAI posts its DevDay 2026 recap · Cloudflare ships Cf, an agentic CLI for its API · NRC issues first US permit for a BWRX-300 small modular reactor">
 <meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-09-30.png">
 <!-- og:end -->
 </head>
 <body>
-    <div class="container">
-        <header>
-            <span class="date">30 SEP 2026 · WEDNESDAY</span>
-            <h1>AI Daily</h1>
-            <div class="subtitle">Efficiency over Ego: The race for low-cost intelligence and agentic security.</div>
-        </header>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
 
-        <div class="section">
-            <div class="section-label">Headlines</div>
-            
-            <div class="news-item">
-                <div class="num">01</div>
-                <div>
-                    <div class="title">OpenAI launches GPT-6.1 Sol</div>
-                    <div class="desc">A strategic pivot toward high-intelligence capabilities at a fraction of the cost, targeting mass-scale deployment.</div>
-                    <div class="sources"><a href="https://techcrunch.com" target="_blank">Source: TechCrunch</a></div>
-                </div>
-            </div>
-
-            <div class="news-item">
-                <div class="num">02</div>
-                <div>
-                    <div class="title">Tesla secures $30B liquidity injection</div>
-                    <div class="desc">Massive capital boost aimed at scaling Cybercab and Optimus robotics production.</div>
-                    <div class="sources"><a href="https://techcrunch.com" target="_blank">Source: TechCrunch</a></div>
-                </div>
-            </div>
-
-            <div class="news-item">
-                <div class="num">03</div>
-                <div>
-                    <div class="title">EliseAI hits $4B valuation</div>
-                    <div class="desc">The a16z-backed startup raised $350M in its latest funding round.</div>
-                    <div class="sources"><a href="https://techcrunch.com" target="_blank">Source: TechCrunch</a></div>
-                </div>
-            </div>
-
-            <div class="news-item">
-                <div class="num">04</div>
-                <div>
-                    <div class="title">Anthropic scales enterprise focus</div>
-                    <div class="desc">Key presentations at Disrupt highlight the transition from chatbot to enterprise utility.</div>
-                    <div class="sources"><a href="https://techcrunch.com" target="_blank">Source: TechCrunch</a></div>
-                </div>
-            </div>
-
-            <div class="news-item">
-                <div class="num">05</div>
-                <div>
-                    <div class="title">Security Alert: Rogue AI Agents</div>
-                    <div class="desc">Experts warn of systemic vulnerabilities as unmanaged autonomous agents gain enterprise access.</div>
-                    <div class="sources"><a href="https://theverge.com" target="_blank">Source: The Verge</a></div>
-                </div>
-            </div>
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">30 Sep 2026 · WEDNESDAY</div>
+          <div class="subtitle">Responsible release of AI-generated mathematics · OpenAI posts its DevDay 2026 recap · Cloudflare ships Cf, an agentic CLI for its API · NRC issues first US permit for a BWRX-300 small modular reactor</div>
         </div>
-
-        <div class="section">
-            <div class="section-label">In Numbers</div>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <span class="stat-val">$30B</span>
-                    <span class="stat-label">Tesla Liquidity</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-val">$350M</span>
-                    <span class="stat-label">EliseAI Round</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-val">$4B</span>
-                    <span class="stat-label">EliseAI Valuation</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-label">Watch</div>
-            <div class="watch-item">
-                <div class="watch-title">Rogue Agent Proliferation</div>
-                <div class="watch-desc">The security implications of unmanaged agents interacting with enterprise systems.</div>
-            </div>
-            <div class="watch-item">
-                <div class="watch-title">OpenAI vs. App Ecosystems</div>
-                <div class="watch-desc">How GPT-6.1 Sol's pricing and features might disrupt traditional mobile apps.</div>
-            </div>
-            <div class="watch-item">
-                <<div class="watch-title">Physical AI Scaling</div>
-                <div class="watch-desc">The speed of Tesla's integration of new capital into hardware deployment.</div>
-            </div>
-            <div class="watch-item">
-                <div class="watch-title">Enterprise Adoption Rates</div>
-                <div class="watch-desc">Measuring the shift from experimental pilots to production-grade agentic workflows.</div>
-            </div>
-        </div>
-
-        <footer>
-            AI DAILY REPORT · 30 SEP 2026 · GENERATED BY HERMES
-        </footer>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
     </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-09-30.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 30 SEP 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 4:58</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Releasing AI-generated mathematics, responsibly</div>
+        <div class="desc">A public release of AI-generated mathematical results, wrapped in a responsible-release policy — early norms for publishing machine-generated maths. Hours old and already 38 comments deep — the discussion outran the voting.</div>
+        <div class="sources">
+          <a href="https://agmai.org/general-sep29/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49903713">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">OpenAI's DevDay 2026 recap</div>
+        <div class="desc">OpenAI's own roundup of DevDay 2026 — the canonical summary of the developer-conference announcements if you skipped the keynotes.</div>
+        <div class="sources">
+          <a href="https://openai.com/index/devday-2026-recap/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49896600">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Cloudflare ships Cf, an agentic CLI for its API</div>
+        <div class="desc">Cloudflare's CLI built for LLM agents rather than humans — the API surface wrapped so a model can operate it directly. Vendor tooling is starting to treat the model as the primary user.</div>
+        <div class="sources">
+          <a href="https://blog.cloudflare.com/cloudflare-cf-cli-launch/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49879577">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">First US construction permit for a BWRX-300 small modular reactor</div>
+        <div class="desc">The NRC issued the first US construction permit for a small modular reactor — GE Vernova's BWRX-300, at TVA's Clinch River site. The power half of the AI buildout just got its first permitted project.</div>
+        <div class="sources">
+          <a href="https://www.gevernova.com/news/press-releases/nrc-issues-first-us-construction-permit-bwrx-300-small-modular-reactor-tva-clinch-river">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49902019">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">PSSA: a non-transformer language model from scratch in Rust</div>
+        <div class="desc">A complete language model that isn't a transformer, implemented from scratch in Rust — working code for anyone curious about architectures beyond the standard stack.</div>
+        <div class="sources">
+          <a href="https://github.com/Sparticle62ops/pssa">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49903993">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">From bag-of-words to Jev: a history of text classification</div>
+        <div class="desc">Sebastian Raschka traces text classification from bag-of-words to Jev — a history of the NLP task that never left production.</div>
+        <div class="sources">
+          <a href="https://magazine.sebastianraschka.com/p/classifier-history-and-jev">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49891203">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Jeeves: LLM reasoning over Jev-style decision models</div>
+        <div class="desc">PostHog open-sources Jeeves, applying LLM reasoning to Jev-style decision models — the repo to read if you're wiring models into decision loops.</div>
+        <div class="sources">
+          <a href="https://github.com/PostHog/jeeves">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49891290">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Making a vibe-coded site look designer-made</div>
+        <div class="desc">A walkthrough of the gap between vibe-coded output and designed output, and how one team closed it.</div>
+        <div class="sources">
+          <a href="https://railcode.dev/blog/vibe-coded-website">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49901973">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">258 papers in nine months: the Polson number</div>
+        <div class="desc">Nicholas Polson has 258 academic papers so far in 2026 — roughly one per calendar day. The number is the story — the AI-authorship question is the discussion.</div>
+        <div class="sources">
+          <a href="https://statmodeling.stat.columbia.edu/2026/08/27/258/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49898877">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">You Cannot Pick a Provider From the Price List: Market-Aware Routing for Open-Weight LLM Inference</div>
+        <div class="desc">LLM routers pick a model off a static price list and stop there — the open-weight market adds a second decision the price list cannot answer: which provider serves that model. Live measurement across competing endpoints over three waves shows the same model varying sharply in quality, latency, availability and price by provider — pricier endpoints are consistently faster, but price predicts neither quality nor availability, and one deployment is near-normal on knowledge tasks yet collapses on multi-step reasoning. The paper formalises same-model provider selection as a price-taker, market-aware routing problem. <strong>[inference, routing, open-weights]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.37902v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">HARISSA: Inference-Time Self-Checks for Efficient and Safe Local Language Model Deployment</div>
+        <div class="desc">Local hardware fits only small models, and the standard remedy for hard queries — escalating to a cloud model — gives back the privacy and cost savings that motivated running locally. HARISSA makes both remaining decisions from the model's own hidden states: whether a query is worth extra reasoning compute, and whether an answer is safe to deliver or should be deferred to a human. The prefill state, computed before a single token is generated, carries enough signal for both checks. <strong>[local-inference, safety, efficiency]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.38006v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">actr: aligning thoughts and responses for multilingual safety in reasoning llms</div>
+        <div class="desc">Reasoning LLMs can answer a non-English jailbreak unsafely even when their own chain of thought has already flagged the risk. ACTR measures that disconnect with a think gap score — how much the reasoning trace actually drives attention during generation, per language — then closes it by aligning thoughts and responses, using neuron-masking importance over a jailbreak corpus to target training. The safety reasoning already exists — the wiring from trace to response is what is missing. <strong>[safety, multilingual, reasoning]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.37054v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">EnterpriseBench: Benchmarking LLM Agents on Enterprise-Level Strategic Reasoning and Decision-Making</div>
+        <div class="desc">Enterprise and financial benchmarks test static extraction, calculation and QA, while the actual job — decisions with missing information, uncertainty, feedback and long-term trade-offs — goes unmeasured. EnterpriseBench reorganises existing QA datasets into a capability- and difficulty-annotated foundation suite and adds three interactive professional settings, starting with consulting-style client diagnosis. It scores agents across the full spectrum from static answers to dynamic, multi-step decisions. <strong>[agents, benchmarking, enterprise]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.37658v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Diagnosing and Improving Probabilistic Reasoning in Large Language Models</div>
+        <div class="desc">An LLM acting as a decision assistant can fail twice — forming wrong beliefs from the evidence, or holding right beliefs and still choosing badly against the stated utility. This paper decomposes decision loss into exactly those two components, applies the split to frontier and open models on a synthetic benchmark with known ground truth, then runs RL interventions targeting beliefs, decisions or both across three domains to see which gains transfer and which stay put. <strong>[evaluation, reasoning, decision-making]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.38005v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">ReMem: Rethinking Perception and Memory in Long-Context Recommendation Agents</div>
+        <div class="desc">Recommendation agents that browse on a user's behalf break in two places: brittle perception over noisy, heterogeneous item pages, and inefficient long-context reasoning over extended interaction histories. ReMem replaces raw-HTML parsing with OCR over screenshots — platform-agnostic, and closer to how a human reads a page — and adds a time-evolving dynamic memory for long horizons. A concrete architecture for the perception and memory layers every user-side agent needs. <strong>[agents, memory, multimodal]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.37311v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">NSL: WSL, pointed the other way</div>
+        <div class="desc">Show HN: NSL is WSL in reverse — a compatibility layer giving Linux native access to Windows tooling, the mirror image of Microsoft's subsystem.</div>
+        <div class="sources">
+          <a href="https://frostyard.github.io/nsl/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49894351">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Systems that no one will test</div>
+        <div class="desc">An essay on the code that sits outside every test strategy — unowned, load-bearing, and untouched until it breaks.</div>
+        <div class="sources">
+          <a href="https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49876052">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">A staff engineer's guide to inventing work</div>
+        <div class="desc">On creating scope nobody assigned to you — the staff-engineer skill that never makes it into the job description.</div>
+        <div class="sources">
+          <a href="https://sujithjay.com/inventing-work">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49878857">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">NAND-16: a computer from 277,248 NAND gates</div>
+        <div class="desc">A working 16-bit computer built from nothing but NAND gates — 277,248 of them. The number is the story.</div>
+        <div class="sources">
+          <a href="https://somethingbig.ai/computer">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49871018">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">PS5 'Relapse' exploit published</div>
+        <div class="desc">A PlayStation 5 exploit released as a GitHub repo — 283 points, 170 comments.</div>
+        <div class="sources">
+          <a href="https://github.com/ntfargo/Relapse-Exploit">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49895304">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">NASA recruits ex-SR-71A staff for a secret restart</div>
+        <div class="desc">NASA has approached several former SR-71A crew and engineers about quietly reviving the Blackbird. Nobody is saying why — which is half the story.</div>
+        <div class="sources">
+          <a href="https://aviationweek.com/defense/aircraft-propulsion/nasa-asked-several-former-sr-71a-staffers-help-secret-restart">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49890733">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Real-time solar system: 526,000 asteroids, every tracked satellite</div>
+        <div class="desc">An interactive real-time model of the solar system, tracking 526,000 asteroids plus all tracked satellites.</div>
+        <div class="sources">
+          <a href="https://space.bl2.net/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49898778">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Ask HN: What are you reading?</div>
+        <div class="desc">The perennial thread at 495 comments — a reading list assembled by people who build things for a living.</div>
+        <div class="sources">
+          <a href="https://news.ycombinator.com/item?id=49893157">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49893157">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The through-line is the model's job description changing from answer engine to operator — Cloudflare ships a CLI whose primary user is a model, PostHog wires LLM reasoning into decision models, and the papers supply the theory that framing was missing: EnterpriseBench scores long-horizon choices with missing information and feedback, while the probabilistic-reasoning work splits decision loss into believing wrongly versus choosing badly. Once a model commits rather than answers, the failure that matters shifts from a wrong fact to a wrong commitment. Most benchmarks — and most eval suites in production — are still measuring the answer engine.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Delegation is outrunning verification on two fronts. actr finds models that flag a safety risk in their own reasoning and then ignore it when responding in lower-resource languages — the signal exists but is not wired to the actuator, exactly the failure you would predict once models act instead of advise. And the responsible release of AI-generated mathematics, alongside Polson's 258 papers in nine months, has publication norms being improvised in public — one 38-comment thread at a time.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The economics layer is being rewritten too. The routing paper shows the same open-weight model is effectively a different product per provider — price buys latency, not quality, and one endpoint near-normal on knowledge tasks collapses on multi-step reasoning — so 'which model' is the wrong unit of procurement. HARISSA attacks from the other end: a small local model reads its own hidden states to decide when extra compute pays and when to defer to a human, keeping privacy without blanket escalation. The first US construction permit for a small modular reactor is the same buildout reaching the meter — the power layer now permitted while the software above it is still being defined.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">30 Sep 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 299;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
 </body>
 </html>
