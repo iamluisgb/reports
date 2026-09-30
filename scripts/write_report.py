@@ -492,9 +492,16 @@ def main():
 
     text = re.sub(r"<[^>]+>", " ", page)
     text = re.sub(r"\s+", " ", text)
-    script, model = complete(
-        AUDIO_PROMPT.format(voice=VOICE, weekday=bundle["weekday"], report=text),
-        key, "audio")
+    try:
+        script, model = complete(
+            AUDIO_PROMPT.format(voice=VOICE, weekday=bundle["weekday"], report=text),
+            key, "audio")
+    except SystemExit as exc:
+        # The report is already on disk and publishable. A briefing the models
+        # could not produce must not abort the run before the report is
+        # committed, so treat it like a rejected script: report still stands.
+        print(f"  ! audio script unavailable: {exc} — report still stands", file=sys.stderr)
+        return
     script = re.sub(r"^\s*```\w*\s*|\s*```\s*$", "", script.strip())
     problem = check_audio(script)
     if problem:
