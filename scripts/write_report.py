@@ -315,6 +315,10 @@ def render(day, chosen, subtitle, why, index):
             source = index[item["id"]]
             if item["id"].startswith("arxiv-"):
                 links = f'          <a href="{source["url"]}">arXiv</a>\n'
+            elif source["url"] == source.get("hn_url"):
+                # A self post (Ask HN and friends) has no external URL: the story
+                # URL *is* the thread, and two links to the same place read as a bug.
+                links = f'          <a href="{source["hn_url"]}">HN</a>\n'
             else:
                 links = (f'          <a href="{source["url"]}">Original</a>\n'
                          f'          <a href="{source["hn_url"]}">HN</a>\n')
