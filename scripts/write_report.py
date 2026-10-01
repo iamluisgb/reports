@@ -66,7 +66,16 @@ no "in today's fast-moving landscape", no "it's worth noting". Numbers earn thei
 place. Never pad. British-leaning English, em dashes over semicolons."""
 
 PAPERS_LABEL = "Papers — ArXiv CS.AI"
-NEWS_SECTIONS = ["Headlines", "AI / LLM / Agents", "Infra / SRE / DevOps", "Hacker News"]
+# The semantic-layer beat is a standing section: the vocabulary moves faster
+# than the field does, so one label has to hold ontologies, knowledge graphs,
+# context graphs and semantic layers alike. Its candidates are the only ones
+# collect.py tags with this prefix, which is how the section is kept honest.
+SEMANTIC_LABEL = "Ontologies, Graphs & Semantics"
+SEMANTIC_PREFIX = "kg-"
+SEMANTIC_ABSTRACT = 420
+MAX_TOPIC = 14
+NEWS_SECTIONS = ["Headlines", "AI / LLM / Agents", SEMANTIC_LABEL,
+                 "Infra / SRE / DevOps", "Hacker News"]
 
 NEWS_PROMPT = """{voice}
 
@@ -92,6 +101,14 @@ points is hours old and may well be the day's lead. Judge by what happened, not 
 the vote count.
 - "AI / LLM / Agents" takes another 4-6, "Infra / SRE / DevOps" and "Hacker News" \
 3-5 each. Use each id once, and never run two items about the same event.
+- "{semantic_label}" is the standing semantic-layer beat, and it is the one section \
+with its own candidate list: draw it ONLY from SEMANTIC-LAYER CANDIDATES below, \
+2-5 items, and put none of those ids in any other section. The naming in this field \
+is unstable — ontology, knowledge graph, context graph, semantic layer, semantic \
+model, property graph, GraphRAG, RDF/OWL, taxonomy, entity resolution, data fabric \
+or mesh, metadata or metrics layer, digital twin — and these are one conversation, \
+not ten. Route the day's items here. If nothing there is worth publishing, omit \
+the section.
 - "id" MUST be copied exactly from a candidate below. Never invent one.
 - "title" is yours to rewrite — sharper than the source headline, sentence case.
 - "desc" is 1-3 sentences: what the thing IS, and the number when the number is the \
@@ -313,15 +330,21 @@ def render(day, chosen, subtitle, why, index):
                      f'      <div class="section-label">{esc(section["label"])}</div>\n')
         for n, item in enumerate(section["items"], 1):
             source = index[item["id"]]
-            if item["id"].startswith("arxiv-"):
+            # "arxiv-" as a substring, not a prefix: a beat paper is kg-arxiv-…,
+            # and it still deserves the arXiv link and nothing else.
+            hn_url = source.get("hn_url")
+            if "arxiv-" in item["id"]:
                 links = f'          <a href="{source["url"]}">arXiv</a>\n'
-            elif source["url"] == source.get("hn_url"):
+            elif not hn_url:
+                # A beat pick taken straight from the web has no thread behind it.
+                links = f'          <a href="{source["url"]}">Source</a>\n'
+            elif source["url"] == hn_url:
                 # A self post (Ask HN and friends) has no external URL: the story
                 # URL *is* the thread, and two links to the same place read as a bug.
-                links = f'          <a href="{source["hn_url"]}">HN</a>\n'
+                links = f'          <a href="{hn_url}">HN</a>\n'
             else:
                 links = (f'          <a href="{source["url"]}">Original</a>\n'
-                         f'          <a href="{source["hn_url"]}">HN</a>\n')
+                         f'          <a href="{hn_url}">HN</a>\n')
             parts.append(f"""
       <div class="news-item">
         <div class="num">{n:02d}</div>
@@ -385,13 +408,27 @@ def render(day, chosen, subtitle, why, index):
     return "".join(parts)
 
 
-def keep_valid(items, index, used, label, want_paper):
-    """Keep only what the model was actually given, and say what it lost."""
+def keep_valid(items, index, used, label, want_paper,
+               only_prefix=None, forbid_prefix=None):
+    """Keep only what the model was actually given, and say what it lost.
+
+    `only_prefix` / `forbid_prefix` enforce the one section whose candidates
+    come from a separate list: a beat id may not be promoted into Headlines,
+    and a front-page id may not be used to pad the beat.
+    """
     kept = []
     for item in items:
         key = str(item.get("id", "")).strip()
         if key not in index:
             print(f"  - dropped unknown id {key!r} in {label}", file=sys.stderr)
+            continue
+        if only_prefix and not key.startswith(only_prefix):
+            print(f"  - dropped {key}: not a {only_prefix} item in {label}",
+                  file=sys.stderr)
+            continue
+        if forbid_prefix and key.startswith(forbid_prefix):
+            print(f"  - dropped {key}: beat item in the wrong section ({label})",
+                  file=sys.stderr)
             continue
         if key in used:
             print(f"  - dropped duplicate id {key} in {label}", file=sys.stderr)
@@ -439,15 +476,26 @@ def main():
     stories = list({s["id"]: s for s in by_points + by_rank}.values())
     stories.sort(key=lambda s: s["rank"])
     papers = bundle["papers"][:MAX_PAPERS]
-    index = {c["id"]: c for c in stories + papers}
+    topic = bundle.get("topic", [])[:MAX_TOPIC]
+    index = {c["id"]: c for c in stories + papers + topic}
     used = set()
 
     # --- news -------------------------------------------------------------
     listing = "\n".join(
         f'{s["id"]} | rank {s["rank"]} | {s["points"]}pts {s["comments"]}c | '
         f'{s["title"]} | {s["url"]}' for s in stories)
+    if topic:
+        listing += "\n\nSEMANTIC-LAYER CANDIDATES:"
+        for item in topic:
+            extra = (f' | arXiv {item.get("published", "")}'
+                     if item.get("kind") == "paper"
+                     else f' | {item.get("points", 0)}pts {item.get("comments", 0)}c')
+            listing += f'\n{item["id"]} | {item["title"]}{extra} | {item["url"]}'
+            if item.get("abstract"):
+                listing += f'\n  {item["abstract"][:SEMANTIC_ABSTRACT]}'
     reply, model = complete(NEWS_PROMPT.format(
         voice=VOICE, day=day, weekday=bundle["weekday"],
+        semantic_label=SEMANTIC_LABEL,
         sections=", ".join(NEWS_SECTIONS), candidates=listing), key, "news",
         parse=parse_json)
     subtitle = str(reply.get("subtitle", "")).strip() or "The day in AI"
@@ -455,7 +503,11 @@ def main():
     chosen = []
     for section in reply.get("sections", []):
         label = str(section.get("label", "")).strip()
-        items = keep_valid(section.get("items", []), index, used, label, want_paper=False)
+        beat = label.lower() == SEMANTIC_LABEL.lower()
+        items = keep_valid(section.get("items", []), index, used, label,
+                           want_paper=False,
+                           only_prefix=SEMANTIC_PREFIX if beat else None,
+                           forbid_prefix=None if beat else SEMANTIC_PREFIX)
         if items:
             chosen.append({"label": label, "items": items})
     if sum(len(s["items"]) for s in chosen) < 6:
