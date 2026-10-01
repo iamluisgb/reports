@@ -7,105 +7,14 @@
 <link rel="stylesheet" href="../styles.css?v=2">
 <title>Ontologies, Graph ML &amp; AIOps: Where the ML Actually Goes</title>
 <style>
-  :root {
-    --bg: #0f1117;
-    --panel: #171a23;
-    --panel2: #1d212d;
-    --border: #2a3040;
-    --edge: #3d465c;
-    --text: #d7dbe4;
-    --muted: #8b93a5;
-    --accent: #5eb3f6;
-    --accent2: #7ee0a3;
-    --warn: #f0b45c;
-    --bad: #ef7b7b;
-    --mono: "SFMono-Regular", "JetBrains Mono", Consolas, monospace;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif;
-  }
-  .wrap { max-width: 980px; margin: 0 auto; padding: 48px 24px 96px; }
-  header { border-bottom: 1px solid var(--border); padding-bottom: 24px; margin-bottom: 40px; }
-  h1 { font-size: 1.9rem; margin: 0 0 6px; letter-spacing: -0.02em; }
-  .sub { color: var(--muted); font-size: 0.95rem; }
-  h2 {
-    font-size: 1.35rem; margin: 56px 0 14px; padding-top: 20px;
-    border-top: 1px solid var(--border); letter-spacing: -0.01em;
-  }
-  h2 .tag {
-    font-size: 0.65rem; font-weight: 600; color: var(--accent);
-    text-transform: uppercase; letter-spacing: 0.12em; display: block; margin-bottom: 4px;
-  }
-  h3 { font-size: 1.05rem; margin: 28px 0 8px; color: var(--accent2); }
-  p { margin: 10px 0; }
-  ul, ol { margin: 8px 0; padding-left: 22px; }
-  li { margin: 5px 0; }
-  strong { color: #fff; }
-  em { color: var(--accent2); font-style: normal; }
-  code {
-    font-family: var(--mono); font-size: 0.85em; background: var(--panel2);
-    border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px;
-  }
-  pre {
-    font-family: var(--mono); font-size: 0.82rem; line-height: 1.5;
-    background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
-    padding: 18px 20px; overflow-x: auto; color: #b9c2d4;
-  }
-  table {
-    width: 100%; border-collapse: collapse; margin: 18px 0 8px;
-    font-size: 0.92rem; background: var(--panel);
-    border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
-  }
-  th {
-    text-align: left; padding: 11px 14px; background: var(--panel2);
-    color: var(--accent); font-size: 0.78rem; text-transform: uppercase;
-    letter-spacing: 0.08em; border-bottom: 1px solid var(--border);
-  }
-  td { padding: 11px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
-  tr:last-child td { border-bottom: none; }
-  td:first-child { font-weight: 600; color: #fff; white-space: nowrap; }
-  .pill {
-    display: inline-block; padding: 1px 9px; border-radius: 999px;
-    font-size: 0.78rem; font-weight: 600; white-space: nowrap;
-  }
-  .pill.hi   { background: rgba(126,224,163,.13); color: var(--accent2); }
-  .pill.md   { background: rgba(240,180,92,.13); color: var(--warn); }
-  .pill.lo   { background: rgba(239,123,123,.13); color: var(--bad); }
-  .pill.info { background: rgba(94,179,246,.13); color: var(--accent); }
-  .callout {
-    background: var(--panel); border: 1px solid var(--border);
-    border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0;
-    padding: 14px 18px; margin: 18px 0; font-size: 0.95rem;
-  }
-  .callout.key { border-left-color: var(--accent2); }
-  .callout.warn { border-left-color: var(--warn); }
-  .footer-note { color: var(--muted); font-size: 0.85rem; margin-top: 64px; }
-
-  /* ---- diagrams ---- */
-  svg.diagram {
-    width: 100%; height: auto; display: block; margin: 20px 0;
-    background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
-  }
-  .dg-box    { fill: var(--panel2); stroke: var(--edge); stroke-width: 1.2; }
-  .dg-in     { fill: #141821; stroke: var(--edge); stroke-width: 1; }
-  .dg-accent { stroke: var(--accent); }
-  .dg-green  { stroke: var(--accent2); }
-  .dg-warn   { stroke: var(--warn); }
-  .dg-t   { fill: var(--text); font-size: 13px; text-anchor: middle; }
-  .dg-l   { fill: var(--text); font-size: 13px; text-anchor: start; }
-  .dg-mut { fill: var(--muted); font-size: 11px; text-anchor: middle; }
-  .dg-hd  { fill: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-anchor: middle; }
-  .dg-edge { stroke: var(--edge); stroke-width: 1.6; fill: none; }
-  .dg-flow { stroke: var(--accent); stroke-width: 1.6; fill: none; opacity: .8; }
-  .dg-dash { stroke: var(--warn); stroke-width: 1.6; fill: none; stroke-dasharray: 5 4; }
-  .dg-node { fill: var(--panel2); stroke: var(--accent); stroke-width: 1.4; }
-  .dg-cap  { fill: var(--muted); font-size: 11px; text-anchor: middle; font-style: italic; }
-  @media (max-width: 640px) {
-    td:first-child { white-space: normal; }
-    pre { font-size: 0.72rem; }
-  }
+/* Supplementary only — value pills + SVG figures (no site equivalent). Everything else comes from styles.css */
+.pill { display:inline-block; padding:1px 9px; border-radius:999px; font-size:12px; font-weight:600; white-space:nowrap; }
+.pill.hi { background: rgba(63,185,80,.13); color:#4ec96a; }
+.pill.md { background: rgba(210,153,34,.15); color:#d29922; }
+.pill.lo { background: rgba(248,81,73,.15); color:#f85149; }
+.svg-figure { background:#0d1117; border:1px solid var(--border); border-radius:12px; padding:20px 16px; margin:20px 0; }
+.svg-figure svg { width:100%; height:auto; display:block; }
+.footer-note { color: var(--on-surface-variant); font-size:12px; margin-top:48px; opacity:.75; }
 </style>
 <!-- og:start -->
 <meta name="description" content="Palantir ontology · Governance · Link prediction · AIOps layers · The determinism question · Foundry mapping · 5 diagrams · Reading list">
@@ -136,15 +45,26 @@
   </nav>
   <a class="back-link" href="../index.html">← Index</a>
 
-<div class="wrap">
-
-<header>
-  <h1>Ontologies, Graph ML &amp; AIOps</h1>
-  <div class="special-subtitle">Palantir ontology · Governance · Link prediction · AIOps layers · The determinism question · Foundry mapping · 5 diagrams · Reading list</div>
-</header>
+<div class="special-header">
+      <div class="field-mark"></div>
+      <div class="header-top">
+        <div>
+          <div class="special-category">Data Architecture · Special Report</div>
+          <h1>Ontologies, Graph ML &amp; AIOps: <em>Where the ML Actually Goes</em></h1>
+          <div class="special-date">01 Oct 2026</div>
+          <div class="special-subtitle">Palantir ontology · Governance · Link prediction · AIOps layers · The determinism question · Foundry mapping · 5 diagrams · Reading list</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
 
 <!-- ================= 1. CORE PRINCIPLE ================= -->
-<h2><span class="tag">01 · Foundation</span>The principle that explains everything</h2>
+<div class="section">
+  <div class="section-label">01 · Foundation</div>
+  <div class="special-content">
+
+<h2>The principle that explains everything</h2>
+
 <p>Palantir sells neither a database nor a dashboard. It sells an <strong>operational ontology layer over
 data that never leaves your network</strong>. Three core ideas:</p>
 <ul>
@@ -156,7 +76,7 @@ data that never leaves your network</strong>. Three core ideas:</p>
     and the result flows back into the system.</li>
 </ul>
 
-<svg class="diagram" viewBox="0 0 920 250" role="img" aria-label="Palantir platform pipeline: sources to apps, with writeback loop">
+<figure class="svg-figure"><svg class="diagram" viewBox="0 0 920 250" role="img" aria-label="Palantir platform pipeline: sources to apps, with writeback loop">
   <defs>
     <marker id="arr1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0L10 5L0 10z" fill="#5eb3f6"/>
@@ -194,7 +114,7 @@ data that never leaves your network</strong>. Three core ideas:</p>
   <text class="dg-t" x="825" y="181" style="font-size:12px">AIP · LLM agents</text>
   <path class="dg-flow" d="M 825 202 L 825 226 L 70 226 L 70 166" marker-end="url(#arr1)"/>
   <text class="dg-mut" x="447" y="220">Actions → writeback · the operational loop closes</text>
-</svg>
+</svg></figure>
 
 <h3>Pipeline, layer by layer</h3>
 <ul>
@@ -210,17 +130,25 @@ data that never leaves your network</strong>. Three core ideas:</p>
   <li><strong>5. Apollo</strong> — continuous delivery <em>of the platform itself</em> into air-gapped environments.</li>
 </ul>
 
-<div class="callout key">
+<blockquote>
 <strong>Gotham vs Foundry in one line:</strong> same substrate (data hub + ontology + Apollo).
 They differ in app packaging, deployment environments, and compliance. Foundry is Gotham that crossed to the commercial market.
-</div>
+</blockquote>
 
 <!-- ================= 2. ONTOLOGY UPDATES ================= -->
-<h2><span class="tag">02 · Governance</span>Does the ontology update itself?</h2>
+</div>
+</div>
+
+<div class="section">
+  <div class="section-label">02 · Governance</div>
+  <div class="special-content">
+
+<h2>Does the ontology update itself?</h2>
+
 <p>Both — but in different layers. The distinction is exactly what makes Palantir work:
 <strong>the system flows; the contract does not.</strong></p>
 
-<table>
+<div class="table-wrapper"><table>
   <thead>
     <tr><th>Layer</th><th>Updates automatically?</th><th>Governance</th></tr>
   </thead>
@@ -246,9 +174,9 @@ They differ in app packaging, deployment environments, and compliance. Foundry i
       <td>Live in a <code>predicted</code> state with confidence score; promoted to the canonical graph only on human approval.</td>
     </tr>
   </tbody>
-</table>
+</table></div>
 
-<svg class="diagram" viewBox="0 0 792 210" role="img" aria-label="Instance layer flows freely, suggestion layer is gated by human review">
+<figure class="svg-figure"><svg class="diagram" viewBox="0 0 792 210" role="img" aria-label="Instance layer flows freely, suggestion layer is gated by human review">
   <defs>
     <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0L10 5L0 10z" fill="#5eb3f6"/>
@@ -286,17 +214,25 @@ They differ in app packaging, deployment environments, and compliance. Foundry i
   <rect class="dg-box" x="600" y="125" width="180" height="48" rx="8"/>
   <text class="dg-t" x="690" y="145">Discarded</text>
   <text class="dg-mut" x="690" y="162">structure ≠ evidence</text>
-</svg>
+</svg></figure>
 
-<div class="callout">
+<blockquote>
 <strong>Why not let the system invent entities?</strong> The ontology is the <em>operational contract</em>: if the
 <code>Person</code> object changes shape, Workshop apps, validated Actions, and AIP agents break.
 A self-mutating schema means nobody can trust what breaks tomorrow — same reason you don't let an LLM
 invent its own tool schema in production.
-</div>
+</blockquote>
 
 <!-- ================= 3. LINK PREDICTION ================= -->
-<h2><span class="tag">03 · Graph ML</span>Link prediction &amp; scoring — what it's for</h2>
+</div>
+</div>
+
+<div class="section">
+  <div class="section-label">03 · Graph ML</div>
+  <div class="special-content">
+
+<h2>Link prediction &amp; scoring — what it's for</h2>
+
 <p>The intuition: real-world graph edges are <strong>not randomly distributed</strong> — homophily, triadic
 closure, repeated structural roles. GNNs/embeddings (node2vec, TransE/RotatE, GraphSAGE, temporal GATs)
 compress that structure; the "missing" edges tend to be the most similar pairs in that space.</p>
@@ -317,18 +253,26 @@ compress that structure; the "missing" edges tend to be the most similar pairs i
     supply-chain risk from dependency/maintainer graph position.</li>
 </ul>
 
-<div class="callout warn">
+<blockquote>
 <strong>The limit — and why predictions stay suggestions:</strong> a high score can mean "real undocumented
 relationship" <em>or</em> "dataset bias" (surveillance feeds cover watched actors more, so the model predicts
 more links for the already-watched — a surveillance feedback loop). The model sees structure, not evidence.
 That separation is the difference between an investigation system and one that automates accusations.
-</div>
+</blockquote>
 
 <!-- ================= 4. FROM GRAPH TO ML ================= -->
-<h2><span class="tag">04 · Mechanics</span>From a graph to ML-ready data</h2>
+</div>
+</div>
+
+<div class="section">
+  <div class="section-label">04 · Mechanics</div>
+  <div class="special-content">
+
+<h2>From a graph to ML-ready data</h2>
+
 <p>A graph isn't directly consumable — you must <strong>vectorize</strong>. Three levels:</p>
 
-<svg class="diagram" viewBox="0 0 912 225" role="img" aria-label="Input graph vectorized three ways into an embedding matrix feeding downstream tasks">
+<figure class="svg-figure"><svg class="diagram" viewBox="0 0 912 225" role="img" aria-label="Input graph vectorized three ways into an embedding matrix feeding downstream tasks">
   <defs>
     <marker id="arr3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0L10 5L0 10z" fill="#5eb3f6"/>
@@ -382,7 +326,7 @@ That separation is the difference between an investigation system and one that a
   <text class="dg-l" x="704" y="137">Clustering / anomaly</text>
   <rect class="dg-box" x="688" y="160" width="212" height="36" rx="8"/>
   <text class="dg-l" x="704" y="183">GraphRAG context</text>
-</svg>
+</svg></figure>
 
 <ol>
   <li><strong>Node features</strong> — properties (age, type, country) encoded one-hot/normalized → classic tabular ML. Ignores structure.</li>
@@ -390,15 +334,23 @@ That separation is the difference between an investigation system and one that a
   <li><strong>Embeddings</strong> — node2vec/DeepWalk (random walks → word2vec) or GNNs (GraphSAGE, GAT: aggregate neighbor embeddings over 2–3 hops). Output: an <code>N × d</code> matrix feeding classification, link prediction, clustering, or GraphRAG context.</li>
 </ol>
 
-<div class="callout">
+<blockquote>
 <strong>Training data comes from the graph itself:</strong> existing edges are the positives;
 sampled unconnected pairs are the negatives (<em>negative sampling</em>).
-</div>
+</blockquote>
 
 <!-- ================= 5. AIOPS ================= -->
-<h2><span class="tag">05 · Application</span>AIOps: where ML pays, layer by layer</h2>
+</div>
+</div>
 
-<table>
+<div class="section">
+  <div class="section-label">05 · Application</div>
+  <div class="special-content">
+
+<h2>AIOps: where ML pays, layer by layer</h2>
+
+
+<div class="table-wrapper"><table>
   <thead>
     <tr><th>Layer</th><th>Value</th><th>Risk</th><th>Maturity</th><th>Notes</th></tr>
   </thead>
@@ -446,11 +398,11 @@ sampled unconnected pairs are the negatives (<em>negative sampling</em>).
       <td>Expensive, slow, less precise than a dynamic threshold. Don't.</td>
     </tr>
   </tbody>
-</table>
+</table></div>
 
 <h3>Reference architecture</h3>
 
-<svg class="diagram" viewBox="0 0 932 410" role="img" aria-label="Layered AIOps architecture from signals to human decision, with feedback loop">
+<figure class="svg-figure"><svg class="diagram" viewBox="0 0 932 410" role="img" aria-label="Layered AIOps architecture from signals to human decision, with feedback loop">
   <defs>
     <marker id="arr4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0L10 5L0 10z" fill="#5eb3f6"/>
@@ -482,16 +434,24 @@ sampled unconnected pairs are the negatives (<em>negative sampling</em>).
   <text class="dg-mut" x="400" y="353">timeline · RCA draft · runbook · comms — the human gate</text>
   <path d="M 787 340 L 880 340 L 880 186 L 791 186" fill="none" stroke="#7ee0a3" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arr4g)"/>
   <text class="dg-mut" x="905" y="263" transform="rotate(90 905 263)">feedback: labels → retrain</text>
-</svg>
+</svg></figure>
 
-<div class="callout key">
+<blockquote>
 <strong>The pattern (same as Gotham):</strong> classic ML detects, the graph correlates,
 the LLM synthesizes, the human decides. AIOps products fail when they invert the order —
 asking the LLM to do the first three layers.
-</div>
+</blockquote>
 
 <!-- ================= 6. DETERMINISM QUESTION ================= -->
-<h2><span class="tag">06 · The hard question</span>"If I have the full graph, isn't correlation deterministic?"</h2>
+</div>
+</div>
+
+<div class="section">
+  <div class="section-label">06 · The hard question</div>
+  <div class="special-content">
+
+<h2>"If I have the full graph, isn't correlation deterministic?"</h2>
+
 <p>Partly right — and the right part matters: <strong>if</strong> the graph were complete, fresh, and signals mapped
 cleanly to nodes, correlation would be graph traversal + time window. Dynatrace Davis sells exactly that
 as "deterministic causal inference". But that <em>if</em> breaks in four places, and each break is where ML enters:</p>
@@ -511,7 +471,7 @@ as "deterministic causal inference". But that <em>if</em> breaks in four places,
     a latency spike is an incident or legitimate 9am traffic. That's baseline modeling.</li>
 </ol>
 
-<svg class="diagram" viewBox="0 0 926 255" role="img" aria-label="Clean declared topology versus messy observed reality with undeclared dependencies">
+<figure class="svg-figure"><svg class="diagram" viewBox="0 0 926 255" role="img" aria-label="Clean declared topology versus messy observed reality with undeclared dependencies">
   <rect class="dg-in" x="10" y="25" width="435" height="180" rx="10"/>
   <rect class="dg-in" x="475" y="25" width="435" height="180" rx="10"/>
   <text class="dg-hd" x="227" y="50">DECLARED (CMDB)</text>
@@ -549,9 +509,9 @@ as "deterministic causal inference". But that <em>if</em> breaks in four places,
   <text class="dg-mut" x="855" y="45">SaaS API</text>
   <text class="dg-mut" x="855" y="225">shared NTP</text>
   <text class="dg-cap" x="692" y="228">dashed = undeclared dependencies — the gap is where statistics enter</text>
-</svg>
+</svg></figure>
 
-<div class="callout">
+<blockquote>
 <strong>The honest design:</strong>
 determinism where there is structure (topology, causal inference, propagation rules);
 statistics where there is uncertainty (edge weights, anomaly detection, text→entity mapping).
@@ -559,14 +519,22 @@ statistics where there is uncertainty (edge weights, anomaly detection, text→e
 ML doesn't replace "connecting nodes" — it prices the connections and cleans the input.
 If your system were as observable and deterministic as the ideal graph, you wouldn't need AIOps:
 you'd have production tests. <strong>ML exists because what you observe is noisy, not because the system is.</strong>
-</div>
+</blockquote>
 
 <!-- ================= 7. FOUNDRY MAPPING ================= -->
-<h2><span class="tag">07 · Product mapping</span>Does Foundry do any of this?</h2>
+</div>
+</div>
+
+<div class="section">
+  <div class="section-label">07 · Product mapping</div>
+  <div class="special-content">
+
+<h2>Does Foundry do any of this?</h2>
+
 <p>Not turnkey AIOps like Dynatrace — but it is precisely the <strong>substrate</strong> where that layered stack gets
 built (Palantir sells this pattern to industrials as "intelligent operations"):</p>
 
-<table>
+<div class="table-wrapper"><table>
   <thead>
     <tr><th>AIOps layer</th><th>In Foundry</th></tr>
   </thead>
@@ -582,7 +550,7 @@ built (Palantir sells this pattern to industrials as "intelligent operations"):<
     <tr><td>Operational writeback</td><td>Actions: "create ticket", "change setpoint", "escalate" — with ACLs and audit trail</td></tr>
     <tr><td>Feedback loop</td><td>Every Action/decision becomes data → labels for retraining</td></tr>
   </tbody>
-</table>
+</table></div>
 
 <h3>Differentiators — and what Foundry does <em>not</em> give you</h3>
 <ul>
@@ -594,7 +562,15 @@ built (Palantir sells this pattern to industrials as "intelligent operations"):<
 </ul>
 
 <!-- ================= 8. READING LIST ================= -->
-<h2><span class="tag">08 · Books</span>Reading list, layer by layer</h2>
+</div>
+</div>
+
+<div class="section">
+  <div class="section-label">08 · Books</div>
+  <div class="special-content">
+
+<h2>Reading list, layer by layer</h2>
+
 
 <h3>Graphs &amp; GNNs</h3>
 <ul>
@@ -634,15 +610,45 @@ built (Palantir sells this pattern to industrials as "intelligent operations"):<
   <li><strong>Streaming Systems</strong> — Akidau et al. The real-time ingestion layer.</li>
 </ul>
 
-<div class="callout key">
+<blockquote>
 <strong>If you only read three:</strong> DDIA → Palowitch (ML on Graphs) → Heuer &amp; Pherson.
 Pipeline, graph, human analysis — the Palantir sandwich: data → graph → analyst.
+</blockquote>
+
+</div>
 </div>
 
 <div class="footer-note">
 Compiled from a working session · October 2026 · Diagrams: inline SVG.
 </div>
+
+</div>
 <script>
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '\u25d1 LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '\u25d0 DARK';
+    }
+  }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
+
   (function() {
     const bar = document.getElementById('progress-bar');
     if (!bar) return;
