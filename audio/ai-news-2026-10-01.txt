@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Thursday the first of October, twenty twenty-six. Lead story: Google launches Gemini four Argon, its newest frontier model, announced on the company blog this morning. The launch thread is the day's largest on Hacker News — fourteen hundred and seventy-five points, nine hundred and eighty-one comments.
+
+[HOST_B] Watch the evals, not the blog post. A launch this size lives or dies on independent numbers, and nine hundred and eighty-one comments says the community is already stress-testing the claims. If Argon's gains are harness gains rather than raw model gains, that distinction frames everything else today.
+
+[HOST_A] Washington next. The F T C has opened investigations into OpenAI, Anthropic and other AI companies over product risks. Hours old on the front page — expect this to run.
+
+[HOST_B] A product-risk probe runs on evidence that systems behave as claimed — precisely the seam today's papers pull at, because the field's own measurement practice struggles to produce evidence a regulator would accept. Watch for the inquiry reaching evaluation methodology, not just incidents.
+
+[HOST_A] Two security stories. A researcher walks through a vulnerability that granted potential access to seventeen trillion Microsoft records — the scale is the story. And border agents can search your phone without a warrant; an immigration advocate is suing after agents demanded his.
+
+[HOST_B] Seventeen trillion resists intuition — treat it as a reminder that one flaw in a centralised estate is a portfolio-level event. On the border case the advice is blunt: cross the United States border with a clean device, or none at all.
+
+[HOST_A] Micron's chief executive expects memory supply to be far tighter in twenty twenty-seven and twenty twenty-eight than in twenty twenty-six. Relevant to any D R A M and N A N D budgeting for capacity planning.
+
+[HOST_B] That's the constraint nobody is pricing in. Twenty twenty-seven is when long-context, multi-agent workloads become the most D R A M-hungry category in the datacentre. The counter-moves already exist — self-optimising inference, leaner serving stacks, and teams refusing layers of agent indirection nobody has proven pays for itself.
+
+[HOST_A] Papers. Better Deck or Different Judge asks whether harness gains survive honest grading. A banking deck-generation harness on a twenty-seven-billion-parameter model, regraded text-only with template markers stripped: five judges score it twenty point four to thirty-three point six points out of ninety-five above the same model generating directly, and rank it first on all seventeen deliverables. Its companion scoping review covers three hundred and forty-eight studies of component swaps: of two hundred and twenty-two reporting local metrics, one hundred and forty-two also report task endpoints and forty-nine report proxies — with no guarantee they're matched.
+
+[HOST_B] Read together, that's a critique of how agent progress gets measured. The hopeful half: harness gains can survive blinded regrading. The uncomfortable half: plenty of studies justify component swaps with local metrics that never touch a task outcome — and a swap reroutes the whole downstream trajectory, later observations, resource use, recovery.
+
+[HOST_A] Four more. The Agent Error Dataset turns failed rollouts into training signal — fifty thousand two hundred and twenty-eight error-diagnosis pairs from nine thousand nine hundred and sixty-one tasks across thirty-three environments and twenty-three policy models. MADBench treats multi-agent debate as an attack surface: six attack families over three hundred and fifty-six source tasks and three thousand nine hundred and fifty-eight test cases. E H R RobustGym, built on MIMIC four with three hundred and sixty-five thousand patients, finds substantial robustness gaps in whether clinical agents notice when a noisy record doesn't support the answer. RefCon extracts agent memory without ground truth — up thirty-five point five percent on ReasoningBank, beating baselines that used gold labels.
+
+[HOST_B] The constructive response is already visible: failures becoming first-class data. The error dataset diagnoses mistakes against recorded evidence — RobustGym tests whether agents know when they're unsupported — MADBench assumes the correction channel itself carries attacks. As Argon-class models push agents into higher-stakes work, the differentiator is less the model than the harness's ability to detect and learn from its own mistakes.
+
+[HOST_A] Sweep of the rest. OpenAI and Synopsys announce G P T-Synopsys, applying frontier models to E D A and chip design. Magnitude, a Y Combinator summer twenty twenty-five launch, open-sources a self-optimising inference engine for agents. "You said no M C P" leads AI discussion at six hundred and forty-seven points. OpenDLSS reimplements Nvidia's D L S S five renderer in Vulkan. Netlify moves Edge Functions from V eight isolates to Firecracker, five times faster. Edison Design Group's C plus plus front-end goes public, and the Rust compiler got faster in September. Singapore's dating app runs on Gale-Shapley — Hillel Wayne maps what T L A plus can and can't check — IEEE Spectrum revisits the Bloomberg terminal — StreetComplete hits public beta on i O S.
+
+[HOST_B] That's the briefing. Every link, every number and the full paper notes are in the written report — AI News Daily, first of October, twenty twenty-six.
