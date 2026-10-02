@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es" data-type="special">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ontologías, Graph Knowledge, Semantic Layer y Context Layer (2025–2026)</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=2">
+<!-- og:start -->
+<meta name="description" content="Ontologías · GraphRAG · Semantic layer · Context layer · Convergencia y adopción (2025–2026)">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/knowledge-layer-2026-10-02.html">
+<!-- og:end -->
+</head>
+<body>
+<div class="progress-bar" id="progress-bar"></div>
+  <div class="page">
+
+    <nav class="report-nav" style="display:none" id="report-nav">
+      <a id="prev-report" class="report-nav-link" href="#">← Prev</a>
+      <a class="report-nav-link" href="../index.html">Index</a>
+      <a id="next-report" class="report-nav-link" href="#">Next →</a>
+    </nav>
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="special-header">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="special-category">Knowledge Engineering · Special Report</div>
+          <h1>Ontologías, Graph Knowledge, <em>Semantic</em> y Context Layer</h1>
+          <div class="special-date">2 Oct 2026</div>
+          <div class="special-subtitle">Ontologías · GraphRAG · Semantic layer · Context layer · Convergencia y adopción (2025–2026)</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Resumen ejecutivo</div>
+      <div class="special-content">
+
+<p><strong>La historia del año es la convergencia.</strong> Ontologías, knowledge graphs, semantic layer y context layer han dejado de ser cuatro silos y se están fusionando en una única capa arquitectónica —la <em>knowledge layer</em> / <em>intelligence layer</em>— que las grandes plataformas de datos ya venden como producto.</p>
+
+<p><strong>La semantic layer se convirtió en infraestructura de agentes.</strong> Con datos reproducibles: dbt midió <strong>98,2–100&nbsp;%</strong> de precisión frente a <strong>84–90&nbsp;%</strong> de text-to-SQL puro, con la diferencia crítica de que la semantic layer <em>falla con un error</em> mientras el text-to-SQL "falla con un número plausible pero incorrecto".</p>
+
+<p><strong>La interoperabilidad semántica dio un paso histórico.</strong> Open Semantic Interchange pasó a <strong>Apache Ossie</strong> (incubación ASF, julio 2026), con especificación vendor-neutral para métricas, dimensiones y ontologías.</p>
+
+<p><strong>GraphRAG maduró y se deshinchó.</strong> Los benchmarks ya no lo venden como universalmente superior: gana en razonamiento complejo y consultas globales, pero <em>pierde en hechos simples</em> frente a RAG vectorial. El patrón ganador es <strong>híbrido</strong> (vector + grafo + reranker).</p>
+
+<p><strong>La ingeniería de ontologías se automatizó con LLMs</strong> —pero con un giro de guion: en KGC 2026 el consenso es que la ontología no es el <em>output</em> del LLM, sino su <strong>harness</strong> (restricción declarativa). Los estándares acompañan: RDF 1.2, SHACL 1.2 y SPARQL-RL (reglas Datalog para RDF, WD de octubre 2026).</p>
+
+<p><strong>El término del año es "context graph"</strong>: no una knowledge graph más, sino el registro de <em>decision traces</em> (excepciones, precedentes, aprobaciones) que permite a los agentes aprender del trabajo previo.</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Parte I</div>
+      <div class="special-content">
+
+<h2>Panorama: cuatro capas que convergen</h2>
+
+<p>El movimiento estructural del periodo es que las plataformas de datos "compilan" la semántica en un grafo de contexto gobernado. El patrón que se repite en Databricks, Snowflake, Microsoft, Google, AWS, Neo4j, Palantir, Graphwise y Stardog es una pila de cinco capas:</p>
+
+<div class="table-wrapper"><table>
+  <tr><th>Capa</th><th>Qué aporta</th></tr>
+  <tr><td><strong>1. Activos de datos gobernados</strong></td><td>OneLake, Unity Catalog, BigQuery, S3: identidad, permisos y lineage</td></tr>
+  <tr><td><strong>2. Semantic layer</strong></td><td>Métricas, dimensiones y entidades: el punto de partida obligado (Forrester)</td></tr>
+  <tr><td><strong>3. Ontología + knowledge graph</strong></td><td>Tipos, relaciones y reglas: da significado y permite razonamiento</td></tr>
+  <tr><td><strong>4. Context graph / memoria</strong></td><td>Decision traces, estado y precedente: agentes consistentes que mejoran</td></tr>
+  <tr><td><strong>5. Orquestación y retrieval</strong></td><td>GraphRAG, agentic retrieval, MCP/A2A con gobernanza en tiempo de consulta</td></tr>
+</table></div>
+
+<blockquote><em>📌 Takeaway:</em> la justificación de negocio de la convergencia es la <strong>duplicación semántica</strong>: si cada agente lleva su propia definición de "cliente activo", la empresa acaba con diez copias privadas de sí misma que derivan sin ruido.</blockquote>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Parte II</div>
+      <div class="special-content">
+
+<h2>Ontologías y modelado de conocimiento</h2>
+
+<h3>Estándares W3C: el año más activo en una década</h3>
+
+<p><strong>RDF 1.2</strong> es la primera evolución significativa del modelo de datos RDF desde 2014. Introduce <strong>triple terms</strong> (triples como objetos de primer nivel, con nueva reificación) y el datatype nativo <code>rdf:JSON</code>, que une RDF con JSON-LD.</p>
+
+<p><strong>SHACL 1.2</strong> deja de ser solo validación: incorpora por primera vez <strong>reglas de inferencia declarativas</strong>. El documento primario verificado es <strong>SPARQL 1.2 RL (SPARQL-RL)</strong>, Working Draft del 1 de octubre de 2026: un lenguaje de reglas estilo <strong>Datalog</strong> para RDF, con recursión, negación por fallo y <strong>estratificación</strong> para garantizar resultados deterministas.</p>
+
+<p><strong>YAML-LD 1.0</strong> publicó su primer Working Draft (2026): convenciones para serializar Linked Data en YAML, con media type <code>application/ld+yaml</code>, compatible con JSON-LD 1.1 y RDF 1.2.</p>
+
+<h3>LLMs y ontologías: de generadores a restricciones</h3>
+
+<p>La investigación del periodo automatiza la ingeniería de ontologías, pero el consenso de la conferencia de referencia del sector (<strong>KGC 2026</strong>) es matizado: <strong>los LLMs fallan como generadores ingenuos</strong> (jerarquías enredadas, taxonomías inconsistentes, anti-patrones). La ontología se convierte en <strong>harness</strong> —una restricción declarativa— dentro de la cual el LLM trabaja.</p>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">Hallazgo empírico</div>
+  <div class="desc">En ontology learning, la <strong>arquitectura y el linaje del modelo pueden importar más que el número de parámetros</strong>. El salto de calidad se concentra entre 9B y 27B; la extracción de relaciones no taxonómicas sigue siendo difícil a todas las escalas.</div>
+  <div class="sources">
+    <a href="https://www.knowledgegraph.tech/">KGC 2026</a>
+    <a href="https://arxiv.org/abs/2608.31118">When Does Bigger Help? (arXiv:2608.31118)</a>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Parte III</div>
+      <div class="special-content">
+
+<h2>Graph knowledge y GraphRAG</h2>
+
+<h3>La economía cambió</h3>
+
+<p>La principal barrera histórica de GraphRAG era el coste de indexación. <strong>LazyGraphRAG</strong> (Microsoft Research) difiere todo uso de LLM a tiempo de consulta: coste de indexación idéntico a vector RAG y <strong>0,1&nbsp;%</strong> del de GraphRAG completo, con <strong>&gt;700×</strong> menos coste de consulta para consultas globales. En paralelo, <strong>LightRAG</strong> (EMNLP 2025 Findings) ofrece un 70–90&nbsp;% de la calidad de GraphRAG a una fracción del coste, y <strong>FalkorDB</strong> publicó un SDK de GraphRAG production-grade.</p>
+
+<h3>El veredicto de los benchmarks</h3>
+
+<p><strong>GraphRAG-Bench</strong> (arXiv:2506.05690, v3 feb 2026) responde a la pregunta "¿es realmente efectivo GraphRAG?" con evidencia sistemática: <strong>el RAG básico iguala o supera a GraphRAG en recuperación de hechos simples</strong>, mientras GraphRAG sobresale en razonamiento complejo, resumen contextual y generación creativa. En multi-hop, aproximaciones como <strong>StepChain GraphRAG</strong> combinan descomposición de preguntas con recorrido BFS sobre el grafo.</p>
+
+<h3>Híbrido es el estándar</h3>
+
+<p>El consenso de 2026 es que <strong>ninguno es universalmente mejor</strong>. La arquitectura ganadora combina búsqueda vectorial (recall) + recorrido de grafo (razonamiento) + reranker, fusionados con RRF. GraphRAG y LightRAG <em>no reemplazan</em> la recuperación vectorial: siguen usando embeddings y ANN sobre nodos y comunidades, y añaden traversal.</p>
+
+<blockquote><em>⚠️ Matiz:</em> AWS demostró en infraestructura gestionada que el "global search" de GraphRAG puede no ser óptimo para preguntas temáticas, y que se puede elegir metodología por consulta sobre el mismo grafo.</blockquote>
+
+<h3>Memoria temporal y GraphRAG agéntico</h3>
+
+<p>Un tipo de grafo distinto se consolida para <strong>memoria de agentes</strong>: grafos temporales con timestamps y relaciones <code>supersedes</code> que priorizan el conocimiento más actual (Graphiti/Zep, Mem0). Y el patrón dominante para agentes es <strong>exponer el grafo como herramientas</strong> vía MCP con routing de intención y <em>failure-aware routing</em>.</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Parte IV</div>
+      <div class="special-content">
+
+<h2>Semantic layer</h2>
+
+<h3>De accesorio de BI a contexto de agentes</h3>
+
+<p>En 12 meses el discurso pasó de "semantic layer para dashboards" a "semantic layer como capa de contexto de los agentes". Gartner lo formalizó como decisión de negocio: sin semántica gobernada los agentes alucinan métricas. Los tres hiperescaladores y los vendors independientes lanzaron capacidades de semántica gobernada + interfaz MCP.</p>
+
+<h3>Apache Ossie: el estándar de interoperabilidad</h3>
+
+<p>Open Semantic Interchange (Snowflake, dbt, Salesforce, Google y 17 partners) se convirtió en <strong>Apache Ossie (Incubating)</strong> el 10 de julio de 2026, para evitar el lock-in y dar gobernanza neutral. Datos verificados: el repositorio se abrió en noviembre de 2025; la coalición creció de 17 a <strong>más de 50 organizaciones</strong>; hay tres grupos de trabajo (<strong>Metric Language, Catalog y Ontology</strong>); la especificación YAML/JSON para métricas, dimensiones, relaciones y ahora <strong>ontología</strong> no cambió con el renombrado.</p>
+
+<h3>Warehouse-native</h3>
+
+<div class="table-wrapper"><table>
+  <tr><th>Plataforma</th><th>Avance</th></tr>
+  <tr><td><strong>Snowflake</strong></td><td>Semantic Views GA + Semantic View Autopilot (feb 2026): automatiza creación y mantenimiento</td></tr>
+  <tr><td><strong>Databricks</strong></td><td>Unity Catalog Business Semantics GA (abr 2026): Metric Views declarativas con materialización y query rewriting</td></tr>
+  <tr><td><strong>Google Looker</strong></td><td>La semantic layer gobernada alimenta Gemini Enterprise vía A2A, con seguridad multi-tenant</td></tr>
+</table></div>
+
+<h3>dbt y la evidencia cuantitativa</h3>
+
+<p>El benchmark de dbt (abril 2026, dataset ACME Insurance, 11 preguntas × 20 ejecuciones) es la evidencia más citable del año, y fue <strong>verificada directamente en la fuente primaria</strong>:</p>
+
+<div class="table-wrapper"><table>
+  <tr><th>Modelo</th><th>Text-to-SQL</th><th>Semantic Layer</th></tr>
+  <tr><td>Claude Sonnet 4.6</td><td>90,0&nbsp;%</td><td><strong>98,2&nbsp;%</strong></td></tr>
+  <tr><td>GPT-5.3 Codex</td><td>84,1&nbsp;%</td><td><strong>100,0&nbsp;%</strong></td></tr>
+</table></div>
+
+<p>El text-to-SQL general mejoró de 32,7&nbsp;% (2023) a 64,5&nbsp;% (2026). Con solo <strong>3 modelos dbt</strong> adicionales se cubrieron las 11 preguntas. La conclusión operativa: semantic layer para KPIs/auditoría/board (falla explícitamente), text-to-SQL para exploración ad-hoc.</p>
+
+<h3>Convergencia semantic layer + ontología</h3>
+
+<p>El grupo de trabajo <strong>Ontology</strong> de Ossie, con <strong>RelationalAI</strong>, extendió la especificación para soportar <strong>semántica ontológica</strong> además del modelo dimensional: entidades, relaciones y restricciones que habilitan razonamiento multi-hop. Es la transición de "modelo dimensional para dashboards" a "ontología ejecutable para agentes".</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Parte V</div>
+      <div class="special-content">
+
+<h2>Context layer y context engineering</h2>
+
+<h3>Una disciplina formal</h3>
+
+<p>La ingeniería de contexto se consolidó como disciplina de primer orden: curar el conjunto más pequeño de tokens de alta señal, tratando el contexto como recurso finito. LangChain aportó la taxonomía operativa <strong>write / select / compress / isolate</strong>. La evidencia empírica fundacional es <strong>context rot</strong> (Chroma, jul 2025): 18 modelos frontera degradan de forma no uniforme al crecer la entrada, incluso en tareas triviales.</p>
+
+<h3>Técnicas long-horizon</h3>
+
+<p>Anthropic formalizó tres técnicas para tareas que exceden la ventana: <strong>compaction</strong> (resumir y reiniciar), <strong>structured note-taking</strong> (memoria externa, <code>NOTES.md</code>) y <strong>sub-agentes</strong> con contexto limpio. La API expone primitivas: <em>context editing</em>, <em>memory tool</em> (<code>/memories</code>) y <em>server-side compaction</em>. La memoria de producto evolucionó hacia mantenimiento temporal automático —el caso paradigmático es <strong>"Dreaming"</strong> de ChatGPT.</p>
+
+<h3>Protocolos: convergencia bajo la Agentic AI Foundation</h3>
+
+<div class="news-item">
+  <div class="num">→</div>
+  <div class="title">MCP 2026-07-28 (verificado en fuente primaria)</div>
+  <div class="desc">La mayor revisión hasta la fecha: <strong>núcleo de protocolo stateless</strong> (se retiran <code>initialize</code>/<code>initialized</code> y <code>Mcp-Session-Id</code>), <strong>Multi Round-Trip Requests (MRTR)</strong>, routing por headers (<code>Mcp-Method</code>, <code>Mcp-Name</code>), listas cacheables, marco de extensiones (Tasks, MCP Apps, Enterprise Managed Authorization), hardening de auth y deprecación a 12 meses.</div>
+  <div class="sources">
+    <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">MCP 2026-07-28 Specification</a>
+  </div>
+</div>
+
+<p><strong>A2A</strong>: v1.0, &gt;150 organizaciones, complementario a MCP (MCP = acceso a tools/datos; A2A = coordinación entre agentes). <strong>AGENTS.md</strong>: formato abierto adoptado por &gt;60.000 proyectos, donado a la Linux Foundation. La <strong>AAIF</strong> (Agentic AI Foundation), cofundada por OpenAI, Anthropic y Block, da gobernanza neutral a MCP y A2A.</p>
+
+<h3>La triple capa</h3>
+
+<p>Se articula la distinción que el mercado confundía: el <strong>knowledge graph</strong> almacena el world model ("¿cómo están conectadas las cosas?"), la <strong>semantic layer</strong> define qué significa ("¿qué significa este dato?") y la <strong>context layer</strong> recupera el fragmento correcto en tiempo de inferencia ("¿qué necesita saber el modelo ahora?").</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Parte VI</div>
+      <div class="special-content">
+
+<h2>Convergencia y adopción empresarial</h2>
+
+<h3>La "knowledge layer" como concepto</h3>
+
+<p>Neo4j formalizó la <strong>knowledge layer</strong> como sustrato compartido y gobernado con tres componentes —<strong>ontología</strong> (mapa vivo), <strong>datos empresariales</strong> (grounding) y <strong>memoria</strong> (decision traces)— y la OBSL (ontology-based semantic layer) como punto de entrada. La tesis: "agentes más ligeros sobre un sustrato compartido más inteligente".</p>
+
+<h3>"Context graph", el término del año</h3>
+
+<p>Foundation Capital lo describió como el registro acumulado de <strong>decision traces</strong> (excepciones, overrides, precedentes, aprobaciones cross-system) que hoy vive en Slack y cabezas, no en los warehouses (que están en el <em>read path</em>, no en el <em>write path</em> del commit). Neo4j lo define como memoria del agente en tres capas: long-term (= knowledge graph), short-term (conversación/estado) y reasoning (decision traces, tool calls, evidencia).</p>
+
+<h3>Las plataformas</h3>
+
+<div class="table-wrapper"><table>
+  <tr><th>Plataforma</th><th>Apuesta</th></tr>
+  <tr><td><strong>Microsoft IQ</strong></td><td>Fabric IQ (data + BI + ontología en preview, importa RDF/OWL), Foundry IQ (knowledge layer gestionado), Work IQ, Web IQ</td></tr>
+  <tr><td><strong>Google Knowledge Catalog</strong></td><td>Evolución de Dataplex hacia "dynamic context graph"; enriquecimiento por Gemini y búsqueda access-control-aware</td></tr>
+  <tr><td><strong>AWS</strong></td><td>GraphRAG gestionado sobre Bedrock Knowledge Bases y Neptune Analytics</td></tr>
+  <tr><td><strong>Palantir</strong></td><td>Caso ontology-first más maduro: el Ontology como sistema operativo digital, AIP conectando LLMs y agentes</td></tr>
+</table></div>
+
+<h3>Por qué fracasan los proyectos</h3>
+
+<p>El diagnóstico 2026 es que el fallo es <strong>organizativo y de mantenimiento</strong>, no tecnológico:</p>
+
+<ul>
+  <li><strong>Ontology drift</strong>: la ontología se desvía silenciosamente de la realidad y los resultados empeoran de forma invisible.</li>
+  <li><strong>"Boil the ocean"</strong>: ontologías de 6+ meses sin queries en producción (caso de una biotech con 2 años de desarrollo y cero usuarios activos).</li>
+  <li><strong>Skills gap</strong>: ~67&nbsp;% de proyectos de enterprise KG abandonados citaron falta de expertise interna en grafos; &lt;15&nbsp;% pasan de pilot a escala.</li>
+  <li><strong>Subestimar el mantenimiento</strong>: reconciliar entidades ("Microsoft Corp" vs "Microsoft"), re-extraer y actualizar comunidades es el coste real, no el framework.</li>
+</ul>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">En números</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="label">dbt Semantic Layer vs text-to-SQL (Sonnet 4.6)</div>
+          <div class="value">98,2% vs 90,0%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Databricks Genie Ontology (1er intento)</div>
+          <div class="value">84,5%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Snowflake Cortex (ontología + GraphRAG)</div>
+          <div class="value">50% → 78,2%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">LazyGraphRAG · coste de indexación</div>
+          <div class="value">0,1%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Adoptantes de IA con KG en producción (2025)</div>
+          <div class="value">~27%</div>
+        </div>
+        <div class="stat-card">
+          <div class="label">Proyectos KG abandonados por falta de expertise</div>
+          <div class="value">~67%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Conclusiones</div>
+      <div class="special-content">
+
+<p><strong>1. La semántica se volvió infraestructura, no proyecto.</strong> Quien construye agentes serios en 2026 no elige entre semantic layer, grafo y contexto: los combina en una capa gobernada.</p>
+
+<p><strong>2. El "ganador" arquitectónico es híbrido y por tipo de pregunta.</strong> Vector RAG para hechos simples; grafo para multi-hop y consultas globales; semantic layer para métricas certificadas; context graph para precedente y memoria.</p>
+
+<p><strong>3. Los estándares por fin convergen</strong> en dos frentes: semántica portable (Apache Ossie) y transporte agéntico neutral (MCP/A2A bajo la Linux Foundation).</p>
+
+<p><strong>4. La automatización con LLMs abarató la construcción, no la gobernanza.</strong> El cuello de botella se movió del "cómo construirlo" al "cómo mantenerlo y quién posee el significado".</p>
+
+<p><strong>5. Para un equipo que empieza hoy:</strong> empezar por la semantic layer (Forrester), adoptar GraphRAG de forma incremental según necesidad de multi-hop, y planificar explícitamente la gobernanza y el mantenimiento de la ontología desde el día uno.</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Vigilar</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Apache Ossie: consolidación de la especificación de ontología y del semantic query spec</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>La brecha semántica: si la adopción de KG deja de estar plana en 2026–2027</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Agentic GraphRAG: routing de intención y failure-aware routing como patrón dominante</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Context graphs: de término de moda a infraestructura gobernada de decision traces</span>
+      </div>
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Evidencia independiente: la mayoría de los números siguen siendo benchmarks internos de vendors</span>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Incertidumbre y limitaciones</div>
+      <div class="special-content">
+
+<p><strong>Verificación de fuentes:</strong> de 198 URLs citadas, 169 respondieron 200, 28 devolvieron 403 (existen pero bloquean bots) y 1 devolvió 404 (corregido). Los claims críticos se validaron en fuente primaria (dbt, Apache Ossie, MCP, Databricks, LazyGraphRAG, W3C SPARQL-RL, Neo4j).</p>
+
+<p><strong>Preprints de 2026 sin verificación individual:</strong> varios trabajos con identificadores arXiv de 2026 se incluyen a partir de los subagentes y no fueron comprobados uno a uno.</p>
+
+<p><strong>Benchmarks internos de vendors:</strong> las cifras de Databricks, Snowflake y dbt proceden de benchmarks propios con metodología parcialmente publicada.</p>
+
+<p><strong>Analistas de pago:</strong> Gartner y Forrester se citan desde notas de prensa o blogs resumen; los informes completos no son verificables públicamente.</p>
+
+<p><strong>Dato fuera de ventana:</strong> LazyGraphRAG es de noviembre de 2024; se cita como antecedente fundacional, no como avance del periodo.</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Fuentes</div>
+      <div class="special-content">
+<ol>
+<li>W3C — What's New in RDF 1.2: <a href="https://www.w3.org/TR/rdf12-new/">https://www.w3.org/TR/rdf12-new/</a></li>
+<li>W3C — RDF 1.2 Concepts: <a href="https://www.w3.org/TR/rdf12-concepts/">https://www.w3.org/TR/rdf12-concepts/</a></li>
+<li>W3C — SPARQL 1.2 RL (SPARQL-RL): <a href="https://www.w3.org/TR/sparql12-rl/">https://www.w3.org/TR/sparql12-rl/</a></li>
+<li>W3C — SHACL 1.2 Core: <a href="https://www.w3.org/TR/shacl12-core/">https://www.w3.org/TR/shacl12-core/</a></li>
+<li>W3C — YAML-LD 1.0: <a href="https://www.w3.org/TR/yaml-ld-10/">https://www.w3.org/TR/yaml-ld-10/</a></li>
+<li>KGC 2026: <a href="https://www.knowledgegraph.tech/">https://www.knowledgegraph.tech/</a></li>
+<li>Microsoft Research — LazyGraphRAG: <a href="https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost">microsoft.com/…/lazygraphrag</a></li>
+<li>Microsoft Research — Project GraphRAG: <a href="https://www.microsoft.com/en-us/research/project/graphrag">microsoft.com/…/graphrag</a></li>
+<li>LightRAG (EMNLP 2025 Findings): <a href="https://arxiv.org/abs/2410.05779">arXiv:2410.05779</a></li>
+<li>FalkorDB — GraphRAG SDK 1.0: <a href="https://www.falkordb.com/blog/graphrag-sdk-knowledge-graph">falkordb.com/…/graphrag-sdk</a></li>
+<li>AWS — Unified Knowledge Graph RAG on AWS: <a href="https://aws.amazon.com/blogs/opensource/unified-knowledge-graph-rag-on-aws-graphrag-and-lightrag-on-one-stack">aws.amazon.com/…/unified-kg-rag</a></li>
+<li>GraphRAG-Bench (arXiv:2506.05690): <a href="https://arxiv.org/abs/2506.05690">arXiv:2506.05690</a></li>
+<li>Neo4j — What is GraphRAG: <a href="https://neo4j.com/blog/genai/what-is-graphrag">neo4j.com/…/what-is-graphrag</a></li>
+<li>GraphRAG Pattern Catalog: <a href="https://graphrag.com">graphrag.com</a></li>
+<li>Neo4j — The knowledge layer for enterprise AI: <a href="https://neo4j.com/blog/agentic-ai/enterprise-knowledge-layer/">neo4j.com/…/enterprise-knowledge-layer</a></li>
+<li>StepChain GraphRAG (arXiv:2510.02827): <a href="https://arxiv.org/html/2510.02827v1">arXiv:2510.02827</a></li>
+<li>Neo4j — Graphiti, knowledge graph memory: <a href="https://neo4j.com/blog/developer/graphiti-knowledge-graph-memory/">neo4j.com/…/graphiti</a></li>
+<li>Agentic GraphRAG (arXiv:2605.18770): <a href="https://arxiv.org/html/2605.18770v1">arXiv:2605.18770</a></li>
+<li>dbt Labs — Semantic Layer vs. Text-to-SQL: 2026 Benchmark: <a href="https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026">docs.getdbt.com/…/semantic-layer-vs-text-to-sql-2026</a></li>
+<li>Apache Ossie — Enters Apache Incubator: <a href="https://ossie.apache.org/updates/ossie-enters-apache-incubator/">ossie.apache.org/…/ossie-enters-apache-incubator</a></li>
+<li>Apache Ossie — Repositorio: <a href="https://github.com/apache/ossie">github.com/apache/ossie</a></li>
+<li>Snowflake — Overview of semantic views: <a href="https://docs.snowflake.com/en/user-guide/views-semantic/overview">docs.snowflake.com/…/views-semantic</a></li>
+<li>Snowflake Engineering — Ontology-grounded Cortex Agents: <a href="https://www.snowflake.com/en/blog/engineering/ontology-grounded-cortex-agents/">snowflake.com/…/ontology-grounded-cortex-agents</a></li>
+<li>Databricks — Genie One, Genie Agents, and Genie Ontology: <a href="https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents">databricks.com/…/genie-ontology</a></li>
+<li>Databricks — Unity Catalog Business Semantics (GA): <a href="https://www.databricks.com/blog/redefining-semantics-data-layer-future-bi-and-ai">databricks.com/…/redefining-semantics</a></li>
+<li>Google Cloud — Introducing the Google Cloud Knowledge Catalog: <a href="https://cloud.google.com/blog/products/data-analytics/introducing-the-google-cloud-knowledge-catalog">cloud.google.com/…/knowledge-catalog</a></li>
+<li>Google Cloud — Looker's semantic layer governs Gemini Enterprise: <a href="https://cloud.google.com/blog/products/business-intelligence/integrating-looker-and-gemini-enterprise">cloud.google.com/…/looker-gemini-enterprise</a></li>
+<li>Cube — Semantic Layer for AI Agents: <a href="https://cube.dev/articles/semantic-layer-for-ai-agents-2026">cube.dev/…/semantic-layer-for-ai-agents-2026</a></li>
+<li>RelationalAI — Ontological Semantics to OSI: <a href="https://www.relational.ai/post/bringing-ontological-semantics-to-open-semantic-interchange-osi">relational.ai/…/ontological-semantics-osi</a></li>
+<li>Gartner — Lack of Semantics Causes Inaccurate AI Agents: <a href="https://www.gartner.com/en/newsroom/press-releases/2026-05-11-gartner-says-lack-of-semantics-causes-inaccurate-artificial-intelligence-agents-and-wasted-spending">gartner.com/…/lack-of-semantics</a></li>
+<li>Forrester — Build Meaning Before Machines: <a href="https://www.forrester.com/blogs/build-meaning-before-machines-why-semantics-ontologies-and-knowledge-graphs-matter-for-agentic-ai/">forrester.com/…/build-meaning-before-machines</a></li>
+<li>Anthropic — Effective context engineering for AI agents: <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">anthropic.com/…/effective-context-engineering</a></li>
+<li>LangChain — Context Engineering: <a href="https://www.langchain.com/blog/context-engineering-for-agents">langchain.com/…/context-engineering-for-agents</a></li>
+<li>Chroma — Context Rot: <a href="https://www.trychroma.com/research/context-rot">trychroma.com/research/context-rot</a></li>
+<li>MCP Blog — The 2026-07-28 Specification: <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">blog.modelcontextprotocol.io/posts/2026-07-28</a></li>
+<li>Linux Foundation — A2A Protocol Surpasses 150 Organizations: <a href="https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year">linuxfoundation.org/…/a2a-150-organizations</a></li>
+<li>AGENTS.md: <a href="https://agents.md/">agents.md</a></li>
+<li>OpenAI — Agentic AI Foundation: <a href="https://openai.com/index/agentic-ai-foundation/">openai.com/index/agentic-ai-foundation</a></li>
+<li>Anthropic — Memory tool: <a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool">platform.claude.com/…/memory-tool</a></li>
+<li>OpenAI — Dreaming: Better memory for ChatGPT: <a href="https://openai.com/index/chatgpt-memory-dreaming/">openai.com/index/chatgpt-memory-dreaming</a></li>
+<li>Microsoft Learn — What is Foundry IQ?: <a href="https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/what-is-foundry-iq">learn.microsoft.com/…/foundry-iq</a></li>
+<li>Microsoft Learn — What is Fabric IQ?: <a href="https://learn.microsoft.com/en-us/fabric/iq/overview">learn.microsoft.com/fabric/iq/overview</a></li>
+<li>Foundation Capital — Context graphs: <a href="https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity">foundationcapital.com/…/context-graphs</a></li>
+<li>AWS — Build GraphRAG with Bedrock Knowledge Bases: <a href="https://aws.amazon.com/blogs/machine-learning/build-graphrag-applications-using-amazon-bedrock-knowledge-bases/">aws.amazon.com/…/graphrag-bedrock</a></li>
+<li>Palantir — AIP architecture overview: <a href="https://palantir.com/docs/foundry/architecture-center/aip-architecture/">palantir.com/docs/…/aip-architecture</a></li>
+<li>Graphwise — Merger (SWC + Ontotext): <a href="https://graphwise.ai/blog/graphwise-merger-swc-ontotext/">graphwise.ai/…/merger</a></li>
+<li>Stardog — Knowledge Graph-Powered Semantic Layer: <a href="https://www.stardog.com/">stardog.com</a></li>
+<li>A Survey of Context Engineering for LLMs (arXiv:2507.13334): <a href="https://arxiv.org/abs/2507.13334">arXiv:2507.13334</a></li>
+<li>A-MEM: Agentic Memory for LLM Agents (arXiv:2502.12110): <a href="https://arxiv.org/abs/2502.12110">arXiv:2502.12110</a></li>
+<li>Gartner — 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026: <a href="https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025">gartner.com/…/40-percent-enterprise-apps</a></li>
+<li>SiliconANGLE — 2026 data predictions: <a href="https://siliconangle.com/2026/01/18/2026-data-predictions-scaling-ai-agents-via-contextual-intelligence/">siliconangle.com/…/2026-data-predictions</a></li>
+</ol>
+
+<p style="color: var(--on-surface-variant); font-size: 12px; margin-top: 24px;">Informe generado con un pipeline de deep research multi-agente (5 subagentes en paralelo, 198 fuentes, verificación de integridad de URLs). Las fuentes detalladas por área están en el repositorio de investigación.</p>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">SPECIAL REPORT · OCTUBRE 2026</span>
+    </div>
+  </div>
+
+<script>
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+  }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
+
+  (function() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+      bar.style.width = (scrolled * 100) + '%';
+    });
+  })();
+</script>
+
+  <script>
+    const NAV_API_URL = 'https://api.github.com/repos/iamluisgb/reports/contents/reports?ref=master';
+    const CURRENT_FILE = 'knowledge-layer-2026-10-02.html';
+
+    async function loadReportNav() {
+      try {
+        const res = await fetch(NAV_API_URL + '&t=' + Date.now());
+        if (!res.ok) throw new Error('API error');
+        const files = await res.json();
+        const htmlFiles = files
+          .filter(f => f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html')
+          .sort((a, b) => {
+            const da = a.name.replace('.html', '').split('-').slice(-3).join('');
+            const db = b.name.replace('.html', '').split('-').slice(-3).join('');
+            return db.localeCompare(da);
+          });
+        const idx = htmlFiles.findIndex(f => f.name === CURRENT_FILE);
+        if (idx === -1) return;
+        const nav = document.getElementById('report-nav');
+        if (nav) nav.style.display = '';
+        if (idx > 0) {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.href = prev.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx - 1].name;
+        } else {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.style.display = 'none';
+        }
+        if (idx < htmlFiles.length - 1) {
+          const next = document.getElementById('next-report');
+          if (next) next.href = next.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx + 1].name;
+        } else {
+          const next = document.getElementById('next-report');
+          if (next) next.style.display = 'none';
+        }
+      } catch (e) {
+        console.error('Nav error:', e);
+      }
+    }
+    loadReportNav();
+  </script>
+</body>
+</html>
