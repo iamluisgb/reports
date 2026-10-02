@@ -119,6 +119,38 @@ an invented detail is not.
 CANDIDATES (rank = position on the front page, lower is hotter):
 {candidates}"""
 
+EXTRAS_PROMPT = """{voice}
+
+Two more jobs for today's briefing ({day}, {weekday}), working only from the
+items already written up. Return ONLY a JSON object, no markdown fence, no
+commentary:
+
+{{
+  "numbers": [{{"value": "1,273", "label": "points on the top story", "note": "double the runner-up", "id": "hn-49913571"}}],
+  "watch": [{{"title": "...", "desc": "...", "id": "hn-49913571"}}]
+}}
+
+"numbers" — 3-4 stat cards:
+- "value" is the number itself, short enough for a card ($900B, 1,273, 38.8%, 4 GW).
+- "label" says what it counts, sentence case, at most seven words.
+- "note" is one optional clause of context; leave it "" if it would only pad.
+- Every number must be one that appears in the material below. Never estimate,
+  never restate a number the source does not give, never invent one. A day with
+  only two real numbers gets two cards.
+- "id" is the item the number came from, copied exactly, so the card can link to
+  its source. Use "" only for a number that spans several items.
+
+"watch" — 4-5 items on what happens next:
+- Forward-looking, not a summary: the tension, the pending decision, the closing
+  date, the thing today left unresolved, and what would confirm or kill it. No
+  invented deadlines and no prediction the sources do not support.
+- "title" is a 3-8 word noun phrase, sentence case, no trailing period.
+- "desc" is 2-3 sentences: what to watch, and the signal that settles it.
+- "id" is the item it follows from, copied exactly, or "" when it spans several.
+
+TODAY'S REPORT, already written up:
+{news}"""
+
 PAPERS_PROMPT = """{voice}
 
 Two jobs: write up today's arXiv papers, and write the closing argument for the \
@@ -295,7 +327,76 @@ def esc(text):
     return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", out)
 
 
-def render(day, chosen, subtitle, why, index):
+def source_links(source):
+    """The anchors a candidate gets: the story itself, then its thread.
+
+    A self post (Ask HN and friends) has no external URL — its story URL *is*
+    the thread — so it gets one link, not two pointing at the same place.
+    """
+    hn_url = source.get("hn_url")
+    # "arxiv-" as a substring, not a prefix: a beat paper is kg-arxiv-…, and it
+    # still deserves the arXiv link and nothing else.
+    if "arxiv-" in source["id"]:
+        return [(source["url"], "arXiv")]
+    if not hn_url:
+        # A beat pick taken straight from the web has no thread behind it.
+        return [(source["url"], "Source")]
+    if source["url"] == hn_url:
+        return [(hn_url, "HN")]
+    return [(source["url"], "Original"), (hn_url, "HN")]
+
+
+def render_numbers(numbers, index):
+    """The 'In Numbers' stat cards. Numbers only ever come from the material."""
+    if not numbers:
+        return ""
+    cards = []
+    for card in numbers:
+        source = index.get(card.get("id") or "")
+        link = ""
+        if source:
+            url, label = source_links(source)[0]
+            link = (f'<a href="{url}" style="color:inherit;text-decoration:underline;"'
+                    f'>{label}</a>')
+        note = esc(card.get("note", ""))
+        tail = " ".join(x for x in (note, link) if x)
+        cards.append(f"""
+        <div class="stat-card" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;">
+          <div class="stat-value" style="font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:600;line-height:1.1;color:var(--primary);">{esc(card["value"])}</div>
+          <div class="stat-label" style="margin-top:6px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--on-surface-variant);">{esc(card["label"])}</div>
+          {f'<div class="stat-note" style="margin-top:6px;font-size:12px;color:var(--on-surface-variant);">{tail}</div>' if tail else ''}
+        </div>
+""")
+    return ('\n    <div class="section">\n'
+            '      <div class="section-label">In Numbers</div>\n'
+            '      <div class="stats-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;">'
+            + "".join(cards) + '\n      </div>\n    </div>\n')
+
+
+def render_watch(watch, index):
+    """The 'Watch' section: what happens next, one item per tension."""
+    if not watch:
+        return ""
+    parts = ['\n    <div class="section">\n'
+             '      <div class="section-label">Watch</div>\n']
+    for item in watch:
+        source = index.get(item.get("id") or "")
+        links = ""
+        if source:
+            links = ('<div class="sources" style="margin-top:4px;">'
+                     + " ".join(f'<a href="{u}">{t}</a>' for u, t in source_links(source))
+                     + "</div>")
+        parts.append(f"""
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>{esc(item["title"])}.</strong> {esc(item["desc"])}{links}</span>
+      </div>
+""")
+    parts.append("\n    </div>\n")
+    return "".join(parts)
+
+
+def render(day, chosen, subtitle, why, index, numbers=(), watch=()):
     stamp = datetime.strptime(day, "%Y-%m-%d")
     pretty = f"{stamp.day} {stamp.strftime('%b %Y')}"
     parts = [f"""<!DOCTYPE html>
@@ -325,26 +426,15 @@ def render(day, chosen, subtitle, why, index):
     </div>
 """]
 
+    numbers_html = render_numbers(numbers, index)
+    placed = False
     for section in chosen:
         parts.append('\n    <div class="section">\n'
                      f'      <div class="section-label">{esc(section["label"])}</div>\n')
         for n, item in enumerate(section["items"], 1):
             source = index[item["id"]]
-            # "arxiv-" as a substring, not a prefix: a beat paper is kg-arxiv-…,
-            # and it still deserves the arXiv link and nothing else.
-            hn_url = source.get("hn_url")
-            if "arxiv-" in item["id"]:
-                links = f'          <a href="{source["url"]}">arXiv</a>\n'
-            elif not hn_url:
-                # A beat pick taken straight from the web has no thread behind it.
-                links = f'          <a href="{source["url"]}">Source</a>\n'
-            elif source["url"] == hn_url:
-                # A self post (Ask HN and friends) has no external URL: the story
-                # URL *is* the thread, and two links to the same place read as a bug.
-                links = f'          <a href="{hn_url}">HN</a>\n'
-            else:
-                links = (f'          <a href="{source["url"]}">Original</a>\n'
-                         f'          <a href="{hn_url}">HN</a>\n')
+            links = "".join(f'          <a href="{u}">{t}</a>\n'
+                            for u, t in source_links(source))
             parts.append(f"""
       <div class="news-item">
         <div class="num">{n:02d}</div>
@@ -355,6 +445,11 @@ def render(day, chosen, subtitle, why, index):
       </div>
 """)
         parts.append("\n    </div>\n")
+        if numbers_html and not placed and section["label"].strip().lower().startswith("headlines"):
+            parts.append(numbers_html)
+            placed = True
+    if numbers_html and not placed:
+        parts.append(numbers_html)
 
     parts.append('\n    <div class="section">\n'
                  '      <div class="section-label">Why It Matters</div>\n')
@@ -367,7 +462,9 @@ def render(day, chosen, subtitle, why, index):
 """)
     parts.append(f"""
     </div>
-
+""")
+    parts.append(render_watch(watch, index))
+    parts.append(f"""
     <div class="footer">
       <span class="handle">@iamluisgb</span>
       <span class="date">{pretty}</span>
@@ -444,6 +541,49 @@ def keep_valid(items, index, used, label, want_paper,
     return kept
 
 
+def keep_numbers(cards, index, cap=4):
+    """Stat cards, trimmed to the ones the day's material can actually back.
+
+    An id that is not in the bundle is dropped, not guessed at: the card then
+    renders without a link, which is better than a link to the wrong story.
+    """
+    kept = []
+    for card in cards:
+        value = str(card.get("value", "")).strip()
+        label = str(card.get("label", "")).strip()
+        if not value or not label:
+            print("  - dropped a number card with no value or label", file=sys.stderr)
+            continue
+        key = str(card.get("id", "")).strip()
+        if key and key not in index:
+            print(f"  - dropped unknown id {key!r} on a number card", file=sys.stderr)
+            key = ""
+        kept.append({"value": value, "label": label,
+                     "note": str(card.get("note", "")).strip(), "id": key})
+        if len(kept) == cap:
+            break
+    return kept
+
+
+def keep_watch(items, index, cap=5):
+    """The 'Watch' items: forward-looking prose, links only where one exists."""
+    kept = []
+    for item in items:
+        title = str(item.get("title", "")).strip().rstrip(".")
+        desc = str(item.get("desc", "")).strip()
+        if not title or not desc:
+            print("  - dropped a watch item with no title or desc", file=sys.stderr)
+            continue
+        key = str(item.get("id", "")).strip()
+        if key and key not in index:
+            print(f"  - dropped unknown id {key!r} on a watch item", file=sys.stderr)
+            key = ""
+        kept.append({"title": title, "desc": desc, "id": key})
+        if len(kept) == cap:
+            break
+    return kept
+
+
 def check_audio(script):
     words = len(re.sub(r"\[\w+\]", " ", script).split())
     speakers = set(re.findall(r"\[(\w+)\]", script))
@@ -461,6 +601,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--bundle", required=True)
     ap.add_argument("--skip-audio-script", action="store_true")
+    ap.add_argument("--no-extras", action="store_true",
+                    help="skip the In Numbers / Watch pass")
     ap.add_argument("--dry-run", action="store_true",
                     help="write to /tmp instead of the repo")
     args = ap.parse_args()
@@ -513,6 +655,28 @@ def main():
     if sum(len(s["items"]) for s in chosen) < 6:
         raise SystemExit("fewer than 6 usable news items — refusing to publish a stub")
 
+    # --- the day's numbers, and what to watch ------------------------------
+    # A separate call on purpose: the news pass already spends most of the 16k
+    # ceiling on reasoning, and a bigger single ask comes back truncated.
+    numbers, watch = [], []
+    if not args.no_extras:
+        listed = "\n".join(
+            f'{i["id"]} | {i["title"]}\n  {i["desc"]}'
+            for s in chosen for i in s["items"])
+        try:
+            reply, model = complete(EXTRAS_PROMPT.format(
+                voice=VOICE, day=day, weekday=bundle["weekday"],
+                news=listed), key, "extras", parse=parse_json)
+            numbers = keep_numbers(reply.get("numbers", []), index)
+            watch = keep_watch(reply.get("watch", []), index)
+            print(f"  extras: {len(numbers)} number cards, {len(watch)} watch items",
+                  file=sys.stderr)
+        except SystemExit as exc:
+            # The report is publishable without them, so a briefing that comes
+            # back empty must not cost the day its report.
+            print(f"  ! extras unavailable: {exc} — publishing without them",
+                  file=sys.stderr)
+
     # --- papers and the closing argument ----------------------------------
     summary = "\n".join(f'- {i["title"]}: {i["desc"]}'
                         for s in chosen for i in s["items"])
@@ -533,7 +697,7 @@ def main():
     if len(why) < 2:
         raise SystemExit("Why It Matters came back with fewer than 2 bullets")
 
-    page = render(day, chosen, subtitle, why, index)
+    page = render(day, chosen, subtitle, why, index, numbers, watch)
     if len(page) < MIN_REPORT_CHARS:
         raise SystemExit(f"rendered page is only {len(page)} chars — not publishing")
 
