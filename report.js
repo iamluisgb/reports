@@ -113,6 +113,23 @@
       paint();
     }).catch(() => {});
 
+    // Playback speed, remembered across the index and every report.
+    const RATES = [1, 1.25, 1.5, 2];
+    const rateBtn = el('button', { class: 'rb-rate', type: 'button' });
+    const setRate = (r, save) => {
+      audio.defaultPlaybackRate = r;   // survives the reload the first play triggers
+      audio.playbackRate = r;
+      rateBtn.textContent = r + '×';
+      rateBtn.setAttribute('aria-label', `Playback speed ${r}×, change`);
+      if (save) try { localStorage.setItem('ai-reports-rate', String(r)); } catch (e) {}
+    };
+    rateBtn.addEventListener('click', () => setRate(RATES[(RATES.indexOf(audio.playbackRate) + 1) % RATES.length], true));
+    let savedRate = 1;
+    try { savedRate = parseFloat(localStorage.getItem('ai-reports-rate')) || 1; } catch (e) {}
+    setRate(RATES.includes(savedRate) ? savedRate : 1, false);
+    const timeEl = player.querySelector('.player-time');
+    timeEl ? timeEl.parentNode.insertBefore(rateBtn, timeEl) : player.append(rateBtn);
+
     // Mini control in the sticky bar once the briefing has started.
     const syncMini = () => {
       miniBtn.hidden = audio.paused && audio.currentTime === 0;

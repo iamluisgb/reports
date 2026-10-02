@@ -216,6 +216,7 @@
           <div class="player-top">
             <button class="play" type="button" id="play" aria-label="Play audio briefing">${PLAY}</button>
             <div><div class="eyebrow">Audio briefing</div><div class="player-sub">The day in five minutes</div></div>
+            <button class="rate" type="button" id="rate"></button>
             <span class="time" id="time"></span>
           </div>
           <div class="wave" id="wave" role="slider" tabindex="0" aria-label="Seek audio briefing" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
@@ -244,6 +245,19 @@
       bars = [...wave.children];
       paint();
     }).catch(() => {});
+    // Playback speed, remembered across the index and every report.
+    const RATES = [1, 1.25, 1.5, 2], rateBtn = $('rate');
+    const setRate = (r, save) => {
+      audio.defaultPlaybackRate = r;
+      audio.playbackRate = r;
+      rateBtn.textContent = r + '×';
+      rateBtn.setAttribute('aria-label', `Playback speed ${r}×, change`);
+      if (save) try { localStorage.setItem('ai-reports-rate', String(r)); } catch (e) {}
+    };
+    rateBtn.onclick = () => setRate(RATES[(RATES.indexOf(audio.playbackRate) + 1) % RATES.length], true);
+    let savedRate = 1;
+    try { savedRate = parseFloat(localStorage.getItem('ai-reports-rate')) || 1; } catch (e) {}
+    setRate(RATES.includes(savedRate) ? savedRate : 1, false);
     play.onclick = () => audio.paused ? audio.play().catch(() => {}) : audio.pause();
     audio.onplay = () => { play.innerHTML = PAUSE; play.setAttribute('aria-label', 'Pause audio briefing'); };
     audio.onpause = () => { play.innerHTML = PLAY; play.setAttribute('aria-label', 'Play audio briefing'); };

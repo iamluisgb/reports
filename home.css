@@ -79,7 +79,16 @@
 .play:hover { transform: scale(1.06); }
 .play svg { width: 15px; height: 15px; fill: currentColor; }
 .player-sub { font-size: 13px; color: var(--on-surface-variant); }
-.time { margin-left: auto; font: 12px var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.time { margin-left: auto; font: 12px var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.player-top > div { min-width: 0; }
+.player-sub { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rate {
+  margin-left: auto; flex: none; padding: 3px 8px; min-width: 44px; border-radius: 6px; border: 1px solid var(--border);
+  background: transparent; color: var(--on-surface-variant); font: 500 11px var(--f-mono); font-variant-numeric: tabular-nums; cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+.rate:hover { color: var(--on-surface); border-color: color-mix(in srgb, var(--on-surface) 30%, transparent); }
+.rate + .time { margin-left: 0; }
 .wave { display: flex; align-items: center; gap: 2px; height: 44px; cursor: pointer; border-radius: 6px; }
 .wave i { flex: 1; min-width: 1px; border-radius: 2px; background: color-mix(in srgb, var(--on-surface) 22%, transparent); transition: background .2s; }
 .wave i.on { background: var(--primary); }
