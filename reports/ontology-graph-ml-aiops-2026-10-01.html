@@ -44,7 +44,28 @@
 <meta name="twitter:description" content="Palantir ontology · Governance · Link prediction · AIOps layers · The determinism question · Foundry mapping · 5 diagrams · Reading list">
 <meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ontology-graph-ml-aiops-2026-10-01.png">
 <!-- og:end -->
-</head>
+
+<style>
+/* SVG diagram colour classes — bright colours on dark background for visibility */
+.svg-figure .dg-box     { fill: #2e3348; stroke: #5a637e; stroke-width: 1.2; }
+.svg-figure .dg-in      { fill: #22263a; stroke: #5a637e; stroke-width: 1; }
+.svg-figure .dg-accent  { stroke: #6ec6ff; }
+.svg-figure .dg-green   { stroke: #88e8b0; }
+.svg-figure .dg-warn    { stroke: #ffc857; }
+.svg-figure .dg-t       { fill: #dce1ed; font-size: 13px; text-anchor: middle; font-family: 'Inter', sans-serif; }
+.svg-figure .dg-l       { fill: #dce1ed; font-size: 13px; text-anchor: start; font-family: 'Inter', sans-serif; }
+.svg-figure .dg-mut     { fill: #9a9fbf; font-size: 11px; text-anchor: middle; font-family: 'Inter', sans-serif; }
+.svg-figure .dg-hd      { fill: #6ec6ff; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-anchor: middle; font-family: 'Inter', sans-serif; }
+.svg-figure .dg-edge    { stroke: #5a637e; stroke-width: 1.6; fill: none; }
+.svg-figure .dg-flow    { stroke: #6ec6ff; stroke-width: 1.8; fill: none; opacity: .95; }
+.svg-figure .dg-dash    { stroke: #ffc857; stroke-width: 1.6; fill: none; stroke-dasharray: 5 4; }
+.svg-figure .dg-node    { fill: #2e3348; stroke: #6ec6ff; stroke-width: 1.6; }
+.svg-figure .dg-cap     { fill: #9a9fbf; font-size: 11px; text-anchor: middle; font-style: italic; font-family: 'Inter', sans-serif; }
+.svg-figure .dg-marker  { fill: #6ec6ff; }
+
+.svg-figure { background: #151928; border: 1px solid #3d465c; border-radius: 12px; padding: 16px 8px; margin: 16px 0; }
+.svg-figure svg { width: 100%; height: auto; display: block; }
+</style></head>
 <body>
 <div class="progress-bar" id="progress-bar"></div>
 <div class="page">
@@ -86,7 +107,7 @@ data that never leaves your network</strong>. Three core ideas:</p>
     and the result flows back into the system.</li>
 </ul>
 
-<figure class="svg-figure"><svg class="diagram" viewBox="0 0 920 250" role="img" aria-label="Palantir platform pipeline: sources to apps, with writeback loop">
+<figure class="svg-figure"><svg class="diagram" width="100%" viewBox="0 0 920 250" role="img" aria-label="Palantir platform pipeline: sources to apps, with writeback loop">
   <defs>
     <marker id="arr1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0L10 5L0 10z" fill="#5eb3f6"/>
@@ -186,7 +207,7 @@ They differ in app packaging, deployment environments, and compliance. Foundry i
   </tbody>
 </table></div>
 
-<figure class="svg-figure"><svg class="diagram" viewBox="0 0 792 210" role="img" aria-label="Instance layer flows freely, suggestion layer is gated by human review">
+<figure class="svg-figure"><svg class="diagram" width="100%" viewBox="0 0 792 210" role="img" aria-label="Instance layer flows freely, suggestion layer is gated by human review">
   <defs>
     <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0L10 5L0 10z" fill="#5eb3f6"/>
@@ -282,7 +303,7 @@ That separation is the difference between an investigation system and one that a
 
 <p>A graph isn't directly consumable — you must <strong>vectorize</strong>. Three levels:</p>
 
-<figure class="svg-figure"><svg class="diagram" viewBox="0 0 912 225" role="img" aria-label="Input graph vectorized three ways into an embedding matrix feeding downstream tasks">
+<figure class="svg-figure"><svg class="diagram" width="100%" viewBox="0 0 912 225" role="img" aria-label="Input graph vectorized three ways into an embedding matrix feeding downstream tasks">
   <defs>
     <marker id="arr3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0L10 5L0 10z" fill="#5eb3f6"/>
@@ -412,7 +433,7 @@ sampled unconnected pairs are the negatives (<em>negative sampling</em>).
 
 <h3>Reference architecture</h3>
 
-<figure class="svg-figure"><svg class="diagram" viewBox="0 0 932 410" role="img" aria-label="Layered AIOps architecture from signals to human decision, with feedback loop">
+<figure class="svg-figure"><svg class="diagram" width="100%" viewBox="0 0 932 410" role="img" aria-label="Layered AIOps architecture from signals to human decision, with feedback loop">
   <defs>
     <marker id="arr4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0L10 5L0 10z" fill="#5eb3f6"/>
@@ -481,7 +502,7 @@ as "deterministic causal inference". But that <em>if</em> breaks in four places,
     a latency spike is an incident or legitimate 9am traffic. That's baseline modeling.</li>
 </ol>
 
-<figure class="svg-figure"><svg class="diagram" viewBox="0 0 926 255" role="img" aria-label="Clean declared topology versus messy observed reality with undeclared dependencies">
+<figure class="svg-figure"><svg class="diagram" width="100%" viewBox="0 0 926 255" role="img" aria-label="Clean declared topology versus messy observed reality with undeclared dependencies">
   <rect class="dg-in" x="10" y="25" width="435" height="180" rx="10"/>
   <rect class="dg-in" x="475" y="25" width="435" height="180" rx="10"/>
   <text class="dg-hd" x="227" y="50">DECLARED (CMDB)</text>
