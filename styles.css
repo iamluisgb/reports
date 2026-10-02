@@ -2218,3 +2218,80 @@ input:focus-visible,
   border-radius: 2px;
   background: var(--border);
 }
+
+/* ===== SPECIAL REPORT: STAT CARDS ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.stat-card:hover {
+  border-color: var(--primary);
+}
+
+.stat-card .label {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--on-surface-variant);
+  margin-bottom: 10px;
+}
+
+.stat-card .value {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 27px;
+  line-height: 1.05;
+  color: var(--primary);
+  letter-spacing: -0.01em;
+}
+
+/* ===== SPECIAL REPORT: FIGURES / SVG DIAGRAMS ===== */
+figure.diagram {
+  margin: 30px 0;
+}
+
+figure.diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+figure.diagram figcaption {
+  margin-top: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--on-surface-variant);
+  text-align: center;
+}
+
+figure.diagram text {
+  fill: var(--on-surface);
+  font-family: 'Inter', sans-serif;
+}
+
+figure.diagram text.muted { fill: var(--on-surface-variant); }
+figure.diagram text.accent { fill: var(--primary); }
+
+figure.diagram rect.box { fill: var(--bg); stroke: var(--border); stroke-width: 1; }
+figure.diagram rect.box-accent { fill: var(--primary-dim); stroke: var(--primary); stroke-width: 1; }
+figure.diagram rect.pill { fill: var(--primary-dim); stroke: none; }
+figure.diagram line.arrow { stroke: var(--on-surface-variant); stroke-width: 1.5; }
+figure.diagram line.grid { stroke: var(--border); stroke-width: 1; }
+figure.diagram line.axis { stroke: var(--on-surface-variant); stroke-width: 1.5; }
+figure.diagram .bar-base { fill: var(--on-surface-variant); opacity: 0.4; }
+figure.diagram .bar-accent { fill: var(--primary); }

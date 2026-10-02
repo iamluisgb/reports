@@ -85,7 +85,85 @@
   <tr><td><strong>5. Orquestación y retrieval</strong></td><td>GraphRAG, agentic retrieval, MCP/A2A con gobernanza en tiempo de consulta</td></tr>
 </table></div>
 
+<figure class="diagram">
+<svg viewBox="0 0 760 348" role="img" aria-label="Pila de cinco capas del knowledge layer">
+  <rect class="box" x="20" y="16" width="720" height="52" rx="8"/>
+  <text class="accent" x="42" y="48" font-size="15" font-weight="700">1</text>
+  <text x="66" y="47" font-size="13" font-weight="600">Activos de datos gobernados</text>
+  <text class="muted" x="340" y="47" font-size="12">OneLake · Unity Catalog · BigQuery · S3</text>
+
+  <rect class="box" x="20" y="80" width="720" height="52" rx="8"/>
+  <text class="accent" x="42" y="112" font-size="15" font-weight="700">2</text>
+  <text x="66" y="111" font-size="13" font-weight="600">Semantic layer</text>
+  <text class="muted" x="340" y="111" font-size="12">Métricas, dimensiones y entidades</text>
+
+  <rect class="box" x="20" y="144" width="720" height="52" rx="8"/>
+  <text class="accent" x="42" y="176" font-size="15" font-weight="700">3</text>
+  <text x="66" y="175" font-size="13" font-weight="600">Ontología + knowledge graph</text>
+  <text class="muted" x="340" y="175" font-size="12">Tipos, relaciones y reglas</text>
+
+  <rect class="box" x="20" y="208" width="720" height="52" rx="8"/>
+  <text class="accent" x="42" y="240" font-size="15" font-weight="700">4</text>
+  <text x="66" y="239" font-size="13" font-weight="600">Context graph / memoria</text>
+  <text class="muted" x="340" y="239" font-size="12">Decision traces, estado y precedente</text>
+
+  <rect class="box-accent" x="20" y="272" width="720" height="52" rx="8"/>
+  <text class="accent" x="42" y="304" font-size="15" font-weight="700">5</text>
+  <text x="66" y="303" font-size="13" font-weight="600">Orquestación y retrieval</text>
+  <text class="muted" x="340" y="303" font-size="12">GraphRAG · agentic retrieval · MCP/A2A</text>
+</svg>
+<figcaption>La pila de cinco capas que se repite en Databricks, Snowflake, Microsoft, Google, AWS, Neo4j, Palantir, Graphwise y Stardog.</figcaption>
+</figure>
+
 <blockquote><em>📌 Takeaway:</em> la justificación de negocio de la convergencia es la <strong>duplicación semántica</strong>: si cada agente lleva su propia definición de "cliente activo", la empresa acaba con diez copias privadas de sí misma que derivan sin ruido.</blockquote>
+
+<figure class="diagram">
+<svg viewBox="0 0 760 300" role="img" aria-label="Duplicación semántica frente a sustrato compartido">
+  <text class="muted" x="190" y="24" text-anchor="middle" font-size="11" font-weight="700">ANTES · duplicación semántica</text>
+  <text class="muted" x="570" y="24" text-anchor="middle" font-size="11" font-weight="700">DESPUÉS · sustrato compartido</text>
+
+  <rect class="box" x="40" y="40" width="300" height="46" rx="8"/>
+  <text x="58" y="61" font-size="12" font-weight="600">Agente A</text>
+  <text class="muted" x="58" y="78" font-size="10">copia privada de «cliente activo»</text>
+
+  <rect class="box" x="40" y="96" width="300" height="46" rx="8"/>
+  <text x="58" y="117" font-size="12" font-weight="600">Agente B</text>
+  <text class="muted" x="58" y="134" font-size="10">su propia definición, distinta</text>
+
+  <rect class="box" x="40" y="152" width="300" height="46" rx="8"/>
+  <text x="58" y="173" font-size="12" font-weight="600">Agente C</text>
+  <text class="muted" x="58" y="190" font-size="10">una tercera versión, sin sincronizar</text>
+
+  <text class="accent" x="190" y="232" text-anchor="middle" font-size="11">Divergen en silencio · sin alarma</text>
+
+  <line class="arrow" x1="380" y1="40" x2="380" y2="266"/>
+
+  <rect class="box" x="420" y="40" width="300" height="40" rx="8"/>
+  <text x="570" y="65" text-anchor="middle" font-size="12" font-weight="600">Agente A</text>
+  <rect class="box" x="420" y="92" width="300" height="40" rx="8"/>
+  <text x="570" y="117" text-anchor="middle" font-size="12" font-weight="600">Agente B</text>
+  <rect class="box" x="420" y="144" width="300" height="40" rx="8"/>
+  <text x="570" y="169" text-anchor="middle" font-size="12" font-weight="600">Agente C</text>
+
+  <line class="arrow" x1="470" y1="184" x2="555" y2="210" marker-end="url(#ah2)"/>
+  <line class="arrow" x1="570" y1="184" x2="570" y2="210" marker-end="url(#ah2)"/>
+  <line class="arrow" x1="670" y1="184" x2="585" y2="210" marker-end="url(#ah2)"/>
+
+  <rect class="box-accent" x="420" y="212" width="300" height="54" rx="8"/>
+  <line class="grid" x1="520" y1="220" x2="520" y2="258"/>
+  <line class="grid" x1="620" y1="220" x2="620" y2="258"/>
+  <text class="accent" x="470" y="244" text-anchor="middle" font-size="11" font-weight="600">Ontología</text>
+  <text class="accent" x="570" y="244" text-anchor="middle" font-size="11" font-weight="600">Datos</text>
+  <text class="accent" x="670" y="244" text-anchor="middle" font-size="11" font-weight="600">Memoria</text>
+
+  <defs>
+    <marker id="ah2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="var(--on-surface-variant)"/>
+    </marker>
+  </defs>
+</svg>
+<figcaption>Agentes más ligeros sobre un sustrato compartido y gobernado: la tesis de la <em>knowledge layer</em> frente a la duplicación semántica.</figcaption>
+</figure>
 
       </div>
     </div>
@@ -103,6 +181,37 @@
 <p><strong>SHACL 1.2</strong> deja de ser solo validación: incorpora por primera vez <strong>reglas de inferencia declarativas</strong>. El documento primario verificado es <strong>SPARQL 1.2 RL (SPARQL-RL)</strong>, Working Draft del 1 de octubre de 2026: un lenguaje de reglas estilo <strong>Datalog</strong> para RDF, con recursión, negación por fallo y <strong>estratificación</strong> para garantizar resultados deterministas.</p>
 
 <p><strong>YAML-LD 1.0</strong> publicó su primer Working Draft (2026): convenciones para serializar Linked Data en YAML, con media type <code>application/ld+yaml</code>, compatible con JSON-LD 1.1 y RDF 1.2.</p>
+
+<figure class="diagram">
+<svg viewBox="0 0 760 210" role="img" aria-label="Cronología de estándares 2025-2026">
+  <line class="axis" x1="50" y1="120" x2="710" y2="120"/>
+
+  <circle cx="90" cy="120" r="6" fill="var(--primary)"/>
+  <text class="muted" x="90" y="100" text-anchor="middle" font-size="11">Sep 2025</text>
+  <text x="90" y="148" text-anchor="middle" font-size="11" font-weight="600">OSI anunciado</text>
+
+  <circle cx="210" cy="120" r="6" fill="var(--primary)"/>
+  <text class="muted" x="210" y="100" text-anchor="middle" font-size="11">Nov 2025</text>
+  <text x="210" y="148" text-anchor="middle" font-size="11" font-weight="600">repo Ossie</text>
+
+  <circle cx="330" cy="120" r="6" fill="var(--primary)"/>
+  <text class="muted" x="330" y="100" text-anchor="middle" font-size="11">Ene 2026</text>
+  <text x="330" y="148" text-anchor="middle" font-size="11" font-weight="600">spec v0.1</text>
+
+  <circle cx="450" cy="120" r="6" fill="var(--primary)"/>
+  <text class="muted" x="450" y="100" text-anchor="middle" font-size="11">Feb 2026</text>
+  <text x="450" y="148" text-anchor="middle" font-size="11" font-weight="600">GraphRAG-Bench v3</text>
+
+  <circle cx="570" cy="120" r="6" fill="var(--primary)"/>
+  <text class="muted" x="570" y="100" text-anchor="middle" font-size="11">Jul 2026</text>
+  <text x="570" y="148" text-anchor="middle" font-size="11" font-weight="600">Ossie + MCP</text>
+
+  <circle cx="690" cy="120" r="6" fill="var(--primary)"/>
+  <text class="muted" x="690" y="100" text-anchor="middle" font-size="11">Oct 2026</text>
+  <text x="690" y="148" text-anchor="middle" font-size="11" font-weight="600">SPARQL-RL (WD)</text>
+</svg>
+<figcaption>Los hitos que ordenan el periodo: la semántica portable (Apache Ossie) y el transporte agéntico (MCP) convergen en la segunda mitad de 2026.</figcaption>
+</figure>
 
 <h3>LLMs y ontologías: de generadores a restricciones</h3>
 
@@ -138,6 +247,42 @@
 <h3>Híbrido es el estándar</h3>
 
 <p>El consenso de 2026 es que <strong>ninguno es universalmente mejor</strong>. La arquitectura ganadora combina búsqueda vectorial (recall) + recorrido de grafo (razonamiento) + reranker, fusionados con RRF. GraphRAG y LightRAG <em>no reemplazan</em> la recuperación vectorial: siguen usando embeddings y ANN sobre nodos y comunidades, y añaden traversal.</p>
+
+<figure class="diagram">
+<svg viewBox="0 0 760 232" role="img" aria-label="Qué capa de retrieval usar según el tipo de pregunta">
+  <defs>
+    <marker id="ahB" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="var(--on-surface-variant)"/>
+    </marker>
+  </defs>
+
+  <rect class="box" x="270" y="14" width="220" height="54" rx="8"/>
+  <text x="380" y="38" text-anchor="middle" font-size="13" font-weight="600">¿Qué tipo de pregunta?</text>
+  <text class="muted" x="380" y="56" text-anchor="middle" font-size="11">elige la capa, no la tecnología</text>
+
+  <line class="arrow" x1="380" y1="68" x2="380" y2="98" marker-end="url(#ahB)"/>
+  <line class="arrow" x1="130" y1="100" x2="630" y2="100"/>
+  <line class="arrow" x1="130" y1="100" x2="130" y2="128" marker-end="url(#ahB)"/>
+  <line class="arrow" x1="380" y1="100" x2="380" y2="128" marker-end="url(#ahB)"/>
+  <line class="arrow" x1="630" y1="100" x2="630" y2="128" marker-end="url(#ahB)"/>
+
+  <rect class="box" x="20" y="130" width="220" height="86" rx="8"/>
+  <text x="36" y="158" font-size="13" font-weight="700">Vector RAG</text>
+  <text class="muted" x="36" y="180" font-size="11">Hechos simples · single-hop</text>
+  <text class="muted" x="36" y="200" font-size="10">más barato y suficiente</text>
+
+  <rect class="box-accent" x="270" y="130" width="220" height="86" rx="8"/>
+  <text class="accent" x="286" y="158" font-size="13" font-weight="700">GraphRAG (grafo)</text>
+  <text class="muted" x="286" y="180" font-size="11">Multi-hop · global · agregación</text>
+  <text class="muted" x="286" y="200" font-size="10">recorre las relaciones</text>
+
+  <rect class="box" x="520" y="130" width="220" height="86" rx="8"/>
+  <text x="536" y="158" font-size="13" font-weight="700">Semantic layer</text>
+  <text class="muted" x="536" y="180" font-size="11">Métricas de negocio certificadas</text>
+  <text class="muted" x="536" y="200" font-size="10">falla de forma explícita</text>
+</svg>
+<figcaption>La decisión del año no es "grafo sí o no", sino elegir la capa según el tipo de pregunta.</figcaption>
+</figure>
 
 <blockquote><em>⚠️ Matiz:</em> AWS demostró en infraestructura gestionada que el "global search" de GraphRAG puede no ser óptimo para preguntas temáticas, y que se puede elegir metodología por consulta sobre el mismo grafo.</blockquote>
 
@@ -183,6 +328,35 @@
 
 <p>El text-to-SQL general mejoró de 32,7&nbsp;% (2023) a 64,5&nbsp;% (2026). Con solo <strong>3 modelos dbt</strong> adicionales se cubrieron las 11 preguntas. La conclusión operativa: semantic layer para KPIs/auditoría/board (falla explícitamente), text-to-SQL para exploración ad-hoc.</p>
 
+<figure class="diagram">
+<svg viewBox="0 0 760 316" role="img" aria-label="Precisión text-to-SQL frente a semantic layer">
+  <rect x="250" y="18" width="12" height="12" rx="2" class="bar-base"/>
+  <text x="268" y="28" font-size="11">text-to-SQL</text>
+  <rect x="380" y="18" width="12" height="12" rx="2" class="bar-accent"/>
+  <text x="398" y="28" font-size="11">Semantic Layer</text>
+
+  <line class="grid" x1="80" y1="70" x2="720" y2="70"/>
+  <line class="grid" x1="80" y1="170" x2="720" y2="170"/>
+  <line class="axis" x1="80" y1="270" x2="720" y2="270"/>
+  <text class="muted" x="70" y="74" text-anchor="end" font-size="10">100</text>
+  <text class="muted" x="70" y="174" text-anchor="end" font-size="10">50</text>
+  <text class="muted" x="70" y="274" text-anchor="end" font-size="10">0</text>
+
+  <rect class="bar-base" x="156" y="90" width="58" height="180" rx="4"/>
+  <rect class="bar-accent" x="222" y="73.6" width="58" height="196.4" rx="4"/>
+  <text x="185" y="84" text-anchor="middle" font-size="11" font-weight="600">90,0%</text>
+  <text class="accent" x="251" y="67" text-anchor="middle" font-size="11" font-weight="700">98,2%</text>
+  <text class="muted" x="220" y="292" text-anchor="middle" font-size="12">Claude Sonnet 4.6</text>
+
+  <rect class="bar-base" x="476" y="101.8" width="58" height="168.2" rx="4"/>
+  <rect class="bar-accent" x="542" y="70" width="58" height="200" rx="4"/>
+  <text x="505" y="96" text-anchor="middle" font-size="11" font-weight="600">84,1%</text>
+  <text class="accent" x="571" y="63" text-anchor="middle" font-size="11" font-weight="700">100,0%</text>
+  <text class="muted" x="540" y="292" text-anchor="middle" font-size="12">GPT-5.3 Codex</text>
+</svg>
+<figcaption>Benchmark de dbt (abril 2026, 11 preguntas × 20 ejecuciones). La semantic layer convierte un fallo silencioso en un error explícito.</figcaption>
+</figure>
+
 <h3>Convergencia semantic layer + ontología</h3>
 
 <p>El grupo de trabajo <strong>Ontology</strong> de Ossie, con <strong>RelationalAI</strong>, extendió la especificación para soportar <strong>semántica ontológica</strong> además del modelo dimensional: entidades, relaciones y restricciones que habilitan razonamiento multi-hop. Es la transición de "modelo dimensional para dashboards" a "ontología ejecutable para agentes".</p>
@@ -220,6 +394,42 @@
 <h3>La triple capa</h3>
 
 <p>Se articula la distinción que el mercado confundía: el <strong>knowledge graph</strong> almacena el world model ("¿cómo están conectadas las cosas?"), la <strong>semantic layer</strong> define qué significa ("¿qué significa este dato?") y la <strong>context layer</strong> recupera el fragmento correcto en tiempo de inferencia ("¿qué necesita saber el modelo ahora?").</p>
+
+<figure class="diagram">
+<svg viewBox="0 0 760 268" role="img" aria-label="Knowledge graph, semantic layer y context layer">
+  <defs>
+    <marker id="ahD" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="var(--on-surface-variant)"/>
+    </marker>
+  </defs>
+
+  <rect class="box" x="20" y="30" width="220" height="140" rx="8"/>
+  <text x="36" y="58" font-size="13" font-weight="700">Knowledge graph</text>
+  <text class="muted" x="36" y="90" font-size="12">¿Cómo están</text>
+  <text class="muted" x="36" y="108" font-size="12">conectadas las cosas?</text>
+  <text class="accent" x="36" y="148" font-size="10">entidades · relaciones · reglas</text>
+
+  <rect class="box" x="270" y="30" width="220" height="140" rx="8"/>
+  <text x="286" y="58" font-size="13" font-weight="700">Semantic layer</text>
+  <text class="muted" x="286" y="90" font-size="12">¿Qué significa</text>
+  <text class="muted" x="286" y="108" font-size="12">este dato?</text>
+  <text class="accent" x="286" y="148" font-size="10">métricas · dimensiones</text>
+
+  <rect class="box" x="520" y="30" width="220" height="140" rx="8"/>
+  <text x="536" y="58" font-size="13" font-weight="700">Context layer</text>
+  <text class="muted" x="536" y="90" font-size="12">¿Qué necesita saber</text>
+  <text class="muted" x="536" y="108" font-size="12">el modelo ahora?</text>
+  <text class="accent" x="536" y="148" font-size="10">recuperación just-in-time</text>
+
+  <line class="arrow" x1="130" y1="170" x2="130" y2="198" marker-end="url(#ahD)"/>
+  <line class="arrow" x1="380" y1="170" x2="380" y2="198" marker-end="url(#ahD)"/>
+  <line class="arrow" x1="630" y1="170" x2="630" y2="198" marker-end="url(#ahD)"/>
+
+  <rect class="box-accent" x="20" y="200" width="720" height="48" rx="8"/>
+  <text x="380" y="230" text-anchor="middle" font-size="13" font-weight="600">Contexto que recibe el agente en cada turno</text>
+</svg>
+<figcaption>Tres preguntas distintas, tres capas distintas: el grafo guarda el modelo, la capa semántica el significado y la de contexto el fragmento oportuno.</figcaption>
+</figure>
 
       </div>
     </div>
