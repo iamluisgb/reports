@@ -1,31 +1,41 @@
 :root {
-    --bg: #0d1117;
-    --bg-card: #161b22;
-    --bg-card-hover: #1c2333;
+    --bg: #0b0e13;
+    --bg-card: #141920;
+    --bg-card-hover: #1b212b;
     --primary: #3fb950;
     --primary-dim: rgba(63,185,80,0.1);
-    --on-surface: #e6edf3;
-    --on-surface-variant: #b1bac4;
-    --border: rgba(48,54,61,0.6);
+    --on-primary: #0b0e13;
+    --on-surface: #eaeef3;
+    --on-surface-variant: #aab3bd;
+    --muted: #7d8692;
+    --border: rgba(125,134,146,0.22);
     --wash-green: rgba(63,185,80,0.03);
     --wash-gray: rgba(139,148,158,0.03);
     --field-opacity: 0.4;
     --shadow: 0 1px 3px rgba(0,0,0,0.4);
+    --f-display: 'Instrument Serif', 'DM Serif Display', Georgia, serif;
+    --f-body: 'Geist', 'Inter', -apple-system, 'Segoe UI', sans-serif;
+    --f-mono: 'Geist Mono', 'JetBrains Mono', ui-monospace, Menlo, monospace;
+    --ease: cubic-bezier(.2,.7,.2,1);
+    color-scheme: dark;
   }
 
 [data-theme="light"] {
-    --bg: #f5f5f0;
+    --bg: #f6f6f2;
     --bg-card: #ffffff;
-    --bg-card-hover: #f0f0eb;
-    --primary: #097347;
-    --primary-dim: rgba(9,115,71,0.1);
-    --on-surface: #1a1e26;
-    --on-surface-variant: #5a6068;
-    --border: rgba(0,0,0,0.08);
+    --bg-card-hover: #efefea;
+    --primary: #0a7a4a;
+    --primary-dim: rgba(10,122,74,0.09);
+    --on-primary: #ffffff;
+    --on-surface: #15181e;
+    --on-surface-variant: #464c55;
+    --muted: #6e747c;
+    --border: rgba(20,24,30,0.11);
     --wash-green: rgba(10,138,84,0.05);
     --wash-gray: rgba(0,0,0,0.02);
     --field-opacity: 0.35;
     --shadow: 0 1px 3px rgba(0,0,0,0.06);
+    color-scheme: light;
   }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -33,7 +43,7 @@
 html, body {
     background: var(--bg);
     color: var(--on-surface);
-    font-family: 'Inter', -apple-system, sans-serif;
+    font-family: var(--f-body);
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
     transition: background 0.3s, color 0.3s;
@@ -51,7 +61,7 @@ html, body {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     color: var(--primary);
     text-decoration: none;
@@ -81,7 +91,7 @@ html, body {
   }
 
 .header .category {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 12px;
     letter-spacing: 0.1em;
@@ -90,7 +100,7 @@ html, body {
   }
 
 .header h1 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--f-display);
     font-weight: 400;
     font-size: 3rem;
     color: var(--on-surface);
@@ -105,7 +115,7 @@ html, body {
   }
 
 .header .date-line {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     color: var(--on-surface-variant);
     margin-top: 12px;
@@ -113,7 +123,7 @@ html, body {
   }
 
 .header .subtitle {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 400;
     font-size: 16px;
     color: var(--on-surface-variant);
@@ -149,7 +159,7 @@ html, body {
     background: none;
     border: 1px solid var(--border);
     color: var(--on-surface-variant);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 11px;
     padding: 6px 12px;
     border-radius: 6px;
@@ -179,7 +189,7 @@ html, body {
   }
 
 .section-label {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 11px;
     letter-spacing: 0.12em;
@@ -218,7 +228,7 @@ html, body {
   }
 
 .news-item .num {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-weight: 500;
     font-size: 12px;
     color: var(--primary);
@@ -227,7 +237,7 @@ html, body {
   }
 
 .news-item .title {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--f-display);
     font-weight: 400;
     font-size: 1.45rem;
     color: var(--on-surface);
@@ -236,7 +246,7 @@ html, body {
   }
 
 .news-item .desc {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 400;
     font-size: 14px;
     color: var(--on-surface-variant);
@@ -245,7 +255,7 @@ html, body {
 
 .news-item .sources {
     margin-top: 12px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 11px;
   }
 
@@ -277,7 +287,7 @@ html, body {
 
 .follow-item .bullet {
     color: var(--primary);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     flex-shrink: 0;
     margin-top: 2px;
@@ -297,7 +307,7 @@ html, body {
     padding: 4px 10px;
     border-radius: 12px;
     font-size: 11px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     color: var(--primary);
 }
 
@@ -364,7 +374,7 @@ hr {
 }
 
 .ref-section h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 14px;
     color: var(--on-surface);
@@ -415,7 +425,7 @@ thead {
 }
 
 th {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 11px;
     letter-spacing: 0.06em;
@@ -441,7 +451,7 @@ tr:last-child td {
 
 /* ===== CODE ===== */
 code {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     background: var(--code-bg, var(--bg-card));
     color: var(--primary);
@@ -460,7 +470,7 @@ pre {
 }
 
 pre code {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     line-height: 1.6;
     color: var(--on-surface);
@@ -487,7 +497,7 @@ blockquote strong {
 
 /* ===== H3 ===== */
 h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 1.1rem;
     color: var(--on-surface);
@@ -533,7 +543,7 @@ h3 {
 /* Style h1, h2, h3, p, hr inside the special report section to match daily report cards */
 .section > .special-content h1,
 .section > .special-content > h1 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--f-display);
     font-weight: 400;
     font-size: 1.8rem;
     color: var(--on-surface);
@@ -545,7 +555,7 @@ h3 {
 
 .section > .special-content h2,
 .section > .special-content > h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--f-display);
     font-weight: 400;
     font-size: 1.45rem;
     color: var(--on-surface);
@@ -557,7 +567,7 @@ h3 {
 
 .section > .special-content h3,
 .section > .special-content > h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 1rem;
     color: var(--on-surface);
@@ -567,7 +577,7 @@ h3 {
 
 .section > .special-content p,
 .section > .special-content > p {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 400;
     font-size: 14px;
     color: var(--on-surface-variant);
@@ -604,7 +614,7 @@ h3 {
 
 .section > .special-content li,
 .section > .special-content > li {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 400;
     font-size: 14px;
     color: var(--on-surface-variant);
@@ -630,7 +640,7 @@ h3 {
 
 .section > .special-content ol li,
 .section > .special-content > ol li {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 400;
     font-size: 14px;
     color: var(--on-surface-variant);
@@ -648,7 +658,7 @@ h3 {
 
 .section > .special-content th,
 .section > .special-content > th {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 11px;
     letter-spacing: 0.06em;
@@ -694,7 +704,7 @@ h3 {
 
 .section > .special-content code,
 .section > .special-content > code {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     background: var(--bg-card);
     color: var(--primary);
@@ -715,7 +725,7 @@ h3 {
 
 .section > .special-content pre code,
 .section > .special-content > pre code {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     line-height: 1.6;
     color: var(--on-surface);
@@ -762,7 +772,7 @@ tbody {
     border: 1px solid var(--border);
     border-radius: 10px;
     color: var(--on-surface);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-size: 14px;
     transition: border-color 0.2s;
     outline: none;
@@ -789,7 +799,7 @@ tbody {
     border: 1px solid var(--border);
     border-radius: 999px;
     color: var(--on-surface-variant);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-size: 12px;
     font-weight: 500;
     cursor: pointer;
@@ -809,7 +819,7 @@ tbody {
   }
 
 .topic-chip-count {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 10px;
     opacity: 0.7;
   }
@@ -838,7 +848,7 @@ tbody {
   }
 
 .hero-link {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     color: var(--on-surface-variant);
     text-decoration: none;
@@ -876,7 +886,7 @@ tbody {
     gap: 8px;
     padding: 9px 18px;
     border-radius: 999px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     line-height: 1;
     color: var(--on-surface-variant);
@@ -930,21 +940,21 @@ tbody {
   }
 
 .month-arrow {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     color: var(--primary);
     transition: transform 0.2s;
   }
 
 .month-name {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--f-display);
     font-size: 1.1rem;
     color: var(--on-surface);
     text-transform: capitalize;
   }
 
 .month-count {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 11px;
     color: var(--on-surface-variant);
     margin-left: auto;
@@ -969,7 +979,7 @@ tbody {
     background: var(--bg-card);
     border: 1px solid var(--border);
     color: var(--on-surface-variant);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     padding: 6px 12px;
     border-radius: 6px;
@@ -1001,7 +1011,7 @@ tbody {
     border: 1px solid rgba(0,255,157,0.15);
     padding: 2px 8px;
     border-radius: 8px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 10px;
     color: var(--primary);
     cursor: pointer;
@@ -1041,7 +1051,7 @@ tbody {
   }
 
 .about-links a {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     color: var(--primary);
     text-decoration: none;
@@ -1067,7 +1077,7 @@ tbody {
   }
 
 .report-nav-link {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     color: var(--primary);
     text-decoration: none;
@@ -1117,7 +1127,7 @@ tbody {
   }
 
 .footer-handle {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     opacity: 0.7;
   }
 
@@ -1198,7 +1208,7 @@ tbody {
   }
 
 .hero-eyebrow {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 11px;
     letter-spacing: 0.15em;
@@ -1210,7 +1220,7 @@ tbody {
   }
 
 .hero h1 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--f-display);
     font-weight: 400;
     font-size: 2.4rem;
     color: var(--on-surface);
@@ -1227,7 +1237,7 @@ tbody {
   }
 
 .hero .tagline {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 400;
     font-size: 15px;
     color: var(--on-surface-variant);
@@ -1263,7 +1273,7 @@ tbody {
   }
 
 .hero .stat .num {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--f-display);
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--on-surface);
@@ -1272,7 +1282,7 @@ tbody {
   }
 
 .hero .stat .label {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-size: 11px;
     font-weight: 500;
     color: var(--on-surface-variant);
@@ -1285,7 +1295,7 @@ tbody {
   }
 
 .section-label {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 11px;
     letter-spacing: 0.12em;
@@ -1304,7 +1314,7 @@ tbody {
     font-size: 10px;
     padding: 2px 8px;
     border-radius: 10px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
   }
 
 /* ===== CARDS ===== */
@@ -1341,7 +1351,7 @@ tbody {
 .card .content { flex: 1; min-width: 0; }
 
 .card .title {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--f-display);
     font-weight: 400;
     font-size: 1.15rem;
     color: var(--on-surface);
@@ -1350,13 +1360,13 @@ tbody {
   }
 
 .card .meta {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 11px;
     color: var(--on-surface-variant);
   }
 
 .card-summary {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-size: 0.85rem;
     line-height: 1.45;
     color: var(--on-surface-variant);
@@ -1454,7 +1464,7 @@ tbody {
   }
 
 [data-type="special"] .special-category {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 11px;
     letter-spacing: 0.15em;
@@ -1470,7 +1480,7 @@ tbody {
   }
 
 [data-type="special"] .special-header h1 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--f-display);
     font-weight: 400;
     font-size: 2.8rem;
     color: var(--on-surface);
@@ -1487,7 +1497,7 @@ tbody {
   }
 
 [data-type="special"] .special-date {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 11px;
     color: var(--on-surface-variant);
     margin-top: 12px;
@@ -1498,7 +1508,7 @@ tbody {
   }
 
 [data-type="special"] .special-subtitle {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 400;
     font-size: 16px;
     color: var(--on-surface-variant);
@@ -1525,7 +1535,7 @@ tbody {
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 12px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     color: var(--on-surface);
     display: flex;
     align-items: center;
@@ -1549,7 +1559,7 @@ tbody {
   }
 
 [data-type="special"] .special-section h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--f-display);
     font-weight: 400;
     font-size: 1.8rem;
     color: var(--on-surface);
@@ -1573,7 +1583,7 @@ tbody {
   }
 
 [data-type="special"] .special-section h2 .section-num {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 0.7rem;
     color: var(--primary);
     display: block;
@@ -1582,7 +1592,7 @@ tbody {
   }
 
 [data-type="special"] h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 1.15rem;
     color: var(--on-surface);
@@ -1592,7 +1602,7 @@ tbody {
   }
 
 [data-type="special"] h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 1rem;
     color: var(--on-surface);
@@ -1601,7 +1611,7 @@ tbody {
   }
 
 [data-type="special"] p {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 400;
     font-size: 15px;
     color: var(--on-surface-variant);
@@ -1687,7 +1697,7 @@ tbody {
   }
 
 [data-type="special"] .toc-card .toc-num {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
     font-weight: 600;
     color: var(--primary);
@@ -1696,14 +1706,14 @@ tbody {
   }
 
 [data-type="special"] .toc-card .toc-title {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 500;
     font-size: 14px;
     color: var(--on-surface);
   }
 
 [data-type="special"] .toc-card .toc-desc {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-size: 12px;
     color: var(--on-surface-variant);
     margin-left: auto;
@@ -1727,7 +1737,7 @@ tbody {
     left: 20px;
     background: var(--bg);
     padding: 0 10px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1758,7 +1768,7 @@ tbody {
     padding: 20px 24px;
     margin: 24px 0;
     overflow-x: auto;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 13px;
     line-height: 1.5;
     color: #e6edf3;
@@ -1774,7 +1784,7 @@ tbody {
   }
 
 [data-type="special"] code {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 13px;
     background: var(--bg-card);
     color: var(--primary);
@@ -1801,7 +1811,7 @@ tbody {
     right: 20px;
     background: var(--bg);
     padding: 0 10px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1865,7 +1875,7 @@ tbody {
   }
 
 [data-type="special"] th {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 11px;
     letter-spacing: 0.06em;
@@ -1931,7 +1941,7 @@ tbody {
   }
 
 [data-type="special"] .ref-section h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--f-body);
     font-weight: 600;
     font-size: 13px;
     text-transform: uppercase;
@@ -1969,7 +1979,7 @@ tbody {
 [data-type="special"] .ref-section a {
     color: var(--primary);
     text-decoration: none;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--f-mono);
     font-size: 12px;
   }
 
@@ -2056,7 +2066,7 @@ input:focus-visible,
   color: #fff;
   padding: 8px 14px;
   border-radius: 6px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--f-body);
   font-size: 13px;
   z-index: 100;
 }
@@ -2066,7 +2076,7 @@ input:focus-visible,
 
 /* Result count under the search/filter */
 .result-count {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--f-mono);
   font-size: 12px;
   color: var(--on-surface-variant);
   margin-top: 12px;
@@ -2166,7 +2176,7 @@ input:focus-visible,
 }
 
 .audio-player .player-title {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--f-mono);
   font-size: 11px;
   color: var(--on-surface-variant);
   letter-spacing: 0.04em;
@@ -2176,7 +2186,7 @@ input:focus-visible,
 }
 
 .audio-player .player-time {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--f-mono);
   font-size: 11px;
   color: var(--on-surface-variant);
   flex-shrink: 0;
@@ -2240,7 +2250,7 @@ input:focus-visible,
 }
 
 .stat-card .label {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--f-body);
   font-size: 12px;
   line-height: 1.45;
   color: var(--on-surface-variant);
@@ -2248,7 +2258,7 @@ input:focus-visible,
 }
 
 .stat-card .value {
-  font-family: 'DM Serif Display', Georgia, serif;
+  font-family: var(--f-display);
   font-size: 27px;
   line-height: 1.05;
   color: var(--primary);
@@ -2272,7 +2282,7 @@ figure.diagram svg {
 
 figure.diagram figcaption {
   margin-top: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--f-body);
   font-size: 12px;
   line-height: 1.5;
   color: var(--on-surface-variant);
@@ -2281,7 +2291,7 @@ figure.diagram figcaption {
 
 figure.diagram text {
   fill: var(--on-surface);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--f-body);
 }
 
 figure.diagram text.muted { fill: var(--on-surface-variant); }

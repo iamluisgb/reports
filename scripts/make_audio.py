@@ -205,6 +205,31 @@ def normalise(path):
     return True
 
 
+PEAK_BARS = 96
+
+
+def write_peaks(mp3):
+    """Save the briefing's loudness envelope next to it, for the waveform player.
+
+    96 RMS values scaled to 0-1, in audio/ai-news-<day>.json. The site draws the
+    bars from this file; without it the player falls back to a plain seek bar.
+    Skipped without ffmpeg."""
+    if not have("ffmpeg"):
+        return False
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(mp3), "-ac", "1", "-ar", "8000",
+                          "-f", "s16le", "-"], capture_output=True, check=True).stdout
+    samples = memoryview(raw).cast("h")
+    step = max(1, len(samples) // PEAK_BARS)
+    rms = []
+    for i in range(PEAK_BARS):
+        chunk = samples[i * step:(i + 1) * step:4]
+        rms.append((sum(x * x for x in chunk) / max(1, len(chunk))) ** 0.5)
+    top = max(rms) or 1
+    peaks = [round(v / top, 2) for v in rms]
+    mp3.with_suffix(".json").write_text(json.dumps({"peaks": peaks}) + "\n", encoding="utf-8")
+    return True
+
+
 def duration(path):
     """Real duration when ffprobe is available, else estimated from the bitrate.
 
@@ -284,6 +309,8 @@ def main():
     ap.add_argument("day")
     ap.add_argument("--script", help="briefing script (default: audio/ai-news-<day>.txt)")
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--peaks", action="store_true",
+                    help="only (re)write the waveform peaks for an existing mp3")
     ap.add_argument("--allow-short", action="store_true",
                     help=f"do not fail when the briefing falls outside "
                          f"{MIN_SECONDS}-{MAX_SECONDS}s")
@@ -295,6 +322,12 @@ def main():
 
     if not report.exists():
         raise SystemExit(f"no report: {report}")
+
+    if args.peaks:
+        if not mp3.exists():
+            raise SystemExit(f"no audio: {mp3}")
+        print(f"{args.day}: peaks {'written' if write_peaks(mp3) else 'SKIPPED (no ffmpeg)'}")
+        return
 
     if args.check:
         html = report.read_text(encoding="utf-8")
@@ -329,6 +362,7 @@ def main():
 
     normalised = normalise(mp3)
     secs = fit(duration(mp3), mp3)
+    write_peaks(mp3)
     mmss = inject(report, args.day, secs)
     words = sum(len(t.split()) for _, t in segments)
     in_range = in_window(secs)

@@ -210,6 +210,8 @@ def build_entry(path: Path) -> dict:
     }
     if kind == "special":
         entry["series"] = derive_series(name, title)
+    elif (ROOT / "audio" / f"{path.stem}.mp3").exists():
+        entry["audio"] = True
     return entry
 
 

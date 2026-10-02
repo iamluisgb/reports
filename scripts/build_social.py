@@ -132,6 +132,41 @@ def inject_meta(path: Path, entry: dict) -> bool:
     return False
 
 
+# ----- Shared report UI -------------------------------------------------------
+# Every report loads the site fonts and report.js (sticky bar, reading progress,
+# section index, waveform player, prev/next). Injected here, like the meta block,
+# so hand-written specials and older dailies get it without being edited.
+
+UI_START = "<!-- ui:start -->"
+UI_END = "<!-- ui:end -->"
+UI_RE = re.compile(re.escape(UI_START) + r".*?" + re.escape(UI_END), re.S)
+UI_BLOCK = "\n".join([
+    UI_START,
+    '<link rel="preconnect" href="https://fonts.googleapis.com">',
+    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
+    '<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1'
+    '&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">',
+    '<link rel="stylesheet" href="../report.css">',
+    '<script src="../report.js" defer></script>',
+    UI_END,
+])
+
+
+def inject_ui(path: Path) -> bool:
+    """Insert/replace the UI block right before </head>. Returns True if changed."""
+    text = path.read_text(encoding="utf-8", errors="replace")
+    if UI_START in text:
+        new = UI_RE.sub(lambda _: UI_BLOCK, text, count=1)
+    elif "</head>" in text:
+        new = text.replace("</head>", UI_BLOCK + "\n</head>", 1)
+    else:
+        return False
+    if new != text:
+        path.write_text(new, encoding="utf-8")
+        return True
+    return False
+
+
 # ----- OG image ------------------------------------------------------------
 
 def _load_fonts():
@@ -278,7 +313,10 @@ def main() -> None:
         if inject_meta(REPORTS_DIR / entry["file"], entry):
             changed += 1
 
-    print(f"OG images generated: {images} (+ default) | reports meta updated: {changed}/{len(entries)}")
+    ui = sum(inject_ui(REPORTS_DIR / entry["file"]) for entry in entries)
+
+    print(f"OG images generated: {images} (+ default) | reports meta updated: {changed}/{len(entries)}"
+          f" | ui updated: {ui}")
 
 
 if __name__ == "__main__":

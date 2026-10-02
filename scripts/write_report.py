@@ -356,20 +356,19 @@ def render_numbers(numbers, index):
         link = ""
         if source:
             url, label = source_links(source)[0]
-            link = (f'<a href="{url}" style="color:inherit;text-decoration:underline;"'
-                    f'>{label}</a>')
+            link = f'<a href="{url}">{label}</a>'
         note = esc(card.get("note", ""))
         tail = " ".join(x for x in (note, link) if x)
         cards.append(f"""
-        <div class="stat-card" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;">
-          <div class="stat-value" style="font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:600;line-height:1.1;color:var(--primary);">{esc(card["value"])}</div>
-          <div class="stat-label" style="margin-top:6px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--on-surface-variant);">{esc(card["label"])}</div>
-          {f'<div class="stat-note" style="margin-top:6px;font-size:12px;color:var(--on-surface-variant);">{tail}</div>' if tail else ''}
+        <div class="stat-card">
+          <div class="stat-value">{esc(card["value"])}</div>
+          <div class="stat-label">{esc(card["label"])}</div>
+          {f'<div class="stat-note">{tail}</div>' if tail else ''}
         </div>
 """)
     return ('\n    <div class="section">\n'
             '      <div class="section-label">In Numbers</div>\n'
-            '      <div class="stats-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;">'
+            '      <div class="stats-grid">'
             + "".join(cards) + '\n      </div>\n    </div>\n')
 
 
@@ -405,7 +404,6 @@ def render(day, chosen, subtitle, why, index, numbers=(), watch=()):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI News Daily — {pretty}</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
