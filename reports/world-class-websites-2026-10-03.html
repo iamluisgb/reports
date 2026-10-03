@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en" data-type="special">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What the World's Best Websites Are Doing in the AI Era (2026)</title>
+<link rel="stylesheet" href="../styles.css?v=2">
+<!-- og:start -->
+<meta name="description" content="Performance · Rendering architecture · Agent-readable web · WebMCP &amp; ACP · Design systems as API · Design craft · Accessibility · 59 sources">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/world-class-websites-2026-10-03.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="What the World&#x27;s Best Websites Are Doing in the AI Era (2026)">
+<meta property="og:description" content="Performance · Rendering architecture · Agent-readable web · WebMCP &amp; ACP · Design systems as API · Design craft · Accessibility · 59 sources">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/world-class-websites-2026-10-03.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/world-class-websites-2026-10-03.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="What the World&#x27;s Best Websites Are Doing in the AI Era (2026)">
+<meta name="twitter:description" content="Performance · Rendering architecture · Agent-readable web · WebMCP &amp; ACP · Design systems as API · Design craft · Accessibility · 59 sources">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/world-class-websites-2026-10-03.png">
+<!-- og:end -->
+<!-- ui:start -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../report.css">
+<script src="../report.js" defer></script>
+<!-- ui:end -->
+</head>
+<body>
+<div class="progress-bar" id="progress-bar"></div>
+  <div class="page">
+
+    <nav class="report-nav" style="display:none" id="report-nav">
+      <a id="prev-report" class="report-nav-link" href="#">← Prev</a>
+      <a class="report-nav-link" href="../index.html">Index</a>
+      <a id="next-report" class="report-nav-link" href="#">Next →</a>
+    </nav>
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="special-header">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="special-category">Web Engineering · Special Report</div>
+          <h1>What the World's <em>Best Websites</em> Are Doing in the AI Era</h1>
+          <div class="special-date">3 Oct 2026</div>
+          <div class="special-subtitle">Performance · Rendering architecture · Agent-readable web · WebMCP &amp; ACP · Design systems as API · Design craft · Accessibility · 59 sources</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Executive Summary</div>
+      <div class="special-content">
+
+<p><strong>The structural shift of 2026 is that the user is no longer the only audience of a website.</strong> The best teams build for three consumers at once — people, AI agents and regulators — and they have reorganised performance, design and infrastructure around that. This is not a list of new frameworks: it is a change in who the site is for.</p>
+
+<p><strong>Performance is a contract, not a feature.</strong> Only <strong>55.9%</strong> of origins pass all three Core Web Vitals (CrUX, May 2026, 18.4M origins) and the real bottleneck is LCP at 68.6%, not INP at 86.6%.<sup>4</sup> If your site fails, it almost certainly fails on loading.</p>
+
+<p><strong>Less JavaScript — but with an architecture chosen on purpose.</strong> Single-page apps are still how most teams ship (84%), against 61% SSR and 44% SSG; partial hydration reaches 25% and islands only 14%. React Server Components have been used by 45% of respondents and only a third of those rate the experience positively.<sup>2</sup> When the API is good adoption follows; when it demands rebuilding the app, it stalls.</p>
+
+<p><strong>The web started serving markdown to whoever asks for it.</strong> Content negotiation (<code>Accept: text/markdown</code> on the same URL) plus a hierarchical <code>sitemap.md</code> is the pragmatic replacement for <code>llms.txt</code> — which, for all the noise, is requested by roughly <strong>0.1%</strong> of AI-bot traffic and does not correlate with more citations.<sup>12,31,33</sup></p>
+
+<p><strong>The interface is becoming invocable tools.</strong> <strong>WebMCP</strong> — a W3C draft co-authored by Google and Microsoft — lets a page <em>declare</em> what its forms do instead of forcing an agent to guess by simulating clicks, and it keeps the human in the loop with <code>toolactivated</code> / <code>toolcancel</code> events.<sup>19,20</sup></p>
+
+<p><strong>Checkout became an open protocol.</strong> The <strong>Agentic Commerce Protocol</strong>, co-created by Stripe, OpenAI and Meta, defines agentic checkout, carts and feeds, delegated payment and delegated OAuth — with over a million Shopify merchants on the path to buying inside ChatGPT, and a one-line activation if you already run Stripe.<sup>14,15</sup></p>
+
+<p><strong>The design system became an API for agents.</strong> Seventeen of twenty audited open-source design systems now ship an official MCP server, and Coinbase measured a <strong>22.5% average cut in token cost</strong> — alongside better design-system adherence — from giving agents component context instead of letting them improvise.<sup>22,23</sup></p>
+
+<p><strong>Accessibility stopped being a good practice in June 2025.</strong> The European Accessibility Act has been enforceable since 28 June 2025 against EN 301 549 and WCAG 2.1 AA, and WCAG 2.2 is now ISO/IEC 40500:2025. Meanwhile <strong>95.9%</strong> of the top million home pages still carry detectable WCAG failures, and low-contrast text alone appears on 83.9% of them.<sup>24,25,58</sup></p>
+
+<p><strong>And the part the conference talks leave out:</strong> the very move that makes a site machine-readable is what removes the human click. AI Overviews correlate with a <strong>58%</strong> drop in click-through rate for top-ranking pages, and a randomised experiment found that forcing users into AI Mode cut outbound clicks by 18.8 points <em>without</em> improving satisfaction.<sup>35,36</sup></p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part I</div>
+      <div class="special-content">
+
+<h2>Four layers, two of which are new</h2>
+
+<p>Until recently a website had two audiences: the person and the search engine. In 2026 there are four layers of work, and the bottom two did not exist before. The teams with an edge are not investing in being <em>read</em> by machines — they are investing in being <em>executed</em> and <em>billed</em> by them.</p>
+
+<figure class="diagram">
+<svg width="100%" viewBox="0 0 920 560" role="img" aria-label="Diagram: four layers of an agent-native web — discover, understand, act, measure and monetise">
+<rect x="0" y="0" width="920" height="560" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5eb3f6"/>
+    </marker>
+  </defs>
+  <style>
+    figure.diagram .d-bt{fill:#d7dbe4;font:600 16px -apple-system,Segoe UI,Roboto,sans-serif}
+    figure.diagram .d-bs{fill:#8b93a5;font:13px ui-monospace,Menlo,Consolas,monospace}
+    figure.diagram .d-bl{fill:#5eb3f6;font:600 11px ui-monospace,Menlo,monospace;letter-spacing:.1em}
+    figure.diagram .d-box{fill:#1d212d;stroke:#2a3040;stroke-width:1.2;rx:12}
+    figure.diagram .d-box2{fill:#171a23;stroke:#2a3040;stroke-width:1.2;rx:12}
+    figure.diagram .d-acc{fill:#141b26;stroke:#2f4a63;stroke-width:1.2;rx:12}
+  </style>
+
+  <!-- actor -->
+  <rect x="300" y="14" width="320" height="58" rx="14" fill="#101827" stroke="#5eb3f6" stroke-width="1.4"/>
+  <text x="460" y="40" text-anchor="middle" class="d-bt">Human + agent</text>
+  <text x="460" y="59" text-anchor="middle" class="d-bs">the same endpoint, two consumers</text>
+  <line x1="460" y1="72" x2="460" y2="98" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar)"/>
+
+  <!-- capa 1 -->
+  <rect x="40" y="100" width="840" height="96" class="d-box"/>
+  <text x="60" y="126" class="d-bl">1 · DISCOVER</text>
+  <text x="60" y="150" class="d-bt">Who may enter, and what you show them first</text>
+  <text x="60" y="174" class="d-bs">robots.txt (allow / block per bot) · sitemap.md (titles + hierarchy) · llms.txt · &lt;link rel="alternate"&gt;</text>
+  <line x1="460" y1="196" x2="460" y2="220" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar)"/>
+
+  <!-- capa 2 -->
+  <rect x="40" y="222" width="840" height="96" class="d-box"/>
+  <text x="60" y="248" class="d-bl">2 · UNDERSTAND</text>
+  <text x="60" y="272" class="d-bt">Return content in the format the consumer wants</text>
+  <text x="60" y="296" class="d-bs">Accept: text/markdown → markdown · semantic HTML · RSC / islands (less JS to parse)</text>
+  <line x1="460" y1="318" x2="460" y2="342" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar)"/>
+
+  <!-- capa 3 -->
+  <rect x="40" y="344" width="840" height="96" class="d-acc"/>
+  <text x="60" y="370" class="d-bl">3 · ACT · NEW IN 2026</text>
+  <text x="60" y="394" class="d-bt">Stop simulating clicks: declare tools</text>
+  <text x="60" y="418" class="d-bs">WebMCP (navigator.modelContext) · ACP (checkout) · delegated OAuth · single-use payment tokens</text>
+  <line x1="460" y1="440" x2="460" y2="464" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar)"/>
+
+  <!-- capa 4 -->
+  <rect x="40" y="466" width="840" height="80" class="d-acc"/>
+  <text x="60" y="492" class="d-bl">4 · MEASURE AND MONETISE · NEW IN 2026</text>
+  <text x="60" y="516" class="d-bt">Know what each bot consumes, and charge it if you want</text>
+  <text x="60" y="538" class="d-bs">AI Crawl Control · HTTP 402 Payment Required · Web Bot Auth (signed requests)</text>
+</svg>
+<figcaption>Layers 1 and 2 are an evolution of what already existed. Layers 3 and 4 are new, and they are where teams with an edge are investing: not in the web being read, but in it being executed and billed.<sup class="d-c">14,17,19</sup></figcaption>
+</figure>
+
+<p>The first two layers are an evolution of what already existed: discovery and format. The novelty is the third and fourth — declaring tools so an agent can act, and measuring or charging for what each bot consumes.</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part II</div>
+      <div class="special-content">
+
+<h2>Performance: still optimising against a bar almost nobody clears</h2>
+
+<p>The performance conversation has not changed in 2026. What changed is that it is now budgeted, and that the failure has moved to one very specific place.</p>
+
+<div class="table-wrapper"><table>
+  <tr><th>Core Web Vital</th><th>Good threshold</th><th>Origins passing (CrUX, May 2026)</th></tr>
+  <tr><td>All three together</td><td>—</td><td><strong>55.9%</strong></td></tr>
+  <tr><td>LCP — largest contentful paint</td><td>≤ 2.5 s</td><td><strong>68.6%</strong> — the real bottleneck</td></tr>
+  <tr><td>CLS — cumulative layout shift</td><td>≤ 0.1</td><td>81.3%</td></tr>
+  <tr><td>INP — interaction to next paint</td><td>≤ 200 ms</td><td>86.6% — the easiest to pass</td></tr>
+</table></div>
+
+<figure class="diagram">
+<svg width="100%" viewBox="0 0 920 300" role="img" aria-label="Bar chart: percentage of origins passing each Core Web Vital in 2026">
+<rect x="0" y="0" width="920" height="300" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
+  <style>
+    figure.diagram .d-ax{fill:#8b93a5;font:12px ui-monospace,Menlo,monospace}
+    figure.diagram .d-lbl{fill:#d7dbe4;font:14px -apple-system,Segoe UI,Roboto,sans-serif}
+    figure.diagram .d-val{fill:#d7dbe4;font:600 14px ui-monospace,Menlo,monospace}
+    figure.diagram .d-bar{fill:#28384a}
+    figure.diagram .d-bar2{fill:#3c6f96}
+  </style>
+  <text x="0" y="18" class="d-ax">% of origins rated "good" · p75 · CrUX May 2026</text>
+
+  <g>
+    <text x="0" y="58" class="d-lbl">All three</text>
+    <rect x="160" y="43" width="580" height="22" rx="4" class="d-bar"/>
+    <rect x="160" y="43" width="324" height="22" rx="4" class="d-bar2"/>
+    <text x="752" y="59" class="d-val">55.9%</text>
+
+    <text x="0" y="104" class="d-lbl">LCP ≤ 2.5 s</text>
+    <rect x="160" y="89" width="580" height="22" rx="4" class="d-bar"/>
+    <rect x="160" y="89" width="398" height="22" rx="4" style="fill:#a0563f"/>
+    <text x="752" y="105" class="d-val">68.6%</text>
+
+    <text x="0" y="150" class="d-lbl">CLS ≤ 0.1</text>
+    <rect x="160" y="135" width="580" height="22" rx="4" class="d-bar"/>
+    <rect x="160" y="135" width="472" height="22" rx="4" class="d-bar2"/>
+    <text x="752" y="151" class="d-val">81.3%</text>
+
+    <text x="0" y="196" class="d-lbl">INP ≤ 200 ms</text>
+    <rect x="160" y="181" width="580" height="22" rx="4" class="d-bar"/>
+    <rect x="160" y="181" width="502" height="22" rx="4" class="d-bar2"/>
+    <text x="752" y="197" class="d-val">86.6%</text>
+  </g>
+  <line x1="160" y1="216" x2="160" y2="228" stroke="#2a3040"/>
+  <text x="160" y="244" class="d-ax">0%</text>
+  <text x="450" y="244" text-anchor="middle" class="d-ax">50%</text>
+  <text x="740" y="244" class="d-ax">100%</text>
+  <line x1="160" y1="222" x2="740" y2="222" stroke="#2a3040"/>
+  <text x="0" y="278" class="d-ax">Linear scale. The orange bar marks the single vital dragging the overall result down.</text>
+</svg>
+<figcaption>If your site fails Core Web Vitals, it almost certainly fails on LCP: most already pass INP and CLS. Loading, not interactivity, is where you lose.<sup class="d-c">4</sup></figcaption>
+</figure>
+
+<h3>Two details that separate a good team from an excellent one</h3>
+
+<ul>
+<li><strong>INP is no longer fixed where it used to break.</strong> Measured on mobile, the cost of an interaction sits almost entirely in the <em>presentation</em> phase — 47 ms of a 49 ms median, or <strong>96%</strong> of the stack. Optimising the handler does not move the needle: you have to reduce the repaint cost, which scales with DOM size.<sup>3</sup></li>
+<li><strong>Interactivity improved at the price of executing more JavaScript.</strong> While INP got better, Total Blocking Time rose <strong>58%</strong>: the work was sliced into shorter tasks, not removed.<sup>5</sup></li>
+</ul>
+
+<h3>The elephant in the room: page weight</h3>
+
+<p>The median mobile page weighed <strong>2.56 MB</strong> in 2025, with 632 KB of JavaScript and 911 KB of images on the home page. The median mobile home page has grown <strong>202.8%</strong> since 2015, when it was 845 KB.<sup>6,8</sup></p>
+
+<p>Platform adoption, on the other hand, is going well: <em>variable fonts</em> are used by 41.3% of mobile sites and 72% of sites now serve their fonts from their own origin.<sup>8,6</sup> The same logic holds in CSS — <code>:has()</code> is used by 83.7% of respondents and is also the best-rated feature (51.8% positive), with <code>aspect-ratio</code> at 81.3% and CSS Nesting at 70.6%. Where the brake is browser support rather than enthusiasm, the list is explicit: anchor positioning is the number one feature developers avoid for compatibility reasons even while being the fastest-growing in usage (+15 points).<sup>34</sup></p>
+
+<p>In short: serious teams stopped asking the CDN for performance and started asking their own build decisions — and stopped polyfilling what the browser already knows how to do.</p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part III</div>
+      <div class="special-content">
+
+<h2>Architecture: three schools, no winner</h2>
+
+<p>The most honest data point of 2026 is not which framework people use, but how far declared adoption trails the noise. Single-page applications remain the dominant way teams ship to production.</p>
+
+<figure class="diagram">
+<svg width="100%" viewBox="0 0 920 340" role="img" aria-label="Chart: rendering patterns used in production, per State of React 2025">
+<rect x="0" y="0" width="920" height="340" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
+  <style>
+    figure.diagram .d-l2{fill:#d7dbe4;font:13.5px -apple-system,Segoe UI,Roboto,sans-serif}
+    figure.diagram .d-v2{fill:#8b93a5;font:13px ui-monospace,Menlo,monospace}
+  </style>
+  <text x="0" y="16" style="fill:#8b93a5;font:12px ui-monospace,Menlo,monospace">Rendering patterns used by teams · State of React 2025</text>
+  <g>
+    <text x="0" y="52" class="d-l2">SPA (client-side)</text>
+    <rect x="200" y="38" width="520" height="20" rx="4" fill="#28384a"/>
+    <rect x="200" y="38" width="437" height="20" rx="4" fill="#5eb3f6"/>
+    <text x="732" y="53" class="d-v2">84%</text>
+
+    <text x="0" y="88" class="d-l2">SSR</text>
+    <rect x="200" y="74" width="520" height="20" rx="4" fill="#28384a"/>
+    <rect x="200" y="74" width="317" height="20" rx="4" fill="#5eb3f6"/>
+    <text x="732" y="89" class="d-v2">61%</text>
+
+    <text x="0" y="124" class="d-l2">SSG</text>
+    <rect x="200" y="110" width="520" height="20" rx="4" fill="#28384a"/>
+    <rect x="200" y="110" width="229" height="20" rx="4" fill="#5eb3f6"/>
+    <text x="732" y="125" class="d-v2">44%</text>
+
+    <text x="0" y="160" class="d-l2">Server Components</text>
+    <rect x="200" y="146" width="520" height="20" rx="4" fill="#28384a"/>
+    <rect x="200" y="146" width="234" height="20" rx="4" fill="#3c6f96"/>
+    <text x="732" y="161" class="d-v2">45% used · ⅓ positive</text>
+
+    <text x="0" y="196" class="d-l2">Partial hydration</text>
+    <rect x="200" y="182" width="520" height="20" rx="4" fill="#28384a"/>
+    <rect x="200" y="182" width="130" height="20" rx="4" fill="#3c6f96"/>
+    <text x="732" y="197" class="d-v2">25%</text>
+
+    <text x="0" y="232" class="d-l2">Streaming SSR</text>
+    <rect x="200" y="218" width="520" height="20" rx="4" fill="#28384a"/>
+    <rect x="200" y="218" width="94" height="20" rx="4" fill="#3c6f96"/>
+    <text x="732" y="233" class="d-v2">18%</text>
+
+    <text x="0" y="268" class="d-l2">Islands</text>
+    <rect x="200" y="254" width="520" height="20" rx="4" fill="#28384a"/>
+    <rect x="200" y="254" width="73" height="20" rx="4" fill="#3c6f96"/>
+    <text x="732" y="269" class="d-v2">14%</text>
+  </g>
+  <line x1="200" y1="288" x2="200" y2="300" stroke="#2a3040"/>
+  <text x="200" y="314" style="fill:#8b93a5;font:12px ui-monospace,Menlo,monospace">0%</text>
+  <text x="460" y="314" style="fill:#8b93a5;font:12px ui-monospace,Menlo,monospace">50%</text>
+  <text x="700" y="314" style="fill:#8b93a5;font:12px ui-monospace,Menlo,monospace">100%</text>
+</svg>
+<figcaption>Adoption does not follow the hype. Server Components have been used by 45%, but only a third rate the experience positively; Suspense, which solves a smaller problem with a better DX, has the highest adoption and satisfaction. When the API is good, adoption follows; when it demands redesigning the app, it stalls at the 14% of islands.<sup class="d-c">2</sup></figcaption>
+</figure>
+
+<p>The adoption numbers do not follow the hype. Server Components have been used by 45% of respondents but only a third rate them positively; Suspense — which solves a smaller problem with a much better developer experience — has the highest adoption <em>and</em> satisfaction. When the API is good, adoption follows. When it demands redesigning the application, it stays at the 14% of islands.<sup>2</sup> Meanwhile <code>shadcn/ui</code> went from 20% to 56% usage in two years, the fastest rise in the ecosystem.<sup>1</sup></p>
+
+<div class="table-wrapper"><table>
+  <tr><th>School</th><th>How it works</th><th>Where it wins</th></tr>
+  <tr><td><strong>Islands</strong> (Astro)</td><td>Static HTML by default; hydration is explicit per component via <code>client:load / idle / visible / only</code>. Server Islands mix edge-cached HTML with per-request fragments on the same page.</td><td>Content-heavy sites that need a little interactivity, not a lot.</td></tr>
+  <tr><td><strong>Server Components</strong> (React, Next.js)</td><td>The server serialises React trees and promises; the client hydrates only what is marked <code>use client</code>. Smaller bundles, simpler data fetching.</td><td>Full-stack applications willing to change their mental model.</td></tr>
+  <tr><td><strong>Local-first</strong> (Linear)</td><td>The database the UI reads lives in the browser, in IndexedDB. Mutations apply locally and reconcile in the background over WebSocket.</td><td>Interactive products where perceived latency is the product.</td></tr>
+</table></div>
+
+<blockquote><strong>The pattern all three share:</strong> none of them tries to be fast — they try to <em>remove the perceived wait</em>. Linear states it outright: the key is hiding network requests from the user, and the fewer loading states the better. Astro does it by shipping no JavaScript where none was needed. Measured by the user, speed is how quickly the interface reacts, not how quickly the server answers.<sup>9,27</sup></blockquote>
+
+<p>And if you cannot afford any of the three: optimistic updates with TanStack Query or SWR get surprisingly close — apply the change locally, validate in the background, roll back only if it fails. It is the highest return per hour you can buy.<sup>9</sup></p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part IV</div>
+      <div class="special-content">
+
+<h2>The machine-readable web: the uncomfortable truth about <code>llms.txt</code></h2>
+
+<p>Two things get mixed up constantly, and 2026's data is brutal about the difference: <em>publishing</em> something for agents is not the same as an agent <em>consuming</em> it.</p>
+
+<figure class="diagram">
+<svg width="100%" viewBox="0 0 920 300" role="img" aria-label="Chart: 9.3% of the top 1,000 publish llms.txt against 0.1% of AI-bot requests asking for it">
+<rect x="0" y="0" width="920" height="300" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
+  <style>
+    figure.diagram .d-h2t{fill:#d7dbe4;font:14px -apple-system,Segoe UI,Roboto,sans-serif}
+    figure.diagram .d-bx{fill:#28384a}
+    figure.diagram .d-bhi{fill:#7ee0a3}
+    figure.diagram .d-blo{fill:#ef7b7b}
+    figure.diagram .d-an{fill:#8b93a5;font:13px ui-monospace,Menlo,monospace}
+  </style>
+  <text x="0" y="16" class="d-an">Publishing is not the same as being consumed · same 0–10% scale</text>
+
+  <text x="0" y="60" class="d-h2t">Sites publishing llms.txt</text>
+  <text x="0" y="80" class="d-an">Tranco top 1,000, Sep 2026</text>
+  <rect x="430" y="46" width="430" height="26" rx="5" class="d-bx"/>
+  <rect x="430" y="46" width="400" height="26" rx="5" class="d-bhi"/>
+  <text x="700" y="65" class="d-an" style="fill:#0f1117;font-weight:700">9.3%</text>
+
+  <text x="0" y="150" class="d-h2t">AI-bot requests asking for llms.txt</text>
+  <text x="0" y="170" class="d-an">OtterlyAI, 62,100 AI-bot requests</text>
+  <rect x="430" y="136" width="430" height="26" rx="5" class="d-bx"/>
+  <rect x="430" y="136" width="4" height="26" rx="2" class="d-blo"/>
+  <text x="444" y="155" class="d-an" style="fill:#ef7b7b">0.1% (84 requests)</text>
+
+  <text x="0" y="216" class="d-an" style="fill:#d7dbe4">An analysis of 515 million LLM-bot events found 408 requests to llms.txt in total.</text>
+  <text x="0" y="240" class="d-an" style="fill:#d7dbe4">And sites that have it get no more citations: 6.8 versus 6.7 (p = 0.85).</text>
+  <text x="0" y="274" class="d-an" style="fill:#8b93a5">Sources: Rankability, OtterlyAI, Limy, Trakkr, Ahrefs — see notes 31, 32 and 33.</text>
+</svg>
+<figcaption>9.3% of the top 1,000 publish llms.txt, yet ~0.1% of AI-bot requests ask for it — below the traffic of a random blog post — and its presence does not correlate with more citations. No major provider has confirmed that its crawler reads it.<sup class="d-c">31,32,33</sup></figcaption>
+</figure>
+
+<p>9.3% of the Tranco top 1,000 publish an <code>llms.txt</code> — up from 0.3% in June 2025 — and in a broader sample 28% of domains do. But roughly <strong>0.1%</strong> of AI-bot requests ask for the file, below the traffic of a random blog post; of 515 million LLM-bot events across GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot and Google-Extended, only <strong>408</strong> targeted it. And sites that have it do not get cited more: 6.8 citations on average versus 6.7 without, p = 0.85. No major AI lab has confirmed that its crawler reads the file. Google has explicitly rejected the standard.<sup>31,32,33</sup></p>
+
+<div class="table-wrapper"><table>
+  <tr><th>Signal</th><th>What 2026 shows</th></tr>
+  <tr><td>Publishers adopting it</td><td>Real and growing: 9.3% of the top 1,000, 8.3% of the top 10,000 (Sep 2026).</td></tr>
+  <tr><td>Crawlers requesting it</td><td>~0.1% of AI-bot requests; 408 hits in 515M events. Statistically negligible.</td></tr>
+  <tr><td>Effect on citations</td><td>None measurable: 6.8 vs 6.7, p = 0.85.</td></tr>
+  <tr><td>Web Almanac</td><td>Only 2.1% of pages serve a valid <code>llms.txt</code>; <code>GPTBot</code> appears in 4.5% of <code>robots.txt</code> files (2.6% in 2024).</td></tr>
+</table></div>
+
+<h3>What does work</h3>
+
+<p><strong>Content negotiation.</strong> The same URL returns markdown when the client sends <code>Accept: text/markdown</code>. It needs no site-specific knowledge from the agent and works for any client that sends the right header. Vercel ships it on its blog and changelog and serves a recursive <code>sitemap.md</code> that preserves hierarchy and titles — something a flat XML sitemap cannot express — plus <code>&lt;link rel="alternate"&gt;</code> in the head as a discovery path for agents that send no header at all.<sup>12</sup></p>
+
+<blockquote><strong>Practical read for a team with no time to waste:</strong> ship content negotiation and an explicit per-bot policy in <code>robots.txt</code>. Publish <code>llms.txt</code> only if your content is technical documentation and you generate it automatically — it costs nothing — but do not count it as a visibility strategy. Nobody has promised you it will be read.<sup>12,31,33</sup></blockquote>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part V</div>
+      <div class="special-content">
+
+<h2>The machine-actionable web: from reading the web to operating it</h2>
+
+<p>This is the big change of 2026. Until now an agent "used" a website by simulating clicks and reading the DOM: slow, brittle and blind. The standard that is emerging turns that into a tool call.</p>
+
+<h3>WebMCP — the page declares its own tools</h3>
+
+<p>A W3C draft specification, co-authored by Google and Microsoft, exposes <code>navigator.modelContext</code> in the browser. Instead of an agent inspecting a button to infer what it does, <strong>the site declares its purpose</strong>. There are two routes: a <em>declarative</em> one, adding <code>toolname</code> and <code>tooldescription</code> attributes to an ordinary <code>&lt;form&gt;</code> — no new JavaScript, just semantic HTML — and an <em>imperative</em> one, registering tools with a name, description and input schema in JavaScript.<sup>19,20</sup></p>
+
+<p>The browser brings the form into focus and fills it, and fires <code>toolactivated</code> / <code>toolcancel</code> events, so <strong>the human still sees what is happening and can cancel it</strong>. It has been in origin trial since Chrome 149, after landing in Canary 146 in February 2026.<sup>20</sup></p>
+
+<h3>ACP — the agentic commerce protocol</h3>
+
+<figure class="diagram">
+<svg width="100%" viewBox="0 0 920 372" role="img" aria-label="Diagram: purchase flow under the Agentic Commerce Protocol between user, agent, merchant and payment provider">
+<rect x="0" y="0" width="920" height="372" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
+  <defs>
+    <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5eb3f6"/>
+    </marker>
+  </defs>
+  <style>
+    figure.diagram .d-t3{fill:#d7dbe4;font:600 14px -apple-system,Segoe UI,Roboto,sans-serif}
+    figure.diagram .d-s3{fill:#8b93a5;font:12px ui-monospace,Menlo,monospace}
+    figure.diagram .d-b3{fill:#1d212d;stroke:#2a3040;stroke-width:1.2}
+    figure.diagram .d-b3a{fill:#141b26;stroke:#2f4a63;stroke-width:1.2}
+  </style>
+
+  <rect x="10" y="60" width="150" height="70" rx="11" class="d-b3"/>
+  <text x="85" y="88" text-anchor="middle" class="d-t3">User</text>
+  <text x="85" y="107" text-anchor="middle" class="d-s3">intent</text>
+
+  <rect x="196" y="60" width="160" height="70" rx="11" class="d-b3a"/>
+  <text x="276" y="88" text-anchor="middle" class="d-t3">Agent</text>
+  <text x="276" y="107" text-anchor="middle" class="d-s3">ChatGPT / Muse / Grok</text>
+
+  <rect x="392" y="60" width="150" height="70" rx="11" class="d-b3a"/>
+  <text x="467" y="88" text-anchor="middle" class="d-t3">ACP</text>
+  <text x="467" y="107" text-anchor="middle" class="d-s3">checkout session</text>
+
+  <rect x="578" y="60" width="150" height="70" rx="11" class="d-b3"/>
+  <text x="653" y="88" text-anchor="middle" class="d-t3">Merchant</text>
+  <text x="653" y="107" text-anchor="middle" class="d-s3">accepts / declines</text>
+
+  <rect x="764" y="60" width="146" height="70" rx="11" class="d-b3"/>
+  <text x="837" y="88" text-anchor="middle" class="d-t3">PSP</text>
+  <text x="837" y="107" text-anchor="middle" class="d-s3">charges</text>
+
+  <line x1="162" y1="95" x2="192" y2="95" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <line x1="358" y1="95" x2="388" y2="95" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <line x1="544" y1="95" x2="574" y2="95" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <line x1="730" y1="95" x2="760" y2="95" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar2)"/>
+
+  <path d="M837,136 L837,172 L653,172 L653,142" fill="none" stroke="#7ee0a3" stroke-width="1.4" marker-end="url(#ar2)"/>
+  <text x="745" y="192" text-anchor="middle" class="d-s3" style="fill:#7ee0a3">fulfilment · returns · support</text>
+  <text x="745" y="208" text-anchor="middle" class="d-s3" style="fill:#7ee0a3">the merchant stays merchant of record</text>
+
+  <rect x="10" y="224" width="900" height="132" rx="11" class="d-b3"/>
+  <text x="30" y="250" style="fill:#5eb3f6;font:600 11px ui-monospace,Menlo,monospace;letter-spacing:.1em">BLOCKS THE PROTOCOL DEFINES</text>
+  <text x="30" y="276" class="d-s3">agentic checkout (cart · fulfilment · payment) · cart &amp; feed · delegate payment</text>
+  <text x="30" y="296" class="d-s3">delegate authentication (OAuth 2.0) · orders &amp; webhooks · product feed</text>
+  <text x="30" y="324" class="d-s3">Already on Stripe? Enabling agentic payments can be one line of code.</text>
+  <text x="30" y="344" class="d-s3">Another PSP? The Shared Payment Token API or the Delegated Payments Spec, without changing processor.</text>
+</svg>
+<figcaption>ACP is an open standard created by Stripe, OpenAI and Meta. It defines agentic checkout, carts and feeds, delegated payment, delegated authentication over OAuth 2.0 and order webhooks. The merchant keeps the customer relationship throughout.<sup class="d-c">14,15</sup></figcaption>
+</figure>
+
+<p>ACP is an open standard created by Stripe, OpenAI and Meta. It defines agentic checkout (cart, fulfilment, payment), carts and product feeds, delegated payment, delegated authentication over OAuth 2.0, and order webhooks. The merchant accepts or declines the order, processes payment through its existing provider, and handles fulfilment and support exactly as before: <strong>the merchant stays merchant of record</strong>.<sup>14,15</sup></p>
+
+<ul>
+<li>More than a million Shopify merchants — Glossier, SKIMS, Spanx, Vuori among them — are on the path to checkout inside ChatGPT, with direct purchases already live for Etsy sellers in the US.<sup>15</sup></li>
+<li>If a merchant already processes payments with Stripe, enabling agentic payments can be as little as one line of code; otherwise the Shared Payment Token API or the Delegated Payments Spec keep its existing processor.<sup>15</sup></li>
+<li>Stripe's Link wallet has 300 million users and around a million merchants, and since September 2026 it is wired into AI assistants from Meta, xAI and Instinct.<sup>16</sup></li>
+</ul>
+
+<h3>And the billing layer: if a bot consumes, can it pay?</h3>
+
+<p>Cloudflare's <strong>Pay Per Crawl</strong> is in private beta: for each AI crawler you decide <em>allow</em>, <em>charge</em> or <em>block</em>. The mechanics are elegant — the request gets an <code>HTTP 402 Payment Required</code> with a <code>crawler-price</code> header, the crawler retries by signing the request with <strong>Web Bot Auth</strong> and confirming with <code>crawler-exact-price</code>, and the response comes back with <code>crawler-charged</code>. Cloudflare acts as merchant of record with monthly settlement through Stripe. Always-free paths: <code>robots.txt</code>, <code>sitemap.xml</code>, <code>security.txt</code> and <code>crawlers.json</code>, and error responses are never billed.<sup>17,18</sup></p>
+
+<blockquote><strong>Do not block blindly.</strong> The console itself warns that marking a search-engine crawler as <em>block</em> or <em>charge</em> can damage your SEO, because you fall out of the index. It is a business dial, not a panic button.<sup>17</sup></blockquote>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part VI</div>
+      <div class="special-content">
+
+<h2>Design systems became infrastructure for agents</h2>
+
+<p>If an agent is going to write your UI, it needs your system — not a prompt full of adjectives. Leading teams publish tokens, rules and examples as versioned artefacts next to the code.</p>
+
+<div class="table-wrapper"><table>
+  <tr><th>What they publish</th><th>Who already does</th><th>What it buys</th></tr>
+  <tr><td><strong>Design-system MCP server</strong></td><td>17 of 20 audited open-source systems</td><td>The agent receives components, styles and variables instead of inventing them.<sup>21,23</sup></td></tr>
+  <tr><td><strong>Official agent skills</strong></td><td>17 systems; 14 publish <code>llms.txt</code></td><td>Design and naming rules that are machine-readable, inside the repository.<sup>23</sup></td></tr>
+  <tr><td><strong>Code Connect</strong> (Figma → real components)</td><td>Carbon and Primer are the two in the audit</td><td>The agent uses your production component instead of reimplementing it.<sup>23</sup></td></tr>
+  <tr><td><strong>A public design file</strong></td><td>Vercel (<code>design.md</code>)</td><td>Any agent, in any environment, loads your brand judgement from a URL.<sup>10</sup></td></tr>
+  <tr><td><strong>Skill + linters + review loop</strong></td><td>Vercel (<code>product-design</code>)</td><td>Accepted decisions live in the repo as code and changes are reviewed against them.<sup>11</sup></td></tr>
+</table></div>
+
+<p>Vercel's <code>design.md</code> is worth studying for one detail: it documents the <strong>class names and tokens</strong> of a public stylesheet, but the agent <em>never reads the CSS</em> — the browser loads it at render time. That leaves the whole context window for design judgement instead of spending it on style code. The file was built over more than 200 evaluation runs, with a model judge writing critiques for each round.<sup>10</sup></p>
+
+<p>And the number that justifies it: Coinbase Design System tested Code Connect against coding agents and found better design-system adherence with a <strong>22.5% average reduction in token cost</strong>.<sup>22</sup></p>
+
+<blockquote><strong>The transferable lesson:</strong> agents do not invent states your components do not have — they <em>amplify what is documented</em>. Coverage, completeness and constraints stop being bureaucracy and become load-bearing. An incomplete design system does not produce incomplete UI; it produces invented UI.<sup>23</sup></blockquote>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part VII</div>
+      <div class="special-content">
+
+<h2>The best designs, and why they are the best</h2>
+
+<p>In 2026 any model produces a plausible interface in seconds. That has not raised the average: it has made it visible. And there is an inconvenient data point to put in front of everything else — <strong>the web was already homogenising before AI</strong>. Taste Labs analysed more than two million websites going back a decade and that is exactly the finding that complicates the story. AI accelerated something that was already happening.<sup>50</sup></p>
+
+<figure class="diagram">
+<svg width="100%" viewBox="0 0 920 472" role="img" aria-label="Ladder diagram: five levels of interface craft, from hierarchy to invisible detail">
+<rect x="0" y="0" width="920" height="472" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
+  <defs>
+    <marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5eb3f6"/>
+    </marker>
+  </defs>
+  <style>
+    figure.diagram .d-s7t{fill:#d7dbe4;font:600 15px -apple-system,Segoe UI,Roboto,sans-serif}
+    figure.diagram .d-s7s{fill:#8b93a5;font:12px ui-monospace,Menlo,monospace}
+    figure.diagram .d-s7r{fill:#7ee0a3;font:11px ui-monospace,Menlo,monospace;text-anchor:end}
+    figure.diagram .d-s7n{fill:#5eb3f6;font:600 13px ui-monospace,Menlo,monospace}
+  </style>
+  <line x1="26" y1="440" x2="26" y2="80" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar3)"/>
+  <text x="44" y="20" class="d-s7s" style="fill:#8b93a5">Each rung rests on the one below. None can be skipped.</text>
+
+  <rect x="40" y="40" width="840" height="74" rx="11" fill="#171a23" stroke="#2a3040"/>
+  <text x="58" y="68" class="d-s7n">1</text>
+  <text x="80" y="68" class="d-s7t">Hierarchy</text>
+  <text x="80" y="92" class="d-s7s">where does the eye look first? Size, contrast, spacing, position.</text>
+  <text x="862" y="68" class="d-s7r">83.9% of the top 1M fail contrast</text>
+
+  <rect x="60" y="126" width="800" height="74" rx="11" fill="#171a23" stroke="#2a3040"/>
+  <text x="78" y="154" class="d-s7n">2</text>
+  <text x="100" y="154" class="d-s7t">Typography with a voice</text>
+  <text x="100" y="178" class="d-s7s">It is not the typeface: it is weight, tracking and what you refuse to allow.</text>
+  <text x="842" y="154" class="d-s7r">Stripe: headlines at weight 300</text>
+
+  <rect x="80" y="212" width="760" height="74" rx="11" fill="#171a23" stroke="#2a3040"/>
+  <text x="98" y="240" class="d-s7n">3</text>
+  <text x="120" y="240" class="d-s7t">Motion as physics</text>
+  <text x="120" y="264" class="d-s7s">Springs with weight and speed, not timed animations.</text>
+  <text x="822" y="240" class="d-s7r">exits subtler than entrances</text>
+
+  <rect x="100" y="298" width="720" height="74" rx="11" fill="#171a23" stroke="#2a3040"/>
+  <text x="118" y="326" class="d-s7n">4</text>
+  <text x="140" y="326" class="d-s7t">Restraint</text>
+  <text x="140" y="350" class="d-s7s">Design is a refusal mechanism: what you decided not to do.</text>
+  <text x="802" y="326" class="d-s7r">Geist: radius 0, zero shadows</text>
+
+  <rect x="120" y="384" width="680" height="74" rx="11" fill="#141b26" stroke="#2f4a63"/>
+  <text x="138" y="412" class="d-s7n">5</text>
+  <text x="160" y="412" class="d-s7t">Invisible detail</text>
+  <text x="160" y="436" class="d-s7s">What you do not see but feel: optical alignment, safety areas, states.</text>
+  <text x="782" y="412" class="d-s7r">Linear: safety areas in submenus</text>
+</svg>
+<figcaption>The first four rungs can be copied. The fifth is what separates: details nobody sees until they are missing, and where taste accumulates instead of leaking away.<sup class="d-c">45,48,54</sup></figcaption>
+</figure>
+
+<h3>Who won in 2025 and 2026</h3>
+
+<p>Awards are not an objective measure of quality, but they are a verifiable list of what a jury of practitioners considers the ceiling of the year. Two citations and one oddity: the same site won both the jury vote and the public vote.</p>
+
+<ul>
+<li><strong>Awwwards Site of the Year 2025 — Lando Norris (OFF+BRAND).</strong> An F1 driver's platform: dynamic interactions, bold visuals, 3D. It also took the Users' Choice award, which rarely coincides with the jury's.<sup>38,39</sup></li>
+<li><strong>Developer Site of the Year 2025 — Messenger (abeto).</strong> A small studio taking the technical category ahead of the large agencies.<sup>38</sup></li>
+<li><strong>E-commerce of the Year 2025 — Scout Motors.</strong> Designing a car brand from scratch buys you permission to ignore every e-commerce convention.<sup>38</sup></li>
+<li><strong>Webby 2026, Best Home Page — The Renaissance Edition (Shopify).</strong> Only the home page is judged, so it is pure front-page design with no product behind it to hide behind.<sup>41</sup></li>
+<li><strong>Webby 2026, Cultural Institutions — National Gallery Imaginarium (Fabrique &amp; Q42).</strong> The hard part of cultural design is not turning an archive into a PDF with a menu.<sup>41</sup></li>
+<li><strong>Webby 2026, Best Visual Design · Function — The Way</strong>, a meditation app. The category is <em>function</em>: it rewards the design that sustains use, not the one that decorates.<sup>40</sup></li>
+</ul>
+
+<h3>The specific detail that makes each one a reference</h3>
+
+<p>"It looks nice" is not an argument. Each of these rests on a concrete decision, opposed to convention, that can be measured and copied. This is the part actually worth learning from them.</p>
+
+<div class="table-wrapper"><table>
+  <tr><th>System</th><th>The measurable detail</th><th>Why it works</th></tr>
+  <tr>
+    <td><strong>Vercel</strong><br>Geist</td>
+    <td>Radius 0 across the whole system, <strong>zero</strong> <code>box-shadow</code> — elevation is carried by 1 px hairlines — a 16 px body, 100–150 ms <code>ease-out</code> motion, and a single accent colour on under 1% of the surface.<sup>55</sup></td>
+    <td>Lifting with a border instead of a shadow keeps the interface flat and legible at any density: nothing floats, nothing competes. And giving up bold forces hierarchy to come from size and space — which is what the eye reads best anyway.<sup>43</sup></td>
+  </tr>
+  <tr>
+    <td><strong>Stripe</strong></td>
+    <td>Headlines at <strong>weight 300</strong> with negative tracking (−1.4 px at 56 px), the <code>ss01</code> stylistic set on every text element, tabular numerals (<code>tnum</code>) for financial data, multi-layer blue-tinted shadows at <code>rgba(50,50,93,0.25)</code>, and deep navy <code>#061b31</code> instead of black in headings.<sup>44</sup></td>
+    <td>It is the opposite of the bold hero headline: whispered authority instead of shouted. The shadow's blue comes from the brand palette, so even elevation is on-brand. And tabular numerals are not aesthetics — they are how columns of money line up.<sup>44</sup></td>
+  </tr>
+  <tr>
+    <td><strong>Linear</strong></td>
+    <td>A near-black canvas, a four-step surface ladder, 1 px hairlines, a single lavender accent, negative tracking in the type scale, and monospace reserved for identifiers. Its command menu — the app's central component — groups hundreds of actions ordered by the view you are in.<sup>53</sup> In the redesign the same theme generator was applied to the base palette so it could ship <strong>very high contrast themes</strong> (30 and 100) for accessibility.<sup>46</sup></td>
+    <td>Technical density without noise: it reads like software documentation, which is exactly what it wants to look like. And contrast as a <em>system token</em> rather than a patch is how accessibility stops eroding.<sup>46</sup></td>
+  </tr>
+  <tr>
+    <td><strong>Craft</strong><br>(app)</td>
+    <td>They wrote their own components, layout system and animations instead of using SwiftUI and AutoLayout, and share a single codebase across iOS, iPad, macOS and Vision (about 99% common).<sup>47</sup></td>
+    <td>Their thesis is the most useful of all: <strong>one engineering culture is not enough</strong>. With a UI-dominant culture (Apple) you get a delightful product and a weak backend; with a backend-dominant culture (Amazon, Google) you get excellent systems and less comfortable UIs. You need both.<sup>47</sup></td>
+  </tr>
+</table></div>
+
+<figure class="diagram">
+<svg width="100%" viewBox="0 0 920 268" role="img" aria-label="Comparison: a conventional bold headline on black against Stripe&#x27;s light headline in navy">
+<rect x="0" y="0" width="920" height="268" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
+  <style>
+    figure.diagram .d-c7l{fill:#8b93a5;font:11px ui-monospace,Menlo,monospace;letter-spacing:.08em}
+    figure.diagram .d-c7s{fill:#8b93a5;font:12px ui-monospace,Menlo,monospace}
+    figure.diagram .d-c7n{fill:#7ee0a3;font:12px ui-monospace,Menlo,monospace}
+  </style>
+
+  <text x="20" y="26" class="d-c7l">THE CONVENTION</text>
+  <rect x="20" y="38" width="420" height="118" rx="8" fill="#000000"/>
+  <text x="44" y="112" style="fill:#ffffff;font:800 42px -apple-system,Segoe UI,Roboto,sans-serif;letter-spacing:0px">Ship today</text>
+  <text x="20" y="176" class="d-c7s">weight 700/800 · tracking 0 · white on black</text>
+  <text x="20" y="194" class="d-c7s">The headline has to win. It competes with everything else.</text>
+
+  <text x="480" y="26" class="d-c7l">STRIPE</text>
+  <rect x="480" y="38" width="420" height="118" rx="8" fill="#ffffff"/>
+  <text x="504" y="112" style="fill:#061b31;font:300 42px -apple-system,Segoe UI,Roboto,sans-serif;letter-spacing:-1.4px">Ship today</text>
+  <text x="480" y="176" class="d-c7s">weight 300 · tracking −1.4px · #061b31 on white</text>
+  <text x="480" y="194" class="d-c7s">The headline does not compete: it has already won and does not need to say so.</text>
+
+  <line x1="20" y1="216" x2="900" y2="216" stroke="#2a3040"/>
+  <text x="20" y="240" class="d-c7n">Same text, same box, same base typeface. Weight, tracking and ink colour change.</text>
+  <text x="20" y="258" class="d-c7s">Neither is "prettier" in the abstract: each declares what kind of product it is.</text>
+</svg>
+<figcaption>Typography is not a font catalogue, it is the product's voice set to a specific value. Both extremes are defensible; what is not is the default middle.<sup class="d-c">44,55</sup></figcaption>
+</figure>
+
+<h3>Five things that genuinely make a design good</h3>
+
+<ul>
+<li><strong>Hierarchy before ornament.</strong> You are not decorating a canvas, you are deciding what is seen and in what order: size, contrast, spacing, position. When it fails, no amount of polish rescues it — and it is the most widespread failure on the web: 83.9% of the top million home pages have low-contrast text, and the average number of detected accessibility errors per page rose to 56.1 in 2026 after years of improvement.<sup>58,57</sup></li>
+<li><strong>Typography is a voice, not a font.</strong> The two best examples go to opposite extremes and both work: Stripe at weight 300 for headlines, Vercel banning weight 700 from the entire system. The constraint <em>is</em> the signature.<sup>44,42,59</sup></li>
+<li><strong>Motion is physics, not decoration.</strong> A timed animation assumes the world will wait for it to finish; real things have no assigned duration, they have weight and speed. That difference is what separates an interface that feels alive from one that feels fake.<sup>56</sup> And exits should be subtler than entrances: what leaves does not deserve the same attention as what arrives.<sup>48</sup></li>
+<li><strong>Restraint: good design is a refusal mechanism.</strong> Taste also comes from omission — what you cut, which font you avoided, which slogan you did not choose.<sup>51</sup> It is what Geist formalises with its "no"s: no radius, no shadows, no gradients, no second brand colour.<sup>55</sup></li>
+<li><strong>Optical alignment, not geometric.</strong> Padding next to an icon should be slightly smaller so the eye reads it as centred. And underneath, the detail nobody sees: Linear added safety areas to its contextual menus so you can move the cursor <strong>diagonally</strong> into a submenu without it vanishing on the way — previously you had to draw an upside-down "L" with the mouse, and they found that unacceptable because those seconds add up over a day.<sup>48,45</sup></li>
+</ul>
+
+<blockquote><strong>Why this matters more now than three years ago.</strong> When everyone has the same tools, judgement is what separates. AI is excellent at compressing the beginning of the creative process — ideation, exploration, technical chores — and useless at replacing judgement at the end. One excellent image beats a thousand correct ones.<sup>49</sup> The real risk is not producing something ugly; it is landing in <em>the middle</em>, described as "visual elevator music" — the point where nothing is good or bad and which is more unforgivable than failing. Models cannot feel when something is off, because they are doing pattern completion at scale, remixing what already exists.<sup>52</sup> The mechanism, in one sentence: models generate details at scale but cannot make taste-informed trade-offs — and every detail delegated without the designer's judgement is a place where taste leaks out of the system.<sup>54</sup></blockquote>
+
+<blockquote><strong>The link with Part VI.</strong> This is an engineering matter, not a matter of sensibility: if your design system is the API agents consume,<sup>21</sup> your design decisions no longer deploy at the speed of a team — they replicate at the speed of a machine. A bad contrast token, or a hierarchy rule that was never written down, now propagates into every artefact your agents generate. Good taste stopped being an adjective and became an infrastructure requirement.</blockquote>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part VIII</div>
+      <div class="special-content">
+
+<h2>Accessibility: it stopped being a good practice in June 2025</h2>
+
+<p>This is the part most teams still file under "nice to have". It is not.</p>
+
+<p>The <strong>European Accessibility Act</strong> (Directive (EU) 2019/882) was transposed into national law from 28 June 2022 and has been <strong>enforceable since 28 June 2025</strong>. The harmonised technical standard is EN 301 549, which for web and mobile references <strong>WCAG 2.1 level AA</strong> as the operative baseline. Market surveillance authorities in each member state can impose penalties, corrective orders and market restrictions.<sup>24</sup></p>
+
+<p>The technical bar is also rising on its own: WCAG 2.2 was approved as international standard <strong>ISO/IEC 40500:2025</strong> on 21 October 2025. Conformance with 2.2 implies 2.1 and 2.0, and criterion 4.1.1 <em>Parsing</em> was removed. The W3C now recommends 2.2 and is working on updating EN 301 549.<sup>25,26</sup></p>
+
+<blockquote><strong>How it is actually enforced.</strong> The early cases do not ask whether you meet fifty-odd success criteria. They ask two things: <em>did you know you had the problem?</em> and <em>did you take reasonable steps?</em> The risk is not having issues — it is having no visibility into them. As with GDPR, 2025 was the year of internal routines and paper trails; 2026 starts being the year of accountability.<sup>24</sup></blockquote>
+
+<p>And the starting point of the real web: <strong>95.9%</strong> of the top million home pages have detectable WCAG 2 A/AA failures — up from 94.8% a year earlier, reversing six years of small improvements — with 56.1 errors per page on average. Six error types account for 96% of everything detected: low-contrast text on 83.9% of pages, missing image alt text on 53.1%, missing form input labels on 51%, empty links on 46.3%, empty buttons on 30.6% and a missing document language on 13.5%. Average page complexity rose 14.3% in a single year, and the report ties the error increase directly to it.<sup>58</sup></p>
+
+<p>Contrast is the standout: it lost nearly five points year on year and is now the most common failure by a wide margin. A plausible reading is that alt text and <code>lang</code> improved because linters and CMS fields nag about them at authoring time, while contrast is decided by a design token that no linter sees until the page renders.<sup>58</sup></p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part IX</div>
+      <div class="special-content">
+
+<h2>Generative UI: the teams doing it well are doing it boring</h2>
+
+<p>The "chatbot in a sidebar" is being replaced by interfaces the agent composes at runtime. But the industry has split into three patterns, and only two are defensible in production.</p>
+
+<div class="table-wrapper"><table>
+  <tr><th>Pattern</th><th>How it works</th><th>Verdict</th></tr>
+  <tr><td><strong>Static / component-based</strong></td><td>The agent decides <em>when</em> a pre-built component appears and <em>with what data</em>. It never controls layout or styling.</td><td>Safe. Brand consistency and security intact. Dashboards, cards, forms, booking widgets.<sup>29</sup></td></tr>
+  <tr><td><strong>Declarative / schema-driven</strong></td><td>The agent returns a <strong>structured description</strong> (JSON: rows, cards, lists, forms) and your frontend interprets it with its own primitives.</td><td>The pattern that scales: less backend↔render coupling and a consistent visual system across many compositions.<sup>29,30</sup></td></tr>
+  <tr><td><strong>Open-ended / full generation</strong></td><td>The agent generates markup or UI code at runtime.</td><td>Fragile. <strong>LLM-generated code running in your users' browsers.</strong> The industry flags it as unsuitable for production.<sup>29,30</sup></td></tr>
+</table></div>
+
+<blockquote><strong>The concrete anti-pattern.</strong> You ask the model for a chunk of HTML, inject it into the page and call it an adaptive interface. That HTML bypasses the component system, the accessibility rules, the analytics conventions, permissions, approval workflows and the application's state model. And if the model decided a <code>shutdownInstances</code> function should exist, you now have a new attack surface. It works in the demo; it is not architecture.<sup>30</sup></blockquote>
+
+<p>The pragmatic rule taking hold: <strong>start constrained, expand with structure, embed only where the leverage is clear</strong>. The interface can adapt to the user's goal while the system stays testable, the design system stays intact and permissions stay deterministic.<sup>29,30</sup></p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part X</div>
+      <div class="special-content">
+
+<h2>Eight examples, and why they are good</h2>
+
+<p>These are not "the prettiest websites". They are cases where one concrete decision explains the outcome, and where the evidence is published.</p>
+
+<h3>Linear</h3>
+<p><em>Why: they removed the network from the user's perception, and chose that on day one.</em></p>
+<p>The database the UI reads lives <strong>in the browser</strong>, in IndexedDB. A mutation applies locally and reconciles over WebSocket in the background: there is no spinner because there is nothing to wait for. The co-founder wrote the sync engine as the first lines of code. The second pillar is just as deliberate: four build-pipeline rewrites (Parcel → Rollup → Vite → Rolldown) with one stated goal — ship less JavaScript and CSS.</p>
+<ul>
+<li><strong>Measured result:</strong> 50% less code shipped, 30% smaller after compression, cold-cache loads 10–30% faster, time to first paint of the active-issues view down 59% on Safari, memory down 70–80%.<sup>9</sup></li>
+<li><strong>Non-obvious details:</strong> critical CSS inlined to paint the shell with no extra request; every dependency in its own chunk so bumping one does not invalidate the whole vendor bundle; and "render first, authenticate second" — paint what you have and let the first real request return a 401 if the session went stale.<sup>9</sup></li>
+<li><strong>Honest trade-off:</strong> roughly 21 MB of minified JavaScript, aggressively split into hundreds of route-level chunks. And its marketing site is static Next.js: they do not apply the same dogma to everything.<sup>9</sup></li>
+</ul>
+
+<h3>Vercel</h3>
+<p><em>Why: they turned their design judgement into context any agent can load.</em></p>
+<p>A team that calls itself agent-native and proves it with artefacts rather than manifestos: a <strong><code>product-design</code> skill</strong> that lives in the repository next to the code it governs (with <code>AGENTS.md</code>, <code>SKILL.md</code>, <code>references/</code> and <code>exemplars/</code>), linters that enforce the rules automatically, and a review loop that gathers evidence from Slack, Figma and GitHub and prepares guideline updates. Their rules are concrete and checkable, of the kind "destructive CTAs follow Verb + Noun, never Confirm or OK".<sup>11</sup></p>
+<ul>
+<li><strong><code>design.md</code>:</strong> one public file any agent loads from a URL, built on seven real document types (usage and performance report, renewal proposal, benchmark, interactive planning page, build-versus-buy brief, security governance brief, deck) and refined over more than 200 evaluation runs with a model judge.<sup>10</sup></li>
+<li><strong>Agent-friendly by default:</strong> their blog returns markdown when you send <code>Accept: text/markdown</code>, with a hierarchical <code>sitemap.md</code> and <code>link rel="alternate"</code> as a fallback discovery path.<sup>12</sup></li>
+<li><strong>Infrastructure with the same thesis:</strong> server-side feature flags by default ("zero impact on page performance"), sandboxes to validate their own agents' patches, and customers like Gamma running AI pipelines (Tiptap inside JSDOM, in serverless functions) without reinventing release engineering.<sup>37</sup></li>
+</ul>
+
+<h3>Stripe</h3>
+<p><em>Why: they are defining the protocol by which an agent spends money.</em></p>
+<p>Stripe is not adapting its site to agents: it is writing the standard. <strong>ACP</strong> (with OpenAI and Meta) defines agentic checkout, carts and feeds, delegated payment, delegated authentication over OAuth 2.0 and order webhooks. In September 2026 they published how they design <em>Checkout</em> for agents — using <strong>WebMCP</strong> to speed up purchases from the browser — and expanded <strong>Link</strong> (300M users, ~1M merchants) into assistants from Meta, xAI and Instinct.<sup>14,16,13</sup></p>
+<ul>
+<li><strong>The layer holding it up:</strong> their own data plane, a high-performance distributed proxy built because traffic passed 1.6% of global GDP and the service mesh could not cope. Stated target: 99.9995% reliability.<sup>13</sup></li>
+<li><strong>Why design matters here:</strong> when the payer is an agent, the page that decides whether something gets bought is the same one as with a human. They moved product, protocol and infrastructure at the same problem simultaneously.<sup>13,15</sup></li>
+</ul>
+
+<h3>Shopify ⇄ ChatGPT Instant Checkout</h3>
+<p><em>Why: they accepted that the storefront may not be theirs.</em></p>
+<p>More than a million Shopify merchants on the path to checkout inside ChatGPT, with direct purchases already live for Etsy sellers in the US. The interesting architectural decision is not technical but about control: the <strong>merchant stays merchant of record</strong> — fulfilment, returns, support and the customer relationship are theirs; only the surface where the click happens changes.<sup>15</sup></p>
+
+<h3>Figma + Coinbase Design System</h3>
+<p><em>Why: they measured that giving the agent context is cheaper than letting it improvise.</em></p>
+<p>Figma's MCP server sends the agent the file's components, styles and variables, and can also <strong>scan your code and generate a rules file</strong> for the system (tokens, libraries, hierarchies, naming) that acts as system-level guidance. Accessibility and interaction annotations travel with the design and land in the generated code.<sup>21</sup></p>
+<ul>
+<li><strong>The measurement:</strong> Coinbase — better design-system adherence and a 22.5% average cut in token cost using Code Connect.<sup>22</sup></li>
+<li><strong>State of the art:</strong> an audit of 20 open-source systems and 6 platforms logged 187 AI affordances and 157 techniques: 17 with an official MCP server, 17 with agent skills, 14 publishing <code>llms.txt</code>.<sup>23</sup></li>
+</ul>
+
+<h3>Cloudflare</h3>
+<p><em>Why: they put a price on a resource nobody knew how to measure.</em></p>
+<p>AI Crawl Control turns bot traffic into a per-crawler decision — allow, charge or block — with tracking of <code>robots.txt</code> health and detection of who violates your directives. Pay Per Crawl uses <code>HTTP 402</code> plus <code>crawler-price</code> and requests signed with Web Bot Auth, with Cloudflare as merchant of record and monthly settlement through Stripe.<sup>17,18</sup></p>
+<ul>
+<li><strong>The elegant part:</strong> it does not break the web — it reuses existing status codes and headers, leaves <code>robots.txt</code>, <code>sitemap.xml</code>, <code>security.txt</code> and <code>crawlers.json</code> free, and never bills error responses.<sup>17</sup></li>
+</ul>
+
+<h3>Content-first sites on Astro</h3>
+<p><em>Why: the best JavaScript is the JavaScript you do not ship.</em></p>
+<p>Static HTML by default, <strong>0 KB of JavaScript</strong> except what you explicitly mark with <code>client:*</code>, and hydration scheduled on browser signals: <code>visible</code> uses <code>IntersectionObserver</code>, <code>idle</code> uses <code>requestIdleCallback</code>. <strong>Server Islands</strong> let you mix edge-cached HTML with per-request fragments: a marketing page can be static for everyone while carrying a per-user fragment rendered on the fly.<sup>27,28</sup></p>
+<ul>
+<li><strong>Careful with the benchmarks:</strong> the comparative bundle numbers in circulation (roughly 9 KB versus several hundred) come from secondary sources and should be read as an order of magnitude, not a reproducible measurement.<sup>28</sup></li>
+<li><strong>The real trap:</strong> props are JSON-serialised across the boundary, so a <code>Date</code> arrives as a string. The JavaScript saving is paid for with discipline in the props contract.<sup>27</sup></li>
+</ul>
+
+<h3>Google Search — the counterexample</h3>
+<p><em>Why it is the warning, not the model: they optimised the answer and destroyed the click.</em></p>
+<p>The most instructive case of 2026 is not a beautiful website, it is a shift in incentives. AI Overviews correlate with a <strong>58%</strong> reduction in click-through rate for top-ranking pages, against 34.5% measured in April 2025, and Pew found that only 8% of users click traditional results when an overview is present, versus 15% when it is not. Chartbeat, tracking more than 2,500 news sites, measured a 33% decline in Google search referrals during 2025. Penske Media filed an antitrust suit, the European Publishers Council filed a formal complaint with the Commission, and a third of surveyed publishers say they will block AI Overviews once the tools allow it.<sup>35</sup></p>
+<ul>
+<li><strong>The causal experiment:</strong> 1,100 US Chrome users (March 2026, UPenn + Northeastern). Hiding the overviews raised outbound clicks by <strong>8.8 points</strong>; forcing AI Mode cut them by <strong>18.8 points</strong>. News-site clicks fell 12.5 points, Reddit 21.2 and Wikipedia 9.9.<sup>36</sup></li>
+<li><strong>Why it is a warning:</strong> the traffic loss came <em>without</em> a better experience. Satisfaction, usefulness, sense of control and perceived personalisation all fell, and use of rival search engines rose 11.2 points.<sup>36</sup></li>
+</ul>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part XI</div>
+      <div class="special-content">
+
+<h2>The part conference talks leave out</h2>
+
+<p>Every new layer — agents, protocols, per-crawl billing — rests on the same web that AI is draining of economic incentive. The teams ahead have it in their balance sheet, not their blog.</p>
+
+<p><strong>The structural tension:</strong> your site must be machine-readable to exist in AI answers, and that same readability is what lets the user skip your site. It is not an optimisation problem, it is a conflict of incentives.<sup>35,36</sup></p>
+
+<p><strong>The three responses in the field:</strong> charge for access (Pay Per Crawl);<sup>17</sup> design for the agent and be present where the purchase happens (ACP);<sup>14</sup> and raise the switching cost — a product with local data and near-zero latency is not replaced by a summary.<sup>9</sup></p>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Part XII</div>
+      <div class="special-content">
+
+<h2>What I would do if this landed on my desk</h2>
+
+<p>Ordered by impact over effort. The first six are this week's work.</p>
+
+<h3>Week one — decisions, not projects</h3>
+<ul>
+<li><strong>Measure where you actually lose.</strong> Origin-level CrUX, not Lighthouse. If you fail, it is almost certainly LCP: images, TTFB, render-blocking resources. Do not touch the event handler.<sup>4,3</sup></li>
+<li><strong>Declare a per-bot policy</strong> in <code>robots.txt</code>: search engines (always allow, or you lose the index), training bots, user agents. An explicit, versioned dial.<sup>17</sup></li>
+<li><strong>Add content negotiation</strong> — <code>Accept: text/markdown</code> → markdown — plus a hierarchical <code>sitemap.md</code>. This is the part of "machine-readable" with a real return.<sup>12</sup></li>
+<li><strong>Fix the three accessibility failures everyone has:</strong> visible focus indicator, AA contrast, meaningful <code>alt</code>. With the EAA in force, having no visibility is worse than having issues.<sup>8,24</sup></li>
+<li><strong>Publish your design tokens</strong> as a machine-consumable package, not as a Figma file.<sup>21,23</sup></li>
+<li><strong>Audit your logs for agents:</strong> what share of your traffic is GPTBot, ClaudeBot or PerplexityBot? If you do not know, you cannot decide about charging or caching.<sup>17</sup></li>
+</ul>
+
+<h3>Quarter — the structural bets</h3>
+<ul>
+<li><strong>Choose an explicit rendering strategy</strong> and write it down: islands for content<sup>27</sup>, RSC for full-stack apps<sup>2</sup>, or local-first for interactive products<sup>9</sup>. What does not work is cross-dogma: the same pattern for a blog, a dashboard and a collaborative editor.</li>
+<li><strong>Put a byte budget in CI.</strong> Median mobile page: 2.56 MB with 632 KB of JavaScript. If it is not gated, it only grows.<sup>6,8</sup></li>
+<li><strong>Write generative UI in constrained mode:</strong> a component catalogue plus structured payloads. Never HTML or code generated at runtime in the user's browser.<sup>29,30</sup></li>
+<li><strong>Turn design judgement into a repository artefact</strong> (<code>AGENTS.md</code> + skill + linters + examples). It is what lets an agent write code that passes your review.<sup>11,10</sup></li>
+<li><strong>Evaluate WebMCP only if you have clear task flows</strong> (book, check status, open a ticket). Declarative on existing forms is the cheap route; it is an origin trial, so treat it as progressive enhancement.<sup>19,20</sup></li>
+<li><strong>Decide your position on agentic commerce before a partner imposes it.</strong> ACP is open: if you sell, the question is not whether an agent will try to buy, but whether your backend and your PSP can answer.<sup>14,15</sup></li>
+</ul>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Sources</div>
+      <div class="special-content">
+
+<ol>
+<li>State of React 2025 — Conclusion — <a href="https://2025.stateofreact.com/en-US/conclusion">2025.stateofreact.com/en-US/conclusion</a></li>
+<li>What's Next for React in 2026 (Telerik) — <a href="https://www.telerik.com/blogs/whats-next-react-2026">telerik.com/blogs/whats-next-react-2026</a></li>
+<li>The State of Web Vitals — Q2 2026 — <a href="https://www.corewebvitals.io/state-of-cwv">corewebvitals.io/state-of-cwv</a></li>
+<li>Core Web Vitals 2026: How You Compare to the Market — <a href="https://insightland.org/blog/core-web-vitals-2026-how-you-compare-to-the-market">insightland.org/blog/core-web-vitals-2026-how-you-compare-to-the-market</a></li>
+<li>Web Almanac 2025 — Performance — <a href="https://almanac.httparchive.org/en/2025/performance">almanac.httparchive.org/en/2025/performance</a></li>
+<li>Web Almanac 2025 — Page Weight — <a href="https://almanac.httparchive.org/en/2025/page-weight">almanac.httparchive.org/en/2025/page-weight</a></li>
+<li>Web Almanac 2025 — Generative AI — <a href="https://almanac.httparchive.org/en/2025/generative-ai">almanac.httparchive.org/en/2025/generative-ai</a></li>
+<li>HTTP Archive 2025 Web Almanac (CSS-Tricks) — <a href="https://css-tricks.com/http-archive-2025-web-almanac">css-tricks.com/http-archive-2025-web-almanac</a></li>
+<li>How's Linear so fast? A technical breakdown — <a href="https://performance.dev/how-is-linear-so-fast-a-technical-breakdown">performance.dev/how-is-linear-so-fast-a-technical-breakdown</a></li>
+<li>Vercel — How our agents build on-brand pages with design.md — <a href="https://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md">vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md</a></li>
+<li>Vercel — Teaching agents product design — <a href="https://vercel.com/blog/teaching-agents-product-design-at-vercel">vercel.com/blog/teaching-agents-product-design-at-vercel</a></li>
+<li>Vercel — Making agent-friendly pages with content negotiation — <a href="https://vercel.com/blog/making-agent-friendly-pages-with-content-negotiation">vercel.com/blog/making-agent-friendly-pages-with-content-negotiation</a></li>
+<li>Stripe Dot Dev — Blog — <a href="https://stripe.dev/blog">stripe.dev/blog</a></li>
+<li>Stripe Docs — Agentic Commerce Protocol (ACP) — <a href="https://docs.stripe.com/agentic-commerce/acp">docs.stripe.com/agentic-commerce/acp</a></li>
+<li>OpenAI — Buy it in ChatGPT: Instant Checkout and ACP — <a href="https://openai.com/index/buy-it-in-chatgpt">openai.com/index/buy-it-in-chatgpt</a></li>
+<li>CeFPro — Stripe Expands Link Wallet Into Agentic AI Commerce — <a href="https://connect.cefpro.com/article/view/stripe-expands-link-wallet-into-agentic-ai-commerce">connect.cefpro.com/article/view/stripe-expands-link-wallet-into-agentic-ai-commerce</a></li>
+<li>Cloudflare Docs — Pay Per Crawl — <a href="https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl">developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl</a></li>
+<li>Cloudflare Blog — Introducing pay per crawl — <a href="https://blog.cloudflare.com/introducing-pay-per-crawl">blog.cloudflare.com/introducing-pay-per-crawl</a></li>
+<li>Chrome for Developers — WebMCP — <a href="https://developer.chrome.com/docs/ai/webmcp">developer.chrome.com/docs/ai/webmcp</a></li>
+<li>Chrome for Developers — WebMCP Declarative API — <a href="https://developer.chrome.com/docs/ai/webmcp/declarative-api">developer.chrome.com/docs/ai/webmcp/declarative-api</a></li>
+<li>Figma — Design Systems and AI: Why MCP Servers Are The Unlock — <a href="https://www.figma.com/blog/design-systems-ai-mcp">figma.com/blog/design-systems-ai-mcp</a></li>
+<li>Figma Blog — AI (Code Connect / Coinbase case) — <a href="https://www.figma.com/blog/ai">figma.com/blog/ai</a></li>
+<li>Figmalion — Topics: Design Systems (State of AI in Design Systems, July 2026) — <a href="https://figmalion.com/topics/design-systems">figmalion.com/topics/design-systems</a></li>
+<li>GetWCAG — Complete European Accessibility Act (EAA) Guide 2026 — <a href="https://getwcag.com/en/what-is-european-accessibility-act-eaa">getwcag.com/en/what-is-european-accessibility-act-eaa</a></li>
+<li>W3C — WCAG 2.2 approved as ISO/IEC 40500:2025 — <a href="https://www.w3.org/press-releases/2025/wcag22-iso-pas">w3.org/press-releases/2025/wcag22-iso-pas</a></li>
+<li>W3C — Web Content Accessibility Guidelines (WCAG) 2.2 — <a href="https://www.w3.org/TR/WCAG22">w3.org/TR/WCAG22</a></li>
+<li>Astro Docs — Islands architecture — <a href="https://docs.astro.build/en/concepts/islands">docs.astro.build/en/concepts/islands</a></li>
+<li>Astro vs Next.js 2026 (benchmarks) — <a href="https://tech-insider.org/astro-vs-nextjs-2026">tech-insider.org/astro-vs-nextjs-2026</a></li>
+<li>CopilotKit — The Developer's Guide to Generative UI in 2026 — <a href="https://www.copilotkit.ai/blog/the-developer-s-guide-to-generative-ui-in-2026">copilotkit.ai/blog/the-developer-s-guide-to-generative-ui-in-2026</a></li>
+<li>InfoWorld — A smarter, structured approach to generative UI — <a href="https://www.infoworld.com/article/4210616/a-better-approach-to-generative-ui.html">infoworld.com/article/4210616/a-better-approach-to-generative-ui.html</a></li>
+<li>Rankability — llms.txt adoption research report (Sep 2026) — <a href="https://www.rankability.com/blog/llms-txt-adoption">rankability.com/blog/llms-txt-adoption</a></li>
+<li>llms.txt Explained: Format, Spec, and Real Adoption Data (2026) — <a href="https://www.ayautomate.com/blog/llms-txt">ayautomate.com/blog/llms-txt</a></li>
+<li>Does llms.txt Actually Work? What the 2026 Data Shows — <a href="https://llms-txt.io/blog/state-of-llms-txt-2026">llms-txt.io/blog/state-of-llms-txt-2026</a></li>
+<li>State of CSS 2026 — Awards — <a href="https://2026.stateofcss.com/tr-TR/awards">2026.stateofcss.com/tr-TR/awards</a></li>
+<li>TNW — Google's AI Overviews killed 58% of publisher clicks — <a href="https://thenextweb.com/news/google-ai-overviews-publisher-links-search-traffic">thenextweb.com/news/google-ai-overviews-publisher-links-search-traffic</a></li>
+<li>Search Engine Land — Google AI Mode cuts clicks without boosting satisfaction — <a href="https://searchengineland.com/google-ai-mode-cuts-clicks-satisfaction-study-490494">searchengineland.com/google-ai-mode-cuts-clicks-satisfaction-study-490494</a></li>
+<li>Vercel — Gamma builds design-first agents — <a href="https://vercel.com/blog/gamma-builds-design-first-agents-with-vercel">vercel.com/blog/gamma-builds-design-first-agents-with-vercel</a></li>
+<li>Awwwards — Annual Awards 2025 (winners) — <a href="https://www.awwwards.com/annual-awards-2025">awwwards.com/annual-awards-2025</a></li>
+<li>Awwwards — Site of the Year 2025: Lando Norris — <a href="https://www.awwwards.com/annual-awards-2025/site-of-the-year">awwwards.com/annual-awards-2025/site-of-the-year</a></li>
+<li>The Webby Awards — 30th Annual Webby Awards announce 2026 winners — <a href="https://www.webbyawards.com/press/press-releases/30th-annual-webby-awards-announce-2026-winners">webbyawards.com/press/press-releases/30th-annual-webby-awards-announce-2026-winners</a></li>
+<li>Webby Awards 2026 — Websites and Mobile Sites winners — <a href="https://winners.webbyawards.com/winners/websites-and-mobile-sites">winners.webbyawards.com/winners/websites-and-mobile-sites</a></li>
+<li>Vercel — Geist Design System: Typography — <a href="https://vercel.com/geist/typography">vercel.com/geist/typography</a></li>
+<li>Vercel — Geist Design System — <a href="https://vercel.com/geist/introduction">vercel.com/geist/introduction</a></li>
+<li>Open Design — Stripe design system (DESIGN.md + preview) — <a href="https://opendesigner.io/zh/design-systems/stripe">opendesigner.io/zh/design-systems/stripe</a></li>
+<li>Linear — Invisible details: building contextual menus — <a href="https://linear.app/blog/invisible-details">linear.app/blog/invisible-details</a></li>
+<li>Linear — How we redesigned the Linear UI — <a href="https://linear.app/now/how-we-redesigned-the-linear-ui">linear.app/now/how-we-redesigned-the-linear-ui</a></li>
+<li>The Pragmatic Engineer — Design-first software engineering: Craft — <a href="https://newsletter.pragmaticengineer.com/p/design-first-software-engineering">newsletter.pragmaticengineer.com/p/design-first-software-engineering</a></li>
+<li>Details that make interfaces feel better (Jakub K.) — <a href="https://jakub.kr/writing/details-that-make-interfaces-feel-better">jakub.kr/writing/details-that-make-interfaces-feel-better</a></li>
+<li>Adobe — AI in design: why taste is the true differentiator — <a href="https://www.adobe.com/express/learn/blog/ai-in-design-recommendations">adobe.com/express/learn/blog/ai-in-design-recommendations</a></li>
+<li>Taste Labs — Kill the slop (taste as AI's next frontier) — <a href="https://tastelabs.com/blog/kill-the-slop">tastelabs.com/blog/kill-the-slop</a></li>
+<li>Taste Is a Moat: Why AI Can't Replicate Judgment — <a href="https://collinwilkins.com/articles/taste-is-a-moat">collinwilkins.com/articles/taste-is-a-moat</a></li>
+<li>Adobe Design — Taste over haste — <a href="https://adobe.design/ideas/taste-over-haste">adobe.design/ideas/taste-over-haste</a></li>
+<li>Linear — New command menu (changelog) — <a href="https://linear.app/changelog/2019-12-18-new-command-menu">linear.app/changelog/2019-12-18-new-command-menu</a></li>
+<li>UX Collective — The Inversion Error (taste as judgment) — <a href="https://uxdesign.cc/oh-but-theres-one-more-thing-edb9fbd79c95">uxdesign.cc/oh-but-theres-one-more-thing-edb9fbd79c95</a></li>
+<li>design-engine — Vercel system analysis — <a href="https://github.com/Bil0000/design/blob/main/systems/vercel/system.md">github.com/Bil0000/design/blob/main/systems/vercel/system.md</a></li>
+<li>Kousik Dutta — Motion Is Not Decoration, It Is Physics — <a href="http://kousikdutta.com/journal">kousikdutta.com/journal</a></li>
+<li>Modern UI Design: A Practical Craft Guide for 2026 — <a href="https://artofstyleframe.com/blog/modern-ui-design-craft-guide">artofstyleframe.com/blog/modern-ui-design-craft-guide</a></li>
+<li>WebAIM — The WebAIM Million: 2026 report on the accessibility of the top 1,000,000 home pages — <a href="https://webaim.org/projects/million">webaim.org/projects/million</a></li>
+<li>design-bites — vercel.com DESIGN.md (typography, three-weight rule) — <a href="https://github.com/educlopez/design-bites/blob/main/design-mds/vercel.com/DESIGN.md">github.com/educlopez/design-bites/blob/main/design-mds/vercel.com/DESIGN.md</a></li>
+</ol>
+
+<p style="color: var(--on-surface-variant); font-size: 12px; margin-top: 24px;">Every figure in this report is drawn from the numbered sources above. Where the industry repeats a number without a primary source (comparative framework bundle sizes, "X% of searches start on AI platforms"), it is flagged as an order of magnitude or omitted. Coverage of design-system internals for Stripe and Vercel comes from third-party system analyses except Vercel's Geist documentation, which is first-party; the award descriptions are those of the awarding bodies.</p>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">SPECIAL REPORT · OCTOBER 2026</span>
+    </div>
+  </div>
+
+<script>
+  function applyTheme(theme) {
+    const html = document.documentElement;
+    const btn = document.querySelector('.theme-toggle');
+    if (theme === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+  }
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) applyTheme(saved);
+  })();
+
+  (function() {
+    const bar = document.getElementById('progress-bar');
+    if (!bar) return;
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
+      bar.style.width = (scrolled * 100) + '%';
+    });
+  })();
+</script>
+
+  <script>
+    const NAV_API_URL = 'https://api.github.com/repos/iamluisgb/reports/contents/reports?ref=master';
+    const CURRENT_FILE = 'world-class-websites-2026-10-03.html';
+
+    async function loadReportNav() {
+      try {
+        const res = await fetch(NAV_API_URL + '&t=' + Date.now());
+        if (!res.ok) throw new Error('API error');
+        const files = await res.json();
+        const htmlFiles = files
+          .filter(f => f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html')
+          .sort((a, b) => {
+            const da = a.name.replace('.html', '').split('-').slice(-3).join('');
+            const db = b.name.replace('.html', '').split('-').slice(-3).join('');
+            return db.localeCompare(da);
+          });
+        const idx = htmlFiles.findIndex(f => f.name === CURRENT_FILE);
+        if (idx === -1) return;
+        const nav = document.getElementById('report-nav');
+        if (nav) nav.style.display = '';
+        if (idx > 0) {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.href = prev.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx - 1].name;
+        } else {
+          const prev = document.getElementById('prev-report');
+          if (prev) prev.style.display = 'none';
+        }
+        if (idx < htmlFiles.length - 1) {
+          const next = document.getElementById('next-report');
+          if (next) next.href = next.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx + 1].name;
+        } else {
+          const next = document.getElementById('next-report');
+          if (next) next.style.display = 'none';
+        }
+      } catch (e) {
+        console.error('Nav error:', e);
+      }
+    }
+    loadReportNav();
+  </script>
+</body>
+</html>
