@@ -90,47 +90,46 @@
 
 <figure class="diagram">
 <svg width="100%" viewBox="0 0 920 560" role="img" aria-label="Diagram: four layers of an agent-native web — discover, understand, act, measure and monetise">
-<rect x="0" y="0" width="920" height="560" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
-  <defs>
+<defs>
     <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#5eb3f6"/>
+      <path d="M0,0 L10,5 L0,10 z" style="fill:var(--primary)"/>
     </marker>
   </defs>
   <style>
-    figure.diagram .d-bt{fill:#d7dbe4;font:600 16px -apple-system,Segoe UI,Roboto,sans-serif}
-    figure.diagram .d-bs{fill:#8b93a5;font:13px ui-monospace,Menlo,Consolas,monospace}
-    figure.diagram .d-bl{fill:#5eb3f6;font:600 11px ui-monospace,Menlo,monospace;letter-spacing:.1em}
-    figure.diagram .d-box{fill:#1d212d;stroke:#2a3040;stroke-width:1.2;rx:12}
-    figure.diagram .d-box2{fill:#171a23;stroke:#2a3040;stroke-width:1.2;rx:12}
-    figure.diagram .d-acc{fill:#141b26;stroke:#2f4a63;stroke-width:1.2;rx:12}
+figure.diagram .d-bt{fill:var(--on-surface);font-weight:600;font-size:16px;font-family:var(--f-body)}
+    figure.diagram .d-bs{fill:var(--on-surface-variant);font-size:13px;font-family:var(--f-mono)}
+    figure.diagram .d-bl{fill:var(--primary);font-weight:600;font-size:11px;font-family:var(--f-mono);letter-spacing:.1em}
+    figure.diagram .d-box{fill:var(--bg);stroke:var(--border);stroke-width:1.2;rx:12}
+    figure.diagram .d-box2{fill:var(--bg);stroke:var(--border);stroke-width:1.2;rx:12}
+    figure.diagram .d-acc{fill:var(--primary-dim);stroke:var(--primary);stroke-width:1.2;rx:12}
   </style>
 
   <!-- actor -->
-  <rect x="300" y="14" width="320" height="58" rx="14" fill="#101827" stroke="#5eb3f6" stroke-width="1.4"/>
+  <rect x="300" y="14" width="320" height="58" rx="14" stroke-width="1.4" style="fill:var(--primary-dim);stroke:var(--primary)"/>
   <text x="460" y="40" text-anchor="middle" class="d-bt">Human + agent</text>
   <text x="460" y="59" text-anchor="middle" class="d-bs">the same endpoint, two consumers</text>
-  <line x1="460" y1="72" x2="460" y2="98" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="460" y1="72" x2="460" y2="98" stroke-width="1.6" marker-end="url(#ar)" style="stroke:var(--primary)"/>
 
   <!-- capa 1 -->
   <rect x="40" y="100" width="840" height="96" class="d-box"/>
   <text x="60" y="126" class="d-bl">1 · DISCOVER</text>
   <text x="60" y="150" class="d-bt">Who may enter, and what you show them first</text>
   <text x="60" y="174" class="d-bs">robots.txt (allow / block per bot) · sitemap.md (titles + hierarchy) · llms.txt · &lt;link rel="alternate"&gt;</text>
-  <line x1="460" y1="196" x2="460" y2="220" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="460" y1="196" x2="460" y2="220" stroke-width="1.6" marker-end="url(#ar)" style="stroke:var(--primary)"/>
 
   <!-- capa 2 -->
   <rect x="40" y="222" width="840" height="96" class="d-box"/>
   <text x="60" y="248" class="d-bl">2 · UNDERSTAND</text>
   <text x="60" y="272" class="d-bt">Return content in the format the consumer wants</text>
   <text x="60" y="296" class="d-bs">Accept: text/markdown → markdown · semantic HTML · RSC / islands (less JS to parse)</text>
-  <line x1="460" y1="318" x2="460" y2="342" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="460" y1="318" x2="460" y2="342" stroke-width="1.6" marker-end="url(#ar)" style="stroke:var(--primary)"/>
 
   <!-- capa 3 -->
   <rect x="40" y="344" width="840" height="96" class="d-acc"/>
   <text x="60" y="370" class="d-bl">3 · ACT · NEW IN 2026</text>
   <text x="60" y="394" class="d-bt">Stop simulating clicks: declare tools</text>
   <text x="60" y="418" class="d-bs">WebMCP (navigator.modelContext) · ACP (checkout) · delegated OAuth · single-use payment tokens</text>
-  <line x1="460" y1="440" x2="460" y2="464" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar)"/>
+  <line x1="460" y1="440" x2="460" y2="464" stroke-width="1.6" marker-end="url(#ar)" style="stroke:var(--primary)"/>
 
   <!-- capa 4 -->
   <rect x="40" y="466" width="840" height="80" class="d-acc"/>
@@ -164,13 +163,12 @@
 
 <figure class="diagram">
 <svg width="100%" viewBox="0 0 920 300" role="img" aria-label="Bar chart: percentage of origins passing each Core Web Vital in 2026">
-<rect x="0" y="0" width="920" height="300" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
-  <style>
-    figure.diagram .d-ax{fill:#8b93a5;font:12px ui-monospace,Menlo,monospace}
-    figure.diagram .d-lbl{fill:#d7dbe4;font:14px -apple-system,Segoe UI,Roboto,sans-serif}
-    figure.diagram .d-val{fill:#d7dbe4;font:600 14px ui-monospace,Menlo,monospace}
-    figure.diagram .d-bar{fill:#28384a}
-    figure.diagram .d-bar2{fill:#3c6f96}
+<style>
+figure.diagram .d-ax{fill:var(--on-surface-variant);font-size:12px;font-family:var(--f-mono)}
+    figure.diagram .d-lbl{fill:var(--on-surface);font-size:14px;font-family:var(--f-body)}
+    figure.diagram .d-val{fill:var(--on-surface);font-weight:600;font-size:14px;font-family:var(--f-mono)}
+    figure.diagram .d-bar{fill:var(--border)}
+    figure.diagram .d-bar2{fill:var(--primary)}
   </style>
   <text x="0" y="18" class="d-ax">% of origins rated "good" · p75 · CrUX May 2026</text>
 
@@ -182,7 +180,7 @@
 
     <text x="0" y="104" class="d-lbl">LCP ≤ 2.5 s</text>
     <rect x="160" y="89" width="580" height="22" rx="4" class="d-bar"/>
-    <rect x="160" y="89" width="398" height="22" rx="4" style="fill:#a0563f"/>
+    <rect x="160" y="89" width="398" height="22" rx="4" style="fill:var(--on-surface-variant)"/>
     <text x="752" y="105" class="d-val">68.6%</text>
 
     <text x="0" y="150" class="d-lbl">CLS ≤ 0.1</text>
@@ -195,12 +193,12 @@
     <rect x="160" y="181" width="502" height="22" rx="4" class="d-bar2"/>
     <text x="752" y="197" class="d-val">86.6%</text>
   </g>
-  <line x1="160" y1="216" x2="160" y2="228" stroke="#2a3040"/>
+  <line x1="160" y1="216" x2="160" y2="228" style="stroke:var(--border)"/>
   <text x="160" y="244" class="d-ax">0%</text>
   <text x="450" y="244" text-anchor="middle" class="d-ax">50%</text>
   <text x="740" y="244" class="d-ax">100%</text>
-  <line x1="160" y1="222" x2="740" y2="222" stroke="#2a3040"/>
-  <text x="0" y="278" class="d-ax">Linear scale. The orange bar marks the single vital dragging the overall result down.</text>
+  <line x1="160" y1="222" x2="740" y2="222" style="stroke:var(--border)"/>
+  <text x="0" y="278" class="d-ax">Linear scale. The grey bar marks the single vital dragging the overall result down.</text>
 </svg>
 <figcaption>If your site fails Core Web Vitals, it almost certainly fails on LCP: most already pass INP and CLS. Loading, not interactivity, is where you lose.<sup class="d-c">4</sup></figcaption>
 </figure>
@@ -233,52 +231,51 @@
 
 <figure class="diagram">
 <svg width="100%" viewBox="0 0 920 340" role="img" aria-label="Chart: rendering patterns used in production, per State of React 2025">
-<rect x="0" y="0" width="920" height="340" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
-  <style>
-    figure.diagram .d-l2{fill:#d7dbe4;font:13.5px -apple-system,Segoe UI,Roboto,sans-serif}
-    figure.diagram .d-v2{fill:#8b93a5;font:13px ui-monospace,Menlo,monospace}
+<style>
+figure.diagram .d-l2{fill:var(--on-surface);font-size:13.5px;font-family:var(--f-body)}
+    figure.diagram .d-v2{fill:var(--on-surface-variant);font-size:13px;font-family:var(--f-mono)}
   </style>
-  <text x="0" y="16" style="fill:#8b93a5;font:12px ui-monospace,Menlo,monospace">Rendering patterns used by teams · State of React 2025</text>
+  <text x="0" y="16" style="fill:var(--on-surface-variant);font:12px ui-monospace,Menlo,monospace">Rendering patterns used by teams · State of React 2025</text>
   <g>
     <text x="0" y="52" class="d-l2">SPA (client-side)</text>
-    <rect x="200" y="38" width="520" height="20" rx="4" fill="#28384a"/>
-    <rect x="200" y="38" width="437" height="20" rx="4" fill="#5eb3f6"/>
+    <rect x="200" y="38" width="520" height="20" rx="4" style="fill:var(--border)"/>
+    <rect x="200" y="38" width="437" height="20" rx="4" style="fill:var(--primary)"/>
     <text x="732" y="53" class="d-v2">84%</text>
 
     <text x="0" y="88" class="d-l2">SSR</text>
-    <rect x="200" y="74" width="520" height="20" rx="4" fill="#28384a"/>
-    <rect x="200" y="74" width="317" height="20" rx="4" fill="#5eb3f6"/>
+    <rect x="200" y="74" width="520" height="20" rx="4" style="fill:var(--border)"/>
+    <rect x="200" y="74" width="317" height="20" rx="4" style="fill:var(--primary)"/>
     <text x="732" y="89" class="d-v2">61%</text>
 
     <text x="0" y="124" class="d-l2">SSG</text>
-    <rect x="200" y="110" width="520" height="20" rx="4" fill="#28384a"/>
-    <rect x="200" y="110" width="229" height="20" rx="4" fill="#5eb3f6"/>
+    <rect x="200" y="110" width="520" height="20" rx="4" style="fill:var(--border)"/>
+    <rect x="200" y="110" width="229" height="20" rx="4" style="fill:var(--primary)"/>
     <text x="732" y="125" class="d-v2">44%</text>
 
     <text x="0" y="160" class="d-l2">Server Components</text>
-    <rect x="200" y="146" width="520" height="20" rx="4" fill="#28384a"/>
-    <rect x="200" y="146" width="234" height="20" rx="4" fill="#3c6f96"/>
+    <rect x="200" y="146" width="520" height="20" rx="4" style="fill:var(--border)"/>
+    <rect x="200" y="146" width="234" height="20" rx="4" style="fill:var(--primary)"/>
     <text x="732" y="161" class="d-v2">45% used · ⅓ positive</text>
 
     <text x="0" y="196" class="d-l2">Partial hydration</text>
-    <rect x="200" y="182" width="520" height="20" rx="4" fill="#28384a"/>
-    <rect x="200" y="182" width="130" height="20" rx="4" fill="#3c6f96"/>
+    <rect x="200" y="182" width="520" height="20" rx="4" style="fill:var(--border)"/>
+    <rect x="200" y="182" width="130" height="20" rx="4" style="fill:var(--primary)"/>
     <text x="732" y="197" class="d-v2">25%</text>
 
     <text x="0" y="232" class="d-l2">Streaming SSR</text>
-    <rect x="200" y="218" width="520" height="20" rx="4" fill="#28384a"/>
-    <rect x="200" y="218" width="94" height="20" rx="4" fill="#3c6f96"/>
+    <rect x="200" y="218" width="520" height="20" rx="4" style="fill:var(--border)"/>
+    <rect x="200" y="218" width="94" height="20" rx="4" style="fill:var(--primary)"/>
     <text x="732" y="233" class="d-v2">18%</text>
 
     <text x="0" y="268" class="d-l2">Islands</text>
-    <rect x="200" y="254" width="520" height="20" rx="4" fill="#28384a"/>
-    <rect x="200" y="254" width="73" height="20" rx="4" fill="#3c6f96"/>
+    <rect x="200" y="254" width="520" height="20" rx="4" style="fill:var(--border)"/>
+    <rect x="200" y="254" width="73" height="20" rx="4" style="fill:var(--primary)"/>
     <text x="732" y="269" class="d-v2">14%</text>
   </g>
-  <line x1="200" y1="288" x2="200" y2="300" stroke="#2a3040"/>
-  <text x="200" y="314" style="fill:#8b93a5;font:12px ui-monospace,Menlo,monospace">0%</text>
-  <text x="460" y="314" style="fill:#8b93a5;font:12px ui-monospace,Menlo,monospace">50%</text>
-  <text x="700" y="314" style="fill:#8b93a5;font:12px ui-monospace,Menlo,monospace">100%</text>
+  <line x1="200" y1="288" x2="200" y2="300" style="stroke:var(--border)"/>
+  <text x="200" y="314" style="fill:var(--on-surface-variant);font:12px ui-monospace,Menlo,monospace">0%</text>
+  <text x="460" y="314" style="fill:var(--on-surface-variant);font:12px ui-monospace,Menlo,monospace">50%</text>
+  <text x="700" y="314" style="fill:var(--on-surface-variant);font:12px ui-monospace,Menlo,monospace">100%</text>
 </svg>
 <figcaption>Adoption does not follow the hype. Server Components have been used by 45%, but only a third rate the experience positively; Suspense, which solves a smaller problem with a better DX, has the highest adoption and satisfaction. When the API is good, adoption follows; when it demands redesigning the app, it stalls at the 14% of islands.<sup class="d-c">2</sup></figcaption>
 </figure>
@@ -309,13 +306,12 @@
 
 <figure class="diagram">
 <svg width="100%" viewBox="0 0 920 300" role="img" aria-label="Chart: 9.3% of the top 1,000 publish llms.txt against 0.1% of AI-bot requests asking for it">
-<rect x="0" y="0" width="920" height="300" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
-  <style>
-    figure.diagram .d-h2t{fill:#d7dbe4;font:14px -apple-system,Segoe UI,Roboto,sans-serif}
-    figure.diagram .d-bx{fill:#28384a}
-    figure.diagram .d-bhi{fill:#7ee0a3}
-    figure.diagram .d-blo{fill:#ef7b7b}
-    figure.diagram .d-an{fill:#8b93a5;font:13px ui-monospace,Menlo,monospace}
+<style>
+figure.diagram .d-h2t{fill:var(--on-surface);font-size:14px;font-family:var(--f-body)}
+    figure.diagram .d-bx{fill:var(--border)}
+    figure.diagram .d-bhi{fill:var(--primary)}
+    figure.diagram .d-blo{fill:var(--muted)}
+    figure.diagram .d-an{fill:var(--on-surface-variant);font-size:13px;font-family:var(--f-mono)}
   </style>
   <text x="0" y="16" class="d-an">Publishing is not the same as being consumed · same 0–10% scale</text>
 
@@ -323,17 +319,17 @@
   <text x="0" y="80" class="d-an">Tranco top 1,000, Sep 2026</text>
   <rect x="430" y="46" width="430" height="26" rx="5" class="d-bx"/>
   <rect x="430" y="46" width="400" height="26" rx="5" class="d-bhi"/>
-  <text x="700" y="65" class="d-an" style="fill:#0f1117;font-weight:700">9.3%</text>
+  <text x="700" y="65" class="d-an" style="fill:var(--bg);font-weight:700">9.3%</text>
 
   <text x="0" y="150" class="d-h2t">AI-bot requests asking for llms.txt</text>
   <text x="0" y="170" class="d-an">OtterlyAI, 62,100 AI-bot requests</text>
   <rect x="430" y="136" width="430" height="26" rx="5" class="d-bx"/>
   <rect x="430" y="136" width="4" height="26" rx="2" class="d-blo"/>
-  <text x="444" y="155" class="d-an" style="fill:#ef7b7b">0.1% (84 requests)</text>
+  <text x="444" y="155" class="d-an" style="fill:var(--muted)">0.1% (84 requests)</text>
 
-  <text x="0" y="216" class="d-an" style="fill:#d7dbe4">An analysis of 515 million LLM-bot events found 408 requests to llms.txt in total.</text>
-  <text x="0" y="240" class="d-an" style="fill:#d7dbe4">And sites that have it get no more citations: 6.8 versus 6.7 (p = 0.85).</text>
-  <text x="0" y="274" class="d-an" style="fill:#8b93a5">Sources: Rankability, OtterlyAI, Limy, Trakkr, Ahrefs — see notes 31, 32 and 33.</text>
+  <text x="0" y="216" class="d-an" style="fill:var(--on-surface)">An analysis of 515 million LLM-bot events found 408 requests to llms.txt in total.</text>
+  <text x="0" y="240" class="d-an" style="fill:var(--on-surface)">And sites that have it get no more citations: 6.8 versus 6.7 (p = 0.85).</text>
+  <text x="0" y="274" class="d-an" style="fill:var(--on-surface-variant)">Sources: Rankability, OtterlyAI, Limy, Trakkr, Ahrefs — see notes 31, 32 and 33.</text>
 </svg>
 <figcaption>9.3% of the top 1,000 publish llms.txt, yet ~0.1% of AI-bot requests ask for it — below the traffic of a random blog post — and its presence does not correlate with more citations. No major provider has confirmed that its crawler reads it.<sup class="d-c">31,32,33</sup></figcaption>
 </figure>
@@ -375,17 +371,16 @@
 
 <figure class="diagram">
 <svg width="100%" viewBox="0 0 920 372" role="img" aria-label="Diagram: purchase flow under the Agentic Commerce Protocol between user, agent, merchant and payment provider">
-<rect x="0" y="0" width="920" height="372" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
-  <defs>
+<defs>
     <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#5eb3f6"/>
+      <path d="M0,0 L10,5 L0,10 z" style="fill:var(--primary)"/>
     </marker>
   </defs>
   <style>
-    figure.diagram .d-t3{fill:#d7dbe4;font:600 14px -apple-system,Segoe UI,Roboto,sans-serif}
-    figure.diagram .d-s3{fill:#8b93a5;font:12px ui-monospace,Menlo,monospace}
-    figure.diagram .d-b3{fill:#1d212d;stroke:#2a3040;stroke-width:1.2}
-    figure.diagram .d-b3a{fill:#141b26;stroke:#2f4a63;stroke-width:1.2}
+figure.diagram .d-t3{fill:var(--on-surface);font-weight:600;font-size:14px;font-family:var(--f-body)}
+    figure.diagram .d-s3{fill:var(--on-surface-variant);font-size:12px;font-family:var(--f-mono)}
+    figure.diagram .d-b3{fill:var(--bg);stroke:var(--border);stroke-width:1.2}
+    figure.diagram .d-b3a{fill:var(--primary-dim);stroke:var(--primary);stroke-width:1.2}
   </style>
 
   <rect x="10" y="60" width="150" height="70" rx="11" class="d-b3"/>
@@ -408,17 +403,17 @@
   <text x="837" y="88" text-anchor="middle" class="d-t3">PSP</text>
   <text x="837" y="107" text-anchor="middle" class="d-s3">charges</text>
 
-  <line x1="162" y1="95" x2="192" y2="95" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar2)"/>
-  <line x1="358" y1="95" x2="388" y2="95" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar2)"/>
-  <line x1="544" y1="95" x2="574" y2="95" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar2)"/>
-  <line x1="730" y1="95" x2="760" y2="95" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <line x1="162" y1="95" x2="192" y2="95" stroke-width="1.6" marker-end="url(#ar2)" style="stroke:var(--primary)"/>
+  <line x1="358" y1="95" x2="388" y2="95" stroke-width="1.6" marker-end="url(#ar2)" style="stroke:var(--primary)"/>
+  <line x1="544" y1="95" x2="574" y2="95" stroke-width="1.6" marker-end="url(#ar2)" style="stroke:var(--primary)"/>
+  <line x1="730" y1="95" x2="760" y2="95" stroke-width="1.6" marker-end="url(#ar2)" style="stroke:var(--primary)"/>
 
-  <path d="M837,136 L837,172 L653,172 L653,142" fill="none" stroke="#7ee0a3" stroke-width="1.4" marker-end="url(#ar2)"/>
-  <text x="745" y="192" text-anchor="middle" class="d-s3" style="fill:#7ee0a3">fulfilment · returns · support</text>
-  <text x="745" y="208" text-anchor="middle" class="d-s3" style="fill:#7ee0a3">the merchant stays merchant of record</text>
+  <path d="M837,136 L837,172 L653,172 L653,142" fill="none" stroke-width="1.4" marker-end="url(#ar2)" style="stroke:var(--primary)"/>
+  <text x="745" y="192" text-anchor="middle" class="d-s3" style="fill:var(--primary)">fulfilment · returns · support</text>
+  <text x="745" y="208" text-anchor="middle" class="d-s3" style="fill:var(--primary)">the merchant stays merchant of record</text>
 
   <rect x="10" y="224" width="900" height="132" rx="11" class="d-b3"/>
-  <text x="30" y="250" style="fill:#5eb3f6;font:600 11px ui-monospace,Menlo,monospace;letter-spacing:.1em">BLOCKS THE PROTOCOL DEFINES</text>
+  <text x="30" y="250" style="fill:var(--primary);font:600 11px ui-monospace,Menlo,monospace;letter-spacing:.1em">BLOCKS THE PROTOCOL DEFINES</text>
   <text x="30" y="276" class="d-s3">agentic checkout (cart · fulfilment · payment) · cart &amp; feed · delegate payment</text>
   <text x="30" y="296" class="d-s3">delegate authentication (OAuth 2.0) · orders &amp; webhooks · product feed</text>
   <text x="30" y="324" class="d-s3">Already on Stripe? Enabling agentic payments can be one line of code.</text>
@@ -480,46 +475,45 @@
 
 <figure class="diagram">
 <svg width="100%" viewBox="0 0 920 472" role="img" aria-label="Ladder diagram: five levels of interface craft, from hierarchy to invisible detail">
-<rect x="0" y="0" width="920" height="472" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
-  <defs>
+<defs>
     <marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#5eb3f6"/>
+      <path d="M0,0 L10,5 L0,10 z" style="fill:var(--primary)"/>
     </marker>
   </defs>
   <style>
-    figure.diagram .d-s7t{fill:#d7dbe4;font:600 15px -apple-system,Segoe UI,Roboto,sans-serif}
-    figure.diagram .d-s7s{fill:#8b93a5;font:12px ui-monospace,Menlo,monospace}
-    figure.diagram .d-s7r{fill:#7ee0a3;font:11px ui-monospace,Menlo,monospace;text-anchor:end}
-    figure.diagram .d-s7n{fill:#5eb3f6;font:600 13px ui-monospace,Menlo,monospace}
+figure.diagram .d-s7t{fill:var(--on-surface);font-weight:600;font-size:15px;font-family:var(--f-body)}
+    figure.diagram .d-s7s{fill:var(--on-surface-variant);font-size:12px;font-family:var(--f-mono)}
+    figure.diagram .d-s7r{fill:var(--primary);font-size:11px;font-family:var(--f-mono);text-anchor:end}
+    figure.diagram .d-s7n{fill:var(--primary);font-weight:600;font-size:13px;font-family:var(--f-mono)}
   </style>
-  <line x1="26" y1="440" x2="26" y2="80" stroke="#5eb3f6" stroke-width="1.6" marker-end="url(#ar3)"/>
-  <text x="44" y="20" class="d-s7s" style="fill:#8b93a5">Each rung rests on the one below. None can be skipped.</text>
+  <line x1="26" y1="440" x2="26" y2="80" stroke-width="1.6" marker-end="url(#ar3)" style="stroke:var(--primary)"/>
+  <text x="44" y="20" class="d-s7s" style="fill:var(--on-surface-variant)">Each rung rests on the one below. None can be skipped.</text>
 
-  <rect x="40" y="40" width="840" height="74" rx="11" fill="#171a23" stroke="#2a3040"/>
+  <rect x="40" y="40" width="840" height="74" rx="11" style="fill:var(--bg);stroke:var(--border)"/>
   <text x="58" y="68" class="d-s7n">1</text>
   <text x="80" y="68" class="d-s7t">Hierarchy</text>
   <text x="80" y="92" class="d-s7s">where does the eye look first? Size, contrast, spacing, position.</text>
   <text x="862" y="68" class="d-s7r">83.9% of the top 1M fail contrast</text>
 
-  <rect x="60" y="126" width="800" height="74" rx="11" fill="#171a23" stroke="#2a3040"/>
+  <rect x="60" y="126" width="800" height="74" rx="11" style="fill:var(--bg);stroke:var(--border)"/>
   <text x="78" y="154" class="d-s7n">2</text>
   <text x="100" y="154" class="d-s7t">Typography with a voice</text>
   <text x="100" y="178" class="d-s7s">It is not the typeface: it is weight, tracking and what you refuse to allow.</text>
   <text x="842" y="154" class="d-s7r">Stripe: headlines at weight 300</text>
 
-  <rect x="80" y="212" width="760" height="74" rx="11" fill="#171a23" stroke="#2a3040"/>
+  <rect x="80" y="212" width="760" height="74" rx="11" style="fill:var(--bg);stroke:var(--border)"/>
   <text x="98" y="240" class="d-s7n">3</text>
   <text x="120" y="240" class="d-s7t">Motion as physics</text>
   <text x="120" y="264" class="d-s7s">Springs with weight and speed, not timed animations.</text>
   <text x="822" y="240" class="d-s7r">exits subtler than entrances</text>
 
-  <rect x="100" y="298" width="720" height="74" rx="11" fill="#171a23" stroke="#2a3040"/>
+  <rect x="100" y="298" width="720" height="74" rx="11" style="fill:var(--bg);stroke:var(--border)"/>
   <text x="118" y="326" class="d-s7n">4</text>
   <text x="140" y="326" class="d-s7t">Restraint</text>
   <text x="140" y="350" class="d-s7s">Design is a refusal mechanism: what you decided not to do.</text>
   <text x="802" y="326" class="d-s7r">Geist: radius 0, zero shadows</text>
 
-  <rect x="120" y="384" width="680" height="74" rx="11" fill="#141b26" stroke="#2f4a63"/>
+  <rect x="120" y="384" width="680" height="74" rx="11" style="fill:var(--primary-dim);stroke:var(--primary)"/>
   <text x="138" y="412" class="d-s7n">5</text>
   <text x="160" y="412" class="d-s7t">Invisible detail</text>
   <text x="160" y="436" class="d-s7s">What you do not see but feel: optical alignment, safety areas, states.</text>
@@ -571,26 +565,26 @@
 
 <figure class="diagram">
 <svg width="100%" viewBox="0 0 920 268" role="img" aria-label="Comparison: a conventional bold headline on black against Stripe&#x27;s light headline in navy">
-<rect x="0" y="0" width="920" height="268" fill="#0f1117" stroke="#2a3040" stroke-width="1"/>
-  <style>
-    figure.diagram .d-c7l{fill:#8b93a5;font:11px ui-monospace,Menlo,monospace;letter-spacing:.08em}
-    figure.diagram .d-c7s{fill:#8b93a5;font:12px ui-monospace,Menlo,monospace}
-    figure.diagram .d-c7n{fill:#7ee0a3;font:12px ui-monospace,Menlo,monospace}
+<style>
+figure.diagram .d-c7l{fill:var(--on-surface-variant);font-size:11px;font-family:var(--f-mono);letter-spacing:.08em}
+    figure.diagram .d-c7s{fill:var(--on-surface-variant);font-size:12px;font-family:var(--f-mono)}
+    figure.diagram .d-c7n{fill:var(--primary);font-size:12px;font-family:var(--f-mono)}
+    figure.diagram .d-panel{stroke:var(--border);stroke-width:1}
   </style>
 
   <text x="20" y="26" class="d-c7l">THE CONVENTION</text>
-  <rect x="20" y="38" width="420" height="118" rx="8" fill="#000000"/>
+  <rect x="20" y="38" width="420" height="118" rx="8" fill="#000000" class="d-panel"/>
   <text x="44" y="112" style="fill:#ffffff;font:800 42px -apple-system,Segoe UI,Roboto,sans-serif;letter-spacing:0px">Ship today</text>
   <text x="20" y="176" class="d-c7s">weight 700/800 · tracking 0 · white on black</text>
   <text x="20" y="194" class="d-c7s">The headline has to win. It competes with everything else.</text>
 
   <text x="480" y="26" class="d-c7l">STRIPE</text>
-  <rect x="480" y="38" width="420" height="118" rx="8" fill="#ffffff"/>
+  <rect x="480" y="38" width="420" height="118" rx="8" fill="#ffffff" class="d-panel"/>
   <text x="504" y="112" style="fill:#061b31;font:300 42px -apple-system,Segoe UI,Roboto,sans-serif;letter-spacing:-1.4px">Ship today</text>
   <text x="480" y="176" class="d-c7s">weight 300 · tracking −1.4px · #061b31 on white</text>
-  <text x="480" y="194" class="d-c7s">The headline does not compete: it has already won and does not need to say so.</text>
+  <text x="480" y="194" class="d-c7s">The headline does not compete: it has already won.</text>
 
-  <line x1="20" y1="216" x2="900" y2="216" stroke="#2a3040"/>
+  <line x1="20" y1="216" x2="900" y2="216" style="stroke:var(--border)"/>
   <text x="20" y="240" class="d-c7n">Same text, same box, same base typeface. Weight, tracking and ink colour change.</text>
   <text x="20" y="258" class="d-c7s">Neither is "prettier" in the abstract: each declares what kind of product it is.</text>
 </svg>
