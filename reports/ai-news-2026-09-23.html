@@ -1,296 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI News Report - 23 SEP 2026 · WEDNESDAY</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #10141a;
-            --accent-color: #00ff9d;
-            --text-primary: #e2e8f0;
-            --text-secondary: #94a3b8;
-            --card-bg: #1a202c;
-        }
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            max-width: 700px;
-            width: 100%;
-            padding: 40px 20px;
-        }
-        header {
-            border-bottom: 1px solid #2d3748;
-            padding-bottom: 40px;
-            margin-bottom: 40px;
-        }
-        .date {
-            font-family: 'JetBrains Mono', monospace;
-            color: var(--accent-color);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
-        h1 {
-            font-family: 'DM Serif Display', serif;
-            font-size: 3rem;
-            margin: 0;
-            line-height: 1.1;
-        }
-        .subtitle {
-            font-size: 1.4rem;
-            color: var(--text-secondary);
-            margin-top: 15px;
-            font-style: italic;
-        }
-        section {
-            margin-bottom: 60px;
-        }
-        .section-title {
-            font-family: 'DM Serif Display', serif;
-            font-size: 2rem;
-            color: var(--accent-color);
-            border-bottom: 2px solid var(--accent-color);
-            display: inline-block;
-            margin-bottom: 30px;
-        }
-        .news-item {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        .num {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.5rem;
-            color: var(--accent-color);
-            opacity: 0.5;
-        }
-        .news-content .title {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            display: block;
-        }
-        .news-content .desc {
-            color: var(--text-secondary);
-            font-size: 1rem;
-            margin-bottom: 10px;
-        }
-        .news-content .sources {
-            font-size: 0.85rem;
-            font-family: 'JetBrains Mono', monospace;
-        }
-        .news-content .sources a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        .stat-card {
-            background: var(--card-bg);
-            padding: 25px;
-            border-radius: 8px;
-            text-align: center;
-            border-top: 3px solid var(--accent-color);
-        }
-        .stat-label {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            display: block;
-        }
-        .stat-value {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            display: block;
-            margin-bottom: 10px;
-        }
-        .stat-context {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            line-height: 1.3;
-        }
-        .watch-item {
-            margin-bottom: 25px;
-            padding-left: 15px;
-            border-left: 2px solid var(--accent-color);
-        }
-        .watch-item .item-title {
-            font-weight: 700;
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-            display: block;
-        }
-        .watch-item .watch-desc {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-        footer {
-            text-align: center;
-            padding-top: 40px;
-            color: var(--text-secondary);
-            font-size: 0.8rem;
-            font-family: 'JetBrains Mono', monospace;
-            border-top: 1px solid #2d3748;
-        }
-        @media (max-width: 600px) {
-            h1 { font-size: 2.2rem; }
-            .news-item { flex-direction: column; gap: 5px; }
-            .num { font-size: 1.2rem; }
-        }
-    </style>
-<!-- og:start -->
-<meta name="description" content="The Age of Autonomous Agents: From assistance to full execution">
-<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-09-23.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="AI Reports — Luis GB">
-<meta property="og:title" content="AI News Daily — 23 Sep 2026">
-<meta property="og:description" content="The Age of Autonomous Agents: From assistance to full execution">
-<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-09-23.html">
-<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-09-23.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@iamluisgb">
-<meta name="twitter:creator" content="@iamluisgb">
-<meta name="twitter:title" content="AI News Daily — 23 Sep 2026">
-<meta name="twitter:description" content="The Age of Autonomous Agents: From assistance to full execution">
-<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-09-23.png">
-<!-- og:end -->
-<!-- ui:start -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../report.css">
-<script src="../report.js" defer></script>
-<!-- ui:end -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 23 Sep 2026</title>
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="date">23 SEP 2026 · WEDNESDAY</div>
-            <h1>AI Report</h1>
-            <div class="subtitle">The Age of Autonomous Agents: From assistance to full execution</div>
-        </header>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
 
-        <section>
-            <div class="section-title">Headlines</div>
-            
-            <div class="news-item">
-                <div class="num">01</div>
-                <div class="news-content">
-                    <span class="title">OpenAI unveils 'Orion', the first model with human-level reasoning</span>
-                    <div class="desc">The new model surpasses logical reasoning and complex planning benchmarks, marking a milestone in the pursuit of AGI.</div>
-                    <div class="sources"><a href="https://techcrunch.com/2026/09/23/openai-orion-release">TechCrunch</a></div>
-                </div>
-            </div>
-            
-            <div class="news-item">
-                <div class="num">02</div>
-                <div class="news-content">
-                    <span class="title">Figure AI achieves full integration in automotive assembly plants</span>
-                    <div class="desc">Figure 03 humanoid robots begin operating fully autonomously on production lines without human supervision.</div>
-                    <div class="sources"><a href="https://theverge.com/2026/09/23/figure-ai-humanoid-factory">The Verge</a></div>
-                </div>
-            </div>
-            
-            <div class="news-item">
-                <div class="num">03</div>
-                <div class="news-content">
-                    <span class="title">The EU imposes the first sanctions for 'reasoning bias'</span>
-                    <div class="desc">New EU AI Act regulations are strictly enforced on advanced reasoning models to prevent algorithmic discrimination.</div>
-                    <div class="sources"><a href="https://wired.com/2026/09/23/eu-ai-act-enforcement">Wired</a></div>
-                </div>
-            </div>
-            
-            <div class="news-item">
-                <div class="num">04</div>
-                <div class="news-content">
-                    <span class="title">AlphaFold 4 revolutionizes synthetic protein design</span>
-                    <div class="desc">DeepMind's new model predicts complex molecular interactions in milliseconds, accelerating drug development.</div>
-                    <div class="sources"><a href="https://arxiv.org/abs/2609.12345">arXiv</a></div>
-                </div>
-            </div>
-            
-            <div class="news-item">
-                <div class="num">05</div>
-                <div class="news-content">
-                    <span class="title">Nvidia announces 'Rubicon' architecture for neuromorphic computing</span>
-                    <div class="desc">New chips designed to mimic the synaptic efficiency of the human brain, drastically reducing energy consumption.</div>
-                    <div class="sources"><a href="https://techcrunch.com/2026/09/23/nvidia-rubicon-chips">TechCrunch</a></div>
-                </div>
-            </div>
-            
-        </section>
-
-        <section>
-            <div class="section-title">In Numbers</div>
-            <div class="stats-grid">
-                
-                <div class="stat-card">
-                    <span class="stat-label">Global AI Investment</span>
-                    <span class="stat-value">$1.2 Trillion</span>
-                    <div class="stat-context">Cumulative investment in AI infrastructure and development during 2026.</div>
-                </div>
-                
-                <div class="stat-card">
-                    <span class="stat-label">Energy Efficiency</span>
-                    <span class="stat-value">-40%</span>
-                    <div class="stat-context">Average reduction in data center energy consumption thanks to the new neuromorphic architecture.</div>
-                </div>
-                
-                <div class="stat-card">
-                    <span class="stat-label">Autonomous Agent Users</span>
-                    <span class="stat-value">2.5 Billion</span>
-                    <div class="stat-context">People using AI agents for daily management of complex tasks worldwide.</div>
-                </div>
-                
-            </div>
-        </section>
-
-        <section>
-            <div class="section-title">Watch</div>
-            
-            <div class="watch-item">
-                <span class="item-title">Global AI Summit (GIC) 2026</span>
-                <div class="watch-desc">The unveiling of the first hybrid AI models with quantum computing is expected.</div>
-            </div>
-            
-            <div class="watch-item">
-                <span class="item-title">Apple vs. Copyright Lawsuit</span>
-                <div class="watch-desc">The verdict on training models with private data will be decisive for the industry.</div>
-            </div>
-            
-            <div class="watch-item">
-                <span class="item-title">GPT-6 Launch</span>
-                <div class="watch-desc">Intense rumors about a massive deployment of OpenAI's next-generation models by year-end.</div>
-            </div>
-            
-            <div class="watch-item">
-                <span class="item-title">AI Integration in Power Grids</span>
-                <div class="watch-desc">Watch how AI optimizes renewable energy distribution globally.</div>
-            </div>
-            
-        </section>
-
-        <footer>
-            23 SEP 2026
-        </footer>
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">23 Sep 2026 · WEDNESDAY</div>
+          <div class="subtitle">Claude discovers a novel enzyme system · Italy votes to return to nuclear energy · Linux comes to Snapdragon X2 · Gemini 3.8 text-to-speech</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
     </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-09-23.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 23 SEP 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 4:59</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Claude discovers a novel enzyme system with CRISPR-like repeats</div>
+        <div class="desc">Anthropic reports that Claude helped uncover an enzyme system with CRISPR-like repeat structures, an example of a model contributing a new scientific finding rather than retrieving prior work.</div>
+        <div class="sources">
+          <a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49820134">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Italian parliament votes for return to nuclear energy</div>
+        <div class="desc">Parliament voted to bring nuclear power back, four decades after Italy abandoned it in a post-Chernobyl referendum.</div>
+        <div class="sources">
+          <a href="https://apnews.com/article/italy-nuclear-chernobyl-4891b6b7c7791ae84db6b0bf0f7cf567">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49819221">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Show HN: Make cursed fonts like Times New Bastard</div>
+        <div class="desc">A browser tool that splices Times New Roman with mismatched glyph styles to produce deliberately unreadable "cursed" typefaces.</div>
+        <div class="sources">
+          <a href="https://bastardica.mitpit.com">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49823738">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Linux support is coming to Snapdragon X2 series</div>
+        <div class="desc">Qualcomm announced at Snapdragon Summit that Linux support is coming to X2-series AI PCs, opening the Arm-on-desktop platform beyond Windows.</div>
+        <div class="sources">
+          <a href="https://www.qualcomm.com/news/onq/2026/09/snapdragon-summit-agentic-ai-pcs-linux">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49823582">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Claude Code reads AGENTS.md only when telemetry is on [fixed]</div>
+        <div class="desc">A developer traced Claude Code loading AGENTS.md project instructions only when telemetry was enabled; the behavior was confirmed and fixed.</div>
+        <div class="sources">
+          <a href="https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49814947">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Gemini 3.8 text-to-speech</div>
+        <div class="desc">Google added text-to-speech to Gemini 3.8, extending the model family from text generation into voice output.</div>
+        <div class="sources">
+          <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49817615">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Agent Memory with Episodic Retrieval for Financial Decision-Making</div>
+        <div class="desc">Introduces META, a multi-agent trading framework that pairs indicator agents with an episodic memory module storing past trading episodes as embeddings, reweighting signals under similar market regimes to improve directional accuracy. <strong>[agents, RAG, finance]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.28771v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Benchmarking Argumentative Behaviour of LLMs: A Study of Defences Against Character Attacks</div>
+        <div class="desc">Contrasts LLM dialogues with U.S. presidential debate corpora on ad hominem exchanges, finding safety fine-tuning pushes models toward logical defences while forgoing the ethotic counterattacks human debaters deploy strategically. <strong>[eval, safety]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.28673v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Agent-Editing World Model: Rethinking World Modeling for LLM Agents</div>
+        <div class="desc">Proposes a world model that edits agent task states instead of simulating tool responses, combining an Action Judge with State Revision to clean contaminated reasoning histories, adding 3.2–6.7 points across six agent benchmarks. <strong>[agents, world-models]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.28416v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Mizar: A 159M-Parameter Audio-Language Model for Audio Understanding</div>
+        <div class="desc">Details a 159M-parameter audio-language model pairing a compact audio encoder with SmolLM2-135M, beating prior sub-200M models on MMAU, MMAR and ADQA while answering questions on a single CPU in about a second. <strong>[audio, small-models, edge]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.28344v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Learning the Cost of Reliable Inference</div>
+        <div class="desc">Designs a reverse-auction procurement platform where LLM providers bid per task and queries route to the cheapest provider meeting a quality threshold, estimating fixed per-token pricing leaves margins of 10–71% on the table. <strong>[inference, routing, pricing]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.28322v2">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Radicle: Disclosure of Vulnerability in the Network Protocol</div>
+        <div class="desc">A coordinated disclosure covering a flaw in the Radicle network protocol, the stack behind its decentralized Git collaboration platform.</div>
+        <div class="sources">
+          <a href="https://radicle.dev/2026/09/23/disclosure-of-vulnerability-in-network-protocol">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49817524">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Abandoning Scientific Linux Was a Mistake</div>
+        <div class="desc">A retrospective argues retiring Scientific Linux, the RHEL-derived distribution built for research computing, left scientific workloads without a purpose-built platform.</div>
+        <div class="sources">
+          <a href="https://blog.melashri.net/posts/scientific-linux-mistake/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49813286">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Meta VR Glasses</div>
+        <div class="desc">Meta's VR glasses product page, which became one of the day's most-commented threads.</div>
+        <div class="sources">
+          <a href="https://www.meta.com/vr-glasses/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49824268">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Toyota is taking the Corolla electric</div>
+        <div class="desc">Electrek reports Toyota will take the Corolla, its best-selling nameplate, electric.</div>
+        <div class="sources">
+          <a href="https://electrek.co/2026/09/23/toyota-best-selling-corolla-electric/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49823568">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The Claude enzyme finding is a marker for AI in science: the shift from retrieving knowledge to proposing verifiable new results is what turns research labs into paying customers.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Agent trust is moving from demos to defaults — a coding agent that only reads your AGENTS.md with telemetry on shows that governance and disclosure now matter as much as raw capability.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">23 Sep 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 299;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
 </body>
 </html>

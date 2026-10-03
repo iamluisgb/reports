@@ -1,7 +1,21 @@
 {
-  "generated": "2026-10-03T05:58:52+00:00",
+  "generated": "2026-10-03T11:11:43+00:00",
   "count": 159,
   "reports": [
+    {
+      "file": "palantir-playbook-2026.html",
+      "type": "special",
+      "title": "What AI Startups Stole From Palantir's Playbook",
+      "date": "2026-10-03",
+      "summary": "Forward Deployed Engineers · Ontological/Semantic Layers · Agentic Orchestration on Enterprise Legacy Systems · Market Map 2025-2026",
+      "readingTime": 13,
+      "tags": [
+        "agents",
+        "business",
+        "memory"
+      ],
+      "series": "Enterprise & Adoption"
+    },
     {
       "file": "ai-news-2026-10-03.html",
       "type": "daily",
@@ -11,12 +25,23 @@
       "readingTime": 9,
       "tags": [
         "memory",
-        "models",
-        "research",
-        "agents",
-        "security"
+        "research"
       ],
       "audio": true
+    },
+    {
+      "file": "ai-engineering-adoption-frameworks-2026-en.html",
+      "type": "special",
+      "title": "How Elite Engineering Teams Are Adopting AI (2026)",
+      "date": "2026-10-03",
+      "summary": "AI Adoption Frameworks in High-Performance Engineering Teams",
+      "readingTime": 11,
+      "tags": [
+        "coding",
+        "business",
+        "security"
+      ],
+      "series": "Enterprise & Adoption"
     },
     {
       "file": "knowledge-layer-2026-10-02.html",
@@ -27,12 +52,9 @@
       "readingTime": 14,
       "tags": [
         "agents",
-        "memory",
-        "models",
-        "research",
-        "business"
+        "memory"
       ],
-      "series": "Deep Dives"
+      "series": "Memory & Knowledge"
     },
     {
       "file": "ai-news-2026-10-02.html",
@@ -44,9 +66,7 @@
       "tags": [
         "agents",
         "research",
-        "models",
-        "memory",
-        "open-source"
+        "memory"
       ],
       "audio": true
     },
@@ -59,12 +79,9 @@
       "readingTime": 11,
       "tags": [
         "models",
-        "memory",
-        "agents",
-        "infrastructure",
-        "business"
+        "memory"
       ],
-      "series": "Reliability & Security"
+      "series": "Memory & Knowledge"
     },
     {
       "file": "ai-news-2026-10-01.html",
@@ -74,11 +91,7 @@
       "summary": "Gemini 4 Argon launches · FTC opens probe into OpenAI and Anthropic · One flaw from 17T Microsoft records · Netlify moves Edge Functions to Firecracker",
       "readingTime": 7,
       "tags": [
-        "agents",
-        "models",
-        "research",
-        "memory",
-        "security"
+        "agents"
       ],
       "audio": true
     },
@@ -91,10 +104,7 @@
       "readingTime": 8,
       "tags": [
         "models",
-        "research",
-        "agents",
-        "infrastructure",
-        "open-source"
+        "research"
       ],
       "audio": true
     },
@@ -108,9 +118,7 @@
       "tags": [
         "models",
         "agents",
-        "research",
-        "coding",
-        "infrastructure"
+        "research"
       ],
       "audio": true
     },
@@ -125,8 +133,7 @@
         "models",
         "agents",
         "research",
-        "memory",
-        "coding"
+        "memory"
       ],
       "audio": true
     },
@@ -140,7 +147,6 @@
       "tags": [
         "agents",
         "research",
-        "models",
         "coding",
         "memory"
       ],
@@ -154,11 +160,7 @@
       "summary": "Anthropic's supply-chain-risk designation upheld · OpenAI agents' Hugging Face hack detailed · Plan mode declared dead · Facebook found liable for Cambridge Analytica",
       "readingTime": 7,
       "tags": [
-        "agents",
-        "models",
-        "research",
-        "memory",
-        "multimodal"
+        "agents"
       ],
       "audio": true
     },
@@ -172,9 +174,7 @@
       "tags": [
         "models",
         "agents",
-        "research",
-        "infrastructure",
-        "funding"
+        "research"
       ],
       "audio": true
     },
@@ -183,30 +183,29 @@
       "type": "daily",
       "title": "AI News Daily",
       "date": "2026-09-24",
-      "summary": "{subtitle}",
-      "readingTime": 1,
+      "summary": "Meta takes down a critical video about its AI Glasses · a YC-backed open-source IDE for thoughtful software design · feds target AI critics as foreign agents · an OpenAI agent hacked an Australian government website",
+      "readingTime": 6,
       "tags": [
         "agents",
-        "models",
-        "regulation",
-        "infrastructure",
-        "security"
-      ]
+        "research",
+        "multimodal",
+        "memory"
+      ],
+      "audio": true
     },
     {
       "file": "ai-news-2026-09-23.html",
       "type": "daily",
       "title": "AI News Daily",
       "date": "2026-09-23",
-      "summary": "The Age of Autonomous Agents: From assistance to full execution",
-      "readingTime": 1,
+      "summary": "Claude discovers a novel enzyme system · Italy votes to return to nuclear energy · Linux comes to Snapdragon X2 · Gemini 3.8 text-to-speech",
+      "readingTime": 3,
       "tags": [
         "models",
         "agents",
-        "funding",
-        "regulation",
-        "hardware"
-      ]
+        "multimodal"
+      ],
+      "audio": true
     },
     {
       "file": "ai-news-2026-09-22.html",
@@ -219,8 +218,7 @@
         "models",
         "agents",
         "research",
-        "memory",
-        "security"
+        "memory"
       ],
       "audio": true
     },
@@ -234,9 +232,7 @@
       "tags": [
         "models",
         "agents",
-        "research",
-        "memory",
-        "infrastructure"
+        "memory"
       ],
       "audio": true
     },
@@ -249,10 +245,7 @@
       "readingTime": 6,
       "tags": [
         "models",
-        "research",
-        "agents",
-        "regulation",
-        "memory"
+        "research"
       ],
       "audio": true
     },
@@ -267,8 +260,7 @@
         "models",
         "agents",
         "research",
-        "memory",
-        "multimodal"
+        "memory"
       ],
       "audio": true
     },
@@ -281,7 +273,6 @@
       "readingTime": 7,
       "tags": [
         "models",
-        "agents",
         "research",
         "memory",
         "coding"
@@ -296,9 +287,7 @@
       "summary": "Nvidia ships CUDA in Rust · a 4B model out-plans Postgres · AWS admits unrecoverable Middle East data · Flock cameras cracked open",
       "readingTime": 8,
       "tags": [
-        "models",
         "agents",
-        "research",
         "infrastructure",
         "hardware"
       ],
@@ -314,7 +303,6 @@
       "tags": [
         "models",
         "research",
-        "agents",
         "infrastructure",
         "coding"
       ],
@@ -328,11 +316,7 @@
       "summary": "OpenAI's bots knew the RubyGems vulnerability first · iOS, iPadOS and macOS 27 ship · Amazon v. Perplexity reaches the Ninth Circuit · Ubuntu 26.10 completes the Rust coreutils switch",
       "readingTime": 7,
       "tags": [
-        "models",
-        "memory",
-        "agents",
-        "research",
-        "open-source"
+        "memory"
       ],
       "audio": true
     },
@@ -345,10 +329,7 @@
       "readingTime": 7,
       "tags": [
         "models",
-        "research",
-        "agents",
-        "memory",
-        "open-source"
+        "research"
       ],
       "audio": true
     },
@@ -361,10 +342,7 @@
       "readingTime": 9,
       "tags": [
         "research",
-        "agents",
-        "models",
-        "multimodal",
-        "security"
+        "agents"
       ],
       "audio": true
     },
@@ -378,7 +356,6 @@
       "tags": [
         "research",
         "agents",
-        "models",
         "memory",
         "multimodal"
       ],
@@ -393,8 +370,6 @@
       "readingTime": 4,
       "tags": [
         "research",
-        "agents",
-        "models",
         "multimodal",
         "security"
       ],
@@ -411,8 +386,7 @@
         "models",
         "multimodal",
         "research",
-        "memory",
-        "agents"
+        "memory"
       ],
       "audio": true
     },
@@ -426,9 +400,7 @@
       "tags": [
         "models",
         "research",
-        "agents",
-        "memory",
-        "multimodal"
+        "memory"
       ],
       "audio": true
     },
@@ -442,9 +414,7 @@
       "tags": [
         "research",
         "agents",
-        "models",
-        "security",
-        "open-source"
+        "security"
       ],
       "audio": true
     },
@@ -457,10 +427,7 @@
       "readingTime": 3,
       "tags": [
         "research",
-        "multimodal",
-        "agents",
-        "models",
-        "infrastructure"
+        "multimodal"
       ],
       "audio": true
     },
@@ -473,10 +440,9 @@
       "readingTime": 3,
       "tags": [
         "research",
-        "models",
-        "agents",
         "memory",
-        "security"
+        "security",
+        "multimodal"
       ],
       "audio": true
     },
@@ -489,10 +455,9 @@
       "readingTime": 3,
       "tags": [
         "research",
-        "models",
-        "agents",
         "infrastructure",
-        "memory"
+        "memory",
+        "multimodal"
       ],
       "audio": true
     },
@@ -506,9 +471,7 @@
       "tags": [
         "research",
         "agents",
-        "models",
-        "infrastructure",
-        "memory"
+        "infrastructure"
       ],
       "audio": true
     },
@@ -521,10 +484,7 @@
       "readingTime": 3,
       "tags": [
         "models",
-        "research",
-        "agents",
-        "infrastructure",
-        "security"
+        "infrastructure"
       ],
       "audio": true
     },
@@ -538,9 +498,7 @@
       "tags": [
         "models",
         "research",
-        "agents",
-        "memory",
-        "coding"
+        "memory"
       ],
       "audio": true
     },
@@ -553,10 +511,7 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "research",
-        "agents",
-        "regulation",
-        "multimodal"
+        "research"
       ],
       "audio": true
     },
@@ -569,8 +524,6 @@
       "readingTime": 3,
       "tags": [
         "models",
-        "agents",
-        "research",
         "security",
         "memory"
       ],
@@ -584,9 +537,7 @@
       "summary": "“I just chose words carefully” · California’s Linux exemption from age verification · Terence Tao on six essential math concepts · Claude Code commits now carry session URLs",
       "readingTime": 4,
       "tags": [
-        "models",
         "research",
-        "agents",
         "infrastructure",
         "security"
       ],
@@ -602,7 +553,6 @@
       "tags": [
         "agents",
         "research",
-        "models",
         "coding",
         "memory"
       ],
@@ -616,10 +566,8 @@
       "summary": "GUIs should be fully keyboard-driven · Htmx 4.0 is released · GLM-5.3 goes open-weight · Judge rules Anthropic blacklisting unlawful",
       "readingTime": 4,
       "tags": [
-        "models",
         "research",
         "infrastructure",
-        "agents",
         "open-source"
       ],
       "audio": true
@@ -632,11 +580,7 @@
       "summary": "Nvidia agrees to buy Hugging Face for $13B · Cloudflare saves 100 TB of memory in 1.1.1.1's DNS cache · Small models have arrived · Developers answer AI layoffs with an open-source AI CEO",
       "readingTime": 4,
       "tags": [
-        "models",
-        "research",
-        "agents",
-        "hardware",
-        "open-source"
+        "models"
       ],
       "audio": true
     },
@@ -649,9 +593,7 @@
       "readingTime": 3,
       "tags": [
         "research",
-        "models",
         "infrastructure",
-        "agents",
         "multimodal"
       ],
       "audio": true
@@ -665,9 +607,7 @@
       "readingTime": 3,
       "tags": [
         "research",
-        "models",
         "hardware",
-        "agents",
         "multimodal"
       ],
       "audio": true
@@ -681,10 +621,7 @@
       "readingTime": 4,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "memory",
-        "security"
+        "memory"
       ],
       "audio": true
     },
@@ -697,10 +634,8 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "agents",
         "research",
-        "memory",
-        "regulation"
+        "memory"
       ],
       "audio": true
     },
@@ -714,9 +649,7 @@
       "tags": [
         "models",
         "research",
-        "multimodal",
-        "agents",
-        "infrastructure"
+        "multimodal"
       ],
       "audio": true
     },
@@ -731,7 +664,6 @@
         "models",
         "research",
         "multimodal",
-        "agents",
         "memory"
       ],
       "audio": true
@@ -745,10 +677,8 @@
       "readingTime": 3,
       "tags": [
         "agents",
-        "models",
         "research",
-        "multimodal",
-        "memory"
+        "multimodal"
       ],
       "audio": true
     },
@@ -763,8 +693,7 @@
         "agents",
         "models",
         "research",
-        "infrastructure",
-        "multimodal"
+        "infrastructure"
       ],
       "audio": true
     },
@@ -778,9 +707,7 @@
       "tags": [
         "models",
         "research",
-        "agents",
-        "open-source",
-        "coding"
+        "open-source"
       ],
       "audio": true
     },
@@ -794,9 +721,7 @@
       "tags": [
         "models",
         "coding",
-        "research",
-        "multimodal",
-        "agents"
+        "multimodal"
       ],
       "audio": true
     },
@@ -811,8 +736,7 @@
         "models",
         "research",
         "multimodal",
-        "infrastructure",
-        "agents"
+        "infrastructure"
       ],
       "audio": true
     },
@@ -825,10 +749,7 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "agents",
-        "research",
-        "open-source",
-        "coding"
+        "open-source"
       ],
       "audio": true
     },
@@ -841,10 +762,7 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "agents",
-        "coding",
-        "research",
-        "multimodal"
+        "coding"
       ],
       "audio": true
     },
@@ -858,9 +776,7 @@
       "tags": [
         "models",
         "research",
-        "agents",
-        "coding",
-        "security"
+        "coding"
       ],
       "audio": true
     },
@@ -873,10 +789,7 @@
       "readingTime": 3,
       "tags": [
         "models",
-        "agents",
-        "research",
-        "hardware",
-        "infrastructure"
+        "hardware"
       ],
       "audio": true
     },
@@ -889,10 +802,7 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "agents",
-        "research",
-        "memory",
-        "security"
+        "memory"
       ],
       "audio": true
     },
@@ -905,10 +815,7 @@
       "readingTime": 3,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "coding",
-        "multimodal"
+        "coding"
       ],
       "audio": true
     },
@@ -920,11 +827,7 @@
       "summary": "'Code was never the hard part' backlash · Danish students defend essays orally · My server is a phone · _for-sale DNS records",
       "readingTime": 3,
       "tags": [
-        "research",
-        "models",
-        "agents",
-        "infrastructure",
-        "multimodal"
+        "research"
       ],
       "audio": true
     },
@@ -938,9 +841,7 @@
       "tags": [
         "models",
         "open-source",
-        "security",
-        "research",
-        "agents"
+        "security"
       ],
       "audio": true
     },
@@ -954,9 +855,7 @@
       "tags": [
         "agents",
         "security",
-        "models",
-        "open-source",
-        "research"
+        "open-source"
       ],
       "audio": true
     },
@@ -970,7 +869,6 @@
       "tags": [
         "agents",
         "research",
-        "models",
         "memory",
         "security"
       ],
@@ -985,10 +883,7 @@
       "readingTime": 3,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "memory",
-        "coding"
+        "memory"
       ],
       "audio": true
     },
@@ -1002,9 +897,7 @@
       "tags": [
         "agents",
         "models",
-        "research",
-        "multimodal",
-        "security"
+        "multimodal"
       ],
       "audio": true
     },
@@ -1016,11 +909,9 @@
       "summary": "LLMs reward expertise · Qwen3.8-Max: a new bar for coding · SQLite CVEs or LLM slop? · Databricks completes Panther acquisition",
       "readingTime": 3,
       "tags": [
-        "models",
         "security",
         "multimodal",
-        "coding",
-        "agents"
+        "coding"
       ],
       "audio": true
     },
@@ -1033,8 +924,6 @@
       "readingTime": 3,
       "tags": [
         "research",
-        "agents",
-        "models",
         "hardware",
         "multimodal"
       ],
@@ -1049,7 +938,6 @@
       "readingTime": 3,
       "tags": [
         "agents",
-        "models",
         "research",
         "multimodal",
         "coding"
@@ -1065,10 +953,7 @@
       "readingTime": 3,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "memory",
-        "security"
+        "memory"
       ],
       "audio": true
     },
@@ -1080,11 +965,7 @@
       "summary": "GPT-5.6 price-performance frontier · Gemini Robotics 2 · GitHub Stacked PRs public preview · We gave GPT 5.6 Sol a real business",
       "readingTime": 3,
       "tags": [
-        "models",
-        "agents",
-        "research",
-        "security",
-        "hardware"
+        "models"
       ],
       "audio": true
     },
@@ -1098,9 +979,7 @@
       "tags": [
         "models",
         "research",
-        "agents",
-        "multimodal",
-        "business"
+        "multimodal"
       ],
       "audio": true
     },
@@ -1114,9 +993,7 @@
       "tags": [
         "models",
         "open-source",
-        "security",
-        "hardware",
-        "research"
+        "security"
       ]
     },
     {
@@ -1128,12 +1005,9 @@
       "readingTime": 16,
       "tags": [
         "agents",
-        "memory",
-        "models",
-        "infrastructure",
-        "business"
+        "memory"
       ],
-      "series": "Deep Dives"
+      "series": "Memory & Knowledge"
     },
     {
       "file": "ai-news-2026-07-27.html",
@@ -1143,11 +1017,8 @@
       "summary": "Kimi K3 Weights Released · Dell+NVDA Agentic AI · Kling AI $2.8B · GrapheneOS Citizen Charged",
       "readingTime": 4,
       "tags": [
-        "models",
         "agents",
-        "research",
-        "infrastructure",
-        "funding"
+        "infrastructure"
       ]
     },
     {
@@ -1160,9 +1031,7 @@
       "tags": [
         "models",
         "funding",
-        "research",
-        "infrastructure",
-        "open-source"
+        "infrastructure"
       ]
     },
     {
@@ -1174,10 +1043,7 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "research",
-        "multimodal",
-        "open-source",
-        "hardware"
+        "multimodal"
       ]
     },
     {
@@ -1188,11 +1054,7 @@
       "summary": "Claude Opus 5 Launch · GPT-5.6 Sol Sandbox Escape · DeepSeek V4 Stable · Kimi K3 Weights July 27",
       "readingTime": 4,
       "tags": [
-        "models",
-        "research",
-        "funding",
-        "infrastructure",
-        "multimodal"
+        "models"
       ]
     },
     {
@@ -1203,11 +1065,7 @@
       "summary": "Moonshot Nvidia Export Ban · DeepSeek Fundraise Pause · AMD Advancing AI · Context Engineering for Claude 5",
       "readingTime": 4,
       "tags": [
-        "models",
-        "research",
-        "agents",
-        "hardware",
-        "infrastructure"
+        "models"
       ]
     },
     {
@@ -1221,8 +1079,7 @@
         "models",
         "agents",
         "research",
-        "infrastructure",
-        "security"
+        "infrastructure"
       ]
     },
     {
@@ -1233,11 +1090,7 @@
       "summary": "Claude Sonnet 5 · GPT-5.6 · DeepSeek V4 · SB 315",
       "readingTime": 4,
       "tags": [
-        "models",
-        "agents",
-        "research",
-        "security",
-        "coding"
+        "models"
       ]
     },
     {
@@ -1250,9 +1103,7 @@
       "tags": [
         "models",
         "security",
-        "research",
-        "multimodal",
-        "agents"
+        "multimodal"
       ],
       "audio": true
     },
@@ -1266,9 +1117,7 @@
       "tags": [
         "models",
         "agents",
-        "research",
-        "infrastructure",
-        "coding"
+        "infrastructure"
       ]
     },
     {
@@ -1281,9 +1130,7 @@
       "tags": [
         "models",
         "agents",
-        "multimodal",
-        "research",
-        "infrastructure"
+        "multimodal"
       ]
     },
     {
@@ -1295,10 +1142,7 @@
       "readingTime": 5,
       "tags": [
         "models",
-        "agents",
-        "research",
-        "infrastructure",
-        "multimodal"
+        "agents"
       ]
     },
     {
@@ -1310,10 +1154,7 @@
       "readingTime": 15,
       "tags": [
         "agents",
-        "research",
-        "models",
-        "memory",
-        "infrastructure"
+        "research"
       ],
       "series": "Agents & Multi-Agent"
     },
@@ -1326,10 +1167,7 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "agents",
-        "research",
-        "open-source",
-        "memory"
+        "agents"
       ]
     },
     {
@@ -1342,9 +1180,7 @@
       "tags": [
         "agents",
         "regulation",
-        "coding",
-        "business",
-        "models"
+        "coding"
       ],
       "series": "Deep Dives"
     },
@@ -1358,9 +1194,7 @@
       "tags": [
         "models",
         "agents",
-        "research",
-        "open-source",
-        "security"
+        "open-source"
       ],
       "audio": true
     },
@@ -1373,8 +1207,6 @@
       "readingTime": 4,
       "tags": [
         "agents",
-        "models",
-        "research",
         "open-source",
         "infrastructure"
       ]
@@ -1388,10 +1220,7 @@
       "readingTime": 6,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "security",
-        "infrastructure"
+        "security"
       ]
     },
     {
@@ -1404,9 +1233,7 @@
       "tags": [
         "models",
         "agents",
-        "research",
-        "security",
-        "hardware"
+        "research"
       ]
     },
     {
@@ -1418,10 +1245,7 @@
       "readingTime": 6,
       "tags": [
         "agents",
-        "models",
-        "infrastructure",
-        "research",
-        "security"
+        "infrastructure"
       ]
     },
     {
@@ -1433,8 +1257,6 @@
       "readingTime": 4,
       "tags": [
         "agents",
-        "models",
-        "research",
         "infrastructure",
         "multimodal"
       ]
@@ -1448,10 +1270,8 @@
       "readingTime": 5,
       "tags": [
         "agents",
-        "models",
         "research",
-        "memory",
-        "business"
+        "memory"
       ]
     },
     {
@@ -1464,9 +1284,7 @@
       "tags": [
         "agents",
         "models",
-        "research",
-        "coding",
-        "security"
+        "research"
       ]
     },
     {
@@ -1479,9 +1297,7 @@
       "tags": [
         "agents",
         "models",
-        "research",
-        "coding",
-        "open-source"
+        "coding"
       ]
     },
     {
@@ -1495,8 +1311,7 @@
         "models",
         "agents",
         "research",
-        "memory",
-        "infrastructure"
+        "memory"
       ]
     },
     {
@@ -1509,9 +1324,7 @@
       "tags": [
         "models",
         "agents",
-        "research",
-        "infrastructure",
-        "coding"
+        "infrastructure"
       ]
     },
     {
@@ -1523,10 +1336,7 @@
       "readingTime": 4,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "coding",
-        "business"
+        "research"
       ]
     },
     {
@@ -1540,8 +1350,7 @@
         "models",
         "agents",
         "research",
-        "coding",
-        "security"
+        "coding"
       ]
     },
     {
@@ -1553,8 +1362,6 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "agents",
-        "research",
         "infrastructure",
         "memory"
       ]
@@ -1569,7 +1376,6 @@
       "tags": [
         "models",
         "agents",
-        "research",
         "coding",
         "memory"
       ]
@@ -1584,9 +1390,8 @@
       "tags": [
         "coding",
         "research",
-        "models",
-        "agents",
-        "regulation"
+        "regulation",
+        "robotics"
       ]
     },
     {
@@ -1598,10 +1403,7 @@
       "readingTime": 3,
       "tags": [
         "models",
-        "research",
-        "coding",
-        "funding",
-        "infrastructure"
+        "research"
       ]
     },
     {
@@ -1613,10 +1415,7 @@
       "readingTime": 5,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "infrastructure",
-        "hardware"
+        "infrastructure"
       ]
     },
     {
@@ -1628,10 +1427,7 @@
       "readingTime": 5,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "security",
-        "coding"
+        "research"
       ]
     },
     {
@@ -1644,9 +1440,7 @@
       "tags": [
         "agents",
         "open-source",
-        "business",
-        "models",
-        "regulation"
+        "business"
       ],
       "series": "Reliability & Security"
     },
@@ -1659,12 +1453,9 @@
       "readingTime": 7,
       "tags": [
         "agents",
-        "models",
-        "security",
-        "funding",
-        "research"
+        "security"
       ],
-      "series": "Memory & Engineering"
+      "series": "Agents & Multi-Agent"
     },
     {
       "file": "ai-news-2026-06-28.html",
@@ -1676,7 +1467,6 @@
       "tags": [
         "models",
         "infrastructure",
-        "research",
         "security",
         "coding"
       ]
@@ -1690,10 +1480,7 @@
       "readingTime": 9,
       "tags": [
         "models",
-        "infrastructure",
-        "research",
-        "memory",
-        "hardware"
+        "infrastructure"
       ],
       "series": "Models & Research"
     },
@@ -1706,12 +1493,9 @@
       "readingTime": 7,
       "tags": [
         "memory",
-        "agents",
-        "research",
-        "models",
-        "infrastructure"
+        "agents"
       ],
-      "series": "Memory & Engineering"
+      "series": "Memory & Knowledge"
     },
     {
       "file": "arxiv-trends-2026-06-27.html",
@@ -1723,9 +1507,7 @@
       "tags": [
         "agents",
         "research",
-        "models",
-        "infrastructure",
-        "memory"
+        "infrastructure"
       ],
       "series": "Models & Research"
     },
@@ -1738,10 +1520,7 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "agents",
-        "research",
-        "infrastructure",
-        "security"
+        "agents"
       ]
     },
     {
@@ -1753,10 +1532,7 @@
       "readingTime": 15,
       "tags": [
         "agents",
-        "funding",
-        "models",
-        "business",
-        "coding"
+        "funding"
       ],
       "series": "Agents & Multi-Agent"
     },
@@ -1768,11 +1544,9 @@
       "summary": "Apple pivots to M7 AI silicon · IBM sub-1nm chip · AI assistant hacking story · Framework USB-C complexity",
       "readingTime": 4,
       "tags": [
-        "models",
-        "agents",
-        "research",
         "hardware",
-        "infrastructure"
+        "infrastructure",
+        "security"
       ]
     },
     {
@@ -1784,7 +1558,6 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "agents",
         "research",
         "infrastructure",
         "hardware"
@@ -1799,10 +1572,7 @@
       "readingTime": 4,
       "tags": [
         "agents",
-        "research",
-        "models",
-        "security",
-        "memory"
+        "research"
       ]
     },
     {
@@ -1814,10 +1584,7 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "research",
-        "agents",
-        "security",
-        "infrastructure"
+        "research"
       ]
     },
     {
@@ -1829,10 +1596,7 @@
       "readingTime": 5,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "regulation",
-        "infrastructure"
+        "regulation"
       ]
     },
     {
@@ -1845,9 +1609,7 @@
       "tags": [
         "research",
         "agents",
-        "models",
-        "security",
-        "infrastructure"
+        "security"
       ]
     },
     {
@@ -1860,9 +1622,7 @@
       "tags": [
         "infrastructure",
         "funding",
-        "robotics",
-        "models",
-        "agents"
+        "robotics"
       ]
     },
     {
@@ -1876,7 +1636,6 @@
         "research",
         "agents",
         "security",
-        "models",
         "coding"
       ]
     },
@@ -1890,9 +1649,7 @@
       "tags": [
         "models",
         "research",
-        "agents",
-        "regulation",
-        "security"
+        "regulation"
       ]
     },
     {
@@ -1905,9 +1662,7 @@
       "tags": [
         "models",
         "research",
-        "infrastructure",
-        "funding",
-        "coding"
+        "infrastructure"
       ]
     },
     {
@@ -1918,9 +1673,7 @@
       "summary": "Claude Corps · White House AI Executive Order · LinkedIn Backdoor · LLM Agent RL Breakthroughs",
       "readingTime": 5,
       "tags": [
-        "models",
         "research",
-        "agents",
         "security",
         "regulation"
       ]
@@ -1936,8 +1689,7 @@
         "models",
         "research",
         "multimodal",
-        "regulation",
-        "agents"
+        "regulation"
       ]
     },
     {
@@ -1950,9 +1702,7 @@
       "tags": [
         "research",
         "models",
-        "agents",
-        "memory",
-        "funding"
+        "memory"
       ]
     },
     {
@@ -1964,10 +1714,7 @@
       "readingTime": 5,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "regulation",
-        "coding"
+        "research"
       ]
     },
     {
@@ -1980,9 +1727,7 @@
       "tags": [
         "models",
         "agents",
-        "research",
-        "memory",
-        "infrastructure"
+        "research"
       ]
     },
     {
@@ -1995,9 +1740,7 @@
       "tags": [
         "models",
         "research",
-        "agents",
-        "infrastructure",
-        "regulation"
+        "infrastructure"
       ]
     },
     {
@@ -2010,9 +1753,7 @@
       "tags": [
         "models",
         "research",
-        "agents",
-        "infrastructure",
-        "coding"
+        "infrastructure"
       ]
     },
     {
@@ -2025,9 +1766,7 @@
       "tags": [
         "research",
         "agents",
-        "models",
-        "coding",
-        "memory"
+        "coding"
       ]
     },
     {
@@ -2039,10 +1778,7 @@
       "readingTime": 3,
       "tags": [
         "research",
-        "models",
-        "agents",
-        "security",
-        "infrastructure"
+        "security"
       ]
     },
     {
@@ -2053,11 +1789,7 @@
       "summary": "ADAS, Meta Agent Search, LLM-MAS Orchestration & Production Deployment",
       "readingTime": 26,
       "tags": [
-        "agents",
-        "models",
-        "research",
-        "infrastructure",
-        "coding"
+        "agents"
       ],
       "series": "Agents & Multi-Agent"
     },
@@ -2070,8 +1802,6 @@
       "readingTime": 2,
       "tags": [
         "models",
-        "agents",
-        "research",
         "funding",
         "coding"
       ]
@@ -2085,9 +1815,7 @@
       "readingTime": 5,
       "tags": [
         "models",
-        "research",
         "regulation",
-        "agents",
         "infrastructure"
       ]
     },
@@ -2101,9 +1829,7 @@
       "tags": [
         "models",
         "funding",
-        "research",
-        "regulation",
-        "agents"
+        "regulation"
       ]
     },
     {
@@ -2114,11 +1840,8 @@
       "summary": "Gemma 4 12B Launch · Claude Containment · AI Worm Research · Post-Quantum Let's Encrypt",
       "readingTime": 4,
       "tags": [
-        "models",
         "research",
-        "agents",
-        "security",
-        "coding"
+        "security"
       ]
     },
     {
@@ -2130,10 +1853,7 @@
       "readingTime": 5,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "security",
-        "funding"
+        "research"
       ]
     },
     {
@@ -2147,8 +1867,7 @@
         "agents",
         "security",
         "regulation",
-        "business",
-        "hardware"
+        "business"
       ],
       "series": "Reliability & Security"
     },
@@ -2160,10 +1879,7 @@
       "summary": "OpenAI on AWS · Stanford CS336 · Groq Funding · Florida sues OpenAI",
       "readingTime": 3,
       "tags": [
-        "models",
         "infrastructure",
-        "agents",
-        "research",
         "multimodal"
       ]
     },
@@ -2178,7 +1894,6 @@
         "agents",
         "research",
         "security",
-        "models",
         "infrastructure"
       ]
     },
@@ -2191,10 +1906,7 @@
       "readingTime": 3,
       "tags": [
         "funding",
-        "infrastructure",
-        "models",
-        "research",
-        "agents"
+        "infrastructure"
       ]
     },
     {
@@ -2206,27 +1918,8 @@
       "readingTime": 5,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "security",
-        "memory"
+        "security"
       ]
-    },
-    {
-      "file": "palantir-playbook-2026.html",
-      "type": "special",
-      "title": "What AI Startups Stole From Palantir's Playbook",
-      "date": "2026-05-29",
-      "summary": "Forward Deployed Engineers · Ontological/Semantic Layers · Agentic Orchestration on Enterprise Legacy Systems · Market Map 2025-2026",
-      "readingTime": 13,
-      "tags": [
-        "agents",
-        "models",
-        "business",
-        "memory",
-        "funding"
-      ],
-      "series": "Enterprise & Adoption"
     },
     {
       "file": "ai-news-2026-05-29.html",
@@ -2237,10 +1930,7 @@
       "readingTime": 4,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "coding",
-        "security"
+        "research"
       ]
     },
     {
@@ -2252,8 +1942,6 @@
       "readingTime": 8,
       "tags": [
         "agents",
-        "models",
-        "research",
         "infrastructure",
         "security"
       ]
@@ -2267,9 +1955,7 @@
       "readingTime": 6,
       "tags": [
         "agents",
-        "models",
         "security",
-        "research",
         "infrastructure"
       ]
     },
@@ -2282,9 +1968,7 @@
       "readingTime": 6,
       "tags": [
         "agents",
-        "models",
         "security",
-        "research",
         "infrastructure"
       ]
     },
@@ -2296,10 +1980,8 @@
       "summary": "OpenAI IPO Filing · Anthropic Acquires Stainless · Grafana Breach via TanStack · Claude Managed Agents on Cloudflare",
       "readingTime": 5,
       "tags": [
-        "models",
         "agents",
         "security",
-        "research",
         "coding"
       ]
     },
@@ -2312,10 +1994,7 @@
       "readingTime": 6,
       "tags": [
         "agents",
-        "models",
-        "research",
-        "security",
-        "infrastructure"
+        "security"
       ]
     },
     {
@@ -2329,8 +2008,7 @@
         "models",
         "coding",
         "security",
-        "business",
-        "funding"
+        "business"
       ]
     },
     {
@@ -2342,10 +2020,7 @@
       "readingTime": 6,
       "tags": [
         "agents",
-        "models",
-        "infrastructure",
-        "research",
-        "coding"
+        "infrastructure"
       ]
     },
     {
@@ -2356,11 +2031,9 @@
       "summary": "OpenAI to confidentially file for IPO as soon as Friday · GitHub confirms breach of 3,800 repos via malicious VSCode e · Anthropic expanding to Colossus2 with GB200 infrastructure",
       "readingTime": 8,
       "tags": [
-        "models",
         "agents",
         "research",
-        "security",
-        "infrastructure"
+        "security"
       ]
     },
     {
@@ -2374,25 +2047,8 @@
         "models",
         "agents",
         "research",
-        "coding",
-        "security"
+        "coding"
       ]
-    },
-    {
-      "file": "ai-engineering-adoption-frameworks-2026-en.html",
-      "type": "special",
-      "title": "How Elite Engineering Teams Are Adopting AI (2026)",
-      "date": "2026-05-20",
-      "summary": "AI Adoption Frameworks in High-Performance Engineering Teams",
-      "readingTime": 11,
-      "tags": [
-        "coding",
-        "business",
-        "agents",
-        "models",
-        "security"
-      ],
-      "series": "Enterprise & Adoption"
     },
     {
       "file": "ai-news-2026-05-19.html",
@@ -2403,9 +2059,7 @@
       "readingTime": 5,
       "tags": [
         "agents",
-        "models",
         "security",
-        "research",
         "coding"
       ]
     },
@@ -2419,9 +2073,7 @@
       "tags": [
         "models",
         "agents",
-        "research",
-        "security",
-        "funding"
+        "security"
       ]
     },
     {
@@ -2434,9 +2086,7 @@
       "tags": [
         "funding",
         "infrastructure",
-        "business",
-        "models",
-        "regulation"
+        "business"
       ]
     },
     {
@@ -2448,10 +2098,7 @@
       "readingTime": 2,
       "tags": [
         "infrastructure",
-        "funding",
-        "models",
-        "agents",
-        "hardware"
+        "funding"
       ]
     },
     {
@@ -2465,7 +2112,6 @@
         "business",
         "funding",
         "hardware",
-        "models",
         "security"
       ]
     }

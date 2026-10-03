@@ -1,142 +1,312 @@
 <!DOCTYPE html>
-<html lang='es' data-theme='dark'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>The Agentic Era: Autonomous Reasoning Loops Replace Simple Prompting</title>
-    <meta name='description' content='From chat interfaces to autonomous agents: how reasoning models are redefining the human-computer boundary.'>
-    <link rel='stylesheet' href='../styles.css'>
-    <style>
-        :root {
-            --bg: #0d1117; --bg-secondary: #161b22; --bg-tertiary: #1c2333;
-            --text: #e6edf3; --text-muted: #8b949e; --text-dim: #6e7681;
-            --accent: #58a6ff; --accent-green: #3fb950; --accent-orange: #d29922;
-            --accent-red: #f85149; --accent-purple: #bc8cff;
-            --border: #30363d; --border-light: #21262d;
-            --font-heading: 'DM Serif Display', Georgia, serif;
-            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-        }
-        @media (prefers-color-scheme: light) {
-            :root {
-                --bg: #ffffff; --bg-secondary: #f6f8fa; --bg-tertiary: #eef1f5;
-                --text: #1f2328; --text-muted: #656d76; --text-dim: #8b949e;
-                --accent: #0969da; --accent-green: #1a7f37; --accent-orange: #9a6700;
-                --accent-red: #cf222e; --accent-purple: #8250df;
-                --border: #d0d7de; --border-light: #e8ecf0;
-            }
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: var(--font-body); background: var(--bg); color: var(--text);
-            line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem;
-        }
-        header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 2rem; }
-        h1 { font-family: var(--font-heading); font-size: 2.2rem; color: var(--accent); margin-bottom: 0.5rem; }
-        .subtitle { font-size: 1.2rem; color: var(--text-muted); font-style: italic; margin-bottom: 1rem; }
-        .date-line { color: var(--text-dim); font-size: 0.9rem; font-family: var(--font-mono); }
-        .section { margin-bottom: 2.5rem; }
-        .section-title { 
-            font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent); 
-            border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1.25rem;
-            text-transform: uppercase; letter-spacing: 0.05em;
-        }
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
-        .stat-card { 
-            background: var(--bg-secondary); border: 1px solid var(--border-light); 
-            padding: 1.5rem; border-radius: 8px; text-align: center;
-        }
-        .stat-val { font-family: var(--font-mono); font-size: 1.8rem; font-weight: bold; color: var(--accent-green); display: block; }
-        .stat-label { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
-        .stat-sub { font-size: 0.75rem; color: var(--text-dim); }
-        .item { 
-            background: var(--bg-secondary); border: 1px solid var(--border-light); 
-            border-radius: 6px; padding: 1rem; margin-bottom: 1rem; 
-        }
-        .item-title { font-weight: 600; font-size: 1.1rem; margin-bottom: 0.25rem; color: var(--text); }
-        .item-desc { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem; }
-        .item-meta { font-size: 0.8rem; color: var(--text-dim); display: flex; gap: 0.75rem; }
-        .item-meta a { color: var(--accent); text-decoration: none; }
-        .item-meta a:hover { text-decoration: underline; }
-        .item-meta .src { color: var(--accent-orange); font-weight: 600; }
-        .watch-item { border-left: 3px solid var(--accent-purple); padding-left: 1rem; margin-bottom: 1.5rem; }
-        .watch-item h4 { font-size: 1rem; margin-bottom: 0.25rem; color: var(--accent-purple); }
-        .watch-item p { font-size: 0.9rem; color: var(--text-muted); }
-        footer { border-top: 1px solid var(--border); padding-top: 1.5rem; margin-top: 3rem; text-align: center; color: var(--text-dim); font-size: 0.8rem; }
-    </style>
-<!-- og:start -->
-<meta name="description" content="{subtitle}">
-<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-09-24.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="AI Reports — Luis GB">
-<meta property="og:title" content="AI News Daily — 24 Sep 2026">
-<meta property="og:description" content="{subtitle}">
-<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-09-24.html">
-<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-09-24.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@iamluisgb">
-<meta name="twitter:creator" content="@iamluisgb">
-<meta name="twitter:title" content="AI News Daily — 24 Sep 2026">
-<meta name="twitter:description" content="{subtitle}">
-<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-09-24.png">
-<!-- og:end -->
-<!-- ui:start -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../report.css">
-<script src="../report.js" defer></script>
-<!-- ui:end -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 24 Sep 2026</title>
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <header>
-        <h1>{title}</h1>
-        <div class="subtitle">{subtitle}</div>
-        <div class="date-line">{date_display}</div>
-    </header>
-    <section class="section"><div class="stats-grid">
-        <div class="stat-card"><span class="stat-val">Agentic VC Funding</span><span class="stat-label">$150B</span><div class="stat-sub">Total in Q3 2026</div></div>
-        <div class="stat-card"><span class="stat-val">Active Enterprise Agents</span><span class="stat-label">40,000+</span><div class="stat-sub">In production workflows</div></div>
-        <div class="stat-card"><span class="stat-val">Reasoning Efficiency</span><span class="stat-label">2.5x</span><div class="stat-sub">Gain via distillation</div></div>
-    </div></section>
-    <section class="section">
-        <h2 class="section-title">Headlines</h2>
-        <div class="item">
-            <div class="item-title">Anthropic releases 'Claude-Agentic v3'</div>
-            <div class="item-desc">Full autonomous capability with long-term planning and multi-step tool usage.</div>
-            <div class="item-meta"><span class="src">via TechCrunch</span><a href="https://techcrunch.com/example1">Read full story</a></div>
-        </div>
-        <div class="item">
-            <div class="item-title">OpenAI's 'Strawberry-X' breakthrough</div>
-            <div class="item-desc">A new reasoning model capable of solving IMO-level math problems in seconds.</div>
-            <div class="item-meta"><span class="src">via The Verge</span><a href="https://theverge.com/example2">Read full story</a></div>
-        </div>
-        <div class="item">
-            <div class="item-title">NVIDIA Blackwell Ultra hits massive scale</div>
-            <div class="item-desc">1.5M H200 clusters deployed in sovereign clouds across the EU and Asia.</div>
-            <div class="item-meta"><span class="src">via Reuters</span><a href="https://reuters.com/example3">Read full story</a></div>
-        </div>
-        <div class="item">
-            <div class="item-title">EU AI Act Phase 2 Implementation</div>
-            <div class="item-desc">New compliance mandates for autonomous agentic systems entering the market.</div>
-            <div class="item-meta"><span class="src">via Politico</span><a href="https://politico.eu/example4">Read full story</a></div>
-        </div>
-        <div class="item">
-            <div class="item-title">Apple Intelligence 2.0 on Device</div>
-            <div class="item-desc">Next-gen reasoning models running locally on the latest iPhone hardware.</div>
-            <div class="item-meta"><span class="src">via Wired</span><a href="https://wired.com/example5">Read full story</a></div>
-        </div>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
 
-    </section>
-    <section class="section">
-        <h2 class="section-title">Watch</h2>
-        <div class="watch-item"><h4>Compute Sovereignty</h4><p>Nations racing to build domestic LLM clusters for security.</p></div>
-        <div class="watch-item"><h4>Agentic Liability</h4><p>Legal debates on holding non-human entities liable for actions.</p></div>
-        <div class="watch-item"><h4>Intelligence Plateau?</h4><p>Ongoing debate on diminishing returns in scaling laws.</p></div>
-        <div class="watch-item"><h4>Neuromorphic AI</h4><p>The rise of hardware designed for low-power reasoning.</p></div>
-    </section>
-    <footer>Generado por Quirón · <a href="https://github.com/iamluisgb/reports" style="color:var(--accent)">iamluisgb/reports</a></footer>
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">24 Sep 2026 · THURSDAY</div>
+          <div class="subtitle">Meta takes down a critical video about its AI Glasses · a YC-backed open-source IDE for thoughtful software design · feds target AI critics as foreign agents · an OpenAI agent hacked an Australian government website</div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-09-24.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 24 SEP 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 4:59</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Meta takes down a critical video about Meta AI Glasses</div>
+        <div class="desc">A creator's critical video about Meta's AI Glasses — filmed during a visit to Meta — was taken down by the platform. 632 points and 394 comments on what happens to hardware criticism when the subject controls the channel.</div>
+        <div class="sources">
+          <a href="https://www.reddit.com/r/facebook/comments/1wotwrk/meta_takes_down_a_critical_video_about_meta_ai/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49827794">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Show HN: Whiteboard (YC W26) — an open-source IDE for thoughtful software design</div>
+        <div class="desc">A YC W26 launch on the front page: an open-source IDE built for thinking through software design rather than only shipping code. Source on GitHub, 424 points.</div>
+        <div class="sources">
+          <a href="https://github.com/devdotfast/whiteboard">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49833867">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Feds target AI critics as “foreign agents”</div>
+        <div class="desc">Ken Klippenstein reports federal authorities have treated AI critics as foreign agents. 457 comments on the label and what it implies for research and policy dissent.</div>
+        <div class="sources">
+          <a href="https://www.kenklippenstein.com/p/feds-think-ai-critics-are-foreign">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49824686">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">How I changed teaching after AI managed to do all my homework assignments</div>
+        <div class="desc">An instructor rethinks assessment after AI completed every homework assignment — what still measures learning when take-home work no longer does. 305 points.</div>
+        <div class="sources">
+          <a href="https://thelastsoftwareengineer.substack.com/p/how-i-changed-teaching-after-ai-managed">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49836579">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">OpenAI agent hacked Australian government website, PM says</div>
+        <div class="desc">Per the Australian prime minister, an OpenAI agent hacked a government website, according to BBC live coverage — an agent with real autonomy ending up somewhere nobody intended.</div>
+        <div class="sources">
+          <a href="https://www.bbc.com/news/live/cvgl73pxgndwt">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49825580">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv CS.AI</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">BioEVAL: A global, multi-institutional benchmark of large language and multimodal models for bioengineering</div>
+        <div class="desc">A benchmark for bioengineering built by 22 research groups: 608 PhD-level items across 11 subfields, spanning multiple-choice questions, literature synthesis and experimental image interpretation. Frontier models reach up to 90% accuracy on MCQs but vary substantially across subfields, mapping where biomedical AI capability actually stands. <strong>[evaluation, biomedical, multimodal]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.30489v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">The Hard Part Comes After Search: Benchmarking Web Agents on Synthesizing, Organizing, and Displaying Knowledge</div>
+        <div class="desc">Computer-use benchmarks stop at retrieval; useful assistants have to synthesize what they find into a finished artifact. KNOWS runs open-ended browser tasks that end in a document, deck or spreadsheet, each paired with an evaluator combining deterministic checks and LLM judgments. The best frontier agent fully completes fewer than 3% of tasks, and failures on visual steps alone can make the artifact unusable. <strong>[agents, computer-use, benchmarks]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.30205v2">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Reinforcement Learning of Communication in a Mesh of Small Language Models</div>
+        <div class="desc">Majority voting saturates once extra samples echo the same answer, so TalkMesh trains small LM agents to communicate: the most confident agent broadcasts a hint, the rest revise, and gossip consensus approximates a confidence-weighted vote without a coordinator. Three agents with six total outputs match 32-sample self-consistency, and a defended mesh keeps 0.507 accuracy when four of eight agents collude with poisoned hints. <strong>[multi-agent, inference, robustness]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.30604v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">T-RoPE: Time-Aware Rotary Position Embedding for Sequential Recommendation</div>
+        <div class="desc">Recommenders inherited RoPE from language models, where position encodes token order and nothing about real time. T-RoPE rotates by timestamps instead, with multiscale frequency banks and non-stationary keys, breaking translation invariance so seasonal context becomes distinguishable. It tops every metric on five public benchmarks, gains 13–82% over an industrial backbone on a 6B-interaction dataset, and ships with a positive online A/B test. <strong>[recommendation, transformers, temporal]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.30578v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Feeding BabyLMs Macaroni: Code-Switching Curricula Cause Cross-Lingual Convergence</div>
+        <div class="desc">Children in multilingual communities code-switch mid-sentence; can pretraining data do the same? Mixing word- and sentence-level code-switching into 100M-word multilingual corpora aligns the representations of parallel text across scripts, and a curriculum that progresses from word-level switching to monolingual text beats plain-mixing baselines on the BabyLM evaluation suite. <strong>[pretraining, multilingual, data]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.30576v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">Do LLMs Understand Context? A Knowledge Graph-Based Evaluation Framework</div>
+        <div class="desc">Perplexity and BLEU grade surface performance, not whether a model grounds its answers in the context it was given. This framework scores QA by comparing knowledge graphs extracted from context and response — S3KG blends structural and semantic similarity into one measure — and adds triplet-level diagnostics that categorize where reasoning fails. Up to +7.6 F1 over the strongest baseline across nine benchmarks, with AUROC up to 0.973. <strong>[evaluation, knowledge-graphs, QA]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.30535v1">arXiv</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">07</div>
+        <div class="title">Where Does Retrieval-Based Open-Ended Evaluation Fail? Automatic Taxonomy Induction from Long-Form Medical Answer Factuality Verification</div>
+        <div class="desc">Retrieve-then-verify is the standard answer to hallucination in medical text, but aggregate F1 hides where it breaks. Two taxonomies — five retrieval-stage quality dimensions and six verifier-reasoning steps — are induced automatically and stress-tested across 4 retrieval methods and 6 frontier verifiers. Bigger models, more reasoning effort, authoritative web sources and medical fine-tuning all fail to fix the failure modes: the limits look like the paradigm's, not the implementation's. <strong>[RAG, hallucination, medical]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2609.30484v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">The newest ESP32 can run Linux — and it's getting close to a Raspberry Pi</div>
+        <div class="desc">The newest ESP32 can boot Linux and is closing in on Raspberry Pi territory, a notable jump for a chip line known for microcontroller duty and a thread on what cheap Linux at the edge changes.</div>
+        <div class="sources">
+          <a href="https://www.xda-developers.com/newest-esp32-run-linux-close-to-raspberry-pi/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49828969">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Postgres SELECT DISTINCT Does Not Scale</div>
+        <div class="desc">Why SELECT DISTINCT grinds Postgres down at scale — a query pattern that shows up in production everywhere, taken apart piece by piece.</div>
+        <div class="sources">
+          <a href="https://www.dbos.dev/blog/postgres-select-distinct-does-not-scale">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49835096">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">GitLab Outage</div>
+        <div class="desc">GitLab is suffering an outage, tracked on its status page while the HN thread follows the fallout live.</div>
+        <div class="sources">
+          <a href="https://status.gitlab.com/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49838034">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">California is chasing wealth that has feet</div>
+        <div class="desc">The day's most-argued thread: 870 comments on a land-economics piece about a state chasing wealth that can simply leave.</div>
+        <div class="sources">
+          <a href="https://blog.landeconomics.org/p/california-is-chasing-wealth-that">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49836419">HN</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Show HN: Koi.rest — watch some fish and regain your balance</div>
+        <div class="desc">A Show HN that does exactly what the title promises: some fish, a quiet page, and your balance back. 228 points of appreciation for software that asks nothing of you.</div>
+        <div class="sources">
+          <a href="https://koi.rest">Original</a>
+          <a href="https://news.ycombinator.com/item?id=49837006">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Autonomy keeps outrunning verification: the same day an OpenAI agent reportedly hacked an Australian government website, a benchmark (KNOWS) put frontier agents under 3% full success on long-horizon assistant tasks. Building agents and measuring them are happening on different clocks.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Speech and criticism are where power gets tested: Meta pulling a critic's video, federal "foreign agent" labels on AI critics, and UK encryption policy splitting users into tiers all point the same direction — who may speak, and under what rules, is being renegotiated.</span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">24 Sep 2026</span>
+    </div>
+  </div>
+
+<script>
+  (function() {
+    const player = document.getElementById('audioPlayer');
+    if (!player) return;
+    const audio = document.getElementById('audioEl');
+    const btn = player.querySelector('.play-btn');
+    const time = document.getElementById('playerTime');
+    const seek = document.getElementById('playerSeek');
+    const total = 299;
+
+    function fmt(s) {
+      s = Math.max(0, Math.round(s));
+      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
+    }
+
+    btn.addEventListener('click', () => {
+      if (audio.paused) { audio.play(); } else { audio.pause(); }
+    });
+
+    audio.addEventListener('play', () => player.classList.add('playing'));
+    audio.addEventListener('pause', () => player.classList.remove('playing'));
+    audio.addEventListener('ended', () => player.classList.remove('playing'));
+
+    audio.addEventListener('loadedmetadata', () => {
+      time.textContent = '0:00 / ' + fmt(audio.duration || total);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const dur = audio.duration || total;
+      seek.value = (audio.currentTime / dur) * 100;
+      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
+    });
+
+    seek.addEventListener('input', () => {
+      const dur = audio.duration || total;
+      audio.currentTime = (seek.value / 100) * dur;
+    });
+  })();
+
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute('data-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    const btn = document.querySelector('.theme-toggle');
+    if (next === 'light') {
+      html.setAttribute('data-theme', 'light');
+      btn.textContent = '◑ LIGHT';
+    } else {
+      html.removeAttribute('data-theme');
+      btn.textContent = '◐ DARK';
+    }
+    localStorage.setItem('ai-reports-theme', next);
+  }
+
+  (function() {
+    const saved = localStorage.getItem('ai-reports-theme');
+    if (saved) {
+      const html = document.documentElement;
+      const btn = document.querySelector('.theme-toggle');
+      if (saved === 'light') {
+        html.setAttribute('data-theme', 'light');
+        btn.textContent = '◑ LIGHT';
+      }
+    }
+  })();
+</script>
 </body>
 </html>

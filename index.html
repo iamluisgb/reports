@@ -120,7 +120,6 @@
 
 <script>
   const MANIFEST_URL = 'reports.json';
-  const UBIQ = new Set(['models', 'agents', 'research']);   // on >90% of reports: they don't discriminate
   const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   const MONTHS_L = ['January','February','March','April','May','June','July','August','September','October','November','December'];
   const WD = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -184,7 +183,7 @@
   }
   function renderTopics() {
     const counts = {};
-    reports.forEach(r => r.tags.forEach(t => { if (!UBIQ.has(t) || active.has(t)) counts[t] = (counts[t] || 0) + 1; }));
+    reports.forEach(r => r.tags.forEach(t => { counts[t] = (counts[t] || 0) + 1; }));
     $('topics').innerHTML = '<span class="eyebrow">Topics</span>' +
       Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([t, n]) =>
         `<button class="chip" type="button" data-t="${esc(t)}" aria-pressed="${active.has(t)}">${esc(topicLabel(t))}<span>${n}</span></button>`).join('') +
@@ -360,7 +359,7 @@
       <div class="month">
         <div class="month-h"><h5>${g.name}</h5><span class="eyebrow">${g.items.length}</span></div>
         ${g.items.map(r => {
-          const d = pd(r.date), tags = r.tags.filter(t => !UBIQ.has(t)).slice(0, 2).map(topicLabel).join(' · ');
+          const d = pd(r.date), tags = r.tags.slice(0, 2).map(topicLabel).join(' · ');
           const parts = isBroken(r) ? ['AI News Daily'] : r.summary.split(' · ');
           return `<a class="row" href="${href(r)}" data-file="${esc(r.file)}" ${vt(r)}>
             <span class="d"><b>${String(d.getDate()).padStart(2, '0')}</b> ${WD[d.getDay()].slice(0, 3)}</span>

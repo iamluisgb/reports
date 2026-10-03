@@ -48,8 +48,15 @@ ANY_TAG = re.compile(r"<[^>]+>")
 # Topic taxonomy for the homepage filter. Each topic maps to keywords matched
 # (whole-word, case-insensitive) against the report's full text — not just the
 # title — so daily reports get real topics instead of a generic "news" tag.
-# A report keeps its top MAX_TAGS topics by match count. Order here breaks ties.
-MAX_TAGS = 5
+# Raw counts can't rank topics on their own: every daily has a papers section and
+# talks about models, so "models"/"agents"/"research" used to land on ~95% of
+# reports. A topic is kept only when it has at least MIN_HITS matches, makes up
+# at least MIN_SHARE of the report's topic matches, and takes a larger share than
+# it does on the average report. Survivors are ranked by match count, up to
+# MAX_TAGS. Order here breaks ties.
+MAX_TAGS = 4
+MIN_HITS = 3
+MIN_SHARE = 0.08
 
 TOPIC_KEYWORDS: dict[str, list[str]] = {
     "agents": ["agent", "agentic", "autonomous", "mcp", "agent2agent", "a2a", "multi-agent"],
@@ -150,27 +157,36 @@ def plain_text(content: str) -> str:
     return html.unescape(ANY_TAG.sub(" ", TAG_STRIP.sub(" ", content)))
 
 
-def derive_tags(text: str) -> list[str]:
-    """Top topics by keyword match count over the report's full text."""
-    scores: dict[str, int] = {}
-    for topic, patterns in TOPIC_PATTERNS.items():
-        count = sum(len(p.findall(text)) for p in patterns)
-        if count:
-            scores[topic] = count
-    # Sort by score desc, then by taxonomy order (stable) for deterministic ties.
+def topic_counts(text: str) -> dict[str, int]:
+    """Keyword matches per topic over the report's full text."""
+    return {topic: sum(len(p.findall(text)) for p in patterns)
+            for topic, patterns in TOPIC_PATTERNS.items()}
+
+
+def assign_tags(counts: list[dict[str, int]]) -> list[list[str]]:
+    """Per report, the topics it covers more than the average report does."""
+    shares = [{t: c / max(sum(cs.values()), 1) for t, c in cs.items()} for cs in counts]
+    n = max(len(shares), 1)
+    mean = {t: sum(s[t] for s in shares) / n for t in TOPIC_KEYWORDS}
     order = list(TOPIC_KEYWORDS)
-    ranked = sorted(scores, key=lambda t: (-scores[t], order.index(t)))
-    return ranked[:MAX_TAGS]
+    out = []
+    for cs, share in zip(counts, shares):
+        ranked = sorted(cs, key=lambda t: (-cs[t], order.index(t)))
+        tags = [t for t in ranked
+                if cs[t] >= MIN_HITS and share[t] >= MIN_SHARE and share[t] >= mean[t]]
+        out.append(tags[:MAX_TAGS] or ranked[:1])  # never leave a report untagged
+    return out
 
 
 # Curated series used to group special reports on the homepage. First matching
 # rule wins, so order matters (more specific buckets first). Future specials are
 # auto-assigned; anything unmatched falls into SERIES_FALLBACK.
 SERIES_RULES = [
-    ("Memory & Engineering", ["memory", "skill"]),
+    ("Memory & Knowledge", ["memory", "knowledge", "context lake", "context layer",
+                            "ontolog", "semantic layer", "graphrag"]),
     ("Reliability & Security", ["sre", "aiops", "security", "reliability", "observability"]),
     ("Agents & Multi-Agent", ["multi-agent", "agentic system", "run businesses",
-                               "autonomous executive", "adas", "orchestration"]),
+                               "autonomous executive", "adas", "orchestration", "skill"]),
     ("Models & Research", ["model", "architecture", "frontier", "arxiv", "trend",
                            "papers", "benchmark"]),
     ("Enterprise & Adoption", ["enterprise", "adoption", "palantir", "playbook",
@@ -206,7 +222,7 @@ def build_entry(path: Path) -> dict:
         "date": resolve_date(name, content, path),
         "summary": summary,
         "readingTime": reading_time(content),
-        "tags": derive_tags(plain_text(content)),
+        "tags": [],  # filled corpus-wide by main(); see assign_tags()
     }
     if kind == "special":
         entry["series"] = derive_series(name, title)
@@ -216,11 +232,13 @@ def build_entry(path: Path) -> dict:
 
 
 def main() -> None:
-    reports = sorted(
-        (build_entry(p) for p in REPORTS_DIR.glob("*.html")),
-        key=lambda r: (r["date"], r["file"]),
-        reverse=True,
-    )
+    paths = sorted(REPORTS_DIR.glob("*.html"))
+    entries = [build_entry(p) for p in paths]
+    counts = [topic_counts(plain_text(p.read_text(encoding="utf-8", errors="replace")))
+              for p in paths]
+    for entry, tags in zip(entries, assign_tags(counts)):
+        entry["tags"] = tags
+    reports = sorted(entries, key=lambda r: (r["date"], r["file"]), reverse=True)
 
     manifest = {
         "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
