@@ -59,3 +59,13 @@ jobs:
             git commit -m "🤖 Rebuild manifest, RSS, OG images and social meta"
             git push
           fi
+
+      # Last, so a bad report still gets its manifest rebuilt — but the run goes
+      # red (and GitHub emails) when a pushed daily shows fabrication signals.
+      - name: Check pushed dailies for fabrication signals
+        if: ${{ github.event_name == 'push' && !startsWith(github.event.before, '0000000') }}
+        run: |
+          mapfile -t changed < <(git diff --name-only --diff-filter=AM \
+            "${{ github.event.before }}" "${{ github.sha }}" -- 'reports/ai-news-*.html')
+          [ ${#changed[@]} -eq 0 ] && { echo "No dailies in this push."; exit 0; }
+          python3 scripts/check_report.py "${changed[@]}"

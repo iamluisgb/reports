@@ -11,9 +11,12 @@ name: Daily report
 # list the report at all. So the build steps run here, in the same job.
 
 on:
+  # The primary trigger is a workflow_dispatch sent at 07:00 UTC by the Hermes
+  # watchdog (~/.hermes/scripts/ai_news_watchdog.sh), which then checks the result
+  # and reports on Telegram. This schedule is only a backstop: GitHub has been
+  # starting it 5-6 hours late (11:30-12:30 UTC), so when it fires the day is
+  # normally already published and the run skips cleanly.
   schedule:
-    # 06:17 UTC. Not on the hour: GitHub queues scheduled workflows hardest at
-    # :00, and a cron here can already drift 5-30 minutes under load.
     - cron: '17 6 * * *'
   workflow_dispatch:
     inputs:
@@ -67,14 +70,21 @@ jobs:
             exit 0
           fi
           if [ -f "reports/ai-news-$DAY.html" ]; then
+            if [ "${{ github.event_name }}" = "schedule" ]; then
+              echo "::notice::reports/ai-news-$DAY.html already published — nothing to do"
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
             echo "::error::reports/ai-news-$DAY.html already exists — delete it to rebuild"
             exit 1
           fi
 
       - name: Collect candidates
+        if: ${{ steps.resolve.outputs.skip != 'true' }}
         run: python3 scripts/collect.py --day "${{ steps.resolve.outputs.day }}" --out /tmp/candidates.json
 
       - name: Write the report
+        if: ${{ steps.resolve.outputs.skip != 'true' }}
         env:
           NAN_API_KEY: ${{ secrets.NAN_API_KEY }}
         run: |
@@ -85,8 +95,12 @@ jobs:
             python3 -u scripts/write_report.py --bundle /tmp/candidates.json
           fi
 
+      - name: Check for fabrication signals
+        if: ${{ !inputs.dry_run && steps.resolve.outputs.skip != 'true' }}
+        run: python3 scripts/check_report.py "reports/ai-news-${{ steps.resolve.outputs.day }}.html"
+
       - name: Audio briefing
-        if: ${{ !inputs.skip_audio && !inputs.dry_run }}
+        if: ${{ !inputs.skip_audio && !inputs.dry_run && steps.resolve.outputs.skip != 'true' }}
         env:
           NAN_API_KEY: ${{ secrets.NAN_API_KEY }}
         # A failed briefing must not cost us the report, which is already on
@@ -96,20 +110,20 @@ jobs:
         run: python3 scripts/make_audio.py "${{ steps.resolve.outputs.day }}"
 
       - name: Rebase onto anything pushed meanwhile
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && steps.resolve.outputs.skip != 'true' }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git pull --rebase --autostash origin master
 
       - name: Rebuild manifest, RSS, sitemap and social cards
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && steps.resolve.outputs.skip != 'true' }}
         run: |
           python3 scripts/generate_manifest.py
           python3 scripts/build_social.py
 
       - name: Commit and push
-        if: ${{ !inputs.dry_run }}
+        if: ${{ !inputs.dry_run && steps.resolve.outputs.skip != 'true' }}
         run: |
           DAY="${{ steps.resolve.outputs.day }}"
           git add reports audio reports.json sitemap.xml rss.xml og
@@ -121,7 +135,7 @@ jobs:
           git push
 
       - name: Summary
-        if: ${{ always() && !inputs.dry_run }}
+        if: ${{ always() && !inputs.dry_run && steps.resolve.outputs.skip != 'true' }}
         run: |
           DAY="${{ steps.resolve.outputs.day }}"
           {

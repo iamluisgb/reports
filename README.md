@@ -21,6 +21,7 @@ rss.xml                 Generated feed
 scripts/collect.py             Gathers the day's candidates (HN + arXiv), no LLM
 scripts/write_report.py        Writes the report and briefing script via NaN
 scripts/generate_manifest.py   Builds the three generated files above
+scripts/check_report.py        Fails a daily that shows fabrication signals
 .github/workflows/daily.yml    Builds and publishes the daily report on a cron
 .github/workflows/build.yml    Runs the generator on every push to reports/
 ```
@@ -39,7 +40,8 @@ and `rss.xml`. A report is **daily** if its filename starts with `ai-news-`, oth
 
 ## The daily build
 
-`daily.yml` runs at 06:17 UTC and does the whole pipeline unattended:
+`daily.yml` is dispatched at 07:00 UTC by the Hermes watchdog (its own cron is a
+late-running backstop) and does the whole pipeline unattended:
 
 ```
 collect.py  →  write_report.py  →  make_audio.py  →  generate_manifest + build_social  →  commit
@@ -71,7 +73,7 @@ NAN_API_KEY=... python3 scripts/write_report.py --bundle /tmp/c.json --dry-run
 
 ### Known limits
 
-- It sees Hacker News once, at 06:17. A story that breaks later, or that is
+- It sees Hacker News once, at ~07:00. A story that breaks later, or that is
   still at five points on page two, can be missed entirely — this happened on
   13 Sep with the RubyGems attribution. Judgement about *what* to cover is only
   as good as the snapshot.

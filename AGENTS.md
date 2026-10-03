@@ -7,12 +7,23 @@ generated automatically by CI.
 ## Who writes what
 
 Since 13 Sep 2026 the daily report builds itself: `.github/workflows/daily.yml`
-runs `collect.py` and `write_report.py` at 06:17 UTC. You are writing a report
-by hand when the cron failed, when a day needs redoing, or for a **special**
-report — the automation only ever produces dailies.
+runs `collect.py` and `write_report.py`. It is the **only** producer of dailies.
+The Hermes watchdog dispatches it at 07:00 UTC and reports the outcome on
+Telegram; its own `schedule` is a backstop that GitHub starts hours late and that
+skips when the day is already published.
 
-Before writing one by hand, check whether `reports/ai-news-<day>.html` already
-exists; the workflow refuses to overwrite, and so should you.
+**Never write a daily by hand.** On 23-24 Sep 2026 two hand-written dailies with
+invented stories and `example.com` links reached production. If the workflow
+fails, re-dispatch it (`gh workflow run daily.yml -f day=YYYY-MM-DD`); for a past
+day, use `scripts/backfill/` (real archival sources, `verify_report.py`). Hand
+authoring is for **special** reports only.
+
+Every daily must pass `python3 scripts/check_report.py reports/ai-news-<day>.html`
+(placeholders, placeholder links, missing Hacker News item links). `daily.yml`
+runs it before committing and `build.yml` runs it on every pushed daily.
+
+Before rebuilding a day, delete `reports/ai-news-<day>.html` (and its `audio/`
+files); the workflow refuses to overwrite, and so should you.
 
 ## Publishing a report
 

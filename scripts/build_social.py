@@ -23,6 +23,7 @@ Run from the repo root:  python3 scripts/build_social.py
 
 from __future__ import annotations
 
+import hashlib
 import html
 import re
 from datetime import datetime
@@ -214,8 +215,31 @@ def _fit_title(draw, text, fonts, max_w, max_lines, start=78, min_size=46):
     return font, _wrap(draw, text, font, max_w)[:max_lines], min_size
 
 
+# A card is redrawn whenever the text it shows changes, not only when the PNG is
+# missing: a rebuilt day used to keep its old card forever. The fingerprint of
+# the drawn text lives in the PNG's own metadata, so there is no sidecar to sync.
+OG_KEY = "og-fingerprint"
+
+
+def card_fingerprint(entry: dict) -> str:
+    text = "\x1f".join([entry["type"], entry["date"], entry["title"], social_description(entry)])
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
+
+
+def card_is_current(entry: dict, out: Path) -> bool:
+    if not out.exists():
+        return False
+    from PIL import Image
+    try:
+        with Image.open(out) as img:
+            return img.text.get(OG_KEY) == card_fingerprint(entry)
+    except OSError:
+        return False
+
+
 def make_og_image(entry: dict, out: Path) -> None:
     from PIL import Image, ImageDraw
+    from PIL.PngImagePlugin import PngInfo
 
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
@@ -256,8 +280,10 @@ def make_og_image(entry: dict, out: Path) -> None:
     hw = d.textlength(handle, font=ffont)
     d.text((W - MARGIN - hw, H - 70), handle, font=ffont, fill=MUTED)
 
+    meta = PngInfo()
+    meta.add_text(OG_KEY, card_fingerprint(entry))
     out.parent.mkdir(parents=True, exist_ok=True)
-    img.save(out, "PNG")
+    img.save(out, "PNG", pnginfo=meta)
 
 
 def make_default_image(out: Path) -> None:
@@ -303,7 +329,7 @@ def main() -> None:
             make_default_image(default)
         for entry in entries:
             out = OG_DIR / (Path(entry["file"]).stem + ".png")
-            if not out.exists():
+            if not card_is_current(entry, out):
                 make_og_image(entry, out)
                 images += 1
 

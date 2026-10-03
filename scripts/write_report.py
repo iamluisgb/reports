@@ -42,6 +42,11 @@ MODELS = os.environ.get("NAN_MODELS", "glm5.3-flash,deepseek-v4-flash").split(",
 # keeping each call's job small, and complete() treats a short answer as a
 # failure rather than publishing it.
 CALL_TOKENS = 16000
+# ...except one: capping the reasoning itself. Without it glm5.3-flash spent all
+# 16000 tokens thinking on the news and audio passes (finish=length, 0 chars) and
+# on 29 Sep deepseek did the same, failing the day. Both accept the parameter;
+# "medium" cut a test prompt's reasoning ~5x on glm. Empty string = don't send it.
+REASONING_EFFORT = os.environ.get("NAN_REASONING_EFFORT", "medium")
 CALL_MIN_CHARS = 400           # below this an answer is reasoning, not output
 MIN_REPORT_CHARS = 1200
 # The spoken briefing should run four to five minutes. Kokoro reads these
@@ -262,9 +267,12 @@ def complete(prompt, key, label, tries=2, parse=None):
         for attempt in range(tries):
             started = time.time()
             try:
-                data = post({"model": model, "temperature": 0.6,
-                             "max_tokens": CALL_TOKENS,
-                             "messages": [{"role": "user", "content": prompt}]}, key)
+                payload = {"model": model, "temperature": 0.6,
+                           "max_tokens": CALL_TOKENS,
+                           "messages": [{"role": "user", "content": prompt}]}
+                if REASONING_EFFORT:
+                    payload["reasoning_effort"] = REASONING_EFFORT
+                data = post(payload, key)
             except Exception as exc:
                 detail = getattr(exc, "read", lambda: b"")()[:160].decode("utf-8", "replace")
                 print(f"  ! {label}: {model} failed ({exc}) {detail}", file=sys.stderr)
