@@ -1,0 +1,25 @@
+[HOST_A] AI News Daily, Saturday the third of October, twenty twenty-six. A court has accepted the Electronic Frontier Foundation's argument that Utah's age-verification law is a technical impossibility — it demands something no virtual private network can deliver. The ruling drew five hundred and seventy-seven points and two hundred and fifty-four comments on Hacker News, the day's top story.
+
+[HOST_B] What the court conceded is the interesting part. Age verification through a V P N is not merely impractical, it is incoherent — the relay cannot know who is behind it. Watch for an appeal or a legislative rewrite, and for the same impossibility argument surfacing against other states' age-verification laws. A second court adopting the reasoning spreads it — a stay would revive the law.
+
+[HOST_A] Three results on agent memory landed today. Causal Memory Policy shows memory utility is unidentified unless retrieval is randomised — estimates built on retrieved memories alone fit an artefact of the retriever. A second paper argues compaction should preserve a context graph rather than summarise history. Decision Titan grafts test-time training layers onto a Decision Transformer and writes episodic memory into parameters at inference.
+
+[HOST_B] They converge: the value of stored state depends on queries nobody can predict, so compressing eagerly discards the wrong things. The actionable move is instrumenting retrieval propensities before buying another summariser. Watch whether a mainstream agent framework ships graph-preserving compaction — that settles the argument, and no framework trying kills it.
+
+[HOST_A] OpenMTB-Audit ran five hundred synthetic non-small-cell lung cancer cases, five adversarial error categories, eight L L M configurations. Every configuration lost the partially-supported label in eighty-three point three to one hundred percent of true cases — high safety scores bought through label collapse. Separately, a link-inference attack recovers edges publishers deleted before releasing a knowledge graph, voiding redaction as practised.
+
+[HOST_B] Both are proofs that a trusted proxy measures something other than what it claims. An eval that rewards refusal measures compliance, not judgement. Cloudflare's new O H T T P gateway is the constructive version of that lesson — an Oblivious H T T P relay that strips client identity before requests reach the origin, rather than asking you to audit the proxy. Twenty-eight points so far, which understates it.
+
+[HOST_A] Shipments. Black Forest Labs released Flux three Image. OpenAI added Sites, publishing a site straight out of a conversation — two hundred and forty-three points and two hundred and thirty comments. Salvatore Sanfilippo, the creator of Redis, shipped ds4 for local inference. A budget system beat the best human Stratego player, on a game where most of the board is hidden. And a month of real coding against G L M five point three Flash.
+
+[HOST_B] Capability per dollar is no longer the constraint. Training-free sparsity now allocates budget per block rather than uniformly, because block sensitivity differs enough that a flat budget is wasted compute. That moves engineering to the gates around the model. Mimir's irrigation agents spend their design on a deterministic simulator that checks every proposal before execution — the model proposes, the physics disposes. Greg Kroah-Hartman's talk takes the same position from the maintainer's seat.
+
+[HOST_A] Infrastructure. Supabase is acquiring Turso, the SQLite-for-the-edge outfit — one hundred and ninety-seven points, one hundred and five comments. Zig released version nought point seventeen point nought. And a write-up of running Linux on Apple's M four silicon, where the chip's memory behaviour shapes the operating-system work. One hundred and sixty-seven points.
+
+[HOST_B] Watch Supabase's plan for Turso and Turso's release cadence — standalone product or folded-in feature. Apple also reworked Full Disk Access in mac O S, and the ninety-nine comment thread is mostly people whose tooling depends on current behaviour. Watch the follow-up developer notes and the betas for a migration path. Silence from Apple is the bad sign.
+
+[HOST_A] Across the rest of the papers: entity resolution by graph clustering for population-scale administrative data, L L M-assisted discovery of typed links between ontologies, and Explore-on-Graph for question answering over incomplete knowledge graphs. On Hacker News: Mike Tomlin spent twelve years building a Minecraft city, the Shimano Bicycle Museum review, Halmos on von Neumann from nineteen seventy-three, and twelve years of telescope images of one star and four planets.
+
+[HOST_B] And the vote on which of Hacker News' challenges for AI have been met is still open — one hundred and ninety-six points, two hundred and fifty-nine comments. Watch which goalposts that crowd concedes as met. A concession from them outsignals any benchmark, and the final tally settles it, not the loudest comment.
+
+[HOST_A] The full detail — every paper, every thread, all the numbers — is in the written report at AI News Daily. That is today's briefing.
