@@ -89,53 +89,55 @@
 <p>Until recently a website had two audiences: the person and the search engine. In 2026 there are four layers of work, and the bottom two did not exist before. The teams with an edge are not investing in being <em>read</em> by machines — they are investing in being <em>executed</em> and <em>billed</em> by them.</p>
 
 <figure class="diagram">
-<svg width="100%" viewBox="0 0 920 560" role="img" aria-label="Diagram: four layers of an agent-native web — discover, understand, act, measure and monetise">
-<defs>
-    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" style="fill:var(--primary)"/>
-    </marker>
-  </defs>
+<svg width="100%" viewBox="0 0 920 500" role="img" aria-label="Diagram: four layers of an agent-native web on a single rail — discover, understand, act, measure and monetise, with the 2026 break halfway down">
   <style>
-figure.diagram .d-bt{fill:var(--on-surface);font-weight:600;font-size:16px;font-family:var(--f-body)}
-    figure.diagram .d-bs{fill:var(--on-surface-variant);font-size:13px;font-family:var(--f-mono)}
-    figure.diagram .d-bl{fill:var(--primary);font-weight:600;font-size:11px;font-family:var(--f-mono);letter-spacing:.1em}
-    figure.diagram .d-box{fill:var(--bg);stroke:var(--border);stroke-width:1.2;rx:12}
-    figure.diagram .d-box2{fill:var(--bg);stroke:var(--border);stroke-width:1.2;rx:12}
-    figure.diagram .d-acc{fill:var(--primary-dim);stroke:var(--primary);stroke-width:1.2;rx:12}
+figure.diagram .rl-e{fill:var(--on-surface-variant);font-weight:600;font-size:11px;font-family:var(--f-mono);letter-spacing:.1em}
+    figure.diagram .rl-ea{fill:var(--primary);font-weight:600;font-size:11px;font-family:var(--f-mono);letter-spacing:.1em}
+    figure.diagram .rl-t{fill:var(--on-surface);font-weight:600;font-size:16px;font-family:var(--f-body)}
+    figure.diagram .rl-d{fill:var(--on-surface-variant);font-size:12px;font-family:var(--f-mono)}
+    figure.diagram .rl-da{fill:var(--primary);font-size:12px;font-family:var(--f-mono)}
+    figure.diagram .rl-note{fill:var(--on-surface-variant);font-size:11px;font-family:var(--f-mono)}
+    figure.diagram .rl-chip{fill:none;stroke:var(--border);stroke-width:1}
+    figure.diagram .rl-rail{stroke:var(--border);stroke-width:2}
+    figure.diagram .rl-railn{stroke:var(--primary);stroke-width:2}
+    figure.diagram .rl-dot{fill:var(--bg);stroke:var(--on-surface-variant);stroke-width:2}
+    figure.diagram .rl-dotn{fill:var(--bg);stroke:var(--primary);stroke-width:2}
   </style>
 
-  <!-- actor -->
-  <rect x="300" y="14" width="320" height="58" rx="14" stroke-width="1.4" style="fill:var(--primary-dim);stroke:var(--primary)"/>
-  <text x="460" y="40" text-anchor="middle" class="d-bt">Human + agent</text>
-  <text x="460" y="59" text-anchor="middle" class="d-bs">the same endpoint, two consumers</text>
-  <line x1="460" y1="72" x2="460" y2="98" stroke-width="1.6" marker-end="url(#ar)" style="stroke:var(--primary)"/>
-
-  <!-- capa 1 -->
-  <rect x="40" y="100" width="840" height="96" class="d-box"/>
-  <text x="60" y="126" class="d-bl">1 · DISCOVER</text>
-  <text x="60" y="150" class="d-bt">Who may enter, and what you show them first</text>
-  <text x="60" y="174" class="d-bs">robots.txt (allow / block per bot) · sitemap.md (titles + hierarchy) · llms.txt · &lt;link rel="alternate"&gt;</text>
-  <line x1="460" y1="196" x2="460" y2="220" stroke-width="1.6" marker-end="url(#ar)" style="stroke:var(--primary)"/>
-
-  <!-- capa 2 -->
-  <rect x="40" y="222" width="840" height="96" class="d-box"/>
-  <text x="60" y="248" class="d-bl">2 · UNDERSTAND</text>
-  <text x="60" y="272" class="d-bt">Return content in the format the consumer wants</text>
-  <text x="60" y="296" class="d-bs">Accept: text/markdown → markdown · semantic HTML · RSC / islands (less JS to parse)</text>
-  <line x1="460" y1="318" x2="460" y2="342" stroke-width="1.6" marker-end="url(#ar)" style="stroke:var(--primary)"/>
-
-  <!-- capa 3 -->
-  <rect x="40" y="344" width="840" height="96" class="d-acc"/>
-  <text x="60" y="370" class="d-bl">3 · ACT · NEW IN 2026</text>
-  <text x="60" y="394" class="d-bt">Stop simulating clicks: declare tools</text>
-  <text x="60" y="418" class="d-bs">WebMCP (navigator.modelContext) · ACP (checkout) · delegated OAuth · single-use payment tokens</text>
-  <line x1="460" y1="440" x2="460" y2="464" stroke-width="1.6" marker-end="url(#ar)" style="stroke:var(--primary)"/>
-
-  <!-- capa 4 -->
-  <rect x="40" y="466" width="840" height="80" class="d-acc"/>
-  <text x="60" y="492" class="d-bl">4 · MEASURE AND MONETISE · NEW IN 2026</text>
-  <text x="60" y="516" class="d-bt">Know what each bot consumes, and charge it if you want</text>
-  <text x="60" y="538" class="d-bs">AI Crawl Control · HTTP 402 Payment Required · Web Bot Auth (signed requests)</text>
+  <text x="92" y="16" class="rl-e">THE SAME ENDPOINT</text>
+  <rect x="220" y="2" width="53" height="20" rx="10" class="rl-chip"/><text x="230" y="16" class="rl-note">human</text>
+  <rect x="281" y="2" width="53" height="20" rx="10" class="rl-chip"/><text x="291" y="16" class="rl-note">agent</text>
+  <text x="352" y="16" class="rl-note">— two consumers of one URL</text>
+  <line x1="60" y1="44" x2="60" y2="280" class="rl-rail"/>
+  <line x1="60" y1="280" x2="60" y2="480" class="rl-railn"/>
+  <line x1="60" y1="280" x2="84" y2="280" class="rl-railn"/>
+  <circle cx="60" cy="80" r="7" class="rl-dot"/>
+  <text x="92" y="80" class="rl-e">1 · DISCOVER</text>
+  <text x="92" y="104" class="rl-t">Who may enter, and what you show them first</text>
+  <text x="560" y="80" class="rl-d">robots.txt (allow / block per bot)</text>
+  <text x="560" y="98" class="rl-d">sitemap.md (titles and hierarchy)</text>
+  <text x="560" y="116" class="rl-d">llms.txt · &lt;link rel="alternate"&gt;</text>
+  <circle cx="60" cy="190" r="7" class="rl-dot"/>
+  <text x="92" y="190" class="rl-e">2 · UNDERSTAND</text>
+  <text x="92" y="214" class="rl-t">Return the content in the format</text>
+  <text x="92" y="235" class="rl-t">the consumer wants</text>
+  <text x="560" y="190" class="rl-d">Accept: text/markdown → markdown</text>
+  <text x="560" y="208" class="rl-d">semantic HTML</text>
+  <text x="560" y="226" class="rl-d">RSC / islands (less JS to parse)</text>
+  <circle cx="60" cy="300" r="7" class="rl-dotn"/>
+  <text x="92" y="300" class="rl-ea">3 · ACT</text>
+  <text x="92" y="324" class="rl-t">Stop simulating clicks: declare tools</text>
+  <text x="560" y="300" class="rl-d">WebMCP (navigator.modelContext)</text>
+  <text x="560" y="318" class="rl-d">ACP (checkout) · delegated OAuth</text>
+  <text x="560" y="336" class="rl-d">single-use payment tokens</text>
+  <circle cx="60" cy="410" r="7" class="rl-dotn"/>
+  <text x="92" y="410" class="rl-ea">4 · MEASURE AND MONETISE</text>
+  <text x="92" y="434" class="rl-t">Know what each bot consumes,</text>
+  <text x="92" y="455" class="rl-t">and charge it if you want</text>
+  <text x="560" y="410" class="rl-d">AI Crawl Control</text>
+  <text x="560" y="428" class="rl-d">HTTP 402 Payment Required</text>
+  <text x="560" y="446" class="rl-d">Web Bot Auth (signed requests)</text>
+  <text x="92" y="272" class="rl-da">everything below is new in 2026</text>
 </svg>
 <figcaption>Layers 1 and 2 are an evolution of what already existed. Layers 3 and 4 are new, and they are where teams with an edge are investing: not in the web being read, but in it being executed and billed.<sup class="d-c">14,17,19</sup></figcaption>
 </figure>
