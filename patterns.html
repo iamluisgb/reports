@@ -5,12 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Patterns — AI Reports</title>
 <meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/web/InstrumentSerif-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/web/Geist-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="home.css">
-<script>try{if(localStorage.getItem('ai-reports-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script>try{var t=localStorage.getItem('ai-reports-theme');if(t==='light'||(!t&&matchMedia('(prefers-color-scheme: light)').matches))document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
 <style>
   /* Layout of this documentation page only. Patterns themselves come from styles.css and home.css. */
   .doc { max-width: 1040px; margin: 0 auto; padding: 40px 24px 96px; }
@@ -46,6 +45,28 @@
   .topbar.demo { position: relative; transform: none; z-index: 0; }
   .page-toc.demo { display: block; position: static; width: 190px; }
   @media (max-width: 640px) { .scale div { grid-template-columns: 1fr; gap: 4px; } }
+  .noes { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0 28px; margin-top: 16px; }
+  .noes div { padding: 12px 0; border-top: 1px solid var(--border); font-size: var(--fs-sm); color: var(--on-surface-variant); }
+  .noes b { display: block; color: var(--on-surface); font-weight: 500; font-size: var(--fs-base); }
+  /* Identity proposals: each preview redefines the colour tokens for its own subtree. */
+  .ids { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 20px; }
+  .id-card { border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden; }
+  .id-card > .eyebrow { display: block; padding: 12px 16px; }
+  .id-prev { padding: 18px 16px 20px; background: var(--bg); color: var(--on-surface); display: grid; gap: 12px; }
+  .id-prev h3 { font: 400 40px/.9 var(--f-display); letter-spacing: -.02em; }
+  .id-prev h3 em { color: var(--primary); }
+  .id-prev .row-demo { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .id-prev .cells { display: flex; gap: 3px; }
+  .id-prev .cells i { width: 12px; height: 12px; border-radius: 3px; }
+  .id-prev .story { font: 400 var(--fs-lg)/1.1 var(--f-display); }
+  .id-prev .desc { font-size: var(--fs-sm); color: var(--on-surface-variant); }
+  .id-prev .desc a { color: var(--primary); }
+  [data-o="campo"].id-dark  { --bg:#0f100c; --bg-card:#181a14; --bg-card-hover:#20231b; --primary:#a3c45a; --primary-dim:rgba(163,196,90,.12); --on-primary:#0f100c; --on-surface:#ecede6; --on-surface-variant:#b4b8a8; --muted:#8f9483; --border:rgba(143,148,131,.25); }
+  [data-o="campo"].id-light { --bg:#f5f4ee; --bg-card:#fff; --bg-card-hover:#ecebe3; --primary:#4f6b1d; --primary-dim:rgba(79,107,29,.1); --on-primary:#fff; --on-surface:#17180f; --on-surface-variant:#45483c; --muted:#646858; --border:rgba(23,24,15,.12); }
+  [data-o="musgo"].id-dark  { --bg:#0c0f0e; --bg-card:#151a18; --bg-card-hover:#1d2321; --primary:#8fbf9a; --primary-dim:rgba(143,191,154,.12); --on-primary:#0c0f0e; --on-surface:#e9eeeb; --on-surface-variant:#adb7b1; --muted:#88928d; --border:rgba(136,146,141,.25); }
+  [data-o="musgo"].id-light { --bg:#f4f5f2; --bg-card:#fff; --bg-card-hover:#eaece7; --primary:#2f6b45; --primary-dim:rgba(47,107,69,.1); --on-primary:#fff; --on-surface:#121714; --on-surface-variant:#424944; --muted:#5f6762; --border:rgba(18,23,20,.12); }
+  [data-o="actual"].id-dark { --bg:#0b0e13; --bg-card:#141920; --bg-card-hover:#1b212b; --primary:#3fb950; --primary-dim:rgba(63,185,80,.1); --on-primary:#0b0e13; --on-surface:#eaeef3; --on-surface-variant:#aab3bd; --muted:#848d99; --border:rgba(125,134,146,.22); }
+  [data-o="actual"].id-light { --bg:#f6f6f2; --bg-card:#fff; --bg-card-hover:#efefea; --primary:#0a7a4a; --primary-dim:rgba(10,122,74,.09); --on-primary:#fff; --on-surface:#15181e; --on-surface-variant:#464c55; --muted:#62686f; --border:rgba(20,24,30,.11); }
 </style>
 </head>
 <body>
@@ -69,6 +90,23 @@
       <div><b>Every figure has a source.</b><span>A number, a quote or a claim links to where it came from. No source, no number.</span></div>
       <div><b>One job, one pattern.</b><span>If a pattern already does the job, use it. Reports never ship their own styles.</span></div>
     </div>
+    <div class="pat"><span class="eyebrow">What we don't do</span>
+      <div class="noes">
+        <div><b>No shadows</b>except on floating layers (the search palette). Lines separate; nothing hovers.</div>
+        <div><b>No gradients</b>and no decorative strips. Colour is flat and means something.</div>
+        <div><b>No side accent bars</b>to mark state, ever. A quote gets a hanging quotation mark.</div>
+        <div><b>One brand colour.</b>Green marks the brand word, the subject of a title, live state and links. Nothing decorative.</div>
+        <div><b>Two weights.</b>Geist at 400 and 500. Hierarchy comes from size, the serif and space, not bold.</div>
+        <div><b>No emoji in the interface,</b>titles and share cards included.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IDENTITY ============ -->
+  <section id="identity">
+    <h2>Identity — a decision to take</h2>
+    <p>Today's green is GitHub's success green (<code>#3fb950</code>) on a GitHub-dark ground: near-black with one acid green is the look most generated sites share. Two alternatives with our own accent, both AA in both themes. Changing it is two token blocks in <code>styles.css</code>.</p>
+    <div class="ids" id="ids"></div>
   </section>
 
   <!-- ============ TOKENS ============ -->
@@ -310,6 +348,15 @@
       <p class="use">Text roles: <code>.label</code> <code>.title</code> <code>.kicker</code> <code>.value</code> <code>.data</code> <code>.caption</code>, coloured with <code>.muted</code> or <code>.accent</code>. Shapes: <code>.box</code> <code>.box-raised</code> <code>.box-accent</code> <code>.pill</code> <code>.outline</code> <code>.frame</code> and bars. Lines: <code>.edge</code> <code>.flow</code> <code>.dash</code> <code>.grid</code> <code>.axis</code> <code>.rail</code>. Points: <code>.dot</code> <code>.marker</code>. No colours in the SVG itself.</p>
     </div>
 
+    <div class="pat"><span class="eyebrow">Citation · <code>sup.cite</code> → <code>#source-n</code></span>
+      <div class="stage narrow special-content"><p>Only 55.9% of origins pass all three Core Web Vitals.<sup class="cite"><a href="#kit">4</a></sup> Most fail on loading.<sup class="cite"><a href="#kit">3</a>,<a href="#kit">4</a></sup></p></div>
+      <p class="use">Every figure links to its source. Number the Sources list (<code>&lt;li id="source-4"&gt;</code>) and cite with <code>&lt;sup class="cite"&gt;&lt;a href="#source-4"&gt;4&lt;/a&gt;&lt;/sup&gt;</code>. The migration script does it for reports that use bare <code>&lt;sup&gt;</code> numbers.</p>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Specimen · <code>.frame</code> · <code>.specimen</code></span>
+      <p class="use">The only place a report may carry its own colours: a <code>.frame</code> showing a swatch, or a <code>.specimen</code> reproducing another product's type. Everything else uses the kit.</p>
+    </div>
+
     <div class="pat"><span class="eyebrow">References · <code>.ref-section</code></span>
       <div class="stage narrow"><div class="ref-section"><h4>Papers</h4><ul><li>Hu, Lu, Clune — Automated Design of Agentic Systems. <a href="#kit">arXiv:2408.08435</a></li></ul></div></div>
     </div>
@@ -333,5 +380,23 @@
   </section>
 </div>
 <script src="site.js"></script>
+<script>
+  // Identity previews: the same snippet under each palette, dark and light.
+  const OPTIONS = [['actual', 'Today · GitHub green'], ['campo', 'Campo · field olive'], ['musgo', 'Musgo · moss']];
+  const preview = (o, theme) => `
+    <div class="id-prev id-${theme}" data-o="${o}">
+      <div class="eyebrow"><b>Latest</b> · Friday 2 Oct · 9 min read</div>
+      <h3>AI <em>Reports</em></h3>
+      <div class="story">DeepSeek Harness tops the front page</div>
+      <div class="desc">Pi 1.0 clears 1,000 points · <a href="#identity">Original ↗</a></div>
+      <div class="row-demo">
+        <span class="btn-primary" style="height:36px;font-size:13px">Read the briefing →</span>
+        <span class="chip" aria-pressed="true" style="padding:6px 10px">Memory<span>47</span></span>
+        <span class="cells"><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i></span>
+      </div>
+    </div>`;
+  document.getElementById('ids').innerHTML = OPTIONS.map(([o, name]) =>
+    `<div class="id-card"><span class="eyebrow">${name}</span>${preview(o, 'dark')}${preview(o, 'light')}</div>`).join('');
+</script>
 </body>
 </html>

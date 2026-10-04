@@ -17,6 +17,10 @@ on:
       - 'reports/**'
       - 'scripts/generate_manifest.py'
       - 'scripts/build_social.py'
+      - 'scripts/build_index.py'
+      - 'scripts/build_agent_files.py'
+      - 'styles.css'          # tokens.json is generated from it
+      - 'index.html'
       - 'assets/fonts/**'
   workflow_dispatch:
 
@@ -52,13 +56,23 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports.json sitemap.xml rss.xml og reports
+          git add reports.json sitemap.xml rss.xml og reports index.html sitemap.md tokens.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
             git commit -m "🤖 Rebuild manifest, RSS, OG images and social meta"
             git push
           fi
+
+      # Design system: token contrast, byte budgets, and the markup rules in AGENTS.md
+      # for the reports this push touched. Like the check below, it runs after the
+      # commit so the manifest is rebuilt anyway; a violation turns the run red.
+      - name: Check design system
+        if: ${{ github.event_name == 'push' && !startsWith(github.event.before, '0000000') }}
+        run: |
+          mapfile -t changed < <(git diff --name-only --diff-filter=AM \
+            "${{ github.event.before }}" "${{ github.sha }}" -- 'reports/*.html')
+          python3 scripts/check_design.py "${changed[@]:-__none__}"
 
       # Last, so a bad report still gets its manifest rebuilt — but the run goes
       # red (and GitHub emails) when a pushed daily shows fabrication signals.

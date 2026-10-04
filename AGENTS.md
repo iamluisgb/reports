@@ -37,8 +37,10 @@ files); the workflow refuses to overwrite, and so should you.
    - A `<div class="subtitle">…</div>` (and for specials, a `<div class="date-line">DD Mon YYYY</div>`)
      — the subtitle becomes the card/RSS summary **and** the social share description.
 3. Commit and push to `master`. **Do not** hand-edit `reports.json`, `sitemap.xml`,
-   `rss.xml`, the `og/` images, or the `<!-- og:start -->…<!-- og:end -->` and
-   `<!-- ui:start -->…<!-- ui:end -->` blocks in each report; CI regenerates them all on push.
+   `rss.xml`, `sitemap.md`, `tokens.json`, the `.md` twins in `reports/`, the `og/` images,
+   the index content between `<!-- index:start -->` and `<!-- index:end -->`, or the
+   `<!-- og:start -->…<!-- og:end -->` and `<!-- ui:start -->…<!-- ui:end -->` blocks in each
+   report; CI regenerates them all on push.
    Don't add font links, scripts or page chrome (theme code, player code, progress bar,
    prev/next) to a report yourself: the ui block brings the fonts, `site.js` and `report.js`,
    which add them to every page. Follow **Design system** below for the markup.
@@ -103,6 +105,20 @@ renders every pattern with the real CSS; look there before writing markup.
 | `site.js` | Theme, audio player, shared helpers (`window.Site`). Every page loads it. |
 | `report.js` | Top bar, reading progress, section index, mini audio control, prev/next. Reports only. |
 | `patterns.html` | The living catalogue. Add a pattern here when you add it to the CSS. |
+| `scripts/build_index.py` | Renders the index content into `index.html` at build time; the page's script only filters it. |
+| `scripts/build_agent_files.py` | Writes a markdown twin of every report (`reports/<name>.md`), `sitemap.md` and `tokens.json`. |
+| `scripts/check_design.py` | Token contrast (AA), byte budgets and the report rules below. Runs in CI on the reports a push touches. |
+| `assets/fonts/web/` | The three faces, self-hosted (OFL, latin subset). No font CDN. |
+
+### What we don't do
+
+No shadows except on floating layers · no gradients or decorative strips · no side accent
+bars · one brand colour · Geist at 400 and 500 only · no emoji in the interface, titles
+included. The green marks the brand word, the subject of a title, live state (audio,
+progress, calendar) and links — never decoration (table heads, list markers, numbers, code).
+
+The theme follows the reader's system until they pick one; high contrast follows
+`prefers-contrast: more`. Both come from tokens, so a pattern built on tokens gets them free.
 
 ### Names
 
@@ -143,11 +159,17 @@ and a `.special-content` body. Inside, use only:
   `.muted` / `.accent`; shapes `.box` `.box-raised` `.box-accent` `.pill` `.outline` `.frame`
   `.bar-base` `.bar-muted` `.bar-accent`; lines `.edge` `.flow` `.dash` `.grid` `.axis`
   `.rail` `.rail-accent`; points `.dot` `.dot-accent`, arrowheads `.marker`.
-  No hex colours or `<style>` in the SVG.
+  No hex colours or `<style>` in the SVG — except a `.frame` showing a swatch or a
+  `.specimen` reproducing another product's type.
+- **Citations:** number the Sources list (`<li id="source-4">`) and cite with
+  `<sup class="cite"><a href="#source-4">4</a></sup>`. A figure caption says what the
+  figure shows and its source; it never repeats the paragraph next to it.
 - **Chart (canvas):** `<div class="chart-container"><canvas>…</canvas><p class="chart-caption">…</p></div>`.
 - **References:** `<div class="ref-section"><h4>…</h4><ul><li>… <a>…</a></li></ul></div>`.
 
 Need something that isn't here? Add it to `styles.css` and `patterns.html` first, then use it.
+
+Before pushing, run `python3 scripts/check_design.py reports/<file>.html`. CI runs it too.
 
 ## Rules
 

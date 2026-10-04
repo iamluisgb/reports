@@ -88,7 +88,24 @@ def single_agent(t: str) -> str:
     return t
 
 
+def context_lake(t: str) -> str:
+    # A diagram drawn with <div>s in GitHub's palette. The tints carried no meaning
+    # (no legend): boxes go neutral, the Context Lake box keeps the accent.
+    t = t.replace("background:linear-gradient(135deg,#58a6ff14,#a371f714);border:2px solid #58a6ff55;",
+                  "background:var(--primary-dim);border:1px solid var(--primary);")
+    t = re.sub(r"background:#[0-9a-fA-F]{8};border:1\.5px solid #[0-9a-fA-F]{8};",
+               "background:var(--bg-card);border:1px solid var(--border);", t)
+    t = re.sub(r"font-weight:600;color:#[0-9a-fA-F]{6};", "font-weight:500;color:var(--on-surface);", t)
+    t = t.replace("font-weight:700;font-size:15px;color:var(--on-surface);", "font-weight:500;font-size:15px;color:var(--on-surface);")
+    # The rainbow strip on top of the agent diagram was decoration; the stage names were tints.
+    t = re.sub(r'\s*<div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient\(90deg,[^"]*\);"></div>', "", t)
+    t = re.sub(r'color:#[0-9a-fA-F]{6};font-weight:700;font-size:13px;', "color:var(--on-surface);font-weight:500;font-size:13px;", t)
+    t = re.sub(r'<span style="color:#[0-9a-fA-F]{6};font-size:16px;">', '<span style="color:var(--muted);font-size:16px;">', t)
+    return t
+
+
 FILES = {
+    "context-lake-2026-07-27.html": context_lake,
     "ontology-graph-ml-aiops-2026-10-01.html": ontology,
     "world-class-websites-2026-10-03.html": lambda t: remap(t, WORLD_CLASS),
     "single-agent-vs-multi-agent-llm-systems-2026-07-17.html": single_agent,

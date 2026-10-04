@@ -8,7 +8,17 @@
    2. Base              6. Long-form (special reports)
    3. Shared patterns   7. Special-report kit (figures, charts, refs)
    4. Top bar & player  8. About page · utilities · motion
+   What we don't do: shadows (except on floating layers), gradients, side
+   accent bars, a second brand colour, weights above 500, emoji in the
+   interface. The brand green marks the brand word, the subject of a title,
+   live state (audio, progress, calendar) and links — nothing decorative.
    ===================================================================== */
+
+/* Self-hosted fonts (OFL), latin subset. Geist is variable 400–600. */
+@font-face { font-family: 'Instrument Serif'; font-style: normal; font-weight: 400; font-display: swap; src: url(assets/fonts/web/InstrumentSerif-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Instrument Serif'; font-style: italic; font-weight: 400; font-display: swap; src: url(assets/fonts/web/InstrumentSerif-italic.woff2) format('woff2'); }
+@font-face { font-family: 'Geist'; font-style: normal; font-weight: 400 600; font-display: swap; src: url(assets/fonts/web/Geist-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Geist Mono'; font-style: normal; font-weight: 400 500; font-display: swap; src: url(assets/fonts/web/GeistMono-normal.woff2) format('woff2'); }
 
 /* ===== 1. TOKENS ===== */
 :root {
@@ -22,7 +32,7 @@
   --on-primary: #0b0e13;
   --on-surface: #eaeef3;
   --on-surface-variant: #aab3bd;
-  --muted: #7d8692;
+  --muted: #848d99;            /* ≥ 4.5:1 on every surface */
   --border: rgba(125, 134, 146, 0.22);
   --warn: #d29922;
   --shadow-pop: 0 24px 60px -20px rgba(0, 0, 0, 0.45);
@@ -51,8 +61,10 @@
   --r-pill: 999px;
 
   /* Motion */
-  --ease: cubic-bezier(.2, .7, .2, 1);
-  --dur-fast: .15s;   /* hover, colour */
+  --ease: cubic-bezier(.2, .7, .2, 1);       /* entrances */
+  --ease-in: cubic-bezier(.4, 0, .6, 1);     /* exits: shorter and quieter than entrances */
+  --spring: linear(0, .13 6%, .43 15%, .74 26%, .92 37%, 1.01 49%, 1.02 58%, 1.005 72%, 1);   /* the headline morph */
+  --dur-fast: .15s;   /* hover, colour, exits */
   --dur-base: .25s;   /* bars, panels, page swaps */
   --dur-slow: .45s;   /* entrances, the headline morph */
 
@@ -74,11 +86,17 @@
   --on-primary: #ffffff;
   --on-surface: #15181e;
   --on-surface-variant: #464c55;
-  --muted: #6e747c;
+  --muted: #62686f;
   --border: rgba(20, 24, 30, 0.11);
   --warn: #9a6700;
   --shadow-pop: 0 24px 60px -20px rgba(20, 24, 30, 0.25);
   color-scheme: light;
+}
+
+/* High contrast, when the system asks for it: stronger secondary text and lines. */
+@media (prefers-contrast: more) {
+  :root:not([data-theme="light"]) { --muted: #c3cad2; --on-surface-variant: #dde2e8; --border: rgba(170, 179, 189, 0.5); }
+  [data-theme="light"] { --muted: #3d434b; --on-surface-variant: #2a2f36; --border: rgba(20, 24, 30, 0.4); }
 }
 
 /* ===== 2. BASE ===== */
@@ -87,6 +105,7 @@
 /* Components set display: flex/grid; the hidden attribute must still win. */
 [hidden] { display: none !important; }
 
+html { -webkit-tap-highlight-color: transparent; }
 html, body {
   background: var(--bg);
   color: var(--on-surface);
@@ -95,7 +114,9 @@ html, body {
   min-height: 100vh;
 }
 
-strong { color: var(--on-surface); font-weight: 600; }
+strong { color: var(--on-surface); font-weight: 500; }
+::selection { background: color-mix(in srgb, var(--primary) 32%, transparent); color: var(--on-surface); }
+.table-wrapper, pre, .cal-scroll, .pal-list, .page-toc { scrollbar-width: thin; scrollbar-color: var(--border) transparent; }
 button { font: inherit; color: inherit; }
 
 a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-visible {
@@ -158,7 +179,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
   display: flex; align-items: center; justify-content: center; gap: 8px;
   height: 46px; padding: 0 20px; border: 0; border-radius: var(--r-md);
   background: var(--on-surface); color: var(--bg);
-  font: 600 var(--fs-base) var(--f-body); text-decoration: none; cursor: pointer;
+  font: 500 var(--fs-base) var(--f-body); text-decoration: none; cursor: pointer;
 }
 .btn-primary:hover { opacity: .92; }
 
@@ -190,9 +211,9 @@ a:hover .arrow, button:hover .arrow { transform: translateX(3px); }
   backdrop-filter: blur(14px) saturate(1.4);
   border-bottom: 1px solid var(--border);
   transform: translateY(-100%);
-  transition: transform var(--dur-base) var(--ease);
+  transition: transform var(--dur-fast) var(--ease-in);
 }
-.topbar.on { transform: none; }
+.topbar.on { transform: none; transition: transform var(--dur-base) var(--ease); }
 .topbar-in {
   max-width: 1040px; height: var(--topbar-h); margin: 0 auto; padding: 0 24px;
   display: flex; align-items: center; gap: 12px;
@@ -227,6 +248,7 @@ a:hover .arrow, button:hover .arrow { transform: translateX(3px); }
 .audio-player .play-btn:hover { transform: scale(1.06); }
 .audio-player .play-btn svg { width: 16px; height: 16px; fill: currentColor; }
 .audio-player .play-btn .icon-pause { display: none; }
+.audio-player .play-btn .icon-play { transform: translateX(1px); }   /* optical centre of the triangle */
 .audio-player.playing .play-btn .icon-play { display: none; }
 .audio-player.playing .play-btn .icon-pause { display: block; }
 .audio-player .player-body { flex: 1; min-width: 0; }
@@ -309,7 +331,7 @@ h1 em, .topbar-brand em { font-style: italic; color: var(--primary); }
   padding: 22px 0; border-bottom: 1px solid var(--border);
 }
 .news-item > * { grid-column: 2; }
-.news-item .num { grid-column: 1; grid-row: 1 / span 4; font: 500 var(--fs-sm)/2 var(--f-mono); color: var(--primary); }
+.news-item .num { grid-column: 1; grid-row: 1 / span 4; font: 500 var(--fs-sm)/2 var(--f-mono); color: var(--muted); }
 .news-item .title {
   margin-bottom: 8px;
   font: 400 var(--fs-xl)/1.12 var(--f-display); letter-spacing: -.01em; color: var(--on-surface); text-wrap: balance;
@@ -334,7 +356,7 @@ h1 em, .topbar-brand em { font-style: italic; color: var(--primary); }
   border-bottom: 1px solid var(--border);
   font-size: var(--fs-base); line-height: 1.6; color: var(--on-surface-variant);
 }
-.follow-item .bullet { flex-shrink: 0; margin-top: 2px; font: var(--fs-xs) var(--f-mono); color: var(--primary); }
+.follow-item .bullet { flex-shrink: 0; margin-top: 2px; font: var(--fs-xs) var(--f-mono); color: var(--muted); }
 
 /* In numbers — one band of figures set in the display face. */
 .stats-grid {
@@ -410,31 +432,38 @@ h1 em, .topbar-brand em { font-style: italic; color: var(--primary); }
   color: var(--on-surface); text-wrap: balance;
 }
 :is([data-type="special"] .section, .special-content) h3 {
-  margin: 32px 0 12px; font: 600 var(--fs-md)/1.35 var(--f-body); color: var(--on-surface);
+  margin: 32px 0 12px; font: 500 var(--fs-md)/1.35 var(--f-body); color: var(--on-surface);
 }
 :is([data-type="special"] .section, .special-content) h4 {
-  margin: 24px 0 8px; font: 600 var(--fs-base)/1.4 var(--f-body); color: var(--on-surface);
+  margin: 24px 0 8px; font: 500 var(--fs-base)/1.4 var(--f-body); color: var(--on-surface);
 }
 :is([data-type="special"] .section, .special-content) :is(p, li) {
   font-size: var(--fs-md); line-height: 1.7; color: var(--on-surface-variant); text-wrap: pretty;
 }
-:is([data-type="special"] .section, .special-content) p { margin: 12px 0; }
+:is([data-type="special"] .section, .special-content) p { margin: 12px 0; hanging-punctuation: first; }
+
+/* Citation — a superscript number linking to the numbered Sources list. */
+.cite { margin-left: 1px; font: 500 .68em var(--f-mono); vertical-align: super; line-height: 0; }
+.cite a { color: var(--muted); text-decoration: none; }
+.cite a:hover { color: var(--primary); }
+[id^="source-"] { scroll-margin-top: calc(var(--topbar-h) + 22px); }
+[id^="source-"]:target { background: var(--primary-dim); border-radius: var(--r-sm); }
 :is([data-type="special"] .section, .special-content) em { font-style: italic; color: var(--on-surface); }
 :is([data-type="special"] .section, .special-content) a { color: var(--primary); text-underline-offset: 3px; }
 :is([data-type="special"] .section, .special-content) ul { list-style: none; margin: 12px 0; }
 :is([data-type="special"] .section, .special-content) ul li { position: relative; padding-left: 20px; margin-bottom: 6px; }
 :is([data-type="special"] .section, .special-content) ul li::before {
-  content: "–"; position: absolute; left: 4px; color: var(--primary); font-weight: 600;
+  content: "–"; position: absolute; left: 4px; color: var(--muted);
 }
 :is([data-type="special"] .section, .special-content) ol { margin: 12px 0; padding-left: 24px; }
 :is([data-type="special"] .section, .special-content) ol li { margin-bottom: 8px; }
-:is([data-type="special"] .section, .special-content) ol li::marker { color: var(--primary); font-weight: 600; }
+:is([data-type="special"] .section, .special-content) ol li::marker { color: var(--muted); }
 
 hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
 
 code {
   padding: 2px 6px; border: 1px solid var(--border); border-radius: var(--r-sm);
-  background: var(--bg-card); color: var(--primary);
+  background: var(--bg-card); color: var(--on-surface);
   font: var(--fs-sm) var(--f-mono);
 }
 pre {
@@ -451,7 +480,7 @@ blockquote {
 }
 blockquote::before {
   content: "\201C"; position: absolute; left: 0; top: -6px;
-  font: 400 var(--fs-3xl)/1 var(--f-display); color: var(--primary);
+  font: 400 var(--fs-3xl)/1 var(--f-display); color: var(--muted);
 }
 blockquote p, blockquote strong { font: inherit !important; color: inherit !important; margin: 0 !important; }
 
@@ -468,7 +497,7 @@ thead { position: sticky; top: 0; z-index: 2; }
 th {
   padding: 13px 16px; text-align: left; background: var(--bg-card);
   border-bottom: 1px solid var(--border);
-  font: 600 var(--fs-2xs) var(--f-body); letter-spacing: .06em; text-transform: uppercase; color: var(--primary);
+  font: 500 var(--fs-2xs) var(--f-body); letter-spacing: .06em; text-transform: uppercase; color: var(--on-surface-variant);
 }
 td {
   padding: 11px 16px; vertical-align: top; border-bottom: 1px solid var(--border);
@@ -487,7 +516,7 @@ tr:last-child td { border-bottom: none; }
 .ref-section { margin: 24px 0; }
 .ref-section h4 {
   margin: 24px 0 12px;
-  font: 500 var(--fs-2xs)/1.3 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--primary);
+  font: 500 var(--fs-2xs)/1.3 var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
 }
 .ref-section ul { list-style: none; }
 :is([data-type="special"] .section, .special-content) .ref-section li,
@@ -524,9 +553,9 @@ figure.diagram svg {
 figure.diagram text { fill: var(--on-surface); font-family: var(--f-body); }
 /* text roles (.label is plain body text, named so the markup says what it is) */
 figure.diagram .label { font-weight: 400; }
-figure.diagram .title { font-weight: 600; }
-figure.diagram .kicker { font-family: var(--f-mono); font-weight: 600; letter-spacing: .1em; fill: var(--on-surface-variant); }
-figure.diagram .value { font-family: var(--f-mono); font-weight: 600; }
+figure.diagram .title { font-weight: 500; }
+figure.diagram .kicker { font-family: var(--f-mono); font-weight: 500; letter-spacing: .1em; fill: var(--on-surface-variant); }
+figure.diagram .value { font-family: var(--f-mono); font-weight: 500; }
 figure.diagram .data { font-family: var(--f-mono); fill: var(--on-surface-variant); }
 figure.diagram .caption { font-style: italic; fill: var(--on-surface-variant); }
 /* text colours (after the roles, so they win) */
@@ -572,7 +601,7 @@ figure.diagram .marker-muted { fill: var(--on-surface-variant); }
 /* The page swap between index and report: the clicked title becomes the report's h1. */
 @media (prefers-reduced-motion: no-preference) {
   @view-transition { navigation: auto; }
-  ::view-transition-group(headline) { animation-duration: var(--dur-slow); animation-timing-function: var(--ease); }
+  ::view-transition-group(headline) { animation-duration: var(--dur-slow); animation-timing-function: var(--spring); }
   ::view-transition-group(*) { animation-timing-function: var(--ease); }
   ::view-transition-old(root), ::view-transition-new(root) { animation-duration: var(--dur-base); }
 }
@@ -582,4 +611,19 @@ figure.diagram .marker-muted { fill: var(--on-surface-variant); }
     animation-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Print: a report on paper or PDF — white page, no chrome, sources spelled out. */
+@media print {
+  :root, [data-theme="light"] {
+    --bg: #fff; --bg-card: #fff; --bg-card-hover: #fff; --code-bg: #f4f4f1;
+    --on-surface: #111; --on-surface-variant: #333; --muted: #555; --border: #ccc; --primary: #0a5c38;
+  }
+  .topbar, .page-toc, .pager, .back-link, .theme-toggle, [data-theme-toggle], .audio-player,
+  .section:has(> .audio-player), .skip-link { display: none !important; }
+  .page { max-width: none; padding: 0; }
+  .news-item, .stat-card, figure, table, pre, blockquote { break-inside: avoid; }
+  h1, h2, h3, .section-label { break-after: avoid; }
+  .sources a::after { content: " (" attr(href) ")"; font-size: 9pt; color: #555; }
+  ol li[id^="source-"] a::after { content: " — " attr(href); font-size: 9pt; }
 }

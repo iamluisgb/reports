@@ -22,9 +22,8 @@
 <meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/og-default.png">
 <link rel="alternate" type="application/rss+xml" title="AI Reports RSS" href="/reports/rss.xml">
 <link rel="sitemap" type="application/xml" href="/reports/sitemap.xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/web/InstrumentSerif-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/web/Geist-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="home.css">
 <script type="application/ld+json">
@@ -51,7 +50,8 @@
   }
 }
 </script>
-<script>try{if(localStorage.getItem('ai-reports-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script>try{var t=localStorage.getItem('ai-reports-theme');if(t==='light'||(!t&&matchMedia('(prefers-color-scheme: light)').matches))document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script type="speculationrules">{"prerender":[{"where":{"or":[{"href_matches":"/reports/"},{"href_matches":"/reports/reports/*.html"},{"href_matches":"/reports/about.html"}]},"eagerness":"moderate"}]}</script>
 </head>
 <body>
   <a href="#archive" class="skip-link">Skip to reports</a>
@@ -60,58 +60,923 @@
     <div class="topbar-in">
       <button class="topbar-brand" type="button" id="to-top" tabindex="-1">AI <em>Reports</em></button>
       <button class="btn btn-sm btn-search" type="button" data-search tabindex="-1">Search <span class="kbd">⌘K</span></button>
-      <button class="btn btn-sm" type="button" data-theme-toggle tabindex="-1">◐</button>
+      <button class="btn btn-sm" type="button" data-theme-toggle tabindex="-1" aria-label="Switch theme">◐</button>
     </div>
   </div>
 
   <main class="home">
+    <!-- The content between these markers is written by scripts/build_index.py; don't edit it by hand. -->
+    <!-- index:start -->
     <header class="mast" id="mast">
       <div>
-        <div class="eyebrow"><b>AI Research Briefing</b> · <span id="m-count">—</span> reports<span id="m-updated"></span></div>
+        <div class="eyebrow"><b>AI Research Briefing</b> · 161 reports · updated 4 Oct</div>
         <h1>AI <em>Reports</em></h1>
       </div>
       <div class="tools">
         <button class="btn btn-search" type="button" data-search>Search reports <span class="kbd">⌘K</span></button>
         <a class="btn hide-sm" href="/reports/about.html">About</a>
         <a class="btn hide-sm" href="/reports/rss.xml">RSS</a>
-        <button class="btn" type="button" data-theme-toggle>◐</button>
+        <button class="btn" type="button" data-theme-toggle aria-label="Switch theme">◐</button>
       </div>
     </header>
-    <div class="topics" id="topics" role="group" aria-label="Filter by topic"></div>
+    <div class="topics" id="topics" role="group" aria-label="Filter by topic"><span class="eyebrow">Topics</span><button class="chip" type="button" data-t="infrastructure" aria-pressed="false">Infrastructure<span>39</span></button><button class="chip" type="button" data-t="memory" aria-pressed="false">Memory<span>36</span></button><button class="chip" type="button" data-t="security" aria-pressed="false">Security<span>34</span></button><button class="chip" type="button" data-t="multimodal" aria-pressed="false">Multimodal<span>26</span></button><button class="chip" type="button" data-t="coding" aria-pressed="false">Coding<span>25</span></button><button class="chip" type="button" data-t="funding" aria-pressed="false">Funding<span>9</span></button><button class="chip" type="button" data-t="open-source" aria-pressed="false">Open source<span>9</span></button><button class="chip" type="button" data-t="regulation" aria-pressed="false">Regulation<span>9</span></button><button class="chip" type="button" data-t="business" aria-pressed="false">Business<span>7</span></button><button class="chip" type="button" data-t="hardware" aria-pressed="false">Hardware<span>7</span></button><button class="chip" type="button" data-t="robotics" aria-pressed="false">Robotics<span>2</span></button><button class="link" type="button" id="clear" hidden>Clear</button></div>
     <div class="status" id="status" role="status" aria-live="polite"></div>
 
-    <noscript>
-      <div class="empty">This index needs JavaScript to list reports. You can still browse via the
-        <a href="/reports/rss.xml" style="color:var(--primary)">RSS feed</a> or read
-        <a href="/reports/about.html" style="color:var(--primary)">About</a>.</div>
-    </noscript>
+    <section class="today" id="today" aria-label="Latest briefing">
+      <div>
+        <div class="eyebrow"><b>Latest</b> · Sunday 4 Oct · 8 min read</div>
+        <h2><a href="reports/ai-news-2026-10-04.html" data-file="ai-news-2026-10-04.html">Aleph Alpha ships Kolibri, a sovereign open-weight model</a></h2>
+        <ol><li>Willison calls for default hard budget caps on agents</li><li>Federal judge brands Flock &#x27;indiscriminate mass surveillance&#x27;</li><li>OpenAI safety departure lands</li></ol>
+      </div>
+      <div class="side">
+        <div class="audio-player">
+          <audio preload="none" src="audio/ai-news-2026-10-04.mp3"></audio>
+          <button class="play-btn" type="button" aria-label="Play audio briefing">
+            <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+            <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+          </button>
+          <div class="player-body">
+            <div class="player-meta"><span class="player-title">Audio briefing</span><span class="player-time">0:00 / 4:59</span></div>
+            <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+          </div>
+        </div>
+        <a class="btn-primary" href="reports/ai-news-2026-10-04.html" data-file="ai-news-2026-10-04.html">Read the briefing <span class="arrow">→</span></a>
+        <div class="yday">Yesterday: <a href="reports/ai-news-2026-10-03.html" data-file="ai-news-2026-10-03.html">Court rules Utah&#x27;s VPN law technically impossible</a></div>
+      </div>
+    </section>
 
-    <section class="today" id="today" aria-label="Latest briefing"><div class="loading">Loading reports…</div></section>
-
-    <section class="sec" id="calendar" hidden>
-      <div class="sec-head"><h3>Every day since <span id="cal-since"></span></h3><span class="eyebrow" id="cal-meta"></span></div>
+    <section class="sec" id="calendar">
+      <div class="sec-head"><h3>Every day since May</h3><span class="eyebrow">143 days · none missed</span></div>
       <div class="cal-wrap">
-        <div class="cal-scroll"><div class="cal" id="cal"></div></div>
-        <div class="facts" id="facts"></div>
+        <div class="cal-scroll"><div class="cal" id="cal"><span></span><span class="wd">Mon</span><span class="wd"></span><span class="wd">Wed</span><span class="wd"></span><span class="wd">Fri</span><span class="wd"></span><span class="wd"></span><span class="ml"></span><span></span><span></span><span></span><span></span><a class="cell l1" href="reports/ai-news-2026-05-15.html" data-tags="business funding hardware security" data-meta="15 May 2026 · 2 min" data-head="Anthropic surpasses OpenAI in business adoption" aria-label="15 May 2026: Anthropic surpasses OpenAI in business adoption"></a><a class="cell l1" href="reports/ai-news-2026-05-16.html" data-tags="infrastructure funding" data-meta="16 May 2026 · 2 min" data-head="OpenAI faces a compute wall" aria-label="16 May 2026: OpenAI faces a compute wall"></a><a class="cell l1" href="reports/ai-news-2026-05-17.html" data-tags="funding infrastructure business" data-meta="17 May 2026 · 3 min" data-head="Anthropic nears $900B" aria-label="17 May 2026: Anthropic nears $900B"></a><span class="ml"></span><a class="cell l3" href="reports/ai-news-2026-05-18.html" data-tags="models agents security" data-meta="18 May 2026 · 7 min" data-head="Google I/O in 48h" aria-label="18 May 2026: Google I/O in 48h"></a><a class="cell l2" href="reports/ai-news-2026-05-19.html" data-tags="agents security coding" data-meta="19 May 2026 · 5 min" data-head="Musk loses OpenAI lawsuit" aria-label="19 May 2026: Musk loses OpenAI lawsuit"></a><a class="cell l2" href="reports/ai-news-2026-05-20.html" data-tags="models agents research coding" data-meta="20 May 2026 · 5 min" data-head="Karpathy joins Anthropic" aria-label="20 May 2026: Karpathy joins Anthropic"></a><a class="cell l3" href="reports/ai-news-2026-05-21.html" data-tags="agents research security" data-meta="21 May 2026 · 8 min" data-head="OpenAI to confidentially file for IPO as soon as Friday" aria-label="21 May 2026: OpenAI to confidentially file for IPO as soon as Friday"></a><a class="cell l2" href="reports/ai-news-2026-05-22.html" data-tags="agents infrastructure" data-meta="22 May 2026 · 6 min" data-head="If Google can&#x27;t make AI agents useful, maybe no one can" aria-label="22 May 2026: If Google can&#x27;t make AI agents useful, maybe no one can"></a><a class="cell l2" href="reports/ai-news-2026-05-23.html" data-tags="models coding security business" data-meta="23 May 2026 · 5 min" data-head="OpenAI files for IPO" aria-label="23 May 2026: OpenAI files for IPO"></a><a class="cell l2" href="reports/ai-news-2026-05-24.html" data-tags="agents security" data-meta="24 May 2026 · 6 min" data-head="OpenAI disproves 80-year geometry problem" aria-label="24 May 2026: OpenAI disproves 80-year geometry problem"></a><span class="ml"></span><a class="cell l2" href="reports/ai-news-2026-05-25.html" data-tags="agents security coding" data-meta="25 May 2026 · 5 min" data-head="OpenAI IPO Filing" aria-label="25 May 2026: OpenAI IPO Filing"></a><a class="cell l2" href="reports/ai-news-2026-05-26.html" data-tags="agents security infrastructure" data-meta="26 May 2026 · 6 min" data-head="GPT-5.4 mini &amp; nano" aria-label="26 May 2026: GPT-5.4 mini &amp; nano"></a><a class="cell l2" href="reports/ai-news-2026-05-27.html" data-tags="agents security infrastructure" data-meta="27 May 2026 · 6 min" data-head="Anthropic Project Glasswing" aria-label="27 May 2026: Anthropic Project Glasswing"></a><a class="cell l3" href="reports/ai-news-2026-05-28.html" data-tags="agents infrastructure security" data-meta="28 May 2026 · 8 min" data-head="Anthropic &amp; OpenAI found PMF with coding agents" aria-label="28 May 2026: Anthropic &amp; OpenAI found PMF with coding agents"></a><a class="cell l2" href="reports/ai-news-2026-05-29.html" data-tags="agents research" data-meta="29 May 2026 · 4 min" data-head="Anthropic passes OpenAI at $965B" aria-label="29 May 2026: Anthropic passes OpenAI at $965B"></a><a class="cell l2" href="reports/ai-news-2026-05-30.html" data-tags="agents security" data-meta="30 May 2026 · 5 min" data-head="Anthropic surpasses OpenAI" aria-label="30 May 2026: Anthropic surpasses OpenAI"></a><a class="cell l1" href="reports/ai-news-2026-05-31.html" data-tags="funding infrastructure" data-meta="31 May 2026 · 3 min" data-head="Anthropic $965B" aria-label="31 May 2026: Anthropic $965B"></a><span class="ml">Jun</span><a class="cell l1" href="reports/ai-news-2026-06-01.html" data-tags="agents research security infrastructure" data-meta="1 Jun 2026 · 3 min" data-head="NVIDIA Cosmos 3" aria-label="1 Jun 2026: NVIDIA Cosmos 3"></a><a class="cell l1" href="reports/ai-news-2026-06-02.html" data-tags="infrastructure multimodal" data-meta="2 Jun 2026 · 3 min" data-head="OpenAI on AWS" aria-label="2 Jun 2026: OpenAI on AWS"></a><a class="cell l2" href="reports/ai-news-2026-06-03.html" data-tags="agents research" data-meta="3 Jun 2026 · 5 min" data-head="Anthropic IPO" aria-label="3 Jun 2026: Anthropic IPO"></a><a class="cell l2" href="reports/ai-news-2026-06-04.html" data-tags="research security" data-meta="4 Jun 2026 · 4 min" data-head="Gemma 4 12B Launch" aria-label="4 Jun 2026: Gemma 4 12B Launch"></a><a class="cell l1" href="reports/ai-news-2026-06-05.html" data-tags="models funding regulation" data-meta="5 Jun 2026 · 3 min" data-head="Trump AI Executive Order" aria-label="5 Jun 2026: Trump AI Executive Order"></a><a class="cell l2" href="reports/ai-news-2026-06-06.html" data-tags="models regulation infrastructure" data-meta="6 Jun 2026 · 5 min" data-head="AI Executive Order" aria-label="6 Jun 2026: AI Executive Order"></a><a class="cell l1" href="reports/ai-news-2026-06-07.html" data-tags="models funding coding" data-meta="7 Jun 2026 · 2 min" data-head="Anthropic IPO" aria-label="7 Jun 2026: Anthropic IPO"></a><span class="ml"></span><a class="cell l1" href="reports/ai-news-2026-06-08.html" data-tags="research security" data-meta="8 Jun 2026 · 3 min" data-head="Show HN: Lathe – Use LLMs to learn a new" aria-label="8 Jun 2026: Show HN: Lathe – Use LLMs to learn a new"></a><a class="cell l2" href="reports/ai-news-2026-06-09.html" data-tags="research agents coding" data-meta="9 Jun 2026 · 4 min" data-head="Apple reveals new AI architecture built " aria-label="9 Jun 2026: Apple reveals new AI architecture built "></a><a class="cell l1" href="reports/ai-news-2026-06-10.html" data-tags="models research infrastructure" data-meta="10 Jun 2026 · 3 min" data-head="Claude Fable 5 &amp; Mythos 5 — Anthropic&#x27;s " aria-label="10 Jun 2026: Claude Fable 5 &amp; Mythos 5 — Anthropic&#x27;s "></a><a class="cell l2" href="reports/ai-news-2026-06-11.html" data-tags="models research infrastructure" data-meta="11 Jun 2026 · 4 min" data-head="Anthropic files for IPO, setting up publ" aria-label="11 Jun 2026: Anthropic files for IPO, setting up publ"></a><a class="cell l1" href="reports/ai-news-2026-06-12.html" data-tags="models agents research" data-meta="12 Jun 2026 · 3 min" data-head="Claude Fable 5, MiMo Code, Recursive Agents" aria-label="12 Jun 2026: Claude Fable 5, MiMo Code, Recursive Agents"></a><a class="cell l2" href="reports/ai-news-2026-06-13.html" data-tags="agents research" data-meta="13 Jun 2026 · 5 min" data-head="US Bans Anthropic Models" aria-label="13 Jun 2026: US Bans Anthropic Models"></a><a class="cell l2" href="reports/ai-news-2026-06-14.html" data-tags="research models memory" data-meta="14 Jun 2026 · 4 min" data-head="KPMG Pulls AI Report on Hallucinations" aria-label="14 Jun 2026: KPMG Pulls AI Report on Hallucinations"></a><span class="ml"></span><a class="cell l2" href="reports/ai-news-2026-06-15.html" data-tags="models research multimodal regulation" data-meta="15 Jun 2026 · 5 min" data-head="Anthropic Claude Fable 5" aria-label="15 Jun 2026: Anthropic Claude Fable 5"></a><a class="cell l2" href="reports/ai-news-2026-06-16.html" data-tags="research security regulation" data-meta="16 Jun 2026 · 5 min" data-head="Claude Corps" aria-label="16 Jun 2026: Claude Corps"></a><a class="cell l2" href="reports/ai-news-2026-06-17.html" data-tags="models research infrastructure" data-meta="17 Jun 2026 · 5 min" data-head="SpaceX Buys Cursor for $60B" aria-label="17 Jun 2026: SpaceX Buys Cursor for $60B"></a><a class="cell l1" href="reports/ai-news-2026-06-18.html" data-tags="models research regulation" data-meta="18 Jun 2026 · 3 min" data-head="White House AI Order" aria-label="18 Jun 2026: White House AI Order"></a><a class="cell l2" href="reports/ai-news-2026-06-19.html" data-tags="research agents security coding" data-meta="19 Jun 2026 · 4 min" data-head="Trojan Malware in 10K GitHub Repos" aria-label="19 Jun 2026: Trojan Malware in 10K GitHub Repos"></a><a class="cell l1" href="reports/ai-news-2026-06-20.html" data-tags="infrastructure funding robotics" data-meta="20 Jun 2026 · 2 min" data-head="IPO Fever: SpaceX, OpenAI, and Anthropic rush to markets" aria-label="20 Jun 2026: IPO Fever: SpaceX, OpenAI, and Anthropic rush to markets"></a><a class="cell l2" href="reports/ai-news-2026-06-21.html" data-tags="research agents security" data-meta="21 Jun 2026 · 4 min" data-head="Anthropic Project Fetch" aria-label="21 Jun 2026: Anthropic Project Fetch"></a><span class="ml"></span><a class="cell l2" href="reports/ai-news-2026-06-22.html" data-tags="agents regulation" data-meta="22 Jun 2026 · 5 min" data-head="Anthropic ID Verification" aria-label="22 Jun 2026: Anthropic ID Verification"></a><a class="cell l2" href="reports/ai-news-2026-06-23.html" data-tags="models research" data-meta="23 Jun 2026 · 4 min" data-head="3B Model Beats Opus 4.5" aria-label="23 Jun 2026: 3B Model Beats Opus 4.5"></a><a class="cell l2" href="reports/ai-news-2026-06-24.html" data-tags="agents research" data-meta="24 Jun 2026 · 4 min" data-head="Vulnerability Reports Tipping Point" aria-label="24 Jun 2026: Vulnerability Reports Tipping Point"></a><a class="cell l2" href="reports/ai-news-2026-06-25.html" data-tags="models research infrastructure hardware" data-meta="25 Jun 2026 · 4 min" data-head="Anthropic vs Alibaba" aria-label="25 Jun 2026: Anthropic vs Alibaba"></a><a class="cell l2" href="reports/ai-news-2026-06-26.html" data-tags="hardware infrastructure security" data-meta="26 Jun 2026 · 4 min" data-head="Apple pivots to M7 AI silicon" aria-label="26 Jun 2026: Apple pivots to M7 AI silicon"></a><a class="cell l2" href="reports/ai-news-2026-06-27.html" data-tags="models agents" data-meta="27 Jun 2026 · 4 min" data-head="GPT‑5.6 Sol" aria-label="27 Jun 2026: GPT‑5.6 Sol"></a><a class="cell l1" href="reports/ai-news-2026-06-28.html" data-tags="models infrastructure security coding" data-meta="28 Jun 2026 · 3 min" data-head="Asian AI models" aria-label="28 Jun 2026: Asian AI models"></a><span class="ml"></span><a class="cell l2" href="reports/ai-news-2026-06-29.html" data-tags="agents research" data-meta="29 Jun 2026 · 5 min" data-head="GLM 5.2 beats Claude in cyber benchmarks" aria-label="29 Jun 2026: GLM 5.2 beats Claude in cyber benchmarks"></a><a class="cell l2" href="reports/ai-news-2026-06-30.html" data-tags="agents infrastructure" data-meta="30 Jun 2026 · 5 min" data-head="Anthropic expands compute partnership" aria-label="30 Jun 2026: Anthropic expands compute partnership"></a><a class="cell l1" href="reports/ai-news-2026-07-01.html" data-tags="models research" data-meta="1 Jul 2026 · 3 min" data-head="Claude Sonnet 5" aria-label="1 Jul 2026: Claude Sonnet 5"></a><a class="cell l2" href="reports/ai-news-2026-07-02.html" data-tags="coding research regulation robotics" data-meta="2 Jul 2026 · 4 min" data-head="Senior SWE-Bench" aria-label="2 Jul 2026: Senior SWE-Bench"></a><a class="cell l2" href="reports/ai-news-2026-07-03.html" data-tags="models agents coding memory" data-meta="3 Jul 2026 · 5 min" data-head="Claude Sonnet 5" aria-label="3 Jul 2026: Claude Sonnet 5"></a><a class="cell l2" href="reports/ai-news-2026-07-04.html" data-tags="models infrastructure memory" data-meta="4 Jul 2026 · 4 min" data-head="Claude Sonnet 5" aria-label="4 Jul 2026: Claude Sonnet 5"></a><a class="cell l1" href="reports/ai-news-2026-07-05.html" data-tags="models agents research coding" data-meta="5 Jul 2026 · 3 min" data-head="GPT-5.5 Codex regression" aria-label="5 Jul 2026: GPT-5.5 Codex regression"></a><span class="ml">Jul</span><a class="cell l2" href="reports/ai-news-2026-07-06.html" data-tags="agents research" data-meta="6 Jul 2026 · 4 min" data-head="Claude Sonnet 5" aria-label="6 Jul 2026: Claude Sonnet 5"></a><a class="cell l2" href="reports/ai-news-2026-07-07.html" data-tags="models agents infrastructure" data-meta="7 Jul 2026 · 4 min" data-head="Fable 5 Restored" aria-label="7 Jul 2026: Fable 5 Restored"></a><a class="cell l2" href="reports/ai-news-2026-07-08.html" data-tags="models agents research memory" data-meta="8 Jul 2026 · 5 min" data-head="GPT-5.6 Sol/Terra/Luna" aria-label="8 Jul 2026: GPT-5.6 Sol/Terra/Luna"></a><a class="cell l2" href="reports/ai-news-2026-07-09.html" data-tags="agents models coding" data-meta="9 Jul 2026 · 4 min" data-head="Microsoft Flint" aria-label="9 Jul 2026: Microsoft Flint"></a><a class="cell l2" href="reports/ai-news-2026-07-10.html" data-tags="agents models research" data-meta="10 Jul 2026 · 4 min" data-head="GPT-5.6" aria-label="10 Jul 2026: GPT-5.6"></a><a class="cell l2" href="reports/ai-news-2026-07-11.html" data-tags="agents research memory" data-meta="11 Jul 2026 · 5 min" data-head="Apple sues OpenAI" aria-label="11 Jul 2026: Apple sues OpenAI"></a><a class="cell l2" href="reports/ai-news-2026-07-12.html" data-tags="agents infrastructure multimodal" data-meta="12 Jul 2026 · 4 min" data-head="Google, OpenAI, Mistral" aria-label="12 Jul 2026: Google, OpenAI, Mistral"></a><span class="ml"></span><a class="cell l2" href="reports/ai-news-2026-07-13.html" data-tags="agents infrastructure" data-meta="13 Jul 2026 · 5 min" data-head="Anthropic ups Claude Code limits" aria-label="13 Jul 2026: Anthropic ups Claude Code limits"></a><a class="cell l2" href="reports/ai-news-2026-07-14.html" data-tags="models agents research" data-meta="14 Jul 2026 · 5 min" data-head="Apple SpeechAnalyzer" aria-label="14 Jul 2026: Apple SpeechAnalyzer"></a><a class="cell l2" href="reports/ai-news-2026-07-15.html" data-tags="agents security" data-meta="15 Jul 2026 · 6 min" data-head="Claude Science" aria-label="15 Jul 2026: Claude Science"></a><a class="cell l2" href="reports/ai-news-16-Jul-2026.html" data-tags="agents open-source infrastructure" data-meta="16 Jul 2026 · 4 min" data-head="Agent infra" aria-label="16 Jul 2026: Agent infra"></a><a class="cell l2" href="reports/ai-news-2026-07-17.html" data-tags="models agents" data-meta="17 Jul 2026 · 4 min" data-head="Gemini 3.5 Pro GA" aria-label="17 Jul 2026: Gemini 3.5 Pro GA"></a><a class="cell l2" href="reports/ai-news-2026-07-18.html" data-tags="models agents" data-meta="18 Jul 2026 · 5 min" data-head="Anthropic·Blackstone bet on implementation" aria-label="18 Jul 2026: Anthropic·Blackstone bet on implementation"></a><a class="cell l2" href="reports/ai-news-2026-07-19.html" data-tags="models multimodal" data-meta="19 Jul 2026 · 6 min" data-head="GPT-5.6 Solves Open Math" aria-label="19 Jul 2026: GPT-5.6 Solves Open Math"></a><span class="ml"></span><a class="cell l2" href="reports/ai-news-2026-07-20.html" data-tags="models agents infrastructure" data-meta="20 Jul 2026 · 5 min" data-head="July Model Wave Peaks" aria-label="20 Jul 2026: July Model Wave Peaks"></a><a class="cell l1" href="reports/ai-news-2026-07-21.html" data-tags="models security multimodal" data-meta="21 Jul 2026 · 3 min" data-head="OpenAI &amp; HF security incident during model evaluation" aria-label="21 Jul 2026: OpenAI &amp; HF security incident during model evaluation"></a><a class="cell l2" href="reports/ai-news-2026-07-22.html" data-tags="models agents research infrastructure" data-meta="22 Jul 2026 · 5 min" data-head="OpenAI &amp; HF Security Incident" aria-label="22 Jul 2026: OpenAI &amp; HF Security Incident"></a><a class="cell l2" href="reports/ai-news-2026-07-23.html" data-tags="models" data-meta="23 Jul 2026 · 4 min" data-head="Moonshot Nvidia Export Ban" aria-label="23 Jul 2026: Moonshot Nvidia Export Ban"></a><a class="cell l2" href="reports/ai-news-2026-07-24.html" data-tags="models" data-meta="24 Jul 2026 · 4 min" data-head="Claude Opus 5 Launch" aria-label="24 Jul 2026: Claude Opus 5 Launch"></a><a class="cell l2" href="reports/ai-news-2026-07-25.html" data-tags="models multimodal" data-meta="25 Jul 2026 · 4 min" data-head="Distillation Controversy" aria-label="25 Jul 2026: Distillation Controversy"></a><a class="cell l2" href="reports/ai-news-2026-07-26.html" data-tags="models funding infrastructure" data-meta="26 Jul 2026 · 4 min" data-head="Kimi K3 Weights Arrive" aria-label="26 Jul 2026: Kimi K3 Weights Arrive"></a><span class="ml"></span><a class="cell l2" href="reports/ai-news-2026-07-27.html" data-tags="agents infrastructure" data-meta="27 Jul 2026 · 4 min" data-head="Kimi K3 Weights Released" aria-label="27 Jul 2026: Kimi K3 Weights Released"></a><a class="cell l2" href="reports/ai-news-2026-07-28.html" data-tags="models open-source security" data-meta="28 Jul 2026 · 5 min" data-head="Nvidia Open Secure AI Alliance" aria-label="28 Jul 2026: Nvidia Open Secure AI Alliance"></a><a class="cell l1" href="reports/ai-news-2026-07-29.html" data-tags="models research multimodal" data-meta="29 Jul 2026 · 3 min" data-head="Gemma 4 26B in 2GB RAM on M-series Macs" aria-label="29 Jul 2026: Gemma 4 26B in 2GB RAM on M-series Macs"></a><a class="cell l1" href="reports/ai-news-2026-07-30.html" data-tags="models" data-meta="30 Jul 2026 · 3 min" data-head="GPT-5.6 price-performance frontier" aria-label="30 Jul 2026: GPT-5.6 price-performance frontier"></a><a class="cell l1" href="reports/ai-news-2026-07-31.html" data-tags="agents memory" data-meta="31 Jul 2026 · 3 min" data-head="DeepSeek-V4-Flash update" aria-label="31 Jul 2026: DeepSeek-V4-Flash update"></a><a class="cell l1" href="reports/ai-news-2026-08-01.html" data-tags="agents research multimodal coding" data-meta="1 Aug 2026 · 3 min" data-head="Ten advances in mathematics by OpenAI" aria-label="1 Aug 2026: Ten advances in mathematics by OpenAI"></a><a class="cell l1" href="reports/ai-news-2026-08-02.html" data-tags="research hardware multimodal" data-meta="2 Aug 2026 · 3 min" data-head="Karpathy&#x27;s Pelican" aria-label="2 Aug 2026: Karpathy&#x27;s Pelican"></a><span class="ml">Aug</span><a class="cell l1" href="reports/ai-news-2026-08-03.html" data-tags="security multimodal coding" data-meta="3 Aug 2026 · 3 min" data-head="LLMs reward expertise" aria-label="3 Aug 2026: LLMs reward expertise"></a><a class="cell l1" href="reports/ai-news-2026-08-04.html" data-tags="agents models multimodal" data-meta="4 Aug 2026 · 3 min" data-head="Mistral Shieldstral: 3B multimodal moderation" aria-label="4 Aug 2026: Mistral Shieldstral: 3B multimodal moderation"></a><a class="cell l1" href="reports/ai-news-2026-08-05.html" data-tags="agents memory" data-meta="5 Aug 2026 · 3 min" data-head="DeepMind reorg: Hassabis to Chair, Jeff Dean out" aria-label="5 Aug 2026: DeepMind reorg: Hassabis to Chair, Jeff Dean out"></a><a class="cell l1" href="reports/ai-news-2026-08-06.html" data-tags="agents research memory security" data-meta="6 Aug 2026 · 2 min" data-head="Unity AI Gateway GA" aria-label="6 Aug 2026: Unity AI Gateway GA"></a><a class="cell l2" href="reports/ai-news-2026-08-07.html" data-tags="agents security open-source" data-meta="7 Aug 2026 · 4 min" data-head="Meta fined $567M over teen mental health" aria-label="7 Aug 2026: Meta fined $567M over teen mental health"></a><a class="cell l2" href="reports/ai-news-2026-08-08.html" data-tags="models open-source security" data-meta="8 Aug 2026 · 4 min" data-head="DeepSeek V4 Flash 0731" aria-label="8 Aug 2026: DeepSeek V4 Flash 0731"></a><a class="cell l1" href="reports/ai-news-2026-08-09.html" data-tags="research" data-meta="9 Aug 2026 · 3 min" data-head="&#x27;Code was never the hard part&#x27; backlash" aria-label="9 Aug 2026: &#x27;Code was never the hard part&#x27; backlash"></a><span class="ml"></span><a class="cell l1" href="reports/ai-news-2026-08-10.html" data-tags="agents coding" data-meta="10 Aug 2026 · 3 min" data-head="Meta&#x27;s Muse Glimmer 30B open agentic model" aria-label="10 Aug 2026: Meta&#x27;s Muse Glimmer 30B open agentic model"></a><a class="cell l2" href="reports/ai-news-2026-08-11.html" data-tags="models memory" data-meta="11 Aug 2026 · 4 min" data-head="France bans unsolicited telemarketing" aria-label="11 Aug 2026: France bans unsolicited telemarketing"></a><a class="cell l1" href="reports/ai-news-2026-08-12.html" data-tags="models hardware" data-meta="12 Aug 2026 · 3 min" data-head="Stealing reasoning traces from LLM APIs" aria-label="12 Aug 2026: Stealing reasoning traces from LLM APIs"></a><a class="cell l1" href="reports/ai-news-2026-08-13.html" data-tags="models research coding" data-meta="13 Aug 2026 · 3 min" data-head="16-year-old SQLite WAL bug found" aria-label="13 Aug 2026: 16-year-old SQLite WAL bug found"></a><a class="cell l2" href="reports/ai-news-2026-08-14.html" data-tags="models coding" data-meta="14 Aug 2026 · 4 min" data-head="GLM-5.3 frontier coding + cyber" aria-label="14 Aug 2026: GLM-5.3 frontier coding + cyber"></a><a class="cell l2" href="reports/ai-news-2026-08-15.html" data-tags="models open-source" data-meta="15 Aug 2026 · 4 min" data-head="Qwen 3.8 27B open weights" aria-label="15 Aug 2026: Qwen 3.8 27B open weights"></a><a class="cell l2" href="reports/ai-news-2026-08-16.html" data-tags="models research multimodal infrastructure" data-meta="16 Aug 2026 · 4 min" data-head="Claude’s watermark backlash" aria-label="16 Aug 2026: Claude’s watermark backlash"></a><span class="ml"></span><a class="cell l1" href="reports/ai-news-2026-08-17.html" data-tags="models coding multimodal" data-meta="17 Aug 2026 · 3 min" data-head="AI;DR and the cost of never reading" aria-label="17 Aug 2026: AI;DR and the cost of never reading"></a><a class="cell l1" href="reports/ai-news-2026-08-18.html" data-tags="models research open-source" data-meta="18 Aug 2026 · 3 min" data-head="Google buys failed airline Spirit&#x27;s data at auction" aria-label="18 Aug 2026: Google buys failed airline Spirit&#x27;s data at auction"></a><a class="cell l1" href="reports/ai-news-2026-08-19.html" data-tags="agents models research infrastructure" data-meta="19 Aug 2026 · 3 min" data-head="OpenRouter is joining Stripe" aria-label="19 Aug 2026: OpenRouter is joining Stripe"></a><a class="cell l1" href="reports/ai-news-2026-08-20.html" data-tags="agents research multimodal" data-meta="20 Aug 2026 · 3 min" data-head="Aaron Swartz&#x27;s prosecution and Meta&#x27;s scraping" aria-label="20 Aug 2026: Aaron Swartz&#x27;s prosecution and Meta&#x27;s scraping"></a><a class="cell l2" href="reports/ai-news-2026-08-21.html" data-tags="models research multimodal memory" data-meta="21 Aug 2026 · 4 min" data-head="Kagi adds a toggle to hide paywalled results" aria-label="21 Aug 2026: Kagi adds a toggle to hide paywalled results"></a><a class="cell l2" href="reports/ai-news-2026-08-22.html" data-tags="models research multimodal" data-meta="22 Aug 2026 · 4 min" data-head="Canada to match US tariffs dollar for dollar" aria-label="22 Aug 2026: Canada to match US tariffs dollar for dollar"></a><a class="cell l2" href="reports/ai-news-2026-08-23.html" data-tags="models research memory" data-meta="23 Aug 2026 · 4 min" data-head="Everything I own, owned" aria-label="23 Aug 2026: Everything I own, owned"></a><span class="ml"></span><a class="cell l2" href="reports/ai-news-2026-08-24.html" data-tags="agents memory" data-meta="24 Aug 2026 · 4 min" data-head="Europe&#x27;s maker rules and the cost of compliance" aria-label="24 Aug 2026: Europe&#x27;s maker rules and the cost of compliance"></a><a class="cell l1" href="reports/ai-news-2026-08-25.html" data-tags="research hardware multimodal" data-meta="25 Aug 2026 · 3 min" data-head="Dolly Parton has died" aria-label="25 Aug 2026: Dolly Parton has died"></a><a class="cell l1" href="reports/ai-news-2026-08-26.html" data-tags="research infrastructure multimodal" data-meta="26 Aug 2026 · 3 min" data-head="Z.ai ships GLM-5.3-Flash" aria-label="26 Aug 2026: Z.ai ships GLM-5.3-Flash"></a><a class="cell l2" href="reports/ai-news-2026-08-27.html" data-tags="models" data-meta="27 Aug 2026 · 4 min" data-head="Nvidia agrees to buy Hugging Face for $13B" aria-label="27 Aug 2026: Nvidia agrees to buy Hugging Face for $13B"></a><a class="cell l2" href="reports/ai-news-2026-08-28.html" data-tags="research infrastructure open-source" data-meta="28 Aug 2026 · 4 min" data-head="GUIs should be fully keyboard-driven" aria-label="28 Aug 2026: GUIs should be fully keyboard-driven"></a><a class="cell l1" href="reports/ai-news-2026-08-29.html" data-tags="agents research coding memory" data-meta="29 Aug 2026 · 3 min" data-head="Creepy Crawlies" aria-label="29 Aug 2026: Creepy Crawlies"></a><a class="cell l2" href="reports/ai-news-2026-08-30.html" data-tags="research infrastructure security" data-meta="30 Aug 2026 · 4 min" data-head="“I just chose words carefully”" aria-label="30 Aug 2026: “I just chose words carefully”"></a><span class="ml"></span><a class="cell l1" href="reports/ai-news-2026-08-31.html" data-tags="models security memory" data-meta="31 Aug 2026 · 3 min" data-head="Chrome drops MV2 extensions including uBlock Origin" aria-label="31 Aug 2026: Chrome drops MV2 extensions including uBlock Origin"></a><a class="cell l2" href="reports/ai-news-2026-09-01.html" data-tags="models research" data-meta="1 Sep 2026 · 4 min" data-head="Anthropic ships Claude Fable 5.1 and Mythos 5.1" aria-label="1 Sep 2026: Anthropic ships Claude Fable 5.1 and Mythos 5.1"></a><a class="cell l1" href="reports/ai-news-2026-09-02.html" data-tags="models research memory" data-meta="2 Sep 2026 · 3 min" data-head="Gemini 3.8 Flash ships" aria-label="2 Sep 2026: Gemini 3.8 Flash ships"></a><a class="cell l1" href="reports/ai-news-2026-09-03.html" data-tags="models infrastructure" data-meta="3 Sep 2026 · 3 min" data-head="GPT-6 Astra leads the day on Hacker News" aria-label="3 Sep 2026: GPT-6 Astra leads the day on Hacker News"></a><a class="cell l1" href="reports/ai-news-2026-09-04.html" data-tags="research agents infrastructure" data-meta="4 Sep 2026 · 3 min" data-head="A new OpenAI agent message board surfaces" aria-label="4 Sep 2026: A new OpenAI agent message board surfaces"></a><a class="cell l1" href="reports/ai-news-2026-09-05.html" data-tags="research infrastructure memory multimodal" data-meta="5 Sep 2026 · 3 min" data-head="Private German rocket reaches orbit from European soil" aria-label="5 Sep 2026: Private German rocket reaches orbit from European soil"></a><a class="cell l1" href="reports/ai-news-2026-09-06.html" data-tags="research memory security multimodal" data-meta="6 Sep 2026 · 3 min" data-head="QBittorrent escapes its sandbox" aria-label="6 Sep 2026: QBittorrent escapes its sandbox"></a><span class="ml">Sep</span><a class="cell l1" href="reports/ai-news-2026-09-07.html" data-tags="research multimodal" data-meta="7 Sep 2026 · 3 min" data-head="LG smart TVs caught logging audio with the screen off" aria-label="7 Sep 2026: LG smart TVs caught logging audio with the screen off"></a><a class="cell l2" href="reports/ai-news-2026-09-08.html" data-tags="research agents security" data-meta="8 Sep 2026 · 4 min" data-head="OpenAI&#x27;s Navier–Stokes write-up tops HN" aria-label="8 Sep 2026: OpenAI&#x27;s Navier–Stokes write-up tops HN"></a><a class="cell l1" href="reports/ai-news-2026-09-09.html" data-tags="models research memory" data-meta="9 Sep 2026 · 3 min" data-head="Apple&#x27;s iPhone Duo tops the day" aria-label="9 Sep 2026: Apple&#x27;s iPhone Duo tops the day"></a><a class="cell l2" href="reports/ai-news-2026-09-10.html" data-tags="models multimodal research memory" data-meta="10 Sep 2026 · 4 min" data-head="Shopify moves from React Native back to Swift and Kotlin" aria-label="10 Sep 2026: Shopify moves from React Native back to Swift and Kotlin"></a><a class="cell l2" href="reports/ai-news-2026-09-11.html" data-tags="research multimodal security" data-meta="11 Sep 2026 · 4 min" data-head="AI&#x27;s misalignment with mathematics" aria-label="11 Sep 2026: AI&#x27;s misalignment with mathematics"></a><a class="cell l2" href="reports/ai-news-2026-09-12.html" data-tags="research agents memory multimodal" data-meta="12 Sep 2026 · 4 min" data-head="Google&#x27;s /goto anti-scraping links" aria-label="12 Sep 2026: Google&#x27;s /goto anti-scraping links"></a><a class="cell l4" href="reports/ai-news-2026-09-13.html" data-tags="research agents" data-meta="13 Sep 2026 · 9 min" data-head="Amodei&#x27;s case for pacing the frontier" aria-label="13 Sep 2026: Amodei&#x27;s case for pacing the frontier"></a><span class="ml"></span><a class="cell l3" href="reports/ai-news-2026-09-14.html" data-tags="models research" data-meta="14 Sep 2026 · 7 min" data-head="Signal drops the phone number, backed by zero-knowledge proofs" aria-label="14 Sep 2026: Signal drops the phone number, backed by zero-knowledge proofs"></a><a class="cell l3" href="reports/ai-news-2026-09-15.html" data-tags="memory" data-meta="15 Sep 2026 · 7 min" data-head="OpenAI&#x27;s bots knew the RubyGems vulnerability first" aria-label="15 Sep 2026: OpenAI&#x27;s bots knew the RubyGems vulnerability first"></a><a class="cell l3" href="reports/ai-news-2026-09-16.html" data-tags="models research infrastructure coding" data-meta="16 Sep 2026 · 7 min" data-head="Typesafe launches System One models and Jev" aria-label="16 Sep 2026: Typesafe launches System One models and Jev"></a><a class="cell l3" href="reports/ai-news-2026-09-17.html" data-tags="infrastructure hardware" data-meta="17 Sep 2026 · 8 min" data-head="Nvidia ships CUDA in Rust" aria-label="17 Sep 2026: Nvidia ships CUDA in Rust"></a><a class="cell l3" href="reports/ai-news-2026-09-18.html" data-tags="models research memory coding" data-meta="18 Sep 2026 · 7 min" data-head="OpenAI&#x27;s Astra for Law" aria-label="18 Sep 2026: OpenAI&#x27;s Astra for Law"></a><a class="cell l4" href="reports/ai-news-2026-09-19.html" data-tags="models agents research memory" data-meta="19 Sep 2026 · 9 min" data-head="US military&#x27;s AI intel near-miss" aria-label="19 Sep 2026: US military&#x27;s AI intel near-miss"></a><a class="cell l2" href="reports/ai-news-2026-09-20.html" data-tags="models research" data-meta="20 Sep 2026 · 6 min" data-head="Non-autoregressive RL models resurface" aria-label="20 Sep 2026: Non-autoregressive RL models resurface"></a><span class="ml"></span><a class="cell l3" href="reports/ai-news-2026-09-21.html" data-tags="models agents memory" data-meta="21 Sep 2026 · 7 min" data-head="Qwen ships Image 2.1" aria-label="21 Sep 2026: Qwen ships Image 2.1"></a><a class="cell l3" href="reports/ai-news-2026-09-22.html" data-tags="models agents research memory" data-meta="22 Sep 2026 · 7 min" data-head="Xiaomi ships MiMo v2.6" aria-label="22 Sep 2026: Xiaomi ships MiMo v2.6"></a><a class="cell l1" href="reports/ai-news-2026-09-23.html" data-tags="models agents multimodal" data-meta="23 Sep 2026 · 3 min" data-head="Claude discovers a novel enzyme system" aria-label="23 Sep 2026: Claude discovers a novel enzyme system"></a><a class="cell l2" href="reports/ai-news-2026-09-24.html" data-tags="agents research multimodal memory" data-meta="24 Sep 2026 · 6 min" data-head="Meta takes down a critical video about its AI Glasses" aria-label="24 Sep 2026: Meta takes down a critical video about its AI Glasses"></a><a class="cell l3" href="reports/ai-news-2026-09-25.html" data-tags="models agents research" data-meta="25 Sep 2026 · 8 min" data-head="Claude Opus 5.5 and GPT-6 land days apart" aria-label="25 Sep 2026: Claude Opus 5.5 and GPT-6 land days apart"></a><a class="cell l3" href="reports/ai-news-2026-09-26.html" data-tags="agents" data-meta="26 Sep 2026 · 7 min" data-head="Anthropic&#x27;s supply-chain-risk designation upheld" aria-label="26 Sep 2026: Anthropic&#x27;s supply-chain-risk designation upheld"></a><a class="cell l2" href="reports/ai-news-2026-09-27.html" data-tags="agents research coding memory" data-meta="27 Sep 2026 · 5 min" data-head="OpenAI&#x27;s book-piracy optics" aria-label="27 Sep 2026: OpenAI&#x27;s book-piracy optics"></a><span class="ml"></span><a class="cell l2" href="reports/ai-news-2026-09-28.html" data-tags="models agents research memory" data-meta="28 Sep 2026 · 6 min" data-head="AI labs compete to claim the most existentially threatening model" aria-label="28 Sep 2026: AI labs compete to claim the most existentially threatening model"></a><a class="cell l3" href="reports/ai-news-2026-09-29.html" data-tags="models agents research" data-meta="29 Sep 2026 · 8 min" data-head="OpenAI ships GPT-6.1 Sol and Dots" aria-label="29 Sep 2026: OpenAI ships GPT-6.1 Sol and Dots"></a><a class="cell l3" href="reports/ai-news-2026-09-30.html" data-tags="models research" data-meta="30 Sep 2026 · 8 min" data-head="Responsible release of AI-generated mathematics" aria-label="30 Sep 2026: Responsible release of AI-generated mathematics"></a><a class="cell l3" href="reports/ai-news-2026-10-01.html" data-tags="agents" data-meta="1 Oct 2026 · 7 min" data-head="Gemini 4 Argon launches" aria-label="1 Oct 2026: Gemini 4 Argon launches"></a><a class="cell l4" href="reports/ai-news-2026-10-02.html" data-tags="agents research memory" data-meta="2 Oct 2026 · 9 min" data-head="DeepSeek Harness tops the front page" aria-label="2 Oct 2026: DeepSeek Harness tops the front page"></a><a class="cell l4" href="reports/ai-news-2026-10-03.html" data-tags="memory research" data-meta="3 Oct 2026 · 9 min" data-head="Court rules Utah&#x27;s VPN law technically impossible" aria-label="3 Oct 2026: Court rules Utah&#x27;s VPN law technically impossible"></a><a class="cell l3" href="reports/ai-news-2026-10-04.html" data-tags="agents memory" data-meta="4 Oct 2026 · 8 min" data-head="Aleph Alpha ships Kolibri, a sovereign open-weight model" aria-label="4 Oct 2026: Aleph Alpha ships Kolibri, a sovereign open-weight model"></a></div></div>
+        <div class="facts">
+          <div class="fact"><div class="n">143</div><div class="k">day streak</div></div>
+          <div class="fact"><div class="n">4<small> min</small></div><div class="k">average briefing</div></div>
+          <a class="fact" href="reports/ai-news-2026-10-03.html" data-file="ai-news-2026-10-03.html"><div class="n">9<small> min</small></div><div class="k">longest, 3 Oct <span class="arrow">→</span></div></a>
+        </div>
       </div>
       <div class="cal-foot"><span>Darker means a longer briefing. Hover a day for its headline.</span>
         <span class="legend" aria-hidden="true">Short <i class="cell l1"></i><i class="cell l2"></i><i class="cell l3"></i><i class="cell l4"></i> Long</span></div>
     </section>
 
     <section class="sec" id="special">
-      <div class="sec-head"><h3>Special reports</h3><span class="eyebrow" id="sp-meta"></span></div>
-      <div class="specials" id="specials"></div>
-      <div style="padding-top:6px"><button class="link" id="sp-more" type="button" hidden></button></div>
+      <div class="sec-head"><h3>Special reports</h3><span class="eyebrow" id="sp-meta">16 reports · 7–38 min reads</span></div>
+      <div class="specials" id="specials">
+      <a class="sp" href="reports/world-class-websites-2026-10-03.html" data-file="world-class-websites-2026-10-03.html" data-vt="r-world-class-websites-2026-10-03" data-tags="agents coding" data-min="38">
+        <div class="eyebrow"><b>Deep Dives</b></div>
+        <h4>What the World&#x27;s Best Websites Are Doing in the AI Era (2026)</h4>
+        <p>Performance · Rendering architecture · Agent-readable web · WebMCP &amp; ACP · Design systems as API · Design craft · Accessibility · 59 sources</p>
+        <div class="meta"><span>3 Oct 2026</span><span>38 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/knowledge-layer-2026-10-02.html" data-file="knowledge-layer-2026-10-02.html" data-vt="r-knowledge-layer-2026-10-02" data-tags="agents memory" data-min="14">
+        <div class="eyebrow"><b>Memory &amp; Knowledge</b></div>
+        <h4>Ontologies, Graph Knowledge, Semantic Layer &amp; Context Layer (2025–2026)</h4>
+        <p>Ontologies · GraphRAG · Semantic layer · Context layer · Convergence and adoption (2025–2026)</p>
+        <div class="meta"><span>2 Oct 2026</span><span>14 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/ontology-graph-ml-aiops-2026-10-01.html" data-file="ontology-graph-ml-aiops-2026-10-01.html" data-vt="r-ontology-graph-ml-aiops-2026-10-01" data-tags="models memory" data-min="11">
+        <div class="eyebrow"><b>Memory &amp; Knowledge</b></div>
+        <h4>Ontologies, Graph ML &amp; AIOps: Where the ML Actually Goes</h4>
+        <p>Palantir ontology · Governance · Link prediction · AIOps layers · The determinism question · Foundry mapping · 5 diagrams · Reading list</p>
+        <div class="meta"><span>1 Oct 2026</span><span>11 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/context-lake-2026-07-27.html" data-file="context-lake-2026-07-27.html" data-vt="r-context-lake-2026-07-27" data-tags="agents memory" data-min="16">
+        <div class="eyebrow"><b>Memory &amp; Knowledge</b></div>
+        <h4>Context Lake: The Infrastructure Layer for Autonomous AI Agents</h4>
+        <p>Definition · Architecture · 4 platforms compared · AIOps blueprint · Anti-patterns · Real economics · 11 sources</p>
+        <div class="meta"><span>27 Jul 2026</span><span>16 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/ai-native-design-patterns-2026-07-17.html" data-file="ai-native-design-patterns-2026-07-17.html" data-vt="r-ai-native-design-patterns-2026-07-17" data-tags="agents regulation coding" data-min="29">
+        <div class="eyebrow"><b>Deep Dives</b></div>
+        <h4>AI-Native Design Patterns: What Ramp, Linear, and Vercel Got Right</h4>
+        <p>Zero-touch automation · Exception-driven UI · Progressive autonomy · Trust architecture · What traditional SaaS gets wrong</p>
+        <div class="meta"><span>17 Jul 2026</span><span>29 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/single-agent-vs-multi-agent-llm-systems-2026-07-17.html" data-file="single-agent-vs-multi-agent-llm-systems-2026-07-17.html" data-vt="r-single-agent-vs-multi-agent-llm-systems-2026-07-17" data-tags="agents research" data-min="15">
+        <div class="eyebrow"><b>Agents &amp; Multi-Agent</b></div>
+        <h4>Single-Agent vs. Multi-Agent LLM Systems: The Architectural Debate</h4>
+        <p>21 papers analyzed · Debate, roles, and voting paradigms · MoE isomorphism · Cost-normalized benchmarks · Open problems</p>
+        <div class="meta"><span>17 Jul 2026</span><span>15 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/ai-agent-memory-2026-06-28.html" data-file="ai-agent-memory-2026-06-28.html" data-vt="r-ai-agent-memory-2026-06-28" data-tags="memory agents" data-min="7" data-extra hidden>
+        <div class="eyebrow"><b>Memory &amp; Knowledge</b></div>
+        <h4>AI Agent Memory in 2026: Architectures, Frameworks &amp; Trade-offs</h4>
+        <p>The memory taxonomy · Vector vs graph vs OS-tiered · Mem0 vs Zep vs Letta on the benchmarks · Temporal knowledge graphs · How to choose</p>
+        <div class="meta"><span>28 Jun 2026</span><span>7 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/ai-model-architecture-2026-06-28.html" data-file="ai-model-architecture-2026-06-28.html" data-vt="r-ai-model-architecture-2026-06-28" data-tags="models infrastructure" data-min="9" data-extra hidden>
+        <div class="eyebrow"><b>Models &amp; Research</b></div>
+        <h4>The Architecture of Frontier AI in 2026: Five Shifts</h4>
+        <p>MoE is the default · Test-time compute is the new scaling axis · Efficient attention breaks the context ceiling · Speculative decoding ships in the weights · The frontier is contested across five labs</p>
+        <div class="meta"><span>28 Jun 2026</span><span>9 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/building-agent-skills-2026-06-28.html" data-file="building-agent-skills-2026-06-28.html" data-vt="r-building-agent-skills-2026-06-28" data-tags="agents security" data-min="7" data-extra hidden>
+        <div class="eyebrow"><b>Agents &amp; Multi-Agent</b></div>
+        <h4>Building Agent Skills in 2026: Progressive Disclosure as a Design Pattern</h4>
+        <p>What a Skill is · Skills vs. tools · The three-tier disclosure model · How to author one · The context-tax discipline · Security</p>
+        <div class="meta"><span>28 Jun 2026</span><span>7 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/sre-2026-06-28.html" data-file="sre-2026-06-28.html" data-vt="r-sre-2026-06-28" data-tags="agents open-source business" data-min="8" data-extra hidden>
+        <div class="eyebrow"><b>Reliability &amp; Security</b></div>
+        <h4>SRE in 2026: The AI Teammate, the Stack, and the Governance Line</h4>
+        <p>AI SRE agents hit GA · The incident loop, automated · Where autonomy stops · The OpenTelemetry-native stack · Open source vs. enterprise</p>
+        <div class="meta"><span>28 Jun 2026</span><span>8 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/agents-running-businesses-2026-06-27.html" data-file="agents-running-businesses-2026-06-27.html" data-vt="r-agents-running-businesses-2026-06-27" data-tags="agents funding" data-min="15" data-extra hidden>
+        <div class="eyebrow"><b>Agents &amp; Multi-Agent</b></div>
+        <h4>Agents That Run Businesses: The New Autonomous Executive</h4>
+        <p>Full landscape · 40+ companies · Technical architecture · Real economics · Anti-patterns · Where it&#x27;s heading</p>
+        <div class="meta"><span>27 Jun 2026</span><span>15 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/arxiv-trends-2026-06-27.html" data-file="arxiv-trends-2026-06-27.html" data-vt="r-arxiv-trends-2026-06-27" data-tags="agents research infrastructure" data-min="10" data-extra hidden>
+        <div class="eyebrow"><b>Models &amp; Research</b></div>
+        <h4>ArXiv CS.AI Trend Report — 6 Signals From 3,862 Papers (May–Jun 2026)</h4>
+        <p>ArXiv CS.AI trend analysis · May–Jun 2026 · Cluster mapping · Emerging vs established · What matters for builders</p>
+        <div class="meta"><span>27 Jun 2026</span><span>10 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/adas-mas-state-of-art-2026-06-08.html" data-file="adas-mas-state-of-art-2026-06-08.html" data-vt="r-adas-mas-state-of-art-2026-06-08" data-tags="agents" data-min="26" data-extra hidden>
+        <div class="eyebrow"><b>Agents &amp; Multi-Agent</b></div>
+        <h4>Automated Design of Agentic Systems &amp; Multi-Agent Algorithms: State of the Art 2025-2026</h4>
+        <p>ADAS, Meta Agent Search, LLM-MAS Orchestration &amp; Production Deployment</p>
+        <div class="meta"><span>8 Jun 2026</span><span>26 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/enterprise-ai-agent-security-2026-06-02.html" data-file="enterprise-ai-agent-security-2026-06-02.html" data-vt="r-enterprise-ai-agent-security-2026-06-02" data-tags="agents security regulation business" data-min="13" data-extra hidden>
+        <div class="eyebrow"><b>Reliability &amp; Security</b></div>
+        <h4>Enterprise AI Agent Security — Deep Research Report</h4>
+        <p>OpenShell, NemoClaw, Hermes Agent, and the new runtime security layer for autonomous agents</p>
+        <div class="meta"><span>2 Jun 2026</span><span>13 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/palantir-playbook-2026.html" data-file="palantir-playbook-2026.html" data-vt="r-palantir-playbook-2026" data-tags="agents business memory" data-min="13" data-extra hidden>
+        <div class="eyebrow"><b>Enterprise &amp; Adoption</b></div>
+        <h4>What AI Startups Stole From Palantir&#x27;s Playbook</h4>
+        <p>Forward Deployed Engineers · Ontological/Semantic Layers · Agentic Orchestration on Enterprise Legacy Systems · Market Map 2025-2026</p>
+        <div class="meta"><span>29 May 2026</span><span>13 min <span class="arrow">→</span></span></div>
+      </a>
+      <a class="sp" href="reports/ai-engineering-adoption-frameworks-2026-en.html" data-file="ai-engineering-adoption-frameworks-2026-en.html" data-vt="r-ai-engineering-adoption-frameworks-2026-en" data-tags="coding business security" data-min="11" data-extra hidden>
+        <div class="eyebrow"><b>Enterprise &amp; Adoption</b></div>
+        <h4>How Elite Engineering Teams Are Adopting AI (2026)</h4>
+        <p>AI Adoption Frameworks in High-Performance Engineering Teams</p>
+        <div class="meta"><span>20 May 2026</span><span>11 min <span class="arrow">→</span></span></div>
+      </a>
+      </div>
+      <div class="empty" id="sp-empty" hidden>No special reports on these topics yet.</div>
+      <div style="padding-top:6px"><button class="link" id="sp-more" type="button" data-label="Show all 16 special reports">Show all 16 special reports</button></div>
     </section>
 
     <section class="sec" id="archive" tabindex="-1">
-      <div class="sec-head"><h3>Daily archive</h3><span class="eyebrow" id="ar-meta"></span></div>
-      <div id="months"></div>
+      <div class="sec-head"><h3>Daily archive</h3><span class="eyebrow" id="ar-meta">145 daily briefings</span></div>
+      <div id="months">
+      <div class="month">
+        <div class="month-h"><h5>October 2026</h5><span class="eyebrow" data-count>3</span></div>
+        <a class="row" href="reports/ai-news-2026-10-04.html" data-file="ai-news-2026-10-04.html" data-vt="r-ai-news-2026-10-04" data-tags="agents memory" data-latest hidden>
+          <span class="d"><b>04</b> Sun</span>
+          <span class="t"><span class="lead">Aleph Alpha ships Kolibri, a sovereign open-weight model</span><span class="rest"> · Willison calls for default hard budget caps on agents · Federal judge brands Flock &#x27;indiscriminate mass surveillance&#x27; · OpenAI safety departure lands</span></span>
+          <span class="r"><span class="tg">Memory</span><span>8 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-10-03.html" data-file="ai-news-2026-10-03.html" data-vt="r-ai-news-2026-10-03" data-tags="memory research">
+          <span class="d"><b>03</b> Sat</span>
+          <span class="t"><span class="lead">Court rules Utah&#x27;s VPN law technically impossible</span><span class="rest"> · Greg Kroah-Hartman on security in the LLM age · FLUX 3 and ChatGPT Sites land · Supabase acquires Turso</span></span>
+          <span class="r"><span class="tg">Memory</span><span>9 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-10-02.html" data-file="ai-news-2026-10-02.html" data-vt="r-ai-news-2026-10-02" data-tags="agents research memory">
+          <span class="d"><b>02</b> Fri</span>
+          <span class="t"><span class="lead">DeepSeek Harness tops the front page</span><span class="rest"> · Pi 1.0 clears 1,000 points · Cloudflare opens Clef decision models · Git 3.0&#x27;s SHA-256 default called a costly mistake</span></span>
+          <span class="r"><span class="tg">Memory</span><span>9 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-10-01.html" data-file="ai-news-2026-10-01.html" data-vt="r-ai-news-2026-10-01" data-tags="agents">
+          <span class="d"><b>01</b> Thu</span>
+          <span class="t"><span class="lead">Gemini 4 Argon launches</span><span class="rest"> · FTC opens probe into OpenAI and Anthropic · One flaw from 17T Microsoft records · Netlify moves Edge Functions to Firecracker</span></span>
+          <span class="r"><span>7 min</span></span>
+        </a>
+      </div>
+      <div class="month">
+        <div class="month-h"><h5>September 2026</h5><span class="eyebrow" data-count>30</span></div>
+        <a class="row" href="reports/ai-news-2026-09-30.html" data-file="ai-news-2026-09-30.html" data-vt="r-ai-news-2026-09-30" data-tags="models research">
+          <span class="d"><b>30</b> Wed</span>
+          <span class="t"><span class="lead">Responsible release of AI-generated mathematics</span><span class="rest"> · OpenAI posts its DevDay 2026 recap · Cloudflare ships Cf, an agentic CLI for its API · NRC issues first US permit for a BWRX-300 small modular reactor</span></span>
+          <span class="r"><span>8 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-29.html" data-file="ai-news-2026-09-29.html" data-vt="r-ai-news-2026-09-29" data-tags="models agents research">
+          <span class="d"><b>29</b> Tue</span>
+          <span class="t"><span class="lead">OpenAI ships GPT-6.1 Sol and Dots</span><span class="rest"> · Anthropic flags GLM-5.3&#x27;s cyber reach · ChromeOS support ends two years early · UK facial-recognition trial logs 500k scans and one false positive</span></span>
+          <span class="r"><span>8 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-28.html" data-file="ai-news-2026-09-28.html" data-vt="r-ai-news-2026-09-28" data-tags="models agents research memory">
+          <span class="d"><b>28</b> Mon</span>
+          <span class="t"><span class="lead">AI labs compete to claim the most existentially threatening model</span><span class="rest"> · Fireworks releases Ember-1 · Anthropic publishes Claude Opus 5.5 prompting guide · NeoVim deletes Vim undo files</span></span>
+          <span class="r"><span class="tg">Memory</span><span>6 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-27.html" data-file="ai-news-2026-09-27.html" data-vt="r-ai-news-2026-09-27" data-tags="agents research coding memory">
+          <span class="d"><b>27</b> Sun</span>
+          <span class="t"><span class="lead">OpenAI&#x27;s book-piracy optics</span><span class="rest"> · Microsoft resets Copilot · ASML sells nothing in Europe · an agent reaches a chatbot over DNS</span></span>
+          <span class="r"><span class="tg">Coding · Memory</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-26.html" data-file="ai-news-2026-09-26.html" data-vt="r-ai-news-2026-09-26" data-tags="agents">
+          <span class="d"><b>26</b> Sat</span>
+          <span class="t"><span class="lead">Anthropic&#x27;s supply-chain-risk designation upheld</span><span class="rest"> · OpenAI agents&#x27; Hugging Face hack detailed · Plan mode declared dead · Facebook found liable for Cambridge Analytica</span></span>
+          <span class="r"><span>7 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-25.html" data-file="ai-news-2026-09-25.html" data-vt="r-ai-news-2026-09-25" data-tags="models agents research">
+          <span class="d"><b>25</b> Fri</span>
+          <span class="t"><span class="lead">Claude Opus 5.5 and GPT-6 land days apart</span><span class="rest"> · Claude co-discovers a CRISPR-like enzyme system · rogue agents caught hacking in the wild · Oracle owes data-centre investors even without power</span></span>
+          <span class="r"><span>8 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-24.html" data-file="ai-news-2026-09-24.html" data-vt="r-ai-news-2026-09-24" data-tags="agents research multimodal memory">
+          <span class="d"><b>24</b> Thu</span>
+          <span class="t"><span class="lead">Meta takes down a critical video about its AI Glasses</span><span class="rest"> · a YC-backed open-source IDE for thoughtful software design · feds target AI critics as foreign agents · an OpenAI agent hacked an Australian government website</span></span>
+          <span class="r"><span class="tg">Multimodal · Memory</span><span>6 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-23.html" data-file="ai-news-2026-09-23.html" data-vt="r-ai-news-2026-09-23" data-tags="models agents multimodal">
+          <span class="d"><b>23</b> Wed</span>
+          <span class="t"><span class="lead">Claude discovers a novel enzyme system</span><span class="rest"> · Italy votes to return to nuclear energy · Linux comes to Snapdragon X2 · Gemini 3.8 text-to-speech</span></span>
+          <span class="r"><span class="tg">Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-22.html" data-file="ai-news-2026-09-22.html" data-vt="r-ai-news-2026-09-22" data-tags="models agents research memory">
+          <span class="d"><b>22</b> Tue</span>
+          <span class="t"><span class="lead">Xiaomi ships MiMo v2.6</span><span class="rest"> · xAI releases Grok 4.7 · &#x27;Spymarks&#x27; reframes AI watermarking as tracking · Cut fiber line grounds East Coast flights</span></span>
+          <span class="r"><span class="tg">Memory</span><span>7 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-21.html" data-file="ai-news-2026-09-21.html" data-vt="r-ai-news-2026-09-21" data-tags="models agents memory">
+          <span class="d"><b>21</b> Mon</span>
+          <span class="t"><span class="lead">Qwen ships Image 2.1</span><span class="rest"> · Google open-sources the AX agent orchestrator · Samsung to double HBM4 output · ZuckOff flags Meta&#x27;s camera glasses</span></span>
+          <span class="r"><span class="tg">Memory</span><span>7 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-20.html" data-file="ai-news-2026-09-20.html" data-vt="r-ai-news-2026-09-20" data-tags="models research">
+          <span class="d"><b>20</b> Sun</span>
+          <span class="t"><span class="lead">Non-autoregressive RL models resurface</span><span class="rest"> · Microsoft director calls AI scraping the largest theft of labour · StepFun previews Step 5 · Spain blocks Archive.today</span></span>
+          <span class="r"><span>6 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-19.html" data-file="ai-news-2026-09-19.html" data-vt="r-ai-news-2026-09-19" data-tags="models agents research memory">
+          <span class="d"><b>19</b> Sat</span>
+          <span class="t"><span class="lead">US military&#x27;s AI intel near-miss</span><span class="rest"> · Android 17 withholds new APIs from AOSP · Claude Code falls back to AGENTS.md · Cloudflare trims another 100TB of RAM</span></span>
+          <span class="r"><span class="tg">Memory</span><span>9 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-18.html" data-file="ai-news-2026-09-18.html" data-vt="r-ai-news-2026-09-18" data-tags="models research memory coding">
+          <span class="d"><b>18</b> Fri</span>
+          <span class="t"><span class="lead">OpenAI&#x27;s Astra for Law</span><span class="rest"> · Qwen 3.8 Omni Flash · Bonsai 2 27B&#x27;s 9× smaller footprint · Microsoft filing calls AI scraping &#x27;largest theft of labor&#x27;</span></span>
+          <span class="r"><span class="tg">Memory · Coding</span><span>7 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-17.html" data-file="ai-news-2026-09-17.html" data-vt="r-ai-news-2026-09-17" data-tags="infrastructure hardware">
+          <span class="d"><b>17</b> Thu</span>
+          <span class="t"><span class="lead">Nvidia ships CUDA in Rust</span><span class="rest"> · a 4B model out-plans Postgres · AWS admits unrecoverable Middle East data · Flock cameras cracked open</span></span>
+          <span class="r"><span class="tg">Infrastructure · Hardware</span><span>8 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-16.html" data-file="ai-news-2026-09-16.html" data-vt="r-ai-news-2026-09-16" data-tags="models research infrastructure coding">
+          <span class="d"><b>16</b> Wed</span>
+          <span class="t"><span class="lead">Typesafe launches System One models and Jev</span><span class="rest"> · Google ships Gemini 3.8 Live with an Extended Thinking variant · Strix gains admin access to Baseten&#x27;s production GitHub · Mistral and Mozilla partner on private, multilingual AI browsing</span></span>
+          <span class="r"><span class="tg">Infrastructure · Coding</span><span>7 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-15.html" data-file="ai-news-2026-09-15.html" data-vt="r-ai-news-2026-09-15" data-tags="memory">
+          <span class="d"><b>15</b> Tue</span>
+          <span class="t"><span class="lead">OpenAI&#x27;s bots knew the RubyGems vulnerability first</span><span class="rest"> · iOS, iPadOS and macOS 27 ship · Amazon v. Perplexity reaches the Ninth Circuit · Ubuntu 26.10 completes the Rust coreutils switch</span></span>
+          <span class="r"><span class="tg">Memory</span><span>7 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-14.html" data-file="ai-news-2026-09-14.html" data-vt="r-ai-news-2026-09-14" data-tags="models research">
+          <span class="d"><b>14</b> Mon</span>
+          <span class="t"><span class="lead">Signal drops the phone number, backed by zero-knowledge proofs</span><span class="rest"> · Fable 5.1 cracks a 370-year-old cipher · Frontier models still game last year&#x27;s alignment evals · Google still serving dodgy ads</span></span>
+          <span class="r"><span>7 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-13.html" data-file="ai-news-2026-09-13.html" data-vt="r-ai-news-2026-09-13" data-tags="research agents">
+          <span class="d"><b>13</b> Sun</span>
+          <span class="t"><span class="lead">Amodei&#x27;s case for pacing the frontier</span><span class="rest"> · OpenAI&#x27;s agents behind the RubyGems attack · Bengio on why agents deceive · Real-SWE scores models on private enterprise code</span></span>
+          <span class="r"><span>9 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-12.html" data-file="ai-news-2026-09-12.html" data-vt="r-ai-news-2026-09-12" data-tags="research agents memory multimodal">
+          <span class="d"><b>12</b> Sat</span>
+          <span class="t"><span class="lead">Google&#x27;s /goto anti-scraping links</span><span class="rest"> · Clay&#x27;s Navier–Stokes announcement · Minitap vs Google over Artemis code · Starlink leakage vs radio astronomy</span></span>
+          <span class="r"><span class="tg">Memory · Multimodal</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-11.html" data-file="ai-news-2026-09-11.html" data-vt="r-ai-news-2026-09-11" data-tags="research multimodal security">
+          <span class="d"><b>11</b> Fri</span>
+          <span class="t"><span class="lead">AI&#x27;s misalignment with mathematics</span><span class="rest"> · Ask HN on the AI news flood · An undisclosed agent attack on RubyGems · Google app ads and their bot-install problem</span></span>
+          <span class="r"><span class="tg">Multimodal · Security</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-10.html" data-file="ai-news-2026-09-10.html" data-vt="r-ai-news-2026-09-10" data-tags="models multimodal research memory">
+          <span class="d"><b>10</b> Thu</span>
+          <span class="t"><span class="lead">Shopify moves from React Native back to Swift and Kotlin</span><span class="rest"> · DeepSeek ships v4.1 Flash · Questions mount over OpenAI&#x27;s unpublished math · Cognition launches SWE-2</span></span>
+          <span class="r"><span class="tg">Multimodal · Memory</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-09.html" data-file="ai-news-2026-09-09.html" data-vt="r-ai-news-2026-09-09" data-tags="models research memory">
+          <span class="d"><b>09</b> Wed</span>
+          <span class="t"><span class="lead">Apple&#x27;s iPhone Duo tops the day</span><span class="rest"> · Claude rewrites an add-to-cart button · Shopify acquires Tailwind CSS · An Anthropic researcher resigns publicly</span></span>
+          <span class="r"><span class="tg">Memory</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-08.html" data-file="ai-news-2026-09-08.html" data-vt="r-ai-news-2026-09-08" data-tags="research agents security">
+          <span class="d"><b>08</b> Tue</span>
+          <span class="t"><span class="lead">OpenAI&#x27;s Navier–Stokes write-up tops HN</span><span class="rest"> · Mistral raises €3B · LibreOffice breaks download records after declaring it has no AI features · Meta launches Muse, a personal AI agent</span></span>
+          <span class="r"><span class="tg">Security</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-07.html" data-file="ai-news-2026-09-07.html" data-vt="r-ai-news-2026-09-07" data-tags="research multimodal">
+          <span class="d"><b>07</b> Mon</span>
+          <span class="t"><span class="lead">LG smart TVs caught logging audio with the screen off</span><span class="rest"> · Internet Archive asks for recurring donors to keep servers running · bzip3 ships a modern block-sorting compressor · Stockfish 19 lands a new neural network</span></span>
+          <span class="r"><span class="tg">Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-06.html" data-file="ai-news-2026-09-06.html" data-vt="r-ai-news-2026-09-06" data-tags="research memory security multimodal">
+          <span class="d"><b>06</b> Sun</span>
+          <span class="t"><span class="lead">QBittorrent escapes its sandbox</span><span class="rest"> · Nitter and XCancel resume service · Cloud in a Bottle opens up self-hosting · Isar Aerospace reaches orbit</span></span>
+          <span class="r"><span class="tg">Memory · Security</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-05.html" data-file="ai-news-2026-09-05.html" data-vt="r-ai-news-2026-09-05" data-tags="research infrastructure memory multimodal">
+          <span class="d"><b>05</b> Sat</span>
+          <span class="t"><span class="lead">Private German rocket reaches orbit from European soil</span><span class="rest"> · Nitter instances outnumber pre-takedown levels · Chrome again exempts Google from user data settings · AI incident response erodes engineers&#x27; system knowledge</span></span>
+          <span class="r"><span class="tg">Infrastructure · Memory</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-04.html" data-file="ai-news-2026-09-04.html" data-vt="r-ai-news-2026-09-04" data-tags="research agents infrastructure">
+          <span class="d"><b>04</b> Fri</span>
+          <span class="t"><span class="lead">A new OpenAI agent message board surfaces</span><span class="rest"> · Sandbox RCE exploited in all Chromium versions · Anthropic formalizes Fermat&#x27;s Last Theorem · Gallup: 89% see government corruption as widespread</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-03.html" data-file="ai-news-2026-09-03.html" data-vt="r-ai-news-2026-09-03" data-tags="models infrastructure">
+          <span class="d"><b>03</b> Thu</span>
+          <span class="t"><span class="lead">GPT-6 Astra leads the day on Hacker News</span><span class="rest"> · The .name domain faces termination · Audacity 4.0 released · K2 Horizon connects six open models</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-02.html" data-file="ai-news-2026-09-02.html" data-vt="r-ai-news-2026-09-02" data-tags="models research memory">
+          <span class="d"><b>02</b> Wed</span>
+          <span class="t"><span class="lead">Gemini 3.8 Flash ships</span><span class="rest"> · Meta&#x27;s Muse Spark 1.3 · Perplexity cites 215,128 manufactured &quot;best software&quot; pages · LWN on subscription prices</span></span>
+          <span class="r"><span class="tg">Memory</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-09-01.html" data-file="ai-news-2026-09-01.html" data-vt="r-ai-news-2026-09-01" data-tags="models research">
+          <span class="d"><b>01</b> Tue</span>
+          <span class="t"><span class="lead">Anthropic ships Claude Fable 5.1 and Mythos 5.1</span><span class="rest"> · Hang on to Your Firefox · AnkiDroid&#x27;s donation link blocked on Google Play · How accurate Ed Zitron&#x27;s AI predictions were</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+      </div>
+      <div class="month">
+        <div class="month-h"><h5>August 2026</h5><span class="eyebrow" data-count>31</span></div>
+        <a class="row" href="reports/ai-news-2026-08-31.html" data-file="ai-news-2026-08-31.html" data-vt="r-ai-news-2026-08-31" data-tags="models security memory">
+          <span class="d"><b>31</b> Mon</span>
+          <span class="t"><span class="lead">Chrome drops MV2 extensions including uBlock Origin</span><span class="rest"> · Apple blindsided by AI-driven Mac Mini and Studio demand · Claude Code Opus 5 Auto Mode broken · OpenShot 4.0 ships</span></span>
+          <span class="r"><span class="tg">Security · Memory</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-30.html" data-file="ai-news-2026-08-30.html" data-vt="r-ai-news-2026-08-30" data-tags="research infrastructure security">
+          <span class="d"><b>30</b> Sun</span>
+          <span class="t"><span class="lead">“I just chose words carefully”</span><span class="rest"> · California’s Linux exemption from age verification · Terence Tao on six essential math concepts · Claude Code commits now carry session URLs</span></span>
+          <span class="r"><span class="tg">Infrastructure · Security</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-29.html" data-file="ai-news-2026-08-29.html" data-vt="r-ai-news-2026-08-29" data-tags="agents research coding memory">
+          <span class="d"><b>29</b> Sat</span>
+          <span class="t"><span class="lead">Creepy Crawlies</span><span class="rest"> · OpenAI&#x27;s decision on Cursor after SpaceX · Debian votes to allow generative AI · Good culture beats AI</span></span>
+          <span class="r"><span class="tg">Coding · Memory</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-28.html" data-file="ai-news-2026-08-28.html" data-vt="r-ai-news-2026-08-28" data-tags="research infrastructure open-source">
+          <span class="d"><b>28</b> Fri</span>
+          <span class="t"><span class="lead">GUIs should be fully keyboard-driven</span><span class="rest"> · Htmx 4.0 is released · GLM-5.3 goes open-weight · Judge rules Anthropic blacklisting unlawful</span></span>
+          <span class="r"><span class="tg">Infrastructure · Open source</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-27.html" data-file="ai-news-2026-08-27.html" data-vt="r-ai-news-2026-08-27" data-tags="models">
+          <span class="d"><b>27</b> Thu</span>
+          <span class="t"><span class="lead">Nvidia agrees to buy Hugging Face for $13B</span><span class="rest"> · Cloudflare saves 100 TB of memory in 1.1.1.1&#x27;s DNS cache · Small models have arrived · Developers answer AI layoffs with an open-source AI CEO</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-26.html" data-file="ai-news-2026-08-26.html" data-vt="r-ai-news-2026-08-26" data-tags="research infrastructure multimodal">
+          <span class="d"><b>26</b> Wed</span>
+          <span class="t"><span class="lead">Z.ai ships GLM-5.3-Flash</span><span class="rest"> · AWS acquires DuckLabs · State Department pauses immigrant visas · Qwen3.8-Flash-Next lands</span></span>
+          <span class="r"><span class="tg">Infrastructure · Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-25.html" data-file="ai-news-2026-08-25.html" data-vt="r-ai-news-2026-08-25" data-tags="research hardware multimodal">
+          <span class="d"><b>25</b> Tue</span>
+          <span class="t"><span class="lead">Dolly Parton has died</span><span class="rest"> · Apple introduces M6 and M5 Ultra · Nitter and XCancel receive cease and desist notices · OpenAI Jalapeño claims to beat Nvidia Blackwell</span><span class="lang" title="In Spanish">ES</span></span>
+          <span class="r"><span class="tg">Hardware · Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-24.html" data-file="ai-news-2026-08-24.html" data-vt="r-ai-news-2026-08-24" data-tags="agents memory">
+          <span class="d"><b>24</b> Mon</span>
+          <span class="t"><span class="lead">Europe&#x27;s maker rules and the cost of compliance</span><span class="rest"> · Xiaomi&#x27;s new CPU trades blows with Apple silicon · a16z&#x27;s billions and the future they buy · Windows image tools hide a GUID watermark in local output</span></span>
+          <span class="r"><span class="tg">Memory</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-23.html" data-file="ai-news-2026-08-23.html" data-vt="r-ai-news-2026-08-23" data-tags="models research memory">
+          <span class="d"><b>23</b> Sun</span>
+          <span class="t"><span class="lead">Everything I own, owned</span><span class="rest"> · Anthropic&#x27;s best model struggles as cheaper tools thrive · $266 and four AI models to own a tablet</span></span>
+          <span class="r"><span class="tg">Memory</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-22.html" data-file="ai-news-2026-08-22.html" data-vt="r-ai-news-2026-08-22" data-tags="models research multimodal">
+          <span class="d"><b>22</b> Sat</span>
+          <span class="t"><span class="lead">Canada to match US tariffs dollar for dollar</span><span class="rest"> · There&#x27;s no reason for software to be slow · Why your local LLM feels dumber than it is · ElevenLabs, TwelveLabs, ThirteenLabs</span></span>
+          <span class="r"><span class="tg">Multimodal</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-21.html" data-file="ai-news-2026-08-21.html" data-vt="r-ai-news-2026-08-21" data-tags="models research multimodal memory">
+          <span class="d"><b>21</b> Fri</span>
+          <span class="t"><span class="lead">Kagi adds a toggle to hide paywalled results</span><span class="rest"> · Felony charges for deleting phone data at the US border · DeepSeek ships an experimental vision model · A Rust LSP that uses 100x less RAM</span></span>
+          <span class="r"><span class="tg">Multimodal · Memory</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-20.html" data-file="ai-news-2026-08-20.html" data-vt="r-ai-news-2026-08-20" data-tags="agents research multimodal">
+          <span class="d"><b>20</b> Thu</span>
+          <span class="t"><span class="lead">Aaron Swartz&#x27;s prosecution and Meta&#x27;s scraping</span><span class="rest"> · Don&#x27;t paste the AI, please · AliExpress&#x27;s silent WebAudio fingerprinting · A 125M piano model that autocompletes on-device</span></span>
+          <span class="r"><span class="tg">Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-19.html" data-file="ai-news-2026-08-19.html" data-vt="r-ai-news-2026-08-19" data-tags="agents models research infrastructure">
+          <span class="d"><b>19</b> Wed</span>
+          <span class="t"><span class="lead">OpenRouter is joining Stripe</span><span class="rest"> · Go 1.27 released · A joke domain purchase turns geopolitical · AI homework gains don&#x27;t survive exams</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-18.html" data-file="ai-news-2026-08-18.html" data-vt="r-ai-news-2026-08-18" data-tags="models research open-source">
+          <span class="d"><b>18</b> Tue</span>
+          <span class="t"><span class="lead">Google buys failed airline Spirit&#x27;s data at auction</span><span class="rest"> · Linux 7.3 tames VRAM overcommit · Netflix&#x27;s LLM judges in production · Mojo goes open source</span></span>
+          <span class="r"><span class="tg">Open source</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-17.html" data-file="ai-news-2026-08-17.html" data-vt="r-ai-news-2026-08-17" data-tags="models coding multimodal">
+          <span class="d"><b>17</b> Mon</span>
+          <span class="t"><span class="lead">AI;DR and the cost of never reading</span><span class="rest"> · Israel&#x27;s fake think tank aimed at chatbots · DuckDB v2.0 preview · GitHub outage puts platform alternatives on the table</span></span>
+          <span class="r"><span class="tg">Coding · Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-16.html" data-file="ai-news-2026-08-16.html" data-vt="r-ai-news-2026-08-16" data-tags="models research multimodal infrastructure">
+          <span class="d"><b>16</b> Sun</span>
+          <span class="t"><span class="lead">Claude’s watermark backlash</span><span class="rest"> · Qwen 3.8 27B overthinks · Stripe to buy OpenRouter for $7B+ · Firefox iOS ships a native adblocker</span></span>
+          <span class="r"><span class="tg">Multimodal · Infrastructure</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-15.html" data-file="ai-news-2026-08-15.html" data-vt="r-ai-news-2026-08-15" data-tags="models open-source">
+          <span class="d"><b>15</b> Sat</span>
+          <span class="t"><span class="lead">Qwen 3.8 27B open weights</span><span class="rest"> · Firefox last with uBlock Origin · Google homomorphic encryption · France blocks social media ban for under-15s</span></span>
+          <span class="r"><span class="tg">Open source</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-14.html" data-file="ai-news-2026-08-14.html" data-vt="r-ai-news-2026-08-14" data-tags="models coding">
+          <span class="d"><b>14</b> Fri</span>
+          <span class="t"><span class="lead">GLM-5.3 frontier coding + cyber</span><span class="rest"> · Gemini 3.7 Flash · Opus 5 feels worse? · DeepSeek Harness preview</span></span>
+          <span class="r"><span class="tg">Coding</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-13.html" data-file="ai-news-2026-08-13.html" data-vt="r-ai-news-2026-08-13" data-tags="models research coding">
+          <span class="d"><b>13</b> Thu</span>
+          <span class="t"><span class="lead">16-year-old SQLite WAL bug found</span><span class="rest"> · DeepSeek V4 Pro 0813 · AI removing the middle class · Qwen 3.8 2.4T</span></span>
+          <span class="r"><span class="tg">Coding</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-12.html" data-file="ai-news-2026-08-12.html" data-vt="r-ai-news-2026-08-12" data-tags="models hardware">
+          <span class="d"><b>12</b> Wed</span>
+          <span class="t"><span class="lead">Stealing reasoning traces from LLM APIs</span><span class="rest"> · uBlock Origin gives up on Facebook · OpenAI ethics head leaves · Compression is prediction</span></span>
+          <span class="r"><span class="tg">Hardware</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-11.html" data-file="ai-news-2026-08-11.html" data-vt="r-ai-news-2026-08-11" data-tags="models memory">
+          <span class="d"><b>11</b> Tue</span>
+          <span class="t"><span class="lead">France bans unsolicited telemarketing</span><span class="rest"> · AI eats the web · Zuckerberg returns to open models · UK&#x27;s war on anonymity</span></span>
+          <span class="r"><span class="tg">Memory</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-10.html" data-file="ai-news-2026-08-10.html" data-vt="r-ai-news-2026-08-10" data-tags="agents coding">
+          <span class="d"><b>10</b> Mon</span>
+          <span class="t"><span class="lead">Meta&#x27;s Muse Glimmer 30B open agentic model</span><span class="rest"> · Docker Sandboxes for AI agents · LLMs to learn hard topics · Windows Weather wastes 1GB RAM</span></span>
+          <span class="r"><span class="tg">Coding</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-09.html" data-file="ai-news-2026-08-09.html" data-vt="r-ai-news-2026-08-09" data-tags="research">
+          <span class="d"><b>09</b> Sun</span>
+          <span class="t"><span class="lead">&#x27;Code was never the hard part&#x27; backlash</span><span class="rest"> · Danish students defend essays orally · My server is a phone · _for-sale DNS records</span></span>
+          <span class="r"><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-08.html" data-file="ai-news-2026-08-08.html" data-vt="r-ai-news-2026-08-08" data-tags="models open-source security">
+          <span class="d"><b>08</b> Sat</span>
+          <span class="t"><span class="lead">DeepSeek V4 Flash 0731</span><span class="rest"> · Oracle bans AI code from OpenJDK · Tech workers losing faith · DOE Genesis Open Models</span></span>
+          <span class="r"><span class="tg">Open source · Security</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-07.html" data-file="ai-news-2026-08-07.html" data-vt="r-ai-news-2026-08-07" data-tags="agents security open-source">
+          <span class="d"><b>07</b> Fri</span>
+          <span class="t"><span class="lead">Meta fined $567M over teen mental health</span><span class="rest"> · Framework data breach · AI-designed viruses · OpenAI device leaks</span></span>
+          <span class="r"><span class="tg">Security · Open source</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-06.html" data-file="ai-news-2026-08-06.html" data-vt="r-ai-news-2026-08-06" data-tags="agents research memory security">
+          <span class="d"><b>06</b> Thu</span>
+          <span class="t"><span class="lead">Unity AI Gateway GA</span><span class="rest"> · Databricks closes Panther · Long-horizon agent papers hit ArXiv</span></span>
+          <span class="r"><span class="tg">Memory · Security</span><span>2 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-05.html" data-file="ai-news-2026-08-05.html" data-vt="r-ai-news-2026-08-05" data-tags="agents memory">
+          <span class="d"><b>05</b> Wed</span>
+          <span class="t"><span class="lead">DeepMind reorg: Hassabis to Chair, Jeff Dean out</span><span class="rest"> · Cloudflare OS · Zed DeltaDB · Beating GPT-5.6 Sol on retrieval 100x cheaper</span></span>
+          <span class="r"><span class="tg">Memory</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-04.html" data-file="ai-news-2026-08-04.html" data-vt="r-ai-news-2026-08-04" data-tags="agents models multimodal">
+          <span class="d"><b>04</b> Tue</span>
+          <span class="t"><span class="lead">Mistral Shieldstral: 3B multimodal moderation</span><span class="rest"> · FFmpeg 9.0 · Apple ex-employees to OpenAI · Unity AI Gateway GA</span></span>
+          <span class="r"><span class="tg">Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-03.html" data-file="ai-news-2026-08-03.html" data-vt="r-ai-news-2026-08-03" data-tags="security multimodal coding">
+          <span class="d"><b>03</b> Mon</span>
+          <span class="t"><span class="lead">LLMs reward expertise</span><span class="rest"> · Qwen3.8-Max: a new bar for coding · SQLite CVEs or LLM slop? · Databricks completes Panther acquisition</span></span>
+          <span class="r"><span class="tg">Security · Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-02.html" data-file="ai-news-2026-08-02.html" data-vt="r-ai-news-2026-08-02" data-tags="research hardware multimodal">
+          <span class="d"><b>02</b> Sun</span>
+          <span class="t"><span class="lead">Karpathy&#x27;s Pelican</span><span class="rest"> · Go 1.27 interactive tour · Kimi K3 on MI355X beats B300 per dollar · EU age verification</span></span>
+          <span class="r"><span class="tg">Hardware · Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-08-01.html" data-file="ai-news-2026-08-01.html" data-vt="r-ai-news-2026-08-01" data-tags="agents research multimodal coding">
+          <span class="d"><b>01</b> Sat</span>
+          <span class="t"><span class="lead">Ten advances in mathematics by OpenAI</span><span class="rest"> · Seedance 2.5 · Stateless MCP · NetBSD 11.0</span></span>
+          <span class="r"><span class="tg">Multimodal · Coding</span><span>3 min</span></span>
+        </a>
+      </div>
+      <div class="month">
+        <div class="month-h"><h5>July 2026</h5><span class="eyebrow" data-count>33</span></div>
+        <a class="row" href="reports/ai-news-2026-07-31.html" data-file="ai-news-2026-07-31.html" data-vt="r-ai-news-2026-07-31" data-tags="agents memory">
+          <span class="d"><b>31</b> Fri</span>
+          <span class="t"><span class="lead">DeepSeek-V4-Flash update</span><span class="rest"> · qm: multiplayer agent harness · Tailscale didn&#x27;t stop the HF intrusion · Chrome fixed more bugs with AI</span></span>
+          <span class="r"><span class="tg">Memory</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-30.html" data-file="ai-news-2026-07-30.html" data-vt="r-ai-news-2026-07-30" data-tags="models">
+          <span class="d"><b>30</b> Thu</span>
+          <span class="t"><span class="lead">GPT-5.6 price-performance frontier</span><span class="rest"> · Gemini Robotics 2 · GitHub Stacked PRs public preview · We gave GPT 5.6 Sol a real business</span></span>
+          <span class="r"><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-29.html" data-file="ai-news-2026-07-29.html" data-vt="r-ai-news-2026-07-29" data-tags="models research multimodal">
+          <span class="d"><b>29</b> Wed</span>
+          <span class="t"><span class="lead">Gemma 4 26B in 2GB RAM on M-series Macs</span><span class="rest"> · AI startups stop publishing research · Kimi K3-256k · LLM Honeypot</span></span>
+          <span class="r"><span class="tg">Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-28.html" data-file="ai-news-2026-07-28.html" data-vt="r-ai-news-2026-07-28" data-tags="models open-source security">
+          <span class="d"><b>28</b> Tue</span>
+          <span class="t"><span class="lead">Nvidia Open Secure AI Alliance</span><span class="rest"> · AI Doubles Cyber Flaws · Anthropic Open Weights · $500 Fine-Tune Beats Frontier</span></span>
+          <span class="r"><span class="tg">Open source · Security</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-27.html" data-file="ai-news-2026-07-27.html" data-vt="r-ai-news-2026-07-27" data-tags="agents infrastructure">
+          <span class="d"><b>27</b> Mon</span>
+          <span class="t"><span class="lead">Kimi K3 Weights Released</span><span class="rest"> · Dell+NVDA Agentic AI · Kling AI $2.8B · GrapheneOS Citizen Charged</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-26.html" data-file="ai-news-2026-07-26.html" data-vt="r-ai-news-2026-07-26" data-tags="models funding infrastructure">
+          <span class="d"><b>26</b> Sun</span>
+          <span class="t"><span class="lead">Kimi K3 Weights Arrive</span><span class="rest"> · DeepSeek Pauses Funding · GPT-5.6 Sol Breach Confirmed · Chinese AI in the US</span></span>
+          <span class="r"><span class="tg">Funding · Infrastructure</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-25.html" data-file="ai-news-2026-07-25.html" data-vt="r-ai-news-2026-07-25" data-tags="models multimodal">
+          <span class="d"><b>25</b> Sat</span>
+          <span class="t"><span class="lead">Distillation Controversy</span><span class="rest"> · Chinese AI Models Gain Ground · Opus 5 Pricing Analysis · Ruff v0.16</span></span>
+          <span class="r"><span class="tg">Multimodal</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-24.html" data-file="ai-news-2026-07-24.html" data-vt="r-ai-news-2026-07-24" data-tags="models">
+          <span class="d"><b>24</b> Fri</span>
+          <span class="t"><span class="lead">Claude Opus 5 Launch</span><span class="rest"> · GPT-5.6 Sol Sandbox Escape · DeepSeek V4 Stable · Kimi K3 Weights July 27</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-23.html" data-file="ai-news-2026-07-23.html" data-vt="r-ai-news-2026-07-23" data-tags="models">
+          <span class="d"><b>23</b> Thu</span>
+          <span class="t"><span class="lead">Moonshot Nvidia Export Ban</span><span class="rest"> · DeepSeek Fundraise Pause · AMD Advancing AI · Context Engineering for Claude 5</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-22.html" data-file="ai-news-2026-07-22.html" data-vt="r-ai-news-2026-07-22" data-tags="models agents research infrastructure">
+          <span class="d"><b>22</b> Wed</span>
+          <span class="t"><span class="lead">OpenAI &amp; HF Security Incident</span><span class="rest"> · Gemini 3.6 Flash · Anthropic $1.5B Settlement · Jack Dorsey&#x27;s Buzz</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-21.html" data-file="ai-news-2026-07-21.html" data-vt="r-ai-news-2026-07-21" data-tags="models security multimodal">
+          <span class="d"><b>21</b> Tue</span>
+          <span class="t"><span class="lead">OpenAI &amp; HF security incident during model evaluation</span><span class="rest"> · Gemini 3.6 Flash · Qwen-Image-3.0 · $1.5B Anthropic settlement</span></span>
+          <span class="r"><span class="tg">Security · Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-21-Jul-2026.html" data-file="ai-news-21-Jul-2026.html" data-vt="r-ai-news-21-Jul-2026" data-tags="models">
+          <span class="d"><b>21</b> Tue</span>
+          <span class="t"><span class="lead">Claude Sonnet 5</span><span class="rest"> · GPT-5.6 · DeepSeek V4 · SB 315</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-20.html" data-file="ai-news-2026-07-20.html" data-vt="r-ai-news-2026-07-20" data-tags="models agents infrastructure">
+          <span class="d"><b>20</b> Mon</span>
+          <span class="t"><span class="lead">July Model Wave Peaks</span><span class="rest"> · Claude Fable Math Breakthrough · First US AI Safety Law · Autonomous SRE</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-19.html" data-file="ai-news-2026-07-19.html" data-vt="r-ai-news-2026-07-19" data-tags="models multimodal">
+          <span class="d"><b>19</b> Sun</span>
+          <span class="t"><span class="lead">GPT-5.6 Solves Open Math</span><span class="rest"> · Fable 5 Restored · Five Eyes Agent Security</span></span>
+          <span class="r"><span class="tg">Multimodal</span><span>6 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-18.html" data-file="ai-news-2026-07-18.html" data-vt="r-ai-news-2026-07-18" data-tags="models agents">
+          <span class="d"><b>18</b> Sat</span>
+          <span class="t"><span class="lead">Anthropic·Blackstone bet on implementation</span><span class="rest"> · Agent Zero v1 · AlphaEvolve scales · SEED agentic RL</span></span>
+          <span class="r"><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-17.html" data-file="ai-news-2026-07-17.html" data-vt="r-ai-news-2026-07-17" data-tags="models agents">
+          <span class="d"><b>17</b> Fri</span>
+          <span class="t"><span class="lead">Gemini 3.5 Pro GA</span><span class="rest"> · OpenAI wealth fund · Kimi K3 · Agent memory papers</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-16-Jul-2026.html" data-file="ai-news-16-Jul-2026.html" data-vt="r-ai-news-16-Jul-2026" data-tags="agents open-source infrastructure">
+          <span class="d"><b>16</b> Thu</span>
+          <span class="t"><span class="lead">Agent infra</span><span class="rest"> · AI model wave · Open weights · Security guidance</span></span>
+          <span class="r"><span class="tg">Open source · Infrastructure</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-16.html" data-file="ai-news-2026-07-16.html" data-vt="r-ai-news-2026-07-16" data-tags="models open-source">
+          <span class="d"><b>16</b> Thu</span>
+          <span class="t"><span class="lead">Kimi K3: Open Frontier Intelligence</span><span class="rest"> · NotebookLM becomes Gemini Notebook · LM Studio Bionic</span></span>
+          <span class="r"><span class="tg">Open source</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-15.html" data-file="ai-news-2026-07-15.html" data-vt="r-ai-news-2026-07-15" data-tags="agents security">
+          <span class="d"><b>15</b> Wed</span>
+          <span class="t"><span class="lead">Claude Science</span><span class="rest"> · Bonsai 27B · Microsoft Record Patch · Tailscale SSH Vuln</span></span>
+          <span class="r"><span class="tg">Security</span><span>6 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-14.html" data-file="ai-news-2026-07-14.html" data-vt="r-ai-news-2026-07-14" data-tags="models agents research">
+          <span class="d"><b>14</b> Tue</span>
+          <span class="t"><span class="lead">Apple SpeechAnalyzer</span><span class="rest"> · Five Eyes Agentic Security Guidance · Claude Science &amp; FedRAMP</span></span>
+          <span class="r"><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-13.html" data-file="ai-news-2026-07-13.html" data-vt="r-ai-news-2026-07-13" data-tags="agents infrastructure">
+          <span class="d"><b>13</b> Mon</span>
+          <span class="t"><span class="lead">Anthropic ups Claude Code limits</span><span class="rest"> · Five Eyes agentic AI guidance · Claude Science launches · GhostLock 15-year Linux vuln</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-12.html" data-file="ai-news-2026-07-12.html" data-vt="r-ai-news-2026-07-12" data-tags="agents infrastructure multimodal">
+          <span class="d"><b>12</b> Sun</span>
+          <span class="t"><span class="lead">Google, OpenAI, Mistral</span><span class="rest"> · Claude cybersecurity · Mesh LLM · Agents in 100 lines</span></span>
+          <span class="r"><span class="tg">Infrastructure · Multimodal</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-11.html" data-file="ai-news-2026-07-11.html" data-vt="r-ai-news-2026-07-11" data-tags="agents research memory">
+          <span class="d"><b>11</b> Sat</span>
+          <span class="t"><span class="lead">Apple sues OpenAI</span><span class="rest"> · GPT-5.6 proves math conjecture · Claude Science launches · Proactive agents converge</span></span>
+          <span class="r"><span class="tg">Memory</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-10.html" data-file="ai-news-2026-07-10.html" data-vt="r-ai-news-2026-07-10" data-tags="agents models research">
+          <span class="d"><b>10</b> Fri</span>
+          <span class="t"><span class="lead">GPT-5.6</span><span class="rest"> · Claude Science · GLM 5.2 · Chat Control 1.0</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-09.html" data-file="ai-news-2026-07-09.html" data-vt="r-ai-news-2026-07-09" data-tags="agents models coding">
+          <span class="d"><b>09</b> Thu</span>
+          <span class="t"><span class="lead">Microsoft Flint</span><span class="rest"> · Claude Sonnet 5 · GPT-Live · Grok 4.5</span></span>
+          <span class="r"><span class="tg">Coding</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-08.html" data-file="ai-news-2026-07-08.html" data-vt="r-ai-news-2026-07-08" data-tags="models agents research memory">
+          <span class="d"><b>08</b> Wed</span>
+          <span class="t"><span class="lead">GPT-5.6 Sol/Terra/Luna</span><span class="rest"> · Fable 5 Extended · StateFuse Memory · AI Finds Crypto Bugs</span></span>
+          <span class="r"><span class="tg">Memory</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-07.html" data-file="ai-news-2026-07-07.html" data-vt="r-ai-news-2026-07-07" data-tags="models agents infrastructure">
+          <span class="d"><b>07</b> Tue</span>
+          <span class="t"><span class="lead">Fable 5 Restored</span><span class="rest"> · GLM 5.2 Open-Source · Autonomous SRE · GPT-5.6 Preview</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-06.html" data-file="ai-news-2026-07-06.html" data-vt="r-ai-news-2026-07-06" data-tags="agents research">
+          <span class="d"><b>06</b> Mon</span>
+          <span class="t"><span class="lead">Claude Sonnet 5</span><span class="rest"> · AI Governance · Zuckerberg on Agents · GPT-5.6 Sol</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-05.html" data-file="ai-news-2026-07-05.html" data-vt="r-ai-news-2026-07-05" data-tags="models agents research coding">
+          <span class="d"><b>05</b> Sun</span>
+          <span class="t"><span class="lead">GPT-5.5 Codex regression</span><span class="rest"> · California-Anthropic deal · Claude Fable 5 restored · Agent benchmarking</span></span>
+          <span class="r"><span class="tg">Coding</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-04.html" data-file="ai-news-2026-07-04.html" data-vt="r-ai-news-2026-07-04" data-tags="models infrastructure memory">
+          <span class="d"><b>04</b> Sat</span>
+          <span class="t"><span class="lead">Claude Sonnet 5</span><span class="rest"> · Leanstral 1.5 · K8s v1.36 · CVE Spike</span></span>
+          <span class="r"><span class="tg">Infrastructure · Memory</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-03.html" data-file="ai-news-2026-07-03.html" data-vt="r-ai-news-2026-07-03" data-tags="models agents coding memory">
+          <span class="d"><b>03</b> Fri</span>
+          <span class="t"><span class="lead">Claude Sonnet 5</span><span class="rest"> · Claude Science · Aug 1 AI Standards · LUKS Key Leak</span></span>
+          <span class="r"><span class="tg">Coding · Memory</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-02.html" data-file="ai-news-2026-07-02.html" data-vt="r-ai-news-2026-07-02" data-tags="coding research regulation robotics">
+          <span class="d"><b>02</b> Thu</span>
+          <span class="t"><span class="lead">Senior SWE-Bench</span><span class="rest"> · GLM-5.2 · White House AI EO · Weave Robotics Isaac 1</span></span>
+          <span class="r"><span class="tg">Coding · Regulation</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-07-01.html" data-file="ai-news-2026-07-01.html" data-vt="r-ai-news-2026-07-01" data-tags="models research">
+          <span class="d"><b>01</b> Wed</span>
+          <span class="t"><span class="lead">Claude Sonnet 5</span><span class="rest"> · Claude Science · Export Controls Lifted · Claude Code Steganography</span></span>
+          <span class="r"><span>3 min</span></span>
+        </a>
+      </div>
+      <div class="month">
+        <div class="month-h"><h5>June 2026</h5><span class="eyebrow" data-count>30</span></div>
+        <a class="row" href="reports/ai-news-2026-06-30.html" data-file="ai-news-2026-06-30.html" data-vt="r-ai-news-2026-06-30" data-tags="agents infrastructure">
+          <span class="d"><b>30</b> Tue</span>
+          <span class="t"><span class="lead">Anthropic expands compute partnership</span><span class="rest"> · AI chatbot market share · South Korea $1T chip investment · 8 ArXiv papers on agents &amp; security</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-29.html" data-file="ai-news-2026-06-29.html" data-vt="r-ai-news-2026-06-29" data-tags="agents research">
+          <span class="d"><b>29</b> Mon</span>
+          <span class="t"><span class="lead">GLM 5.2 beats Claude in cyber benchmarks</span><span class="rest"> · Herdr: agent multiplexer · Tokenmaxxing is dead · 8 ArXiv papers on multi-agent security</span></span>
+          <span class="r"><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-28.html" data-file="ai-news-2026-06-28.html" data-vt="r-ai-news-2026-06-28" data-tags="models infrastructure security coding">
+          <span class="d"><b>28</b> Sun</span>
+          <span class="t"><span class="lead">Asian AI models</span><span class="rest"> · RFIC AI design · Ford AI backfire · Rust PostgreSQL</span></span>
+          <span class="r"><span class="tg">Infrastructure · Security</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-27.html" data-file="ai-news-2026-06-27.html" data-vt="r-ai-news-2026-06-27" data-tags="models agents">
+          <span class="d"><b>27</b> Sat</span>
+          <span class="t"><span class="lead">GPT‑5.6 Sol</span><span class="rest"> · Anthropic Mythos · DeepSeek DSpark · 0-Day Drops · Agent Safety Kernels</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-26.html" data-file="ai-news-2026-06-26.html" data-vt="r-ai-news-2026-06-26" data-tags="hardware infrastructure security">
+          <span class="d"><b>26</b> Fri</span>
+          <span class="t"><span class="lead">Apple pivots to M7 AI silicon</span><span class="rest"> · IBM sub-1nm chip · AI assistant hacking story · Framework USB-C complexity</span></span>
+          <span class="r"><span class="tg">Hardware · Infrastructure</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-25.html" data-file="ai-news-2026-06-25.html" data-vt="r-ai-news-2026-06-25" data-tags="models research infrastructure hardware">
+          <span class="d"><b>25</b> Thu</span>
+          <span class="t"><span class="lead">Anthropic vs Alibaba</span><span class="rest"> · OpenAI Custom Chip · Qualcomm Acquires Modular · Gemini 3.5 Flash Computer Use</span></span>
+          <span class="r"><span class="tg">Infrastructure · Hardware</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-24.html" data-file="ai-news-2026-06-24.html" data-vt="r-ai-news-2026-06-24" data-tags="agents research">
+          <span class="d"><b>24</b> Wed</span>
+          <span class="t"><span class="lead">Vulnerability Reports Tipping Point</span><span class="rest"> · Qwen-AgentWorld · Swift Package Index Joins Apple</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-23.html" data-file="ai-news-2026-06-23.html" data-vt="r-ai-news-2026-06-23" data-tags="models research">
+          <span class="d"><b>23</b> Tue</span>
+          <span class="t"><span class="lead">3B Model Beats Opus 4.5</span><span class="rest"> · GLM-5.2 Released · Chevron-Microsoft 20yr Deal · Prompt Injection Analysis</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-22.html" data-file="ai-news-2026-06-22.html" data-vt="r-ai-news-2026-06-22" data-tags="agents regulation">
+          <span class="d"><b>22</b> Mon</span>
+          <span class="t"><span class="lead">Anthropic ID Verification</span><span class="rest"> · Apertus Open Model · Sakana Fugu · Agent Verification Frameworks</span></span>
+          <span class="r"><span class="tg">Regulation</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-21.html" data-file="ai-news-2026-06-21.html" data-vt="r-ai-news-2026-06-21" data-tags="research agents security">
+          <span class="d"><b>21</b> Sun</span>
+          <span class="t"><span class="lead">Anthropic Project Fetch</span><span class="rest"> · Agent Security · Epoll vs io_uring · KV Cache Quantization</span></span>
+          <span class="r"><span class="tg">Security</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-20.html" data-file="ai-news-2026-06-20.html" data-vt="r-ai-news-2026-06-20" data-tags="infrastructure funding robotics">
+          <span class="d"><b>20</b> Sat</span>
+          <span class="t"><span class="lead">IPO Fever: SpaceX, OpenAI, and Anthropic rush to markets</span><span class="rest"> · Google&#x27;s $920M/mo SpaceX deal · The trillion-dollar compute race</span></span>
+          <span class="r"><span class="tg">Infrastructure · Funding</span><span>2 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-19.html" data-file="ai-news-2026-06-19.html" data-vt="r-ai-news-2026-06-19" data-tags="research agents security coding">
+          <span class="d"><b>19</b> Fri</span>
+          <span class="t"><span class="lead">Trojan Malware in 10K GitHub Repos</span><span class="rest"> · MCP OAuth · Let&#x27;s Encrypt Outage · Amex Cell-Based Architecture · ArXiv: Agent Execution, KV Quant, Security Verification</span></span>
+          <span class="r"><span class="tg">Security · Coding</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-18.html" data-file="ai-news-2026-06-18.html" data-vt="r-ai-news-2026-06-18" data-tags="models research regulation">
+          <span class="d"><b>18</b> Thu</span>
+          <span class="t"><span class="lead">White House AI Order</span><span class="rest"> · Anthropic Claude Design · DeepSeek Blacklist Delay</span></span>
+          <span class="r"><span class="tg">Regulation</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-17.html" data-file="ai-news-2026-06-17.html" data-vt="r-ai-news-2026-06-17" data-tags="models research infrastructure">
+          <span class="d"><b>17</b> Wed</span>
+          <span class="t"><span class="lead">SpaceX Buys Cursor for $60B</span><span class="rest"> · Claude Mythos Goes Public · Local Models Cross Threshold · K8s v1.36</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-16.html" data-file="ai-news-2026-06-16.html" data-vt="r-ai-news-2026-06-16" data-tags="research security regulation">
+          <span class="d"><b>16</b> Tue</span>
+          <span class="t"><span class="lead">Claude Corps</span><span class="rest"> · White House AI Executive Order · LinkedIn Backdoor · LLM Agent RL Breakthroughs</span></span>
+          <span class="r"><span class="tg">Security · Regulation</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-15.html" data-file="ai-news-2026-06-15.html" data-vt="r-ai-news-2026-06-15" data-tags="models research multimodal regulation">
+          <span class="d"><b>15</b> Mon</span>
+          <span class="t"><span class="lead">Anthropic Claude Fable 5</span><span class="rest"> · White House AI Order · LLM Merges · RLVR Breakthroughs</span></span>
+          <span class="r"><span class="tg">Multimodal · Regulation</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-14.html" data-file="ai-news-2026-06-14.html" data-vt="r-ai-news-2026-06-14" data-tags="research models memory">
+          <span class="d"><b>14</b> Sun</span>
+          <span class="t"><span class="lead">KPMG Pulls AI Report on Hallucinations</span><span class="rest"> · Rio LLM Provenance Drama · ArXiv Agent Surge</span></span>
+          <span class="r"><span class="tg">Memory</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-13.html" data-file="ai-news-2026-06-13.html" data-vt="r-ai-news-2026-06-13" data-tags="agents research">
+          <span class="d"><b>13</b> Sat</span>
+          <span class="t"><span class="lead">US Bans Anthropic Models</span><span class="rest"> · Open Source AI Counter · AI Regulation Escalates · CRISPR Breakthrough</span></span>
+          <span class="r"><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-12.html" data-file="ai-news-2026-06-12.html" data-vt="r-ai-news-2026-06-12" data-tags="models agents research">
+          <span class="d"><b>12</b> Fri</span>
+          <span class="t"><span class="lead">Claude Fable 5, MiMo Code, Recursive Agents</span></span>
+          <span class="r"><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-11.html" data-file="ai-news-2026-06-11.html" data-vt="r-ai-news-2026-06-11" data-tags="models research infrastructure">
+          <span class="d"><b>11</b> Thu</span>
+          <span class="t"><span class="lead">Anthropic files for IPO, setting up publ</span><span class="rest"> · White House issues executive order on Ad · AI agent runs amok in Fedora and elsewhe · OpenAI mulls slashing prices as it compe</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-10.html" data-file="ai-news-2026-06-10.html" data-vt="r-ai-news-2026-06-10" data-tags="models research infrastructure">
+          <span class="d"><b>10</b> Wed</span>
+          <span class="t"><span class="lead">Claude Fable 5 &amp; Mythos 5 — Anthropic&#x27;s </span><span class="rest"> · German court rules Google liable for fal · Anthropic partners with Google &amp; Broadco · Microsoft and Google take on Anthropic a</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-09.html" data-file="ai-news-2026-06-09.html" data-vt="r-ai-news-2026-06-09" data-tags="research agents coding">
+          <span class="d"><b>09</b> Tue</span>
+          <span class="t"><span class="lead">Apple reveals new AI architecture built </span><span class="rest"> · Gemini 3.5 Flash is GA — frontier-level  · xAI is looking more like a datacentre RE · Apple Core AI Framework — developer docs</span></span>
+          <span class="r"><span class="tg">Coding</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-08.html" data-file="ai-news-2026-06-08.html" data-vt="r-ai-news-2026-06-08" data-tags="research security">
+          <span class="d"><b>08</b> Mon</span>
+          <span class="t"><span class="lead">Show HN: Lathe – Use LLMs to learn a new</span><span class="rest"> · In Defense of YAML · LLMs are eroding my software engineering · Texas grid flags risks as data centers,</span></span>
+          <span class="r"><span class="tg">Security</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-07.html" data-file="ai-news-2026-06-07.html" data-vt="r-ai-news-2026-06-07" data-tags="models funding coding">
+          <span class="d"><b>07</b> Sun</span>
+          <span class="t"><span class="lead">Anthropic IPO</span><span class="rest"> · Meta AI Hack · Smart TV Scraping · Tokenomics</span></span>
+          <span class="r"><span class="tg">Funding · Coding</span><span>2 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-06.html" data-file="ai-news-2026-06-06.html" data-vt="r-ai-news-2026-06-06" data-tags="models regulation infrastructure">
+          <span class="d"><b>06</b> Sat</span>
+          <span class="t"><span class="lead">AI Executive Order</span><span class="rest"> · Great American AI Act · Anthropic Warning · S&amp;P 500 Blocks AI Firms</span></span>
+          <span class="r"><span class="tg">Regulation · Infrastructure</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-05.html" data-file="ai-news-2026-06-05.html" data-vt="r-ai-news-2026-06-05" data-tags="models funding regulation">
+          <span class="d"><b>05</b> Fri</span>
+          <span class="t"><span class="lead">Trump AI Executive Order</span><span class="rest"> · Anthropic&#x27;s $965B Valuation · Opus 4.8 Release</span></span>
+          <span class="r"><span class="tg">Funding · Regulation</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-04.html" data-file="ai-news-2026-06-04.html" data-vt="r-ai-news-2026-06-04" data-tags="research security">
+          <span class="d"><b>04</b> Thu</span>
+          <span class="t"><span class="lead">Gemma 4 12B Launch</span><span class="rest"> · Claude Containment · AI Worm Research · Post-Quantum Let&#x27;s Encrypt</span></span>
+          <span class="r"><span class="tg">Security</span><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-03.html" data-file="ai-news-2026-06-03.html" data-vt="r-ai-news-2026-06-03" data-tags="agents research">
+          <span class="d"><b>03</b> Wed</span>
+          <span class="t"><span class="lead">Anthropic IPO</span><span class="rest"> · Gemini Spark · Trump AI Order · Agent Security Papers</span></span>
+          <span class="r"><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-02.html" data-file="ai-news-2026-06-02.html" data-vt="r-ai-news-2026-06-02" data-tags="infrastructure multimodal">
+          <span class="d"><b>02</b> Tue</span>
+          <span class="t"><span class="lead">OpenAI on AWS</span><span class="rest"> · Stanford CS336 · Groq Funding · Florida sues OpenAI</span></span>
+          <span class="r"><span class="tg">Infrastructure · Multimodal</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-06-01.html" data-file="ai-news-2026-06-01.html" data-vt="r-ai-news-2026-06-01" data-tags="agents research security infrastructure">
+          <span class="d"><b>01</b> Mon</span>
+          <span class="t"><span class="lead">NVIDIA Cosmos 3</span><span class="rest"> · Dune &amp; the Future of AI · Rubin Observatory</span></span>
+          <span class="r"><span class="tg">Security · Infrastructure</span><span>3 min</span></span>
+        </a>
+      </div>
+      <div class="month">
+        <div class="month-h"><h5>May 2026</h5><span class="eyebrow" data-count>17</span></div>
+        <a class="row" href="reports/ai-news-2026-05-31.html" data-file="ai-news-2026-05-31.html" data-vt="r-ai-news-2026-05-31" data-tags="funding infrastructure">
+          <span class="d"><b>31</b> Sun</span>
+          <span class="t"><span class="lead">Anthropic $965B</span><span class="rest"> · SoftBank €75B AI infra · OpenRouter Series B · AI costs under fire</span></span>
+          <span class="r"><span class="tg">Funding · Infrastructure</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-30.html" data-file="ai-news-2026-05-30.html" data-vt="r-ai-news-2026-05-30" data-tags="agents security">
+          <span class="d"><b>30</b> Sat</span>
+          <span class="t"><span class="lead">Anthropic surpasses OpenAI</span><span class="rest"> · Mistral Summit · Agent guardrails · SQLite workflows</span></span>
+          <span class="r"><span class="tg">Security</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-29.html" data-file="ai-news-2026-05-29.html" data-vt="r-ai-news-2026-05-29" data-tags="agents research">
+          <span class="d"><b>29</b> Fri</span>
+          <span class="t"><span class="lead">Anthropic passes OpenAI at $965B</span><span class="rest"> · Claude Opus 4.8 drops · VW blocks Home Assistant</span></span>
+          <span class="r"><span>4 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-28.html" data-file="ai-news-2026-05-28.html" data-vt="r-ai-news-2026-05-28" data-tags="agents infrastructure security">
+          <span class="d"><b>28</b> Thu</span>
+          <span class="t"><span class="lead">Anthropic &amp; OpenAI found PMF with coding agents</span><span class="rest"> · YouTube auto-labels AI videos · ITBench: frontier models &lt;50% on enterprise IT</span></span>
+          <span class="r"><span class="tg">Infrastructure · Security</span><span>8 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-27.html" data-file="ai-news-2026-05-27.html" data-vt="r-ai-news-2026-05-27" data-tags="agents security infrastructure">
+          <span class="d"><b>27</b> Wed</span>
+          <span class="t"><span class="lead">Anthropic Project Glasswing</span><span class="rest"> · Pope&#x27;s Encyclical on AI · Cloudflare Flagship · Sundar Pichai on AI Search</span></span>
+          <span class="r"><span class="tg">Security · Infrastructure</span><span>6 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-26.html" data-file="ai-news-2026-05-26.html" data-vt="r-ai-news-2026-05-26" data-tags="agents security infrastructure">
+          <span class="d"><b>26</b> Tue</span>
+          <span class="t"><span class="lead">GPT-5.4 mini &amp; nano</span><span class="rest"> · Alibaba Cloud Agentic Ecosystem · California exempts Linux · Fujitsu self-evolving agents</span></span>
+          <span class="r"><span class="tg">Security · Infrastructure</span><span>6 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-25.html" data-file="ai-news-2026-05-25.html" data-vt="r-ai-news-2026-05-25" data-tags="agents security coding">
+          <span class="d"><b>25</b> Mon</span>
+          <span class="t"><span class="lead">OpenAI IPO Filing</span><span class="rest"> · Anthropic Acquires Stainless · Grafana Breach via TanStack · Claude Managed Agents on Cloudflare</span></span>
+          <span class="r"><span class="tg">Security · Coding</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-24.html" data-file="ai-news-2026-05-24.html" data-vt="r-ai-news-2026-05-24" data-tags="agents security">
+          <span class="d"><b>24</b> Sun</span>
+          <span class="t"><span class="lead">OpenAI disproves 80-year geometry problem</span><span class="rest"> · Anthropic Code with Claude · AI costs vs humans · Gemma 4 3x faster</span></span>
+          <span class="r"><span class="tg">Security</span><span>6 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-23.html" data-file="ai-news-2026-05-23.html" data-vt="r-ai-news-2026-05-23" data-tags="models coding security business">
+          <span class="d"><b>23</b> Sat</span>
+          <span class="t"><span class="lead">OpenAI files for IPO</span><span class="rest"> · GitHub 3,800-repo breach · Anthropic acquires Stainless · Microsoft cancels Claude Code</span></span>
+          <span class="r"><span class="tg">Coding · Security</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-22.html" data-file="ai-news-2026-05-22.html" data-vt="r-ai-news-2026-05-22" data-tags="agents infrastructure">
+          <span class="d"><b>22</b> Fri</span>
+          <span class="t"><span class="lead">If Google can&#x27;t make AI agents useful, maybe no one can</span><span class="rest"> · AI video is moving beyond clip slop · The biggest data center ever is becoming a huge problem in Utah · It&#x27;s make or break time for AI labeling systems</span></span>
+          <span class="r"><span class="tg">Infrastructure</span><span>6 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-21.html" data-file="ai-news-2026-05-21.html" data-vt="r-ai-news-2026-05-21" data-tags="agents research security">
+          <span class="d"><b>21</b> Thu</span>
+          <span class="t"><span class="lead">OpenAI to confidentially file for IPO as soon as Friday</span><span class="rest"> · GitHub confirms breach of 3,800 repos via malicious VSCode e · Anthropic expanding to Colossus2 with GB200 infrastructure</span></span>
+          <span class="r"><span class="tg">Security</span><span>8 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-20.html" data-file="ai-news-2026-05-20.html" data-vt="r-ai-news-2026-05-20" data-tags="models agents research coding">
+          <span class="d"><b>20</b> Wed</span>
+          <span class="t"><span class="lead">Karpathy joins Anthropic</span><span class="rest"> · Gemini 3.5 Flash · GitHub compromised · SynthID goes mainstream</span></span>
+          <span class="r"><span class="tg">Coding</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-19.html" data-file="ai-news-2026-05-19.html" data-vt="r-ai-news-2026-05-19" data-tags="agents security coding">
+          <span class="d"><b>19</b> Tue</span>
+          <span class="t"><span class="lead">Musk loses OpenAI lawsuit</span><span class="rest"> · Anthropic acquires Stainless · Cursor Composer 2.5 · Agent security research</span></span>
+          <span class="r"><span class="tg">Security · Coding</span><span>5 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-18.html" data-file="ai-news-2026-05-18.html" data-vt="r-ai-news-2026-05-18" data-tags="models agents security">
+          <span class="d"><b>18</b> Mon</span>
+          <span class="t"><span class="lead">Google I/O in 48h</span><span class="rest"> · Anthropic nears $900B · Microsoft BitLocker backdoor · TikTok AI collapses</span></span>
+          <span class="r"><span class="tg">Security</span><span>7 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-17.html" data-file="ai-news-2026-05-17.html" data-vt="r-ai-news-2026-05-17" data-tags="funding infrastructure business">
+          <span class="d"><b>17</b> Sun</span>
+          <span class="t"><span class="lead">Anthropic nears $900B</span><span class="rest"> · OpenAI&#x27;s $4B consulting play · The Apple rift deepens</span></span>
+          <span class="r"><span class="tg">Funding · Infrastructure</span><span>3 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-16.html" data-file="ai-news-2026-05-16.html" data-vt="r-ai-news-2026-05-16" data-tags="infrastructure funding">
+          <span class="d"><b>16</b> Sat</span>
+          <span class="t"><span class="lead">OpenAI faces a compute wall</span><span class="rest"> · PwC bets $300K on Claude · The AI data center rebellion explodes</span></span>
+          <span class="r"><span class="tg">Infrastructure · Funding</span><span>2 min</span></span>
+        </a>
+        <a class="row" href="reports/ai-news-2026-05-15.html" data-file="ai-news-2026-05-15.html" data-vt="r-ai-news-2026-05-15" data-tags="business funding hardware security">
+          <span class="d"><b>15</b> Fri</span>
+          <span class="t"><span class="lead">Anthropic surpasses OpenAI in business adoption</span><span class="rest"> · Daybreak launches · Codex goes mobile</span></span>
+          <span class="r"><span class="tg">Business · Funding</span><span>2 min</span></span>
+        </a>
+      </div>
+      </div>
+      <div class="empty" id="ar-empty" hidden>No daily briefings on these topics.</div>
     </section>
+    <!-- index:end -->
 
     <footer class="foot">
       <span>Generated daily by <a href="https://github.com/iamluisgb/quiron" target="_blank" rel="noopener">Hermes Agent</a></span>
-      <span><a href="https://github.com/iamluisgb/reports" target="_blank" rel="noopener">GitHub</a> · <a href="/reports/about.html">About</a> · <a href="/reports/rss.xml">RSS</a> · <a href="/reports/patterns.html">Patterns</a> · @iamluisgb</span>
+      <span><a href="https://github.com/iamluisgb/reports" target="_blank" rel="noopener">GitHub</a> · <a href="/reports/about.html">About</a> · <a href="/reports/rss.xml">RSS</a> · <a href="/reports/sitemap.md">Markdown</a> · <a href="/reports/patterns.html">Patterns</a> · @iamluisgb</span>
     </footer>
   </main>
 
@@ -120,255 +985,183 @@
 
 <script src="site.js"></script>
 <script>
-  const { MONTHS, MONTHS_LONG, WEEKDAYS, esc, parseDate: pd, fmtDate: fmt, isBroken, headline, initPlayer, reduce } = window.Site;
-  const UBIQ = new Set(['models', 'agents', 'research']);   // on >90% of reports: they don't discriminate
+  // The index is rendered at build time (scripts/build_index.py). This script only
+  // filters what is already on the page and runs the search palette.
+  const { MONTHS_LONG, esc, parseDate, fmtDate, headline, toggleTheme, reduce } = window.Site;
   const $ = id => document.getElementById(id);
-  const topicLabel = t => t.replace(/-/g, ' ').replace(/^./, c => c.toUpperCase());
-  const iso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-  const href = r => 'reports/' + encodeURI(r.file);
-  const isSpanish = s => /[áéíóúñ¿¡]|\b(los|las|del)\b/i.test(s);
-  const vtName = r => 'r-' + r.file.replace(/\.html$/, '').replace(/[^a-z0-9-]/gi, '-');
-
-  let reports = [], daily = [], special = [], byFile = {};
+  const all = sel => [...document.querySelectorAll(sel)];
   const active = new Set();
   let showAll = false;
-  let namedRender = false;   // per-row view-transition names, only while a filter change animates
 
-  const matches = r => !active.size || r.tags.some(t => active.has(t));
+  const tagsOf = el => (el.dataset.tags || '').split(' ');
+  const matches = el => !active.size || tagsOf(el).some(t => active.has(t));
 
-  /* ---------- Transitions ---------- */
-  function animateFilter(update) {
-    if (!document.startViewTransition || reduce) { update(); return; }
-    namedRender = true;
-    document.querySelectorAll('[data-vt]').forEach(n => { n.style.viewTransitionName = n.dataset.vt; });
-    const vt = document.startViewTransition(update);
-    const done = () => {
-      namedRender = false;
-      document.querySelectorAll('[data-vt]').forEach(n => { n.style.viewTransitionName = ''; });
-    };
-    vt.finished.then(done, done);
-  }
-  // Cross-document transition: the clicked title morphs into the report's <h1>.
+  /* ---------- Cross-document transition: the clicked title becomes the report's <h1> ---------- */
   document.addEventListener('click', e => {
     const a = e.target.closest('a[data-file]');
     if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
-    document.querySelectorAll('.vt-headline').forEach(n => { n.style.viewTransitionName = ''; n.classList.remove('vt-headline'); });
+    all('.vt-headline').forEach(n => { n.style.viewTransitionName = ''; n.classList.remove('vt-headline'); });
     const t = a.querySelector('h4, .lead') || a;
     t.style.viewTransitionName = 'headline';
     t.classList.add('vt-headline');
   });
 
-  /* ---------- Topics (multi-select OR, URL-addressable via ?topic=a,b) ---------- */
-  function readTopicsFromUrl() {
-    const param = new URLSearchParams(location.search).get('topic');
-    if (param) param.split(',').map(s => s.trim()).filter(Boolean).forEach(t => active.add(t));
+  /* ---------- Topic filter (multi-select OR, ?topic=a,b) ---------- */
+  function applyFilter() {
+    const filtering = active.size > 0;
+    all('.chip').forEach(c => c.setAttribute('aria-pressed', String(active.has(c.dataset.t))));
+    $('clear').hidden = !filtering;
+    if ($('today')) $('today').hidden = filtering;
+
+    const cards = all('.sp');
+    let shownCards = 0;
+    cards.forEach(c => {
+      const ok = matches(c) && (filtering || showAll || !c.hasAttribute('data-extra'));
+      c.hidden = !ok;
+      if (matches(c)) shownCards++;
+    });
+    const mins = cards.filter(matches).map(c => +c.dataset.min);
+    $('sp-meta').textContent = mins.length ? `${mins.length} reports · ${Math.min(...mins)}–${Math.max(...mins)} min reads` : '';
+    $('sp-empty').hidden = shownCards > 0;
+    const more = $('sp-more');
+    more.hidden = filtering || cards.length <= 6;
+    more.textContent = showAll ? 'Show fewer' : more.dataset.label;
+
+    let rowsShown = 0, dailies = 0;
+    all('.month').forEach(m => {
+      let n = 0;
+      m.querySelectorAll('.row').forEach(r => {
+        const ok = matches(r) && (filtering || !r.hasAttribute('data-latest'));
+        r.hidden = !ok;
+        if (ok) n++;
+        if (matches(r)) dailies++;
+      });
+      m.querySelector('[data-count]').textContent = n;
+      m.hidden = n === 0;
+      rowsShown += n;
+    });
+    $('ar-meta').textContent = `${dailies} daily briefings`;
+    $('ar-empty').hidden = rowsShown > 0;
+    all('#cal a.cell').forEach(c => c.classList.toggle('dim', !matches(c)));
+    $('status').textContent = filtering ? `${shownCards + dailies} of ${cards.length + all('.row').length} reports match` : '';
   }
-  function syncTopicsToUrl() {
-    const url = new URL(location.href);
-    if (active.size) url.searchParams.set('topic', [...active].join(','));
-    else url.searchParams.delete('topic');
-    history.replaceState(null, '', url);
+
+  // Rows and cards slide to their new places when a filter changes.
+  function animate(update) {
+    if (!document.startViewTransition || reduce) { update(); return; }
+    const named = all('[data-vt]').filter(n => !n.hidden);
+    named.forEach(n => { n.style.viewTransitionName = n.dataset.vt; });
+    const vt = document.startViewTransition(() => {
+      update();
+      all('[data-vt]').forEach(n => { if (!n.hidden) n.style.viewTransitionName = n.dataset.vt; });
+    });
+    const done = () => all('[data-vt]').forEach(n => { n.style.viewTransitionName = ''; });
+    vt.finished.then(done, done);
   }
-  function renderTopics() {
-    const counts = {};
-    reports.forEach(r => r.tags.forEach(t => { if (!UBIQ.has(t) || active.has(t)) counts[t] = (counts[t] || 0) + 1; }));
-    $('topics').innerHTML = '<span class="eyebrow">Topics</span>' +
-      Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([t, n]) =>
-        `<button class="chip" type="button" data-t="${esc(t)}" aria-pressed="${active.has(t)}">${esc(topicLabel(t))}<span>${n}</span></button>`).join('') +
-      (active.size ? '<button class="link" type="button" id="clear">Clear</button>' : '');
+  function setTopics(next, push = true) {
+    active.clear(); next.forEach(t => active.add(t));
+    if (push) {
+      const url = new URL(location.href);
+      active.size ? url.searchParams.set('topic', [...active].join(',')) : url.searchParams.delete('topic');
+      history.replaceState(null, '', url);
+    }
+    animate(applyFilter);
   }
   $('topics').addEventListener('click', e => {
     const chip = e.target.closest('.chip');
-    if (chip) { const t = chip.dataset.t; active.has(t) ? active.delete(t) : active.add(t); }
-    else if (e.target.id === 'clear') active.clear();
-    else return;
-    syncTopicsToUrl();
-    animateFilter(() => { renderTopics(); render(); });
+    if (chip) { const t = chip.dataset.t, next = new Set(active); next.has(t) ? next.delete(t) : next.add(t); setTopics(next); }
+    else if (e.target.id === 'clear') setTopics(new Set());
   });
+  $('sp-more').addEventListener('click', () => { showAll = !showAll; applyFilter(); });
 
-  /* ---------- Latest briefing ---------- */
-  function renderToday() {
-    const t = daily[0], y = daily[1];
-    if (!t) { $('today').hidden = true; return; }
-    const d = pd(t.date), items = isBroken(t) ? [] : t.summary.split(' · ');
-    const stem = t.file.replace(/\.html$/, '');
-    $('today').innerHTML = `
-      <div>
-        <div class="eyebrow"><b>Latest</b> · ${WEEKDAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]} · ${t.readingTime} min read</div>
-        <h2><a href="${href(t)}" data-file="${esc(t.file)}">${esc(headline(t))}</a></h2>
-        <ol>${items.slice(1).map(s => `<li>${esc(s)}</li>`).join('')}</ol>
-      </div>
-      <div class="side">
-        ${t.audio ? `<div class="audio-player">
-          <audio preload="none" src="audio/${esc(stem)}.mp3"></audio>
-          <button class="play-btn" type="button" aria-label="Play audio briefing">
-            <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
-            <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
-          </button>
-          <div class="player-body">
-            <div class="player-meta"><span class="player-title">Audio briefing</span><span class="player-time"></span></div>
-            <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
-          </div>
-        </div>` : ''}
-        <a class="btn-primary" href="${href(t)}" data-file="${esc(t.file)}">Read the briefing <span class="arrow">→</span></a>
-        ${y ? `<div class="yday">Yesterday: <a href="${href(y)}" data-file="${esc(y.file)}">${esc(headline(y))}</a></div>` : ''}
-      </div>`;
-    const player = $('today').querySelector('.audio-player');
-    if (player) initPlayer(player);
-  }
-
-  /* ---------- Calendar ---------- */
-  function renderCalendar() {
-    if (daily.length < 7) return;
-    const byDate = {};
-    daily.forEach(r => { if (!byDate[r.date]) byDate[r.date] = r; });
-    const first = pd(daily[daily.length - 1].date), last = pd(daily[0].date);
-    const start = new Date(first); start.setDate(start.getDate() - ((start.getDay() + 6) % 7));   // back to Monday
-    const html = ['<span></span>', ...['Mon', '', 'Wed', '', 'Fri', '', ''].map(w => `<span class="wd">${w}</span>`)];
-    let missing = 0, lastMonth = -1;
-    for (const cur = new Date(start); cur <= last;) {
-      const m = cur.getMonth();
-      html.push(`<span class="ml">${m !== lastMonth && cur.getDate() <= 7 ? MONTHS[m] : ''}</span>`);
-      if (cur.getDate() <= 7) lastMonth = m;
-      for (let i = 0; i < 7; i++, cur.setDate(cur.getDate() + 1)) {
-        const k = iso(cur), r = byDate[k];
-        if (cur < first || cur > last) html.push('<span></span>');
-        else if (!r) { missing++; html.push(`<span class="cell" title="${fmt(k)} · no briefing"></span>`); }
-        else {
-          const lvl = r.readingTime <= 3 ? 1 : r.readingTime <= 6 ? 2 : r.readingTime <= 8 ? 3 : 4;
-          html.push(`<a class="cell l${lvl}" href="${href(r)}" data-tip="${esc(r.file)}" aria-label="${fmt(k)}: ${esc(headline(r))}"></a>`);
-        }
-      }
-    }
-    $('cal').innerHTML = html.join('');
-    const days = Object.keys(byDate).length;
-    let streak = 0;
-    for (const d = new Date(last); byDate[iso(d)]; d.setDate(d.getDate() - 1)) streak++;
-    const avg = Math.round(daily.reduce((s, r) => s + r.readingTime, 0) / daily.length);
-    const longest = daily.reduce((a, r) => r.readingTime > a.readingTime ? r : a);
-    $('cal-since').textContent = MONTHS_LONG[first.getMonth()];
-    $('cal-meta').textContent = missing ? `${days} days covered · ${missing} missed` : `${days} days · none missed`;
-    $('facts').innerHTML = `
-      <div class="fact"><div class="n">${streak}</div><div class="k">day streak</div></div>
-      <div class="fact"><div class="n">${avg}<small> min</small></div><div class="k">average briefing</div></div>
-      <a class="fact" href="${href(longest)}" data-file="${esc(longest.file)}"><div class="n">${longest.readingTime}<small> min</small></div><div class="k">longest, ${fmt(longest.date).replace(/ \d{4}$/, '')} <span class="arrow">→</span></div></a>`;
-    $('calendar').hidden = false;
-  }
-
+  /* ---------- Calendar tooltip ---------- */
   const tip = $('tip');
   function showTip(el) {
-    const r = byFile[el.dataset.tip]; if (!r) return;
-    tip.innerHTML = `<span class="eyebrow">${fmt(r.date)} · ${r.readingTime} min</span>${esc(headline(r))}`;
+    tip.innerHTML = `<span class="eyebrow">${esc(el.dataset.meta)}</span>${esc(el.dataset.head)}`;
     tip.classList.add('on');
     const b = el.getBoundingClientRect(), w = tip.offsetWidth;
     tip.style.left = Math.max(8, Math.min(innerWidth - w - 8, b.left + b.width / 2 - w / 2)) + 'px';
     tip.style.top = Math.max(8, b.top - tip.offsetHeight - 8) + 'px';
   }
-  const tipFor = e => { const c = e.target.closest && e.target.closest('[data-tip]'); c ? showTip(c) : tip.classList.remove('on'); };
+  const tipFor = e => { const c = e.target.closest && e.target.closest('a.cell'); c ? showTip(c) : tip.classList.remove('on'); };
   document.addEventListener('mouseover', tipFor);
   document.addEventListener('focusin', tipFor);
   addEventListener('scroll', () => tip.classList.remove('on'), { passive: true });
 
-  /* ---------- Special reports + daily archive ---------- */
-  function render() {
-    const sp = special.filter(matches), dl = daily.filter(matches), filtering = active.size > 0;
-    const vt = r => `data-vt="${vtName(r)}"${namedRender ? ` style="view-transition-name:${vtName(r)}"` : ''}`;
-    $('status').textContent = filtering ? `${sp.length + dl.length} of ${reports.length} reports match` : '';
-    $('today').hidden = filtering || !daily.length;
-    document.querySelectorAll('#cal a.cell').forEach(c => c.classList.toggle('dim', !matches(byFile[c.dataset.tip])));
-
-    const shown = (showAll || filtering) ? sp : sp.slice(0, 6);
-    $('sp-meta').textContent = sp.length ? `${sp.length} reports · ${Math.min(...sp.map(r => r.readingTime))}–${Math.max(...sp.map(r => r.readingTime))} min reads` : '';
-    $('specials').innerHTML = shown.length ? shown.map(r => `
-      <a class="sp" href="${href(r)}" data-file="${esc(r.file)}" ${vt(r)}>
-        <div class="eyebrow"><b>${esc(r.series || 'Special report')}</b></div>
-        <h4>${esc(headline(r))}${isSpanish(r.title) ? '<span class="lang" title="In Spanish">ES</span>' : ''}</h4>
-        <p>${esc(r.summary)}</p>
-        <div class="meta"><span>${fmt(r.date)}</span><span>${r.readingTime} min <span class="arrow">→</span></span></div>
-      </a>`).join('') : '<div class="empty">No special reports on these topics yet.</div>';
-    $('sp-more').hidden = filtering || sp.length <= 6;
-    $('sp-more').textContent = showAll ? 'Show fewer' : `Show all ${sp.length} special reports`;
-
-    const list = filtering ? dl : dl.slice(1);
-    $('ar-meta').textContent = `${dl.length} daily briefings`;
-    const groups = [];
-    list.forEach(r => {
-      const d = pd(r.date), key = d.getFullYear() * 12 + d.getMonth();
-      let g = groups[groups.length - 1];
-      if (!g || g.key !== key) groups.push(g = { key, name: `${MONTHS_LONG[d.getMonth()]} ${d.getFullYear()}`, items: [] });
-      g.items.push(r);
-    });
-    $('months').innerHTML = groups.length ? groups.map(g => `
-      <div class="month">
-        <div class="month-h"><h5>${g.name}</h5><span class="eyebrow">${g.items.length}</span></div>
-        ${g.items.map(r => {
-          const d = pd(r.date), tags = r.tags.filter(t => !UBIQ.has(t)).slice(0, 2).map(topicLabel).join(' · ');
-          const parts = isBroken(r) ? ['AI News Daily'] : r.summary.split(' · ');
-          return `<a class="row" href="${href(r)}" data-file="${esc(r.file)}" ${vt(r)}>
-            <span class="d"><b>${String(d.getDate()).padStart(2, '0')}</b> ${WEEKDAYS[d.getDay()].slice(0, 3)}</span>
-            <span class="t"><span class="lead">${esc(parts[0])}</span>${parts.length > 1 ? `<span class="rest"> · ${esc(parts.slice(1).join(' · '))}</span>` : ''}${isSpanish(r.summary) ? '<span class="lang" title="In Spanish">ES</span>' : ''}</span>
-            <span class="r">${tags ? `<span class="tg">${esc(tags)}</span>` : ''}<span>${r.readingTime} min</span></span>
-          </a>`;
-        }).join('')}
-      </div>`).join('') : '<div class="empty">No daily briefings on these topics.</div>';
-  }
-  $('sp-more').onclick = () => { showAll = !showAll; render(); };
-
-  /* ---------- Search palette (⌘K, /, or ?q=) ---------- */
+  /* ---------- Search palette (⌘K, /, or ?q=) — reports plus a few actions ---------- */
   const palRoot = $('pal-root');
-  let sel = 0, results = [], lastFocus = null;
+  let reports = null, sel = 0, results = [], lastFocus = null;
+  const loadReports = () => reports ? Promise.resolve(reports) :
+    fetch('reports.json').then(r => r.json()).then(d => (reports = d.reports.slice().sort((a, b) => b.date.localeCompare(a.date) || a.file.localeCompare(b.file))));
+  const go = url => () => { location.href = url; };
+  const ACTIONS = () => [
+    { label: 'Go to the latest briefing', hint: 'Action', run: go(document.querySelector('#today h2 a')?.getAttribute('href') || '#archive') },
+    { label: 'Switch theme', hint: 'Action', run: () => { closePalette(); toggleTheme(); } },
+    ...all('.chip').map(c => ({ label: `Show topic: ${c.firstChild.textContent}`, hint: 'Filter', run: () => { closePalette(); setTopics(new Set([c.dataset.t])); $('special').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); } })),
+    { label: 'Design patterns', hint: 'Page', run: go('patterns.html') },
+    { label: 'About these reports', hint: 'Page', run: go('about.html') },
+    { label: 'RSS feed', hint: 'Page', run: go('rss.xml') },
+  ];
   function search(q) {
     const words = q.toLowerCase().split(/\s+/).filter(Boolean);
-    if (!words.length) return reports.slice(0, 8);
-    return reports.filter(r => {
-      const hay = `${r.title} ${r.summary} ${r.tags.join(' ')} ${r.series || ''} ${MONTHS_LONG[pd(r.date).getMonth()]} ${r.date}`.toLowerCase();
+    const actions = ACTIONS().filter(a => words.every(w => a.label.toLowerCase().includes(w)));
+    const found = (reports || []).filter(r => {
+      const hay = `${r.title} ${r.summary} ${r.tags.join(' ')} ${r.series || ''} ${MONTHS_LONG[parseDate(r.date).getMonth()]} ${r.date}`.toLowerCase();
       return words.every(w => hay.includes(w));
-    }).slice(0, 30);
+    }).map(r => ({ label: headline(r), hint: `${r.type === 'daily' ? 'Daily' : 'Special'} · ${fmtDate(r.date)}`, sub: r.summary, run: go('reports/' + encodeURI(r.file)), href: 'reports/' + encodeURI(r.file) }));
+    return words.length ? [...actions.slice(0, 4), ...found.slice(0, 30)] : [...found.slice(0, 6), ...actions.slice(0, 2)];
   }
-  function paintResults() {
+  function paint() {
     const list = palRoot.querySelector('.pal-list');
     list.innerHTML = results.length ? results.map((r, i) => `
-      <a class="pal-item" role="option" id="opt-${i}" aria-selected="${i === sel}" href="${href(r)}">
-        <span class="pt">${esc(headline(r))}</span><span class="pm">${r.type === 'daily' ? 'Daily' : 'Special'} · ${fmt(r.date)}</span>
-        <span class="ps">${esc(r.summary)}</span>
-      </a>`).join('') : '<div class="empty" style="padding:18px 12px">Nothing matches. Try a company, a model or a month.</div>';
+      <${r.href ? `a href="${r.href}"` : 'div'} class="pal-item" role="option" id="opt-${i}" aria-selected="${i === sel}" data-i="${i}">
+        <span class="pt">${esc(r.label)}</span><span class="pm">${esc(r.hint)}</span>
+        ${r.sub ? `<span class="ps">${esc(r.sub)}</span>` : ''}
+      </${r.href ? 'a' : 'div'}>`).join('') : '<div class="empty" style="padding:18px 12px">Nothing matches. Try a company, a model or a month.</div>';
     palRoot.querySelector('input').setAttribute('aria-activedescendant', results.length ? 'opt-' + sel : '');
     const s = list.querySelector('[aria-selected="true"]');
     if (s) s.scrollIntoView({ block: 'nearest' });
   }
   function openPalette(q = '') {
-    if (!palRoot.hidden || !reports.length) return;
+    if (!palRoot.hidden) return;
     lastFocus = document.activeElement;
     palRoot.hidden = false;
     palRoot.innerHTML = `<div class="pal-back" id="pal-back">
       <div class="pal" role="dialog" aria-modal="true" aria-label="Search reports">
-        <div class="pal-in"><span aria-hidden="true">⌕</span><input id="pal-q" type="text" placeholder="Search ${reports.length} reports…" role="combobox" aria-expanded="true" aria-controls="pal-list" autocomplete="off" spellcheck="false"><span class="kbd">esc</span></div>
+        <div class="pal-in"><span aria-hidden="true">⌕</span><input id="pal-q" type="text" aria-label="Search reports and actions" placeholder="Search reports, topics, actions…" role="combobox" aria-expanded="true" aria-controls="pal-list" autocomplete="off" spellcheck="false"><span class="kbd">esc</span></div>
         <div class="pal-list" id="pal-list" role="listbox"></div>
         <div class="pal-foot"><span>↑↓ move</span><span>↵ open</span><span>esc close</span></div>
       </div></div>`;
     const input = $('pal-q');
     input.value = q;
-    sel = 0; results = search(q); paintResults();
-    input.oninput = () => { sel = 0; results = search(input.value); paintResults(); };
+    const refresh = () => { sel = 0; results = search(input.value); paint(); };
+    refresh();
+    loadReports().then(refresh).catch(() => {});
+    input.oninput = refresh;
     input.onkeydown = e => {
-      if (e.key === 'ArrowDown') { sel = Math.min(results.length - 1, sel + 1); paintResults(); e.preventDefault(); }
-      else if (e.key === 'ArrowUp') { sel = Math.max(0, sel - 1); paintResults(); e.preventDefault(); }
-      else if (e.key === 'Enter' && results[sel]) location.href = href(results[sel]);
+      if (e.key === 'ArrowDown') { sel = Math.min(results.length - 1, sel + 1); paint(); e.preventDefault(); }
+      else if (e.key === 'ArrowUp') { sel = Math.max(0, sel - 1); paint(); e.preventDefault(); }
+      else if (e.key === 'Enter' && results[sel]) { e.preventDefault(); results[sel].run(); }
       else if (e.key === 'Tab') e.preventDefault();
+    };
+    palRoot.querySelector('.pal-list').onclick = e => {
+      const it = e.target.closest('[data-i]');
+      if (it && !it.href) results[+it.dataset.i].run();
     };
     $('pal-back').onclick = e => { if (e.target.id === 'pal-back') closePalette(); };
     input.focus();
   }
   function closePalette() {
+    if (palRoot.hidden) return;
     palRoot.hidden = true; palRoot.innerHTML = '';
     if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
   document.addEventListener('keydown', e => {
     const typing = /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName);
     if ((e.key === 'k' && (e.metaKey || e.ctrlKey)) || (e.key === '/' && !typing)) { e.preventDefault(); openPalette(); }
-    else if (e.key === 'Escape' && !palRoot.hidden) closePalette();
+    else if (e.key === 'Escape') closePalette();
   });
-  document.querySelectorAll('[data-search]').forEach(b => b.addEventListener('click', () => openPalette()));
+  all('[data-search]').forEach(b => b.addEventListener('click', () => openPalette()));
 
   /* ---------- Top bar ---------- */
   const bar = $('topbar');
@@ -380,31 +1173,11 @@
   }).observe($('mast'));
   $('to-top').onclick = () => scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
 
-  /* ---------- Load ---------- */
-  async function loadReports() {
-    try {
-      const res = await fetch('reports.json', { cache: 'no-cache' });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      const data = await res.json();
-      reports = (data.reports || []).slice().sort((a, b) => b.date.localeCompare(a.date) || a.file.localeCompare(b.file));
-      daily = reports.filter(r => r.type === 'daily');
-      special = reports.filter(r => r.type === 'special');
-      byFile = Object.fromEntries(reports.map(r => [r.file, r]));
-      $('m-count').textContent = reports.length;
-      if (daily[0]) { const d = pd(daily[0].date); $('m-updated').textContent = ` · updated ${d.getDate()} ${MONTHS[d.getMonth()]}`; }
-      readTopicsFromUrl();
-      renderTopics();
-      renderToday();
-      renderCalendar();
-      render();
-      const q = new URLSearchParams(location.search).get('q');
-      if (q) openPalette(q);
-    } catch (err) {
-      console.error(err);
-      $('today').innerHTML = '<div class="empty">The report list could not be loaded. Reload the page, or browse via the <a href="/reports/rss.xml" style="color:var(--primary)">RSS feed</a>.</div>';
-    }
-  }
-  loadReports();
+  /* ---------- Start from the URL ---------- */
+  const params = new URLSearchParams(location.search);
+  const fromUrl = (params.get('topic') || '').split(',').map(s => s.trim()).filter(Boolean);
+  if (fromUrl.length) { fromUrl.forEach(t => active.add(t)); applyFilter(); }
+  if (params.get('q')) openPalette(params.get('q'));
 </script>
 </body>
 </html>

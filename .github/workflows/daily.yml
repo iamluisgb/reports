@@ -126,7 +126,7 @@ jobs:
         if: ${{ !inputs.dry_run && steps.resolve.outputs.skip != 'true' }}
         run: |
           DAY="${{ steps.resolve.outputs.day }}"
-          git add reports audio reports.json sitemap.xml rss.xml og
+          git add reports audio reports.json sitemap.xml rss.xml og index.html sitemap.md tokens.json
           if git diff --staged --quiet; then
             echo "::error::nothing to commit — the report was not written"
             exit 1

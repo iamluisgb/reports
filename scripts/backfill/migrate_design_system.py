@@ -3,7 +3,8 @@
 
 site.js now drives the theme toggle and the audio player, and report.js the
 prev/next links, so the per-report copies of that code are dead weight. This
-removes them, along with inline styles the stylesheet now covers. Idempotent:
+removes them, along with inline styles the stylesheet now covers, and links
+superscript citations to the numbered Sources list. Idempotent:
 a second run changes nothing. Hand-written script blocks that mix the theme
 with other logic (charts, progress bars) are left alone; site.js overrides
 their toggleTheme() anyway.
@@ -26,8 +27,51 @@ STYLED = re.compile(r'(<(?:div|span|a)\b[^>]*?class="(?:stats-grid|stat-card|sta
 NOTE_LINK = re.compile(r'(<div class="stat-note">.*?)<a ([^>]*?)\s*style="[^"]*"', re.S)
 
 
+OLD_FONTS = re.compile(r'[ \t]*<link (?:rel="preconnect" href="https://fonts\.(?:googleapis|gstatic)\.com"[^>]*|href="https://fonts\.googleapis\.com/css2\?family=DM\+Serif[^"]*" rel="stylesheet")>\n?')
+SOURCES_OL = re.compile(r'(<div class="section-label">\s*Sources\s*</div>.*?<ol>)(.*?)(</ol>)', re.S)
+CITATION = re.compile(r'<sup(?: class="(?:d-c|cite)")?>((?:\d+\s*,\s*)*\d+)</sup>')
+
+
+def link_citations(text: str) -> str:
+    """Number the Sources list and turn superscript numbers into links to it."""
+    m = SOURCES_OL.search(text)
+    if not m:
+        return text
+    n = 0
+    def number(li):
+        nonlocal n
+        n += 1
+        return f'<li id="source-{n}">' if 'id="source-' not in li.group(0) else li.group(0)
+    items = re.sub(r'<li(?: id="source-\d+")?>', number, m.group(2))
+    text = text[:m.start(2)] + items + text[m.end(2):]
+    def cite(s):
+        nums = [x.strip() for x in s.group(1).split(',')]
+        if any(int(x) > n for x in nums):
+            return s.group(0)
+        return '<sup class="cite">' + ','.join(f'<a href="#source-{x}">{x}</a>' for x in nums) + '</sup>'
+    return CITATION.sub(cite, text)
+
+
 def migrate(text: str) -> tuple[str, list[str]]:
     done = []
+
+    new = link_citations(text)
+    if new != text:
+        done.append("linked citations")
+    text = new
+
+    # Fonts are self-hosted now: drop the old Google Fonts stylesheet (and its preconnects),
+    # which still blocked rendering on every report.
+    new = OLD_FONTS.sub("", text)
+    if new != text:
+        done.append("google fonts link")
+    text = new
+
+    # No emoji in the interface: the browser tab and share title included.
+    new = re.sub(r"<title>\s*⭐\s*", "<title>", text)
+    if new != text:
+        done.append("title emoji")
+    text = new
 
     new = PLAYER_JS.sub("", text)
     if new != text:

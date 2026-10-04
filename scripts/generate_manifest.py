@@ -264,6 +264,13 @@ def main() -> None:
 
     write_rss(reports)
 
+    # The index is rendered from the same entries (scripts/build_index.py), and so are
+    # the files agents read: a markdown twin per report, sitemap.md and tokens.json.
+    from build_index import write as write_index
+    from build_agent_files import write as write_agent_files
+    write_index(reports)
+    write_agent_files(reports)
+
     print(f"Wrote {MANIFEST_PATH.name} ({len(reports)} reports), {SITEMAP_PATH.name} and {RSS_PATH.name}")
 
 

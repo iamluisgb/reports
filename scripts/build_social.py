@@ -134,7 +134,7 @@ def inject_meta(path: Path, entry: dict) -> bool:
 
 
 # ----- Shared report UI -------------------------------------------------------
-# Every report loads the site fonts, site.js (theme, audio player) and report.js
+# Every report preloads the self-hosted fonts and loads site.js (theme, audio player) and report.js
 # (top bar, reading progress, section index, prev/next). Injected here, like the
 # meta block, so hand-written specials and older dailies get it without being edited.
 
@@ -143,26 +143,35 @@ UI_END = "<!-- ui:end -->"
 UI_RE = re.compile(re.escape(UI_START) + r".*?" + re.escape(UI_END), re.S)
 UI_BLOCK = "\n".join([
     UI_START,
-    '<link rel="preconnect" href="https://fonts.googleapis.com">',
-    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
-    '<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1'
-    '&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">',
-    # Apply a stored light theme before first paint, so the page never flashes dark.
-    "<script>try{if(localStorage.getItem('ai-reports-theme')==='light')"
-    "document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>",
+    # Fonts are self-hosted (assets/fonts/web); preload the two that paint first.
+    '<link rel="preload" href="../assets/fonts/web/InstrumentSerif-normal.woff2" as="font" type="font/woff2" crossorigin>',
+    '<link rel="preload" href="../assets/fonts/web/Geist-normal.woff2" as="font" type="font/woff2" crossorigin>',
+    # Apply the reader's theme, or the system's, before first paint so the page never flashes.
+    "<script>try{var t=localStorage.getItem('ai-reports-theme');if(t==='light'||(!t&&"
+    "matchMedia('(prefers-color-scheme: light)').matches))document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>",
+    # Prerender a report or the index when the reader shows intent (hover, pointer down).
+    '<script type="speculationrules">{"prerender":[{"where":{"or":[{"href_matches":"/reports/"},'
+    '{"href_matches":"/reports/reports/*.html"},{"href_matches":"/reports/about.html"}]},"eagerness":"moderate"}]}</script>',
     '<script src="../site.js" defer></script>',
     '<script src="../report.js" defer></script>',
     UI_END,
 ])
 
 
+def ui_block(path: Path) -> str:
+    """The shared block plus this report's markdown twin (written by build_agent_files.py)."""
+    alt = f'<link rel="alternate" type="text/markdown" href="{path.stem}.md">'
+    return UI_BLOCK.replace(UI_START, UI_START + "\n" + alt, 1)
+
+
 def inject_ui(path: Path) -> bool:
     """Insert/replace the UI block right before </head>. Returns True if changed."""
     text = path.read_text(encoding="utf-8", errors="replace")
+    block = ui_block(path)
     if UI_START in text:
-        new = UI_RE.sub(lambda _: UI_BLOCK, text, count=1)
+        new = UI_RE.sub(lambda _: block, text, count=1)
     elif "</head>" in text:
-        new = text.replace("</head>", UI_BLOCK + "\n</head>", 1)
+        new = text.replace("</head>", block + "\n</head>", 1)
     else:
         return False
     if new != text:

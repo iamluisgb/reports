@@ -23,7 +23,8 @@
     ? (isBroken(r) ? 'AI News Daily' : r.summary.split(' · ')[0])
     : r.title.replace(/\s+/g, ' ');
 
-  /* ---------- Theme: dark by default, light stored as 'ai-reports-theme' ---------- */
+  /* ---------- Theme: follows the system until the reader picks one ('ai-reports-theme') ---------- */
+  const systemLight = matchMedia('(prefers-color-scheme: light)');
   function labelToggles() {
     const light = document.documentElement.getAttribute('data-theme') === 'light';
     document.querySelectorAll('.theme-toggle, [data-theme-toggle]').forEach(b => {
@@ -32,6 +33,7 @@
     });
   }
   function applyTheme(theme) {
+    if (theme !== 'light' && theme !== 'dark') theme = systemLight.matches ? 'light' : 'dark';
     if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
     else document.documentElement.removeAttribute('data-theme');
     labelToggles();
@@ -135,6 +137,7 @@
 
   /* ---------- Start ---------- */
   applyTheme(store.get('ai-reports-theme'));
+  systemLight.addEventListener('change', () => { if (!store.get('ai-reports-theme')) applyTheme(null); });
   document.querySelectorAll('[data-theme-toggle]').forEach(b => {
     if (!b.hasAttribute('onclick')) b.addEventListener('click', toggleTheme);
   });
