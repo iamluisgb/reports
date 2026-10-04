@@ -67,6 +67,7 @@
   [data-o="campo"].id-light { --bg:#f5f4ee; --bg-card:#fff; --bg-card-hover:#ecebe3; --primary:#4f6b1d; --primary-dim:rgba(79,107,29,.1); --on-primary:#fff; --on-surface:#17180f; --on-surface-variant:#45483c; --muted:#646858; --border:rgba(23,24,15,.12); }
   [data-o="musgo"].id-dark  { --bg:#0c0f0e; --bg-card:#151a18; --bg-card-hover:#1d2321; --primary:#8fbf9a; --primary-dim:rgba(143,191,154,.12); --on-primary:#0c0f0e; --on-surface:#e9eeeb; --on-surface-variant:#adb7b1; --muted:#88928d; --border:rgba(136,146,141,.25); }
   [data-o="musgo"].id-light { --bg:#f4f5f2; --bg-card:#fff; --bg-card-hover:#eaece7; --primary:#2f6b45; --primary-dim:rgba(47,107,69,.1); --on-primary:#fff; --on-surface:#121714; --on-surface-variant:#424944; --muted:#5f6762; --border:rgba(18,23,20,.12); }
+  /* "actual" is the palette used before Musgo (until Oct 2026). */
   [data-o="actual"].id-dark { --bg:#0b0e13; --bg-card:#141920; --bg-card-hover:#1b212b; --primary:#3fb950; --primary-dim:rgba(63,185,80,.1); --on-primary:#0b0e13; --on-surface:#eaeef3; --on-surface-variant:#aab3bd; --muted:#848d99; --border:rgba(125,134,146,.22); }
   [data-o="actual"].id-light { --bg:#f6f6f2; --bg-card:#fff; --bg-card-hover:#efefea; --primary:#0a7a4a; --primary-dim:rgba(10,122,74,.09); --on-primary:#fff; --on-surface:#15181e; --on-surface-variant:#464c55; --muted:#62686f; --border:rgba(20,24,30,.11); }
 </style>
@@ -106,8 +107,8 @@
 
   <!-- ============ IDENTITY ============ -->
   <section id="identity">
-    <h2>Identity — a decision to take</h2>
-    <p>Today's green is GitHub's success green (<code>#3fb950</code>) on a GitHub-dark ground: near-black with one acid green is the look most generated sites share. Two alternatives with our own accent, both AA in both themes. Changing it is two token blocks in <code>styles.css</code>.</p>
+    <h2>Identity — <em style="color:var(--primary)">Musgo</em></h2>
+    <p>Chosen in October 2026: a moss accent on a green-tinted near-black, replacing GitHub's success green (<code>#3fb950</code>) on GitHub-dark, the look most generated sites share. Both themes pass AA. The other two palettes stay here for reference; the colour lives in two token blocks at the top of <code>styles.css</code>.</p>
     <div class="ids" id="ids"></div>
   </section>
 
@@ -384,7 +385,7 @@
 <script src="site.js"></script>
 <script>
   // Identity previews: the same snippet under each palette, dark and light.
-  const OPTIONS = [['actual', 'Today · GitHub green'], ['campo', 'Campo · field olive'], ['musgo', 'Musgo · moss']];
+  const OPTIONS = [['musgo', 'Musgo · moss — in use'], ['campo', 'Campo · field olive'], ['actual', 'Before · GitHub green']];
   const preview = (o, theme) => `
     <div class="id-prev id-${theme}" data-o="${o}">
       <div class="eyebrow"><b>Latest</b> · Friday 2 Oct · 9 min read</div>

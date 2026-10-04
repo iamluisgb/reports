@@ -120,6 +120,13 @@ progress, calendar) and links — never decoration (table heads, list markers, n
 The theme follows the reader's system until they pick one; high contrast follows
 `prefers-contrast: more`. Both come from tokens, so a pattern built on tokens gets them free.
 
+### Colour
+
+The palette is **Musgo** (October 2026): moss `--primary` on a green-tinted near-black, with a
+light theme to match. It replaced GitHub's green. Change it only in the two token blocks at
+the top of `styles.css`, run `check_design.py` (it checks AA contrast) and bump `CARD_DESIGN`
+in `scripts/build_social.py` so the share images are redrawn.
+
 ### Names
 
 Name a pattern by what it does, not how it looks or where its code lives

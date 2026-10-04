@@ -25,18 +25,19 @@
 
 /* ===== 1. TOKENS ===== */
 :root {
-  /* Colour — dark is the default theme */
-  --bg: #0b0e13;
-  --bg-card: #141920;
-  --bg-card-hover: #1b212b;
-  --code-bg: #080b0f;
-  --primary: #3fb950;
-  --primary-dim: rgba(63, 185, 80, 0.1);
-  --on-primary: #0b0e13;
-  --on-surface: #eaeef3;
-  --on-surface-variant: #aab3bd;
-  --muted: #848d99;            /* ≥ 4.5:1 on every surface */
-  --border: rgba(125, 134, 146, 0.22);
+  /* Colour — "Musgo": a moss accent on a green-tinted near-black (chosen Oct 2026).
+     Dark is the fallback theme; the system preference decides first. */
+  --bg: #0c0f0e;
+  --bg-card: #151a18;
+  --bg-card-hover: #1d2321;
+  --code-bg: #080b0a;
+  --primary: #8fbf9a;
+  --primary-dim: rgba(143, 191, 154, 0.12);
+  --on-primary: #0c0f0e;
+  --on-surface: #e9eeeb;
+  --on-surface-variant: #adb7b1;
+  --muted: #88928d;            /* ≥ 4.5:1 on every surface */
+  --border: rgba(136, 146, 141, 0.25);
   --warn: #d29922;
   --shadow-pop: 0 24px 60px -20px rgba(0, 0, 0, 0.45);
 
@@ -80,17 +81,17 @@
 }
 
 [data-theme="light"] {
-  --bg: #f6f6f2;
+  --bg: #f4f5f2;
   --bg-card: #ffffff;
-  --bg-card-hover: #efefea;
-  --code-bg: #efefe9;
-  --primary: #0a7a4a;
-  --primary-dim: rgba(10, 122, 74, 0.09);
+  --bg-card-hover: #eaece7;
+  --code-bg: #ecede9;
+  --primary: #2f6b45;
+  --primary-dim: rgba(47, 107, 69, 0.1);
   --on-primary: #ffffff;
-  --on-surface: #15181e;
-  --on-surface-variant: #464c55;
-  --muted: #62686f;
-  --border: rgba(20, 24, 30, 0.11);
+  --on-surface: #121714;
+  --on-surface-variant: #424944;
+  --muted: #5f6762;
+  --border: rgba(18, 23, 20, 0.12);
   --warn: #9a6700;
   --shadow-pop: 0 24px 60px -20px rgba(20, 24, 30, 0.25);
   color-scheme: light;
@@ -98,8 +99,8 @@
 
 /* High contrast, when the system asks for it: stronger secondary text and lines. */
 @media (prefers-contrast: more) {
-  :root:not([data-theme="light"]) { --muted: #c3cad2; --on-surface-variant: #dde2e8; --border: rgba(170, 179, 189, 0.5); }
-  [data-theme="light"] { --muted: #3d434b; --on-surface-variant: #2a2f36; --border: rgba(20, 24, 30, 0.4); }
+  :root:not([data-theme="light"]) { --muted: #c4ccc7; --on-surface-variant: #dde4e0; --border: rgba(173, 183, 177, 0.5); }
+  [data-theme="light"] { --muted: #3c443f; --on-surface-variant: #29302b; --border: rgba(18, 23, 20, 0.4); }
 }
 
 /* ===== 2. BASE ===== */
@@ -620,7 +621,7 @@ figure.diagram .marker-muted { fill: var(--on-surface-variant); }
 @media print {
   :root, [data-theme="light"] {
     --bg: #fff; --bg-card: #fff; --bg-card-hover: #fff; --code-bg: #f4f4f1;
-    --on-surface: #111; --on-surface-variant: #333; --muted: #555; --border: #ccc; --primary: #0a5c38;
+    --on-surface: #111; --on-surface-variant: #333; --muted: #555; --border: #ccc; --primary: #2f6b45;
   }
   .topbar, .page-toc, .pager, .back-link, .theme-toggle, [data-theme-toggle], .audio-player,
   .section:has(> .audio-player), .skip-link { display: none !important; }

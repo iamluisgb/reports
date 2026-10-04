@@ -37,11 +37,13 @@ SERIF = FONTS_DIR / "DMSerifDisplay-Regular.ttf"
 SANS = FONTS_DIR / "Inter-Regular.ttf"  # variable: weight axis 100-900
 
 # Brand palette (matches styles.css dark theme).
-BG = (13, 17, 23)          # --bg            #0d1117
-CARD = (22, 27, 34)        # --bg-card       #161b22
-GREEN = (63, 185, 80)      # --primary       #3fb950
-INK = (230, 237, 243)      # --on-surface    #e6edf3
-MUTED = (177, 186, 196)    # --on-surface-variant #b1bac4
+# Dark "Musgo" tokens from styles.css. Bump CARD_DESIGN when they change so every card is redrawn.
+CARD_DESIGN = "musgo-2"
+BG = (12, 15, 14)          # --bg            #0c0f0e
+CARD = (29, 35, 33)        # --bg-card-hover #1d2321 (hairline)
+GREEN = (143, 191, 154)    # --primary       #8fbf9a
+INK = (233, 238, 235)      # --on-surface    #e9eeeb
+MUTED = (173, 183, 177)    # --on-surface-variant #adb7b1
 
 W, H = 1200, 630
 MARGIN = 80
@@ -235,7 +237,7 @@ OG_KEY = "og-fingerprint"
 
 
 def card_fingerprint(entry: dict) -> str:
-    text = "\x1f".join([entry["type"], entry["date"], entry["title"], social_description(entry)])
+    text = "\x1f".join([CARD_DESIGN, entry["type"], entry["date"], entry["title"], social_description(entry)])
     return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
 
 
@@ -258,8 +260,7 @@ def make_og_image(entry: dict, out: Path) -> None:
     d = ImageDraw.Draw(img)
     fonts = _load_fonts()
 
-    # Accent bar down the left edge + a soft top hairline.
-    d.rectangle([0, 0, 12, H], fill=GREEN)
+    # A soft top hairline. No side accent bar: the design system has none.
     d.line([MARGIN, 150, W - MARGIN, 150], fill=CARD, width=2)
 
     x = MARGIN
@@ -283,6 +284,8 @@ def make_og_image(entry: dict, out: Path) -> None:
     sfont = fonts["sans"](30, weight=400)
     sy = max(y + 18, 430)
     for ln in _wrap(d, summary, sfont, W - 2 * MARGIN)[:2]:
+        if sy + 42 > H - 96:   # keep clear of the footer line
+            break
         d.text((x, sy), ln, font=sfont, fill=MUTED)
         sy += 42
 
@@ -305,7 +308,6 @@ def make_default_image(out: Path) -> None:
     img = Image.new("RGB", (W, H), BG)
     d = ImageDraw.Draw(img)
     fonts = _load_fonts()
-    d.rectangle([0, 0, 12, H], fill=GREEN)
     kfont = fonts["sans"](28, weight=700)
     d.text((MARGIN, 180), " ".join("AI REPORTS"), font=kfont, fill=GREEN)
     tfont = fonts["serif"](96)
