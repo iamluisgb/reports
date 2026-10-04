@@ -143,9 +143,10 @@ UI_END = "<!-- ui:end -->"
 UI_RE = re.compile(re.escape(UI_START) + r".*?" + re.escape(UI_END), re.S)
 UI_BLOCK = "\n".join([
     UI_START,
-    # Fonts are self-hosted (assets/fonts/web); preload the two that paint first.
-    '<link rel="preload" href="../assets/fonts/web/InstrumentSerif-normal.woff2" as="font" type="font/woff2" crossorigin>',
-    '<link rel="preload" href="../assets/fonts/web/Geist-normal.woff2" as="font" type="font/woff2" crossorigin>',
+    # Fonts are self-hosted (assets/fonts/web). Preload all four (81 KB): the italic is in
+    # every title and the mono in every label, and swapping them late shifts the page.
+    *[f'<link rel="preload" href="../assets/fonts/web/{f}" as="font" type="font/woff2" crossorigin>'
+      for f in ("InstrumentSerif-normal.woff2", "InstrumentSerif-italic.woff2", "Geist-normal.woff2", "GeistMono-normal.woff2")],
     # Apply the reader's theme, or the system's, before first paint so the page never flashes.
     "<script>try{var t=localStorage.getItem('ai-reports-theme');if(t==='light'||(!t&&"
     "matchMedia('(prefers-color-scheme: light)').matches))document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>",
