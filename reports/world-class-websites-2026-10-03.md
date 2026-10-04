@@ -404,7 +404,7 @@ Ordered by impact over effort. The first six are this week's work.
 36. Search Engine Land — Google AI Mode cuts clicks without boosting satisfaction — [searchengineland.com/google-ai-mode-cuts-clicks-satisfaction-study-490494](https://searchengineland.com/google-ai-mode-cuts-clicks-satisfaction-study-490494)
 37. Vercel — Gamma builds design-first agents — [vercel.com/blog/gamma-builds-design-first-agents-with-vercel](https://vercel.com/blog/gamma-builds-design-first-agents-with-vercel)
 38. Awwwards — Annual Awards 2025 (winners) — [awwwards.com/annual-awards-2025](https://www.awwwards.com/annual-awards-2025)
-39. Awwwards — Site of the Year 2025: Lando Norris — [awwwards.com/annual-awards-2025/site-of-the-year](https://www.awwwards.com/annual-awards-2025/site-of-the-year)
+39. Awwwards — Site of the Year 2025: Lando Norris — [awwwards.com/sites/lando-norris](https://www.awwwards.com/sites/lando-norris)
 40. The Webby Awards — 30th Annual Webby Awards announce 2026 winners — [webbyawards.com/press/press-releases/30th-annual-webby-awards-announce-2026-winners](https://www.webbyawards.com/press/press-releases/30th-annual-webby-awards-announce-2026-winners)
 41. Webby Awards 2026 — Websites and Mobile Sites winners — [winners.webbyawards.com/winners/websites-and-mobile-sites](https://winners.webbyawards.com/winners/websites-and-mobile-sites)
 42. Vercel — Geist Design System: Typography — [vercel.com/geist/typography](https://vercel.com/geist/typography)
