@@ -57,7 +57,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../report.css">
+<script>try{if(localStorage.getItem('ai-reports-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script src="../site.js" defer></script>
 <script src="../report.js" defer></script>
 <!-- ui:end -->
 </head>
@@ -65,22 +66,17 @@
 <div class="progress-bar" id="progress-bar"></div>
   <div class="page">
 
-    <nav class="report-nav" style="display:none" id="report-nav">
-      <a id="prev-report" class="report-nav-link" href="#">← Prev</a>
-      <a class="report-nav-link" href="../index.html">Index</a>
-      <a id="next-report" class="report-nav-link" href="#">Next →</a>
-    </nav>
     <a class="back-link" href="../index.html">← Index</a>
     <div class="special-header">
       <div class="field-mark"></div>
       <div class="header-top">
         <div>
           <div class="special-category">ArXiv Trends · Special Report</div>
-          <h1>6 Signals From <em>3,862 Papers</em>: What CS.AI Is Actually Working On</h1>
+          <h1>6 Signals From 3,862 Papers: What <em>CS.AI</em> Is Actually Working On</h1>
           <div class="special-date">27 Jun 2026</div>
           <div class="special-subtitle">ArXiv CS.AI trend analysis · May–Jun 2026 · Cluster mapping · Emerging vs established · What matters for builders</div>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
       </div>
     </div>
 
@@ -411,45 +407,5 @@
   });
 </script>
 
-  <script>
-    const NAV_API_URL = 'https://api.github.com/repos/iamluisgb/reports/contents/reports?ref=master';
-    const CURRENT_FILE = 'arxiv-trends-2026-06-27.html';
-
-    async function loadReportNav() {
-      try {
-        const res = await fetch(NAV_API_URL + '&t=' + Date.now());
-        if (!res.ok) throw new Error('API error');
-        const files = await res.json();
-        const htmlFiles = files
-          .filter(f => f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html')
-          .sort((a, b) => {
-            const da = a.name.replace('.html', '').split('-').slice(-3).join('');
-            const db = b.name.replace('.html', '').split('-').slice(-3).join('');
-            return db.localeCompare(da);
-          });
-        const idx = htmlFiles.findIndex(f => f.name === CURRENT_FILE);
-        if (idx === -1) return;
-        const nav = document.getElementById('report-nav');
-        if (nav) nav.style.display = '';
-        if (idx > 0) {
-          const prev = document.getElementById('prev-report');
-          if (prev) prev.href = prev.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx - 1].name;
-        } else {
-          const prev = document.getElementById('prev-report');
-          if (prev) prev.style.display = 'none';
-        }
-        if (idx < htmlFiles.length - 1) {
-          const next = document.getElementById('next-report');
-          if (next) next.href = next.href.split('/').slice(0, -1).join('/') + '/' + htmlFiles[idx + 1].name;
-        } else {
-          const next = document.getElementById('next-report');
-          if (next) next.style.display = 'none';
-        }
-      } catch (e) {
-        console.error('Nav error:', e);
-      }
-    }
-    loadReportNav();
-  </script>
 </body>
 </html>

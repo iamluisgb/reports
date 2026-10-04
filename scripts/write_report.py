@@ -427,7 +427,7 @@ def render(day, chosen, subtitle, why, index, numbers=(), watch=()):
           <div class="date-line">{pretty} · {stamp.strftime('%A').upper()}</div>
           <div class="subtitle">{esc(subtitle)}</div>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
       </div>
     </div>
 """]
@@ -477,34 +477,6 @@ def render(day, chosen, subtitle, why, index, numbers=(), watch=()):
     </div>
   </div>
 
-<script>
-  function toggleTheme() {{
-    const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    const next = current === 'light' ? 'dark' : 'light';
-    const btn = document.querySelector('.theme-toggle');
-    if (next === 'light') {{
-      html.setAttribute('data-theme', 'light');
-      btn.textContent = '◑ LIGHT';
-    }} else {{
-      html.removeAttribute('data-theme');
-      btn.textContent = '◐ DARK';
-    }}
-    localStorage.setItem('ai-reports-theme', next);
-  }}
-
-  (function() {{
-    const saved = localStorage.getItem('ai-reports-theme');
-    if (saved) {{
-      const html = document.documentElement;
-      const btn = document.querySelector('.theme-toggle');
-      if (saved === 'light') {{
-        html.setAttribute('data-theme', 'light');
-        btn.textContent = '◑ LIGHT';
-      }}
-    }}
-  }})();
-</script>
 </body>
 </html>
 """)

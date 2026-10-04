@@ -51,15 +51,16 @@
   }
 }
 </script>
+<script>try{if(localStorage.getItem('ai-reports-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
 </head>
 <body>
   <a href="#archive" class="skip-link">Skip to reports</a>
 
-  <div class="h-bar" id="h-bar" aria-hidden="true">
-    <div class="h-bar-in">
-      <button class="brand" type="button" id="to-top" tabindex="-1">AI <em>Reports</em></button>
-      <button class="search-trigger" type="button" data-search tabindex="-1">Search <span class="kbd">⌘K</span></button>
-      <button class="icon-btn" type="button" data-theme-toggle tabindex="-1" aria-label="Toggle theme">◐</button>
+  <div class="topbar" id="topbar" aria-hidden="true">
+    <div class="topbar-in">
+      <button class="topbar-brand" type="button" id="to-top" tabindex="-1">AI <em>Reports</em></button>
+      <button class="btn btn-sm btn-search" type="button" data-search tabindex="-1">Search <span class="kbd">⌘K</span></button>
+      <button class="btn btn-sm" type="button" data-theme-toggle tabindex="-1">◐</button>
     </div>
   </div>
 
@@ -70,10 +71,10 @@
         <h1>AI <em>Reports</em></h1>
       </div>
       <div class="tools">
-        <button class="search-trigger" type="button" data-search>Search reports <span class="kbd">⌘K</span></button>
-        <a class="icon-btn hide-sm" href="/reports/about.html">About</a>
-        <a class="icon-btn hide-sm" href="/reports/rss.xml">RSS</a>
-        <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle theme">◐</button>
+        <button class="btn btn-search" type="button" data-search>Search reports <span class="kbd">⌘K</span></button>
+        <a class="btn hide-sm" href="/reports/about.html">About</a>
+        <a class="btn hide-sm" href="/reports/rss.xml">RSS</a>
+        <button class="btn" type="button" data-theme-toggle>◐</button>
       </div>
     </header>
     <div class="topics" id="topics" role="group" aria-label="Filter by topic"></div>
@@ -85,7 +86,7 @@
         <a href="/reports/about.html" style="color:var(--primary)">About</a>.</div>
     </noscript>
 
-    <section class="today" id="today" aria-label="Today's briefing"><div class="loading">Loading reports…</div></section>
+    <section class="today" id="today" aria-label="Latest briefing"><div class="loading">Loading reports…</div></section>
 
     <section class="sec" id="calendar" hidden>
       <div class="sec-head"><h3>Every day since <span id="cal-since"></span></h3><span class="eyebrow" id="cal-meta"></span></div>
@@ -110,35 +111,22 @@
 
     <footer class="foot">
       <span>Generated daily by <a href="https://github.com/iamluisgb/quiron" target="_blank" rel="noopener">Hermes Agent</a></span>
-      <span><a href="https://github.com/iamluisgb/reports" target="_blank" rel="noopener">GitHub</a> · <a href="/reports/about.html">About</a> · <a href="/reports/rss.xml">RSS</a> · @iamluisgb</span>
+      <span><a href="https://github.com/iamluisgb/reports" target="_blank" rel="noopener">GitHub</a> · <a href="/reports/about.html">About</a> · <a href="/reports/rss.xml">RSS</a> · <a href="/reports/patterns.html">Patterns</a> · @iamluisgb</span>
     </footer>
   </main>
 
   <div class="tip" id="tip" role="tooltip"></div>
   <div id="pal-root" hidden></div>
-  <audio id="audio" preload="none"></audio>
 
+<script src="site.js"></script>
 <script>
-  const MANIFEST_URL = 'reports.json';
-  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  const MONTHS_L = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-  const WD = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  const PLAY = '<svg viewBox="0 0 16 16"><path d="M4 2v12l10-6z"/></svg>';
-  const PAUSE = '<svg viewBox="0 0 16 16"><path d="M4 2h3v12H4zM9 2h3v12H9z"/></svg>';
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-
+  const { MONTHS, MONTHS_LONG, WEEKDAYS, esc, parseDate: pd, fmtDate: fmt, isBroken, headline, initPlayer, reduce } = window.Site;
+  const UBIQ = new Set(['models', 'agents', 'research']);   // on >90% of reports: they don't discriminate
   const $ = id => document.getElementById(id);
-  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const topicLabel = t => t.replace(/-/g, ' ').replace(/^./, c => c.toUpperCase());
-  const pd = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
   const iso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-  const fmt = s => { const d = pd(s); return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`; };
   const href = r => 'reports/' + encodeURI(r.file);
-  const isBroken = r => !r.summary || /\{\w+\}/.test(r.summary);
   const isSpanish = s => /[áéíóúñ¿¡]|\b(los|las|del)\b/i.test(s);
-  const headline = r => r.type === 'daily'
-    ? (isBroken(r) ? 'AI News Daily' : r.summary.split(' · ')[0])
-    : r.title.replace(/\s+/g, ' ');
   const vtName = r => 'r-' + r.file.replace(/\.html$/, '').replace(/[^a-z0-9-]/gi, '-');
 
   let reports = [], daily = [], special = [], byFile = {};
@@ -183,11 +171,11 @@
   }
   function renderTopics() {
     const counts = {};
-    reports.forEach(r => r.tags.forEach(t => { counts[t] = (counts[t] || 0) + 1; }));
+    reports.forEach(r => r.tags.forEach(t => { if (!UBIQ.has(t) || active.has(t)) counts[t] = (counts[t] || 0) + 1; }));
     $('topics').innerHTML = '<span class="eyebrow">Topics</span>' +
       Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([t, n]) =>
         `<button class="chip" type="button" data-t="${esc(t)}" aria-pressed="${active.has(t)}">${esc(topicLabel(t))}<span>${n}</span></button>`).join('') +
-      (active.size ? '<button class="chip-clear" type="button" id="clear">Clear</button>' : '');
+      (active.size ? '<button class="link" type="button" id="clear">Clear</button>' : '');
   }
   $('topics').addEventListener('click', e => {
     const chip = e.target.closest('.chip');
@@ -198,7 +186,7 @@
     animateFilter(() => { renderTopics(); render(); });
   });
 
-  /* ---------- Today + audio ---------- */
+  /* ---------- Latest briefing ---------- */
   function renderToday() {
     const t = daily[0], y = daily[1];
     if (!t) { $('today').hidden = true; return; }
@@ -206,72 +194,27 @@
     const stem = t.file.replace(/\.html$/, '');
     $('today').innerHTML = `
       <div>
-        <div class="eyebrow"><b>Latest</b> · ${WD[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]} · ${t.readingTime} min read</div>
+        <div class="eyebrow"><b>Latest</b> · ${WEEKDAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]} · ${t.readingTime} min read</div>
         <h2><a href="${href(t)}" data-file="${esc(t.file)}">${esc(headline(t))}</a></h2>
         <ol>${items.slice(1).map(s => `<li>${esc(s)}</li>`).join('')}</ol>
       </div>
       <div class="side">
-        ${t.audio ? `<div class="player">
-          <div class="player-top">
-            <button class="play" type="button" id="play" aria-label="Play audio briefing">${PLAY}</button>
-            <div><div class="eyebrow">Audio briefing</div><div class="player-sub">The day in five minutes</div></div>
-            <button class="rate" type="button" id="rate"></button>
-            <span class="time" id="time"></span>
+        ${t.audio ? `<div class="audio-player">
+          <audio preload="none" src="audio/${esc(stem)}.mp3"></audio>
+          <button class="play-btn" type="button" aria-label="Play audio briefing">
+            <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+            <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+          </button>
+          <div class="player-body">
+            <div class="player-meta"><span class="player-title">Audio briefing</span><span class="player-time"></span></div>
+            <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
           </div>
-          <div class="wave" id="wave" role="slider" tabindex="0" aria-label="Seek audio briefing" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
         </div>` : ''}
-        <a class="cta" href="${href(t)}" data-file="${esc(t.file)}">Read the briefing <span class="arrow">→</span></a>
+        <a class="btn-primary" href="${href(t)}" data-file="${esc(t.file)}">Read the briefing <span class="arrow">→</span></a>
         ${y ? `<div class="yday">Yesterday: <a href="${href(y)}" data-file="${esc(y.file)}">${esc(headline(y))}</a></div>` : ''}
       </div>`;
-    if (t.audio) setupAudio(`audio/${stem}`);
-  }
-
-  function setupAudio(base) {
-    const audio = $('audio'), play = $('play'), wave = $('wave'), time = $('time');
-    audio.src = base + '.mp3';
-    const mmss = s => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
-    let bars = [];
-    const paint = () => {
-      const dur = audio.duration || 0, f = dur ? audio.currentTime / dur : 0;
-      bars.forEach((b, i) => b.classList.toggle('on', (i + 0.5) / bars.length <= f));
-      time.textContent = dur ? `${mmss(audio.currentTime)} / ${mmss(dur)}` : '';
-      wave.setAttribute('aria-valuenow', Math.round(f * 100));
-    };
-    fetch(base + '.json').then(r => r.ok ? r.json() : null).then(data => {
-      const peaks = data && Array.isArray(data.peaks) && data.peaks.length ? data.peaks : Array(96).fill(0.5);
-      const lo = Math.min(...peaks), hi = Math.max(...peaks), span = (hi - lo) || 1;
-      wave.innerHTML = peaks.map(v => `<i style="height:${Math.round((0.18 + 0.82 * Math.pow((v - lo) / span, 1.6)) * 100)}%"></i>`).join('');
-      bars = [...wave.children];
-      paint();
-    }).catch(() => {});
-    // Playback speed, remembered across the index and every report.
-    const RATES = [1, 1.25, 1.5, 2], rateBtn = $('rate');
-    const setRate = (r, save) => {
-      audio.defaultPlaybackRate = r;
-      audio.playbackRate = r;
-      rateBtn.textContent = r + '×';
-      rateBtn.setAttribute('aria-label', `Playback speed ${r}×, change`);
-      if (save) try { localStorage.setItem('ai-reports-rate', String(r)); } catch (e) {}
-    };
-    rateBtn.onclick = () => setRate(RATES[(RATES.indexOf(audio.playbackRate) + 1) % RATES.length], true);
-    let savedRate = 1;
-    try { savedRate = parseFloat(localStorage.getItem('ai-reports-rate')) || 1; } catch (e) {}
-    setRate(RATES.includes(savedRate) ? savedRate : 1, false);
-    play.onclick = () => audio.paused ? audio.play().catch(() => {}) : audio.pause();
-    audio.onplay = () => { play.innerHTML = PAUSE; play.setAttribute('aria-label', 'Pause audio briefing'); };
-    audio.onpause = () => { play.innerHTML = PLAY; play.setAttribute('aria-label', 'Play audio briefing'); };
-    audio.ontimeupdate = paint;
-    audio.onloadedmetadata = paint;
-    const seekTo = f => {
-      const go = () => { audio.currentTime = Math.max(0, Math.min(1, f)) * audio.duration; };
-      if (audio.duration) go(); else { audio.preload = 'metadata'; audio.addEventListener('loadedmetadata', go, { once: true }); audio.load(); }
-    };
-    wave.onclick = e => { const r = wave.getBoundingClientRect(); seekTo((e.clientX - r.left) / r.width); };
-    wave.onkeydown = e => {
-      if (!audio.duration) return;
-      if (e.key === 'ArrowRight') { audio.currentTime += 10; e.preventDefault(); }
-      if (e.key === 'ArrowLeft') { audio.currentTime -= 10; e.preventDefault(); }
-    };
+    const player = $('today').querySelector('.audio-player');
+    if (player) initPlayer(player);
   }
 
   /* ---------- Calendar ---------- */
@@ -303,7 +246,7 @@
     for (const d = new Date(last); byDate[iso(d)]; d.setDate(d.getDate() - 1)) streak++;
     const avg = Math.round(daily.reduce((s, r) => s + r.readingTime, 0) / daily.length);
     const longest = daily.reduce((a, r) => r.readingTime > a.readingTime ? r : a);
-    $('cal-since').textContent = MONTHS_L[first.getMonth()];
+    $('cal-since').textContent = MONTHS_LONG[first.getMonth()];
     $('cal-meta').textContent = missing ? `${days} days covered · ${missing} missed` : `${days} days · none missed`;
     $('facts').innerHTML = `
       <div class="fact"><div class="n">${streak}</div><div class="k">day streak</div></div>
@@ -352,17 +295,17 @@
     list.forEach(r => {
       const d = pd(r.date), key = d.getFullYear() * 12 + d.getMonth();
       let g = groups[groups.length - 1];
-      if (!g || g.key !== key) groups.push(g = { key, name: `${MONTHS_L[d.getMonth()]} ${d.getFullYear()}`, items: [] });
+      if (!g || g.key !== key) groups.push(g = { key, name: `${MONTHS_LONG[d.getMonth()]} ${d.getFullYear()}`, items: [] });
       g.items.push(r);
     });
     $('months').innerHTML = groups.length ? groups.map(g => `
       <div class="month">
         <div class="month-h"><h5>${g.name}</h5><span class="eyebrow">${g.items.length}</span></div>
         ${g.items.map(r => {
-          const d = pd(r.date), tags = r.tags.slice(0, 2).map(topicLabel).join(' · ');
+          const d = pd(r.date), tags = r.tags.filter(t => !UBIQ.has(t)).slice(0, 2).map(topicLabel).join(' · ');
           const parts = isBroken(r) ? ['AI News Daily'] : r.summary.split(' · ');
           return `<a class="row" href="${href(r)}" data-file="${esc(r.file)}" ${vt(r)}>
-            <span class="d"><b>${String(d.getDate()).padStart(2, '0')}</b> ${WD[d.getDay()].slice(0, 3)}</span>
+            <span class="d"><b>${String(d.getDate()).padStart(2, '0')}</b> ${WEEKDAYS[d.getDay()].slice(0, 3)}</span>
             <span class="t"><span class="lead">${esc(parts[0])}</span>${parts.length > 1 ? `<span class="rest"> · ${esc(parts.slice(1).join(' · '))}</span>` : ''}${isSpanish(r.summary) ? '<span class="lang" title="In Spanish">ES</span>' : ''}</span>
             <span class="r">${tags ? `<span class="tg">${esc(tags)}</span>` : ''}<span>${r.readingTime} min</span></span>
           </a>`;
@@ -378,7 +321,7 @@
     const words = q.toLowerCase().split(/\s+/).filter(Boolean);
     if (!words.length) return reports.slice(0, 8);
     return reports.filter(r => {
-      const hay = `${r.title} ${r.summary} ${r.tags.join(' ')} ${r.series || ''} ${MONTHS_L[pd(r.date).getMonth()]} ${r.date}`.toLowerCase();
+      const hay = `${r.title} ${r.summary} ${r.tags.join(' ')} ${r.series || ''} ${MONTHS_LONG[pd(r.date).getMonth()]} ${r.date}`.toLowerCase();
       return words.every(w => hay.includes(w));
     }).slice(0, 30);
   }
@@ -427,8 +370,8 @@
   });
   document.querySelectorAll('[data-search]').forEach(b => b.addEventListener('click', () => openPalette()));
 
-  /* ---------- Sticky bar ---------- */
-  const bar = $('h-bar');
+  /* ---------- Top bar ---------- */
+  const bar = $('topbar');
   new IntersectionObserver(([en]) => {
     const on = !en.isIntersecting && en.boundingClientRect.top < 0;
     bar.classList.toggle('on', on);
@@ -437,24 +380,10 @@
   }).observe($('mast'));
   $('to-top').onclick = () => scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
 
-  /* ---------- Theme (dark by default; same storage key as the reports) ---------- */
-  function applyTheme(theme) {
-    if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
-    else document.documentElement.removeAttribute('data-theme');
-  }
-  function toggleTheme() {
-    const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-    const flip = () => applyTheme(next);
-    document.startViewTransition && !reduce ? document.startViewTransition(flip) : flip();
-    try { localStorage.setItem('ai-reports-theme', next); } catch (e) {}
-  }
-  document.querySelectorAll('[data-theme-toggle]').forEach(b => b.addEventListener('click', toggleTheme));
-  try { applyTheme(localStorage.getItem('ai-reports-theme')); } catch (e) {}
-
   /* ---------- Load ---------- */
   async function loadReports() {
     try {
-      const res = await fetch(MANIFEST_URL, { cache: 'no-cache' });
+      const res = await fetch('reports.json', { cache: 'no-cache' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const data = await res.json();
       reports = (data.reports || []).slice().sort((a, b) => b.date.localeCompare(a.date) || a.file.localeCompare(b.file));

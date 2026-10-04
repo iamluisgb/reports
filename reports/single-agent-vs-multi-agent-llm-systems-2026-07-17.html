@@ -6,17 +6,6 @@
 <title>Single-Agent vs. Multi-Agent LLM Systems: The Architectural Debate</title>
 <link rel="stylesheet" href="../styles.css?v=2">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
-<style>
-  .chart-container{margin:28px 0;padding:20px;background:var(--bg-card);border-radius:12px;border:1px solid var(--border)}
-  .chart-container canvas{max-height:340px}
-  .chart-caption{font-size:12px;color:var(--on-surface-variant);margin-top:10px;text-align:center;line-height:1.5}
-  .chart-container svg{width:100%;height:auto;display:block}
-  .chart-container svg text{font-family: var(--f-body);fill:var(--on-surface)}
-  .chart-container svg .label{font-size:11px;fill:var(--on-surface-variant)}
-  .chart-container svg .node rect{rx:8;ry:8;stroke:var(--border);stroke-width:1}
-  .chart-container svg .arrow{stroke:var(--primary);stroke-width:2;fill:none;marker-end:url(#arrowhead)}
-  .chart-container svg .arrowhead{fill:var(--primary)}
-</style>
 <!-- og:start -->
 <meta name="description" content="21 papers analyzed · Debate, roles, and voting paradigms · MoE isomorphism · Cost-normalized benchmarks · Open problems">
 <link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/single-agent-vs-multi-agent-llm-systems-2026-07-17.html">
@@ -69,7 +58,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../report.css">
+<script>try{if(localStorage.getItem('ai-reports-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script src="../site.js" defer></script>
 <script src="../report.js" defer></script>
 <!-- ui:end -->
 </head>
@@ -77,11 +67,6 @@
 <div class="progress-bar" id="progress-bar"></div>
   <div class="page">
 
-    <nav class="report-nav" style="display:none" id="report-nav">
-      <a id="prev-report" class="report-nav-link" href="#">← Prev</a>
-      <a class="report-nav-link" href="../index.html">Index</a>
-      <a id="next-report" class="report-nav-link" href="#">Next →</a>
-    </nav>
     <a class="back-link" href="../index.html">← Index</a>
     <div class="special-header">
       <div class="field-mark"></div>
@@ -93,7 +78,7 @@
           <div class="special-date">17 Jul 2026</div>
           <div class="special-subtitle">21 papers analyzed · Debate, roles, and voting paradigms · MoE isomorphism · Cost-normalized benchmarks · Open problems</div>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
       </div>
     </div>
 
@@ -159,55 +144,55 @@
           <tr><td>Communicative dehallucination</td><td>Filters outputs that violate role constraints</td><td>Prevents agents from drifting outside their domain</td></tr>
         </table>
 
-        <div class="chart-container">
+        <figure class="diagram">
           <svg viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-                <polygon points="0 0, 8 3, 0 6" class="arrowhead"/>
+                <polygon points="0 0, 8 3, 0 6" class="marker"/>
               </marker>
             </defs>
             <!-- Nodes -->
-            <g class="node">
-              <rect x="10" y="50" width="110" height="60" fill="var(--bg-card)"/>
+            <g>
+              <rect class="box-raised" rx="8" x="10" y="50" width="110" height="60"/>
               <text x="65" y="76" text-anchor="middle" font-size="13" font-weight="600">CEO</text>
-              <text x="65" y="94" text-anchor="middle" class="label">Requirements</text>
+              <text x="65" y="94" text-anchor="middle" class="muted" font-size="11">Requirements</text>
             </g>
-            <g class="node">
-              <rect x="150" y="50" width="110" height="60" fill="var(--bg-card)"/>
+            <g>
+              <rect class="box-raised" rx="8" x="150" y="50" width="110" height="60"/>
               <text x="205" y="76" text-anchor="middle" font-size="13" font-weight="600">CTO</text>
-              <text x="205" y="94" text-anchor="middle" class="label">Architecture</text>
+              <text x="205" y="94" text-anchor="middle" class="muted" font-size="11">Architecture</text>
             </g>
-            <g class="node">
-              <rect x="290" y="50" width="110" height="60" fill="var(--bg-card)"/>
+            <g>
+              <rect class="box-raised" rx="8" x="290" y="50" width="110" height="60"/>
               <text x="345" y="76" text-anchor="middle" font-size="13" font-weight="600">Programmer</text>
-              <text x="345" y="94" text-anchor="middle" class="label">Code</text>
+              <text x="345" y="94" text-anchor="middle" class="muted" font-size="11">Code</text>
             </g>
-            <g class="node">
-              <rect x="430" y="50" width="110" height="60" fill="var(--bg-card)"/>
+            <g>
+              <rect class="box-raised" rx="8" x="430" y="50" width="110" height="60"/>
               <text x="485" y="76" text-anchor="middle" font-size="13" font-weight="600">Tester</text>
-              <text x="485" y="94" text-anchor="middle" class="label">Validation</text>
+              <text x="485" y="94" text-anchor="middle" class="muted" font-size="11">Validation</text>
             </g>
-            <g class="node">
-              <rect x="570" y="50" width="110" height="60" fill="var(--bg-card)"/>
+            <g>
+              <rect class="box-raised" rx="8" x="570" y="50" width="110" height="60"/>
               <text x="625" y="76" text-anchor="middle" font-size="13" font-weight="600">Reviewer</text>
-              <text x="625" y="94" text-anchor="middle" class="label">Approval</text>
+              <text x="625" y="94" text-anchor="middle" class="muted" font-size="11">Approval</text>
             </g>
             <!-- Arrows -->
-            <line x1="120" y1="80" x2="148" y2="80" class="arrow"/>
-            <line x1="260" y1="80" x2="288" y2="80" class="arrow"/>
-            <line x1="400" y1="80" x2="428" y2="80" class="arrow"/>
-            <line x1="540" y1="80" x2="568" y2="80" class="arrow"/>
+            <line x1="120" y1="80" x2="148" y2="80" class="flow" marker-end="url(#arrowhead)"/>
+            <line x1="260" y1="80" x2="288" y2="80" class="flow" marker-end="url(#arrowhead)"/>
+            <line x1="400" y1="80" x2="428" y2="80" class="flow" marker-end="url(#arrowhead)"/>
+            <line x1="540" y1="80" x2="568" y2="80" class="flow" marker-end="url(#arrowhead)"/>
             <!-- Phase labels -->
-            <text x="134" y="40" text-anchor="middle" class="label">Design</text>
-            <text x="274" y="40" text-anchor="middle" class="label">Planning</text>
-            <text x="414" y="40" text-anchor="middle" class="label">Coding</text>
-            <text x="554" y="40" text-anchor="middle" class="label">Testing</text>
+            <text x="134" y="40" text-anchor="middle" class="muted" font-size="11">Design</text>
+            <text x="274" y="40" text-anchor="middle" class="muted" font-size="11">Planning</text>
+            <text x="414" y="40" text-anchor="middle" class="muted" font-size="11">Coding</text>
+            <text x="554" y="40" text-anchor="middle" class="muted" font-size="11">Testing</text>
             <!-- Feedback loop -->
-            <path d="M 485 112 L 485 140 L 205 140 L 205 112" class="arrow" style="stroke-dasharray:5,3"/>
-            <text x="345" y="156" text-anchor="middle" class="label">Feedback loop (dehallucination)</text>
+            <path d="M 485 112 L 485 140 L 205 140 L 205 112" class="flow" style="stroke-dasharray:5,3" marker-end="url(#arrowhead)"/>
+            <text x="345" y="156" text-anchor="middle" class="muted" font-size="11">Feedback loop (dehallucination)</text>
           </svg>
-          <p class="chart-caption">ChatDev multi-agent pipeline · Each agent communicates via structured chat chain · Source: Qian et al. (2023)</p>
-        </div>
+          <figcaption>ChatDev multi-agent pipeline · Each agent communicates via structured chat chain · Source: Qian et al. (2023)</figcaption>
+        </figure>
 
         <p><strong>Key finding:</strong> Natural language is advantageous for system design phases, while programming language communication proves helpful for debugging. The modality of communication matters as much as the content.</p>
 

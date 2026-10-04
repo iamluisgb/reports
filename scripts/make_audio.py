@@ -78,44 +78,6 @@ SECTION = """    <div class="section">
     </div>
 """
 
-PLAYER_JS = """  (function() {{
-    const player = document.getElementById('audioPlayer');
-    if (!player) return;
-    const audio = document.getElementById('audioEl');
-    const btn = player.querySelector('.play-btn');
-    const time = document.getElementById('playerTime');
-    const seek = document.getElementById('playerSeek');
-    const total = {seconds};
-
-    function fmt(s) {{
-      s = Math.max(0, Math.round(s));
-      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
-    }}
-
-    btn.addEventListener('click', () => {{
-      if (audio.paused) {{ audio.play(); }} else {{ audio.pause(); }}
-    }});
-
-    audio.addEventListener('play', () => player.classList.add('playing'));
-    audio.addEventListener('pause', () => player.classList.remove('playing'));
-    audio.addEventListener('ended', () => player.classList.remove('playing'));
-
-    audio.addEventListener('loadedmetadata', () => {{
-      time.textContent = '0:00 / ' + fmt(audio.duration || total);
-    }});
-
-    audio.addEventListener('timeupdate', () => {{
-      const dur = audio.duration || total;
-      seek.value = (audio.currentTime / dur) * 100;
-      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
-    }});
-
-    seek.addEventListener('input', () => {{
-      const dur = audio.duration || total;
-      audio.currentTime = (seek.value / 100) * dur;
-    }});
-  }})();
-"""
 
 
 def parse_script(path):
@@ -211,7 +173,7 @@ PEAK_BARS = 96
 def write_peaks(mp3):
     """Save the briefing's loudness envelope next to it, for the waveform player.
 
-    96 RMS values scaled to 0-1, in audio/ai-news-<day>.json. The site draws the
+    96 RMS values scaled to 0-1 plus the length in seconds, in audio/ai-news-<day>.json. The site draws the
     bars from this file; without it the player falls back to a plain seek bar.
     Skipped without ffmpeg."""
     if not have("ffmpeg"):
@@ -226,7 +188,8 @@ def write_peaks(mp3):
         rms.append((sum(x * x for x in chunk) / max(1, len(chunk))) ** 0.5)
     top = max(rms) or 1
     peaks = [round(v / top, 2) for v in rms]
-    mp3.with_suffix(".json").write_text(json.dumps({"peaks": peaks}) + "\n", encoding="utf-8")
+    seconds = round(len(samples) / 8000, 1)
+    mp3.with_suffix(".json").write_text(json.dumps({"duration": seconds, "peaks": peaks}) + "\n", encoding="utf-8")
     return True
 
 
@@ -290,15 +253,9 @@ def inject(report, day, seconds):
             raise SystemExit("no <div class=\"section\"> to anchor the audio player to")
         html = html[:first.start()] + section + html[first.start():]
 
-    js = PLAYER_JS.format(seconds=int(round(seconds)))
-    old_js = re.search(r"[ \t]*\(function\(\) \{\s*const player = document\.getElementById\('audioPlayer'\);.*?\}\)\(\);\n", html, re.S)
-    if old_js:
-        html = html[:old_js.start()] + js + html[old_js.end():]
-    else:
-        anchor = html.find("  function toggleTheme()")
-        if anchor == -1:
-            raise SystemExit("no toggleTheme() to anchor the player script to")
-        html = html[:anchor] + js + "\n" + html[anchor:]
+    # The player is driven by site.js; drop the per-report script older reports carried.
+    html = re.sub(r"[ \t]*\(function\(\) \{\s*const player = document\.getElementById\('audioPlayer'\);.*?\}\)\(\);\n",
+                  "", html, count=1, flags=re.S)
 
     report.write_text(html, encoding="utf-8")
     return mmss

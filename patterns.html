@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patterns — AI Reports</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="home.css">
+<script>try{if(localStorage.getItem('ai-reports-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<style>
+  /* Layout of this documentation page only. Patterns themselves come from styles.css and home.css. */
+  .doc { max-width: 1040px; margin: 0 auto; padding: 40px 24px 96px; }
+  .doc-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; padding-bottom: 22px; border-bottom: 1px solid var(--border); }
+  .doc-head h1 { margin-top: 12px; font: 400 var(--fs-display)/.95 var(--f-display); letter-spacing: -.025em; }
+  .doc-intro { max-width: 62ch; margin-top: 18px; font-size: var(--fs-md); line-height: 1.6; color: var(--on-surface-variant); }
+  .doc section { padding-top: 56px; }
+  .doc h2 { font: 400 var(--fs-2xl)/1.05 var(--f-display); letter-spacing: -.015em; }
+  .doc h2 + p, .use { max-width: 64ch; margin-top: 8px; font-size: var(--fs-base); line-height: 1.6; color: var(--on-surface-variant); }
+  .use code { font-size: var(--fs-xs); }
+  .pat { margin-top: 28px; }
+  .pat > .eyebrow { display: block; margin-bottom: 12px; }
+  .pat > .eyebrow code { text-transform: none; letter-spacing: 0; }
+  .stage { padding: 24px; border: 1px dashed var(--border); border-radius: var(--r-lg); }
+  .stage.narrow { max-width: var(--measure); }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+  .principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0 28px; margin-top: 20px; }
+  .principles div { padding: 16px 0; border-top: 1px solid var(--border); }
+  .principles b { display: block; font: 400 var(--fs-lg)/1.15 var(--f-display); }
+  .principles span { display: block; margin-top: 6px; font-size: var(--fs-sm); line-height: 1.5; color: var(--on-surface-variant); }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .sw { border: 1px solid var(--border); border-radius: var(--r-md); overflow: hidden; }
+  .sw i { display: block; height: 56px; }
+  .sw span { display: block; padding: 8px 10px; font: var(--fs-2xs) var(--f-mono); color: var(--on-surface-variant); }
+  .scale { display: grid; gap: 10px; }
+  .scale div { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 16px; align-items: baseline; }
+  .scale code, .chips-demo code { justify-self: start; }
+  .shapes { display: flex; gap: 16px; flex-wrap: wrap; }
+  .shapes div { width: 96px; height: 64px; display: grid; place-items: center; border: 1px solid var(--border); background: var(--bg-card); font: var(--fs-2xs) var(--f-mono); color: var(--muted); }
+  .motion { display: flex; gap: 12px; flex-wrap: wrap; }
+  .motion button { width: 150px; }
+  .motion button:hover .arrow { transform: translateX(24px); }
+  .topbar.demo { position: relative; transform: none; z-index: 0; }
+  .page-toc.demo { display: block; position: static; width: 190px; }
+  @media (max-width: 640px) { .scale div { grid-template-columns: 1fr; gap: 4px; } }
+</style>
+</head>
+<body>
+<div class="doc">
+  <header class="doc-head">
+    <div>
+      <a class="back-link" href="/reports/">← AI Reports</a>
+      <div class="eyebrow eyebrow-accent">Design system</div>
+      <h1>The <em>patterns</em></h1>
+    </div>
+    <button class="btn" type="button" data-theme-toggle>◐</button>
+  </header>
+  <p class="doc-intro">Every pattern on this page is rendered by the site's own stylesheets, so if something looks wrong here it looks wrong on the site. Each one says what it is for. Before inventing a component for a report, find the pattern that already does the job.</p>
+
+  <!-- ============ PRINCIPLES ============ -->
+  <section id="principles">
+    <h2>Principles</h2>
+    <div class="principles">
+      <div><b>Today first, the archive second.</b><span>The newest briefing gets the most room. Older material is reachable, compact and searchable.</span></div>
+      <div><b>Reads like a newspaper, works like a tool.</b><span>Serif and space for reading; mono and controls for finding, filtering and listening.</span></div>
+      <div><b>Every figure has a source.</b><span>A number, a quote or a claim links to where it came from. No source, no number.</span></div>
+      <div><b>One job, one pattern.</b><span>If a pattern already does the job, use it. Reports never ship their own styles.</span></div>
+    </div>
+  </section>
+
+  <!-- ============ TOKENS ============ -->
+  <section id="tokens">
+    <h2>Tokens</h2>
+    <p>Defined once at the top of <code>styles.css</code>. Components use tokens, never raw values.</p>
+
+    <div class="pat"><span class="eyebrow">Colour</span>
+      <div class="swatches">
+        <div class="sw"><i style="background:var(--bg)"></i><span>--bg</span></div>
+        <div class="sw"><i style="background:var(--bg-card)"></i><span>--bg-card</span></div>
+        <div class="sw"><i style="background:var(--bg-card-hover)"></i><span>--bg-card-hover</span></div>
+        <div class="sw"><i style="background:var(--on-surface)"></i><span>--on-surface</span></div>
+        <div class="sw"><i style="background:var(--on-surface-variant)"></i><span>--on-surface-variant</span></div>
+        <div class="sw"><i style="background:var(--muted)"></i><span>--muted</span></div>
+        <div class="sw"><i style="background:var(--primary)"></i><span>--primary · the brand</span></div>
+        <div class="sw"><i style="background:var(--primary-dim)"></i><span>--primary-dim</span></div>
+        <div class="sw"><i style="background:var(--warn)"></i><span>--warn · diagrams only</span></div>
+        <div class="sw"><i style="background:var(--border)"></i><span>--border</span></div>
+      </div>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Type — three faces</span>
+      <div class="scale">
+        <div><code>--f-display</code><span style="font:400 var(--fs-xl) var(--f-display)">Instrument Serif — titles and figures</span></div>
+        <div><code>--f-body</code><span style="font:var(--fs-base) var(--f-body)">Geist — reading and interface text</span></div>
+        <div><code>--f-mono</code><span style="font:var(--fs-xs) var(--f-mono)">Geist Mono — labels, dates, data, controls</span></div>
+      </div>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Type scale — nine fixed sizes, three fluid</span>
+      <div class="scale">
+        <div><code>--fs-2xs · 11</code><span style="font-size:var(--fs-2xs)">Eyebrows and mono metadata</span></div>
+        <div><code>--fs-xs · 12</code><span style="font-size:var(--fs-xs)">Mono controls, captions</span></div>
+        <div><code>--fs-sm · 13</code><span style="font-size:var(--fs-sm)">Secondary text, tables</span></div>
+        <div><code>--fs-base · 15</code><span style="font-size:var(--fs-base)">Interface and summaries</span></div>
+        <div><code>--fs-md · 17</code><span style="font-size:var(--fs-md)">Long-form reading</span></div>
+        <div><code>--fs-lg · 22</code><span style="font:400 var(--fs-lg) var(--f-display)">Card titles, the brand</span></div>
+        <div><code>--fs-xl · 28</code><span style="font:400 var(--fs-xl) var(--f-display)">Story titles</span></div>
+        <div><code>--fs-2xl · 36</code><span style="font:400 var(--fs-2xl) var(--f-display)">Section heads</span></div>
+        <div><code>--fs-3xl · 46</code><span style="font:400 var(--fs-3xl) var(--f-display)">1,092</span></div>
+        <div><code>--fs-display-sm</code><span style="font:400 var(--fs-display-sm)/1 var(--f-display)">Special report</span></div>
+        <div><code>--fs-display</code><span style="font:400 var(--fs-display)/1 var(--f-display)">The <em style="color:var(--primary)">AI</em> Briefing</span></div>
+        <div><code>--fs-hero</code><span style="font:400 var(--fs-hero)/.9 var(--f-display)">AI <em style="color:var(--primary)">Reports</em></span></div>
+      </div>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Shape</span>
+      <div class="shapes">
+        <div style="border-radius:var(--r-sm)">--r-sm · 4</div>
+        <div style="border-radius:var(--r-md)">--r-md · 8</div>
+        <div style="border-radius:var(--r-lg)">--r-lg · 14</div>
+        <div style="border-radius:var(--r-pill)">--r-pill</div>
+      </div>
+      <p class="use">Small for inline bits (code, tags), medium for controls (buttons, rows), large for containers (player, tables, figures).</p>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Motion — hover each</span>
+      <div class="motion">
+        <button class="btn" type="button">fast · .15s <span class="arrow" style="transition-duration:var(--dur-fast)">→</span></button>
+        <button class="btn" type="button">base · .25s <span class="arrow" style="transition-duration:var(--dur-base)">→</span></button>
+        <button class="btn" type="button">slow · .45s <span class="arrow" style="transition-duration:var(--dur-slow)">→</span></button>
+      </div>
+      <p class="use">Fast for hover and colour, base for bars and panels, slow for entrances and the headline morph between index and report. All use <code>--ease</code> and switch off with reduced motion.</p>
+    </div>
+  </section>
+
+  <!-- ============ SHARED ============ -->
+  <section id="shared">
+    <h2>Shared patterns</h2>
+    <p>Used on the index and in the reports.</p>
+
+    <div class="pat"><span class="eyebrow">Eyebrow · <code>.eyebrow</code></span>
+      <div class="stage">
+        <div class="eyebrow"><b>Latest</b> · Friday 2 Oct · 9 min read</div>
+      </div>
+      <p class="use">The small label above or beside a title: kind, date, count. <code>&lt;b&gt;</code> inside it, or <code>.eyebrow-accent</code>, takes the brand colour for the one word that matters. Older report markup uses <code>.section-label</code>, <code>.category</code>, <code>.date-line</code>, <code>.special-category</code>, <code>.special-date</code>, <code>.player-title</code> and <code>.stat-label</code>; those are the same pattern under legacy names.</p>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Buttons · <code>.btn</code> <code>.btn-sm</code> <code>.btn-xs</code> <code>.btn-primary</code> <code>.link</code></span>
+      <div class="stage" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+        <button class="btn" type="button">About</button>
+        <button class="btn btn-sm" type="button">◐</button>
+        <button class="btn btn-xs" type="button">1.5×</button>
+        <a class="btn-primary" href="#shared">Read the briefing <span class="arrow">→</span></a>
+        <button class="link" type="button">Show all 15 special reports</button>
+      </div>
+      <p class="use">One family. <code>.btn</code> for secondary actions, <code>.btn-sm</code> inside the top bar, <code>.btn-xs</code> for a compact toggle like playback speed, <code>.btn-primary</code> for the single main action on a screen, <code>.link</code> for text-only actions.</p>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Top bar · <code>.topbar</code></span>
+      <div class="topbar demo on">
+        <div class="topbar-in">
+          <a class="topbar-brand" href="#shared">AI <em>Reports</em></a>
+          <span class="topbar-where">Papers — ArXiv CS.AI</span>
+          <button class="btn btn-sm" type="button">◐</button>
+        </div>
+        <div class="topbar-progress" style="transform:scaleX(.42)"></div>
+      </div>
+      <p class="use">Slides in once the page header scrolls away. In reports it shows the current section, reading progress and a mini audio control once the briefing has started.</p>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Audio player · <code>.audio-player</code></span>
+      <div class="stage narrow">
+        <div class="audio-player">
+          <audio preload="none" src="audio/ai-news-2026-10-02.mp3"></audio>
+          <button class="play-btn" type="button" aria-label="Play audio briefing">
+            <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+            <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+          </button>
+          <div class="player-body">
+            <div class="player-meta"><span class="player-title">AI News Daily · 2 Oct 2026 · EN</span><span class="player-time">0:00 / 4:59</span></div>
+            <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+          </div>
+        </div>
+      </div>
+      <p class="use"><code>make_audio.py</code> writes this markup and <code>site.js</code> brings it to life: the waveform from <code>audio/&lt;day&gt;.json</code>, the speed control, the seek bar. The index builds the same markup. Never add a player script to a report.</p>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Accent in titles · <code>h1 em</code></span>
+      <div class="stage">
+        <div style="font:400 var(--fs-xl)/1.1 var(--f-display)">Building <em style="font-style:italic;color:var(--primary)">Agent Skills</em> in 2026: Progressive Disclosure as a Design Pattern</div>
+      </div>
+      <p class="use">The green italic marks the subject of a title: at most three words, once per title. Never a year, a number or a whole clause.</p>
+    </div>
+  </section>
+
+  <!-- ============ REPORTS ============ -->
+  <section id="reports">
+    <h2>Report patterns</h2>
+    <p>The building blocks of a daily briefing. <code>write_report.py</code> produces them; hand-written reports use the same markup.</p>
+
+    <div class="pat"><span class="eyebrow">Section label · <code>.section-label</code></span>
+      <div class="stage narrow"><div class="section-label">Headlines</div></div>
+    </div>
+
+    <div class="pat"><span class="eyebrow">News item · <code>.news-item</code> with <code>.sources</code></span>
+      <div class="stage narrow">
+        <div class="news-item">
+          <div class="num">01</div>
+          <div class="title">Pi reaches 1.0</div>
+          <div class="desc">Earendil's Pi hits 1.0 with 1,092 points and 339 comments, more than double anything else on the front page.</div>
+          <div class="sources"><a href="#reports">Original</a><a href="#reports">HN</a></div>
+        </div>
+      </div>
+      <p class="use">One story. Every item links its source and, when there is one, the discussion.</p>
+    </div>
+
+    <div class="pat"><span class="eyebrow">In numbers · <code>.stats-grid</code> &gt; <code>.stat-card</code></span>
+      <div class="stage narrow">
+        <div class="stats-grid">
+          <div class="stat-card"><div class="stat-value">1,092</div><div class="stat-label">points on Pi's 1.0 release</div><div class="stat-note">more than double anything else <a href="#reports">Original</a></div></div>
+          <div class="stat-card"><div class="stat-value">483</div><div class="stat-label">points on Cloudflare's Clef launch</div><div class="stat-note">second only to Pi <a href="#reports">Original</a></div></div>
+          <div class="stat-card"><div class="stat-value">307</div><div class="stat-label">comments on Git's SHA-256 plan</div><div class="stat-note">one of the busiest threads <a href="#reports">Original</a></div></div>
+        </div>
+      </div>
+      <p class="use">Up to four figures from the day's material. Each note links where the number came from.</p>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Follow-up · <code>.follow-item</code></span>
+      <div class="stage narrow">
+        <div class="follow-item"><span class="bullet">▸</span><span><strong>What Harness actually contains.</strong> Watch for documentation, licence terms and independent breakdowns.<div class="sources"><a href="#reports">Original</a></div></span></div>
+      </div>
+      <p class="use">"Why it matters" and "Watch": what to look for next, and what would prove the story wrong.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="pat"><span class="eyebrow">Pager · <code>.pager</code> (report.js)</span>
+        <div class="stage">
+          <nav class="pager" style="margin:0;border:0;padding:0">
+            <a class="prev" href="#reports"><span class="eyebrow">← Previous · 1 Oct</span><span class="t">Gemini 4 Argon launches</span></a>
+            <a class="next" href="#reports"><span class="eyebrow">Next → · 3 Oct</span><span class="t">Pi Durable ships</span></a>
+          </nav>
+        </div>
+      </div>
+      <div class="pat"><span class="eyebrow">Section index · <code>.page-toc</code> (report.js)</span>
+        <div class="stage">
+          <nav class="page-toc demo"><div class="eyebrow">On this page</div><a href="#reports" aria-current="true">Headlines</a><a href="#reports">In Numbers</a><a href="#reports">Watch</a></nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SPECIAL KIT ============ -->
+  <section id="kit" data-type="special">
+    <h2>Special-report kit</h2>
+    <p>Long-form reports may only use these. If a report needs something new, add it here and to <code>styles.css</code> first.</p>
+
+    <div class="pat section"><span class="eyebrow">Prose</span>
+      <div class="stage narrow special-content">
+        <h2>The memory taxonomy</h2>
+        <p>Borrowed from cognitive science, a production agent juggles several distinct memory <em>types</em>, layered across two <em>tiers</em>. Inline <code>code</code> stays in mono.</p>
+        <h3>1.1 Memory types</h3>
+        <ul><li><strong>Working:</strong> the current task state and recent turns.</li><li><strong>Episodic:</strong> specific past events, in order.</li></ul>
+        <blockquote>There is no free lunch, only the right lunch for your workload.</blockquote>
+      </div>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Table · <code>.table-wrapper</code> &gt; <code>table</code></span>
+      <div class="stage narrow">
+        <div class="table-wrapper"><table>
+          <thead><tr><th>Type</th><th>What it holds</th><th>Analogy</th></tr></thead>
+          <tbody><tr><td>Working</td><td>Current task state, scratchpad</td><td>RAM</td></tr><tr><td>Episodic</td><td>Past events, in order</td><td>A journal</td></tr><tr><td>Semantic</td><td>Distilled facts</td><td>An encyclopedia</td></tr></tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Code block · <code>pre</code></span>
+      <div class="stage narrow"><pre><code>memory.store(event, tier="episodic")</code></pre></div>
+    </div>
+
+    <div class="pat"><span class="eyebrow">Diagram · <code>figure.diagram</code></span>
+      <div class="stage narrow">
+        <figure class="diagram">
+          <svg viewBox="0 0 640 230" role="img" aria-label="Example diagram using every kit class">
+            <defs><marker id="pk-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="marker"/></marker></defs>
+            <text x="20" y="28" class="kicker accent" font-size="11">KICKER · ACCENT</text>
+            <rect x="20" y="44" width="160" height="64" rx="8" class="box"/>
+            <text x="100" y="72" class="title" font-size="14" text-anchor="middle">.box · title</text>
+            <text x="100" y="92" class="muted" font-size="11" text-anchor="middle">.muted</text>
+            <rect x="240" y="44" width="160" height="64" rx="8" class="box-raised"/>
+            <text x="320" y="72" class="label" font-size="13" text-anchor="middle">.box-raised · label</text>
+            <text x="320" y="92" class="data" font-size="11" text-anchor="middle">.data 42 ms</text>
+            <rect x="460" y="44" width="160" height="64" rx="8" class="box-accent"/>
+            <text x="540" y="72" class="value accent" font-size="14" text-anchor="middle">.value 1,800</text>
+            <text x="540" y="92" class="caption" font-size="11" text-anchor="middle">.caption</text>
+            <path d="M180 76 L236 76" class="flow" marker-end="url(#pk-arrow)"/>
+            <path d="M400 76 L456 76" class="edge"/>
+            <path d="M540 108 L540 140 L100 140 L100 112" class="dash"/>
+            <line x1="20" y1="176" x2="620" y2="176" class="rail"/>
+            <line x1="20" y1="176" x2="320" y2="176" class="rail-accent"/>
+            <circle cx="20" cy="176" r="6" class="dot-accent"/><circle cx="320" cy="176" r="6" class="dot-accent"/><circle cx="620" cy="176" r="6" class="dot"/>
+            <rect x="20" y="196" width="180" height="12" rx="3" class="bar-accent"/><rect x="20" y="212" width="120" height="12" rx="3" class="bar-base"/>
+            <text x="216" y="207" class="data" font-size="11">.bar-accent · .bar-base · .rail · .dot</text>
+          </svg>
+          <figcaption>Text sizes go on the &lt;text&gt; as font-size; roles and colours come from the classes.</figcaption>
+        </figure>
+      </div>
+      <p class="use">Text roles: <code>.label</code> <code>.title</code> <code>.kicker</code> <code>.value</code> <code>.data</code> <code>.caption</code>, coloured with <code>.muted</code> or <code>.accent</code>. Shapes: <code>.box</code> <code>.box-raised</code> <code>.box-accent</code> <code>.pill</code> <code>.outline</code> <code>.frame</code> and bars. Lines: <code>.edge</code> <code>.flow</code> <code>.dash</code> <code>.grid</code> <code>.axis</code> <code>.rail</code>. Points: <code>.dot</code> <code>.marker</code>. No colours in the SVG itself.</p>
+    </div>
+
+    <div class="pat"><span class="eyebrow">References · <code>.ref-section</code></span>
+      <div class="stage narrow"><div class="ref-section"><h4>Papers</h4><ul><li>Hu, Lu, Clune — Automated Design of Agentic Systems. <a href="#kit">arXiv:2408.08435</a></li></ul></div></div>
+    </div>
+  </section>
+
+  <!-- ============ INDEX ============ -->
+  <section id="index">
+    <h2>Index patterns</h2>
+    <p>Only on the front page; they live in <code>home.css</code>.</p>
+    <div class="pat"><span class="eyebrow">Topic chip · <code>.chip</code></span>
+      <div class="stage" style="display:flex;gap:6px;flex-wrap:wrap"><button class="chip" type="button" aria-pressed="false">Security<span>58</span></button><button class="chip" type="button" aria-pressed="true">Memory<span>47</span></button></div>
+    </div>
+    <div class="grid2">
+      <div class="pat"><span class="eyebrow">Special-report card · <code>.sp</code></span>
+        <div class="stage"><a class="sp" href="#index" style="color:inherit;text-decoration:none"><div class="eyebrow"><b>Memory &amp; Engineering</b></div><h4>AI Agent Memory in 2026: Architectures, Frameworks &amp; Trade-offs</h4><p>The memory taxonomy · Vector vs graph vs OS-tiered · Mem0 vs Zep vs Letta</p><div class="meta"><span>28 Jun 2026</span><span>7 min <span class="arrow">→</span></span></div></a></div>
+      </div>
+      <div class="pat"><span class="eyebrow">Archive row · <code>.row</code></span>
+        <div class="stage"><a class="row" href="#index" style="margin:0;color:inherit;text-decoration:none"><span class="d"><b>30</b> Wed</span><span class="t"><span class="lead">Responsible release of AI-generated mathematics</span><span class="rest"> · OpenAI posts its DevDay recap</span></span><span class="r"><span class="tg">Infrastructure</span><span>8 min</span></span></a></div>
+      </div>
+    </div>
+  </section>
+</div>
+<script src="site.js"></script>
+</body>
+</html>

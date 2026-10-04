@@ -27,14 +27,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../report.css">
+<script>try{if(localStorage.getItem('ai-reports-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script src="../site.js" defer></script>
 <script src="../report.js" defer></script>
 <!-- ui:end -->
 </head>
 <body>
   <div class="page">
     <a class="back-link" href="../index.html">← Index</a>
-    <div class="header" style="position:relative;">
+    <div class="header">
       <div class="field-mark"></div>
 
       <div class="header-top">
@@ -44,7 +45,7 @@
           <div class="date-line">01 Jul 2026 · Wednesday</div>
           <div class="subtitle">Claude Sonnet 5 · Claude Science · Export Controls Lifted · Claude Code Steganography</div>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
       </div>
     </div>
 
@@ -234,33 +235,5 @@
     </div>
   </div>
 
-<script>
-  function toggleTheme() {
-    const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    const next = current === 'light' ? 'dark' : 'light';
-    const btn = document.querySelector('.theme-toggle');
-    if (next === 'light') {
-      html.setAttribute('data-theme', 'light');
-      btn.textContent = '◑ LIGHT';
-    } else {
-      html.removeAttribute('data-theme');
-      btn.textContent = '◐ DARK';
-    }
-    localStorage.setItem('ai-reports-theme', next);
-  }
-
-  (function() {
-    const saved = localStorage.getItem('ai-reports-theme');
-    if (saved) {
-      const html = document.documentElement;
-      const btn = document.querySelector('.theme-toggle');
-      if (saved === 'light') {
-        html.setAttribute('data-theme', 'light');
-        btn.textContent = '◑ LIGHT';
-      }
-    }
-  })();
-</script>
 </body>
 </html>

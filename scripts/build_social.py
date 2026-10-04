@@ -134,9 +134,9 @@ def inject_meta(path: Path, entry: dict) -> bool:
 
 
 # ----- Shared report UI -------------------------------------------------------
-# Every report loads the site fonts and report.js (sticky bar, reading progress,
-# section index, waveform player, prev/next). Injected here, like the meta block,
-# so hand-written specials and older dailies get it without being edited.
+# Every report loads the site fonts, site.js (theme, audio player) and report.js
+# (top bar, reading progress, section index, prev/next). Injected here, like the
+# meta block, so hand-written specials and older dailies get it without being edited.
 
 UI_START = "<!-- ui:start -->"
 UI_END = "<!-- ui:end -->"
@@ -147,7 +147,10 @@ UI_BLOCK = "\n".join([
     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
     '<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1'
     '&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">',
-    '<link rel="stylesheet" href="../report.css">',
+    # Apply a stored light theme before first paint, so the page never flashes dark.
+    "<script>try{if(localStorage.getItem('ai-reports-theme')==='light')"
+    "document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>",
+    '<script src="../site.js" defer></script>',
     '<script src="../report.js" defer></script>',
     UI_END,
 ])

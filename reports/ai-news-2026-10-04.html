@@ -27,14 +27,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../report.css">
+<script>try{if(localStorage.getItem('ai-reports-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script src="../site.js" defer></script>
 <script src="../report.js" defer></script>
 <!-- ui:end -->
 </head>
 <body>
   <div class="page">
     <a class="back-link" href="../index.html">← Index</a>
-    <div class="header" style="position:relative;">
+    <div class="header">
       <div class="field-mark"></div>
 
       <div class="header-top">
@@ -44,7 +45,7 @@
           <div class="date-line">4 Oct 2026 · SUNDAY</div>
           <div class="subtitle">Aleph Alpha ships Kolibri, a sovereign open-weight model · Willison calls for default hard budget caps on agents · Federal judge brands Flock 'indiscriminate mass surveillance' · OpenAI safety departure lands</div>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
       </div>
     </div>
 
@@ -377,27 +378,27 @@
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span><strong>Flock ruling's reach beyond one judge.</strong> The ruling brands city-scale licence-plate networks indiscriminate mass surveillance; the question is whether other districts cite it and whether Flock appeals. Watch for follow-on litigation and municipalities pausing contracts — that is the signal the precedent has teeth.<div class="sources" style="margin-top:4px;"><a href="https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/">Original</a> <a href="https://news.ycombinator.com/item?id=49948254">HN</a></div></span>
+        <span><strong>Flock ruling's reach beyond one judge.</strong> The ruling brands city-scale licence-plate networks indiscriminate mass surveillance; the question is whether other districts cite it and whether Flock appeals. Watch for follow-on litigation and municipalities pausing contracts — that is the signal the precedent has teeth.<div class="sources"><a href="https://techcrunch.com/2026/10/03/federal-judge-calls-flock-indiscriminate-mass-surveillance/">Original</a> <a href="https://news.ycombinator.com/item?id=49948254">HN</a></div></span>
       </div>
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span><strong>Whether Kolibri finds real deployments.</strong> Sovereignty is the pitch; adoption is the test. Watch for named customers, hosting partners and independent benchmark numbers — without them this stays a press release rather than a European alternative.<div class="sources" style="margin-top:4px;"><a href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/">Original</a> <a href="https://news.ycombinator.com/item?id=49942706">HN</a></div></span>
+        <span><strong>Whether Kolibri finds real deployments.</strong> Sovereignty is the pitch; adoption is the test. Watch for named customers, hosting partners and independent benchmark numbers — without them this stays a press release rather than a European alternative.<div class="sources"><a href="https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/">Original</a> <a href="https://news.ycombinator.com/item?id=49942706">HN</a></div></span>
       </div>
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span><strong>Default spend limits gaining traction.</strong> Willison's argument lands hardest if a provider ships hard caps on by default rather than as a flag. Watch changelogs from the major metered APIs and agent frameworks — a default-on limit would confirm the pattern; silence after the discussion cycle would kill it.<div class="sources" style="margin-top:4px;"><a href="https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/">Original</a> <a href="https://news.ycombinator.com/item?id=49949235">HN</a></div></span>
+        <span><strong>Default spend limits gaining traction.</strong> Willison's argument lands hardest if a provider ships hard caps on by default rather than as a flag. Watch changelogs from the major metered APIs and agent frameworks — a default-on limit would confirm the pattern; silence after the discussion cycle would kill it.<div class="sources"><a href="https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/">Original</a> <a href="https://news.ycombinator.com/item?id=49949235">HN</a></div></span>
       </div>
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span><strong>Docs over vector memory debate.</strong> The claim that repo documentation beats persistent memory needs field evidence. Watch whether agent frameworks expose plain file read/write as a first-class memory mechanism — adoption there would settle it faster than comment-thread argument.<div class="sources" style="margin-top:4px;"><a href="https://liao.gg/blog/agents-dont-need-memory">Original</a> <a href="https://news.ycombinator.com/item?id=49945933">HN</a></div></span>
+        <span><strong>Docs over vector memory debate.</strong> The claim that repo documentation beats persistent memory needs field evidence. Watch whether agent frameworks expose plain file read/write as a first-class memory mechanism — adoption there would settle it faster than comment-thread argument.<div class="sources"><a href="https://liao.gg/blog/agents-dont-need-memory">Original</a> <a href="https://news.ycombinator.com/item?id=49945933">HN</a></div></span>
       </div>
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span><strong>MatRAG cost claims under replication.</strong> The paper claims multi-hop QA savings by skipping KG construction and iterative retrieval, but the numbers are the authors' own. Watch for independent reproductions on public benchmarks — retrieval quality held at lower cost confirms it; degraded recall kills it.<div class="sources" style="margin-top:4px;"><a href="https://arxiv.org/abs/2610.01767v1">arXiv</a></div></span>
+        <span><strong>MatRAG cost claims under replication.</strong> The paper claims multi-hop QA savings by skipping KG construction and iterative retrieval, but the numbers are the authors' own. Watch for independent reproductions on public benchmarks — retrieval quality held at lower cost confirms it; degraded recall kills it.<div class="sources"><a href="https://arxiv.org/abs/2610.01767v1">arXiv</a></div></span>
       </div>
 
     </div>
@@ -408,71 +409,5 @@
     </div>
   </div>
 
-<script>
-  (function() {
-    const player = document.getElementById('audioPlayer');
-    if (!player) return;
-    const audio = document.getElementById('audioEl');
-    const btn = player.querySelector('.play-btn');
-    const time = document.getElementById('playerTime');
-    const seek = document.getElementById('playerSeek');
-    const total = 299;
-
-    function fmt(s) {
-      s = Math.max(0, Math.round(s));
-      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
-    }
-
-    btn.addEventListener('click', () => {
-      if (audio.paused) { audio.play(); } else { audio.pause(); }
-    });
-
-    audio.addEventListener('play', () => player.classList.add('playing'));
-    audio.addEventListener('pause', () => player.classList.remove('playing'));
-    audio.addEventListener('ended', () => player.classList.remove('playing'));
-
-    audio.addEventListener('loadedmetadata', () => {
-      time.textContent = '0:00 / ' + fmt(audio.duration || total);
-    });
-
-    audio.addEventListener('timeupdate', () => {
-      const dur = audio.duration || total;
-      seek.value = (audio.currentTime / dur) * 100;
-      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
-    });
-
-    seek.addEventListener('input', () => {
-      const dur = audio.duration || total;
-      audio.currentTime = (seek.value / 100) * dur;
-    });
-  })();
-
-  function toggleTheme() {
-    const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    const next = current === 'light' ? 'dark' : 'light';
-    const btn = document.querySelector('.theme-toggle');
-    if (next === 'light') {
-      html.setAttribute('data-theme', 'light');
-      btn.textContent = '◑ LIGHT';
-    } else {
-      html.removeAttribute('data-theme');
-      btn.textContent = '◐ DARK';
-    }
-    localStorage.setItem('ai-reports-theme', next);
-  }
-
-  (function() {
-    const saved = localStorage.getItem('ai-reports-theme');
-    if (saved) {
-      const html = document.documentElement;
-      const btn = document.querySelector('.theme-toggle');
-      if (saved === 'light') {
-        html.setAttribute('data-theme', 'light');
-        btn.textContent = '◑ LIGHT';
-      }
-    }
-  })();
-</script>
 </body>
 </html>

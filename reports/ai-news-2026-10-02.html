@@ -27,14 +27,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../report.css">
+<script>try{if(localStorage.getItem('ai-reports-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script src="../site.js" defer></script>
 <script src="../report.js" defer></script>
 <!-- ui:end -->
 </head>
 <body>
   <div class="page">
     <a class="back-link" href="../index.html">← Index</a>
-    <div class="header" style="position:relative;">
+    <div class="header">
       <div class="field-mark"></div>
 
       <div class="header-top">
@@ -44,7 +45,7 @@
           <div class="date-line">2 Oct 2026 · FRIDAY</div>
           <div class="subtitle">DeepSeek Harness tops the front page · Pi 1.0 clears 1,000 points · Cloudflare opens Clef decision models · Git 3.0's SHA-256 default called a costly mistake</div>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
       </div>
     </div>
 
@@ -137,29 +138,29 @@
 
     <div class="section">
       <div class="section-label">In Numbers</div>
-      <div class="stats-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;">
-        <div class="stat-card" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;">
-          <div class="stat-value" style="font-family:var(--f-mono);font-size:26px;font-weight:600;line-height:1.1;color:var(--primary);">1,092</div>
-          <div class="stat-label" style="margin-top:6px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--on-surface-variant);">points on Pi's 1.0 release</div>
-          <div class="stat-note" style="margin-top:6px;font-size:12px;color:var(--on-surface-variant);">more than double anything else on the front page <a href="https://earendil.com/posts/pi-1-0/" style="color:inherit;text-decoration:underline;">Original</a></div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">1,092</div>
+          <div class="stat-label">points on Pi's 1.0 release</div>
+          <div class="stat-note">more than double anything else on the front page <a href="https://earendil.com/posts/pi-1-0/">Original</a></div>
         </div>
 
-        <div class="stat-card" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;">
-          <div class="stat-value" style="font-family:var(--f-mono);font-size:26px;font-weight:600;line-height:1.1;color:var(--primary);">483</div>
-          <div class="stat-label" style="margin-top:6px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--on-surface-variant);">points on Cloudflare's Clef launch</div>
-          <div class="stat-note" style="margin-top:6px;font-size:12px;color:var(--on-surface-variant);">second only to Pi today <a href="https://blog.cloudflare.com/clef-decision-models/" style="color:inherit;text-decoration:underline;">Original</a></div>
+        <div class="stat-card">
+          <div class="stat-value">483</div>
+          <div class="stat-label">points on Cloudflare's Clef launch</div>
+          <div class="stat-note">second only to Pi today <a href="https://blog.cloudflare.com/clef-decision-models/">Original</a></div>
         </div>
 
-        <div class="stat-card" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;">
-          <div class="stat-value" style="font-family:var(--f-mono);font-size:26px;font-weight:600;line-height:1.1;color:var(--primary);">307</div>
-          <div class="stat-label" style="margin-top:6px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--on-surface-variant);">comments on Git's SHA-256 plan</div>
-          <div class="stat-note" style="margin-top:6px;font-size:12px;color:var(--on-surface-variant);">one of the day's busiest threads <a href="https://blog.gitbutler.com/git-3-sha-256" style="color:inherit;text-decoration:underline;">Original</a></div>
+        <div class="stat-card">
+          <div class="stat-value">307</div>
+          <div class="stat-label">comments on Git's SHA-256 plan</div>
+          <div class="stat-note">one of the day's busiest threads <a href="https://blog.gitbutler.com/git-3-sha-256">Original</a></div>
         </div>
 
-        <div class="stat-card" style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;">
-          <div class="stat-value" style="font-family:var(--f-mono);font-size:26px;font-weight:600;line-height:1.1;color:var(--primary);">168</div>
-          <div class="stat-label" style="margin-top:6px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--on-surface-variant);">points on DeepSeek's Harness release</div>
-          <div class="stat-note" style="margin-top:6px;font-size:12px;color:var(--on-surface-variant);">rank 1 within hours of posting <a href="https://www.deepseek.com/en/harness/" style="color:inherit;text-decoration:underline;">Original</a></div>
+        <div class="stat-card">
+          <div class="stat-value">168</div>
+          <div class="stat-label">points on DeepSeek's Harness release</div>
+          <div class="stat-note">rank 1 within hours of posting <a href="https://www.deepseek.com/en/harness/">Original</a></div>
         </div>
 
       </div>
@@ -420,27 +421,27 @@
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span><strong>Figma's MCP client allowlist.</strong> Figma now decides which agents may read its data — and Pi is off the list. Watch whether other data vendors publish their own client lists, and whether Pi gets approved. More allowlists would confirm gatekeeping as a pattern — Figma admitting Pi would show the gate is negotiable.<div class="sources" style="margin-top:4px;"><a href="https://twitter.com/GayaniFigma/status/2105295629941350454">Original</a> <a href="https://news.ycombinator.com/item?id=49922729">HN</a></div></span>
+        <span><strong>Figma's MCP client allowlist.</strong> Figma now decides which agents may read its data — and Pi is off the list. Watch whether other data vendors publish their own client lists, and whether Pi gets approved. More allowlists would confirm gatekeeping as a pattern — Figma admitting Pi would show the gate is negotiable.<div class="sources"><a href="https://twitter.com/GayaniFigma/status/2105295629941350454">Original</a> <a href="https://news.ycombinator.com/item?id=49922729">HN</a></div></span>
       </div>
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span><strong>Git's SHA-256 default decision.</strong> GitButler's case against the planned default drew 307 comments, but the call belongs to the Git project. Watch for maintainer response and for how the 3.0 plan reads when it firms up. An unchanged plan settles it against the objectors — a reversal hands them the win.<div class="sources" style="margin-top:4px;"><a href="https://blog.gitbutler.com/git-3-sha-256">Original</a> <a href="https://news.ycombinator.com/item?id=49924179">HN</a></div></span>
+        <span><strong>Git's SHA-256 default decision.</strong> GitButler's case against the planned default drew 307 comments, but the call belongs to the Git project. Watch for maintainer response and for how the 3.0 plan reads when it firms up. An unchanged plan settles it against the objectors — a reversal hands them the win.<div class="sources"><a href="https://blog.gitbutler.com/git-3-sha-256">Original</a> <a href="https://news.ycombinator.com/item?id=49924179">HN</a></div></span>
       </div>
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span><strong>Scrutiny of Clef's open weights.</strong> Open-weight decision models plus an RL fine-tuning platform, and 483 points says the audience is there. Watch for licence terms, weight availability, and independent evals on decision tasks. Weights that hold up make Clef a real option — a restrictive licence deflates it.<div class="sources" style="margin-top:4px;"><a href="https://blog.cloudflare.com/clef-decision-models/">Original</a> <a href="https://news.ycombinator.com/item?id=49923692">HN</a></div></span>
+        <span><strong>Scrutiny of Clef's open weights.</strong> Open-weight decision models plus an RL fine-tuning platform, and 483 points says the audience is there. Watch for licence terms, weight availability, and independent evals on decision tasks. Weights that hold up make Clef a real option — a restrictive licence deflates it.<div class="sources"><a href="https://blog.cloudflare.com/clef-decision-models/">Original</a> <a href="https://news.ycombinator.com/item?id=49923692">HN</a></div></span>
       </div>
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span><strong>Whether standalone vector databases survive.</strong> Turbopuffer's obituary argues search collapses into object storage plus the database you already run. Watch the standalone vendors — counter-evidence and benchmark claims, or quiet repositioning. Major workloads staying on dedicated stores would kill the collapse argument — silence would confirm it.<div class="sources" style="margin-top:4px;"><a href="https://turbopuffer.com/blog/rip-vector-database">Original</a> <a href="https://news.ycombinator.com/item?id=49923466">HN</a></div></span>
+        <span><strong>Whether standalone vector databases survive.</strong> Turbopuffer's obituary argues search collapses into object storage plus the database you already run. Watch the standalone vendors — counter-evidence and benchmark claims, or quiet repositioning. Major workloads staying on dedicated stores would kill the collapse argument — silence would confirm it.<div class="sources"><a href="https://turbopuffer.com/blog/rip-vector-database">Original</a> <a href="https://news.ycombinator.com/item?id=49923466">HN</a></div></span>
       </div>
 
       <div class="follow-item">
         <span class="bullet">▸</span>
-        <span><strong>What Harness actually contains.</strong> The release sits at rank 1 on DeepSeek's own domain, and the detail so far is the announcement. Watch for documentation, licence terms, and independent technical breakdowns as the thread matures. Substantive docs and reproductions confirm a real tool — a thin release reads as a teaser.<div class="sources" style="margin-top:4px;"><a href="https://www.deepseek.com/en/harness/">Original</a> <a href="https://news.ycombinator.com/item?id=49929489">HN</a></div></span>
+        <span><strong>What Harness actually contains.</strong> The release sits at rank 1 on DeepSeek's own domain, and the detail so far is the announcement. Watch for documentation, licence terms, and independent technical breakdowns as the thread matures. Substantive docs and reproductions confirm a real tool — a thin release reads as a teaser.<div class="sources"><a href="https://www.deepseek.com/en/harness/">Original</a> <a href="https://news.ycombinator.com/item?id=49929489">HN</a></div></span>
       </div>
 
     </div>
@@ -451,71 +452,5 @@
     </div>
   </div>
 
-<script>
-  (function() {
-    const player = document.getElementById('audioPlayer');
-    if (!player) return;
-    const audio = document.getElementById('audioEl');
-    const btn = player.querySelector('.play-btn');
-    const time = document.getElementById('playerTime');
-    const seek = document.getElementById('playerSeek');
-    const total = 299;
-
-    function fmt(s) {
-      s = Math.max(0, Math.round(s));
-      return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
-    }
-
-    btn.addEventListener('click', () => {
-      if (audio.paused) { audio.play(); } else { audio.pause(); }
-    });
-
-    audio.addEventListener('play', () => player.classList.add('playing'));
-    audio.addEventListener('pause', () => player.classList.remove('playing'));
-    audio.addEventListener('ended', () => player.classList.remove('playing'));
-
-    audio.addEventListener('loadedmetadata', () => {
-      time.textContent = '0:00 / ' + fmt(audio.duration || total);
-    });
-
-    audio.addEventListener('timeupdate', () => {
-      const dur = audio.duration || total;
-      seek.value = (audio.currentTime / dur) * 100;
-      time.textContent = fmt(audio.currentTime) + ' / ' + fmt(dur);
-    });
-
-    seek.addEventListener('input', () => {
-      const dur = audio.duration || total;
-      audio.currentTime = (seek.value / 100) * dur;
-    });
-  })();
-
-  function toggleTheme() {
-    const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    const next = current === 'light' ? 'dark' : 'light';
-    const btn = document.querySelector('.theme-toggle');
-    if (next === 'light') {
-      html.setAttribute('data-theme', 'light');
-      btn.textContent = '◑ LIGHT';
-    } else {
-      html.removeAttribute('data-theme');
-      btn.textContent = '◐ DARK';
-    }
-    localStorage.setItem('ai-reports-theme', next);
-  }
-
-  (function() {
-    const saved = localStorage.getItem('ai-reports-theme');
-    if (saved) {
-      const html = document.documentElement;
-      const btn = document.querySelector('.theme-toggle');
-      if (saved === 'light') {
-        html.setAttribute('data-theme', 'light');
-        btn.textContent = '◑ LIGHT';
-      }
-    }
-  })();
-</script>
 </body>
 </html>

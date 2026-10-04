@@ -6,11 +6,6 @@
 <title>⭐ AI-Native Design Patterns: <em>What Ramp, Linear, and Vercel Got Right</em></title>
 <link rel="stylesheet" href="../styles.css?v=2">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
-<style>
-  .chart-container{margin:28px 0;padding:20px;background:var(--bg-card);border-radius:12px;border:1px solid var(--border)}
-  .chart-container canvas{max-height:340px}
-  .chart-caption{font-size:12px;color:var(--on-surface-variant);margin-top:10px;text-align:center;line-height:1.5}
-</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -58,7 +53,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../report.css">
+<script>try{if(localStorage.getItem('ai-reports-theme')==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script src="../site.js" defer></script>
 <script src="../report.js" defer></script>
 <!-- ui:end -->
 </head>
@@ -66,11 +62,6 @@
 <div class="progress-bar" id="progress-bar"></div>
   <div class="page">
 
-    <nav class="report-nav" style="display:none" id="report-nav">
-      <a id="prev-report" class="report-nav-link" href="#">← Prev</a>
-      <a class="report-nav-link" href="../index.html">Index</a>
-      <a id="next-report" class="report-nav-link" href="#">Next →</a>
-    </nav>
     <a class="back-link" href="../index.html">← Index</a>
     <div class="special-header">
       <div class="field-mark"></div>
@@ -78,11 +69,11 @@
       <div class="header-top">
         <div>
           <div class="special-category">Product Design · Special Report</div>
-          <h1>AI-Native Design Patterns: <em>What Ramp, Linear, and Vercel Got Right</em></h1>
+          <h1><em>AI-Native</em> Design Patterns: What Ramp, Linear, and Vercel Got Right</h1>
           <div class="special-date">17 Jul 2026</div>
           <div class="special-subtitle">Zero-touch automation · Exception-driven UI · Progressive autonomy · Trust architecture · What traditional SaaS gets wrong</div>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()">◐ DARK</button>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
       </div>
     </div>
 
@@ -892,30 +883,5 @@ System executes        Consolidated reporting
   window.toggleTheme = function() { origToggle(); setTimeout(renderCharts, 50); };
   </script>
 
-  <script>
-    var NAV_API_URL = 'https://api.github.com/repos/iamluisgb/reports/contents/reports?ref=master';
-    var CURRENT_FILE = 'ai-native-design-patterns-2026-07-17.html';
-
-    async function loadReportNav() {
-      try {
-        var res = await fetch(NAV_API_URL + '&t=' + Date.now());
-        if (!res.ok) throw new Error('API error');
-        var files = await res.json();
-        var htmlFiles = files
-          .filter(function(f) { return f.type === 'file' && f.name.endsWith('.html') && f.name !== 'index.html'; })
-          .sort(function(a, b) {
-            var da = a.name.replace('.html', '').split('-').slice(-3).join('');
-            var db = b.name.replace('.html', '').split('-').slice(-3).join('');
-            return db.localeCompare(da);
-          });
-        var idx = htmlFiles.findIndex(function(f) { return f.name === CURRENT_FILE; });
-        if (idx === -1) return;
-        document.getElementById('prev-report').href = idx < htmlFiles.length - 1 ? '../reports/' + htmlFiles[idx + 1].name : '#';
-        document.getElementById('next-report').href = idx > 0 ? '../reports/' + htmlFiles[idx - 1].name : '#';
-        document.getElementById('report-nav').style.display = 'flex';
-      } catch(e) {}
-    }
-    loadReportNav();
-  </script>
 </body>
 </html>
