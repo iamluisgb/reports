@@ -155,6 +155,8 @@ UI_BLOCK = "\n".join([
     # Prerender a report or the index when the reader shows intent (hover, pointer down).
     '<script type="speculationrules">{"prerender":[{"where":{"or":[{"href_matches":"/reports/"},'
     '{"href_matches":"/reports/reports/*.html"},{"href_matches":"/reports/about.html"}]},"eagerness":"moderate"}]}</script>',
+    # Umami (cloud), served through the domain root like the rest of luisgonzalezbernal.com.
+    '<script defer src="/u/s.js" data-website-id="08c1619b-4bb8-471b-9dc9-9b6cda88e8ae" data-host-url="https://cloud.umami.is" data-domains="luisgonzalezbernal.com"></script>',
     '<script src="../site.js" defer></script>',
     '<script src="../report.js" defer></script>',
     UI_END,

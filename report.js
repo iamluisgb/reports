@@ -88,6 +88,21 @@
     sync();
   }
 
+  /* ---------- Reading analytics (Umami events) ---------- */
+  // "read-complete" fires once when the end of the report scrolls into view; with
+  // pageviews it tells which reports are read through, not just opened.
+  const track = (name, data) => { try { window.umami && window.umami.track(name, data); } catch (e) {} };
+  const end = page.querySelector('.footer') || page.lastElementChild;
+  if (end) {
+    const io = new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) return;
+      io.disconnect();
+      track('read-complete', { report: file, type });
+    });
+    io.observe(end);
+  }
+  if (audio) audio.addEventListener('play', () => track('audio-play', { report: file }), { once: true });
+
   /* ---------- Previous / next ---------- */
   fetch('../reports.json').then(r => r.ok ? r.json() : null).then(data => {
     if (!data || !Array.isArray(data.reports)) return;

@@ -74,6 +74,16 @@ jobs:
             "${{ github.event.before }}" "${{ github.sha }}" -- 'reports/*.html')
           python3 scripts/check_design.py "${changed[@]:-__none__}"
 
+      # Special reports a push adds or changes: at least 10 sources, and every link real
+      # (a 404 never seen by the Wayback Machine is treated as an invented citation).
+      - name: Check sources of special reports
+        if: ${{ github.event_name == 'push' && !startsWith(github.event.before, '0000000') }}
+        run: |
+          mapfile -t changed < <(git diff --name-only --diff-filter=AM \
+            "${{ github.event.before }}" "${{ github.sha }}" -- 'reports/*.html' | grep -v '/ai-news-' || true)
+          [ ${#changed[@]} -eq 0 ] && { echo "No special reports in this push."; exit 0; }
+          python3 scripts/check_sources.py "${changed[@]}"
+
       # Last, so a bad report still gets its manifest rebuilt — but the run goes
       # red (and GitHub emails) when a pushed daily shows fabrication signals.
       - name: Check pushed dailies for fabrication signals

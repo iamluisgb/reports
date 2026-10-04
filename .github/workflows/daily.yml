@@ -81,7 +81,12 @@ jobs:
 
       - name: Collect candidates
         if: ${{ steps.resolve.outputs.skip != 'true' }}
-        run: python3 scripts/collect.py --day "${{ steps.resolve.outputs.day }}" --out /tmp/candidates.json
+        run: |
+          python3 scripts/collect.py --day "${{ steps.resolve.outputs.day }}" --out /tmp/candidates.json
+          # Keep every day's candidates (stories, points, comments, papers): the raw
+          # material is a dataset of its own for special reports with original data.
+          mkdir -p data/candidates
+          cp /tmp/candidates.json "data/candidates/${{ steps.resolve.outputs.day }}.json"
 
       - name: Write the report
         if: ${{ steps.resolve.outputs.skip != 'true' }}
@@ -126,7 +131,7 @@ jobs:
         if: ${{ !inputs.dry_run && steps.resolve.outputs.skip != 'true' }}
         run: |
           DAY="${{ steps.resolve.outputs.day }}"
-          git add reports audio reports.json sitemap.xml rss.xml og index.html sitemap.md tokens.json
+          git add reports audio data reports.json sitemap.xml rss.xml og index.html sitemap.md tokens.json
           if git diff --staged --quiet; then
             echo "::error::nothing to commit — the report was not written"
             exit 1
