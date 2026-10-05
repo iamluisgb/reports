@@ -176,6 +176,25 @@ Why one source per model call: in multi-agent deep research most errors arise wh
 information is synthesised across agents; single-document summarisation is reliable.
 The synthesis is done once, by the writer, with the whole evidence pack in view.
 
+### Writing for understanding
+
+Readers come to a report to understand something, not to admire prose (Karpathy's
+ladder: clean writing → diagram → web page → explainer video, each easier to take in
+than the last). So, in order:
+
+1. **Prose at ~80% of ASD-STE100** (Simplified Technical English): one idea per
+   sentence; at most 20 words for a sequence of steps, 25 for a description; active
+   voice; one word for one thing (don't call the same system three names); common words
+   over impressive ones; no idioms, metaphors or hype. Keep technical terms — STE allows
+   them. Quotes from sources are never rewritten. `verify.py` lists sentences over 25 words.
+2. **A diagram before a paragraph** when the point is a structure or a flow: every
+   special has at least one `figure.diagram` (architecture, decision path or timeline).
+   If a part needs three paragraphs to describe how things connect, draw it.
+3. **Interactive when it beats a table**: a filter, a toggle or a small calculator over
+   the report's own data, in plain JS inside the page budget. Never decoration.
+4. **Explainer video** is an experiment, not a rule yet (see the backlog): narration
+   with the Kokoro voice we already use for audio, visuals from the report's diagrams.
+
 ### Special-report kit
 
 A special is `<html data-type="special">` with `.special-header` (`.special-category`, `<h1>`,

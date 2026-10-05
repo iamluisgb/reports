@@ -12,7 +12,7 @@
   "headline": "Context Lakes: What Multi-Agent Systems Need to Share",
   "description": "The definition · Why vectors and per-agent memory don't add up · What exists and what it measures · The failures shared context prevents · What is still open",
   "datePublished": "2026-07-27",
-  "dateModified": "2026-10-04",
+  "dateModified": "2026-10-05",
   "author": {"@type": "Person", "name": "Luis González", "url": "https://luisgonzalezbernal.com",
              "sameAs": ["https://www.linkedin.com/in/iamluisgb", "https://github.com/iamluisgb"]},
   "publisher": {"@type": "Organization", "name": "AI Reports — Luis GB", "url": "https://luisgonzalezbernal.com/reports/"},
@@ -59,7 +59,7 @@
         <div>
           <div class="special-category">Memory &amp; Knowledge · Special Report</div>
           <h1><em>Context Lakes</em>: What Multi-Agent Systems Need to Share</h1>
-          <div class="special-date">27 Jul 2026 · Updated 4 Oct 2026</div>
+          <div class="special-date">27 Jul 2026 · Updated 5 Oct 2026</div>
           <div class="special-subtitle">The definition · Why vectors and per-agent memory don't add up · What exists and what it measures · The failures shared context prevents · What is still open</div>
         </div>
         <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
@@ -70,12 +70,12 @@
       <div class="section-label">Key findings</div>
       <div class="special-content">
 <ol>
-<li><strong>"Context Lake" is a theoretical system class, not yet a product category.</strong> The term comes from a January 2026 position paper that defines it by three requirements — native semantic operations, transactional consistency over all decision-relevant state, and bounds on staleness under load — and proves no existing system class meets them.<sup class="cite"><a href="#source-8">8</a></sup></li>
-<li><strong>Fragmented context breaks policy, measurably.</strong> Across eight frontier models in multi-agent workflows, violation rates ranged from 14% to 98% when the facts needed to respect a policy sat in different agents' private contexts.<sup class="cite"><a href="#source-17">17</a></sup></li>
-<li><strong>Managing context is itself a failure surface.</strong> Over 1,323 episodes, policy violations rose from 0% with the rule in context to 30% after compaction, and up to 59% for some models; pinning the constraint outside compaction brought it back to 0%.<sup class="cite"><a href="#source-20">20</a></sup></li>
-<li><strong>Sharing is harder than remembering.</strong> A memory engine that scores 97.4% on a single-user benchmark fell to 18% top-1 on provenance conflicts when every agent shared one store.<sup class="cite"><a href="#source-4">4</a></sup> A multi-user framework classified what to share 96.0% of the time but got only 58.8% of memory operations strictly right.<sup class="cite"><a href="#source-22">22</a></sup></li>
-<li><strong>The headline benchmarks measure the wrong thing for this problem.</strong> Memory systems report 0.9169 on LoCoMo and 93.0% on LongMemEval-S,<sup class="cite"><a href="#source-12">12</a></sup> but those are single-user conversational recall tests, and multi-hop association is largely unmeasured.<sup class="cite"><a href="#source-24">24</a></sup></li>
-<li><strong>Better models do not fix it.</strong> In a coordination benchmark with partial information, stronger reasoning did not reliably improve coordination and smaller open-weight models often matched frontier ones.<sup class="cite"><a href="#source-29">29</a></sup></li>
+<li><strong>"Context Lake" is a theoretical system class, not yet a product category.</strong> A January 2026 position paper defines it by three requirements. It then proves that no existing system class meets them.<sup class="cite"><a href="#source-8">8</a></sup></li>
+<li><strong>Fragmented context breaks policy, measurably.</strong> Eight frontier models broke policy in 14% to 98% of multi-agent cases when the facts sat in different agents' contexts.<sup class="cite"><a href="#source-17">17</a></sup></li>
+<li><strong>Managing context is itself a failure surface.</strong> Over 1,323 episodes, violations rose from 0% to 30% after compaction, and up to 59% for some models.<sup class="cite"><a href="#source-20">20</a></sup> A constraint pinned outside compaction stayed at 0%.<sup class="cite"><a href="#source-20">20</a></sup></li>
+<li><strong>Sharing is harder than remembering.</strong> One memory engine scores 97.4% for a single user but 18% top-1 when all agents share one store.<sup class="cite"><a href="#source-4">4</a></sup> A multi-user framework gets 58.8% of memory operations strictly right.<sup class="cite"><a href="#source-22">22</a></sup></li>
+<li><strong>The headline benchmarks measure the wrong thing.</strong> Systems report 0.9169 on LoCoMo and 93.0% on LongMemEval-S.<sup class="cite"><a href="#source-12">12</a></sup> Both test recall for one user, and multi-hop association is largely unmeasured.<sup class="cite"><a href="#source-24">24</a></sup></li>
+<li><strong>Better models do not fix it.</strong> In a coordination benchmark with partial information, stronger reasoning did not reliably improve coordination.<sup class="cite"><a href="#source-29">29</a></sup> Smaller open-weight models often matched frontier ones.<sup class="cite"><a href="#source-29">29</a></sup></li>
 </ol>
       </div>
     </div>
@@ -84,9 +84,41 @@
       <div class="section-label">Part I</div>
       <div class="special-content">
 <h2>What a context lake is — and is not yet</h2>
-<p>The term is precise and recent. Xiaowei Jiang's position paper argues that AI agents are becoming the primary consumers of data, making concurrent, irreversible decisions, and that data systems built for human analysis cycles become correctness bottlenecks in that regime.<sup class="cite"><a href="#source-8">8</a></sup> When several agents act on shared resources, their actions interact before anything can reconcile them, so guarantees that apply after the decision come too late.<sup class="cite"><a href="#source-8">8</a></sup></p>
-<p>From that the paper derives the Context Lake as a <em>necessary</em> system class with three requirements: semantic operations as native capabilities, transactional consistency over all decision-relevant state, and operational envelopes that bound staleness and degradation under load. Its Composition Impossibility Theorem claims that independently evolving systems — a vector store here, a database there — cannot be composed to provide that coherence while staying what they are.<sup class="cite"><a href="#source-8">8</a></sup></p>
-<p>It is worth being exact about the status: the paper describes itself as a position paper that sets out the theoretical foundation and the invariants a system must guarantee, not as an implementation or a benchmark.<sup class="cite"><a href="#source-8">8</a></sup> Neighbouring terms are converging on the same idea from the enterprise side — "Governed Enterprise Memory", designed so knowledge can be reused across tasks and agents under organizational policy<sup class="cite"><a href="#source-1">1</a></sup> — and from practice, where one analytics company describes a useful context store as a map of business definitions, terminology, entity relationships, event taxonomies, runbooks and known failure modes.<sup class="cite"><a href="#source-32">32</a></sup></p>
+<p>The term is precise and recent. Xiaowei Jiang's position paper says AI agents are becoming the main consumers of data.<sup class="cite"><a href="#source-8">8</a></sup> Agents make concurrent decisions that cannot be undone. Data systems built for human analysis cycles then become correctness bottlenecks.<sup class="cite"><a href="#source-8">8</a></sup> When several agents act on shared resources, their actions interact before anything can reconcile them. Guarantees that apply after the decision come too late.<sup class="cite"><a href="#source-8">8</a></sup></p>
+<p>The paper derives the Context Lake as a <em>necessary</em> system class with three requirements:<sup class="cite"><a href="#source-8">8</a></sup></p>
+<ul>
+<li>semantic operations as native capabilities;</li>
+<li>transactional consistency over all state that a decision depends on;</li>
+<li>operational envelopes that bound staleness and degradation under load.</li>
+</ul>
+<p>Its Composition Impossibility Theorem claims that separate systems cannot be combined to give that coherence. A vector store next to a database does not become a context lake.<sup class="cite"><a href="#source-8">8</a></sup></p>
+<figure class="diagram">
+<svg viewBox="0 0 760 330" role="img" aria-label="Three agents read and write one context lake with three properties; a policy check sits above cross-agent actions">
+  <rect class="box-accent" x="20" y="16" width="720" height="44" rx="8"/>
+  <text x="380" y="43" font-size="13" font-weight="600" text-anchor="middle">Policy check on cross-agent actions (above the agents, not in their prompts)</text>
+  <rect class="box" x="40" y="96" width="180" height="52" rx="8"/>
+  <text x="130" y="127" font-size="13" font-weight="600" text-anchor="middle">Agent A</text>
+  <rect class="box" x="290" y="96" width="180" height="52" rx="8"/>
+  <text x="380" y="127" font-size="13" font-weight="600" text-anchor="middle">Agent B</text>
+  <rect class="box" x="540" y="96" width="180" height="52" rx="8"/>
+  <text x="630" y="127" font-size="13" font-weight="600" text-anchor="middle">Agent C</text>
+  <line class="flow" x1="130" y1="96" x2="130" y2="60"/><line class="flow" x1="380" y1="96" x2="380" y2="60"/><line class="flow" x1="630" y1="96" x2="630" y2="60"/>
+  <line class="edge" x1="130" y1="148" x2="130" y2="188"/><line class="edge" x1="380" y1="148" x2="380" y2="188"/><line class="edge" x1="630" y1="148" x2="630" y2="188"/>
+  <rect class="box-raised" x="20" y="188" width="720" height="124" rx="8"/>
+  <text class="kicker" x="40" y="214" font-size="12">ONE SHARED CONTEXT LAKE</text>
+  <rect class="pill" x="40" y="232" width="220" height="60" rx="8"/>
+  <text x="150" y="257" font-size="13" font-weight="600" text-anchor="middle">Semantic operations</text>
+  <text class="muted" x="150" y="277" font-size="12" text-anchor="middle">native, not bolted on</text>
+  <rect class="pill" x="270" y="232" width="220" height="60" rx="8"/>
+  <text x="380" y="257" font-size="13" font-weight="600" text-anchor="middle">Transactional consistency</text>
+  <text class="muted" x="380" y="277" font-size="12" text-anchor="middle">over decision-relevant state</text>
+  <rect class="pill" x="500" y="232" width="220" height="60" rx="8"/>
+  <text x="610" y="257" font-size="13" font-weight="600" text-anchor="middle">Bounded staleness</text>
+  <text class="muted" x="610" y="277" font-size="12" text-anchor="middle">operational envelopes under load</text>
+</svg>
+<figcaption>The three requirements of a context lake from the defining paper, with policy enforcement placed above the agents as the fragmented-violations study recommends. Sources 8 and 17.</figcaption>
+</figure>
+<p>The paper is exact about its status. It sets out a theoretical foundation and the invariants a system must guarantee. It is not an implementation or a benchmark.<sup class="cite"><a href="#source-8">8</a></sup> Neighbouring terms point at the same idea. From the enterprise side, "Governed Enterprise Memory" lets tasks and agents reuse knowledge under organizational policy.<sup class="cite"><a href="#source-1">1</a></sup> From practice, one analytics company describes a useful context store as a map of the business.<sup class="cite"><a href="#source-32">32</a></sup> The map holds definitions, terminology, entity relationships, event taxonomies, runbooks and known failure modes.<sup class="cite"><a href="#source-32">32</a></sup></p>
       </div>
     </div>
 
@@ -94,9 +126,9 @@
       <div class="section-label">Part II</div>
       <div class="special-content">
 <h2>Why vectors and per-agent memory don't add up</h2>
-<p>The case against "just use a vector database" is consistent across sources. Relational systems answer which records match a predicate and vector systems which items are nearest a query; neither was built for recall weighted by cue and provenance over long sessions.<sup class="cite"><a href="#source-4">4</a></sup> Vector databases keep metadata as flat attributes, which cannot express the hierarchies used to organise code, documents and agent memories.<sup class="cite"><a href="#source-13">13</a></sup> And for questions that cross systems — joining users to organisations, requests to traces, behaviour across millions of events — a vector store is a weak foundation.<sup class="cite"><a href="#source-32">32</a></sup></p>
-<p>Gluing stores together has its own cost: memory systems that combine separate vector and graph databases fragment the information and pay cross-database I/O latency.<sup class="cite"><a href="#source-6">6</a></sup> Vector and graph memories also flatten what happens in a multi-agent run — agents, tools, documents, errors, evidence — into embeddings or pairwise traces, which limits sharing, tracing and revision.<sup class="cite"><a href="#source-9">9</a></sup> Connecting more tools does not solve it either: two MCP servers expose two sets of capabilities, but they do not create a shared identity model or reconcile timestamps, permissions and conflicting definitions.<sup class="cite"><a href="#source-32">32</a></sup></p>
-<p>Per-agent memory frameworks have the mirror problem. Most assume a single user and a single context and overlook knowledge transfer under changing, asymmetric permissions,<sup class="cite"><a href="#source-11">11</a></sup> and existing memory layers treat memory as passive storage that each agent queries on its own.<sup class="cite"><a href="#source-15">15</a></sup></p>
+<p>The sources agree on the case against "just use a vector database". Relational systems find records that match a predicate. Vector systems find items near a query.<sup class="cite"><a href="#source-4">4</a></sup> Neither was built for recall weighted by cue and provenance over long sessions.<sup class="cite"><a href="#source-4">4</a></sup> Vector databases keep metadata as flat attributes. Flat attributes cannot express the hierarchies of code, documents and agent memories.<sup class="cite"><a href="#source-13">13</a></sup> Questions that cross systems need joins: users to organisations, requests to traces, behaviour across millions of events. A vector store is a weak base for them.<sup class="cite"><a href="#source-32">32</a></sup></p>
+<p>Combining stores has its own cost. Separate vector and graph databases fragment the information and add cross-database I/O latency.<sup class="cite"><a href="#source-6">6</a></sup> Vector and graph memories also flatten a multi-agent run into embeddings or pairwise traces. Agents, tools, documents, errors and evidence lose their structure, which limits sharing, tracing and revision.<sup class="cite"><a href="#source-9">9</a></sup> More tools do not solve it either. Two MCP servers expose two sets of capabilities. They do not create a shared identity model or reconcile timestamps, permissions and conflicting definitions.<sup class="cite"><a href="#source-32">32</a></sup></p>
+<p>Per-agent memory frameworks have the opposite problem. Most assume one user and one context.<sup class="cite"><a href="#source-11">11</a></sup> They ignore knowledge transfer under changing, asymmetric permissions.<sup class="cite"><a href="#source-11">11</a></sup> Existing memory layers also treat memory as passive storage that each agent queries alone.<sup class="cite"><a href="#source-15">15</a></sup></p>
 <div class="table-wrapper"><table>
 <thead><tr><th>Approach</th><th>What it is good at</th><th>What it misses for shared agent state</th></tr></thead>
 <tbody>
@@ -112,7 +144,7 @@
       <div class="section-label">Part III</div>
       <div class="special-content">
 <h2>What exists today, and what it measures</h2>
-<p>Most of what implements shared or temporal context is research code from the last nine months, and the numbers it reports are mostly about recall, speed and cost.</p>
+<p>Most systems that implement shared or temporal context are research code from the last nine months. Their numbers are mostly about recall, speed and cost.</p>
 <div class="stats-grid">
 <div class="stat-card"><div class="stat-value">97.7%</div><div class="stat-label">less KV-cache memory for 15 agents sharing one compressed pool</div><div class="stat-note">PolyKV, Llama-3-8B, +0.57% perplexity<sup class="cite"><a href="#source-3">3</a></sup></div></div>
 <div class="stat-card"><div class="stat-value">5.4×</div><div class="stat-label">faster retrieval from one memory-native store</div><div class="stat-note">Mandol, under 10 QPS concurrent load<sup class="cite"><a href="#source-6">6</a></sup></div></div>
@@ -128,8 +160,8 @@
 <tr><td>Collaborative Memory / AIM</td><td>Private and shared memory tiers with access control and provenance<sup class="cite"><a href="#source-11">11</a>,<a href="#source-22">22</a></sup></td><td>96.0% visibility classification, 58.8% strict operation accuracy<sup class="cite"><a href="#source-22">22</a></sup></td></tr>
 <tr><td>Graphiti-based projects</td><td>Bi-temporal facts: valid-from and valid-until on every fact<sup class="cite"><a href="#source-2">2</a>,<a href="#source-10">10</a></sup></td><td>Small open-source repositories; interest, not adoption<sup class="cite"><a href="#source-2">2</a></sup></td></tr>
 </tbody></table></div>
-<p>The temporal point is the easiest to see in practice. Asked for a company's current CTO, a plain vector search returns both the 2018 and the 2022 chunk and leaves the model to guess; a bi-temporal graph filters by validity and returns only the current fact.<sup class="cite"><a href="#source-5">5</a></sup> One local memory layer for coding agents makes the sharing point concrete: every integration writes to the same vault, so a decision captured in a Claude Code session is visible when another agent picks up the project.<sup class="cite"><a href="#source-33">33</a></sup></p>
-<p>Industry is arriving from the data side. Altertable reports that its lakehouse — Postgres, logs, traces, product events and company knowledge — became the shared context layer behind its agents, which start from "a shared, queryable picture of the business" rather than a set of disconnected tools.<sup class="cite"><a href="#source-32">32</a></sup></p>
+<p>The temporal point is the easiest to see in practice. Ask for a company's current CTO. A plain vector search returns both the 2018 and the 2022 chunk, and the model must guess.<sup class="cite"><a href="#source-5">5</a></sup> A bi-temporal graph filters by validity and returns only the current fact.<sup class="cite"><a href="#source-5">5</a></sup> One local memory layer for coding agents shows the sharing point. Every integration writes to the same vault.<sup class="cite"><a href="#source-33">33</a></sup> A decision captured in a Claude Code session is visible when another agent picks up the project.<sup class="cite"><a href="#source-33">33</a></sup></p>
+<p>Industry is arriving from the data side. Altertable's lakehouse holds Postgres, logs, traces, product events and company knowledge.<sup class="cite"><a href="#source-32">32</a></sup> It became the shared context layer behind its agents.<sup class="cite"><a href="#source-32">32</a></sup> The agents start from "a shared, queryable picture of the business", not from a set of disconnected tools.<sup class="cite"><a href="#source-32">32</a></sup></p>
       </div>
     </div>
 
@@ -137,10 +169,10 @@
       <div class="section-label">Part IV</div>
       <div class="special-content">
 <h2>The failures shared context is meant to prevent</h2>
-<p>The strongest evidence for a shared, governed context layer is not a benchmark win but a catalogue of failures. <strong>Context-fragmented violations</strong> are policy breaches where each agent's action looks safe locally but the set breaks a rule, because the facts needed to see it are in different departments' contexts; eight frontier models showed violation rates of 14% to 98%, worse on cross-domain flows.<sup class="cite"><a href="#source-17">17</a></sup> The same study concludes that self-avoidance is unreliable and that enforcement belongs in a layer above individual agents.<sup class="cite"><a href="#source-17">17</a></sup></p>
-<p><strong>Governance decay</strong> is the time dimension of the same problem: rules an agent obeys while they are visible can be silently removed by summarisation, and violations rose from 0% to 30% after compaction across 1,323 episodes. An adversarial variant that nudges the summariser to drop a policy defeated every model evaluated; pinning constraints outside compaction restored 0%.<sup class="cite"><a href="#source-20">20</a></sup></p>
-<p>Sharing without isolation fails too. A provenance-conflict suite scored 18% top-1 when all cases shared one store versus 100% with per-case isolation, which its authors call a ceiling rather than deployment evidence.<sup class="cite"><a href="#source-4">4</a></sup> And knowledge that persists in memory can leak when it is derived and reused under changing users and policies, which is why one enterprise design requires source restrictions to survive every derivation.<sup class="cite"><a href="#source-1">1</a></sup></p>
-<p>Coordination failures persist even when communication works: agents fail because they do not track their peers' roles, knowledge or intentions,<sup class="cite"><a href="#source-28">28</a></sup> and errors propagate across agents and rounds in ways that are hard to diagnose.<sup class="cite"><a href="#source-18">18</a></sup> Earlier transactional work named the same gaps — context loss and missing transactional safeguards — and showed standalone models frequently violate interdependent constraints.<sup class="cite"><a href="#source-21">21</a></sup></p>
+<p>The strongest evidence for a shared, governed context layer is a catalogue of failures, not a benchmark win. <strong>Context-fragmented violations</strong> are policy breaches across agents.<sup class="cite"><a href="#source-17">17</a></sup> Each agent's action looks safe locally, but together they break a rule.<sup class="cite"><a href="#source-17">17</a></sup> The facts needed to see it sit in different departments' contexts.<sup class="cite"><a href="#source-17">17</a></sup> Eight frontier models showed violation rates of 14% to 98%, worse on cross-domain flows.<sup class="cite"><a href="#source-17">17</a></sup> The study concludes that self-avoidance is unreliable. Enforcement belongs in a layer above individual agents.<sup class="cite"><a href="#source-17">17</a></sup></p>
+<p><strong>Governance decay</strong> is the time dimension of the same problem. An agent obeys rules while they are visible.<sup class="cite"><a href="#source-20">20</a></sup> Summarisation can remove them silently: violations rose from 0% to 30% after compaction across 1,323 episodes.<sup class="cite"><a href="#source-20">20</a></sup> An adversarial variant nudges the summariser to drop a policy, and it defeated every model evaluated.<sup class="cite"><a href="#source-20">20</a></sup> Pinning constraints outside compaction restored 0%.<sup class="cite"><a href="#source-20">20</a></sup></p>
+<p>Sharing without isolation fails too. A provenance-conflict suite scored 18% top-1 when all cases shared one store.<sup class="cite"><a href="#source-4">4</a></sup> With per-case isolation it scored 100%, which its authors call a ceiling, not deployment evidence.<sup class="cite"><a href="#source-4">4</a></sup> Knowledge in memory can also leak when it is derived and reused under changing users and policies.<sup class="cite"><a href="#source-1">1</a></sup> One enterprise design therefore requires source restrictions to survive every derivation.<sup class="cite"><a href="#source-1">1</a></sup></p>
+<p>Coordination failures persist even when communication works. Agents fail because they do not track their peers' roles, knowledge or intentions.<sup class="cite"><a href="#source-28">28</a></sup> Errors propagate across agents and rounds in ways that are hard to diagnose.<sup class="cite"><a href="#source-18">18</a></sup> Earlier transactional work named the same gaps: context loss and missing transactional safeguards.<sup class="cite"><a href="#source-21">21</a></sup> It showed that standalone models often violate interdependent constraints.<sup class="cite"><a href="#source-21">21</a></sup></p>
 <p>Finally, the memory layer is a production system with production failures. One open-source memory layer's consolidation step silently destroyed its entity graph and all fact history, with no error, warning or test.<sup class="cite"><a href="#source-14">14</a></sup> Another found that switching storage backends gave operators a green health check over an empty namespace.<sup class="cite"><a href="#source-10">10</a></sup></p>
       </div>
     </div>
@@ -150,7 +182,7 @@
       <div class="special-content">
 <h2>What is still open</h2>
 <ul>
-<li><strong>Evidence for the full thesis.</strong> The defining paper is a position paper; the systems that exist each cover part of it — governance, temporal facts, unified storage — and none is evaluated against all three requirements.<sup class="cite"><a href="#source-8">8</a>,<a href="#source-1">1</a></sup></li>
+<li><strong>Evidence for the full thesis.</strong> The defining paper is a position paper.<sup class="cite"><a href="#source-8">8</a></sup> Each existing system covers part of it: governance, temporal facts or unified storage. None is evaluated against all three requirements.<sup class="cite"><a href="#source-1">1</a></sup></li>
 <li><strong>Benchmarks.</strong> Memory benchmarks mostly test single-hop recall,<sup class="cite"><a href="#source-24">24</a></sup> and the first public dataset for multi-user memory operations shows strict accuracy at 58.8%.<sup class="cite"><a href="#source-22">22</a></sup></li>
 <li><strong>Compression that keeps what matters.</strong> Truncation and summarisation are irreversible,<sup class="cite"><a href="#source-23">23</a></sup> and implicit compression into embeddings that works on single-shot tasks fails on multi-step coding agents.<sup class="cite"><a href="#source-31">31</a></sup></li>
 <li><strong>Coordination itself.</strong> One benchmark's authors conclude multi-agent coordination remains a fundamentally unsolved challenge for current models.<sup class="cite"><a href="#source-29">29</a></sup></li>
@@ -177,9 +209,9 @@
     <div class="section">
       <div class="section-label">Method and limits</div>
       <div class="special-content">
-<p>This report replaces a July 2026 version that cited no sources. It was rebuilt on 4 October 2026 with the reports research pipeline: 174 search results across arXiv, Hacker News, GitHub, Wikipedia and Semantic Scholar; 40 sources read in full; 33 with usable evidence. Each source was read on its own by an open model (NaN: deepseek-v4-flash), which extracted 231 claims, each with a verbatim quote; 2 claims whose quote did not appear in the source were discarded. The synthesis was written by Claude from that evidence, every cited figure was checked against its source, and the conclusions in "What I would do" are mine.</p>
+<p>This report replaces a July 2026 version that cited no sources. It was rebuilt on 4 October 2026 with the reports research pipeline. The pipeline found 174 search results across arXiv, Hacker News, GitHub, Wikipedia and Semantic Scholar. It read 40 sources in full, and 33 gave usable evidence. An open model (NaN: deepseek-v4-flash) read each source on its own. It extracted 231 claims, each with a verbatim quote. 2 claims whose quote did not appear in the source were discarded. Claude wrote the synthesis from that evidence and checked every cited figure against its source. The conclusions in "What I would do" are mine. On 5 October 2026 the prose was rewritten in shorter sentences and a diagram was added; no facts changed.</p>
 <ul>
-<li><strong>No general web search.</strong> The run had no web-search key, so vendor documentation and product pages (Zep, Letta, Mem0, Tacnode and others) are under-represented; 27 of the 33 sources are research papers.</li>
+<li><strong>No general web search.</strong> The run had no web-search key. Vendor documentation and product pages (Zep, Letta, Mem0, Tacnode and others) are therefore under-represented. 27 of the 33 sources are research papers.</li>
 <li><strong>Preprints.</strong> Most papers are recent arXiv preprints, not peer-reviewed; their figures are as reported by their authors and were not reproduced.</li>
 <li><strong>Different benchmarks.</strong> Figures from different papers use different benchmarks and setups and are not directly comparable.</li>
 </ul>

@@ -92,6 +92,19 @@ def main() -> int:
                 errors.append(f"figure {f} not found in cited source(s) {cites}: «{sentence[:110]}…»")
         checked += 1
 
+    # Writing for understanding (AGENTS.md): short sentences, and a diagram for structure.
+    prose = re.sub(r"<blockquote.*?</blockquote>|<svg.*?</svg>", " ", body, flags=re.S)
+    long_ = []
+    for _, frag in re.findall(r"<(p|li)[^>]*>(.*?)</(?:p|li)>", prose, re.S):
+        plain = text_of(re.sub(r'<sup class="cite">.*?</sup>', " ", frag))
+        for s in re.split(r"(?<=[.!?])\s+(?=[A-Z\"“(])", plain):
+            if len(s.split()) > 25 and not s.startswith(("“", '"')):
+                long_.append(s)
+    for s in long_:
+        warnings.append(f"sentence over 25 words ({len(s.split())}): «{s[:100]}…»")
+    if '<figure class="diagram"' not in body:
+        warnings.append("no figure.diagram: draw the main structure or flow")
+
     unused = [s for s in pack["sources"] if s["n"] not in used and s["quality"] >= 0.9]
     for s in unused[:10]:
         warnings.append(f"high-quality source never cited: [{s['n']}] {s['title'][:70]}")
