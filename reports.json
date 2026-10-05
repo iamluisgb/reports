@@ -1,7 +1,21 @@
 {
-  "generated": "2026-10-05T04:49:37+00:00",
-  "count": 160,
+  "generated": "2026-10-05T07:06:26+00:00",
+  "count": 161,
   "reports": [
+    {
+      "file": "ai-news-2026-10-05.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-05",
+      "summary": "Qwen's 125B runs on a single 4090 · OpenAI safety resignation · LeCun unmoved on extinction risk · Anthropic reported a user's diary to police",
+      "readingTime": 9,
+      "tags": [
+        "models",
+        "research",
+        "memory"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-04.html",
       "type": "daily",
@@ -892,7 +906,6 @@
       "summary": "LLMs reward expertise · Qwen3.8-Max: a new bar for coding · SQLite CVEs or LLM slop? · Databricks completes Panther acquisition",
       "readingTime": 3,
       "tags": [
-        "models",
         "security",
         "multimodal",
         "coding"
