@@ -1,0 +1,52 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-24",
+  "author_or_org": "Junnan Kou, Ziyu Qing, Ruoxuan Wei, Fei Xue, Wen-You Huang, Hong Zhuang",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "CausalRCA is a four-layer framework for microservice root cause analysis that combines multi-modal data ingestion, a causal candidate graph unifying metrics, traces, logs, and topology into a temporal causal structure, and retrieval-augmented incident reasoning that grounds LLM inference in operational knowledge.",
+      "quote": "CausalRCA is proposed, a four-layer framework integrating multi-modal data ingestion, a causal candidate graph unifying metrics, traces, logs, and topology into a temporal causal structure, and retrieval-augmented incident reasoning grounding LLM inference in operational knowledge.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "A comprehensive evaluation of microservice RCA found that no single method stands out in all situations; methods vary in effectiveness, efficiency, and sensitivity to specific parameters.",
+      "quote": "A comprehensive evaluation of nine causal discovery methods and twenty-one root cause analysis methods for microservice systems indicates that no method stands out in all situations; each method tends to either fall short in effectiveness, efficiency, or shows sensitivity to specific parameters.",
+      "numbers": [
+        "nine",
+        "twenty-one"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "MULAN applies unified multi-modal causal structure learning and contrastive learning to identify root causes in microservice systems.",
+      "quote": "This work proposes Mulan, a unified multi-modal causal structure learning method designed to identify root causes in microservice systems and proposes a contrastive learning-based approach to extract modality-invariant and modality-specific representations within a shared latent space.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "TraceDiag is an end-to-end RCA framework for large-scale microservice systems that uses reinforcement learning to learn a pruning policy for the service dependency graph, eliminating redundant components and improving RCA efficiency.",
+      "quote": "TraceDiag is proposed, an end-to-end RCA framework that addresses the challenges for large-scale microservice systems and leverages reinforcement learning to learn a pruning policy for the service dependency graph to automatically eliminates redundant components, thereby significantly improving the RCA efficiency.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "RUN uses neural Granger causal discovery with contrastive learning for root cause analysis and reports outperforming state-of-the-art RCA methods.",
+      "quote": "RUN is proposed, a novel approach for root cause analysis using neural Granger causal discovery with contrastive learning that noticeably outperforms the state-of-the-art root cause analysis methods.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The paper is titled CausalRCA: Causal Graph-Augmented Retrieval for Root Cause Analysis in Microservice Systems.",
+      "quote": "CausalRCA: Causal Graph-Augmented Retrieval for Root Cause Analysis in Microservice Systems",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.semanticscholar.org/paper/8f9bdd7024f51802322642b58132233dc2da9f0e"
+}

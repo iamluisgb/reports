@@ -1,0 +1,75 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-02-02",
+  "author_or_org": "fusion-jena",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "In the described pipeline, an ontology (TBox) is developed based on competency questions, and KGs are constructed using that developed ontology, then evaluated with minimal to no human expert involvement.",
+      "quote": "Our pipeline involves formulating competency questions (CQs), developing an ontology (TBox) based on these CQs, constructing KGs using the developed ontology, and evaluating the resultant KG with minimal to no involvement of human experts.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The repository covers a semi-automatic pipeline for Ontology and Knowledge Graph Construction using four different LLMs: Mixtral 8x22B Instruct v0.1-Instruct-v0.1, GPT-4o, GPT-3.5, and Gemini.",
+      "quote": "This repository contains code, data, prompts and results related to the (semi-)automatic pipeline of Ontology and Knowledge Graph Construction with four different Large Language Models (LLMs): Mixtral 8x22B Instruct v0.1-Instruct-v0.1, GPT-4o, GPT-3.5, Gemini.",
+      "numbers": [
+        "four",
+        "8x22B",
+        "v0.1-Instruct-v0.1",
+        "GPT-4o",
+        "GPT-3.5"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The project showcases feasibility by creating a KG on deep learning methodologies from scholarly publications.",
+      "quote": "We showcase the feasibility of our semi-automated pipeline by creating a KG on deep learning methodologies by exploiting scholarly publications.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The repository code includes data preprocessing, competency questions, ontology and KG generation, and evaluation of KGs for four SOTA LLMs.",
+      "quote": "Code/: Contains code files for data preprocessing, Competency questions, ontology and KG generation, and evaluation of KGs for four SOTA LLMs.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The repository includes NER prompts that instruct different LLMs to extract named entities from selected publications.",
+      "quote": "NER_prompt/: Contains the prompts for all the selected publications, which have the instructions that are passed to different LLMs to extract named entities",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The repository contains individual KGs for 30 publications for 4 SOTA LLMs.",
+      "quote": "KG/: Contains individual KG for 30 publications for 4 SOTA LLMs",
+      "numbers": [
+        "30",
+        "4"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A v1.0 citation is a 2024 arXiv paper titled From human experts to machines: An LLM supported approach to ontology and knowledge graph construction.",
+      "quote": "Kommineni, V. K., König-Ries, B., & Samuel, S. (2024). From human experts to machines: An LLM supported approach to ontology and knowledge graph construction. arXiv preprint arXiv:2403.08345.",
+      "numbers": [
+        "2024",
+        "2403.08345"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A v2.0/v2.0.1 citation is a 2024 paper titled Towards the Automation of Knowledge Graph Construction Using Large Language Models.",
+      "quote": "Kommineni, V. K., König-Ries, B., & Samuel, S. (2024). Towards the Automation of Knowledge Graph Construction Using Large Language Models.",
+      "numbers": [
+        "2024"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/fusion-jena/automatic-KG-creation-with-LLM"
+}

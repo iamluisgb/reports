@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-23",
+  "author_or_org": "Pavel Salovskii, Iuliia Gorshkova (Partenit.io)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper proposes a hybrid architecture in which LLMs are extended with an external ontological memory layer.",
+      "quote": "This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The approach constructs and maintains a structured knowledge graph using RDF/OWL representations instead of relying solely on parametric knowledge and vector-based RAG, aiming for persistent, verifiable, semantically grounded reasoning.",
+      "quote": "Instead of relying solely on parametric knowledge and vector-based retrieval (RAG), the proposed approach constructs and maintains a structured knowledge graph using RDF/OWL representations, enabling persistent, verifiable, and semantically grounded reasoning.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "At inference, LLMs use a combined context that integrates vector-based retrieval, graph-based reasoning, and external tool interaction.",
+      "quote": "During inference, LLMs operate over a combined context that integrates vector-based retrieval with graph-based reasoning and external tool interaction.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The core contribution is an automated pipeline for constructing ontologies from heterogeneous data sources such as documents, APIs, and dialogue logs.",
+      "quote": "The core contribution is an automated pipeline for ontology construction from heterogeneous data sources, including documents, APIs, and dialogue logs.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The pipeline performs entity recognition, relation extraction, normalization, and triple generation, then validates with SHACL and OWL constraints and continuously updates the graph.",
+      "quote": "The system performs entity recognition, relation extraction, normalization, and triple generation, followed by validation using SHACL and OWL constraints, and continuous graph updates.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Experimental observations on planning tasks including the Tower of Hanoi benchmark indicate that ontology augmentation improves multi-step reasoning performance compared with baseline LLM systems.",
+      "quote": "Experimental observations on planning tasks, including the Tower of Hanoi benchmark, indicate that ontology augmentation improves performance in multi-step reasoning scenarios compared to baseline LLM systems.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The ontology layer enables formal validation of generated outputs, transforming the system into a generation-verification-correction pipeline.",
+      "quote": "In addition, the ontology layer enables formal validation of generated outputs, transforming the system into a generation-verification-correction pipeline.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.20795"
+}

@@ -1,0 +1,26 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2003-06-17",
+  "author_or_org": null,
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "OWL and OWL2 refer to the 2004 and 2009 specifications, respectively.",
+      "quote": "OWL and OWL2 are used to refer to the 2004 and 2009 specifications, respectively.",
+      "numbers": [
+        "2004",
+        "2009"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "OWL and RDF have attracted significant academic, medical and commercial interest.",
+      "quote": "OWL and RDF have attracted significant academic, medical and commercial interest.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 6,
+  "model": "deepseek-v4-flash",
+  "url": "https://en.wikipedia.org/wiki/Web_Ontology_Language"
+}

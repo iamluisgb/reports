@@ -1,0 +1,39 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2025-12-28",
+  "author_or_org": "Albertsun6",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source defines ontology, in information science, as a formal representation of concepts and relationships in a specific domain, defining classes/types, properties, relations, and constraints.",
+      "quote": "在信息科学中，本体论是对特定领域内概念和关系的正式表示。它定义了：\n\n*   **类/类型** - 事物的种类\n*   **属性** - 类的特征\n*   **关系** - 类之间的联系\n*   **约束** - 规则和限制",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The tool's core ontology concepts are object types (business entities like customers, orders, products), properties (features/data fields), link types (relationships with one-to-one/one-to-many/many-to-many cardinality), interfaces (polymorphism and shared property structures), and actions (operations executable on objects).",
+      "quote": "*   **对象类型 (Object Types)** - 定义业务实体，如客户、订单、产品等\n*   **属性 (Properties)** - 对象的特征和数据字段，支持多种数据类型\n*   **链接类型 (Link Types)** - 对象之间的关系，支持一对一、一对多、多对多\n*   **接口 (Interfaces)** - 多态性支持，定义共享的属性结构\n*   **动作 (Actions)** - 可在对象上执行的操作",
+      "numbers": [
+        "一对一",
+        "一对多",
+        "多对多"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The project is an ontology modeling tool inspired by Palantir Ontology that supports visual design of object types, properties, relationships, and interfaces.",
+      "quote": "一个现代化的本体论建模工具，灵感来自 Palantir Ontology。支持可视化设计对象类型、属性、关系和接口。",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The tool references Palantir Foundry's ontology pattern by mapping data tables to object types, mapping foreign-key relationships to links, supporting interface-based polymorphism, and defining actions as business operations.",
+      "quote": "本工具参考 Palantir Foundry 的本体论模式：\n\n*   将数据表映射为对象类型\n*   将外键关系映射为链接\n*   支持接口实现多态性\n*   动作定义业务操作",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/Albertsun6/ontology-builder"
+}

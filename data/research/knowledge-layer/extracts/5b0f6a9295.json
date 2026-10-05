@@ -1,0 +1,78 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-01",
+  "author_or_org": "Thanh Luong Tuan, Abhijit Sanyal",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper introduces a three-layer enterprise ontology framework consisting of Role, Domain, and Interaction ontologies to ground LLM-based enterprise agents.",
+      "quote": "We introduce a three-layer ontological framework--Role, Domain, and Interaction ontologies--grounding LLM-based enterprise agents.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "It formalizes asymmetric neurosymbolic coupling: current enterprise systems constrain agent inputs such as context assembly, tool discovery, and governance thresholds but not outputs, and it proposes extending this to output-side validation including response checking, reasoning verification, and compliance enforcement.",
+      "quote": "We formalize asymmetric neurosymbolic coupling: current enterprise systems constrain agent inputs (context assembly, tool discovery, governance thresholds) but not outputs, and we propose mechanisms extending this coupling to output-side validation (response checking, reasoning verification, compliance enforcement).",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In a controlled experiment of 1,800 runs across five industries and three LLMs, ontology-coupled agents significantly outperformed ungrounded agents on Metric Accuracy and Role Consistency with p < .001 across all three models and large effect sizes Kendall's W = .46-.64.",
+      "quote": "A controlled experiment (1,800 runs across five industries and three LLMs: Claude Sonnet 4, Qwen 2.5 72B, Gemma 4 26B) finds ontology-coupled agents significantly outperform ungrounded agents on Metric Accuracy (p <.001) and Role Consistency (p <.001) across all three models with large effect sizes (Kendall's W = .46-.64).",
+      "numbers": [
+        "1,800",
+        "five",
+        "three",
+        "p <.001",
+        "p <.001",
+        ".46-.64"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Ontology improvements are greatest where LLM parametric knowledge is weakest, with Vietnam-localized domains showing ontology lift 2x that of English domains.",
+      "quote": "Improvements are greatest where LLM parametric knowledge is weakest--particularly in Vietnam-localized domains, where ontology lift is 2x that of English domains.",
+      "numbers": [
+        "2x"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The paper contributes ontology-constrained tool discovery via SQL-pushdown scoring and a proposed framework for output-side ontological validation.",
+      "quote": "(3) ontology-constrained tool discovery via SQL-pushdown scoring; (4) a proposed framework for output-side ontological validation;",
+      "numbers": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper reports empirical evidence for an inverse parametric knowledge effect, where ontological grounding value is inversely proportional to LLM training-data coverage of the domain.",
+      "quote": "(5) empirical evidence for the inverse parametric knowledge effect--ontological grounding value is inversely proportional to LLM training-data coverage of the domain;",
+      "numbers": [
+        "5"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The paper claims cross-model replication establishing model-independence and a production system serving 22 industry verticals with 650+ agents.",
+      "quote": "(6) cross-model replication establishing model-independence; (7) a production system serving 22 industry verticals with 650+ agents.",
+      "numbers": [
+        "6",
+        "7",
+        "22",
+        "650+"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Enterprise adoption of LLMs is constrained by hallucination, domain drift, and inability to enforce regulatory compliance at the reasoning level; the paper presents a neurosymbolic architecture in the Foundation AgenticOS (FAOS) platform using ontology-constrained neural reasoning.",
+      "quote": "Enterprise adoption of Large Language Models (LLMs) is constrained by hallucination, domain drift, and the inability to enforce regulatory compliance at the reasoning level. We present a neurosymbolic architecture implemented within the Foundation AgenticOS (FAOS) platform that addresses these limitations through ontology-constrained neural reasoning.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.00555"
+}

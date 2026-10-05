@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-06-28",
+  "author_or_org": "Ziming Zhao, Zhenwei Wang, Tiehua Zhang, Zhishu Shen, Hai Dong, Zhen Lei, Xingjun Ma, Gaowei Xu, Zhijun Ding, Yun Yang",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "The paper addresses root cause analysis in microservice systems, where complex service invocation paths and dependencies make prompt anomaly localization difficult and can disrupt operations and maintenance.",
+      "quote": "Due to the complex service invocation paths and dependencies in enterprise-level microservice systems, it is challenging to locate the anomalies promptly during service invocations, thus causing intractable issues for normal system operations and maintenance.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "CHASE is a causal heterogeneous graph-based framework for root cause analysis in microservice systems using multimodal data including traces, logs, and system monitoring metrics.",
+      "quote": "In this paper, we propose a Causal Heterogeneous grAph baSed framEwork for root cause analysis, namely CHASE, for microservice systems with multimodal data, including traces, logs, and system monitoring metrics.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "CHASE encodes related information into representative embeddings and models it using a multimodal invocation graph.",
+      "quote": "Specifically, related information is encoded into representative embeddings and further modeled by a multimodal invocation graph.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "CHASE performs anomaly detection on each instance node using attentive heterogeneous message passing from adjacent metric and log nodes.",
+      "quote": "Following that, anomaly detection is performed on each instance node with attentive heterogeneous message passing from its adjacent metric and log nodes.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "CHASE learns from a constructed hypergraph where hyperedges represent the flow of causality and then performs root cause localization.",
+      "quote": "Finally, CHASE learns from the constructed hypergraph with hyperedges representing the flow of causality and performs root cause localization.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "CHASE was evaluated on two public microservice datasets with distinct attributes and compared against state-of-the-art methods.",
+      "quote": "We evaluate the proposed framework on two public microservice datasets with distinct attributes and compare with the state-of-the-art methods.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "CHASE achieved average performance gains up to 36.2% on A@1 and 29.4% on Percentage@1 compared with its best counterpart.",
+      "quote": "The results show that CHASE achieves the average performance gain up to 36.2%(A@1) and 29.4%(Percentage@1), respectively to its best counterpart.",
+      "numbers": [
+        "36.2%",
+        "A@1",
+        "29.4%",
+        "Percentage@1"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "CHASE uses machine-learning-style graph processing by encoding multimodal information into embeddings and using attentive heterogeneous message passing on graph nodes for anomaly detection.",
+      "quote": "Specifically, related information is encoded into representative embeddings and further modeled by a multimodal invocation graph. Following that, anomaly detection is performed on each instance node with attentive heterogeneous message passing from its adjacent metric and log nodes.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2406.19711"
+}

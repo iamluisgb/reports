@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2026-10-04",
+  "author_or_org": "Wikipedia",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A simpler definition treats a knowledge graph as a digital structure representing concepts and relationships (facts), and it may include an ontology that lets humans and machines understand and reason about its contents.",
+      "quote": "A digital structure that represents knowledge as concepts and the relationships between them (facts). A knowledge graph can include an ontology that allows both humans and machines to understand and reason about its contents.[[23]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-23)[[24]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-24)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A knowledge graph formally represents semantics by describing entities and their relationships.",
+      "quote": "A knowledge graph formally represents semantics by describing entities and their relationships.[[32]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-32)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A common knowledge-graph feature is support for reasoning over inferred ontologies: the graph acquires and integrates information into an ontology and applies a reasoner to derive new knowledge.",
+      "quote": "_Supporting reasoning over inferred ontologies_: A knowledge graph acquires and integrates information into an ontology and applies a reasoner to derive new knowledge.[[3]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-Ref1-3)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Virtual knowledge graphs do not store information in specialized databases; they rely on an underlying relational database or data lake and use mappings between the data source elements and the graph structure/ontology.",
+      "quote": "In contrast, virtual knowledge graphs do not store information in specialized databases.[[30]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-30) They rely on an underlying relational database or data lake to answer queries on the graph. Such a virtual knowledge graph system must be properly configured in order to answer the queries correctly. This specific configuration is done through a set of mappings that define the relationship between the elements of the data source and the structure and ontology of the virtual knowledge graph.[[31]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-31)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Graph databases allow users to store data as entities and interrelationships and facilitate operations such as data reasoning, node embedding, and ontology development on knowledge bases.",
+      "quote": "These graph databases allow users to easily store data as entities and their interrelationships, and facilitate operations such as data reasoning, node embedding, and ontology development on knowledge bases.[[29]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-29)",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Recent data science and machine learning developments, particularly graph neural networks and representation learning, broadened knowledge-graph scope beyond search engines and recommender systems; knowledge graphs are increasingly used in genomics, proteomics, and systems biology.",
+      "quote": "Recent developments in data science and [machine learning](https://en.wikipedia.org/wiki/Machine_learning \"Machine learning\"), particularly in [graph neural networks](https://en.wikipedia.org/wiki/Graph_neural_network \"Graph neural network\"), representation learning, and machine learning, have broadened the scope of knowledge graphs beyond their traditional use in search engines and [recommender systems](https://en.wikipedia.org/wiki/Recommender_system \"Recommender system\"). They are increasingly used in scientific research, with notable applications in fields such as [genomics](https://en.wikipedia.org/wiki/Genomics \"Genomics\"), [proteomics](https://en.wikipedia.org/wiki/Proteomics \"Proteomics\"), and [systems biology](https://en.wikipedia.org/wiki/Systems_biology \"Systems biology\").[[5]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-5)",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Large language models expanded interest in knowledge graphs as a way to structure information from unstructured text, with language-processing advances enabling automatic or semi-automatic generation and expansion of graphs.",
+      "quote": "The development of large language models expanded interest in knowledge graphs as a way to structure information from unstructured text, with advances in language processing enabling their automatic or semi-automatic generation and expansion.[[16]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-16)[[17]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-17)[[18]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-18)",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Microsoft Research's GraphRAG from 2024 integrated LLM-generated graphs into retrieval-augmented generation.",
+      "quote": "Microsoft Research's [GraphRAG](https://github.com/microsoft/graphrag) (2024) exemplified this development by integrating LLM-generated graphs into retrieval-augmented generation.",
+      "numbers": [
+        "2024"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://en.wikipedia.org/wiki/Knowledge_graph"
+}

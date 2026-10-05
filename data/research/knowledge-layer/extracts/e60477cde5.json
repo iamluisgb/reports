@@ -1,0 +1,47 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-29",
+  "author_or_org": "Noboru Otsuka",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "In dense-urban POI settings where coordinates are reliable, the marginal benefit of explicit graph edges shrinks for relationships computable from coordinates, while structured spatial processing complements vector retrieval.",
+      "quote": "It is suggested that, in dense-urban POI settings where coordinates are reliable, the marginal benefit of explicit graph edges shrinks for coordinate-computable relationships, while structured spatial processing complements vector retrieval.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The source is a systematic comparison of RAG architectures for geographic POI question answering using OpenStreetMap data.",
+      "quote": "A Systematic Comparison of RAG Architectures for Geographic POI Question Answering Using OpenStreetMap Data",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "A referenced paper compares RAG and GraphRAG on text-based tasks including question answering and query-based summarization, and introduces a unified evaluation protocol standardizing data preprocessing, retrieval configurations, and generation settings.",
+      "quote": "A comprehensive benchmark study comparing RAG and GraphRAG on established text-based tasks, including question answering and query-based summarization is presented and a unified evaluation protocol is introduced that standardizes data preprocessing, retrieval configurations, and generation settings, enabling fair and reproducible comparisons.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "HybridRAG combines knowledge graph based RAG (GraphRAG) and vector RAG techniques to enhance question-answer systems for information extraction from financial documents.",
+      "quote": "A novel approach based on a combination, called HybridRAG, of the Knowledge Graphs based RAG techniques (called GraphRAG) and VectorRAG techniques to enhance question-answer (Q&A) systems for information extraction from financial documents that is shown to be capable of generating accurate and contextually relevant answers.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Spatial-RAG formulates geospatial question answering as multi-objective optimization over spatial and semantic relevance, identifying Pareto-optimal candidates and dynamically selecting the best response based on user intent.",
+      "quote": "Spatial-RAG, a Retrieval-Augmented Generation (RAG) framework designed for geospatial question answering, formulates the answering process as a multi-objective optimization over spatial and semantic relevance, identifying Pareto-optimal candidates and dynamically selecting the best response based on user intent.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "A real-time spatial RAG architecture defines components for integrating generative AI into cities, using temporal and spatial filtering through linked data.",
+      "quote": "A real-time spatial RAG architecture that defines the necessary components for the effective integration of generative AI into cities, leveraging temporal and spatial filtering capabilities through linked data is proposed.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.semanticscholar.org/paper/28bf587adc26e4bbd1987f1e19d66b8c87dd752d"
+}

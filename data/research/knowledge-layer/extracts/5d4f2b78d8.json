@@ -1,0 +1,29 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-07-21",
+  "author_or_org": "Hayagriv Sridharan, Saurabh Sarkar, Parag Paul, Eugenie Cheng",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper proposes a hybrid ontology framework for semantic data understanding in AI-augmented data warehousing.",
+      "quote": "Toward a Hybrid Ontology Framework for Semantic Data Understanding in AI-Augmented Data Warehousing",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The hybrid ontology framework integrates deterministic schema metadata with flexible semantic enrichment derived from documentation, ETL scripts, and business glossaries.",
+      "quote": "This work presents a hybrid ontology framework that integrates deterministic schema metadata with flexible semantic enrichment derived from documentation, ETL scripts, and business glossaries, and demonstrates improvements in entity disambiguation, catalog enrichment, and cross-system understanding.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The hybrid ontology framework demonstrates improvements in entity disambiguation, catalog enrichment, and cross-system understanding.",
+      "quote": "This work presents a hybrid ontology framework that integrates deterministic schema metadata with flexible semantic enrichment derived from documentation, ETL scripts, and business glossaries, and demonstrates improvements in entity disambiguation, catalog enrichment, and cross-system understanding.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.semanticscholar.org/paper/29c2301457458a4ebbd6a6445e9af355ee4d7df1"
+}

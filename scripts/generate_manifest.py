@@ -203,6 +203,11 @@ def derive_series(name: str, title: str) -> str:
     return SERIES_FALLBACK
 
 
+def is_redirect(path: Path) -> bool:
+    """A merged report leaves a stub that redirects to its successor: not a report."""
+    return 'http-equiv="refresh"' in path.read_text(encoding="utf-8", errors="replace")[:2000]
+
+
 def build_entry(path: Path) -> dict:
     content = path.read_text(encoding="utf-8", errors="replace")
     name = path.name
@@ -232,7 +237,7 @@ def build_entry(path: Path) -> dict:
 
 
 def main() -> None:
-    paths = sorted(REPORTS_DIR.glob("*.html"))
+    paths = [p for p in sorted(REPORTS_DIR.glob("*.html")) if not is_redirect(p)]
     entries = [build_entry(p) for p in paths]
     counts = [topic_counts(plain_text(p.read_text(encoding="utf-8", errors="replace")))
               for p in paths]

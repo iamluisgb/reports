@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2026-05-19",
+  "author_or_org": "sachin-india",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The project is a research and hands-on demo exploring Palantir-style operational knowledge graphs for factory and manufacturing intelligence, covering ontology design, live data ingestion, decision logic, and governed actions using open datasets.",
+      "quote": "Research and hands-on demo project exploring Palantir-style operational knowledge graphs for factory/manufacturing intelligence — covering ontology design, live data ingestion, decision logic, and governed actions using open datasets.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The implementation uses two parallel demos, each with a passive knowledge graph track and an operational context graph track with governed actions.",
+      "quote": "Implements two parallel demos — AI4I predictive maintenance and SECOM semiconductor yield — each with Track A (passive knowledge graph) and Track B (operational context graph with governed actions).",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The core framework includes ontology components, governance, actions, and rule-based functions: object types, link types, graph sessions with Pydantic validation, RBAC permission checks, a Postgres audit log, an action base class with preconditions/execute/audit/rollback, and RuleBasedFunction with optional Neo4j store-back.",
+      "quote": "Core framework (Phases 0–1): - core/ontology: ObjectType, LinkType, GraphSession with Pydantic validation - core/governance: RBAC permission checks + Postgres audit log - core/actions: Action base class (preconditions → execute → audit → rollback) - core/functions: RuleBasedFunction base class with optional Neo4j store-back",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "AI4I Track B predicts failure risk using four rule signals (TWF/HDF/PWF/OSF) and provides a TriggerMaintenance action, exposed via FastAPI on port 8000 and a Streamlit dashboard on port 8502.",
+      "quote": "AI4I demo (Phase 2): - Pipeline: 10K UCI sensor records → 4 refined CSVs (machines/tool_runs/failure_modes/links) - Track A: Neo4j loader + 5-page Streamlit explorer (Overview/Machines/Runs/Failures/Cypher) - Track B: PredictFailureRisk (4 rule signals: TWF/HDF/PWF/OSF), TriggerMaintenance action, FastAPI on :8000, Streamlit dashboard on :8502",
+      "numbers": [
+        "4",
+        ":8000",
+        ":8502"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "SECOM Track B predicts yield risk using three risk signals (alarm count/max sigma/NA rate) and provides a HoldLot action, exposed via FastAPI on port 8001 and a Streamlit dashboard on port 8504.",
+      "quote": "SECOM demo (Phase 3): - Pipeline: 1,567 lots × 590 sensors → SPC 3σ alarms → 440 alarm nodes, 6,115 links - Track A: Neo4j loader + 5-page Streamlit explorer with SPC alarm co-occurrence analysis - Track B: PredictYieldRisk (3 risk signals: alarm count/max sigma/NA rate), HoldLot action, FastAPI on :8001, Streamlit dashboard on :8504",
+      "numbers": [
+        "3",
+        ":8001",
+        ":8504"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "The SECOM pipeline produces SPC 3-sigma alarms, resulting in 440 alarm nodes and 6,115 links, and Track A includes SPC alarm co-occurrence analysis.",
+      "quote": "Pipeline: 1,567 lots × 590 sensors → SPC 3σ alarms → 440 alarm nodes, 6,115 links - Track A: Neo4j loader + 5-page Streamlit explorer with SPC alarm co-occurrence analysis",
+      "numbers": [
+        "3σ",
+        "440",
+        "6,115"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The report includes side-by-side latency, risk distribution, and test coverage; 149 tests pass and both loaders are idempotent using MERGE semantics.",
+      "quote": "Report (Phase 4): - notebooks/comparison.ipynb: side-by-side latency, risk distribution, test coverage - docs/learnings.md: 4-layer test, GPS analogy, dataset mapping guide, design decisions 149 tests passing. Both loaders idempotent (MERGE semantics).",
+      "numbers": [
+        "149"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/sachin-india/operational-intelligence"
+}

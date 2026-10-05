@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-05-20",
+  "author_or_org": "Dean Allemang, Juan Sequeda",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A knowledge graph can act as a semantic representation of an enterprise SQL database, queried via Text-to-SPARQL.",
+      "quote": "There is increasing evidence that question-answering (QA) systems with Large Language Models (LLMs), which employ a knowledge graph/semantic representation of an enterprise SQL database (i.e. Text-to-SPARQL), achieve higher accuracy compared to systems that answer questions directly on SQL databases (i.e. Text-to-SQL).",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "QA systems with LLMs that employ a knowledge graph/semantic representation of an enterprise SQL database (Text-to-SPARQL) achieve higher accuracy than systems answering directly on SQL databases (Text-to-SQL).",
+      "quote": "There is increasing evidence that question-answering (QA) systems with Large Language Models (LLMs), which employ a knowledge graph/semantic representation of an enterprise SQL database (i.e. Text-to-SPARQL), achieve higher accuracy compared to systems that answer questions directly on SQL databases (i.e. Text-to-SQL).",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Previous benchmark research showed using a knowledge graph improved accuracy from 16% to 54%.",
+      "quote": "Our previous benchmark research showed that by using a knowledge graph, the accuracy improved from 16% to 54%.",
+      "numbers": [
+        "16%",
+        "54%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The authors' approach increased overall accuracy to 72%, including an additional 8% of \"I don't know\" unknown results.",
+      "quote": "Using the chat with the data benchmark, our primary finding is that our approach increases the overall accuracy to 72% including an additional 8% of \"I don't know\" unknown results.",
+      "numbers": [
+        "72%",
+        "8%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The overall error rate is 20%.",
+      "quote": "Thus, the overall error rate is 20%.",
+      "numbers": [
+        "20%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper concludes that investing in knowledge graphs, namely the ontology, provides higher accuracy for LLM-powered question answering systems.",
+      "quote": "These results provide further evidence that investing knowledge graphs, namely the ontology, provides higher accuracy for LLM powered question answering systems.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2405.11706"
+}

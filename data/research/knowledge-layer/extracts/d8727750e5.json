@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-06-06",
+  "author_or_org": "Raghupathi Thota, Sri Meghana Potluri, Ahmed Hassan Saker Alzaidy, Sudhakar K, P. Bhuvaneshwari",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper proposes a Knowledge Graph Construction based semantic web application for developing ontology and reports better Attribute Richness, Inheritance Richness, and Relationship Richness compared with Ontology-Driven Conceptual Modeling.",
+      "quote": "This research proposes, Knowledge Graph Construction (KGC) based semantic web application for developing ontology, which achieved better results in terms of Attribute Richness, Inheritance Richness and Relationship Richness when compared with existing Ontology-Driven Conceptual Modeling (ODCM) approach.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A framework based on Ontology-Based Data Access can enhance cross-domain data integration and semantic querying in informed decision-making scenarios and is replicable for stakeholders and researchers.",
+      "quote": "The proposed framework is able to enhance cross-domain data integration and semantic querying in various informed decision-making scenarios and is easily replicable for stakeholders and researchers.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "IoT ontologies for well-being, aging, and health services increasingly adopt Semantic Web of Things standards to achieve semantic interoperability by integrating heterogeneous data through unified semantic models.",
+      "quote": "It is concluded that IoT ontologies for well-being, aging, and health services increasingly adopt Semantic Web of Things standards to achieve semantic interoperability by integrating heterogeneous data through unified semantic models.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In Indonesian ontology-based question-answering systems, a linguistic ontology can handle complex sentence structures, recognize sentence pattern variations, and generate appropriate SPARQL queries.",
+      "quote": "The test results show that ILO can effectively handle complex sentence structures, recognize sentence pattern variations, and generate appropriate SPARQL queries in Indonesian ontology-based QA systems.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A study found it feasible to use advanced LLMs to generate OWL suggestions at least comparable to human novice modellers, systematically studying LLM assistance to ontology engineers.",
+      "quote": "It seems feasible to use advanced LLMs to generate OWL suggestions, which are at least comparable to the quality of human novice modellers, as this first to systematically study the ability of LLMs to assist ontology engineers.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "NeOn-GPT is described as a large language model-powered pipeline for ontology learning, using a prompt pipeline for domain-agnostic modeling, demonstrated on a wine ontology, and integrated into the metaphactory platform.",
+      "quote": "The main contribution of the paper is a prompt pipeline tailored for domain-agnostic modeling, exemplified through the application to a domain-specific case study: the wine ontology, to develop NeOn-GPT, a workflow for automatic ontology modeling, and is integrated into the metaphactory platform.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Results show that utilizing ODCM and NLP could facilitate and improve the ontology development process, respectively.",
+      "quote": "The results show that utilizing ODCM and NLP could facilitate and improve the development process, respectively.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.semanticscholar.org/paper/772ca9590757a60938e349c5c78a6306665cc465"
+}

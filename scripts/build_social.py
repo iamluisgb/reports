@@ -29,7 +29,7 @@ import re
 from datetime import datetime
 from pathlib import Path
 
-from generate_manifest import BASE_URL, REPORTS_DIR, ROOT, build_entry
+from generate_manifest import BASE_URL, REPORTS_DIR, ROOT, build_entry, is_redirect
 
 OG_DIR = ROOT / "og"
 FONTS_DIR = ROOT / "assets" / "fonts"
@@ -336,7 +336,7 @@ def main() -> None:
         have_pillow = False
         print("Pillow not available — skipping OG images (meta falls back to default).")
 
-    entries = [build_entry(p) for p in sorted(REPORTS_DIR.glob("*.html"))]
+    entries = [build_entry(p) for p in sorted(REPORTS_DIR.glob("*.html")) if not is_redirect(p)]
 
     images = 0
     if have_pillow:

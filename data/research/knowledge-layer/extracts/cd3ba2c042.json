@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-02",
+  "author_or_org": "Jiamin Jiang et al. / arXiv",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "Hyper-scale microservice systems are standard infrastructure for large-scale Internet companies and consist of numerous loosely coupled microservices that evolve independently; their complexity makes failures unavoidable and necessitates efficient root cause analysis to localize root cause services and classify failure types.",
+      "quote": "Hyper-scale microservice systems have become the standard infrastructure for large-scale Internet companies. These systems consist of numerous loosely coupled microservices that evolve independently through continuous development and deployment. Such complexity makes failures unavoidable, necessitating efficient Root Cause Analysis (RCA) to help Site Reliability Engineers (SREs) quickly localize root cause services and classify failure types.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Existing RCA methods often struggle to adapt to the extreme dynamism and massive scale of hyper-scale microservice systems.",
+      "quote": "However, existing RCA methods often struggle to adapt to the extreme dynamism and massive scale of these systems.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The paper presents KRCA, an end-to-end RCA system designed for hyper-scale microservice systems.",
+      "quote": "In this paper, we present KRCA, an end-to-end RCA system designed for hyper-scale microservice systems.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "To manage the vast search space, KRCA uses a multi-stage pipeline that begins with an API-level drilldown to isolate suspicious services.",
+      "quote": "To manage the vast search space, KRCA employs a multi-stage pipeline that begins with an API-level drilldown to isolate suspicious services.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "KRCA instantiates a skeleton-based causal graph from anomalous metrics as a high-recall structural prior, then uses a memory-augmented multi-agent framework to verify causality and generate the final failure report.",
+      "quote": "It then instantiates a skeleton-based causal graph from anomalous metrics to serve as a high-recall structural prior, before utilizing a memory-augmented multi-agent framework to verify causality and generate the final failure report.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "KRCA combines structured causal constraints with multi-agent reasoning to balance diagnostic accuracy with real-time production efficiency.",
+      "quote": "By combining structured causal constraints with multi-agent reasoning, KRCA employs balances diagnostic accuracy with the efficiency requirements of real-time production use.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "KRCA achieves AC@1 scores of 0.88 and 0.79 for root cause service localization and failure type classification, outperforming the strongest baseline by at least 31% in absolute gains.",
+      "quote": "Experimental results show that KRCA achieves AC@1 scores of 0.88 and 0.79 for root cause service localization and failure type classification, outperforming the strongest baseline by at lease 31% in absolute gains.",
+      "numbers": [
+        "0.88",
+        "0.79",
+        "31%"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "KRCA has been deployed in Kuaishou's production environment for over six months, reducing average diagnosis time by 77.3%.",
+      "quote": "KRCA has been deployed in Kuaishou's production environment for over six months, reducing the average diagnosis time by 77.3%.",
+      "numbers": [
+        "six",
+        "77.3%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.01788"
+}

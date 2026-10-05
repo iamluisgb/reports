@@ -118,7 +118,8 @@ def main(args: list[str]) -> int:
     offline = "--offline" in args
     args = [a for a in args if not a.startswith("--")] if "--all" not in sys.argv else [
         str(p) for p in sorted((ROOT / "reports").glob("*.html")) if not p.name.startswith("ai-news-")]
-    specials = [Path(a) for a in args if Path(a).is_file() and not Path(a).name.startswith("ai-news-")]
+    specials = [Path(a) for a in args if Path(a).is_file() and not Path(a).name.startswith("ai-news-")
+                and 'http-equiv="refresh"' not in Path(a).read_text(encoding="utf-8")[:2000]]   # merge stubs
     for p in specials:
         check(p, offline)
     for w in warnings:

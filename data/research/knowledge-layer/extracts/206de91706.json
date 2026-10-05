@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2026-07-10",
+  "author_or_org": "gabrielchasukjin (Gabriel Cha), with Claude",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "An ontology is a formal model of a domain covering entity types, properties, relationships, and actions; it captures meaning rather than just storage structure, and it serves as the semantic grounding layer that makes agent actions trustworthy.",
+      "quote": "An **ontology** is a formal model of a _domain_ — the entity types that exist (customer, order, aircraft), their properties, the relationships between them, and the **actions** that can be taken on them. It captures _meaning_, not just storage structure. For AI agents this matters because agents that reason over **defined business concepts** — rather than raw tables and schemas \"built for machines, not meaning\" — can act reliably and be governed. The ontology is the semantic grounding layer that makes agent actions trustworthy.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Ontology is described as the blueprint or type system containing objects, links, actions, and rules, while a knowledge graph is that blueprint populated with live instances.",
+      "quote": "ontology  = the blueprint / type system   (objects, links, actions, rules)\nknowledge graph = that blueprint populated with live instances",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The ontology is said not to be an empty shell or a RAG-style retrieve-chunks-and-stuff-prompt store; it is described as a live, continuously-fed, bidirectional layer that many systems read and write at once.",
+      "quote": "The ontology is **not** an empty organizing shell filled on demand, and it is **not** a RAG-style \"retrieve chunks and stuff them into the prompt\" store. It is a **live, continuously-fed, bidirectional** layer that many systems read and write at once.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The source contrasts RAG, where you retrieve, stuff into the prompt, and reason over pasted text, with an ontology approach where objects are already there and continuously maintained, and the agent queries a live typed object graph with permissions baked in to act on real current state rather than a stale retrieved snapshot.",
+      "quote": "> **Not RAG.** In RAG you _retrieve → stuff into the prompt → reason over pasted text_. Here the objects are already there and continuously maintained; the agent **queries a live typed object graph** with permissions baked in. That's _why_ it's safe for governed action — the agent acts on real current state, not a stale retrieved snapshot.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "In the write path, an agent proposes an Action; validation checks action logic and security scopes; there is optional human confirmation; commit is a single transaction that edits the ontology; it becomes instantly visible to apps and humans reading those objects; and it is propagated back to source or operational systems in real time via CDC.",
+      "quote": "flowchart TD\n    A[Agent proposes an Action] --> B{Validate:<br/>action logic + security scopes}\n    B --> C[Optional human confirmation]\n    C --> D[Commit as a single transaction<br/>= an edit to the ontology]\n    D --> E[Instantly visible to every<br/>app / human reading those objects]\n    D --> F[Propagated BACK to source /<br/>operational systems in real time via CDC]",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "For Palantir, agent action is write-back by design and agents execute transactional ontology edits; for Microsoft, read-only data agents use NL2SQL/DAX/KQL while action-capable operations agents are separate.",
+      "quote": "| **Agent action** | Write-back by design — agents execute transactional ontology edits | Read-only data agents (NL2SQL/DAX/KQL) vs. separate action-capable operations agents |",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Palantir is described as one centralized kinetic ontology fusing data, logic, actions, and security; Microsoft is described as federated across products including Fabric IQ, Azure Digital Twins/DTDL, and Graph.",
+      "quote": "| **Shape** | One centralized \"kinetic\" ontology fusing data + logic + actions + security | Federated across products (Fabric IQ, Azure Digital Twins/DTDL, Graph) |",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The source caveats that all vendor claims are self-descriptive documentation and architectural rather than independently benchmarked; several Microsoft features are in preview including Fabric IQ ontology and Graph item, while the Fabric data agent is GA; and the cross-vendor philosophy comparison is a synthesis across primary docs rather than a single sourced statement.",
+      "quote": "*   All vendor claims are **self-descriptive documentation** — architectural, not independently benchmarked.\n*   Several Microsoft features are in **preview** (Fabric IQ ontology, Graph item); framing may change. The Fabric data agent is GA.\n*   Fast-moving area — Microsoft docs were updated within days of research (Jul 2026); naming shifts often.\n*   The cross-vendor \"philosophy\" comparison is a **synthesis** across primary docs, not a single sourced statement.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/gabrielchasukjin/ontology-ingestion-layer"
+}

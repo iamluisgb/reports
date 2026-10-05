@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-06-06",
+  "author_or_org": "Zhishang Xiang, Chuanjie Wu, Qinggang Zhang, Shengyuan Chen, Zijin Hong, Xiao Huang, Jinsong Su",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "GraphRAG uses graphs to model the hierarchical structure between specific concepts.",
+      "quote": "It leverages graphs to model the hierarchical structure between specific concepts",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Recent studies report that GraphRAG frequently underperforms vanilla RAG on many real-world tasks.",
+      "quote": "recent studies report that GraphRAG frequently underperforms vanilla RAG on many real-world tasks.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper proposes GraphRAG-Bench, a comprehensive benchmark designed to evaluate GraphRAG models on hierarchical knowledge retrieval and deep contextual reasoning.",
+      "quote": "we propose GraphRAG-Bench, a comprehensive benchmark designed to evaluate GraphRAG models onboth hierarchical knowledge retrieval and deep contextual reasoning.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "GraphRAG-Bench includes tasks of increasing difficulty covering fact retrieval, complex reasoning, contextual summarization, and creative generation.",
+      "quote": "GraphRAG-Bench features a comprehensive dataset with tasks of increasing difficulty, coveringfact retrieval, complex reasoning, contextual summarization, and creative generation",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The benchmark provides a systematic evaluation across the entire pipeline, from graph construction and knowledge retrieval to final generation.",
+      "quote": "a systematic evaluation across the entire pipeline, from graph constructionand knowledge retrieval to final generation.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper systematically investigates the conditions when GraphRAG surpasses traditional RAG and the underlying reasons for its success, offering guidelines for practical application.",
+      "quote": "we systematically investigate the conditions when GraphRAG surpasses traditional RAG and the underlying reasons for its success, offering guidelines for its practical application.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper frames the critical question of whether GraphRAG is really effective and in which scenarios graph structures provide measurable benefits for RAG systems.",
+      "quote": "This raises a critical question: Is GraphRAG really effective, and in which scenarios do graph structures provide measurable benefits for RAG systems?",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2506.05690"
+}

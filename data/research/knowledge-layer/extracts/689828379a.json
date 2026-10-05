@@ -1,0 +1,71 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-29",
+  "author_or_org": "Lei Zan, Keli Zhang, Shifeng Xie, Jiale Zheng, Zehao Xiao, Zhiwei Dong, Ke Zhang, Ruichu Cai, Malik Tiomoko, Lujia Pan",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "Modern telecommunication, cloud, and microservice systems produce correlated alarm cascades when components fail, and root cause analysis aims to identify the small set of alarms that initiate each cascade.",
+      "quote": "Modern telecommunication, cloud, and microservice systems emit correlated alarm cascades when components fail. Root cause analysis (RCA) aims to identify the small set of alarms that initiate each cascade.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "A common RCA approach learns a causal graph from observational logs and predicts zero-in-degree alarms in each incident-induced subgraph, but the learned graph remains fixed and cannot benefit from expert diagnoses of historical incidents.",
+      "quote": "A common approach learns a causal graph from observational logs and predicts all zero-in-degree alarms in each incident-induced subgraph. However, the learned graph remains fixed and cannot benefit from expert diagnoses of historical incidents.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "EvoCause uses an LLM to propose semantically plausible graph edits while deterministic code validates node identities and acyclicity and retains the best graph on a labeled alignment set.",
+      "quote": "EvoCause uses a large language model (LLM) to propose semantically plausible graph edits, while deterministic code validates node identities and acyclicity and retains the best graph on a labeled alignment set.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "At test time, the refined graph alone produces transparent predictions without an LLM call.",
+      "quote": "At test time, the refined graph alone produces transparent predictions without an LLM call.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "TeleRCA is an expert-annotated benchmark from a production telecommunication network containing 485,681 alarm events spanning 194 alarm types over 5,621 resources.",
+      "quote": "We also release TeleRCA, an expert-annotated benchmark from a production telecommunication network containing 485,681alarm events spanning 194alarm types over 5,621resources.",
+      "numbers": [
+        "485,681",
+        "194",
+        "5,621"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "On synthetic data, EvoCause initialized with PC causal discovery outperforms the unrefined PC baseline, raising Node F1, Case EM, and Graph F1 by 11.59, 9.40, and 4.59 percentage points respectively, while reducing nSHD by 0.2379.",
+      "quote": "On synthetic data, EvoCause initialized with the PC causal discovery algorithm outperforms the unrefined PC baseline, raising Node F1, Case EM, and Graph F1 by 11.59, 9.40, and 4.59percentage points, respectively, while reducing nSHD by 0.2379.",
+      "numbers": [
+        "11.59",
+        "9.40",
+        "4.59",
+        "0.2379"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "On TeleRCA, replacing human-readable alarm titles with anonymous identifiers lowers Node F1 and Case EM by 6.12 and 8.04 percentage points respectively, indicating alarm-name information contributes to graph refinement.",
+      "quote": "On TeleRCA, replacing human-readable alarm titles with anonymous identifiers lowers Node F1 and Case EM by 6.12and 8.04percentage points, respectively, indicating that alarm-name information contributes to graph refinement.",
+      "numbers": [
+        "6.12",
+        "8.04"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Expert labels constrain which alarms should be source nodes but do not specify the edge edits needed to satisfy those constraints.",
+      "quote": "Expert labels constrain which alarms should be source nodes but do not specify the edge edits needed to satisfy those constraints.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.27290"
+}

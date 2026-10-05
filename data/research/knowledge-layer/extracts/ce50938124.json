@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": null,
+  "author_or_org": "1517005260",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The project implements GraphRAG core functionality and represents knowledge as a graph structure.",
+      "quote": "**从零开始复现 GraphRAG**：完整实现了 GraphRAG 的核心功能，将知识表示为图结构",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The project combines GraphRAG with private-domain Deep Search to build an explainable, reasoning-capable Q&A system with multi-agent collaboration and knowledge graph augmentation.",
+      "quote": "本项目聚焦于结合 **GraphRAG** 与 **私域 Deep Search** 的方式，实现可解释、可推理的智能问答系统，同时结合多 Agent 协作与知识图谱增强，构建完整的 RAG 智能交互解决方案。",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "GraphRAG retrieval supports multiple modes: local search, global search, and hybrid search.",
+      "quote": "**多级检索策略**：支持本地搜索、全局搜索、混合搜索等多种模式",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The project provides an evaluation system with more than 20 evaluation metrics to measure system performance comprehensively.",
+      "quote": "**完整评估系统**：提供 20+ 种评估指标，全方位衡量系统性能",
+      "numbers": [
+        "20+"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "LLM-driven entity and relation extraction uses large language models to identify entities and relations from text.",
+      "quote": "**LLM 驱动的实体关系提取**：利用大语言模型从文本中识别实体与关系",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Entity disambiguation maps mentions to canonical entities using string recall, vector reranking, and NIL detection.",
+      "quote": "**实体消歧（Entity Disambiguation）**：使用字符串召回、向量重排和NIL检测将mention映射到规范实体",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Entity alignment detects and resolves conflicts under the same canonical entity while preserving all relation information.",
+      "quote": "**实体对齐（Entity Alignment）**：智能检测和解决同一canonical实体下的冲突，保留所有关系信息",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The system supports dynamic incremental construction of the knowledge graph with intelligent deduplication.",
+      "quote": "**增量更新机制**：支持知识图谱的动态增量构建与智能去重",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/1517005260/graph-rag-agent"
+}

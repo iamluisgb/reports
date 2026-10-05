@@ -1,0 +1,97 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-11",
+  "author_or_org": "Grama Chethan",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper presents an ontology-driven RDF knowledge graph that unifies data from 11 simulated manufacturing sources across nine domains via a five-stage ETL pipeline, with automated entity resolution producing 97 owl:sameAs identity links.",
+      "quote": "An ontology-driven RDF knowledge graph unifies data from 11 simulated sources across nine domains through a five-stage ETL pipeline with automated entity resolution spanning 97 owl:sameAs identity links.",
+      "numbers": [
+        "11",
+        "nine",
+        "five-stage",
+        "97"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The ontology contains 78 RDFS classes, 108 object properties, and 243 data properties, and draws on standards including ISA-95, OPC UA, eClass, Asset Administration Shell, and RAMI 4.0.",
+      "quote": "The ontology encompasses 78 RDFS classes, 108 object properties, and 243 data properties, drawing on ISA-95, OPC UA, eClass, the Asset Administration Shell, RAMI 4.0, and additional standards.",
+      "numbers": [
+        "78",
+        "108",
+        "243",
+        "ISA-95",
+        "OPC UA",
+        "eClass",
+        "Asset Administration Shell",
+        "RAMI 4.0"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The knowledge graph is exposed to LLM agents through 287 Model Context Protocol tools as a SPARQL-native semantic layer.",
+      "quote": "The graph is exposed to LLM agents via 287 Model Context Protocol tools as a SPARQL-native semantic layer.",
+      "numbers": [
+        "287"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Blocking 24 cross-system tools reduces recall from 1.00 to 0.31 and F1 from 1.00 to 0.48, indicating that 69% of discoverable signals require cross-system graph joins.",
+      "quote": "The primary empirical result: blocking 24 cross-system tools reduces recall from 1.00 to 0.31 (F1 from 1.00 to 0.48), showing that 69% of discoverable signals require cross-system graph joins.",
+      "numbers": [
+        "24",
+        "1.00",
+        "0.31",
+        "1.00",
+        "0.48",
+        "69%"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Manufacturing enterprises run heterogeneous systems such as ERP, MES, PLM, SCADA, QMS, and SCM; these silos delay root-cause investigation, and point-to-point integration scales as O(n^2).",
+      "quote": "Modern manufacturing enterprises operate heterogeneous systems -- ERP, MES, PLM, SCADA, QMS, SCM -- each with its own data model and API. The resulting silos prevent holistic analysis, delay root-cause investigation, and obstruct Industry 4.0 traceability. Point-to-point integration scales as O(n^2) and accumulates brittle dependencies.",
+      "numbers": [
+        "O(n^2)"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "An automated discovery engine applies nine strategy categories, including cross-station correlation, alarm coverage, ECN impact, and CUSUM/EWMA drift detection, to surface insights across system boundaries.",
+      "quote": "An automated discovery engine applies nine strategy categories -- cross-station correlation, alarm coverage, ECN impact, CUSUM/EWMA drift detection -- to surface insights spanning system boundaries.",
+      "numbers": [
+        "nine"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "A leave-one-out ablation confirms that six of the nine discovery strategies contribute unique signals.",
+      "quote": "Leave-one-out ablation confirms six of nine strategies contribute unique signals.",
+      "numbers": [
+        "six",
+        "nine"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Verification against a 65-signal manifest with 16 positive and 49 null signals yields F1 = 1.00 with a 95% Clopper-Pearson CI of [0.79, 1.00], but the author-constructed manifest makes this verification rather than independent validation.",
+      "quote": "Verification against a 65-signal manifest (16 positive, 49 null) yields F1 = 1.00 (95% Clopper-Pearson CI [0.79, 1.00]); as the manifest was author-constructed, this constitutes verification not independent validation.",
+      "numbers": [
+        "65",
+        "16",
+        "49",
+        "1.00",
+        "95%",
+        "0.79",
+        "1.00"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.24918"
+}

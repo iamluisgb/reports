@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-04-30",
+  "author_or_org": "Jeho Choi (arXiv, cs.CL)",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "LLM text-to-SQL for real-world Business Intelligence is limited by semantic hallucinations, structural errors, and the absence of domain-specific evaluation frameworks.",
+      "quote": "Large Language Models (LLMs) have shown promise in enabling natural language interfaces for structured data querying through text-to-SQL generation. However, their application in real-world Business Intelligence (BI) contexts remains limited due to semantic hallucinations, structural errors, and a lack of domain-specific evaluation frameworks.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The study proposes a Fact-Consistency Evaluation Framework for judging the semantic accuracy of LLM-generated SQL, using Exaone 3.5, described as an instruction-tuned bilingual LLM optimized for enterprise tasks.",
+      "quote": "we propose a Fact-Consistency Evaluation Framework for assessing the semantic accuracy of LLM-generated SQL outputs using Exaone 3.5--an instruction-tuned, bilingual LLM optimized for enterprise tasks.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The benchmark contains 219 natural language business questions spanning five SQL complexity levels, drawn from real sales data in LG Electronics' internal BigQuery environment, each paired with gold-standard SQL and a validated ground-truth answer.",
+      "quote": "We construct a domain-specific benchmark comprising 219 natural language business questions across five SQL complexity levels, derived from actual sales data in LG Electronics' internal BigQuery environment. Each question is paired with a gold-standard SQL query and a validated ground-truth answer.",
+      "numbers": [
+        "219",
+        "five"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Model performance was measured with four metrics: answer accuracy, execution success rate, semantic error rate, and non-response rate.",
+      "quote": "We evaluate model performance using answer accuracy, execution success rate, semantic error rate, and non-response rate.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Exaone 3.5 achieved 93% accuracy on simple aggregation tasks (L1) but dropped to 4% on arithmetic reasoning (H1) and 31% on grouped ranking tasks (H4), with semantic errors and non-responses concentrated in complex cases.",
+      "quote": "Experimental results show that while Exaone 3.5 performs well on simple aggregation tasks (93% accuracy in L1), it exhibits substantial degradation in arithmetic reasoning (4% accuracy in H1) and grouped ranking tasks (31% in H4), with semantic errors and non-responses concentrated in complex cases.",
+      "numbers": [
+        "93%",
+        "L1",
+        "4%",
+        "H1",
+        "31%",
+        "H4"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Common failure types identified in qualitative error analysis are misapplied arithmetic logic, incomplete filtering, and incorrect grouping operations.",
+      "quote": "Qualitative error analysis further identifies common failure types such as misapplied arithmetic logic, incomplete filtering, and incorrect grouping operations.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The authors conclude that LLMs remain limited in business-critical environments and that fact-consistency validation layers and hybrid reasoning approaches are needed.",
+      "quote": "Our findings highlight the current limitations of LLMs in business-critical environments and underscore the need for fact-consistency validation layers and hybrid reasoning approaches.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The work is presented as contributing a reproducible benchmark and evaluation methodology for reliable natural language interfaces to structured enterprise data systems.",
+      "quote": "This work contributes a reproducible benchmark and evaluation methodology for advancing reliable natural language interfaces to structured enterprise data systems.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2505.00060"
+}

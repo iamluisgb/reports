@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-01-23",
+  "author_or_org": "Michael Glass, Mustafa Eyceoz, Dharmashankar Subramanian, Gaetano Rossiello, Long Vu, Alfio Gliozzo",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Text-to-SQL is described as an emerging practical interface for real-world databases.",
+      "quote": "Text-to-SQL is emerging as a practical interface for real world databases.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The dominant Text-to-SQL paradigm is cross-database or schema-independent and supports application schemas unseen during training.",
+      "quote": "The dominant paradigm for Text-to-SQL is cross-database or schema-independent, supporting application schemas unseen during training.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A database schema defines tables, columns, column types, and foreign key connections between tables.",
+      "quote": "The schema of a database defines the tables, columns, column types and foreign key connections between tables.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Real-world schemas can be large, containing hundreds of columns, but only a small fraction is relevant for any particular query.",
+      "quote": "Real world schemas can be large, containing hundreds of columns, but for any particular query only a small fraction will be relevant.",
+      "numbers": [
+        "hundreds",
+        "small fraction"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Putting the entire schema in an LLM prompt can be impossible for smaller token windows and expensive even when the context window is large enough.",
+      "quote": "Placing the entire schema in the prompt for an LLM can be impossible for models with smaller token windows and expensive even when the context window is large enough to allow it.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Model accuracy can be improved by focusing SQL generation on only the relevant portion of the database.",
+      "quote": "Even apart from computational considerations, the accuracy of the model can be improved by focusing the SQL generation on only the relevant portion of the database.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Schema linking identifies the portion of a database schema that is useful for a question.",
+      "quote": "Schema linking identifies the portion of the database schema useful for the question.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper introduces an extractive approach that adapts decoder-only LLMs to schema linking, claimed to be more computationally efficient and accurate than the generative approach, with fine-grained precision-recall control.",
+      "quote": "We introduce a new approach to adapt decoder-only LLMs to schema linking that is both computationally more efficient and more accurate than the generative approach. Additionally our extractive approach permits fine-grained control over the precision-recall trade-off for schema linking.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2501.17174"
+}

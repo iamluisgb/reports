@@ -3,15 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ontologies, Graph Knowledge, Semantic Layer &amp; Context Layer (2025–2026)</title>
+<title>The Knowledge Layer for Agents: Ontologies, Graphs and Where ML Fits</title>
 <link rel="stylesheet" href="../styles.css?v=2">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "The Knowledge Layer for Agents: Ontologies, Graphs and Where ML Fits",
+  "description": "What the layer is · GraphRAG versus vector RAG · Accuracy on enterprise data · Operational ontologies and actions · Where ML goes · Graphs in root cause analysis",
+  "datePublished": "2026-10-02",
+  "dateModified": "2026-10-05",
+  "author": {"@type": "Person", "name": "Luis González", "url": "https://luisgonzalezbernal.com",
+             "sameAs": ["https://www.linkedin.com/in/iamluisgb", "https://github.com/iamluisgb"]},
+  "publisher": {"@type": "Organization", "name": "AI Reports — Luis GB", "url": "https://luisgonzalezbernal.com/reports/"},
+  "inLanguage": "en",
+  "isAccessibleForFree": true
+}
+</script>
 <!-- og:start -->
-<meta name="description" content="Ontologies · GraphRAG · Semantic layer · Context layer · Convergence and adoption (2025–2026)">
+<meta name="description" content="What the layer is · GraphRAG versus vector RAG · Accuracy on enterprise data · Operational ontologies and actions · Where ML goes · Graphs in root cause analysis">
 <link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/knowledge-layer-2026-10-02.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="AI Reports — Luis GB">
-<meta property="og:title" content="Ontologies, Graph Knowledge, Semantic Layer &amp; Context Layer (2025–2026)">
-<meta property="og:description" content="Ontologies · GraphRAG · Semantic layer · Context layer · Convergence and adoption (2025–2026)">
+<meta property="og:title" content="The Knowledge Layer for Agents: Ontologies, Graphs and Where ML Fits">
+<meta property="og:description" content="What the layer is · GraphRAG versus vector RAG · Accuracy on enterprise data · Operational ontologies and actions · Where ML goes · Graphs in root cause analysis">
 <meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/knowledge-layer-2026-10-02.html">
 <meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/knowledge-layer-2026-10-02.png">
 <meta property="og:image:width" content="1200">
@@ -19,8 +34,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@iamluisgb">
 <meta name="twitter:creator" content="@iamluisgb">
-<meta name="twitter:title" content="Ontologies, Graph Knowledge, Semantic Layer &amp; Context Layer (2025–2026)">
-<meta name="twitter:description" content="Ontologies · GraphRAG · Semantic layer · Context layer · Convergence and adoption (2025–2026)">
+<meta name="twitter:title" content="The Knowledge Layer for Agents: Ontologies, Graphs and Where ML Fits">
+<meta name="twitter:description" content="What the layer is · GraphRAG versus vector RAG · Accuracy on enterprise data · Operational ontologies and actions · Where ML goes · Graphs in root cause analysis">
 <meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/knowledge-layer-2026-10-02.png">
 <!-- og:end -->
 <!-- ui:start -->
@@ -39,532 +54,182 @@
 <body>
 <div class="progress-bar" id="progress-bar"></div>
   <div class="page">
-
     <a class="back-link" href="../index.html">← Index</a>
     <div class="special-header">
-      <div class="field-mark"></div>
-
       <div class="header-top">
         <div>
-          <div class="special-category">Knowledge Engineering · Special Report</div>
-          <h1>Ontologies, Graph Knowledge, <em>Semantic</em> &amp; Context Layer</h1>
-          <div class="special-date">2 Oct 2026</div>
-          <div class="special-subtitle">Ontologies · GraphRAG · Semantic layer · Context layer · Convergence and adoption (2025–2026)</div>
+          <div class="special-category">Memory &amp; Knowledge · Special Report</div>
+          <h1>The <em>Knowledge Layer</em> for Agents: Ontologies, Graphs and Where ML Fits</h1>
+          <div class="special-date">2 Oct 2026 · Updated 5 Oct 2026</div>
+          <div class="special-subtitle">What the layer is · GraphRAG versus vector RAG · Accuracy on enterprise data · Operational ontologies and actions · Where ML goes · Graphs in root cause analysis</div>
         </div>
         <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
       </div>
     </div>
 
     <div class="section">
-      <div class="section-label">Executive Summary</div>
+      <div class="section-label">Key findings</div>
       <div class="special-content">
-
-<p><strong>The story of the year is convergence.</strong> Ontologies, knowledge graphs, semantic layer and context layer have stopped being four silos and are fusing into a single architectural layer — the <em>knowledge layer</em> / <em>intelligence layer</em> — that the major data platforms already sell as a product.</p>
-
-<p><strong>The semantic layer became agent infrastructure.</strong> With reproducible data: dbt measured <strong>98.2–100%</strong> accuracy versus <strong>84–90%</strong> for pure text-to-SQL, with the critical difference that the semantic layer <em>fails with an error</em> while text-to-SQL "fails with a plausible but incorrect number".</p>
-
-<p><strong>Semantic interoperability took a historic step.</strong> Open Semantic Interchange became <strong>Apache Ossie</strong> (ASF incubation, July 2026), with a vendor-neutral specification for metrics, dimensions and ontologies.</p>
-
-<p><strong>GraphRAG matured and deflated.</strong> Benchmarks no longer sell it as universally superior: it wins on complex reasoning and global queries, but <em>loses on simple facts</em> against vector RAG. The winning pattern is <strong>hybrid</strong> (vector + graph + reranker).</p>
-
-<p><strong>Ontology engineering was automated with LLMs</strong> — but with a plot twist: at KGC 2026 the consensus is that the ontology is not the LLM's <em>output</em> but its <strong>harness</strong> (a declarative constraint). The standards keep pace: RDF 1.2, SHACL 1.2 and SPARQL-RL (Datalog rules for RDF, WD October 2026).</p>
-
-<p><strong>The term of the year is "context graph"</strong>: not yet another knowledge graph, but the record of <em>decision traces</em> (exceptions, precedents, approvals) that lets agents learn from prior work.</p>
-
+<ol>
+<li><strong>Grounding helps most where the model knows least.</strong> In 1,800 runs, ontology-coupled agents beat ungrounded agents on metric accuracy.<sup class="cite"><a href="#source-5">5</a></sup> The lift in Vietnam-localized domains was 2x the lift in English domains.<sup class="cite"><a href="#source-5">5</a></sup></li>
+<li><strong>A knowledge graph over SQL raises accuracy on enterprise questions.</strong> Earlier benchmark work moved accuracy from 16% to 54% with a knowledge graph.<sup class="cite"><a href="#source-24">24</a></sup> Adding ontology-based checks raised it to 72%, with an error rate of 20%.<sup class="cite"><a href="#source-24">24</a></sup></li>
+<li><strong>GraphRAG gains are smaller than reported.</strong> An unbiased evaluation of 3 GraphRAG methods found gains "much more moderate" than earlier claims.<sup class="cite"><a href="#source-27">27</a></sup> Other studies report that GraphRAG often underperforms vanilla RAG on real tasks.<sup class="cite"><a href="#source-17">17</a></sup></li>
+<li><strong>A typed ontology is also a guard.</strong> On 1,072 BIRD questions, queries over typed ontology worlds scored 67.5% against 63.5% for direct SQL.<sup class="cite"><a href="#source-8">8</a></sup> The same write chain stopped 20/20 hallucinated actions with zero false positives.<sup class="cite"><a href="#source-8">8</a></sup></li>
+<li><strong>Most of the value is in joins across systems.</strong> In a manufacturing graph, blocking 24 cross-system tools cut recall from 1.00 to 0.31.<sup class="cite"><a href="#source-9">9</a></sup> 69% of the signals needed cross-system graph joins.<sup class="cite"><a href="#source-9">9</a></sup></li>
+<li><strong>Graphs plus agents already work in operations.</strong> A root cause system at Kuaishou has run in production for over six months.<sup class="cite"><a href="#source-11">11</a></sup> It cut average diagnosis time by 77.3%.<sup class="cite"><a href="#source-11">11</a></sup></li>
+</ol>
       </div>
     </div>
 
     <div class="section">
       <div class="section-label">Part I</div>
       <div class="special-content">
-
-<h2>Landscape: four layers converging</h2>
-
-<p>The structural move of the period is that data platforms "compile" semantics into a governed context graph. The pattern repeating across Databricks, Snowflake, Microsoft, Google, AWS, Neo4j, Palantir, Graphwise and Stardog is a five-layer stack:</p>
-
-<div class="table-wrapper"><table>
-  <tr><th>Layer</th><th>What it provides</th></tr>
-  <tr><td><strong>1. Governed data assets</strong></td><td>OneLake, Unity Catalog, BigQuery, S3: identity, permissions and lineage</td></tr>
-  <tr><td><strong>2. Semantic layer</strong></td><td>Metrics, dimensions and entities: the mandatory starting point (Forrester)</td></tr>
-  <tr><td><strong>3. Ontology + knowledge graph</strong></td><td>Types, relations and rules: gives meaning and enables reasoning</td></tr>
-  <tr><td><strong>4. Context graph / memory</strong></td><td>Decision traces, state and precedent: consistent agents that improve</td></tr>
-  <tr><td><strong>5. Orchestration and retrieval</strong></td><td>GraphRAG, agentic retrieval, MCP/A2A with governance at query time</td></tr>
-</table></div>
-
+<h2>Four words for one layer</h2>
+<p>Ontology, knowledge graph, semantic layer and context layer name parts of one structure. The ontology is the blueprint: the type system of objects, links, actions and rules.<sup class="cite"><a href="#source-41">41</a></sup> The knowledge graph is that blueprint filled with live instances.<sup class="cite"><a href="#source-41">41</a></sup> A knowledge graph describes entities and their relationships, and a reasoner can derive new knowledge from it.<sup class="cite"><a href="#source-42">42</a></sup></p>
+<p>The graph does not need its own database. A virtual knowledge graph answers queries from an existing relational database or data lake.<sup class="cite"><a href="#source-42">42</a></sup> A set of mappings connects the source data to the graph structure and ontology.<sup class="cite"><a href="#source-42">42</a></sup> The standards come from the Semantic Web: RDF and OWL encode meaning together with the data.<sup class="cite"><a href="#source-39">39</a></sup></p>
+<p>The semantic layer brings the business vocabulary. One framework for data warehouses joins schema metadata with meaning taken from documentation, ETL scripts and business glossaries.<sup class="cite"><a href="#source-29">29</a></sup> It reports better entity disambiguation, catalog enrichment and cross-system understanding.<sup class="cite"><a href="#source-29">29</a></sup></p>
+<p>For agents, the layer must do more than retrieval. One practitioner write-up says the ontology is not a store of chunks for the prompt.<sup class="cite"><a href="#source-41">41</a></sup> It is a live layer that many systems read and write at the same time.<sup class="cite"><a href="#source-41">41</a></sup> Research frameworks say the same in formal terms. Enterprise systems today constrain what goes into an agent, but not what comes out.<sup class="cite"><a href="#source-5">5</a></sup> An ontology layer can validate outputs and turn generation into a generate-verify-correct pipeline.<sup class="cite"><a href="#source-20">20</a></sup></p>
 <figure class="diagram">
-<svg viewBox="0 0 760 348" role="img" aria-label="Five-layer knowledge layer stack">
-  <rect class="box" x="20" y="16" width="720" height="52" rx="8"/>
-  <text class="accent" x="42" y="48" font-size="15" font-weight="700">1</text>
-  <text x="66" y="47" font-size="13" font-weight="600">Governed data assets</text>
-  <text class="muted" x="340" y="47" font-size="12">OneLake · Unity Catalog · BigQuery · S3</text>
-
-  <rect class="box" x="20" y="80" width="720" height="52" rx="8"/>
-  <text class="accent" x="42" y="112" font-size="15" font-weight="700">2</text>
-  <text x="66" y="111" font-size="13" font-weight="600">Semantic layer</text>
-  <text class="muted" x="340" y="111" font-size="12">Metrics, dimensions and entities</text>
-
-  <rect class="box" x="20" y="144" width="720" height="52" rx="8"/>
-  <text class="accent" x="42" y="176" font-size="15" font-weight="700">3</text>
-  <text x="66" y="175" font-size="13" font-weight="600">Ontology + knowledge graph</text>
-  <text class="muted" x="340" y="175" font-size="12">Types, relations and rules</text>
-
-  <rect class="box" x="20" y="208" width="720" height="52" rx="8"/>
-  <text class="accent" x="42" y="240" font-size="15" font-weight="700">4</text>
-  <text x="66" y="239" font-size="13" font-weight="600">Context graph / memoria</text>
-  <text class="muted" x="340" y="239" font-size="12">Decision traces, state and precedent</text>
-
-  <rect class="box-accent" x="20" y="272" width="720" height="52" rx="8"/>
-  <text class="accent" x="42" y="304" font-size="15" font-weight="700">5</text>
-  <text x="66" y="303" font-size="13" font-weight="600">Orchestration and retrieval</text>
-  <text class="muted" x="340" y="303" font-size="12">GraphRAG · agentic retrieval · MCP/A2A</text>
+<svg viewBox="0 0 760 340" role="img" aria-label="Agents read the knowledge layer through typed queries and write through validated actions; ML proposes changes from the side">
+  <rect class="box-accent" x="20" y="16" width="720" height="44" rx="8"/>
+  <text x="380" y="43" font-size="13" font-weight="600" text-anchor="middle">AI agents and applications</text>
+  <line class="flow" x1="140" y1="60" x2="140" y2="110"/>
+  <text class="muted" x="152" y="90" font-size="12">Read: typed queries, permissions applied</text>
+  <line class="flow" x1="400" y1="60" x2="400" y2="110"/>
+  <text class="muted" x="412" y="90" font-size="12">Write: propose → validate → approve → commit</text>
+  <rect class="box-raised" x="20" y="110" width="480" height="60" rx="8"/>
+  <text x="40" y="136" font-size="13" font-weight="600">Ontology</text>
+  <text class="muted" x="40" y="156" font-size="12">object types · links · actions · rules</text>
+  <line class="edge" x1="260" y1="170" x2="260" y2="186"/>
+  <rect class="box" x="20" y="186" width="480" height="60" rx="8"/>
+  <text x="40" y="212" font-size="13" font-weight="600">Knowledge graph</text>
+  <text class="muted" x="40" y="232" font-size="12">instances, stored or virtual over existing databases</text>
+  <line class="edge" x1="260" y1="246" x2="260" y2="262"/>
+  <rect class="box" x="20" y="262" width="480" height="60" rx="8"/>
+  <text x="40" y="288" font-size="13" font-weight="600">Data sources</text>
+  <text class="muted" x="40" y="308" font-size="12">databases · documents · telemetry · ERP, MES, PLM</text>
+  <text class="kicker" x="530" y="130" font-size="12">ML AT THE EDGES</text>
+  <rect class="outline" x="520" y="142" width="220" height="50" rx="8"/>
+  <text x="536" y="164" font-size="13" font-weight="600">Extraction</text>
+  <text class="muted" x="536" y="182" font-size="12">LLM: text → entities, triples</text>
+  <rect class="outline" x="520" y="202" width="220" height="50" rx="8"/>
+  <text x="536" y="224" font-size="13" font-weight="600">Link prediction</text>
+  <text class="muted" x="536" y="242" font-size="12">scores candidate edges</text>
+  <rect class="outline" x="520" y="262" width="220" height="60" rx="8"/>
+  <text x="536" y="286" font-size="13" font-weight="600">Suggestions</text>
+  <text class="muted" x="536" y="306" font-size="12">promoted after checks or review</text>
+  <line class="dash" x1="520" y1="292" x2="500" y2="230"/>
 </svg>
-<figcaption>The five-layer stack repeating across Databricks, Snowflake, Microsoft, Google, AWS, Neo4j, Palantir, Graphwise and Stardog.</figcaption>
+<figcaption>How the parts fit: the ontology types the graph, agents read and write through it, and ML proposes changes that checks or people promote. Built from sources 41, 42, 20 and 16.</figcaption>
 </figure>
-
-<blockquote><em>📌 Takeaway:</em> the business case for convergence is <strong>semantic duplication</strong>: if every agent carries its own definition of "active customer", the company ends up with ten private copies of itself drifting in silence.</blockquote>
-
-<figure class="diagram">
-<svg viewBox="0 0 760 300" role="img" aria-label="Semantic duplication versus shared substrate">
-  <text class="muted" x="190" y="24" text-anchor="middle" font-size="11" font-weight="700">BEFORE · semantic duplication</text>
-  <text class="muted" x="570" y="24" text-anchor="middle" font-size="11" font-weight="700">AFTER · shared substrate</text>
-
-  <rect class="box" x="40" y="40" width="300" height="46" rx="8"/>
-  <text x="58" y="61" font-size="12" font-weight="600">Agente A</text>
-  <text class="muted" x="58" y="78" font-size="10">private copy of "active customer"</text>
-
-  <rect class="box" x="40" y="96" width="300" height="46" rx="8"/>
-  <text x="58" y="117" font-size="12" font-weight="600">Agente B</text>
-  <text class="muted" x="58" y="134" font-size="10">its own, different definition</text>
-
-  <rect class="box" x="40" y="152" width="300" height="46" rx="8"/>
-  <text x="58" y="173" font-size="12" font-weight="600">Agente C</text>
-  <text class="muted" x="58" y="190" font-size="10">a third version, unsynchronized</text>
-
-  <text class="accent" x="190" y="232" text-anchor="middle" font-size="11">Diverge in silence · no alarm</text>
-
-  <line class="arrow" x1="380" y1="40" x2="380" y2="266"/>
-
-  <rect class="box" x="420" y="40" width="300" height="40" rx="8"/>
-  <text x="570" y="65" text-anchor="middle" font-size="12" font-weight="600">Agente A</text>
-  <rect class="box" x="420" y="92" width="300" height="40" rx="8"/>
-  <text x="570" y="117" text-anchor="middle" font-size="12" font-weight="600">Agente B</text>
-  <rect class="box" x="420" y="144" width="300" height="40" rx="8"/>
-  <text x="570" y="169" text-anchor="middle" font-size="12" font-weight="600">Agente C</text>
-
-  <line class="arrow" x1="470" y1="184" x2="555" y2="210" marker-end="url(#ah2)"/>
-  <line class="arrow" x1="570" y1="184" x2="570" y2="210" marker-end="url(#ah2)"/>
-  <line class="arrow" x1="670" y1="184" x2="585" y2="210" marker-end="url(#ah2)"/>
-
-  <rect class="box-accent" x="420" y="212" width="300" height="54" rx="8"/>
-  <line class="grid" x1="520" y1="220" x2="520" y2="258"/>
-  <line class="grid" x1="620" y1="220" x2="620" y2="258"/>
-  <text class="accent" x="470" y="244" text-anchor="middle" font-size="11" font-weight="600">Ontology</text>
-  <text class="accent" x="570" y="244" text-anchor="middle" font-size="11" font-weight="600">Datos</text>
-  <text class="accent" x="670" y="244" text-anchor="middle" font-size="11" font-weight="600">Memoria</text>
-
-  <defs>
-    <marker id="ah2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="var(--on-surface-variant)"/>
-    </marker>
-  </defs>
-</svg>
-<figcaption>Lighter agents on a shared, governed substrate: the <em>knowledge layer</em> thesis versus semantic duplication.</figcaption>
-</figure>
-
       </div>
     </div>
 
     <div class="section">
       <div class="section-label">Part II</div>
       <div class="special-content">
-
-<h2>Ontologies and knowledge modeling</h2>
-
-<h3>W3C standards: the most active year in a decade</h3>
-
-<p><strong>RDF 1.2</strong> is the first significant evolution of the RDF data model since 2014. It introduces <strong>triple terms</strong> (triples as first-class objects, with new reification) and the native <code>rdf:JSON</code> datatype, bridging RDF with JSON-LD.</p>
-
-<p><strong>SHACL 1.2</strong> is no longer just validation: it incorporates <strong>declarative inference rules</strong> for the first time. The verified primary document is <strong>SPARQL 1.2 RL (SPARQL-RL)</strong>, Working Draft of October 1, 2026: a <strong>Datalog</strong>-style rules language for RDF, with recursion, negation as failure and <strong>stratification</strong> to guarantee deterministic results.</p>
-
-<p><strong>YAML-LD 1.0</strong> published its first Working Draft (2026): conventions for serializing Linked Data in YAML, with media type <code>application/ld+yaml</code>, compatible with JSON-LD 1.1 and RDF 1.2.</p>
-
-<figure class="diagram">
-<svg viewBox="0 0 760 210" role="img" aria-label="2025-2026 standards timeline">
-  <line class="axis" x1="50" y1="120" x2="710" y2="120"/>
-
-  <circle cx="90" cy="120" r="6" fill="var(--primary)"/>
-  <text class="muted" x="90" y="100" text-anchor="middle" font-size="11">Sep 2025</text>
-  <text x="90" y="148" text-anchor="middle" font-size="11" font-weight="600">OSI announced</text>
-
-  <circle cx="210" cy="120" r="6" fill="var(--primary)"/>
-  <text class="muted" x="210" y="100" text-anchor="middle" font-size="11">Nov 2025</text>
-  <text x="210" y="148" text-anchor="middle" font-size="11" font-weight="600">repo Ossie</text>
-
-  <circle cx="330" cy="120" r="6" fill="var(--primary)"/>
-  <text class="muted" x="330" y="100" text-anchor="middle" font-size="11">Ene 2026</text>
-  <text x="330" y="148" text-anchor="middle" font-size="11" font-weight="600">spec v0.1</text>
-
-  <circle cx="450" cy="120" r="6" fill="var(--primary)"/>
-  <text class="muted" x="450" y="100" text-anchor="middle" font-size="11">Feb 2026</text>
-  <text x="450" y="148" text-anchor="middle" font-size="11" font-weight="600">GraphRAG-Bench v3</text>
-
-  <circle cx="570" cy="120" r="6" fill="var(--primary)"/>
-  <text class="muted" x="570" y="100" text-anchor="middle" font-size="11">Jul 2026</text>
-  <text x="570" y="148" text-anchor="middle" font-size="11" font-weight="600">Ossie + MCP</text>
-
-  <circle cx="690" cy="120" r="6" fill="var(--primary)"/>
-  <text class="muted" x="690" y="100" text-anchor="middle" font-size="11">Oct 2026</text>
-  <text x="690" y="148" text-anchor="middle" font-size="11" font-weight="600">SPARQL-RL (WD)</text>
-</svg>
-<figcaption>The milestones that structure the period: portable semantics (Apache Ossie) and agentic transport (MCP) converge in the second half of 2026.</figcaption>
-</figure>
-
-<h3>LLMs and ontologies: from generators to constraints</h3>
-
-<p>Research in the period automates ontology engineering, but the consensus at the field's reference conference (<strong>KGC 2026</strong>) is nuanced: <strong>LLMs fail as naive generators</strong> (tangled hierarchies, inconsistent taxonomies, anti-patterns). The ontology becomes the <strong>harness</strong> — a declarative constraint — within which the LLM works.</p>
-
-<div class="news-item">
-  <div class="num">→</div>
-  <div class="title">Empirical finding</div>
-  <div class="desc">In ontology learning, <strong>model architecture and lineage can matter more than parameter count</strong>. The quality jump concentrates between 9B and 27B; non-taxonomic relation extraction remains hard at every scale.</div>
-  <div class="sources">
-    <a href="https://www.knowledgegraph.tech/">KGC 2026</a>
-    <a href="https://arxiv.org/abs/2608.31118">When Does Bigger Help? (arXiv:2608.31118)</a>
-  </div>
-</div>
-
+<h2>GraphRAG versus vector RAG</h2>
+<p>GraphRAG retrieves facts along a graph instead of a list of similar chunks.<sup class="cite"><a href="#source-1">1</a></sup> The evidence on its value is mixed. A systematic comparison found distinct strengths for RAG and for GraphRAG across tasks.<sup class="cite"><a href="#source-1">1</a></sup> Combining the two gave consistent improvements.<sup class="cite"><a href="#source-1">1</a></sup></p>
+<p>Evaluation is the weak point. GraphRAG methods are tuned to knowledge-graph QA benchmarks with few question patterns.<sup class="cite"><a href="#source-3">3</a></sup> Common evaluations use unrelated questions and biased LLM judges.<sup class="cite"><a href="#source-27">27</a></sup> With those flaws removed, the gains of 3 methods were much more moderate.<sup class="cite"><a href="#source-27">27</a></sup></p>
+<p>The clearest gain is on multi-hop questions. These need facts from two or more passages, and flat top-k retrieval often finds only one.<sup class="cite"><a href="#source-37">37</a></sup> In one public benchmark on HotpotQA, GraphRAG raised supporting-fact recall from 0.81 to 0.98.<sup class="cite"><a href="#source-37">37</a></sup> In climate science, a hybrid of vector search and GraphRAG reported 177% more contextual recall than classical RAG.<sup class="cite"><a href="#source-28">28</a></sup></p>
+<div class="table-wrapper"><table>
+<thead><tr><th>Situation</th><th>What the evidence says</th></tr></thead>
+<tbody>
+<tr><td>Multi-hop questions across passages</td><td>Graph retrieval finds the second fact that flat top-k misses<sup class="cite"><a href="#source-37">37</a></sup></td></tr>
+<tr><td>Concepts spread across many articles</td><td>Hybrid local and global retrieval beats isolated text spans<sup class="cite"><a href="#source-28">28</a></sup></td></tr>
+<tr><td>Relations computable from data (coordinates)</td><td>Explicit graph edges add little<sup class="cite"><a href="#source-23">23</a></sup></td></tr>
+<tr><td>Different question patterns</td><td>Each needs its own traversal; a fixed strategy falls short<sup class="cite"><a href="#source-3">3</a></sup></td></tr>
+<tr><td>Many real-world tasks</td><td>GraphRAG often underperforms vanilla RAG<sup class="cite"><a href="#source-17">17</a></sup></td></tr>
+</tbody></table></div>
       </div>
     </div>
 
     <div class="section">
       <div class="section-label">Part III</div>
       <div class="special-content">
-
-<h2>Graph knowledge and GraphRAG</h2>
-
-<h3>The economics changed</h3>
-
-<p>GraphRAG's main historical barrier was indexing cost. <strong>LazyGraphRAG</strong> (Microsoft Research) defers all LLM usage to query time: indexing cost identical to vector RAG and <strong>0.1%</strong> of full GraphRAG, with <strong>&gt;700×</strong> lower query cost for global queries. In parallel, <strong>LightRAG</strong> (EMNLP 2025 Findings) delivers 70–90% of GraphRAG quality at a fraction of the cost, and <strong>FalkorDB</strong> shipped a production-grade GraphRAG SDK.</p>
-
-<h3>The benchmark verdict</h3>
-
-<p><strong>GraphRAG-Bench</strong> (arXiv:2506.05690, v3 Feb 2026) answers "is GraphRAG actually effective?" with systematic evidence: <strong>basic RAG matches or beats GraphRAG on simple fact retrieval</strong>, while GraphRAG excels at complex reasoning, contextual summarization and creative generation. For multi-hop, approaches like <strong>StepChain GraphRAG</strong> combine question decomposition with BFS traversal over the graph.</p>
-
-<h3>Hybrid is the standard</h3>
-
-<p>The 2026 consensus is that <strong>none is universally better</strong>. The winning architecture combines vector search (recall) + graph traversal (reasoning) + a reranker, fused with RRF. GraphRAG and LightRAG <em>do not replace</em> vector retrieval: they still use embeddings and ANN over nodes and communities, and add traversal.</p>
-
-<figure class="diagram">
-<svg viewBox="0 0 760 232" role="img" aria-label="Which retrieval layer to use by question type">
-  <defs>
-    <marker id="ahB" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="var(--on-surface-variant)"/>
-    </marker>
-  </defs>
-
-  <rect class="box" x="270" y="14" width="220" height="54" rx="8"/>
-  <text x="380" y="38" text-anchor="middle" font-size="13" font-weight="600">What type of question?</text>
-  <text class="muted" x="380" y="56" text-anchor="middle" font-size="11">choose the layer, not the technology</text>
-
-  <line class="arrow" x1="380" y1="68" x2="380" y2="98" marker-end="url(#ahB)"/>
-  <line class="arrow" x1="130" y1="100" x2="630" y2="100"/>
-  <line class="arrow" x1="130" y1="100" x2="130" y2="128" marker-end="url(#ahB)"/>
-  <line class="arrow" x1="380" y1="100" x2="380" y2="128" marker-end="url(#ahB)"/>
-  <line class="arrow" x1="630" y1="100" x2="630" y2="128" marker-end="url(#ahB)"/>
-
-  <rect class="box" x="20" y="130" width="220" height="86" rx="8"/>
-  <text x="36" y="158" font-size="13" font-weight="700">Vector RAG</text>
-  <text class="muted" x="36" y="180" font-size="11">Simple facts · single-hop</text>
-  <text class="muted" x="36" y="200" font-size="10">cheaper and sufficient</text>
-
-  <rect class="box-accent" x="270" y="130" width="220" height="86" rx="8"/>
-  <text class="accent" x="286" y="158" font-size="13" font-weight="700">GraphRAG (grafo)</text>
-  <text class="muted" x="286" y="180" font-size="11">Multi-hop · global · aggregation</text>
-  <text class="muted" x="286" y="200" font-size="10">traverses the relations</text>
-
-  <rect class="box" x="520" y="130" width="220" height="86" rx="8"/>
-  <text x="536" y="158" font-size="13" font-weight="700">Semantic layer</text>
-  <text class="muted" x="536" y="180" font-size="11">Certified business metrics</text>
-  <text class="muted" x="536" y="200" font-size="10">fails explicitly</text>
-</svg>
-<figcaption>The year's decision is not "graph or no graph", but picking the layer by question type.</figcaption>
-</figure>
-
-<blockquote><em>⚠️ Nuance:</em> AWS demonstrated on managed infrastructure that GraphRAG's "global search" may not be optimal for thematic questions, and that methodology can be chosen per query over the same graph.</blockquote>
-
-<h3>Temporal memory and agentic GraphRAG</h3>
-
-<p>A different kind of graph is consolidating for <strong>agent memory</strong>: temporal graphs with timestamps and <code>supersedes</code> relations that prioritize the most current knowledge (Graphiti/Zep, Mem0). And the dominant pattern for agents is <strong>exposing the graph as tools</strong> via MCP with intent routing and <em>failure-aware routing</em>.</p>
-
+<h2>Accuracy on enterprise data</h2>
+<p>Here the evidence for ontologies is stronger. The question is how well an LLM answers business questions over company data.</p>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-value">16% → 72%</div><div class="stat-label">accuracy from Text-to-SQL to an ontology-backed graph</div><div class="stat-note">Allemang and Sequeda, chat-with-the-data benchmark<sup class="cite"><a href="#source-24">24</a></sup></div></div>
+<div class="stat-card"><div class="stat-value">2x</div><div class="stat-label">ontology lift in Vietnam-localized domains over English ones</div><div class="stat-note">1,800 runs, three LLMs<sup class="cite"><a href="#source-5">5</a></sup></div></div>
+<div class="stat-card"><div class="stat-value">4%</div><div class="stat-label">accuracy on arithmetic business questions, against 93% on simple aggregations</div><div class="stat-note">219 questions on real sales data<sup class="cite"><a href="#source-10">10</a></sup></div></div>
+</div>
+<p>Plain Text-to-SQL breaks on hard questions. On real sales data at LG Electronics, one model scored 93% on simple aggregations.<sup class="cite"><a href="#source-10">10</a></sup> It fell to 4% on arithmetic reasoning and 31% on grouped rankings.<sup class="cite"><a href="#source-10">10</a></sup> The common errors were wrong arithmetic logic, incomplete filters and wrong grouping.<sup class="cite"><a href="#source-10">10</a></sup></p>
+<p>Part of the problem is the schema. Real schemas can have hundreds of columns, and only a few matter for one question.<sup class="cite"><a href="#source-7">7</a></sup> Focusing generation on the relevant part of the schema improves accuracy.<sup class="cite"><a href="#source-7">7</a></sup></p>
+<p>A semantic model helps more. Question answering over a knowledge graph of the SQL database is more accurate than answering on SQL directly.<sup class="cite"><a href="#source-24">24</a></sup> In that work, 8% of answers were an honest "I don't know".<sup class="cite"><a href="#source-24">24</a></sup> Other systems report high scores on their own benchmarks: 94.7% on supply-chain root cause tasks<sup class="cite"><a href="#source-13">13</a></sup> and 89.47% for a 4B-parameter ontology model.<sup class="cite"><a href="#source-25">25</a></sup> Typed ontology worlds add a smaller but tested gain: +4.0 points on BIRD, with significance reported.<sup class="cite"><a href="#source-8">8</a></sup></p>
+<p>The ontology study gives the most useful rule. The value of grounding is inversely proportional to how well the model's training data covers the domain.<sup class="cite"><a href="#source-5">5</a></sup> Your internal terms are exactly what the model has not seen.</p>
       </div>
     </div>
 
     <div class="section">
       <div class="section-label">Part IV</div>
       <div class="special-content">
-
-<h2>Semantic layer</h2>
-
-<h3>From BI accessory to agent context</h3>
-
-<p>In 12 months the discourse moved from "semantic layer for dashboards" to "semantic layer as the agents' context layer". Gartner formalized it as a business decision: without governed semantics, agents hallucinate metrics. All three hyper-scalers and the independent vendors shipped governed semantics capabilities + MCP interfaces.</p>
-
-<h3>Apache Ossie: the interoperability standard</h3>
-
-<p>Open Semantic Interchange (Snowflake, dbt, Salesforce, Google and 17 partners) became <strong>Apache Ossie (Incubating)</strong> on July 10, 2026, to avoid lock-in and provide neutral governance. Verified data: the repository opened in November 2025; the coalition grew from 17 to <strong>over 50 organizations</strong>; there are three working groups (<strong>Metric Language, Catalog and Ontology</strong>); the YAML/JSON specification for metrics, dimensions, relations and now <strong>ontology</strong> did not change with the renaming.</p>
-
-<h3>Warehouse-native</h3>
-
-<div class="table-wrapper"><table>
-  <tr><th>Platform</th><th>Development</th></tr>
-  <tr><td><strong>Snowflake</strong></td><td>Semantic Views GA + Semantic View Autopilot (Feb 2026): automates creation and maintenance</td></tr>
-  <tr><td><strong>Databricks</strong></td><td>Unity Catalog Business Semantics GA (Apr 2026): declarative Metric Views with materialization and query rewriting</td></tr>
-  <tr><td><strong>Google Looker</strong></td><td>The governed semantic layer feeds Gemini Enterprise via A2A, with multi-tenant security</td></tr>
-</table></div>
-
-<h3>dbt and the quantitative evidence</h3>
-
-<p>dbt's benchmark (April 2026, ACME Insurance dataset, 11 questions × 20 runs) is the most citable evidence of the year, and it was <strong>verified directly against the primary source</strong>:</p>
-
-<div class="table-wrapper"><table>
-  <tr><th>Model</th><th>Text-to-SQL</th><th>Semantic Layer</th></tr>
-  <tr><td>Claude Sonnet 4.6</td><td>90.0%</td><td><strong>98.2%</strong></td></tr>
-  <tr><td>GPT-5.3 Codex</td><td>84.1%</td><td><strong>100.0%</strong></td></tr>
-</table></div>
-
-<p>General text-to-SQL improved from 32.7% (2023) to 64.5% (2026). With just <strong>3 additional dbt models</strong> all 11 questions were covered. The operational takeaway: semantic layer for KPIs/audit/board reporting (fails explicitly), text-to-SQL for ad-hoc exploration.</p>
-
-<figure class="diagram">
-<svg viewBox="0 0 760 316" role="img" aria-label="Text-to-SQL versus semantic layer accuracy">
-  <rect x="250" y="18" width="12" height="12" rx="2" class="bar-base"/>
-  <text x="268" y="28" font-size="11">text-to-SQL</text>
-  <rect x="380" y="18" width="12" height="12" rx="2" class="bar-accent"/>
-  <text x="398" y="28" font-size="11">Semantic Layer</text>
-
-  <line class="grid" x1="80" y1="70" x2="720" y2="70"/>
-  <line class="grid" x1="80" y1="170" x2="720" y2="170"/>
-  <line class="axis" x1="80" y1="270" x2="720" y2="270"/>
-  <text class="muted" x="70" y="74" text-anchor="end" font-size="10">100</text>
-  <text class="muted" x="70" y="174" text-anchor="end" font-size="10">50</text>
-  <text class="muted" x="70" y="274" text-anchor="end" font-size="10">0</text>
-
-  <rect class="bar-base" x="156" y="90" width="58" height="180" rx="4"/>
-  <rect class="bar-accent" x="222" y="73.6" width="58" height="196.4" rx="4"/>
-  <text x="185" y="84" text-anchor="middle" font-size="11" font-weight="600">90.0%</text>
-  <text class="accent" x="251" y="67" text-anchor="middle" font-size="11" font-weight="700">98.2%</text>
-  <text class="muted" x="220" y="292" text-anchor="middle" font-size="12">Claude Sonnet 4.6</text>
-
-  <rect class="bar-base" x="476" y="101.8" width="58" height="168.2" rx="4"/>
-  <rect class="bar-accent" x="542" y="70" width="58" height="200" rx="4"/>
-  <text x="505" y="96" text-anchor="middle" font-size="11" font-weight="600">84.1%</text>
-  <text class="accent" x="571" y="63" text-anchor="middle" font-size="11" font-weight="700">100.0%</text>
-  <text class="muted" x="540" y="292" text-anchor="middle" font-size="12">GPT-5.3 Codex</text>
-</svg>
-<figcaption>dbt benchmark (April 2026, 11 questions × 20 runs). The semantic layer turns a silent failure into an explicit error.</figcaption>
-</figure>
-
-<h3>Semantic layer + ontology convergence</h3>
-
-<p>Ossie's <strong>Ontology</strong> working group, with <strong>RelationalAI</strong>, extended the specification to support <strong>ontological semantics</strong> beyond the dimensional model: entities, relations and constraints that enable multi-hop reasoning. It's the transition from "dimensional model for dashboards" to "executable ontology for agents".</p>
-
+<h2>Operational ontologies: how agents act</h2>
+<p>An operational ontology adds actions to the types. Palantir's model is one central ontology that joins data, logic, actions and security.<sup class="cite"><a href="#source-41">41</a></sup> Its agents write back by design: an action is a transactional edit of the ontology.<sup class="cite"><a href="#source-41">41</a></sup> Microsoft splits the work. Its data agents are read-only, and separate operations agents take actions.<sup class="cite"><a href="#source-41">41</a></sup></p>
+<p>One documentation synthesis describes the write path step by step. The agent proposes an action. The system validates the action logic and the security scopes. A person can confirm it. The commit is one transaction, visible at once to every reader, and change data capture sends it back to the source systems.<sup class="cite"><a href="#source-41">41</a></sup></p>
+<p>Open-source reimplementations show the parts. They mirror Foundry's object types, link types, action types and functions.<sup class="cite"><a href="#source-40">40</a></sup> One adds OWL and SHACL export, because Foundry's ontology is proprietary and cannot export to W3C standards.<sup class="cite"><a href="#source-40">40</a></sup> Another runs every action through resolve, validate, execute and record.<sup class="cite"><a href="#source-34">34</a></sup> It keeps an append-only action log and an approval gate that returns approved, denied or pending.<sup class="cite"><a href="#source-34">34</a></sup> A supply-chain example gives the AI agent its own restricted role.<sup class="cite"><a href="#source-35">35</a></sup> Its MCP layer exposes approved capabilities but no autonomous critical writes.<sup class="cite"><a href="#source-35">35</a></sup></p>
+<p>Research adds a simulation step. In VirtualSet, actions run first in a simulated world, and changes need external approval before they become real.<sup class="cite"><a href="#source-8">8</a></sup> Agents reach these layers through tools: one manufacturing graph exposes 287 MCP tools as a SPARQL semantic layer.<sup class="cite"><a href="#source-9">9</a></sup></p>
+<p>Two cautions apply. Vendor claims in this area are self-descriptions, not independent benchmarks.<sup class="cite"><a href="#source-41">41</a></sup> The reimplementations are simulations on synthetic data and do not run on Foundry.<sup class="cite"><a href="#source-38">38</a></sup></p>
       </div>
     </div>
 
     <div class="section">
       <div class="section-label">Part V</div>
       <div class="special-content">
-
-<h2>Context layer and context engineering</h2>
-
-<h3>A formal discipline</h3>
-
-<p>Context engineering consolidated as a first-class discipline: curating the smallest set of high-signal tokens, treating context as a finite resource. LangChain contributed the operational taxonomy <strong>write / select / compress / isolate</strong>. The foundational empirical evidence is <strong>context rot</strong> (Chroma, Jul 2025): 18 frontier models degrade non-uniformly as input grows, even on trivial tasks.</p>
-
-<h3>Long-horizon techniques</h3>
-
-<p>Anthropic formalized three techniques for tasks that exceed the window: <strong>compaction</strong> (summarize and restart), <strong>structured note-taking</strong> (external memory, <code>NOTES.md</code>) and <strong>sub-agents</strong> with clean context. The API exposes primitives: <em>context editing</em>, <em>memory tool</em> (<code>/memories</code>) and <em>server-side compaction</em>. Product memory evolved toward automatic temporal maintenance — the paradigmatic case is ChatGPT's <strong>"Dreaming"</strong>.</p>
-
-<h3>Protocols: convergence under the Agentic AI Foundation</h3>
-
-<div class="news-item">
-  <div class="num">→</div>
-  <div class="title">MCP 2026-07-28 (verified against primary source)</div>
-  <div class="desc">The largest revision to date: <strong>stateless protocol core</strong> (<code>initialize</code>/<code>initialized</code> and <code>Mcp-Session-Id</code> removed), <strong>Multi Round-Trip Requests (MRTR)</strong>, header-based routing (<code>Mcp-Method</code>, <code>Mcp-Name</code>), cacheable lists, an extensions framework (Tasks, MCP Apps, Enterprise Managed Authorization), auth hardening and 12-month deprecation windows.</div>
-  <div class="sources">
-    <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">MCP 2026-07-28 Specification</a>
-  </div>
-</div>
-
-<p><strong>A2A</strong>: v1.0, &gt;150 organizations, complementary to MCP (MCP = tool/data access; A2A = agent-to-agent coordination). <strong>AGENTS.md</strong>: an open format adopted by &gt;60,000 projects, donated to the Linux Foundation. The <strong>AAIF</strong> (Agentic AI Foundation), co-founded by OpenAI, Anthropic and Block, provides neutral governance for MCP and A2A.</p>
-
-<h3>The triple layer</h3>
-
-<p>The distinction the market used to conflate is now articulated: the <strong>knowledge graph</strong> stores the world model ("how are things connected?"), the <strong>semantic layer</strong> defines what things mean ("what does this data mean?") and the <strong>context layer</strong> retrieves the right fragment at inference time ("what does the model need to know now?").</p>
-
-<figure class="diagram">
-<svg viewBox="0 0 760 268" role="img" aria-label="Knowledge graph, semantic layer and context layer">
-  <defs>
-    <marker id="ahD" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="var(--on-surface-variant)"/>
-    </marker>
-  </defs>
-
-  <rect class="box" x="20" y="30" width="220" height="140" rx="8"/>
-  <text x="36" y="58" font-size="13" font-weight="700">Knowledge graph</text>
-  <text class="muted" x="36" y="90" font-size="12">How are things</text>
-  <text class="muted" x="36" y="108" font-size="12">connected?</text>
-  <text class="accent" x="36" y="148" font-size="10">entities · relations · rules</text>
-
-  <rect class="box" x="270" y="30" width="220" height="140" rx="8"/>
-  <text x="286" y="58" font-size="13" font-weight="700">Semantic layer</text>
-  <text class="muted" x="286" y="90" font-size="12">What does this</text>
-  <text class="muted" x="286" y="108" font-size="12">data mean?</text>
-  <text class="accent" x="286" y="148" font-size="10">metrics · dimensions</text>
-
-  <rect class="box" x="520" y="30" width="220" height="140" rx="8"/>
-  <text x="536" y="58" font-size="13" font-weight="700">Context layer</text>
-  <text class="muted" x="536" y="90" font-size="12">What does the model</text>
-  <text class="muted" x="536" y="108" font-size="12">need to know now?</text>
-  <text class="accent" x="536" y="148" font-size="10">just-in-time retrieval</text>
-
-  <line class="arrow" x1="130" y1="170" x2="130" y2="198" marker-end="url(#ahD)"/>
-  <line class="arrow" x1="380" y1="170" x2="380" y2="198" marker-end="url(#ahD)"/>
-  <line class="arrow" x1="630" y1="170" x2="630" y2="198" marker-end="url(#ahD)"/>
-
-  <rect class="box-accent" x="20" y="200" width="720" height="48" rx="8"/>
-  <text x="380" y="230" text-anchor="middle" font-size="13" font-weight="600">Context the agent receives on every turn</text>
-</svg>
-<figcaption>Three different questions, three different layers: the graph stores the model, the semantic layer the meaning, the context layer the right fragment at the right time.</figcaption>
-</figure>
-
+<h2>Where machine learning goes</h2>
+<p>Machine learning belongs at the edges of the layer: it builds, extends and scores. The canonical model stays under deterministic checks and human review.</p>
+<h3>Building the graph</h3>
+<p>LLMs moved knowledge graph construction from rules and statistics to generative methods.<sup class="cite"><a href="#source-19">19</a></sup> The classic pipeline has three steps: ontology engineering, knowledge extraction and knowledge fusion.<sup class="cite"><a href="#source-19">19</a></sup> On 80 annotated industrial reports, schema-guided prompting improved extraction quality significantly.<sup class="cite"><a href="#source-15">15</a></sup> The models were open and local, from 7B to 32B parameters.<sup class="cite"><a href="#source-15">15</a></sup> LLMs can also suggest OWL models at least as good as those of novice modellers.<sup class="cite"><a href="#source-21">21</a></sup></p>
+<h3>Can the ontology update itself?</h3>
+<p>The instances can, under checks. One pipeline extracts entities and relations, validates them against SHACL and OWL constraints, and updates the graph continuously.<sup class="cite"><a href="#source-20">20</a></sup> Another resolves mentions to canonical entities and builds the graph incrementally with deduplication.<sup class="cite"><a href="#source-30">30</a></sup> The schema is different. Fine-tuned models can build the taxonomic backbone of an ontology,<sup class="cite"><a href="#source-14">14</a></sup> but the authors of one pipeline recommend that people evaluate generated graphs.<sup class="cite"><a href="#source-16">16</a></sup></p>
+<h3>Predicting links</h3>
+<p>Knowledge graph reasoning is often framed as link prediction, tested on datasets such as FB15k-237.<sup class="cite"><a href="#source-31">31</a></sup> Graph neural networks and representation learning widened the use of knowledge graphs beyond search and recommendation.<sup class="cite"><a href="#source-42">42</a></sup> A predicted link is a suggestion, not a fact. The pattern in the sources is consistent: a model proposes, and deterministic code or an expert decides.<sup class="cite"><a href="#source-6">6</a>,<a href="#source-16">16</a></sup></p>
       </div>
     </div>
 
     <div class="section">
       <div class="section-label">Part VI</div>
       <div class="special-content">
-
-<h2>Convergence and enterprise adoption</h2>
-
-<h3>The "knowledge layer" as a concept</h3>
-
-<p>Neo4j formalized the <strong>knowledge layer</strong> as a shared, governed substrate with three components — <strong>ontology</strong> (living map), <strong>enterprise data</strong> (grounding) and <strong>memory</strong> (decision traces) — with the OBSL (ontology-based semantic layer) as the entry point. The thesis: "lighter agents on a smarter shared substrate".</p>
-
-<h3>"Context graph", the term of the year</h3>
-
-<p>Foundation Capital described it as the accumulated record of <strong>decision traces</strong> (exceptions, overrides, precedents, cross-system approvals) that today lives in Slack and people's heads, not in warehouses (which sit on the <em>read path</em>, not the <em>write path</em> of the commit). Neo4j defines it as three-layer agent memory: long-term (= knowledge graph), short-term (conversation/state) and reasoning (decision traces, tool calls, evidence).</p>
-
-<h3>The platforms</h3>
-
+<h2>Graphs in root cause analysis</h2>
+<p>AIOps is where graph ML already pays. Root cause analysis must correlate failures across telemetry inside service dependency graphs.<sup class="cite"><a href="#source-18">18</a></sup> Supervised graph neural networks are the state of the art for finding the faulty component and the fault type.<sup class="cite"><a href="#source-4">4</a></sup></p>
 <div class="table-wrapper"><table>
-  <tr><th>Platform</th><th>Bet</th></tr>
-  <tr><td><strong>Microsoft IQ</strong></td><td>Fabric IQ (data + BI + ontology in preview, imports RDF/OWL), Foundry IQ (managed knowledge layer), Work IQ, Web IQ</td></tr>
-  <tr><td><strong>Google Knowledge Catalog</strong></td><td>Dataplex evolving toward a "dynamic context graph"; Gemini enrichment and access-control-aware search</td></tr>
-  <tr><td><strong>AWS</strong></td><td>Managed GraphRAG on Bedrock Knowledge Bases and Neptune Analytics</td></tr>
-  <tr><td><strong>Palantir</strong></td><td>The most mature ontology-first case: the Ontology as a digital operating system, AIP connecting LLMs and agents</td></tr>
-</table></div>
+<thead><tr><th>System</th><th>How it uses the graph</th><th>Reported result</th></tr></thead>
+<tbody>
+<tr><td>KRCA</td><td>Causal graph from anomalous metrics, then agents verify causality<sup class="cite"><a href="#source-11">11</a></sup></td><td>AC@1 of 0.88 and 0.79; 77.3% less diagnosis time in production<sup class="cite"><a href="#source-11">11</a></sup></td></tr>
+<tr><td>GALA+</td><td>Service dependencies bound the agent's exploration<sup class="cite"><a href="#source-18">18</a></sup></td><td>More than 25 points AC@1 over the best LLM baseline<sup class="cite"><a href="#source-18">18</a></sup></td></tr>
+<tr><td>CHASE</td><td>Message passing over a multimodal invocation graph<sup class="cite"><a href="#source-2">2</a></sup></td><td>Up to 36.2% average gain on A@1<sup class="cite"><a href="#source-2">2</a></sup></td></tr>
+<tr><td>Cascaded GNN</td><td>Splits large service graphs into communities<sup class="cite"><a href="#source-4">4</a></sup></td><td>Accuracy like centralized GNNs, near-constant latency as graphs grow<sup class="cite"><a href="#source-4">4</a></sup></td></tr>
+</tbody></table></div>
+<h3>Is correlation on a full graph deterministic?</h3>
+<p>No, and the sources show why. Topology bounds the search, but it does not choose the cause. A causal graph learned from logs stays fixed and cannot learn from expert diagnoses.<sup class="cite"><a href="#source-6">6</a></sup> EvoCause lets an LLM propose graph edits while code checks them.<sup class="cite"><a href="#source-6">6</a></sup> At test time, the refined graph alone gives transparent predictions without an LLM call.<sup class="cite"><a href="#source-6">6</a></sup> Names carry meaning too: anonymous alarm identifiers lowered Node F1 by 6.12 points.<sup class="cite"><a href="#source-6">6</a></sup></p>
+<p>The best designs keep a deterministic check on the verdict. In one Kubernetes agent, graph and tool operations collect evidence, bound the search and check proposed verdicts.<sup class="cite"><a href="#source-12">12</a></sup> It raised root-cause F1 from 0.6087 to 0.9130 on 23 scenarios.<sup class="cite"><a href="#source-12">12</a></sup> Without scenario hints it kept 0.6958, and its authors call the gain benchmark-coupled.<sup class="cite"><a href="#source-12">12</a></sup> A wide evaluation of microservice methods found that no single method is best in all situations.<sup class="cite"><a href="#source-22">22</a></sup></p>
+      </div>
+    </div>
 
-<h3>Why projects fail</h3>
+    <div class="section">
+      <div class="section-label">What I would do</div>
+      <div class="special-content">
+<ol>
+<li><strong>Model the ontology before you buy a graph database.</strong> Start with the object types and actions your agents need. Serve them as a virtual graph over the databases you already run.</li>
+<li><strong>Put the ontology in the write path.</strong> Every agent action is a typed action: validated, logged in append-only form, and behind an approval gate for anything critical.</li>
+<li><strong>Ground first where the model knows least.</strong> Internal terms, local markets and your own metrics give the biggest lift. Generic knowledge gives the smallest.</li>
+<li><strong>Use GraphRAG for multi-hop questions only, and measure it.</strong> Test it against plain vector RAG on your own questions before you adopt it.</li>
+<li><strong>Let ML propose, never commit.</strong> Extraction and link prediction write suggestions. Deterministic checks or a person promote them into the graph.</li>
+<li><strong>In operations, use the topology to bound the search.</strong> Keep a deterministic check on every verdict, and track diagnosis time, not only accuracy.</li>
+</ol>
+<p><em>— Luis González</em></p>
+      </div>
+    </div>
 
-<p>The 2026 diagnosis is that failure is <strong>organizational and maintenance-related</strong>, not technological:</p>
-
+    <div class="section">
+      <div class="section-label">Method and limits</div>
+      <div class="special-content">
+<p>This report replaces two earlier versions. "Ontologies, Graph Knowledge, Semantic Layer &amp; Context Layer" (2 October 2026) listed 53 sources but cited none in the text. "Ontologies, Graph ML &amp; AIOps" (1 October 2026) had no sources; its address now redirects here. The merged report was rebuilt on 5 October 2026 with the reports research pipeline. The pipeline found 227 search results across arXiv, Hacker News, GitHub, Wikipedia and Semantic Scholar. It read 46 sources in full, and 44 gave usable evidence. An open model (NaN: deepseek-v4-flash) read each source on its own. It extracted 298 claims, each with a verbatim quote. 7 claims whose quote did not appear in the source were discarded. Claude wrote the synthesis from that evidence and checked every cited figure against its source. The conclusions in "What I would do" are mine.</p>
 <ul>
-  <li><strong>Ontology drift</strong>: the ontology silently drifts away from reality and results degrade invisibly.</li>
-  <li><strong>"Boil the ocean"</strong>: ontologies taking 6+ months with zero queries in production (one biotech spent 2 years building with zero active users).</li>
-  <li><strong>Skills gap</strong>: ~67% of abandoned enterprise KG projects cited lack of internal graph expertise; &lt;15% make it from pilot to scale.</li>
-  <li><strong>Underestimating maintenance</strong>: reconciling entities ("Microsoft Corp" vs "Microsoft"), re-extracting and updating communities is the real cost, not the framework.</li>
+<li><strong>No general web search.</strong> The run had no web-search key. Official documentation from Palantir, Microsoft and semantic-layer vendors is missing. Palantir's design is described through one documentation synthesis and open-source reimplementations.</li>
+<li><strong>Author-built benchmarks.</strong> Several results come from benchmarks the authors built themselves. One paper calls its own result verification, not independent validation.</li>
+<li><strong>Preprints.</strong> Most papers are arXiv preprints, not peer-reviewed. Their figures are as reported and were not reproduced.</li>
 </ul>
-
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-label">In Numbers</div>
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="label">dbt Semantic Layer vs text-to-SQL (Sonnet 4.6)</div>
-          <div class="value">98.2% vs 90.0%</div>
-        </div>
-        <div class="stat-card">
-          <div class="label">Databricks Genie Ontology (first attempt)</div>
-          <div class="value">84.5%</div>
-        </div>
-        <div class="stat-card">
-          <div class="label">Snowflake Cortex (ontology + GraphRAG)</div>
-          <div class="value">50% → 78.2%</div>
-        </div>
-        <div class="stat-card">
-          <div class="label">LazyGraphRAG · indexing cost</div>
-          <div class="value">0.1%</div>
-        </div>
-        <div class="stat-card">
-          <div class="label">AI adopters with KGs in production (2025)</div>
-          <div class="value">~27%</div>
-        </div>
-        <div class="stat-card">
-          <div class="label">KG projects abandoned for lack of expertise</div>
-          <div class="value">~67%</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-label">Conclusions</div>
-      <div class="special-content">
-
-<p><strong>1. Semantics became infrastructure, not a project.</strong> Anyone building serious agents in 2026 doesn't choose between semantic layer, graph and context: they combine them into one governed layer.</p>
-
-<p><strong>2. The architectural "winner" is hybrid and question-type-dependent.</strong> Vector RAG for simple facts; graph for multi-hop and global queries; semantic layer for certified metrics; context graph for precedent and memory.</p>
-
-<p><strong>3. Standards are finally converging</strong> on two fronts: portable semantics (Apache Ossie) and neutral agentic transport (MCP/A2A under the Linux Foundation).</p>
-
-<p><strong>4. LLM automation cheapened construction, not governance.</strong> The bottleneck moved from "how to build it" to "how to maintain it and who owns the meaning".</p>
-
-<p><strong>5. For a team starting today:</strong> begin with the semantic layer (Forrester), adopt GraphRAG incrementally as multi-hop needs arise, and plan ontology governance and maintenance explicitly from day one.</p>
-
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="section-label">Watch</div>
-
-      <div class="follow-item">
-        <span class="bullet">▸</span>
-        <span>Apache Ossie: consolidation of the ontology specification and the semantic query spec</span>
-      </div>
-      <div class="follow-item">
-        <span class="bullet">▸</span>
-        <span>The semantic gap: whether KG adoption stops being flat in 2026–2027</span>
-      </div>
-      <div class="follow-item">
-        <span class="bullet">▸</span>
-        <span>Agentic GraphRAG: intent routing and failure-aware routing as the dominant pattern</span>
-      </div>
-      <div class="follow-item">
-        <span class="bullet">▸</span>
-        <span>Context graphs: from buzzword to governed decision-trace infrastructure</span>
-      </div>
-      <div class="follow-item">
-        <span class="bullet">▸</span>
-        <span>Independent evidence: most numbers are still internal vendor benchmarks</span>
-      </div>
-
-    </div>
-
-    <div class="section">
-      <div class="section-label">Uncertainty &amp; Limitations</div>
-      <div class="special-content">
-
-<p><strong>Source verification:</strong> of 198 cited URLs, 169 returned 200, 28 returned 403 (exist but block bots) and 1 returned 404 (fixed). Critical claims were validated against primary sources (dbt, Apache Ossie, MCP, Databricks, LazyGraphRAG, W3C SPARQL-RL, Neo4j).</p>
-
-<p><strong>2026 preprints without individual verification:</strong> several works with 2026 arXiv identifiers were included from the subagents and were not checked one by one.</p>
-
-<p><strong>Internal vendor benchmarks:</strong> Databricks, Snowflake and dbt figures come from their own benchmarks with partially published methodology.</p>
-
-<p><strong>Paywalled analysts:</strong> Gartner and Forrester are cited from press releases or summary blogs; the full reports are not publicly verifiable.</p>
-
-<p><strong>Out-of-window data point:</strong> LazyGraphRAG dates to November 2024; it is cited as a foundational antecedent, not as an advance of the period.</p>
-
       </div>
     </div>
 
@@ -572,61 +237,45 @@
       <div class="section-label">Sources</div>
       <div class="special-content">
 <ol>
-<li id="source-1">W3C — What's New in RDF 1.2: <a href="https://www.w3.org/TR/rdf12-new/">https://www.w3.org/TR/rdf12-new/</a></li>
-<li id="source-2">W3C — RDF 1.2 Concepts: <a href="https://www.w3.org/TR/rdf12-concepts/">https://www.w3.org/TR/rdf12-concepts/</a></li>
-<li id="source-3">W3C — SPARQL 1.2 RL (SPARQL-RL): <a href="https://www.w3.org/TR/sparql12-rl/">https://www.w3.org/TR/sparql12-rl/</a></li>
-<li id="source-4">W3C — SHACL 1.2 Core: <a href="https://www.w3.org/TR/shacl12-core/">https://www.w3.org/TR/shacl12-core/</a></li>
-<li id="source-5">W3C — YAML-LD 1.0: <a href="https://www.w3.org/TR/yaml-ld-10/">https://www.w3.org/TR/yaml-ld-10/</a></li>
-<li id="source-6">KGC 2026: <a href="https://www.knowledgegraph.tech/">https://www.knowledgegraph.tech/</a></li>
-<li id="source-7">Microsoft Research — LazyGraphRAG: <a href="https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost">microsoft.com/…/lazygraphrag</a></li>
-<li id="source-8">Microsoft Research — Project GraphRAG: <a href="https://www.microsoft.com/en-us/research/project/graphrag">microsoft.com/…/graphrag</a></li>
-<li id="source-9">LightRAG (EMNLP 2025 Findings): <a href="https://arxiv.org/abs/2410.05779">arXiv:2410.05779</a></li>
-<li id="source-10">FalkorDB — GraphRAG SDK 1.0: <a href="https://www.falkordb.com/blog/graphrag-sdk-knowledge-graph">falkordb.com/…/graphrag-sdk</a></li>
-<li id="source-11">AWS — Unified Knowledge Graph RAG on AWS: <a href="https://aws.amazon.com/blogs/opensource/unified-knowledge-graph-rag-on-aws-graphrag-and-lightrag-on-one-stack">aws.amazon.com/…/unified-kg-rag</a></li>
-<li id="source-12">GraphRAG-Bench (arXiv:2506.05690): <a href="https://arxiv.org/abs/2506.05690">arXiv:2506.05690</a></li>
-<li id="source-13">Neo4j — What is GraphRAG: <a href="https://neo4j.com/blog/genai/what-is-graphrag">neo4j.com/…/what-is-graphrag</a></li>
-<li id="source-14">GraphRAG Pattern Catalog: <a href="https://graphrag.com">graphrag.com</a></li>
-<li id="source-15">Neo4j — The knowledge layer for enterprise AI: <a href="https://neo4j.com/blog/agentic-ai/enterprise-knowledge-layer/">neo4j.com/…/enterprise-knowledge-layer</a></li>
-<li id="source-16">StepChain GraphRAG (arXiv:2510.02827): <a href="https://arxiv.org/html/2510.02827v1">arXiv:2510.02827</a></li>
-<li id="source-17">Neo4j — Graphiti, knowledge graph memory: <a href="https://neo4j.com/blog/developer/graphiti-knowledge-graph-memory/">neo4j.com/…/graphiti</a></li>
-<li id="source-18">Agentic GraphRAG (arXiv:2605.18770): <a href="https://arxiv.org/html/2605.18770v1">arXiv:2605.18770</a></li>
-<li id="source-19">dbt Labs — Semantic Layer vs. Text-to-SQL: 2026 Benchmark: <a href="https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026">docs.getdbt.com/…/semantic-layer-vs-text-to-sql-2026</a></li>
-<li id="source-20">Apache Ossie — Enters Apache Incubator: <a href="https://ossie.apache.org/updates/ossie-enters-apache-incubator/">ossie.apache.org/…/ossie-enters-apache-incubator</a></li>
-<li id="source-21">Apache Ossie — Repository: <a href="https://github.com/apache/ossie">github.com/apache/ossie</a></li>
-<li id="source-22">Snowflake — Overview of semantic views: <a href="https://docs.snowflake.com/en/user-guide/views-semantic/overview">docs.snowflake.com/…/views-semantic</a></li>
-<li id="source-23">Snowflake Engineering — Ontology-grounded Cortex Agents: <a href="https://www.snowflake.com/en/blog/engineering/ontology-grounded-cortex-agents/">snowflake.com/…/ontology-grounded-cortex-agents</a></li>
-<li id="source-24">Databricks — Genie One, Genie Agents, and Genie Ontology: <a href="https://www.databricks.com/blog/introducing-genie-one-genie-ontology-and-genie-agents">databricks.com/…/genie-ontology</a></li>
-<li id="source-25">Databricks — Unity Catalog Business Semantics (GA): <a href="https://www.databricks.com/blog/redefining-semantics-data-layer-future-bi-and-ai">databricks.com/…/redefining-semantics</a></li>
-<li id="source-26">Google Cloud — Introducing the Google Cloud Knowledge Catalog: <a href="https://cloud.google.com/blog/products/data-analytics/introducing-the-google-cloud-knowledge-catalog">cloud.google.com/…/knowledge-catalog</a></li>
-<li id="source-27">Google Cloud — Looker's semantic layer governs Gemini Enterprise: <a href="https://cloud.google.com/blog/products/business-intelligence/integrating-looker-and-gemini-enterprise">cloud.google.com/…/looker-gemini-enterprise</a></li>
-<li id="source-28">Cube — Semantic Layer for AI Agents: <a href="https://cube.dev/articles/semantic-layer-for-ai-agents-2026">cube.dev/…/semantic-layer-for-ai-agents-2026</a></li>
-<li id="source-29">RelationalAI — Ontological Semantics to OSI: <a href="https://www.relational.ai/post/bringing-ontological-semantics-to-open-semantic-interchange-osi">relational.ai/…/ontological-semantics-osi</a></li>
-<li id="source-30">Gartner — Lack of Semantics Causes Inaccurate AI Agents: <a href="https://www.gartner.com/en/newsroom/press-releases/2026-05-11-gartner-says-lack-of-semantics-causes-inaccurate-artificial-intelligence-agents-and-wasted-spending">gartner.com/…/lack-of-semantics</a></li>
-<li id="source-31">Forrester — Build Meaning Before Machines: <a href="https://www.forrester.com/blogs/build-meaning-before-machines-why-semantics-ontologies-and-knowledge-graphs-matter-for-agentic-ai/">forrester.com/…/build-meaning-before-machines</a></li>
-<li id="source-32">Anthropic — Effective context engineering for AI agents: <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">anthropic.com/…/effective-context-engineering</a></li>
-<li id="source-33">LangChain — Context Engineering: <a href="https://www.langchain.com/blog/context-engineering-for-agents">langchain.com/…/context-engineering-for-agents</a></li>
-<li id="source-34">Chroma — Context Rot: <a href="https://www.trychroma.com/research/context-rot">trychroma.com/research/context-rot</a></li>
-<li id="source-35">MCP Blog — The 2026-07-28 Specification: <a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/">blog.modelcontextprotocol.io/posts/2026-07-28</a></li>
-<li id="source-36">Linux Foundation — A2A Protocol Surpasses 150 Organizations: <a href="https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year">linuxfoundation.org/…/a2a-150-organizations</a></li>
-<li id="source-37">AGENTS.md: <a href="https://agents.md/">agents.md</a></li>
-<li id="source-38">OpenAI — Agentic AI Foundation: <a href="https://openai.com/index/agentic-ai-foundation/">openai.com/index/agentic-ai-foundation</a></li>
-<li id="source-39">Anthropic — Memory tool: <a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool">platform.claude.com/…/memory-tool</a></li>
-<li id="source-40">OpenAI — Dreaming: Better memory for ChatGPT: <a href="https://openai.com/index/chatgpt-memory-dreaming/">openai.com/index/chatgpt-memory-dreaming</a></li>
-<li id="source-41">Microsoft Learn — What is Foundry IQ?: <a href="https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/what-is-foundry-iq">learn.microsoft.com/…/foundry-iq</a></li>
-<li id="source-42">Microsoft Learn — What is Fabric IQ?: <a href="https://learn.microsoft.com/en-us/fabric/iq/overview">learn.microsoft.com/fabric/iq/overview</a></li>
-<li id="source-43">Foundation Capital — Context graphs: <a href="https://foundationcapital.com/ideas/context-graphs-ais-trillion-dollar-opportunity">foundationcapital.com/…/context-graphs</a></li>
-<li id="source-44">AWS — Build GraphRAG with Bedrock Knowledge Bases: <a href="https://aws.amazon.com/blogs/machine-learning/build-graphrag-applications-using-amazon-bedrock-knowledge-bases/">aws.amazon.com/…/graphrag-bedrock</a></li>
-<li id="source-45">Palantir — AIP architecture overview: <a href="https://palantir.com/docs/foundry/architecture-center/aip-architecture/">palantir.com/docs/…/aip-architecture</a></li>
-<li id="source-46">Graphwise — Merger (SWC + Ontotext): <a href="https://graphwise.ai/blog/graphwise-merger-swc-ontotext/">graphwise.ai/…/merger</a></li>
-<li id="source-47">Stardog — Knowledge Graph-Powered Semantic Layer: <a href="https://www.stardog.com/">stardog.com</a></li>
-<li id="source-48">A Survey of Context Engineering for LLMs (arXiv:2507.13334): <a href="https://arxiv.org/abs/2507.13334">arXiv:2507.13334</a></li>
-<li id="source-49">A-MEM: Agentic Memory for LLM Agents (arXiv:2502.12110): <a href="https://arxiv.org/abs/2502.12110">arXiv:2502.12110</a></li>
-<li id="source-50">Gartner — 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026: <a href="https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025">gartner.com/…/40-percent-enterprise-apps</a></li>
-<li id="source-51">SiliconANGLE — 2026 data predictions: <a href="https://siliconangle.com/2026/01/18/2026-data-predictions-scaling-ai-agents-via-contextual-intelligence/">siliconangle.com/…/2026-data-predictions</a></li>
+<li id="source-1">RAG vs. GraphRAG: A Systematic Evaluation and Key Insights — Han et al., arXiv, Feb 2025 — <a href="https://arxiv.org/abs/2502.11371">arxiv.org/abs/2502.11371</a></li>
+<li id="source-2">CHASE: A Causal Hypergraph based Framework for Root Cause Analysis in Multimodal Microservice Systems — Zhao et al., arXiv, Jun 2024 — <a href="https://arxiv.org/abs/2406.19711">arxiv.org/abs/2406.19711</a></li>
+<li id="source-3">PolyG: Adaptive Graph Traversal for Diverse GraphRAG Questions — Liu et al., arXiv, Apr 2025 — <a href="https://arxiv.org/abs/2504.02112">arxiv.org/abs/2504.02112</a></li>
+<li id="source-4">A Cascaded Graph Neural Network for Joint Root Cause Localization and Analysis in Edge Computing Environments — Fernando, Rodriguez, Buyya, arXiv, Mar 2026 — <a href="https://arxiv.org/abs/2603.01447">arxiv.org/abs/2603.01447</a></li>
+<li id="source-5">Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems — Luong Tuan, Sanyal, arXiv, Apr 2026 — <a href="https://arxiv.org/abs/2604.00555">arxiv.org/abs/2604.00555</a></li>
+<li id="source-6">EvoCause: LLM-Guided Evolution of Causal Graphs for Root Cause Analysis — Zan et al., arXiv, Jul 2026 — <a href="https://arxiv.org/abs/2607.27290">arxiv.org/abs/2607.27290</a></li>
+<li id="source-7">Extractive Schema Linking for Text-to-SQL — Glass et al., arXiv, Jan 2025 — <a href="https://arxiv.org/abs/2501.17174">arxiv.org/abs/2501.17174</a></li>
+<li id="source-8">VirtualSet: Typed Ontology Worlds as an LLM Generation Target for Grounded Queries and Guarded Decisions — Zhang, arXiv, Jul 2026 — <a href="https://arxiv.org/abs/2607.18821">arxiv.org/abs/2607.18821</a></li>
+<li id="source-9">Semantic Graph Unification for Industrial Digital Threads — Chethan, arXiv, Aug 2026 — <a href="https://arxiv.org/abs/2608.24918">arxiv.org/abs/2608.24918</a></li>
+<li id="source-10">Fact-Consistency Evaluation of Text-to-SQL Generation for Business Intelligence Using Exaone 3.5 — Choi, arXiv, Apr 2025 — <a href="https://arxiv.org/abs/2505.00060">arxiv.org/abs/2505.00060</a></li>
+<li id="source-11">KRCA: An Efficient Root Cause Analysis System in Hyper-scale Microservice Systems via Agentic AI — Jiang et al., arXiv, Jul 2026 — <a href="https://arxiv.org/abs/2607.01788">arxiv.org/abs/2607.01788</a></li>
+<li id="source-12">Auditable Graph-Guided Root Cause Analysis for Kubernetes Incidents — Kuvshinova, Jin, arXiv, Jun 2026 — <a href="https://arxiv.org/abs/2606.08590">arxiv.org/abs/2606.08590</a></li>
+<li id="source-13">Hypergraph Enterprise Agentic Reasoner over Heterogeneous Business Systems — Wang et al., arXiv, May 2026 — <a href="https://arxiv.org/abs/2605.14259">arxiv.org/abs/2605.14259</a></li>
+<li id="source-14">End-to-End Ontology Learning with Large Language Models — Lo et al., arXiv, Oct 2024 — <a href="https://arxiv.org/abs/2410.23584">arxiv.org/abs/2410.23584</a></li>
+<li id="source-15">LLM-Guided Ontology-Driven Knowledge Graph Construction from Unstructured Text — Belfadel et al., arXiv, Sep 2026 — <a href="https://arxiv.org/abs/2609.31663">arxiv.org/abs/2609.31663</a></li>
+<li id="source-16">From human experts to machines: An LLM supported approach to ontology and knowledge graph construction — Kommineni, König-Ries, Samuel, arXiv, Mar 2024 — <a href="https://arxiv.org/abs/2403.08345">arxiv.org/abs/2403.08345</a></li>
+<li id="source-17">When to use Graphs in RAG: A Comprehensive Analysis for Graph Retrieval-Augmented Generation — Xiang et al., arXiv, Jun 2025 — <a href="https://arxiv.org/abs/2506.05690">arxiv.org/abs/2506.05690</a></li>
+<li id="source-18">GALA: Graph-Augmented LLM Agents for Root Cause Analysis and Incident Response in Microservices — Tian et al., arXiv, Aug 2026 — <a href="https://arxiv.org/abs/2608.08968">arxiv.org/abs/2608.08968</a></li>
+<li id="source-19">LLM-empowered knowledge graph construction: A survey — Bian, arXiv, Oct 2025 — <a href="https://arxiv.org/abs/2510.20345">arxiv.org/abs/2510.20345</a></li>
+<li id="source-20">Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning — Salovskii, Gorshkova, arXiv, Apr 2026 — <a href="https://arxiv.org/abs/2604.20795">arxiv.org/abs/2604.20795</a></li>
+<li id="source-21">Knowledge Graph Construction-Based Semantic Web Application for Ontology Development — Thota et al., 2025 — <a href="https://www.semanticscholar.org/paper/772ca9590757a60938e349c5c78a6306665cc465">semanticscholar.org</a></li>
+<li id="source-22">CausalRCA: Causal Graph-Augmented Retrieval for Root Cause Analysis in Microservice Systems — Kou et al., 2026 — <a href="https://www.semanticscholar.org/paper/8f9bdd7024f51802322642b58132233dc2da9f0e">semanticscholar.org</a></li>
+<li id="source-23">A Systematic Comparison of RAG Architectures for Geographic POI Question Answering Using OpenStreetMap Data — Otsuka, 2026 — <a href="https://www.semanticscholar.org/paper/28bf587adc26e4bbd1987f1e19d66b8c87dd752d">semanticscholar.org</a></li>
+<li id="source-24">Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue! — Allemang, Sequeda, arXiv, May 2024 — <a href="https://arxiv.org/abs/2405.11706">arxiv.org/abs/2405.11706</a></li>
+<li id="source-25">Construct, Align, and Reason: Large Ontology Models for Enterprise Knowledge Management — Zhang, Zhu, arXiv, Jan 2026 — <a href="https://arxiv.org/abs/2602.00029">arxiv.org/abs/2602.00029</a></li>
+<li id="source-27">How Significant Are the Real Performance Gains? An Unbiased Evaluation Framework for GraphRAG — Zeng et al., arXiv, 2025 — <a href="https://arxiv.org/abs/2506.06331">arxiv.org/abs/2506.06331</a></li>
+<li id="source-28">Beyond Vector Search: Comparing Classical RAG with Hybrid GraphRAG for Climate Science Q&amp;A — Naiff, Alves, Pinto, arXiv, Aug 2026 — <a href="https://arxiv.org/abs/2608.28766">arxiv.org/abs/2608.28766</a></li>
+<li id="source-29">Toward a Hybrid Ontology Framework for Semantic Data Understanding in AI-Augmented Data Warehousing — Sridharan et al., 2025 — <a href="https://www.semanticscholar.org/paper/29c2301457458a4ebbd6a6445e9af355ee4d7df1">semanticscholar.org</a></li>
+<li id="source-30">graph-rag-agent: GraphRAG with private-domain deep search — GitHub, Nov 2025 — <a href="https://github.com/1517005260/graph-rag-agent">github.com/1517005260/graph-rag-agent</a></li>
+<li id="source-31">AutoKG: LLMs for knowledge graph construction and reasoning — Zhu et al. (zjunlp), GitHub, Jan 2025 — <a href="https://github.com/zjunlp/AutoKG">github.com/zjunlp/AutoKG</a></li>
+<li id="source-34">actionTypesR: executable ontology actions — GitHub, May 2026 — <a href="https://github.com/CathalByrneGit/actionTypesR">github.com/CathalByrneGit/actionTypesR</a></li>
+<li id="source-35">operational-ontology: a lightweight operational ontology inspired by Foundry — GitHub, Aug 2026 — <a href="https://github.com/Aryan1718/operational-ontology">github.com/Aryan1718/operational-ontology</a></li>
+<li id="source-37">graph-versus-vector: GraphRAG and vector RAG benchmark — GitHub, Sep 2026 — <a href="https://github.com/GeenccMustafa/graph-versus-vector">github.com/GeenccMustafa/graph-versus-vector</a></li>
+<li id="source-38">financial-ontology: payment settlement control system — GitHub, Sep 2026 — <a href="https://github.com/nick-stafford/financial-ontology">github.com/nick-stafford/financial-ontology</a></li>
+<li id="source-39">Semantic Web — Wikipedia — <a href="https://en.wikipedia.org/wiki/Semantic_Web">en.wikipedia.org/wiki/Semantic_Web</a></li>
+<li id="source-40">foundry-ontology-open: open implementation of Foundry's ontology architecture — GitHub, Jul 2026 — <a href="https://github.com/cloudbadal007/foundry-ontology-open">github.com/cloudbadal007/foundry-ontology-open</a></li>
+<li id="source-41">ontology-ingestion-layer: research notes on Palantir and Microsoft ontologies — Gabriel Cha, GitHub, Jul 2026 — <a href="https://github.com/gabrielchasukjin/ontology-ingestion-layer">github.com/gabrielchasukjin/ontology-ingestion-layer</a></li>
+<li id="source-42">Knowledge graph — Wikipedia — <a href="https://en.wikipedia.org/wiki/Knowledge_graph">en.wikipedia.org/wiki/Knowledge_graph</a></li>
 </ol>
-
-<p style="color: var(--on-surface-variant); font-size: 12px; margin-top: 24px;">Report generated with a multi-agent deep research pipeline (5 parallel subagents, 198 sources, URL integrity verification). Detailed per-area sources are in the research repository.</p>
-
       </div>
     </div>
 
@@ -635,43 +284,5 @@
       <span class="date">SPECIAL REPORT · OCTOBER 2026</span>
     </div>
   </div>
-
-<script>
-  function applyTheme(theme) {
-    const html = document.documentElement;
-    const btn = document.querySelector('.theme-toggle');
-    if (theme === 'light') {
-      html.setAttribute('data-theme', 'light');
-      btn.textContent = '◑ LIGHT';
-    } else {
-      html.removeAttribute('data-theme');
-      btn.textContent = '◐ DARK';
-    }
-  }
-
-  function toggleTheme() {
-    const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    const next = current === 'light' ? 'dark' : 'light';
-    applyTheme(next);
-    localStorage.setItem('ai-reports-theme', next);
-  }
-
-  (function() {
-    const saved = localStorage.getItem('ai-reports-theme');
-    if (saved) applyTheme(saved);
-  })();
-
-  (function() {
-    const bar = document.getElementById('progress-bar');
-    if (!bar) return;
-    window.addEventListener('scroll', () => {
-      const h = document.documentElement;
-      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
-      bar.style.width = (scrolled * 100) + '%';
-    });
-  })();
-</script>
-
 </body>
 </html>

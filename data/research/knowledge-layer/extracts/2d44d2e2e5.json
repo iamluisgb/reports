@@ -1,0 +1,46 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-09-17",
+  "author_or_org": "Jian Hou",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "The paper identifies dynamic causal discovery and multi-modal/cross-level fusion as two mainstream RCA research threads represented by FaultInsight and HolisticRCA.",
+      "quote": "This paper reviews two mainstream research threads in top conferences and journals over the past five years: FaultInsight[1] focusing on dynamic causal discovery and HolisticRCA[2] focusing on multi-modal/cross-level fusion, and analyzes the advantages and disadvantages of existing methods.",
+      "numbers": [
+        "two",
+        "five years",
+        "[1]",
+        "[2]"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "The proposed KylinRCA framework uses temporal causal discovery to depict the propagation chain and cross-modal graph learning for global root cause localization and type identification.",
+      "quote": "A KylinRCA framework integrating the ideas of both is proposed, which depicts the propagation chain through temporal causal discovery, realizes global root cause localization and type identification through cross-modal graph learning, and outputs auditable evidence chains combined with mask-based explanation methods.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The paper states that efficient, accurate, and interpretable RCA based on observability data such as metrics, logs, and traces is a core AIOps issue.",
+      "quote": "How to achieve efficient, accurate, and interpretable Root Cause Analysis (RCA) based on observability data (metrics, logs, traces) has become a core issue in AIOps.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The paper says faults in large cloud and ultra-large-scale data-center systems often show cascading propagation.",
+      "quote": "With the rapid development of cloud computing and ultra-large-scale data centers, the scale and complexity of systems have increased significantly, leading to frequent faults that often show cascading propagation.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The work designs a multi-dimensional experimental scheme, clarifies evaluation indicators, and discusses engineering challenges for fault diagnosis under full-stack observability.",
+      "quote": "A multi-dimensional experimental scheme is designed, evaluation indicators are clarified, and engineering challenges are discussed, providing an effective solution for fault diagnosis under full-stack observability.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2509.12231"
+}

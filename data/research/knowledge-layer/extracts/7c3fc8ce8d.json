@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": null,
+  "author_or_org": "CathalByrneGit",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "actionTypesR makes an ontology operational by executing changes, while ontologySpecR describes what actions exist and objectSetsR queries data.",
+      "quote": "It is the package that makes an ontology *operational*: where ontologySpecR describes what actions exist and objectSetsR queries data, actionTypesR actually *executes* changes.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "actionTypesR provides a resolve, validate, execute, record lifecycle for ontology actions.",
+      "quote": "**Resolve → validate → execute → record** lifecycle for ontology actions.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "actionTypesR supports multiple backends: R, SQL, HTTP, and plugin dispatch.",
+      "quote": "Multiple backends: R, SQL, HTTP, and plugin dispatch.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "actionTypesR automatically creates an append-only action_log table in the connected database.",
+      "quote": "Append-only `action_log` table created automatically in the connected database.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "actionTypesR supports policy hooks for authorization checks, including a 3-argument legacy form.",
+      "quote": "Policy hooks for authorization checks (3-arg legacy form supported).",
+      "numbers": [
+        "3"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "actionTypesR supports an approval gate hook for governance integration with approved, denied, or pending outcomes.",
+      "quote": "Approval gate hook for governance integration (approved / denied / pending).",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "actionTypesR can replay any logged submission with resubmit_action().",
+      "quote": "Replay any logged submission with `resubmit_action()`.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "An approval gate lets an external system intercept actions before dispatch, and the gate function returns approved, denied, or pending.",
+      "quote": "An approval gate lets an external system (e.g. `auditR`) intercept actions before dispatch. Register a gate function that returns `\"approved\"`, `\"denied\"`, or `\"pending\"`:",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/CathalByrneGit/actionTypesR"
+}

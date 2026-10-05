@@ -1,0 +1,47 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2026-09-06",
+  "author_or_org": "nick-stafford (with Co-Authored-By: Claude)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source describes a payment settlement control system that combines Python source contracts, SQL reconciliation, and an operational ontology.",
+      "quote": "Payment settlement control system: Python source contracts, SQL reconciliation, an operational ontology, version-checked actions with independent approval, and a transactional outbox to a mock ERP.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The system is described as including an executable object and link contract.",
+      "quote": "Aster Reconcile: payment settlement control system Python source contracts and ingestion, SQL reconciliation at a declared settlement grain, an executable object and link contract, version-checked actions with independent approval, a transactional outbox to a separate mock ERP, and a React investigation interface over generated TypeScript types.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The system implements version-checked actions with independent approval.",
+      "quote": "Payment settlement control system: Python source contracts, SQL reconciliation, an operational ontology, version-checked actions with independent approval, and a transactional outbox to a mock ERP.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The system uses a transactional outbox to a separate mock ERP.",
+      "quote": "Aster Reconcile: payment settlement control system Python source contracts and ingestion, SQL reconciliation at a declared settlement grain, an executable object and link contract, version-checked actions with independent approval, a transactional outbox to a separate mock ERP, and a React investigation interface over generated TypeScript types.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The source characterizes the project as a Palantir-inspired simulation on synthetic data.",
+      "quote": "Palantir-inspired simulation on synthetic data.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The source states the system does not run on Foundry.",
+      "quote": "Does not run on Foundry.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/nick-stafford/financial-ontology"
+}

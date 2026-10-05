@@ -1,0 +1,98 @@
+{
+  "slug": "knowledge-layer",
+  "title": "The Knowledge Layer for agents: ontologies, knowledge graphs, semantic and context layers",
+  "thesis": "Ontologies, knowledge graphs, semantic layers and context layers are converging into one governed knowledge layer that agents read and act through; ML belongs at the edges (extraction, link prediction, scoring), not in the canonical model.",
+  "audience": "Data and platform architects deciding how to give AI agents trustworthy enterprise knowledge",
+  "since": "2024-01-01",
+  "per_question": 8,
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What are ontologies, knowledge graphs, semantic layers and context layers, and how do they relate?",
+      "queries": [
+        "enterprise ontology knowledge graph semantic layer",
+        "semantic layer LLM agents",
+        "context engineering LLM agents"
+      ],
+      "providers": [
+        "wikipedia",
+        "arxiv",
+        "hn",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What does GraphRAG and knowledge-graph grounding measurably add over vector RAG, and when does it not help?",
+      "queries": [
+        "GraphRAG evaluation",
+        "knowledge graph retrieval augmented generation benchmark",
+        "GraphRAG versus vector RAG"
+      ],
+      "providers": [
+        "arxiv",
+        "semantic_scholar",
+        "hn",
+        "github"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "Do semantic layers and ontologies improve LLM accuracy on enterprise data questions (text-to-SQL, analytics)?",
+      "queries": [
+        "knowledge graph text-to-SQL accuracy LLM",
+        "semantic layer LLM accuracy enterprise questions",
+        "ontology grounding LLM enterprise data"
+      ],
+      "providers": [
+        "arxiv",
+        "semantic_scholar",
+        "hn"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "How are operational ontologies like Palantir Foundry's built, and how do agents act through them (objects, actions, writeback)?",
+      "queries": [
+        "Palantir ontology",
+        "Palantir Foundry ontology AIP agents",
+        "operational ontology actions"
+      ],
+      "providers": [
+        "hn",
+        "wikipedia",
+        "github",
+        "arxiv"
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Where does machine learning fit in a knowledge graph: construction, link prediction, graph embeddings, GNNs — and can ontologies update themselves?",
+      "queries": [
+        "LLM knowledge graph construction",
+        "knowledge graph link prediction",
+        "graph neural networks knowledge graph completion",
+        "automatic ontology learning LLM"
+      ],
+      "providers": [
+        "arxiv",
+        "semantic_scholar",
+        "github"
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "How are topology and knowledge graphs used in AIOps for root cause analysis, and is correlation on a full graph deterministic?",
+      "queries": [
+        "AIOps root cause analysis graph",
+        "microservice root cause analysis causal graph",
+        "LLM agents incident root cause analysis"
+      ],
+      "providers": [
+        "arxiv",
+        "semantic_scholar",
+        "hn"
+      ]
+    }
+  ]
+}

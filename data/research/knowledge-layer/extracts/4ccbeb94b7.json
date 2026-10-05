@@ -1,0 +1,73 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": null,
+  "author_or_org": "zjunlp / Yuqi Zhu et al.",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The AutoKG repository provides code and data for a paper on LLMs for knowledge graph construction and reasoning.",
+      "quote": "Code and Data for the paper \"[LLMs for Knowledge Graph Construction and Reasoning: Recent Capabilities and Future Opportunities](https://github.com/zjunlp/AutoKG/blob/main/Pdf/LLMs_for_Knowledge_Graph_Construction_and_Reasoning__Recent_Capabilities_and_Future_Opportunities1.pdf)\"",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The work has three main components: basic evaluation, virtual knowledge extraction, and automatic KG.",
+      "quote": "The overview of our work. There are three main components: 1) _**Basic Evaluation**_: detailing our assessment of large models (text-davinci-003, ChatGPT, and GPT-4), in both zero-shot and one-shot settings, using performance data from fully supervised state-of-the-art models as benchmarks; 2) _**Virtual Knowledge Extraction**_: an examination of large models' virtual knowledge capabilities on the constructed VINE dataset; and 3) _**Automatic KG**_: the proposal of utilizing multiple agents to facilitate the construction and reasoning of KGs.",
+      "numbers": [
+        "1",
+        "2",
+        "3",
+        "text-davinci-003",
+        "GPT-4"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Basic evaluation assesses text-davinci-003, ChatGPT, and GPT-4 in zero-shot and one-shot settings against fully supervised state-of-the-art models.",
+      "quote": "detailing our assessment of large models (text-davinci-003, ChatGPT, and GPT-4), in both zero-shot and one-shot settings, using performance data from fully supervised state-of-the-art models as benchmarks",
+      "numbers": [
+        "text-davinci-003",
+        "GPT-4"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Automatic KG uses multiple agents to facilitate the construction and reasoning of KGs.",
+      "quote": "the proposal of utilizing multiple agents to facilitate the construction and reasoning of KGs.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The KG Construction datasets listed are DuIE2.0, SciERC, RE-TACRED, and MAVEN.",
+      "quote": "*   KG Construction\n\n    *   [DuIE2.0](https://www.luge.ai/#/luge/dataDetail?id=5)\n    *   [SciERC](http://nlp.cs.washington.edu/sciIE/)\n    *   [RE-TACRED](https://github.com/gstoica27/Re-TACRED)\n    *   [MAVEN](https://github.com/THU-KEG/MAVEN-dataset/tree/main)",
+      "numbers": [
+        "2.0"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "KG Reasoning is treated as link prediction and uses FB15k-237 and ATOMIC2020 datasets.",
+      "quote": " |-- KG Reasoning (Link Prediction)\n |    |-- FB15k-237\n |    |    |-- data                     #sample data\n |    |    |-- prompts                  #0-shot/1-shot prompts\n |    |-- ATOMIC2020\n |    |    |-- data                     #sample data\n |    |    |-- prompts                  #0-shot/1-shot prompts\n |    |    |-- system_eval              #eval for ATOMIC2020",
+      "numbers": [
+        "FB15k-237",
+        "ATOMIC2020"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "AutoKG code is based on CAMEL and a LangChain implementation.",
+      "quote": "Our AutoKG code is based on [CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society](https://github.com/lightaime/camel) and a [LangChain](https://python.langchain.com.cn/docs/use_cases/agent_simulations/camel_role_playing) implementation of the paper, you can get more details through this link.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The repository includes a VINE dataset under Virtual Knowledge Extraction.",
+      "quote": "The VINE dataset we built is available **[here](https://github.com/zjunlp/AutoKG/tree/94d1a9450cc55fc162366f5ba7d7a6d5b54c0236/Virtual%20Knowledge%20Extraction).**",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/zjunlp/AutoKG"
+}

@@ -1,0 +1,50 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2026-09-28",
+  "author_or_org": "GeenccMustafa",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Traditional RAG chunks the corpus, retrieves the top-k passages using dense, BM25, or hybrid reciprocal rank fusion search, and feeds them to the LLM.",
+      "quote": "**Traditional RAG** — chunk the corpus, then retrieve the top-`k` by **dense** (cosine), **BM25** (lexical), or **hybrid** (reciprocal rank fusion) search, and feed them to the LLM.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "GraphRAG uses an LLM to extract entities and relationships, stores them as a knowledge graph in Neo4j with vector indexes for chunk/entity/community embeddings, and retrieves by walking the graph and by community summaries.",
+      "quote": "**GraphRAG** — use an LLM to extract entities and relationships, store them as a **knowledge graph in Neo4j** (with vector indexes for chunk/entity/community embeddings), then retrieve by _walking the graph_ and by _community summaries_.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Multi-hop questions require combining facts from two or more passages, and flat top-k retrieval often grabs only one required passage because the question embedding does not point at both.",
+      "quote": "Multi-hop questions (e.g. _\"Were Scott Derrickson and Ed Wood of the same nationality?\"_) can only be answered by **combining facts from two or more passages**. Flat top-`k` retrieval often grabs only one of the required passages, because the question embedding doesn't point at both.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "In the bundled benchmark, GraphRAG raises supporting-fact recall from 0.81 to 0.98.",
+      "quote": "The bundled benchmark shows exactly this: GraphRAG raises supporting-fact recall from **0.81 → 0.98**.",
+      "numbers": [
+        "0.81",
+        "0.98"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The default dataset for the benchmark is HotpotQA, described as hard multi-hop QA.",
+      "quote": "Dataset by default: **HotpotQA** (hard multi-hop QA).",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The repository uses Langfuse for tracing, DeepEval for LLM-as-judge metrics, and Prefect for flows and UI.",
+      "quote": "**Observability / evaluation / orchestration** — **Langfuse** (tracing), **DeepEval** (LLM-as-judge metrics), **Prefect** (flows + UI).",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/GeenccMustafa/graph-versus-vector"
+}

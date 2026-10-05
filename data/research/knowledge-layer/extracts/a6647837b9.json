@@ -1,0 +1,45 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Qiming Zeng, Hao Luo, Yuhao Lin, Yicheng Jin, Yuxiang Wang, Fangcheng Fu, Xiao Yan, Jiawei Jiang",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "GraphRAG enhances LLMs to generate quality answers by retrieving contexts from knowledge graphs.",
+      "quote": "By retrieving contexts from knowledge graphs, graph-based retrieval-augmented generation (GraphRAG) enhances large language models (LLMs) to generate quality answers for user questions.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The current answer evaluation framework for GraphRAG has two critical flaws: unrelated questions and evaluation biases, which can produce biased or wrong performance conclusions.",
+      "quote": "However, we observe that the current answer evaluation framework for GraphRAG has two critical flaws, i.e., unrelated questions and evaluation biases, which may lead to biased or even wrong conclusions on performance.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The paper proposes an unbiased evaluation framework using graph-text-grounded question generation to produce questions more related to the underlying dataset and an unbiased evaluation procedure to eliminate biases in LLM-based answer assessment.",
+      "quote": "To tackle the two flaws, we propose an unbiased evaluation framework that uses graph-text-grounded question generation to produce questions that are more related to the underlying dataset and an unbiased evaluation procedure to eliminate the biases in LLM-based answer assessment.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Applying the unbiased framework to 3 representative GraphRAG methods shows performance gains much more moderate than previously reported.",
+      "quote": "We apply our unbiased framework to evaluate 3 representative GraphRAG methods and find that their performance gains are much more moderate than reported previously.",
+      "numbers": [
+        "3"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The authors state their evaluation framework may still have flaws but argue that scientific evaluations are needed to lay solid foundations for GraphRAG research.",
+      "quote": "Although our evaluation framework may still have flaws, it calls for scientific evaluations to lay solid foundations for GraphRAG research.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2506.06331"
+}

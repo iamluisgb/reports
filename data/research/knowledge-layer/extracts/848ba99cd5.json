@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2026-08-31",
+  "author_or_org": "Aryan1718",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The repository is an independent reference implementation of a lightweight operational ontology inspired by Palantir Foundry Ontology concepts.",
+      "quote": "An independent reference implementation of a lightweight operational ontology inspired by Palantir Foundry Ontology concepts.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The repository models supply-chain data as connected business objects with typed properties, relationships, read-only functions, governed actions, permissions, execution evidence, audit history, and safe AI-accessible tools.",
+      "quote": "This repository demonstrates how supply-chain data can be modeled as connected business objects with typed properties, relationships, read-only functions, governed actions, permissions, execution evidence, audit history, and safe AI-accessible tools.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The ontology layer defines business object types including Supplier, Part, Product, Warehouse, InventoryPosition, CustomerOrder, RiskEvent, and MitigationPlan.",
+      "quote": "*   business object types such as `Supplier`, `Part`, `Product`, `Warehouse`, `InventoryPosition`, `CustomerOrder`, `RiskEvent`, and `MitigationPlan`",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The ontology layer includes stored properties mapped to PostgreSQL tables and columns.",
+      "quote": "*   stored properties mapped to PostgreSQL tables and columns",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The ontology layer includes read-only functions for impact analysis, inventory availability, stockout risk, order ranking, and mitigation recommendation.",
+      "quote": "*   read-only functions for impact analysis, inventory availability, stockout risk, order ranking, and mitigation recommendation",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The ontology layer includes governed actions such as createRiskEvent, generateMitigationPlan, approveMitigationPlan, reallocateInventory, and expeditePurchaseOrder.",
+      "quote": "*   governed actions such as `createRiskEvent`, `generateMitigationPlan`, `approveMitigationPlan`, `reallocateInventory`, and `expeditePurchaseOrder`",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The ontology layer defines role-based permissions for Viewer, Planner, OperationsManager, Admin, and a restricted AIAgent role.",
+      "quote": "*   role-based permissions for `Viewer`, `Planner`, `OperationsManager`, `Admin`, and restricted `AIAgent`",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The MCP/AI layer exposes approved ontology capabilities without allowing autonomous critical writes.",
+      "quote": "MCP / AI layer\n  exposes approved ontology capabilities without allowing autonomous critical writes",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/Aryan1718/operational-ontology"
+}

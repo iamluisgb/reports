@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-10-23",
+  "author_or_org": "Haonan Bian",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Knowledge graphs are described as a fundamental infrastructure for structured knowledge representation and reasoning.",
+      "quote": "Knowledge Graphs (KGs) have long served as a fundamental infrastructure for structured knowledge representation and reasoning.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The classical knowledge graph construction pipeline is presented as three layers: ontology engineering, knowledge extraction, and knowledge fusion.",
+      "quote": "This survey provides a comprehensive overview of recent progress in LLM-empowered knowledge graph construction, systematically analyzing how LLMs reshape the classical three-layered pipeline of ontology engineering, knowledge extraction, and knowledge fusion.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "LLMs have shifted knowledge graph construction from rule-based and statistical pipelines to language-driven and generative frameworks.",
+      "quote": "With the advent of Large Language Models (LLMs), the construction of KGs has entered a new paradigm-shifting from rule-based and statistical pipelines to language-driven and generative frameworks.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The survey reviews LLM-driven knowledge graph construction through schema-based paradigms emphasizing structure, normalization, and consistency, and schema-free paradigms emphasizing flexibility, adaptability, and open discovery.",
+      "quote": "We first revisit traditional KG methodologies to establish conceptual foundations, and then review emerging LLM-driven approaches from two complementary perspectives: schema-based paradigms, which emphasize structure, normalization, and consistency; and schema-free paradigms, which highlight flexibility, adaptability, and open discovery.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The survey synthesizes representative frameworks, analyzes technical mechanisms, and identifies limitations at each stage of knowledge graph construction.",
+      "quote": "Across each stage, we synthesize representative frameworks, analyze their technical mechanisms, and identify their limitations.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Future research directions include KG-based reasoning for LLMs, dynamic knowledge memory for agentic systems, and multimodal KG construction.",
+      "quote": "Finally, the survey outlines key trends and future research directions, including KG-based reasoning for LLMs, dynamic knowledge memory for agentic systems, and multimodal KG construction.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The survey aims to clarify the interplay between LLMs and knowledge graphs, bridging symbolic knowledge engineering and neural semantic understanding.",
+      "quote": "Through this systematic review, we aim to clarify the evolving interplay between LLMs and knowledge graphs, bridging symbolic knowledge engineering and neural semantic understanding toward the development of adaptive, explainable, and intelligent knowledge systems.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2510.20345"
+}

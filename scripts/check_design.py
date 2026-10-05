@@ -134,6 +134,7 @@ def check_report(p: Path) -> None:
 def main(args: list[str]) -> int:
     # With arguments, check only those reports (CI passes the ones a push touched, or none).
     reports = [Path(a) for a in args if Path(a).is_file()] if args else sorted((ROOT / "reports").glob("*.html"))
+    reports = [p for p in reports if 'http-equiv="refresh"' not in p.read_text(encoding="utf-8")[:2000]]   # merge stubs
     check_tokens()
     check_budgets(reports)
     for p in reports:

@@ -1,0 +1,25 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-10-05",
+  "author_or_org": "objectstack-ai (GitHub organization)",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "The ObjectStack project positions a single executable business ontology as the software itself: AI authors it, a runtime executes it, agents operate it, and the user owns it, offered as an open protocol and runtime under Apache-2.0.",
+      "quote": "Title: GitHub - objectstack-ai/objectstack: The ontology is the software. One executable business ontology: AI writes it, the runtime runs it, agents operate it, you own it. Open protocol & runtime, Apache-2.0.",
+      "numbers": [
+        "2.0"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The remainder of the repository page is engineering changelog content about protocol compatibility handshakes (ADR-0087 D1, error code OS_PROTOCOL_INCOMPATIBLE, HTTP 422) and contains no definitions or relationships among ontologies, knowledge graphs, semantic layers, or context layers.",
+      "quote": "The install route calls the same `assertProtocolCompat` before anything is registered, written or synced.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/objectstack-ai/objectstack"
+}

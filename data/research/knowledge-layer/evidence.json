@@ -1,0 +1,3387 @@
+{
+  "plan": {
+    "slug": "knowledge-layer",
+    "title": "The Knowledge Layer for agents: ontologies, knowledge graphs, semantic and context layers",
+    "thesis": "Ontologies, knowledge graphs, semantic layers and context layers are converging into one governed knowledge layer that agents read and act through; ML belongs at the edges (extraction, link prediction, scoring), not in the canonical model.",
+    "audience": "Data and platform architects deciding how to give AI agents trustworthy enterprise knowledge",
+    "since": "2024-01-01",
+    "per_question": 8,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What are ontologies, knowledge graphs, semantic layers and context layers, and how do they relate?",
+        "queries": [
+          "enterprise ontology knowledge graph semantic layer",
+          "semantic layer LLM agents",
+          "context engineering LLM agents"
+        ],
+        "providers": [
+          "wikipedia",
+          "arxiv",
+          "hn",
+          "semantic_scholar"
+        ]
+      },
+      {
+        "id": "q2",
+        "question": "What does GraphRAG and knowledge-graph grounding measurably add over vector RAG, and when does it not help?",
+        "queries": [
+          "GraphRAG evaluation",
+          "knowledge graph retrieval augmented generation benchmark",
+          "GraphRAG versus vector RAG"
+        ],
+        "providers": [
+          "arxiv",
+          "semantic_scholar",
+          "hn",
+          "github"
+        ]
+      },
+      {
+        "id": "q3",
+        "question": "Do semantic layers and ontologies improve LLM accuracy on enterprise data questions (text-to-SQL, analytics)?",
+        "queries": [
+          "knowledge graph text-to-SQL accuracy LLM",
+          "semantic layer LLM accuracy enterprise questions",
+          "ontology grounding LLM enterprise data"
+        ],
+        "providers": [
+          "arxiv",
+          "semantic_scholar",
+          "hn"
+        ]
+      },
+      {
+        "id": "q4",
+        "question": "How are operational ontologies like Palantir Foundry's built, and how do agents act through them (objects, actions, writeback)?",
+        "queries": [
+          "Palantir ontology",
+          "Palantir Foundry ontology AIP agents",
+          "operational ontology actions"
+        ],
+        "providers": [
+          "hn",
+          "wikipedia",
+          "github",
+          "arxiv"
+        ]
+      },
+      {
+        "id": "q5",
+        "question": "Where does machine learning fit in a knowledge graph: construction, link prediction, graph embeddings, GNNs — and can ontologies update themselves?",
+        "queries": [
+          "LLM knowledge graph construction",
+          "knowledge graph link prediction",
+          "graph neural networks knowledge graph completion",
+          "automatic ontology learning LLM"
+        ],
+        "providers": [
+          "arxiv",
+          "semantic_scholar",
+          "github"
+        ]
+      },
+      {
+        "id": "q6",
+        "question": "How are topology and knowledge graphs used in AIOps for root cause analysis, and is correlation on a full graph deterministic?",
+        "queries": [
+          "AIOps root cause analysis graph",
+          "microservice root cause analysis causal graph",
+          "LLM agents incident root cause analysis"
+        ],
+        "providers": [
+          "arxiv",
+          "semantic_scholar",
+          "hn"
+        ]
+      }
+    ]
+  },
+  "generated": "2026-10-05",
+  "stats": {
+    "searched": 227,
+    "candidates": 46,
+    "web_search": false,
+    "read": 46,
+    "sources_with_evidence": 44,
+    "claims": 298,
+    "quotes_dropped_as_unverified": 7
+  },
+  "sources": [
+    {
+      "id": "2d9bc97056",
+      "url": "https://arxiv.org/abs/2502.11371",
+      "title": "RAG vs. GraphRAG: A Systematic Evaluation and Key Insights",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-02-17",
+      "org": "Haoyu Han, Li Ma, Yu Wang, Harry Shomer, Yongjia Lei, Zhisheng Qi, Kai Guo, Zhigang Hua, Bo Long, Hui Liu, Charu C. Aggarwal, Jiliang Tang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Retrieval-Augmented Generation improves large language models by retrieving relevant information from external sources and has been widely adopted for text-based tasks.",
+          "quote": "Retrieval-Augmented Generation (RAG) improves large language models (LLMs) by retrieving relevant information from external sources and has been widely adopted for text-based tasks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.1"
+        },
+        {
+          "question": "q2",
+          "claim": "For structured data such as knowledge graphs, GraphRAG retrieves and aggregates information along graph structures.",
+          "quote": "For structured data, such as knowledge graphs, Graph Retrieval-Augmented Generation (GraphRAG) retrieves and aggregates information along graph structures.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.2"
+        },
+        {
+          "question": "q2",
+          "claim": "GraphRAG has recently been extended to general text settings by organizing unstructured text into graph representations, with promise for reasoning and grounding.",
+          "quote": "More recently, GraphRAG has been extended to general text settings by organizing unstructured text into graph representations, showing promise for reasoning and grounding.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Existing GraphRAG systems for text data are often tailored to specific tasks, datasets, and system designs, producing heterogeneous evaluation protocols and limiting systematic understanding of RAG versus GraphRAG trade-offs on text benchmarks.",
+          "quote": "Despite these advances, existing GraphRAG systems for text data are often tailored to specific tasks, datasets, and system designs, resulting in heterogeneous evaluation protocols. Consequently, a systematic understanding of the relative strengths, limitations, and trade-offs between RAG and GraphRAG on widely used text benchmarks remains limited.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.4"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper presents a comprehensive benchmark study comparing RAG and GraphRAG on established text-based tasks including question answering and query-based summarization.",
+          "quote": "In this paper, we present a comprehensive benchmark study comparing RAG and GraphRAG on established text-based tasks, including question answering and query-based summarization.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.5"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper introduces a unified evaluation protocol that standardizes data preprocessing, retrieval configurations, and generation settings for fair and reproducible comparisons.",
+          "quote": "We introduce a unified evaluation protocol that standardizes data preprocessing, retrieval configurations, and generation settings, enabling fair and reproducible comparisons.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.6"
+        },
+        {
+          "question": "q2",
+          "claim": "The results highlight distinct strengths of RAG and GraphRAG across different tasks and evaluation perspectives.",
+          "quote": "Our results highlight the distinct strengths of RAG and GraphRAG across different tasks and evaluation perspectives.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.7"
+        },
+        {
+          "question": "q2",
+          "claim": "The work explores selection and integration strategies combining both paradigms, leading to consistent performance improvements, and analyzes failure modes, efficiency trade-offs, and evaluation biases.",
+          "quote": "Building on these findings, we explore selection and integration strategies that combine the strengths of both paradigms, leading to consistent performance improvements. We further analyze failure modes, efficiency trade-offs, and evaluation biases, and highlight key considerations for designing and evaluating retrieval-augmented generation systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 1
+    },
+    {
+      "id": "2f009a7dd9",
+      "url": "https://arxiv.org/abs/2406.19711",
+      "title": "CHASE: A Causal Hypergraph based Framework for Root Cause Analysis in Multimodal Microservice Systems",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-06-28",
+      "org": "Ziming Zhao, Zhenwei Wang, Tiehua Zhang, Zhishu Shen, Hai Dong, Zhen Lei, Xingjun Ma, Gaowei Xu, Zhijun Ding, Yun Yang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q6",
+          "claim": "The paper addresses root cause analysis in microservice systems, where complex service invocation paths and dependencies make prompt anomaly localization difficult and can disrupt operations and maintenance.",
+          "quote": "Due to the complex service invocation paths and dependencies in enterprise-level microservice systems, it is challenging to locate the anomalies promptly during service invocations, thus causing intractable issues for normal system operations and maintenance.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.1"
+        },
+        {
+          "question": "q6",
+          "claim": "CHASE is a causal heterogeneous graph-based framework for root cause analysis in microservice systems using multimodal data including traces, logs, and system monitoring metrics.",
+          "quote": "In this paper, we propose a Causal Heterogeneous grAph baSed framEwork for root cause analysis, namely CHASE, for microservice systems with multimodal data, including traces, logs, and system monitoring metrics.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.2"
+        },
+        {
+          "question": "q6",
+          "claim": "CHASE encodes related information into representative embeddings and models it using a multimodal invocation graph.",
+          "quote": "Specifically, related information is encoded into representative embeddings and further modeled by a multimodal invocation graph.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.3"
+        },
+        {
+          "question": "q6",
+          "claim": "CHASE performs anomaly detection on each instance node using attentive heterogeneous message passing from adjacent metric and log nodes.",
+          "quote": "Following that, anomaly detection is performed on each instance node with attentive heterogeneous message passing from its adjacent metric and log nodes.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.4"
+        },
+        {
+          "question": "q6",
+          "claim": "CHASE learns from a constructed hypergraph where hyperedges represent the flow of causality and then performs root cause localization.",
+          "quote": "Finally, CHASE learns from the constructed hypergraph with hyperedges representing the flow of causality and performs root cause localization.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.5"
+        },
+        {
+          "question": "q6",
+          "claim": "CHASE was evaluated on two public microservice datasets with distinct attributes and compared against state-of-the-art methods.",
+          "quote": "We evaluate the proposed framework on two public microservice datasets with distinct attributes and compare with the state-of-the-art methods.",
+          "numbers": [
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S2.6"
+        },
+        {
+          "question": "q6",
+          "claim": "CHASE achieved average performance gains up to 36.2% on A@1 and 29.4% on Percentage@1 compared with its best counterpart.",
+          "quote": "The results show that CHASE achieves the average performance gain up to 36.2%(A@1) and 29.4%(Percentage@1), respectively to its best counterpart.",
+          "numbers": [
+            "36.2%",
+            "A@1",
+            "29.4%",
+            "Percentage@1"
+          ],
+          "corroborated_by": [],
+          "id": "S2.7"
+        },
+        {
+          "question": "q5",
+          "claim": "CHASE uses machine-learning-style graph processing by encoding multimodal information into embeddings and using attentive heterogeneous message passing on graph nodes for anomaly detection.",
+          "quote": "Specifically, related information is encoded into representative embeddings and further modeled by a multimodal invocation graph. Following that, anomaly detection is performed on each instance node with attentive heterogeneous message passing from its adjacent metric and log nodes.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 2
+    },
+    {
+      "id": "37cd1a4b61",
+      "url": "https://arxiv.org/abs/2504.02112",
+      "title": "PolyG: Adaptive Graph Traversal for Diverse GraphRAG Questions",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-04-02",
+      "org": "Renjie Liu, Haitian Jiang, Xiao Yan, Bo Tang, Jinyang Li",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "GraphRAG enhances LLMs to generate quality answers for user questions by retrieving related facts from external knowledge graphs.",
+          "quote": "GraphRAG enhances large language models (LLMs) to generate quality answers for user questions by retrieving related facts from external knowledge graphs.",
+          "numbers": [],
+          "corroborated_by": [
+            27
+          ],
+          "id": "S3.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Current GraphRAG methods are primarily evaluated on and overly tailored for KGQA benchmarks, which are biased toward a few specific question patterns and do not reflect real-world question diversity.",
+          "quote": "However, current GraphRAG methods are primarily evaluated on and overly tailored for knowledge graph question answering (KGQA) benchmarks, which are biased towards a few specific question patterns and do not reflect the diversity of real-world questions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.2"
+        },
+        {
+          "question": "q2",
+          "claim": "The authors propose a complete four-class taxonomy for basic knowledge graph question patterns and use it to create PolyBench, a new GraphRAG benchmark.",
+          "quote": "To better evaluate GraphRAG methods, we propose a complete four-class taxonomy to categorize the basic patterns of knowledge graph questions and use it to create PolyBench, a new GraphRAG benchmark encompassing a comprehensive set of graph questions.",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S3.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Existing GraphRAG methods fall short in effectiveness and/or efficiency because they use either a fixed graph traversal strategy or free-form exploration by LLMs for fact retrieval.",
+          "quote": "With the new benchmark, we find that existing GraphRAG methods fall short in effectiveness (i.e., quality of the generated answers) and/or efficiency (i.e., response time or token usage) because they adopt either a fixed graph traversal strategy or free-form exploration by LLMs for fact retrieval.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Different question patterns require distinct graph traversal strategies and context formation.",
+          "quote": "However, different question patterns require distinct graph traversal strategies and context formation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.5"
+        },
+        {
+          "question": "q2",
+          "claim": "PolyG is an adaptive GraphRAG approach that decomposes and categorizes questions according to the proposed question taxonomy.",
+          "quote": "To facilitate better retrieval, we propose PolyG, an adaptive GraphRAG approach by decomposing and categorizing the questions according to our proposed question taxonomy.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.6"
+        },
+        {
+          "question": "q5",
+          "claim": "PolyG dynamically prompts an LLM to generate a graph database query to retrieve context for each decomposed basic question.",
+          "quote": "Built on top of a unified interface and execution engine, PolyG dynamically prompts an LLM to generate a graph database query to retrieve the context for each decomposed basic question.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.7"
+        },
+        {
+          "question": "q2",
+          "claim": "Compared with SOTA GraphRAG methods, PolyG achieves a higher win rate in generation quality and has low response latency and token cost.",
+          "quote": "Compared with SOTA GraphRAG methods, PolyG achieves a higher win rate in generation quality and has a low response latency and token cost.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 3
+    },
+    {
+      "id": "4b1a231dcf",
+      "url": "https://arxiv.org/abs/2603.01447",
+      "title": "A Cascaded Graph Neural Network for Joint Root Cause Localization and Analysis in Edge Computing Environments",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-03-02",
+      "org": "Duneesha Fernando, Maria A. Rodriguez, Rajkumar Buyya",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q6",
+          "claim": "Edge computing environments host increasingly complex microservice-based IoT applications where performance anomalies propagate across dependent services.",
+          "quote": "Edge computing environments host increasingly complex microservice-based IoT applications that are prone to performance anomalies propagating across dependent services.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.1"
+        },
+        {
+          "question": "q6",
+          "claim": "Root cause localization identifies the faulty component and root cause analysis identifies the underlying fault type, which is essential for timely mitigation.",
+          "quote": "Identifying the faulty component (root cause localization) and the underlying fault type (root cause analysis) is essential for timely mitigation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.2"
+        },
+        {
+          "question": "q6",
+          "claim": "Supervised graph neural networks are currently the state of the art for joint root cause localization and analysis.",
+          "quote": "Supervised graph neural networks (GNNs) currently represent the state of the art for joint root cause localization and analysis.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.3"
+        },
+        {
+          "question": "q6",
+          "claim": "Existing approaches rely on centralized processing over full-system graphs, causing high inference latency and limited scalability in large distributed edge environments.",
+          "quote": "However, existing approaches rely on centralized processing over full-system graphs, leading to high inference latency and limited scalability in large, distributed edge environments.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.4"
+        },
+        {
+          "question": "q6",
+          "claim": "The proposed approach uses communication-driven clustering to partition large service graphs into highly interacting communities and uses a cascaded network with two subnetworks for hierarchical RCL/RCA.",
+          "quote": "Our approach employs communication-driven clustering to partition large service graphs into highly interacting communities and a cascaded network with two subnetworks that perform hierarchical RCL/RCA.",
+          "numbers": [
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S4.5"
+        },
+        {
+          "question": "q6",
+          "claim": "Restricting message passing to reduced and structured subgraphs lowers computational complexity while preserving critical dependency information.",
+          "quote": "By restricting message passing to reduced and structured subgraphs, the proposed framework significantly lowers computational complexity while preserving critical dependency information.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.6"
+        },
+        {
+          "question": "q6",
+          "claim": "The method is evaluated on the MicroCERCL benchmark and large-scale datasets generated using the iAnomaly simulation framework.",
+          "quote": "We evaluate the proposed method on the MicroCERCL benchmark and large-scale datasets generated using the iAnomaly simulation framework.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.7"
+        },
+        {
+          "question": "q6",
+          "claim": "The cascaded architecture achieves diagnostic accuracy comparable to centralized GNN baselines while maintaining near-constant inference latency as graph size increases, supporting scalable and actionable AIOps in edge computing.",
+          "quote": "Experimental results show that the cascaded architecture achieves diagnostic accuracy comparable to centralized GNN baselines while maintaining near-constant inference latency as graph size increases, enabling scalable and actionable AIOps in edge computing environments.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 4
+    },
+    {
+      "id": "5b0f6a9295",
+      "url": "https://arxiv.org/abs/2604.00555",
+      "title": "Ontology-Constrained Neural Reasoning in Enterprise Agentic Systems: A Neurosymbolic Architecture for Domain-Grounded AI Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-04-01",
+      "org": "Thanh Luong Tuan, Abhijit Sanyal",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper introduces a three-layer enterprise ontology framework consisting of Role, Domain, and Interaction ontologies to ground LLM-based enterprise agents.",
+          "quote": "We introduce a three-layer ontological framework--Role, Domain, and Interaction ontologies--grounding LLM-based enterprise agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.1"
+        },
+        {
+          "question": "q1",
+          "claim": "It formalizes asymmetric neurosymbolic coupling: current enterprise systems constrain agent inputs such as context assembly, tool discovery, and governance thresholds but not outputs, and it proposes extending this to output-side validation including response checking, reasoning verification, and compliance enforcement.",
+          "quote": "We formalize asymmetric neurosymbolic coupling: current enterprise systems constrain agent inputs (context assembly, tool discovery, governance thresholds) but not outputs, and we propose mechanisms extending this coupling to output-side validation (response checking, reasoning verification, compliance enforcement).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.2"
+        },
+        {
+          "question": "q3",
+          "claim": "In a controlled experiment of 1,800 runs across five industries and three LLMs, ontology-coupled agents significantly outperformed ungrounded agents on Metric Accuracy and Role Consistency with p < .001 across all three models and large effect sizes Kendall's W = .46-.64.",
+          "quote": "A controlled experiment (1,800 runs across five industries and three LLMs: Claude Sonnet 4, Qwen 2.5 72B, Gemma 4 26B) finds ontology-coupled agents significantly outperform ungrounded agents on Metric Accuracy (p <.001) and Role Consistency (p <.001) across all three models with large effect sizes (Kendall's W = .46-.64).",
+          "numbers": [
+            "1,800",
+            "five",
+            "three",
+            "p <.001",
+            "p <.001",
+            ".46-.64"
+          ],
+          "corroborated_by": [],
+          "id": "S5.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Ontology improvements are greatest where LLM parametric knowledge is weakest, with Vietnam-localized domains showing ontology lift 2x that of English domains.",
+          "quote": "Improvements are greatest where LLM parametric knowledge is weakest--particularly in Vietnam-localized domains, where ontology lift is 2x that of English domains.",
+          "numbers": [
+            "2x"
+          ],
+          "corroborated_by": [],
+          "id": "S5.4"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper contributes ontology-constrained tool discovery via SQL-pushdown scoring and a proposed framework for output-side ontological validation.",
+          "quote": "(3) ontology-constrained tool discovery via SQL-pushdown scoring; (4) a proposed framework for output-side ontological validation;",
+          "numbers": [
+            "3",
+            "4"
+          ],
+          "corroborated_by": [],
+          "id": "S5.5"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper reports empirical evidence for an inverse parametric knowledge effect, where ontological grounding value is inversely proportional to LLM training-data coverage of the domain.",
+          "quote": "(5) empirical evidence for the inverse parametric knowledge effect--ontological grounding value is inversely proportional to LLM training-data coverage of the domain;",
+          "numbers": [
+            "5"
+          ],
+          "corroborated_by": [],
+          "id": "S5.6"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper claims cross-model replication establishing model-independence and a production system serving 22 industry verticals with 650+ agents.",
+          "quote": "(6) cross-model replication establishing model-independence; (7) a production system serving 22 industry verticals with 650+ agents.",
+          "numbers": [
+            "6",
+            "7",
+            "22",
+            "650+"
+          ],
+          "corroborated_by": [],
+          "id": "S5.7"
+        },
+        {
+          "question": "q5",
+          "claim": "Enterprise adoption of LLMs is constrained by hallucination, domain drift, and inability to enforce regulatory compliance at the reasoning level; the paper presents a neurosymbolic architecture in the Foundation AgenticOS (FAOS) platform using ontology-constrained neural reasoning.",
+          "quote": "Enterprise adoption of Large Language Models (LLMs) is constrained by hallucination, domain drift, and the inability to enforce regulatory compliance at the reasoning level. We present a neurosymbolic architecture implemented within the Foundation AgenticOS (FAOS) platform that addresses these limitations through ontology-constrained neural reasoning.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 5
+    },
+    {
+      "id": "689828379a",
+      "url": "https://arxiv.org/abs/2607.27290",
+      "title": "EvoCause: LLM-Guided Evolution of Causal Graphs for Root Cause Analysis",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-07-29",
+      "org": "Lei Zan, Keli Zhang, Shifeng Xie, Jiale Zheng, Zehao Xiao, Zhiwei Dong, Ke Zhang, Ruichu Cai, Malik Tiomoko, Lujia Pan",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q6",
+          "claim": "Modern telecommunication, cloud, and microservice systems produce correlated alarm cascades when components fail, and root cause analysis aims to identify the small set of alarms that initiate each cascade.",
+          "quote": "Modern telecommunication, cloud, and microservice systems emit correlated alarm cascades when components fail. Root cause analysis (RCA) aims to identify the small set of alarms that initiate each cascade.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.1"
+        },
+        {
+          "question": "q6",
+          "claim": "A common RCA approach learns a causal graph from observational logs and predicts zero-in-degree alarms in each incident-induced subgraph, but the learned graph remains fixed and cannot benefit from expert diagnoses of historical incidents.",
+          "quote": "A common approach learns a causal graph from observational logs and predicts all zero-in-degree alarms in each incident-induced subgraph. However, the learned graph remains fixed and cannot benefit from expert diagnoses of historical incidents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.2"
+        },
+        {
+          "question": "q5",
+          "claim": "EvoCause uses an LLM to propose semantically plausible graph edits while deterministic code validates node identities and acyclicity and retains the best graph on a labeled alignment set.",
+          "quote": "EvoCause uses a large language model (LLM) to propose semantically plausible graph edits, while deterministic code validates node identities and acyclicity and retains the best graph on a labeled alignment set.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.3"
+        },
+        {
+          "question": "q6",
+          "claim": "At test time, the refined graph alone produces transparent predictions without an LLM call.",
+          "quote": "At test time, the refined graph alone produces transparent predictions without an LLM call.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.4"
+        },
+        {
+          "question": "q6",
+          "claim": "TeleRCA is an expert-annotated benchmark from a production telecommunication network containing 485,681 alarm events spanning 194 alarm types over 5,621 resources.",
+          "quote": "We also release TeleRCA, an expert-annotated benchmark from a production telecommunication network containing 485,681alarm events spanning 194alarm types over 5,621resources.",
+          "numbers": [
+            "485,681",
+            "194",
+            "5,621"
+          ],
+          "corroborated_by": [],
+          "id": "S6.5"
+        },
+        {
+          "question": "q6",
+          "claim": "On synthetic data, EvoCause initialized with PC causal discovery outperforms the unrefined PC baseline, raising Node F1, Case EM, and Graph F1 by 11.59, 9.40, and 4.59 percentage points respectively, while reducing nSHD by 0.2379.",
+          "quote": "On synthetic data, EvoCause initialized with the PC causal discovery algorithm outperforms the unrefined PC baseline, raising Node F1, Case EM, and Graph F1 by 11.59, 9.40, and 4.59percentage points, respectively, while reducing nSHD by 0.2379.",
+          "numbers": [
+            "11.59",
+            "9.40",
+            "4.59",
+            "0.2379"
+          ],
+          "corroborated_by": [],
+          "id": "S6.6"
+        },
+        {
+          "question": "q6",
+          "claim": "On TeleRCA, replacing human-readable alarm titles with anonymous identifiers lowers Node F1 and Case EM by 6.12 and 8.04 percentage points respectively, indicating alarm-name information contributes to graph refinement.",
+          "quote": "On TeleRCA, replacing human-readable alarm titles with anonymous identifiers lowers Node F1 and Case EM by 6.12and 8.04percentage points, respectively, indicating that alarm-name information contributes to graph refinement.",
+          "numbers": [
+            "6.12",
+            "8.04"
+          ],
+          "corroborated_by": [],
+          "id": "S6.7"
+        },
+        {
+          "question": "q5",
+          "claim": "Expert labels constrain which alarms should be source nodes but do not specify the edge edits needed to satisfy those constraints.",
+          "quote": "Expert labels constrain which alarms should be source nodes but do not specify the edge edits needed to satisfy those constraints.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 6
+    },
+    {
+      "id": "6c374d4f97",
+      "url": "https://arxiv.org/abs/2501.17174",
+      "title": "Extractive Schema Linking for Text-to-SQL",
+      "provider": "semantic_scholar",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-01-23",
+      "org": "Michael Glass, Mustafa Eyceoz, Dharmashankar Subramanian, Gaetano Rossiello, Long Vu, Alfio Gliozzo",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "Text-to-SQL is described as an emerging practical interface for real-world databases.",
+          "quote": "Text-to-SQL is emerging as a practical interface for real world databases.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The dominant Text-to-SQL paradigm is cross-database or schema-independent and supports application schemas unseen during training.",
+          "quote": "The dominant paradigm for Text-to-SQL is cross-database or schema-independent, supporting application schemas unseen during training.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.2"
+        },
+        {
+          "question": "q3",
+          "claim": "A database schema defines tables, columns, column types, and foreign key connections between tables.",
+          "quote": "The schema of a database defines the tables, columns, column types and foreign key connections between tables.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Real-world schemas can be large, containing hundreds of columns, but only a small fraction is relevant for any particular query.",
+          "quote": "Real world schemas can be large, containing hundreds of columns, but for any particular query only a small fraction will be relevant.",
+          "numbers": [
+            "hundreds",
+            "small fraction"
+          ],
+          "corroborated_by": [],
+          "id": "S7.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Putting the entire schema in an LLM prompt can be impossible for smaller token windows and expensive even when the context window is large enough.",
+          "quote": "Placing the entire schema in the prompt for an LLM can be impossible for models with smaller token windows and expensive even when the context window is large enough to allow it.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Model accuracy can be improved by focusing SQL generation on only the relevant portion of the database.",
+          "quote": "Even apart from computational considerations, the accuracy of the model can be improved by focusing the SQL generation on only the relevant portion of the database.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Schema linking identifies the portion of a database schema that is useful for a question.",
+          "quote": "Schema linking identifies the portion of the database schema useful for the question.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.7"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper introduces an extractive approach that adapts decoder-only LLMs to schema linking, claimed to be more computationally efficient and accurate than the generative approach, with fine-grained precision-recall control.",
+          "quote": "We introduce a new approach to adapt decoder-only LLMs to schema linking that is both computationally more efficient and more accurate than the generative approach. Additionally our extractive approach permits fine-grained control over the precision-recall trade-off for schema linking.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 7
+    },
+    {
+      "id": "80e3cf8fcd",
+      "url": "https://arxiv.org/abs/2607.18821",
+      "title": "VirtualSet: Typed Ontology Worlds as an LLM Generation Target for Grounded Queries and Guarded Decisions",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-07-21",
+      "org": "Qunhui Zhang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "VirtualSet is presented as a live, receiver-typed ontology-world interface and generation target for LLMs.",
+          "quote": "We present VirtualSet, a live, receiver-typed ontology-world interface and generation target for LLMs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Instead of SQL, the model emits set expressions over entity-edge worlds.",
+          "quote": "Instead of SQL, the model emits set expressions over entity-edge worlds.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Generic Constraint Projection checks expressions before execution and preserves concrete receiver types through collection chains, turning invalid fields, edges, receivers, and actions into token-anchored type errors.",
+          "quote": "Generic Constraint Projection (GCP) checks expressions before execution, while future this preserves concrete receiver types through collection chains, turning invalid fields, edges, receivers, and actions into token-anchored type errors.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.3"
+        },
+        {
+          "question": "q3",
+          "claim": "On BIRD, relational schemas are lifted into typed worlds and VirtualSet is compared with direct SQL while holding model, evidence, values, zero-shot setting, timeout, glossary, repair/voting, and grader constant where possible.",
+          "quote": "On BIRD, we lift relational schemas into typed worlds and compare VirtualSet with direct SQL while holding the model, evidence, values, zero-shot setting, timeout, glossary, repair/voting, and grader constant where possible.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.4"
+        },
+        {
+          "question": "q3",
+          "claim": "On a frozen 1,072-question split, VirtualSet achieves 67.5% accuracy versus 63.5% for glossary-matched direct SQL with repair and voting, a +4.0 point improvement with McNemar exact p = 0.00117 using deepseek-reasoner.",
+          "quote": "On a frozen 1,072-question split, VirtualSet achieves 67.5% accuracy versus 63.5% for glossary-matched direct SQL with repair and voting (+4.0 points; McNemar exact p = 0.00117) using deepseek-reasoner.",
+          "numbers": [
+            "1,072",
+            "67.5%",
+            "63.5%",
+            "+4.0",
+            "p = 0.00117"
+          ],
+          "corroborated_by": [],
+          "id": "S8.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Full-corpus analysis finds no engine mis-computation of a type-clean expression, with remaining errors arising from model semantics or gold defects.",
+          "quote": "Full-corpus analysis finds no engine mis-computation of a type-clean expression; remaining errors arise from model semantics or gold defects.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.6"
+        },
+        {
+          "question": "q4",
+          "claim": "The same substrate supports guarded decisions by running actions first in a simulated world, with world-change events requiring external approval before actualization.",
+          "quote": "The same substrate supports guarded decisions: actions run first in a simulated world, and world-change events require external approval before actualization.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.7"
+        },
+        {
+          "question": "q4",
+          "claim": "In a 30-body guard corpus, the write chain intercepts 20/20 hallucinated action bodies with zero false positives.",
+          "quote": "In a 30-body guard corpus, the write chain intercepts 20/20 hallucinated action bodies with zero false positives.",
+          "numbers": [
+            "30-body",
+            "20/20",
+            "zero"
+          ],
+          "corroborated_by": [],
+          "id": "S8.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 8
+    },
+    {
+      "id": "9a42d5c913",
+      "url": "https://arxiv.org/abs/2608.24918",
+      "title": "Semantic Graph Unification for Industrial Digital Threads: Bridging 11 Heterogeneous Manufacturing Systems Through Ontology-Driven Knowledge Graphs",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-11",
+      "org": "Grama Chethan",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper presents an ontology-driven RDF knowledge graph that unifies data from 11 simulated manufacturing sources across nine domains via a five-stage ETL pipeline, with automated entity resolution producing 97 owl:sameAs identity links.",
+          "quote": "An ontology-driven RDF knowledge graph unifies data from 11 simulated sources across nine domains through a five-stage ETL pipeline with automated entity resolution spanning 97 owl:sameAs identity links.",
+          "numbers": [
+            "11",
+            "nine",
+            "five-stage",
+            "97"
+          ],
+          "corroborated_by": [],
+          "id": "S9.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The ontology contains 78 RDFS classes, 108 object properties, and 243 data properties, and draws on standards including ISA-95, OPC UA, eClass, Asset Administration Shell, and RAMI 4.0.",
+          "quote": "The ontology encompasses 78 RDFS classes, 108 object properties, and 243 data properties, drawing on ISA-95, OPC UA, eClass, the Asset Administration Shell, RAMI 4.0, and additional standards.",
+          "numbers": [
+            "78",
+            "108",
+            "243",
+            "ISA-95",
+            "OPC UA",
+            "eClass",
+            "Asset Administration Shell",
+            "RAMI 4.0"
+          ],
+          "corroborated_by": [],
+          "id": "S9.2"
+        },
+        {
+          "question": "q4",
+          "claim": "The knowledge graph is exposed to LLM agents through 287 Model Context Protocol tools as a SPARQL-native semantic layer.",
+          "quote": "The graph is exposed to LLM agents via 287 Model Context Protocol tools as a SPARQL-native semantic layer.",
+          "numbers": [
+            "287"
+          ],
+          "corroborated_by": [],
+          "id": "S9.3"
+        },
+        {
+          "question": "q6",
+          "claim": "Blocking 24 cross-system tools reduces recall from 1.00 to 0.31 and F1 from 1.00 to 0.48, indicating that 69% of discoverable signals require cross-system graph joins.",
+          "quote": "The primary empirical result: blocking 24 cross-system tools reduces recall from 1.00 to 0.31 (F1 from 1.00 to 0.48), showing that 69% of discoverable signals require cross-system graph joins.",
+          "numbers": [
+            "24",
+            "1.00",
+            "0.31",
+            "1.00",
+            "0.48",
+            "69%"
+          ],
+          "corroborated_by": [],
+          "id": "S9.4"
+        },
+        {
+          "question": "q6",
+          "claim": "Manufacturing enterprises run heterogeneous systems such as ERP, MES, PLM, SCADA, QMS, and SCM; these silos delay root-cause investigation, and point-to-point integration scales as O(n^2).",
+          "quote": "Modern manufacturing enterprises operate heterogeneous systems -- ERP, MES, PLM, SCADA, QMS, SCM -- each with its own data model and API. The resulting silos prevent holistic analysis, delay root-cause investigation, and obstruct Industry 4.0 traceability. Point-to-point integration scales as O(n^2) and accumulates brittle dependencies.",
+          "numbers": [
+            "O(n^2)"
+          ],
+          "corroborated_by": [],
+          "id": "S9.5"
+        },
+        {
+          "question": "q6",
+          "claim": "An automated discovery engine applies nine strategy categories, including cross-station correlation, alarm coverage, ECN impact, and CUSUM/EWMA drift detection, to surface insights across system boundaries.",
+          "quote": "An automated discovery engine applies nine strategy categories -- cross-station correlation, alarm coverage, ECN impact, CUSUM/EWMA drift detection -- to surface insights spanning system boundaries.",
+          "numbers": [
+            "nine"
+          ],
+          "corroborated_by": [],
+          "id": "S9.6"
+        },
+        {
+          "question": "q6",
+          "claim": "A leave-one-out ablation confirms that six of the nine discovery strategies contribute unique signals.",
+          "quote": "Leave-one-out ablation confirms six of nine strategies contribute unique signals.",
+          "numbers": [
+            "six",
+            "nine"
+          ],
+          "corroborated_by": [],
+          "id": "S9.7"
+        },
+        {
+          "question": "q6",
+          "claim": "Verification against a 65-signal manifest with 16 positive and 49 null signals yields F1 = 1.00 with a 95% Clopper-Pearson CI of [0.79, 1.00], but the author-constructed manifest makes this verification rather than independent validation.",
+          "quote": "Verification against a 65-signal manifest (16 positive, 49 null) yields F1 = 1.00 (95% Clopper-Pearson CI [0.79, 1.00]); as the manifest was author-constructed, this constitutes verification not independent validation.",
+          "numbers": [
+            "65",
+            "16",
+            "49",
+            "1.00",
+            "95%",
+            "0.79",
+            "1.00"
+          ],
+          "corroborated_by": [],
+          "id": "S9.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 9
+    },
+    {
+      "id": "bccfc6393c",
+      "url": "https://arxiv.org/abs/2505.00060",
+      "title": "Fact-Consistency Evaluation of Text-to-SQL Generation for Business Intelligence Using Exaone 3.5",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-04-30",
+      "org": "Jeho Choi (arXiv, cs.CL)",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "LLM text-to-SQL for real-world Business Intelligence is limited by semantic hallucinations, structural errors, and the absence of domain-specific evaluation frameworks.",
+          "quote": "Large Language Models (LLMs) have shown promise in enabling natural language interfaces for structured data querying through text-to-SQL generation. However, their application in real-world Business Intelligence (BI) contexts remains limited due to semantic hallucinations, structural errors, and a lack of domain-specific evaluation frameworks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The study proposes a Fact-Consistency Evaluation Framework for judging the semantic accuracy of LLM-generated SQL, using Exaone 3.5, described as an instruction-tuned bilingual LLM optimized for enterprise tasks.",
+          "quote": "we propose a Fact-Consistency Evaluation Framework for assessing the semantic accuracy of LLM-generated SQL outputs using Exaone 3.5--an instruction-tuned, bilingual LLM optimized for enterprise tasks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.2"
+        },
+        {
+          "question": "q3",
+          "claim": "The benchmark contains 219 natural language business questions spanning five SQL complexity levels, drawn from real sales data in LG Electronics' internal BigQuery environment, each paired with gold-standard SQL and a validated ground-truth answer.",
+          "quote": "We construct a domain-specific benchmark comprising 219 natural language business questions across five SQL complexity levels, derived from actual sales data in LG Electronics' internal BigQuery environment. Each question is paired with a gold-standard SQL query and a validated ground-truth answer.",
+          "numbers": [
+            "219",
+            "five"
+          ],
+          "corroborated_by": [],
+          "id": "S10.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Model performance was measured with four metrics: answer accuracy, execution success rate, semantic error rate, and non-response rate.",
+          "quote": "We evaluate model performance using answer accuracy, execution success rate, semantic error rate, and non-response rate.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Exaone 3.5 achieved 93% accuracy on simple aggregation tasks (L1) but dropped to 4% on arithmetic reasoning (H1) and 31% on grouped ranking tasks (H4), with semantic errors and non-responses concentrated in complex cases.",
+          "quote": "Experimental results show that while Exaone 3.5 performs well on simple aggregation tasks (93% accuracy in L1), it exhibits substantial degradation in arithmetic reasoning (4% accuracy in H1) and grouped ranking tasks (31% in H4), with semantic errors and non-responses concentrated in complex cases.",
+          "numbers": [
+            "93%",
+            "L1",
+            "4%",
+            "H1",
+            "31%",
+            "H4"
+          ],
+          "corroborated_by": [],
+          "id": "S10.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Common failure types identified in qualitative error analysis are misapplied arithmetic logic, incomplete filtering, and incorrect grouping operations.",
+          "quote": "Qualitative error analysis further identifies common failure types such as misapplied arithmetic logic, incomplete filtering, and incorrect grouping operations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.6"
+        },
+        {
+          "question": "q3",
+          "claim": "The authors conclude that LLMs remain limited in business-critical environments and that fact-consistency validation layers and hybrid reasoning approaches are needed.",
+          "quote": "Our findings highlight the current limitations of LLMs in business-critical environments and underscore the need for fact-consistency validation layers and hybrid reasoning approaches.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.7"
+        },
+        {
+          "question": "q3",
+          "claim": "The work is presented as contributing a reproducible benchmark and evaluation methodology for reliable natural language interfaces to structured enterprise data systems.",
+          "quote": "This work contributes a reproducible benchmark and evaluation methodology for advancing reliable natural language interfaces to structured enterprise data systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 10
+    },
+    {
+      "id": "cd3ba2c042",
+      "url": "https://arxiv.org/abs/2607.01788",
+      "title": "KRCA: An Efficient Root Cause Analysis System in Hyper-scale Microservice Systems via Agentic AI",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-07-02",
+      "org": "Jiamin Jiang et al. / arXiv",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q6",
+          "claim": "Hyper-scale microservice systems are standard infrastructure for large-scale Internet companies and consist of numerous loosely coupled microservices that evolve independently; their complexity makes failures unavoidable and necessitates efficient root cause analysis to localize root cause services and classify failure types.",
+          "quote": "Hyper-scale microservice systems have become the standard infrastructure for large-scale Internet companies. These systems consist of numerous loosely coupled microservices that evolve independently through continuous development and deployment. Such complexity makes failures unavoidable, necessitating efficient Root Cause Analysis (RCA) to help Site Reliability Engineers (SREs) quickly localize root cause services and classify failure types.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.1"
+        },
+        {
+          "question": "q6",
+          "claim": "Existing RCA methods often struggle to adapt to the extreme dynamism and massive scale of hyper-scale microservice systems.",
+          "quote": "However, existing RCA methods often struggle to adapt to the extreme dynamism and massive scale of these systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.2"
+        },
+        {
+          "question": "q6",
+          "claim": "The paper presents KRCA, an end-to-end RCA system designed for hyper-scale microservice systems.",
+          "quote": "In this paper, we present KRCA, an end-to-end RCA system designed for hyper-scale microservice systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.3"
+        },
+        {
+          "question": "q6",
+          "claim": "To manage the vast search space, KRCA uses a multi-stage pipeline that begins with an API-level drilldown to isolate suspicious services.",
+          "quote": "To manage the vast search space, KRCA employs a multi-stage pipeline that begins with an API-level drilldown to isolate suspicious services.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.4"
+        },
+        {
+          "question": "q6",
+          "claim": "KRCA instantiates a skeleton-based causal graph from anomalous metrics as a high-recall structural prior, then uses a memory-augmented multi-agent framework to verify causality and generate the final failure report.",
+          "quote": "It then instantiates a skeleton-based causal graph from anomalous metrics to serve as a high-recall structural prior, before utilizing a memory-augmented multi-agent framework to verify causality and generate the final failure report.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.5"
+        },
+        {
+          "question": "q6",
+          "claim": "KRCA combines structured causal constraints with multi-agent reasoning to balance diagnostic accuracy with real-time production efficiency.",
+          "quote": "By combining structured causal constraints with multi-agent reasoning, KRCA employs balances diagnostic accuracy with the efficiency requirements of real-time production use.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.6"
+        },
+        {
+          "question": "q6",
+          "claim": "KRCA achieves AC@1 scores of 0.88 and 0.79 for root cause service localization and failure type classification, outperforming the strongest baseline by at least 31% in absolute gains.",
+          "quote": "Experimental results show that KRCA achieves AC@1 scores of 0.88 and 0.79 for root cause service localization and failure type classification, outperforming the strongest baseline by at lease 31% in absolute gains.",
+          "numbers": [
+            "0.88",
+            "0.79",
+            "31%"
+          ],
+          "corroborated_by": [],
+          "id": "S11.7"
+        },
+        {
+          "question": "q6",
+          "claim": "KRCA has been deployed in Kuaishou's production environment for over six months, reducing average diagnosis time by 77.3%.",
+          "quote": "KRCA has been deployed in Kuaishou's production environment for over six months, reducing the average diagnosis time by 77.3%.",
+          "numbers": [
+            "six",
+            "77.3%"
+          ],
+          "corroborated_by": [],
+          "id": "S11.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 11
+    },
+    {
+      "id": "f8fd9878ed",
+      "url": "https://arxiv.org/abs/2606.08590",
+      "title": "Auditable Graph-Guided Root Cause Analysis for Kubernetes Incidents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-06-07",
+      "org": "Anastasiia Kuvshinova, Seungmin Jin",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q6",
+          "claim": "The paper presents Graph Traversal Agent, a graph-guided root cause analysis agent that combines LLM reasoning with specialized tools.",
+          "quote": "We present Graph Traversal Agent, a graph-guided RCA agent that combines LLM reasoning with specialized tools.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.1"
+        },
+        {
+          "question": "q6",
+          "claim": "The agent reasons over a typed evidence graph, while deterministic graph and tool operations collect evidence, bound the search, and check proposed verdicts.",
+          "quote": "The model reasons over a typed evidence graph, while deterministic graph and tool operations collect evidence, bound the search, and check proposed verdicts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.2"
+        },
+        {
+          "question": "q6",
+          "claim": "The work maps operational constraints including read-only evidence collection, propagation-aware diagnosis, bounded execution, and independently validated verdicts to a typed incident graph, a LangGraph traversal state machine, and a separate validation stage.",
+          "quote": "We map operational constraints, including read-only evidence collection, propagation-aware diagnosis, bounded execution, and independently validated verdicts, to a typed incident graph, a LangGraph traversal state machine, and a separate validation stage.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.3"
+        },
+        {
+          "question": "q6",
+          "claim": "On ITBench snapshots scored by one fixed qwen-plus judge, the audited system raises root-cause-entity F1 over an earlier iteration from 0.6087 to 0.9130 on a 23-scenario common subset.",
+          "quote": "On ITBench snapshots scored by one fixed qwen-plus judge, the audited system raises root-cause-entity F1 over an earlier iteration of the same system from 0.6087 to 0.9130 on a 23-scenario common subset.",
+          "numbers": [
+            "0.6087",
+            "0.9130",
+            "23"
+          ],
+          "corroborated_by": [],
+          "id": "S12.4"
+        },
+        {
+          "question": "q6",
+          "claim": "A prompt-level ablation separates prompt-tuned gains from gains surviving removal of scenario-specific hints; the stripped-prompt configuration retains 0.6958 F1 on a 19-scenario subset.",
+          "quote": "A prompt-level ablation separates prompt-tuned gains from gains that survive once scenario-specific hints are removed: the stripped-prompt configuration retains 0.6958 F1 on a 19-scenario subset.",
+          "numbers": [
+            "0.6958",
+            "19"
+          ],
+          "corroborated_by": [],
+          "id": "S12.5"
+        },
+        {
+          "question": "q6",
+          "claim": "The surviving gain concentrates on ChaosMesh scenarios where the ground-truth root cause is the injected fault object already present in the evidence graph, so the authors report it as benchmark-coupled rather than broad cross-cluster RCA evidence.",
+          "quote": "The surviving gain concentrates on ChaosMesh scenarios whose ground-truth root cause is the injected fault object already present in the evidence graph, so we report it as benchmark-coupled rather than broad cross-cluster RCA evidence.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.6"
+        },
+        {
+          "question": "q6",
+          "claim": "Lightweight checks include same-judge comparison, prompt-level ablation, cascade-source checking, and a telemetry no-leak test; they mark claims as supported, pending, or out of scope.",
+          "quote": "Lightweight checks, including same-judge comparison, prompt-level ablation, cascade-source checking, and a telemetry no-leak test, mark claims as supported, pending, or out of scope.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.7"
+        },
+        {
+          "question": "q6",
+          "claim": "The work is scoped to ITBench OpenTelemetry-demo snapshots; live-cluster trials served as an engineering stress test, but alert state and trace availability did not stay stable enough for controlled scoring, so no production-readiness or mean-time-to-repair claim is made.",
+          "quote": "We scope the work to ITBench OpenTelemetry-demo snapshots. Live-cluster trials served as an engineering stress test, but alert state and trace availability did not stay stable enough for controlled scoring, so we make no production-readiness or mean-time-to-repair claim.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 12
+    },
+    {
+      "id": "1471d4f411",
+      "url": "https://arxiv.org/abs/2605.14259",
+      "title": "Hypergraph Enterprise Agentic Reasoner over Heterogeneous Business Systems",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-05-14",
+      "org": "Ling Wang, Xin Liu, Songnan Liu, Jianan Wang, Cheng Cheng, Yihan Zhu, Enyu Li, Yu Xiao, Jiangyong Xie, Duogong Yan, Jiangyi Chen",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "HEAR is an enterprise agentic reasoner built on a Stratified Hypergraph Ontology, with a base Graph Layer that virtualizes provenance-aware data interfaces and a Hyperedge Layer that encodes n-ary business rules and procedural protocols.",
+          "quote": "We introduce HEAR, an enterprise agentic reasoner built on a Stratified Hypergraph Ontology. Its base Graph Layer virtualizes provenance-aware data interfaces, while the Hyperedge Layer encodes n-ary business rules and procedural protocols.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Applying LLMs to heterogeneous enterprise systems is said to be hindered by hallucinations and failures in multi-hop, n-ary reasoning.",
+          "quote": "Applying Large Language Models (LLMs) to heterogeneous enterprise systems is hindered by hallucinations and failures in multi-hop, n-ary reasoning.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Existing paradigms such as GraphRAG and NL2SQL are said to lack the semantic grounding and auditable execution required for complex enterprise environments.",
+          "quote": "Existing paradigms (e.g., GraphRAG, NL2SQL) lack the semantic grounding and auditable execution required for these complex environments.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.3"
+        },
+        {
+          "question": "q3",
+          "claim": "HEAR operates an evidence-driven reasoning loop and dynamically orchestrates ontology tools for structured multi-hop analysis without requiring LLM retraining.",
+          "quote": "Operating an evidence-driven reasoning loop, HEAR dynamically orchestrates ontology tools for structured multi-hop analysis without requiring LLM retraining.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.4"
+        },
+        {
+          "question": "q3",
+          "claim": "On supply-chain tasks, including order fulfillment blockage root cause analysis, HEAR achieves up to 94.7% accuracy.",
+          "quote": "Evaluations on supply-chain tasks, including order fulfillment blockage root cause analysis (RCA), show HEAR achieves up to 94.7% accuracy.",
+          "numbers": [
+            "94.7%"
+          ],
+          "corroborated_by": [],
+          "id": "S13.5"
+        },
+        {
+          "question": "q6",
+          "claim": "HEAR uses procedural hyperedges to minimize token costs and leverages topological exploration for rigorous correctness on complex queries.",
+          "quote": "Crucially, HEAR demonstrates adaptive efficiency: utilizing procedural hyperedges to minimize token costs, while leveraging topological exploration for rigorous correctness on complex queries.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.6"
+        },
+        {
+          "question": "q2",
+          "claim": "HEAR matches proprietary model performance with open-weight backbones and automates manual diagnostics.",
+          "quote": "By matching proprietary model performance with open-weight backbones and automating manual diagnostics, HEAR establishes a scalable, auditable foundation for enterprise intelligence.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 13
+    },
+    {
+      "id": "3267039a41",
+      "url": "https://arxiv.org/abs/2410.23584",
+      "title": "End-to-End Ontology Learning with Large Language Models",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-10-31",
+      "org": "Andy Lo, Albert Q. Jiang, Wenda Li, Mateja Jamnik",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Ontologies represent domain knowledge in a structured format for automatic machine processing, but constructing ontologies requires substantial manual effort.",
+          "quote": "Ontologies are useful for automatic machine processing of domain knowledge as they represent it in a structured format. Yet, constructing ontologies requires substantial manual effort.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.1"
+        },
+        {
+          "question": "q5",
+          "claim": "LLMs have been used to automate subtasks of ontology learning, but this partial approach does not capture interactions between subtasks.",
+          "quote": "To automate part of this process, large language models (LLMs) have been applied to solve various subtasks of ontology learning. However, this partial ontology learning does not capture the interactions between subtasks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.2"
+        },
+        {
+          "question": "q5",
+          "claim": "OLLM is a general and scalable method that builds the taxonomic backbone of an ontology from scratch by modeling entire subcomponents of the target ontology.",
+          "quote": "We address this gap by introducing OLLM, a general and scalable method for building the taxonomic backbone of an ontology from scratch. Rather than focusing on subtasks, like individual relations between entities, we model entire subcomponents of the target ontology by finetuning an LLM with a custom regulariser that reduces overfitting on high-frequency concepts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.3"
+        },
+        {
+          "question": "q5",
+          "claim": "OLLM finetunes an LLM with a custom regulariser that reduces overfitting on high-frequency concepts.",
+          "quote": "Rather than focusing on subtasks, like individual relations between entities, we model entire subcomponents of the target ontology by finetuning an LLM with a custom regulariser that reduces overfitting on high-frequency concepts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper introduces metrics for evaluating generated ontology quality via semantic and structural similarity to ground truth, using deep learning to define more robust graph distance measures.",
+          "quote": "We introduce a novel suite of metrics for evaluating the quality of the generated ontology by measuring its semantic and structural similarity to the ground truth. In contrast to standard metrics, our metrics use deep learning techniques to define more robust distance measures between graphs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.5"
+        },
+        {
+          "question": "q5",
+          "claim": "On Wikipedia, OLLM outperforms subtask composition methods, producing more semantically accurate ontologies while maintaining structural integrity.",
+          "quote": "Both our quantitative and qualitative results on Wikipedia show that OLLM outperforms subtask composition methods, producing more semantically accurate ontologies while maintaining structural integrity.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.6"
+        },
+        {
+          "question": "q5",
+          "claim": "OLLM can be adapted to new domains such as arXiv with only a small number of training examples.",
+          "quote": "We further demonstrate that our model can be effectively adapted to new domains, like arXiv, needing only a small number of training examples.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 14
+    },
+    {
+      "id": "4edc4dce34",
+      "url": "https://arxiv.org/abs/2609.31663",
+      "title": "LLM-Guided Ontology-Driven Knowledge Graph Construction from Unstructured Text",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-15",
+      "org": "Abdelhadi Belfadel, Maxence Gagnant, Joseph Kattan, Sana Tmar",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Ontology-driven knowledge graph construction from industrial text is described as challenging because of domain-specific documents, scarce annotated resources, and complex ontology engineering workflows.",
+          "quote": "Ontology-driven knowledge graph construction from industrial text remains challenging due to the domain specificity of documents, the scarcity of annotated resources, and the complexity of ontology engineering workflows.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper presents an ontology learning pipeline that combines compact open-source LLMs, reusable prompting strategies, and open knowledge bases to extract, structure, enrich, and evaluate knowledge from textual corpora.",
+          "quote": "This paper presents and investigates the applicability of an ontology learning pipeline that combines compact open-source Large Language Models (LLMs), reusable prompting strategies, and open knowledge bases to support the extraction, structuring, enrichment, and evaluation of knowledge from textual corpora.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.2"
+        },
+        {
+          "question": "q1",
+          "claim": "In the approach, unstructured reports are used to extract entities and relations, generate RDF triples, construct an OWL ontology, enrich it with external sources, assess ontology quality, and then build a populated knowledge graph grounded in the resulting ontology schema.",
+          "quote": "Starting from unstructured reports, the approach extracts entities and relations, generates RDF triples, constructs related OWL ontology, enriches it using external knowledge sources, assesses the quality of the ontology, and subsequently constructs a populated knowledge graph grounded in the resulting ontology schema.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.3"
+        },
+        {
+          "question": "q5",
+          "claim": "The approach was tested on a private French corpus of power-grid incident reports using locally deployable open-source LLMs ranging from 7B to 32B parameters.",
+          "quote": "The approach is tested and evaluated on a private French corpus of power-grid incident reports, using locally deployable open-source LLMs ranging from 7B to 32B parameters.",
+          "numbers": [
+            "7B",
+            "32B"
+          ],
+          "corroborated_by": [],
+          "id": "S15.4"
+        },
+        {
+          "question": "q5",
+          "claim": "Experiments on 80 manually annotated private reports showed that schema-guided prompting significantly improves extraction quality.",
+          "quote": "Experiments on 80 manually annotated private reports show that schema-guided prompting significantly improves extraction quality, while quantized models provide an effective trade-off between performance and computational cost.",
+          "numbers": [
+            "80"
+          ],
+          "corroborated_by": [],
+          "id": "S15.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Quantized models are reported to provide an effective trade-off between performance and computational cost.",
+          "quote": "Experiments on 80 manually annotated private reports show that schema-guided prompting significantly improves extraction quality, while quantized models provide an effective trade-off between performance and computational cost.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The results support the feasibility of transforming domain-specific industrial text into ontology-based knowledge graphs using locally deployed open-source LLMs and reusable prompting strategies.",
+          "quote": "These results demonstrate the feasibility of transforming domain-specific industrial text into ontology-based knowledge graphs using locally deployed open-source LLMs, while supporting the generalization of the extraction process through reusable prompting strategies.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 15
+    },
+    {
+      "id": "51d2bba9f5",
+      "url": "https://arxiv.org/abs/2403.08345",
+      "title": "From human experts to machines: An LLM supported approach to ontology and knowledge graph construction",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-03-13",
+      "org": "Vamsi Krishna Kommineni, Birgitta König-Ries, Sheeba Samuel",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Conventional ontology and knowledge graph construction relies on human domain experts to define entities and relationship types, establish hierarchies, maintain domain relevance, fill the ABox with instances, and ensure data quality such as accuracy and completeness.",
+          "quote": "The conventional process of building Ontologies and Knowledge Graphs (KGs) heavily relies on human domain experts to define entities and relationship types, establish hierarchies, maintain relevance to the domain, fill the ABox (or populate with instances), and ensure data quality (including amongst others accuracy and completeness).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper's pipeline develops an ontology as a TBox based on competency questions and then constructs knowledge graphs using that ontology.",
+          "quote": "Our pipeline involves formulating competency questions (CQs), developing an ontology (TBox) based on these CQs, constructing KGs using the developed ontology, and evaluating the resultant KG with minimal to no involvement of human experts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.2"
+        },
+        {
+          "question": "q5",
+          "claim": "The work explores semi-automatic construction of knowledge graphs facilitated by open-source large language models.",
+          "quote": "This work explores the (semi-)automatic construction of KGs facilitated by open-source LLMs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.3"
+        },
+        {
+          "question": "q5",
+          "claim": "LLMs are described as able to understand and generate human-like natural language and as offering ways to automate aspects of ontology and knowledge graph construction.",
+          "quote": "On the other hand, Large Language Models (LLMs) have recently gained popularity for their ability to understand and generate human-like natural language, offering promising ways to automate aspects of this process.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The semi-automated pipeline was demonstrated by creating a knowledge graph on deep learning methodologies from scholarly publications.",
+          "quote": "We showcase the feasibility of our semi-automated pipeline by creating a KG on deep learning methodologies by exploiting scholarly publications.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.5"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper designs a judge LLM to rate answers generated via Retrieval-Augmented-Generation and KG concepts automatically extracted using LLMs against ground truth.",
+          "quote": "To evaluate the answers generated via Retrieval-Augmented-Generation (RAG) as well as the KG concepts automatically extracted using LLMs, we design a judge LLM, which rates the generated content based on ground truth.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The findings suggest LLMs could reduce human effort in knowledge graph construction, but a human-in-the-loop approach is recommended for evaluating automatically generated KGs.",
+          "quote": "Our findings suggest that employing LLMs could potentially reduce the human effort involved in the construction of KGs, although a human-in-the-loop approach is recommended to evaluate automatically generated KGs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 16
+    },
+    {
+      "id": "5c131aaee8",
+      "url": "https://arxiv.org/abs/2506.05690",
+      "title": "When to use Graphs in RAG: A Comprehensive Analysis for Graph Retrieval-Augmented Generation",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-06-06",
+      "org": "Zhishang Xiang, Chuanjie Wu, Qinggang Zhang, Shengyuan Chen, Zijin Hong, Xiao Huang, Jinsong Su",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "GraphRAG uses graphs to model the hierarchical structure between specific concepts.",
+          "quote": "It leverages graphs to model the hierarchical structure between specific concepts",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Recent studies report that GraphRAG frequently underperforms vanilla RAG on many real-world tasks.",
+          "quote": "recent studies report that GraphRAG frequently underperforms vanilla RAG on many real-world tasks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.2"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper proposes GraphRAG-Bench, a comprehensive benchmark designed to evaluate GraphRAG models on hierarchical knowledge retrieval and deep contextual reasoning.",
+          "quote": "we propose GraphRAG-Bench, a comprehensive benchmark designed to evaluate GraphRAG models onboth hierarchical knowledge retrieval and deep contextual reasoning.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.3"
+        },
+        {
+          "question": "q2",
+          "claim": "GraphRAG-Bench includes tasks of increasing difficulty covering fact retrieval, complex reasoning, contextual summarization, and creative generation.",
+          "quote": "GraphRAG-Bench features a comprehensive dataset with tasks of increasing difficulty, coveringfact retrieval, complex reasoning, contextual summarization, and creative generation",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.4"
+        },
+        {
+          "question": "q2",
+          "claim": "The benchmark provides a systematic evaluation across the entire pipeline, from graph construction and knowledge retrieval to final generation.",
+          "quote": "a systematic evaluation across the entire pipeline, from graph constructionand knowledge retrieval to final generation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.5"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper systematically investigates the conditions when GraphRAG surpasses traditional RAG and the underlying reasons for its success, offering guidelines for practical application.",
+          "quote": "we systematically investigate the conditions when GraphRAG surpasses traditional RAG and the underlying reasons for its success, offering guidelines for its practical application.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.6"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper frames the critical question of whether GraphRAG is really effective and in which scenarios graph structures provide measurable benefits for RAG systems.",
+          "quote": "This raises a critical question: Is GraphRAG really effective, and in which scenarios do graph structures provide measurable benefits for RAG systems?",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 17
+    },
+    {
+      "id": "b0441a3bb8",
+      "url": "https://arxiv.org/abs/2608.08968",
+      "title": "GALA: Graph-Augmented LLM Agents for Root Cause Analysis and Incident Response in Microservices",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-10",
+      "org": "Yifang Tian, Yaming Liu, Zichun Chong, Zihang Huang, Yiran Li, Hans-Arno Jacobsen",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q6",
+          "claim": "Microservice root cause analysis requires correlating failures across heterogeneous telemetry within complex service dependency graphs.",
+          "quote": "Microservice root cause analysis (RCA) requires correlating failures across heterogeneous telemetry within complex service dependency graphs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.1"
+        },
+        {
+          "question": "q6",
+          "claim": "Existing RCA methods often rely on a single telemetry modality; recent LLM-based approaches can suffer from unconstrained exploration and hallucination; and most systems stop at fault ranking without producing actionable incident response.",
+          "quote": "Existing methods often rely on a single telemetry modality; recent LLM-based approaches can suffer from unconstrained exploration and hallucination; and most systems stop at fault ranking without producing actionable incident response.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.2"
+        },
+        {
+          "question": "q6",
+          "claim": "GALA+ is a graph-augmented LLM agentic framework centered on graph-guided investigation that uses service dependencies to bound exploration and refine diagnosis through localized multi-modal evidence.",
+          "quote": "We present GALA+, a graph-augmented LLM agentic framework centered on graph-guided investigation, which uses service dependencies to bound exploration and refine diagnosis through localized multi-modal evidence.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.3"
+        },
+        {
+          "question": "q6",
+          "claim": "For initial hypothesis generation, GALA+ combines complementary telemetry signals with STRIX, a trace- and graph-structure-aware scoring module.",
+          "quote": "For initial hypothesis generation, GALA+ combines complementary telemetry signals with STRIX, a novel trace- and graph-structure-aware scoring module.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.4"
+        },
+        {
+          "question": "q6",
+          "claim": "GALA+ produces ranked diagnoses, incident summaries, and stratified action recommendations.",
+          "quote": "GALA+ then produces ranked diagnoses, incident summaries, and stratified action recommendations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.5"
+        },
+        {
+          "question": "q6",
+          "claim": "SURE-Score is a human-guided evaluation framework co-developed with industry SRE experts for assessing RCA-specific output quality beyond conventional text similarity metrics.",
+          "quote": "We further introduce SURE-Score, a human-guided evaluation framework co-developed with industry SRE experts for assessing RCA-specific output quality beyond conventional text similarity metrics.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.6"
+        },
+        {
+          "question": "q6",
+          "claim": "On two microservice benchmarks, GALA+ surpassed the best LLM-based baseline by more than 25 percentage points in AC@1 and received the highest ratings from SURE-Score and independent human SRE evaluation.",
+          "quote": "On two microservice benchmarks, GALA+ consistently achieves the strongest overall results, surpassing the best LLM-based baseline by more than 25 percentage points in AC@1, while also receiving the highest ratings from both SURE-Score and independent human SRE evaluation.",
+          "numbers": [
+            "two",
+            "25",
+            "AC@1"
+          ],
+          "corroborated_by": [],
+          "id": "S18.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 18
+    },
+    {
+      "id": "b109f46100",
+      "url": "https://arxiv.org/abs/2510.20345",
+      "title": "LLM-empowered knowledge graph construction: A survey",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-10-23",
+      "org": "Haonan Bian",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Knowledge graphs are described as a fundamental infrastructure for structured knowledge representation and reasoning.",
+          "quote": "Knowledge Graphs (KGs) have long served as a fundamental infrastructure for structured knowledge representation and reasoning.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The classical knowledge graph construction pipeline is presented as three layers: ontology engineering, knowledge extraction, and knowledge fusion.",
+          "quote": "This survey provides a comprehensive overview of recent progress in LLM-empowered knowledge graph construction, systematically analyzing how LLMs reshape the classical three-layered pipeline of ontology engineering, knowledge extraction, and knowledge fusion.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S19.2"
+        },
+        {
+          "question": "q5",
+          "claim": "LLMs have shifted knowledge graph construction from rule-based and statistical pipelines to language-driven and generative frameworks.",
+          "quote": "With the advent of Large Language Models (LLMs), the construction of KGs has entered a new paradigm-shifting from rule-based and statistical pipelines to language-driven and generative frameworks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.3"
+        },
+        {
+          "question": "q5",
+          "claim": "The survey reviews LLM-driven knowledge graph construction through schema-based paradigms emphasizing structure, normalization, and consistency, and schema-free paradigms emphasizing flexibility, adaptability, and open discovery.",
+          "quote": "We first revisit traditional KG methodologies to establish conceptual foundations, and then review emerging LLM-driven approaches from two complementary perspectives: schema-based paradigms, which emphasize structure, normalization, and consistency; and schema-free paradigms, which highlight flexibility, adaptability, and open discovery.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The survey synthesizes representative frameworks, analyzes technical mechanisms, and identifies limitations at each stage of knowledge graph construction.",
+          "quote": "Across each stage, we synthesize representative frameworks, analyze their technical mechanisms, and identify their limitations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Future research directions include KG-based reasoning for LLMs, dynamic knowledge memory for agentic systems, and multimodal KG construction.",
+          "quote": "Finally, the survey outlines key trends and future research directions, including KG-based reasoning for LLMs, dynamic knowledge memory for agentic systems, and multimodal KG construction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.6"
+        },
+        {
+          "question": "q1",
+          "claim": "The survey aims to clarify the interplay between LLMs and knowledge graphs, bridging symbolic knowledge engineering and neural semantic understanding.",
+          "quote": "Through this systematic review, we aim to clarify the evolving interplay between LLMs and knowledge graphs, bridging symbolic knowledge engineering and neural semantic understanding toward the development of adaptive, explainable, and intelligent knowledge systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 19
+    },
+    {
+      "id": "b86811c981",
+      "url": "https://arxiv.org/abs/2604.20795",
+      "title": "Automatic Ontology Construction Using LLMs as an External Layer of Memory, Verification, and Planning for Hybrid Intelligent Systems",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-04-23",
+      "org": "Pavel Salovskii, Iuliia Gorshkova (Partenit.io)",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper proposes a hybrid architecture in which LLMs are extended with an external ontological memory layer.",
+          "quote": "This paper presents a hybrid architecture for intelligent systems in which large language models (LLMs) are extended with an external ontological memory layer.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The approach constructs and maintains a structured knowledge graph using RDF/OWL representations instead of relying solely on parametric knowledge and vector-based RAG, aiming for persistent, verifiable, semantically grounded reasoning.",
+          "quote": "Instead of relying solely on parametric knowledge and vector-based retrieval (RAG), the proposed approach constructs and maintains a structured knowledge graph using RDF/OWL representations, enabling persistent, verifiable, and semantically grounded reasoning.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.2"
+        },
+        {
+          "question": "q1",
+          "claim": "At inference, LLMs use a combined context that integrates vector-based retrieval, graph-based reasoning, and external tool interaction.",
+          "quote": "During inference, LLMs operate over a combined context that integrates vector-based retrieval with graph-based reasoning and external tool interaction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.3"
+        },
+        {
+          "question": "q5",
+          "claim": "The core contribution is an automated pipeline for constructing ontologies from heterogeneous data sources such as documents, APIs, and dialogue logs.",
+          "quote": "The core contribution is an automated pipeline for ontology construction from heterogeneous data sources, including documents, APIs, and dialogue logs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The pipeline performs entity recognition, relation extraction, normalization, and triple generation, then validates with SHACL and OWL constraints and continuously updates the graph.",
+          "quote": "The system performs entity recognition, relation extraction, normalization, and triple generation, followed by validation using SHACL and OWL constraints, and continuous graph updates.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.5"
+        },
+        {
+          "question": "q2",
+          "claim": "Experimental observations on planning tasks including the Tower of Hanoi benchmark indicate that ontology augmentation improves multi-step reasoning performance compared with baseline LLM systems.",
+          "quote": "Experimental observations on planning tasks, including the Tower of Hanoi benchmark, indicate that ontology augmentation improves performance in multi-step reasoning scenarios compared to baseline LLM systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.6"
+        },
+        {
+          "question": "q1",
+          "claim": "The ontology layer enables formal validation of generated outputs, transforming the system into a generation-verification-correction pipeline.",
+          "quote": "In addition, the ontology layer enables formal validation of generated outputs, transforming the system into a generation-verification-correction pipeline.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 20
+    },
+    {
+      "id": "d8727750e5",
+      "url": "https://www.semanticscholar.org/paper/772ca9590757a60938e349c5c78a6306665cc465",
+      "title": "Knowledge Graph Construction-Based Semantic Web Application for Ontology Development",
+      "provider": "semantic_scholar",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-06-06",
+      "org": "Raghupathi Thota, Sri Meghana Potluri, Ahmed Hassan Saker Alzaidy, Sudhakar K, P. Bhuvaneshwari",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper proposes a Knowledge Graph Construction based semantic web application for developing ontology and reports better Attribute Richness, Inheritance Richness, and Relationship Richness compared with Ontology-Driven Conceptual Modeling.",
+          "quote": "This research proposes, Knowledge Graph Construction (KGC) based semantic web application for developing ontology, which achieved better results in terms of Attribute Richness, Inheritance Richness and Relationship Richness when compared with existing Ontology-Driven Conceptual Modeling (ODCM) approach.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.1"
+        },
+        {
+          "question": "q1",
+          "claim": "A framework based on Ontology-Based Data Access can enhance cross-domain data integration and semantic querying in informed decision-making scenarios and is replicable for stakeholders and researchers.",
+          "quote": "The proposed framework is able to enhance cross-domain data integration and semantic querying in various informed decision-making scenarios and is easily replicable for stakeholders and researchers.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.2"
+        },
+        {
+          "question": "q1",
+          "claim": "IoT ontologies for well-being, aging, and health services increasingly adopt Semantic Web of Things standards to achieve semantic interoperability by integrating heterogeneous data through unified semantic models.",
+          "quote": "It is concluded that IoT ontologies for well-being, aging, and health services increasingly adopt Semantic Web of Things standards to achieve semantic interoperability by integrating heterogeneous data through unified semantic models.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.3"
+        },
+        {
+          "question": "q3",
+          "claim": "In Indonesian ontology-based question-answering systems, a linguistic ontology can handle complex sentence structures, recognize sentence pattern variations, and generate appropriate SPARQL queries.",
+          "quote": "The test results show that ILO can effectively handle complex sentence structures, recognize sentence pattern variations, and generate appropriate SPARQL queries in Indonesian ontology-based QA systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.4"
+        },
+        {
+          "question": "q5",
+          "claim": "A study found it feasible to use advanced LLMs to generate OWL suggestions at least comparable to human novice modellers, systematically studying LLM assistance to ontology engineers.",
+          "quote": "It seems feasible to use advanced LLMs to generate OWL suggestions, which are at least comparable to the quality of human novice modellers, as this first to systematically study the ability of LLMs to assist ontology engineers.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.5"
+        },
+        {
+          "question": "q5",
+          "claim": "NeOn-GPT is described as a large language model-powered pipeline for ontology learning, using a prompt pipeline for domain-agnostic modeling, demonstrated on a wine ontology, and integrated into the metaphactory platform.",
+          "quote": "The main contribution of the paper is a prompt pipeline tailored for domain-agnostic modeling, exemplified through the application to a domain-specific case study: the wine ontology, to develop NeOn-GPT, a workflow for automatic ontology modeling, and is integrated into the metaphactory platform.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.6"
+        },
+        {
+          "question": "q5",
+          "claim": "Results show that utilizing ODCM and NLP could facilitate and improve the ontology development process, respectively.",
+          "quote": "The results show that utilizing ODCM and NLP could facilitate and improve the development process, respectively.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 21
+    },
+    {
+      "id": "891af2f00e",
+      "url": "https://www.semanticscholar.org/paper/8f9bdd7024f51802322642b58132233dc2da9f0e",
+      "title": "CausalRCA: Causal Graph-Augmented Retrieval for Root Cause Analysis in Microservice Systems",
+      "provider": "semantic_scholar",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-04-24",
+      "org": "Junnan Kou, Ziyu Qing, Ruoxuan Wei, Fei Xue, Wen-You Huang, Hong Zhuang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q6",
+          "claim": "CausalRCA is a four-layer framework for microservice root cause analysis that combines multi-modal data ingestion, a causal candidate graph unifying metrics, traces, logs, and topology into a temporal causal structure, and retrieval-augmented incident reasoning that grounds LLM inference in operational knowledge.",
+          "quote": "CausalRCA is proposed, a four-layer framework integrating multi-modal data ingestion, a causal candidate graph unifying metrics, traces, logs, and topology into a temporal causal structure, and retrieval-augmented incident reasoning grounding LLM inference in operational knowledge.",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S22.1"
+        },
+        {
+          "question": "q6",
+          "claim": "A comprehensive evaluation of microservice RCA found that no single method stands out in all situations; methods vary in effectiveness, efficiency, and sensitivity to specific parameters.",
+          "quote": "A comprehensive evaluation of nine causal discovery methods and twenty-one root cause analysis methods for microservice systems indicates that no method stands out in all situations; each method tends to either fall short in effectiveness, efficiency, or shows sensitivity to specific parameters.",
+          "numbers": [
+            "nine",
+            "twenty-one"
+          ],
+          "corroborated_by": [],
+          "id": "S22.2"
+        },
+        {
+          "question": "q5",
+          "claim": "MULAN applies unified multi-modal causal structure learning and contrastive learning to identify root causes in microservice systems.",
+          "quote": "This work proposes Mulan, a unified multi-modal causal structure learning method designed to identify root causes in microservice systems and proposes a contrastive learning-based approach to extract modality-invariant and modality-specific representations within a shared latent space.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.3"
+        },
+        {
+          "question": "q6",
+          "claim": "TraceDiag is an end-to-end RCA framework for large-scale microservice systems that uses reinforcement learning to learn a pruning policy for the service dependency graph, eliminating redundant components and improving RCA efficiency.",
+          "quote": "TraceDiag is proposed, an end-to-end RCA framework that addresses the challenges for large-scale microservice systems and leverages reinforcement learning to learn a pruning policy for the service dependency graph to automatically eliminates redundant components, thereby significantly improving the RCA efficiency.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.4"
+        },
+        {
+          "question": "q5",
+          "claim": "RUN uses neural Granger causal discovery with contrastive learning for root cause analysis and reports outperforming state-of-the-art RCA methods.",
+          "quote": "RUN is proposed, a novel approach for root cause analysis using neural Granger causal discovery with contrastive learning that noticeably outperforms the state-of-the-art root cause analysis methods.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.5"
+        },
+        {
+          "question": "q6",
+          "claim": "The paper is titled CausalRCA: Causal Graph-Augmented Retrieval for Root Cause Analysis in Microservice Systems.",
+          "quote": "CausalRCA: Causal Graph-Augmented Retrieval for Root Cause Analysis in Microservice Systems",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 22
+    },
+    {
+      "id": "e60477cde5",
+      "url": "https://www.semanticscholar.org/paper/28bf587adc26e4bbd1987f1e19d66b8c87dd752d",
+      "title": "A Systematic Comparison of RAG Architectures for Geographic POI Question Answering Using OpenStreetMap Data",
+      "provider": "semantic_scholar",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-29",
+      "org": "Noboru Otsuka",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "In dense-urban POI settings where coordinates are reliable, the marginal benefit of explicit graph edges shrinks for relationships computable from coordinates, while structured spatial processing complements vector retrieval.",
+          "quote": "It is suggested that, in dense-urban POI settings where coordinates are reliable, the marginal benefit of explicit graph edges shrinks for coordinate-computable relationships, while structured spatial processing complements vector retrieval.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The source is a systematic comparison of RAG architectures for geographic POI question answering using OpenStreetMap data.",
+          "quote": "A Systematic Comparison of RAG Architectures for Geographic POI Question Answering Using OpenStreetMap Data",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.2"
+        },
+        {
+          "question": "q2",
+          "claim": "A referenced paper compares RAG and GraphRAG on text-based tasks including question answering and query-based summarization, and introduces a unified evaluation protocol standardizing data preprocessing, retrieval configurations, and generation settings.",
+          "quote": "A comprehensive benchmark study comparing RAG and GraphRAG on established text-based tasks, including question answering and query-based summarization is presented and a unified evaluation protocol is introduced that standardizes data preprocessing, retrieval configurations, and generation settings, enabling fair and reproducible comparisons.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.3"
+        },
+        {
+          "question": "q2",
+          "claim": "HybridRAG combines knowledge graph based RAG (GraphRAG) and vector RAG techniques to enhance question-answer systems for information extraction from financial documents.",
+          "quote": "A novel approach based on a combination, called HybridRAG, of the Knowledge Graphs based RAG techniques (called GraphRAG) and VectorRAG techniques to enhance question-answer (Q&A) systems for information extraction from financial documents that is shown to be capable of generating accurate and contextually relevant answers.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Spatial-RAG formulates geospatial question answering as multi-objective optimization over spatial and semantic relevance, identifying Pareto-optimal candidates and dynamically selecting the best response based on user intent.",
+          "quote": "Spatial-RAG, a Retrieval-Augmented Generation (RAG) framework designed for geospatial question answering, formulates the answering process as a multi-objective optimization over spatial and semantic relevance, identifying Pareto-optimal candidates and dynamically selecting the best response based on user intent.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.5"
+        },
+        {
+          "question": "q2",
+          "claim": "A real-time spatial RAG architecture defines components for integrating generative AI into cities, using temporal and spatial filtering through linked data.",
+          "quote": "A real-time spatial RAG architecture that defines the necessary components for the effective integration of generative AI into cities, leveraging temporal and spatial filtering capabilities through linked data is proposed.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 23
+    },
+    {
+      "id": "f669b37439",
+      "url": "https://arxiv.org/abs/2405.11706",
+      "title": "Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue!",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-05-20",
+      "org": "Dean Allemang, Juan Sequeda",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "A knowledge graph can act as a semantic representation of an enterprise SQL database, queried via Text-to-SPARQL.",
+          "quote": "There is increasing evidence that question-answering (QA) systems with Large Language Models (LLMs), which employ a knowledge graph/semantic representation of an enterprise SQL database (i.e. Text-to-SPARQL), achieve higher accuracy compared to systems that answer questions directly on SQL databases (i.e. Text-to-SQL).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.1"
+        },
+        {
+          "question": "q3",
+          "claim": "QA systems with LLMs that employ a knowledge graph/semantic representation of an enterprise SQL database (Text-to-SPARQL) achieve higher accuracy than systems answering directly on SQL databases (Text-to-SQL).",
+          "quote": "There is increasing evidence that question-answering (QA) systems with Large Language Models (LLMs), which employ a knowledge graph/semantic representation of an enterprise SQL database (i.e. Text-to-SPARQL), achieve higher accuracy compared to systems that answer questions directly on SQL databases (i.e. Text-to-SQL).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Previous benchmark research showed using a knowledge graph improved accuracy from 16% to 54%.",
+          "quote": "Our previous benchmark research showed that by using a knowledge graph, the accuracy improved from 16% to 54%.",
+          "numbers": [
+            "16%",
+            "54%"
+          ],
+          "corroborated_by": [],
+          "id": "S24.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The authors' approach increased overall accuracy to 72%, including an additional 8% of \"I don't know\" unknown results.",
+          "quote": "Using the chat with the data benchmark, our primary finding is that our approach increases the overall accuracy to 72% including an additional 8% of \"I don't know\" unknown results.",
+          "numbers": [
+            "72%",
+            "8%"
+          ],
+          "corroborated_by": [],
+          "id": "S24.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The overall error rate is 20%.",
+          "quote": "Thus, the overall error rate is 20%.",
+          "numbers": [
+            "20%"
+          ],
+          "corroborated_by": [],
+          "id": "S24.5"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper concludes that investing in knowledge graphs, namely the ontology, provides higher accuracy for LLM-powered question answering systems.",
+          "quote": "These results provide further evidence that investing knowledge graphs, namely the ontology, provides higher accuracy for LLM powered question answering systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.6"
+        }
+      ],
+      "dropped": 1,
+      "n": 24
+    },
+    {
+      "id": "17dc487179",
+      "url": "https://arxiv.org/abs/2602.00029",
+      "title": "Construct, Align, and Reason: Large Ontology Models for Enterprise Knowledge Management",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-01-18",
+      "org": "Yao Zhang, Hongyin Zhu",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper states that traditional knowledge graphs often struggle with implicit relationship discovery and lack sufficient semantic understanding for complex question answering.",
+          "quote": "Traditional knowledge graphs often struggle with implicit relationship discovery and lack sufficient semantic understanding for complex question answering.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The proposed framework builds a dual-layer enterprise ontology from structured databases and unstructured text, then fuses these sources into a comprehensive enterprise ontology.",
+          "quote": "We first build a dual-layer enterprise ontology from structured databases and unstructured text, subsequently fusing these sources into a comprehensive enterprise ontology.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.2"
+        },
+        {
+          "question": "q3",
+          "claim": "On its benchmark, the 4B-parameter Large Ontology Model achieves 89.47% accuracy and outperforms DeepSeek-V3.2 on complex graph reasoning.",
+          "quote": "On this benchmark, our 4B-parameter LOM achieves 89.47% accuracy and outperforms DeepSeek-V3.2 on complex graph reasoning, indicating effective fusion of ontology structure and language.",
+          "numbers": [
+            "4B",
+            "89.47%",
+            "DeepSeek-V3.2"
+          ],
+          "corroborated_by": [],
+          "id": "S25.3"
+        },
+        {
+          "question": "q5",
+          "claim": "The framework uses a three-stage training pipeline: ontology instruction fine-tuning for structural understanding, text-ontology grounding for node semantic encoding, and multi-task instruction tuning on ontology-language pairs with curriculum learning.",
+          "quote": "To enable instruction-aligned reasoning, we propose a unified three-stage training pipeline: ontology instruction fine-tuning to improve structural understanding; text-ontology grounding to strengthen node semantic encoding; and multi-task instruction tuning on ontology-language pairs with curriculum learning to enhance semantic reasoning and generation.",
+          "numbers": [
+            "three-stage"
+          ],
+          "corroborated_by": [],
+          "id": "S25.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The authors construct comprehensive training and evaluation datasets covering diverse ontology reasoning tasks.",
+          "quote": "We also construct comprehensive training and evaluation datasets covering diverse ontology reasoning tasks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 25
+    },
+    {
+      "id": "2d44d2e2e5",
+      "url": "https://arxiv.org/abs/2509.12231",
+      "title": "Research on fault diagnosis and root cause analysis based on full stack observability",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-09-17",
+      "org": "Jian Hou",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q6",
+          "claim": "The paper identifies dynamic causal discovery and multi-modal/cross-level fusion as two mainstream RCA research threads represented by FaultInsight and HolisticRCA.",
+          "quote": "This paper reviews two mainstream research threads in top conferences and journals over the past five years: FaultInsight[1] focusing on dynamic causal discovery and HolisticRCA[2] focusing on multi-modal/cross-level fusion, and analyzes the advantages and disadvantages of existing methods.",
+          "numbers": [
+            "two",
+            "five years",
+            "[1]",
+            "[2]"
+          ],
+          "corroborated_by": [],
+          "id": "S26.1"
+        },
+        {
+          "question": "q6",
+          "claim": "The proposed KylinRCA framework uses temporal causal discovery to depict the propagation chain and cross-modal graph learning for global root cause localization and type identification.",
+          "quote": "A KylinRCA framework integrating the ideas of both is proposed, which depicts the propagation chain through temporal causal discovery, realizes global root cause localization and type identification through cross-modal graph learning, and outputs auditable evidence chains combined with mask-based explanation methods.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.2"
+        },
+        {
+          "question": "q6",
+          "claim": "The paper states that efficient, accurate, and interpretable RCA based on observability data such as metrics, logs, and traces is a core AIOps issue.",
+          "quote": "How to achieve efficient, accurate, and interpretable Root Cause Analysis (RCA) based on observability data (metrics, logs, traces) has become a core issue in AIOps.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.3"
+        },
+        {
+          "question": "q6",
+          "claim": "The paper says faults in large cloud and ultra-large-scale data-center systems often show cascading propagation.",
+          "quote": "With the rapid development of cloud computing and ultra-large-scale data centers, the scale and complexity of systems have increased significantly, leading to frequent faults that often show cascading propagation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.4"
+        },
+        {
+          "question": "q6",
+          "claim": "The work designs a multi-dimensional experimental scheme, clarifies evaluation indicators, and discusses engineering challenges for fault diagnosis under full-stack observability.",
+          "quote": "A multi-dimensional experimental scheme is designed, evaluation indicators are clarified, and engineering challenges are discussed, providing an effective solution for fault diagnosis under full-stack observability.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 26
+    },
+    {
+      "id": "a6647837b9",
+      "url": "https://arxiv.org/abs/2506.06331",
+      "title": "How Significant Are the Real Performance Gains? An Unbiased Evaluation Framework for GraphRAG",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-24",
+      "org": "Qiming Zeng, Hao Luo, Yuhao Lin, Yicheng Jin, Yuxiang Wang, Fangcheng Fu, Xiao Yan, Jiawei Jiang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "The current answer evaluation framework for GraphRAG has two critical flaws: unrelated questions and evaluation biases, which can produce biased or wrong performance conclusions.",
+          "quote": "However, we observe that the current answer evaluation framework for GraphRAG has two critical flaws, i.e., unrelated questions and evaluation biases, which may lead to biased or even wrong conclusions on performance.",
+          "numbers": [
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S27.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper proposes an unbiased evaluation framework using graph-text-grounded question generation to produce questions more related to the underlying dataset and an unbiased evaluation procedure to eliminate biases in LLM-based answer assessment.",
+          "quote": "To tackle the two flaws, we propose an unbiased evaluation framework that uses graph-text-grounded question generation to produce questions that are more related to the underlying dataset and an unbiased evaluation procedure to eliminate the biases in LLM-based answer assessment.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S27.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Applying the unbiased framework to 3 representative GraphRAG methods shows performance gains much more moderate than previously reported.",
+          "quote": "We apply our unbiased framework to evaluate 3 representative GraphRAG methods and find that their performance gains are much more moderate than reported previously.",
+          "numbers": [
+            "3"
+          ],
+          "corroborated_by": [],
+          "id": "S27.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The authors state their evaluation framework may still have flaws but argue that scientific evaluations are needed to lay solid foundations for GraphRAG research.",
+          "quote": "Although our evaluation framework may still have flaws, it calls for scientific evaluations to lay solid foundations for GraphRAG research.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S27.4"
+        }
+      ],
+      "dropped": 0,
+      "n": 27
+    },
+    {
+      "id": "c8168e0923",
+      "url": "https://arxiv.org/abs/2608.28766",
+      "title": "Beyond Vector Search: Comparing Classical RAG with Hybrid GraphRAG for Climate Science Q\\&A",
+      "provider": "semantic_scholar",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-28",
+      "org": "Daniel Naiff, Ronnie Alves, Gustavo Pinto",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Traditional RAG systems treat documents in isolation, so they fail to capture hierarchical relationships between concepts in complex scientific corpora.",
+          "quote": "Traditional Retrieval-Augmented Generation (RAG) systems treat documents in isolation, failing to capture hierarchical relationships between concepts in complex scientific corpora.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.1"
+        },
+        {
+          "question": "q2",
+          "claim": "This limitation harms answer quality in specialized domains such as climatology, where conceptual dependencies often span multiple articles.",
+          "quote": "This limitation compromises answer quality in specialized domains such as climatology, where conceptual dependencies frequently traverse multiple articles.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.2"
+        },
+        {
+          "question": "q2",
+          "claim": "The proposed hybrid architecture combines vector search with GraphRAG, Leiden community detection, and cross-encoder re-ranking.",
+          "quote": "We propose a hybrid architecture that integrates vector search with GraphRAG, Leiden community detection, and cross-encoder re-ranking, achieving gains of 160\\% in contextual relevance and 177\\% in contextual recall compared to classical RAG.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Compared with classical RAG, the hybrid GraphRAG architecture reports gains of 160% in contextual relevance and 177% in contextual recall.",
+          "quote": "We propose a hybrid architecture that integrates vector search with GraphRAG, Leiden community detection, and cross-encoder re-ranking, achieving gains of 160\\% in contextual relevance and 177\\% in contextual recall compared to classical RAG.",
+          "numbers": [
+            "160\\%",
+            "177\\%"
+          ],
+          "corroborated_by": [],
+          "id": "S28.4"
+        },
+        {
+          "question": "q2",
+          "claim": "The results indicate that unifying local and global retrieval significantly outperforms text-span isolation for question answering over dispersed scientific literature.",
+          "quote": "These results demonstrate that unifying local and global retrieval significantly outperforms text-span isolation, paving the way for more effective question-answering systems over dispersed scientific literature.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 28
+    },
+    {
+      "id": "5d4f2b78d8",
+      "url": "https://www.semanticscholar.org/paper/29c2301457458a4ebbd6a6445e9af355ee4d7df1",
+      "title": "Toward a Hybrid Ontology Framework for Semantic Data Understanding in AI-Augmented Data Warehousing",
+      "provider": "semantic_scholar",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-07-21",
+      "org": "Hayagriv Sridharan, Saurabh Sarkar, Parag Paul, Eugenie Cheng",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper proposes a hybrid ontology framework for semantic data understanding in AI-augmented data warehousing.",
+          "quote": "Toward a Hybrid Ontology Framework for Semantic Data Understanding in AI-Augmented Data Warehousing",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The hybrid ontology framework integrates deterministic schema metadata with flexible semantic enrichment derived from documentation, ETL scripts, and business glossaries.",
+          "quote": "This work presents a hybrid ontology framework that integrates deterministic schema metadata with flexible semantic enrichment derived from documentation, ETL scripts, and business glossaries, and demonstrates improvements in entity disambiguation, catalog enrichment, and cross-system understanding.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.2"
+        },
+        {
+          "question": "q3",
+          "claim": "The hybrid ontology framework demonstrates improvements in entity disambiguation, catalog enrichment, and cross-system understanding.",
+          "quote": "This work presents a hybrid ontology framework that integrates deterministic schema metadata with flexible semantic enrichment derived from documentation, ETL scripts, and business glossaries, and demonstrates improvements in entity disambiguation, catalog enrichment, and cross-system understanding.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.3"
+        }
+      ],
+      "dropped": 0,
+      "n": 29
+    },
+    {
+      "id": "ce50938124",
+      "url": "https://github.com/1517005260/graph-rag-agent",
+      "title": "1517005260/graph-rag-agent",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2025-11-05",
+      "org": "1517005260",
+      "quality": 0.9,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The project implements GraphRAG core functionality and represents knowledge as a graph structure.",
+          "quote": "**从零开始复现 GraphRAG**：完整实现了 GraphRAG 的核心功能，将知识表示为图结构",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The project combines GraphRAG with private-domain Deep Search to build an explainable, reasoning-capable Q&A system with multi-agent collaboration and knowledge graph augmentation.",
+          "quote": "本项目聚焦于结合 **GraphRAG** 与 **私域 Deep Search** 的方式，实现可解释、可推理的智能问答系统，同时结合多 Agent 协作与知识图谱增强，构建完整的 RAG 智能交互解决方案。",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.2"
+        },
+        {
+          "question": "q2",
+          "claim": "GraphRAG retrieval supports multiple modes: local search, global search, and hybrid search.",
+          "quote": "**多级检索策略**：支持本地搜索、全局搜索、混合搜索等多种模式",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The project provides an evaluation system with more than 20 evaluation metrics to measure system performance comprehensively.",
+          "quote": "**完整评估系统**：提供 20+ 种评估指标，全方位衡量系统性能",
+          "numbers": [
+            "20+"
+          ],
+          "corroborated_by": [],
+          "id": "S30.4"
+        },
+        {
+          "question": "q5",
+          "claim": "LLM-driven entity and relation extraction uses large language models to identify entities and relations from text.",
+          "quote": "**LLM 驱动的实体关系提取**：利用大语言模型从文本中识别实体与关系",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Entity disambiguation maps mentions to canonical entities using string recall, vector reranking, and NIL detection.",
+          "quote": "**实体消歧（Entity Disambiguation）**：使用字符串召回、向量重排和NIL检测将mention映射到规范实体",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.6"
+        },
+        {
+          "question": "q5",
+          "claim": "Entity alignment detects and resolves conflicts under the same canonical entity while preserving all relation information.",
+          "quote": "**实体对齐（Entity Alignment）**：智能检测和解决同一canonical实体下的冲突，保留所有关系信息",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The system supports dynamic incremental construction of the knowledge graph with intelligent deduplication.",
+          "quote": "**增量更新机制**：支持知识图谱的动态增量构建与智能去重",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 30
+    },
+    {
+      "id": "4ccbeb94b7",
+      "url": "https://github.com/zjunlp/AutoKG",
+      "title": "zjunlp/AutoKG",
+      "provider": "github",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-01-14",
+      "org": "zjunlp / Yuqi Zhu et al.",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q5",
+          "claim": "The AutoKG repository provides code and data for a paper on LLMs for knowledge graph construction and reasoning.",
+          "quote": "Code and Data for the paper \"[LLMs for Knowledge Graph Construction and Reasoning: Recent Capabilities and Future Opportunities](https://github.com/zjunlp/AutoKG/blob/main/Pdf/LLMs_for_Knowledge_Graph_Construction_and_Reasoning__Recent_Capabilities_and_Future_Opportunities1.pdf)\"",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.1"
+        },
+        {
+          "question": "q5",
+          "claim": "The work has three main components: basic evaluation, virtual knowledge extraction, and automatic KG.",
+          "quote": "The overview of our work. There are three main components: 1) _**Basic Evaluation**_: detailing our assessment of large models (text-davinci-003, ChatGPT, and GPT-4), in both zero-shot and one-shot settings, using performance data from fully supervised state-of-the-art models as benchmarks; 2) _**Virtual Knowledge Extraction**_: an examination of large models' virtual knowledge capabilities on the constructed VINE dataset; and 3) _**Automatic KG**_: the proposal of utilizing multiple agents to facilitate the construction and reasoning of KGs.",
+          "numbers": [
+            "1",
+            "2",
+            "3",
+            "text-davinci-003",
+            "GPT-4"
+          ],
+          "corroborated_by": [],
+          "id": "S31.2"
+        },
+        {
+          "question": "q5",
+          "claim": "Basic evaluation assesses text-davinci-003, ChatGPT, and GPT-4 in zero-shot and one-shot settings against fully supervised state-of-the-art models.",
+          "quote": "detailing our assessment of large models (text-davinci-003, ChatGPT, and GPT-4), in both zero-shot and one-shot settings, using performance data from fully supervised state-of-the-art models as benchmarks",
+          "numbers": [
+            "text-davinci-003",
+            "GPT-4"
+          ],
+          "corroborated_by": [],
+          "id": "S31.3"
+        },
+        {
+          "question": "q5",
+          "claim": "Automatic KG uses multiple agents to facilitate the construction and reasoning of KGs.",
+          "quote": "the proposal of utilizing multiple agents to facilitate the construction and reasoning of KGs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The KG Construction datasets listed are DuIE2.0, SciERC, RE-TACRED, and MAVEN.",
+          "quote": "*   KG Construction\n\n    *   [DuIE2.0](https://www.luge.ai/#/luge/dataDetail?id=5)\n    *   [SciERC](http://nlp.cs.washington.edu/sciIE/)\n    *   [RE-TACRED](https://github.com/gstoica27/Re-TACRED)\n    *   [MAVEN](https://github.com/THU-KEG/MAVEN-dataset/tree/main)",
+          "numbers": [
+            "2.0"
+          ],
+          "corroborated_by": [],
+          "id": "S31.5"
+        },
+        {
+          "question": "q5",
+          "claim": "KG Reasoning is treated as link prediction and uses FB15k-237 and ATOMIC2020 datasets.",
+          "quote": " |-- KG Reasoning (Link Prediction)\n |    |-- FB15k-237\n |    |    |-- data                     #sample data\n |    |    |-- prompts                  #0-shot/1-shot prompts\n |    |-- ATOMIC2020\n |    |    |-- data                     #sample data\n |    |    |-- prompts                  #0-shot/1-shot prompts\n |    |    |-- system_eval              #eval for ATOMIC2020",
+          "numbers": [
+            "FB15k-237",
+            "ATOMIC2020"
+          ],
+          "corroborated_by": [],
+          "id": "S31.6"
+        },
+        {
+          "question": "q5",
+          "claim": "AutoKG code is based on CAMEL and a LangChain implementation.",
+          "quote": "Our AutoKG code is based on [CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society](https://github.com/lightaime/camel) and a [LangChain](https://python.langchain.com.cn/docs/use_cases/agent_simulations/camel_role_playing) implementation of the paper, you can get more details through this link.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The repository includes a VINE dataset under Virtual Knowledge Extraction.",
+          "quote": "The VINE dataset we built is available **[here](https://github.com/zjunlp/AutoKG/tree/94d1a9450cc55fc162366f5ba7d7a6d5b54c0236/Virtual%20Knowledge%20Extraction).**",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 31
+    },
+    {
+      "id": "e3e6d4e9c8",
+      "url": "https://github.com/fusion-jena/automatic-KG-creation-with-LLM",
+      "title": "fusion-jena/automatic-KG-creation-with-LLM",
+      "provider": "github",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-02-02",
+      "org": "fusion-jena",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "In the described pipeline, an ontology (TBox) is developed based on competency questions, and KGs are constructed using that developed ontology, then evaluated with minimal to no human expert involvement.",
+          "quote": "Our pipeline involves formulating competency questions (CQs), developing an ontology (TBox) based on these CQs, constructing KGs using the developed ontology, and evaluating the resultant KG with minimal to no involvement of human experts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.1"
+        },
+        {
+          "question": "q5",
+          "claim": "The repository covers a semi-automatic pipeline for Ontology and Knowledge Graph Construction using four different LLMs: Mixtral 8x22B Instruct v0.1-Instruct-v0.1, GPT-4o, GPT-3.5, and Gemini.",
+          "quote": "This repository contains code, data, prompts and results related to the (semi-)automatic pipeline of Ontology and Knowledge Graph Construction with four different Large Language Models (LLMs): Mixtral 8x22B Instruct v0.1-Instruct-v0.1, GPT-4o, GPT-3.5, Gemini.",
+          "numbers": [
+            "four",
+            "8x22B",
+            "v0.1-Instruct-v0.1",
+            "GPT-4o",
+            "GPT-3.5"
+          ],
+          "corroborated_by": [],
+          "id": "S32.2"
+        },
+        {
+          "question": "q5",
+          "claim": "The project showcases feasibility by creating a KG on deep learning methodologies from scholarly publications.",
+          "quote": "We showcase the feasibility of our semi-automated pipeline by creating a KG on deep learning methodologies by exploiting scholarly publications.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.3"
+        },
+        {
+          "question": "q5",
+          "claim": "The repository code includes data preprocessing, competency questions, ontology and KG generation, and evaluation of KGs for four SOTA LLMs.",
+          "quote": "Code/: Contains code files for data preprocessing, Competency questions, ontology and KG generation, and evaluation of KGs for four SOTA LLMs.",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S32.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The repository includes NER prompts that instruct different LLMs to extract named entities from selected publications.",
+          "quote": "NER_prompt/: Contains the prompts for all the selected publications, which have the instructions that are passed to different LLMs to extract named entities",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The repository contains individual KGs for 30 publications for 4 SOTA LLMs.",
+          "quote": "KG/: Contains individual KG for 30 publications for 4 SOTA LLMs",
+          "numbers": [
+            "30",
+            "4"
+          ],
+          "corroborated_by": [],
+          "id": "S32.6"
+        },
+        {
+          "question": "q5",
+          "claim": "A v1.0 citation is a 2024 arXiv paper titled From human experts to machines: An LLM supported approach to ontology and knowledge graph construction.",
+          "quote": "Kommineni, V. K., König-Ries, B., & Samuel, S. (2024). From human experts to machines: An LLM supported approach to ontology and knowledge graph construction. arXiv preprint arXiv:2403.08345.",
+          "numbers": [
+            "2024",
+            "2403.08345"
+          ],
+          "corroborated_by": [],
+          "id": "S32.7"
+        },
+        {
+          "question": "q5",
+          "claim": "A v2.0/v2.0.1 citation is a 2024 paper titled Towards the Automation of Knowledge Graph Construction Using Large Language Models.",
+          "quote": "Kommineni, V. K., König-Ries, B., & Samuel, S. (2024). Towards the Automation of Knowledge Graph Construction Using Large Language Models.",
+          "numbers": [
+            "2024"
+          ],
+          "corroborated_by": [],
+          "id": "S32.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 32
+    },
+    {
+      "id": "23af99dfb3",
+      "url": "https://github.com/objectstack-ai/objectstack",
+      "title": "objectstack-ai/objectstack",
+      "provider": "github",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-10-05",
+      "org": "objectstack-ai (GitHub organization)",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "The ObjectStack project positions a single executable business ontology as the software itself: AI authors it, a runtime executes it, agents operate it, and the user owns it, offered as an open protocol and runtime under Apache-2.0.",
+          "quote": "Title: GitHub - objectstack-ai/objectstack: The ontology is the software. One executable business ontology: AI writes it, the runtime runs it, agents operate it, you own it. Open protocol & runtime, Apache-2.0.",
+          "numbers": [
+            "2.0"
+          ],
+          "corroborated_by": [],
+          "id": "S33.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The remainder of the repository page is engineering changelog content about protocol compatibility handshakes (ADR-0087 D1, error code OS_PROTOCOL_INCOMPATIBLE, HTTP 422) and contains no definitions or relationships among ontologies, knowledge graphs, semantic layers, or context layers.",
+          "quote": "The install route calls the same `assertProtocolCompat` before anything is registered, written or synced.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S33.2"
+        }
+      ],
+      "dropped": 0,
+      "n": 33
+    },
+    {
+      "id": "7c3fc8ce8d",
+      "url": "https://github.com/CathalByrneGit/actionTypesR",
+      "title": "CathalByrneGit/actionTypesR",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-05-05",
+      "org": "CathalByrneGit",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "actionTypesR makes an ontology operational by executing changes, while ontologySpecR describes what actions exist and objectSetsR queries data.",
+          "quote": "It is the package that makes an ontology *operational*: where ontologySpecR describes what actions exist and objectSetsR queries data, actionTypesR actually *executes* changes.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.1"
+        },
+        {
+          "question": "q4",
+          "claim": "actionTypesR provides a resolve, validate, execute, record lifecycle for ontology actions.",
+          "quote": "**Resolve → validate → execute → record** lifecycle for ontology actions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.2"
+        },
+        {
+          "question": "q4",
+          "claim": "actionTypesR supports multiple backends: R, SQL, HTTP, and plugin dispatch.",
+          "quote": "Multiple backends: R, SQL, HTTP, and plugin dispatch.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.3"
+        },
+        {
+          "question": "q4",
+          "claim": "actionTypesR automatically creates an append-only action_log table in the connected database.",
+          "quote": "Append-only `action_log` table created automatically in the connected database.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.4"
+        },
+        {
+          "question": "q4",
+          "claim": "actionTypesR supports policy hooks for authorization checks, including a 3-argument legacy form.",
+          "quote": "Policy hooks for authorization checks (3-arg legacy form supported).",
+          "numbers": [
+            "3"
+          ],
+          "corroborated_by": [],
+          "id": "S34.5"
+        },
+        {
+          "question": "q4",
+          "claim": "actionTypesR supports an approval gate hook for governance integration with approved, denied, or pending outcomes.",
+          "quote": "Approval gate hook for governance integration (approved / denied / pending).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.6"
+        },
+        {
+          "question": "q4",
+          "claim": "actionTypesR can replay any logged submission with resubmit_action().",
+          "quote": "Replay any logged submission with `resubmit_action()`.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.7"
+        },
+        {
+          "question": "q4",
+          "claim": "An approval gate lets an external system intercept actions before dispatch, and the gate function returns approved, denied, or pending.",
+          "quote": "An approval gate lets an external system (e.g. `auditR`) intercept actions before dispatch. Register a gate function that returns `\"approved\"`, `\"denied\"`, or `\"pending\"`:",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 34
+    },
+    {
+      "id": "848ba99cd5",
+      "url": "https://github.com/Aryan1718/operational-ontology",
+      "title": "Aryan1718/operational-ontology",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-08-31",
+      "org": "Aryan1718",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The repository is an independent reference implementation of a lightweight operational ontology inspired by Palantir Foundry Ontology concepts.",
+          "quote": "An independent reference implementation of a lightweight operational ontology inspired by Palantir Foundry Ontology concepts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The repository models supply-chain data as connected business objects with typed properties, relationships, read-only functions, governed actions, permissions, execution evidence, audit history, and safe AI-accessible tools.",
+          "quote": "This repository demonstrates how supply-chain data can be modeled as connected business objects with typed properties, relationships, read-only functions, governed actions, permissions, execution evidence, audit history, and safe AI-accessible tools.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.2"
+        },
+        {
+          "question": "q4",
+          "claim": "The ontology layer defines business object types including Supplier, Part, Product, Warehouse, InventoryPosition, CustomerOrder, RiskEvent, and MitigationPlan.",
+          "quote": "*   business object types such as `Supplier`, `Part`, `Product`, `Warehouse`, `InventoryPosition`, `CustomerOrder`, `RiskEvent`, and `MitigationPlan`",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.3"
+        },
+        {
+          "question": "q4",
+          "claim": "The ontology layer includes stored properties mapped to PostgreSQL tables and columns.",
+          "quote": "*   stored properties mapped to PostgreSQL tables and columns",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.4"
+        },
+        {
+          "question": "q4",
+          "claim": "The ontology layer includes read-only functions for impact analysis, inventory availability, stockout risk, order ranking, and mitigation recommendation.",
+          "quote": "*   read-only functions for impact analysis, inventory availability, stockout risk, order ranking, and mitigation recommendation",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.5"
+        },
+        {
+          "question": "q4",
+          "claim": "The ontology layer includes governed actions such as createRiskEvent, generateMitigationPlan, approveMitigationPlan, reallocateInventory, and expeditePurchaseOrder.",
+          "quote": "*   governed actions such as `createRiskEvent`, `generateMitigationPlan`, `approveMitigationPlan`, `reallocateInventory`, and `expeditePurchaseOrder`",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.6"
+        },
+        {
+          "question": "q4",
+          "claim": "The ontology layer defines role-based permissions for Viewer, Planner, OperationsManager, Admin, and a restricted AIAgent role.",
+          "quote": "*   role-based permissions for `Viewer`, `Planner`, `OperationsManager`, `Admin`, and restricted `AIAgent`",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.7"
+        },
+        {
+          "question": "q4",
+          "claim": "The MCP/AI layer exposes approved ontology capabilities without allowing autonomous critical writes.",
+          "quote": "MCP / AI layer\n  exposes approved ontology capabilities without allowing autonomous critical writes",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 35
+    },
+    {
+      "id": "b7812517b4",
+      "url": "https://github.com/sachin-india/operational-intelligence",
+      "title": "sachin-india/operational-intelligence",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-05-19",
+      "org": "sachin-india",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The project is a research and hands-on demo exploring Palantir-style operational knowledge graphs for factory and manufacturing intelligence, covering ontology design, live data ingestion, decision logic, and governed actions using open datasets.",
+          "quote": "Research and hands-on demo project exploring Palantir-style operational knowledge graphs for factory/manufacturing intelligence — covering ontology design, live data ingestion, decision logic, and governed actions using open datasets.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The implementation uses two parallel demos, each with a passive knowledge graph track and an operational context graph track with governed actions.",
+          "quote": "Implements two parallel demos — AI4I predictive maintenance and SECOM semiconductor yield — each with Track A (passive knowledge graph) and Track B (operational context graph with governed actions).",
+          "numbers": [
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S36.2"
+        },
+        {
+          "question": "q4",
+          "claim": "The core framework includes ontology components, governance, actions, and rule-based functions: object types, link types, graph sessions with Pydantic validation, RBAC permission checks, a Postgres audit log, an action base class with preconditions/execute/audit/rollback, and RuleBasedFunction with optional Neo4j store-back.",
+          "quote": "Core framework (Phases 0–1): - core/ontology: ObjectType, LinkType, GraphSession with Pydantic validation - core/governance: RBAC permission checks + Postgres audit log - core/actions: Action base class (preconditions → execute → audit → rollback) - core/functions: RuleBasedFunction base class with optional Neo4j store-back",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.3"
+        },
+        {
+          "question": "q4",
+          "claim": "AI4I Track B predicts failure risk using four rule signals (TWF/HDF/PWF/OSF) and provides a TriggerMaintenance action, exposed via FastAPI on port 8000 and a Streamlit dashboard on port 8502.",
+          "quote": "AI4I demo (Phase 2): - Pipeline: 10K UCI sensor records → 4 refined CSVs (machines/tool_runs/failure_modes/links) - Track A: Neo4j loader + 5-page Streamlit explorer (Overview/Machines/Runs/Failures/Cypher) - Track B: PredictFailureRisk (4 rule signals: TWF/HDF/PWF/OSF), TriggerMaintenance action, FastAPI on :8000, Streamlit dashboard on :8502",
+          "numbers": [
+            "4",
+            ":8000",
+            ":8502"
+          ],
+          "corroborated_by": [],
+          "id": "S36.4"
+        },
+        {
+          "question": "q4",
+          "claim": "SECOM Track B predicts yield risk using three risk signals (alarm count/max sigma/NA rate) and provides a HoldLot action, exposed via FastAPI on port 8001 and a Streamlit dashboard on port 8504.",
+          "quote": "SECOM demo (Phase 3): - Pipeline: 1,567 lots × 590 sensors → SPC 3σ alarms → 440 alarm nodes, 6,115 links - Track A: Neo4j loader + 5-page Streamlit explorer with SPC alarm co-occurrence analysis - Track B: PredictYieldRisk (3 risk signals: alarm count/max sigma/NA rate), HoldLot action, FastAPI on :8001, Streamlit dashboard on :8504",
+          "numbers": [
+            "3",
+            ":8001",
+            ":8504"
+          ],
+          "corroborated_by": [],
+          "id": "S36.5"
+        },
+        {
+          "question": "q6",
+          "claim": "The SECOM pipeline produces SPC 3-sigma alarms, resulting in 440 alarm nodes and 6,115 links, and Track A includes SPC alarm co-occurrence analysis.",
+          "quote": "Pipeline: 1,567 lots × 590 sensors → SPC 3σ alarms → 440 alarm nodes, 6,115 links - Track A: Neo4j loader + 5-page Streamlit explorer with SPC alarm co-occurrence analysis",
+          "numbers": [
+            "3σ",
+            "440",
+            "6,115"
+          ],
+          "corroborated_by": [],
+          "id": "S36.6"
+        },
+        {
+          "question": "q4",
+          "claim": "The report includes side-by-side latency, risk distribution, and test coverage; 149 tests pass and both loaders are idempotent using MERGE semantics.",
+          "quote": "Report (Phase 4): - notebooks/comparison.ipynb: side-by-side latency, risk distribution, test coverage - docs/learnings.md: 4-layer test, GPS analogy, dataset mapping guide, design decisions 149 tests passing. Both loaders idempotent (MERGE semantics).",
+          "numbers": [
+            "149"
+          ],
+          "corroborated_by": [],
+          "id": "S36.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 36
+    },
+    {
+      "id": "45407cd99d",
+      "url": "https://github.com/GeenccMustafa/graph-versus-vector",
+      "title": "GeenccMustafa/graph-versus-vector",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-09-28",
+      "org": "GeenccMustafa",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Traditional RAG chunks the corpus, retrieves the top-k passages using dense, BM25, or hybrid reciprocal rank fusion search, and feeds them to the LLM.",
+          "quote": "**Traditional RAG** — chunk the corpus, then retrieve the top-`k` by **dense** (cosine), **BM25** (lexical), or **hybrid** (reciprocal rank fusion) search, and feed them to the LLM.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.1"
+        },
+        {
+          "question": "q1",
+          "claim": "GraphRAG uses an LLM to extract entities and relationships, stores them as a knowledge graph in Neo4j with vector indexes for chunk/entity/community embeddings, and retrieves by walking the graph and by community summaries.",
+          "quote": "**GraphRAG** — use an LLM to extract entities and relationships, store them as a **knowledge graph in Neo4j** (with vector indexes for chunk/entity/community embeddings), then retrieve by _walking the graph_ and by _community summaries_.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Multi-hop questions require combining facts from two or more passages, and flat top-k retrieval often grabs only one required passage because the question embedding does not point at both.",
+          "quote": "Multi-hop questions (e.g. _\"Were Scott Derrickson and Ed Wood of the same nationality?\"_) can only be answered by **combining facts from two or more passages**. Flat top-`k` retrieval often grabs only one of the required passages, because the question embedding doesn't point at both.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.3"
+        },
+        {
+          "question": "q2",
+          "claim": "In the bundled benchmark, GraphRAG raises supporting-fact recall from 0.81 to 0.98.",
+          "quote": "The bundled benchmark shows exactly this: GraphRAG raises supporting-fact recall from **0.81 → 0.98**.",
+          "numbers": [
+            "0.81",
+            "0.98"
+          ],
+          "corroborated_by": [],
+          "id": "S37.4"
+        },
+        {
+          "question": "q2",
+          "claim": "The default dataset for the benchmark is HotpotQA, described as hard multi-hop QA.",
+          "quote": "Dataset by default: **HotpotQA** (hard multi-hop QA).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.5"
+        },
+        {
+          "question": "q1",
+          "claim": "The repository uses Langfuse for tracing, DeepEval for LLM-as-judge metrics, and Prefect for flows and UI.",
+          "quote": "**Observability / evaluation / orchestration** — **Langfuse** (tracing), **DeepEval** (LLM-as-judge metrics), **Prefect** (flows + UI).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 37
+    },
+    {
+      "id": "fd3ba0ac33",
+      "url": "https://github.com/nick-stafford/financial-ontology",
+      "title": "nick-stafford/financial-ontology",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-09-06",
+      "org": "nick-stafford (with Co-Authored-By: Claude)",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The source describes a payment settlement control system that combines Python source contracts, SQL reconciliation, and an operational ontology.",
+          "quote": "Payment settlement control system: Python source contracts, SQL reconciliation, an operational ontology, version-checked actions with independent approval, and a transactional outbox to a mock ERP.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The system is described as including an executable object and link contract.",
+          "quote": "Aster Reconcile: payment settlement control system Python source contracts and ingestion, SQL reconciliation at a declared settlement grain, an executable object and link contract, version-checked actions with independent approval, a transactional outbox to a separate mock ERP, and a React investigation interface over generated TypeScript types.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.2"
+        },
+        {
+          "question": "q4",
+          "claim": "The system implements version-checked actions with independent approval.",
+          "quote": "Payment settlement control system: Python source contracts, SQL reconciliation, an operational ontology, version-checked actions with independent approval, and a transactional outbox to a mock ERP.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.3"
+        },
+        {
+          "question": "q4",
+          "claim": "The system uses a transactional outbox to a separate mock ERP.",
+          "quote": "Aster Reconcile: payment settlement control system Python source contracts and ingestion, SQL reconciliation at a declared settlement grain, an executable object and link contract, version-checked actions with independent approval, a transactional outbox to a separate mock ERP, and a React investigation interface over generated TypeScript types.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.4"
+        },
+        {
+          "question": "q4",
+          "claim": "The source characterizes the project as a Palantir-inspired simulation on synthetic data.",
+          "quote": "Palantir-inspired simulation on synthetic data.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.5"
+        },
+        {
+          "question": "q4",
+          "claim": "The source states the system does not run on Foundry.",
+          "quote": "Does not run on Foundry.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 38
+    },
+    {
+      "id": "0f0ae4143d",
+      "url": "https://en.wikipedia.org/wiki/Semantic_Web",
+      "title": "Semantic Web",
+      "provider": "wikipedia",
+      "discussion": null,
+      "type": "other",
+      "published": "2026-10-03",
+      "org": "Wikipedia",
+      "quality": 0.3,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The Semantic Web, also called Web 3.0, is a W3C-standards-based extension of the World Wide Web whose goal is machine-readable Internet data.",
+          "quote": "The **Semantic Web**, sometimes known as **Web 3.0**, is an extension of the [World Wide Web](https://en.wikipedia.org/wiki/World_Wide_Web \"World Wide Web\") through standards[[1]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-1) set by the [World Wide Web Consortium](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium \"World Wide Web Consortium\") (W3C). The goal of the Semantic Web is to make [Internet](https://en.wikipedia.org/wiki/Internet \"Internet\") data [machine-readable](https://en.wikipedia.org/wiki/Machine-readable \"Machine-readable\").",
+          "numbers": [
+            "3.0"
+          ],
+          "corroborated_by": [],
+          "id": "S39.1"
+        },
+        {
+          "question": "q1",
+          "claim": "RDF and OWL are used to enable encoding of semantics with data.",
+          "quote": "To enable the encoding of [semantics](https://en.wikipedia.org/wiki/Semantics \"Semantics\") with the data, technologies such as [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework \"Resource Description Framework\") (RDF)[[2]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-2) and [Web Ontology Language](https://en.wikipedia.org/wiki/Web_Ontology_Language \"Web Ontology Language\") (OWL)[[3]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-3) are used.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.2"
+        },
+        {
+          "question": "q1",
+          "claim": "An ontology can describe concepts, relationships between entities, and categories of things.",
+          "quote": "For example, [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science) \"Ontology (information science)\") can describe [concepts](https://en.wikipedia.org/wiki/Concept \"Concept\"), relationships between [entities](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model \"Entity–relationship model\"), and categories of things.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.3"
+        },
+        {
+          "question": "q1",
+          "claim": "Embedded semantics offer advantages such as reasoning over data and operating with heterogeneous data sources.",
+          "quote": "These embedded semantics offer significant advantages such as [reasoning](https://en.wikipedia.org/wiki/Reasoning_engine \"Reasoning engine\") over data and operating with heterogeneous data sources.[[4]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-4)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.4"
+        },
+        {
+          "question": "q1",
+          "claim": "Semantic Web standards promote common data formats and exchange protocols on the Web, fundamentally RDF.",
+          "quote": "These standards promote common data formats and exchange protocols on the Web, fundamentally the RDF.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.5"
+        },
+        {
+          "question": "q1",
+          "claim": "According to W3C, the Semantic Web provides a common framework allowing data to be shared and reused across application, enterprise, and community boundaries.",
+          "quote": "According to the W3C, \"The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries.\"[[5]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-W3C-SWA-5)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.6"
+        },
+        {
+          "question": "q1",
+          "claim": "The Semantic Web is regarded as an integrator across different content and information applications and systems.",
+          "quote": "The Semantic Web is therefore regarded as an integrator across different content and information applications and systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.7"
+        },
+        {
+          "question": "q1",
+          "claim": "Tim Berners-Lee coined the term for a web of data that can be processed by machines, with much meaning machine-readable.",
+          "quote": "The term was coined by [Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee \"Tim Berners-Lee\") for a web of data (or **data web**)[[6]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-6) that can be processed by machines[[7]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-Berners-Lee-7)—that is, one in which much of the [meaning](https://en.wikipedia.org/wiki/Meaning_(linguistics) \"Meaning (linguistics)\") is [machine-readable](https://en.wikipedia.org/wiki/Machine-readable_data \"Machine-readable data\").",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 39
+    },
+    {
+      "id": "1d767baa4a",
+      "url": "https://github.com/cloudbadal007/foundry-ontology-open",
+      "title": "cloudbadal007/foundry-ontology-open",
+      "provider": "github",
+      "discussion": null,
+      "type": "other",
+      "published": "2026-07-19",
+      "org": "cloudbadal007",
+      "quality": 0.3,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The source describes itself as an open-source implementation of Palantir Foundry's three-layer Ontology architecture, with an OWL/SHACL export bridge that Foundry does not have.",
+          "quote": "Open-source implementation of Palantir Foundry's three-layer Ontology architecture — with the OWL/SHACL export bridge Foundry doesn't have.",
+          "numbers": [
+            "three-layer"
+          ],
+          "corroborated_by": [],
+          "id": "S40.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The library mirrors Foundry's Object Types, Link Types, Action Types, and Functions, and adds OWL/RDF and SHACL export plus an MCP server for AI agents.",
+          "quote": "A lightweight Python library that mirrors Foundry's Object Types, Link Types, Action Types, and Functions — **plus** OWL/RDF and SHACL export, and an MCP server for AI agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.2"
+        },
+        {
+          "question": "q4",
+          "claim": "The stated problem is that Palantir Foundry's Ontology is proprietary and cannot export to W3C standards.",
+          "quote": "Palantir Foundry's Ontology is powerful but proprietary. You can't export to W3C standards.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.3"
+        },
+        {
+          "question": "q4",
+          "claim": "The initial commit lists core ontology components: ObjectType, Property, LinkType, ActionType, Function, and Interface.",
+          "quote": "Core: ObjectType, Property, LinkType, ActionType, Function, Interface",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.4"
+        },
+        {
+          "question": "q4",
+          "claim": "The initial commit lists engine components including ObjectStore, QueryEngine, ActionExecutor, and AuditLog.",
+          "quote": "Engine: ObjectStore, QueryEngine, ActionExecutor, AuditLog",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.5"
+        },
+        {
+          "question": "q4",
+          "claim": "The initial commit lists governance components including Roles, Markings, and Permissions.",
+          "quote": "Governance: Roles, Markings, Permissions",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.6"
+        },
+        {
+          "question": "q4",
+          "claim": "The repository includes an MCP server for AI agent integration.",
+          "quote": "MCP server for AI agent integration",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.7"
+        },
+        {
+          "question": "q4",
+          "claim": "The README includes a section titled Execute Actions with Validation.",
+          "quote": "Execute Actions with Validation",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 40
+    },
+    {
+      "id": "206de91706",
+      "url": "https://github.com/gabrielchasukjin/ontology-ingestion-layer",
+      "title": "gabrielchasukjin/ontology-ingestion-layer",
+      "provider": "github",
+      "discussion": null,
+      "type": "other",
+      "published": "2026-07-10",
+      "org": "gabrielchasukjin (Gabriel Cha), with Claude",
+      "quality": 0.3,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "An ontology is a formal model of a domain covering entity types, properties, relationships, and actions; it captures meaning rather than just storage structure, and it serves as the semantic grounding layer that makes agent actions trustworthy.",
+          "quote": "An **ontology** is a formal model of a _domain_ — the entity types that exist (customer, order, aircraft), their properties, the relationships between them, and the **actions** that can be taken on them. It captures _meaning_, not just storage structure. For AI agents this matters because agents that reason over **defined business concepts** — rather than raw tables and schemas \"built for machines, not meaning\" — can act reliably and be governed. The ontology is the semantic grounding layer that makes agent actions trustworthy.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S41.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Ontology is described as the blueprint or type system containing objects, links, actions, and rules, while a knowledge graph is that blueprint populated with live instances.",
+          "quote": "ontology  = the blueprint / type system   (objects, links, actions, rules)\nknowledge graph = that blueprint populated with live instances",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S41.2"
+        },
+        {
+          "question": "q2",
+          "claim": "The ontology is said not to be an empty shell or a RAG-style retrieve-chunks-and-stuff-prompt store; it is described as a live, continuously-fed, bidirectional layer that many systems read and write at once.",
+          "quote": "The ontology is **not** an empty organizing shell filled on demand, and it is **not** a RAG-style \"retrieve chunks and stuff them into the prompt\" store. It is a **live, continuously-fed, bidirectional** layer that many systems read and write at once.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S41.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The source contrasts RAG, where you retrieve, stuff into the prompt, and reason over pasted text, with an ontology approach where objects are already there and continuously maintained, and the agent queries a live typed object graph with permissions baked in to act on real current state rather than a stale retrieved snapshot.",
+          "quote": "> **Not RAG.** In RAG you _retrieve → stuff into the prompt → reason over pasted text_. Here the objects are already there and continuously maintained; the agent **queries a live typed object graph** with permissions baked in. That's _why_ it's safe for governed action — the agent acts on real current state, not a stale retrieved snapshot.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S41.4"
+        },
+        {
+          "question": "q4",
+          "claim": "In the write path, an agent proposes an Action; validation checks action logic and security scopes; there is optional human confirmation; commit is a single transaction that edits the ontology; it becomes instantly visible to apps and humans reading those objects; and it is propagated back to source or operational systems in real time via CDC.",
+          "quote": "flowchart TD\n    A[Agent proposes an Action] --> B{Validate:<br/>action logic + security scopes}\n    B --> C[Optional human confirmation]\n    C --> D[Commit as a single transaction<br/>= an edit to the ontology]\n    D --> E[Instantly visible to every<br/>app / human reading those objects]\n    D --> F[Propagated BACK to source /<br/>operational systems in real time via CDC]",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S41.5"
+        },
+        {
+          "question": "q4",
+          "claim": "For Palantir, agent action is write-back by design and agents execute transactional ontology edits; for Microsoft, read-only data agents use NL2SQL/DAX/KQL while action-capable operations agents are separate.",
+          "quote": "| **Agent action** | Write-back by design — agents execute transactional ontology edits | Read-only data agents (NL2SQL/DAX/KQL) vs. separate action-capable operations agents |",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S41.6"
+        },
+        {
+          "question": "q4",
+          "claim": "Palantir is described as one centralized kinetic ontology fusing data, logic, actions, and security; Microsoft is described as federated across products including Fabric IQ, Azure Digital Twins/DTDL, and Graph.",
+          "quote": "| **Shape** | One centralized \"kinetic\" ontology fusing data + logic + actions + security | Federated across products (Fabric IQ, Azure Digital Twins/DTDL, Graph) |",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S41.7"
+        },
+        {
+          "question": "q2",
+          "claim": "The source caveats that all vendor claims are self-descriptive documentation and architectural rather than independently benchmarked; several Microsoft features are in preview including Fabric IQ ontology and Graph item, while the Fabric data agent is GA; and the cross-vendor philosophy comparison is a synthesis across primary docs rather than a single sourced statement.",
+          "quote": "*   All vendor claims are **self-descriptive documentation** — architectural, not independently benchmarked.\n*   Several Microsoft features are in **preview** (Fabric IQ ontology, Graph item); framing may change. The Fabric data agent is GA.\n*   Fast-moving area — Microsoft docs were updated within days of research (Jul 2026); naming shifts often.\n*   The cross-vendor \"philosophy\" comparison is a **synthesis** across primary docs, not a single sourced statement.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S41.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 41
+    },
+    {
+      "id": "869581c699",
+      "url": "https://en.wikipedia.org/wiki/Knowledge_graph",
+      "title": "Knowledge graph",
+      "provider": "wikipedia",
+      "discussion": null,
+      "type": "other",
+      "published": "2026-10-04",
+      "org": "Wikipedia",
+      "quality": 0.3,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "A simpler definition treats a knowledge graph as a digital structure representing concepts and relationships (facts), and it may include an ontology that lets humans and machines understand and reason about its contents.",
+          "quote": "A digital structure that represents knowledge as concepts and the relationships between them (facts). A knowledge graph can include an ontology that allows both humans and machines to understand and reason about its contents.[[23]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-23)[[24]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-24)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S42.1"
+        },
+        {
+          "question": "q1",
+          "claim": "A knowledge graph formally represents semantics by describing entities and their relationships.",
+          "quote": "A knowledge graph formally represents semantics by describing entities and their relationships.[[32]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-32)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S42.2"
+        },
+        {
+          "question": "q1",
+          "claim": "A common knowledge-graph feature is support for reasoning over inferred ontologies: the graph acquires and integrates information into an ontology and applies a reasoner to derive new knowledge.",
+          "quote": "_Supporting reasoning over inferred ontologies_: A knowledge graph acquires and integrates information into an ontology and applies a reasoner to derive new knowledge.[[3]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-Ref1-3)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S42.3"
+        },
+        {
+          "question": "q1",
+          "claim": "Virtual knowledge graphs do not store information in specialized databases; they rely on an underlying relational database or data lake and use mappings between the data source elements and the graph structure/ontology.",
+          "quote": "In contrast, virtual knowledge graphs do not store information in specialized databases.[[30]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-30) They rely on an underlying relational database or data lake to answer queries on the graph. Such a virtual knowledge graph system must be properly configured in order to answer the queries correctly. This specific configuration is done through a set of mappings that define the relationship between the elements of the data source and the structure and ontology of the virtual knowledge graph.[[31]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-31)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S42.4"
+        },
+        {
+          "question": "q1",
+          "claim": "Graph databases allow users to store data as entities and interrelationships and facilitate operations such as data reasoning, node embedding, and ontology development on knowledge bases.",
+          "quote": "These graph databases allow users to easily store data as entities and their interrelationships, and facilitate operations such as data reasoning, node embedding, and ontology development on knowledge bases.[[29]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-29)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S42.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Recent data science and machine learning developments, particularly graph neural networks and representation learning, broadened knowledge-graph scope beyond search engines and recommender systems; knowledge graphs are increasingly used in genomics, proteomics, and systems biology.",
+          "quote": "Recent developments in data science and [machine learning](https://en.wikipedia.org/wiki/Machine_learning \"Machine learning\"), particularly in [graph neural networks](https://en.wikipedia.org/wiki/Graph_neural_network \"Graph neural network\"), representation learning, and machine learning, have broadened the scope of knowledge graphs beyond their traditional use in search engines and [recommender systems](https://en.wikipedia.org/wiki/Recommender_system \"Recommender system\"). They are increasingly used in scientific research, with notable applications in fields such as [genomics](https://en.wikipedia.org/wiki/Genomics \"Genomics\"), [proteomics](https://en.wikipedia.org/wiki/Proteomics \"Proteomics\"), and [systems biology](https://en.wikipedia.org/wiki/Systems_biology \"Systems biology\").[[5]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-5)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S42.6"
+        },
+        {
+          "question": "q5",
+          "claim": "Large language models expanded interest in knowledge graphs as a way to structure information from unstructured text, with language-processing advances enabling automatic or semi-automatic generation and expansion of graphs.",
+          "quote": "The development of large language models expanded interest in knowledge graphs as a way to structure information from unstructured text, with advances in language processing enabling their automatic or semi-automatic generation and expansion.[[16]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-16)[[17]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-17)[[18]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-18)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S42.7"
+        },
+        {
+          "question": "q2",
+          "claim": "Microsoft Research's GraphRAG from 2024 integrated LLM-generated graphs into retrieval-augmented generation.",
+          "quote": "Microsoft Research's [GraphRAG](https://github.com/microsoft/graphrag) (2024) exemplified this development by integrating LLM-generated graphs into retrieval-augmented generation.",
+          "numbers": [
+            "2024"
+          ],
+          "corroborated_by": [],
+          "id": "S42.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 42
+    },
+    {
+      "id": "a4bc100c1a",
+      "url": "https://github.com/Albertsun6/ontology-builder",
+      "title": "Albertsun6/ontology-builder",
+      "provider": "github",
+      "discussion": null,
+      "type": "other",
+      "published": "2025-12-28",
+      "org": "Albertsun6",
+      "quality": 0.3,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The source defines ontology, in information science, as a formal representation of concepts and relationships in a specific domain, defining classes/types, properties, relations, and constraints.",
+          "quote": "在信息科学中，本体论是对特定领域内概念和关系的正式表示。它定义了：\n\n*   **类/类型** - 事物的种类\n*   **属性** - 类的特征\n*   **关系** - 类之间的联系\n*   **约束** - 规则和限制",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S43.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The tool's core ontology concepts are object types (business entities like customers, orders, products), properties (features/data fields), link types (relationships with one-to-one/one-to-many/many-to-many cardinality), interfaces (polymorphism and shared property structures), and actions (operations executable on objects).",
+          "quote": "*   **对象类型 (Object Types)** - 定义业务实体，如客户、订单、产品等\n*   **属性 (Properties)** - 对象的特征和数据字段，支持多种数据类型\n*   **链接类型 (Link Types)** - 对象之间的关系，支持一对一、一对多、多对多\n*   **接口 (Interfaces)** - 多态性支持，定义共享的属性结构\n*   **动作 (Actions)** - 可在对象上执行的操作",
+          "numbers": [
+            "一对一",
+            "一对多",
+            "多对多"
+          ],
+          "corroborated_by": [],
+          "id": "S43.2"
+        },
+        {
+          "question": "q4",
+          "claim": "The project is an ontology modeling tool inspired by Palantir Ontology that supports visual design of object types, properties, relationships, and interfaces.",
+          "quote": "一个现代化的本体论建模工具，灵感来自 Palantir Ontology。支持可视化设计对象类型、属性、关系和接口。",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S43.3"
+        },
+        {
+          "question": "q4",
+          "claim": "The tool references Palantir Foundry's ontology pattern by mapping data tables to object types, mapping foreign-key relationships to links, supporting interface-based polymorphism, and defining actions as business operations.",
+          "quote": "本工具参考 Palantir Foundry 的本体论模式：\n\n*   将数据表映射为对象类型\n*   将外键关系映射为链接\n*   支持接口实现多态性\n*   动作定义业务操作",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S43.4"
+        }
+      ],
+      "dropped": 0,
+      "n": 43
+    },
+    {
+      "id": "7f77985824",
+      "url": "https://en.wikipedia.org/wiki/Web_Ontology_Language",
+      "title": "Web Ontology Language",
+      "provider": "wikipedia",
+      "discussion": null,
+      "type": "other",
+      "published": "2003-06-17",
+      "org": null,
+      "quality": 0.3,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "OWL and OWL2 refer to the 2004 and 2009 specifications, respectively.",
+          "quote": "OWL and OWL2 are used to refer to the 2004 and 2009 specifications, respectively.",
+          "numbers": [
+            "2004",
+            "2009"
+          ],
+          "corroborated_by": [],
+          "id": "S44.1"
+        },
+        {
+          "question": "q1",
+          "claim": "OWL and RDF have attracted significant academic, medical and commercial interest.",
+          "quote": "OWL and RDF have attracted significant academic, medical and commercial interest.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S44.2"
+        }
+      ],
+      "dropped": 6,
+      "n": 44
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-07",
+  "author_or_org": "Anastasiia Kuvshinova, Seungmin Jin",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "The paper presents Graph Traversal Agent, a graph-guided root cause analysis agent that combines LLM reasoning with specialized tools.",
+      "quote": "We present Graph Traversal Agent, a graph-guided RCA agent that combines LLM reasoning with specialized tools.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The agent reasons over a typed evidence graph, while deterministic graph and tool operations collect evidence, bound the search, and check proposed verdicts.",
+      "quote": "The model reasons over a typed evidence graph, while deterministic graph and tool operations collect evidence, bound the search, and check proposed verdicts.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The work maps operational constraints including read-only evidence collection, propagation-aware diagnosis, bounded execution, and independently validated verdicts to a typed incident graph, a LangGraph traversal state machine, and a separate validation stage.",
+      "quote": "We map operational constraints, including read-only evidence collection, propagation-aware diagnosis, bounded execution, and independently validated verdicts, to a typed incident graph, a LangGraph traversal state machine, and a separate validation stage.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "On ITBench snapshots scored by one fixed qwen-plus judge, the audited system raises root-cause-entity F1 over an earlier iteration from 0.6087 to 0.9130 on a 23-scenario common subset.",
+      "quote": "On ITBench snapshots scored by one fixed qwen-plus judge, the audited system raises root-cause-entity F1 over an earlier iteration of the same system from 0.6087 to 0.9130 on a 23-scenario common subset.",
+      "numbers": [
+        "0.6087",
+        "0.9130",
+        "23"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "A prompt-level ablation separates prompt-tuned gains from gains surviving removal of scenario-specific hints; the stripped-prompt configuration retains 0.6958 F1 on a 19-scenario subset.",
+      "quote": "A prompt-level ablation separates prompt-tuned gains from gains that survive once scenario-specific hints are removed: the stripped-prompt configuration retains 0.6958 F1 on a 19-scenario subset.",
+      "numbers": [
+        "0.6958",
+        "19"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "The surviving gain concentrates on ChaosMesh scenarios where the ground-truth root cause is the injected fault object already present in the evidence graph, so the authors report it as benchmark-coupled rather than broad cross-cluster RCA evidence.",
+      "quote": "The surviving gain concentrates on ChaosMesh scenarios whose ground-truth root cause is the injected fault object already present in the evidence graph, so we report it as benchmark-coupled rather than broad cross-cluster RCA evidence.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Lightweight checks include same-judge comparison, prompt-level ablation, cascade-source checking, and a telemetry no-leak test; they mark claims as supported, pending, or out of scope.",
+      "quote": "Lightweight checks, including same-judge comparison, prompt-level ablation, cascade-source checking, and a telemetry no-leak test, mark claims as supported, pending, or out of scope.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The work is scoped to ITBench OpenTelemetry-demo snapshots; live-cluster trials served as an engineering stress test, but alert state and trace availability did not stay stable enough for controlled scoring, so no production-readiness or mean-time-to-repair claim is made.",
+      "quote": "We scope the work to ITBench OpenTelemetry-demo snapshots. Live-cluster trials served as an engineering stress test, but alert state and trace availability did not stay stable enough for controlled scoring, so we make no production-readiness or mean-time-to-repair claim.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.08590"
+}

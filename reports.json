@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-05T04:28:43+00:00",
-  "count": 161,
+  "generated": "2026-10-05T04:48:56+00:00",
+  "count": 160,
   "reports": [
     {
       "file": "ai-news-2026-10-04.html",
@@ -44,12 +44,12 @@
     {
       "file": "knowledge-layer-2026-10-02.html",
       "type": "special",
-      "title": "Ontologies, Graph Knowledge, Semantic Layer & Context Layer (2025–2026)",
+      "title": "The Knowledge Layer for Agents: Ontologies, Graphs and Where ML Fits",
       "date": "2026-10-02",
-      "summary": "Ontologies · GraphRAG · Semantic layer · Context layer · Convergence and adoption (2025–2026)",
-      "readingTime": 14,
+      "summary": "What the layer is · GraphRAG versus vector RAG · Accuracy on enterprise data · Operational ontologies and actions · Where ML goes · Graphs in root cause analysis",
+      "readingTime": 15,
       "tags": [
-        "agents",
+        "research",
         "memory"
       ],
       "series": "Memory & Knowledge"
@@ -67,19 +67,6 @@
         "memory"
       ],
       "audio": true
-    },
-    {
-      "file": "ontology-graph-ml-aiops-2026-10-01.html",
-      "type": "special",
-      "title": "Ontologies, Graph ML & AIOps: Where the ML Actually Goes",
-      "date": "2026-10-01",
-      "summary": "Palantir ontology · Governance · Link prediction · AIOps layers · The determinism question · Foundry mapping · 5 diagrams · Reading list",
-      "readingTime": 11,
-      "tags": [
-        "models",
-        "memory"
-      ],
-      "series": "Memory & Knowledge"
     },
     {
       "file": "ai-news-2026-10-01.html",
@@ -494,7 +481,6 @@
       "readingTime": 3,
       "tags": [
         "models",
-        "research",
         "memory"
       ],
       "audio": true
@@ -906,6 +892,7 @@
       "summary": "LLMs reward expertise · Qwen3.8-Max: a new bar for coding · SQLite CVEs or LLM slop? · Databricks completes Panther acquisition",
       "readingTime": 3,
       "tags": [
+        "models",
         "security",
         "multimodal",
         "coding"
@@ -1076,7 +1063,6 @@
       "tags": [
         "models",
         "agents",
-        "research",
         "infrastructure"
       ]
     },

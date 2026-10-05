@@ -1,0 +1,44 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-28",
+  "author_or_org": "Daniel Naiff, Ronnie Alves, Gustavo Pinto",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Traditional RAG systems treat documents in isolation, so they fail to capture hierarchical relationships between concepts in complex scientific corpora.",
+      "quote": "Traditional Retrieval-Augmented Generation (RAG) systems treat documents in isolation, failing to capture hierarchical relationships between concepts in complex scientific corpora.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "This limitation harms answer quality in specialized domains such as climatology, where conceptual dependencies often span multiple articles.",
+      "quote": "This limitation compromises answer quality in specialized domains such as climatology, where conceptual dependencies frequently traverse multiple articles.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The proposed hybrid architecture combines vector search with GraphRAG, Leiden community detection, and cross-encoder re-ranking.",
+      "quote": "We propose a hybrid architecture that integrates vector search with GraphRAG, Leiden community detection, and cross-encoder re-ranking, achieving gains of 160\\% in contextual relevance and 177\\% in contextual recall compared to classical RAG.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Compared with classical RAG, the hybrid GraphRAG architecture reports gains of 160% in contextual relevance and 177% in contextual recall.",
+      "quote": "We propose a hybrid architecture that integrates vector search with GraphRAG, Leiden community detection, and cross-encoder re-ranking, achieving gains of 160\\% in contextual relevance and 177\\% in contextual recall compared to classical RAG.",
+      "numbers": [
+        "160\\%",
+        "177\\%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The results indicate that unifying local and global retrieval significantly outperforms text-span isolation for question answering over dispersed scientific literature.",
+      "quote": "These results demonstrate that unifying local and global retrieval significantly outperforms text-span isolation, paving the way for more effective question-answering systems over dispersed scientific literature.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.28766"
+}

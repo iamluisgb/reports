@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-03-02",
+  "author_or_org": "Duneesha Fernando, Maria A. Rodriguez, Rajkumar Buyya",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "Edge computing environments host increasingly complex microservice-based IoT applications where performance anomalies propagate across dependent services.",
+      "quote": "Edge computing environments host increasingly complex microservice-based IoT applications that are prone to performance anomalies propagating across dependent services.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Root cause localization identifies the faulty component and root cause analysis identifies the underlying fault type, which is essential for timely mitigation.",
+      "quote": "Identifying the faulty component (root cause localization) and the underlying fault type (root cause analysis) is essential for timely mitigation.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Supervised graph neural networks are currently the state of the art for joint root cause localization and analysis.",
+      "quote": "Supervised graph neural networks (GNNs) currently represent the state of the art for joint root cause localization and analysis.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Existing approaches rely on centralized processing over full-system graphs, causing high inference latency and limited scalability in large distributed edge environments.",
+      "quote": "However, existing approaches rely on centralized processing over full-system graphs, leading to high inference latency and limited scalability in large, distributed edge environments.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The proposed approach uses communication-driven clustering to partition large service graphs into highly interacting communities and uses a cascaded network with two subnetworks for hierarchical RCL/RCA.",
+      "quote": "Our approach employs communication-driven clustering to partition large service graphs into highly interacting communities and a cascaded network with two subnetworks that perform hierarchical RCL/RCA.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Restricting message passing to reduced and structured subgraphs lowers computational complexity while preserving critical dependency information.",
+      "quote": "By restricting message passing to reduced and structured subgraphs, the proposed framework significantly lowers computational complexity while preserving critical dependency information.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The method is evaluated on the MicroCERCL benchmark and large-scale datasets generated using the iAnomaly simulation framework.",
+      "quote": "We evaluate the proposed method on the MicroCERCL benchmark and large-scale datasets generated using the iAnomaly simulation framework.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The cascaded architecture achieves diagnostic accuracy comparable to centralized GNN baselines while maintaining near-constant inference latency as graph size increases, supporting scalable and actionable AIOps in edge computing.",
+      "quote": "Experimental results show that the cascaded architecture achieves diagnostic accuracy comparable to centralized GNN baselines while maintaining near-constant inference latency as graph size increases, enabling scalable and actionable AIOps in edge computing environments.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2603.01447"
+}

@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": null,
+  "author_or_org": "cloudbadal007",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source describes itself as an open-source implementation of Palantir Foundry's three-layer Ontology architecture, with an OWL/SHACL export bridge that Foundry does not have.",
+      "quote": "Open-source implementation of Palantir Foundry's three-layer Ontology architecture — with the OWL/SHACL export bridge Foundry doesn't have.",
+      "numbers": [
+        "three-layer"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The library mirrors Foundry's Object Types, Link Types, Action Types, and Functions, and adds OWL/RDF and SHACL export plus an MCP server for AI agents.",
+      "quote": "A lightweight Python library that mirrors Foundry's Object Types, Link Types, Action Types, and Functions — **plus** OWL/RDF and SHACL export, and an MCP server for AI agents.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The stated problem is that Palantir Foundry's Ontology is proprietary and cannot export to W3C standards.",
+      "quote": "Palantir Foundry's Ontology is powerful but proprietary. You can't export to W3C standards.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The initial commit lists core ontology components: ObjectType, Property, LinkType, ActionType, Function, and Interface.",
+      "quote": "Core: ObjectType, Property, LinkType, ActionType, Function, Interface",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The initial commit lists engine components including ObjectStore, QueryEngine, ActionExecutor, and AuditLog.",
+      "quote": "Engine: ObjectStore, QueryEngine, ActionExecutor, AuditLog",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The initial commit lists governance components including Roles, Markings, and Permissions.",
+      "quote": "Governance: Roles, Markings, Permissions",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The repository includes an MCP server for AI agent integration.",
+      "quote": "MCP server for AI agent integration",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The README includes a section titled Execute Actions with Validation.",
+      "quote": "Execute Actions with Validation",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/cloudbadal007/foundry-ontology-open"
+}

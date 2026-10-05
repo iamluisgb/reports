@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2026-10-03",
+  "author_or_org": "Wikipedia",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The Semantic Web, also called Web 3.0, is a W3C-standards-based extension of the World Wide Web whose goal is machine-readable Internet data.",
+      "quote": "The **Semantic Web**, sometimes known as **Web 3.0**, is an extension of the [World Wide Web](https://en.wikipedia.org/wiki/World_Wide_Web \"World Wide Web\") through standards[[1]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-1) set by the [World Wide Web Consortium](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium \"World Wide Web Consortium\") (W3C). The goal of the Semantic Web is to make [Internet](https://en.wikipedia.org/wiki/Internet \"Internet\") data [machine-readable](https://en.wikipedia.org/wiki/Machine-readable \"Machine-readable\").",
+      "numbers": [
+        "3.0"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "RDF and OWL are used to enable encoding of semantics with data.",
+      "quote": "To enable the encoding of [semantics](https://en.wikipedia.org/wiki/Semantics \"Semantics\") with the data, technologies such as [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework \"Resource Description Framework\") (RDF)[[2]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-2) and [Web Ontology Language](https://en.wikipedia.org/wiki/Web_Ontology_Language \"Web Ontology Language\") (OWL)[[3]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-3) are used.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "An ontology can describe concepts, relationships between entities, and categories of things.",
+      "quote": "For example, [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science) \"Ontology (information science)\") can describe [concepts](https://en.wikipedia.org/wiki/Concept \"Concept\"), relationships between [entities](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model \"Entity–relationship model\"), and categories of things.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Embedded semantics offer advantages such as reasoning over data and operating with heterogeneous data sources.",
+      "quote": "These embedded semantics offer significant advantages such as [reasoning](https://en.wikipedia.org/wiki/Reasoning_engine \"Reasoning engine\") over data and operating with heterogeneous data sources.[[4]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-4)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Semantic Web standards promote common data formats and exchange protocols on the Web, fundamentally RDF.",
+      "quote": "These standards promote common data formats and exchange protocols on the Web, fundamentally the RDF.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "According to W3C, the Semantic Web provides a common framework allowing data to be shared and reused across application, enterprise, and community boundaries.",
+      "quote": "According to the W3C, \"The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries.\"[[5]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-W3C-SWA-5)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The Semantic Web is regarded as an integrator across different content and information applications and systems.",
+      "quote": "The Semantic Web is therefore regarded as an integrator across different content and information applications and systems.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Tim Berners-Lee coined the term for a web of data that can be processed by machines, with much meaning machine-readable.",
+      "quote": "The term was coined by [Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee \"Tim Berners-Lee\") for a web of data (or **data web**)[[6]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-6) that can be processed by machines[[7]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-Berners-Lee-7)—that is, one in which much of the [meaning](https://en.wikipedia.org/wiki/Meaning_(linguistics) \"Meaning (linguistics)\") is [machine-readable](https://en.wikipedia.org/wiki/Machine-readable_data \"Machine-readable data\").",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://en.wikipedia.org/wiki/Semantic_Web"
+}

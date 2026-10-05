@@ -1,0 +1,58 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-15",
+  "author_or_org": "Abdelhadi Belfadel, Maxence Gagnant, Joseph Kattan, Sana Tmar",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Ontology-driven knowledge graph construction from industrial text is described as challenging because of domain-specific documents, scarce annotated resources, and complex ontology engineering workflows.",
+      "quote": "Ontology-driven knowledge graph construction from industrial text remains challenging due to the domain specificity of documents, the scarcity of annotated resources, and the complexity of ontology engineering workflows.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper presents an ontology learning pipeline that combines compact open-source LLMs, reusable prompting strategies, and open knowledge bases to extract, structure, enrich, and evaluate knowledge from textual corpora.",
+      "quote": "This paper presents and investigates the applicability of an ontology learning pipeline that combines compact open-source Large Language Models (LLMs), reusable prompting strategies, and open knowledge bases to support the extraction, structuring, enrichment, and evaluation of knowledge from textual corpora.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "In the approach, unstructured reports are used to extract entities and relations, generate RDF triples, construct an OWL ontology, enrich it with external sources, assess ontology quality, and then build a populated knowledge graph grounded in the resulting ontology schema.",
+      "quote": "Starting from unstructured reports, the approach extracts entities and relations, generates RDF triples, constructs related OWL ontology, enriches it using external knowledge sources, assesses the quality of the ontology, and subsequently constructs a populated knowledge graph grounded in the resulting ontology schema.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The approach was tested on a private French corpus of power-grid incident reports using locally deployable open-source LLMs ranging from 7B to 32B parameters.",
+      "quote": "The approach is tested and evaluated on a private French corpus of power-grid incident reports, using locally deployable open-source LLMs ranging from 7B to 32B parameters.",
+      "numbers": [
+        "7B",
+        "32B"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Experiments on 80 manually annotated private reports showed that schema-guided prompting significantly improves extraction quality.",
+      "quote": "Experiments on 80 manually annotated private reports show that schema-guided prompting significantly improves extraction quality, while quantized models provide an effective trade-off between performance and computational cost.",
+      "numbers": [
+        "80"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Quantized models are reported to provide an effective trade-off between performance and computational cost.",
+      "quote": "Experiments on 80 manually annotated private reports show that schema-guided prompting significantly improves extraction quality, while quantized models provide an effective trade-off between performance and computational cost.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The results support the feasibility of transforming domain-specific industrial text into ontology-based knowledge graphs using locally deployed open-source LLMs and reusable prompting strategies.",
+      "quote": "These results demonstrate the feasibility of transforming domain-specific industrial text into ontology-based knowledge graphs using locally deployed open-source LLMs, while supporting the generalization of the extraction process through reusable prompting strategies.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.31663"
+}

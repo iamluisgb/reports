@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-03-13",
+  "author_or_org": "Vamsi Krishna Kommineni, Birgitta König-Ries, Sheeba Samuel",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Conventional ontology and knowledge graph construction relies on human domain experts to define entities and relationship types, establish hierarchies, maintain domain relevance, fill the ABox with instances, and ensure data quality such as accuracy and completeness.",
+      "quote": "The conventional process of building Ontologies and Knowledge Graphs (KGs) heavily relies on human domain experts to define entities and relationship types, establish hierarchies, maintain relevance to the domain, fill the ABox (or populate with instances), and ensure data quality (including amongst others accuracy and completeness).",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper's pipeline develops an ontology as a TBox based on competency questions and then constructs knowledge graphs using that ontology.",
+      "quote": "Our pipeline involves formulating competency questions (CQs), developing an ontology (TBox) based on these CQs, constructing KGs using the developed ontology, and evaluating the resultant KG with minimal to no involvement of human experts.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The work explores semi-automatic construction of knowledge graphs facilitated by open-source large language models.",
+      "quote": "This work explores the (semi-)automatic construction of KGs facilitated by open-source LLMs.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "LLMs are described as able to understand and generate human-like natural language and as offering ways to automate aspects of ontology and knowledge graph construction.",
+      "quote": "On the other hand, Large Language Models (LLMs) have recently gained popularity for their ability to understand and generate human-like natural language, offering promising ways to automate aspects of this process.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The semi-automated pipeline was demonstrated by creating a knowledge graph on deep learning methodologies from scholarly publications.",
+      "quote": "We showcase the feasibility of our semi-automated pipeline by creating a KG on deep learning methodologies by exploiting scholarly publications.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper designs a judge LLM to rate answers generated via Retrieval-Augmented-Generation and KG concepts automatically extracted using LLMs against ground truth.",
+      "quote": "To evaluate the answers generated via Retrieval-Augmented-Generation (RAG) as well as the KG concepts automatically extracted using LLMs, we design a judge LLM, which rates the generated content based on ground truth.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The findings suggest LLMs could reduce human effort in knowledge graph construction, but a human-in-the-loop approach is recommended for evaluating automatically generated KGs.",
+      "quote": "Our findings suggest that employing LLMs could potentially reduce the human effort involved in the construction of KGs, although a human-in-the-loop approach is recommended to evaluate automatically generated KGs.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2403.08345"
+}
