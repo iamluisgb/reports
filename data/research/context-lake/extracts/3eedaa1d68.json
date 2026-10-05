@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-07-15",
+  "author_or_org": "Sylvain Utard / Altertable",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The article defines a useful context store as having a 'map' component containing business definitions, internal terminology, entity relationships, event taxonomies, product documentation, runbooks, and known failure modes.",
+      "quote": "A useful context store has two parts.\n\nThe first is a **map**: business definitions, internal terminology, entity relationships, event taxonomies, product documentation, runbooks, and known failure modes.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The article argues vector databases can retrieve documents but are weak for joining users to organizations, correlating requests with traces, filtering by deployment, or aggregating behavior across millions of events.",
+      "quote": "A vector database can retrieve relevant documents, but it is a weak foundation for joining users to organizations, correlating requests with traces, filtering by deployment, or aggregating behavior across millions of events.",
+      "numbers": [
+        "millions"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "MCP servers for Postgres and logs expose capabilities but do not create shared identity models, map internal feature names to product events and backend services, or reconcile timestamps, permissions, deployment versions, or conflicting definitions.",
+      "quote": "An MCP server for Postgres and an MCP server for logs expose two sets of capabilities. They do not create a shared identity model between users in Postgres and sessions in the logs. They do not establish that an internal feature name corresponds to three product events and a particular backend service. They do not reconcile timestamps, permissions, deployment versions, or conflicting definitions.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Altertable says its production context store connects to Postgres, ingests logs/traces and product events, and uploads company knowledge such as product documentation, internal definitions, runbooks, and interpretive context.",
+      "quote": "Our production Postgres database is connected to Altertable. Logs and traces are ingested into it. Product events land there too. We also upload company knowledge: product documentation, internal definitions, runbooks, and the context our team uses to interpret what the data means.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Altertable's agent, accessible through Ask Agent and a Slack bot, starts with a shared, queryable picture of the business rather than a collection of disconnected tools.",
+      "quote": "The agent is accessible through our \"Ask Agent\" feature and a Slack bot, but the chat surface is the least interesting part. What matters is that the agent does not begin with a collection of disconnected tools. It begins with a shared, queryable picture of the business.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The article says when questions cross systems, agents must discover tools, understand schemas/APIs, move identifiers, paginate, retry, and reconstruct relationships; this becomes slow, expensive, and brittle when rediscovered every investigation.",
+      "quote": "When a question crosses several systems, the agent still has to discover which tools to call, understand different schemas and APIs, move identifiers between them, paginate through results, retry failed requests, and reconstruct relationships that were never represented explicitly.\n\nAt that point, the model is not primarily reasoning about the business. It is rebuilding data integration at inference time.\n\nThat can work for occasional tasks. It becomes slow, expensive, and brittle when the same relationships must be rediscovered for every investigation.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The article states better models do not fix missing relationships between identifiers, conflicting business definitions, or stale copies; fragmentation remains in every request.",
+      "quote": "Better models do not fix missing relationships between identifiers. They do not resolve conflicting business definitions or make stale copies current. They may become better at navigating fragmented systems, but the fragmentation remains part of every request.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Altertable reports that it found a second role for its lakehouse: it became the shared context layer behind Altertable's agentic features.",
+      "quote": "Most teams adopt a lakehouse to store and query analytical data. We found a second role for ours: it became the shared context layer behind Altertable’s agentic features.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://altertable.ai/blog/2026-07-15-lakehouse-as-context-store"
+}

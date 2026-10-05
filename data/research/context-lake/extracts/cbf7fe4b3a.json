@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": null,
+  "author_or_org": "Quantum-L9",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "L9 Graphiti Memory is described as a bi-temporal knowledge graph memory subsystem for autonomous agents using Zep Cloud transport.",
+      "quote": "L9 Graphiti Memory — bi-temporal knowledge graph memory subsystem for autonomous agents (Zep Cloud transport)",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The system provides MemoryService.rebuild_projection and l9-memory rebuild-projection to re-project active records with no live link, dry run by default, without touching canonical state.",
+      "quote": "Add MemoryService.rebuild_projection and l9-memory rebuild-projection, re-projecting active records with no live link. MAINTAIN to apply, dry run by default, never touches canonical state.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Graphiti exposes no deactivation primitive, so retire and erase both call delete_episode.",
+      "quote": "Graphiti exposes no deactivation primitive, so retire and erase both call delete_episode.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "ProjectionAdapter.retirement_mode is NATIVE or WITHDRAW; Graphiti is WITHDRAW and NullProjection is NATIVE.",
+      "quote": "ProjectionAdapter.retirement_mode is NATIVE or WITHDRAW. Graphiti is WITHDRAW, NullProjection is NATIVE.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Changing store_backend to a different store can initialize cleanly, report healthy, hold zero records, and make prior data invisible; adopting the shared backend can yield a green health check over an empty namespace.",
+      "quote": "changing store_backend points at a different store, which initializes clean, reports healthy, and holds zero records. Nothing is destroyed, but the running system cannot see the prior data. An operator adopting the shared backend gets a green health check over an empty namespace.",
+      "numbers": [
+        "zero"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "If governance reversed an archive decision, the record returned to ACTIVE in canonical state while remaining invisible to projection-backed search.",
+      "quote": "If governance reversed an archive decision the record returned to ACTIVE in canonical state while staying invisible to projection-backed search.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The project identifies documentation as the only guard for backend transition safety and states that documentation is not a guard.",
+      "quote": "Documentation was the only guard, and documentation is not a guard.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The project reports validation evidence including 1059 tests passed, 16 skipped, 24 local checks, and an identical candidate digest before and after.",
+      "quote": "Validation: pytest 1059 passed / 16 skipped (CI shape); ruff check clean; mypy src/l9_graphite_memory clean; bash scripts/validate_release.sh self-contained: 24 local checks evidenced, candidate digest identical before and after (016a3df9…).",
+      "numbers": [
+        "1059",
+        "16",
+        "24",
+        "016a3df9…"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/Quantum-L9/l9-graphiti-memory"
+}

@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-27",
+  "author_or_org": "Aarik Gulaya",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The paper evaluates a Behavioral Specification alongside full raw corpus, full extracted facts, and four commercial memory systems: Mem0, Letta, Supermemory, and Zep.",
+      "quote": "We test it independently and in composition with a range of context conditions: full raw corpus, full extracted facts, and four commercial memory systems (Mem0, Letta, Supermemory, Zep).",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Across 14 public-domain autobiographical corpora, the Specification lifted representational accuracy in aggregate and nearly eliminated model hedging.",
+      "quote": "Across 14 public-domain autobiographical corpora, the Specification lifts representational accuracy in aggregate and nearly eliminates model hedging.",
+      "numbers": [
+        "14"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The Specification recovers most of what the raw corpus delivers at about 25 times less context cost.",
+      "quote": "It recovers most of what the raw corpus delivers, at ~25x less context cost.",
+      "numbers": [
+        "~25x"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The lift is greatest on interpretation-required questions, where an interpretive layer enables model behavior that extracted facts or raw corpus do not.",
+      "quote": "Lift is greatest on interpretation-required questions, where providing an interpretive layer enables model behavior that extracted facts or raw corpus do not.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "On recall-required questions, the interpretive layer can interfere rather than help.",
+      "quote": "Conversely, on recall-required questions, this layer can interfere rather than help.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper concludes that representational accuracy is distinct from recall and that human-AI alignment depends on how accurately the user is represented.",
+      "quote": "We conclude that representational accuracy is distinct from recall and that human-AI alignment is dependent on how accurately the user is represented.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The reference implementation compresses a person's data into interpretive patterns that are served as context to a language model.",
+      "quote": "Our reference implementation aggressively compresses a person's data into interpretive patterns, served as context to a language model.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.28969"
+}

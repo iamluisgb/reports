@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-27",
+  "author_or_org": "Krishna Halaharvi",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Existing vector databases and agent memory frameworks treat memory as passive storage that agents query explicitly, and no system propagates knowledge between agents through the memory layer itself.",
+      "quote": "Every existing vector database and agent memory framework treats memory as passive storage that agents query explicitly. No system propagates knowledge between agents through the memory layer itself.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "HyphaeDB reinterprets the HNSW graph topology, the core data structure of every modern vector database, not as a search optimization but as a communication fabric for multi-agent AI systems.",
+      "quote": "We introduce HyphaeDB, an agent-native memory infrastructure that reinterprets the Hierarchical Navigable Small World (HNSW) graph topology the data structure at the core of every modern vector database not as a search optimization, but as a communication fabric for multi-agent AI systems.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In HyphaeDB, agents are nodes in vector space with persistent positions; knowledge propagates via a gossip protocol through the graph's neighbor structure with energy-based attenuation; emergent behaviors include contradiction detection, pattern crystallization, and consensus formation.",
+      "quote": "In HyphaeDB, agents are nodes in the vector space with persistent positions, knowledge propagates via a gossip protocol through the graph's neighbor structure with energy-based attenuation, and emergent behaviors contradiction detection, pattern crystallization, and consensus formation arise from the combination of topology, propagation dynamics, and local interaction rules.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The HyphaeDB architecture is built on three primitives: knowledge nodes, topology edges, and memory diffs, with a multi-layer abstraction hierarchy and promotion via emergent consensus.",
+      "quote": "We present the architecture built on three primitives (knowledge nodes, topology edges, and memory diffs), a multi-layer abstraction hierarchy with promotion via emergent consensus, and theoretical analysis grounding the system in small-world network theory, epidemic broadcast protocols, and swarm intelligence.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "HyphaeDB provides a reference implementation on PostgreSQL with pgvector and describes a concrete deployment in Swarm-Driven Development, a multi-agent software engineering methodology.",
+      "quote": "We provide a reference implementation on PostgreSQL with pgvector and describe a concrete deployment in Swarm-Driven Development, a multi-agent software engineering methodology.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The authors claim HyphaeDB is the first system to combine navigable small world topology with gossip-based knowledge propagation for multi-agent coordination.",
+      "quote": "HyphaeDB represents, to our knowledge, the first system to combine navigable small world topology with gossip-based knowledge propagation for multi-agent coordination.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper identifies as an open gap that no existing system propagates knowledge between agents through the memory layer itself.",
+      "quote": "No system propagates knowledge between agents through the memory layer itself.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.28781"
+}

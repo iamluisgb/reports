@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-24",
+  "author_or_org": "Jie Wu, Ming Gong",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "The paper identifies and formalizes Context-Fragmented Violations (CFVs), which are policy breaches where individual agent actions look locally safe but collectively violate organizational policies because critical policy facts are siloed in different departments' private contexts.",
+      "quote": "We identify and formalize a novel security risk: Context-Fragmented Violations (CFVs) - a class of policy breaches where individual agent actions appear locally safe and reasonable, yet collectively violate organizational policies because critical policy facts are siloed in different departments private contexts.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Existing prompt-based alignment mechanisms and monolithic interceptors are poorly matched to violations spanning contextual islands.",
+      "quote": "Existing prompt-based alignment mechanisms and monolithic interceptors are poorly matched to violations that span contextual islands.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper proposes Distributed Sentinel, a distributed zero-trust enforcement architecture using a Semantic Taint Token (STT) Protocol and lightweight sidecar proxies to propagate security state across organizational boundaries without exposing raw cross-domain data, enabling Counterfactual Graph Simulation for cross-domain policy verification.",
+      "quote": "We propose Distributed Sentinel, a distributed zero-trust enforcement architecture that introduces the Semantic Taint Token (STT) Protocol. Through lightweight sidecar proxies, our system propagates security state across organizational boundaries without exposing raw cross-domain data, enabling Counterfactual Graph Simulation for cross-domain policy verification.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The authors construct PhantomEcosystem, a benchmark with 9 categories of realistic cross-agent violation scenarios and adversarially balanced safe controls.",
+      "quote": "We construct PhantomEcosystem, a comprehensive benchmark comprising 9 categories of realistic cross-agent violation scenarios with adversarially balanced safe controls.",
+      "numbers": [
+        "9"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "On the PhantomEcosystem benchmark, Distributed Sentinel achieves F1 = 0.95 with 106ms end-to-end latency, 16ms verification and 90ms entity extraction on A100, compared to 0.85 F1 for prompt-based filtering and 0.65 for rule-based DLP.",
+      "quote": "On this benchmark, Distributed Sentinel achieves F1 = 0.95 with 106ms end-to-end latency (16ms verification + 90ms entity extraction on A100), compared to 0.85 F1 for prompt-based filtering and 0.65 for rule-based DLP.",
+      "numbers": [
+        "0.95",
+        "106ms",
+        "16ms",
+        "90ms",
+        "A100",
+        "0.85",
+        "0.65"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Evaluation of eight frontier LLMs in execution-oriented multi-agent workflows with per-agent domain world models found substantial violation rates of 14-98%, with cross-domain data flows showing systematically higher violation rates than same-domain flows.",
+      "quote": "To empirically validate the need for external enforcement, we evaluate eight frontier LLMs in execution-oriented multi-agent workflows with per-agent domain world models. All models exhibit substantial violation rates (14-98%), with cross-domain data flows showing systematically higher violation rates than same-domain flows.",
+      "numbers": [
+        "eight",
+        "14-98%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper concludes that self-avoidance is unreliable and that multi-agent security benefits from a centralized enforcement layer operating above individual agents.",
+      "quote": "These results indicate that self-avoidance is unreliable and that multi-agent security benefits from a centralized enforcement layer operating above individual agents.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.22879"
+}

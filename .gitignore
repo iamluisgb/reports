@@ -4,3 +4,8 @@ __pycache__/
 
 # backfill agent working files (source JSON per day)
 .backfill/
+
+# Research pipeline: full copies of third-party pages stay local (copyright);
+# the plan, extracts (short quotes) and evidence pack are versioned.
+data/research/*/pages/
+data/research/*/run.log

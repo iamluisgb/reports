@@ -1,0 +1,87 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-27",
+  "author_or_org": "Ishan Patel, Ishan Joshi",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "PolyKV is a system where multiple concurrent inference agents share one asymmetrically compressed KV cache pool.",
+      "quote": "We present PolyKV, a system in which multiple concurrent inference agents share a single, asymmetrically compressed KV cache pool.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The standard paradigm allocates a separate KV cache per agent, while PolyKV writes a compressed cache once and injects it into N independent agent contexts via HuggingFace DynamicCache objects.",
+      "quote": "Rather than allocating a separate KV cache per agent -- the standard paradigm -- PolyKV writes a compressed cache once and injects it into N independent agent contexts via HuggingFace DynamicCache objects.",
+      "numbers": [
+        "N"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "PolyKV uses asymmetric compression: keys are int8-quantized q8_0 to preserve softmax stability, while values use TurboQuant MSE with FWHT rotation followed by 3-bit Lloyd-Max quantization with centroids tuned to N(0,1).",
+      "quote": "Compression is asymmetric: Keys are quantized at int8 (q8_0) to preserve softmax stability, while Values are compressed using TurboQuant MSE -- a Fast Walsh-Hadamard Transform (FWHT) rotation followed by 3-bit Lloyd-Max quantization with centroids tuned to N(0,1).",
+      "numbers": [
+        "int8",
+        "q8_0",
+        "3-bit",
+        "N(0,1)"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "PolyKV was evaluated across two model scales, SmolLM2-1.7B-Instruct and Llama-3-8B-Instruct, three context lengths from 600 to 7,194 tokens, and up to 15 concurrent agents.",
+      "quote": "We evaluate across two model scales (SmolLM2-1.7B-Instruct and Llama-3-8B-Instruct), three context lengths (600-7,194 tokens), and up to 15 concurrent agents.",
+      "numbers": [
+        "two",
+        "SmolLM2-1.7B-Instruct",
+        "Llama-3-8B-Instruct",
+        "three",
+        "600-7,194 tokens",
+        "15"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "PolyKV reports a stable 2.91x compression ratio across all configurations.",
+      "quote": "PolyKV achieves a stable 2.91x compression ratio across all configurations.",
+      "numbers": [
+        "2.91x"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "On Llama-3-8B with 15 agents sharing a 4K-token context, PolyKV reduces KV cache memory from 19.8 GB to 0.45 GB, a 97.7% reduction, with +0.57% perplexity degradation and mean BERTScore F1 of 0.928.",
+      "quote": "On Llama-3-8B with 15 agents sharing a 4K-token context, PolyKV reduces KV cache memory from 19.8 GB to 0.45 GB -- a 97.7% reduction -- while maintaining only +0.57% perplexity degradation and a mean BERTScore F1 of 0.928.",
+      "numbers": [
+        "Llama-3-8B",
+        "15",
+        "4K-token",
+        "19.8 GB",
+        "0.45 GB",
+        "97.7%",
+        "+0.57%",
+        "0.928"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "PolyKV reports that PPL delta does not grow with agent count and improves as context length increases, becoming -0.26% at 1,851 coherent tokens.",
+      "quote": "PPL delta does not grow with agent count and improves as context length increases, inverting to -0.26% at 1,851 coherent tokens.",
+      "numbers": [
+        "-0.26%",
+        "1,851"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The authors claim no prior work combines a single shared, lossy-compressed KV pool with multi-reader concurrent agent access.",
+      "quote": "To our knowledge, no prior work combines a single shared, lossy-compressed KV pool with multi-reader concurrent agent access.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.24971"
+}

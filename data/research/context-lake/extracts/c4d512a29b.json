@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "yoloshii (GitHub repo owner)",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "ClawMem is an on-device memory layer for Claude Code, OpenClaw, Hermes, and AI agents, with retrieval-augmented search, hooks, and an MCP server in a single local system, and no API keys or cloud dependencies.",
+      "quote": "**On-device memory for Claude Code, OpenClaw, Hermes, and AI agents.** Retrieval-augmented search, hooks, and an MCP server in a single local system. No API keys, no cloud dependencies.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "ClawMem's hybrid architecture combines multi-signal retrieval including BM25, vector search, reciprocal rank fusion, query expansion, and cross-encoder reranking with composite scoring and multi-graph traversal over semantic, temporal, and causal graphs.",
+      "quote": "The hybrid architecture combines [QMD](https://github.com/tobi/qmd)-derived multi-signal retrieval (BM25 + vector search + reciprocal rank fusion + query expansion + cross-encoder reranking), [SAME](https://github.com/sgx-labs/statelessagent)-inspired composite scoring (recency decay, confidence, content-type half-lives, co-activation reinforcement), [MAGMA](https://arxiv.org/abs/2501.13956)-style intent classification with multi-graph traversal (semantic, temporal, and causal beam search), and [A-MEM](https://arxiv.org/abs/2510.02178) self-evolving memory notes that enrich documents with keywords, tags, and causal links between entries.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "ClawMem routes all integration paths to the same local SQLite vault, so a decision captured in a Claude Code session is immediately available when an OpenClaw or Hermes agent picks up the same project.",
+      "quote": "All paths write to the same local SQLite vault. A decision captured during a Claude Code session shows up immediately when an OpenClaw or Hermes agent picks up the same project.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "ClawMem preserves authorship time so ranking recency and temporal queries run on when content was actually written, not when it was mined, and includes a metadata-only backfill-dates lane for earlier vaults.",
+      "quote": "Imports preserve **authorship time** (v0.27.0): ranking recency and temporal queries run on when content was actually written, so historical conversations mined today don't rank as fresh — with a metadata-only `--backfill-dates` lane for vaults mined earlier",
+      "numbers": [
+        "v0.27.0"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "ClawMem detects contradictions between new and prior decisions and auto-decays superseded ones only when a contradiction judge is configured; otherwise the feature is disabled, though a merge-time contradiction gate blocks cross-observation contradictions before they land.",
+      "quote": "**Detects contradictions** between new and prior decisions, auto-decaying superseded ones — when a contradiction **judge** is configured (`CLAWMEM_JUDGE_*`, v0.29.0; disabled otherwise) (with an additional merge-time contradiction gate in the consolidation worker that blocks cross-observation contradictions before they land, v0.7.1)",
+      "numbers": [
+        "v0.29.0",
+        "v0.7.1"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "ClawMem guards against cross-entity merges during consolidation by comparing entity anchors before merging similar observations, specifically preventing Alice-decided-X from merging into Bob-decided-X.",
+      "quote": "**Guards against cross-entity merges** during consolidation — name-aware dual-threshold merge safety compares entity anchors before merging similar observations, preventing \"Alice decided X\" from merging into \"Bob decided X\" (v0.7.1)",
+      "numbers": [
+        "v0.7.1"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "ClawMem prevents context bleed in derived insights by validating every draft through an anti-contamination wrapper with deterministic entity contamination check, LLM validator, and dedupe before writing cross-session deductive observations.",
+      "quote": "**Prevents context bleed in derived insights** — the Phase 3 deductive synthesis pipeline validates every draft against an anti-contamination wrapper (deterministic entity contamination check + LLM validator + dedupe) before writing cross-session deductive observations (v0.7.1)",
+      "numbers": [
+        "v0.7.1"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/yoloshii/ClawMem"
+}

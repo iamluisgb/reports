@@ -149,6 +149,33 @@ The green italic `<em>` in an `<h1>` marks the **subject** of the title: one per
 most three words, never a year, a number or a whole clause.
 `Building <em>Agent Skills</em> in 2026` — not `Building Agent Skills in <em>2026</em>`.
 
+### How special reports are produced
+
+Specials are the long-form, sourced analysis — the part of the site that keeps value when
+daily summaries are a free feature everywhere. Each one needs **original data or a
+point of view, a signed "What I would do", and sources that check out**. The process:
+
+1. **Plan** — `data/research/<slug>/plan.json`: title, thesis to test, audience, 4–6
+   questions with search queries and providers (format in `scripts/research/run.py`).
+2. **Research** — `python3 scripts/research/run.py data/research/<slug>/plan.json`
+   (needs `NAN_API_KEY`; `TAVILY_API_KEY` or `EXA_API_KEY` adds general web search).
+   It searches specialised sources first (arXiv, Hacker News, GitHub, Wikipedia,
+   Semantic Scholar), reads each page, and has a NaN model extract claims from **one
+   source at a time**, each with a verbatim quote; quotes not found in the page are
+   dropped. Output: `evidence.json` + `evidence.md`. Resumable; 20–60 min.
+3. **Write** from the evidence pack only, with `templates/special.html`: key findings
+   first, one part per question, "What I would do" (Luis), "Method and limits" (from
+   the pack's stats), numbered Sources matching the pack. Every factual sentence cites
+   `<sup class="cite"><a href="#source-n">n</a></sup>`.
+4. **Verify** — `python3 scripts/research/verify.py reports/<slug>.html data/research/<slug>/evidence.json`:
+   every cited figure must appear in its source; every URL must resolve (or be archived).
+5. **Check and publish** — `check_design.py` and `check_sources.py` (≥ 10 sources, no
+   invented URLs) run locally and in CI.
+
+Why one source per model call: in multi-agent deep research most errors arise where
+information is synthesised across agents; single-document summarisation is reliable.
+The synthesis is done once, by the writer, with the whole evidence pack in view.
+
 ### Special-report kit
 
 A special is `<html data-type="special">` with `.special-header` (`.special-category`, `<h1>`,
@@ -176,7 +203,8 @@ and a `.special-content` body. Inside, use only:
 
 Need something that isn't here? Add it to `styles.css` and `patterns.html` first, then use it.
 
-Before pushing, run `python3 scripts/check_design.py reports/<file>.html`. CI runs it too.
+Before pushing, run `python3 scripts/check_design.py reports/<file>.html` and, for a special,
+`python3 scripts/check_sources.py reports/<file>.html`. CI runs both.
 
 ## Rules
 

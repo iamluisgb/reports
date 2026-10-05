@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-01-15",
+  "author_or_org": "Xiaowei Jiang",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source lists Xiaowei Jiang as the author of the paper.",
+      "quote": "Authors:[Xiaowei Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang,+X)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper derives Context Lake as a necessary system class with three requirements: native semantic operations, transactional consistency over all decision-relevant state, and operational envelopes bounding staleness and degradation under load.",
+      "quote": "From this impossibility result, we derive Context Lake as a necessary system class with three requirements: (1) semantic operations as native capabilities, (2) transactional consistency over all decision-relevant state, and (3) operational envelopes bounding staleness and degradation under load.",
+      "numbers": [
+        "three",
+        "(1)",
+        "(2)",
+        "(3)"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The paper claims no existing system class satisfies Decision Coherence, and that independently advancing systems cannot be composed to provide it while preserving their native system classes.",
+      "quote": "We show that no existing system class satisfies this requirement and prove through the Composition Impossibility Theorem that independently advancing systems cannot be composed to provide Decision Coherence while preserving their native system classes.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper states that traditional data systems designed for human analysis cycles become correctness bottlenecks under the operating regime of AI agents.",
+      "quote": "Traditional data systems designed for human analysis cycles become correctness bottlenecks under this operating regime.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper states that when multiple agents operate over shared resources, their actions interact before reconciliation is possible, and post-decision correctness guarantees fail to prevent conflicts.",
+      "quote": "When multiple agents operate over shared resources, their actions interact before reconciliation is possible. Correctness guarantees that apply after the decision window therefore fail to prevent conflicts.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper states that AI agents are increasingly the primary consumers of data, operating continuously to make concurrent, irreversible decisions.",
+      "quote": "AI agents are increasingly the primary consumers of data, operating continuously to make concurrent, irreversible decisions.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper describes itself as a position paper that establishes the theoretical foundation for Context Lakes, identifies why existing architectures fail, and specifies what systems must guarantee for AI agents to operate constructively at scale.",
+      "quote": "This position paper establishes the theoretical foundation for Context Lakes, identifies why existing architectures fail, and specifies what systems must guarantee for AI agents to operate constructively at scale.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper formalizes architectural invariants, enforcement boundaries, and admissibility conditions required for correctness in collective agent systems.",
+      "quote": "We formalize the architectural invariants, enforcement boundaries, and admissibility conditions required for correctness in collective agent systems.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2601.17019"
+}

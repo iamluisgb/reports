@@ -1,0 +1,84 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-10",
+  "author_or_org": "Ganesh S",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The paper argues relational and vector models were not built for cue-driven, provenance-weighted recall across long sessions, and proposes treating long-term agent memory as a distinct data model with its own write and read semantics.",
+      "quote": "The relational model asked which records match a predicate; the vector model asked which vectors lie nearest a query. Neither was built for cue-driven, provenance-weighted recall across long sessions. We propose treating long-term agent memory as a distinct data model -- with its own write semantics (encoding, separation, consolidation, provenance) and read semantics (cue-driven activation across a linked memory graph) -- and present FluctlightDB, an embedded engine that implements this contract via experience() and activate().",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The authors say FluctlightDB does not claim novelty over Mem0, Zep, or HippoRAG-style memory layers, positioning it as an embedded engine contract beneath them.",
+      "quote": "We do not claim novelty over Mem0, Zep, or HippoRAG-style memory layers, only an embedded engine contract beneath them.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "On LoCoMo, the native-Rust CHORUS stack reaches 96.8% at k=150 for raw evidence recall, 72.6% at k=5, and 85% end-to-end QA at k=15 on date-stamped context.",
+      "quote": "On LoCoMo (official evidence-recall; 10 conversations, 1,982 gold spans), our native-Rust CHORUS stack reaches 96.8% at k=150 as raw evidence recall with no neighbor expansion, on an internally reproduced July 2026 run; at k=5 it still yields 72.6%, while end-to-end QA over date-stamped context reaches 85% at k=15 (retrieval-bound).",
+      "numbers": [
+        "10",
+        "1,982",
+        "96.8%",
+        "k=150",
+        "July 2026",
+        "k=5",
+        "72.6%",
+        "85%",
+        "k=15"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "On LongMemEval-S, official session_recall@8 is 97.6% (488/500) and end-to-end QA with the reader/judge stack is 97.4% (487/500).",
+      "quote": "On LongMemEval-S (500 questions), official session_recall@8 is 97.6% (488/500) and end-to-end QA with our reader/judge stack is 97.4% (487/500) -- different protocols from vendor leaderboard figures we cite for context only.",
+      "numbers": [
+        "500",
+        "97.6%",
+        "488/500",
+        "97.4%",
+        "487/500"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "On BEIR SciFact, CHORUS/PRISM edges Chroma on nDCG@10 (0.646 vs. 0.645) and Recall@10 (0.792 vs. 0.783).",
+      "quote": "On BEIR SciFact (shared MiniLM embeddings, same harness), CHORUS/PRISM edges Chroma on nDCG@10 (0.646 vs. 0.645) and Recall@10 (0.792 vs. 0.783).",
+      "numbers": [
+        "0.646",
+        "0.645",
+        "0.792",
+        "0.783"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "A graded provenance-conflict suite with n=50 scores 18% top-1 when all pairs share one brain, versus 100% under per-case isolation, which the authors label a ceiling rather than deployment evidence.",
+      "quote": "A graded provenance-conflict suite (n=50) scores 18% top-1 when all pairs share one brain versus 100% under per-case isolation (ceiling, not deployment evidence).",
+      "numbers": [
+        "n=50",
+        "18%",
+        "100%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The engine, harnesses, and frozen JSON are MIT-licensed, and installing the native package is claimed to re-run the published numbers.",
+      "quote": "Engine, harnesses and frozen JSON are MIT; pip install \"fluctlightdb[native]\" re-runs the published numbers.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The authors position the work as no new neuroscience or transformer, but a missing layer of the data stack released for others to re-run and contest.",
+      "quote": "We claim no new neuroscience and no new transformer: a missing layer of the data stack, released for others to re-run and contest.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.12365"
+}

@@ -1,0 +1,70 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-01",
+  "author_or_org": "Shengtong Zhu",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "ProGraph is a two-layer memory architecture for LLM agents that combines profile expansion and compression residuals.",
+      "quote": "Second, we present Profile-Graph Memory (ProGraph), a two-layer memory architecture combining (i) profile expansion -- substring-matched traversal of entity names that naturally appear in LLM-written profile narratives, a minimal alternative to explicit knowledge-graph construction -- and (ii) compression residuals -- exact dates, quantities, and named items co-extracted with each profile update at zero extra API cost.",
+      "numbers": [
+        "two-layer"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "ProGraph averages 80.1% on MemHop and 78.4% on LoCoMo, exceeding FullContext by 11.3 percentage points on LoCoMo and outperforming Mem0, A-Mem, HippoRAG, and RAG on both benchmarks.",
+      "quote": "ProGraph averages 80.1% on MemHop (matching the FullContext reference) and 78.4% on LoCoMo (exceeding FullContext by 11.3pp), outperforming Mem0, A-Mem, HippoRAG, and RAG on both.",
+      "numbers": [
+        "80.1%",
+        "78.4%",
+        "11.3pp"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Removing profile expansion reduces MemHop performance by 22.6 percentage points, not co-extracting compression residuals reduces LoCoMo precision recall by 8.6 percentage points, and cross-effects are under 3 percentage points.",
+      "quote": "Third, a full-grid ablation shows cross-benchmark mechanism specialization: profile expansion drives multi-hop reasoning (-22.6pp on MemHop when removed) while compression residuals drive precision recall (-8.6pp on LoCoMo when not co-extracted), with cross-effects under 3pp within a single architecture.",
+      "numbers": [
+        "-22.6pp",
+        "-8.6pp",
+        "3pp"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "MemHop is a multi-hop memory benchmark of 1,000 questions at hop depths 1-5 across 10 social-network scenarios with per-hop evidence annotations.",
+      "quote": "First, we introduce MemHop, a multi-hop memory benchmark of 1,000 questions at hop depths 1-5 across 10 social-network scenarios, with per-hop evidence annotations.",
+      "numbers": [
+        "1,000",
+        "1-5",
+        "10"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured.",
+      "quote": "Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Profile expansion uses substring-matched traversal of entity names in LLM-written profile narratives as a minimal alternative to explicit knowledge-graph construction.",
+      "quote": "Second, we present Profile-Graph Memory (ProGraph), a two-layer memory architecture combining (i) profile expansion -- substring-matched traversal of entity names that naturally appear in LLM-written profile narratives, a minimal alternative to explicit knowledge-graph construction -- and (ii) compression residuals -- exact dates, quantities, and named items co-extracted with each profile update at zero extra API cost.",
+      "numbers": [
+        "two-layer",
+        "zero"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The authors release MemHop, ProGraph, and baseline implementations.",
+      "quote": "We release MemHop, ProGraph, and baseline implementations.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.19359"
+}

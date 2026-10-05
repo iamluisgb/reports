@@ -1,0 +1,697 @@
+{
+  "searched": 174,
+  "kept": 40,
+  "web_search": false,
+  "candidates": [
+    {
+      "url": "https://wetware.media/blog/context-lake/",
+      "title": "The Context Lake",
+      "snippet": "3 points, 1 comments on Hacker News",
+      "provider": "hn",
+      "published": "2026-03-12",
+      "discussion": "https://news.ycombinator.com/item?id=47356719",
+      "id": "960408b322",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "context lake"
+      ],
+      "relevance": {
+        "q1": 0.0045
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.17019",
+      "title": "Context Lake: A System Class Defined by Decision Coherence",
+      "snippet": "1 points, 0 comments on Hacker News",
+      "provider": "hn",
+      "published": "2026-04-16",
+      "discussion": "https://news.ycombinator.com/item?id=47787291",
+      "id": "941d10f56b",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "context lake",
+        "context lake",
+        "context lake agents decision coherence"
+      ],
+      "relevance": {
+        "q1": 0.0291
+      }
+    },
+    {
+      "url": "https://altertable.ai/blog/2026-07-15-lakehouse-as-context-store",
+      "title": "Lakehouse as Context Store",
+      "snippet": "10 points, 0 comments on Hacker News",
+      "provider": "hn",
+      "published": "2026-07-16",
+      "discussion": "https://news.ycombinator.com/item?id=48932378",
+      "id": "3eedaa1d68",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "context lake"
+      ],
+      "relevance": {
+        "q1": 0.0168
+      }
+    },
+    {
+      "url": "https://gettelio.com/",
+      "title": "Show HN: Telio – AI agents for call/text support, built on sandboxed lakehouses",
+      "snippet": "2 points, 0 comments on Hacker News",
+      "provider": "hn",
+      "published": "2026-01-08",
+      "discussion": "https://news.ycombinator.com/item?id=46535388",
+      "id": "ccc3a97ed9",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "context lake"
+      ],
+      "relevance": {
+        "q1": 0.0004
+      }
+    },
+    {
+      "url": "https://github.com/DrDroidLab/PlayBooks",
+      "title": "Show HN: PlayBooks – Jupyter Notebooks style on-call investigation documents",
+      "snippet": "147 points, 35 comments on Hacker News",
+      "provider": "hn",
+      "published": "2024-06-04",
+      "discussion": "https://news.ycombinator.com/item?id=40573790",
+      "id": "edcb30b843",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "context lake"
+      ],
+      "relevance": {
+        "q1": 0.0
+      }
+    },
+    {
+      "url": "https://github.com/ramongougis/WaveletLM",
+      "title": "Show HN: WaveletLM – wavelet-based, attention-free model with O(n log n) scaling",
+      "snippet": "7 points, 1 comments on Hacker News",
+      "provider": "hn",
+      "published": "2026-04-26",
+      "discussion": "https://news.ycombinator.com/item?id=47912249",
+      "id": "f843e6dc33",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "context lake"
+      ],
+      "relevance": {
+        "q1": 0.0001
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.14336",
+      "title": "Exploring Spatial Representations in the Historical Lake District Texts with LLM-based Relation Extraction",
+      "snippet": "Navigating historical narratives poses a challenge in unveiling the spatial intricacies of past landscapes. The proposed work addresses this challenge within the context of the English Lake District, employing the Corpus of the Lake District Writing. The method utilizes a generative pre-trained transformer model to extract spatial relations from the textual descriptions in the corpus. The study applies this large language model to understand the spatial dimensions inherent in historical narrativ",
+      "provider": "arxiv",
+      "published": "2024-06-20",
+      "id": "f65e0b51e6",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "context lake"
+      ],
+      "relevance": {
+        "q1": 0.0008
+      }
+    },
+    {
+      "url": "https://github.com/yoloshii/ClawMem",
+      "title": "Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval",
+      "snippet": "5 points, 0 comments on Hacker News",
+      "provider": "hn",
+      "published": "2026-03-22",
+      "discussion": "https://news.ycombinator.com/item?id=47472965",
+      "id": "c4d512a29b",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "context lake agents decision coherence"
+      ],
+      "relevance": {
+        "q1": 0.0001
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.24971",
+      "title": "PolyKV: A Shared Asymmetrically-Compressed KV Cache Pool for Multi-Agent LLM Inference",
+      "snippet": "We present PolyKV, a system in which multiple concurrent inference agents share a single, asymmetrically compressed KV cache pool. Rather than allocating a separate KV cache per agent -- the standard paradigm -- PolyKV writes a compressed cache once and injects it into N independent agent contexts via HuggingFace DynamicCache objects. Compression is asymmetric: Keys are quantized at int8 (q8_0) to preserve softmax stability, while Values are compressed using TurboQuant MSE -- a Fast Walsh-Hadama",
+      "provider": "arxiv",
+      "published": "2026-04-27",
+      "id": "4a4557faed",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "shared memory multi-agent LLM systems"
+      ],
+      "relevance": {
+        "q2": 0.3298
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2505.18279",
+      "title": "Collaborative Memory: Multi-User Memory Sharing in LLM Agents with Dynamic Access Control",
+      "snippet": "Complex tasks are increasingly delegated to ensembles of specialized LLM-based agents that reason, communicate, and coordinate actions-both among themselves and through interactions with external tools, APIs, and databases. While persistent memory has been shown to enhance single-agent performance, most approaches assume a monolithic, single-user context-overlooking the benefits and challenges of knowledge transfer across users under dynamic, asymmetric permissions. We introduce Collaborative Me",
+      "provider": "arxiv",
+      "published": "2025-05-23",
+      "id": "ce6b313e12",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "shared memory multi-agent LLM systems"
+      ],
+      "relevance": {
+        "q2": 0.5537
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.12320",
+      "title": "AIM: A Privacy-Aware Interoperable Memory Framework for Multi-Agent Multi-User LLM Systems",
+      "snippet": "Traditional large language models (LLMs) are scoped to individual user sessions, limiting their knowledge to a single conversation and preventing them from learning user preferences that evolve over time. Existing agentic memory systems address this limitation but generally operate at the individual-user level, restricting the public knowledge that could be shared across users to improve downstream responses. We introduce AIM (Agentic Interoperable Memory), a unified, privacy-aware memory framew",
+      "provider": "arxiv",
+      "published": "2026-09-11",
+      "id": "aa450824d8",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "shared memory multi-agent LLM systems"
+      ],
+      "relevance": {
+        "q2": 0.3376
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.28781",
+      "title": "HyphaeDB: A Living Knowledge Topology for Agent-First Memory",
+      "snippet": "Every existing vector database and agent memory framework treats memory as passive storage that agents query explicitly. No system propagates knowledge between agents through the memory layer itself. We introduce HyphaeDB, an agent-native memory infrastructure that reinterprets the Hierarchical Navigable Small World (HNSW) graph topology the data structure at the core of every modern vector database not as a search optimization, but as a communication fabric for multi-agent AI systems. In Hyphae",
+      "provider": "arxiv",
+      "published": "2026-06-27",
+      "id": "5642eb51e9",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "agent memory vs vector database"
+      ],
+      "relevance": {
+        "q2": 0.7794
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.25563",
+      "title": "AkasicMEM: Governed Enterprise Memory for Agents",
+      "snippet": "Agent memory enables enterprise agents to retain knowledge acquired during work and reuse it across tasks and agents, turning execution experience into persistent organizational knowledge. Realizing this potential requires both source--memory integration, through which enterprise sources and accumulated memory can be utilized together, and memory governance, through which shared memory remains subject to organizational policies throughout its lifecycle. These requirements interact when informati",
+      "provider": "arxiv",
+      "published": "2026-09-22",
+      "id": "13c237e785",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "agent memory vs vector database"
+      ],
+      "relevance": {
+        "q2": 0.2891
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.29778",
+      "title": "Mandol: An Agglomerative Agent Memory System for Long-Term Conversations",
+      "snippet": "Long-term conversational agents need to remember and query cross-session, multi-typed information with complex correlations. Existing agent memory systems rely on heterogeneous vector and graph databases, which fragment memory information and cause high cross-database I/O latency. For retrieval, common RAG-style methods tend to introduce noise, miss correlated clues, and lack token budget control, degrading LLM accuracy and efficiency. We propose Mandol, an agglomerative memory system that conso",
+      "provider": "arxiv",
+      "published": "2026-06-29",
+      "id": "8bb8f95a61",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "agent memory vs vector database"
+      ],
+      "relevance": {
+        "q2": 0.4917
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.29678",
+      "title": "Diachronic Hypergraphs for Orchestrated Multi-Agent Multimodal Memory Curation",
+      "snippet": "Multi-agent systems solve tasks through collaboration, tool use, multimodal reasoning, and orchestration, but each agent operates within a knowledge boundary defined by its observations, context, and resources. Memory must preserve and transfer evidence, role specific context, decisions, procedures, and experience across interactions, not only outcomes. Vector and graph memories flatten these structures into embeddings or dyadic traces, obscuring events involving agents, tools, documents, errors",
+      "provider": "arxiv",
+      "published": "2026-08-30",
+      "id": "b87e6d55e1",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "agent memory vs vector database",
+        "temporal knowledge graph agent memory"
+      ],
+      "relevance": {
+        "q2": 0.4003
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.16903",
+      "title": "Directory-Aware Query and Maintenance in Vector Databases",
+      "snippet": "Vector databases typically manage metadata as flat scalar attributes, which limits their ability to express hierarchical directory semantics commonly used to organize code repositories, enterprise documents, and agent memories. As a result, directory-scoped retrieval and structural updates are often implemented as application-layer workarounds, making recursive scope resolution expensive and directory maintenance difficult to keep consistent. This paper studies native directory semantics as a fi",
+      "provider": "arxiv",
+      "published": "2026-06-15",
+      "id": "eb2a2256a8",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "agent memory vs vector database"
+      ],
+      "relevance": {
+        "q2": 0.5888
+      }
+    },
+    {
+      "url": "https://github.com/shivanshinigam/graphiti-zep-agent",
+      "title": "shivanshinigam/graphiti-zep-agent",
+      "snippet": "Temporal knowledge graph agent using Graphiti (Zep) + LangGraph + Gemini — context, perception and decision for AI agents (0 stars)",
+      "provider": "github",
+      "published": "2026-09-17",
+      "id": "837b46e64e",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "Zep Graphiti temporal knowledge graph"
+      ],
+      "relevance": {
+        "q3": 0.1307
+      }
+    },
+    {
+      "url": "https://github.com/Quantum-L9/l9-graphiti-memory",
+      "title": "Quantum-L9/l9-graphiti-memory",
+      "snippet": "L9 Graphiti Memory — bi-temporal knowledge graph memory subsystem for autonomous agents (Zep Cloud transport) (0 stars)",
+      "provider": "github",
+      "published": "2026-10-03",
+      "id": "cbf7fe4b3a",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "Zep Graphiti temporal knowledge graph"
+      ],
+      "relevance": {
+        "q3": 0.0316
+      }
+    },
+    {
+      "url": "https://github.com/guoliangdi/claw-zep",
+      "title": "guoliangdi/claw-zep",
+      "snippet": "claw-zep is a fully self-hosted temporal knowledge platform built on Graphiti. It provides Palantir-grade dynamic time-series knowledge graph and time-aware long-term memory for AI Agents, enterprise knowledge bases and risk deduction. (0 stars)",
+      "provider": "github",
+      "published": "2026-06-26",
+      "id": "2045d7a633",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "Zep Graphiti temporal knowledge graph"
+      ],
+      "relevance": {
+        "q3": 0.0474
+      }
+    },
+    {
+      "url": "https://github.com/NORTHTEKDevs/genome",
+      "title": "NORTHTEKDevs/genome",
+      "snippet": "Auditable memory layer for AI agents: zero-LLM-call local ingest (~10ms/msg, air-gapped), matches Mem0 on accuracy at ~1000x lower ingest cost, bi-temporal belief-state, MCP server. Honest LoCoMo/LongMemEval benchmarks. Open source (Apache-2.0). (9 stars)",
+      "provider": "github",
+      "published": "2026-10-01",
+      "id": "3351e65574",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "Mem0 memory layer benchmark"
+      ],
+      "relevance": {
+        "q3": 0.0367
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.19359",
+      "title": "Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles",
+      "snippet": "Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured. We make three contributions. First, we introduce MemHop, a multi-hop memory benchmark of 1,000 questions at hop depths 1-5 across 10 social-network scenarios, with per-hop evidence annotations. Second, we present Profile-Graph Memory (ProGraph), a two-layer memory architecture combining (i) profile expans",
+      "provider": "arxiv",
+      "published": "2026-06-01",
+      "id": "e172916858",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "Mem0 memory layer benchmark"
+      ],
+      "relevance": {
+        "q3": 0.071
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.12365",
+      "title": "FluctlightDB: A Memory Model of Data for AI Agents",
+      "snippet": "For fifty years, data systems have answered two questions. The relational model asked which records match a predicate; the vector model asked which vectors lie nearest a query. Neither was built for cue-driven, provenance-weighted recall across long sessions. We propose treating long-term agent memory as a distinct data model -- with its own write semantics (encoding, separation, consolidation, provenance) and read semantics (cue-driven activation across a linked memory graph) -- and present Flu",
+      "provider": "arxiv",
+      "published": "2026-07-10",
+      "id": "66f0c52efd",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "Mem0 memory layer benchmark"
+      ],
+      "relevance": {
+        "q3": 0.0517
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.04853",
+      "title": "MemMachine: A Ground-Truth-Preserving Memory System for Personalized AI Agents",
+      "snippet": "Large Language Model (LLM) agents require persistent memory to maintain personalization, factual continuity, and long-horizon reasoning, yet standard context-window and retrieval-augmented generation (RAG) pipelines degrade over multi-session interactions. We present MemMachine, an open-source memory system that integrates short-term, long-term episodic, and profile memory within a ground-truth-preserving architecture that stores entire conversational episodes and reduces lossy LLM-based extract",
+      "provider": "arxiv",
+      "published": "2026-04-06",
+      "id": "db9e02a2cb",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "Mem0 memory layer benchmark"
+      ],
+      "relevance": {
+        "q3": 0.0299
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.28969",
+      "title": "Beyond Recall: Behavioral Specification as an Interpretive Layer for AI Personalization",
+      "snippet": "If an AI agent makes decisions on a person's behalf, those decisions must align with its user. We introduce representational accuracy to measure how faithfully a system captures a person's interpretation. An interpretive layer is operationalized as a Behavioral Specification. Our reference implementation aggressively compresses a person's data into interpretive patterns, served as context to a language model. We evaluate the Specification on a prototype benchmark of held-out behavioral predictio",
+      "provider": "arxiv",
+      "published": "2026-05-27",
+      "id": "efcb6643a3",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "Mem0 memory layer benchmark"
+      ],
+      "relevance": {
+        "q3": 0.1378
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.19843",
+      "title": "MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems",
+      "snippet": "As LLM-based Multi-Agent Systems (MAS) are increasingly deployed for complex tasks, ensuring their reliability has become a pressing challenge. Since MAS coordinate through unstructured natural language rather than rigid protocols, they are prone to semantic failures (e.g., hallucinations, misinterpreted instructions, and reasoning drift) that propagate silently without raising runtime exceptions. Prevailing evaluation approaches, which measure only end-to-end task success, offer limited insight",
+      "provider": "arxiv",
+      "published": "2026-02-23",
+      "id": "091188e777",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "why do multi-agent LLM systems fail"
+      ],
+      "relevance": {
+        "q4": 0.6532
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.16986",
+      "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
+      "snippet": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions. We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning items. ToMAS applies four explicit convertibility criteria to diagnosed execution traces. A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items. In an 18-trace relia",
+      "provider": "arxiv",
+      "published": "2026-09-15",
+      "id": "90deae7426",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "why do multi-agent LLM systems fail"
+      ],
+      "relevance": {
+        "q4": 0.7473
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.17467",
+      "title": "VerifyMAS: Hypothesis Verification for Failure Attribution in LLM Multi-Agent Systems",
+      "snippet": "Large language model-driven multi-agent systems (LLM-MAS) excel at complex tasks, yet unreliable agents remain a key bottleneck to system-level reliability. Automatic failure attribution is therefore critical, but existing approaches, such as direct prediction of agent-error pairs and agent-first failure attribution, rely on local logs of agents and miss global failures that only manifest over full interaction trajectories, such as cross-step inconsistencies and inter-agent coordination errors. ",
+      "provider": "arxiv",
+      "published": "2026-05-17",
+      "id": "7b79c2d777",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "multi-agent coordination failure taxonomy"
+      ],
+      "relevance": {
+        "q4": 0.511
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.25268",
+      "title": "CRAFT: Grounded Multi-Agent Coordination Under Partial Information",
+      "snippet": "We introduce CRAFT, a multi-agent benchmark for evaluating pragmatic communication in large language models under strict partial information. In this setting, multiple agents with complementary but incomplete views must coordinate through natural language to construct a shared 3D structure that no single agent can fully observe. We formalize this problem as a multi-sender Bounded Pragmatic Speaker problem and provide a diagnostic framework that decomposes failures into spatial grounding, belief ",
+      "provider": "arxiv",
+      "published": "2026-03-26",
+      "id": "a9e1dcae2d",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "multi-agent coordination failure taxonomy"
+      ],
+      "relevance": {
+        "q4": 0.5383
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.14892",
+      "title": "Beyond Individual Intelligence: Surveying Collaboration, Failure Attribution, and Self-Evolution in LLM-based Multi-Agent Systems",
+      "snippet": "LLM-based autonomous agents have demonstrated strong capabilities in reasoning, planning, and tool use, yet remain limited when tasks require sustained coordination across roles, tools, and environments. Multi-agent systems address this through structured collaboration among specialized agents, but tighter coordination also amplifies a less explored risk: errors can propagate across agents and interaction rounds, producing failures that are difficult to diagnose and rarely translate into structu",
+      "provider": "arxiv",
+      "published": "2026-05-14",
+      "id": "75e72ad208",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "multi-agent coordination failure taxonomy"
+      ],
+      "relevance": {
+        "q4": 0.4368
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2508.09815",
+      "title": "Extending the OWASP Multi-Agentic System Threat Modeling Guide: Insights from Multi-Agent Security Research",
+      "snippet": "We propose an extension to the OWASP Multi-Agentic System (MAS) Threat Modeling Guide, translating recent anticipatory research in multi-agent security (MASEC) into practical guidance for addressing challenges unique to large language model (LLM)-driven multi-agent architectures. Although OWASP's existing taxonomy covers many attack vectors, our analysis identifies gaps in modeling failures, including, but not limited to: reasoning collapse across planner-executor chains, metric overfitting, uns",
+      "provider": "arxiv",
+      "published": "2025-08-13",
+      "id": "fe2d869030",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "multi-agent coordination failure taxonomy"
+      ],
+      "relevance": {
+        "q4": 0.3341
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.22641",
+      "title": "ConsistWorld: Evidence Routing for Consistent Multi-Agent World Models",
+      "snippet": "Autoregressive video world models enable temporally coherent generation for a single observer. Extending them to multiple agents requires consistency across independently controlled views and temporal gaps under causal streaming. We present ConsistWorld, a multi-agent world model that generates camera-controlled video streams of a static scene from one shared image. We formulate consistency as routing evidence from committed multi-agent history and concurrently generated peer views to the tokens",
+      "provider": "arxiv",
+      "published": "2026-09-18",
+      "id": "8e6f5f77e9",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "context consistency multi-agent"
+      ],
+      "relevance": {
+        "q4": 0.3941
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2503.11951",
+      "title": "SagaLLM: Context Management, Validation, and Transaction Guarantees for Multi-Agent LLM Planning",
+      "snippet": "This paper introduces SagaLLM, a structured multi-agent architecture designed to address four foundational limitations of current LLM-based planning systems: unreliable self-validation, context loss, lack of transactional safeguards, and insufficient inter-agent coordination. While recent frameworks leverage LLMs for task decomposition and multi-agent communication, they often fail to ensure consistency, rollback, or constraint satisfaction across distributed workflows. SagaLLM bridges this gap ",
+      "provider": "arxiv",
+      "published": "2025-03-15",
+      "id": "8a66195cbf",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "context consistency multi-agent"
+      ],
+      "relevance": {
+        "q4": 0.8014
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.29422",
+      "title": "AgenticRepair: Multi-Faceted Program Context Engineering for Agentic Vulnerability Repair",
+      "snippet": "Automated vulnerability repair aims to reduce the time and effort required to patch security flaws from a vulnerability triage report. Recent agentic AI approaches have shown promising results in automated program repair. However, vulnerability repair demands richer program context than general bug repair - context that security engineers routinely assemble in practice but that existing agentic approaches do not engineer. We identify three critical gaps: code-structure context capturing cross-fi",
+      "provider": "arxiv",
+      "published": "2026-07-31",
+      "id": "9671df8e8e",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "context engineering agents"
+      ],
+      "relevance": {
+        "q5": 0.1696
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.11051",
+      "title": "On Problems of Implicit Context Compression for Software Engineering Agents",
+      "snippet": "LLM-based Software Engineering agents face a critical bottleneck: context length limitations cause failures on complex, long-horizon tasks. One promising solution is to encode context as continuous embeddings rather than discrete tokens, enabling denser information storage. We apply the recently proposed In-Context Autoencoder for this purpose. While the method performs well on single-shot common-knowledge and code-understanding tasks, our experiments demonstrate that it fails on multi-step agen",
+      "provider": "arxiv",
+      "published": "2026-05-11",
+      "id": "28953a73c9",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "context engineering agents"
+      ],
+      "relevance": {
+        "q5": 0.5892
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.15690",
+      "title": "Loosely-Structured Software: Engineering Context, Structure, and Evolution Entropy in Runtime-Rewired Multi-Agent Systems",
+      "snippet": "As LLM-based multi-agent systems (MAS) become more autonomous, their free-form interactions increasingly dominate system behavior. However, scaling the number of agents often amplifies context pressure, coordination errors, and system drift. It is well known that building robust MAS requires more than prompt tuning or increased model intelligence. It necessitates engineering discipline focused on architecture to manage complexity under uncertainty. We characterize agentic software by a core prop",
+      "provider": "arxiv",
+      "published": "2026-03-16",
+      "id": "678aa99eec",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "context engineering agents"
+      ],
+      "relevance": {
+        "q5": 0.4409
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.31564",
+      "title": "ACE: Pluggable Adaptive Context Elasticizer across Agents",
+      "snippet": "The increasing complexity of agentic tasks has led to rapidly growing trajectory lengths, which poses significant challenges for large language model (LLM) based agents with fixed context windows. Existing context management techniques, such as truncation and summarization, suffer from inherent inflexibility and irreversibility: once information is discarded or compressed, it cannot be recovered even when it becomes critically relevant in later decision steps. To address these limitations, we pr",
+      "provider": "arxiv",
+      "published": "2026-06-30",
+      "id": "d76b9dd770",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "context layer agents criticism"
+      ],
+      "relevance": {
+        "q5": 0.6151
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.08151",
+      "title": "Decision-Aware Memory Cards: Counterfactual-Inspired Context Selection and Compression for Tool-Using LLM Agents",
+      "snippet": "Modern large language model (LLM) agents do not simply need longer contexts; they need decision-relevant evidence at the moment of action. We study decision-aware context selection: ranking retrieved files, tests, traces, rules, and memories by their expected effect on an agent's next action rather than by semantic similarity alone. We present the Counterfactual-Inspired Context Layer (CICL), which builds an instance context graph, estimates decision-oriented utility for candidate units, and com",
+      "provider": "arxiv",
+      "published": "2026-06-06",
+      "id": "3b936f039b",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "context layer agents criticism"
+      ],
+      "relevance": {
+        "q5": 0.5873
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.22528",
+      "title": "Governance Decay: How Context Compaction Silently Erases Safety Constraints in Long-Horizon LLM Agents",
+      "snippet": "Modern LLM agents increasingly rely on context compaction, summarization, or eviction to keep long-running sessions within a token budget. We show that this context-management layer is a safety-critical failure surface: in-context governance constraints that agents reliably obey while visible can be silently removed by compaction, causing the same agent to perform prohibited tool actions later in the session. We call this failure mode Governance Decay. We introduce ConstraintRot, a benchmark of ",
+      "provider": "arxiv",
+      "published": "2026-06-21",
+      "id": "7e26aa3bb0",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "context layer agents criticism"
+      ],
+      "relevance": {
+        "q5": 0.7503
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.15703",
+      "title": "HyMem: Hierarchical Context Management for Long-Horizon Agents via Information Isolation",
+      "snippet": "Large language model (LLM) agents often perform poorly on complex, long-horizon tasks because their context becomes increasingly cluttered over time. As interactions accumulate, detailed execution traces and intermediate outputs dominate the context, making it difficult for the model to retain and use high-level planning information. Most existing methods address this issue through compression or retrieval applied to a single, flat context, which does not clearly separate different types of cont",
+      "provider": "arxiv",
+      "published": "2026-08-16",
+      "id": "e2580bc91d",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "context layer agents criticism"
+      ],
+      "relevance": {
+        "q5": 0.4247
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.22879",
+      "title": "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems",
+      "snippet": "We identify and formalize a novel security risk: Context-Fragmented Violations (CFVs) - a class of policy breaches where individual agent actions appear locally safe and reasonable, yet collectively violate organizational policies because critical policy facts are siloed in different departments private contexts. Existing prompt-based alignment mechanisms and monolithic interceptors are poorly matched to violations that span contextual islands. We propose Distributed Sentinel, a distributed zero",
+      "provider": "arxiv",
+      "published": "2026-04-24",
+      "id": "6f63852278",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "context layer agents criticism"
+      ],
+      "relevance": {
+        "q5": 0.3088
+      }
+    }
+  ]
+}

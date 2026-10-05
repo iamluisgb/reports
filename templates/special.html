@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- Special report template. Copy to reports/<slug>.html and replace every {{…}}.
+     Rules: AGENTS.md → Special-report kit. Evidence: data/research/<slug>/evidence.json
+     (scripts/research/run.py); every [n] below must be a source in that pack, checked by
+     scripts/research/verify.py. CI adds fonts, scripts, social meta and analytics. -->
+<html lang="en" data-type="special">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{Title as plain text}}</title>
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "{{Title}}",
+  "description": "{{Subtitle}}",
+  "datePublished": "{{YYYY-MM-DD}}",
+  "dateModified": "{{YYYY-MM-DD}}",
+  "author": {"@type": "Person", "name": "Luis González", "url": "https://luisgonzalezbernal.com",
+             "sameAs": ["https://www.linkedin.com/in/iamluisgb", "https://github.com/iamluisgb"]},
+  "publisher": {"@type": "Organization", "name": "AI Reports — Luis GB", "url": "https://luisgonzalezbernal.com/reports/"},
+  "inLanguage": "en",
+  "isAccessibleForFree": true
+}
+</script>
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="special-header">
+      <div class="header-top">
+        <div>
+          <div class="special-category">{{Series}} · Special Report</div>
+          <!-- The green italic marks the SUBJECT: one <em>, at most three words, never a year or number. -->
+          <h1>{{Title with <em>Subject</em>}}</h1>
+          <div class="special-date">{{DD Mon YYYY}} · Updated {{DD Mon YYYY}}</div>
+          <div class="special-subtitle">{{Five to seven topics · separated by middle dots}}</div>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
+      </div>
+    </div>
+
+    <!-- Answer first: the findings a reader (or an AI assistant) can quote, each with its figure and source. -->
+    <div class="section">
+      <div class="section-label">Key findings</div>
+      <div class="special-content">
+<ol>
+<li><strong>{{Finding as one factual sentence.}}</strong> {{One sentence of context with the figure.}}<sup class="cite"><a href="#source-1">1</a></sup></li>
+<li><strong>{{…}}</strong> {{…}}<sup class="cite"><a href="#source-2">2</a>,<a href="#source-5">5</a></sup></li>
+</ol>
+      </div>
+    </div>
+
+    <!-- One section per question of the plan. Prose, tables, figures and diagrams from the kit only. -->
+    <div class="section">
+      <div class="section-label">Part I</div>
+      <div class="special-content">
+<h2>{{What this part answers}}</h2>
+<p>{{Paragraph. Every factual sentence carries its citation.}}<sup class="cite"><a href="#source-3">3</a></sup></p>
+      </div>
+    </div>
+
+    <!-- The point of view: written or rewritten by Luis. Concrete, ordered, opinionated. -->
+    <div class="section">
+      <div class="section-label">What I would do</div>
+      <div class="special-content">
+<ol>
+<li><strong>{{Action}}</strong> — {{why, for whom, what to measure}}.</li>
+</ol>
+<p><em>— Luis González</em></p>
+      </div>
+    </div>
+
+    <!-- How this was made and what it cannot tell you. Fill from evidence.json → stats. -->
+    <div class="section">
+      <div class="section-label">Method and limits</div>
+      <div class="special-content">
+<p>Researched {{dates}} with the reports research pipeline: {{searched}} search results across {{providers}}, {{read}} sources read, {{sources_with_evidence}} with usable evidence. Each source was read on its own by an open model (NaN: {{models}}), which extracted claims with verbatim quotes; claims whose quote did not appear in the source were discarded ({{quotes_dropped}}). The synthesis was written by Claude from that evidence and every cited figure was checked against its source; the conclusions in "What I would do" are mine.</p>
+<ul>
+<li><strong>Limits:</strong> {{e.g. vendor figures not independently verified; no general web search; period covered}}.</li>
+</ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Sources</div>
+      <div class="special-content">
+<ol>
+<li id="source-1">{{Title}} — {{Publisher}}, {{date}} — <a href="{{url}}">{{short url}}</a></li>
+</ol>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">SPECIAL REPORT · {{MONTH YYYY}}</span>
+    </div>
+  </div>
+</body>
+</html>

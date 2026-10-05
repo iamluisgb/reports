@@ -1,0 +1,29 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-11",
+  "author_or_org": "Kirill Gelvan, Igor Slinko, Felix Steinbauer, Egor Bogomolov, Florian Kofler, Yaroslav Zharov",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "LLM-based software engineering agents have a critical bottleneck: context length limitations cause failures on complex, long-horizon tasks.",
+      "quote": "LLM-based Software Engineering agents face a critical bottleneck: context length limitations cause failures on complex, long-horizon tasks.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Implicit context compression via an In-Context Autoencoder, which stores context as continuous embeddings rather than discrete tokens, works on single-shot common-knowledge and code-understanding tasks but fails on multi-step agentic coding tasks.",
+      "quote": "One promising solution is to encode context as continuous embeddings rather than discrete tokens, enabling denser information storage. We apply the recently proposed In-Context Autoencoder for this purpose. While the method performs well on single-shot common-knowledge and code-understanding tasks, our experiments demonstrate that it fails on multi-step agentic coding tasks.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper investigates why implicit context compression fails for software engineering agents and discusses possible contributing factors.",
+      "quote": "In this paper, we explore this phenomenon and discuss possible factors contributing to this failure.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.11051"
+}

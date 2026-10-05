@@ -1,0 +1,2704 @@
+{
+  "plan": {
+    "slug": "context-lake",
+    "title": "Context Lake: the shared-state layer for multi-agent systems",
+    "thesis": "Multi-agent systems need a shared, temporal, governed context layer (a 'context lake') distinct from vector stores and per-agent memory.",
+    "audience": "AI engineers and SRE/platform teams building multi-agent systems in production",
+    "since": "2024-01-01",
+    "per_question": 8,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What is a context lake, who coined the term, and how is it defined?",
+        "queries": [
+          "context lake",
+          "context lake agents decision coherence",
+          "contextlake.org"
+        ],
+        "providers": [
+          "web",
+          "hn",
+          "arxiv",
+          "semantic_scholar"
+        ]
+      },
+      {
+        "id": "q2",
+        "question": "How does shared context for agents differ from vector databases, data lakes, feature stores and per-agent memory frameworks?",
+        "queries": [
+          "shared memory multi-agent LLM systems",
+          "agent memory vs vector database",
+          "temporal knowledge graph agent memory"
+        ],
+        "providers": [
+          "web",
+          "arxiv",
+          "hn",
+          "wikipedia"
+        ]
+      },
+      {
+        "id": "q3",
+        "question": "Which systems implement shared or temporal context for agents today, and what do they claim or measure?",
+        "queries": [
+          "Zep Graphiti temporal knowledge graph",
+          "Letta MemGPT memory",
+          "Mem0 memory layer benchmark",
+          "Tacnode context lake"
+        ],
+        "providers": [
+          "web",
+          "github",
+          "arxiv",
+          "hn"
+        ]
+      },
+      {
+        "id": "q4",
+        "question": "What failures in multi-agent systems come from inconsistent or missing shared context, and what is the evidence?",
+        "queries": [
+          "why do multi-agent LLM systems fail",
+          "multi-agent coordination failure taxonomy",
+          "context consistency multi-agent"
+        ],
+        "providers": [
+          "arxiv",
+          "semantic_scholar",
+          "hn"
+        ]
+      },
+      {
+        "id": "q5",
+        "question": "What are the criticisms, open problems and adoption signals for context layers in agent systems?",
+        "queries": [
+          "context engineering agents",
+          "agent memory production problems",
+          "context layer agents criticism"
+        ],
+        "providers": [
+          "web",
+          "hn",
+          "arxiv"
+        ]
+      }
+    ]
+  },
+  "generated": "2026-10-04",
+  "stats": {
+    "searched": 174,
+    "candidates": 40,
+    "web_search": false,
+    "read": 40,
+    "sources_with_evidence": 33,
+    "claims": 231,
+    "quotes_dropped_as_unverified": 2
+  },
+  "sources": [
+    {
+      "id": "13c237e785",
+      "url": "https://arxiv.org/abs/2609.25563",
+      "title": "AkasicMEM: Governed Enterprise Memory for Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-22",
+      "org": "Jeongmin Bae, Yongjae Kim, Kyoung Hur, Donghyoung Han, Min-Soo Kim",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper defines Governed Enterprise Memory as agent memory designed around a combined scope and presents AkasicMEM as its realization.",
+          "quote": "We define Governed Enterprise Memory as agent memory designed around this combined scope and present AkasicMEM as its realization.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Agent memory is intended to let enterprise agents retain knowledge acquired during work and reuse it across tasks and agents, turning execution experience into persistent organizational knowledge.",
+          "quote": "Agent memory enables enterprise agents to retain knowledge acquired during work and reuse it across tasks and agents, turning execution experience into persistent organizational knowledge.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Shared context for agents requires both source-memory integration, so enterprise sources and accumulated memory can be used together, and memory governance, so shared memory remains subject to organizational policies throughout its lifecycle.",
+          "quote": "Realizing this potential requires both source--memory integration, through which enterprise sources and accumulated memory can be utilized together, and memory governance, through which shared memory remains subject to organizational policies throughout its lifecycle.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.3"
+        },
+        {
+          "question": "q4",
+          "claim": "When enterprise-source information persists in memory, repeated derivation and reuse under changing principals and policies can bypass source restrictions and result in information leakage.",
+          "quote": "These requirements interact when information from enterprise sources persists in memory. As this information is repeatedly derived and reused under changing principals and policies, source restrictions may be bypassed, resulting in information leakage.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Preventing leakage requires authorization continuity, in which source restrictions remain effective throughout source-to-memory and memory-to-memory derivation and reuse.",
+          "quote": "Preventing such leakage requires authorization continuity, under which source restrictions remain effective throughout source-to-memory and memory-to-memory derivation and reuse.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Existing approaches address source-memory integration, memory governance, and authorization continuity individually, but do not treat them as combined core design targets across the memory lifecycle.",
+          "quote": "Existing approaches address these concerns individually, but do not treat source--memory integration, memory governance, and authorization continuity as combined core design targets across the memory lifecycle.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.6"
+        },
+        {
+          "question": "q3",
+          "claim": "AkasicMEM implements authorization continuity through transitive lineage, policy composition during memory formation, and policy re-evaluation during retrieval.",
+          "quote": "AkasicMEM realizes authorization continuity through transitive lineage, policy composition during memory formation, and policy re-evaluation during retrieval.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.7"
+        },
+        {
+          "question": "q3",
+          "claim": "AkasicMEM is built on GraphAI's AkasicDB, a unified vector-graph-relational database whose storage and execution substrate enables joint optimization and execution of the underlying operations.",
+          "quote": "It is built on GraphAI's AkasicDB, a unified vector--graph--relational database whose storage and execution substrate enables the underlying operations of these mechanisms to be jointly optimized and executed.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 1
+    },
+    {
+      "id": "2045d7a633",
+      "url": "https://github.com/guoliangdi/claw-zep",
+      "title": "guoliangdi/claw-zep",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-06-26",
+      "org": "guoliangdi",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "The repository describes claw-zep as a fully self-hosted temporal knowledge platform built on Graphiti, providing time-aware long-term memory for AI agents, enterprise knowledge bases and risk deduction.",
+          "quote": "claw-zep is a fully self-hosted temporal knowledge platform built on Graphiti. It provides Palantir-grade dynamic time-series knowledge graph and time-aware long-term memory for AI Agents, enterprise knowledge bases and risk deduction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The initial release describes claw-zep as a private, autonomous temporal knowledge middle platform based on Graphiti kernel extension, benchmarked against Zep and Palantir, with a global dual-time model using valid_from/valid_until/version/source for snapshot/backtracking/conflict resolution, Graphiti scheduling wrapper with LLM extraction and offline heuristic fallback distributing to Kuzu/Chroma/PG, an OpenHuman memory tree three-layer architecture, hybrid retrieval from temporal to vector to graph chain to memory tree weighting, multi-tenant/project isolation/RBAC/audit, and OpenClaw cloud memory plugin plus mobile SDK.",
+          "quote": "feat: claw-zep 私有化时序知识中台首次发布 基于 Graphiti 内核扩展的私有化、自主可控时序知识中台，对标 Zep + Palantir： - 全局双时序模型（valid_from/valid_until/version/source）：快照/回溯/冲突消解 - Graphiti 调度封装（LLM 抽取 + 离线启发式降级）→ 三库分发（Kuzu/Chroma/PG） - OpenHuman 记忆树三层架构 + Markdown 在线编辑 + Obsidian 导出 - 混合检索（时序→向量→图谱链路→记忆树加权）+ Palantir 因果推演 - 多租户 + 项目隔离 + RBAC（按钮级）+ 全链路审计 - OpenClaw 云端记忆插件 + 龙虾移动端 SDK - React18+TS+AntD5+Cytoscape 全套管理后台 - docker-compose 一键编排（后端/前端/Kuzu/Chroma/PostgreSQL/Redis/MinIO/Celery）",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.2"
+        },
+        {
+          "question": "q3",
+          "claim": "A later storage refactor added a single PostgreSQL infrastructure using AGE and pgvector with a STORAGE_BACKEND switch, idempotent initialization of pgvector extension and HNSW vector table plus AGE graph, and changed docker-compose to remove Chroma and use an AGE+pgvector PostgreSQL image with STORAGE_BACKEND=postgres.",
+          "quote": "refactor(storage): Phase A — 单 PG(AGE+pgvector) 基础设施 + STORAGE_BACKEND 开关 - core/config: 新增 storage_backend(kuzu_chroma|postgres) 开关 + AGE/pgvector 配置 - core/adapters/pg_init: 幂等初始化 pgvector 扩展+向量表(HNSW) 与 AGE 图，缺失自动降级 - main: postgres 后端启动时初始化扩展 - deploy/postgres: AGE+pgvector 的 PG16 镜像(Dockerfile + init SQL)，base tag 可 ARG 覆盖 - docker-compose: 去掉 Chroma 服务，postgres 改用 AGE+pgvector 镜像，STORAGE_BACKEND=postgres - requirements/.env.example: 加 pgvector 与新配置项 旧 kuzu_chroma 后端保留，默认值不变，演进期不破坏现有可运行版本。",
+          "numbers": [
+            "PG16"
+          ],
+          "corroborated_by": [],
+          "id": "S2.3"
+        },
+        {
+          "question": "q3",
+          "claim": "A worldmonitor integration provides a push SDK and ingest contract, and an end-to-end test with real PostgreSQL pushed 2 records, generated 3 entities with cross-record same-name deduplication, generated 2 relation chains, and passed graph visualization verification.",
+          "quote": "feat(integration): Phase E — worldmonitor 推送 SDK + 直灌契约文档 - integrations/worldmonitor/claw_ingest_sdk.py：同步推送 SDK， record/entity/relation 构造 helper + 自动分批 + whoami 校验 - docs/INGEST_CONTRACT.md：bulk 契约(鉴权/字段语义/时序/批量/一致性) + worldmonitor 侧改造建议(抽取模板 + material_suppliers/signals 映射) + SDK 示例 端到端验证(真 PG)：SDK→运行中后端→server PG，推 2 records 生成 3 实体(跨 record 同名去重)+2 关系链路，graph 可视化校验 PASS。",
+          "numbers": [
+            "2",
+            "3",
+            "2"
+          ],
+          "corroborated_by": [],
+          "id": "S2.4"
+        },
+        {
+          "question": "q3",
+          "claim": "A governance/operations phase added per-tenant Redis fixed-window rate limiting returning 429 when exceeded and fail-open if Redis is unavailable, verified with 7 requests against a limit of 5 resulting in 5 allowed and 2 rejected, plus metrics, deep readiness checks, backup scripts, and entity attribute persistence.",
+          "quote": "feat(ops): Phase G — 限流 + 可观测 + 备份 + 实体属性持久化 - 限流中间件(api/middlewares/ratelimit)：per-tenant Redis 固定窗口，超限 429， Redis 不可用 fail-open。真 Redis 验证：7 请求@限5 → 5 放行 2 拒绝 - 可观测：MetricsMiddleware + /metrics(Prometheus 文本) + /health/ready 深度就绪检查 (postgres/redis/pgvector/age) - 备份：scripts/backup.sh(pg_dump 全库含 AGE+pgvector + 对象存储 + 保留期) - 补 Phase F 缺口：实体 attributes 持久化(GraphEntityMeta.attributes_json)， 贯通 orchestrator/bulk/可视化。demo risk_level 现可查可视(high/medium 显示在材料节点) - docs/OPERATIONS.md 运维手册 真 PG 验证：/health/ready 全绿、/metrics 正常、限流强制、attributes 入图谱可视化。",
+          "numbers": [
+            "7",
+            "5",
+            "5",
+            "2"
+          ],
+          "corroborated_by": [],
+          "id": "S2.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The repository shows 0 forks and 0 stars.",
+          "quote": "*   [Fork 0](https://github.com/login?return_to=%2Fguoliangdi%2Fclaw-zep)\n*   [Star 0](https://github.com/login?return_to=%2Fguoliangdi%2Fclaw-zep)",
+          "numbers": [
+            "0",
+            "0"
+          ],
+          "corroborated_by": [
+            5
+          ],
+          "id": "S2.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The repository page lists 1 branch and 0 tags.",
+          "quote": "[**1**Branch](https://github.com/guoliangdi/claw-zep/branches)[**0**Tags](https://github.com/guoliangdi/claw-zep/tags)",
+          "numbers": [
+            "1",
+            "0"
+          ],
+          "corroborated_by": [],
+          "id": "S2.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The repository history lists 10 commits.",
+          "quote": "[10 Commits](https://github.com/guoliangdi/claw-zep/commits/main/)",
+          "numbers": [
+            "10"
+          ],
+          "corroborated_by": [],
+          "id": "S2.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 2
+    },
+    {
+      "id": "4a4557faed",
+      "url": "https://arxiv.org/abs/2604.24971",
+      "title": "PolyKV: A Shared Asymmetrically-Compressed KV Cache Pool for Multi-Agent LLM Inference",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-04-27",
+      "org": "Ishan Patel, Ishan Joshi",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "PolyKV is a system where multiple concurrent inference agents share one asymmetrically compressed KV cache pool.",
+          "quote": "We present PolyKV, a system in which multiple concurrent inference agents share a single, asymmetrically compressed KV cache pool.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The standard paradigm allocates a separate KV cache per agent, while PolyKV writes a compressed cache once and injects it into N independent agent contexts via HuggingFace DynamicCache objects.",
+          "quote": "Rather than allocating a separate KV cache per agent -- the standard paradigm -- PolyKV writes a compressed cache once and injects it into N independent agent contexts via HuggingFace DynamicCache objects.",
+          "numbers": [
+            "N"
+          ],
+          "corroborated_by": [],
+          "id": "S3.2"
+        },
+        {
+          "question": "q3",
+          "claim": "PolyKV uses asymmetric compression: keys are int8-quantized q8_0 to preserve softmax stability, while values use TurboQuant MSE with FWHT rotation followed by 3-bit Lloyd-Max quantization with centroids tuned to N(0,1).",
+          "quote": "Compression is asymmetric: Keys are quantized at int8 (q8_0) to preserve softmax stability, while Values are compressed using TurboQuant MSE -- a Fast Walsh-Hadamard Transform (FWHT) rotation followed by 3-bit Lloyd-Max quantization with centroids tuned to N(0,1).",
+          "numbers": [
+            "int8",
+            "q8_0",
+            "3-bit",
+            "N(0,1)"
+          ],
+          "corroborated_by": [],
+          "id": "S3.3"
+        },
+        {
+          "question": "q3",
+          "claim": "PolyKV was evaluated across two model scales, SmolLM2-1.7B-Instruct and Llama-3-8B-Instruct, three context lengths from 600 to 7,194 tokens, and up to 15 concurrent agents.",
+          "quote": "We evaluate across two model scales (SmolLM2-1.7B-Instruct and Llama-3-8B-Instruct), three context lengths (600-7,194 tokens), and up to 15 concurrent agents.",
+          "numbers": [
+            "two",
+            "SmolLM2-1.7B-Instruct",
+            "Llama-3-8B-Instruct",
+            "three",
+            "600-7,194 tokens",
+            "15"
+          ],
+          "corroborated_by": [],
+          "id": "S3.4"
+        },
+        {
+          "question": "q3",
+          "claim": "PolyKV reports a stable 2.91x compression ratio across all configurations.",
+          "quote": "PolyKV achieves a stable 2.91x compression ratio across all configurations.",
+          "numbers": [
+            "2.91x"
+          ],
+          "corroborated_by": [],
+          "id": "S3.5"
+        },
+        {
+          "question": "q3",
+          "claim": "On Llama-3-8B with 15 agents sharing a 4K-token context, PolyKV reduces KV cache memory from 19.8 GB to 0.45 GB, a 97.7% reduction, with +0.57% perplexity degradation and mean BERTScore F1 of 0.928.",
+          "quote": "On Llama-3-8B with 15 agents sharing a 4K-token context, PolyKV reduces KV cache memory from 19.8 GB to 0.45 GB -- a 97.7% reduction -- while maintaining only +0.57% perplexity degradation and a mean BERTScore F1 of 0.928.",
+          "numbers": [
+            "Llama-3-8B",
+            "15",
+            "4K-token",
+            "19.8 GB",
+            "0.45 GB",
+            "97.7%",
+            "+0.57%",
+            "0.928"
+          ],
+          "corroborated_by": [],
+          "id": "S3.6"
+        },
+        {
+          "question": "q3",
+          "claim": "PolyKV reports that PPL delta does not grow with agent count and improves as context length increases, becoming -0.26% at 1,851 coherent tokens.",
+          "quote": "PPL delta does not grow with agent count and improves as context length increases, inverting to -0.26% at 1,851 coherent tokens.",
+          "numbers": [
+            "-0.26%",
+            "1,851"
+          ],
+          "corroborated_by": [],
+          "id": "S3.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The authors claim no prior work combines a single shared, lossy-compressed KV pool with multi-reader concurrent agent access.",
+          "quote": "To our knowledge, no prior work combines a single shared, lossy-compressed KV pool with multi-reader concurrent agent access.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 3
+    },
+    {
+      "id": "66f0c52efd",
+      "url": "https://arxiv.org/abs/2608.12365",
+      "title": "FluctlightDB: A Memory Model of Data for AI Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-07-10",
+      "org": "Ganesh S",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "The paper argues relational and vector models were not built for cue-driven, provenance-weighted recall across long sessions, and proposes treating long-term agent memory as a distinct data model with its own write and read semantics.",
+          "quote": "The relational model asked which records match a predicate; the vector model asked which vectors lie nearest a query. Neither was built for cue-driven, provenance-weighted recall across long sessions. We propose treating long-term agent memory as a distinct data model -- with its own write semantics (encoding, separation, consolidation, provenance) and read semantics (cue-driven activation across a linked memory graph) -- and present FluctlightDB, an embedded engine that implements this contract via experience() and activate().",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The authors say FluctlightDB does not claim novelty over Mem0, Zep, or HippoRAG-style memory layers, positioning it as an embedded engine contract beneath them.",
+          "quote": "We do not claim novelty over Mem0, Zep, or HippoRAG-style memory layers, only an embedded engine contract beneath them.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.2"
+        },
+        {
+          "question": "q3",
+          "claim": "On LoCoMo, the native-Rust CHORUS stack reaches 96.8% at k=150 for raw evidence recall, 72.6% at k=5, and 85% end-to-end QA at k=15 on date-stamped context.",
+          "quote": "On LoCoMo (official evidence-recall; 10 conversations, 1,982 gold spans), our native-Rust CHORUS stack reaches 96.8% at k=150 as raw evidence recall with no neighbor expansion, on an internally reproduced July 2026 run; at k=5 it still yields 72.6%, while end-to-end QA over date-stamped context reaches 85% at k=15 (retrieval-bound).",
+          "numbers": [
+            "10",
+            "1,982",
+            "96.8%",
+            "k=150",
+            "July 2026",
+            "k=5",
+            "72.6%",
+            "85%",
+            "k=15"
+          ],
+          "corroborated_by": [],
+          "id": "S4.3"
+        },
+        {
+          "question": "q3",
+          "claim": "On LongMemEval-S, official session_recall@8 is 97.6% (488/500) and end-to-end QA with the reader/judge stack is 97.4% (487/500).",
+          "quote": "On LongMemEval-S (500 questions), official session_recall@8 is 97.6% (488/500) and end-to-end QA with our reader/judge stack is 97.4% (487/500) -- different protocols from vendor leaderboard figures we cite for context only.",
+          "numbers": [
+            "500",
+            "97.6%",
+            "488/500",
+            "97.4%",
+            "487/500"
+          ],
+          "corroborated_by": [],
+          "id": "S4.4"
+        },
+        {
+          "question": "q3",
+          "claim": "On BEIR SciFact, CHORUS/PRISM edges Chroma on nDCG@10 (0.646 vs. 0.645) and Recall@10 (0.792 vs. 0.783).",
+          "quote": "On BEIR SciFact (shared MiniLM embeddings, same harness), CHORUS/PRISM edges Chroma on nDCG@10 (0.646 vs. 0.645) and Recall@10 (0.792 vs. 0.783).",
+          "numbers": [
+            "0.646",
+            "0.645",
+            "0.792",
+            "0.783"
+          ],
+          "corroborated_by": [],
+          "id": "S4.5"
+        },
+        {
+          "question": "q4",
+          "claim": "A graded provenance-conflict suite with n=50 scores 18% top-1 when all pairs share one brain, versus 100% under per-case isolation, which the authors label a ceiling rather than deployment evidence.",
+          "quote": "A graded provenance-conflict suite (n=50) scores 18% top-1 when all pairs share one brain versus 100% under per-case isolation (ceiling, not deployment evidence).",
+          "numbers": [
+            "n=50",
+            "18%",
+            "100%"
+          ],
+          "corroborated_by": [],
+          "id": "S4.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The engine, harnesses, and frozen JSON are MIT-licensed, and installing the native package is claimed to re-run the published numbers.",
+          "quote": "Engine, harnesses and frozen JSON are MIT; pip install \"fluctlightdb[native]\" re-runs the published numbers.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The authors position the work as no new neuroscience or transformer, but a missing layer of the data stack released for others to re-run and contest.",
+          "quote": "We claim no new neuroscience and no new transformer: a missing layer of the data stack, released for others to re-run and contest.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 4
+    },
+    {
+      "id": "837b46e64e",
+      "url": "https://github.com/shivanshinigam/graphiti-zep-agent",
+      "title": "shivanshinigam/graphiti-zep-agent",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-09-17",
+      "org": "shivanshinigam",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "In the source's Vector RAG comparison, a query for the current CTO of NovaTech returns a 2018 chunk (Leon) and a 2022 chunk (Aisha), causing LLM confusion.",
+          "quote": "VectorRAG-->>User: Returns 2018 chunk (Leon) & 2022 chunk (Aisha) → LLM Confused!",
+          "numbers": [
+            "2018",
+            "2022"
+          ],
+          "corroborated_by": [],
+          "id": "S5.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Graphiti filters invalid_at != null to return Aisha Okonkwo as the valid present CTO.",
+          "quote": "Graphiti-->>User: Filters invalid_at != null → Returns \"Aisha Okonkwo\" (Valid Present)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Graphiti filters valid_at <= 2020-06-01 to return Leon Müller as the historical CTO fact.",
+          "quote": "Graphiti-->>User: Filters valid_at <= 2020-06-01 → Returns \"Leon Müller\" (Historical Fact)",
+          "numbers": [
+            "2020-06-01"
+          ],
+          "corroborated_by": [],
+          "id": "S5.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The repository describes itself as a temporal knowledge graph agent using Graphiti (Zep) + LangGraph + Gemini for context, perception and decision for AI agents.",
+          "quote": "Temporal knowledge graph agent using Graphiti (Zep) + LangGraph + Gemini — context, perception and decision for AI agents",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The source positions its temporal knowledge graph for AI agents as covering context, perception and memory.",
+          "quote": "🧠 TEMPORAL KNOWLEDGE GRAPH FOR AI AGENTS (CONTEXT | PERCEPTION | MEMORY)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.5"
+        },
+        {
+          "question": "q3",
+          "claim": "A commit message says the project implements a local Graphiti zero-cost temporal KG stack with Ollama, Neo4j, and LangGraph agent memory.",
+          "quote": "docs & core: implement local Graphiti zero-cost temporal KG stack with Ollama, Neo4j, and LangGraph agent memory; add rich visual README",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The repository shows 4 commits.",
+          "quote": "[4 Commits](https://github.com/shivanshinigam/graphiti-zep-agent/commits/main/)",
+          "numbers": [
+            "4"
+          ],
+          "corroborated_by": [],
+          "id": "S5.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 5
+    },
+    {
+      "id": "8bb8f95a61",
+      "url": "https://arxiv.org/abs/2606.29778",
+      "title": "Mandol: An Agglomerative Agent Memory System for Long-Term Conversations",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-06-29",
+      "org": "Yuhan Zhang, Zhiyuan Guo, Ziheng Zeng, Wei Wang, Wentao Wu, Lijie Xu",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "Mandol is proposed as an agglomerative memory system that consolidates fragmented memory representations and storage into a unified memory-native architecture.",
+          "quote": "We propose Mandol, an agglomerative memory system that consolidates fragmented memory representations and storage into a unified memory-native architecture.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Existing agent memory systems rely on heterogeneous vector and graph databases, which fragment memory information and cause high cross-database I/O latency.",
+          "quote": "Existing agent memory systems rely on heterogeneous vector and graph databases, which fragment memory information and cause high cross-database I/O latency.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Common RAG-style retrieval methods tend to introduce noise, miss correlated clues, and lack token budget control, degrading LLM accuracy and efficiency.",
+          "quote": "For retrieval, common RAG-style methods tend to introduce noise, miss correlated clues, and lack token budget control, degrading LLM accuracy and efficiency.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Mandol uses a hierarchical memory model with a basic layer for raw memory information and a high-level abstract layer that agglomerates basic memories into traceable abstract memories, both represented as structured semantic graphs.",
+          "quote": "Its core components include: (1) a hierarchical memory model that organizes memory into a basic layer representing raw memory information and a high-level abstract layer that agglomerates basic memories into traceable abstract memories, both uniformly represented as structured semantic graphs;",
+          "numbers": [
+            "(1)"
+          ],
+          "corroborated_by": [],
+          "id": "S6.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Mandol uses an agglomerative semantic data structure combining SemanticMap and SemanticGraph that natively fuses key-value, vector, and graph structures and provides unified hybrid retrieval operators to eliminate cross-database I/O.",
+          "quote": "(2) an agglomerative semantic data structure combining SemanticMap and SemanticGraph, which natively fuses key-value, vector, and graph structures and provides unified hybrid retrieval operators to eliminate cross-database I/O;",
+          "numbers": [
+            "(2)"
+          ],
+          "corroborated_by": [],
+          "id": "S6.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Mandol includes a quantitative query mechanism with query-adaptive routing, quantitative denoising and conflict resolution, and token-constrained context generation, all without involving LLMs during retrieval.",
+          "quote": "(3) a quantitative query mechanism with query-adaptive routing, quantitative denoising and conflict resolution, and token-constrained context generation, all without involving LLMs during retrieval.",
+          "numbers": [
+            "(3)"
+          ],
+          "corroborated_by": [],
+          "id": "S6.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Experiments on LoCoMo and LongMemEval show that Mandol achieves the best overall accuracy among representative agent memory systems.",
+          "quote": "Experiments on two widely used long-term conversation benchmarks, LoCoMo and LongMemEval, show that Mandol achieves the best overall accuracy among representative agent memory systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.7"
+        },
+        {
+          "question": "q3",
+          "claim": "Mandol obtains a 5.4x retrieval speedup and a 4.8x insertion speedup under 10 QPS concurrent load while maintaining low latency on consumer-grade hardware.",
+          "quote": "For performance comparison, Mandol also obtains a 5.4x retrieval speedup and a 4.8x insertion speedup under 10 QPS concurrent load, while still maintaining low latency on consumer-grade hardware.",
+          "numbers": [
+            "5.4x",
+            "4.8x",
+            "10 QPS"
+          ],
+          "corroborated_by": [],
+          "id": "S6.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 6
+    },
+    {
+      "id": "8e6f5f77e9",
+      "url": "https://arxiv.org/abs/2609.22641",
+      "title": "ConsistWorld: Evidence Routing for Consistent Multi-Agent World Models",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-18",
+      "org": "Qianxun Xu, Xianfang Zeng, Xinyao Liao, Wei Cheng, Gang Yu, Chi Zhang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "ConsistWorld is a multi-agent world model that generates camera-controlled video streams of a static scene from one shared image.",
+          "quote": "We present ConsistWorld, a multi-agent world model that generates camera-controlled video streams of a static scene from one shared image.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.1"
+        },
+        {
+          "question": "q3",
+          "claim": "ConsistWorld formulates consistency as routing evidence from committed multi-agent history and concurrently generated peer views to the tokens being generated.",
+          "quote": "We formulate consistency as routing evidence from committed multi-agent history and concurrently generated peer views to the tokens being generated.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Pose Conditioned Memory Retrieval selects relevant historical observations from all agents, recovering evidence beyond the recent context window.",
+          "quote": "Pose Conditioned Memory Retrieval selects relevant historical observations from all agents, recovering evidence beyond the recent context window.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Visibility-Gated Peer Sharing regulates current peer information according to estimated historical coverage and current-view overlap.",
+          "quote": "Visibility-Gated Peer Sharing regulates current peer information according to estimated historical coverage and current-view overlap.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The two mechanisms determine which historical observations enter the context and where concurrent peer information contributes, supporting long-term recall and coordinated exploration.",
+          "quote": "Together, they determine which historical observations enter the context and where concurrent peer information contributes, supporting long-term recall and coordinated exploration.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Both mechanisms use camera geometry and maintain a bounded active context for a fixed agent count and retrieval budget.",
+          "quote": "Both mechanisms use camera geometry and maintain a bounded active context for a fixed agent count and retrieval budget.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Experiments on evidence sharing cases and generalization across video length and agent number show ConsistWorld achieves strong cross-time and cross-agent consistency while preserving competitive generation quality.",
+          "quote": "Experiments on evidence sharing cases and video length and agent number generalizations show that ConsistWorld achieves a strong cross-time and cross-agent consistency while preserving competitive generation quality.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.7"
+        },
+        {
+          "question": "q4",
+          "claim": "Extending autoregressive video world models to multiple agents requires consistency across independently controlled views and temporal gaps under causal streaming.",
+          "quote": "Extending them to multiple agents requires consistency across independently controlled views and temporal gaps under causal streaming.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 7
+    },
+    {
+      "id": "941d10f56b",
+      "url": "https://arxiv.org/abs/2601.17019",
+      "title": "Context Lake: A System Class Defined by Decision Coherence",
+      "provider": "hn",
+      "discussion": "https://news.ycombinator.com/item?id=47787291",
+      "type": "academic",
+      "published": "2026-01-15",
+      "org": "Xiaowei Jiang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The source lists Xiaowei Jiang as the author of the paper.",
+          "quote": "Authors:[Xiaowei Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang,+X)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper derives Context Lake as a necessary system class with three requirements: native semantic operations, transactional consistency over all decision-relevant state, and operational envelopes bounding staleness and degradation under load.",
+          "quote": "From this impossibility result, we derive Context Lake as a necessary system class with three requirements: (1) semantic operations as native capabilities, (2) transactional consistency over all decision-relevant state, and (3) operational envelopes bounding staleness and degradation under load.",
+          "numbers": [
+            "three",
+            "(1)",
+            "(2)",
+            "(3)"
+          ],
+          "corroborated_by": [],
+          "id": "S8.2"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper claims no existing system class satisfies Decision Coherence, and that independently advancing systems cannot be composed to provide it while preserving their native system classes.",
+          "quote": "We show that no existing system class satisfies this requirement and prove through the Composition Impossibility Theorem that independently advancing systems cannot be composed to provide Decision Coherence while preserving their native system classes.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper states that traditional data systems designed for human analysis cycles become correctness bottlenecks under the operating regime of AI agents.",
+          "quote": "Traditional data systems designed for human analysis cycles become correctness bottlenecks under this operating regime.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.4"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper states that when multiple agents operate over shared resources, their actions interact before reconciliation is possible, and post-decision correctness guarantees fail to prevent conflicts.",
+          "quote": "When multiple agents operate over shared resources, their actions interact before reconciliation is possible. Correctness guarantees that apply after the decision window therefore fail to prevent conflicts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.5"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper states that AI agents are increasingly the primary consumers of data, operating continuously to make concurrent, irreversible decisions.",
+          "quote": "AI agents are increasingly the primary consumers of data, operating continuously to make concurrent, irreversible decisions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper describes itself as a position paper that establishes the theoretical foundation for Context Lakes, identifies why existing architectures fail, and specifies what systems must guarantee for AI agents to operate constructively at scale.",
+          "quote": "This position paper establishes the theoretical foundation for Context Lakes, identifies why existing architectures fail, and specifies what systems must guarantee for AI agents to operate constructively at scale.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper formalizes architectural invariants, enforcement boundaries, and admissibility conditions required for correctness in collective agent systems.",
+          "quote": "We formalize the architectural invariants, enforcement boundaries, and admissibility conditions required for correctness in collective agent systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 8
+    },
+    {
+      "id": "b87e6d55e1",
+      "url": "https://arxiv.org/abs/2608.29678",
+      "title": "Diachronic Hypergraphs for Orchestrated Multi-Agent Multimodal Memory Curation",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-30",
+      "org": "Yichao Feng, Ran Zhang, Haoran Luo, Zhenghong Lin, Carl Yang, Anh Tuan Luu",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Multi-agent memory should preserve and transfer evidence, role-specific context, decisions, procedures, and experience across interactions, not only outcomes.",
+          "quote": "Memory must preserve and transfer evidence, role specific context, decisions, procedures, and experience across interactions, not only outcomes.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Vector and graph memories flatten multi-agent structures into embeddings or dyadic traces, obscuring events involving agents, tools, documents, errors, and evidence.",
+          "quote": "Vector and graph memories flatten these structures into embeddings or dyadic traces, obscuring events involving agents, tools, documents, errors, and evidence.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.2"
+        },
+        {
+          "question": "q3",
+          "claim": "MAGE is presented as a hypergraph-based multimodal database designed as a memory engine for multi-agent systems.",
+          "quote": "We present MAGE, a hypergraph based multimodal database designed as a memory engine for MAS.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.3"
+        },
+        {
+          "question": "q3",
+          "claim": "MAGE stores agents, messages, tools, errors, procedures, documents, entities, decisions, and evidence in a heterogeneous temporal hypergraph, preserving high-order collaborative events as reusable memory.",
+          "quote": "MAGE stores agents, messages, tools, errors, procedures, documents, entities, decisions, and evidence in a heterogeneous temporal hypergraph, preserving high order collaborative events as reusable memory.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.4"
+        },
+        {
+          "question": "q3",
+          "claim": "MAGE supports decision-driven updates, role-aware retrieval, validation, lifecycle management, and budget-bounded context packing.",
+          "quote": "It supports decision driven updates, role aware retrieval, validation, lifecycle management, and budget bounded context packing.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Experiments claim MAGE outperforms various memory baselines.",
+          "quote": "Experiments show MAGE outperforms on various memory baselines.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.6"
+        },
+        {
+          "question": "q4",
+          "claim": "Vector and graph memory flattening limits knowledge sharing, tracing, reuse, revision, and orchestration in multi-agent systems.",
+          "quote": "This limits knowledge sharing, tracing, reuse, revision, and orchestration.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.7"
+        },
+        {
+          "question": "q4",
+          "claim": "Each agent in a multi-agent system operates within a knowledge boundary defined by its observations, context, and resources.",
+          "quote": "Multi-agent systems solve tasks through collaboration, tool use, multimodal reasoning, and orchestration, but each agent operates within a knowledge boundary defined by its observations, context, and resources.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 9
+    },
+    {
+      "id": "cbf7fe4b3a",
+      "url": "https://github.com/Quantum-L9/l9-graphiti-memory",
+      "title": "Quantum-L9/l9-graphiti-memory",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-10-03",
+      "org": "Quantum-L9",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "L9 Graphiti Memory is described as a bi-temporal knowledge graph memory subsystem for autonomous agents using Zep Cloud transport.",
+          "quote": "L9 Graphiti Memory — bi-temporal knowledge graph memory subsystem for autonomous agents (Zep Cloud transport)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The system provides MemoryService.rebuild_projection and l9-memory rebuild-projection to re-project active records with no live link, dry run by default, without touching canonical state.",
+          "quote": "Add MemoryService.rebuild_projection and l9-memory rebuild-projection, re-projecting active records with no live link. MAINTAIN to apply, dry run by default, never touches canonical state.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Graphiti exposes no deactivation primitive, so retire and erase both call delete_episode.",
+          "quote": "Graphiti exposes no deactivation primitive, so retire and erase both call delete_episode.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.3"
+        },
+        {
+          "question": "q3",
+          "claim": "ProjectionAdapter.retirement_mode is NATIVE or WITHDRAW; Graphiti is WITHDRAW and NullProjection is NATIVE.",
+          "quote": "ProjectionAdapter.retirement_mode is NATIVE or WITHDRAW. Graphiti is WITHDRAW, NullProjection is NATIVE.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Changing store_backend to a different store can initialize cleanly, report healthy, hold zero records, and make prior data invisible; adopting the shared backend can yield a green health check over an empty namespace.",
+          "quote": "changing store_backend points at a different store, which initializes clean, reports healthy, and holds zero records. Nothing is destroyed, but the running system cannot see the prior data. An operator adopting the shared backend gets a green health check over an empty namespace.",
+          "numbers": [
+            "zero"
+          ],
+          "corroborated_by": [],
+          "id": "S10.5"
+        },
+        {
+          "question": "q4",
+          "claim": "If governance reversed an archive decision, the record returned to ACTIVE in canonical state while remaining invisible to projection-backed search.",
+          "quote": "If governance reversed an archive decision the record returned to ACTIVE in canonical state while staying invisible to projection-backed search.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The project identifies documentation as the only guard for backend transition safety and states that documentation is not a guard.",
+          "quote": "Documentation was the only guard, and documentation is not a guard.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.7"
+        },
+        {
+          "question": "q3",
+          "claim": "The project reports validation evidence including 1059 tests passed, 16 skipped, 24 local checks, and an identical candidate digest before and after.",
+          "quote": "Validation: pytest 1059 passed / 16 skipped (CI shape); ruff check clean; mypy src/l9_graphite_memory clean; bash scripts/validate_release.sh self-contained: 24 local checks evidenced, candidate digest identical before and after (016a3df9…).",
+          "numbers": [
+            "1059",
+            "16",
+            "24",
+            "016a3df9…"
+          ],
+          "corroborated_by": [],
+          "id": "S10.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 10
+    },
+    {
+      "id": "ce6b313e12",
+      "url": "https://arxiv.org/abs/2505.18279",
+      "title": "Collaborative Memory: Multi-User Memory Sharing in LLM Agents with Dynamic Access Control",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-05-23",
+      "org": "Alireza Rezazadeh, Zichao Li, Ange Lou, Yuying Zhao, Wei Wei, Yujia Bao",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Persistent memory has been shown to enhance single-agent performance, but most approaches assume a monolithic, single-user context and overlook knowledge transfer across users under dynamic, asymmetric permissions.",
+          "quote": "While persistent memory has been shown to enhance single-agent performance, most approaches assume a monolithic, single-user context-overlooking the benefits and challenges of knowledge transfer across users under dynamic, asymmetric permissions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper introduces Collaborative Memory, a framework for multi-user, multi-agent environments with asymmetric, time-evolving access controls encoded as bipartite graphs linking users, agents, and resources.",
+          "quote": "We introduce Collaborative Memory, a framework for multi-user, multi-agent environments with asymmetric, time-evolving access controls encoded as bipartite graphs linking users, agents, and resources.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.2"
+        },
+        {
+          "question": "q3",
+          "claim": "The system maintains two memory tiers: private memory visible only to the originating user, and shared memory with selectively shared fragments.",
+          "quote": "Our system maintains two memory tiers: (1) private memory-private fragments visible only to their originating user; and (2) shared memory-selectively shared fragments.",
+          "numbers": [
+            "two",
+            "(1)",
+            "(2)"
+          ],
+          "corroborated_by": [],
+          "id": "S11.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Each memory fragment carries immutable provenance attributes, including contributing agents, accessed resources, and timestamps, to support retrospective permission checks.",
+          "quote": "Each fragment carries immutable provenance attributes (contributing agents, accessed resources, and timestamps) to support retrospective permission checks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Granular read policies enforce current user-agent-resource constraints and project existing memory fragments into filtered transformed views.",
+          "quote": "Granular read policies enforce current user-agent-resource constraints and project existing memory fragments into filtered transformed views.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Write policies determine fragment retention and sharing, applying context-aware transformations to update the memory.",
+          "quote": "Write policies determine fragment retention and sharing, applying context-aware transformations to update the memory.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The framework claims safe, efficient, and interpretable cross-user knowledge sharing, with provable adherence to asymmetric, time-varying policies and full auditability of memory operations.",
+          "quote": "Our framework enables safe, efficient, and interpretable cross-user knowledge sharing, with provable adherence to asymmetric, time-varying policies and full auditability of memory operations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.7"
+        },
+        {
+          "question": "q3",
+          "claim": "The read and write policies may be designed conditioned on system, agent, and user-level information.",
+          "quote": "Both policies may be designed conditioned on system, agent, and user-level information.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 11
+    },
+    {
+      "id": "db9e02a2cb",
+      "url": "https://arxiv.org/abs/2604.04853",
+      "title": "MemMachine: A Ground-Truth-Preserving Memory System for Personalized AI Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-04-06",
+      "org": "Shu Wang, Edwin Yu, Oscar Love, Tom Zhang, Tom Wong, Steve Scargall, Charles Fan",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "MemMachine is an open-source memory system for personalized AI agents that integrates short-term, long-term episodic, and profile memory, stores entire conversational episodes, and reduces lossy LLM-based extraction.",
+          "quote": "We present MemMachine, an open-source memory system that integrates short-term, long-term episodic, and profile memory within a ground-truth-preserving architecture that stores entire conversational episodes and reduces lossy LLM-based extraction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.1"
+        },
+        {
+          "question": "q3",
+          "claim": "MemMachine uses contextualized retrieval that expands nucleus matches with surrounding context to improve recall when relevant evidence spans multiple dialogue turns.",
+          "quote": "MemMachine uses contextualized retrieval that expands nucleus matches with surrounding context, improving recall when relevant evidence spans multiple dialogue turns.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.2"
+        },
+        {
+          "question": "q3",
+          "claim": "MemMachine reaches 0.9169 on LoCoMo using gpt4.1-mini and 93.0 percent accuracy on LongMemEvalS, with retrieval-stage optimizations outperforming ingestion-stage gains.",
+          "quote": "Across benchmarks, MemMachine achieves strong accuracy-efficiency tradeoffs: on LoCoMo it reaches 0.9169 using gpt4.1-mini; on LongMemEvalS (ICLR 2025), a six-dimension ablation yields 93.0 percent accuracy, with retrieval-stage optimizations -- retrieval depth tuning (+4.2 percent), context formatting (+2.0 percent), search prompt design (+1.8 percent), and query bias correction (+1.4 percent) -- outperforming ingestion-stage gains such as sentence chunking (+0.8 percent).",
+          "numbers": [
+            "0.9169",
+            "93.0 percent",
+            "+4.2 percent",
+            "+2.0 percent",
+            "+1.8 percent",
+            "+1.4 percent",
+            "+0.8 percent"
+          ],
+          "corroborated_by": [],
+          "id": "S12.3"
+        },
+        {
+          "question": "q3",
+          "claim": "GPT-5-mini exceeds GPT-5 by 2.6 percent when paired with optimized prompts, making it the most cost-efficient setup.",
+          "quote": "GPT-5-mini exceeds GPT-5 by 2.6 percent when paired with optimized prompts, making it the most cost-efficient setup.",
+          "numbers": [
+            "2.6 percent"
+          ],
+          "corroborated_by": [],
+          "id": "S12.4"
+        },
+        {
+          "question": "q3",
+          "claim": "A companion Retrieval Agent adaptively routes queries among direct retrieval, parallel decomposition, or iterative chain-of-query strategies, achieving 93.2 percent on HotpotQA-hard and 92.6 percent on WikiMultiHop under randomized-noise conditions.",
+          "quote": "A companion Retrieval Agent adaptively routes queries among direct retrieval, parallel decomposition, or iterative chain-of-query strategies, achieving 93.2 percent on HotpotQA-hard and 92.6 percent on WikiMultiHop under randomized-noise conditions.",
+          "numbers": [
+            "93.2 percent",
+            "92.6 percent"
+          ],
+          "corroborated_by": [],
+          "id": "S12.5"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper states that LLM agents require persistent memory for personalization, factual continuity, and long-horizon reasoning, but standard context-window and RAG pipelines degrade over multi-session interactions.",
+          "quote": "Large Language Model (LLM) agents require persistent memory to maintain personalization, factual continuity, and long-horizon reasoning, yet standard context-window and retrieval-augmented generation (RAG) pipelines degrade over multi-session interactions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.6"
+        },
+        {
+          "question": "q5",
+          "claim": "Compared to Mem0, MemMachine uses roughly 80 percent fewer input tokens under matched conditions.",
+          "quote": "Compared to Mem0, MemMachine uses roughly 80 percent fewer input tokens under matched conditions.",
+          "numbers": [
+            "80 percent"
+          ],
+          "corroborated_by": [],
+          "id": "S12.7"
+        },
+        {
+          "question": "q5",
+          "claim": "MemMachine is presented as an open-source memory system.",
+          "quote": "We present MemMachine, an open-source memory system that integrates short-term, long-term episodic, and profile memory within a ground-truth-preserving architecture that stores entire conversational episodes and reduces lossy LLM-based extraction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 12
+    },
+    {
+      "id": "eb2a2256a8",
+      "url": "https://arxiv.org/abs/2606.16903",
+      "title": "Directory-Aware Query and Maintenance in Vector Databases",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-06-15",
+      "org": "Mengzhao Wang et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Vector databases typically manage metadata as flat scalar attributes, which limits their ability to express hierarchical directory semantics commonly used to organize code repositories, enterprise documents, and agent memories.",
+          "quote": "Vector databases typically manage metadata as flat scalar attributes, which limits their ability to express hierarchical directory semantics commonly used to organize code repositories, enterprise documents, and agent memories.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Directory-scoped retrieval and structural updates in vector databases are often implemented as application-layer workarounds, making recursive scope resolution expensive and directory maintenance difficult to keep consistent.",
+          "quote": "As a result, directory-scoped retrieval and structural updates are often implemented as application-layer workarounds, making recursive scope resolution expensive and directory maintenance difficult to keep consistent.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.2"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper formalizes two core operators: Directory-Semantic Query (DSQ) for hierarchically scoped retrieval, and Directory-Semantic Maintenance (DSM) for structural updates.",
+          "quote": "We formalize two core operators: Directory-Semantic Query (DSQ) for hierarchically scoped retrieval, and Directory-Semantic Maintenance (DSM) for structural updates.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper evaluates three implementation strategies: query-time path expansion (PE-Online), ingestion-time path expansion (PE-Offline), and a Trie-based Hierarchical Index (TrieHI).",
+          "quote": "We then evaluate three implementation strategies: query-time path expansion (PE-Online), ingestion-time path expansion (PE-Offline), and a Trie-based Hierarchical Index (TrieHI).",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S13.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The analysis exposes fundamental limitations of expansion-based designs: flattening the hierarchy incurs high recursive-query latency in PE-Online and unscalable write amplification during structural changes in both expansion strategies.",
+          "quote": "Our analysis exposes the fundamental limitations of expansion-based designs: flattening the hierarchy incurs high recursive-query latency in PE-Online and unscalable write amplification during structural changes in both expansion strategies.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.5"
+        },
+        {
+          "question": "q3",
+          "claim": "TrieHI keeps the directory topology as a native prefix tree, enabling efficient recursive retrieval through tree traversal and reducing maintenance cost through topological node manipulation.",
+          "quote": "In contrast, TrieHI keeps the directory topology as a native prefix tree, enabling efficient recursive retrieval through tree traversal and reducing maintenance cost through topological node manipulation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.6"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper benchmarks these design points within ByteDance's Viking vector search engine and releases two large-scale datasets, WIKI-Dir and ARXIV-Dir, to support future research on directory-semantic vector search.",
+          "quote": "We benchmark these design points within ByteDance's Viking vector search engine and release two large-scale datasets, WIKI-Dir and ARXIV-Dir, to support future research on directory-semantic vector search.",
+          "numbers": [
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S13.7"
+        },
+        {
+          "question": "q3",
+          "claim": "TrieHI has been integrated into OpenViking, an open-source context database for AI agents, where it supports filesystem-style context organization and directory-recursive retrieval.",
+          "quote": "Finally, TrieHI has been integrated into OpenViking, an open-source context database for AI agents, where it supports filesystem-style context organization and directory-recursive retrieval.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 13
+    },
+    {
+      "id": "3351e65574",
+      "url": "https://github.com/NORTHTEKDevs/genome",
+      "title": "NORTHTEKDevs/genome",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-09-04",
+      "org": "NORTHTEKDevs",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "GENOME is an auditable memory layer for AI agents with zero-LLM-call local ingest at about 10ms per message, air-gapped operation, accuracy matching Mem0 at about 1000x lower ingest cost, bi-temporal belief-state, an MCP server, LoCoMo/LongMemEval benchmarks, and an Apache-2.0 open-source license.",
+          "quote": "Title: GitHub - NORTHTEKDevs/genome: Auditable memory layer for AI agents: zero-LLM-call local ingest (~10ms/msg, air-gapped), matches Mem0 on accuracy at ~1000x lower ingest cost, bi-temporal belief-state, MCP server. Honest LoCoMo/LongMemEval benchmarks. Open source (Apache-2.0).",
+          "numbers": [
+            "~10ms/msg",
+            "~1000x"
+          ],
+          "corroborated_by": [],
+          "id": "S14.1"
+        },
+        {
+          "question": "q2",
+          "claim": "GENOME claims deterministic bi-temporal belief-state and an MCP server for any client, alongside zero-LLM-call local ingest and Mem0-comparable answer accuracy at much lower ingest cost.",
+          "quote": "Zero-LLM-call local ingest (~10ms/msg, air-gapped); matches Mem0 on answer accuracy at ~1000x lower ingest cost; deterministic bi-temporal belief-state; MCP server for any client. Honest LoCoMo/LongMemEval benchmarks.",
+          "numbers": [
+            "~10ms/msg",
+            "~1000x"
+          ],
+          "corroborated_by": [],
+          "id": "S14.2"
+        },
+        {
+          "question": "q5",
+          "claim": "GENOME is now open source under the Apache License 2.0.",
+          "quote": "GENOME is now open source under the Apache License 2.0.",
+          "numbers": [
+            "2.0"
+          ],
+          "corroborated_by": [],
+          "id": "S14.3"
+        },
+        {
+          "question": "q4",
+          "claim": "A past ScopeEpochs bug caused any tenant's write to invalidate every other tenant's cached query, breaking the cache in the multi-tenant workload it was built for.",
+          "quote": "ScopeEpochs bumped a global counter on every mutation and folded it into every scoped lookup, so any tenant's write invalidated every other tenant's cached query. The cache stopped working in exactly the multi-tenant workload the per-scope epoch was built for.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.4"
+        },
+        {
+          "question": "q5",
+          "claim": "A consolidation bug silently destroyed the entity graph and all fact history by ranking entity and entity-fact records with the same access/recency fitness used for episodic memories and deleting the lowest scorers.",
+          "quote": "DATA LOSS - consolidate() ranked entity and entity-fact records by the same access/recency fitness used for episodic memories and deleted the lowest scorers. Combining the temporal knowledge graph with consolidation silently destroyed the entity graph and all fact history: no error, no warning, no test covering it.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The REST server initially lacked a trust policy and provenance field, so every HTTP write was untagged, nothing could be quarantined, and the memory firewall was unreachable for service and TypeScript SDK users.",
+          "quote": "The REST server was the third entry point and nobody looked: create_app built its Memory with no trust policy and AddRequest had no provenance field, so every HTTP write was untagged, nothing could ever be quarantined, and the firewall was unreachable for anyone running GENOME as a service or through the TypeScript SDK.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.6"
+        },
+        {
+          "question": "q4",
+          "claim": "GENOME's MCP forget operation previously had no relevance floor, so any query deleted its nearest neighbour; it now uses min_score with a default 0.5 cosine threshold and refuses below it.",
+          "quote": "- MCP forget: Memory.search has no relevance floor, so any query deleted its nearest neighbour. forget now takes min_score (default 0.5 cosine), refuses below it, and reports the best candidate.",
+          "numbers": [
+            "0.5"
+          ],
+          "corroborated_by": [],
+          "id": "S14.7"
+        }
+      ],
+      "dropped": 1,
+      "n": 14
+    },
+    {
+      "id": "5642eb51e9",
+      "url": "https://arxiv.org/abs/2606.28781",
+      "title": "HyphaeDB: A Living Knowledge Topology for Agent-First Memory",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-06-27",
+      "org": "Krishna Halaharvi",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Existing vector databases and agent memory frameworks treat memory as passive storage that agents query explicitly, and no system propagates knowledge between agents through the memory layer itself.",
+          "quote": "Every existing vector database and agent memory framework treats memory as passive storage that agents query explicitly. No system propagates knowledge between agents through the memory layer itself.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.1"
+        },
+        {
+          "question": "q2",
+          "claim": "HyphaeDB reinterprets the HNSW graph topology, the core data structure of every modern vector database, not as a search optimization but as a communication fabric for multi-agent AI systems.",
+          "quote": "We introduce HyphaeDB, an agent-native memory infrastructure that reinterprets the Hierarchical Navigable Small World (HNSW) graph topology the data structure at the core of every modern vector database not as a search optimization, but as a communication fabric for multi-agent AI systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.2"
+        },
+        {
+          "question": "q3",
+          "claim": "In HyphaeDB, agents are nodes in vector space with persistent positions; knowledge propagates via a gossip protocol through the graph's neighbor structure with energy-based attenuation; emergent behaviors include contradiction detection, pattern crystallization, and consensus formation.",
+          "quote": "In HyphaeDB, agents are nodes in the vector space with persistent positions, knowledge propagates via a gossip protocol through the graph's neighbor structure with energy-based attenuation, and emergent behaviors contradiction detection, pattern crystallization, and consensus formation arise from the combination of topology, propagation dynamics, and local interaction rules.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The HyphaeDB architecture is built on three primitives: knowledge nodes, topology edges, and memory diffs, with a multi-layer abstraction hierarchy and promotion via emergent consensus.",
+          "quote": "We present the architecture built on three primitives (knowledge nodes, topology edges, and memory diffs), a multi-layer abstraction hierarchy with promotion via emergent consensus, and theoretical analysis grounding the system in small-world network theory, epidemic broadcast protocols, and swarm intelligence.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S15.4"
+        },
+        {
+          "question": "q3",
+          "claim": "HyphaeDB provides a reference implementation on PostgreSQL with pgvector and describes a concrete deployment in Swarm-Driven Development, a multi-agent software engineering methodology.",
+          "quote": "We provide a reference implementation on PostgreSQL with pgvector and describe a concrete deployment in Swarm-Driven Development, a multi-agent software engineering methodology.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.5"
+        },
+        {
+          "question": "q3",
+          "claim": "The authors claim HyphaeDB is the first system to combine navigable small world topology with gossip-based knowledge propagation for multi-agent coordination.",
+          "quote": "HyphaeDB represents, to our knowledge, the first system to combine navigable small world topology with gossip-based knowledge propagation for multi-agent coordination.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper identifies as an open gap that no existing system propagates knowledge between agents through the memory layer itself.",
+          "quote": "No system propagates knowledge between agents through the memory layer itself.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 15
+    },
+    {
+      "id": "678aa99eec",
+      "url": "https://arxiv.org/abs/2603.15690",
+      "title": "Loosely-Structured Software: Engineering Context, Structure, and Evolution Entropy in Runtime-Rewired Multi-Agent Systems",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-03-16",
+      "org": "Weihao Zhang, Yitong Zhou, Huanyu Qu, Hongyi Li",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "Scaling the number of agents often amplifies context pressure, coordination errors, and system drift.",
+          "quote": "However, scaling the number of agents often amplifies context pressure, coordination errors, and system drift.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.1"
+        },
+        {
+          "question": "q4",
+          "claim": "Building robust multi-agent systems requires more than prompt tuning or increased model intelligence; it requires architecture-focused engineering discipline to manage complexity under uncertainty.",
+          "quote": "It is well known that building robust MAS requires more than prompt tuning or increased model intelligence. It necessitates engineering discipline focused on architecture to manage complexity under uncertainty.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Agentic software is characterized by runtime generation and evolution under uncertainty.",
+          "quote": "We characterize agentic software by a core property: \\emph{runtime generation and evolution under uncertainty}.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.3"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper proposes a three-layer engineering framework whose first layer is View/Context Engineering to manage the execution environment and maintain task-relevant Views.",
+          "quote": "we introduce design principles under a three-layer engineering framework: \\emph{View/Context Engineering} to manage the execution environment and maintain task-relevant Views, \\emph{Structure Engineering} to organize dynamic binding over artifacts and agents, and \\emph{Evolution Engineering} to govern the lifecycle of self-rewriting artifacts.",
+          "numbers": [
+            "three-layer"
+          ],
+          "corroborated_by": [],
+          "id": "S16.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper claims its abstractions improve the designability, scalability, and evolvability of agentic infrastructure.",
+          "quote": "Together, these abstractions improve the \\emph{designability}, \\emph{scalability}, and \\emph{evolvability} of agentic infrastructure.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.5"
+        },
+        {
+          "question": "q5",
+          "claim": "LSS design patterns are presented as semantic control blocks that stabilize fluid, inference-mediated interactions while preserving agent adaptability.",
+          "quote": "Building on this framework, we develop LSS design patterns as semantic control blocks that stabilize fluid, inference-mediated interactions while preserving agent adaptability.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.6"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper provides basic experimental validation of key mechanisms, demonstrating the effectiveness of LSS.",
+          "quote": "We provide basic experimental validation of key mechanisms, demonstrating the effectiveness of LSS.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 16
+    },
+    {
+      "id": "6f63852278",
+      "url": "https://arxiv.org/abs/2604.22879",
+      "title": "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-04-24",
+      "org": "Jie Wu, Ming Gong",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "The paper identifies and formalizes Context-Fragmented Violations (CFVs), which are policy breaches where individual agent actions look locally safe but collectively violate organizational policies because critical policy facts are siloed in different departments' private contexts.",
+          "quote": "We identify and formalize a novel security risk: Context-Fragmented Violations (CFVs) - a class of policy breaches where individual agent actions appear locally safe and reasonable, yet collectively violate organizational policies because critical policy facts are siloed in different departments private contexts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.1"
+        },
+        {
+          "question": "q4",
+          "claim": "Existing prompt-based alignment mechanisms and monolithic interceptors are poorly matched to violations spanning contextual islands.",
+          "quote": "Existing prompt-based alignment mechanisms and monolithic interceptors are poorly matched to violations that span contextual islands.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.2"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper proposes Distributed Sentinel, a distributed zero-trust enforcement architecture using a Semantic Taint Token (STT) Protocol and lightweight sidecar proxies to propagate security state across organizational boundaries without exposing raw cross-domain data, enabling Counterfactual Graph Simulation for cross-domain policy verification.",
+          "quote": "We propose Distributed Sentinel, a distributed zero-trust enforcement architecture that introduces the Semantic Taint Token (STT) Protocol. Through lightweight sidecar proxies, our system propagates security state across organizational boundaries without exposing raw cross-domain data, enabling Counterfactual Graph Simulation for cross-domain policy verification.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The authors construct PhantomEcosystem, a benchmark with 9 categories of realistic cross-agent violation scenarios and adversarially balanced safe controls.",
+          "quote": "We construct PhantomEcosystem, a comprehensive benchmark comprising 9 categories of realistic cross-agent violation scenarios with adversarially balanced safe controls.",
+          "numbers": [
+            "9"
+          ],
+          "corroborated_by": [],
+          "id": "S17.4"
+        },
+        {
+          "question": "q3",
+          "claim": "On the PhantomEcosystem benchmark, Distributed Sentinel achieves F1 = 0.95 with 106ms end-to-end latency, 16ms verification and 90ms entity extraction on A100, compared to 0.85 F1 for prompt-based filtering and 0.65 for rule-based DLP.",
+          "quote": "On this benchmark, Distributed Sentinel achieves F1 = 0.95 with 106ms end-to-end latency (16ms verification + 90ms entity extraction on A100), compared to 0.85 F1 for prompt-based filtering and 0.65 for rule-based DLP.",
+          "numbers": [
+            "0.95",
+            "106ms",
+            "16ms",
+            "90ms",
+            "A100",
+            "0.85",
+            "0.65"
+          ],
+          "corroborated_by": [],
+          "id": "S17.5"
+        },
+        {
+          "question": "q4",
+          "claim": "Evaluation of eight frontier LLMs in execution-oriented multi-agent workflows with per-agent domain world models found substantial violation rates of 14-98%, with cross-domain data flows showing systematically higher violation rates than same-domain flows.",
+          "quote": "To empirically validate the need for external enforcement, we evaluate eight frontier LLMs in execution-oriented multi-agent workflows with per-agent domain world models. All models exhibit substantial violation rates (14-98%), with cross-domain data flows showing systematically higher violation rates than same-domain flows.",
+          "numbers": [
+            "eight",
+            "14-98%"
+          ],
+          "corroborated_by": [],
+          "id": "S17.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper concludes that self-avoidance is unreliable and that multi-agent security benefits from a centralized enforcement layer operating above individual agents.",
+          "quote": "These results indicate that self-avoidance is unreliable and that multi-agent security benefits from a centralized enforcement layer operating above individual agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 17
+    },
+    {
+      "id": "75e72ad208",
+      "url": "https://arxiv.org/abs/2605.14892",
+      "title": "Beyond Individual Intelligence: Surveying Collaboration, Failure Attribution, and Self-Evolution in LLM-based Multi-Agent Systems",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-05-14",
+      "org": "Shihao Qi et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "LLM-based autonomous agents remain limited when tasks require sustained coordination across roles, tools, and environments.",
+          "quote": "LLM-based autonomous agents have demonstrated strong capabilities in reasoning, planning, and tool use, yet remain limited when tasks require sustained coordination across roles, tools, and environments.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.1"
+        },
+        {
+          "question": "q4",
+          "claim": "Tighter coordination in multi-agent systems amplifies the risk that errors propagate across agents and interaction rounds, producing failures that are difficult to diagnose and rarely lead to structural self-improvement.",
+          "quote": "Multi-agent systems address this through structured collaboration among specialized agents, but tighter coordination also amplifies a less explored risk: errors can propagate across agents and interaction rounds, producing failures that are difficult to diagnose and rarely translate into structural self-improvement.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.2"
+        },
+        {
+          "question": "q5",
+          "claim": "Existing surveys cover individual agent capabilities, multi-agent collaboration, or agent self-evolution separately, leaving the causal dependencies among them unexamined.",
+          "quote": "Existing surveys cover individual agent capabilities, multi-agent collaboration, or agent self-evolution separately, leaving the causal dependencies among them unexamined.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.3"
+        },
+        {
+          "question": "q5",
+          "claim": "The survey identifies open challenges at stage boundaries and proposes a cross-stage research agenda for closed-loop multi-agent systems that can diagnose failures, reorganize structures, and refine agent behaviors.",
+          "quote": "Beyond synthesizing existing work, we identify open challenges at stage boundaries and propose a cross-stage research agenda for closed-loop multi-agent systems capable of continuously diagnosing failures, reorganizing structures, and refining agent behaviors, extending current coordination frameworks toward more self-organizing forms of collective intelligence.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The survey aims to provide a systematic reference and conceptual roadmap toward autonomous, self-improving multi-agent intelligence by bridging previously fragmented research threads.",
+          "quote": "By bridging these previously fragmented research threads, this survey aims to offer both a systematic reference and a conceptual roadmap toward autonomous, self-improving multi-agent intelligence.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The survey organizes its review around four causally linked stages called the LIFE progression: Lay the capability foundation, Integrate agents through collaboration, Find faults through attribution, and Evolve through autonomous self-improvement.",
+          "quote": "This survey provides a unified review organized around four causally linked stages, which we term the LIFE progression: Lay the capability foundation, Integrate agents through collaboration, Find faults through attribution, and Evolve through autonomous self-improvement.",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S18.6"
+        },
+        {
+          "question": "q5",
+          "claim": "For each stage, the survey provides taxonomies and formally characterizes dependencies between adjacent stages, showing that each stage depends on and constrains the next.",
+          "quote": "For each stage, we provide systematic taxonomies and formally characterize the dependencies between adjacent stages, revealing how each stage both depends on and constrains the next.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 18
+    },
+    {
+      "id": "7b79c2d777",
+      "url": "https://arxiv.org/abs/2605.17467",
+      "title": "VerifyMAS: Hypothesis Verification for Failure Attribution in LLM Multi-Agent Systems",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-05-17",
+      "org": "Hezhe Qiao, Hanghang Tong, Ee-Peng Lim, Bing Liu, Guansong Pang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "In LLM multi-agent systems, unreliable agents are a key bottleneck to system-level reliability.",
+          "quote": "Large language model-driven multi-agent systems (LLM-MAS) excel at complex tasks, yet unreliable agents remain a key bottleneck to system-level reliability.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.1"
+        },
+        {
+          "question": "q4",
+          "claim": "Existing failure attribution approaches such as direct prediction of agent-error pairs and agent-first failure attribution rely on local agent logs and miss global failures that only appear over full interaction trajectories, including cross-step inconsistencies and inter-agent coordination errors.",
+          "quote": "Automatic failure attribution is therefore critical, but existing approaches, such as direct prediction of agent-error pairs and agent-first failure attribution, rely on local logs of agents and miss global failures that only manifest over full interaction trajectories, such as cross-step inconsistencies and inter-agent coordination errors.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Directly predicting failures creates a large combinatorial search space that hinders fine-grained attribution.",
+          "quote": "Moreover, directly predicting failures induces a large combinatorial search space, hindering fine-grained attribution.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.3"
+        },
+        {
+          "question": "q3",
+          "claim": "VerifyMAS is a hypothesis verification framework for agent failure attribution that formulates and verifies failure hypotheses against full trajectories rather than directly predicting faulty agents and error types.",
+          "quote": "To address these challenges, we propose VerifyMAS, a hypothesis verification framework for agent failure attribution. Instead of directly predicting faulty agents and error types, VerifyMAS formulates and verifies failure hypotheses against full trajectories.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.4"
+        },
+        {
+          "question": "q3",
+          "claim": "VerifyMAS decomposes attribution into trajectory-level error validation and fine-grained agent localization, capturing global failure patterns while reducing the search space.",
+          "quote": "This verification-based approach decomposes attribution into trajectory-level error validation and fine-grained agent localization, providing an error-first attribution approach that captures global failure patterns while substantially reducing the search space.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.5"
+        },
+        {
+          "question": "q3",
+          "claim": "VerifyMAS uses a hypothesis-based data construction strategy grounded in a structured error taxonomy and fine-tunes a specialized LLM verifier for trajectory-level failure verification and agent attribution.",
+          "quote": "We further introduce a hypothesis-based data construction strategy grounded in a structured error taxonomy and fine-tune a specialized LLM verifier model for trajectory-level failure verification and agent attribution.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Experiments on Aegis-Bench and Who&When show VerifyMAS improves diverse backbone models, including open-source Qwen and API-based GPT models, outperforming prior methods without sacrificing inference efficiency for long multi-agent trajectories.",
+          "quote": "Experiments on Aegis-Bench and Who&When show that VerifyMAS consistently improves diverse backbone models, including open-source Qwen and API-based GPT models, outperforming prior methods without sacrificing inference efficiency for long multi-agent trajectories.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 19
+    },
+    {
+      "id": "7e26aa3bb0",
+      "url": "https://arxiv.org/abs/2606.22528",
+      "title": "Governance Decay: How Context Compaction Silently Erases Safety Constraints in Long-Horizon LLM Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-06-21",
+      "org": "Shiyang Chen",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "The paper argues that context compaction, summarization, or eviction is a safety-critical failure surface because in-context governance constraints that agents obey while visible can be silently removed, causing the same agent to perform prohibited tool actions later in a session.",
+          "quote": "Modern LLM agents increasingly rely on context compaction, summarization, or eviction to keep long-running sessions within a token budget. We show that this context-management layer is a safety-critical failure surface: in-context governance constraints that agents reliably obey while visible can be silently removed by compaction, causing the same agent to perform prohibited tool actions later in the session.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper names this compaction-induced safety failure mode Governance Decay.",
+          "quote": "We call this failure mode Governance Decay.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Across 1,323 episodes, policy violation rises from 0% with the policy in full context to 30% after compaction, reaching 59% for some models; when the constraint survives the summary violation remains 0%, but when it is dropped violation reaches 38%.",
+          "quote": "Across 1,323 episodes, violation rises from 0% with the policy in full context to 30% after compaction, reaching 59% for some models; when the constraint survives the summary, violation remains 0%, but when it is dropped, violation reaches 38%.",
+          "numbers": [
+            "1,323",
+            "0%",
+            "30%",
+            "59%",
+            "0%",
+            "38%"
+          ],
+          "corroborated_by": [],
+          "id": "S20.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper introduces ConstraintRot, a benchmark of long-horizon agent scenarios with deterministic tool-call grading, and measures compaction-induced violations across seven model families.",
+          "quote": "We introduce ConstraintRot, a benchmark of long-horizon agent scenarios with deterministic tool-call grading, and measure compaction-induced violations across seven model families.",
+          "numbers": [
+            "seven"
+          ],
+          "corroborated_by": [],
+          "id": "S20.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper studies a Compaction-Eviction Attack in which adversarial in-context content biases the summarizer to omit a legitimate policy, and reports that optimized injections defeat every evaluated model.",
+          "quote": "We further study a Compaction-Eviction Attack, in which adversarial in-context content biases the summarizer to omit a legitimate policy, and show that optimized injections defeat every evaluated model.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper proposes Constraint Pinning, a training-free mitigation that quarantines governance constraints from lossy compaction and restores violation to 0% in its benchmark.",
+          "quote": "Finally, we propose Constraint Pinning, a simple training-free mitigation that quarantines governance constraints from lossy compaction and restores violation to 0% in our benchmark.",
+          "numbers": [
+            "0%"
+          ],
+          "corroborated_by": [],
+          "id": "S20.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper concludes that context management should be treated as a first-class governance surface for deployed LLM agents.",
+          "quote": "These results identify context management as a first-class governance surface for deployed LLM agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 20
+    },
+    {
+      "id": "8a66195cbf",
+      "url": "https://arxiv.org/abs/2503.11951",
+      "title": "SagaLLM: Context Management, Validation, and Transaction Guarantees for Multi-Agent LLM Planning",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-03-15",
+      "org": "Edward Y. Chang and Longling Geng",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "The paper identifies four foundational limitations of current LLM-based planning systems: unreliable self-validation, context loss, lack of transactional safeguards, and insufficient inter-agent coordination.",
+          "quote": "This paper introduces SagaLLM, a structured multi-agent architecture designed to address four foundational limitations of current LLM-based planning systems: unreliable self-validation, context loss, lack of transactional safeguards, and insufficient inter-agent coordination.",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S21.1"
+        },
+        {
+          "question": "q3",
+          "claim": "SagaLLM integrates the Saga transactional pattern with persistent memory, automated compensation, and independent validation agents.",
+          "quote": "SagaLLM bridges this gap by integrating the Saga transactional pattern with persistent memory, automated compensation, and independent validation agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Recent frameworks often fail to ensure consistency, rollback, or constraint satisfaction across distributed workflows.",
+          "quote": "While recent frameworks leverage LLMs for task decomposition and multi-agent communication, they often fail to ensure consistency, rollback, or constraint satisfaction across distributed workflows.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.3"
+        },
+        {
+          "question": "q4",
+          "claim": "Empirical evaluations across planning domains show that standalone LLMs frequently violate interdependent constraints or fail to recover from disruptions.",
+          "quote": "Empirical evaluations across planning domains demonstrate that standalone LLMs frequently violate interdependent constraints or fail to recover from disruptions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.4"
+        },
+        {
+          "question": "q3",
+          "claim": "SagaLLM claims significant improvements in consistency, validation accuracy, and adaptive coordination under uncertainty.",
+          "quote": "In contrast, SagaLLM achieves significant improvements in consistency, validation accuracy, and adaptive coordination under uncertainty, establishing a robust foundation for real-world, scalable LLM-based multi-agent systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.5"
+        },
+        {
+          "question": "q5",
+          "claim": "SagaLLM relaxes strict ACID guarantees but ensures workflow-wide consistency and recovery through modular checkpointing and compensable execution.",
+          "quote": "Although SagaLLM relaxes strict ACID guarantees, it ensures workflow-wide consistency and recovery through modular checkpointing and compensable execution.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.6"
+        },
+        {
+          "question": "q3",
+          "claim": "SagaLLM uses LLM generative reasoning to automate state tracking, dependency analysis, log schema generation, and recovery orchestration.",
+          "quote": "It leverages LLMs' generative reasoning to automate key tasks traditionally requiring hand-coded coordination logic, including state tracking, dependency analysis, log schema generation, and recovery orchestration.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 21
+    },
+    {
+      "id": "aa450824d8",
+      "url": "https://arxiv.org/abs/2609.12320",
+      "title": "AIM: A Privacy-Aware Interoperable Memory Framework for Multi-Agent Multi-User LLM Systems",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-14",
+      "org": "Zachary Johnson et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Existing agentic memory systems generally operate at the individual-user level and restrict the public knowledge that could be shared across users to improve downstream responses.",
+          "quote": "Existing agentic memory systems address this limitation but generally operate at the individual-user level, restricting the public knowledge that could be shared across users to improve downstream responses.",
+          "numbers": [],
+          "corroborated_by": [
+            22
+          ],
+          "id": "S22.1"
+        },
+        {
+          "question": "q2",
+          "claim": "AIM classifies information as either private, scoped to one user and inaccessible to others, or public, accessible to all users, and enforces index-level access controls so private memories are retrievable only by their owner.",
+          "quote": "AIM dynamically classifies information as private, scoped to one user and inaccessible to others, or public, accessible to all users. It enforces index-level access controls so that private memories are retrievable only by their owner, protecting sensitive data while allowing beneficial shared knowledge to improve coordination and consistency.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.2"
+        },
+        {
+          "question": "q3",
+          "claim": "AIM is a unified, privacy-aware memory framework that enables multi-agent, multi-user LLM systems to persistently manage private and shared memory.",
+          "quote": "We introduce AIM (Agentic Interoperable Memory), a unified, privacy-aware memory framework that enables multi-agent, multi-user LLM systems to persistently manage private and shared memory.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.3"
+        },
+        {
+          "question": "q3",
+          "claim": "MUMBench is a dataset of multi-user interactions containing private and shareable information across four domains, and the authors describe it as the first public dataset designed to evaluate retrieval, creation, update, and deletion in a multi-user environment.",
+          "quote": "We also introduce MUMBench (Multi-User Memory Benchmark), a dataset of multi-user interactions containing private and shareable information across four domains. To our knowledge, MUMBench is the first public dataset designed to evaluate multiple memory operations, including retrieval, creation, update, and deletion, in a multi-user environment.",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S22.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Across three independent runs on MUMBench, AIM achieves 96.0% visibility classification accuracy, 58.8% strict operation accuracy, and 70.5% state-aware operation accuracy.",
+          "quote": "Across three independent runs on MUMBench, AIM achieves 96.0% visibility classification accuracy, 58.8% strict operation accuracy, and 70.5% state-aware operation accuracy.",
+          "numbers": [
+            "three",
+            "96.0%",
+            "58.8%",
+            "70.5%"
+          ],
+          "corroborated_by": [],
+          "id": "S22.5"
+        },
+        {
+          "question": "q4",
+          "claim": "Traditional LLMs are scoped to individual user sessions, limiting their knowledge to a single conversation and preventing them from learning user preferences that evolve over time.",
+          "quote": "Traditional large language models (LLMs) are scoped to individual user sessions, limiting their knowledge to a single conversation and preventing them from learning user preferences that evolve over time.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 22
+    },
+    {
+      "id": "d76b9dd770",
+      "url": "https://arxiv.org/abs/2606.31564",
+      "title": "ACE: Pluggable Adaptive Context Elasticizer across Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-06-30",
+      "org": "Ning Liao et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q5",
+          "claim": "The paper states that growing agentic task complexity increases trajectory lengths, challenging LLM agents with fixed context windows.",
+          "quote": "The increasing complexity of agentic tasks has led to rapidly growing trajectory lengths, which poses significant challenges for large language model (LLM) based agents with fixed context windows.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.1"
+        },
+        {
+          "question": "q5",
+          "claim": "Existing context management methods such as truncation and summarization are inflexible and irreversible, because discarded or compressed information cannot be recovered later when it becomes relevant.",
+          "quote": "Existing context management techniques, such as truncation and summarization, suffer from inherent inflexibility and irreversibility: once information is discarded or compressed, it cannot be recovered even when it becomes critically relevant in later decision steps.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.2"
+        },
+        {
+          "question": "q3",
+          "claim": "ACE is proposed as a plug-and-play module that elastically orchestrates historical step information into the agent's context at each decision step.",
+          "quote": "To address these limitations, we propose the Adaptive Context Elasticizer (ACE), a plug-and-play module that elastically orchestrates historical step information into the agent's context at each decision step.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.3"
+        },
+        {
+          "question": "q3",
+          "claim": "ACE uses a lossless message maintenance layer storing raw messages and compressed abstractions for each historical step, plus a context orchestration layer that assigns each step an elastic type of raw, abstract, or drop based on the current task state.",
+          "quote": "ACE maintains a lossless message maintenance layer that stores both raw messages and compressed abstractions for each historical step, while a context orchestration layer adaptively assigns each step an elastic type as raw, abstract, or drop, at every decision step based on the current task state.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.4"
+        },
+        {
+          "question": "q3",
+          "claim": "ACE's reversible design is intended to ensure the main LLM always receives a compact yet information-rich context.",
+          "quote": "This reversible design ensures that the main LLM always receives a compact yet information-rich context.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.5"
+        },
+        {
+          "question": "q3",
+          "claim": "ACE was adapted to four agent frameworks—ReAct, DeepAgent, WebThinker, and MiroFlow—without training or architectural modifications.",
+          "quote": "We adapt ACE to four diverse agent frameworks, including ReAct, DeepAgent, WebThinker, and MiroFlow, without training or architectural modifications.",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S23.6"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper reports that ACE consistently outperforms truncation and summarization baselines and brings consistent performance gains across all four agent frameworks.",
+          "quote": "Experiments show that ACE consistently outperforms truncation and summarization baselines, and brings consistent performance gains across all four agent frameworks.",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S23.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 23
+    },
+    {
+      "id": "e172916858",
+      "url": "https://arxiv.org/abs/2607.19359",
+      "title": "Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-06-01",
+      "org": "Shengtong Zhu",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "ProGraph is a two-layer memory architecture for LLM agents that combines profile expansion and compression residuals.",
+          "quote": "Second, we present Profile-Graph Memory (ProGraph), a two-layer memory architecture combining (i) profile expansion -- substring-matched traversal of entity names that naturally appear in LLM-written profile narratives, a minimal alternative to explicit knowledge-graph construction -- and (ii) compression residuals -- exact dates, quantities, and named items co-extracted with each profile update at zero extra API cost.",
+          "numbers": [
+            "two-layer"
+          ],
+          "corroborated_by": [],
+          "id": "S24.1"
+        },
+        {
+          "question": "q3",
+          "claim": "ProGraph averages 80.1% on MemHop and 78.4% on LoCoMo, exceeding FullContext by 11.3 percentage points on LoCoMo and outperforming Mem0, A-Mem, HippoRAG, and RAG on both benchmarks.",
+          "quote": "ProGraph averages 80.1% on MemHop (matching the FullContext reference) and 78.4% on LoCoMo (exceeding FullContext by 11.3pp), outperforming Mem0, A-Mem, HippoRAG, and RAG on both.",
+          "numbers": [
+            "80.1%",
+            "78.4%",
+            "11.3pp"
+          ],
+          "corroborated_by": [],
+          "id": "S24.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Removing profile expansion reduces MemHop performance by 22.6 percentage points, not co-extracting compression residuals reduces LoCoMo precision recall by 8.6 percentage points, and cross-effects are under 3 percentage points.",
+          "quote": "Third, a full-grid ablation shows cross-benchmark mechanism specialization: profile expansion drives multi-hop reasoning (-22.6pp on MemHop when removed) while compression residuals drive precision recall (-8.6pp on LoCoMo when not co-extracted), with cross-effects under 3pp within a single architecture.",
+          "numbers": [
+            "-22.6pp",
+            "-8.6pp",
+            "3pp"
+          ],
+          "corroborated_by": [],
+          "id": "S24.3"
+        },
+        {
+          "question": "q3",
+          "claim": "MemHop is a multi-hop memory benchmark of 1,000 questions at hop depths 1-5 across 10 social-network scenarios with per-hop evidence annotations.",
+          "quote": "First, we introduce MemHop, a multi-hop memory benchmark of 1,000 questions at hop depths 1-5 across 10 social-network scenarios, with per-hop evidence annotations.",
+          "numbers": [
+            "1,000",
+            "1-5",
+            "10"
+          ],
+          "corroborated_by": [],
+          "id": "S24.4"
+        },
+        {
+          "question": "q5",
+          "claim": "Current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured.",
+          "quote": "Long-term memory is essential for LLM agents that interact across sessions, yet current memory benchmarks primarily evaluate single-hop recall, leaving multi-hop association largely unmeasured.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.5"
+        },
+        {
+          "question": "q2",
+          "claim": "Profile expansion uses substring-matched traversal of entity names in LLM-written profile narratives as a minimal alternative to explicit knowledge-graph construction.",
+          "quote": "Second, we present Profile-Graph Memory (ProGraph), a two-layer memory architecture combining (i) profile expansion -- substring-matched traversal of entity names that naturally appear in LLM-written profile narratives, a minimal alternative to explicit knowledge-graph construction -- and (ii) compression residuals -- exact dates, quantities, and named items co-extracted with each profile update at zero extra API cost.",
+          "numbers": [
+            "two-layer",
+            "zero"
+          ],
+          "corroborated_by": [],
+          "id": "S24.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The authors release MemHop, ProGraph, and baseline implementations.",
+          "quote": "We release MemHop, ProGraph, and baseline implementations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 24
+    },
+    {
+      "id": "efcb6643a3",
+      "url": "https://arxiv.org/abs/2605.28969",
+      "title": "Beyond Recall: Behavioral Specification as an Interpretive Layer for AI Personalization",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-05-27",
+      "org": "Aarik Gulaya",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "The paper evaluates a Behavioral Specification alongside full raw corpus, full extracted facts, and four commercial memory systems: Mem0, Letta, Supermemory, and Zep.",
+          "quote": "We test it independently and in composition with a range of context conditions: full raw corpus, full extracted facts, and four commercial memory systems (Mem0, Letta, Supermemory, Zep).",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S25.1"
+        },
+        {
+          "question": "q3",
+          "claim": "Across 14 public-domain autobiographical corpora, the Specification lifted representational accuracy in aggregate and nearly eliminated model hedging.",
+          "quote": "Across 14 public-domain autobiographical corpora, the Specification lifts representational accuracy in aggregate and nearly eliminates model hedging.",
+          "numbers": [
+            "14"
+          ],
+          "corroborated_by": [],
+          "id": "S25.2"
+        },
+        {
+          "question": "q3",
+          "claim": "The Specification recovers most of what the raw corpus delivers at about 25 times less context cost.",
+          "quote": "It recovers most of what the raw corpus delivers, at ~25x less context cost.",
+          "numbers": [
+            "~25x"
+          ],
+          "corroborated_by": [],
+          "id": "S25.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The lift is greatest on interpretation-required questions, where an interpretive layer enables model behavior that extracted facts or raw corpus do not.",
+          "quote": "Lift is greatest on interpretation-required questions, where providing an interpretive layer enables model behavior that extracted facts or raw corpus do not.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.4"
+        },
+        {
+          "question": "q5",
+          "claim": "On recall-required questions, the interpretive layer can interfere rather than help.",
+          "quote": "Conversely, on recall-required questions, this layer can interfere rather than help.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.5"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper concludes that representational accuracy is distinct from recall and that human-AI alignment depends on how accurately the user is represented.",
+          "quote": "We conclude that representational accuracy is distinct from recall and that human-AI alignment is dependent on how accurately the user is represented.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.6"
+        },
+        {
+          "question": "q2",
+          "claim": "The reference implementation compresses a person's data into interpretive patterns that are served as context to a language model.",
+          "quote": "Our reference implementation aggressively compresses a person's data into interpretive patterns, served as context to a language model.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 25
+    },
+    {
+      "id": "3b936f039b",
+      "url": "https://arxiv.org/abs/2606.08151",
+      "title": "Decision-Aware Memory Cards: Counterfactual-Inspired Context Selection and Compression for Tool-Using LLM Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-22",
+      "org": "Xinyu Guan, Qianyang Zhao, Yuming Deng",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "CICL ranks retrieved files, tests, traces, rules, and memories by their expected effect on an agent's next action rather than by semantic similarity alone.",
+          "quote": "We study decision-aware context selection: ranking retrieved files, tests, traces, rules, and memories by their expected effect on an agent's next action rather than by semantic similarity alone.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.1"
+        },
+        {
+          "question": "q2",
+          "claim": "CICL builds an instance context graph, estimates decision-oriented utility for candidate units, and compresses selected evidence into typed memory cards.",
+          "quote": "We present the Counterfactual-Inspired Context Layer (CICL), which builds an instance context graph, estimates decision-oriented utility for candidate units, and compresses selected evidence into typed memory cards.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.2"
+        },
+        {
+          "question": "q2",
+          "claim": "The same selection schema can be instantiated with hosted LLM judges, local surrogates, or lightweight rankers, making the selection protocol auditable across model choices.",
+          "quote": "The same schema can be instantiated with hosted LLM judges, local surrogates, or lightweight rankers, making the selection protocol auditable across model choices.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.3"
+        },
+        {
+          "question": "q3",
+          "claim": "On 50 SWE-bench Verified file-retrieval instances, Qwen3.6-Plus reranking of BM25 top-50 candidates improves hit@1 from 0.58 to 0.78 and MRR@10 from 0.634 to 0.790, with all 2,500 judgments parseable.",
+          "quote": "On 50 SWE-bench Verified file-retrieval instances, Qwen3.6-Plus reranking of BM25 top-50 candidates improves hit@1 from 0.58 to 0.78 and MRR@10 from 0.634 to 0.790, with all 2,500 judgments parseable.",
+          "numbers": [
+            "50",
+            "3.6",
+            "25",
+            "50",
+            "1",
+            "0.58",
+            "0.78",
+            "10",
+            "0.634",
+            "0.790",
+            "2,500"
+          ],
+          "corroborated_by": [],
+          "id": "S26.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Controlled diagnostics show CICL identifies action-critical evidence: removing the top-utility semantic unit reduces F1 from 0.245 to 0.000.",
+          "quote": "Controlled diagnostics show that CICL identifies action-critical evidence: removing the top-utility semantic unit reduces F1 from 0.245 to 0.000.",
+          "numbers": [
+            "0.245",
+            "0.000"
+          ],
+          "corroborated_by": [],
+          "id": "S26.5"
+        },
+        {
+          "question": "q3",
+          "claim": "In selected-then-compressed mode, memory cards save 44.93 tokens per query while preserving selected evidence.",
+          "quote": "In selected-then-compressed mode, memory cards save 44.93 tokens per query while preserving selected evidence.",
+          "numbers": [
+            "44.93"
+          ],
+          "corroborated_by": [],
+          "id": "S26.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 26
+    },
+    {
+      "id": "9671df8e8e",
+      "url": "https://arxiv.org/abs/2607.29422",
+      "title": "AgenticRepair: Multi-Faceted Program Context Engineering for Agentic Vulnerability Repair",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-07-31",
+      "org": "Michael Fu, Qiyue Mei, Patanamon Thongtanunam, Kla Tantithamthavorn",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "AgenticRepair orchestrates three specialized LLM subagents to engineer contexts, which are then embedded into the memory of a dedicated repair subagent for context-conditioned patch synthesis.",
+          "quote": "AgenticRepair orchestrates three specialized LLM subagents to engineer the contexts, which are then embedded into the memory of a dedicated repair subagent for context-conditioned patch synthesis.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S27.1"
+        },
+        {
+          "question": "q3",
+          "claim": "Evaluated on SEC-Bench with 300 real-world instances and sanitizer-based patch verification, AgenticRepair achieves a 73% success rate and outperforms the strongest baseline by 29%.",
+          "quote": "Evaluated on SEC-Bench comprising 300 real-world instances with sanitizer-based patch verification, AgenticRepair achieves a 73% success rate, substantially outperforming the strongest baseline by 29%.",
+          "numbers": [
+            "300",
+            "73%",
+            "29%"
+          ],
+          "corroborated_by": [],
+          "id": "S27.2"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper identifies three critical gaps: code-structure context, runtime-execution context, and commit-history context.",
+          "quote": "We identify three critical gaps: code-structure context capturing cross-file data flows and memory operation patterns, runtime-execution context revealing crash semantics and memory origins, and commit-history context recovering how fragile code patterns were introduced.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S27.3"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper states that vulnerability repair demands richer program context than general bug repair, and that existing agentic approaches do not engineer this context.",
+          "quote": "However, vulnerability repair demands richer program context than general bug repair - context that security engineers routinely assemble in practice but that existing agentic approaches do not engineer.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S27.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The ablation study confirms that the three context facets are mutually complementary and that multi-agent scaffolding and base-model capacity each play an essential role.",
+          "quote": "Our ablation study confirms that the three context facets are mutually complementary, and that multi-agent scaffolding and base-model capacity each play an essential role.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S27.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper concludes that multi-faceted program context engineering is a promising design direction for agentic vulnerability repair.",
+          "quote": "Collectively, these findings establish multi-faceted program context engineering as a promising design direction for agentic vulnerability repair.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S27.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 27
+    },
+    {
+      "id": "90deae7426",
+      "url": "https://arxiv.org/abs/2609.16986",
+      "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-15",
+      "org": "Muhammad Ashar Ishfaq, Glaucia Melo",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions.",
+          "quote": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper investigates inter-agent misalignment cases labelled FC2 in MAST-Data and converts them into functional partner-state reasoning items using four explicit convertibility criteria.",
+          "quote": "We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning items. ToMAS applies four explicit convertibility criteria to diagnosed execution traces.",
+          "numbers": [
+            "FC2",
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S28.2"
+        },
+        {
+          "question": "q4",
+          "claim": "A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items.",
+          "quote": "A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items.",
+          "numbers": [
+            "242",
+            "39"
+          ],
+          "corroborated_by": [],
+          "id": "S28.3"
+        },
+        {
+          "question": "q4",
+          "claim": "In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92.",
+          "quote": "In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92.",
+          "numbers": [
+            "18",
+            "two",
+            "94.4%",
+            "0.92"
+          ],
+          "corroborated_by": [],
+          "id": "S28.4"
+        },
+        {
+          "question": "q4",
+          "claim": "ToMAS provides a preliminary rubric and pipeline for converting diagnosed coordination failures into trainable partner-state reasoning items and identifies requirements for a conclusive matched-domain evaluation.",
+          "quote": "ToMAS provides a preliminary rubric and pipeline for converting diagnosed coordination failures into trainable partner-state reasoning items and identifies the requirements for a conclusive matched-domain evaluation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 28
+    },
+    {
+      "id": "a9e1dcae2d",
+      "url": "https://arxiv.org/abs/2603.25268",
+      "title": "CRAFT: Grounded Multi-Agent Coordination Under Partial Information",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-03-26",
+      "org": "Abhijnan Nath, Hannah VanderHoeven, Nikhil Krishnaswamy",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "The paper introduces CRAFT, a multi-agent benchmark for evaluating pragmatic communication in large language models under strict partial information.",
+          "quote": "We introduce CRAFT, a multi-agent benchmark for evaluating pragmatic communication in large language models under strict partial information.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.1"
+        },
+        {
+          "question": "q4",
+          "claim": "In CRAFT, multiple agents have complementary but incomplete views and must coordinate through natural language to build a shared 3D structure that no single agent can fully observe.",
+          "quote": "In this setting, multiple agents with complementary but incomplete views must coordinate through natural language to construct a shared 3D structure that no single agent can fully observe.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.2"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper provides a diagnostic framework that decomposes failures into spatial grounding, belief modeling and pragmatic communication errors, with a taxonomy of behavioral failure profiles for frontier and open-weight models.",
+          "quote": "We formalize this problem as a multi-sender Bounded Pragmatic Speaker problem and provide a diagnostic framework that decomposes failures into spatial grounding, belief modeling and pragmatic communication errors, including a taxonomy of behavioral failure profiles in both frontier and open-weight models.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.3"
+        },
+        {
+          "question": "q4",
+          "claim": "Across 8 open-weight and 7 frontier models including reasoning models, stronger reasoning ability did not reliably improve coordination, smaller open-weight models often matched or outperformed frontier systems, and improved individual communication did not guarantee successful collaboration.",
+          "quote": "Across a diverse set of models, including 8 open-weight and 7 frontier including reasoning models, we find that stronger reasoning ability does not reliably translate to better coordination: smaller open-weight models often match or outperform frontier systems, and improved individual communication does not guarantee successful collaboration.",
+          "numbers": [
+            "8",
+            "7"
+          ],
+          "corroborated_by": [],
+          "id": "S29.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper concludes that multi-agent coordination remains a fundamentally unsolved challenge for current language models.",
+          "quote": "These results suggest that multi-agent coordination remains a fundamentally unsolved challenge for current language models.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 29
+    },
+    {
+      "id": "e2580bc91d",
+      "url": "https://arxiv.org/abs/2608.15703",
+      "title": "HyMem: Hierarchical Context Management for Long-Horizon Agents via Information Isolation",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-16",
+      "org": "XinQi Wang, Jinwei Xiao, Sijia Cui, Hongming Zhang, Yanna Wang, Qingyang Zhang, Bo Xu",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "HyMem is a hierarchical framework that separates an agent's context into distinct functional layers, organizing context by function to separate high-level planning from execution and complex analysis.",
+          "quote": "To address this challenge, we propose HyMem, a hierarchical framework that explicitly separates the agent's context into distinct functional layers. HyMem organizes context by function to separate high-level planning from execution and complex analysis.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.1"
+        },
+        {
+          "question": "q3",
+          "claim": "HyMem uses an isolated reasoning module that handles complex subtasks without adding intermediate reasoning traces to the persistent planning context, and a memory management module that preserves task progress across context refreshes through structured summaries.",
+          "quote": "Its isolated reasoning module handles complex subtasks without adding intermediate reasoning traces to the persistent planning context, while its memory management module preserves task progress across context refreshes through structured summaries.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.2"
+        },
+        {
+          "question": "q3",
+          "claim": "On GAIA and Browsecomp-plus with DeepSeek-V4, HyMem achieves average Pass@1 scores of 66.7% and 61.3%, outperforming the strongest baseline by 6.1 and 4.7 percentage points, respectively.",
+          "quote": "Experiments on GAIA and Browsecomp-plus show that, with DeepSeek-V4, HyMem achieves average Pass@1 scores of 66.7% and 61.3%, outperforming the strongest baseline by 6.1 and 4.7 percentage points, respectively.",
+          "numbers": [
+            "66.7%",
+            "61.3%",
+            "6.1",
+            "4.7"
+          ],
+          "corroborated_by": [],
+          "id": "S30.3"
+        },
+        {
+          "question": "q5",
+          "claim": "Existing methods address context problems through compression or retrieval on a single, flat context, which does not clearly separate different types of context information and often leads to degraded reasoning.",
+          "quote": "Most existing methods address this issue through compression or retrieval applied to a single, flat context, which does not clearly separate different types of context information and often leads to degraded reasoning.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.4"
+        },
+        {
+          "question": "q5",
+          "claim": "LLM agents often perform poorly on complex, long-horizon tasks because their context becomes increasingly cluttered over time.",
+          "quote": "Large language model (LLM) agents often perform poorly on complex, long-horizon tasks because their context becomes increasingly cluttered over time.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 30
+    },
+    {
+      "id": "28953a73c9",
+      "url": "https://arxiv.org/abs/2605.11051",
+      "title": "On Problems of Implicit Context Compression for Software Engineering Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-05-11",
+      "org": "Kirill Gelvan, Igor Slinko, Felix Steinbauer, Egor Bogomolov, Florian Kofler, Yaroslav Zharov",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "LLM-based software engineering agents have a critical bottleneck: context length limitations cause failures on complex, long-horizon tasks.",
+          "quote": "LLM-based Software Engineering agents face a critical bottleneck: context length limitations cause failures on complex, long-horizon tasks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.1"
+        },
+        {
+          "question": "q5",
+          "claim": "Implicit context compression via an In-Context Autoencoder, which stores context as continuous embeddings rather than discrete tokens, works on single-shot common-knowledge and code-understanding tasks but fails on multi-step agentic coding tasks.",
+          "quote": "One promising solution is to encode context as continuous embeddings rather than discrete tokens, enabling denser information storage. We apply the recently proposed In-Context Autoencoder for this purpose. While the method performs well on single-shot common-knowledge and code-understanding tasks, our experiments demonstrate that it fails on multi-step agentic coding tasks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.2"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper investigates why implicit context compression fails for software engineering agents and discusses possible contributing factors.",
+          "quote": "In this paper, we explore this phenomenon and discuss possible factors contributing to this failure.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.3"
+        }
+      ],
+      "dropped": 0,
+      "n": 31
+    },
+    {
+      "id": "3eedaa1d68",
+      "url": "https://altertable.ai/blog/2026-07-15-lakehouse-as-context-store",
+      "title": "Lakehouse as Context Store",
+      "provider": "hn",
+      "discussion": "https://news.ycombinator.com/item?id=48932378",
+      "type": "vendor",
+      "published": "2026-07-15",
+      "org": "Sylvain Utard / Altertable",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The article defines a useful context store as having a 'map' component containing business definitions, internal terminology, entity relationships, event taxonomies, product documentation, runbooks, and known failure modes.",
+          "quote": "A useful context store has two parts.\n\nThe first is a **map**: business definitions, internal terminology, entity relationships, event taxonomies, product documentation, runbooks, and known failure modes.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The article argues vector databases can retrieve documents but are weak for joining users to organizations, correlating requests with traces, filtering by deployment, or aggregating behavior across millions of events.",
+          "quote": "A vector database can retrieve relevant documents, but it is a weak foundation for joining users to organizations, correlating requests with traces, filtering by deployment, or aggregating behavior across millions of events.",
+          "numbers": [
+            "millions"
+          ],
+          "corroborated_by": [],
+          "id": "S32.2"
+        },
+        {
+          "question": "q2",
+          "claim": "MCP servers for Postgres and logs expose capabilities but do not create shared identity models, map internal feature names to product events and backend services, or reconcile timestamps, permissions, deployment versions, or conflicting definitions.",
+          "quote": "An MCP server for Postgres and an MCP server for logs expose two sets of capabilities. They do not create a shared identity model between users in Postgres and sessions in the logs. They do not establish that an internal feature name corresponds to three product events and a particular backend service. They do not reconcile timestamps, permissions, deployment versions, or conflicting definitions.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S32.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Altertable says its production context store connects to Postgres, ingests logs/traces and product events, and uploads company knowledge such as product documentation, internal definitions, runbooks, and interpretive context.",
+          "quote": "Our production Postgres database is connected to Altertable. Logs and traces are ingested into it. Product events land there too. We also upload company knowledge: product documentation, internal definitions, runbooks, and the context our team uses to interpret what the data means.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Altertable's agent, accessible through Ask Agent and a Slack bot, starts with a shared, queryable picture of the business rather than a collection of disconnected tools.",
+          "quote": "The agent is accessible through our \"Ask Agent\" feature and a Slack bot, but the chat surface is the least interesting part. What matters is that the agent does not begin with a collection of disconnected tools. It begins with a shared, queryable picture of the business.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.5"
+        },
+        {
+          "question": "q4",
+          "claim": "The article says when questions cross systems, agents must discover tools, understand schemas/APIs, move identifiers, paginate, retry, and reconstruct relationships; this becomes slow, expensive, and brittle when rediscovered every investigation.",
+          "quote": "When a question crosses several systems, the agent still has to discover which tools to call, understand different schemas and APIs, move identifiers between them, paginate through results, retry failed requests, and reconstruct relationships that were never represented explicitly.\n\nAt that point, the model is not primarily reasoning about the business. It is rebuilding data integration at inference time.\n\nThat can work for occasional tasks. It becomes slow, expensive, and brittle when the same relationships must be rediscovered for every investigation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.6"
+        },
+        {
+          "question": "q4",
+          "claim": "The article states better models do not fix missing relationships between identifiers, conflicting business definitions, or stale copies; fragmentation remains in every request.",
+          "quote": "Better models do not fix missing relationships between identifiers. They do not resolve conflicting business definitions or make stale copies current. They may become better at navigating fragmented systems, but the fragmentation remains part of every request.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.7"
+        },
+        {
+          "question": "q5",
+          "claim": "Altertable reports that it found a second role for its lakehouse: it became the shared context layer behind Altertable's agentic features.",
+          "quote": "Most teams adopt a lakehouse to store and query analytical data. We found a second role for ours: it became the shared context layer behind Altertable’s agentic features.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 32
+    },
+    {
+      "id": "c4d512a29b",
+      "url": "https://github.com/yoloshii/ClawMem",
+      "title": "Show HN: ClawMem – Open-source agent memory with SOTA local GPU retrieval",
+      "provider": "hn",
+      "discussion": "https://news.ycombinator.com/item?id=47472965",
+      "type": "vendor",
+      "published": "2026-03-22",
+      "org": "yoloshii (GitHub repo owner)",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "ClawMem is an on-device memory layer for Claude Code, OpenClaw, Hermes, and AI agents, with retrieval-augmented search, hooks, and an MCP server in a single local system, and no API keys or cloud dependencies.",
+          "quote": "**On-device memory for Claude Code, OpenClaw, Hermes, and AI agents.** Retrieval-augmented search, hooks, and an MCP server in a single local system. No API keys, no cloud dependencies.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S33.1"
+        },
+        {
+          "question": "q2",
+          "claim": "ClawMem's hybrid architecture combines multi-signal retrieval including BM25, vector search, reciprocal rank fusion, query expansion, and cross-encoder reranking with composite scoring and multi-graph traversal over semantic, temporal, and causal graphs.",
+          "quote": "The hybrid architecture combines [QMD](https://github.com/tobi/qmd)-derived multi-signal retrieval (BM25 + vector search + reciprocal rank fusion + query expansion + cross-encoder reranking), [SAME](https://github.com/sgx-labs/statelessagent)-inspired composite scoring (recency decay, confidence, content-type half-lives, co-activation reinforcement), [MAGMA](https://arxiv.org/abs/2501.13956)-style intent classification with multi-graph traversal (semantic, temporal, and causal beam search), and [A-MEM](https://arxiv.org/abs/2510.02178) self-evolving memory notes that enrich documents with keywords, tags, and causal links between entries.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S33.2"
+        },
+        {
+          "question": "q3",
+          "claim": "ClawMem routes all integration paths to the same local SQLite vault, so a decision captured in a Claude Code session is immediately available when an OpenClaw or Hermes agent picks up the same project.",
+          "quote": "All paths write to the same local SQLite vault. A decision captured during a Claude Code session shows up immediately when an OpenClaw or Hermes agent picks up the same project.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S33.3"
+        },
+        {
+          "question": "q3",
+          "claim": "ClawMem preserves authorship time so ranking recency and temporal queries run on when content was actually written, not when it was mined, and includes a metadata-only backfill-dates lane for earlier vaults.",
+          "quote": "Imports preserve **authorship time** (v0.27.0): ranking recency and temporal queries run on when content was actually written, so historical conversations mined today don't rank as fresh — with a metadata-only `--backfill-dates` lane for vaults mined earlier",
+          "numbers": [
+            "v0.27.0"
+          ],
+          "corroborated_by": [],
+          "id": "S33.4"
+        },
+        {
+          "question": "q4",
+          "claim": "ClawMem detects contradictions between new and prior decisions and auto-decays superseded ones only when a contradiction judge is configured; otherwise the feature is disabled, though a merge-time contradiction gate blocks cross-observation contradictions before they land.",
+          "quote": "**Detects contradictions** between new and prior decisions, auto-decaying superseded ones — when a contradiction **judge** is configured (`CLAWMEM_JUDGE_*`, v0.29.0; disabled otherwise) (with an additional merge-time contradiction gate in the consolidation worker that blocks cross-observation contradictions before they land, v0.7.1)",
+          "numbers": [
+            "v0.29.0",
+            "v0.7.1"
+          ],
+          "corroborated_by": [],
+          "id": "S33.5"
+        },
+        {
+          "question": "q4",
+          "claim": "ClawMem guards against cross-entity merges during consolidation by comparing entity anchors before merging similar observations, specifically preventing Alice-decided-X from merging into Bob-decided-X.",
+          "quote": "**Guards against cross-entity merges** during consolidation — name-aware dual-threshold merge safety compares entity anchors before merging similar observations, preventing \"Alice decided X\" from merging into \"Bob decided X\" (v0.7.1)",
+          "numbers": [
+            "v0.7.1"
+          ],
+          "corroborated_by": [],
+          "id": "S33.6"
+        },
+        {
+          "question": "q4",
+          "claim": "ClawMem prevents context bleed in derived insights by validating every draft through an anti-contamination wrapper with deterministic entity contamination check, LLM validator, and dedupe before writing cross-session deductive observations.",
+          "quote": "**Prevents context bleed in derived insights** — the Phase 3 deductive synthesis pipeline validates every draft against an anti-contamination wrapper (deterministic entity contamination check + LLM validator + dedupe) before writing cross-session deductive observations (v0.7.1)",
+          "numbers": [
+            "v0.7.1"
+          ],
+          "corroborated_by": [],
+          "id": "S33.7"
+        }
+      ],
+      "dropped": 1,
+      "n": 33
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "context-lake",
+  "title": "Context Lake: the shared-state layer for multi-agent systems",
+  "thesis": "Multi-agent systems need a shared, temporal, governed context layer (a 'context lake') distinct from vector stores and per-agent memory.",
+  "audience": "AI engineers and SRE/platform teams building multi-agent systems in production",
+  "since": "2024-01-01",
+  "per_question": 8,
+  "questions": [
+    {"id": "q1", "question": "What is a context lake, who coined the term, and how is it defined?",
+     "queries": ["context lake", "context lake agents decision coherence", "contextlake.org"],
+     "providers": ["web", "hn", "arxiv", "semantic_scholar"]},
+    {"id": "q2", "question": "How does shared context for agents differ from vector databases, data lakes, feature stores and per-agent memory frameworks?",
+     "queries": ["shared memory multi-agent LLM systems", "agent memory vs vector database", "temporal knowledge graph agent memory"],
+     "providers": ["web", "arxiv", "hn", "wikipedia"]},
+    {"id": "q3", "question": "Which systems implement shared or temporal context for agents today, and what do they claim or measure?",
+     "queries": ["Zep Graphiti temporal knowledge graph", "Letta MemGPT memory", "Mem0 memory layer benchmark", "Tacnode context lake"],
+     "providers": ["web", "github", "arxiv", "hn"]},
+    {"id": "q4", "question": "What failures in multi-agent systems come from inconsistent or missing shared context, and what is the evidence?",
+     "queries": ["why do multi-agent LLM systems fail", "multi-agent coordination failure taxonomy", "context consistency multi-agent"],
+     "providers": ["arxiv", "semantic_scholar", "hn"]},
+    {"id": "q5", "question": "What are the criticisms, open problems and adoption signals for context layers in agent systems?",
+     "queries": ["context engineering agents", "agent memory production problems", "context layer agents criticism"],
+     "providers": ["web", "hn", "arxiv"]}
+  ]
+}

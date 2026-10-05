@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-30",
+  "author_or_org": "Yichao Feng, Ran Zhang, Haoran Luo, Zhenghong Lin, Carl Yang, Anh Tuan Luu",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Multi-agent memory should preserve and transfer evidence, role-specific context, decisions, procedures, and experience across interactions, not only outcomes.",
+      "quote": "Memory must preserve and transfer evidence, role specific context, decisions, procedures, and experience across interactions, not only outcomes.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Vector and graph memories flatten multi-agent structures into embeddings or dyadic traces, obscuring events involving agents, tools, documents, errors, and evidence.",
+      "quote": "Vector and graph memories flatten these structures into embeddings or dyadic traces, obscuring events involving agents, tools, documents, errors, and evidence.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "MAGE is presented as a hypergraph-based multimodal database designed as a memory engine for multi-agent systems.",
+      "quote": "We present MAGE, a hypergraph based multimodal database designed as a memory engine for MAS.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "MAGE stores agents, messages, tools, errors, procedures, documents, entities, decisions, and evidence in a heterogeneous temporal hypergraph, preserving high-order collaborative events as reusable memory.",
+      "quote": "MAGE stores agents, messages, tools, errors, procedures, documents, entities, decisions, and evidence in a heterogeneous temporal hypergraph, preserving high order collaborative events as reusable memory.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "MAGE supports decision-driven updates, role-aware retrieval, validation, lifecycle management, and budget-bounded context packing.",
+      "quote": "It supports decision driven updates, role aware retrieval, validation, lifecycle management, and budget bounded context packing.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Experiments claim MAGE outperforms various memory baselines.",
+      "quote": "Experiments show MAGE outperforms on various memory baselines.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Vector and graph memory flattening limits knowledge sharing, tracing, reuse, revision, and orchestration in multi-agent systems.",
+      "quote": "This limits knowledge sharing, tracing, reuse, revision, and orchestration.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Each agent in a multi-agent system operates within a knowledge boundary defined by its observations, context, and resources.",
+      "quote": "Multi-agent systems solve tasks through collaboration, tool use, multimodal reasoning, and orchestration, but each agent operates within a knowledge boundary defined by its observations, context, and resources.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.29678"
+}

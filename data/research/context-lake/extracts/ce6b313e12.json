@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-05-23",
+  "author_or_org": "Alireza Rezazadeh, Zichao Li, Ange Lou, Yuying Zhao, Wei Wei, Yujia Bao",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Persistent memory has been shown to enhance single-agent performance, but most approaches assume a monolithic, single-user context and overlook knowledge transfer across users under dynamic, asymmetric permissions.",
+      "quote": "While persistent memory has been shown to enhance single-agent performance, most approaches assume a monolithic, single-user context-overlooking the benefits and challenges of knowledge transfer across users under dynamic, asymmetric permissions.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper introduces Collaborative Memory, a framework for multi-user, multi-agent environments with asymmetric, time-evolving access controls encoded as bipartite graphs linking users, agents, and resources.",
+      "quote": "We introduce Collaborative Memory, a framework for multi-user, multi-agent environments with asymmetric, time-evolving access controls encoded as bipartite graphs linking users, agents, and resources.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The system maintains two memory tiers: private memory visible only to the originating user, and shared memory with selectively shared fragments.",
+      "quote": "Our system maintains two memory tiers: (1) private memory-private fragments visible only to their originating user; and (2) shared memory-selectively shared fragments.",
+      "numbers": [
+        "two",
+        "(1)",
+        "(2)"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Each memory fragment carries immutable provenance attributes, including contributing agents, accessed resources, and timestamps, to support retrospective permission checks.",
+      "quote": "Each fragment carries immutable provenance attributes (contributing agents, accessed resources, and timestamps) to support retrospective permission checks.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Granular read policies enforce current user-agent-resource constraints and project existing memory fragments into filtered transformed views.",
+      "quote": "Granular read policies enforce current user-agent-resource constraints and project existing memory fragments into filtered transformed views.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Write policies determine fragment retention and sharing, applying context-aware transformations to update the memory.",
+      "quote": "Write policies determine fragment retention and sharing, applying context-aware transformations to update the memory.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The framework claims safe, efficient, and interpretable cross-user knowledge sharing, with provable adherence to asymmetric, time-varying policies and full auditability of memory operations.",
+      "quote": "Our framework enables safe, efficient, and interpretable cross-user knowledge sharing, with provable adherence to asymmetric, time-varying policies and full auditability of memory operations.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The read and write policies may be designed conditioned on system, agent, and user-level information.",
+      "quote": "Both policies may be designed conditioned on system, agent, and user-level information.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2505.18279"
+}

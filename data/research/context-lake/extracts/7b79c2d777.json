@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-17",
+  "author_or_org": "Hezhe Qiao, Hanghang Tong, Ee-Peng Lim, Bing Liu, Guansong Pang",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "In LLM multi-agent systems, unreliable agents are a key bottleneck to system-level reliability.",
+      "quote": "Large language model-driven multi-agent systems (LLM-MAS) excel at complex tasks, yet unreliable agents remain a key bottleneck to system-level reliability.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Existing failure attribution approaches such as direct prediction of agent-error pairs and agent-first failure attribution rely on local agent logs and miss global failures that only appear over full interaction trajectories, including cross-step inconsistencies and inter-agent coordination errors.",
+      "quote": "Automatic failure attribution is therefore critical, but existing approaches, such as direct prediction of agent-error pairs and agent-first failure attribution, rely on local logs of agents and miss global failures that only manifest over full interaction trajectories, such as cross-step inconsistencies and inter-agent coordination errors.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Directly predicting failures creates a large combinatorial search space that hinders fine-grained attribution.",
+      "quote": "Moreover, directly predicting failures induces a large combinatorial search space, hindering fine-grained attribution.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "VerifyMAS is a hypothesis verification framework for agent failure attribution that formulates and verifies failure hypotheses against full trajectories rather than directly predicting faulty agents and error types.",
+      "quote": "To address these challenges, we propose VerifyMAS, a hypothesis verification framework for agent failure attribution. Instead of directly predicting faulty agents and error types, VerifyMAS formulates and verifies failure hypotheses against full trajectories.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "VerifyMAS decomposes attribution into trajectory-level error validation and fine-grained agent localization, capturing global failure patterns while reducing the search space.",
+      "quote": "This verification-based approach decomposes attribution into trajectory-level error validation and fine-grained agent localization, providing an error-first attribution approach that captures global failure patterns while substantially reducing the search space.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "VerifyMAS uses a hypothesis-based data construction strategy grounded in a structured error taxonomy and fine-tunes a specialized LLM verifier for trajectory-level failure verification and agent attribution.",
+      "quote": "We further introduce a hypothesis-based data construction strategy grounded in a structured error taxonomy and fine-tune a specialized LLM verifier model for trajectory-level failure verification and agent attribution.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Experiments on Aegis-Bench and Who&When show VerifyMAS improves diverse backbone models, including open-source Qwen and API-based GPT models, outperforming prior methods without sacrificing inference efficiency for long multi-agent trajectories.",
+      "quote": "Experiments on Aegis-Bench and Who&When show that VerifyMAS consistently improves diverse backbone models, including open-source Qwen and API-based GPT models, outperforming prior methods without sacrificing inference efficiency for long multi-agent trajectories.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.17467"
+}

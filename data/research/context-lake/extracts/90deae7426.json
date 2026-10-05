@@ -1,0 +1,52 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-15",
+  "author_or_org": "Muhammad Ashar Ishfaq, Glaucia Melo",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions.",
+      "quote": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper investigates inter-agent misalignment cases labelled FC2 in MAST-Data and converts them into functional partner-state reasoning items using four explicit convertibility criteria.",
+      "quote": "We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning items. ToMAS applies four explicit convertibility criteria to diagnosed execution traces.",
+      "numbers": [
+        "FC2",
+        "four"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items.",
+      "quote": "A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items.",
+      "numbers": [
+        "242",
+        "39"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92.",
+      "quote": "In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92.",
+      "numbers": [
+        "18",
+        "two",
+        "94.4%",
+        "0.92"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "ToMAS provides a preliminary rubric and pipeline for converting diagnosed coordination failures into trainable partner-state reasoning items and identifies requirements for a conclusive matched-domain evaluation.",
+      "quote": "ToMAS provides a preliminary rubric and pipeline for converting diagnosed coordination failures into trainable partner-state reasoning items and identifies the requirements for a conclusive matched-domain evaluation.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.16986"
+}

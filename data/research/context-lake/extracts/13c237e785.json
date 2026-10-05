@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-22",
+  "author_or_org": "Jeongmin Bae, Yongjae Kim, Kyoung Hur, Donghyoung Han, Min-Soo Kim",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper defines Governed Enterprise Memory as agent memory designed around a combined scope and presents AkasicMEM as its realization.",
+      "quote": "We define Governed Enterprise Memory as agent memory designed around this combined scope and present AkasicMEM as its realization.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Agent memory is intended to let enterprise agents retain knowledge acquired during work and reuse it across tasks and agents, turning execution experience into persistent organizational knowledge.",
+      "quote": "Agent memory enables enterprise agents to retain knowledge acquired during work and reuse it across tasks and agents, turning execution experience into persistent organizational knowledge.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Shared context for agents requires both source-memory integration, so enterprise sources and accumulated memory can be used together, and memory governance, so shared memory remains subject to organizational policies throughout its lifecycle.",
+      "quote": "Realizing this potential requires both source--memory integration, through which enterprise sources and accumulated memory can be utilized together, and memory governance, through which shared memory remains subject to organizational policies throughout its lifecycle.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "When enterprise-source information persists in memory, repeated derivation and reuse under changing principals and policies can bypass source restrictions and result in information leakage.",
+      "quote": "These requirements interact when information from enterprise sources persists in memory. As this information is repeatedly derived and reused under changing principals and policies, source restrictions may be bypassed, resulting in information leakage.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Preventing leakage requires authorization continuity, in which source restrictions remain effective throughout source-to-memory and memory-to-memory derivation and reuse.",
+      "quote": "Preventing such leakage requires authorization continuity, under which source restrictions remain effective throughout source-to-memory and memory-to-memory derivation and reuse.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Existing approaches address source-memory integration, memory governance, and authorization continuity individually, but do not treat them as combined core design targets across the memory lifecycle.",
+      "quote": "Existing approaches address these concerns individually, but do not treat source--memory integration, memory governance, and authorization continuity as combined core design targets across the memory lifecycle.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "AkasicMEM implements authorization continuity through transitive lineage, policy composition during memory formation, and policy re-evaluation during retrieval.",
+      "quote": "AkasicMEM realizes authorization continuity through transitive lineage, policy composition during memory formation, and policy re-evaluation during retrieval.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "AkasicMEM is built on GraphAI's AkasicDB, a unified vector-graph-relational database whose storage and execution substrate enables joint optimization and execution of the underlying operations.",
+      "quote": "It is built on GraphAI's AkasicDB, a unified vector--graph--relational database whose storage and execution substrate enables the underlying operations of these mechanisms to be jointly optimized and executed.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.25563"
+}

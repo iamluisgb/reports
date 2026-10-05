@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2026-09-04",
+  "author_or_org": "NORTHTEKDevs",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "GENOME is an auditable memory layer for AI agents with zero-LLM-call local ingest at about 10ms per message, air-gapped operation, accuracy matching Mem0 at about 1000x lower ingest cost, bi-temporal belief-state, an MCP server, LoCoMo/LongMemEval benchmarks, and an Apache-2.0 open-source license.",
+      "quote": "Title: GitHub - NORTHTEKDevs/genome: Auditable memory layer for AI agents: zero-LLM-call local ingest (~10ms/msg, air-gapped), matches Mem0 on accuracy at ~1000x lower ingest cost, bi-temporal belief-state, MCP server. Honest LoCoMo/LongMemEval benchmarks. Open source (Apache-2.0).",
+      "numbers": [
+        "~10ms/msg",
+        "~1000x"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "GENOME claims deterministic bi-temporal belief-state and an MCP server for any client, alongside zero-LLM-call local ingest and Mem0-comparable answer accuracy at much lower ingest cost.",
+      "quote": "Zero-LLM-call local ingest (~10ms/msg, air-gapped); matches Mem0 on answer accuracy at ~1000x lower ingest cost; deterministic bi-temporal belief-state; MCP server for any client. Honest LoCoMo/LongMemEval benchmarks.",
+      "numbers": [
+        "~10ms/msg",
+        "~1000x"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "GENOME is now open source under the Apache License 2.0.",
+      "quote": "GENOME is now open source under the Apache License 2.0.",
+      "numbers": [
+        "2.0"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "A past ScopeEpochs bug caused any tenant's write to invalidate every other tenant's cached query, breaking the cache in the multi-tenant workload it was built for.",
+      "quote": "ScopeEpochs bumped a global counter on every mutation and folded it into every scoped lookup, so any tenant's write invalidated every other tenant's cached query. The cache stopped working in exactly the multi-tenant workload the per-scope epoch was built for.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A consolidation bug silently destroyed the entity graph and all fact history by ranking entity and entity-fact records with the same access/recency fitness used for episodic memories and deleting the lowest scorers.",
+      "quote": "DATA LOSS - consolidate() ranked entity and entity-fact records by the same access/recency fitness used for episodic memories and deleted the lowest scorers. Combining the temporal knowledge graph with consolidation silently destroyed the entity graph and all fact history: no error, no warning, no test covering it.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The REST server initially lacked a trust policy and provenance field, so every HTTP write was untagged, nothing could be quarantined, and the memory firewall was unreachable for service and TypeScript SDK users.",
+      "quote": "The REST server was the third entry point and nobody looked: create_app built its Memory with no trust policy and AddRequest had no provenance field, so every HTTP write was untagged, nothing could ever be quarantined, and the firewall was unreachable for anyone running GENOME as a service or through the TypeScript SDK.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "GENOME's MCP forget operation previously had no relevance floor, so any query deleted its nearest neighbour; it now uses min_score with a default 0.5 cosine threshold and refuses below it.",
+      "quote": "- MCP forget: Memory.search has no relevance floor, so any query deleted its nearest neighbour. forget now takes min_score (default 0.5 cosine), refuses below it, and reports the best candidate.",
+      "numbers": [
+        "0.5"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/NORTHTEKDevs/genome"
+}

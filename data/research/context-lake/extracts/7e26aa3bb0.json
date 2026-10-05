@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-21",
+  "author_or_org": "Shiyang Chen",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "The paper argues that context compaction, summarization, or eviction is a safety-critical failure surface because in-context governance constraints that agents obey while visible can be silently removed, causing the same agent to perform prohibited tool actions later in a session.",
+      "quote": "Modern LLM agents increasingly rely on context compaction, summarization, or eviction to keep long-running sessions within a token budget. We show that this context-management layer is a safety-critical failure surface: in-context governance constraints that agents reliably obey while visible can be silently removed by compaction, causing the same agent to perform prohibited tool actions later in the session.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper names this compaction-induced safety failure mode Governance Decay.",
+      "quote": "We call this failure mode Governance Decay.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Across 1,323 episodes, policy violation rises from 0% with the policy in full context to 30% after compaction, reaching 59% for some models; when the constraint survives the summary violation remains 0%, but when it is dropped violation reaches 38%.",
+      "quote": "Across 1,323 episodes, violation rises from 0% with the policy in full context to 30% after compaction, reaching 59% for some models; when the constraint survives the summary, violation remains 0%, but when it is dropped, violation reaches 38%.",
+      "numbers": [
+        "1,323",
+        "0%",
+        "30%",
+        "59%",
+        "0%",
+        "38%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper introduces ConstraintRot, a benchmark of long-horizon agent scenarios with deterministic tool-call grading, and measures compaction-induced violations across seven model families.",
+      "quote": "We introduce ConstraintRot, a benchmark of long-horizon agent scenarios with deterministic tool-call grading, and measure compaction-induced violations across seven model families.",
+      "numbers": [
+        "seven"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper studies a Compaction-Eviction Attack in which adversarial in-context content biases the summarizer to omit a legitimate policy, and reports that optimized injections defeat every evaluated model.",
+      "quote": "We further study a Compaction-Eviction Attack, in which adversarial in-context content biases the summarizer to omit a legitimate policy, and show that optimized injections defeat every evaluated model.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper proposes Constraint Pinning, a training-free mitigation that quarantines governance constraints from lossy compaction and restores violation to 0% in its benchmark.",
+      "quote": "Finally, we propose Constraint Pinning, a simple training-free mitigation that quarantines governance constraints from lossy compaction and restores violation to 0% in our benchmark.",
+      "numbers": [
+        "0%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper concludes that context management should be treated as a first-class governance surface for deployed LLM agents.",
+      "quote": "These results identify context management as a first-class governance surface for deployed LLM agents.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.22528"
+}

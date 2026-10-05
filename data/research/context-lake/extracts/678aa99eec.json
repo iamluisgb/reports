@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-03-16",
+  "author_or_org": "Weihao Zhang, Yitong Zhou, Huanyu Qu, Hongyi Li",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "Scaling the number of agents often amplifies context pressure, coordination errors, and system drift.",
+      "quote": "However, scaling the number of agents often amplifies context pressure, coordination errors, and system drift.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Building robust multi-agent systems requires more than prompt tuning or increased model intelligence; it requires architecture-focused engineering discipline to manage complexity under uncertainty.",
+      "quote": "It is well known that building robust MAS requires more than prompt tuning or increased model intelligence. It necessitates engineering discipline focused on architecture to manage complexity under uncertainty.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Agentic software is characterized by runtime generation and evolution under uncertainty.",
+      "quote": "We characterize agentic software by a core property: \\emph{runtime generation and evolution under uncertainty}.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper proposes a three-layer engineering framework whose first layer is View/Context Engineering to manage the execution environment and maintain task-relevant Views.",
+      "quote": "we introduce design principles under a three-layer engineering framework: \\emph{View/Context Engineering} to manage the execution environment and maintain task-relevant Views, \\emph{Structure Engineering} to organize dynamic binding over artifacts and agents, and \\emph{Evolution Engineering} to govern the lifecycle of self-rewriting artifacts.",
+      "numbers": [
+        "three-layer"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper claims its abstractions improve the designability, scalability, and evolvability of agentic infrastructure.",
+      "quote": "Together, these abstractions improve the \\emph{designability}, \\emph{scalability}, and \\emph{evolvability} of agentic infrastructure.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "LSS design patterns are presented as semantic control blocks that stabilize fluid, inference-mediated interactions while preserving agent adaptability.",
+      "quote": "Building on this framework, we develop LSS design patterns as semantic control blocks that stabilize fluid, inference-mediated interactions while preserving agent adaptability.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper provides basic experimental validation of key mechanisms, demonstrating the effectiveness of LSS.",
+      "quote": "We provide basic experimental validation of key mechanisms, demonstrating the effectiveness of LSS.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2603.15690"
+}

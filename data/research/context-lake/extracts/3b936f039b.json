@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-22",
+  "author_or_org": "Xinyu Guan, Qianyang Zhao, Yuming Deng",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "CICL ranks retrieved files, tests, traces, rules, and memories by their expected effect on an agent's next action rather than by semantic similarity alone.",
+      "quote": "We study decision-aware context selection: ranking retrieved files, tests, traces, rules, and memories by their expected effect on an agent's next action rather than by semantic similarity alone.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "CICL builds an instance context graph, estimates decision-oriented utility for candidate units, and compresses selected evidence into typed memory cards.",
+      "quote": "We present the Counterfactual-Inspired Context Layer (CICL), which builds an instance context graph, estimates decision-oriented utility for candidate units, and compresses selected evidence into typed memory cards.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The same selection schema can be instantiated with hosted LLM judges, local surrogates, or lightweight rankers, making the selection protocol auditable across model choices.",
+      "quote": "The same schema can be instantiated with hosted LLM judges, local surrogates, or lightweight rankers, making the selection protocol auditable across model choices.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "On 50 SWE-bench Verified file-retrieval instances, Qwen3.6-Plus reranking of BM25 top-50 candidates improves hit@1 from 0.58 to 0.78 and MRR@10 from 0.634 to 0.790, with all 2,500 judgments parseable.",
+      "quote": "On 50 SWE-bench Verified file-retrieval instances, Qwen3.6-Plus reranking of BM25 top-50 candidates improves hit@1 from 0.58 to 0.78 and MRR@10 from 0.634 to 0.790, with all 2,500 judgments parseable.",
+      "numbers": [
+        "50",
+        "3.6",
+        "25",
+        "50",
+        "1",
+        "0.58",
+        "0.78",
+        "10",
+        "0.634",
+        "0.790",
+        "2,500"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Controlled diagnostics show CICL identifies action-critical evidence: removing the top-utility semantic unit reduces F1 from 0.245 to 0.000.",
+      "quote": "Controlled diagnostics show that CICL identifies action-critical evidence: removing the top-utility semantic unit reduces F1 from 0.245 to 0.000.",
+      "numbers": [
+        "0.245",
+        "0.000"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "In selected-then-compressed mode, memory cards save 44.93 tokens per query while preserving selected evidence.",
+      "quote": "In selected-then-compressed mode, memory cards save 44.93 tokens per query while preserving selected evidence.",
+      "numbers": [
+        "44.93"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.08151"
+}

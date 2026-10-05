@@ -1,0 +1,60 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-14",
+  "author_or_org": "Zachary Johnson et al.",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Existing agentic memory systems generally operate at the individual-user level and restrict the public knowledge that could be shared across users to improve downstream responses.",
+      "quote": "Existing agentic memory systems address this limitation but generally operate at the individual-user level, restricting the public knowledge that could be shared across users to improve downstream responses.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "AIM classifies information as either private, scoped to one user and inaccessible to others, or public, accessible to all users, and enforces index-level access controls so private memories are retrievable only by their owner.",
+      "quote": "AIM dynamically classifies information as private, scoped to one user and inaccessible to others, or public, accessible to all users. It enforces index-level access controls so that private memories are retrievable only by their owner, protecting sensitive data while allowing beneficial shared knowledge to improve coordination and consistency.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "AIM is a unified, privacy-aware memory framework that enables multi-agent, multi-user LLM systems to persistently manage private and shared memory.",
+      "quote": "We introduce AIM (Agentic Interoperable Memory), a unified, privacy-aware memory framework that enables multi-agent, multi-user LLM systems to persistently manage private and shared memory.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "MUMBench is a dataset of multi-user interactions containing private and shareable information across four domains, and the authors describe it as the first public dataset designed to evaluate retrieval, creation, update, and deletion in a multi-user environment.",
+      "quote": "We also introduce MUMBench (Multi-User Memory Benchmark), a dataset of multi-user interactions containing private and shareable information across four domains. To our knowledge, MUMBench is the first public dataset designed to evaluate multiple memory operations, including retrieval, creation, update, and deletion, in a multi-user environment.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Across three independent runs on MUMBench, AIM achieves 96.0% visibility classification accuracy, 58.8% strict operation accuracy, and 70.5% state-aware operation accuracy.",
+      "quote": "Across three independent runs on MUMBench, AIM achieves 96.0% visibility classification accuracy, 58.8% strict operation accuracy, and 70.5% state-aware operation accuracy.",
+      "numbers": [
+        "three",
+        "96.0%",
+        "58.8%",
+        "70.5%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Traditional LLMs are scoped to individual user sessions, limiting their knowledge to a single conversation and preventing them from learning user preferences that evolve over time.",
+      "quote": "Traditional large language models (LLMs) are scoped to individual user sessions, limiting their knowledge to a single conversation and preventing them from learning user preferences that evolve over time.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Existing agentic memory systems restrict the public knowledge that could be shared across users to improve downstream responses.",
+      "quote": "Existing agentic memory systems address this limitation but generally operate at the individual-user level, restricting the public knowledge that could be shared across users to improve downstream responses.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.12320"
+}

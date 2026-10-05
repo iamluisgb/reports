@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2026-09-17",
+  "author_or_org": "shivanshinigam",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "In the source's Vector RAG comparison, a query for the current CTO of NovaTech returns a 2018 chunk (Leon) and a 2022 chunk (Aisha), causing LLM confusion.",
+      "quote": "VectorRAG-->>User: Returns 2018 chunk (Leon) & 2022 chunk (Aisha) → LLM Confused!",
+      "numbers": [
+        "2018",
+        "2022"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Graphiti filters invalid_at != null to return Aisha Okonkwo as the valid present CTO.",
+      "quote": "Graphiti-->>User: Filters invalid_at != null → Returns \"Aisha Okonkwo\" (Valid Present)",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Graphiti filters valid_at <= 2020-06-01 to return Leon Müller as the historical CTO fact.",
+      "quote": "Graphiti-->>User: Filters valid_at <= 2020-06-01 → Returns \"Leon Müller\" (Historical Fact)",
+      "numbers": [
+        "2020-06-01"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The repository describes itself as a temporal knowledge graph agent using Graphiti (Zep) + LangGraph + Gemini for context, perception and decision for AI agents.",
+      "quote": "Temporal knowledge graph agent using Graphiti (Zep) + LangGraph + Gemini — context, perception and decision for AI agents",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The source positions its temporal knowledge graph for AI agents as covering context, perception and memory.",
+      "quote": "🧠 TEMPORAL KNOWLEDGE GRAPH FOR AI AGENTS (CONTEXT | PERCEPTION | MEMORY)",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A commit message says the project implements a local Graphiti zero-cost temporal KG stack with Ollama, Neo4j, and LangGraph agent memory.",
+      "quote": "docs & core: implement local Graphiti zero-cost temporal KG stack with Ollama, Neo4j, and LangGraph agent memory; add rich visual README",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The repository shows 4 commits.",
+      "quote": "[4 Commits](https://github.com/shivanshinigam/graphiti-zep-agent/commits/main/)",
+      "numbers": [
+        "4"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The repository page displays 0 forks and 0 stars.",
+      "quote": "*   [Fork 0](https://github.com/login?return_to=%2Fshivanshinigam%2Fgraphiti-zep-agent)\n*   [Star 0](https://github.com/login?return_to=%2Fshivanshinigam%2Fgraphiti-zep-agent)",
+      "numbers": [
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/shivanshinigam/graphiti-zep-agent"
+}

@@ -1,0 +1,78 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": null,
+  "author_or_org": "guoliangdi",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The repository describes claw-zep as a fully self-hosted temporal knowledge platform built on Graphiti, providing time-aware long-term memory for AI agents, enterprise knowledge bases and risk deduction.",
+      "quote": "claw-zep is a fully self-hosted temporal knowledge platform built on Graphiti. It provides Palantir-grade dynamic time-series knowledge graph and time-aware long-term memory for AI Agents, enterprise knowledge bases and risk deduction.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The initial release describes claw-zep as a private, autonomous temporal knowledge middle platform based on Graphiti kernel extension, benchmarked against Zep and Palantir, with a global dual-time model using valid_from/valid_until/version/source for snapshot/backtracking/conflict resolution, Graphiti scheduling wrapper with LLM extraction and offline heuristic fallback distributing to Kuzu/Chroma/PG, an OpenHuman memory tree three-layer architecture, hybrid retrieval from temporal to vector to graph chain to memory tree weighting, multi-tenant/project isolation/RBAC/audit, and OpenClaw cloud memory plugin plus mobile SDK.",
+      "quote": "feat: claw-zep 私有化时序知识中台首次发布 基于 Graphiti 内核扩展的私有化、自主可控时序知识中台，对标 Zep + Palantir： - 全局双时序模型（valid_from/valid_until/version/source）：快照/回溯/冲突消解 - Graphiti 调度封装（LLM 抽取 + 离线启发式降级）→ 三库分发（Kuzu/Chroma/PG） - OpenHuman 记忆树三层架构 + Markdown 在线编辑 + Obsidian 导出 - 混合检索（时序→向量→图谱链路→记忆树加权）+ Palantir 因果推演 - 多租户 + 项目隔离 + RBAC（按钮级）+ 全链路审计 - OpenClaw 云端记忆插件 + 龙虾移动端 SDK - React18+TS+AntD5+Cytoscape 全套管理后台 - docker-compose 一键编排（后端/前端/Kuzu/Chroma/PostgreSQL/Redis/MinIO/Celery）",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A later storage refactor added a single PostgreSQL infrastructure using AGE and pgvector with a STORAGE_BACKEND switch, idempotent initialization of pgvector extension and HNSW vector table plus AGE graph, and changed docker-compose to remove Chroma and use an AGE+pgvector PostgreSQL image with STORAGE_BACKEND=postgres.",
+      "quote": "refactor(storage): Phase A — 单 PG(AGE+pgvector) 基础设施 + STORAGE_BACKEND 开关 - core/config: 新增 storage_backend(kuzu_chroma|postgres) 开关 + AGE/pgvector 配置 - core/adapters/pg_init: 幂等初始化 pgvector 扩展+向量表(HNSW) 与 AGE 图，缺失自动降级 - main: postgres 后端启动时初始化扩展 - deploy/postgres: AGE+pgvector 的 PG16 镜像(Dockerfile + init SQL)，base tag 可 ARG 覆盖 - docker-compose: 去掉 Chroma 服务，postgres 改用 AGE+pgvector 镜像，STORAGE_BACKEND=postgres - requirements/.env.example: 加 pgvector 与新配置项 旧 kuzu_chroma 后端保留，默认值不变，演进期不破坏现有可运行版本。",
+      "numbers": [
+        "PG16"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "A worldmonitor integration provides a push SDK and ingest contract, and an end-to-end test with real PostgreSQL pushed 2 records, generated 3 entities with cross-record same-name deduplication, generated 2 relation chains, and passed graph visualization verification.",
+      "quote": "feat(integration): Phase E — worldmonitor 推送 SDK + 直灌契约文档 - integrations/worldmonitor/claw_ingest_sdk.py：同步推送 SDK， record/entity/relation 构造 helper + 自动分批 + whoami 校验 - docs/INGEST_CONTRACT.md：bulk 契约(鉴权/字段语义/时序/批量/一致性) + worldmonitor 侧改造建议(抽取模板 + material_suppliers/signals 映射) + SDK 示例 端到端验证(真 PG)：SDK→运行中后端→server PG，推 2 records 生成 3 实体(跨 record 同名去重)+2 关系链路，graph 可视化校验 PASS。",
+      "numbers": [
+        "2",
+        "3",
+        "2"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "A governance/operations phase added per-tenant Redis fixed-window rate limiting returning 429 when exceeded and fail-open if Redis is unavailable, verified with 7 requests against a limit of 5 resulting in 5 allowed and 2 rejected, plus metrics, deep readiness checks, backup scripts, and entity attribute persistence.",
+      "quote": "feat(ops): Phase G — 限流 + 可观测 + 备份 + 实体属性持久化 - 限流中间件(api/middlewares/ratelimit)：per-tenant Redis 固定窗口，超限 429， Redis 不可用 fail-open。真 Redis 验证：7 请求@限5 → 5 放行 2 拒绝 - 可观测：MetricsMiddleware + /metrics(Prometheus 文本) + /health/ready 深度就绪检查 (postgres/redis/pgvector/age) - 备份：scripts/backup.sh(pg_dump 全库含 AGE+pgvector + 对象存储 + 保留期) - 补 Phase F 缺口：实体 attributes 持久化(GraphEntityMeta.attributes_json)， 贯通 orchestrator/bulk/可视化。demo risk_level 现可查可视(high/medium 显示在材料节点) - docs/OPERATIONS.md 运维手册 真 PG 验证：/health/ready 全绿、/metrics 正常、限流强制、attributes 入图谱可视化。",
+      "numbers": [
+        "7",
+        "5",
+        "5",
+        "2"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The repository shows 0 forks and 0 stars.",
+      "quote": "*   [Fork 0](https://github.com/login?return_to=%2Fguoliangdi%2Fclaw-zep)\n*   [Star 0](https://github.com/login?return_to=%2Fguoliangdi%2Fclaw-zep)",
+      "numbers": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The repository page lists 1 branch and 0 tags.",
+      "quote": "[**1**Branch](https://github.com/guoliangdi/claw-zep/branches)[**0**Tags](https://github.com/guoliangdi/claw-zep/tags)",
+      "numbers": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The repository history lists 10 commits.",
+      "quote": "[10 Commits](https://github.com/guoliangdi/claw-zep/commits/main/)",
+      "numbers": [
+        "10"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/guoliangdi/claw-zep"
+}

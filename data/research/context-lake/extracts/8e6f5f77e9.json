@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-18",
+  "author_or_org": "Qianxun Xu, Xianfang Zeng, Xinyao Liao, Wei Cheng, Gang Yu, Chi Zhang",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "ConsistWorld is a multi-agent world model that generates camera-controlled video streams of a static scene from one shared image.",
+      "quote": "We present ConsistWorld, a multi-agent world model that generates camera-controlled video streams of a static scene from one shared image.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "ConsistWorld formulates consistency as routing evidence from committed multi-agent history and concurrently generated peer views to the tokens being generated.",
+      "quote": "We formulate consistency as routing evidence from committed multi-agent history and concurrently generated peer views to the tokens being generated.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Pose Conditioned Memory Retrieval selects relevant historical observations from all agents, recovering evidence beyond the recent context window.",
+      "quote": "Pose Conditioned Memory Retrieval selects relevant historical observations from all agents, recovering evidence beyond the recent context window.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Visibility-Gated Peer Sharing regulates current peer information according to estimated historical coverage and current-view overlap.",
+      "quote": "Visibility-Gated Peer Sharing regulates current peer information according to estimated historical coverage and current-view overlap.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The two mechanisms determine which historical observations enter the context and where concurrent peer information contributes, supporting long-term recall and coordinated exploration.",
+      "quote": "Together, they determine which historical observations enter the context and where concurrent peer information contributes, supporting long-term recall and coordinated exploration.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Both mechanisms use camera geometry and maintain a bounded active context for a fixed agent count and retrieval budget.",
+      "quote": "Both mechanisms use camera geometry and maintain a bounded active context for a fixed agent count and retrieval budget.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Experiments on evidence sharing cases and generalization across video length and agent number show ConsistWorld achieves strong cross-time and cross-agent consistency while preserving competitive generation quality.",
+      "quote": "Experiments on evidence sharing cases and video length and agent number generalizations show that ConsistWorld achieves a strong cross-time and cross-agent consistency while preserving competitive generation quality.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Extending autoregressive video world models to multiple agents requires consistency across independently controlled views and temporal gaps under causal streaming.",
+      "quote": "Extending them to multiple agents requires consistency across independently controlled views and temporal gaps under causal streaming.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.22641"
+}
