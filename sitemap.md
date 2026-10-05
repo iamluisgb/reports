@@ -31,7 +31,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 - [Ontologies, Graph Knowledge, Semantic Layer & Context Layer (2025–2026)](https://luisgonzalezbernal.com/reports/reports/knowledge-layer-2026-10-02.md) — 2026-10-02 · 14 min
 - [Ontologies, Graph ML & AIOps: Where the ML Actually Goes](https://luisgonzalezbernal.com/reports/reports/ontology-graph-ml-aiops-2026-10-01.md) — 2026-10-01 · 11 min
-- [Context Lake: The Infrastructure Layer for Autonomous AI Agents](https://luisgonzalezbernal.com/reports/reports/context-lake-2026-07-27.md) — 2026-07-27 · 16 min
+- [Context Lakes: What Multi-Agent Systems Need to Share](https://luisgonzalezbernal.com/reports/reports/context-lake-2026-07-27.md) — 2026-07-27 · 12 min
 - [AI Agent Memory in 2026: Architectures, Frameworks & Trade-offs](https://luisgonzalezbernal.com/reports/reports/ai-agent-memory-2026-06-28.md) — 2026-06-28 · 7 min
 
 ### Models & Research

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04T17:14:33+00:00",
+  "generated": "2026-10-05T04:13:37+00:00",
   "count": 161,
   "reports": [
     {
@@ -271,7 +271,6 @@
       "readingTime": 7,
       "tags": [
         "models",
-        "research",
         "memory",
         "coding"
       ],
@@ -285,6 +284,7 @@
       "summary": "Nvidia ships CUDA in Rust · a 4B model out-plans Postgres · AWS admits unrecoverable Middle East data · Flock cameras cracked open",
       "readingTime": 8,
       "tags": [
+        "agents",
         "infrastructure",
         "hardware"
       ],
@@ -996,12 +996,13 @@
     {
       "file": "context-lake-2026-07-27.html",
       "type": "special",
-      "title": "Context Lake: The Infrastructure Layer for Autonomous AI Agents",
+      "title": "Context Lakes: What Multi-Agent Systems Need to Share",
       "date": "2026-07-27",
-      "summary": "Definition · Architecture · 4 platforms compared · AIOps blueprint · Anti-patterns · Real economics · 11 sources",
-      "readingTime": 16,
+      "summary": "The definition · Why vectors and per-agent memory don't add up · What exists and what it measures · The failures shared context prevents · What is still open",
+      "readingTime": 12,
       "tags": [
         "agents",
+        "research",
         "memory"
       ],
       "series": "Memory & Knowledge"
@@ -1126,6 +1127,7 @@
       "readingTime": 6,
       "tags": [
         "models",
+        "agents",
         "multimodal"
       ]
     },
@@ -1189,6 +1191,7 @@
       "readingTime": 3,
       "tags": [
         "models",
+        "agents",
         "open-source"
       ],
       "audio": true
@@ -2041,7 +2044,6 @@
       "readingTime": 8,
       "tags": [
         "agents",
-        "research",
         "security"
       ]
     },
