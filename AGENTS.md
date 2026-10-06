@@ -39,11 +39,11 @@ files); the workflow refuses to overwrite, and so should you.
 3. Commit and push to `master`. **Do not** hand-edit `reports.json`, `sitemap.xml`,
    `rss.xml`, `sitemap.md`, `tokens.json`, the `.md` twins in `reports/`, the `og/` images,
    the index content between `<!-- index:start -->` and `<!-- index:end -->`, or the
-   `<!-- og:start -->…<!-- og:end -->` and `<!-- ui:start -->…<!-- ui:end -->` blocks in each
-   report; CI regenerates them all on push.
+   `<!-- og:start -->…<!-- og:end -->`, `<!-- ui:start -->…<!-- ui:end -->` and
+   `<!-- pwa:start -->…<!-- pwa:end -->` blocks; CI regenerates them all on push.
    Don't add font links, scripts or page chrome (theme code, player code, progress bar,
-   prev/next) to a report yourself: the ui block brings the fonts, `site.js` and `report.js`,
-   which add them to every page. Follow **Design system** below for the markup.
+   prev/next) to a report yourself: the ui block brings the fonts, `site.js`, `report.js`
+   and `pwa.js`, which add them to every page. Follow **Design system** below for the markup.
 
 ## Audio briefing
 
@@ -81,6 +81,42 @@ never run two days at once.
 There is nothing to do by hand — the `<title>` and `subtitle` you write feed the
 cards automatically. To preview locally: `pip install Pillow && python3
 scripts/build_social.py` (idempotent; re-runs are a no-op).
+
+## Installed web app (PWA)
+
+The site installs to a phone or desktop home screen and keeps working offline. Four
+source files carry it:
+
+| File | Holds |
+|---|---|
+| `manifest.json` | Name, icons, `start_url`/`scope` `/reports/`, standalone display, shortcuts to today, the calendar and the specials. `.json`, not `.webmanifest`: Pages serves `.webmanifest` as `application/octet-stream`, which no browser parses. |
+| `sw.js` | The cache policy. Served from the repo root, so its scope is `/reports/` without the `Service-Worker-Allowed` header Pages cannot send. |
+| `pwa.js` | Registers the worker, raises the toast (a briefing you have not read, a new build, no connection), adds the audio "Keep" button, and keeps `theme-color` on the reader's theme rather than the system's. |
+| `offline.html` | What an uncached page falls back to; it lists what *is* on the device. |
+
+`scripts/build_social.py` injects the head block — manifest link, icons, `pwa.js` —
+into `index.html`, `about.html` and every report, so a new report gets it without being
+edited. `scripts/build_icons.py` draws `assets/icons/` from the Musgo tokens,
+idempotent via a fingerprint in the PNG metadata, like the OG cards. Both run in
+`build.yml` and `daily.yml`.
+
+Documents and data are network-first on purpose: Pages pins everything to
+`Cache-Control: max-age=600` and its headers cannot be changed, so a plain fetch can
+answer from a ten-minute-old CDN entry. The worker revalidates against the ETag
+instead, and only falls back to its cache when the network fails or takes longer than
+4 s. The shell is precached on install, pages are cached as they are read, and audio
+only when the reader presses **Keep**, capped at 45 MB, oldest evicted first.
+
+Rules:
+
+- Bump `VERSION` in `sw.js` when the cache policy changes — that is what retires the
+  old caches. Do not bump it per deploy.
+- Keep `MEDIA_CACHE` unversioned: a briefing the reader asked to keep is their own
+  download, and it must survive an update. Only the LRU cap evicts it.
+- Keep every path under `/reports/` so the worker's scope stays its own, and keep
+  `pwa.js`/`sw.js` inside the byte budgets in `check_design.py`.
+- iOS has no background sync, so freshness is checked on open and on
+  `visibilitychange` — all a home-screen app gets there. Never promise more.
 
 ## Design system
 
