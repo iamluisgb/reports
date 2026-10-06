@@ -51,6 +51,12 @@ Each daily report carries a spoken briefing: `audio/ai-news-YYYY-MM-DD.mp3`, plu
 script it was read from in `audio/ai-news-YYYY-MM-DD.txt` (versioned, so what was said
 can be audited without listening).
 
+The pipeline writes that script from the report. If it lands outside 700–860 words —
+which is what left 6 Oct 2026 published without a briefing — `write_report.py` sends
+the checker's own objection back to the model once, with a word target and the side of
+the window that is dangerous, instead of dropping the audio (`AUDIO_ATTEMPTS`). Two
+attempts, then the day goes out without a briefing, as before.
+
 Write the script — one segment per paragraph, opened by its voice — then run:
 
 ```bash
