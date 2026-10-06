@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Qwen's 125B runs on a single 4090](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-05.md) — 2026-10-05 · 9 min
+- [Reflection ships Beam, a 501B open-weight model](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-06.md) — 2026-10-06 · 8 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### October 2026
 
+- [Reflection ships Beam, a 501B open-weight model](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-06.md) — 2026-10-06 · 8 min
 - [Qwen's 125B runs on a single 4090](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-05.md) — 2026-10-05 · 9 min
 - [Aleph Alpha ships Kolibri, a sovereign open-weight model](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-04.md) — 2026-10-04 · 8 min
 - [Court rules Utah's VPN law technically impossible](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-03.md) — 2026-10-03 · 9 min
