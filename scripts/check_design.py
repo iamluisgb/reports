@@ -53,7 +53,8 @@ def check_tokens() -> None:
 
 
 # ---------------------------------------------------------------- budgets (gzip bytes)
-BUDGETS = {"index.html": 60_000, "styles.css": 16_000, "home.css": 8_000, "site.js": 8_000, "report.js": 6_000}
+BUDGETS = {"index.html": 60_000, "styles.css": 16_000, "home.css": 8_000, "site.js": 8_000,
+           "report.js": 6_000, "pwa.js": 6_000, "sw.js": 7_000}
 REPORT_BUDGET = 60_000
 FONTS_BUDGET = 120_000   # raw woff2, all faces
 

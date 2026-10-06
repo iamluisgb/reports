@@ -135,6 +135,50 @@ def inject_meta(path: Path, entry: dict) -> bool:
     return False
 
 
+# ----- Installed web app (PWA) ------------------------------------------------
+# The manifest, the icons, the theme colour and pwa.js (freshness, updates,
+# offline audio). Injected rather than hand-written so every page — the index,
+# about.html and all 162 reports, old and new — carries the same head. Reports
+# sit one directory below the app's scope, hence the prefix.
+
+PWA_START = "<!-- pwa:start -->"
+PWA_END = "<!-- pwa:end -->"
+PWA_RE = re.compile(re.escape(PWA_START) + r".*?" + re.escape(PWA_END), re.S)
+ROOT_PAGES = ("index.html", "about.html")
+
+
+def pwa_head(prefix: str = "") -> list[str]:
+    return [
+        f'<link rel="manifest" href="{prefix}manifest.json">',
+        f'<link rel="icon" href="{prefix}assets/icons/favicon-32.png" sizes="32x32">',
+        f'<link rel="apple-touch-icon" href="{prefix}assets/icons/apple-touch-icon.png">',
+        # The browser chrome follows the system until pwa.js takes over the tag and
+        # follows the reader's own choice of theme instead.
+        '<meta name="theme-color" content="#0c0f0e" media="(prefers-color-scheme: dark)">',
+        '<meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)">',
+        '<meta name="apple-mobile-web-app-title" content="AI Reports">',
+        '<meta name="mobile-web-app-capable" content="yes">',
+        '<meta name="apple-mobile-web-app-capable" content="yes">',
+        f'<script src="{prefix}pwa.js" defer></script>',
+    ]
+
+
+def inject_pwa(path: Path, prefix: str = "") -> bool:
+    """Insert/replace the installed-app block right before </head>."""
+    text = path.read_text(encoding="utf-8", errors="replace")
+    block = "\n".join([PWA_START, *pwa_head(prefix), PWA_END])
+    if PWA_START in text:
+        new = PWA_RE.sub(lambda _: block, text, count=1)
+    elif "</head>" in text:
+        new = text.replace("</head>", block + "\n</head>", 1)
+    else:
+        return False
+    if new != text:
+        path.write_text(new, encoding="utf-8")
+        return True
+    return False
+
+
 # ----- Shared report UI -------------------------------------------------------
 # Every report preloads the self-hosted fonts and loads site.js (theme, audio player) and report.js
 # (top bar, reading progress, section index, prev/next). Injected here, like the
@@ -157,6 +201,8 @@ UI_BLOCK = "\n".join([
     '{"href_matches":"/reports/reports/*.html"},{"href_matches":"/reports/about.html"}]},"eagerness":"moderate"}]}</script>',
     # Umami (cloud), served through the domain root like the rest of luisgonzalezbernal.com.
     '<script defer src="/u/s.js" data-website-id="08c1619b-4bb8-471b-9dc9-9b6cda88e8ae" data-host-url="https://cloud.umami.is" data-domains="luisgonzalezbernal.com"></script>',
+    # Installed app: manifest, icons, browser chrome, pwa.js.
+    *pwa_head("../"),
     '<script src="../site.js" defer></script>',
     '<script src="../report.js" defer></script>',
     UI_END,
@@ -358,8 +404,10 @@ def main() -> None:
 
     ui = sum(inject_ui(REPORTS_DIR / entry["file"]) for entry in entries)
 
+    pwa = sum(inject_pwa(ROOT / name, "/reports/") for name in ROOT_PAGES)
+
     print(f"OG images generated: {images} (+ default) | reports meta updated: {changed}/{len(entries)}"
-          f" | ui updated: {ui}")
+          f" | ui updated: {ui} | pwa head updated: {pwa}/{len(ROOT_PAGES)}")
 
 
 if __name__ == "__main__":

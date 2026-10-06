@@ -126,12 +126,13 @@ jobs:
         run: |
           python3 scripts/generate_manifest.py
           python3 scripts/build_social.py
+          python3 scripts/build_icons.py
 
       - name: Commit and push
         if: ${{ !inputs.dry_run && steps.resolve.outputs.skip != 'true' }}
         run: |
           DAY="${{ steps.resolve.outputs.day }}"
-          git add reports audio data reports.json sitemap.xml rss.xml og index.html sitemap.md tokens.json
+          git add reports audio data reports.json sitemap.xml rss.xml og index.html about.html sitemap.md tokens.json assets/icons
           if git diff --staged --quiet; then
             echo "::error::nothing to commit — the report was not written"
             exit 1

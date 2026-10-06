@@ -19,6 +19,17 @@
 <link rel="stylesheet" href="styles.css">
 <script>try{var t=localStorage.getItem('ai-reports-theme');if(t==='light'||(!t&&matchMedia('(prefers-color-scheme: light)').matches))document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
 <script type="speculationrules">{"prerender":[{"where":{"or":[{"href_matches":"/reports/"},{"href_matches":"/reports/reports/*.html"},{"href_matches":"/reports/about.html"}]},"eagerness":"moderate"}]}</script>
+<!-- pwa:start -->
+<link rel="manifest" href="/reports/manifest.json">
+<link rel="icon" href="/reports/assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/reports/assets/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0c0f0e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-title" content="AI Reports">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script src="/reports/pwa.js" defer></script>
+<!-- pwa:end -->
 </head>
 <body>
   <div class="page">

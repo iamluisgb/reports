@@ -17,10 +17,12 @@ on:
       - 'reports/**'
       - 'scripts/generate_manifest.py'
       - 'scripts/build_social.py'
+      - 'scripts/build_icons.py'
       - 'scripts/build_index.py'
       - 'scripts/build_agent_files.py'
       - 'styles.css'          # tokens.json is generated from it
       - 'index.html'
+      - 'about.html'
       - 'assets/fonts/**'
   workflow_dispatch:
 
@@ -52,11 +54,14 @@ jobs:
       - name: Build OG images and inject social meta
         run: python3 scripts/build_social.py
 
+      - name: Build app icons (PWA)
+        run: python3 scripts/build_icons.py
+
       - name: Commit generated files
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports.json sitemap.xml rss.xml og reports index.html sitemap.md tokens.json
+          git add reports.json sitemap.xml rss.xml og reports index.html about.html sitemap.md tokens.json assets/icons
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else

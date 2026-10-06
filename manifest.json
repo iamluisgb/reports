@@ -1,0 +1,52 @@
+{
+  "id": "/reports/",
+  "name": "AI Reports — Luis GB",
+  "short_name": "AI Reports",
+  "description": "Daily AI news briefings and in-depth special reports: models, agents, security and AI engineering.",
+  "start_url": "/reports/",
+  "scope": "/reports/",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["news", "education"],
+  "theme_color": "#0c0f0e",
+  "background_color": "#0c0f0e",
+  "icons": [
+    {
+      "src": "/reports/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/reports/assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/reports/assets/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Today's briefing",
+      "short_name": "Today",
+      "url": "/reports/#today"
+    },
+    {
+      "name": "Calendar",
+      "short_name": "Calendar",
+      "url": "/reports/#calendar"
+    },
+    {
+      "name": "Special reports",
+      "short_name": "Specials",
+      "url": "/reports/#special"
+    }
+  ]
+}
