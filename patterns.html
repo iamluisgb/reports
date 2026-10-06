@@ -230,6 +230,17 @@
       <p class="use"><code>make_audio.py</code> writes this markup and <code>site.js</code> brings it to life: the waveform from <code>audio/&lt;day&gt;.json</code>, the speed control, the seek bar. The index builds the same markup. Never add a player script to a report.</p>
     </div>
 
+    <div class="pat"><span class="eyebrow">Toast · <code>.toast</code></span>
+      <div class="stage" style="position:relative;min-height:104px">
+        <div class="toast on" role="status" style="position:absolute;inset-inline:0;bottom:0;max-width:none">
+          <span class="toast-msg">New briefing: <b>Qwen's 125B runs on a single 4090</b></span>
+          <button class="btn btn-xs" type="button">Read it</button>
+          <button class="toast-x" type="button" aria-label="Dismiss">✕</button>
+        </div>
+      </div>
+      <p class="use">Transient status over the page: a briefing you have not read, a new build of the site, or no connection. One at a time, and it never takes focus, so it cannot interrupt reading. <code>pwa.js</code> raises it; nothing else should.</p>
+    </div>
+
     <div class="pat"><span class="eyebrow">Accent in titles · <code>h1 em</code></span>
       <div class="stage">
         <div style="font:400 var(--fs-xl)/1.1 var(--f-display)">Building <em style="font-style:italic;color:var(--primary)">Agent Skills</em> in 2026: Progressive Disclosure as a Design Pattern</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offline — AI Reports</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Layout of this one page only; patterns come from styles.css. */
+  .off { max-width: var(--measure); margin: 0 auto; padding: 48px 24px 96px; }
+  .off h1 { margin: 18px 0 14px; font: 400 var(--fs-display)/.98 var(--f-display); letter-spacing: -.02em; }
+  .off p { font-size: var(--fs-md); line-height: 1.6; color: var(--on-surface-variant); }
+  .off ul { margin: 26px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--border); }
+  .off li { border-bottom: 1px solid var(--border); }
+  .off a { display: block; padding: 14px 2px; font-size: var(--fs-base); color: var(--primary); text-decoration: none; }
+  .off a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .off .none { margin-top: 26px; font-size: var(--fs-sm); color: var(--muted); }
+</style>
+</head>
+<body>
+  <main class="off">
+    <div class="eyebrow"><b>AI Reports</b> · offline</div>
+    <h1>No connection</h1>
+    <p>The network is not answering, and this page was not one you had opened before. The briefings below are on this device already — they open without a connection.</p>
+    <ul id="cached"></ul>
+    <p class="none" id="none" hidden>Nothing cached yet. Read a briefing while you are online and it will be here next time.</p>
+  </main>
+
+  <script>
+    // The pages the service worker has kept: listed from Cache Storage directly,
+    // because offline there is nobody else to ask.
+    (async () => {
+      const list = document.getElementById('cached');
+      const none = document.getElementById('none');
+      if (!('caches' in window)) { none.hidden = false; return; }
+      const names = (await caches.keys()).filter(n => n.startsWith('ai-reports-pages-'));
+      const keys = (await Promise.all(names.map(n => caches.open(n).then(c => c.keys()))))
+        .flat().map(r => new URL(r.url).pathname)
+        .filter(p => p.endsWith('.html') && !/\/(index|offline)\.html$/.test(p));
+      const files = [...new Set(keys)].sort().reverse().slice(0, 30);
+      if (!files.length) { none.hidden = false; return; }
+      list.innerHTML = files.map(p => {
+        const name = p.split('/').pop().replace(/\.html$/, '');
+        return `<li><a href="${p}">${name}</a></li>`;
+      }).join('');
+    })();
+  </script>
+</body>
+</html>
