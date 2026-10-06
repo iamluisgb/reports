@@ -77,6 +77,13 @@ NAN_API_KEY=... python3 scripts/write_report.py --bundle /tmp/c.json --dry-run
 
 `--dry-run` writes to `/tmp` instead of the repo.
 
+The spoken briefing is a separate call, and it is the one that used to cost a day
+its audio: on 6 Oct 2026 the script came back at 917 words, the 700-860 checker
+turned it down, and the report shipped without a briefing. Now the checker's own
+objection is fed back to the model once — with a word target and the side of the
+window that is dangerous — so a single miss becomes a corrected script instead of
+silence. Two attempts, then the day is published without audio, exactly as before.
+
 ### Known limits
 
 - It sees Hacker News once, at ~07:00. A story that breaks later, or that is

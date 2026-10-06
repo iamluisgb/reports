@@ -54,6 +54,13 @@ MIN_REPORT_CHARS = 1200
 # about 4:05-4:50. make_audio.py enforces the same window on real seconds.
 MIN_AUDIO_WORDS = 700
 MAX_AUDIO_WORDS = 860
+# What the retry aims at: the middle of the window, so one correction lands.
+TARGET_AUDIO_WORDS = 780
+# A rejected script used to end the day's briefing. On 6 Oct 2026 the first
+# attempt came back at 917 words, check_audio turned it down, and the report was
+# published without audio. One more attempt fixes it, because the model is told
+# exactly what the checker objected to instead of simply being asked again.
+AUDIO_ATTEMPTS = 2
 # More than this and the prompt is mostly noise the model has to wade through.
 # Two orderings, unioned: points finds what the day voted for, rank finds what
 # it is voting for right now. Points alone buried the RubyGems attribution — the
@@ -207,6 +214,16 @@ script is rejected outside that range, so cut rather than pad.
 
 REPORT:
 {report}"""
+
+# Appended to the same prompt on the second attempt: the objection, verbatim, plus
+# a number to move to. Rewriting from scratch beats patching, since a script that
+# overshot by 100 words needs sentences cut, not clauses trimmed.
+AUDIO_RETRY = """{prompt}
+
+Your previous attempt was rejected by the checker: {problem}
+Write the whole script again — both hosts, the same stories, nothing added and
+nothing dropped — and {correction}. Keep the opening date line and the closing
+pointer to the written report. Return only the corrected script."""
 
 
 def post(payload, key, timeout=240):
@@ -575,6 +592,57 @@ def check_audio(script):
     return ""
 
 
+def audio_correction(script, problem):
+    """What to tell the model after a rejected script: a number, not an adjective.
+
+    The band matters. Asked to "bring it to 780" the model undershot to 703 on a
+    live run — inside the window by three words, and one bad round away from
+    failing the retry. So the instruction names where to land and which side is
+    dangerous, and leaves room for the model's habit of rounding towards "short".
+    """
+    words = len(re.sub(r"\[\w+\]", " ", script).split())
+    if words > MAX_AUDIO_WORDS:
+        return (f"cut about {words - TARGET_AUDIO_WORDS} words: {words} is over the "
+                f"{MAX_AUDIO_WORDS} ceiling; land close to {TARGET_AUDIO_WORDS} and never "
+                f"below {MIN_AUDIO_WORDS + 20}")
+    if words < MIN_AUDIO_WORDS:
+        return (f"add about {TARGET_AUDIO_WORDS - words} words: {words} is under the "
+                f"{MIN_AUDIO_WORDS} floor; land close to {TARGET_AUDIO_WORDS} and never "
+                f"above {MAX_AUDIO_WORDS - 20}")
+    return ("open every segment with its speaker tag, one segment per paragraph, "
+            "alternating HOST_A and HOST_B")
+
+
+def audio_script(text, weekday, key):
+    """The spoken briefing, asked for again when the checker turns it down.
+
+    Returns (script, model), or (None, None) when no attempt lands inside the word
+    window — the day is then published without a briefing, as it always was.
+    """
+    base = AUDIO_PROMPT.format(voice=VOICE, weekday=weekday, report=text)
+    prompt = base
+    for attempt in range(1, AUDIO_ATTEMPTS + 1):
+        try:
+            script, model = complete(prompt, key, "audio")
+        except SystemExit as exc:
+            # The report is already on disk and publishable. A briefing the models
+            # could not produce must not abort the run before the report is
+            # committed, so treat it exactly like a rejected script.
+            print(f"  ! audio script unavailable: {exc} — report still stands", file=sys.stderr)
+            return None, None
+        script = re.sub(r"^\s*```\w*\s*|\s*```\s*$", "", script.strip())
+        problem = check_audio(script)
+        if not problem:
+            if attempt > 1:
+                print(f"  audio script accepted on attempt {attempt}", file=sys.stderr)
+            return script, model
+        print(f"  ! audio script rejected on attempt {attempt}: {problem}", file=sys.stderr)
+        if attempt < AUDIO_ATTEMPTS:
+            prompt = AUDIO_RETRY.format(prompt=base, problem=problem,
+                                        correction=audio_correction(script, problem))
+    return None, None
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--bundle", required=True)
@@ -690,22 +758,12 @@ def main():
 
     text = re.sub(r"<[^>]+>", " ", page)
     text = re.sub(r"\s+", " ", text)
-    try:
-        script, model = complete(
-            AUDIO_PROMPT.format(voice=VOICE, weekday=bundle["weekday"], report=text),
-            key, "audio")
-    except SystemExit as exc:
-        # The report is already on disk and publishable. A briefing the models
-        # could not produce must not abort the run before the report is
-        # committed, so treat it like a rejected script: report still stands.
-        print(f"  ! audio script unavailable: {exc} — report still stands", file=sys.stderr)
-        return
-    script = re.sub(r"^\s*```\w*\s*|\s*```\s*$", "", script.strip())
-    problem = check_audio(script)
-    if problem:
-        # The report is already on disk and publishable; the briefing is not
-        # worth failing the whole run over.
-        print(f"  ! audio script rejected: {problem} — report still stands", file=sys.stderr)
+    script, model = audio_script(text, bundle["weekday"], key)
+    if not script:
+        # The report is already on disk and publishable; the briefing is not worth
+        # failing the whole run over.
+        print(f"  ! no audio script inside {MIN_AUDIO_WORDS}-{MAX_AUDIO_WORDS} words "
+              f"after {AUDIO_ATTEMPTS} attempts — report still stands", file=sys.stderr)
         return
     script_path = (Path(f"/tmp/ai-news-{day}.txt") if args.dry_run
                    else ROOT / "audio" / f"ai-news-{day}.txt")
