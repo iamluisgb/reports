@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-01-28",
+  "author_or_org": "Olya Rezaeian, Alparslan Emrah Bayrak, Onur Asan",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Successful implementation of AI clinical decision support systems depends on user trust and reliance and can be influenced by explainable AI.",
+      "quote": "However, the successful implementation of these systems relies on user trust and reliance, which can be influenced by explainable AI.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The study explored how varying explainability levels affect clinicians' trust, cognitive load, and diagnostic performance in breast cancer detection.",
+      "quote": "This study explores the impact of varying explainability levels on clinicians trust, cognitive load, and diagnostic performance in breast cancer detection.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "High confidence scores substantially increased trust but also led to overreliance, reducing diagnostic accuracy.",
+      "quote": "The results revealed that high confidence scores substantially increased trust but also led to overreliance, reducing diagnostic accuracy.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Low confidence scores decreased trust and agreement while increasing diagnosis duration, reflecting more cautious behavior.",
+      "quote": "In contrast, low confidence scores decreased trust and agreement while increasing diagnosis duration, reflecting more cautious behavior.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Some explainability features influenced cognitive load by increasing stress levels.",
+      "quote": "Some explainability features influenced cognitive load by increasing stress levels.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Demographic factors such as age, gender, and professional role shaped participants' perceptions and interactions with the system.",
+      "quote": "Additionally, demographic factors such as age, gender, and professional role shaped participants' perceptions and interactions with the system.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The study concludes that AI-driven clinical decision support systems should balance transparency, usability, and cognitive demands to foster trust and improve clinical workflow integration.",
+      "quote": "The findings highlight the importance of designing AI-driven CDSSs that balance transparency, usability, and cognitive demands to foster trust and improve integration into clinical workflows.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2501.16693"
+}

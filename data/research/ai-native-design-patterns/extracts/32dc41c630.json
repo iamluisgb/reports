@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-12",
+  "author_or_org": "Tanjal Shukla, K. J. Kevin Feng, Leijie Wang, Mohammad Rostami, Amy X. Zhang",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Hedwig learns an evolving set of behavioral guidelines from developer decisions and feedback rather than relying on a global fixed autonomy configuration.",
+      "quote": "Rather than operating on a global, fixed autonomy configuration, Hedwig learns an evolving set of behavioral guidelines from developer decisions and feedback, reducing friction on work for which the agent has earned trust, while tightening oversight when the agent operates outside familiar territory.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Coding agents tend to introduce unintended edits, subtle bugs, and scope drift that slip past code review, so developers must still decide how much autonomy to grant them.",
+      "quote": "Despite coding agents' advances in handling increasingly complex tasks, their continued tendency to introduce unintended edits, subtle bugs, and scope drift that slip past code review means developers must still decide how much autonomy to grant them.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Static permission settings and instruction files cannot account for developers' autonomy preferences shifting across tasks and over time.",
+      "quote": "However, existing approaches for setting an agent's level of autonomy, such as static permission settings or instruction files, cannot account for how developers' preferences for agent autonomy can shift across tasks and over time.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "A formative survey of 21 software engineers who use coding agents found frustration with calibrating autonomy and evolving preferences for level of oversight.",
+      "quote": "We conducted a formative survey with 21 software engineers who use coding agents and found that they experience frustration with calibrating autonomy and have evolving preferences for level of oversight.",
+      "numbers": [
+        "21"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Hedwig is a CLI coding agent that dynamically adjusts its autonomy level based on developer-agent interactions across sessions.",
+      "quote": "Building on these insights, we present Hedwig, a CLI coding agent that dynamically adjusts its autonomy level based on developer-agent interactions across sessions.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Hedwig reduces friction on work for which the agent has earned trust while tightening oversight when the agent operates outside familiar territory.",
+      "quote": "Rather than operating on a global, fixed autonomy configuration, Hedwig learns an evolving set of behavioral guidelines from developer decisions and feedback, reducing friction on work for which the agent has earned trust, while tightening oversight when the agent operates outside familiar territory.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Hedwig demonstrates a paradigm where agents intelligently adapt their level of autonomy based on user trust through active, longitudinal collaboration.",
+      "quote": "Hedwig demonstrates the potential of a new paradigm where agents intelligently adapt their level of autonomy based on user trust through active, longitudinal collaboration.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.11495"
+}

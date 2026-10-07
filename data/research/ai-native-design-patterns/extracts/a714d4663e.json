@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-06-14",
+  "author_or_org": "K. J. Kevin Feng, David W. McDonald, Amy X. Zhang",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The paper argues that an AI agent's level of autonomy should be treated as a deliberate design decision, separate from its capability and operational environment.",
+      "quote": "We argue that an agent's level of autonomy can be treated as a deliberate design decision, separate from its capability and operational environment.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper defines five escalating levels of agent autonomy, characterized by user roles: operator, collaborator, consultant, approver, and observer.",
+      "quote": "In this work, we define five levels of escalating agent autonomy, characterized by the roles a user can take when interacting with an agent: operator, collaborator, consultant, approver, and observer.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Within each autonomy level, the paper describes how users can exert control over the agent and raises open questions about designing user-agent interaction.",
+      "quote": "Within each level, we describe the ways by which a user can exert control over the agent and open questions for how to design the nature of user-agent interaction.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper frames the central problem as how agent developers can calibrate appropriate levels of autonomy for their agents.",
+      "quote": "How can agent developers calibrate the appropriate levels of autonomy at which their agents should operate?",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper highlights a potential application of its framework toward AI autonomy certificates to govern agent behavior in single- and multi-agent systems.",
+      "quote": "We then highlight a potential application of our framework towards AI autonomy certificates to govern agent behavior in single- and multi-agent systems.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper proposes early ideas for evaluating agents' autonomy.",
+      "quote": "We conclude by proposing early ideas for evaluating agents' autonomy.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper describes autonomy as double-edged for AI agents, unlocking transformative possibilities while also carrying serious risks.",
+      "quote": "Autonomy is a double-edged sword for AI agents, simultaneously unlocking transformative possibilities and serious risks.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2506.12469"
+}

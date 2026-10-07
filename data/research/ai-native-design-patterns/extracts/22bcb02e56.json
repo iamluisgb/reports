@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "Quellit, Inc.",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Quell describes its product as a UAT AI agent platform that automates UAT, identifies bugs, and checks builds against acceptance criteria.",
+      "quote": "Quell is UAT AI Agent building and tasking platform that automates UAT and identifies bugs ensuring your builds meet your acceptance criteria.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Quell states that its AI reads designs, tickets, or requirements and writes tests without scripting.",
+      "quote": "No scripting needed – Quell’s AI reads your designs, tickets, or requirements and writes the tests for you.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Quell says it executes tests automatically when an issue or ticket status changes in tools such as Linear or Jira.",
+      "quote": "Quell executes tests upon issue or ticket status changes (e.g. Linear or Jira).",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Quell includes human approval steps by letting team members be tagged for launch approvals.",
+      "quote": "Tag team members, gain launch approvals.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Quell claims audit readiness through video and screenshot documentation.",
+      "quote": "Audit ready with video and screenshot documentation",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A testimonial says Quell’s automatic screenshots and short videos attached to each test are very clear.",
+      "quote": "Quell's automatic screenshots and short videos attached to each test are very clear",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Quell claims every requirement is validated and documented, and that its UAT reports support compliance audits.",
+      "quote": "Every requirement is validated and documented . Quell’s UAT reports support your compliance audits.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Quell positions its AI as embedded in existing tools such as Slack, Jira, Linear, and Figma.",
+      "quote": "Quell integrates with the tools you already use (Slack, Jira, Linear, Figma).",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.quellit.ai/"
+}

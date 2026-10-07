@@ -1,0 +1,82 @@
+{
+  "slug": "ai-native-design-patterns",
+  "title": "AI-native product design: patterns for autonomy, trust and exceptions",
+  "thesis": "AI-native products differ from AI-enhanced ones by making automation the default and putting humans on exceptions; trust is earned through visible confidence, explanations and easy reversal, not through chat interfaces.",
+  "audience": "Product designers and PMs building AI features into SaaS",
+  "since": "2023-01-01",
+  "per_question": 8,
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What guidelines and patterns exist for human-AI interaction design?",
+      "queries": [
+        "guidelines for human-AI interaction",
+        "human-AI interaction design patterns",
+        "People + AI guidebook"
+      ],
+      "providers": [
+        "arxiv",
+        "semantic_scholar",
+        "hn",
+        "wikipedia"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "How should levels of automation and autonomy be chosen, and where do humans handle exceptions?",
+      "queries": [
+        "levels of automation human-AI",
+        "levels of autonomy AI agents",
+        "human in the loop exception handling AI"
+      ],
+      "providers": [
+        "arxiv",
+        "semantic_scholar",
+        "wikipedia",
+        "hn"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What builds or erodes appropriate trust in AI systems: explanations, confidence, overreliance?",
+      "queries": [
+        "appropriate reliance AI explanations",
+        "overreliance on AI decision support",
+        "trust calibration AI confidence display"
+      ],
+      "providers": [
+        "arxiv",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Is chat the right interface? Evidence on conversational versus graphical and embedded AI interfaces",
+      "queries": [
+        "chat interface limitations LLM user experience",
+        "generative UI LLM interfaces",
+        "conversational versus graphical user interface study"
+      ],
+      "providers": [
+        "arxiv",
+        "hn",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "How do AI-native products (Ramp, Linear, Notion, Vercel) design their AI features, according to their own teams?",
+      "queries": [
+        "Ramp AI agents finance",
+        "Linear AI agents product",
+        "Notion AI agents",
+        "Vercel v0 generative UI"
+      ],
+      "providers": [
+        "hn",
+        "github",
+        "web"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-07-17",
+  "author_or_org": "Rui Sheng, Chuhan Shi, Sobhan Lotfi, Shiyi Liu, Adam Perer, Huamin Qu, Furui Cheng",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper reviews existing solutions and synthesizes design patterns, described as recurring approaches that support human-AI interface design in clinical settings.",
+      "quote": "In this study, we review existing solutions and synthesize a set of design patterns - recurring approaches that support the design of human-AI interfaces in clinical settings.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Through a literature review of human-AI interaction designs in clinical contexts, the authors identified 15 information entities commonly presented to users and 12 design patterns for organizing and communicating that information.",
+      "quote": "We conducted a comprehensive literature review of human-AI interaction designs in clinical contexts, through which we identified 15 information entities commonly presented to users and 12 design patterns used to organize and communicate this information effectively.",
+      "numbers": [
+        "15",
+        "12"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "For each design pattern, the authors summarize the design problem, proposed solution, and rationale for when to apply or not apply it, drawing on literature and semi-structured interviews with 12 healthcare professionals.",
+      "quote": "For each design pattern, we summarize the underlying design problem, the proposed solution, and the rationale for when the pattern should or should not be applied, based on insights from both the literature and semi-structured interviews with 12 healthcare professionals.",
+      "numbers": [
+        "12"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The design patterns were evaluated in an online workshop with 14 experienced UI designers.",
+      "quote": "We evaluated the proposed design patterns through an online workshop involving 14 experienced UI designers.",
+      "numbers": [
+        "14"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "In the workshop, participants created interface sketches for healthcare scenarios from their own professional experience using the design patterns as guidance.",
+      "quote": "During the workshop, participants were asked to create interface sketches for healthcare-related scenarios drawn from their own professional experience, using our design patterns as guidance.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The authors report that the design patterns helped participants ground designs in user needs, generate more design alternatives, and simplify complex interface structures.",
+      "quote": "Our findings show that the proposed design patterns helped participants ground their designs in user needs, generate a wider range of design alternatives, and simplify complex interface structures.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The authors analyzed participants' usage strategies and feedback on the applicability and usefulness of the design patterns.",
+      "quote": "We further analyzed and summarized the participants' usage strategies and feedback regarding the applicability and usefulness of the design patterns.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2507.12721"
+}

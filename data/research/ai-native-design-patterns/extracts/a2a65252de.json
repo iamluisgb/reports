@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": null,
+  "author_or_org": "VandanaAjayDubey111",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Great-pm is described as 48 AI agents running Discover→Measure with a live board and 3 human gates.",
+      "quote": "Your product team as software: 48 AI agents run Discover→Measure with a live board + 3 human gates.",
+      "numbers": [
+        "48",
+        "3"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The system runs the full product lifecycle with 48 specialist agents, a live project board, and 3 human decision gates intended to keep the user in control of every call that matters.",
+      "quote": "great-pm is a multi-agent system that runs the full product lifecycle for a solo PM or founder — **Discover → Strategize → Prioritize → Define → Launch → Measure** — with 48 specialist agents, a live project board, and 3 human decision gates so you stay in control of every call that matters.",
+      "numbers": [
+        "48",
+        "3"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The tool is model-agnostic across Claude, OpenAI, Gemini, and Codex, and it files work two-way into Notion, Slack, Linear, and Jira with a bring-your-own-token model and $0 operating cost.",
+      "quote": "It's **model-agnostic** — runs on Claude, OpenAI, Gemini, or Codex — and files its work straight into the tools you already live in: **Notion, Slack, Linear, Jira**, two-way, bring-your-own-token, **$0 to operate**",
+      "numbers": [
+        "$0"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The project lists 48 agents, 79 skills, 34 commands/workflows, a 6-stage loop, and a native project board; Claude Code v1.0.1 and Codex v1.1.3 are release candidates pending final desktop sign-off.",
+      "quote": "**Status:** Claude Code v1.0.1 and Codex v1.1.3 are release candidates pending final desktop sign-off. **48 agents · 79 skills · 34 commands/workflows** · the 6-stage loop · a native project board.",
+      "numbers": [
+        "1.0.1",
+        "1.1.3",
+        "48",
+        "79",
+        "34",
+        "6"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Claude Code auto-registers all agents, skills, and slash commands on install, and lifecycle hooks for SessionStart context-load, PreCompact handoff, and PreToolUse safety plus secret-scan fire automatically.",
+      "quote": "On install, Claude Code auto-registers all agents (`agents/`), skills (`skills/`, invocable as `great-pm:<skill>`), and slash commands (`commands/`), and the lifecycle hooks (`SessionStart` context-load, `PreCompact` handoff, `PreToolUse` safety + secret-scan) fire automatically — no manual `~/.claude` copying.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "GreatPM supports Codex desktop and Codex CLI as a native plugin with 48 agents, 79 product-management skills, and 34 workflows.",
+      "quote": "GreatPM supports Codex desktop and Codex CLI as a native plugin with 48 agents, 79 product-management skills, and 34 workflows:",
+      "numbers": [
+        "48",
+        "79",
+        "34"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/VandanaAjayDubey111/great-pm"
+}

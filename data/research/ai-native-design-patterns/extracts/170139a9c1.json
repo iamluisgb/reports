@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "Acris",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "Acris positions itself as a command bar for AI agents.",
+      "quote": "The command bar for AI agents",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Acris provides a task manager for both users and agents and says tasks and projects can be managed in one place without switching between tools.",
+      "quote": "A task manager for you and your agents. Manage your projects and task in one place without switching between tools",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "In a sample interaction, the agent asks the user to make two decisions before it drafts campaign briefs.",
+      "quote": "Before I draft the campaign briefs, two calls are yours to make.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "In a sample interaction, the agent reports that paid social drove volume but blended CAC climbed to $84, while content and lifecycle delivered best ROAS 4.2x at a third of the spend.",
+      "quote": "Q2 takeaways: paid social drove volume but**blended CAC climbed to $84** while content + lifecycle quietly delivered our best`ROAS 4.2x` at a third of the spend.",
+      "numbers": [
+        "$84",
+        "4.2x",
+        "third"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Acris says it quietly harvests people, preferences, and decisions into a living memory graph, and every agent reads from and writes to the same memory.",
+      "quote": "Acris quietly harvests what matters — people, preferences, decisions — into a living graph. Every agent reads from the same memory and writes new learnings back, so each run starts already in the loop",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Acris says tasks, sessions, and memory organize around the project the user is working in.",
+      "quote": "Tasks, sessions, and memory all organize around the project you're working in",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://acris.ai"
+}

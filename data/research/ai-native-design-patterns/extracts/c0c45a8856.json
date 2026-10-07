@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Wensu Li, Atin Aboutorabi, Harry Lyu, Kaizhi Qian, Martin Fleming, Brian C. Goehring, Neil Thompson",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The paper models automation intensity as a continuous choice from no automation through partial human-AI collaboration to full automation, rather than as a binary automate-or-not decision.",
+      "quote": "Moving beyond binary automate-or-not assessments, we model automation intensity as a continuous choice in which firms minimize costs by selecting an AI accuracy level, from no automation through partial human-AI collaboration to full automation.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Because AI systems show predictable but diminishing returns to data, compute, and model size, the cost of higher accuracy is convex: good performance may be cheap, but near-perfect accuracy is disproportionately expensive.",
+      "quote": "Because AI systems exhibit predictable but diminishing returns to these inputs, the cost of higher accuracy is convex: good performance may be inexpensive, but near-perfect accuracy is disproportionately costly.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Full automation is often not cost-minimizing, and partial automation where humans retain residual tasks frequently emerges as the equilibrium.",
+      "quote": "Full automation is therefore often not cost-minimizing; partial automation, where firms retain human workers for residual tasks, frequently emerges as the equilibrium.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Task complexity shapes labor substitution: low-complexity tasks see high substitution, while high-complexity tasks favor limited partial automation.",
+      "quote": "Task complexity shapes substitution: low-complexity tasks see high substitution, while high-complexity tasks favor limited partial automation.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Scale of deployment is a key determinant because AI-as-a-Service and AI agents spread fixed costs across users and sharply expand economically viable tasks.",
+      "quote": "Scale of deployment is a key determinant: AI-as-a-Service and AI agents spread fixed costs across users, sharply expanding economically viable tasks.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "At the firm level, cost-effective automation captures approximately 11% of computer-vision-exposed labor compensation, and this share rises sharply under economy-wide deployment.",
+      "quote": "At the firm level, cost-effective automation captures approximately 11% of computer-vision-exposed labor compensation; under economy-wide deployment, this share rises sharply.",
+      "numbers": [
+        "11%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The paper argues that partial automation is often the economically rational long-run outcome, not merely a transitional phase, because other AI systems exhibit similar scaling-law economics.",
+      "quote": "Since other AI systems exhibit similar scaling-law economics, our mechanisms extend beyond computer vision, reinforcing that partial automation is often the economically rational long-run outcome, not merely a transitional phase.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2603.29121"
+}

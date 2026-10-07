@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2023-01-18",
+  "author_or_org": "Valerie Chen, Q. Vera Liao, Jennifer Wortman Vaughan, Gagan Bansal",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "AI explanations are often proposed to improve human-AI decision-making, but empirical studies have not consistently shown them effective and even suggest they can increase overreliance when the AI is wrong.",
+      "quote": "AI explanations are often mentioned as a way to improve human-AI decision-making, but empirical studies have not found consistent evidence of explanations' effectiveness and, on the contrary, suggest that they can increase overreliance when the AI system is wrong.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "A key factor in reliance on AI support is how decision-makers reconcile their own intuition with the AI system's information to determine when to override AI predictions.",
+      "quote": "While many factors may affect reliance on AI support, one important factor is how decision-makers reconcile their own intuition -- beliefs or heuristics, based on prior knowledge, experience, or pattern recognition, used to make judgments -- with the information provided by the AI system to determine when to override AI predictions.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The study is a think-aloud, mixed-methods study with two explanation types (feature- and example-based) and two prediction tasks, exploring how decision-makers' intuition affects use of AI predictions/explanations and choice of when to rely on AI.",
+      "quote": "We conduct a think-aloud, mixed-methods study with two explanation types (feature- and example-based) for two prediction tasks to explore how decision-makers' intuition affects their use of AI predictions and explanations, and ultimately their choice of when to rely on AI.",
+      "numbers": [
+        "two",
+        "two"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The study identifies three types of intuition in reasoning about AI predictions and explanations: intuition about the task outcome, features, and AI limitations.",
+      "quote": "Our results identify three types of intuition involved in reasoning about AI predictions and explanations: intuition about the task outcome, features, and AI limitations.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The paper summarizes three observed pathways through which decision-makers apply their own intuition and override AI predictions.",
+      "quote": "Building on these, we summarize three observed pathways for decision-makers to apply their own intuition and override AI predictions.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The authors explain two results: (1) feature-based explanations did not improve participants' decision outcomes and increased overreliance on AI, and (2) example-based explanations improved decision-makers' performance over feature-based explanations and helped achieve complementary human-AI performance.",
+      "quote": "We use these pathways to explain why (1) the feature-based explanations we used did not improve participants' decision outcomes and increased their overreliance on AI, and (2) the example-based explanations we used improved decision-makers' performance over feature-based explanations and helped achieve complementary human-AI performance.",
+      "numbers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The work identifies directions for developing AI decision-support systems and explanation methods that help decision-makers apply intuition to achieve appropriate reliance on AI.",
+      "quote": "Overall, our work identifies directions for further development of AI decision-support systems and explanation methods that help decision-makers effectively apply their intuition to achieve appropriate reliance on AI.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2301.07255"
+}

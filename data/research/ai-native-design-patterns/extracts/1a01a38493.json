@@ -1,0 +1,49 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-26",
+  "author_or_org": "Feng Zhou, Jacqueline Meijer-Irons, Ambar Murillo",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The paper argues that effective Human-AI collaboration is an interdependence problem rather than an automation problem.",
+      "quote": "We argue that effective Human-AI collaboration is not an automation problem, but an interdependence problem.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper proposes a formal framework using Interdependence Theory to structure human-AI productive interdependence for co-data systems.",
+      "quote": "This paper reframes the design of \"co-data\" systems through the lens of Interdependence Theory, proposing a formal framework to structure human-AI productive interdependence.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The framework guides selecting an appropriate Level of Automation for different qualitative analysis stages by assessing task risk and validation cost.",
+      "quote": "The framework guides the selection of an appropriate Level of Automation (LoA) for different stages of the qualitative analysis process by assessing task risk and the cost of validation.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A case study using the framework produced a deliberately interdependent workflow that fostered calibrated trust for rigorous analysis.",
+      "quote": "We present a case study where this framework led to a deliberately interdependent workflow, fostering the calibrated trust necessary for rigorous analysis.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper concludes with three design principles that instantiate the framework and preserve the human researcher’s role in meaning-making while leveraging AI as a partner.",
+      "quote": "We conclude by presenting three design principles that instantiate this framework, demonstrating how to leverage AI as a powerful partner while preserving the human researcher's irreplaceable role in the transformation process of meaning-making.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The paper states that maximizing automation is fundamentally at odds with the interpretive nature of qualitative inquiry, even though LLMs help with scale versus depth.",
+      "quote": "While Large Language Models (LLMs) offer a solution to the scale-versus-depth dilemma in qualitative analysis, the paradigm of maximizing automation is fundamentally at odds with the interpretive nature of qualitative inquiry.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.27634"
+}

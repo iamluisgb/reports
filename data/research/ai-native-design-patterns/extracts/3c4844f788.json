@@ -1,0 +1,45 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-14",
+  "author_or_org": "CIVIC-AI Collaboration: Jiaying Wu et al.",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper establishes a precise definition of AI augmentation comprising six conditions.",
+      "quote": "To ground this analysis, we establish a precise definition of AI augmentation comprising six conditions, spanning durable net value, meaningful human control, accountability and recovery, and long-term human development through learning, career pathways, and job purpose.",
+      "numbers": [
+        "six"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The framework includes meaningful human control and accountability and recovery among the six conditions of AI augmentation.",
+      "quote": "To ground this analysis, we establish a precise definition of AI augmentation comprising six conditions, spanning durable net value, meaningful human control, accountability and recovery, and long-term human development through learning, career pathways, and job purpose.",
+      "numbers": [
+        "six"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The paper argues that analysis should move beyond today's atomised tasks and focus on how AI can augment entire workflows of the future.",
+      "quote": "To account for this, we must expand the scope of our analysis beyond atomised tasks of today, and instead focus on how AI can augment entire workflows of the future.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper states that current studies largely measure AI value by current automation capabilities and public adoption, which ignores the greater impacts of human-agent collaboration on the nature of work.",
+      "quote": "Current studies largely measure this value in terms of the current automation capabilities and public adoption of AI. However, such metrics ignore the greater impacts of human--agent collaboration in transforming the nature of work.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The framework is applied in a case study of AI-mediated social surveys.",
+      "quote": "We elaborate on these conditions and apply the framework in a case study of AI-mediated social surveys.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.12482"
+}

@@ -1,0 +1,56 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "Tessl",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Honeycomb doubled its pull requests with AI while incidents rose 1.5x, and the episode asks when agents can run production.",
+      "quote": "Honeycomb doubled its pull requests with AI and incidents rose 1.5x. Liz Fong-Jones on automated code review, owning AI output, and when agents can run production.",
+      "numbers": [
+        "1.5x"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "HumanLayer's Dexter Horthy tried trusting AI to write the plan and skip the code, but after four months the codebase was unusable.",
+      "quote": "HumanLayer's Dexter Horthy staked his team's codebase on trust the plan, skip the code. Four months later it was unusable. Here's what changed his mind.",
+      "numbers": [
+        "Four"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "AWS's Marc Brooker read up to 4,000 postmortems and concluded testing and specs, not code, are the real work.",
+      "quote": "Marc Brooker (AWS) has read up to 4,000 postmortems and concluded code was never the hard part. He tells Simon why testing and specs are now the real work.",
+      "numbers": [
+        "4,000"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Tessl's factory peaked at 850 pull requests in a week, with 85 to 90% of them handled by agents end to end.",
+      "quote": "Tessl's factory peaked at 850 PRs in a week, 85 to 90% of them agent-handled end to end. Dru Knox on why the two biggest changes weren't the speed anyone was chasing.",
+      "numbers": [
+        "850",
+        "85 to 90%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Lada Kesseler trusts AI-written tests less than AI-written code and thinks most teams chasing a software factory are about to drown in garbage.",
+      "quote": "Lada Kesseler trusts AI-written tests less than AI-written code, and thinks most teams chasing a software factory are about to drown in garbage.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Ran Aroussi says most 'agentic' systems lack the properties that make them agentic.",
+      "quote": "Ran Aroussi says most \"agentic\" systems have none of the properties that make them agentic, and that you stopped needing juniors for their coding skills a year ago.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://ainativedev.io/news/the-5-levels-of-ai-agent-autonomy-learning-from-self-driving-cars"
+}

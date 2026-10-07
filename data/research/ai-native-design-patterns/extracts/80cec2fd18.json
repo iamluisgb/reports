@@ -1,0 +1,41 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-03-03",
+  "author_or_org": "Junzi Zhang, Jianing Shen, Weijie Tu, Yi Zhang, Hailin Zhang, Tom Gedeon, Bin Jiang, Yue Yao",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "The paper states that language-based interfaces are powerful and flexible but implicitly assume users can reliably produce explicit linguistic input, an assumption that may not hold for users with speech or motor impairments such as ALS.",
+      "quote": "While language-based interfaces are powerful and flexible, they implicitly assume that users can reliably produce explicit linguistic input, an assumption that may not hold for users with speech or motor impairments, e.g., Amyotrophic Lateral Sclerosis (ALS).",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The work investigates whether neural signals can be used as an alternative input to LLMs, particularly to support socially marginalized or underserved users.",
+      "quote": "In this work, we investigate whether neural signals can be used as an alternative input to LLMs, particularly to support those socially marginalized or underserved users.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The authors build a brain-LLM interface that uses EEG signals to guide image generation models at test time.",
+      "quote": "We build a simple brain-LLM interface, which uses EEG signals to guide image generation models at test time.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "They train a classifier to estimate user satisfaction from EEG signals, then incorporate its predictions into a test-time scaling framework that dynamically adapts model inference using neural feedback collected during user evaluation.",
+      "quote": "Specifically, we first train a classifier to estimate user satisfaction from EEG signals. Its predictions are then incorporated into a test-time scaling (TTS) framework that dynamically adapts model inference using neural feedback collected during user evaluation.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The experiments show that EEG can predict user satisfaction, suggesting neural activity carries information on real-time preference inference.",
+      "quote": "The experiments show that EEG can predict user satisfaction, suggesting that neural activity carries information on real-time preference inference.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2603.16897"
+}

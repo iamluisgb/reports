@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-04-27",
+  "author_or_org": "Gaojian Huang, Wei-Hsiang Lo, Guannan Liu, Yue Luo, Yantong Jin",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Previous standards, such as SAE Levels of Automation, defined automation levels based on who controls the vehicle.",
+      "quote": "Previous standards, such as SAE Levels of Automation, have focused on defining automation levels based on who controls the vehicle.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The study proposed a triadic human-AI collaboration framework with three AI roles: Advisor, Co-Pilot, and Guardian.",
+      "quote": "To fill this gap, this study proposed a triadic human-AI collaboration framework with three AI roles: Advisor, Co-Pilot, and Guardian.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The framework's roles can dynamically adapt to human needs based on real-time data, including mental states and environmental conditions.",
+      "quote": "These roles can dynamically adapt to human needs based on real-time data, such as mental states and environmental conditions.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The Advisor AI role provides informational support without direct intervention.",
+      "quote": "The Advisor AI offers informational support without direct intervention.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The Co-Pilot AI role provides partial intervention when needed, aiming to share control with humans.",
+      "quote": "The Co-Pilot AI provides partial intervention when needed, with the goal of sharing control with humans.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The Guardian AI role performs emergency overrides if necessary.",
+      "quote": "The Guardian AI performs emergency overrides if necessary.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Use cases in micromobility devices such as e-scooters demonstrate how these AI roles can influence user preferences and trust.",
+      "quote": "The use cases for these AI roles in micromobility devices, such as e-scooters, are presented to demonstrate how these roles can influence user preferences and trust.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The study presents a first step toward a universal role-based collaborative framework for AI standardization and embedding AI in future transportation systems while considering human interactions.",
+      "quote": "Overall, the study takes a first step toward a universal role-based collaborative framework for AI standardization and explores how AI technologies can be embedded in future transportation systems while considering human interactions.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2504.19120"
+}

@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2023-01-25",
+  "author_or_org": "Gaole He, Lucie Kuiper, Ujwal Gadiraju",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The study tested a tutorial intervention that reveals AI advice fallibility and logic units-based explanations to improve user understanding of AI advice.",
+      "quote": "Through an empirical study (N = 249), we explored the impact of DKE on human reliance on an AI system, and whether such effects can be mitigated using a tutorial intervention that reveals the fallibility of AI advice, and exploiting logic units-based explanations to improve user understanding of AI advice.",
+      "numbers": [
+        "249"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The paper states its work has broad implications for designing methods to tackle user cognitive biases while facilitating appropriate reliance on AI systems.",
+      "quote": "Our work has broad implications on the design of methods to tackle user cognitive biases while facilitating appropriate reliance on AI systems.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Participants who overestimate their performance tend to under-rely on AI systems, hindering optimal team performance.",
+      "quote": "We found that participants who overestimate their performance tend to exhibit under-reliance on AI systems, which hinders optimal team performance.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Logic units-based explanations did not improve calibration of competence or facilitate appropriate reliance.",
+      "quote": "Logic units-based explanations did not help users in either improving the calibration of their competence or facilitating appropriate reliance.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A tutorial intervention was highly effective for participants with overestimated self-assessment but could hurt appropriate reliance for those with underestimated self-assessment.",
+      "quote": "While the tutorial intervention was highly effective in helping users calibrate their self-assessment and facilitating appropriate reliance among participants with overestimated self-assessment, we found that it can potentially hurt the appropriate reliance of participants with underestimated self-assessment.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Appropriate reliance is key to complementary team performance in AI-assisted decision making.",
+      "quote": "Recent research has shown that appropriate reliance is the key to achieving complementary team performance in AI-assisted decision making.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "DKE is a metacognitive bias in which less-competent individuals overestimate their own skill and performance.",
+      "quote": "DKE is a metacognitive bias due to which less-competent individuals overestimate their own skill and performance.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The findings advance understanding of how self-assessment shapes trust and reliance in human-AI decision making.",
+      "quote": "Our findings advance the current understanding of the role of self-assessment in shaping trust and reliance in human-AI decision making.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2301.11333"
+}

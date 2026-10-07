@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-09-21",
+  "author_or_org": "Lenja Sorokin, Khanh Huynh, Malin Eiband, Lukas Stappen, Jeremy Dillmann",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper argues that UX designers should design the LLM as a second user, creating one interface for human users and one for the LLM, using targeted modalities to support collaboration and reduce conflicts.",
+      "quote": "It is argued that to seize collaboration and mitigate conflicts, UX designers must design the LLM as a second user, creating one interface for human users and one for the LLM, through targeted use of modalities.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The source is an academic paper titled Collaborating with LLMs Through a Voice and Graphical User Interface, focusing on voice and GUI collaboration with LLMs.",
+      "quote": "Collaborating with LLMs Through a Voice and Graphical User Interface",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "A referenced prototype, Valletto, lets users generate and specify visualizations through a speech-based conversational interface, multitouch gestures, and a conventional GUI interface.",
+      "quote": "Volta is envisioning Valletto, a prototypical tablet app which allows the user to generate and specify visualizations through a speech-based conversational interface, through multitouch gestures, and through a conventional GUI interface.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "A referenced paper empirically investigates speech as input and output for solving usability problems with GUI interaction metaphors and for enhancing visual IDE usability in efficiency, effectiveness, and satisfaction.",
+      "quote": "This paper empirically investigating speech as an input and output means for solving usability problems with GUI interaction metaphors and enhancing usability of visual IDEs in terms of efficiency, effectiveness and satisfaction.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A referenced work describes an organized process for designing multimodal interfaces that lets designers evaluate interfaces with real users, find usability issues, and report rationale for corrections.",
+      "quote": "An organized process to the design of multimodal interfaces that will let the designers to evaluate the interfaces with real users, find out usability issues and report the rationale to correct those issues is described.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "A cited exploratory study with a ChatGPT-powered voice assistant across three scenarios found that LLM-powered voice assistants elicit richer interaction patterns that vary across tasks.",
+      "quote": "This work investigates whether LLMs can enrich VA interactions via an exploratory study using a ChatGPT-powered VA for three scenarios (medical self-diagnosis, creative planning, and discussion) with varied constraints, stakes, and objectivity and observes that LLM-powered VA elicits richer interaction patterns that vary across tasks, showing its versatility.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "A citing paper reports that intermediate feedback from agentic LLM-based in-car assistants significantly improved perceived speed, trust, and user experience while reducing task load, across varying task complexities and interaction contexts.",
+      "quote": "Intermediate feedback from agentic LLM-based in-car assistants significantly improved perceived speed, trust, and user experience while reducing task load - effects that held across varying task complexities and interaction contexts.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.semanticscholar.org/paper/47ed935b52e3589cdda99ac70a14bba805eec1ac"
+}

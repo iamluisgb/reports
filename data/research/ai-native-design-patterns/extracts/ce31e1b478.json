@@ -1,0 +1,35 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-28",
+  "author_or_org": "Haining Zheng, Qian Dong, Rodolfo K. Depena, Jonathan D. Bhatia, Feng Xiao, Peng Xu",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper presents a governance framework as practical guidance for designing, deploying, and governing agentic AI systems by distinguishing authorization from capability.",
+      "quote": "By distinguishing authorization from capability, this work provides practical guidance for the design, deployment, and governance of Agentic AI systems.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The framework separates Allowed Autonomy Levels, which define authorized autonomy given risk, oversight, and accountability, from Autonomous Capability Levels, which describe an agent's inherent technical abilities.",
+      "quote": "This paper introduces a governance framework that explicitly separates Allowed Autonomy Levels (AAL), which define the degree of autonomy an AI agent is authorized to exercise given risk, oversight, and accountability considerations, from Autonomous Capability Levels (ACL), which characterize an agent's inherent technical abilities.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The proposed autonomy levels span reactive execution, decision support, supervised action, goal-directed autonomy, and delegated operational authority; control, reversibility, and accountability change as autonomy increases.",
+      "quote": "We present a structured set of autonomy levels spanning reactive execution, decision support, supervised action, goal-directed autonomy, and delegated operational authority, and describe how control, reversibility, and accountability change as autonomy increases.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "A risk-aware decision process assigns allowed autonomy, and a deployed enterprise data engineering agent illustrates that a high-capability system can be deliberately constrained to lower allowed autonomy based on risk, reversibility, and organizational readiness.",
+      "quote": "To operationalize this framework, we propose a risk-aware decision process for assigning allowed autonomy, analyze how risk and accountability evolve across autonomy levels, and demonstrate its application through a deployed enterprise data engineering agent, illustrating how a system assessed at a high capability level can be deliberately constrained to a lower allowed autonomy based on risk, reversibility, and organizational readiness.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.23438"
+}

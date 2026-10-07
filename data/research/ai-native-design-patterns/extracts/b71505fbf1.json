@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2026-05-24",
+  "author_or_org": "Jonathas Cordeiro (jonathascordeiro20)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The repository describes APOF Engine as an autonomous governance framework for AI product teams, using a dual-track architecture and multi-agent consensus split between ML and FinOps.",
+      "quote": "APOF Engine — Autonomous Governance Framework for AI Product Teams. Dual-Track architecture with multi-agent consensus (ML + FinOps).",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The framework includes an AgileTranslatorAgent that orchestrates and emits an APOF-v1.0 JSON payload.",
+      "quote": "- AgileTranslatorAgent: orchestrator + APOF-v1.0 JSON payload",
+      "numbers": [
+        "1.0"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "A FinOpsGuardAgent acts as a financial gate comparing token cost per million against a budget ceiling.",
+      "quote": "- FinOpsGuardAgent: financial gate (token_cost_per_m vs budget_ceiling)",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The engine defines CI/CD exit codes for approved, blocked, and error states.",
+      "quote": "- Add CI/CD exit code contract: 0=APPROVED, 2=BLOCKED, 1=ERROR",
+      "numbers": [
+        "0",
+        "2",
+        "1"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The engine exposes a blocking_agents list and quantitative reasons such as overflow or headroom.",
+      "quote": "- Expose blocking_agents[] list and quantitative reasons (overflow/headroom)",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "One agent performs statistical validation and requires accuracy of at least 0.90.",
+      "quote": "- DataMLScienceAgent: statistical validation (accuracy >= 0.90)",
+      "numbers": [
+        "0.90"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The engine validates telemetry inputs, including accuracy within [0,1] and non-negative budgets or latency.",
+      "quote": "- Validate telemetry inputs (accuracy in [0,1], non-negative budgets/latency)",
+      "numbers": [
+        "[0,1]"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The engine adds traceability by including a task_id and timestamp_utc in payloads.",
+      "quote": "- Add traceability: task_id (auto-UUID or explicit) + timestamp_utc in payload",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/jonathascordeiro20/apof-engine"
+}

@@ -1,0 +1,38 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-09-18",
+  "author_or_org": "Georgios Marentakis and Arman Balic",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "A paper titled 'Situational impairment due to walking with conversational versus graphical interfaces' addresses conversational versus graphical interfaces in a walking context.",
+      "quote": "# Situational impairment due to walking with conversational versus graphical interfaces",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper's TLDR states that conversational interfaces have increased potential to support walking interactions, but technology limitations mean this does not yet produce a task performance advantage.",
+      "quote": "The results testify to an increased potential for conversational interfaces to support walking interactions but also show that due to technology limitations this does not manifest in a task performance advantage yet.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper was published in Audio Mostly Conference on 18 September 2024.",
+      "quote": "Published in [Audio Mostly Conference](https://www.semanticscholar.org/venue?name=Audio%20Mostly%20Conference)18 September 2024",
+      "numbers": [
+        "18",
+        "2024"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "A referenced survey covers mobile conversational user interface research since Apple's Siri, described as the first readily available consumer CUI, and implications of CUIs having greater access to context of use.",
+      "quote": "A survey of mobile conversation user interface research since the commercial deployment of Apple's Siri, the first readily available consumer CUI, and the implications for CUIs of greater access to the context of use are presented.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.semanticscholar.org/paper/12e11f3fe970d798006447d519e25cad4e85149c"
+}

@@ -1,0 +1,37 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": null,
+  "author_or_org": "Nur Yildirim, Mahima Pushkarna, Nitesh Goyal, Martin Wattenberg, Fernanda Viegas",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper reports interviews with 31 practitioners, namely designers and product managers, to understand how they use human-AI guidelines when designing AI-enabled products.",
+      "quote": "We conducted interviews with 31 practitioners (i.e., designers, product managers) to understand how they use human-AI guidelines when designing AI-enabled products.",
+      "numbers": [
+        "31"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Practitioners use the People + AI Guidebook not only for addressing AI design challenges but also for education, cross-functional communication, and developing internal resources.",
+      "quote": "Our findings revealed that practitioners use the guidebook not only for addressing AI's design challenges, but also for education, cross-functional communication, and for developing internal resources.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Practitioners desire more support for early phase ideation and problem formulation to avoid AI product failures.",
+      "quote": "We uncovered that practitioners desire more support for early phase ideation and problem formulation to avoid AI product failures.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Little research has investigated if and how human-AI guidelines are used and how they impact practice.",
+      "quote": "However, little research has investigated if and how these guidelines are used, and how they impact practice.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2301.12243"
+}

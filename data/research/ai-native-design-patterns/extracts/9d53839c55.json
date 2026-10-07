@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-04-17",
+  "author_or_org": "Lujain Ibrahim, Luc Rocher, Ana Valdivia",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Human-computer interaction research has shown that interfaces shape both user behavior and user perceptions of technical capabilities and risks.",
+      "quote": "Human-computer interaction research has long shown that interfaces shape both user behavior and user perception of technical capabilities and risks.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Practitioners and researchers evaluating social and ethical risks of AI systems tend to overlook how anthropomorphic, deceptive, and immersive interfaces affect human-AI interactions.",
+      "quote": "Yet, practitioners and researchers evaluating the social and ethical risks of AI systems tend to overlook the impact of anthropomorphic, deceptive, and immersive interfaces on human-AI interactions.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper argues that design features of interfaces with adaptive AI systems can have cascading impacts driven by feedback loops that extend beyond previously considered impacts.",
+      "quote": "Here, we argue that design features of interfaces with adaptive AI systems can have cascading impacts, driven by feedback loops, which extend beyond those previously considered.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper conducts a scoping review of AI interface designs and their negative impacts to extract salient themes of potentially harmful design patterns in AI interfaces.",
+      "quote": "We first conduct a scoping review of AI interface designs and their negative impact to extract salient themes of potentially harmful design patterns in AI interfaces.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper proposes Design-Enhanced Control of AI systems (DECAI), a conceptual model for structuring and facilitating impact assessments of AI interface designs.",
+      "quote": "Then, we propose Design-Enhanced Control of AI systems (DECAI), a conceptual model to structure and facilitate impact assessments of AI interface designs.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "DECAI draws on control systems theory to analyze and design dynamic physical systems so as to dissect the interface's role in human-AI systems.",
+      "quote": "DECAI draws on principles from control systems theory -- a theory for the analysis and design of dynamic physical systems -- to dissect the role of the interface in human-AI systems.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper uses two case studies, on recommendation systems and conversational language model systems, to show how DECAI can evaluate AI interface designs.",
+      "quote": "Through two case studies on recommendation systems and conversational language model systems, we show how DECAI can be used to evaluate AI interface designs.",
+      "numbers": [
+        "two"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2404.11370"
+}

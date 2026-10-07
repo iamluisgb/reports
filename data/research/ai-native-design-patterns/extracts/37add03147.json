@@ -1,0 +1,44 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-04-05",
+  "author_or_org": "Akhil Padmanabha, Jessie Yuan, Janavi Gupta, Zulekha Karachiwalla, Carmel Majidi, Henny Admoni, Zackory Erickson",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper presents a framework for incorporating LLMs as speech interfaces for physically assistive robots, developed iteratively through three testing stages with a feeding robot and a final study with 11 older adults.",
+      "quote": "In this work, we present a framework for incorporating LLMs as speech interfaces for physically assistive robots, constructed iteratively with 3 stages of testing involving a feeding robot, culminating in an evaluation with 11 older adults at an independent living facility.",
+      "numbers": [
+        "3",
+        "11"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The paper provides design guidelines for using LLMs as speech interfaces for assistive robots, validated with quantitative and qualitative data from the final study.",
+      "quote": "We use both quantitative and qualitative data from the final study to validate our framework and additionally provide design guidelines for using LLMs as speech interfaces for assistive robots.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Speech interfaces, especially those using LLMs, can enable individuals to communicate high-level commands and nuanced preferences to robots.",
+      "quote": "Speech interfaces, especially ones that utilize Large Language Models (LLMs), can enable individuals to effectively and naturally communicate high-level commands and nuanced preferences to robots.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Prior frameworks for integrating LLMs as interfaces to robots for high-level task planning and code generation fail to incorporate human-centric considerations essential for assistive interfaces.",
+      "quote": "Frameworks for integrating LLMs as interfaces to robots for high level task planning and code generation have been proposed, but fail to incorporate human-centric considerations which are essential while developing assistive interfaces.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Physically assistive robots offer an opportunity to significantly increase the well-being and independence of individuals with motor impairments or other forms of disability who cannot complete activities of daily living.",
+      "quote": "Physically assistive robots present an opportunity to significantly increase the well-being and independence of individuals with motor impairments or other forms of disability who are unable to complete activities of daily living.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2404.04066"
+}

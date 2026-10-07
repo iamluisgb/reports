@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-08-26",
+  "author_or_org": "Jiaqi Chen, Yanzhe Zhang, Yutong Zhang, Yijia Shao, Diyi Yang",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "Large language models are increasingly viewed as assistants, copilots, and consultants that support tasks through natural conversation.",
+      "quote": "Large language models (LLMs) are increasingly seen as assistants, copilots, and consultants, capable of supporting a wide range of tasks through natural conversation.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Most LLM systems remain constrained by a linear request-response format, which is often inefficient for multi-turn, information-dense, and exploratory tasks.",
+      "quote": "However, most systems remain constrained by a linear request-response format that often makes interactions inefficient in multi-turn, information-dense, and exploratory tasks.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper proposes a paradigm called Generative Interfaces for Language Models, in which LLMs respond to user queries by proactively generating user interfaces for more adaptive and interactive engagement.",
+      "quote": "To address these limitations, we propose Generative Interfaces for Language Models, a paradigm in which LLMs respond to user queries by proactively generating user interfaces (UIs) that enable more adaptive and interactive engagement.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The proposed framework uses structured interface-specific representations and iterative refinements to translate user queries into task-specific UIs.",
+      "quote": "Our framework leverages structured interface-specific representations and iterative refinements to translate user queries into task-specific UIs.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper evaluates generative interfaces against traditional chat-based interfaces across diverse tasks, interaction patterns, and query types, capturing functional, interactive, and emotional aspects of user experience.",
+      "quote": "For systematic evaluation, we introduce a multidimensional assessment framework that compares generative interfaces with traditional chat-based ones across diverse tasks, interaction patterns, and query types, capturing functional, interactive, and emotional aspects of user experience.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Generative interfaces consistently outperform conversational ones, with up to a 72% improvement in human preference.",
+      "quote": "Results show that generative interfaces consistently outperform conversational ones, with up to a 72% improvement in human preference.",
+      "numbers": [
+        "72%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The findings clarify when and why users favor generative interfaces and are presented as advancing human-AI interaction.",
+      "quote": "These findings clarify when and why users favor generative interfaces, paving the way for future advancements in human-AI interaction.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2508.19227"
+}

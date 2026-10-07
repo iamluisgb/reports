@@ -1,0 +1,51 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Tejas Srinivasan, Jesse Thomason",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Trust biases how users rely on AI recommendations in AI-assisted decision-making tasks; low trust increases under-reliance and high trust increases over-reliance.",
+      "quote": "Trust biases how users rely on AI recommendations in AI-assisted decision-making tasks, with low and high levels of trust resulting in increased under- and over-reliance, respectively.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The authors propose that AI assistants should adapt their behavior through trust-adaptive interventions to mitigate inappropriate reliance.",
+      "quote": "We propose that AI assistants should adapt their behavior through trust-adaptive interventions to mitigate such inappropriate reliance.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "When user trust is low, providing an explanation can elicit more careful consideration of the assistant's advice.",
+      "quote": "For instance, when user trust is low, providing an explanation can elicit more careful consideration of the assistant's advice by the user.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In two decision-making scenarios, laypeople answering science questions and doctors making medical diagnoses, providing supporting and counter-explanations during moments of low and high trust, respectively, yields up to 38% reduction in inappropriate reliance and 20% improvement in decision accuracy.",
+      "quote": "In two decision-making scenarios -- laypeople answering science questions and doctors making medical diagnoses -- we find that providing supporting and counter-explanations during moments of low and high trust, respectively, yields up to 38% reduction in inappropriate reliance and 20% improvement in decision accuracy.",
+      "numbers": [
+        "two",
+        "38%",
+        "20%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Over-reliance can be reduced by adaptively inserting forced pauses to promote deliberation.",
+      "quote": "We are similarly able to reduce over-reliance by adaptively inserting forced pauses to promote deliberation.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "AI adaptation to user trust facilitates appropriate reliance and presents avenues for improving human-AI collaboration.",
+      "quote": "Our results highlight how AI adaptation to user trust facilitates appropriate reliance, presenting exciting avenues for improving human-AI collaboration.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2502.13321"
+}

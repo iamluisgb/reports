@@ -1,0 +1,41 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-28",
+  "author_or_org": "Md Haseen Akhtar",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper presents an augmented sensemaking framework that positions AI as an instrument for amplifying human judgment rather than replacing it.",
+      "quote": "We present a framework for augmented sensemaking that positions AI as an instrument for amplifying human judgment rather than replacing it.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper's findings suggest that AI's most valuable role in design research is not to eliminate subjectivity, but to make it more intentional, reflective, and accountable.",
+      "quote": "Our findings suggest that the most valuable role for AI in design research is not to eliminate subjectivity, but to make it more intentional, reflective, and accountable.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper frames AI integration in qualitative design research as a fundamental tension between leveraging AI and preserving subjective, intuitive judgments that define design expertise.",
+      "quote": "The integration of AI into qualitative design research presents a fundamental tension: how do we leverage AI while preserving the subjective, intuitive judgments that define design expertise?",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Through comparative analysis, the paper identifies when algorithmic efficiency enhances understanding and when it diminishes the designer's interpretive agency.",
+      "quote": "Through comparative analysis of AI-assisted sensemaking versus human-centered approaches to the same dataset, we identify when algorithmic efficiency enhances understanding and when it diminishes the designer's interpretive agency (uncovering hidden needs, critical enquiry, what if enquiries, making decisions, having trade-offs).",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper argues that AI sensemaking tools risk flattening rich data patterns, amplifying contradictory user feedback into sterile categories, and transforming design research into a mechanical sorting exercise.",
+      "quote": "We argue that AI sensemaking tools risk flattening the rich data patterns, amplifying contradictory textures of user feedback into sterile categories thereby transforming design research from an interpretive craft into a mechanical sorting exercise (rigid and formal).",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.28420"
+}

@@ -1,0 +1,2502 @@
+{
+  "plan": {
+    "slug": "ai-native-design-patterns",
+    "title": "AI-native product design: patterns for autonomy, trust and exceptions",
+    "thesis": "AI-native products differ from AI-enhanced ones by making automation the default and putting humans on exceptions; trust is earned through visible confidence, explanations and easy reversal, not through chat interfaces.",
+    "audience": "Product designers and PMs building AI features into SaaS",
+    "since": "2023-01-01",
+    "per_question": 8,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What guidelines and patterns exist for human-AI interaction design?",
+        "queries": [
+          "guidelines for human-AI interaction",
+          "human-AI interaction design patterns",
+          "People + AI guidebook"
+        ],
+        "providers": [
+          "arxiv",
+          "semantic_scholar",
+          "hn",
+          "wikipedia"
+        ]
+      },
+      {
+        "id": "q2",
+        "question": "How should levels of automation and autonomy be chosen, and where do humans handle exceptions?",
+        "queries": [
+          "levels of automation human-AI",
+          "levels of autonomy AI agents",
+          "human in the loop exception handling AI"
+        ],
+        "providers": [
+          "arxiv",
+          "semantic_scholar",
+          "wikipedia",
+          "hn"
+        ]
+      },
+      {
+        "id": "q3",
+        "question": "What builds or erodes appropriate trust in AI systems: explanations, confidence, overreliance?",
+        "queries": [
+          "appropriate reliance AI explanations",
+          "overreliance on AI decision support",
+          "trust calibration AI confidence display"
+        ],
+        "providers": [
+          "arxiv",
+          "semantic_scholar"
+        ]
+      },
+      {
+        "id": "q4",
+        "question": "Is chat the right interface? Evidence on conversational versus graphical and embedded AI interfaces",
+        "queries": [
+          "chat interface limitations LLM user experience",
+          "generative UI LLM interfaces",
+          "conversational versus graphical user interface study"
+        ],
+        "providers": [
+          "arxiv",
+          "hn",
+          "semantic_scholar"
+        ]
+      },
+      {
+        "id": "q5",
+        "question": "How do AI-native products (Ramp, Linear, Notion, Vercel) design their AI features, according to their own teams?",
+        "queries": [
+          "Ramp AI agents finance",
+          "Linear AI agents product",
+          "Notion AI agents",
+          "Vercel v0 generative UI"
+        ],
+        "providers": [
+          "hn",
+          "github",
+          "web"
+        ]
+      }
+    ]
+  },
+  "generated": "2026-10-05",
+  "stats": {
+    "searched": 131,
+    "candidates": 40,
+    "web_search": false,
+    "read": 40,
+    "sources_with_evidence": 35,
+    "claims": 220,
+    "quotes_dropped_as_unverified": 3
+  },
+  "sources": [
+    {
+      "id": "61fc0b40eb",
+      "url": "https://arxiv.org/abs/2605.28571",
+      "title": "Not All Uncertainty Is Equal: How Uncertainty Granularity Shapes Human Verification in LLM-Assisted Decision Making",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-05-27",
+      "org": "Mauricio Villavicencio, Sitong Pan, Qianwen Wang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "Despite warnings that LLMs can make mistakes, users often develop inappropriate trust and accept incorrect answers without critical evaluation.",
+          "quote": "Despite warnings that LLMs can make mistakes, users often develop inappropriate trust and accept incorrect answers without critical evaluation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.1"
+        },
+        {
+          "question": "q3",
+          "claim": "Uncertainty quantification, displaying LLM confidence, is presented as a promising approach to calibrate user trust.",
+          "quote": "Uncertainty quantification (UQ), displaying LLMs' confidence, has emerged as a promising approach to calibrate user trust.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Prior empirical studies treated uncertainty as a single numerical score or simple natural language expression and failed to capture that LLM responses contain multiple claims and reasoning steps with distinct uncertainty levels.",
+          "quote": "However, prior empirical studies on uncertainty communication have treated uncertainty as a single numerical score or simple natural language expression. This simplification fails to capture a key property of LLM outputs: a single response often comprises multiple claims and reasoning steps, each with distinct levels of uncertainty.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The study conducted a large-scale between-subjects experiment with 192 participants answering medical questions using LLMs that displayed uncertainty at three granularities: output-level, relation-level, and token-level.",
+          "quote": "We conducted a large-scale, between-subjects study (N=192) in which participants answered medical questions using LLMs that displayed uncertainty at three different granularities: output-level (entire response), relation-level (individual reasoning steps), and token-level (specific words).",
+          "numbers": [
+            "192",
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S1.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Token-level uncertainty increased users' agreement with the AI, while output- and relation-level uncertainty did not increase agreement but reduced users' confidence in their own answers.",
+          "quote": "Token-level uncertainty increased users' agreement with the AI, whereas output- and relation-level uncertainty did not increase agreement but instead reduced users' confidence in their own answers.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Relation-level uncertainty reduced external verification such as internet searches and checking provided URLs, steering users away from independent fact-checking and toward reliance on the LLM and its uncertainty cues.",
+          "quote": "Notably, relation-level uncertainty also reduced external verification (i.e., internet searches, checking provided URLs), steering users away from independent fact-checking and toward reliance on the LLM and its accompanying uncertainty cues.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Uncertainty granularity significantly shapes how users interact with and verify LLM outputs.",
+          "quote": "Our findings demonstrate that uncertainty granularity significantly shapes how users interact with and verify LLM outputs, providing concrete design guidance for building responsible LLM applications that encourage appropriate skepticism and verification behaviors.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.7"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper provides concrete design guidance for building responsible LLM applications that encourage appropriate skepticism and verification behaviors.",
+          "quote": "Our findings demonstrate that uncertainty granularity significantly shapes how users interact with and verify LLM outputs, providing concrete design guidance for building responsible LLM applications that encourage appropriate skepticism and verification behaviors.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 1
+    },
+    {
+      "id": "74f6d921d3",
+      "url": "https://arxiv.org/abs/2501.10316",
+      "title": "Know Your Mistakes: Towards Preventing Overreliance on Task-Oriented Conversational AI Through Accountability Modeling",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-01-17",
+      "org": "Suvodip Dey, Yi-Jyun Sun, Gokhan Tur, Dilek Hakkani-Tur",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "Users tend to over-rely on LLM-based AI agents and accept AI suggestions even when the AI is wrong.",
+          "quote": "On the other hand, users tend to over-rely on LLM-based AI agents, accepting AI's suggestion even when it is wrong.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Positive friction such as explanations or user confirmations has been proposed as a mitigation for overreliance in AI-supported decision-making systems.",
+          "quote": "Adding positive friction, such as explanations or getting user confirmations, has been proposed as a mitigation in AI-supported decision-making systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.2"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper proposes an accountability model for LLM-based task-oriented dialogue agents that uses friction turns when the model is uncertain or makes errors associated with dialogue state tracking, in order to address user overreliance.",
+          "quote": "In this paper, we propose an accountability model for LLM-based task-oriented dialogue agents to address user overreliance via friction turns in cases of model uncertainty and errors associated with dialogue state tracking (DST).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The accountability model augments an LLM with an additional accountability head that acts as a binary classifier to predict relevant dialogue-state slots mentioned in the conversation.",
+          "quote": "The accountability model is an augmented LLM with an additional accountability head that functions as a binary classifier to predict the relevant slots of the dialogue state mentioned in the conversation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The proposed approach enables reliable estimation of AI agent errors and guides the decoder to generate more accurate actions.",
+          "quote": "Our empirical findings demonstrate that the proposed approach not only enables reliable estimation of AI agent errors but also guides the decoder in generating more accurate actions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Incorporating accountability heads into modern LLMs improves joint goal accuracy of dialogue state tracking output by around 3% absolute.",
+          "quote": "We observe around 3% absolute improvement in joint goal accuracy (JGA) of DST output by incorporating accountability heads into modern LLMs.",
+          "numbers": [
+            "around 3%"
+          ],
+          "corroborated_by": [],
+          "id": "S2.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Self-correcting detected errors increases JGA from 67.13 to 70.51, achieving state-of-the-art DST performance; error correction through user confirmations as a friction turn achieves a similar performance gain and may reduce user overreliance.",
+          "quote": "Self-correcting the detected errors further increases the JGA from 67.13 to 70.51, achieving state-of-the-art DST performance. Finally, we show that error correction through user confirmations (friction turn) achieves a similar performance gain, highlighting its potential to reduce user overreliance.",
+          "numbers": [
+            "67.13",
+            "70.51"
+          ],
+          "corroborated_by": [],
+          "id": "S2.7"
+        },
+        {
+          "question": "q3",
+          "claim": "LLMs are known to hallucinate and produce responses that seem plausible but are factually incorrect.",
+          "quote": "However, they are also well known to hallucinate, producing responses that seem plausible but are factually incorrect.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 2
+    },
+    {
+      "id": "89be4058f3",
+      "url": "https://arxiv.org/abs/2401.05115",
+      "title": "Unpacking Human-AI interactions: From interaction primitives to a design space",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-01-10",
+      "org": "Kostas Tsiakas, Dave Murray-Rust",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper aims to develop a semi-formal design space for Human-AI interactions by building interaction primitives that specify communication between users and AI systems during their interaction.",
+          "quote": "This paper aims to develop a semi-formal design space for Human-AI interactions, by building a set of interaction primitives which specify the communication between users and AI systems during their interaction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper shows that interaction primitives can be combined into interaction patterns that provide an abstract specification for exchanging messages between humans and AI/ML models to carry out purposeful interactions.",
+          "quote": "We show how these primitives can be combined into a set of interaction patterns which can provide an abstract specification for exchanging messages between humans and AI/ML models to carry out purposeful interactions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper reviews frameworks, guidelines, and taxonomies related to the design and implementation of HAI interactions, including human-in-the-loop, explainable AI, hybrid intelligence, and collaborative learning approaches.",
+          "quote": "We present a short literature review on frameworks, guidelines and taxonomies related to the design and implementation of HAI interactions, including human-in-the-loop, explainable AI, as well as hybrid intelligence and collaborative learning approaches.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The literature review includes human-in-the-loop as an approach related to the design and implementation of HAI interactions.",
+          "quote": "We present a short literature review on frameworks, guidelines and taxonomies related to the design and implementation of HAI interactions, including human-in-the-loop, explainable AI, as well as hybrid intelligence and collaborative learning approaches.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The literature review includes explainable AI as an approach related to the design and implementation of HAI interactions.",
+          "quote": "We present a short literature review on frameworks, guidelines and taxonomies related to the design and implementation of HAI interactions, including human-in-the-loop, explainable AI, as well as hybrid intelligence and collaborative learning approaches.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.5"
+        },
+        {
+          "question": "q2",
+          "claim": "From the literature review, the paper defines a vocabulary for describing information exchanges in terms of providing and requesting particular model-specific data types.",
+          "quote": "From the literature review, we define a vocabulary for describing information exchanges in terms of providing and requesting particular model-specific data types.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.6"
+        },
+        {
+          "question": "q2",
+          "claim": "Based on that vocabulary, the paper presents a message passing model for interactions between humans and models, demonstrated to account for existing systems and approaches.",
+          "quote": "Based on this vocabulary, a message passing model for interactions between humans and models is presented, which we demonstrate can account for existing systems and approaches.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.7"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper builds design patterns as mid-level constructs that capture common interactional structures.",
+          "quote": "Finally, we build this into design patterns as mid-level constructs that capture common interactional structures.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 3
+    },
+    {
+      "id": "e6998d7037",
+      "url": "https://arxiv.org/abs/2301.11333",
+      "title": "Knowing About Knowing: An Illusion of Human Competence Can Hinder Appropriate Reliance on AI Systems",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2023-01-25",
+      "org": "Gaole He, Lucie Kuiper, Ujwal Gadiraju",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The study tested a tutorial intervention that reveals AI advice fallibility and logic units-based explanations to improve user understanding of AI advice.",
+          "quote": "Through an empirical study (N = 249), we explored the impact of DKE on human reliance on an AI system, and whether such effects can be mitigated using a tutorial intervention that reveals the fallibility of AI advice, and exploiting logic units-based explanations to improve user understanding of AI advice.",
+          "numbers": [
+            "249"
+          ],
+          "corroborated_by": [],
+          "id": "S4.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper states its work has broad implications for designing methods to tackle user cognitive biases while facilitating appropriate reliance on AI systems.",
+          "quote": "Our work has broad implications on the design of methods to tackle user cognitive biases while facilitating appropriate reliance on AI systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Participants who overestimate their performance tend to under-rely on AI systems, hindering optimal team performance.",
+          "quote": "We found that participants who overestimate their performance tend to exhibit under-reliance on AI systems, which hinders optimal team performance.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Logic units-based explanations did not improve calibration of competence or facilitate appropriate reliance.",
+          "quote": "Logic units-based explanations did not help users in either improving the calibration of their competence or facilitating appropriate reliance.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.4"
+        },
+        {
+          "question": "q3",
+          "claim": "A tutorial intervention was highly effective for participants with overestimated self-assessment but could hurt appropriate reliance for those with underestimated self-assessment.",
+          "quote": "While the tutorial intervention was highly effective in helping users calibrate their self-assessment and facilitating appropriate reliance among participants with overestimated self-assessment, we found that it can potentially hurt the appropriate reliance of participants with underestimated self-assessment.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Appropriate reliance is key to complementary team performance in AI-assisted decision making.",
+          "quote": "Recent research has shown that appropriate reliance is the key to achieving complementary team performance in AI-assisted decision making.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.6"
+        },
+        {
+          "question": "q3",
+          "claim": "DKE is a metacognitive bias in which less-competent individuals overestimate their own skill and performance.",
+          "quote": "DKE is a metacognitive bias due to which less-competent individuals overestimate their own skill and performance.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.7"
+        },
+        {
+          "question": "q3",
+          "claim": "The findings advance understanding of how self-assessment shapes trust and reliance in human-AI decision making.",
+          "quote": "Our findings advance the current understanding of the role of self-assessment in shaping trust and reliance in human-AI decision making.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 4
+    },
+    {
+      "id": "f888958d82",
+      "url": "https://arxiv.org/abs/2504.19120",
+      "title": "Toward AI standardization: A triadic human-ai collaboration framework for multi-level autonomous mobility",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-04-27",
+      "org": "Gaojian Huang, Wei-Hsiang Lo, Guannan Liu, Yue Luo, Yantong Jin",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Previous standards, such as SAE Levels of Automation, defined automation levels based on who controls the vehicle.",
+          "quote": "Previous standards, such as SAE Levels of Automation, have focused on defining automation levels based on who controls the vehicle.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The study proposed a triadic human-AI collaboration framework with three AI roles: Advisor, Co-Pilot, and Guardian.",
+          "quote": "To fill this gap, this study proposed a triadic human-AI collaboration framework with three AI roles: Advisor, Co-Pilot, and Guardian.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S5.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The framework's roles can dynamically adapt to human needs based on real-time data, including mental states and environmental conditions.",
+          "quote": "These roles can dynamically adapt to human needs based on real-time data, such as mental states and environmental conditions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The Advisor AI role provides informational support without direct intervention.",
+          "quote": "The Advisor AI offers informational support without direct intervention.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.4"
+        },
+        {
+          "question": "q2",
+          "claim": "The Co-Pilot AI role provides partial intervention when needed, aiming to share control with humans.",
+          "quote": "The Co-Pilot AI provides partial intervention when needed, with the goal of sharing control with humans.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.5"
+        },
+        {
+          "question": "q2",
+          "claim": "The Guardian AI role performs emergency overrides if necessary.",
+          "quote": "The Guardian AI performs emergency overrides if necessary.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Use cases in micromobility devices such as e-scooters demonstrate how these AI roles can influence user preferences and trust.",
+          "quote": "The use cases for these AI roles in micromobility devices, such as e-scooters, are presented to demonstrate how these roles can influence user preferences and trust.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.7"
+        },
+        {
+          "question": "q1",
+          "claim": "The study presents a first step toward a universal role-based collaborative framework for AI standardization and embedding AI in future transportation systems while considering human interactions.",
+          "quote": "Overall, the study takes a first step toward a universal role-based collaborative framework for AI standardization and explores how AI technologies can be embedded in future transportation systems while considering human interactions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 5
+    },
+    {
+      "id": "0efdc27e7d",
+      "url": "https://arxiv.org/abs/2507.12721",
+      "title": "Design Patterns of Human-AI Interfaces in Healthcare",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-07-17",
+      "org": "Rui Sheng, Chuhan Shi, Sobhan Lotfi, Shiyi Liu, Adam Perer, Huamin Qu, Furui Cheng",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper reviews existing solutions and synthesizes design patterns, described as recurring approaches that support human-AI interface design in clinical settings.",
+          "quote": "In this study, we review existing solutions and synthesize a set of design patterns - recurring approaches that support the design of human-AI interfaces in clinical settings.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Through a literature review of human-AI interaction designs in clinical contexts, the authors identified 15 information entities commonly presented to users and 12 design patterns for organizing and communicating that information.",
+          "quote": "We conducted a comprehensive literature review of human-AI interaction designs in clinical contexts, through which we identified 15 information entities commonly presented to users and 12 design patterns used to organize and communicate this information effectively.",
+          "numbers": [
+            "15",
+            "12"
+          ],
+          "corroborated_by": [],
+          "id": "S6.2"
+        },
+        {
+          "question": "q1",
+          "claim": "For each design pattern, the authors summarize the design problem, proposed solution, and rationale for when to apply or not apply it, drawing on literature and semi-structured interviews with 12 healthcare professionals.",
+          "quote": "For each design pattern, we summarize the underlying design problem, the proposed solution, and the rationale for when the pattern should or should not be applied, based on insights from both the literature and semi-structured interviews with 12 healthcare professionals.",
+          "numbers": [
+            "12"
+          ],
+          "corroborated_by": [],
+          "id": "S6.3"
+        },
+        {
+          "question": "q1",
+          "claim": "The design patterns were evaluated in an online workshop with 14 experienced UI designers.",
+          "quote": "We evaluated the proposed design patterns through an online workshop involving 14 experienced UI designers.",
+          "numbers": [
+            "14"
+          ],
+          "corroborated_by": [],
+          "id": "S6.4"
+        },
+        {
+          "question": "q1",
+          "claim": "In the workshop, participants created interface sketches for healthcare scenarios from their own professional experience using the design patterns as guidance.",
+          "quote": "During the workshop, participants were asked to create interface sketches for healthcare-related scenarios drawn from their own professional experience, using our design patterns as guidance.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.5"
+        },
+        {
+          "question": "q1",
+          "claim": "The authors report that the design patterns helped participants ground designs in user needs, generate more design alternatives, and simplify complex interface structures.",
+          "quote": "Our findings show that the proposed design patterns helped participants ground their designs in user needs, generate a wider range of design alternatives, and simplify complex interface structures.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.6"
+        },
+        {
+          "question": "q1",
+          "claim": "The authors analyzed participants' usage strategies and feedback on the applicability and usefulness of the design patterns.",
+          "quote": "We further analyzed and summarized the participants' usage strategies and feedback regarding the applicability and usefulness of the design patterns.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 6
+    },
+    {
+      "id": "11665e8774",
+      "url": "https://arxiv.org/abs/2508.19227",
+      "title": "Generative Interfaces for Language Models",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-08-26",
+      "org": "Jiaqi Chen, Yanzhe Zhang, Yutong Zhang, Yijia Shao, Diyi Yang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "Large language models are increasingly viewed as assistants, copilots, and consultants that support tasks through natural conversation.",
+          "quote": "Large language models (LLMs) are increasingly seen as assistants, copilots, and consultants, capable of supporting a wide range of tasks through natural conversation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.1"
+        },
+        {
+          "question": "q4",
+          "claim": "Most LLM systems remain constrained by a linear request-response format, which is often inefficient for multi-turn, information-dense, and exploratory tasks.",
+          "quote": "However, most systems remain constrained by a linear request-response format that often makes interactions inefficient in multi-turn, information-dense, and exploratory tasks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper proposes a paradigm called Generative Interfaces for Language Models, in which LLMs respond to user queries by proactively generating user interfaces for more adaptive and interactive engagement.",
+          "quote": "To address these limitations, we propose Generative Interfaces for Language Models, a paradigm in which LLMs respond to user queries by proactively generating user interfaces (UIs) that enable more adaptive and interactive engagement.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.3"
+        },
+        {
+          "question": "q1",
+          "claim": "The proposed framework uses structured interface-specific representations and iterative refinements to translate user queries into task-specific UIs.",
+          "quote": "Our framework leverages structured interface-specific representations and iterative refinements to translate user queries into task-specific UIs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.4"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper evaluates generative interfaces against traditional chat-based interfaces across diverse tasks, interaction patterns, and query types, capturing functional, interactive, and emotional aspects of user experience.",
+          "quote": "For systematic evaluation, we introduce a multidimensional assessment framework that compares generative interfaces with traditional chat-based ones across diverse tasks, interaction patterns, and query types, capturing functional, interactive, and emotional aspects of user experience.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.5"
+        },
+        {
+          "question": "q4",
+          "claim": "Generative interfaces consistently outperform conversational ones, with up to a 72% improvement in human preference.",
+          "quote": "Results show that generative interfaces consistently outperform conversational ones, with up to a 72% improvement in human preference.",
+          "numbers": [
+            "72%"
+          ],
+          "corroborated_by": [],
+          "id": "S7.6"
+        },
+        {
+          "question": "q4",
+          "claim": "The findings clarify when and why users favor generative interfaces and are presented as advancing human-AI interaction.",
+          "quote": "These findings clarify when and why users favor generative interfaces, paving the way for future advancements in human-AI interaction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 7
+    },
+    {
+      "id": "16266f2e8f",
+      "url": "https://www.semanticscholar.org/paper/47ed935b52e3589cdda99ac70a14bba805eec1ac",
+      "title": "Collaborating with LLMs Through a Voice and Graphical User Interface",
+      "provider": "semantic_scholar",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-09-21",
+      "org": "Lenja Sorokin, Khanh Huynh, Malin Eiband, Lukas Stappen, Jeremy Dillmann",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper argues that UX designers should design the LLM as a second user, creating one interface for human users and one for the LLM, using targeted modalities to support collaboration and reduce conflicts.",
+          "quote": "It is argued that to seize collaboration and mitigate conflicts, UX designers must design the LLM as a second user, creating one interface for human users and one for the LLM, through targeted use of modalities.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The source is an academic paper titled Collaborating with LLMs Through a Voice and Graphical User Interface, focusing on voice and GUI collaboration with LLMs.",
+          "quote": "Collaborating with LLMs Through a Voice and Graphical User Interface",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.2"
+        },
+        {
+          "question": "q4",
+          "claim": "A referenced prototype, Valletto, lets users generate and specify visualizations through a speech-based conversational interface, multitouch gestures, and a conventional GUI interface.",
+          "quote": "Volta is envisioning Valletto, a prototypical tablet app which allows the user to generate and specify visualizations through a speech-based conversational interface, through multitouch gestures, and through a conventional GUI interface.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.3"
+        },
+        {
+          "question": "q4",
+          "claim": "A referenced paper empirically investigates speech as input and output for solving usability problems with GUI interaction metaphors and for enhancing visual IDE usability in efficiency, effectiveness, and satisfaction.",
+          "quote": "This paper empirically investigating speech as an input and output means for solving usability problems with GUI interaction metaphors and enhancing usability of visual IDEs in terms of efficiency, effectiveness and satisfaction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.4"
+        },
+        {
+          "question": "q1",
+          "claim": "A referenced work describes an organized process for designing multimodal interfaces that lets designers evaluate interfaces with real users, find usability issues, and report rationale for corrections.",
+          "quote": "An organized process to the design of multimodal interfaces that will let the designers to evaluate the interfaces with real users, find out usability issues and report the rationale to correct those issues is described.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.5"
+        },
+        {
+          "question": "q4",
+          "claim": "A cited exploratory study with a ChatGPT-powered voice assistant across three scenarios found that LLM-powered voice assistants elicit richer interaction patterns that vary across tasks.",
+          "quote": "This work investigates whether LLMs can enrich VA interactions via an exploratory study using a ChatGPT-powered VA for three scenarios (medical self-diagnosis, creative planning, and discussion) with varied constraints, stakes, and objectivity and observes that LLM-powered VA elicits richer interaction patterns that vary across tasks, showing its versatility.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S8.6"
+        },
+        {
+          "question": "q3",
+          "claim": "A citing paper reports that intermediate feedback from agentic LLM-based in-car assistants significantly improved perceived speed, trust, and user experience while reducing task load, across varying task complexities and interaction contexts.",
+          "quote": "Intermediate feedback from agentic LLM-based in-car assistants significantly improved perceived speed, trust, and user experience while reducing task load - effects that held across varying task complexities and interaction contexts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.7"
+        }
+      ],
+      "dropped": 1,
+      "n": 8
+    },
+    {
+      "id": "32dc41c630",
+      "url": "https://arxiv.org/abs/2605.11495",
+      "title": "Hedwig: Dynamic Autonomy for Coding Agents Under Local Oversight",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-05-12",
+      "org": "Tanjal Shukla, K. J. Kevin Feng, Leijie Wang, Mohammad Rostami, Amy X. Zhang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Hedwig learns an evolving set of behavioral guidelines from developer decisions and feedback rather than relying on a global fixed autonomy configuration.",
+          "quote": "Rather than operating on a global, fixed autonomy configuration, Hedwig learns an evolving set of behavioral guidelines from developer decisions and feedback, reducing friction on work for which the agent has earned trust, while tightening oversight when the agent operates outside familiar territory.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Coding agents tend to introduce unintended edits, subtle bugs, and scope drift that slip past code review, so developers must still decide how much autonomy to grant them.",
+          "quote": "Despite coding agents' advances in handling increasingly complex tasks, their continued tendency to introduce unintended edits, subtle bugs, and scope drift that slip past code review means developers must still decide how much autonomy to grant them.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Static permission settings and instruction files cannot account for developers' autonomy preferences shifting across tasks and over time.",
+          "quote": "However, existing approaches for setting an agent's level of autonomy, such as static permission settings or instruction files, cannot account for how developers' preferences for agent autonomy can shift across tasks and over time.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.3"
+        },
+        {
+          "question": "q2",
+          "claim": "A formative survey of 21 software engineers who use coding agents found frustration with calibrating autonomy and evolving preferences for level of oversight.",
+          "quote": "We conducted a formative survey with 21 software engineers who use coding agents and found that they experience frustration with calibrating autonomy and have evolving preferences for level of oversight.",
+          "numbers": [
+            "21"
+          ],
+          "corroborated_by": [],
+          "id": "S9.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Hedwig is a CLI coding agent that dynamically adjusts its autonomy level based on developer-agent interactions across sessions.",
+          "quote": "Building on these insights, we present Hedwig, a CLI coding agent that dynamically adjusts its autonomy level based on developer-agent interactions across sessions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Hedwig reduces friction on work for which the agent has earned trust while tightening oversight when the agent operates outside familiar territory.",
+          "quote": "Rather than operating on a global, fixed autonomy configuration, Hedwig learns an evolving set of behavioral guidelines from developer decisions and feedback, reducing friction on work for which the agent has earned trust, while tightening oversight when the agent operates outside familiar territory.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Hedwig demonstrates a paradigm where agents intelligently adapt their level of autonomy based on user trust through active, longitudinal collaboration.",
+          "quote": "Hedwig demonstrates the potential of a new paradigm where agents intelligently adapt their level of autonomy based on user trust through active, longitudinal collaboration.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 9
+    },
+    {
+      "id": "3eabc78f40",
+      "url": "https://arxiv.org/abs/2310.19778",
+      "title": "Human-AI collaboration is not very collaborative yet: A taxonomy of interaction patterns in AI-assisted decision making from a systematic review",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2023-10-30",
+      "org": "Catalina Gomez, Sue Min Cho, Shichang Ke, Chien-Ming Huang, Mathias Unberath",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper introduces a taxonomy of interaction patterns for various modes of human-AI interactivity, intended to promote more deliberate consideration of interaction designs.",
+          "quote": "To promote more deliberate consideration of interaction designs, we introduce a taxonomy of interaction patterns that delineate various modes of human-AI interactivity.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The taxonomy is based on a systematic review of AI-assisted decision-making literature and identifies trends and opportunities in interactions across application domains from 105 articles.",
+          "quote": "We summarize the results of a systematic review of AI-assisted decision making literature and identify trends and opportunities in existing interactions across application domains from 105 articles.",
+          "numbers": [
+            "105"
+          ],
+          "corroborated_by": [],
+          "id": "S10.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The review finds current interactions are dominated by simplistic collaboration paradigms, with little support for truly interactive functionality.",
+          "quote": "We find that current interactions are dominated by simplistic collaboration paradigms, leading to little support for truly interactive functionality.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Determining what information AI should provide to aid humans is vital, a concept underscored by explainable AI's efforts to justify AI predictions.",
+          "quote": "Determining what information AI should provide to aid humans is vital, a concept underscored by explainable AI's efforts to justify AI predictions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.4"
+        },
+        {
+          "question": "q1",
+          "claim": "How information is presented, such as the sequence of recommendations and solicitation of interpretations, is equally crucial because complex interactions may emerge between humans and AI.",
+          "quote": "However, how the information is presented, e.g., the sequence of recommendations and solicitation of interpretations, is equally crucial as complex interactions may emerge between humans and AI.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.5"
+        },
+        {
+          "question": "q1",
+          "claim": "A human-centered perspective attempts to alleviate concern about algorithmic outputs and human expectations by designing AI solutions for seamless integration with existing processes.",
+          "quote": "A human-centered perspective attempts to alleviate this concern by designing AI solutions for seamless integration with existing processes.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.6"
+        },
+        {
+          "question": "q1",
+          "claim": "The taxonomy is offered as a tool to understand interactivity with AI in decision-making and to foster interaction designs for clear communication, trustworthiness, and collaboration.",
+          "quote": "Our taxonomy offers a tool to understand interactivity with AI in decision-making and foster interaction designs for achieving clear communication, trustworthiness, and collaboration.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 10
+    },
+    {
+      "id": "414cfd63a6",
+      "url": "https://arxiv.org/abs/2501.16693",
+      "title": "Explainability and AI Confidence in Clinical Decision Support Systems: Effects on Trust, Diagnostic Performance, and Cognitive Load in Breast Cancer Care",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-01-28",
+      "org": "Olya Rezaeian, Alparslan Emrah Bayrak, Onur Asan",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Successful implementation of AI clinical decision support systems depends on user trust and reliance and can be influenced by explainable AI.",
+          "quote": "However, the successful implementation of these systems relies on user trust and reliance, which can be influenced by explainable AI.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The study explored how varying explainability levels affect clinicians' trust, cognitive load, and diagnostic performance in breast cancer detection.",
+          "quote": "This study explores the impact of varying explainability levels on clinicians trust, cognitive load, and diagnostic performance in breast cancer detection.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.2"
+        },
+        {
+          "question": "q3",
+          "claim": "High confidence scores substantially increased trust but also led to overreliance, reducing diagnostic accuracy.",
+          "quote": "The results revealed that high confidence scores substantially increased trust but also led to overreliance, reducing diagnostic accuracy.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Low confidence scores decreased trust and agreement while increasing diagnosis duration, reflecting more cautious behavior.",
+          "quote": "In contrast, low confidence scores decreased trust and agreement while increasing diagnosis duration, reflecting more cautious behavior.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Some explainability features influenced cognitive load by increasing stress levels.",
+          "quote": "Some explainability features influenced cognitive load by increasing stress levels.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Demographic factors such as age, gender, and professional role shaped participants' perceptions and interactions with the system.",
+          "quote": "Additionally, demographic factors such as age, gender, and professional role shaped participants' perceptions and interactions with the system.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.6"
+        },
+        {
+          "question": "q1",
+          "claim": "The study concludes that AI-driven clinical decision support systems should balance transparency, usability, and cognitive demands to foster trust and improve clinical workflow integration.",
+          "quote": "The findings highlight the importance of designing AI-driven CDSSs that balance transparency, usability, and cognitive demands to foster trust and improve integration into clinical workflows.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 11
+    },
+    {
+      "id": "7fa11df928",
+      "url": "https://arxiv.org/abs/2604.07652",
+      "title": "Bridging Natural Language and Interactive What-If Interfaces via LLM-Generated Declarative Specification",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-04-08",
+      "org": "Sneha Gathani, Sirui Zeng, Diya Patel, Ryan Rossi, Dan Marshall, Cagatay Demiralp, Steven Drucker, Zhicheng Liu",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "LLM-based chatbot interfaces for interactive what-if analysis are described as semantically fragile, frequently misinterpreting intent, and producing inconsistent results as conversations progress.",
+          "quote": "Current tools fall short of supporting effective interactive WIA: spreadsheet and BI tools require time-consuming and laborious setup, while LLM-based chatbot interfaces are semantically fragile, frequently misinterpret intent, and produce inconsistent results as conversations progress.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper presents a two-stage workflow that translates natural language what-if-analysis questions into interactive visual interfaces via an intermediate Praxa Specification Language representation, with LLMs generating PSL specifications and specifications compiling into interfaces with parameter controls and linked visualizations.",
+          "quote": "To address these limitations, we present a two-stage workflow that translates natural language (NL) WIA questions into interactive visual interfaces via an intermediate representation, powered by the Praxa Specification Language (PSL): first, LLMs generate PSL specifications from NL questions capturing analytical intent and logic, enabling validation and repair of erroneous specifications; and second, the specifications are compiled into interactive visual interfaces with parameter controls and linked visualizations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The workflow is benchmarked with 405 what-if-analysis questions spanning 11 WIA types, 5 datasets, and 3 state-of-the-art LLMs.",
+          "quote": "We benchmark this workflow with 405 WIA questions spanning 11 WIA types, 5 datasets, and 3 state-of-the-art LLMs.",
+          "numbers": [
+            "405",
+            "11",
+            "5",
+            "3"
+          ],
+          "corroborated_by": [],
+          "id": "S12.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Across models, 52.42% of specifications are generated correctly without intervention.",
+          "quote": "The results show that across models, half of specifications (52.42%) are generated correctly without intervention.",
+          "numbers": [
+            "52.42%"
+          ],
+          "corroborated_by": [],
+          "id": "S12.4"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper derives an error taxonomy distinguishing non-functional errors, where specifications fail to compile, from functional errors, where specifications compile but misrepresent intent.",
+          "quote": "We perform an analysis of the failure cases and derive an error taxonomy spanning non-functional errors (specifications fail to compile) and functional errors (specifications compile but misrepresent intent).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.5"
+        },
+        {
+          "question": "q1",
+          "claim": "Targeted repairs using few-shot prompts on failure cases improve the success rate to 80.42%.",
+          "quote": "Based on the taxonomy, we apply targeted repairs on the failure cases using few-shot prompts and improve the success rate to 80.42%.",
+          "numbers": [
+            "80.42%"
+          ],
+          "corroborated_by": [],
+          "id": "S12.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Undetected functional errors can propagate through compilation into plausible but misleading interfaces, and the intermediate specification is described as critical for reliability in LLM-powered WIA systems.",
+          "quote": "Finally, we show how undetected functional errors propagate through compilation into plausible but misleading interfaces, demonstrating that the intermediate specification is critical for reliably bridging NL and interactive WIA interface in LLM-powered WIA systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 12
+    },
+    {
+      "id": "9d53839c55",
+      "url": "https://arxiv.org/abs/2404.11370",
+      "title": "Characterizing and modeling harms from interactions with design patterns in AI interfaces",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-04-17",
+      "org": "Lujain Ibrahim, Luc Rocher, Ana Valdivia",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "Human-computer interaction research has shown that interfaces shape both user behavior and user perceptions of technical capabilities and risks.",
+          "quote": "Human-computer interaction research has long shown that interfaces shape both user behavior and user perception of technical capabilities and risks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.1"
+        },
+        {
+          "question": "q3",
+          "claim": "Practitioners and researchers evaluating social and ethical risks of AI systems tend to overlook how anthropomorphic, deceptive, and immersive interfaces affect human-AI interactions.",
+          "quote": "Yet, practitioners and researchers evaluating the social and ethical risks of AI systems tend to overlook the impact of anthropomorphic, deceptive, and immersive interfaces on human-AI interactions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper argues that design features of interfaces with adaptive AI systems can have cascading impacts driven by feedback loops that extend beyond previously considered impacts.",
+          "quote": "Here, we argue that design features of interfaces with adaptive AI systems can have cascading impacts, driven by feedback loops, which extend beyond those previously considered.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.3"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper conducts a scoping review of AI interface designs and their negative impacts to extract salient themes of potentially harmful design patterns in AI interfaces.",
+          "quote": "We first conduct a scoping review of AI interface designs and their negative impact to extract salient themes of potentially harmful design patterns in AI interfaces.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.4"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper proposes Design-Enhanced Control of AI systems (DECAI), a conceptual model for structuring and facilitating impact assessments of AI interface designs.",
+          "quote": "Then, we propose Design-Enhanced Control of AI systems (DECAI), a conceptual model to structure and facilitate impact assessments of AI interface designs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.5"
+        },
+        {
+          "question": "q1",
+          "claim": "DECAI draws on control systems theory to analyze and design dynamic physical systems so as to dissect the interface's role in human-AI systems.",
+          "quote": "DECAI draws on principles from control systems theory -- a theory for the analysis and design of dynamic physical systems -- to dissect the role of the interface in human-AI systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.6"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper uses two case studies, on recommendation systems and conversational language model systems, to show how DECAI can evaluate AI interface designs.",
+          "quote": "Through two case studies on recommendation systems and conversational language model systems, we show how DECAI can be used to evaluate AI interface designs.",
+          "numbers": [
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S13.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 13
+    },
+    {
+      "id": "a714d4663e",
+      "url": "https://arxiv.org/abs/2506.12469",
+      "title": "Levels of Autonomy for AI Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-06-14",
+      "org": "K. J. Kevin Feng, David W. McDonald, Amy X. Zhang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "The paper argues that an AI agent's level of autonomy should be treated as a deliberate design decision, separate from its capability and operational environment.",
+          "quote": "We argue that an agent's level of autonomy can be treated as a deliberate design decision, separate from its capability and operational environment.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper defines five escalating levels of agent autonomy, characterized by user roles: operator, collaborator, consultant, approver, and observer.",
+          "quote": "In this work, we define five levels of escalating agent autonomy, characterized by the roles a user can take when interacting with an agent: operator, collaborator, consultant, approver, and observer.",
+          "numbers": [
+            "five"
+          ],
+          "corroborated_by": [],
+          "id": "S14.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Within each autonomy level, the paper describes how users can exert control over the agent and raises open questions about designing user-agent interaction.",
+          "quote": "Within each level, we describe the ways by which a user can exert control over the agent and open questions for how to design the nature of user-agent interaction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper frames the central problem as how agent developers can calibrate appropriate levels of autonomy for their agents.",
+          "quote": "How can agent developers calibrate the appropriate levels of autonomy at which their agents should operate?",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.4"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper highlights a potential application of its framework toward AI autonomy certificates to govern agent behavior in single- and multi-agent systems.",
+          "quote": "We then highlight a potential application of our framework towards AI autonomy certificates to govern agent behavior in single- and multi-agent systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.5"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper proposes early ideas for evaluating agents' autonomy.",
+          "quote": "We conclude by proposing early ideas for evaluating agents' autonomy.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.6"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper describes autonomy as double-edged for AI agents, unlocking transformative possibilities while also carrying serious risks.",
+          "quote": "Autonomy is a double-edged sword for AI agents, simultaneously unlocking transformative possibilities and serious risks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 14
+    },
+    {
+      "id": "bae955c140",
+      "url": "https://arxiv.org/abs/2502.08554",
+      "title": "Fostering Appropriate Reliance on Large Language Models: The Role of Explanations, Sources, and Inconsistencies",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-02-12",
+      "org": "Sunnie S. Y. Kim, Jennifer Wortman Vaughan, Q. Vera Liao, Tania Lombrozo, Olga Russakovsky",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "LLMs can produce erroneous responses that sound fluent and convincing, creating a risk that users rely on them as if they were correct.",
+          "quote": "Large language models (LLMs) can produce erroneous responses that sound fluent and convincing, raising the risk that users will rely on these responses as if they were correct.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.1"
+        },
+        {
+          "question": "q3",
+          "claim": "Mitigating overreliance on LLM responses is a key challenge.",
+          "quote": "Mitigating such overreliance is a key challenge.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.2"
+        },
+        {
+          "question": "q1",
+          "claim": "A think-aloud study identifies explanations, inconsistencies in explanations, and sources as features of LLM responses that shape users' reliance.",
+          "quote": "Through a think-aloud study in which participants use an LLM-infused application to answer objective questions, we identify several features of LLM responses that shape users' reliance: explanations (supporting details for answers), inconsistencies in explanations, and sources.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.3"
+        },
+        {
+          "question": "q3",
+          "claim": "A large-scale, pre-registered, controlled experiment with N=308 isolates and studies the effects of explanations, sources, and inconsistencies on users' reliance and accuracy.",
+          "quote": "Through a large-scale, pre-registered, controlled experiment (N=308), we isolate and study the effects of these features on users' reliance, accuracy, and other measures.",
+          "numbers": [
+            "N=308"
+          ],
+          "corroborated_by": [],
+          "id": "S15.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The presence of explanations increases reliance on both correct and incorrect LLM responses.",
+          "quote": "We find that the presence of explanations increases reliance on both correct and incorrect responses.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Providing sources or having explanations exhibit inconsistencies is associated with less reliance on incorrect responses.",
+          "quote": "However, we observe less reliance on incorrect responses when sources are provided or when explanations exhibit inconsistencies.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.6"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper discusses implications of these findings for fostering appropriate reliance on LLMs.",
+          "quote": "We discuss the implications of these findings for fostering appropriate reliance on LLMs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 15
+    },
+    {
+      "id": "c0c45a8856",
+      "url": "https://arxiv.org/abs/2603.29121",
+      "title": "Economics of Human and AI Collaboration: When is Partial Automation More Attractive than Full Automation?",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-24",
+      "org": "Wensu Li, Atin Aboutorabi, Harry Lyu, Kaizhi Qian, Martin Fleming, Brian C. Goehring, Neil Thompson",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "The paper models automation intensity as a continuous choice from no automation through partial human-AI collaboration to full automation, rather than as a binary automate-or-not decision.",
+          "quote": "Moving beyond binary automate-or-not assessments, we model automation intensity as a continuous choice in which firms minimize costs by selecting an AI accuracy level, from no automation through partial human-AI collaboration to full automation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Because AI systems show predictable but diminishing returns to data, compute, and model size, the cost of higher accuracy is convex: good performance may be cheap, but near-perfect accuracy is disproportionately expensive.",
+          "quote": "Because AI systems exhibit predictable but diminishing returns to these inputs, the cost of higher accuracy is convex: good performance may be inexpensive, but near-perfect accuracy is disproportionately costly.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Full automation is often not cost-minimizing, and partial automation where humans retain residual tasks frequently emerges as the equilibrium.",
+          "quote": "Full automation is therefore often not cost-minimizing; partial automation, where firms retain human workers for residual tasks, frequently emerges as the equilibrium.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Task complexity shapes labor substitution: low-complexity tasks see high substitution, while high-complexity tasks favor limited partial automation.",
+          "quote": "Task complexity shapes substitution: low-complexity tasks see high substitution, while high-complexity tasks favor limited partial automation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Scale of deployment is a key determinant because AI-as-a-Service and AI agents spread fixed costs across users and sharply expand economically viable tasks.",
+          "quote": "Scale of deployment is a key determinant: AI-as-a-Service and AI agents spread fixed costs across users, sharply expanding economically viable tasks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.5"
+        },
+        {
+          "question": "q2",
+          "claim": "At the firm level, cost-effective automation captures approximately 11% of computer-vision-exposed labor compensation, and this share rises sharply under economy-wide deployment.",
+          "quote": "At the firm level, cost-effective automation captures approximately 11% of computer-vision-exposed labor compensation; under economy-wide deployment, this share rises sharply.",
+          "numbers": [
+            "11%"
+          ],
+          "corroborated_by": [],
+          "id": "S16.6"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper argues that partial automation is often the economically rational long-run outcome, not merely a transitional phase, because other AI systems exhibit similar scaling-law economics.",
+          "quote": "Since other AI systems exhibit similar scaling-law economics, our mechanisms extend beyond computer vision, reinforcing that partial automation is often the economically rational long-run outcome, not merely a transitional phase.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 16
+    },
+    {
+      "id": "fa1ce4211b",
+      "url": "https://arxiv.org/abs/2301.07255",
+      "title": "Understanding the Role of Human Intuition on Reliance in Human-AI Decision-Making with Explanations",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2023-01-18",
+      "org": "Valerie Chen, Q. Vera Liao, Jennifer Wortman Vaughan, Gagan Bansal",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "AI explanations are often proposed to improve human-AI decision-making, but empirical studies have not consistently shown them effective and even suggest they can increase overreliance when the AI is wrong.",
+          "quote": "AI explanations are often mentioned as a way to improve human-AI decision-making, but empirical studies have not found consistent evidence of explanations' effectiveness and, on the contrary, suggest that they can increase overreliance when the AI system is wrong.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.1"
+        },
+        {
+          "question": "q2",
+          "claim": "A key factor in reliance on AI support is how decision-makers reconcile their own intuition with the AI system's information to determine when to override AI predictions.",
+          "quote": "While many factors may affect reliance on AI support, one important factor is how decision-makers reconcile their own intuition -- beliefs or heuristics, based on prior knowledge, experience, or pattern recognition, used to make judgments -- with the information provided by the AI system to determine when to override AI predictions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The study is a think-aloud, mixed-methods study with two explanation types (feature- and example-based) and two prediction tasks, exploring how decision-makers' intuition affects use of AI predictions/explanations and choice of when to rely on AI.",
+          "quote": "We conduct a think-aloud, mixed-methods study with two explanation types (feature- and example-based) for two prediction tasks to explore how decision-makers' intuition affects their use of AI predictions and explanations, and ultimately their choice of when to rely on AI.",
+          "numbers": [
+            "two",
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S17.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The study identifies three types of intuition in reasoning about AI predictions and explanations: intuition about the task outcome, features, and AI limitations.",
+          "quote": "Our results identify three types of intuition involved in reasoning about AI predictions and explanations: intuition about the task outcome, features, and AI limitations.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S17.4"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper summarizes three observed pathways through which decision-makers apply their own intuition and override AI predictions.",
+          "quote": "Building on these, we summarize three observed pathways for decision-makers to apply their own intuition and override AI predictions.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S17.5"
+        },
+        {
+          "question": "q3",
+          "claim": "The authors explain two results: (1) feature-based explanations did not improve participants' decision outcomes and increased overreliance on AI, and (2) example-based explanations improved decision-makers' performance over feature-based explanations and helped achieve complementary human-AI performance.",
+          "quote": "We use these pathways to explain why (1) the feature-based explanations we used did not improve participants' decision outcomes and increased their overreliance on AI, and (2) the example-based explanations we used improved decision-makers' performance over feature-based explanations and helped achieve complementary human-AI performance.",
+          "numbers": [
+            "1",
+            "2"
+          ],
+          "corroborated_by": [],
+          "id": "S17.6"
+        },
+        {
+          "question": "q1",
+          "claim": "The work identifies directions for developing AI decision-support systems and explanation methods that help decision-makers apply intuition to achieve appropriate reliance on AI.",
+          "quote": "Overall, our work identifies directions for further development of AI decision-support systems and explanation methods that help decision-makers effectively apply their intuition to achieve appropriate reliance on AI.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 17
+    },
+    {
+      "id": "1a01a38493",
+      "url": "https://arxiv.org/abs/2605.27634",
+      "title": "Structuring Human-AI Productive Interdependence by Strategic Level of Automation Selection for Qualitative Inquiry",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-05-26",
+      "org": "Feng Zhou, Jacqueline Meijer-Irons, Ambar Murillo",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "The paper argues that effective Human-AI collaboration is an interdependence problem rather than an automation problem.",
+          "quote": "We argue that effective Human-AI collaboration is not an automation problem, but an interdependence problem.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper proposes a formal framework using Interdependence Theory to structure human-AI productive interdependence for co-data systems.",
+          "quote": "This paper reframes the design of \"co-data\" systems through the lens of Interdependence Theory, proposing a formal framework to structure human-AI productive interdependence.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.2"
+        },
+        {
+          "question": "q2",
+          "claim": "The framework guides selecting an appropriate Level of Automation for different qualitative analysis stages by assessing task risk and validation cost.",
+          "quote": "The framework guides the selection of an appropriate Level of Automation (LoA) for different stages of the qualitative analysis process by assessing task risk and the cost of validation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.3"
+        },
+        {
+          "question": "q3",
+          "claim": "A case study using the framework produced a deliberately interdependent workflow that fostered calibrated trust for rigorous analysis.",
+          "quote": "We present a case study where this framework led to a deliberately interdependent workflow, fostering the calibrated trust necessary for rigorous analysis.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.4"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper concludes with three design principles that instantiate the framework and preserve the human researcher’s role in meaning-making while leveraging AI as a partner.",
+          "quote": "We conclude by presenting three design principles that instantiate this framework, demonstrating how to leverage AI as a powerful partner while preserving the human researcher's irreplaceable role in the transformation process of meaning-making.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S18.5"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper states that maximizing automation is fundamentally at odds with the interpretive nature of qualitative inquiry, even though LLMs help with scale versus depth.",
+          "quote": "While Large Language Models (LLMs) offer a solution to the scale-versus-depth dilemma in qualitative analysis, the paradigm of maximizing automation is fundamentally at odds with the interpretive nature of qualitative inquiry.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 18
+    },
+    {
+      "id": "d8eac8fad8",
+      "url": "https://arxiv.org/abs/2502.13321",
+      "title": "Adjust for Trust: Mitigating Trust-Induced Inappropriate Reliance on AI Assistance",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-24",
+      "org": "Tejas Srinivasan, Jesse Thomason",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "Trust biases how users rely on AI recommendations in AI-assisted decision-making tasks; low trust increases under-reliance and high trust increases over-reliance.",
+          "quote": "Trust biases how users rely on AI recommendations in AI-assisted decision-making tasks, with low and high levels of trust resulting in increased under- and over-reliance, respectively.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The authors propose that AI assistants should adapt their behavior through trust-adaptive interventions to mitigate inappropriate reliance.",
+          "quote": "We propose that AI assistants should adapt their behavior through trust-adaptive interventions to mitigate such inappropriate reliance.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.2"
+        },
+        {
+          "question": "q3",
+          "claim": "When user trust is low, providing an explanation can elicit more careful consideration of the assistant's advice.",
+          "quote": "For instance, when user trust is low, providing an explanation can elicit more careful consideration of the assistant's advice by the user.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.3"
+        },
+        {
+          "question": "q3",
+          "claim": "In two decision-making scenarios, laypeople answering science questions and doctors making medical diagnoses, providing supporting and counter-explanations during moments of low and high trust, respectively, yields up to 38% reduction in inappropriate reliance and 20% improvement in decision accuracy.",
+          "quote": "In two decision-making scenarios -- laypeople answering science questions and doctors making medical diagnoses -- we find that providing supporting and counter-explanations during moments of low and high trust, respectively, yields up to 38% reduction in inappropriate reliance and 20% improvement in decision accuracy.",
+          "numbers": [
+            "two",
+            "38%",
+            "20%"
+          ],
+          "corroborated_by": [],
+          "id": "S19.4"
+        },
+        {
+          "question": "q1",
+          "claim": "Over-reliance can be reduced by adaptively inserting forced pauses to promote deliberation.",
+          "quote": "We are similarly able to reduce over-reliance by adaptively inserting forced pauses to promote deliberation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.5"
+        },
+        {
+          "question": "q3",
+          "claim": "AI adaptation to user trust facilitates appropriate reliance and presents avenues for improving human-AI collaboration.",
+          "quote": "Our results highlight how AI adaptation to user trust facilitates appropriate reliance, presenting exciting avenues for improving human-AI collaboration.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 19
+    },
+    {
+      "id": "dbf953e7ba",
+      "url": "https://arxiv.org/abs/2410.20067",
+      "title": "Evaluating the Influences of Explanation Style on Human-AI Reliance",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-10-26",
+      "org": "Emma Casolin, Flora D. Salim, Ben Newell",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "Explainable AI aims to support appropriate human-AI reliance by increasing the interpretability of complex model decisions.",
+          "quote": "Explainable AI (XAI) aims to support appropriate human-AI reliance by increasing the interpretability of complex model decisions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.1"
+        },
+        {
+          "question": "q3",
+          "claim": "There is mixed evidence surrounding the effects of different styles of XAI explanations on human-AI reliance.",
+          "quote": "Despite the proliferation of proposed methods, there is mixed evidence surrounding the effects of different styles of XAI explanations on human-AI reliance.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Interpreting conflicting findings requires understanding the individual and combined qualities of different explanation styles that influence appropriate and inappropriate human-AI reliance, and the role of interpretability.",
+          "quote": "Interpreting these conflicting findings requires an understanding of the individual and combined qualities of different explanation styles that influence appropriate and inappropriate human-AI reliance, and the role of interpretability in this interaction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The study investigates feature-based, example-based, and combined feature- and example-based XAI methods on human-AI reliance through a two-part experimental study with 274 participants comparing these explanation style conditions.",
+          "quote": "In this study, we investigate the influences of feature-based, example-based, and combined feature- and example-based XAI methods on human-AI reliance through a two-part experimental study with 274 participants comparing these explanation style conditions.",
+          "numbers": [
+            "274",
+            "two-part"
+          ],
+          "corroborated_by": [],
+          "id": "S20.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Findings suggest differences between feature-based and example-based explanation styles beyond interpretability that affect human-AI reliance patterns across differences in individual performance and task complexity.",
+          "quote": "Our findings suggest differences between feature-based and example-based explanation styles beyond interpretability that affect human-AI reliance patterns across differences in individual performance and task complexity.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.5"
+        },
+        {
+          "question": "q1",
+          "claim": "The work highlights the importance of adapting explanations to specific users and context over maximizing broad interpretability.",
+          "quote": "Our work highlights the importance of adapting explanations to their specific users and context over maximising broad interpretability.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 20
+    },
+    {
+      "id": "2bb07b25b7",
+      "url": "https://arxiv.org/abs/2304.07810",
+      "title": "VISAR: A Human-AI Argumentative Writing Assistant with Visual Programming and Rapid Draft Prototyping",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2023-04-16",
+      "org": "Zheng Zhang, Jie Gao, Ranjodh Singh Dhaliwal, Toby Jia-Jun Li",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper argues that argumentative writing requires writers to brainstorm hierarchical goals, ensure persuasiveness, and revise and organize plans through drafting.",
+          "quote": "In argumentative writing, writers must brainstorm hierarchical writing goals, ensure the persuasiveness of their arguments, and revise and organize their plans through drafting.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper states that although LLMs enable interactive text generation through a chat interface such as ChatGPT, that approach often neglects implicit writing context and user intent, lacks support for user control and autonomy, and provides limited assistance for sensemaking and revising writing plans.",
+          "quote": "Recent advances in large language models (LLMs) have made interactive text generation through a chat interface (e.g., ChatGPT) possible. However, this approach often neglects implicit writing context and user intent, lacks support for user control and autonomy, and provides limited assistance for sensemaking and revising writing plans.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.2"
+        },
+        {
+          "question": "q1",
+          "claim": "VISAR is an AI-enabled writing assistant designed to help writers brainstorm and revise hierarchical goals within their writing context, organize argument structures through synchronized text editing and visual programming, and enhance persuasiveness with argumentation spark recommendations.",
+          "quote": "To address these challenges, we introduce VISAR, an AI-enabled writing assistant system designed to help writers brainstorm and revise hierarchical goals within their writing context, organize argument structures through synchronized text editing and visual programming, and enhance persuasiveness with argumentation spark recommendations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.3"
+        },
+        {
+          "question": "q2",
+          "claim": "VISAR lets users explore, experiment with, and validate their writing plans using automatic draft prototyping.",
+          "quote": "VISAR allows users to explore, experiment with, and validate their writing plans using automatic draft prototyping.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.4"
+        },
+        {
+          "question": "q1",
+          "claim": "A controlled lab study confirmed VISAR's usability and effectiveness in facilitating the argumentative writing planning process.",
+          "quote": "A controlled lab study confirmed the usability and effectiveness of VISAR in facilitating the argumentative writing planning process.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 21
+    },
+    {
+      "id": "37add03147",
+      "url": "https://arxiv.org/abs/2404.04066",
+      "title": "VoicePilot: Harnessing LLMs as Speech Interfaces for Physically Assistive Robots",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-04-05",
+      "org": "Akhil Padmanabha, Jessie Yuan, Janavi Gupta, Zulekha Karachiwalla, Carmel Majidi, Henny Admoni, Zackory Erickson",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper presents a framework for incorporating LLMs as speech interfaces for physically assistive robots, developed iteratively through three testing stages with a feeding robot and a final study with 11 older adults.",
+          "quote": "In this work, we present a framework for incorporating LLMs as speech interfaces for physically assistive robots, constructed iteratively with 3 stages of testing involving a feeding robot, culminating in an evaluation with 11 older adults at an independent living facility.",
+          "numbers": [
+            "3",
+            "11"
+          ],
+          "corroborated_by": [],
+          "id": "S22.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper provides design guidelines for using LLMs as speech interfaces for assistive robots, validated with quantitative and qualitative data from the final study.",
+          "quote": "We use both quantitative and qualitative data from the final study to validate our framework and additionally provide design guidelines for using LLMs as speech interfaces for assistive robots.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Speech interfaces, especially those using LLMs, can enable individuals to communicate high-level commands and nuanced preferences to robots.",
+          "quote": "Speech interfaces, especially ones that utilize Large Language Models (LLMs), can enable individuals to effectively and naturally communicate high-level commands and nuanced preferences to robots.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.3"
+        },
+        {
+          "question": "q1",
+          "claim": "Prior frameworks for integrating LLMs as interfaces to robots for high-level task planning and code generation fail to incorporate human-centric considerations essential for assistive interfaces.",
+          "quote": "Frameworks for integrating LLMs as interfaces to robots for high level task planning and code generation have been proposed, but fail to incorporate human-centric considerations which are essential while developing assistive interfaces.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.4"
+        },
+        {
+          "question": "q1",
+          "claim": "Physically assistive robots offer an opportunity to significantly increase the well-being and independence of individuals with motor impairments or other forms of disability who cannot complete activities of daily living.",
+          "quote": "Physically assistive robots present an opportunity to significantly increase the well-being and independence of individuals with motor impairments or other forms of disability who are unable to complete activities of daily living.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 22
+    },
+    {
+      "id": "3c4844f788",
+      "url": "https://arxiv.org/abs/2609.12482",
+      "title": "When Does AI Augment Work? A Workflow-Level Framework for Human-Agent Collaboration",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-14",
+      "org": "CIVIC-AI Collaboration: Jiaying Wu et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper establishes a precise definition of AI augmentation comprising six conditions.",
+          "quote": "To ground this analysis, we establish a precise definition of AI augmentation comprising six conditions, spanning durable net value, meaningful human control, accountability and recovery, and long-term human development through learning, career pathways, and job purpose.",
+          "numbers": [
+            "six"
+          ],
+          "corroborated_by": [],
+          "id": "S23.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The framework includes meaningful human control and accountability and recovery among the six conditions of AI augmentation.",
+          "quote": "To ground this analysis, we establish a precise definition of AI augmentation comprising six conditions, spanning durable net value, meaningful human control, accountability and recovery, and long-term human development through learning, career pathways, and job purpose.",
+          "numbers": [
+            "six"
+          ],
+          "corroborated_by": [],
+          "id": "S23.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper argues that analysis should move beyond today's atomised tasks and focus on how AI can augment entire workflows of the future.",
+          "quote": "To account for this, we must expand the scope of our analysis beyond atomised tasks of today, and instead focus on how AI can augment entire workflows of the future.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.3"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper states that current studies largely measure AI value by current automation capabilities and public adoption, which ignores the greater impacts of human-agent collaboration on the nature of work.",
+          "quote": "Current studies largely measure this value in terms of the current automation capabilities and public adoption of AI. However, such metrics ignore the greater impacts of human--agent collaboration in transforming the nature of work.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.4"
+        },
+        {
+          "question": "q2",
+          "claim": "The framework is applied in a case study of AI-mediated social surveys.",
+          "quote": "We elaborate on these conditions and apply the framework in a case study of AI-mediated social surveys.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 23
+    },
+    {
+      "id": "80cec2fd18",
+      "url": "https://arxiv.org/abs/2603.16897",
+      "title": "EEG-Based Brain-LLM Interface for Human Preference Aligned Generation",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-03-03",
+      "org": "Junzi Zhang, Jianing Shen, Weijie Tu, Yi Zhang, Hailin Zhang, Tom Gedeon, Bin Jiang, Yue Yao",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "The paper states that language-based interfaces are powerful and flexible but implicitly assume users can reliably produce explicit linguistic input, an assumption that may not hold for users with speech or motor impairments such as ALS.",
+          "quote": "While language-based interfaces are powerful and flexible, they implicitly assume that users can reliably produce explicit linguistic input, an assumption that may not hold for users with speech or motor impairments, e.g., Amyotrophic Lateral Sclerosis (ALS).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The work investigates whether neural signals can be used as an alternative input to LLMs, particularly to support socially marginalized or underserved users.",
+          "quote": "In this work, we investigate whether neural signals can be used as an alternative input to LLMs, particularly to support those socially marginalized or underserved users.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The authors build a brain-LLM interface that uses EEG signals to guide image generation models at test time.",
+          "quote": "We build a simple brain-LLM interface, which uses EEG signals to guide image generation models at test time.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.3"
+        },
+        {
+          "question": "q1",
+          "claim": "They train a classifier to estimate user satisfaction from EEG signals, then incorporate its predictions into a test-time scaling framework that dynamically adapts model inference using neural feedback collected during user evaluation.",
+          "quote": "Specifically, we first train a classifier to estimate user satisfaction from EEG signals. Its predictions are then incorporated into a test-time scaling (TTS) framework that dynamically adapts model inference using neural feedback collected during user evaluation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The experiments show that EEG can predict user satisfaction, suggesting neural activity carries information on real-time preference inference.",
+          "quote": "The experiments show that EEG can predict user satisfaction, suggesting that neural activity carries information on real-time preference inference.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 24
+    },
+    {
+      "id": "fa91e97d5e",
+      "url": "https://arxiv.org/abs/2608.28420",
+      "title": "Between Algorithm (AI) and Intuition (Human): Preserving Designer Agency in AI-Assisted Sensemaking of Qualitative UX Data",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-28",
+      "org": "Md Haseen Akhtar",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper presents an augmented sensemaking framework that positions AI as an instrument for amplifying human judgment rather than replacing it.",
+          "quote": "We present a framework for augmented sensemaking that positions AI as an instrument for amplifying human judgment rather than replacing it.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper's findings suggest that AI's most valuable role in design research is not to eliminate subjectivity, but to make it more intentional, reflective, and accountable.",
+          "quote": "Our findings suggest that the most valuable role for AI in design research is not to eliminate subjectivity, but to make it more intentional, reflective, and accountable.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper frames AI integration in qualitative design research as a fundamental tension between leveraging AI and preserving subjective, intuitive judgments that define design expertise.",
+          "quote": "The integration of AI into qualitative design research presents a fundamental tension: how do we leverage AI while preserving the subjective, intuitive judgments that define design expertise?",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Through comparative analysis, the paper identifies when algorithmic efficiency enhances understanding and when it diminishes the designer's interpretive agency.",
+          "quote": "Through comparative analysis of AI-assisted sensemaking versus human-centered approaches to the same dataset, we identify when algorithmic efficiency enhances understanding and when it diminishes the designer's interpretive agency (uncovering hidden needs, critical enquiry, what if enquiries, making decisions, having trade-offs).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper argues that AI sensemaking tools risk flattening rich data patterns, amplifying contradictory user feedback into sterile categories, and transforming design research into a mechanical sorting exercise.",
+          "quote": "We argue that AI sensemaking tools risk flattening the rich data patterns, amplifying contradictory textures of user feedback into sterile categories thereby transforming design research from an interpretive craft into a mechanical sorting exercise (rigid and formal).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 25
+    },
+    {
+      "id": "16ee6d1d71",
+      "url": "https://arxiv.org/abs/2301.12243",
+      "title": "Investigating How Practitioners Use Human-AI Guidelines: A Case Study on the People + AI Guidebook",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2023-01-28",
+      "org": "Nur Yildirim, Mahima Pushkarna, Nitesh Goyal, Martin Wattenberg, Fernanda Viegas",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper reports interviews with 31 practitioners, namely designers and product managers, to understand how they use human-AI guidelines when designing AI-enabled products.",
+          "quote": "We conducted interviews with 31 practitioners (i.e., designers, product managers) to understand how they use human-AI guidelines when designing AI-enabled products.",
+          "numbers": [
+            "31"
+          ],
+          "corroborated_by": [],
+          "id": "S26.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Practitioners use the People + AI Guidebook not only for addressing AI design challenges but also for education, cross-functional communication, and developing internal resources.",
+          "quote": "Our findings revealed that practitioners use the guidebook not only for addressing AI's design challenges, but also for education, cross-functional communication, and for developing internal resources.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Practitioners desire more support for early phase ideation and problem formulation to avoid AI product failures.",
+          "quote": "We uncovered that practitioners desire more support for early phase ideation and problem formulation to avoid AI product failures.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.3"
+        },
+        {
+          "question": "q1",
+          "claim": "Little research has investigated if and how human-AI guidelines are used and how they impact practice.",
+          "quote": "However, little research has investigated if and how these guidelines are used, and how they impact practice.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.4"
+        }
+      ],
+      "dropped": 0,
+      "n": 26
+    },
+    {
+      "id": "a9b7d3d8bd",
+      "url": "https://www.semanticscholar.org/paper/12e11f3fe970d798006447d519e25cad4e85149c",
+      "title": "Situational impairment due to walking with conversational versus graphical interfaces",
+      "provider": "semantic_scholar",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-09-18",
+      "org": "Georgios Marentakis and Arman Balic",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "A paper titled 'Situational impairment due to walking with conversational versus graphical interfaces' addresses conversational versus graphical interfaces in a walking context.",
+          "quote": "# Situational impairment due to walking with conversational versus graphical interfaces",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S27.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper's TLDR states that conversational interfaces have increased potential to support walking interactions, but technology limitations mean this does not yet produce a task performance advantage.",
+          "quote": "The results testify to an increased potential for conversational interfaces to support walking interactions but also show that due to technology limitations this does not manifest in a task performance advantage yet.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S27.2"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper was published in Audio Mostly Conference on 18 September 2024.",
+          "quote": "Published in [Audio Mostly Conference](https://www.semanticscholar.org/venue?name=Audio%20Mostly%20Conference)18 September 2024",
+          "numbers": [
+            "18",
+            "2024"
+          ],
+          "corroborated_by": [],
+          "id": "S27.3"
+        },
+        {
+          "question": "q4",
+          "claim": "A referenced survey covers mobile conversational user interface research since Apple's Siri, described as the first readily available consumer CUI, and implications of CUIs having greater access to context of use.",
+          "quote": "A survey of mobile conversation user interface research since the commercial deployment of Apple's Siri, the first readily available consumer CUI, and the implications for CUIs of greater access to the context of use are presented.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S27.4"
+        }
+      ],
+      "dropped": 0,
+      "n": 27
+    },
+    {
+      "id": "ce31e1b478",
+      "url": "https://arxiv.org/abs/2607.23438",
+      "title": "Separating Capability from Permission: A Governance Framework for Agentic AI Autonomy Levels",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-07-28",
+      "org": "Haining Zheng, Qian Dong, Rodolfo K. Depena, Jonathan D. Bhatia, Feng Xiao, Peng Xu",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The paper presents a governance framework as practical guidance for designing, deploying, and governing agentic AI systems by distinguishing authorization from capability.",
+          "quote": "By distinguishing authorization from capability, this work provides practical guidance for the design, deployment, and governance of Agentic AI systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The framework separates Allowed Autonomy Levels, which define authorized autonomy given risk, oversight, and accountability, from Autonomous Capability Levels, which describe an agent's inherent technical abilities.",
+          "quote": "This paper introduces a governance framework that explicitly separates Allowed Autonomy Levels (AAL), which define the degree of autonomy an AI agent is authorized to exercise given risk, oversight, and accountability considerations, from Autonomous Capability Levels (ACL), which characterize an agent's inherent technical abilities.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.2"
+        },
+        {
+          "question": "q2",
+          "claim": "The proposed autonomy levels span reactive execution, decision support, supervised action, goal-directed autonomy, and delegated operational authority; control, reversibility, and accountability change as autonomy increases.",
+          "quote": "We present a structured set of autonomy levels spanning reactive execution, decision support, supervised action, goal-directed autonomy, and delegated operational authority, and describe how control, reversibility, and accountability change as autonomy increases.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.3"
+        },
+        {
+          "question": "q2",
+          "claim": "A risk-aware decision process assigns allowed autonomy, and a deployed enterprise data engineering agent illustrates that a high-capability system can be deliberately constrained to lower allowed autonomy based on risk, reversibility, and organizational readiness.",
+          "quote": "To operationalize this framework, we propose a risk-aware decision process for assigning allowed autonomy, analyze how risk and accountability evolve across autonomy levels, and demonstrate its application through a deployed enterprise data engineering agent, illustrating how a system assessed at a high capability level can be deliberately constrained to a lower allowed autonomy based on risk, reversibility, and organizational readiness.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.4"
+        }
+      ],
+      "dropped": 0,
+      "n": 28
+    },
+    {
+      "id": "99ac5068ed",
+      "url": "https://www.semanticscholar.org/paper/28ce5a0c01d501c321701636a13dc7db9a8cb21e",
+      "title": "Conversational versus graphical user interfaces: the influence of rational decision style when individuals perform decision-making tasks repeatedly",
+      "provider": "semantic_scholar",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024",
+      "org": null,
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "This academic paper's title indicates it studies the influence of rational decision style on individuals using conversational versus graphical user interfaces when performing decision-making tasks repeatedly.",
+          "quote": "Title: Conversational versus graphical user interfaces: the influence of rational decision style when individuals perform decision-making tasks repeatedly",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.1"
+        }
+      ],
+      "dropped": 0,
+      "n": 29
+    },
+    {
+      "id": "22bcb02e56",
+      "url": "https://www.quellit.ai/",
+      "title": "Show HN: Quell – AI QA Agent Working Across Linear, Vercel, Jira, Netlify, Figma",
+      "provider": "hn",
+      "discussion": "https://news.ycombinator.com/item?id=44083596",
+      "type": "vendor",
+      "published": "2025-05-24",
+      "org": "Quellit, Inc.",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Quell describes its product as a UAT AI agent platform that automates UAT, identifies bugs, and checks builds against acceptance criteria.",
+          "quote": "Quell is UAT AI Agent building and tasking platform that automates UAT and identifies bugs ensuring your builds meet your acceptance criteria.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Quell states that its AI reads designs, tickets, or requirements and writes tests without scripting.",
+          "quote": "No scripting needed – Quell’s AI reads your designs, tickets, or requirements and writes the tests for you.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Quell says it executes tests automatically when an issue or ticket status changes in tools such as Linear or Jira.",
+          "quote": "Quell executes tests upon issue or ticket status changes (e.g. Linear or Jira).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Quell includes human approval steps by letting team members be tagged for launch approvals.",
+          "quote": "Tag team members, gain launch approvals.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Quell claims audit readiness through video and screenshot documentation.",
+          "quote": "Audit ready with video and screenshot documentation",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.5"
+        },
+        {
+          "question": "q3",
+          "claim": "A testimonial says Quell’s automatic screenshots and short videos attached to each test are very clear.",
+          "quote": "Quell's automatic screenshots and short videos attached to each test are very clear",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Quell claims every requirement is validated and documented, and that its UAT reports support compliance audits.",
+          "quote": "Every requirement is validated and documented . Quell’s UAT reports support your compliance audits.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.7"
+        },
+        {
+          "question": "q4",
+          "claim": "Quell positions its AI as embedded in existing tools such as Slack, Jira, Linear, and Figma.",
+          "quote": "Quell integrates with the tools you already use (Slack, Jira, Linear, Figma).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 30
+    },
+    {
+      "id": "170139a9c1",
+      "url": "https://acris.ai",
+      "title": "Show HN: I Made Notion for AI Agents",
+      "provider": "hn",
+      "discussion": "https://news.ycombinator.com/item?id=43103261",
+      "type": "vendor",
+      "published": "2025-02-19",
+      "org": "Acris",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "Acris positions itself as a command bar for AI agents.",
+          "quote": "The command bar for AI agents",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Acris provides a task manager for both users and agents and says tasks and projects can be managed in one place without switching between tools.",
+          "quote": "A task manager for you and your agents. Manage your projects and task in one place without switching between tools",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.2"
+        },
+        {
+          "question": "q2",
+          "claim": "In a sample interaction, the agent asks the user to make two decisions before it drafts campaign briefs.",
+          "quote": "Before I draft the campaign briefs, two calls are yours to make.",
+          "numbers": [
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S31.3"
+        },
+        {
+          "question": "q3",
+          "claim": "In a sample interaction, the agent reports that paid social drove volume but blended CAC climbed to $84, while content and lifecycle delivered best ROAS 4.2x at a third of the spend.",
+          "quote": "Q2 takeaways: paid social drove volume but**blended CAC climbed to $84** while content + lifecycle quietly delivered our best`ROAS 4.2x` at a third of the spend.",
+          "numbers": [
+            "$84",
+            "4.2x",
+            "third"
+          ],
+          "corroborated_by": [],
+          "id": "S31.4"
+        },
+        {
+          "question": "q1",
+          "claim": "Acris says it quietly harvests people, preferences, and decisions into a living memory graph, and every agent reads from and writes to the same memory.",
+          "quote": "Acris quietly harvests what matters — people, preferences, decisions — into a living graph. Every agent reads from the same memory and writes new learnings back, so each run starts already in the loop",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Acris says tasks, sessions, and memory organize around the project the user is working in.",
+          "quote": "Tasks, sessions, and memory all organize around the project you're working in",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.6"
+        }
+      ],
+      "dropped": 2,
+      "n": 31
+    },
+    {
+      "id": "b88ff63c0f",
+      "url": "https://ainativedev.io/news/the-5-levels-of-ai-agent-autonomy-learning-from-self-driving-cars",
+      "title": "Levels of AI agent autonomy: learning from self-driving cars – AI Native Dev",
+      "provider": "hn",
+      "discussion": "https://news.ycombinator.com/item?id=45464717",
+      "type": "vendor",
+      "published": "2025-10-03",
+      "org": "Tessl",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Honeycomb doubled its pull requests with AI while incidents rose 1.5x, and the episode asks when agents can run production.",
+          "quote": "Honeycomb doubled its pull requests with AI and incidents rose 1.5x. Liz Fong-Jones on automated code review, owning AI output, and when agents can run production.",
+          "numbers": [
+            "1.5x"
+          ],
+          "corroborated_by": [],
+          "id": "S32.1"
+        },
+        {
+          "question": "q3",
+          "claim": "HumanLayer's Dexter Horthy tried trusting AI to write the plan and skip the code, but after four months the codebase was unusable.",
+          "quote": "HumanLayer's Dexter Horthy staked his team's codebase on trust the plan, skip the code. Four months later it was unusable. Here's what changed his mind.",
+          "numbers": [
+            "Four"
+          ],
+          "corroborated_by": [],
+          "id": "S32.2"
+        },
+        {
+          "question": "q3",
+          "claim": "AWS's Marc Brooker read up to 4,000 postmortems and concluded testing and specs, not code, are the real work.",
+          "quote": "Marc Brooker (AWS) has read up to 4,000 postmortems and concluded code was never the hard part. He tells Simon why testing and specs are now the real work.",
+          "numbers": [
+            "4,000"
+          ],
+          "corroborated_by": [],
+          "id": "S32.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Tessl's factory peaked at 850 pull requests in a week, with 85 to 90% of them handled by agents end to end.",
+          "quote": "Tessl's factory peaked at 850 PRs in a week, 85 to 90% of them agent-handled end to end. Dru Knox on why the two biggest changes weren't the speed anyone was chasing.",
+          "numbers": [
+            "850",
+            "85 to 90%"
+          ],
+          "corroborated_by": [],
+          "id": "S32.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Lada Kesseler trusts AI-written tests less than AI-written code and thinks most teams chasing a software factory are about to drown in garbage.",
+          "quote": "Lada Kesseler trusts AI-written tests less than AI-written code, and thinks most teams chasing a software factory are about to drown in garbage.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.5"
+        },
+        {
+          "question": "q2",
+          "claim": "Ran Aroussi says most 'agentic' systems lack the properties that make them agentic.",
+          "quote": "Ran Aroussi says most \"agentic\" systems have none of the properties that make them agentic, and that you stopped needing juniors for their coding skills a year ago.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 32
+    },
+    {
+      "id": "b71505fbf1",
+      "url": "https://github.com/jonathascordeiro20/apof-engine",
+      "title": "jonathascordeiro20/apof-engine",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-05-24",
+      "org": "Jonathas Cordeiro (jonathascordeiro20)",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The repository describes APOF Engine as an autonomous governance framework for AI product teams, using a dual-track architecture and multi-agent consensus split between ML and FinOps.",
+          "quote": "APOF Engine — Autonomous Governance Framework for AI Product Teams. Dual-Track architecture with multi-agent consensus (ML + FinOps).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S33.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The framework includes an AgileTranslatorAgent that orchestrates and emits an APOF-v1.0 JSON payload.",
+          "quote": "- AgileTranslatorAgent: orchestrator + APOF-v1.0 JSON payload",
+          "numbers": [
+            "1.0"
+          ],
+          "corroborated_by": [],
+          "id": "S33.2"
+        },
+        {
+          "question": "q2",
+          "claim": "A FinOpsGuardAgent acts as a financial gate comparing token cost per million against a budget ceiling.",
+          "quote": "- FinOpsGuardAgent: financial gate (token_cost_per_m vs budget_ceiling)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S33.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The engine defines CI/CD exit codes for approved, blocked, and error states.",
+          "quote": "- Add CI/CD exit code contract: 0=APPROVED, 2=BLOCKED, 1=ERROR",
+          "numbers": [
+            "0",
+            "2",
+            "1"
+          ],
+          "corroborated_by": [],
+          "id": "S33.4"
+        },
+        {
+          "question": "q2",
+          "claim": "The engine exposes a blocking_agents list and quantitative reasons such as overflow or headroom.",
+          "quote": "- Expose blocking_agents[] list and quantitative reasons (overflow/headroom)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S33.5"
+        },
+        {
+          "question": "q3",
+          "claim": "One agent performs statistical validation and requires accuracy of at least 0.90.",
+          "quote": "- DataMLScienceAgent: statistical validation (accuracy >= 0.90)",
+          "numbers": [
+            "0.90"
+          ],
+          "corroborated_by": [],
+          "id": "S33.6"
+        },
+        {
+          "question": "q3",
+          "claim": "The engine validates telemetry inputs, including accuracy within [0,1] and non-negative budgets or latency.",
+          "quote": "- Validate telemetry inputs (accuracy in [0,1], non-negative budgets/latency)",
+          "numbers": [
+            "[0,1]"
+          ],
+          "corroborated_by": [],
+          "id": "S33.7"
+        },
+        {
+          "question": "q3",
+          "claim": "The engine adds traceability by including a task_id and timestamp_utc in payloads.",
+          "quote": "- Add traceability: task_id (auto-UUID or explicit) + timestamp_utc in payload",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S33.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 33
+    },
+    {
+      "id": "a2a65252de",
+      "url": "https://github.com/VandanaAjayDubey111/great-pm",
+      "title": "VandanaAjayDubey111/great-pm",
+      "provider": "github",
+      "discussion": null,
+      "type": "official",
+      "published": "2026-09-20",
+      "org": "VandanaAjayDubey111",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Great-pm is described as 48 AI agents running Discover→Measure with a live board and 3 human gates.",
+          "quote": "Your product team as software: 48 AI agents run Discover→Measure with a live board + 3 human gates.",
+          "numbers": [
+            "48",
+            "3"
+          ],
+          "corroborated_by": [],
+          "id": "S34.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The system runs the full product lifecycle with 48 specialist agents, a live project board, and 3 human decision gates intended to keep the user in control of every call that matters.",
+          "quote": "great-pm is a multi-agent system that runs the full product lifecycle for a solo PM or founder — **Discover → Strategize → Prioritize → Define → Launch → Measure** — with 48 specialist agents, a live project board, and 3 human decision gates so you stay in control of every call that matters.",
+          "numbers": [
+            "48",
+            "3"
+          ],
+          "corroborated_by": [],
+          "id": "S34.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The tool is model-agnostic across Claude, OpenAI, Gemini, and Codex, and it files work two-way into Notion, Slack, Linear, and Jira with a bring-your-own-token model and $0 operating cost.",
+          "quote": "It's **model-agnostic** — runs on Claude, OpenAI, Gemini, or Codex — and files its work straight into the tools you already live in: **Notion, Slack, Linear, Jira**, two-way, bring-your-own-token, **$0 to operate**",
+          "numbers": [
+            "$0"
+          ],
+          "corroborated_by": [],
+          "id": "S34.3"
+        },
+        {
+          "question": "q1",
+          "claim": "The project lists 48 agents, 79 skills, 34 commands/workflows, a 6-stage loop, and a native project board; Claude Code v1.0.1 and Codex v1.1.3 are release candidates pending final desktop sign-off.",
+          "quote": "**Status:** Claude Code v1.0.1 and Codex v1.1.3 are release candidates pending final desktop sign-off. **48 agents · 79 skills · 34 commands/workflows** · the 6-stage loop · a native project board.",
+          "numbers": [
+            "1.0.1",
+            "1.1.3",
+            "48",
+            "79",
+            "34",
+            "6"
+          ],
+          "corroborated_by": [],
+          "id": "S34.4"
+        },
+        {
+          "question": "q1",
+          "claim": "Claude Code auto-registers all agents, skills, and slash commands on install, and lifecycle hooks for SessionStart context-load, PreCompact handoff, and PreToolUse safety plus secret-scan fire automatically.",
+          "quote": "On install, Claude Code auto-registers all agents (`agents/`), skills (`skills/`, invocable as `great-pm:<skill>`), and slash commands (`commands/`), and the lifecycle hooks (`SessionStart` context-load, `PreCompact` handoff, `PreToolUse` safety + secret-scan) fire automatically — no manual `~/.claude` copying.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.5"
+        },
+        {
+          "question": "q1",
+          "claim": "GreatPM supports Codex desktop and Codex CLI as a native plugin with 48 agents, 79 product-management skills, and 34 workflows.",
+          "quote": "GreatPM supports Codex desktop and Codex CLI as a native plugin with 48 agents, 79 product-management skills, and 34 workflows:",
+          "numbers": [
+            "48",
+            "79",
+            "34"
+          ],
+          "corroborated_by": [],
+          "id": "S34.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 34
+    },
+    {
+      "id": "ba9e09387e",
+      "url": "https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction",
+      "title": "Human–AI interaction",
+      "provider": "wikipedia",
+      "discussion": null,
+      "type": "other",
+      "published": "2026-10-05",
+      "org": "Wikipedia",
+      "quality": 0.3,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Human–AI interaction is a field of research and a sub-field of human–computer interaction, focusing on user experience and psychological factors.",
+          "quote": "**Human–AI interaction**[[1]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-1) is a field of research and a sub-field of [human–computer interaction](https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction \"Human–computer interaction\"),[[2]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:16-2)[[3]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-3) focusing on [user experience](https://en.wikipedia.org/wiki/User_experience_design \"User experience design\") and psychological factors.[[4]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:18-4)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.1"
+        },
+        {
+          "question": "q1",
+          "claim": "AI is described as tools designed to mechanize tasks requiring human intelligence and replicate abilities such as navigating uncertainty, active learning, and processing information in different contexts.",
+          "quote": "[Artificial intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence \"Artificial intelligence\") has fluid definitions and varied research applications,[[8]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:14-8) but in brief can be applied to mechanizing tasks that would require human intelligence to complete.[[9]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:15-9) AI are tools designed to replicate the human abilities of navigating uncertainty, active learning, and processing information in different contexts.[[9]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:15-9)[[8]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:14-8)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Within HCI and HAX research, AI is divided into two subfields: natural language processing and computer vision.",
+          "quote": "Within the context of HCI and HAX research, artificial intelligence can be broken into two sub-fields, [natural language processing](https://en.wikipedia.org/wiki/Natural_language_processing \"Natural language processing\") (NLP) and [computer vision](https://en.wikipedia.org/wiki/Computer_vision \"Computer vision\") (CV).[[10]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:17-10)",
+          "numbers": [
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S35.3"
+        },
+        {
+          "question": "q1",
+          "claim": "Human–AI interaction is characterized by a more collaborative relationship between the AI and human user, unlike human-computer interaction where a human directs a machine; AI is perceived as an active agent rather than a tool.",
+          "quote": "As a new and rapidly developing technology,[[4]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:18-4)[[11]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:13-11) unlike human-computer interaction, where a human directs a machine, human-AI interaction is characterized by a more collaborative relationship between the computer program (the AI) and the human user,[[11]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:13-11) as AI is perceived as an active agent rather than a tool.[[2]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:16-2)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.4"
+        },
+        {
+          "question": "q1",
+          "claim": "The changing dynamic of human–AI interaction creates new questions and necessitates new research methods not present in traditional HCI research.",
+          "quote": "This changing dynamic creates new questions and necessitates new research methods that are not present in traditional HCI research.[[2]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:16-2)[[4]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:18-4)[[7]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:19-7)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.5"
+        },
+        {
+          "question": "q1",
+          "claim": "AI technologies notably include machine learning, deep learning, neural networks, and large language models.",
+          "quote": "AI technologies notably include [machine-learning](https://en.wikipedia.org/wiki/Machine_learning \"Machine learning\"), [deep-learning](https://en.wikipedia.org/wiki/Deep_learning \"Deep learning\") and [neural networks](https://en.wikipedia.org/wiki/Neural_network_(machine_learning) \"Neural network (machine learning)\"), and [large-language models](https://en.wikipedia.org/wiki/Large_language_model \"Large language model\") (LLMs).[[10]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:17-10)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 35
+    }
+  ]
+}

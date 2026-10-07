@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-01-10",
+  "author_or_org": "Kostas Tsiakas, Dave Murray-Rust",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper aims to develop a semi-formal design space for Human-AI interactions by building interaction primitives that specify communication between users and AI systems during their interaction.",
+      "quote": "This paper aims to develop a semi-formal design space for Human-AI interactions, by building a set of interaction primitives which specify the communication between users and AI systems during their interaction.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper shows that interaction primitives can be combined into interaction patterns that provide an abstract specification for exchanging messages between humans and AI/ML models to carry out purposeful interactions.",
+      "quote": "We show how these primitives can be combined into a set of interaction patterns which can provide an abstract specification for exchanging messages between humans and AI/ML models to carry out purposeful interactions.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper reviews frameworks, guidelines, and taxonomies related to the design and implementation of HAI interactions, including human-in-the-loop, explainable AI, hybrid intelligence, and collaborative learning approaches.",
+      "quote": "We present a short literature review on frameworks, guidelines and taxonomies related to the design and implementation of HAI interactions, including human-in-the-loop, explainable AI, as well as hybrid intelligence and collaborative learning approaches.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The literature review includes human-in-the-loop as an approach related to the design and implementation of HAI interactions.",
+      "quote": "We present a short literature review on frameworks, guidelines and taxonomies related to the design and implementation of HAI interactions, including human-in-the-loop, explainable AI, as well as hybrid intelligence and collaborative learning approaches.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The literature review includes explainable AI as an approach related to the design and implementation of HAI interactions.",
+      "quote": "We present a short literature review on frameworks, guidelines and taxonomies related to the design and implementation of HAI interactions, including human-in-the-loop, explainable AI, as well as hybrid intelligence and collaborative learning approaches.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "From the literature review, the paper defines a vocabulary for describing information exchanges in terms of providing and requesting particular model-specific data types.",
+      "quote": "From the literature review, we define a vocabulary for describing information exchanges in terms of providing and requesting particular model-specific data types.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Based on that vocabulary, the paper presents a message passing model for interactions between humans and models, demonstrated to account for existing systems and approaches.",
+      "quote": "Based on this vocabulary, a message passing model for interactions between humans and models is presented, which we demonstrate can account for existing systems and approaches.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper builds design patterns as mid-level constructs that capture common interactional structures.",
+      "quote": "Finally, we build this into design patterns as mid-level constructs that capture common interactional structures.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2401.05115"
+}

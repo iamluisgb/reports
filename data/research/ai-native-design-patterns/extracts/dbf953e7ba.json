@@ -1,0 +1,50 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-10-26",
+  "author_or_org": "Emma Casolin, Flora D. Salim, Ben Newell",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Explainable AI aims to support appropriate human-AI reliance by increasing the interpretability of complex model decisions.",
+      "quote": "Explainable AI (XAI) aims to support appropriate human-AI reliance by increasing the interpretability of complex model decisions.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "There is mixed evidence surrounding the effects of different styles of XAI explanations on human-AI reliance.",
+      "quote": "Despite the proliferation of proposed methods, there is mixed evidence surrounding the effects of different styles of XAI explanations on human-AI reliance.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Interpreting conflicting findings requires understanding the individual and combined qualities of different explanation styles that influence appropriate and inappropriate human-AI reliance, and the role of interpretability.",
+      "quote": "Interpreting these conflicting findings requires an understanding of the individual and combined qualities of different explanation styles that influence appropriate and inappropriate human-AI reliance, and the role of interpretability in this interaction.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The study investigates feature-based, example-based, and combined feature- and example-based XAI methods on human-AI reliance through a two-part experimental study with 274 participants comparing these explanation style conditions.",
+      "quote": "In this study, we investigate the influences of feature-based, example-based, and combined feature- and example-based XAI methods on human-AI reliance through a two-part experimental study with 274 participants comparing these explanation style conditions.",
+      "numbers": [
+        "274",
+        "two-part"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Findings suggest differences between feature-based and example-based explanation styles beyond interpretability that affect human-AI reliance patterns across differences in individual performance and task complexity.",
+      "quote": "Our findings suggest differences between feature-based and example-based explanation styles beyond interpretability that affect human-AI reliance patterns across differences in individual performance and task complexity.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The work highlights the importance of adapting explanations to specific users and context over maximizing broad interpretability.",
+      "quote": "Our work highlights the importance of adapting explanations to their specific users and context over maximising broad interpretability.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2410.20067"
+}

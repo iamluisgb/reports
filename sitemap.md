@@ -19,7 +19,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 ### Deep Dives
 
 - [What the World's Best Websites Are Doing in the AI Era (2026)](https://luisgonzalezbernal.com/reports/reports/world-class-websites-2026-10-03.md) — 2026-10-03 · 38 min
-- [AI-Native Design Patterns: What Ramp, Linear, and Vercel Got Right](https://luisgonzalezbernal.com/reports/reports/ai-native-design-patterns-2026-07-17.md) — 2026-07-17 · 29 min
+- [AI-Native Design: Autonomy, Trust and the Limits of Chat](https://luisgonzalezbernal.com/reports/reports/ai-native-design-patterns-2026-07-17.md) — 2026-07-17 · 9 min
 - [Can Agents Run a Business? What the Evidence Shows](https://luisgonzalezbernal.com/reports/reports/agents-running-businesses-2026-06-27.md) — 2026-06-27 · 10 min
 
 ### Enterprise & Adoption

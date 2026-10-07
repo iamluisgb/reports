@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-27",
+  "author_or_org": "Mauricio Villavicencio, Sitong Pan, Qianwen Wang",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Despite warnings that LLMs can make mistakes, users often develop inappropriate trust and accept incorrect answers without critical evaluation.",
+      "quote": "Despite warnings that LLMs can make mistakes, users often develop inappropriate trust and accept incorrect answers without critical evaluation.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Uncertainty quantification, displaying LLM confidence, is presented as a promising approach to calibrate user trust.",
+      "quote": "Uncertainty quantification (UQ), displaying LLMs' confidence, has emerged as a promising approach to calibrate user trust.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Prior empirical studies treated uncertainty as a single numerical score or simple natural language expression and failed to capture that LLM responses contain multiple claims and reasoning steps with distinct uncertainty levels.",
+      "quote": "However, prior empirical studies on uncertainty communication have treated uncertainty as a single numerical score or simple natural language expression. This simplification fails to capture a key property of LLM outputs: a single response often comprises multiple claims and reasoning steps, each with distinct levels of uncertainty.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The study conducted a large-scale between-subjects experiment with 192 participants answering medical questions using LLMs that displayed uncertainty at three granularities: output-level, relation-level, and token-level.",
+      "quote": "We conducted a large-scale, between-subjects study (N=192) in which participants answered medical questions using LLMs that displayed uncertainty at three different granularities: output-level (entire response), relation-level (individual reasoning steps), and token-level (specific words).",
+      "numbers": [
+        "192",
+        "three"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Token-level uncertainty increased users' agreement with the AI, while output- and relation-level uncertainty did not increase agreement but reduced users' confidence in their own answers.",
+      "quote": "Token-level uncertainty increased users' agreement with the AI, whereas output- and relation-level uncertainty did not increase agreement but instead reduced users' confidence in their own answers.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Relation-level uncertainty reduced external verification such as internet searches and checking provided URLs, steering users away from independent fact-checking and toward reliance on the LLM and its uncertainty cues.",
+      "quote": "Notably, relation-level uncertainty also reduced external verification (i.e., internet searches, checking provided URLs), steering users away from independent fact-checking and toward reliance on the LLM and its accompanying uncertainty cues.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Uncertainty granularity significantly shapes how users interact with and verify LLM outputs.",
+      "quote": "Our findings demonstrate that uncertainty granularity significantly shapes how users interact with and verify LLM outputs, providing concrete design guidance for building responsible LLM applications that encourage appropriate skepticism and verification behaviors.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper provides concrete design guidance for building responsible LLM applications that encourage appropriate skepticism and verification behaviors.",
+      "quote": "Our findings demonstrate that uncertainty granularity significantly shapes how users interact with and verify LLM outputs, providing concrete design guidance for building responsible LLM applications that encourage appropriate skepticism and verification behaviors.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.28571"
+}

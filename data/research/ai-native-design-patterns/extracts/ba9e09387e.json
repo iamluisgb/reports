@@ -1,0 +1,49 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2026-10-05",
+  "author_or_org": "Wikipedia",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Human–AI interaction is a field of research and a sub-field of human–computer interaction, focusing on user experience and psychological factors.",
+      "quote": "**Human–AI interaction**[[1]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-1) is a field of research and a sub-field of [human–computer interaction](https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction \"Human–computer interaction\"),[[2]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:16-2)[[3]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-3) focusing on [user experience](https://en.wikipedia.org/wiki/User_experience_design \"User experience design\") and psychological factors.[[4]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:18-4)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "AI is described as tools designed to mechanize tasks requiring human intelligence and replicate abilities such as navigating uncertainty, active learning, and processing information in different contexts.",
+      "quote": "[Artificial intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence \"Artificial intelligence\") has fluid definitions and varied research applications,[[8]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:14-8) but in brief can be applied to mechanizing tasks that would require human intelligence to complete.[[9]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:15-9) AI are tools designed to replicate the human abilities of navigating uncertainty, active learning, and processing information in different contexts.[[9]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:15-9)[[8]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:14-8)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Within HCI and HAX research, AI is divided into two subfields: natural language processing and computer vision.",
+      "quote": "Within the context of HCI and HAX research, artificial intelligence can be broken into two sub-fields, [natural language processing](https://en.wikipedia.org/wiki/Natural_language_processing \"Natural language processing\") (NLP) and [computer vision](https://en.wikipedia.org/wiki/Computer_vision \"Computer vision\") (CV).[[10]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:17-10)",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Human–AI interaction is characterized by a more collaborative relationship between the AI and human user, unlike human-computer interaction where a human directs a machine; AI is perceived as an active agent rather than a tool.",
+      "quote": "As a new and rapidly developing technology,[[4]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:18-4)[[11]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:13-11) unlike human-computer interaction, where a human directs a machine, human-AI interaction is characterized by a more collaborative relationship between the computer program (the AI) and the human user,[[11]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:13-11) as AI is perceived as an active agent rather than a tool.[[2]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:16-2)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The changing dynamic of human–AI interaction creates new questions and necessitates new research methods not present in traditional HCI research.",
+      "quote": "This changing dynamic creates new questions and necessitates new research methods that are not present in traditional HCI research.[[2]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:16-2)[[4]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:18-4)[[7]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:19-7)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "AI technologies notably include machine learning, deep learning, neural networks, and large language models.",
+      "quote": "AI technologies notably include [machine-learning](https://en.wikipedia.org/wiki/Machine_learning \"Machine learning\"), [deep-learning](https://en.wikipedia.org/wiki/Deep_learning \"Deep learning\") and [neural networks](https://en.wikipedia.org/wiki/Neural_network_(machine_learning) \"Neural network (machine learning)\"), and [large-language models](https://en.wikipedia.org/wiki/Large_language_model \"Large language model\") (LLMs).[[10]](https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction#cite_note-:17-10)",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://en.wikipedia.org/wiki/Human%E2%80%93AI_interaction"
+}

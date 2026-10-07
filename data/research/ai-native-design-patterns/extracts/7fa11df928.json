@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-08",
+  "author_or_org": "Sneha Gathani, Sirui Zeng, Diya Patel, Ryan Rossi, Dan Marshall, Cagatay Demiralp, Steven Drucker, Zhicheng Liu",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "LLM-based chatbot interfaces for interactive what-if analysis are described as semantically fragile, frequently misinterpreting intent, and producing inconsistent results as conversations progress.",
+      "quote": "Current tools fall short of supporting effective interactive WIA: spreadsheet and BI tools require time-consuming and laborious setup, while LLM-based chatbot interfaces are semantically fragile, frequently misinterpret intent, and produce inconsistent results as conversations progress.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper presents a two-stage workflow that translates natural language what-if-analysis questions into interactive visual interfaces via an intermediate Praxa Specification Language representation, with LLMs generating PSL specifications and specifications compiling into interfaces with parameter controls and linked visualizations.",
+      "quote": "To address these limitations, we present a two-stage workflow that translates natural language (NL) WIA questions into interactive visual interfaces via an intermediate representation, powered by the Praxa Specification Language (PSL): first, LLMs generate PSL specifications from NL questions capturing analytical intent and logic, enabling validation and repair of erroneous specifications; and second, the specifications are compiled into interactive visual interfaces with parameter controls and linked visualizations.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The workflow is benchmarked with 405 what-if-analysis questions spanning 11 WIA types, 5 datasets, and 3 state-of-the-art LLMs.",
+      "quote": "We benchmark this workflow with 405 WIA questions spanning 11 WIA types, 5 datasets, and 3 state-of-the-art LLMs.",
+      "numbers": [
+        "405",
+        "11",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Across models, 52.42% of specifications are generated correctly without intervention.",
+      "quote": "The results show that across models, half of specifications (52.42%) are generated correctly without intervention.",
+      "numbers": [
+        "52.42%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The paper derives an error taxonomy distinguishing non-functional errors, where specifications fail to compile, from functional errors, where specifications compile but misrepresent intent.",
+      "quote": "We perform an analysis of the failure cases and derive an error taxonomy spanning non-functional errors (specifications fail to compile) and functional errors (specifications compile but misrepresent intent).",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Targeted repairs using few-shot prompts on failure cases improve the success rate to 80.42%.",
+      "quote": "Based on the taxonomy, we apply targeted repairs on the failure cases using few-shot prompts and improve the success rate to 80.42%.",
+      "numbers": [
+        "80.42%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Undetected functional errors can propagate through compilation into plausible but misleading interfaces, and the intermediate specification is described as critical for reliability in LLM-powered WIA systems.",
+      "quote": "Finally, we show how undetected functional errors propagate through compilation into plausible but misleading interfaces, demonstrating that the intermediate specification is critical for reliably bridging NL and interactive WIA interface in LLM-powered WIA systems.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.07652"
+}
