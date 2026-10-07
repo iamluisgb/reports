@@ -1,0 +1,52 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-13",
+  "author_or_org": "Changyu Du, Alexander Vosseler, Filippo Mazza, André Borrmann",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Existing evaluations of long-term memory for LLM agents largely test conversational recall in open-domain or persona-grounded settings, and the authors argue a stronger test is whether an agent can reuse prior-session information while acting over a live, structured, domain-specific environment.",
+      "quote": "Long-term memory is becoming a core capability of LLM-based agents, but existing evaluations largely test conversational recall in open-domain or persona-grounded settings. We argue that a stronger test is whether an agent can reuse information from prior sessions while acting over a live, structured, domain-specific environment.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper introduces IFCMemoryBench, a benchmark for evaluating long-term memory in LLM-based BIM information retrieval.",
+      "quote": "We introduce IFCMemoryBench, a benchmark for evaluating long-term memory in LLM-based BIM information retrieval.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "IFCMemoryBench contains 143 multi-session tasks across 19 projects and 4,016 prior sessions, derived from incomplete-information questions in IFC-Bench v2.",
+      "quote": "IFCMemoryBench contains 143 multi-session tasks across 19 projects and 4,016 prior sessions, derived from incomplete-information questions in IFC-Bench v2.",
+      "numbers": [
+        "143",
+        "19",
+        "4,016",
+        "v2"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The paper evaluates representative vector-, graph-, and file-based memory systems.",
+      "quote": "We evaluate representative vector-, graph-, and file-based memory systems.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Current general-purpose memory systems often retrieve topically relevant context but store project knowledge as incomplete or fragmented facts.",
+      "quote": "Analysis shows that current general-purpose memory systems often retrieve topically relevant context but store project knowledge as incomplete or fragmented facts.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The results reveal a domain-transfer gap in agent memory and suggest that reliable professional agents require domain-aware memory representations linking conversations, project knowledge, and structured model entities.",
+      "quote": "These results reveal a domain-transfer gap in agent memory and suggest that reliable professional agents require domain-aware memory representations linking conversations, project knowledge, and structured model entities.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.26072"
+}

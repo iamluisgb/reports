@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-01-12",
+  "author_or_org": "Benedict Wolff, Jacopo Bennati",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper treats long-term memory as fundamental to LLM-based agents in the Internet of Agents, where distributed multi-agent systems span cloud and edge networks.",
+      "quote": "Long-term memory (LTM) is fundamental to large language model (LLM)-based agents in the emerging Internet of Agents (IoA), where distributed multi-agent systems (DMAS) span cloud and edge networks.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper compares frameworks spanning vector, graph, and hybrid memory architectures, naming mem0, Graphiti, and cognee, alongside RAG and full-context baselines on LoCoMo.",
+      "quote": "Three venture capital-funded frameworks spanning vector, graph, and hybrid architectures, namely mem0, Graphiti, and cognee, are compared alongside retrieval-augmented generation (RAG) and full-context baselines on the LoCoMo benchmark under unconstrained and constrained network scenarios.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Mem0, RAG, and full-context reach 77% to 81% accuracy, while Graphiti and cognee reach only 55% to 56%; the gap is driven by retrieval incompleteness rather than reasoning failure.",
+      "quote": "Two clusters emerge: mem0, RAG, and full-context reach 77% to 81% accuracy, while Graphiti and cognee reach only 55% to 56%, a gap driven by retrieval incompleteness rather than reasoning failure.",
+      "numbers": [
+        "77%",
+        "81%",
+        "55%",
+        "56%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The RAG baseline matches the upper cluster at 8.4 times lower total cost of ownership than mem0, and both are the only non-dominated backends on the Pareto frontier.",
+      "quote": "The RAG baseline matches the upper cluster at 8.4 times lower total cost of ownership (TCO) than mem0, and both are the only non-dominated backends on the Pareto frontier.",
+      "numbers": [
+        "8.4"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Latency and bandwidth constraints and jitter leave retrieval quality unchanged for every backend, while vector-based LTM incurs a 4% to 5% latency penalty under edge-cloud constraints.",
+      "quote": "Latency and bandwidth constraints as well as jitter leave retrieval quality unchanged for every backend, while vector-based LTM incurs a modest latency penalty of 4% to 5% under edge-cloud constraints.",
+      "numbers": [
+        "4%",
+        "5%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Compression precision rather than context volume determines LTM accuracy, and full-context forwarding underperforms mem0 despite supplying the entire conversation for each question.",
+      "quote": "Compression precision rather than context volume determines LTM accuracy, as full-context forwarding underperforms mem0 despite supplying the entire conversation for each question.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Existing evaluations are typically published by framework providers and focus on token usage and latency, rarely accounting for system-level cost or deployment in distributed multi-agent systems.",
+      "quote": "Existing evaluations are typically published by framework providers and focus on token usage and latency, rarely accounting for system-level cost or deployment in DMAS.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper's independent reproducible testbed evaluates accuracy, latency, CPU time, peak RAM, disk I/O, and network usage in a simulated cloud-edge environment.",
+      "quote": "These gaps are addressed with an independent reproducible testbed that evaluates accuracy, latency, CPU time, peak RAM, disk I/O and network usage in a simulated cloud-edge environment.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2601.07978"
+}

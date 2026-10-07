@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T07:08:26+00:00",
+  "generated": "2026-10-07T16:06:45+00:00",
   "count": 163,
   "reports": [
     {
@@ -1451,8 +1451,7 @@
       "summary": "GLM 5.2 beats Claude in cyber benchmarks · Herdr: agent multiplexer · Tokenmaxxing is dead · 8 ArXiv papers on multi-agent security",
       "readingTime": 5,
       "tags": [
-        "agents",
-        "research"
+        "agents"
       ]
     },
     {
@@ -1512,13 +1511,13 @@
     {
       "file": "ai-agent-memory-2026-06-28.html",
       "type": "special",
-      "title": "AI Agent Memory in 2026: Architectures, Frameworks & Trade-offs",
+      "title": "Agent Memory: What Works, What It Costs, What Breaks",
       "date": "2026-06-28",
-      "summary": "The memory taxonomy · Vector vs graph vs OS-tiered · Mem0 vs Zep vs Letta on the benchmarks · Temporal knowledge graphs · How to choose",
-      "readingTime": 7,
+      "summary": "Types of memory · Frameworks and their numbers · How memory is measured · Cost against long context · Poisoning and other failures",
+      "readingTime": 12,
       "tags": [
         "memory",
-        "agents"
+        "research"
       ],
       "series": "Memory & Knowledge"
     },

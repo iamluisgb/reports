@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-23",
+  "author_or_org": "Wei Zhou, Xuanhe Zhou, Shaokun Han, Hongming Xu, Guoliang Li, Zhiyu Li, Feiyu Xiong, Fan Wu",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Agent memory has evolved from simple retrieval-augmented mechanisms into a data management system supporting persistent storage, retrieval, update, consolidation, and dynamic lifecycle governance during agent execution.",
+      "quote": "Memory for large language model (LLM) agents has rapidly evolved from simple retrieval-augmented mechanisms into a data management system that supports persistent information storage, retrieval, update, consolidation, and dynamic lifecycle governance throughout agent execution.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper proposes an analytical framework decomposing agent memory into four core modules: memory representation and storage, extraction, retrieval and routing, and maintenance.",
+      "quote": "We propose an analytical framework that decomposes agent memory into four core modules: memory representation and storage, extraction, retrieval and routing, and maintenance.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The study evaluates 12 representative memory systems and two reference baselines across five benchmark workloads spanning 11 datasets.",
+      "quote": "Under this framework, we evaluate 12 representative memory systems and two reference baselines across five benchmark workloads spanning 11 datasets.",
+      "numbers": [
+        "12",
+        "two",
+        "five",
+        "11"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Existing evaluations still benchmark agent memory mainly through end-to-end task success metrics such as F1 and BLEU, while treating the underlying system as a monolithic black box.",
+      "quote": "Despite this evolution, existing evaluations still benchmark agent memory mainly through end-to-end task success metrics (e.g., F1, BLEU), while treating the underlying system as a monolithic black box.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper's end-to-end evaluation finds that no single architecture dominates across all scenarios; effectiveness depends on how well the memory structure aligns with the workload bottleneck.",
+      "quote": "Our extensive end-to-end evaluation shows that no single architecture dominates across all scenarios; instead, effectiveness depends heavily on how well the memory structure aligns with the workload bottleneck.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Through fine-grained ablation studies, the paper quantifies effects on representation fidelity, retrieval precision, update correctness, and long-horizon stability.",
+      "quote": "Furthermore, through fine-grained ablation studies, we quantify their individual effects on representation fidelity, retrieval precision, update correctness, and long-horizon stability.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper reports cost-performance trade-offs under realistic workloads and finds localized maintenance is more cost-efficient than global reorganization.",
+      "quote": "Finally, we reveal cost-performance trade-offs under realistic workloads, showing localized maintenance is more cost-efficient than global reorganization.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Critical system-level concerns including operational costs, architectural trade-offs across memory modules, and robustness under dynamic knowledge updates remain insufficiently explored.",
+      "quote": "As a result, critical system-level concerns, including operational costs, architectural trade-offs across memory modules, and robustness under dynamic knowledge updates, remain insufficiently explored.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.24775"
+}

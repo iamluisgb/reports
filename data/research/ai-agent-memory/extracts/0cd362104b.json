@@ -1,0 +1,79 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": null,
+  "author_or_org": "devchaen",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "This project is a from-scratch learning reimplementation of the Mem0 paper's long-term memory architecture (arXiv:2504.19413).",
+      "quote": "**나를 기억하는 회고 컴패니언** — Mem0 논문([arXiv:2504.19413](https://arxiv.org/abs/2504.19413))의 장기 기억 아키텍처를 학습 목적으로 재구현한 개인 프로젝트입니다.",
+      "numbers": [
+        "arXiv:2504.19413"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The implementation follows the paper's Algorithm 1: retrieve top-s similar memories and use an LLM tool call to select ADD/UPDATE/DELETE/NOOP, with s=10 and tool_choice=\"required\".",
+      "quote": "| Tool call 기반 4연산 (Algorithm 1) | `pipeline/update.py` | s=10, `tool_choice=\"required\"` |",
+      "numbers": [
+        "s=10"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Graph memory (Mem0g) uses two-stage extraction from entities to relations, resolves nodes with similarity ≥ t=0.85, and marks conflicts as invalid without physical deletion, preserving temporal data.",
+      "quote": "| Mem0ᵍ 2단계 추출 (엔티티→관계) | `graph/pipeline.py` | 취향 그래프: (사용자)-[prefers]->(디카페인) |\n| 노드 해소 (유사도 ≥ t) | `GraphMemory._resolve_node` | t=0.85 |\n| 충돌 감지 → invalid 표시 | LLM update resolver | 물리 삭제 없음, temporal 보존 |",
+      "numbers": [
+        "t=0.85"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The project evaluates on a Korean retrospective scenario set of 5 personas × 20 questions = 100 questions, with 25 each for single-hop, temporal, multi-hop, and preference, using LLM-as-a-Judge (paper Appendix A) and reporting J with 95% confidence intervals.",
+      "quote": "한국어 회고 시나리오 **페르소나 5개 × 20문항 = 100문항** (single-hop / temporal / multi-hop / preference 각 25개). 시나리오별로 다른 user_id로 주입해 격리를 겸사겸사 검증하며, 세션 주입 → 답변 생성 → LLM-as-a-Judge(논문 부록 A) 채점 → 유형별·시나리오별 J + 95% 신뢰구간 + 오답 목록 + 지연 리포트를 출력합니다:",
+      "numbers": [
+        "5",
+        "20",
+        "100",
+        "25",
+        "95%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "For 100 questions, the 95% CI is about ±8 percentage points, sufficient only for patterns, and verifying the paper's Mem0 vs Mem0g 2%p difference requires LOCOMO scale (~2,000 questions).",
+      "quote": "100문항 기준 표본 95% CI는 약 ±8%p — \"유형별 난이도 패턴이 논문과 일치한다\" 수준의 주장이 가능한 규모입니다. 논문의 Mem0 vs Mem0ᵍ 2%p 차이 검증에는 LOCOMO 규모(~2,000문항)가 필요합니다.",
+      "numbers": [
+        "100",
+        "95%",
+        "±8%p",
+        "2%p",
+        "~2,000"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "An asynchronous write queue separates extraction/update to minimize response latency, and disabling graph memory saves LLM calls/cost per turn.",
+      "quote": "*   `MEMOIR_ASYNC_WRITE=1` — 쓰기(추출·갱신)를 백그라운드 큐로 분리 (Phase 3, 응답 지연 최소화)\n*   `MEMOIR_GRAPH_ENABLED=0` — 그래프 메모리 끄기 (턴당 LLM 호출·비용 절감)",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Tests cover duplicate facts becoming NOOP, contradictions causing soft DELETE excluded from retrieval but preserved, UPDATE merging with audit history, hallucinated memory_id safely falling back to NOOP, and user_id isolation.",
+      "quote": "*   중복 사실 → NOOP (중복 방지)\n*   모순 정보 → soft DELETE, 검색 제외 + 데이터 보존\n*   UPDATE → 병합 + ADD→UPDATE 감사 이력\n*   LLM이 존재하지 않는 memory_id 지목(환각) → 안전한 NOOP 폴백\n*   user_id 격리 — 다른 사용자 메모리가 검색·갱신 후보에 절대 노출되지 않음",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper's OpenAI memory collapsed to J<15% on temporal questions due to missing timestamps, so the implementation normalizes Korean relative time expressions to absolute dates in extraction.",
+      "quote": "원 논문과 달리 **한국어 상대 시간 정규화**(\"지지난주\", \"재작년\" → 절대 날짜)를 추출 단계에 내장했습니다. 논문에서 OpenAI 메모리가 temporal 질문에서 J<15%로 폭락한 원인이 타임스탬프 누락이었기 때문에, 시간 정보 보존을 1급 요구사항으로 다룹니다.",
+      "numbers": [
+        "J<15%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/devchaen/memoir"
+}

@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Di Wu et al. (arXiv)",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The paper introduces LongMemEval-V2 (LME-V2), a benchmark for evaluating whether memory systems help agents acquire the experience needed in customized web environments.",
+      "quote": "LongMemEval-V2 (LME-V2), a benchmark for evaluating whether memory systems can help agents acquire the experience needed to become knowledgeable colleagues in customized environments.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "LME-V2 contains 451 manually curated questions covering five core memory abilities for web agents: static state recall, dynamic state tracking, workflow knowledge, environment gotchas, and premise awareness.",
+      "quote": "LME-V2 contains 451 manually curated questions covering five core memory abilities for web agents: static state recall, dynamic state tracking, workflow knowledge, environment gotchas, and premise awareness.",
+      "numbers": [
+        "451",
+        "five"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Questions are paired with history trajectories containing up to 500 trajectories and 115M tokens.",
+      "quote": "Questions are paired with history trajectories containing up to 500 trajectories and 115M tokens.",
+      "numbers": [
+        "500",
+        "115M"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The evaluation uses a context gathering formulation where memory systems consume history trajectories and return compact evidence for downstream question answering.",
+      "quote": "We use a context gathering formulation: memory systems consume history trajectories and return compact evidence for downstream question answering.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper proposes two memory methods: AgentRunbook-R, an efficient RAG-based memory with knowledge pools for raw state observations, events, and strategy notes, and AgentRunbook-C, which stores trajectories as files and invokes a coding agent to gather evidence in an augmented sandbox.",
+      "quote": "We propose a suite of two memory methods: AgentRunbook-R, an efficient RAG-based memory with knowledge pools for raw state observations, events, and strategy notes, and AgentRunbook-C, which stores trajectories as files and invokes a coding agent to gather evidence in an augmented sandbox.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "AgentRunbook-C achieves 72.5% average accuracy, outperforming the strongest RAG baseline (48.5%) and the off-the-shelf coding agent baseline (69.3%).",
+      "quote": "Experiments show that AgentRunbook-C achieves the best performance with 72.5% average accuracy, outperforming the strongest RAG baseline (48.5%) and the off-the-shelf coding agent baseline (69.3%).",
+      "numbers": [
+        "72.5%",
+        "48.5%",
+        "69.3%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Coding agent based memory methods have high latency costs, though AgentRunbook-C advances the accuracy-latency Pareto frontier.",
+      "quote": "Despite the strong performance gains, coding agent based methods have high latency costs. While AgentRunbook-C advances the accuracy-latency Pareto frontier, substantial room for improvement remains.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Existing memory benchmarks for agents mostly focus on user histories, short traces, or downstream task success, leaving open how to directly evaluate whether memory systems effectively internalize environment-specific experience.",
+      "quote": "However, existing memory benchmarks for agents mostly focus on user histories, short traces, or downstream task success, leaving open how to directly evaluate whether memory systems effectively internalize environment-specific experience.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.12493"
+}

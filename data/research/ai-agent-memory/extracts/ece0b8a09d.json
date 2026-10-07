@@ -1,0 +1,74 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-11",
+  "author_or_org": "Zhibao Chen, Qian Cheng",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper proposes a multi-factor memory value function over seven interpretable factors drawn from cognitive psychology: emotional intensity, goal relevance, value alignment, self/user relevance, task utility, reliability, and usage history; a single scalar controls encoding depth, forget risk, and retrieval rank.",
+      "quote": "We propose a multi-factor memory value function V(m)=\\sum_i w_i f_i(m) over seven interpretable factors (emotional intensity, goal relevance, value alignment, self/user relevance, task utility, reliability, and usage history) drawn from cognitive psychology, whose weights are learned from a downstream objective by a gradient-free optimiser, and whose single scalar uniformly controls encoding depth, forget risk, and retrieval rank.",
+      "numbers": [
+        "seven"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Long-running LLM agents accumulate interaction histories far larger than any context window, forcing decisions about what to encode deeply, forget, and retrieve under a fixed memory budget.",
+      "quote": "Long-running LLM agents accumulate interaction histories far larger than any context window, forcing a standing decision: what to encode deeply, what to forget, and what to retrieve under a fixed memory budget.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Production systems use semantic similarity or recency to make memory decisions, but these are mis-specified for the forgetting decision, which happens at consolidation time before the future query is known.",
+      "quote": "Production systems answer with semantic similarity or recency -- both mis-specified for the forgetting decision, which is made at consolidation time before the future query is known.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "On LongMemEval, scoring goal relevance against the held-out evaluation question saturates gold-evidence retention at approximately 0.98, which the authors say measures retrieval rather than forgetting.",
+      "quote": "We make a methodological point: on LongMemEval, scoring goal relevance against the held-out evaluation question saturates gold-evidence retention at \\approx 0.98 -- this measures retrieval, not forgetting.",
+      "numbers": [
+        "0.98"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "In a realistic blind regime, a learned multi-factor value retains 0.770 ± 0.011 of gold evidence across 479 usable cases, versus 0.657 for uniform weights, 0.518 for the best single factor, and 0.368 for recency; every paired gap's 95% bootstrap CI is above zero, and a neural network over the same factors ties the linear model.",
+      "quote": "In the realistic blind regime, a learned multi-factor value retains 0.770 \\pm 0.011 of gold evidence across 479 usable cases, versus 0.657 for uniform weights, 0.518 for the best single factor, and 0.368 for recency; every paired gap's 95% bootstrap CI is above zero, and a neural network over the same factors ties the linear model.",
+      "numbers": [
+        "0.770",
+        "0.011",
+        "479",
+        "0.657",
+        "0.518",
+        "0.368",
+        "95%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The learned weights are interpretable: reliability, emotional intensity, and self/user relevance dominate, while query-time goal similarity is down-weighted for the forgetting decision.",
+      "quote": "The learned weights are interpretable -- reliability, emotional intensity, and self/user relevance dominate, while query-time goal similarity is correctly down-weighted for the forgetting decision.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A controlled synthetic task with planted confounds shows the learner recovers a separating weighting with 1.00 retention, whereas uniform weighting fails with 0.62 retention.",
+      "quote": "A controlled synthetic task with planted confounds confirms the learner recovers a separating weighting (1.00 retention) where uniform weighting fails (0.62).",
+      "numbers": [
+        "1.00",
+        "0.62"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The substrate is open-source and all experiments run on a single CPU with no API calls.",
+      "quote": "The substrate is open-source; all experiments run on a single CPU with no API calls.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.12945"
+}

@@ -1,0 +1,52 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-03",
+  "author_or_org": "Qi Liu, Qinzheng Wang, Can Li, Yiming Bie, Wanjing Ma",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "SimSkill consolidates experience into episodic, procedural, and semantic memory.",
+      "quote": "SimSkill continually identifies capability gaps, generates and solves environment-grounded tasks, verifies solutions through an action--critic loop, and consolidates experience into episodic, procedural, and semantic memory.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Through autonomous exploration, SimSkill builds a library of reusable skills and knowledge spanning major stages of the traffic-simulation workflow.",
+      "quote": "Through autonomous exploration, it builds a library of reusable skills and knowledge spanning major stages of the traffic-simulation workflow.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "SimSkill illustrates a natural-language-centered design paradigm for LLM-based agent systems, with control logic, operating principles, and accumulated knowledge expressed in natural language.",
+      "quote": "More broadly, SimSkill illustrates a natural-language-centered design paradigm for LLM-based agent systems. Its high-level control logic, operating principles, and accumulated knowledge are expressed in natural language, while an LLM integrates them with executable tools and code to realize precise and reproducible execution.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "SimSkill was evaluated on two held-out benchmarks across three backbone LLMs, with each result independently verified.",
+      "quote": "We evaluate SimSkill on two held-out benchmarks across three backbone LLMs, with each result independently verified.",
+      "numbers": [
+        "two",
+        "three"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "SimSkill improved verified success by up to 25 percentage points, and ablations showed complementary contributions from procedural and semantic memory.",
+      "quote": "It improves verified success by up to 25 percentage points, and ablations show complementary contributions from procedural and semantic memory.",
+      "numbers": [
+        "25"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The benefits of SimSkill's memory are backbone- and budget-dependent; memory does not improve every model or uniformly reduce inference cost.",
+      "quote": "Its benefits remain backbone- and budget-dependent, as memory does not improve every model or uniformly reduce inference cost.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.03753"
+}

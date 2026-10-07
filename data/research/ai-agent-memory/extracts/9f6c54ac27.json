@@ -1,0 +1,48 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-30",
+  "author_or_org": "Amirhossein Abaskohi, Giuseppe Carenini, Peter West, Yuhang He",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "The paper identifies KV cache size growing linearly with sequence length and being retained throughout decoding as a dominant memory bottleneck that makes full GPU caching prohibitively expensive without compression.",
+      "quote": "Large language models increasingly operate over long contexts, where the KV cache becomes a dominant memory bottleneck: its size grows linearly with sequence length and must be retained throughout decoding, making full GPU caching prohibitively expensive without compression.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Existing KV cache compression methods are described as struggling to balance efficiency and faithful context preservation: token eviction discards information, while semantic grouping fixes compression decisions at prefill time and cannot recover token-level detail once a compressed span becomes relevant.",
+      "quote": "Existing KV cache compression methods struggle to balance efficiency with faithful context preservation. Token eviction discards information, while semantic grouping fixes compression decisions at prefill time; neither can recover token-level detail from a compressed span once it becomes relevant during generation.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "SeKV organizes context into entropy-guided semantic spans stored across a GPU-CPU memory hierarchy without discarding information, keeping a lightweight summary vector on GPU and a low-rank SVD basis on CPU for on-demand token-level reconstruction.",
+      "quote": "As a solution, we propose SeKV, a resolution-adaptive semantic KV cache that organizes context into entropy-guided semantic spans and stores them across a GPU-CPU memory hierarchy without discarding information. Each span keeps a lightweight summary vector on GPU for coarse routing and a low-rank SVD basis on CPU for on-demand token-level reconstruction.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "SeKV enables adaptive token-level reconstruction while keeping the base LLM frozen and adds fewer than 0.05% trainable parameters.",
+      "quote": "SeKV enables adaptive token-level reconstruction while keeping the base LLM fully frozen and adding fewer than 0.05% trainable parameters.",
+      "numbers": [
+        "0.05%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Across four benchmarks, SeKV improves over the strongest semantic compression baseline by 5.9% on average while reducing GPU memory by 53.3% versus full KV caching at 128K context.",
+      "quote": "Across four benchmarks, SeKV improves over the strongest semantic compression baseline by 5.9% on average while reducing GPU memory by 53.3% versus full KV caching at 128K context.",
+      "numbers": [
+        "four",
+        "5.9%",
+        "53.3%",
+        "128K"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.31145"
+}

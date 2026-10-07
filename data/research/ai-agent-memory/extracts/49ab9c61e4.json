@@ -1,0 +1,72 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "A. Haroon Rasheed, Maria Kabtoul",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Existing agent memory architectures such as Generative Agents, MemGPT, and A-MEM treat memory as text streams or knowledge graphs, while embodied agents require memory searchable simultaneously by meaning, space, and time.",
+      "quote": "Current agent memory architectures, such as Generative Agents, MemGPT, and A-MEM, treat memory as text streams or knowledge graphs, but embodied agents require memory that is simultaneously searchable by meaning, space, and time.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "eMEM uses a multi-index architecture with SQLITE for structured storage, hnswlib for approximate nearest-neighbour semantic search, and an R-tree for spatial queries, unified behind a single graph model.",
+      "quote": "eMEM fills this gap with a multi-index architecture (SQLITE for structured storage, hnswlib for approximate nearest neighbour semantic search, and an R-tree for spatial queries) unified behind a single graph model.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "eMEM uses a tiered consolidation pipeline that transforms raw perceptual observations into compressed summaries, mirroring hippocampal-neocortical consolidation in biological systems.",
+      "quote": "A tiered consolidation pipeline transforms raw perceptual observations into compressed summaries, mirroring hippocampal-neocortical consolidation in biological systems.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "eMEM exposes ten agent-facing recall tools for LLM tool calling, including concept-to-location resolution and cross layer recall.",
+      "quote": "Ten agent-facing recall tools expose memory retrieval primitives, including concept-to-location resolution and cross layer recall, as first-class operations for LLM tool calling.",
+      "numbers": [
+        "Ten"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The paper cites Generative Agents, MemGPT, and A-MEM as current agent memory architectures that treat memory as text streams or knowledge graphs.",
+      "quote": "Current agent memory architectures, such as Generative Agents, MemGPT, and A-MEM, treat memory as text streams or knowledge graphs, but embodied agents require memory that is simultaneously searchable by meaning, space, and time.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The authors introduce eMEM-Bench v1, constructed over ProcTHOR-10K scenes for embodied memory evaluation.",
+      "quote": "In addition we introduce eMEM-Bench v1, a benchmark we construct over ProcTHOR-10K scenes for embodied memory evaluation.",
+      "numbers": [
+        "10K"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The benchmark is organised around eight cognitive-psychology paradigms, and the authors claim surface-task benchmarks like LoCoMo or OpenEQA cannot provide the same level of diagnostic.",
+      "quote": "The benchmark is organised explicitly around eight cognitive-psychology paradigms (DRM lures, pattern separation, pattern completion, source monitoring, context-dependent retrieval, long-horizon interference, serial position, and a foil augmented retention curve), each chosen so that the result is interpretable against the broader memory-systems literature in humans and prior agent-memory systems; a level of diagnostic that surface-task benchmarks like LoCoMo or OpenEQA cannot provide.",
+      "numbers": [
+        "eight"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "eMEM scores 80.8 weighted mean over 988 probes, with a flat retention curve at ceiling from 1 h to 1 yr of simulated delay on room-unique items, and a pure RAG baseline loses 30 pt on context dependent retrieval and 29 pt on DRM lure rejection.",
+      "quote": "eMEM scores 80.8 weighted mean over 988 probes, with a flat retention curve at ceiling from 1 h to 1 yr of simulated delay on room-unique items. We show that a pure RAG baseline (the flat_rag ablation) loses 30 pt on context dependent retrieval and 29 pt on DRM lure rejection, isolating the contribution of multi-layer storage and consolidation respectively.",
+      "numbers": [
+        "80.8",
+        "988",
+        "1 h",
+        "1 yr",
+        "30 pt",
+        "29 pt"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.03374"
+}

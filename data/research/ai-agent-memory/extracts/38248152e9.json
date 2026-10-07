@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-01-09",
+  "author_or_org": "Balachandra Devarangadi Sunil, Isheeta Sinha, Piyush Maheshwari, Shantanu Todmal, Shreyan Mallik, Shuchi Mishra",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "LLM agents with persistent memory are vulnerable to memory poisoning attacks, where adversaries inject malicious instructions through query-only interactions that corrupt long-term memory and influence future responses.",
+      "quote": "Large language model agents equipped with persistent memory are vulnerable to memory poisoning attacks, where adversaries inject malicious instructions through query only interactions that corrupt the agents long term memory and influence future responses.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The MINJA memory injection attack was reported to achieve over 95% injection success rate and 70% attack success rate under idealized conditions.",
+      "quote": "Recent work demonstrated that the MINJA (Memory Injection Attack) achieves over 95 % injection success rate and 70 % attack success rate under idealized conditions.",
+      "numbers": [
+        "95 %",
+        "70 %"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper systematically evaluates memory poisoning attacks and defenses in EHR agents, varying initial memory state, number of indication prompts, and retrieval parameters.",
+      "quote": "This work addresses these gaps through systematic empirical evaluation of memory poisoning attacks and defenses in Electronic Health Record (EHR) agents. We investigate attack robustness by varying three critical dimensions: initial memory state, number of indication prompts, and retrieval parameters.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Experiments on GPT-4o-mini, Gemini-2.0-Flash, and Llama-3.1-8B-Instruct using MIMIC-III clinical data show that realistic conditions with pre-existing legitimate memories dramatically reduce attack effectiveness.",
+      "quote": "Our experiments on GPT-4o-mini, Gemini-2.0-Flash and Llama-3.1-8B-Instruct models using MIMIC-III clinical data reveal that realistic conditions with pre-existing legitimate memories dramatically reduce attack effectiveness.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper proposes and evaluates two defenses: Input/Output Moderation using composite trust scoring across multiple orthogonal signals, and Memory Sanitization with trust-aware retrieval using temporal decay and pattern-based filtering.",
+      "quote": "We then propose and evaluate two novel defense mechanisms: (1) Input/Output Moderation using composite trust scoring across multiple orthogonal signals, and (2) Memory Sanitization with trust-aware retrieval employing temporal decay and pattern-based filtering.",
+      "numbers": [
+        "(1)",
+        "(2)"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Effective memory sanitization requires careful trust threshold calibration to avoid both overly conservative rejection of all entries and insufficient filtering that misses subtle attacks.",
+      "quote": "Our defense evaluation reveals that effective memory sanitization requires careful trust threshold calibration to prevent both overly conservative rejection (blocking all entries) and insufficient filtering (missing subtle attacks), establishing important baselines for future adaptive defense mechanisms.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper claims its findings provide insights for securing memory-augmented LLM agents in production environments.",
+      "quote": "These findings provide crucial insights for securing memory-augmented LLM agents in production environments.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2601.05504"
+}

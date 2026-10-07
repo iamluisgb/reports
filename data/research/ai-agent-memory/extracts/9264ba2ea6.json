@@ -1,0 +1,47 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2026-10-04",
+  "author_or_org": "API Evangelist (Kin Lane)",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Zep is a context engineering and agent memory platform that assembles relevant context from chat history, business data, and user interactions for AI agents.",
+      "quote": "Zep is a context engineering and agent memory platform that assembles relevant context from chat history, business data, and user interactions for AI agents.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Zep builds a temporal knowledge graph per user that evolves as new facts arrive, automatically extracting entities (text cut off at 'entitie').",
+      "quote": "It builds a temporal knowledge graph per user that evolves as new facts arrive, automatically extracts entitie",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The repository categorizes Zep under topics including ai-agents, apis-json, context-engineering, crewai, graph-rag, knowledge-graph, langchain, llamaindex, llms, memory, personalization, retrieval, and temporal-graph.",
+      "quote": "[ai-agents](https://github.com/topics/ai-agents)[apis-json](https://github.com/topics/apis-json)[context-engineering](https://github.com/topics/context-engineering)[crewai](https://github.com/topics/crewai)[graph-rag](https://github.com/topics/graph-rag)[knowledge-graph](https://github.com/topics/knowledge-graph)[langchain](https://github.com/topics/langchain)[llamaindex](https://github.com/topics/llamaindex)[llms](https://github.com/topics/llms)[memory](https://github.com/topics/memory)[personalization](https://github.com/topics/personalization)[retrieval](https://github.com/topics/retrieval)[temporal-graph](https://github.com/topics/temporal-graph)",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The profile is an independent, third-party profile of a company's publicly available API surface, maintained by API Evangelist, and is not the company's own API.",
+      "quote": "This is not our API. This repository is an independent, third-party profile of a company's publicly available API surface, maintained by API Evangelist.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The profile is assembled from publicly reachable material (company website, developer portal, documentation, public specifications, public repositories, public status/pricing/changelog pages) with no credentials and no breaching of systems.",
+      "quote": "Everything here is assembled from material a member of the public can reach with a browser and no credentials — the company's own website, developer portal and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema, apis.json, llms.txt and similar), its public repositories, and its public status, pricing and changelog pages.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The Kin Score and Agent Readiness rating are independently calculated scores of public API artifacts against a published rubric; they are not certifications, endorsements, security assessments, or audits, and they score artifacts, not software quality, safety, or security.",
+      "quote": "The Kin Score and Agent Readiness rating are independently calculated scores of a company's public API artifacts, produced by API Evangelist against a published rubric. They are not certifications, endorsements, security assessments, or audits, and they score published artifacts — not the quality, safety, or security of the software.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/api-evangelist/zep"
+}

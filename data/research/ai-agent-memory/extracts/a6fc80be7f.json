@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-03",
+  "author_or_org": "Pritam Dash, Tongyu Ge, Aditi Jain, Tanmay Shah, Zhiwei Shang",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Memory is described as a core component of AI agents, enabling them to accumulate knowledge across interactions and improve performance.",
+      "quote": "Memory is a core component of AI agents, enabling them to accumulate knowledge across interactions and improve performance.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Persistent memory introduces the risk of memory poisoning, where a single adversarial memory write can have long-term influence over agent behavior.",
+      "quote": "However, persistent memory introduces the risk of memory poisoning, where a single adversarial memory write can exert long-term influence over agent behavior.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper identifies four memory write channels and nine structural vulnerabilities in model capabilities, system prompt design, and agent system architecture.",
+      "quote": "We identify four memory write channels and nine structural vulnerabilities in model capabilities, system prompt design, and agent system architecture that make these channels exploitable.",
+      "numbers": [
+        "four",
+        "nine"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Based on the identified vulnerabilities, the paper develops a taxonomy of six classes of memory poisoning attacks.",
+      "quote": "Based on these vulnerabilities, we develop a taxonomy of six classes of memory poisoning attacks.",
+      "numbers": [
+        "six"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper designs MPBench, a benchmark for evaluating memory poisoning attacks.",
+      "quote": "Furthermore, we design MPBench -- a benchmark for evaluating memory poisoning attacks, and show that agents designed to write and retrieve memory more aggressively are more exploitable.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Agents designed to write and retrieve memory more aggressively are more exploitable.",
+      "quote": "Furthermore, we design MPBench -- a benchmark for evaluating memory poisoning attacks, and show that agents designed to write and retrieve memory more aggressively are more exploitable.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Existing prompt injection defenses fail to cover memory poisoning attacks.",
+      "quote": "We also show that existing prompt injection defenses fail to cover memory poisoning attacks.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper presents a systematic study of memory poisoning in LLM-based agents.",
+      "quote": "We present a systematic study of memory poisoning in LLM-based agents.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.04329"
+}

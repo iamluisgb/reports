@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-13",
+  "author_or_org": "Artem Gadzhiev and Andrew Kislov",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper identifies current LLM agent memory approaches as sliding windows, summarization, embedding-based RAG, and flat fact extraction, and says each reduces token cost but introduces catastrophic information loss, semantic drift, or uncontrolled hallucination about the user.",
+      "quote": "Current approaches to memory for LLM agents -- sliding windows, summarization, embedding-based RAG, and flat fact extraction -- each reduce token cost but introduce catastrophic information loss, semantic drift, or uncontrolled hallucination about the user.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Synthius-Mem uses a persona extraction pipeline that decomposes conversations into six cognitive domains: biography, experiences, preferences, social circle, work, and psychometrics; it consolidates and deduplicates per domain and retrieves structured facts via CategoryRAG at 21.79 ms latency.",
+      "quote": "Instead of retrieving what was said, Synthius-Mem extracts what is known about the person: a full persona extraction pipeline decomposes conversations into six cognitive domains (biography, experiences, preferences, social circle, work, psychometrics), consolidates and deduplicates per domain, and retrieves structured facts via CategoryRAG at 21.79 ms latency.",
+      "numbers": [
+        "six",
+        "21.79 ms"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "On LoCoMo, which the paper describes as ACL 2024 with 10 conversations and 1,813 questions, Synthius-Mem reports 94.37% accuracy, exceeding MemMachine at 91.69% and human performance at 87.9 F1.",
+      "quote": "On the LoCoMo benchmark (ACL 2024, 10 conversations, 1,813 questions), Synthius-Mem achieves 94.37% accuracy, exceeding all published systems including MemMachine (91.69%, adversarial score is not reported) and human performance (87.9 F1).",
+      "numbers": [
+        "ACL 2024",
+        "10 conversations",
+        "1,813 questions",
+        "94.37%",
+        "91.69%",
+        "87.9 F1"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Synthius-Mem reports core memory fact accuracy of 98.64%.",
+      "quote": "Core memory fact accuracy reaches 98.64%.",
+      "numbers": [
+        "98.64%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper reports adversarial robustness, described as a hallucination resistance metric that no competing system reports, reaching 99.55%.",
+      "quote": "Adversarial robustness, the hallucination resistance metric that no competing system reports, reaches 99.55%.",
+      "numbers": [
+        "99.55%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Synthius-Mem claims to reduce token consumption by about 5x compared with full-context replay while achieving higher accuracy.",
+      "quote": "Synthius-Mem reduces token consumption by ~5x compared to full-context replay while achieving higher accuracy.",
+      "numbers": [
+        "~5x"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper states that providing AI agents with reliable long-term memory that does not hallucinate remains an open problem.",
+      "quote": "Providing AI agents with reliable long-term memory that does not hallucinate remains an open problem.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.11563"
+}

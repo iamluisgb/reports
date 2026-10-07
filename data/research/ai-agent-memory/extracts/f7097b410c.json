@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-10",
+  "author_or_org": "Hao-Lun Hsu, Nikki Lijing Kuang, Boyi Liu, Zhewei Yao, Yuxiong He",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "The paper says LLM agents are stateless in long-horizon tasks, requiring all task-relevant information in growing input contexts, which causes degraded reasoning quality, increased inference cost, and higher latency, motivating efficient working memory.",
+      "quote": "Large language model (LLM) agents struggle with long-horizon tasks due to their inherent statelessness, requiring all task-relevant information to be encoded in growing input contexts. The resulting degraded reasoning quality, increased inference cost, and higher latency necessitate efficient working memory mechanisms.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "HORMA organizes experience into a file-system-like hierarchical structure in which summarized entities are linked to raw trajectories, enabling efficient access without losing detailed information.",
+      "quote": "In this work, we present HORMA, a Hierarchical Organize-and-Retrieve Memory Agent that organizes experience into a file-system-like hierarchical structure, where summarized entities are linked to the corresponding raw trajectories, enabling efficient access without losing detailed information.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "HORMA decomposes working memory into two stages: structured memory construction and navigation-based retrieval.",
+      "quote": "HORMA decomposes working memory into two stages: structured memory construction and navigation-based retrieval.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper says existing approaches rely on lossy compression or similarity-based retrieval, which often fail to capture temporal structure and causal dependencies required for multi-step agentic tasks.",
+      "quote": "However, existing approaches either rely on lossy compression or similarity-based retrieval, which often fail to capture temporal structure and causal dependencies required for multi-step agentic tasks.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "HORMA's construction module iteratively refines experience structuring by distinguishing failures caused by missing information from failures caused by misleading or overloaded context.",
+      "quote": "The construction module iteratively refines how experiences are structured by distinguishing between failures caused by missing information and those caused by misleading or overloaded context.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "HORMA's navigation module uses a lightweight reinforcement-learning-trained agent to select minimal yet sufficient context while traversing the hierarchy, reducing latency along the critical execution path.",
+      "quote": "The navigation module retrieves task-relevant context by traversing the hierarchy using a lightweight agent trained with reinforcement learning to select minimal yet sufficient context, thereby reducing latency along the critical execution path.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "HORMA is evaluated across ALFWorld, LoCoMo, and LongMemEval, improving task performance under constrained context budgets and requiring at most 22.17% of baseline token usage in long conversation tasks.",
+      "quote": "Across ALFWorld, LoCoMo, and LongMemEval, HORMA improves task performance under constrained context budgets while requiring at most 22.17% of the baseline token usage in long conversation tasks.",
+      "numbers": [
+        "22.17%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The source compares HORMA only to existing methods in general and does not name or report results for Mem0, Zep/Graphiti, Letta/MemGPT, A-MEM, or LangMem.",
+      "quote": "Compared to existing methods, it consistently achieves better efficiency-performance trade-offs and generalizes effectively to unseen tasks.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.11680"
+}

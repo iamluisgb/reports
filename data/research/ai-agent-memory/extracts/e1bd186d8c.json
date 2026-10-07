@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-09",
+  "author_or_org": "Yang Luo, Zifeng Kang, Tiantian Ji, Xinran Liu, Yong Liu, Shuyu Li, Lingyun Peng",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Graph-based agent memory is increasingly used in LLM agents to support structured long-term recall and multi-hop reasoning, but it also creates a poisoning surface where injected relations can later be retrieved and influence behavior.",
+      "quote": "Graph-based agent memory is increasingly used in LLM agents to support structured long-term recall and multi-hop reasoning, but it also creates a new poisoning surface: an attacker can inject a crafted relation into graph memory so that it is later retrieved and influences agent behavior.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Existing agent-memory poisoning attacks mainly target flat textual records and are ineffective in graph-based memory because malicious relations often fail to be extracted, merged into the target anchor neighborhood, or retrieved for the victim query.",
+      "quote": "Existing agent-memory poisoning attacks mainly target flat textual records and are ineffective in graph-based memory because malicious relations often fail to be extracted, merged into the target anchor neighborhood, or retrieved for the victim query.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The attack's key insight is that a poisoned relation can share the same query-activated anchor and canonicalized relation channel as benign evidence while carrying a conflicting value.",
+      "quote": "Its key insight is that a poisoned relation can share the same query-activated anchor and canonicalized relation channel as benign evidence while carrying a conflicting value.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The attack pipeline, AIR, converts the conflict into an ordinary interaction that can be extracted, merged, and retrieved by the graph-memory system.",
+      "quote": "To realize this, we design AIR, a pipeline that converts the conflict into an ordinary interaction that can be extracted, merged, and retrieved by the graph-memory system.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "SHADOWMERGE is evaluated on Mem0 and three public real-world datasets: PubMedQA, WebShop, and ToolEmu.",
+      "quote": "We evaluate SHADOWMERGE on Mem0 and three public real-world datasets: PubMedQA, WebShop, and ToolEmu.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "SHADOWMERGE achieves 93.8% average attack success rate, improving the best baseline by 50.3 absolute points, with negligible impact on unrelated benign tasks.",
+      "quote": "SHADOWMERGE achieves 93.8% average attack success rate, improving the best baseline by 50.3 absolute points, while having negligible impact on unrelated benign tasks.",
+      "numbers": [
+        "93.8%",
+        "50.3"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Mechanism studies show SHADOWMERGE overcomes three key limitations of existing agent-memory poisoning attacks, and defense analysis shows representative input-side defenses are insufficient to mitigate it.",
+      "quote": "Mechanism studies show that SHADOWMERGE overcomes the three key limitations of existing agent-memory poisoning attacks, and defense analysis shows that representative input-side defenses are insufficient to mitigate it.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The authors responsibly disclosed the findings to affected graph-memory vendors and open sourced SHADOWMERGE.",
+      "quote": "We have responsibly disclosed our findings to affected graph-memory vendors and open sourced SHADOWMERGE.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.09033"
+}

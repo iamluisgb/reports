@@ -1,0 +1,76 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-03-31",
+  "author_or_org": "Pratyay Banerjee, Masud Moshtaghi, Ankit Chadha",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "APEX-EM is a non-parametric experience memory that stores complete procedural-episodic traces in a typed Procedural Knowledge Graph (PKG) and retrieves them through semantic search, structural-signature matching over abstract operation sequences, and graph traversal.",
+      "quote": "We introduce \\textbf{APEX-EM}, a non-parametric experience memory that stores complete procedural-episodic traces in a typed Procedural Knowledge Graph (PKG) and retrieves them through three channels: semantic search, structural-signature matching over abstract operation sequences, and graph traversal.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "APEX-EM uses a Plan-Retrieve-Generate-Iterate-Ingest (PRGII) workflow that quality-gates and commits experiences, indexes both successes and failures, and does not change model weights during deployment.",
+      "quote": "A Plan-Retrieve-Generate-Iterate-Ingest (PRGII) workflow produces, quality-gates, and commits experiences, indexing both successes and failures so the agent learns what to reuse and what to avoid. No weights change during deployment.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper evaluates APEX-EM on five benchmarks: BigCodeBench, KGQAGen-10k, HLE, Lifelong Agent Bench, and ALFWorld.",
+      "quote": "We evaluate on five benchmarks: BigCodeBench, KGQAGen-10k, HLE, Lifelong Agent Bench, and ALFWorld.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Because prior work uses different backbones, the authors base their claims on same-backbone comparisons that hold model capability fixed.",
+      "quote": "Because prior work uses different backbones, we base our claims on same-backbone comparisons that hold model capability fixed.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "On held-out BigCodeBench transfer with a shared GPT-4o backbone, APEX-EM gains +7.6 pp over the no-memory baseline, which is 3.3 times MemRL's +2.3 pp under the identical setup.",
+      "quote": "On held-out BigCodeBench transfer with a shared GPT-4o backbone, APEX-EM gains +7.6\\,pp over the no-memory baseline, 3.3×MemRL's +2.3\\,pp under the identical setup.",
+      "numbers": [
+        "+7.6\\,pp",
+        "3.3",
+        "+2.3\\,pp"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "On Lifelong Agent Bench with a shared GPT-4o-mini backbone, APEX-EM gains +1.4 pp for OS and +1.0 pp for DB cumulative success.",
+      "quote": "On Lifelong Agent Bench with a shared GPT-4o-mini backbone, it gains +1.4\\,pp (OS) and +1.0\\,pp (DB) cumulative success.",
+      "numbers": [
+        "+1.4\\,pp",
+        "+1.0\\,pp"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "On KGQAGen-10k, frozen memory transfers to a blind 1,079-question test split at 73.7% versus 42.0% with no memory, approaching an oracle given the ground-truth subgraph at 84.9%.",
+      "quote": "On KGQAGen-10k, frozen memory transfers to a blind 1{,}079-question test split at 73.7\\% versus 42.0\\% with no memory, approaching an oracle handed the ground-truth subgraph (84.9\\%).",
+      "numbers": [
+        "1{,}079",
+        "73.7\\%",
+        "42.0\\%",
+        "84.9\\%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Component analysis shows no single mechanism dominates: teacher feedback is negligible for code but adds +10.3 pp on structured queries, structural signatures give 3.3 times the transfer of semantic-only retrieval, and within-epoch iteration recovers most of the gain when rich feedback is unavailable.",
+      "quote": "Component analysis shows no single mechanism dominates: teacher feedback is negligible for code but adds +10.3\\,pp on structured queries, structural signatures give 3.3×the transfer of semantic-only retrieval, and within-epoch iteration recovers most of the gain when rich feedback is unavailable.",
+      "numbers": [
+        "+10.3\\,pp",
+        "3.3"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2603.29093"
+}

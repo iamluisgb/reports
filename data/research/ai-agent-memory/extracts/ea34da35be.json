@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-03-26",
+  "author_or_org": "Weizhi Zhang, Xiaokai Wei, Wei-Chieh Huang, Zheng Hui, Chen Wang, Michelle Gong, Philip S. Yu",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "MemoryCD is introduced as the first large-scale, user-centric, cross-domain memory benchmark derived from lifelong real-world behaviors in the Amazon Review dataset.",
+      "quote": "We introduce \\textsc{MemoryCD}, the first large-scale, user-centric, cross-domain memory benchmark derived from lifelong real-world behaviors in the Amazon Review dataset.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Existing memory datasets rely on scripted personas to generate synthetic user data, whereas MemoryCD tracks authentic user interactions across years and multiple domains.",
+      "quote": "Unlike existing memory datasets that rely on scripted personas to generate synthetic user data, \\textsc{MemoryCD} tracks authentic user interactions across years and multiple domains.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper constructs a multi-faceted long-context memory evaluation pipeline using 14 state-of-the-art LLM base models, 6 memory method baselines, 4 personalization tasks, and 12 diverse domains.",
+      "quote": "We construct a multi-faceted long-context memory evaluation pipeline of 14 state-of-the-art LLM base models with 6 memory method baselines on 4 distinct personalization tasks over 12 diverse domains to evaluate an agent's ability to simulate real user behaviors in both single and cross-domain settings.",
+      "numbers": [
+        "14",
+        "6",
+        "4",
+        "12"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The benchmark is designed to evaluate an agent's ability to simulate real user behaviors in both single-domain and cross-domain settings.",
+      "quote": "to evaluate an agent's ability to simulate real user behaviors in both single and cross-domain settings.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The analysis reports that existing memory methods are far from user satisfaction in various domains and offers the first testbed for cross-domain life-long personalization evaluation.",
+      "quote": "Our analysis reveals that existing memory methods are far from user satisfaction in various domains, offering the first testbed for cross-domain life-long personalization evaluation.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "LLM context windows have expanded to million-token scales, but benchmarks for evaluating memory remain limited to short-session synthetic dialogues.",
+      "quote": "Recent advancements in Large Language Models (LLMs) have expanded context windows to million-token scales, yet benchmarks for evaluating memory remain limited to short-session synthetic dialogues.",
+      "numbers": [
+        "million-token"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper was published as a workshop paper in Lifelong Agent at ICLR 2026.",
+      "quote": "Comments:Published as a workshop paper in Lifelong Agent @ ICLR 2026",
+      "numbers": [
+        "2026"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2603.25973"
+}

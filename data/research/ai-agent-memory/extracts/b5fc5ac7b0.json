@@ -1,0 +1,48 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-23",
+  "author_or_org": "Zehao Lin, Xixuan Hao, Renyu Fu, Shaobo Cui, Kai Chen, Chunyu Li, Zhiyu Li, Feiyu Xiong",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source proposes a Memory Lifecycle Framework as a taxonomy organizing attacks, defenses, and cross-phase dependencies along six lifecycle phases and four security objectives.",
+      "quote": "To systematically characterize this landscape, we propose a Memory Lifecycle Framework that organizes attacks, defenses, and their cross-phase dependencies along two axes: six lifecycle phases (Write, Store, Retrieve, Execute, Share &Propagate, Forget &Rollback) and four security objectives (Integrity, Confidentiality, Availability, Governance).",
+      "numbers": [
+        "six",
+        "four"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Writable, cross-session persistent memory in LLM agents creates a qualitatively different threat landscape from conventional input-centric security, characterized by persistence, statefulness, and propagation.",
+      "quote": "The emergence of writable, cross-session persistent memory in LLM agents introduces a qualitatively different threat landscape from conventional input-centric security concerns, characterized by three properties: persistence, statefulness, and propagation.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The source argues formal security guarantees are needed at the system level and proposes Verifiable Memory Governance (VMG), a framework of five architectural primitives for auditable, recoverable control over memory state.",
+      "quote": "This analysis in turn exposes the need for formal security guarantees at the system level, motivating Verifiable Memory Governance (VMG), a framework of five architectural primitives that specifies what verifiable mechanisms a long-term-memory system must provide to maintain auditable, recoverable control over its memory state.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The source concludes that robust Long-Term Memory (LTM) security cannot be retrofitted only at retrieval or execution time; it must be anchored in storage-time provenance, versioning, and policy-aware retention from the outset.",
+      "quote": "Our analysis indicates that robust Long-Term Memory (LTM) security cannot be retrofitted at retrieval or execution time alone, but must be anchored in storage-time provenance, versioning, and policy-aware retention from the outset.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source's memory security taxonomy includes Integrity, Confidentiality, Availability, and Governance objectives, and includes a Forget & Rollback phase in the memory lifecycle.",
+      "quote": "To systematically characterize this landscape, we propose a Memory Lifecycle Framework that organizes attacks, defenses, and their cross-phase dependencies along two axes: six lifecycle phases (Write, Store, Retrieve, Execute, Share &Propagate, Forget &Rollback) and four security objectives (Integrity, Confidentiality, Availability, Governance).",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.16548"
+}

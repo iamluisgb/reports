@@ -1,0 +1,52 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-15",
+  "author_or_org": "Shuhuai Huang, Jingfeng Zhang, Hong Jia",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Harness design integrates memory, tool use, and runtime control into LLM-based agents, but also introduces security and privacy risks because malicious instructions from external sources may be written into persistent memory and persist across sessions.",
+      "quote": "Harness design has transformed the development of LLM-based agents by integrating memory, tool use, and runtime control. However, this design also introduces security and privacy risks because malicious instructions from external sources may be written into persistent memory and persist across sessions.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper proposes PMPA, a Persistent Memory Poisoning Attack against harness-based agents, which embeds malicious instructions into benign external sources and induces the victim agent to write them into persistent memory without directly accessing the agent framework.",
+      "quote": "To study this risk, we propose PMPA, a Persistent Memory Poisoning Attack against harness-based agents. PMPA embeds malicious instructions into benign external sources and induces the victim agent to write them into persistent memory without directly accessing to the agent framework.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Once poisoned memory is stored, it can be retrieved in later sessions, triggering additional malicious actions and causing privacy leakage.",
+      "quote": "Once stored, the poisoned memory can be retrieved in later sessions, triggering additional malicious actions and causing privacy leakage.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "PMPA was evaluated on OpenClaw and Claude Code across different backbone LLMs, input modalities, and trigger scenarios.",
+      "quote": "We evaluate PMPA on OpenClaw and Claude Code across different backbone LLMs, input modalities, and trigger scenarios.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Across all settings, PMPA achieved average Injection Success Rate and Cross-session Attack Success Rate of 73.7% and 55.5% on OpenClaw, and 66.9% and 81.7% on Claude Code, while preserving benign task performance on both systems.",
+      "quote": "Across all settings, PMPA achieves average Injection Success Rate (ISR) and Cross-session Attack Success Rate (C-ASR) of 73.7%/ 55.5% on OpenClaw and 66.9%/ 81.7% on Claude Code, while preserving benign task performance on both systems.",
+      "numbers": [
+        "73.7%",
+        "55.5%",
+        "66.9%",
+        "81.7%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A targeted prompt-level defense reduced memory injection in many settings but provided limited protection once the persistent memory had been poisoned.",
+      "quote": "We further evaluate a targeted prompt-level defense and find that it can reduce memory injection in many settings, but provides limited protection once the persistent memory has been poisoned.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.13889"
+}

@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-05",
+  "author_or_org": "Runzhe Wang, Huilin Lu, Shengjie Liu, Li Dong, Jason Zhu",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "AdMem proposes a unified automatic memory framework combining semantic, episodic, and procedural memory, with bi-level short-term and long-term stores.",
+      "quote": "We introduce a unified and automatic memory framework that integrates semantic, episodic, and procedural memory in a bi-level design combining short-term and long-term stores.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Prior memory approaches mainly focus on storing factual information.",
+      "quote": "Prior memory approaches aim to resolve the situation, but mainly focus on storing factual information.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Recent procedural memory work improves task reuse but often reduces to replaying past successes without addressing failure cases or online scalability.",
+      "quote": "Recent work on procedural memory improves task reuse, yet often reduces to replaying past successes without addressing failure cases or online scalability.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "AdMem uses a multi-agent architecture with actor, memory, and critic agents for automatic memory generation, reward annotation, and adaptive retrieval.",
+      "quote": "A multi-agent architecture with actor, memory, and critic agents enables automatic memory generation, reward annotation, and adaptive retrieval.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Long-term memory in AdMem is managed through reward-based evaluation, merging, and pruning to support scalability and continual improvement.",
+      "quote": "Long-term memory is managed through reward-based evaluation, merging, and pruning, ensuring scalability and continual improvement.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "AdMem reports experiments across various environments showing improved robustness and success on long multi-turn tasks versus existing baselines.",
+      "quote": "Experiments across various environments show that our approach improves robustness and success on long multi-turn tasks compared to existing baselines.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "LLM tool-using agents remain limited in long-horizon tasks that require remembering, organizing, and reusing knowledge.",
+      "quote": "Large Language Models (LLMs) show promise as tool-using agents but remain limited in long-horizon tasks that require remembering, organizing, and reusing knowledge.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.06787"
+}

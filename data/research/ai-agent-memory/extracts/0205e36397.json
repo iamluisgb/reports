@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-24",
+  "author_or_org": "Yubo Li; Yidi Miao",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "The paper states that long-horizon LLM inference makes the KV cache the dominant GPU memory consumer and makes per-token attention increasingly expensive.",
+      "quote": "Long-horizon LLM inference turns the key--value (KV) cache into the dominant GPU memory consumer and makes per-token attention increasingly expensive.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "CONF-KV keeps memory footprint near a fixed 512-token sliding window while staying within 1.5--2.1 perplexity points of full KV across four model families and generated lengths up to 4K.",
+      "quote": "Across four model families and generated lengths up to 4K, CONF-KV stays near the footprint of a fixed 512-token sliding window while remaining within 1.5--2.1 perplexity points of full KV.",
+      "numbers": [
+        "four",
+        "4K",
+        "512",
+        "1.5--2.1"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "On Needle-in-a-Haystack up to 32K tokens, CONF-KV reaches 91.4% retrieval accuracy versus 53.8% for sliding windows and 80.6% for H2O; on 75 VisualWebArena tasks it retains 95.3% of full-KV success at 2.8 times lower peak memory.",
+      "quote": "On Needle-in-a-Haystack up to 32K tokens, CONF-KV reaches 91.4% retrieval accuracy versus 53.8% for sliding windows and 80.6% for H2O; on 75 VisualWebArena tasks it retains 95.3% of full-KV success at 2.8 times lower peak memory.",
+      "numbers": [
+        "32K",
+        "91.4%",
+        "53.8%",
+        "80.6%",
+        "75",
+        "95.3%",
+        "2.8"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "CONF-KV combines blockwise online-softmax attention, mixed FP16/INT8 storage, and a pyramidal per-layer budget variant.",
+      "quote": "We combine the policy with blockwise online-softmax attention, mixed FP16/INT8 storage, and a pyramidal per-layer budget variant.",
+      "numbers": [
+        "FP16",
+        "INT8"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "CONF-KV uses the next-token distribution as a scalar confidence score to choose the per-step cache budget, retaining more context when the model is uncertain and pruning aggressively when confident.",
+      "quote": "We introduce CONF-KV, a KV-cache manager that converts the next-token distribution into a scalar confidence score and uses it to choose the per-step cache budget, retaining more context when the model is uncertain and pruning aggressively when it is confident.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Within each budget, tokens are ranked by accumulated attention mass and recency, with a protected recent window preserving local coherence.",
+      "quote": "Within each budget, tokens are ranked by a composite of accumulated attention mass and recency, while a protected recent window preserves local coherence.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.24786"
+}

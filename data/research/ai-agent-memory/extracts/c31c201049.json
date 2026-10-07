@@ -1,0 +1,70 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-06",
+  "author_or_org": "George Torres, Sharad Shrestha, Satyajayant Misra",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Long-term memory agents tend to fall into two distinct domains: conversational agents and action-planning agents.",
+      "quote": "Currently, long-term memory agents tend to fall into two distinct domains: conversational and action-planning agents.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Long-term memory lets an agent recall specific details relevant to the current task, reducing the need for large context windows.",
+      "quote": "When augmented with long-term memory, an agent can recall specific details relevant to the current task, reducing the need for large context windows.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Personal assistant agents sit at the convergence of two domains, handle sensitive information while interacting with untrusted information sources, and create previously unaccounted security vulnerabilities.",
+      "quote": "Personal assistant agents sit at the convergence of these two domains and handle sensitive information while interacting with untrusted information sources, creating previously unaccounted security vulnerabilities.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper introduces GhostWriter, an attack vector that exploits current memory subsystems in tool-using personal agents to poison their memory store.",
+      "quote": "In this work, we introduce the novel attack vector, GhostWriter, which exploits current memory subsystems in tool-using personal agents to poison their memory store.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "GhostWriter operates in two phases: injection, where an adversary sends a hidden attack payload to the target agent, and activation, in which the poisoned memory is retrieved.",
+      "quote": "GhostWriter operates in two phases: injection, where an adversary sends a hidden attack payload to the target agent; and activation, in which the poisoned memory is retrieved.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "GhostWriter achieves near-universal injection rates of approximately 98% and a high average activation rate of approximately 60% against state-of-the-art agents.",
+      "quote": "We show that GhostWriter achieves near-universal injection rates of approximately 98% and a high average activation rate of approximately 60% against state-of-the-art agents.",
+      "numbers": [
+        "98%",
+        "60%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The attack is possible due to the lack of security-focused memory governance.",
+      "quote": "This attack is possible due to the lack of security-focused memory governance.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper proposes Agentic Memory Sentry (AM-Sentry), which leverages two mitigation techniques: a memory-saving policy and a memory-retrieval screen.",
+      "quote": "In response, we propose Agentic Memory Sentry (AM-Sentry), which leverages two mitigation techniques: a memory-saving policy and a memory-retrieval screen.",
+      "numbers": [
+        "two"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.06595"
+}

@@ -1,0 +1,65 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2026-06-26",
+  "author_or_org": "guoliangdi",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "claw-zep is described as a fully self-hosted temporal knowledge platform built on Graphiti, providing a time-series knowledge graph and time-aware long-term memory for AI agents, enterprise knowledge bases and risk deduction.",
+      "quote": "claw-zep is a fully self-hosted temporal knowledge platform built on Graphiti. It provides Palantir-grade dynamic time-series knowledge graph and time-aware long-term memory for AI Agents, enterprise knowledge bases and risk deduction.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The project implements a global bi-temporal model with valid_from, valid_until, version and source fields supporting snapshots, backtracking and conflict resolution.",
+      "quote": "全局双时序模型（valid_from/valid_until/version/source）：快照/回溯/冲突消解",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "It wraps Graphiti scheduling with LLM extraction plus an offline heuristic fallback, distributing output across three stores: Kuzu, Chroma and PG (PostgreSQL).",
+      "quote": "Graphiti 调度封装（LLM 抽取 + 离线启发式降级）→ 三库分发（Kuzu/Chroma/PG）",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The system includes an 'OpenHuman' three-layer memory tree architecture with online Markdown editing and Obsidian export.",
+      "quote": "OpenHuman 记忆树三层架构 + Markdown 在线编辑 + Obsidian 导出",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Retrieval is hybrid, chaining temporal search, vector search, graph-link traversal and memory-tree weighting, combined with causal reasoning described as Palantir-style.",
+      "quote": "混合检索（时序→向量→图谱链路→记忆树加权）+ Palantir 因果推演",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The platform provides multi-tenancy, project isolation, button-level RBAC and full-chain auditing.",
+      "quote": "多租户 + 项目隔离 + RBAC（按钮级）+ 全链路审计",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "A Phase A storage refactor moves to a single PostgreSQL instance with AGE and pgvector, adding a STORAGE_BACKEND switch with values kuzu_chroma or postgres, idempotent initialization of the pgvector extension, an HNSW vector table and an AGE graph, with automatic degradation when extensions are missing.",
+      "quote": "refactor(storage): Phase A — 单 PG(AGE+pgvector) 基础设施 + STORAGE_BACKEND 开关 - core/config: 新增 storage_backend(kuzu_chroma|postgres) 开关 + AGE/pgvector 配置 - core/adapters/pg_init: 幂等初始化 pgvector 扩展+向量表(HNSW) 与 AGE 图，缺失自动降级",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Rate limiting uses a per-tenant Redis fixed window that returns HTTP 429 when over limit and fails open when Redis is unavailable; a real Redis test of 7 requests against a limit of 5 let 5 through and rejected 2.",
+      "quote": "限流中间件(api/middlewares/ratelimit)：per-tenant Redis 固定窗口，超限 429， Redis 不可用 fail-open。真 Redis 验证：7 请求@限5 → 5 放行 2 拒绝",
+      "numbers": [
+        "429",
+        "7",
+        "5",
+        "5",
+        "2"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/guoliangdi/claw-zep"
+}

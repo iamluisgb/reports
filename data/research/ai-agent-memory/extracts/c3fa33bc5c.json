@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2026-04-14",
+  "author_or_org": "Ruter Lyu (GitHub user ruter)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Zep is described as a context engineering platform that builds temporal knowledge graphs from conversations and business data, providing persistent, cross-session memory.",
+      "quote": "Persistent, cross-session memory powered by [Zep](https://www.getzep.com/) — a context engineering platform that builds temporal knowledge graphs from conversations and business data.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The Zep provider persists every conversation turn to Zep's knowledge graph via sync_turn.",
+      "quote": "Persists every conversation turn to Zep's knowledge graph via `sync_turn`",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The prefetch hook calls thread.get_user_context() each turn, returning a context block containing a user summary and the most relevant facts ready to inject into the system prompt.",
+      "quote": "The `prefetch` hook calls `thread.get_user_context()` each turn, which returns a context block containing a user summary and the most relevant facts — ready to inject into the system prompt.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The Zep provider exposes zep_search and zep_add tools so the agent can query and write to the graph.",
+      "quote": "Exposes `zep_search` and `zep_add` tools so the agent can query and write to the graph",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The Zep provider mirrors built-in MEMORY.md writes to Zep for unified knowledge.",
+      "quote": "Mirrors built-in `MEMORY.md` writes to Zep for unified knowledge",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The provider warms the Zep user cache between turns for low-latency retrieval.",
+      "quote": "Warms the Zep user cache between turns for low-latency retrieval",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Zep automatically extracts entities, relationships, and facts from conversations, building a temporal knowledge graph per user.",
+      "quote": "Zep automatically extracts entities, relationships, and facts from conversations, building a temporal knowledge graph per user.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Facts in Zep include temporal validity ranges so the agent can reason about what is current versus outdated.",
+      "quote": "Facts include temporal validity ranges so the agent can reason about what's current vs. outdated.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/ruter/zep"
+}

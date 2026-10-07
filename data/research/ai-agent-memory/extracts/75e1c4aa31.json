@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-23",
+  "author_or_org": "Yedidel Louck",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "LLM agents increasingly rely on persistent long-term memory, which creates a critical vulnerability called memory poisoning, where an adversary stores untrusted content in one session that later steers a consequential action in a future session.",
+      "quote": "LLM agents increasingly rely on persistent long-term memory, which creates a critical vulnerability that we study here: memory poisoning. An adversary can store untrusted content in one session that later steers a consequential action, such as a payment, a setting change, or data exfiltration, in a future session.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Existing defenses base a memory item's authority on either its content or its derivation history, and the paper shows both signals are malleable.",
+      "quote": "Existing defenses base a memory item's authority to act on either its content (detection or trust-scoring) or its derivation history (lineage). We show that both signals are malleable.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "An attacker can launder an untrusted origin through three LLM-agent-specific channels: the agent's own summarization, a trusted-tool echo, and manufactured corroboration.",
+      "quote": "An attacker can launder an untrusted origin through three channels specific to LLM agents: the agent's own summarization, a trusted-tool echo, and manufactured corroboration.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper formalizes malleability for the memory write-retrieve-act pipeline and proves a machine-checked separation theorem: no content- or lineage-based defense is sound under laundering, write-time origin binding is necessary, and non-malleable origin-bound authority with Sybil-resistant corroboration-gated elevation is sufficient.",
+      "quote": "We formalize malleability for the memory write-retrieve-act pipeline and prove a machine-checked separation theorem. No content- or lineage-based defense is sound under laundering (T1), write-time origin binding is necessary (T2), and non-malleable origin-bound authority with Sybil-resistant corroboration-gated elevation is sufficient (T3).",
+      "numbers": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The TMA-NM construction instantiates non-malleable information-flow control for LLM-agent memory.",
+      "quote": "Our construction, TMA-NM (Tamper-evident Memory Authority, Non-Malleable), instantiates non-malleable information-flow control (IFC) for LLM-agent memory.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A cross-defense, cross-attack, and cross-model benchmark over eight frontier models shows existing defenses fail where the theory predicts, with up to 68% laundering attack-success, while TMA-NM reaches 0% attack success on direct and laundering attacks across all models and channels at full legitimate utility.",
+      "quote": "A cross-defense, cross-attack, and cross-model benchmark over eight frontier models shows that existing defenses fail exactly where the theory predicts (up to 68% laundering attack-success), while TMA-NM reaches 0% attack success on both direct and laundering attacks across all models and channels, at full legitimate utility.",
+      "numbers": [
+        "eight",
+        "68%",
+        "0%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper releases a benchmark, harness, and machine-checked TLA+ models to support reproducibility.",
+      "quote": "We release the benchmark, harness, and machine-checked TLA+ models to support reproducibility.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.24322"
+}

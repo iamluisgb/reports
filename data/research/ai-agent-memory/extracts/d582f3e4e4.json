@@ -1,0 +1,70 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-23",
+  "author_or_org": "Yanki Margalit, Nurit Cohen-Inger, Erni Avram, Ran Taig, Oded Margalit",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The paper identifies four foundational failure modes for multi-agent shared memory: unauthorized leakage, stale propagation, contradiction persistence, and provenance collapse.",
+      "quote": "This paper formalizes the fleet-memory problem and identifies four foundational failure modes: unauthorized leakage, stale propagation, contradiction persistence, and provenance collapse.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The paper proposes systems-level memory primitives: scoped retrieval, temporal supersession, provenance tracking, and policy-governed memory propagation.",
+      "quote": "To address these, we define explicit systems-level primitives: scoped retrieval, temporal supersession, provenance tracking, and policy-governed memory propagation.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The primitives are implemented in MemClaw, described as a production multi-tenant memory service, and evaluated via ArgusFleet, a reproducible harness testing four governance dimensions; the study measures a live production service rather than a baseline comparison.",
+      "quote": "These primitives are implemented in MemClaw, a production multi-tenant memory service, and evaluated via ArgusFleet, a reproducible harness testing four governance dimensions. Rather than a baseline comparison, this study measures a live production service, emphasizing real-world architectural insights and negative results.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The paper concludes that long-context retrieval alone is insufficient for production multi-agent memory, and that governed shared memory demands explicit systems-level abstractions and live evaluation.",
+      "quote": "Conclusion: Long-context retrieval alone is insufficient for production multi-agent memory. Governed shared memory demands explicit systems-level abstractions, and live evaluation is vital to expose enforcement and pipeline-ordering failures missed by design-only treatments.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In provenance evaluation, the system reconstructed 100% of depth-four derivation chains with correct writer identity at sub-second per-hop latency.",
+      "quote": "Provenance: Successfully reconstructed 100% of depth-four derivation chains with correct writer identity at sub-second per-hop latency.",
+      "numbers": [
+        "100%",
+        "four",
+        "sub-second"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Propagation evaluation demonstrated high intra-fleet visibility with zero cross-fleet leakage; under strong write mode, write-to-visible latency was optimized to a single search round-trip.",
+      "quote": "Propagation: Demonstrated high intra-fleet visibility with zero cross-fleet leakage. Under strong write mode, write-to-visible latency was optimized to a single search round-trip.",
+      "numbers": [
+        "zero",
+        "single"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A production issue found asymmetric scope enforcement: tenant isolation held, but sub-tenant scope was initially bypassed on direct GET-by-id requests for agent-scoped credentials.",
+      "quote": "Asymmetric Scope Enforcement: Tenant isolation held, but sub-tenant scope was initially bypassed on direct GET-by-id requests for agent-scoped credentials (disclosed and remediated during the study).",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A pipeline ordering conflict can cause a synchronous near-duplicate gate to prematurely reject contradictory writes before the asynchronous contradiction detector evaluates them.",
+      "quote": "Pipeline Ordering Conflict: While contradiction supersession works for admitted writes, a synchronous near-duplicate gate can prematurely reject contradictory writes before the asynchronous contradiction detector can evaluate them.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.24535"
+}

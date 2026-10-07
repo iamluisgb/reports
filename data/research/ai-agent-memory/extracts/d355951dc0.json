@@ -1,0 +1,65 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-03",
+  "author_or_org": "Wei Zou, Mingwen Dong, Miguel Romero Calvo, Shuaichen Chang, Jiang Guo, Dongkyu Lee, Xing Niu, Xiaofei Ma, Yanjun Qi, Jiarong Jiang",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The paper introduces eTAMP, described as the first attack achieving cross-session, cross-site compromise without direct memory access.",
+      "quote": "We introduce Environment-injected Trajectory-based Agent Memory Poisoning (eTAMP), the first attack to achieve cross-session, cross-site compromise without requiring direct memory access.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A single contaminated observation can silently poison an agent's memory and later activate on different websites, bypassing permission-based defenses.",
+      "quote": "A single contaminated observation (e.g., viewing a manipulated product page) silently poisons an agent's memory and activates during future tasks on different websites, bypassing permission-based defenses.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "eTAMP achieves attack success rates up to 32.5% on GPT-5-mini, 23.4% on GPT-5.2, and 19.5% on GPT-OSS-120B.",
+      "quote": "First, eTAMP achieves substantial attack success rates: up to 32.5% on GPT-5-mini, 23.4% on GPT-5.2, and 19.5% on GPT-OSS-120B.",
+      "numbers": [
+        "32.5%",
+        "23.4%",
+        "19.5%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper reports Frustration Exploitation: environmental stress can increase attack success rates by up to 8 times when agents struggle with dropped clicks or garbled text.",
+      "quote": "Second, we discover Frustration Exploitation: agents under environmental stress become dramatically more susceptible, with ASR increasing up to 8 times when agents struggle with dropped clicks or garbled text.",
+      "numbers": [
+        "8"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "More capable models are not necessarily more secure; GPT-5.2 shows substantial vulnerability despite superior task performance.",
+      "quote": "Notably, more capable models are not more secure. GPT-5.2 shows substantial vulnerability despite superior task performance.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Agent memory stores past interactions to personalize future tasks, creating a persistent attack surface spanning websites and sessions.",
+      "quote": "Memory makes LLM-based web agents personalized, powerful, yet exploitable. By storing past interactions to personalize future tasks, agents inadvertently create a persistent attack surface that spans websites and sessions.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The experiments in the paper were conducted on (Visual)WebArena.",
+      "quote": "Our experiments on (Visual)WebArena reveal two key findings.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The rise of AI browsers such as OpenClaw, ChatGPT Atlas, and Perplexity Comet is cited as underscoring the need for defenses against environment-injected memory poisoning.",
+      "quote": "With the rise of AI browsers like OpenClaw, ChatGPT Atlas, and Perplexity Comet, our findings underscore the urgent need for defenses against environment-injected memory poisoning.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.02623"
+}

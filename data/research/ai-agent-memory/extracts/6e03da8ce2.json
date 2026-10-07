@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-19",
+  "author_or_org": "Samuel Sameer Tanguturi",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "ATANT v1.0 defined continuity as a system property with 7 required properties and introduced a 10-checkpoint, LLM-free evaluation methodology validated on a 250-story corpus.",
+      "quote": "ATANT v1.0 ([arXiv:2604.06710](https://arxiv.org/abs/2604.06710)) defined continuity as a system property with 7 required properties and introduced a 10-checkpoint, LLM-free evaluation methodology validated on a 250-story corpus.",
+      "numbers": [
+        "7",
+        "10",
+        "250"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper positions ATANT against a set of memory evaluations: LOCOMO, LongMemEval, BEAM, MemoryBench, Zep's evaluation suite, Letta/MemGPT's evaluations, and RULER.",
+      "quote": "a recurring reviewer and practitioner question has concerned not the framework itself but its relationship to a wider set of memory evaluations: LOCOMO, LongMemEval, BEAM, MemoryBench, Zep's evaluation suite, Letta/MemGPT's evaluations, and RULER.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Structural analysis shows none of these benchmarks measures continuity as defined in ATANT v1.0; median coverage is 1 of 7 required properties, mean coverage is 0.43 with partial credit at 0.5, and no eval covers more than 2 properties.",
+      "quote": "We show by structural analysis that none of these benchmarks measures continuity as defined in v1.0: of the 7 required properties, the median existing eval covers 1 property, the mean covers 0.43 when partial credit is scored at 0.5, and no eval covers more than 2.",
+      "numbers": [
+        "7",
+        "1",
+        "0.43",
+        "0.5",
+        "2"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper identifies methodological defects specific to each benchmark, including an empty-gold scoring bug in the LOCOMO reference implementation that renders 23% of its corpus unscorable by construction.",
+      "quote": "We provide a cell-by-cell property-coverage matrix, identify methodological defects specific to each benchmark (including an empty-gold scoring bug in the LOCOMO reference implementation that renders 23% of its corpus unscorable by construction), and publish our reference implementation's LOCOMO score (8.8%) alongside the structural reason that number is uninformative about continuity.",
+      "numbers": [
+        "23%",
+        "8.8%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The authors' reference implementation scores 8.8% on LOCOMO and 96% on ATANT cumulative-scale, an 87-point divergence, which they present as evidence the benchmarks measure different properties.",
+      "quote": "We publish our 8.8% LOCOMO score alongside our 96% ATANT cumulative-scale score as a calibration pair: the 87-point divergence is evidence that the two benchmarks measure different properties, not that one system is an order of magnitude better than another.",
+      "numbers": [
+        "8.8%",
+        "96%",
+        "87-point"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper claims no existing benchmark can adjudicate continuity, and conflating them with continuity evaluation has led the field to under-invest in the properties ATANT v1.0 names.",
+      "quote": "The claim is that none of them can adjudicate continuity, and conflating them with continuity evaluation has led the field to under-invest in the properties v1.0 names.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.10981"
+}

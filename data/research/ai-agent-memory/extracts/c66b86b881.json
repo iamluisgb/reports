@@ -1,0 +1,85 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Ahmed Cherif",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper proposes a taxonomy of five memory management strategies for conversational agents: in-context windowing (ICW), external key-value store (EKV), graph-based episodic memory (GEM), compression-based summarisation (CBS), and web-augmented memory (WAM).",
+      "quote": "We present AgentMemBench, a unified, reproducible benchmark evaluating five memory management strategies under identical conditions: in-context windowing (ICW), external key-value store (EKV), graph-based episodic memory (GEM), compression-based summarisation (CBS), and web-augmented memory (WAM).",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The study additionally evaluates two published memory systems, MemGPT/Letta and HippoRAG, against the same benchmark harness and releases code, environment, and result artefacts for reproducibility.",
+      "quote": "We additionally evaluate two published memory systems (MemGPT/Letta, HippoRAG) against the same harness, and release all code, environment, and result artefacts for full reproducibility.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The benchmark assesses strategies across three public datasets—LoCoMo, MultiDoc2Dial, and MSC—using Recall@k, MRR, nDCG@k, Answer F1, LLM-judge Faithfulness, Memory Footprint, and Latency over 491 annotated question turns.",
+      "quote": "All are assessed across three public datasets covering long-term multi-session dialogue (LoCoMo), task-oriented document grounding (MultiDoc2Dial), and persona-grounded multi-session chat (MSC), using Recall@k, MRR, nDCG@k, Answer F1, an LLM-judge Faithfulness score, Memory Footprint, and Latency over 491 annotated question turns.",
+      "numbers": [
+        "three",
+        "491"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Generation and judging both use Qwen2.5-7B-Instruct in 4-bit with greedy decoding for determinism.",
+      "quote": "Generation and judging both use Qwen2.5-7B-Instruct (4-bit), with greedy decoding for determinism.",
+      "numbers": [
+        "2.5",
+        "7",
+        "4"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The results report that EKV dominates on every quality axis, with macro Recall@5 of 0.792, MRR 0.677, F1 0.156, and Faithfulness 0.354.",
+      "quote": "Our results show that (1) EKV dominates on every quality axis (macro Recall@5 0.792, MRR 0.677, F1 0.156, Faithfulness 0.354);",
+      "numbers": [
+        "5",
+        "0.792",
+        "0.677",
+        "0.156",
+        "0.354"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "On LoCoMo with long-range gold turns, ICW, WAM, GEM, and CBS retrieve almost nothing (Recall@5 <= 0.005), while EKV alone reaches 0.573, suggesting recency windows, summaries, and entity graphs collapse at long horizons.",
+      "quote": "(2) long-range recall is decisive: on LoCoMo, where the gold turn lies many sessions back, ICW, WAM, GEM, and CBS retrieve almost nothing (Recall@5 <= 0.005) while EKV alone reaches 0.573, showing that recency windows, summaries, and entity graphs collapse at long horizons and only dense retrieval scales;",
+      "numbers": [
+        "5",
+        "0.005",
+        "0.573"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "EKV's recall advantage carries a memory footprint cost of about 5,100 tokens versus about 300 tokens for ICW/WAM, an explicit accuracy-efficiency trade-off.",
+      "quote": "(5) EKV's recall advantage carries a footprint cost (~5,100 vs ~300 tokens for ICW/WAM), an explicit accuracy-efficiency trade-off.",
+      "numbers": [
+        "5,100",
+        "300"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "CBS is the runner-up on retrieval with 0.556.",
+      "quote": "(3) CBS is the runner-up on retrieval (0.556);",
+      "numbers": [
+        "0.556"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.00009"
+}

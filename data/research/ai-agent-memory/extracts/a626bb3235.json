@@ -1,0 +1,79 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Nilesh Prasad Pandey et al.",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Memory-augmented LLM agents maintain context across hundreds of interactions using agentic memory systems that curate retrieved content with LLM-generated metadata such as summaries, keywords, and tags.",
+      "quote": "Memory-augmented LLM agents maintain context across hundreds of interactions through agentic memory systems that actively curate retrieved content with LLM-generated metadata such as summaries, keywords, and tags.",
+      "numbers": [
+        "hundreds"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Every retrieval in these agentic memory systems triggers a full re-encoding of structured memory units into Key-Value states, which dominates prefill latency.",
+      "quote": "From an inference cost standpoint, every retrieval triggers a full re-encoding of these structured memory units into Key-Value (KV) states, which dominates prefill latency.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Evaluation used two long-horizon agentic memory benchmarks, long-term dialogue and agentic applications, across four open-source LLMs spanning 3B to 32B parameters.",
+      "quote": "Across four open-source LLMs spanning 3B to 32B parameters and two long-horizon agentic memory benchmarks (long-term dialogue and agentic applications), AgentKVShift achieves near full recompute performance while refreshing only 10-30% of the cache, outperforming baselines at the same recompute ratio.",
+      "numbers": [
+        "four",
+        "3B",
+        "32B",
+        "two"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "AgentKVShift refreshes only 10-30% of the cache while achieving near full recompute performance, and requires up to 5x lower recompute than prior reuse methods that need 45-55% refresh to reach similar performance.",
+      "quote": "Across four open-source LLMs spanning 3B to 32B parameters and two long-horizon agentic memory benchmarks (long-term dialogue and agentic applications), AgentKVShift achieves near full recompute performance while refreshing only 10-30% of the cache, outperforming baselines at the same recompute ratio. It requires up to 5x lower recompute to reach this near-full performance, which prior reuse methods only attain at 45-55% refresh.",
+      "numbers": [
+        "10-30%",
+        "5x",
+        "45-55%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "AgentKVShift delivers prefill speedups of 2-3.5x over no-KV-reuse on a single A100.",
+      "quote": "In this regime, AgentKVShift delivers prefill speedups of 2-3.5x over no-KV-reuse on a single A100.",
+      "numbers": [
+        "2-3.5x",
+        "A100"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "AgentKVShift orthogonally composes with KV cache quantization, retaining over 2x the F1 of prior reuse methods under aggressive 2- and 4-bit settings.",
+      "quote": "AgentKVShift orthogonally composes with KV cache quantization, retaining over 2x the F1 of prior reuse methods under aggressive 2- and 4-bit settings.",
+      "numbers": [
+        "2x",
+        "2-",
+        "4-bit"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Existing training-free KV reuse methods were designed for RAG-style raw passages but degrade on structured agentic memories.",
+      "quote": "Existing training-free KV reuse methods mitigate this by selectively recomputing a small fraction of tokens, but were designed for RAG-style raw passages and degrade on structured agentic memories.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "AgentKVShift estimates a shared memory-level offset from a small probe set to correct every reused token by a single weighted correction, and unlike prior reuse methods it also corrects tokens it does not recompute rather than leaving the rest of the cache stale.",
+      "quote": "Estimating this offset from a small probe set allows us to correct every reused token by a single weighted correction. Unlike prior reuse methods which decide which tokens to recompute and leave the rest of the cache stale, AgentKVShift also corrects the tokens it does not recompute, turning the refresh budget into useful signal across the entire chunk.",
+      "numbers": [
+        "single"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.21604"
+}

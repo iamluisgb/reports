@@ -1,0 +1,81 @@
+{
+  "slug": "ai-agent-memory",
+  "title": "AI agent memory: architectures, frameworks and trade-offs",
+  "thesis": "Long-term memory for agents has settled into a few architectures (extracted facts in vector stores, temporal knowledge graphs, OS-style tiered memory) whose trade-off is recall quality versus token cost, and the benchmarks used to compare them are weaker than the marketing.",
+  "audience": "AI engineers choosing a memory layer for agents in production",
+  "since": "2024-01-01",
+  "per_question": 8,
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What types of memory do LLM agents use, and what taxonomies does the research propose?",
+      "queries": [
+        "memory mechanisms LLM agents survey",
+        "episodic semantic procedural memory LLM agents",
+        "agent memory taxonomy"
+      ],
+      "providers": [
+        "arxiv",
+        "semantic_scholar",
+        "wikipedia"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "How do the main memory frameworks (Mem0, Zep/Graphiti, Letta/MemGPT, A-MEM, LangMem) work and what do they report?",
+      "queries": [
+        "Mem0 scalable long-term memory",
+        "Zep temporal knowledge graph agent memory",
+        "MemGPT LLMs as operating systems",
+        "A-MEM agentic memory"
+      ],
+      "providers": [
+        "arxiv",
+        "github",
+        "hn"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "How is agent memory evaluated (LoCoMo, LongMemEval, others) and how reliable are those benchmarks?",
+      "queries": [
+        "LoCoMo long-term conversational memory benchmark",
+        "LongMemEval benchmark",
+        "agent memory benchmark evaluation"
+      ],
+      "providers": [
+        "arxiv",
+        "semantic_scholar",
+        "hn"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What are the costs: tokens, latency and storage of memory versus long context windows?",
+      "queries": [
+        "long context versus retrieval memory LLM",
+        "memory latency token cost agents",
+        "long-context LLM versus RAG"
+      ],
+      "providers": [
+        "arxiv",
+        "hn",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What goes wrong with agent memory in production: forgetting, staleness, contradictions, privacy, poisoning?",
+      "queries": [
+        "agent memory poisoning attack",
+        "LLM memory forgetting update contradiction",
+        "agent memory production problems"
+      ],
+      "providers": [
+        "arxiv",
+        "hn",
+        "semantic_scholar"
+      ]
+    }
+  ]
+}

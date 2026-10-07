@@ -1,0 +1,674 @@
+{
+  "searched": 157,
+  "kept": 39,
+  "web_search": false,
+  "candidates": [
+    {
+      "url": "https://arxiv.org/abs/2604.16548",
+      "title": "A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle",
+      "snippet": "The emergence of writable, cross-session persistent memory in LLM agents introduces a qualitatively different threat landscape from conventional input-centric security concerns, characterized by three properties: persistence, statefulness, and propagation. To systematically characterize this landscape, we propose a Memory Lifecycle Framework that organizes attacks, defenses, and their cross-phase dependencies along two axes: six lifecycle phases (Write, Store, Retrieve, Execute, Share & Propagat",
+      "provider": "arxiv",
+      "published": "2026-04-17",
+      "id": "b5fc5ac7b0",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "memory mechanisms LLM agents survey"
+      ],
+      "relevance": {
+        "q1": 0.9709
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.06787",
+      "title": "AdMem: Advanced Memory for Task-solving Agents",
+      "snippet": "Large Language Models (LLMs) show promise as tool-using agents but remain limited in long-horizon tasks that require remembering, organizing, and reusing knowledge. Prior memory approaches aim to resolve the situation, but mainly focus on storing factual information. Recent work on procedural memory improves task reuse, yet often reduces to replaying past successes without addressing failure cases or online scalability. We introduce a unified and automatic memory framework that integrates semant",
+      "provider": "arxiv",
+      "published": "2026-06-05",
+      "id": "2818c1ffa8",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "episodic semantic procedural memory LLM agents"
+      ],
+      "relevance": {
+        "q1": 0.9409
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.29093",
+      "title": "APEX-EM: Non-Parametric Online Learning for Autonomous Agents via Structured Procedural-Episodic Experience Replay",
+      "snippet": "LLM agents rerun full reasoning for every task, even one they solved moments earlier. We introduce \\textbf{APEX-EM}, a non-parametric experience memory that stores complete procedural-episodic traces in a typed Procedural Knowledge Graph (PKG) and retrieves them through three channels: semantic search, structural-signature matching over abstract operation sequences, and graph traversal. A Plan-Retrieve-Generate-Iterate-Ingest (PRGII) workflow produces, quality-gates, and commits experiences, ind",
+      "provider": "arxiv",
+      "published": "2026-03-31",
+      "id": "39a9d34d12",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "episodic semantic procedural memory LLM agents"
+      ],
+      "relevance": {
+        "q1": 0.9424
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.03753",
+      "title": "SimSkill: A Self-Evolving LLM Agent for Skill and Knowledge Accumulation in Traffic Simulation",
+      "snippet": "Cumulative culture enables humans to preserve, reuse, and extend knowledge and skills across experiences and generations. Inspired by this principle, we introduce \\textit{SimSkill}, a self-evolving agent built around the Simulation of Urban MObility (SUMO) traffic simulator. SimSkill continually identifies capability gaps, generates and solves environment-grounded tasks, verifies solutions through an action--critic loop, and consolidates experience into episodic, procedural, and semantic memory.",
+      "provider": "arxiv",
+      "published": "2026-09-03",
+      "id": "1f600c3be0",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "episodic semantic procedural memory LLM agents"
+      ],
+      "relevance": {
+        "q1": 0.9076
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.05665",
+      "title": "Graph-based Agent Memory: Taxonomy, Techniques, and Applications",
+      "snippet": "Memory emerges as the core module in the Large Language Model (LLM)-based agents for long-horizon complex tasks (e.g., multi-turn dialogue, game playing, scientific discovery), where memory can enable knowledge accumulation, iterative reasoning and self-evolution. Among diverse paradigms, graph stands out as a powerful structure for agent memory due to the intrinsic capabilities to model relational dependencies, organize hierarchical information, and support efficient retrieval. This survey pres",
+      "provider": "arxiv",
+      "published": "2026-02-05",
+      "id": "817ca53dd5",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "agent memory taxonomy"
+      ],
+      "relevance": {
+        "q1": 0.9182
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.18104",
+      "title": "Self-Evolving Agents as Dynamic Graph Transformation: A Survey and New Perspective",
+      "snippet": "Large language model (LLM)-based agents are increasingly becoming self-evolving systems that persist across interactions, maintain memories, use tools, acquire skills, refine workflows, and coordinate with other agents. These capabilities make agent states structural and dynamic: entities, relations, attributes, dependencies, and execution structures change with new evidence, feedback, and environmental conditions. Existing graph-agent surveys typically treat graphs as support structures for age",
+      "provider": "arxiv",
+      "published": "2026-06-10",
+      "id": "d971ce07b1",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "agent memory taxonomy"
+      ],
+      "relevance": {
+        "q1": 0.8172
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.04329",
+      "title": "From Untrusted Input to Trusted Memory: A Systematic Study of Memory Poisoning Attacks in LLM Agents",
+      "snippet": "Memory is a core component of AI agents, enabling them to accumulate knowledge across interactions and improve performance. However, persistent memory introduces the risk of memory poisoning, where a single adversarial memory write can exert long-term influence over agent behavior. We present a systematic study of memory poisoning in LLM-based agents. We identify four memory write channels and nine structural vulnerabilities in model capabilities, system prompt design, and agent system architect",
+      "provider": "arxiv",
+      "published": "2026-06-03",
+      "id": "a6fc80be7f",
+      "questions": [
+        "q1",
+        "q5"
+      ],
+      "queries": [
+        "agent memory taxonomy",
+        "agent memory poisoning attack"
+      ],
+      "relevance": {
+        "q1": 0.84,
+        "q5": 0.9341
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.06216",
+      "title": "LLM Agents in Law: Taxonomy, Applications, and Challenges",
+      "snippet": "Large language models (LLMs) have precipitated a dramatic improvement in the legal domain, yet the deployment of standalone models faces significant limitations regarding hallucination, outdated information, and verifiability. Recently, LLM agents have attracted significant attention as a solution to these challenges, utilizing advanced capabilities such as planning, memory, and tool usage to meet the rigorous standards of legal practice. In this paper, we present a comprehensive survey of LLM a",
+      "provider": "arxiv",
+      "published": "2026-01-08",
+      "id": "32277acdba",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "agent memory taxonomy"
+      ],
+      "relevance": {
+        "q1": 0.7959
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2504.19413",
+      "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+      "snippet": "Large Language Models (LLMs) have demonstrated remarkable prowess in generating contextually coherent responses, yet their fixed context windows pose fundamental challenges for maintaining consistency over prolonged multi-session dialogues. We introduce Mem0, a scalable memory-centric architecture that addresses this issue by dynamically extracting, consolidating, and retrieving salient information from ongoing conversations. Building on this foundation, we further propose an enhanced variant th",
+      "provider": "arxiv",
+      "published": "2025-04-28",
+      "id": "442f8d52be",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "Mem0 scalable long-term memory"
+      ],
+      "relevance": {
+        "q2": 0.5447
+      }
+    },
+    {
+      "url": "https://github.com/devchaen/memoir",
+      "title": "devchaen/memoir",
+      "snippet": "Scalable long-term memory for AI agents — a from-scratch reimplementation of the Mem0 paper (arXiv:2504.19413) (0 stars)",
+      "provider": "github",
+      "published": "2026-07-14",
+      "id": "0cd362104b",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "Mem0 scalable long-term memory"
+      ],
+      "relevance": {
+        "q2": 0.3832
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2501.13956",
+      "title": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
+      "snippet": "We introduce Zep, a novel memory layer service for AI agents that outperforms the current state-of-the-art system, MemGPT, in the Deep Memory Retrieval (DMR) benchmark. Additionally, Zep excels in more comprehensive and challenging evaluations than DMR that better reflect real-world enterprise use cases. While existing retrieval-augmented generation (RAG) frameworks for large language model (LLM)-based agents are limited to static document retrieval, enterprise applications demand dynamic knowle",
+      "provider": "arxiv",
+      "published": "2025-01-20",
+      "id": "cc2574d8f4",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "Zep temporal knowledge graph agent memory",
+        "Zep temporal knowledge graph agent memory"
+      ],
+      "relevance": {
+        "q2": 0.4873
+      }
+    },
+    {
+      "url": "https://github.com/ruter/zep",
+      "title": "ruter/zep",
+      "snippet": "Zep memory provider for Hermes Agent  persists conversations into Zep's temporal knowledge graph for cross-session recall and personalized context assembly (0 stars)",
+      "provider": "github",
+      "published": "2026-04-15",
+      "id": "c3fa33bc5c",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "Zep temporal knowledge graph agent memory"
+      ],
+      "relevance": {
+        "q2": 0.6596
+      }
+    },
+    {
+      "url": "https://github.com/guoliangdi/claw-zep",
+      "title": "guoliangdi/claw-zep",
+      "snippet": "claw-zep is a fully self-hosted temporal knowledge platform built on Graphiti. It provides Palantir-grade dynamic time-series knowledge graph and time-aware long-term memory for AI Agents, enterprise knowledge bases and risk deduction. (0 stars)",
+      "provider": "github",
+      "published": "2026-06-26",
+      "id": "2045d7a633",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "Zep temporal knowledge graph agent memory"
+      ],
+      "relevance": {
+        "q2": 0.5675
+      }
+    },
+    {
+      "url": "https://github.com/api-evangelist/zep",
+      "title": "api-evangelist/zep",
+      "snippet": "Zep — independent third-party profile of a public API surface, by API Evangelist. Zep is a context engineering and agent memory platform that assembles relevant context from chat history, business data, and user interactions for AI agents. It builds a temporal knowledge graph per user that evolves a (0 stars)",
+      "provider": "github",
+      "published": "2026-10-04",
+      "id": "9264ba2ea6",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "Zep temporal knowledge graph agent memory"
+      ],
+      "relevance": {
+        "q2": 0.8497
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.03374",
+      "title": "eMEM: A Hybrid Spatio-Temporal Memory System For Embodied Agents",
+      "snippet": "We present eMEM (Embodied Memory), a hybrid graph-based memory system for embodied agents operating in physical environments. Current agent memory architectures, such as Generative Agents, MemGPT, and A-MEM, treat memory as text streams or knowledge graphs, but embodied agents require memory that is simultaneously searchable by meaning, space, and time. eMEM fills this gap with a multi-index architecture (SQLITE for structured storage, hnswlib for approximate nearest neighbour semantic search, a",
+      "provider": "arxiv",
+      "published": "2026-06-02",
+      "id": "49ab9c61e4",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "MemGPT LLMs as operating systems"
+      ],
+      "relevance": {
+        "q2": 0.482
+      }
+    },
+    {
+      "url": "https://github.com/ksm26/LLMs-as-Operating-Systems-Agent-Memory",
+      "title": "ksm26/LLMs-as-Operating-Systems-Agent-Memory",
+      "snippet": "This repository introduces the Letta framework, empowering developers to build LLM-based agents with long-term, persistent memory and advanced reasoning capabilities. It leverages concepts from MemGPT to optimize context usage and enable multi-agent collaboration for real-world applications like res (9 stars)",
+      "provider": "github",
+      "published": "2025-01-17",
+      "id": "4230b74c14",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "MemGPT LLMs as operating systems"
+      ],
+      "relevance": {
+        "q2": 0.3929
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.00009",
+      "title": "AgentMemBench: A Systematic Benchmark for Evaluating Long-Term Memory Management Strategies in Conversational AI Agents",
+      "snippet": "Long-term memory remains a critical bottleneck for conversational AI agents, whose finite context windows cannot support coherent recall across thousands of turns. We present AgentMemBench, a unified, reproducible benchmark evaluating five memory management strategies under identical conditions: in-context windowing (ICW), external key-value store (EKV), graph-based episodic memory (GEM), compression-based summarisation (CBS), and web-augmented memory (WAM). All are assessed across three public ",
+      "provider": "arxiv",
+      "published": "2026-06-16",
+      "id": "c66b86b881",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "LoCoMo long-term conversational memory benchmark"
+      ],
+      "relevance": {
+        "q3": 0.8672
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.11563",
+      "title": "Synthius-Mem: Brain-Inspired Hallucination-Resistant Persona Memory Achieving 94.4% Memory Accuracy and 99.6% Adversarial Robustness on LoCoMo",
+      "snippet": "Providing AI agents with reliable long-term memory that does not hallucinate remains an open problem. Current approaches to memory for LLM agents -- sliding windows, summarization, embedding-based RAG, and flat fact extraction -- each reduce token cost but introduce catastrophic information loss, semantic drift, or uncontrolled hallucination about the user. The structural reason is architectural: every published memory system on the LoCoMo benchmark treats conversation as a retrieval problem ove",
+      "provider": "arxiv",
+      "published": "2026-04-13",
+      "id": "2258906166",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "LoCoMo long-term conversational memory benchmark"
+      ],
+      "relevance": {
+        "q3": 0.7821
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2410.10813",
+      "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "snippet": "Recent large language model (LLM)-driven chat assistant systems have integrated memory components to track user-assistant chat histories, enabling more accurate and personalized responses. However, their long-term memory capabilities in sustained interactions remain underexplored. We introduce LongMemEval, a comprehensive benchmark designed to evaluate five core long-term memory abilities of chat assistants: information extraction, multi-session reasoning, temporal reasoning, knowledge updates, ",
+      "provider": "arxiv",
+      "published": "2024-10-14",
+      "id": "0dd22d68a9",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "LongMemEval benchmark"
+      ],
+      "relevance": {
+        "q3": 0.9406
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.12493",
+      "title": "LongMemEval-V2: Evaluating Long-Term Agent Memory Toward Experienced Colleagues",
+      "snippet": "Long-term memory is crucial for agents in specialized web environments, where success depends on recalling interface affordances, state dynamics, workflows, and recurring failure modes. However, existing memory benchmarks for agents mostly focus on user histories, short traces, or downstream task success, leaving open how to directly evaluate whether memory systems effectively internalize environment-specific experience. To address this gap, we introduce LongMemEval-V2 (LME-V2), a benchmark for ",
+      "provider": "arxiv",
+      "published": "2026-05-12",
+      "id": "907bbdb31d",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "LongMemEval benchmark"
+      ],
+      "relevance": {
+        "q3": 0.8619
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.10981",
+      "title": "ATANT v1.1: Positioning Continuity Evaluation Against Memory, Long-Context, and Agentic-Memory Benchmarks",
+      "snippet": "ATANT v1.0 (arXiv:2604.06710) defined continuity as a system property with 7 required properties and introduced a 10-checkpoint, LLM-free evaluation methodology validated on a 250-story corpus. Since publication, a recurring reviewer and practitioner question has concerned not the framework itself but its relationship to a wider set of memory evaluations: LOCOMO, LongMemEval, BEAM, MemoryBench, Zep's evaluation suite, Letta/MemGPT's evaluations, and RULER. This companion paper, v1.1, does not mo",
+      "provider": "arxiv",
+      "published": "2026-04-13",
+      "id": "6e03da8ce2",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "LongMemEval benchmark"
+      ],
+      "relevance": {
+        "q3": 0.8141
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.24775",
+      "title": "Are We Ready For An Agent-Native Memory System?",
+      "snippet": "Memory for large language model (LLM) agents has rapidly evolved from simple retrieval-augmented mechanisms into a data management system that supports persistent information storage, retrieval, update, consolidation, and dynamic lifecycle governance throughout agent execution. Despite this evolution, existing evaluations still benchmark agent memory mainly through end-to-end task success metrics (e.g., F1, BLEU), while treating the underlying system as a monolithic black box. As a result, criti",
+      "provider": "arxiv",
+      "published": "2026-06-23",
+      "id": "1343ef0f80",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "agent memory benchmark evaluation"
+      ],
+      "relevance": {
+        "q3": 0.9472
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.26072",
+      "title": "IFCMemoryBench: Evaluating Long-Term Memory of LLM-Based Agents in BIM Information Retrieval",
+      "snippet": "Long-term memory is becoming a core capability of LLM-based agents, but existing evaluations largely test conversational recall in open-domain or persona-grounded settings. We argue that a stronger test is whether an agent can reuse information from prior sessions while acting over a live, structured, domain-specific environment. We study this problem in Building Information Modelling (BIM), a professional engineering workflow where agents must query large IFC models while also relying on projec",
+      "provider": "arxiv",
+      "published": "2026-07-13",
+      "id": "ddbacb53de",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "agent memory benchmark evaluation"
+      ],
+      "relevance": {
+        "q3": 0.7282
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.25973",
+      "title": "MemoryCD: Benchmarking Long-Context User Memory of LLM Agents for Lifelong Cross-Domain Personalization",
+      "snippet": "Recent advancements in Large Language Models (LLMs) have expanded context windows to million-token scales, yet benchmarks for evaluating memory remain limited to short-session synthetic dialogues. We introduce \\textsc{MemoryCD}, the first large-scale, user-centric, cross-domain memory benchmark derived from lifelong real-world behaviors in the Amazon Review dataset. Unlike existing memory datasets that rely on scripted personas to generate synthetic user data, \\textsc{MemoryCD} tracks authentic ",
+      "provider": "arxiv",
+      "published": "2026-03-26",
+      "id": "ea34da35be",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "agent memory benchmark evaluation"
+      ],
+      "relevance": {
+        "q3": 0.8082
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.31145",
+      "title": "SeKV: Resolution-Adaptive KV Cache with Hierarchical Semantic Memory for Long-Context LLM Inference",
+      "snippet": "Large language models increasingly operate over long contexts, where the KV cache becomes a dominant memory bottleneck: its size grows linearly with sequence length and must be retained throughout decoding, making full GPU caching prohibitively expensive without compression. Existing KV cache compression methods struggle to balance efficiency with faithful context preservation. Token eviction discards information, while semantic grouping fixes compression decisions at prefill time; neither can r",
+      "provider": "arxiv",
+      "published": "2026-06-30",
+      "id": "9f6c54ac27",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "long context versus retrieval memory LLM"
+      ],
+      "relevance": {
+        "q4": 0.5627
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.27090",
+      "title": "InferScale: GPU-Native KV Injection for Personalized LLM Serving",
+      "snippet": "Large language models are increasingly deployed with persistent personalized context, such as accumulated memory profiles or long conversation histories, that is shared across a user's many requests. Production memory systems (e.g., Mem0, MemGPT, and Zep) retrieve a relevant subset of this memory and inject it into the prompt, forcing the serving engine to repeatedly prefill the same content. As the retrieval budget grows, time-to-first-token (TTFT) increases even though the underlying memory is",
+      "provider": "arxiv",
+      "published": "2026-07-29",
+      "id": "d7e16a2a4a",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "long context versus retrieval memory LLM"
+      ],
+      "relevance": {
+        "q4": 0.3274
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.24786",
+      "title": "CONF-KV: Confidence-Aware KV Cache Eviction with Mixed-Precision Storage for Long-Horizon LLM",
+      "snippet": "Long-horizon LLM inference turns the key--value (KV) cache into the dominant GPU memory consumer and makes per-token attention increasingly expensive. Many common eviction policies use static recency windows or historical attention, leaving unused a signal computed on every decoding step: the model's current uncertainty. We introduce CONF-KV, a KV-cache manager that converts the next-token distribution into a scalar confidence score and uses it to choose the per-step cache budget, retaining more",
+      "provider": "arxiv",
+      "published": "2026-05-24",
+      "id": "0205e36397",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "long context versus retrieval memory LLM"
+      ],
+      "relevance": {
+        "q4": 0.3477
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.12945",
+      "title": "Learning What to Remember: A Cognitively Grounded Multi-Factor Value Model for Agentic Memory",
+      "snippet": "Long-running LLM agents accumulate interaction histories far larger than any context window, forcing a standing decision: what to encode deeply, what to forget, and what to retrieve under a fixed memory budget. Production systems answer with semantic similarity or recency -- both mis-specified for the forgetting decision, which is made at consolidation time before the future query is known. We propose a multi-factor memory value function V(m)=\\sum_i w_i f_i(m) over seven interpretable factors (e",
+      "provider": "arxiv",
+      "published": "2026-06-11",
+      "id": "ece0b8a09d",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "long context versus retrieval memory LLM"
+      ],
+      "relevance": {
+        "q4": 0.399
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.07978",
+      "title": "Cost and Accuracy of Long-Term Memory in Distributed Multi-Agent Systems Based on Large Language Models",
+      "snippet": "Long-term memory (LTM) is fundamental to large language model (LLM)-based agents in the emerging Internet of Agents (IoA), where distributed multi-agent systems (DMAS) span cloud and edge networks. Existing evaluations are typically published by framework providers and focus on token usage and latency, rarely accounting for system-level cost or deployment in DMAS. These gaps are addressed with an independent reproducible testbed that evaluates accuracy, latency, CPU time, peak RAM, disk I/O and ",
+      "provider": "arxiv",
+      "published": "2026-01-12",
+      "id": "a691b63e5d",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "memory latency token cost agents"
+      ],
+      "relevance": {
+        "q4": 0.634
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.11680",
+      "title": "Organize then Retrieve: Hierarchical Memory Navigation for Efficient Agents",
+      "snippet": "Large language model (LLM) agents struggle with long-horizon tasks due to their inherent statelessness, requiring all task-relevant information to be encoded in growing input contexts. The resulting degraded reasoning quality, increased inference cost, and higher latency necessitate efficient working memory mechanisms. However, existing approaches either rely on lossy compression or similarity-based retrieval, which often fail to capture temporal structure and causal dependencies required for mu",
+      "provider": "arxiv",
+      "published": "2026-06-10",
+      "id": "f7097b410c",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "memory latency token cost agents"
+      ],
+      "relevance": {
+        "q4": 0.353
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.21503",
+      "title": "Agentic Context Management: Solving Agent Memory and Cost by Treating Them as Lifecycle and Architecture Problems",
+      "snippet": "Production AI agents' failures are less often due to an inability to reason well and more often because they cannot manage what is in their reasoning context: conversation histories, large prompts, large tool definitions, and ballooning tool outputs. Agents drown in their own accumulating history while paying a token cost that grows every turn, producing missing recalls within and across conversations. The incumbent response treats this as a storage-and-retrieval problem. We argue that framing i",
+      "provider": "arxiv",
+      "published": "2026-07-23",
+      "id": "489929a147",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "memory latency token cost agents"
+      ],
+      "relevance": {
+        "q4": 0.356
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.21604",
+      "title": "AgentKVShift: Efficient KV Cache Reuse for Agentic Memory Systems",
+      "snippet": "Memory-augmented LLM agents maintain context across hundreds of interactions through agentic memory systems that actively curate retrieved content with LLM-generated metadata such as summaries, keywords, and tags. From an inference cost standpoint, every retrieval triggers a full re-encoding of these structured memory units into Key-Value (KV) states, which dominates prefill latency. Existing training-free KV reuse methods mitigate this by selectively recomputing a small fraction of tokens, but ",
+      "provider": "arxiv",
+      "published": "2026-05-15",
+      "id": "a626bb3235",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "memory latency token cost agents"
+      ],
+      "relevance": {
+        "q4": 0.6182
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.24322",
+      "title": "Securing LLM-Agent Long-Term Memory Against Poisoning: Non-Malleable, Origin-Bound Authority with Machine-Checked Guarantees",
+      "snippet": "LLM agents increasingly rely on persistent long-term memory, which creates a critical vulnerability that we study here: memory poisoning. An adversary can store untrusted content in one session that later steers a consequential action, such as a payment, a setting change, or data exfiltration, in a future session. Existing defenses base a memory item's authority to act on either its content (detection or trust-scoring) or its derivation history (lineage). We show that both signals are malleable.",
+      "provider": "arxiv",
+      "published": "2026-06-23",
+      "id": "75e1c4aa31",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "agent memory poisoning attack"
+      ],
+      "relevance": {
+        "q5": 0.9565
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.09033",
+      "title": "ShadowMerge: A Novel Poisoning Attack on Graph-Based Agent Memory via Relation-Channel Conflicts",
+      "snippet": "Graph-based agent memory is increasingly used in LLM agents to support structured long-term recall and multi-hop reasoning, but it also creates a new poisoning surface: an attacker can inject a crafted relation into graph memory so that it is later retrieved and influences agent behavior. Existing agent-memory poisoning attacks mainly target flat textual records and are ineffective in graph-based memory because malicious relations often fail to be extracted, merged into the target anchor neighbo",
+      "provider": "arxiv",
+      "published": "2026-05-09",
+      "id": "e1bd186d8c",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "agent memory poisoning attack"
+      ],
+      "relevance": {
+        "q5": 0.87
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.02623",
+      "title": "Poison Once, Exploit Forever: Environment-Injected Memory Poisoning Attacks on Web Agents",
+      "snippet": "Memory makes LLM-based web agents personalized, powerful, yet exploitable. By storing past interactions to personalize future tasks, agents inadvertently create a persistent attack surface that spans websites and sessions. While existing security research on memory assumes attackers can directly inject into memory storage or exploit shared memory across users, we present a more realistic threat model: contamination through environmental observation alone. We introduce Environment-injected Trajec",
+      "provider": "arxiv",
+      "published": "2026-04-03",
+      "id": "d355951dc0",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "agent memory poisoning attack"
+      ],
+      "relevance": {
+        "q5": 0.7719
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.05504",
+      "title": "Memory Poisoning Attack and Defense on Memory Based LLM-Agents",
+      "snippet": "Large language model agents equipped with persistent memory are vulnerable to memory poisoning attacks, where adversaries inject malicious instructions through query only interactions that corrupt the agents long term memory and influence future responses. Recent work demonstrated that the MINJA (Memory Injection Attack) achieves over 95 % injection success rate and 70 % attack success rate under idealized conditions. However, the robustness of these attacks in realistic deployments and effectiv",
+      "provider": "arxiv",
+      "published": "2026-01-09",
+      "id": "38248152e9",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "agent memory poisoning attack"
+      ],
+      "relevance": {
+        "q5": 0.9163
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.13889",
+      "title": "When Malicious Instructions Persist: Persistent Memory Poisoning Attack on Harness-Based Agents",
+      "snippet": "Harness design has transformed the development of LLM-based agents by integrating memory, tool use, and runtime control. However, this design also introduces security and privacy risks because malicious instructions from external sources may be written into persistent memory and persist across sessions. To study this risk, we propose PMPA, a Persistent Memory Poisoning Attack against harness-based agents. PMPA embeds malicious instructions into benign external sources and induces the victim agen",
+      "provider": "arxiv",
+      "published": "2026-09-12",
+      "id": "4ab7fdc820",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "agent memory poisoning attack"
+      ],
+      "relevance": {
+        "q5": 0.8846
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.06595",
+      "title": "When Agents Remember Too Much: Memory Poisoning Attacks on Large Language Model Agents",
+      "snippet": "Personal AI agents powered by large language models can reason and act using available tools to access emails, manage calendars, and push code to remote repositories, all with minimal oversight. When augmented with long-term memory, an agent can recall specific details relevant to the current task, reducing the need for large context windows. Currently, long-term memory agents tend to fall into two distinct domains: conversational and action-planning agents. Personal assistant agents sit at the ",
+      "provider": "arxiv",
+      "published": "2026-07-06",
+      "id": "c31c201049",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "agent memory poisoning attack"
+      ],
+      "relevance": {
+        "q5": 0.6232
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.24535",
+      "title": "Governed Shared Memory for Multi-Agent LLM Systems",
+      "snippet": "Multi-agent LLM environments require robust mechanisms for shared knowledge management. This paper formalizes the fleet-memory problem and identifies four foundational failure modes: unauthorized leakage, stale propagation, contradiction persistence, and provenance collapse. To address these, we define explicit systems-level primitives: scoped retrieval, temporal supersession, provenance tracking, and policy-governed memory propagation. These primitives are implemented in MemClaw, a production m",
+      "provider": "arxiv",
+      "published": "2026-06-23",
+      "id": "d582f3e4e4",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "agent memory production problems"
+      ],
+      "relevance": {
+        "q5": 0.9737
+      }
+    }
+  ]
+}

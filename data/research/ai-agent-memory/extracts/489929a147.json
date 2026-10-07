@@ -1,0 +1,60 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-23",
+  "author_or_org": "Gaurav Dadhich",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Production AI agent failures are more often caused by an inability to manage reasoning context, such as conversation histories, prompts, tool definitions, and tool outputs, than by poor reasoning; agents accumulate history and incur growing token costs, producing missing recalls within and across conversations.",
+      "quote": "Production AI agents' failures are less often due to an inability to reason well and more often because they cannot manage what is in their reasoning context: conversation histories, large prompts, large tool definitions, and ballooning tool outputs. Agents drown in their own accumulating history while paying a token cost that grows every turn, producing missing recalls within and across conversations.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper argues agent memory should be treated as a lifecycle rather than merely a store, spanning remembering, extraction and structuring, choosing per-data-type stores, consolidation and forgetting with provenance, relevance, anticipation, and budgeted compaction.",
+      "quote": "Actively managing what an agent holds in mind is a lifecycle, not merely a store: it spans deciding what to remember, extracting and structuring it, choosing the right store per data type, consolidating and forgetting while preserving provenance, deciding what is relevant now, anticipating what is needed next, and compacting context to a budget without losing what matters.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "In production, agent context management must operate across an organizational scope hierarchy rather than for only a single user.",
+      "quote": "In serious production this operates not over a single user but across an organizational scope hierarchy.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper names the discipline Agentic Context Management (ACM) and decomposes it into five primitives: architecting, ingesting, scoping, anticipating, and compacting and consolidation.",
+      "quote": "We name this discipline Agentic Context Management (ACM) and decompose it into five primitives: architecting, ingesting, scoping, anticipating, and compacting &consolidation.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The paper makes an economic case that naive context accumulation grows token cost quadratically with conversation length, crude summarization makes cost linear but causes an accuracy cliff, and only validated compaction achieves linear cost while preserving fidelity.",
+      "quote": "We then make the economic case: naive context accumulation grows token cost quadratically in conversation length, crude summarization buys linear cost at the price of an accuracy cliff, and only validated compaction achieves linear cost with preserved fidelity.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper describes a reference implementation, Maximem Synap, that realizes the five primitives as a multi-tenant service and reports 92% on LongMemEval and 93.2% on LoCoMo under the configuration detailed in Section 6.",
+      "quote": "We describe a reference implementation, Maximem Synap, that realizes the five primitives as a multi-tenant service and reports 92% on LongMemEval and 93.2% on LoCoMo under the configuration detailed in Section 6.",
+      "numbers": [
+        "five",
+        "92%",
+        "93.2%",
+        "6"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper states that existing benchmarks do not yet capture latency, token efficiency, and context-rot resistance, and points toward decision-level and organization-level context.",
+      "quote": "We close with dimensions existing benchmarks do not yet capture, latency, token efficiency, and context-rot resistance, and the frontier of decision-level and organization-level context the category points toward.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.21503"
+}

@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Yuanyuan Xu, Wenjie Zhang, Yin Chen, Xuemin Lin, Ying Zhang",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The survey proposes modeling an LLM agent's state as a dynamic graph, with memories among other components represented as typed nodes, edges, and subgraphs updated via schema-constrained rewrites.",
+      "quote": "We model agent state as a dynamic graph, where memories, tools, skills, workflows, and inter-agent relations are represented as typed nodes, edges, and subgraphs updated through schema-constrained rewrites.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The survey organizes dynamic-graph-based methods for self-evolving agents into four taxonomies: node/feature evolution, edge/topology evolution, subgraph activation, and cross-component co-evolution.",
+      "quote": "Based on this formulation, we organize existing dynamic-graph-based methods for self-evolving agents into four taxonomies: node/feature evolution, edge/topology evolution, subgraph activation, and cross-component co-evolution.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The survey says it maps nine dynamic-graph-learning subfields to agent-evolution capabilities, including adaptations and possible failure modes.",
+      "quote": "Building on this taxonomy, we propose dynamic graph learning as reusable infrastructure for self-evolving agents and map nine dynamic-graph-learning subfields to agent-evolution capabilities, discussing their adaptations and possible failure modes.",
+      "numbers": [
+        "nine"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The survey discusses five types of graph-aware evaluation and governance protocols from a dynamic-graph perspective, complementing end-task evaluation.",
+      "quote": "Finally, we discuss five types of graph-aware evaluation and governance protocols from a dynamic-graph perspective, which complement end-task evaluation.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The survey argues that existing graph-agent surveys treat graphs as support structures for agent functions rather than evolving substrates.",
+      "quote": "Existing graph-agent surveys typically treat graphs as support structures for agent functions rather than as evolving substrates, while self-evolving-agent surveys focus on agent-level mechanisms and rarely discuss graph topology evolution.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The survey states that the coupling between evolving agent state and dynamic graph topology remains underexplored.",
+      "quote": "Thus, the coupling between evolving agent state and dynamic graph topology remains underexplored.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The survey describes LLM-based agents as self-evolving systems that persist across interactions and maintain memories, tools, skills, workflows, and inter-agent coordination.",
+      "quote": "Large language model (LLM)-based agents are increasingly becoming self-evolving systems that persist across interactions, maintain memories, use tools, acquire skills, refine workflows, and coordinate with other agents.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.18104"
+}

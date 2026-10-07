@@ -1,0 +1,67 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-29",
+  "author_or_org": "Peter Li, Prashant Pandey",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "LLMs are deployed with persistent personalized context such as accumulated memory profiles or long conversation histories that are shared across a user's requests.",
+      "quote": "Large language models are increasingly deployed with persistent personalized context, such as accumulated memory profiles or long conversation histories, that is shared across a user's many requests.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Production memory systems including Mem0, MemGPT, and Zep retrieve a relevant subset of memory and inject it into the prompt, causing repeated prefilling of the same content.",
+      "quote": "Production memory systems (e.g., Mem0, MemGPT, and Zep) retrieve a relevant subset of this memory and inject it into the prompt, forcing the serving engine to repeatedly prefill the same content.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "As the retrieval budget grows, time-to-first-token increases even though the underlying memory is reused across requests.",
+      "quote": "As the retrieval budget grows, time-to-first-token (TTFT) increases even though the underlying memory is reused across requests.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "InferScale precomputes each memory fact's KV representation, stores it with a semantic embedding on the GPU, retrieves relevant facts at serving time, and injects their KV directly into vLLM's paged cache.",
+      "quote": "InferScale precomputes each memory fact's KV representation, stores it alongside a semantic embedding on the GPU, retrieves relevant facts at serving time, and injects their KV directly into vLLM's paged cache.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Chunked RoPE stores keys before rotation and applies their serving-time positions during injection to support dynamically assembled memories under rotary position embeddings.",
+      "quote": "To support dynamically assembled memories under rotary position embeddings, we introduce Chunked RoPE, which stores keys before rotation and applies their serving-time positions during injection.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Context-Window Encoding encodes each memory fact with a small window of preceding conversation context while caching only the target fact's KV.",
+      "quote": "We mitigate this with Context-Window Encoding, which encodes each memory fact together with a small window of preceding conversation context while caching only the target fact's KV.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Across three open-weight models on LoCoMo, at k=50 InferScale reduces TTFT by 72-79% (3.6-4.8x), achieves 60.3% accuracy versus 63.3% for Mem0 without serving-time recomputation, and delivers 3.7-4.5x throughput under concurrent load.",
+      "quote": "Across three open-weight models on LoCoMo, InferScale keeps TTFT nearly constant as the retrieval budget increases: at k=50 it reduces TTFT by 72-79% (3.6-4.8x), achieves 60.3% accuracy versus 63.3% for Mem0 without serving-time recomputation, and delivers 3.7-4.5x the throughput under concurrent load.",
+      "numbers": [
+        "three",
+        "k=50",
+        "72-79%",
+        "3.6-4.8x",
+        "60.3%",
+        "63.3%",
+        "3.7-4.5x"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Reusable KV state decouples memory-conditioned serving latency from retrieved-context size while preserving application quality.",
+      "quote": "Reusable KV state thus decouples memory-conditioned serving latency from retrieved-context size while preserving application quality.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.27090"
+}
