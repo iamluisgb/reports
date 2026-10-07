@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Reflection ships Beam, a 501B open-weight model](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-06.md) — 2026-10-06 · 9 min
+- [Mistral ships Large 4](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-07.md) — 2026-10-07 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### October 2026
 
+- [Mistral ships Large 4](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-07.md) — 2026-10-07 · 9 min
 - [Reflection ships Beam, a 501B open-weight model](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-06.md) — 2026-10-06 · 9 min
 - [Qwen's 125B runs on a single 4090](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-05.md) — 2026-10-05 · 9 min
 - [Aleph Alpha ships Kolibri, a sovereign open-weight model](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-04.md) — 2026-10-04 · 8 min

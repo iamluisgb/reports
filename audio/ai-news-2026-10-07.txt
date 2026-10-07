@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Wednesday the seventh of October, twenty twenty-six. Lead story: Mistral ships Large 4, the flagship refresh topping the front page at one thousand seven hundred and twenty points with over a thousand comments. Details beyond the launch itself remain thin.
+
+[HOST_B] The score tells you attention, not capability. Until benchmarks land, treat it as a pricing and positioning event — Mistral defending flagship territory. Watch the eval numbers, not the thread size.
+
+[HOST_A] OpenAI opened its Decisions A P I in public beta, rank three with one hundred and twelve comments. Hours later, the Strands agents team released Decider 2B — a two-billion-parameter open model built specifically for decision-making, already at rank two.
+
+[HOST_B] Two decision products in one day — decision-making is becoming a product category. But today's Confidence Reasoning Graphs paper exists because calibrated confidence over an agent's output is unsolved, and it works at inference time precisely because frontier providers don't expose internals. If you build on these A P Is, interrogate the confidence number attached to each decision first. Comparative benchmarks land within days; the beta thread is where testable cost and accuracy claims will surface.
+
+[HOST_A] Security: hackers obtained counterfeit T L S certificates for Google and other large services. Forged certificates for major domains are the exact failure mode certificate transparency exists to catch.
+
+[HOST_B] Check your C T log monitoring today. Revocation and browser trust-store decisions are pending; confirmation comes from monitoring alerts or a vendor advisory naming the misissuing authority. Until then, assume certificate pinning matters again.
+
+[HOST_A] Papers. The quiet null result: persistent memory in multi-agent inference. Decomposing context across agents cuts peak K V working set to fourteen point three mebibytes per query, against roughly thirty-five point five for single-pass and R A G baselines. The persistent memory tier itself adds a third of a mebibyte of cache and no detectable accuracy change — the confidence interval spans zero.
+
+[HOST_B] The structural critique matters more than the number. Single-question benchmarks reset stored traces between items, so the memory has nothing to carry — the null is baked into the harness. Check your own benchmark against this failure mode before trusting any ablation.
+
+[HOST_A] More papers, quickly. Agent in a Bottle asks whether models can distil themselves into cheaper artefacts — across ten models and three tasks, forty-eight of sixty runs score below the lower bound. ParanoiaEval measures whether coding-agent caution tracks actual risk, via two hundred evidence-controlled repository task pairs. Transect tackles observability for long-horizon agent runs, pinning context so interpretations stay checkable against transcripts. VisualNoiseQA forces a text-only model to interrogate a noisy visual sensor. And Dust claims transformer pretraining without backpropagation — two hundred and seventy-six points, with the scepticism waiting on replication.
+
+[HOST_B] The through-line — alongside the Claude Code critique, which argues its suggested messages optimise prompts for the model, not the human — is that verification and observability, not capability, are the binding constraints. Bottling shows frontier models can't reliably cheapen themselves; ParanoiaEval shows caution doesn't track risk; Transect shows evaluators losing the ability to audit long runs at all. Spend on judges and evidence-controlled evaluation before the next model bump.
+
+[HOST_A] Infra. Polars 2.0 lands at four hundred and thirty-one points — review the breaking changes before bumping the pin. Gleam no longer compiles to E R L A N G source; check the notes if you ship on the B E A M. Minigraf is an embedded bi-temporal graph database in Rust — thirty-one comments on forty points suggests real scrutiny. Plus a fifty-four-capability comparison of open-source semantic layers, and a Jev-driven S R E diagnosis post-mortem, honest about its failures.
+
+[HOST_B] Two quieter items deserve mention. A long-standing ServerFault contributor is walking away — part of the ongoing erosion of the community question-and-answer layer much ops knowledge rests on. And OpenAI's mathematics write-up took rank one at seven hundred and sixty-nine points; read it beside the decision-model news, since maths performance is the cleanest proxy people reach for.
+
+[HOST_A] Hacker News sweep. AnyPS5 maps eighty-seven percent of the PS5's system libraries, running titles natively on P C without emulation. The physics Nobel goes to Francis Halzen for IceCube, the neutrino observatory buried under a cubic kilometre of Antarctic ice. Example dot com launched its biggest redesign in decades. And a developer reports GitHub refusing, for four weeks, to remove cracked copies of his software.
+
+[HOST_B] The D M C A stalemate is the one to watch — whether GitHub acts or the developer escalates, either outcome is a data point on how enforcement actually works. That's the briefing. The full written report, with every link and paper, is at the usual place — read it before you pin anything today.
