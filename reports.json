@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T16:07:18+00:00",
+  "generated": "2026-10-07T16:08:46+00:00",
   "count": 163,
   "reports": [
     {
@@ -730,7 +730,6 @@
       "readingTime": 3,
       "tags": [
         "models",
-        "research",
         "open-source"
       ],
       "audio": true
@@ -933,7 +932,6 @@
       "summary": "LLMs reward expertise · Qwen3.8-Max: a new bar for coding · SQLite CVEs or LLM slop? · Databricks completes Panther acquisition",
       "readingTime": 3,
       "tags": [
-        "models",
         "security",
         "multimodal",
         "coding"
@@ -1308,8 +1306,7 @@
       "readingTime": 4,
       "tags": [
         "agents",
-        "models",
-        "research"
+        "models"
       ]
     },
     {
@@ -1550,15 +1547,15 @@
     {
       "file": "agents-running-businesses-2026-06-27.html",
       "type": "special",
-      "title": "Agents That Run Businesses: The New Autonomous Executive",
+      "title": "Can Agents Run a Business? What the Evidence Shows",
       "date": "2026-06-27",
-      "summary": "Full landscape · 40+ companies · Technical architecture · Real economics · Anti-patterns · Where it's heading",
-      "readingTime": 15,
+      "summary": "Agents given a business to run · Results in support and operations · How business agents are built · Reliability over long horizons · Why projects fail",
+      "readingTime": 10,
       "tags": [
         "agents",
-        "funding"
+        "research"
       ],
-      "series": "Agents & Multi-Agent"
+      "series": "Deep Dives"
     },
     {
       "file": "ai-news-2026-06-26.html",
@@ -1684,7 +1681,6 @@
       "readingTime": 5,
       "tags": [
         "models",
-        "research",
         "infrastructure"
       ]
     },
@@ -1875,8 +1871,7 @@
       "summary": "Anthropic IPO · Gemini Spark · Trump AI Order · Agent Security Papers",
       "readingTime": 5,
       "tags": [
-        "agents",
-        "research"
+        "agents"
       ]
     },
     {

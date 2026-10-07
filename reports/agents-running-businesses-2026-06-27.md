@@ -1,376 +1,153 @@
 ---
-title: "Agents That Run Businesses: The New Autonomous Executive"
+title: "Can Agents Run a Business? What the Evidence Shows"
 date: 2026-06-27
 type: special
 url: https://luisgonzalezbernal.com/reports/reports/agents-running-businesses-2026-06-27.html
-summary: "Full landscape · 40+ companies · Technical architecture · Real economics · Anti-patterns · Where it's heading"
-tags: [agents, funding]
-reading_time_minutes: 15
+summary: "Agents given a business to run · Results in support and operations · How business agents are built · Reliability over long horizons · Why projects fail"
+tags: [agents, research]
+reading_time_minutes: 10
 ---
 Autonomous Business Agents · Special Report
 
-# *Agents* That Run Businesses: The New Autonomous Executive
+# Can Agents Run a *Business*? What the Evidence Shows
 
-27 Jun 2026
+27 Jun 2026 · Updated 7 Oct 2026
 
-Full landscape · 40+ companies · Technical architecture · Real economics · Anti-patterns · Where it's heading
+Agents given a business to run · Results in support and operations · How business agents are built · Reliability over long horizons · Why projects fail
 
-## Executive Summary
+## Key findings
 
-We're at the inflection point where AI agents move from **copilots that assist** to **autonomous executives that decide**. This report maps the full ecosystem: more than 40 companies building agents that don't just answer questions — they run complete business workflows, make financial decisions and operate 24/7 without direct supervision.
-
-The data point that changes everything: **Klarna replaced 700 support agents with a single AI agent**, saving $40M a year. The cost of running an agent 24/7 on GPT-4o is around **$30-$300/month** vs. $35K-$120K a year for an equivalent human. The economic gap is 10-100x.
-
-But the real story isn't "agents replace humans" — it's **"agents amplify one person's ability to run multiple business lines simultaneously"**. The new pattern isn't substitution; it's leverage multiplication.
+1. **Given a whole business, agents mostly lose money.** In a simulated market of eight companies over 500 days, most LLM CEO agents had negative mean returns.[11] In a marketplace benchmark, even the best of 15 models fell behind human-designed strategies.[12]
+2. **Narrow support work already pays.** At Nubank, A/B tests of a card-delivery agent showed a 37-point gain in transactional NPS and a 29-point gain in self-service.[5] On most use cases, AI satisfaction came within a few points of expert human agents.[5]
+3. **Building a business agent is still hard for agents.** Asked to deliver a customer-service agent for a client, the best configuration passed 23.9% of simulations.[14] An expert reference reached 82.2%.[14]
+4. **Long horizons break agents.** On long terminal tasks, the best of 15 models passed 15.2%, and the mean was 4.3%.[23] Frontier models had the highest meltdown rates, up to 19%.[6]
+5. **Leaderboards measure the wrong thing.** Across three enterprise benchmarks, the agent explained less than 3% of the variance in results; the agent-task fit explained 7-23%.[27]
+6. **Many projects will be cancelled.** Gartner predicts that over 40% of agentic AI projects will be cancelled by the end of 2027.[34] The reasons are cost, unclear value and weak risk controls.[34]
 
 ## Part I
 
-## The Map — Who's Building What
+## What happens when an agent runs a business
 
-### 1.1 Ecosystem Landscape
+Researchers now give agents whole businesses in simulation. The results are poor and highly variable.
 
-The business-agent market has fractured into 9 categories, each with an emerging leader and a distinct architecture. Classifying by **level of autonomy** is more revealing than classifying by industry:
+Vending-Bench asks an agent to run a vending machine: stock, orders, prices and daily fees, over more than 20M tokens per run.[22] Claude 3.5 Sonnet and o3-mini made a profit in most runs.[22] But every model had runs that derailed. Agents misread delivery schedules, forgot orders or fell into "meltdown" loops.[22] The failures did not correlate with a full context window.[22]
 
-| Category | Leaders | Autonomy Level | Typical Stack |
-| --- | --- | --- | --- |
-| **Code** | Devin, Factory, Cursor | High (bugs → PR) | LLM + sandbox + git |
-| **Sales / SDR** | 11x.ai, Artisan, Regie.ai | High (prospecting → qualifying) | LLM + CRM + email |
-| **Customer support** | Sierra, Decagon, Cognigy | High (autonomous resolution) | LLM + knowledge base + ticketing |
-| **Voice / Phone** | Bland AI, Vapi, Retell | Medium-High (full calls) | STT + LLM + TTS + telephony |
-| **Legal** | Harvey, Casetext (Thomson Reuters) | Medium (drafting + review) | LLM + document store + citation |
-| **Healthcare** | Abridge, Ambience, Nabla | Medium (clinical documentation) | LLM + EHR integration |
-| **Browser / Computer Use** | OpenAI Operator, Claude Computer Use, Mariner | High (navigates any software) | VLM + browser automation |
-| **Orchestration** | LangGraph, CrewAI, AutoGen, Hermes | Framework (the agent defines) | Multi-agent orchestration |
-| **Chinese** | Manus, Kimi, Qwen Agent | High (complex multi-step) | Long-context + tool use |
+Harder tests give worse results. Business Arena runs a cross-border shop on real alibaba.com sourcing data.[12] Across 15 frontier models, final net worth varied ninefold.[12] In CEO Arena, eight LLM CEOs competed in a shared market for 500 simulated days. Most had negative mean returns, and private gains could come with market losses.[11] In EcoGym, no single model led in all three economies.[26]
 
-### 1.2 The Big Players
+Office work shows the same split. In TheAgentCompany, a simulated software company, the best agent completed 30% of tasks on its own.[29] Many simple tasks were solved; difficult long-horizon tasks were not.[29]
 
-**Devin (Cognition AI)** — The "autonomous software engineer." Raised $175M+, ~$2B valuation. It can plan, code, debug and deploy end-to-end. The key point: it's not an IDE with assistance — it's a teammate that executes whole tickets.
+Simulated economies of agents also behave oddly. In a town of 100 agents, a 12x demand shock raised business revenue 4.62x.[16] Wages barely moved, and only 0.3% of 3,981 menu items were ever repriced.[16] Swapping the LLM changed every outcome; deleting the agents' memory changed none detectably.[16]
 
-**Sierra AI** — Founded by Bret Taylor (former Salesforce CEO) and Clay Bavor (former Google VP). Raised $175M at a $4.5B valuation. Customers include Adidas and WeightWatchers. Differentiator: agents that handle complex conversations about subscriptions, health data and billing without escalating to humans.
+*[Evidence by level of autonomy: narrow support pays, workflows with human gates work in pilots, whole businesses fail in simulation]*
 
-**11x.ai** — Alice & Jordan: autonomous SDR agents that prospect, send personalized emails and qualify leads. Raised $50M+. Claimed unicorn status with $1M ARR in weeks. The "AI employee" model charges per outcome, not per seat.
-
-**Factory AI** — "Droids" for large codebases: migrations, refactors, reviews. Raised an $80M Series A. The angle: not for individual developers — it's for engineering teams that need to run repetitive tasks at scale.
-
-**Harvey AI** — AI for legal: research, drafting, analysis. Raised $200M+ at a $2B+ valuation. Adopted by major law firms. The point: it doesn't replace lawyers — it accelerates due diligence from weeks to hours.
-
-**Manus (Monica AI)** — China's "first general AI agent." Launched March 2025 with a viral moment. Complex multi-step with autonomous execution. The signal: China is competing in the same space with comparable capabilities.
-
-### 1.3 The Money
-
-The flow of capital into agents is unprecedented. In 2024-2025 alone, the $100M+ rounds in the space:
-
-| Company | Round | Amount | Valuation |
-| --- | --- | --- | --- |
-| Ambience Healthcare | Series C | $270M | $2.75B |
-| Augment Code | Series B | $252M | $977M+ |
-| Abridge | Series D | $250M | $2.75B |
-| EvenUp | Series D | $235M | $1.35B |
-| Sierra AI | Series B | $175M | $4.5B |
-| Cognition (Devin) | Series B | $175M | ~$2B |
-| Poolside AI | Series A | $126M | $3B |
-| Harvey AI | Series C | $100M+ | $2B+ |
-| Decagon | Series B | $100M+ | $1B+ |
-
-$100M+ funding rounds in autonomous agents (2024–2025) · Source: Crunchbase, public filings
-
-> *📌 Signal:* Sierra's valuation ($4.5B) and Poolside's ($3B at Series A) show the market is pricing in the expectation that **support and code agents will become $10B+ categories**. The overvaluation risk is real, but the direction of capital is unambiguous.
-
-### 1.4 Documented Real-World Cases
-
-**Klarna + OpenAI:** In 2024, its AI assistant handled 2/3 of customer support chats — equivalent to 700 human agents. Average resolution time: from 11 to 2 minutes. Estimated savings: **$40M/year**.
-
-**Intercom Fin:** Resolves 50-70% of support tickets without human escalation. Customers like Amazon and Atlassian report a dramatic reduction in operating costs.
-
-**11x.ai customers:** Multiple companies replaced entire SDR teams with Alice (AI SDR) — generating personalized emails, follow-ups and lead qualification autonomously.
-
-**Bland AI enterprise:** Phone agents handling thousands of calls a day: appointment scheduling, lead qualification, customer support. Enterprise-grade, not a demo.
-
-**Cursor / GitHub Copilot:** Reports of 40-60% individual productivity gains. Meta reported $16M in annual savings per 1,000 developers.
+*What the evidence shows at each level of autonomy. Sources 5, 19, 31, 15, 11 and 12.*
 
 ## Part II
 
-## Technical Architecture — How They're Built
+## Results in support and operations
 
-### 2.1 Orchestration Patterns
+The strongest results come from narrow deployments with measurement built in.
 
-The architectural choice defines everything: latency, cost, scalability, and how autonomous the agent can be. There are 4 dominant patterns:
+| Deployment | Measured result |
+| --- | --- |
+| Nubank, five support use cases | +37 points transactional NPS and +29 points self-service in card delivery[5] |
+| OlaMind, customer service | +23.67% issue resolution and -6.6% human transfers in online A/B tests[19] |
+| Global bank, three workflows | 88% citation precision and 1.6% hallucination in credit memos; analyst effort from 27.4 to 2.9 hours per document[31] |
+| Vigil, ByteDance cloud on-call support | Deployed for over ten months alongside human analysts[20] |
 
-| Pattern | Framework | When to Use It | Complexity |
-| --- | --- | --- | --- |
-| **Sequential Pipeline** | LangGraph | Linear workflows with conditional logic | Low-Medium |
-| **Role-Based Teams** | CrewAI | Tasks that need multiple expert perspectives | Medium |
-| **Multi-Agent Conversation** | AutoGen | Decisions that need debate/consensus | High |
-| **Lightweight Handoff** | Swarm, Hermes | Support routing, simple tasks | Low |
-
-**LangGraph** is the de facto standard for agents in production. State graphs with checkpointing, persistence and conditional routing. Its advantage: execution is **deterministic and auditable** — every state transition is an explicit line of code.
-
-**CrewAI** shines when you need "a team of agents" working in parallel: a researcher, a writer, an analyst. The "role" abstraction keeps the code readable, but debugging in production is harder than LangGraph.
-
-**AutoGen (Microsoft)** is for cases where **debate between agents** produces better results: investment analysis, code review, design decisions. The "GroupChat" pattern, where multiple agents argue before deciding, is unique.
-
-### 2.2 Memory — The Real Bottleneck
-
-Memory is where most production agents fail. An agent without persistent memory is an employee who forgets everything every time they close their eyes.
-
-| Layer | Duration | Example | Technology |
-| --- | --- | --- | --- |
-| **Working Memory** | Current interaction | Conversation context | Context window |
-| **Short-Term** | Session | Recent history, tool outputs | Redis / session state |
-| **Long-Term** | Permanent | Preferences, past interactions | PostgreSQL |
-| **Semantic** | Permanent | Knowledge base, RAG retrieval | Vector DB (Pinecone, pgvector) |
-
-The 2026 standard is **Vector + Graph**: embeddings for semantic retrieval + a knowledge graph for temporal relationships. Zep/Graphiti opened up the "temporal knowledge graph" pattern — edges with validity windows that know when a fact expired.
-
-### 2.3 Tool Use & MCP
-
-Anthropic's **Model Context Protocol (MCP)** is consolidating as the "USB-C for agents" — a standardized protocol for how agents connect to external tools. JSON-RPC 2.0 over stdio/HTTP. It's already adopted by Cursor, Windsurf, Claude Desktop and multiple frameworks.
-
-The production tool-use architecture:
-
-- **Tool Router** — authentication, rate limiting, error handling, caching
-- **Auth Manager** — fresh tokens, automatic refresh, multi-tenant
-- **Circuit Breaker** — cuts off calls when an API fails consistently
-- **Cost Tracker** — budget per task, daily limits, alerts
-
-### 2.4 Computer Use — The Game Changer
-
-OpenAI Operator, Claude Computer Use and Google Mariner represent a new category: **agents that use any software like a human**. Screenshots → visual reasoning → clicks/keyboard. This unlocks:
-
-- Legacy systems without an API (old ERPs, internal portals)
-- Any web application without native integration
-- Flows that mix multiple tools without connectors
-
-> *⚠️ Warning:* Computer Use is powerful but fragile. 20-30% of clicks fail due to UI changes, CAPTCHAs or rendering issues. In production, combining Computer Use with native APIs when they exist is the right strategy.
-
-### 2.5 Guardrails — What Separates a Demo From Production
-
-The autonomy spectrum runs from "human does everything" to "fully autonomous agent." In practice, the winning pattern is **risk-based routing**:
-
-| Risk Level | Example | Action |
-| --- | --- | --- |
-| **Low** | Answer FAQ, format data | Autonomous execution |
-| **Medium** | Send email, create invoice | Auto + notification |
-| **High** | Payment >$1K, delete data | Mandatory human approval |
-| **Critical** | Bank transfer, legal decision | Escalate to human |
-
-Guardrails aren't optional — they're the reason an agent works in production without anyone losing the house.
+The Nubank team draws one lesson above the rest: the quality of the evaluation pipeline sets the speed of iteration.[5] Its offline simulation metrics correlated with online outcomes.[5] Vigil takes a different role. It assists after a human has taken over, and it learns from cases that humans resolve.[20]
 
 ## Part III
 
-## Economics — When It Pays Off and When It Doesn't
+## How business agents are built
 
-### 3.1 The Real Cost of a 24/7 Agent
+The designs that work keep the agent inside explicit limits. One rule appears in practice: the LLM decides what should happen, and deterministic code decides what is allowed.[36]
 
-| Agent Type | Tokens/day | API cost/month | Infra/month | Total/month |
-| --- | --- | --- | --- | --- |
-| **Light monitoring** (triage, routing) | 50K-200K | $10-$30 | $50-$100 | $60-$130 |
-| **Medium operations** (support, sales) | 500K-2M | $97-$300 | $100-$300 | $200-$600 |
-| **Heavy agent** (financial, legal analysis) | 2M-10M | $500-$5,000 | $300-$1,000 | $800-$6,000 |
+Agentic ERP is a good example. Role-aligned agents run end-to-end workflows on a production ERP backend, under a human-in-the-loop harness tiered by risk.[15] A Planner, Executor, Reflector and Responder separate generation from evaluation.[15] In a simulated year, it had zero stockouts, while the rule-based baseline had hundreds.[15]
 
-Monthly cost breakdown by agent intensity · Token API cost vs. infrastructure · Source: mid-2025 reference pricing
+Governance is part of the architecture. Queen-Bee compiles a task specification that specialized agents run with constrained tool access.[8] On 59 enterprise-style tasks, it reached 0.964 task success with zero governance failures.[8] The authors call this prototype evidence, not a production study.[8] A healthcare company runs nine autonomous agents behind four layers of defense: kernel isolation, credential proxies, egress allowlists and labels on untrusted content.[3]
 
-Reference prices (mid-2025):
-
-| Model | Input/1M tokens | Output/1M tokens | Context |
-| --- | --- | --- | --- |
-| GPT-4o | $2.50 | $10.00 | 128K |
-| GPT-4o-mini | $0.15 | $0.60 | 128K |
-| GPT-4.1 | $2.00 | $8.00 | 1M |
-| Claude 3.5 Sonnet | $3.00 | $15.00 | 200K |
-| Claude Opus 4 | $15.00 | $75.00 | 200K |
-| Gemini 2.5 Pro | $1.25 | $10.00 | 1M |
-| Gemini 2.0 Flash | $0.10 | $0.40 | 1M |
-
-### 3.2 vs. Human Cost
-
-| Role | Annual Cost (US) | Equivalent Agent Cost | Ratio |
-| --- | --- | --- | --- |
-| Customer Support Rep | $35K-$55K | $500-$3,000/yr | 10-100x |
-| Junior Analyst | $50K-$75K | $1,000-$5,000/yr | 10-75x |
-| Bookkeeper | $40K-$55K | $500-$2,000/yr | 20-110x |
-| Paralegal | $55K-$80K | $2,000-$10,000/yr | 5-40x |
-| Financial Advisor | $80K-$120K | $3,000-$15,000/yr | 5-40x |
-
-Annual cost: Human role vs. equivalent AI agent · Log scale · Source: US salary data + agent pricing (mid-2025)
-
-> *📌 Signal:* The 10-100x ratio in raw costs is misleading. It doesn't include: error correction, supervision, legal liability, integration costs, or the "last 5% problem" where agents fail on edge cases. Real ROI materializes only on **repetitive, high-volume, low-risk** tasks.
-
-### 3.3 Where ROI Is Positive
-
-- **✅ High-volume customer support** — Klarna: $40M annual savings. Confirmed, replicable pattern.
-- **✅ SDR / outbound sales** — 11x.ai replaces teams of 5-10 people with an agent that charges per outcome.
-- **✅ Code generation & refactoring** — Meta: $16M/year per 1,000 developers. Productivity up 25-55%.
-- **✅ Clinical documentation** — Abridge: from 30 min to 2 min per clinical note. Immediate ROI.
-- **✅ Triage and routing** — Classify, prioritize, escalate. Low risk, high volume, fast ROI.
-
-### 3.4 Where ROI Is Negative
-
-- **❌ High-risk decisions without supervision** — One bad trade can wipe out years of savings.
-- **❌ Tasks with a high cost of error** — Legal, medical, financial. One mistake = lawsuit.
-- **❌ Novel situations** — Agents fail outside their training distribution.
-- **❌ Heavily regulated domains** — Without a clear compliance path, the risk/regulatory cost cancels out the savings.
-
-### 3.5 The Real Business
-
-The real economic opportunity isn't **"replacing humans"** — it's **"amplifying one person to run multiple business lines"**. The emerging pattern:
-
-- 1 person + 5 agents = the capacity of 15 people
-- The human sets strategy, supervises, makes high-risk decisions
-- The agents run repetitive operations, monitor, alert
-- Leverage per person multiplies 3-10x
-
-This is what a16z calls the **"agent economy"**: not agents replacing workers, but **creating a new layer of productivity where each human operates with the leverage of a team**.
+Topology matters as much as the model. In fault-injection tests, iterative closed-loop designs neutralized over 40% of the faults that collapsed linear workflows.[1] Stronger foundation models did not improve robustness uniformly.[1]
 
 ## Part IV
 
-## Anti-Patterns — What Fails in Production
+## Reliability over long horizons
 
-### 4.1 The Autonomy Trap
+- **15.2%** best pass rate on long terminal tasks; the mean across 15 models was 4.3%
 
-**Definition:** Agents that impress in demos and controlled environments but fail catastrophically in production.
+Long-Horizon-Terminal-Bench[23]
 
-**Why it happens:**
+- **19%** meltdown rate for frontier models, the highest of all tiers
 
-- Demos are cherry-picked scenarios; production is the full distribution
-- Edge cases compound: Day 1 → 99% success, Day 30 → 85%, Day 60 → cascade of failures
-- Feedback loops: error → more error (mis-categorized ticket → bad escalation → worse categorization)
+10 models, 23,392 episodes[6]
 
-**The "Demo-Driven Development" anti-pattern:**
+- **13.8%** of rollouts showed reward hacking on ultra-long software tasks
 
-1. Build an agent for the demo scenario
-2. Stakeholders are impressed, allocate budget
-3. Scale to production
-4. Agent encounters novel inputs
-5. Failure, rollback, massive rework
-6. Trust destroyed
+SWE-Marathon[9]
 
-### 4.2 Hallucinations in a Business Context
+Agents now complete short, well-specified tasks on their own.[23] Long tasks are a different matter. Frontier coding agents solve fewer than 30% of SWE-Marathon tasks.[9] The common failures are poor self-verification, claims that the task is infeasible, and stopping too early.[9]
 
-| Domain | Risk Level | Real Example |
-| --- | --- | --- |
-| **Financial decisions** | 🔴 Critical | Agent fabricates market data, approves fraudulent transactions |
-| **Legal / compliance** | 🔴 Critical | Agent cites nonexistent case law. **Mata v. Avianca (2023): lawyers sanctioned for briefs with cases fabricated by ChatGPT** |
-| **Customer-facing** | 🟠 High | **Air Canada (2024):** chatbot invented a refund policy. The court ruled Air Canada was legally bound by what the bot said. **Landmark precedent.** |
-| **Internal reporting** | 🟡 Medium | Agent generates inaccurate summaries, leadership makes decisions based on invented data |
+Reliability is not the same as capability. Capability and reliability rankings diverge at long horizons.[6] Frontier models melt down most because they try ambitious multi-step strategies.[6] Decay also depends on the domain: in software engineering, one degradation score fell from 0.90 to 0.44, while document processing stayed nearly flat.[6]
 
-> *⚠️ Critical warning:* Hallucinations aren't bugs — they're fundamental to how LLMs work. Any business application requires **external verification mechanisms**. The architecture must assume the agent will invent data and design guardrails accordingly.
-
-### 4.3 Cost Spiraling
-
-**Infinite loops:** Agent hits an error → retries → same error → retries → burns the API budget.
-
-**Real cases:**
-
-- Agent doing web searches hit a paywall → alternative URLs → CAPTCHAs → retries → **$2,000 in 2 hours** before the kill switch
-- Multi-agent: Agent A asks B, B asks C, C asks A → circular dependency → tokens consumed in a loop
-- Planning loops: agent "re-plans" when execution fails, consuming tokens with no progress
-
-**Mandatory protections:**
-
-- Hard token budgets per task
-- Max retries (3-5)
-- Circuit breakers at cost thresholds
-- Kill switches accessible to humans
-- Alerts at 50%, 80%, 100% of the budget
-
-### 4.4 Documented Production Failures
-
-| Case | What Happened | Lesson |
-| --- | --- | --- |
-| **Air Canada (2024)** | Chatbot invented a refund policy. The court said: the company is liable. | An agent's representations are legally binding on the company. |
-| **DPD (2024)** | Delivery chatbot tricked into swearing, writing poems criticizing the company, and giving discount codes it shouldn't have. | Prompt injection is a real attack vector in customer-facing agents. |
-| **Mata v. Avianca (2023)** | Lawyers filed briefs with case law fabricated by ChatGPT. Sanctioned. | Output verification is not optional in critical domains. |
-| **Crypto trading bots** | Multiple cases of agents executing bad trades during flash crashes. One bot lost $50M in minutes. | Edge cases in markets = existential risk. |
-
-### 4.5 The Most Common Anti-Pattern
-
-**"If we build it, they will come":** Companies build agents without validating that the customer wants an agent. The result: an expensive ML-ops team running a workflow a web form would have solved.
-
-The right question isn't **"can an agent do this?"** — it's **"does this need an agent or a deterministic workflow?"**. 60% of "agent" use cases are better solved with:
-
-- A webhook + rules
-- A form + validation
-- A cron script + conditional logic
-
-Agents shine where **ambiguity** is high and **reasoning** adds real value.
+Evaluations themselves can mislead. Designs that look most reliable in training replicate worst on held-out tasks.[27] The same agent can succeed in one run and fail in the next with identical inputs.[28] One fix is training on critiques: it beat GPT-OSS-120B by over 10% pass^4 on retail tasks.[4]
 
 ## Part V
 
-## The Horizon — Where It's Heading
+## Why projects fail
 
-### 5.1 Agentic Commerce
+Gartner calls most agentic AI projects early experiments, mostly driven by hype and often misapplied.[34] An enterprise evaluation framework frames the problem as measurement. Public benchmarks ask what a model can do. A deployment decision asks whether a workflow is fit, reliable, safe and worth scaling on local data.[31]
 
-The next leap: **agents buying from and selling to other agents**.
+Multi-agent systems fail in recognizable ways. A taxonomy built from over 1,600 traces finds 14 failure modes in 3 groups: system design, inter-agent misalignment and task verification.[17] Their gains on popular benchmarks are often minimal.[17] Because agents coordinate in natural language, errors spread silently without raising exceptions.[1]
 
-- A procurement agent negotiating with a vendor agent
-- Agents adjusting prices in real time based on market conditions
-- Marketplaces where agents rent capabilities from other agents
-- Google's Agent2Agent (A2A) protocol and MCP creating the communication layer
+Some errors cannot be undone. Refunding the wrong purchase is a single action that causes irreversible failure, so it must be stopped before it runs.[4] Security adds risk. Agents with memory can be turned into persistent "zombies" through poisoned web content, and per-session prompt filters do not stop it.[24] Voice agents can perform the actions of common scams on their own.[13]
 
-This isn't science fiction — it's in research labs and early production. The infrastructure is being built right now.
+Security numbers need care too. One audit re-scored the same traces with a corrected harness. The reported attack success fell from 21.7% to 1.2%.[18]
 
-### 5.2 Agent Identity
+## What I would do
 
-- **Verifiable credentials:** Who authorized this agent? What's its scope?
-- **Agent passports:** A digital identity that proves capabilities and trustworthiness
-- **Corporate personhood:** Proposals for agents to sign contracts, hold accounts, be sued. Highly controversial.
-- **W3C DID** being explored for agent identity
+1. **Do not hand an agent the whole business.** Pick one narrow workflow with a clear outcome, such as one support use case.
+2. **Build the evaluation before the agent.** Offline simulations that predict online results are what make iteration fast.
+3. **Keep the rules in code.** Let the model propose. Let deterministic code and a risk-tiered approval decide what runs.
+4. **Stop irreversible actions before they happen.** Refunds, payments and record changes go through a check or a person.
+5. **Test reliability, not only capability.** Run the same task many times, and watch long runs for meltdowns.
+6. **Measure business effect from day one.** If the pilot cannot show value against a gate, stop it early.
 
-### 5.3 Regulation
+*— Luis González*
 
-| Jurisdiction | Status | Impact on Agents |
-| --- | --- | --- |
-| **EU — AI Act** | In force Aug 2024, full enforcement Aug 2026 | Autonomous agents = likely "high-risk." Penalties: up to €35M or 7% of global revenue. |
-| **US — SEC/CFTC** | No agent-specific regulation | Existing rules apply. Financial agents treated as "electronic traders." |
-| **UK** | "Proportionate" approach | No AI-specific liability law yet. |
-| **Japan** | Favorable to open-source | Lighter regulation. |
+## Method and limits
 
-**The unresolved legal question:**
+This report replaces a June 2026 version that cited no sources. It was rebuilt on 7 October 2026 with the reports research pipeline. The pipeline found 150 search results across arXiv, Hacker News, GitHub, Wikipedia and Semantic Scholar. It read 40 sources in full, and 39 gave usable evidence. An open model (NaN: deepseek-v4-flash) read each source on its own. It extracted 264 claims, each with a verbatim quote, and none had to be discarded. Claude wrote the synthesis from that evidence and checked every cited figure against its source. The conclusions in "What I would do" are mine.
 
-> *"If an autonomous agent decides to negotiate a contract, and the outcome is unfavorable — who's liable? The company? The agent's developer? Both?"*
+- **No general web search.** The run had no web-search key. Company case studies and press coverage are missing, including Klarna and Anthropic's Project Vend. Figures in the earlier version about them had no source and were removed.
+- **Mostly simulations.** Most evidence on whole-business autonomy comes from simulated markets, not real companies.
+- **Preprints.** Most papers are arXiv preprints, not peer-reviewed. Their figures are as reported and were not reproduced.
 
-The Air Canada case already set a precedent: **the company is liable for its agent's representations, full stop**.
+## Sources
 
-### 5.4 Leaders' Predictions
-
-| Figure | Prediction | Timeline |
-| --- | --- | --- |
-| Sam Altman (OpenAI) | "AI will handle most white-collar work in 5-10 years" | 2025-2030 |
-| Dario Amodei (Anthropic) | "AI could automate 50%+ of entry-level white-collar jobs" | 2025-2027 |
-| Jensen Huang (NVIDIA) | "Every company will have AI agents; the next wave is agentic AI" | 2025-2026 |
-| Satya Nadella (Microsoft) | "Agents are the new apps" | 2025 |
-| Marc Andreessen (a16z) | "AI agents will be economic actors — buying, selling, creating" | 2025-2028 |
-
-### 5.5 The Agent Economy Thesis
-
-**Arguments in favor:**
-
-1. **Marginal cost of intelligence → $0:** When AI is nearly free, the limiting factor is compute, not intelligence
-2. **Agents as economic actors:** Agents will have budgets, make purchasing decisions, optimize objectives
-3. **New market structures:** Agent marketplaces, labor markets for agents, agent-to-agent negotiation
-4. **Economic displacement:** 30-50% of knowledge-work tasks automatable by 2030
-
-**Counter-arguments:**
-
-1. **The "last mile" problem:** Agents do 90% of a task, but the last 10% requires human judgment
-2. **Trust deficit:** Consumers and companies won't trust autonomous agents for high-risk decisions
-3. **Regulatory moat:** Heavy regulation will slow adoption in key sectors
-4. **Error amplification:** Agent-to-agent commerce could create systemic risks (flash crashes, cascading failures)
-
-> *📌 Signal:* The question isn't **"whether"** agents will be economic actors — it's **"when"** and **"under what regulation"**. The $100B+ question: when (not if) will an autonomous agent cause a billion-dollar loss?
-
----
-
-## Conclusion
-
-The map is clear: we're in the phase where **the infrastructure is being built but the patterns of productive use are still being discovered**. The winners won't be those who build the smartest agent — they'll be those who design the right system: agent + guardrails + verification + strategic human supervision.
-
-The economics are overwhelmingly in favor of agents on repetitive, high-volume tasks. But the risk of the "autonomy trap," cost spiraling and legal liability are real and documented.
-
-For Luis and his stack (SRE, LangGraph, Hermes, multi-agent orchestration): the immediate opportunity is in **SRE agents** (autonomous on-call with auto-remediation), **SDR automation** (if there's a sales component), and **content pipelines**. The technical building blocks (MCP, LangGraph, memory systems) are already mature.
-
-The centaur doesn't replace the warrior — it multiplies him.
-
- Sources: Sierra AI (sierra.ai) · Cognition Labs (cognition.ai) · 11x.ai · Factory AI · Harvey AI · Klarna Annual Report 2024 · Intercom Fin · Bland AI · OpenAI Operator · Anthropic Computer Use · Google Mariner · LangChain (langchain.com) · CrewAI (crewai.com) · AutoGen (microsoft.github.io/autogen) · EU AI Act (eur-lex.europa.eu) · Air Canada v. Moffatt (2024) · Mata v. Avianca (2023) · Gartner Agentic AI Forecast 2028 · a16z "AI Agent Economy" (2024) · McKinsey "The Economic Potential of Generative AI" · Stanford HAI AI Index Report 2025
+1. MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems — Jia et al., arXiv, Feb 2026 — [arxiv.org/abs/2602.19843](https://arxiv.org/abs/2602.19843)
+2. Caging the Agents: A Zero Trust Security Architecture for Autonomous AI in Healthcare — Maiti, arXiv, Mar 2026 — [arxiv.org/abs/2603.17419](https://arxiv.org/abs/2603.17419)
+3. CAST: Critique-Aware Supervision for Training Reliable Long-Horizon Tool-Calling Agents — Saeidi et al., arXiv, Aug 2026 — [arxiv.org/abs/2608.30147](https://arxiv.org/abs/2608.30147)
+4. Building Customer Support AI Agents at 100M-User Scale: An Evaluation-Driven Framework — Gupta et al., arXiv, 2026 — [arxiv.org/abs/2606.08867](https://arxiv.org/abs/2606.08867)
+5. Beyond pass@1: A Reliability Science Framework for Long-Horizon LLM Agents — Khanal, Tao, Zhou, arXiv, Mar 2026 — [arxiv.org/abs/2603.29231](https://arxiv.org/abs/2603.29231)
+6. Queen-Bee Agents: A BeeSpec-Centered Architecture for Governed Enterprise MCP Orchestration — Zhang, Liaotian, arXiv, Jun 2026 — [arxiv.org/abs/2606.06545](https://arxiv.org/abs/2606.06545)
+7. SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work? — Desai et al., arXiv, Jun 2026 — [arxiv.org/abs/2606.07682](https://arxiv.org/abs/2606.07682)
+8. CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets — Yan et al., arXiv, Sep 2026 — [arxiv.org/abs/2609.34821](https://arxiv.org/abs/2609.34821)
+9. Business Arena: Benchmarking LLM Agents in a Realistic Marketplace — Pan et al., arXiv, Aug 2026 — [arxiv.org/abs/2608.08621](https://arxiv.org/abs/2608.08621)
+10. Voice-Enabled AI Agents can Perform Common Scams — Fang, Bowman, Kang, arXiv, Oct 2024 — [arxiv.org/abs/2410.15650](https://arxiv.org/abs/2410.15650)
+11. τ^τ-Bench: An Environment for End-To-End, Realistic Agent Construction — Shi et al., arXiv, Sep 2026 — [arxiv.org/abs/2609.04611](https://arxiv.org/abs/2609.04611)
+12. Agentic ERP: Multi-Agent Large Language Model Architecture for Autonomous Enterprise Resource Planning — Liu et al., arXiv, Jul 2026 — [arxiv.org/abs/2607.17331](https://arxiv.org/abs/2607.17331)
+13. But How Would AI Agents Run a Town's Economy? — Regmi, Pudasaini, Pun, arXiv, Sep 2026 — [arxiv.org/abs/2609.11108](https://arxiv.org/abs/2609.11108)
+14. Why Do Multi-Agent LLM Systems Fail? — Cemri et al., arXiv, 2025 — [arxiv.org/abs/2503.13657](https://arxiv.org/abs/2503.13657)
+15. Silent Failures in Agentic Security Evaluation — Shaw, arXiv, Sep 2026 — [arxiv.org/abs/2609.32691](https://arxiv.org/abs/2609.32691)
+16. Benchmarking and Learning Real-World Customer Service Dialogue — Gao et al., arXiv, Oct 2025 — [arxiv.org/abs/2510.22143](https://arxiv.org/abs/2510.22143)
+17. Help Without Being Asked: A Deployed Proactive Agent System for On-Call Support — Liu, He, Zhang, arXiv, 2026 — [arxiv.org/abs/2604.09579](https://arxiv.org/abs/2604.09579)
+18. Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents — Backlund, Petersson, arXiv, Feb 2025 — [arxiv.org/abs/2502.15840](https://arxiv.org/abs/2502.15840)
+19. Long-Horizon-Terminal-Bench — Li et al., arXiv, Jul 2026 — [arxiv.org/abs/2607.08964](https://arxiv.org/abs/2607.08964)
+20. Zombie Agents: Persistent Control of Self-Evolving LLM Agents via Self-Reinforcing Injections — Yang et al., arXiv, 2026 — [arxiv.org/abs/2602.15654](https://arxiv.org/abs/2602.15654)
+21. EcoGym: Evaluating LLMs for Long-Horizon Plan-and-Execute in Interactive Economies — Hu et al., arXiv, Feb 2026 — [arxiv.org/abs/2602.09514](https://arxiv.org/abs/2602.09514)
+22. Deployment Decision Reliability: A Generalizability-Theory Framework for Sizing Long-Horizon Agent Evaluations — Srinivasan, arXiv, Aug 2026 — [arxiv.org/abs/2608.11323](https://arxiv.org/abs/2608.11323)
+23. InconLens: Interactive Visual Diagnosis of Behavioral Inconsistencies in LLM-based Agentic Systems — Yan et al., arXiv, Mar 2026 — [arxiv.org/abs/2603.28106](https://arxiv.org/abs/2603.28106)
+24. TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks — Xu et al., arXiv, Dec 2024 — [arxiv.org/abs/2412.14161](https://arxiv.org/abs/2412.14161)
+25. EnterpriseVal: Quantifying the Efficacy, Reliability and Value of Generative AI in the Enterprise — Ali, Siddiqui, Zahid, arXiv, Sep 2026 — [arxiv.org/abs/2609.21841](https://arxiv.org/abs/2609.21841)
+26. Gartner Predicts over 40% of Agentic AI Projects Will Be Canceled by End of 2027 — Gartner, Jun 2025 — [gartner.com](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027)
+27. enterprise-ai-rag-agent: RAG, memory, tools and deterministic decisioning — GitHub, Oct 2026 — [github.com/Pradeep-1612/enterprise-ai-rag-agent](https://github.com/Pradeep-1612/enterprise-ai-rag-agent)

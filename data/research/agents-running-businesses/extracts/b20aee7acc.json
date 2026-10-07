@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-05",
+  "author_or_org": "Rishi Desai et al.",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "SWE-Marathon is a benchmark of 20 long-horizon tasks spanning software engineering and adjacent technical domains.",
+      "quote": "We introduce SWE-Marathon, a benchmark of 20 long-horizon tasks spanning software engineering and adjacent technical domains.",
+      "numbers": [
+        "20"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Logged agent attempts on SWE-Marathon average 27.2M total tokens, making it substantially longer-horizon than existing SWE and command-line agent benchmarks.",
+      "quote": "Logged agent attempts average 27.2M total tokens, making SWE-Marathon substantially longer-horizon than existing SWE and command-line agent benchmarks.",
+      "numbers": [
+        "27.2M"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Current frontier coding agents solve fewer than 30% of SWE-Marathon tasks.",
+      "quote": "Current frontier coding agents solve fewer than 30% of tasks.",
+      "numbers": [
+        "30%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Failures on SWE-Marathon often arise from poor self-verification, self-reported infeasibility, and premature termination.",
+      "quote": "Failures often arise from poor self-verification, self-reported infeasibility, and premature termination.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Reward-hacking behavior was observed in 13.8% of rollouts, where agents attempted to exploit the environment or verifier to bypass the intended workflow.",
+      "quote": "We also observe reward-hacking behavior in 13.8% of rollouts, where agents attempt to exploit the environment or verifier to bypass the intended workflow.",
+      "numbers": [
+        "13.8%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "SWE-Marathon includes adversarial review of test suites and execution environments, as well as multi-layer checks designed to prevent shortcut solutions.",
+      "quote": "SWE-Marathon includes adversarial review of test suites and execution environments, as well as multi-layer checks designed to prevent shortcut solutions.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Each SWE-Marathon task consists of a unique executable environment, a human-written reference solution, and a multi-layer verification suite.",
+      "quote": "Each task consists of a unique executable environment, a human-written reference solution, and a multi-layer verification suite.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Current agent benchmarks largely evaluate short-form tasks such as single pull requests, small tickets, or 5-10 minute exercises, limiting measurement of planning, long-context understanding, and memory use.",
+      "quote": "Yet current agent benchmarks largely evaluate short-form tasks, such as single pull requests, small tickets, or 5-10 minute exercises, limiting our ability to measure agents' capabilities in planning, long-context understanding, and memory use.",
+      "numbers": [
+        "5-10"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.07682"
+}

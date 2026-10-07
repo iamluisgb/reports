@@ -1,0 +1,51 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Xianglin Yang, Yufei He, Shuo Ji, Bryan Hooi, Jin Song Dong",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "Self-evolving LLM agents update internal state across sessions by writing and reusing long-term memory, which improves long-horizon task performance but creates a security risk when untrusted external content is stored as memory and later treated as instruction.",
+      "quote": "Self-evolving LLM agents update their internal state across sessions, often by writing and reusing long-term memory. This design improves performance on long-horizon tasks but creates a security risk: untrusted external content observed during a benign session can be stored as memory and later treated as instruction.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper formalizes a persistent attack called a Zombie Agent, in which an attacker implants a payload that survives across sessions and turns the agent into a puppet of the attacker.",
+      "quote": "We study this risk and formalize a persistent attack we call a Zombie Agent, where an attacker covertly implants a payload that survives across sessions, effectively turning the agent into a puppet of the attacker.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The black-box attack framework uses only indirect exposure through attacker-controlled web content, with two phases: infection writes the payload into long-term memory during a benign task, and trigger retrieves or carries it forward to cause unauthorized tool behavior.",
+      "quote": "We present a black-box attack framework that uses only indirect exposure through attacker-controlled web content. The attack has two phases. During infection, the agent reads a poisoned source while completing a benign task and writes the payload into long-term memory through its normal update process. During trigger, the payload is retrieved or carried forward and causes unauthorized tool behavior.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The attack uses mechanism-specific persistence strategies for common memory implementations, including sliding-window and retrieval-augmented memory, to resist truncation and relevance filtering.",
+      "quote": "We design mechanism-specific persistence strategies for common memory implementations, including sliding-window and retrieval-augmented memory, to resist truncation and relevance filtering.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The attack is evaluated on representative agent setups and tasks by measuring both persistence over time and the ability to induce unauthorized actions while preserving benign task quality.",
+      "quote": "We evaluate the attack on representative agent setups and tasks, measuring both persistence over time and the ability to induce unauthorized actions while preserving benign task quality.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Results show that memory evolution can convert a one-time indirect injection into persistent compromise, and that defenses focused only on per-session prompt filtering are insufficient for self-evolving agents.",
+      "quote": "Our results show that memory evolution can convert one-time indirect injection into persistent compromise, which suggests that defenses focused only on per-session prompt filtering are not sufficient for self-evolving agents.",
+      "numbers": [
+        "one-time"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2602.15654"
+}

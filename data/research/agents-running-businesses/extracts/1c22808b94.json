@@ -1,0 +1,60 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-19",
+  "author_or_org": "Zhihao Liu, Tianyu Wang, Xi Vincent Wang, Lihui Wang",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The Agentic ERP paper evaluates the system at three levels, including a scenario-based task suite, a comparison of six orchestration paradigms on cross-functional crisis tasks, and a 365-day agent-in-the-loop simulation against rule-based RPA and no-intervention baselines.",
+      "quote": "Third, the system is evaluated at three levels: a scenario-based task suite, a comprehensive comparison of six orchestration paradigms on cross-functional crisis tasks, and a 365-day agent-in-the-loop simulation against rule-based RPA and no-intervention baselines.",
+      "numbers": [
+        "three",
+        "six",
+        "365-day"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Across the evaluation levels, the proposed multi-agent method is significantly better than the baseline, sustaining a simulated year of operation with zero stockouts while the rule-based baseline accumulates hundreds under the same demand stream.",
+      "quote": "Across these levels the proposed multi-agent method is significantly better than the baseline, and the system sustains a simulated year of operation with zero stockouts while the rule-based baseline accumulates hundreds under the same demand stream.",
+      "numbers": [
+        "zero",
+        "hundreds"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Agentic ERP combines role-aligned LLM agents with a risk-tiered human-in-the-loop harness and a graph-based orchestrator to execute end-to-end business workflows on a production ERP backend.",
+      "quote": "This paper presents Agentic ERP, an expert-system architecture that combines role-aligned large-language-model (LLM) agents with a risk-tiered human-in-the-loop harness and a graph-based orchestrator to execute end-to-end business workflows on a production ERP backend.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Autonomous ERP operation is formulated as a constrained sequential-decision problem over a structured enterprise state, with a decomposition argument linking role-aligned agents to a measurable reduction in per-step tool-selection complexity.",
+      "quote": "First, autonomous ERP operation is formulated as a constrained sequential-decision problem over a structured enterprise state, with a decomposition argument linking role-aligned agents to a measurable reduction in per-step tool-selection complexity.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The orchestration is a graph-based Planner--Executor--Reflector--Responder pattern that decouples generation from evaluation through externalised grading criteria and sprint contracts.",
+      "quote": "Second, a graph-based Planner--Executor--Reflector--Responder orchestration decouples generation from evaluation through externalised grading criteria and sprint contracts, packaging recent harness-engineering principles as inspectable expert-system artefacts.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper states that classical rule-based automation cannot reason about exceptions and that monolithic AI assistants degrade when asked to coordinate across functional boundaries.",
+      "quote": "Enterprise Resource Planning (ERP) systems record transactions reliably but still delegate almost all operational decision-making to human specialists, because classical rule-based automation cannot reason about exceptions and monolithic AI assistants degrade when asked to coordinate across functional boundaries.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The work concludes that role-aligned LLM agents under human oversight can move an ERP system from passively recording transactions to actively executing operational decisions, and it provides a reference architecture and evaluation protocol for autonomous ERP.",
+      "quote": "The work shows that role-aligned LLM agents under human oversight can move an ERP system from passively recording transactions to actively executing operational decisions, and it provides a reference architecture and an evaluation protocol for autonomous enterprise resource planning.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.17331"
+}

@@ -1,0 +1,79 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-16",
+  "author_or_org": "Muhammad Ashar Ishfaq and Glaucia Melo",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions.",
+      "quote": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "ToMAS applies four explicit convertibility criteria to diagnosed execution traces.",
+      "quote": "ToMAS applies four explicit convertibility criteria to diagnosed execution traces.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "A conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items.",
+      "quote": "A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items.",
+      "numbers": [
+        "242",
+        "39"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92.",
+      "quote": "In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92.",
+      "numbers": [
+        "18",
+        "two",
+        "94.4%",
+        "0.92"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Converted items were used as binary rewards in a small-scale GRPO feasibility experiment with Qwen2.5-1.5B.",
+      "quote": "We then used the converted items as binary rewards in a small-scale GRPO feasibility experiment with Qwen2.5-1.5B.",
+      "numbers": [
+        "Qwen2.5-1.5B"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "On a 28-item held-out Magentic GAIA diagnostic, every evaluated condition exceeded the ROUGE-L threshold on the same 2 of 28 items.",
+      "quote": "On a 28-item held-out Magentic GAIA diagnostic, every evaluated condition exceeded the ROUGE-L threshold on the same 2 of 28 items.",
+      "numbers": [
+        "28",
+        "2",
+        "28"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Post-hoc adapter checks show the LoRA update remained numerically negligible, with max absolute Delta W about 7e-6, so all conditions decode identically to the untrained checkpoint.",
+      "quote": "Post-hoc adapter checks show why: under the learning rate used, the LoRA update remained numerically negligible (max abs Delta W about 7e-6), so all conditions decode identically to the untrained checkpoint.",
+      "numbers": [
+        "7e-6"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The experiment does not show a training effect and cannot establish one; it reports an executable pipeline and two limitations for any conclusive study: a provenance gap between training and evaluation items, and lexical-overlap scoring.",
+      "quote": "The experiment therefore does not show a training effect and cannot establish one; it reports an executable pipeline together with two limitations that any conclusive study must address: a provenance gap between the training and evaluation items, and lexical-overlap scoring.",
+      "numbers": [
+        "two"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.16986"
+}

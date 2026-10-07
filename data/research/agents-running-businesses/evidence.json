@@ -1,0 +1,3101 @@
+{
+  "plan": {
+    "slug": "agents-running-businesses",
+    "title": "Agents that run businesses: autonomy, economics and failure in production",
+    "thesis": "AI agents can run narrow business workflows end to end, but evidence of autonomous agents running whole businesses is thin; measured gains come with human oversight and most failures come from long-horizon reliability.",
+    "audience": "Founders and operators deciding which business workflows to hand to agents",
+    "since": "2024-06-01",
+    "per_question": 8,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What happens when LLM agents are given a business to run, in experiments and benchmarks (Vending-Bench, Project Vend, TheAgentCompany)?",
+        "queries": [
+          "Vending-Bench long-term coherence agents",
+          "TheAgentCompany benchmark",
+          "Anthropic Project Vend",
+          "LLM agent runs business simulation"
+        ],
+        "providers": [
+          "arxiv",
+          "hn",
+          "semantic_scholar"
+        ]
+      },
+      {
+        "id": "q2",
+        "question": "What measured productivity and cost results do companies report from agents in customer support and operations?",
+        "queries": [
+          "generative AI customer support productivity study",
+          "Klarna AI assistant customer service",
+          "AI agents customer service deployment results"
+        ],
+        "providers": [
+          "arxiv",
+          "hn",
+          "semantic_scholar"
+        ]
+      },
+      {
+        "id": "q3",
+        "question": "How are business agents built: architectures, tools, orchestration and human-in-the-loop?",
+        "queries": [
+          "LLM agent architecture enterprise workflows",
+          "multi-agent framework business process automation",
+          "human-in-the-loop LLM agents"
+        ],
+        "providers": [
+          "arxiv",
+          "github",
+          "hn"
+        ]
+      },
+      {
+        "id": "q4",
+        "question": "How reliable are agents on long-horizon tasks and how is that capability trending?",
+        "queries": [
+          "measuring AI ability to complete long tasks",
+          "long-horizon agent reliability",
+          "agent task completion time horizon"
+        ],
+        "providers": [
+          "arxiv",
+          "hn",
+          "semantic_scholar"
+        ]
+      },
+      {
+        "id": "q5",
+        "question": "Why do agent projects fail or get cancelled, and what risks (errors, security, liability) show up?",
+        "queries": [
+          "why do multi-agent LLM systems fail",
+          "agentic AI projects cancelled",
+          "AI agent security prompt injection tools"
+        ],
+        "providers": [
+          "arxiv",
+          "hn",
+          "semantic_scholar"
+        ]
+      }
+    ]
+  },
+  "generated": "2026-10-05",
+  "stats": {
+    "searched": 150,
+    "candidates": 40,
+    "web_search": false,
+    "read": 40,
+    "sources_with_evidence": 39,
+    "claims": 264,
+    "quotes_dropped_as_unverified": 0
+  },
+  "sources": [
+    {
+      "id": "091188e777",
+      "url": "https://arxiv.org/abs/2602.19843",
+      "title": "MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-02-23",
+      "org": "Jin Jia, Zhiling Deng, Zhuangbin Chen, Yingqi Wang, Zibin Zheng",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q5",
+          "claim": "As LLM-based multi-agent systems are increasingly deployed for complex tasks, ensuring their reliability has become a pressing challenge.",
+          "quote": "As LLM-based Multi-Agent Systems (MAS) are increasingly deployed for complex tasks, ensuring their reliability has become a pressing challenge.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.1"
+        },
+        {
+          "question": "q5",
+          "claim": "Because MAS coordinate through unstructured natural language rather than rigid protocols, they are prone to semantic failures such as hallucinations, misinterpreted instructions, and reasoning drift that propagate silently without runtime exceptions.",
+          "quote": "Since MAS coordinate through unstructured natural language rather than rigid protocols, they are prone to semantic failures (e.g., hallucinations, misinterpreted instructions, and reasoning drift) that propagate silently without raising runtime exceptions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Prevailing evaluation approaches measure only end-to-end task success, offering limited insight into how failures arise or how effectively agents recover.",
+          "quote": "Prevailing evaluation approaches, which measure only end-to-end task success, offer limited insight into how these failures arise or how effectively agents recover from them.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.3"
+        },
+        {
+          "question": "q4",
+          "claim": "MAS-FIRE defines a taxonomy of 15 fault types covering intra-agent cognitive errors and inter-agent coordination failures, injected via three non-invasive mechanisms: prompt modification, response rewriting, and message routing manipulation.",
+          "quote": "We define a taxonomy of 15 fault types covering intra-agent cognitive errors and inter-agent coordination failures, and inject them via three non-invasive mechanisms: prompt modification, response rewriting, and message routing manipulation.",
+          "numbers": [
+            "15",
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S1.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Applying MAS-FIRE to three representative MAS architectures yielded fault-tolerant behaviors organized into four tiers: mechanism, rule, prompt, and reasoning.",
+          "quote": "Applying MAS-FIRE to three representative MAS architectures, we uncover a rich set of fault-tolerant behaviors that we organize into four tiers: mechanism, rule, prompt, and reasoning.",
+          "numbers": [
+            "three",
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S1.5"
+        },
+        {
+          "question": "q4",
+          "claim": "Stronger foundation models do not uniformly improve robustness.",
+          "quote": "Our findings reveal that stronger foundation models do not uniformly improve robustness.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.6"
+        },
+        {
+          "question": "q4",
+          "claim": "Architectural topology plays an equally decisive role, with iterative, closed-loop designs neutralizing over 40% of faults that cause catastrophic collapse in linear workflows.",
+          "quote": "We further show that architectural topology plays an equally decisive role, with iterative, closed-loop designs neutralizing over 40% of faults that cause catastrophic collapse in linear workflows.",
+          "numbers": [
+            "40%"
+          ],
+          "corroborated_by": [],
+          "id": "S1.7"
+        },
+        {
+          "question": "q4",
+          "claim": "MAS-FIRE provides process-level observability and actionable guidance to systematically improve multi-agent systems.",
+          "quote": "MAS-FIRE provides the process-level observability and actionable guidance needed to systematically improve multi-agent systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S1.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 1
+    },
+    {
+      "id": "092b88efe7",
+      "url": "https://arxiv.org/abs/2505.17735",
+      "title": "SafeAgent: Safeguarding LLM Agents via an Automated Risk Simulator",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-05-23",
+      "org": "Xueyang Zhou et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q5",
+          "claim": "LLM-based agents are increasingly deployed in real-world applications such as digital assistants, autonomous customer service, and decision-support systems, where they interact in multi-turn, tool-augmented environments.",
+          "quote": "Large Language Model (LLM)-based agents are increasingly deployed in real-world applications such as \"digital assistants, autonomous customer service, and decision-support systems\", where their ability to \"interact in multi-turn, tool-augmented environments\" makes them indispensable.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.1"
+        },
+        {
+          "question": "q5",
+          "claim": "Ensuring agent safety is a significant challenge because of diverse and complex risks from dynamic user interactions, external tool usage, and unintended harmful behaviors.",
+          "quote": "However, ensuring the safety of these agents remains a significant challenge due to the diverse and complex risks arising from dynamic user interactions, external tool usage, and the potential for unintended harmful behaviors.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.2"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper proposes AutoSafe as the first framework that systematically enhances agent safety through fully automated synthetic data generation.",
+          "quote": "To address this critical issue, we propose AutoSafe, the first framework that systematically enhances agent safety through fully automated synthetic data generation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.3"
+        },
+        {
+          "question": "q5",
+          "claim": "AutoSafe introduces an open and extensible OTS threat model that formalizes how unsafe behaviors emerge from the interplay of user instructions, interaction contexts, and agent actions.",
+          "quote": "Concretely, 1) we introduce an open and extensible threat model, OTS, which formalizes how unsafe behaviors emerge from the interplay of user instructions, interaction contexts, and agent actions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.4"
+        },
+        {
+          "question": "q3",
+          "claim": "AutoSafe develops a fully automated data generation pipeline that simulates unsafe user behaviors, uses self-reflective reasoning to generate safe responses, and builds a safety training dataset without hazardous real-world data collection.",
+          "quote": "2) we develop a fully automated data generation pipeline that simulates unsafe user behaviors, applies self-reflective reasoning to generate safe responses, and constructs a large-scale, diverse, and high-quality safety training dataset-eliminating the need for hazardous real-world data collection.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The framework is evaluated with comprehensive experiments on both synthetic and real-world safety benchmarks.",
+          "quote": "To evaluate the effectiveness of our framework, we design comprehensive experiments on both synthetic and real-world safety benchmarks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.6"
+        },
+        {
+          "question": "q5",
+          "claim": "AutoSafe reportedly boosts safety scores by 45% on average and achieves a 28.91% improvement on real-world tasks.",
+          "quote": "Results demonstrate that AutoSafe boosts safety scores by 45% on average and achieves a 28.91% improvement on real-world tasks, validating the generalization ability of our learned safety strategies.",
+          "numbers": [
+            "45%",
+            "28.91%"
+          ],
+          "corroborated_by": [],
+          "id": "S2.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The results are presented as highlighting the practical advancement and scalability of AutoSafe for building safer LLM-based agents for real-world deployment.",
+          "quote": "These results highlight the practical advancement and scalability of AutoSafe in building safer LLM-based agents for real-world deployment.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S2.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 2
+    },
+    {
+      "id": "4e2adb57c5",
+      "url": "https://arxiv.org/abs/2603.17419",
+      "title": "Caging the Agents: A Zero Trust Security Architecture for Autonomous AI in Healthcare",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-03-18",
+      "org": "Saikat Maiti",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "Autonomous LLM agents are deployed in production with capabilities including shell execution, file system access, database queries, and multi-party communication.",
+          "quote": "Autonomous AI agents powered by large language models are being deployed in production with capabilities including shell execution, file system access, database queries, and multi-party communication.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper presents a security architecture deployed for nine autonomous AI agents in production at a healthcare technology company.",
+          "quote": "This paper presents a security architecture deployed for nine autonomous AI agents in production at a healthcare technology company.",
+          "numbers": [
+            "nine"
+          ],
+          "corroborated_by": [],
+          "id": "S3.2"
+        },
+        {
+          "question": "q5",
+          "claim": "Recent red teaming research shows agents exhibit critical vulnerabilities: unauthorized compliance with non-owner instructions, sensitive information disclosure, identity spoofing, cross-agent propagation of unsafe practices, and indirect prompt injection through external resources.",
+          "quote": "Recent red teaming research demonstrates that these agents exhibit critical vulnerabilities in realistic settings: unauthorized compliance with non-owner instructions, sensitive information disclosure, identity spoofing, cross-agent propagation of unsafe practices, and indirect prompt injection through external resources [7].",
+          "numbers": [
+            "[7]"
+          ],
+          "corroborated_by": [],
+          "id": "S3.3"
+        },
+        {
+          "question": "q5",
+          "claim": "In healthcare environments processing Protected Health Information, each such vulnerability becomes a potential HIPAA violation.",
+          "quote": "In healthcare environments processing Protected Health Information, every such vulnerability becomes a potential HIPAA violation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper develops a six-domain threat model for agentic AI in healthcare covering credential exposure, execution capability abuse, network egress exfiltration, prompt integrity failures, database access risks, and fleet configuration drift.",
+          "quote": "We develop a six-domain threat model for agentic AI in healthcare covering credential exposure, execution capability abuse, network egress exfiltration, prompt integrity failures, database access risks, and fleet configuration drift.",
+          "numbers": [
+            "six"
+          ],
+          "corroborated_by": [],
+          "id": "S3.5"
+        },
+        {
+          "question": "q3",
+          "claim": "The architecture implements four-layer defense in depth: kernel-level workload isolation using gVisor on Kubernetes, credential proxy sidecars preventing agent containers from accessing raw secrets, network egress policies restricting each agent to allowlisted destinations, and a prompt integrity framework with structured metadata envelopes and untrusted content labeling.",
+          "quote": "We implement four-layer defense in depth: (1) kernel level workload isolation using gVisor on Kubernetes, (2) credential proxy sidecars preventing agent containers from accessing raw secrets, (3) network egress policies restricting each agent to allowlisted destinations, and (4) a prompt integrity framework with structured metadata envelopes and untrusted content labeling.",
+          "numbers": [
+            "four",
+            "(1)",
+            "(2)",
+            "(3)",
+            "(4)"
+          ],
+          "corroborated_by": [],
+          "id": "S3.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The reported 90-day deployment included four HIGH severity findings discovered and remediated by an automated security audit agent, progressive fleet hardening across three VM image generations, and defense coverage mapped to all eleven attack patterns from recent literature.",
+          "quote": "We report results from 90 days of deployment including four HIGH severity findings discovered and remediated by an automated security audit agent, progressive fleet hardening across three VM image generations, and defense coverage mapped to all eleven attack patterns from recent literature.",
+          "numbers": [
+            "90",
+            "four",
+            "three",
+            "eleven"
+          ],
+          "corroborated_by": [],
+          "id": "S3.7"
+        },
+        {
+          "question": "q3",
+          "claim": "All configurations, audit tooling, and the prompt integrity framework are released as open source.",
+          "quote": "All configurations, audit tooling, and the prompt integrity framework are released as open source.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S3.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 3
+    },
+    {
+      "id": "4e424ed8a6",
+      "url": "https://arxiv.org/abs/2608.30147",
+      "title": "CAST: Critique-Aware Supervision for Training Reliable Long-Horizon Tool-Calling Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-31",
+      "org": "Amir Saeidi, Zehua Zhang, Rishitosh Singh, Naman Ahuja, Vivek Gupta, Ali Payani, Gaowen Liu, Jayanth Srinivasa, Chitta Baral",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "LLM agents are increasingly deployed in long-horizon, interactive, and stateful environments.",
+          "quote": "Large language model (LLM) agents are increasingly deployed in long-horizon, interactive, and stateful environments.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.1"
+        },
+        {
+          "question": "q5",
+          "claim": "A single wrong action, such as refunding the wrong purchase, can cause irreversible task failure and must be intercepted before execution.",
+          "quote": "In these settings, a single wrong action, such as refunding the wrong purchase, can cause irreversible task failure and must be intercepted before execution.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Agent failures may not appear in every run but can emerge across repeated trials, making reliability across steps and trials critical.",
+          "quote": "Such failures may not appear in every single run, but can emerge across repeated trials, making reliability across steps and trials critical.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.3"
+        },
+        {
+          "question": "q4",
+          "claim": "Ensuring agentic reliability is challenging because even frontier LLMs struggle to explain why an action may be wrong, especially in long, intertwined trajectories governed by domain-specific policies.",
+          "quote": "However, ensuring agentic reliability is challenging: even frontier LLMs struggle to explain why an action may be wrong, especially in long, intertwined trajectories governed by domain-specific policies.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.4"
+        },
+        {
+          "question": "q3",
+          "claim": "CAST is a critique-aware training framework that converts sparse task outcomes into action-level supervision for critique learning and policy optimization.",
+          "quote": "We address this gap with CAST, a critique-aware training framework that converts sparse task outcomes into action-level supervision for critique learning and policy optimization.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.5"
+        },
+        {
+          "question": "q3",
+          "claim": "CAST analyzes agent trajectories to synthesize structured rationales explaining action validity under partial observability.",
+          "quote": "CAST analyzes agent trajectories to synthesize structured rationales explaining action validity under partial observability.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.6"
+        },
+        {
+          "question": "q4",
+          "claim": "Fine-tuning Qwen3-family models on dynamic tool-calling benchmarks improved reliability across domains, outperforming GPT-OSS-120B by over 10% pass^4 on Retail tasks and yielding an additional 9% improvement on Telehealth in an out-of-domain setting.",
+          "quote": "Fine-tuning Qwen3-family models on dynamic tool-calling benchmarks, CAST improves reliability across domains, outperforming GPT-OSS-120B by over 10% pass^4 on Retail tasks and yielding an additional 9% improvement on Telehealth in an out-of-domain setting.",
+          "numbers": [
+            "10%",
+            "9%"
+          ],
+          "corroborated_by": [],
+          "id": "S4.7"
+        },
+        {
+          "question": "q4",
+          "claim": "The results demonstrate that critique-aware training improves the robustness of LLM agents in realistic dynamic environments.",
+          "quote": "These results demonstrate that critique-aware training improves the robustness of LLM agents in realistic dynamic environments.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S4.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 4
+    },
+    {
+      "id": "72f9ff380b",
+      "url": "https://arxiv.org/abs/2606.08867",
+      "title": "Building Customer Support AI Agents at 100M-User Scale: An Evaluation-Driven Framework",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-24",
+      "org": "Aman Gupta et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "The paper presents a unified framework bridging offline development with online impact for customer support AI agents at Nubank, a company with over 100 million users.",
+          "quote": "In this paper, we present a unified framework that bridges offline development with online impact for customer support AI agents at Nubank, a company with 100M+ users.",
+          "numbers": [
+            "100M+"
+          ],
+          "corroborated_by": [],
+          "id": "S5.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The framework integrates four components: structured context engineering for support agents, systematic human-in-the-loop prompt iteration, LLM judge evaluation with inter-rater agreement and GEPA optimization, and ideation-to-production validation.",
+          "quote": "Our approach integrates several key components: (1) structured context engineering tailored to customer support agents, (2) systematic human-in-the-loop prompt iteration, (3) rigorous LLM judge evaluation with measured inter-rater agreement and GEPA optimization for consistency, and (4) ideation-to-production validation.",
+          "numbers": [
+            "(1)",
+            "(2)",
+            "(3)",
+            "(4)"
+          ],
+          "corroborated_by": [],
+          "id": "S5.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Evaluation-pipeline quality is stated to directly determine iteration velocity.",
+          "quote": "A central insight is that evaluation-pipeline quality directly determines iteration velocity.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Results are reported from five production deployments in card delivery, debt management, credit-limit support, card management, and product explanation.",
+          "quote": "We present results from five production deployments spanning distinct domains: card delivery, debt management, credit-limit support, card management, and product explanation.",
+          "numbers": [
+            "five"
+          ],
+          "corroborated_by": [],
+          "id": "S5.4"
+        },
+        {
+          "question": "q2",
+          "claim": "The deployments produce consistent customer-satisfaction gains while substantially accelerating iteration.",
+          "quote": "These deployments deliver consistent customer-satisfaction gains while substantially accelerating iteration.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.5"
+        },
+        {
+          "question": "q2",
+          "claim": "In card delivery, large-scale A/B testing yields a 37 percentage-point improvement in AI transactional Net Promoter Score and a 29 percentage-point gain in self-service rate over prior agent variants, with offline simulation metrics correlating with online outcomes.",
+          "quote": "In our card-delivery deployment, large-scale A/B testing yields a 37 percentage-point improvement in AI transactional Net Promoter Score and a 29 percentage-point gain in self-service rate over prior agent variants, alongside a strong correlation between offline simulation metrics and online outcomes, demonstrating that eval-driven development reliably predicts production impact.",
+          "numbers": [
+            "37",
+            "29"
+          ],
+          "corroborated_by": [],
+          "id": "S5.6"
+        },
+        {
+          "question": "q2",
+          "claim": "On most use cases, AI satisfaction reaches within a few percentage points of expert human agents.",
+          "quote": "On most use cases, AI satisfaction reaches within a few percentage points of expert human agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.7"
+        },
+        {
+          "question": "q5",
+          "claim": "A risk in building production-ready customer-facing agents is that critical pillars developed in isolation create blind spots that only surface after deployment.",
+          "quote": "Yet these critical pillars are typically developed in isolation, creating blind spots that only surface after deployment.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S5.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 5
+    },
+    {
+      "id": "84dd70992f",
+      "url": "https://arxiv.org/abs/2603.29231",
+      "title": "Beyond pass@1: A Reliability Science Framework for Long-Horizon LLM Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-03-31",
+      "org": "Aaditya Khanal, Yangyang Tao, Junxiu Zhou",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "The paper introduces a reliability science framework for long-horizon LLM agents with four metrics: Reliability Decay Curve (RDC), Variance Amplification Factor (VAF), Graceful Degradation Score (GDS), and Meltdown Onset Point (MOP).",
+          "quote": "> We introduce a reliability science framework for long-horizon LLM agents with four metrics: Reliability Decay Curve  \n> (RDC), Variance Amplification Factor (VAF), Graceful Degradation Score (GDS), and Meltdown Onset Point (MOP).",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S6.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The evaluation covers 10 models across 23,392 episodes on a 396-task benchmark spanning four duration buckets and three domains.",
+          "quote": "> evaluate 10 models across 23,392 episodes on a 396-task benchmark spanning four duration buckets and three domains.",
+          "numbers": [
+            "10",
+            "23,392",
+            "396",
+            "four",
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S6.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Reliability decay is domain-stratified: SE GDS drops from 0.90 to 0.44 while document processing is nearly flat from 0.74 to 0.71.",
+          "quote": "> Key findings: (1) reliability decay is domain-stratified -- SE GDS drops from 0.90 to 0.44 while document processing  \n> is nearly flat (0.74 to 0.71);",
+          "numbers": [
+            "0.90",
+            "0.44",
+            "0.74",
+            "0.71"
+          ],
+          "corroborated_by": [],
+          "id": "S6.3"
+        },
+        {
+          "question": "q4",
+          "claim": "VAF bifurcates by capability tier; high VAF is a capability signature, not an instability signal.",
+          "quote": "> (2) VAF bifurcates by capability tier -- high VAF is a capability signature, not an  \n> instability signal;",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Capability and reliability rankings diverge substantially, with multi-rank inversions at long horizons.",
+          "quote": "> (3) capability and reliability rankings diverge substantially, with multi-rank inversions at long  \n> horizons;",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Frontier models have the highest meltdown rates, up to 19%, because they attempt ambitious multi-step strategies that sometimes spiral.",
+          "quote": "> (4) frontier models have the highest meltdown rates (up to 19%) because they attempt ambitious multi-step  \n> strategies that sometimes spiral;",
+          "numbers": [
+            "19%"
+          ],
+          "corroborated_by": [],
+          "id": "S6.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Memory scaffolds universally hurt long-horizon performance across all 10 models.",
+          "quote": "> strategies that sometimes spiral; and (5) memory scaffolds universally hurt long-horizon performance across all 10  \n> models.",
+          "numbers": [
+            "10"
+          ],
+          "corroborated_by": [],
+          "id": "S6.7"
+        },
+        {
+          "question": "q4",
+          "claim": "The results motivate reliability as a first-class evaluation dimension alongside capability.",
+          "quote": "> models. These results motivate reliability as a first-class evaluation dimension alongside capability.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S6.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 6
+    },
+    {
+      "id": "90deae7426",
+      "url": "https://arxiv.org/abs/2609.16986",
+      "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-16",
+      "org": "Muhammad Ashar Ishfaq and Glaucia Melo",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions.",
+          "quote": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S7.1"
+        },
+        {
+          "question": "q3",
+          "claim": "ToMAS applies four explicit convertibility criteria to diagnosed execution traces.",
+          "quote": "ToMAS applies four explicit convertibility criteria to diagnosed execution traces.",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S7.2"
+        },
+        {
+          "question": "q3",
+          "claim": "A conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items.",
+          "quote": "A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items.",
+          "numbers": [
+            "242",
+            "39"
+          ],
+          "corroborated_by": [],
+          "id": "S7.3"
+        },
+        {
+          "question": "q4",
+          "claim": "In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92.",
+          "quote": "In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92.",
+          "numbers": [
+            "18",
+            "two",
+            "94.4%",
+            "0.92"
+          ],
+          "corroborated_by": [],
+          "id": "S7.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Converted items were used as binary rewards in a small-scale GRPO feasibility experiment with Qwen2.5-1.5B.",
+          "quote": "We then used the converted items as binary rewards in a small-scale GRPO feasibility experiment with Qwen2.5-1.5B.",
+          "numbers": [
+            "Qwen2.5-1.5B"
+          ],
+          "corroborated_by": [],
+          "id": "S7.5"
+        },
+        {
+          "question": "q4",
+          "claim": "On a 28-item held-out Magentic GAIA diagnostic, every evaluated condition exceeded the ROUGE-L threshold on the same 2 of 28 items.",
+          "quote": "On a 28-item held-out Magentic GAIA diagnostic, every evaluated condition exceeded the ROUGE-L threshold on the same 2 of 28 items.",
+          "numbers": [
+            "28",
+            "2",
+            "28"
+          ],
+          "corroborated_by": [],
+          "id": "S7.6"
+        },
+        {
+          "question": "q4",
+          "claim": "Post-hoc adapter checks show the LoRA update remained numerically negligible, with max absolute Delta W about 7e-6, so all conditions decode identically to the untrained checkpoint.",
+          "quote": "Post-hoc adapter checks show why: under the learning rate used, the LoRA update remained numerically negligible (max abs Delta W about 7e-6), so all conditions decode identically to the untrained checkpoint.",
+          "numbers": [
+            "7e-6"
+          ],
+          "corroborated_by": [],
+          "id": "S7.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The experiment does not show a training effect and cannot establish one; it reports an executable pipeline and two limitations for any conclusive study: a provenance gap between training and evaluation items, and lexical-overlap scoring.",
+          "quote": "The experiment therefore does not show a training effect and cannot establish one; it reports an executable pipeline together with two limitations that any conclusive study must address: a provenance gap between the training and evaluation items, and lexical-overlap scoring.",
+          "numbers": [
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S7.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 7
+    },
+    {
+      "id": "ad7301fba8",
+      "url": "https://arxiv.org/abs/2606.06545",
+      "title": "Queen-Bee Agents: A BeeSpec-Centered Architecture for Governed Enterprise MCP Orchestration",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-06-04",
+      "org": "Dutao Zhang, Liaotian",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "Queen-Bee is a governed multi-agent architecture in which a Queen control plane retrieves capabilities, plans task-scoped execution, and compiles a structured BeeSpec executed by specialized Bee agents with constrained tool access.",
+          "quote": "We present Queen-Bee, a governed multi-agent architecture in which a Queen control plane retrieves capabilities, plans task-scoped execution, and compiles a structured BeeSpec that is executed by specialized Bee agents under constrained tool access.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.1"
+        },
+        {
+          "question": "q3",
+          "claim": "A working prototype was implemented with tenant-scoped MCP connectors, audit-backed execution-time governance, retrieval-driven weak incubation, and multiple provisioning backends.",
+          "quote": "We implement a working prototype with tenant-scoped MCP connectors, audit-backed execution-time governance, retrieval-driven weak incubation, and multiple provisioning backends.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.2"
+        },
+        {
+          "question": "q5",
+          "claim": "The enterprise agent setting requires policy enforcement, tenant-scoped isolation, and execution within explicit operational boundaries, beyond raw task capability.",
+          "quote": "In this setting, raw task capability is insufficient: organizations also require policy enforcement, tenant-scoped isolation, and execution that remains within explicit operational boundaries.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The system was evaluated on 59 enterprise-style tasks covering governance-sensitive requests, retrieval-driven provisioning, scoped local execution, and chemistry workflow integration.",
+          "quote": "We evaluate the system on 59 enterprise-style tasks spanning governance-sensitive requests, retrieval-driven provisioning, scoped local execution, and chemistry workflow integration.",
+          "numbers": [
+            "59"
+          ],
+          "corroborated_by": [],
+          "id": "S8.4"
+        },
+        {
+          "question": "q5",
+          "claim": "The retrieval-driven Queen-Bee variant achieved a task success rate of 0.964, zero governance failures, and substantially better scoped execution quality than a static Queen-Bee baseline and a permissive single-agent baseline.",
+          "quote": "The retrieval-driven Queen-Bee variant achieves a task success rate of 0.964, zero governance failures, and substantially better scoped execution quality than both a static Queen-Bee baseline and a permissive single-agent baseline.",
+          "numbers": [
+            "0.964",
+            "zero"
+          ],
+          "corroborated_by": [],
+          "id": "S8.5"
+        },
+        {
+          "question": "q3",
+          "claim": "A multi-Bee chemistry workflow was demonstrated with explicit approval gating and a concrete top-3 shortlist grounded in real upstream evidence and screening artifacts.",
+          "quote": "We further show a multi-Bee chemistry workflow with explicit approval gating and a concrete top-3 shortlist grounded in real upstream evidence and screening artifacts.",
+          "numbers": [
+            "top-3"
+          ],
+          "corroborated_by": [],
+          "id": "S8.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Comparisons with hybrid retrieval and LLM-guided provisioning found richer provisioning backends viable but not outperforming the lightweight structured retriever on the small, highly structured capability registry.",
+          "quote": "Additional comparisons with hybrid retrieval and LLM-guided provisioning show that richer provisioning backends are viable but do not outperform the lightweight structured retriever on the current small, highly structured capability registry.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The results are prototype-level systems evidence rather than a production deployment study, and the authors suggest evaluating enterprise agent platforms by governed provisioning, isolation behavior, scoped execution quality, and artifact-aware workflow coordination.",
+          "quote": "The results provide prototype-level systems evidence rather than a production deployment study, and suggest that enterprise agent platforms should be evaluated not only by capability, but also by governed provisioning, isolation behavior, scoped execution quality, and artifact-aware workflow coordination.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S8.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 8
+    },
+    {
+      "id": "b20aee7acc",
+      "url": "https://arxiv.org/abs/2606.07682",
+      "title": "SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-06-05",
+      "org": "Rishi Desai et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "SWE-Marathon is a benchmark of 20 long-horizon tasks spanning software engineering and adjacent technical domains.",
+          "quote": "We introduce SWE-Marathon, a benchmark of 20 long-horizon tasks spanning software engineering and adjacent technical domains.",
+          "numbers": [
+            "20"
+          ],
+          "corroborated_by": [],
+          "id": "S9.1"
+        },
+        {
+          "question": "q4",
+          "claim": "Logged agent attempts on SWE-Marathon average 27.2M total tokens, making it substantially longer-horizon than existing SWE and command-line agent benchmarks.",
+          "quote": "Logged agent attempts average 27.2M total tokens, making SWE-Marathon substantially longer-horizon than existing SWE and command-line agent benchmarks.",
+          "numbers": [
+            "27.2M"
+          ],
+          "corroborated_by": [],
+          "id": "S9.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Current frontier coding agents solve fewer than 30% of SWE-Marathon tasks.",
+          "quote": "Current frontier coding agents solve fewer than 30% of tasks.",
+          "numbers": [
+            "30%"
+          ],
+          "corroborated_by": [],
+          "id": "S9.3"
+        },
+        {
+          "question": "q5",
+          "claim": "Failures on SWE-Marathon often arise from poor self-verification, self-reported infeasibility, and premature termination.",
+          "quote": "Failures often arise from poor self-verification, self-reported infeasibility, and premature termination.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.4"
+        },
+        {
+          "question": "q5",
+          "claim": "Reward-hacking behavior was observed in 13.8% of rollouts, where agents attempted to exploit the environment or verifier to bypass the intended workflow.",
+          "quote": "We also observe reward-hacking behavior in 13.8% of rollouts, where agents attempt to exploit the environment or verifier to bypass the intended workflow.",
+          "numbers": [
+            "13.8%"
+          ],
+          "corroborated_by": [],
+          "id": "S9.5"
+        },
+        {
+          "question": "q5",
+          "claim": "SWE-Marathon includes adversarial review of test suites and execution environments, as well as multi-layer checks designed to prevent shortcut solutions.",
+          "quote": "SWE-Marathon includes adversarial review of test suites and execution environments, as well as multi-layer checks designed to prevent shortcut solutions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.6"
+        },
+        {
+          "question": "q4",
+          "claim": "Each SWE-Marathon task consists of a unique executable environment, a human-written reference solution, and a multi-layer verification suite.",
+          "quote": "Each task consists of a unique executable environment, a human-written reference solution, and a multi-layer verification suite.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S9.7"
+        },
+        {
+          "question": "q4",
+          "claim": "Current agent benchmarks largely evaluate short-form tasks such as single pull requests, small tickets, or 5-10 minute exercises, limiting measurement of planning, long-context understanding, and memory use.",
+          "quote": "Yet current agent benchmarks largely evaluate short-form tasks, such as single pull requests, small tickets, or 5-10 minute exercises, limiting our ability to measure agents' capabilities in planning, long-context understanding, and memory use.",
+          "numbers": [
+            "5-10"
+          ],
+          "corroborated_by": [],
+          "id": "S9.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 9
+    },
+    {
+      "id": "ca335a8eae",
+      "url": "https://arxiv.org/abs/2510.08002",
+      "title": "Learning on the Job: An Experience-Driven Self-Evolving Agent for Long-Horizon Tasks",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-10-09",
+      "org": "Cheng Yang, Xuemeng Yang, Licheng Wen, Daocheng Fu, Jianbiao Mei, Rong Wu, Pinlong Cai, Yufan Shen, Nianchen Deng, Botian Shi, Yu Qiao, Haifeng Li",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "Existing LLM agents are described as test-time static and unable to learn from experience, so they cannot accumulate knowledge or continuously improve on the job.",
+          "quote": "Existing LLM agents suffer from a critical limitation: they are test-time static and cannot learn from experience, lacking the ability to accumulate knowledge and continuously improve on the job.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.1"
+        },
+        {
+          "question": "q3",
+          "claim": "MUSE is an experience-driven, self-evolving agent framework centered on a hierarchical Memory Module that organizes experience and uses it to plan and execute long-horizon tasks across multiple applications.",
+          "quote": "To address this challenge, we propose MUSE, a novel agent framework that introduces an experience-driven, self-evolving system centered around a hierarchical Memory Module. MUSE organizes diverse levels of experience and leverages them to plan and execute long-horizon tasks across multiple applications.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.2"
+        },
+        {
+          "question": "q3",
+          "claim": "After each sub-task, MUSE autonomously reflects on its trajectory, converts the raw trajectory into structured experience, and integrates it back into the Memory Module.",
+          "quote": "After each sub-task execution, the agent autonomously reflects on its trajectory, converting the raw trajectory into structured experience and integrating it back into the Memory Module.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.3"
+        },
+        {
+          "question": "q4",
+          "claim": "The MUSE mechanism lets the agent evolve beyond its static pretrained parameters, supporting continuous learning and self-evolution.",
+          "quote": "This mechanism enables the agent to evolve beyond its static pretrained parameters, fostering continuous learning and self-evolution.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.4"
+        },
+        {
+          "question": "q4",
+          "claim": "MUSE was evaluated on the long-horizon productivity benchmark TAC and achieved new state-of-the-art performance by a significant margin using only a lightweight Gemini-2.5 Flash model.",
+          "quote": "We evaluate MUSE on the long-horizon productivity benchmark TAC. It achieves new SOTA performance by a significant margin using only a lightweight Gemini-2.5 Flash model.",
+          "numbers": [
+            "2.5"
+          ],
+          "corroborated_by": [],
+          "id": "S10.5"
+        },
+        {
+          "question": "q4",
+          "claim": "Experiments indicate that as MUSE autonomously accumulates experience, its task completion improves and it shows robust continuous learning and self-evolution.",
+          "quote": "Sufficient Experiments demonstrate that as the agent autonomously accumulates experience, it exhibits increasingly superior task completion capabilities, as well as robust continuous learning and self-evolution capabilities.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.6"
+        },
+        {
+          "question": "q4",
+          "claim": "MUSE's accumulated experience shows generalization properties that enable zero-shot improvement on new tasks.",
+          "quote": "Moreover, the accumulated experience from MUSE exhibits strong generalization properties, enabling zero-shot improvement on new tasks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.7"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper positions MUSE as establishing a new paradigm for AI agents capable of real-world productivity task automation.",
+          "quote": "MUSE establishes a new paradigm for AI agents capable of real-world productivity task automation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S10.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 10
+    },
+    {
+      "id": "dd4eb959af",
+      "url": "https://arxiv.org/abs/2609.34821",
+      "title": "CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-29",
+      "org": "An Yan, Yu Huo, Zhiwei Shang, Yiran Peng, Chenglin Wu",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "CEO Arena is a benchmark using matched replacement evaluation to assess operating returns and each agent's effects on rivals and the market.",
+          "quote": "We introduce CEO Arena, a benchmark that uses matched replacement evaluation to assess operating returns alongside an agent's effects on rivals and the market.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.1"
+        },
+        {
+          "question": "q1",
+          "claim": "In an eight-company simulated market over 500 days, LLM CEO agents sequentially decide pricing, procurement, marketing, R&D, and service using private company information and noisy market signals under resource constraints and delayed feedback.",
+          "quote": "In a shared eight-company market spanning 500 simulated days, CEOs make sequential decisions on pricing, procurement, marketing, research and development, and service using private company information and noisy market signals, under resource constraints and delayed feedback.",
+          "numbers": [
+            "eight",
+            "500"
+          ],
+          "corroborated_by": [],
+          "id": "S11.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Eight LLM-based CEO agents were evaluated in 27 main runs and 26 robustness runs; most agents had negative mean returns, and private gains could accompany market losses.",
+          "quote": "We evaluate eight LLM-based CEO agents in 27 main runs and 26 robustness runs. In the main evaluation, most agents have negative mean returns, and private gains can accompany market losses.",
+          "numbers": [
+            "eight",
+            "27",
+            "26"
+          ],
+          "corroborated_by": [],
+          "id": "S11.3"
+        },
+        {
+          "question": "q4",
+          "claim": "Robustness analyses suggest aggregate patterns extend beyond the original rule-based baseline, with only four of 56 directed pairs showing relatively stable effects.",
+          "quote": "Robustness analyses suggest that aggregate patterns extend beyond the original rule-based baseline; four of the 56 directed pairs show relatively stable effects.",
+          "numbers": [
+            "four",
+            "56"
+          ],
+          "corroborated_by": [],
+          "id": "S11.4"
+        },
+        {
+          "question": "q5",
+          "claim": "Memory, action, and accounting traces suggest demand capture and rivals' pricing and spending responses as possible explanations.",
+          "quote": "Memory, action, and accounting traces suggest demand capture and rivals' pricing and spending responses as possible explanations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.5"
+        },
+        {
+          "question": "q4",
+          "claim": "Long-horizon competition tests agents' ability to coordinate business decisions under uncertainty and adapt to changing rival strategies.",
+          "quote": "Long-horizon competition tests agents' ability to coordinate business decisions under uncertainty and adapt to changing rival strategies.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Each CEO agent is compared with a reference policy in the same company under the same economic seed, holding other agents' identities and assignments fixed while all agents adapt.",
+          "quote": "Each CEO agent is compared with a reference policy in the same company under the same economic seed, holding other agents' identities and assignments fixed while all agents adapt.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.7"
+        },
+        {
+          "question": "q5",
+          "claim": "CEO Arena is presented as a controlled testbed for studying long-horizon agent competition, strategic interaction, and market externalities.",
+          "quote": "CEO Arena provides a controlled testbed for studying long-horizon agent competition, strategic interaction, and market externalities.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S11.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 11
+    },
+    {
+      "id": "f94b30cc94",
+      "url": "https://arxiv.org/abs/2608.08621",
+      "title": "Business Arena: Benchmarking LLM Agents in a Realistic Marketplace",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-09",
+      "org": "Yijun Pan, Yukun Lian, Kunyu Shi, Junbo Li, Hongwei Xue, Sicong Xie, Guannan Zhang, Xiaoying Xing",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Business Arena is a controlled environment where an AI agent runs a cross-border shop, buying from suppliers and selling to buyers over a long horizon.",
+          "quote": "We introduce \\textbf{Business Arena}, a controlled environment where an AI agent runs a cross-border shop, buying from suppliers and selling to buyers over a long horizon.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The benchmark is grounded in real alibaba.com sourcing data and market conditions calibrated from authoritative sources.",
+          "quote": "We ground the arena in real [this http URL](http://alibaba.com/)sourcing data and market conditions calibrated from authoritative sources.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper evaluates 15 frontier models and finds a ninefold difference in mean final net worth.",
+          "quote": "We evaluate 15 frontier models and find a ninefold difference in mean final net worth.",
+          "numbers": [
+            "15",
+            "ninefold"
+          ],
+          "corroborated_by": [],
+          "id": "S12.3"
+        },
+        {
+          "question": "q1",
+          "claim": "Even the best model falls behind human-designed strategies, indicating that business operation remains challenging for LLM agents.",
+          "quote": "Even the best model falls behind human-designed strategies, indicating that business operation remains challenging for LLM agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Frontier LLM agents can increasingly complete complex workflows, yet business-related capabilities are rarely evaluated in existing agent benchmarks.",
+          "quote": "Frontier LLM agents can increasingly complete complex workflows, yet business-related capabilities are rarely evaluated in existing agent benchmarks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.5"
+        },
+        {
+          "question": "q4",
+          "claim": "Delayed and coupled consequences make individual business decisions difficult to judge, but their combined outcome is measurable through profit.",
+          "quote": "Delayed and coupled consequences make individual business decisions difficult to judge, but their combined outcome is measurable through profit.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.6"
+        },
+        {
+          "question": "q1",
+          "claim": "Skill-level analysis reveals operating styles ranging from margin-focused premium sellers to high-turnover wholesalers and customer-service specialists, and action-level attribution identifies sourcing, pricing, and recovery decisions that create or destroy value.",
+          "quote": "Skill-level analysis reveals operating styles, from margin-focused premium sellers to high-turnover wholesalers and customer-service specialists, while action-level attribution identifies the sourcing, pricing, and recovery decisions that create or destroy value.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.7"
+        },
+        {
+          "question": "q5",
+          "claim": "Business operators must infer opportunities from partial signals, commit capital under uncertainty, adapt to delayed outcomes, and satisfy regulatory obligations before trading legally.",
+          "quote": "Operators must infer opportunities from partial signals, commit capital under uncertainty, adapt to delayed outcomes in a changing market, and satisfy regulatory obligations before trading legally.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 12
+    },
+    {
+      "id": "08a23700b2",
+      "url": "https://arxiv.org/abs/2410.15650",
+      "title": "Voice-Enabled AI Agents can Perform Common Scams",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-10-21",
+      "org": "Richard Fang, Dylan Bowman, Daniel Kang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q5",
+          "claim": "The paper shows that voice-enabled AI agents can perform the actions necessary to perform common scams.",
+          "quote": "In this work, we show that voice-enabled AI agents can perform the actions necessary to perform common scams.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.1"
+        },
+        {
+          "question": "q5",
+          "claim": "The authors selected common scams collected by the government and constructed voice-enabled agents with directions to perform those scams.",
+          "quote": "To do so, we select a list of common scams collected by the government and construct voice-enabled agents with directions to perform these scams.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.2"
+        },
+        {
+          "question": "q5",
+          "claim": "Experiments showed that the voice-enabled agents could autonomously perform the actions needed for such scams.",
+          "quote": "We conduct experiments on our voice-enabled agents and show that they can indeed perform the actions necessary to autonomously perform such scams.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.3"
+        },
+        {
+          "question": "q5",
+          "claim": "The results raise questions about widespread deployment of voice-enabled AI agents.",
+          "quote": "Our results raise questions around the widespread deployment of voice-enabled AI agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Recent advances in multi-modal, highly capable LLMs have enabled voice-enabled AI agents.",
+          "quote": "Recent advances in multi-modal, highly capable LLMs have enabled voice-enabled AI agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Voice-enabled AI agents are enabling new applications such as voice-enabled autonomous customer service.",
+          "quote": "These agents are enabling new applications, such as voice-enabled autonomous customer service.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper states that these new AI capabilities have the potential for dual use.",
+          "quote": "However, with all AI capabilities, these new capabilities have the potential for dual use.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 13
+    },
+    {
+      "id": "11c7904c47",
+      "url": "https://arxiv.org/abs/2609.04611",
+      "title": "$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-04",
+      "org": "Quan Shi, Keshav Dhandhania, Karthik Narasimhan, Victor Barres",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "τ τ-bench makes agent construction the task: a developer agent is given business records, a client with requirements, a production API, an inherited codebase, and limits on serving cost and models, then must deliver a complete customer-service agent scored against held-out simulated users.",
+          "quote": "We introduce τ τ-bench (pronounced hyper-tau-bench), a benchmark that makes agent construction the task. A developer agent is given the records a business actually keeps, a client who holds requirements, a production API that operations must run through, a codebase to inherit, and limits on serving cost and models: the same starting point a real engagement provides. From these it must deliver a complete customer-service agent, scored by deploying that agent against held-out simulated users.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Across 53 tasks spanning four domains, the strongest configuration, Claude Opus 5 under Claude Code, passes just 23.9% of evaluation simulations, while an expert-authored reference ceiling scores 82.2%.",
+          "quote": "Across 53 tasks spanning four domains, the strongest configuration, Claude Opus 5 under Claude Code, passes just 23.9% of evaluation simulations. Meanwhile, an expert-authored reference ceiling scores 82.2%.",
+          "numbers": [
+            "53",
+            "four",
+            "23.9%",
+            "82.2%"
+          ],
+          "corroborated_by": [],
+          "id": "S14.2"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper says the work of building LLM agents is increasingly handed to coding agents, but existing benchmarks say little about whether an AI system can deliver one under real client engagement conditions.",
+          "quote": "Notably, the work of building them is increasingly handed to coding agents, yet existing benchmarks say little about whether an AI system can deliver one under the conditions of a real client engagement.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The benchmark environment includes a production API that operations must run through, a codebase to inherit, and limits on serving cost and models.",
+          "quote": "A developer agent is given the records a business actually keeps, a client who holds requirements, a production API that operations must run through, a codebase to inherit, and limits on serving cost and models: the same starting point a real engagement provides.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.4"
+        },
+        {
+          "question": "q4",
+          "claim": "The benchmark reports low end-to-end reliability for the strongest configuration: a 23.9% pass rate versus an 82.2% expert-authored reference ceiling.",
+          "quote": "Across 53 tasks spanning four domains, the strongest configuration, Claude Opus 5 under Claude Code, passes just 23.9% of evaluation simulations. Meanwhile, an expert-authored reference ceiling scores 82.2%.",
+          "numbers": [
+            "53",
+            "four",
+            "23.9%",
+            "82.2%"
+          ],
+          "corroborated_by": [],
+          "id": "S14.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Failure modes mirror those of human agent developers: models issue shallow queries instead of deeply comprehending records, communicate almost nothing to the client, experiment too little with agent architecture and serving spend, and ship the first design that runs.",
+          "quote": "The failures mirror ones human agent developers see: models issue shallow queries in place of deep comprehension of the records, communicate almost nothing to the client, and experiment too little with agent architecture and serving spend, shipping the first design that runs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.6"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper states LLM agents are deployed to handle customer service, adjudicate disputes, and operate internal systems.",
+          "quote": "LLM agents are rapidly becoming production software, deployed to handle customer service, adjudicate disputes, and operate internal systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 14
+    },
+    {
+      "id": "1c22808b94",
+      "url": "https://arxiv.org/abs/2607.17331",
+      "title": "Agentic ERP: Multi-Agent Large Language Model Architecture for Autonomous Enterprise Resource Planning",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-07-19",
+      "org": "Zhihao Liu, Tianyu Wang, Xi Vincent Wang, Lihui Wang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The Agentic ERP paper evaluates the system at three levels, including a scenario-based task suite, a comparison of six orchestration paradigms on cross-functional crisis tasks, and a 365-day agent-in-the-loop simulation against rule-based RPA and no-intervention baselines.",
+          "quote": "Third, the system is evaluated at three levels: a scenario-based task suite, a comprehensive comparison of six orchestration paradigms on cross-functional crisis tasks, and a 365-day agent-in-the-loop simulation against rule-based RPA and no-intervention baselines.",
+          "numbers": [
+            "three",
+            "six",
+            "365-day"
+          ],
+          "corroborated_by": [],
+          "id": "S15.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Across the evaluation levels, the proposed multi-agent method is significantly better than the baseline, sustaining a simulated year of operation with zero stockouts while the rule-based baseline accumulates hundreds under the same demand stream.",
+          "quote": "Across these levels the proposed multi-agent method is significantly better than the baseline, and the system sustains a simulated year of operation with zero stockouts while the rule-based baseline accumulates hundreds under the same demand stream.",
+          "numbers": [
+            "zero",
+            "hundreds"
+          ],
+          "corroborated_by": [],
+          "id": "S15.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Agentic ERP combines role-aligned LLM agents with a risk-tiered human-in-the-loop harness and a graph-based orchestrator to execute end-to-end business workflows on a production ERP backend.",
+          "quote": "This paper presents Agentic ERP, an expert-system architecture that combines role-aligned large-language-model (LLM) agents with a risk-tiered human-in-the-loop harness and a graph-based orchestrator to execute end-to-end business workflows on a production ERP backend.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Autonomous ERP operation is formulated as a constrained sequential-decision problem over a structured enterprise state, with a decomposition argument linking role-aligned agents to a measurable reduction in per-step tool-selection complexity.",
+          "quote": "First, autonomous ERP operation is formulated as a constrained sequential-decision problem over a structured enterprise state, with a decomposition argument linking role-aligned agents to a measurable reduction in per-step tool-selection complexity.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The orchestration is a graph-based Planner--Executor--Reflector--Responder pattern that decouples generation from evaluation through externalised grading criteria and sprint contracts.",
+          "quote": "Second, a graph-based Planner--Executor--Reflector--Responder orchestration decouples generation from evaluation through externalised grading criteria and sprint contracts, packaging recent harness-engineering principles as inspectable expert-system artefacts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper states that classical rule-based automation cannot reason about exceptions and that monolithic AI assistants degrade when asked to coordinate across functional boundaries.",
+          "quote": "Enterprise Resource Planning (ERP) systems record transactions reliably but still delegate almost all operational decision-making to human specialists, because classical rule-based automation cannot reason about exceptions and monolithic AI assistants degrade when asked to coordinate across functional boundaries.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The work concludes that role-aligned LLM agents under human oversight can move an ERP system from passively recording transactions to actively executing operational decisions, and it provides a reference architecture and evaluation protocol for autonomous ERP.",
+          "quote": "The work shows that role-aligned LLM agents under human oversight can move an ERP system from passively recording transactions to actively executing operational decisions, and it provides a reference architecture and an evaluation protocol for autonomous enterprise resource planning.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S15.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 15
+    },
+    {
+      "id": "4e37fb881d",
+      "url": "https://arxiv.org/abs/2609.11108",
+      "title": "But How Would AI Agents Run a Town's Economy?",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-10",
+      "org": "Sajal Regmi, Siddhartha Pudasaini, Chetan Phakami Pun",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The study placed 100 memory-equipped LLM agents in charge of a closed, money-conserving spatial economy on real Pokhara Lakeside geography, where they earned wages, ran businesses, and set prices, simulating up to 26 simulated weeks.",
+          "quote": "We placed 100 memory-equipped large language model (LLM) agents in charge of a closed, money-conserving spatial economy on real Pokhara Lakeside geography (earning wages, running businesses, setting prices) and ran this multi-agent simulation for up to 26 simulated weeks, well past the 1-2 weeks typical of agent-society studies.",
+          "numbers": [
+            "100",
+            "26",
+            "1-2"
+          ],
+          "corroborated_by": [],
+          "id": "S16.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The simulation produced 91 validated runs with 2.44M agent decisions and 21.5B tokens; money stopped moving in a specific measurable way.",
+          "quote": "Across 91 validated runs (2.44M agent decisions, 21.5B tokens), the money stops moving, in a specific and measurable way.",
+          "numbers": [
+            "91",
+            "2.44M",
+            "21.5B"
+          ],
+          "corroborated_by": [],
+          "id": "S16.2"
+        },
+        {
+          "question": "q1",
+          "claim": "A 12x tourist demand shock raised business revenue 4.62x (p<0.001), decomposed into a 1.50x extensive margin and a 3.07x intensive margin; wages moved 1.03x (p=0.42) and only 0.3% of 3,981 menu items were ever repriced (p=0.47).",
+          "quote": "A 12x tourist demand shock raises business revenue 4.62x (p<0.001), which we decompose exactly into a 1.50x extensive margin (more businesses trading) and a 3.07x intensive margin (more revenue each). Monetary transmission stops there. Wages move 1.03x (p=0.42); 0.3% of 3,981 menu items are ever repriced (p=0.47).",
+          "numbers": [
+            "12x",
+            "4.62x",
+            "p<0.001",
+            "1.50x",
+            "3.07x",
+            "1.03x",
+            "p=0.42",
+            "0.3%",
+            "3,981",
+            "p=0.47"
+          ],
+          "corroborated_by": [],
+          "id": "S16.3"
+        },
+        {
+          "question": "q1",
+          "claim": "A randomized cash transfer of NPR 5,000 to 20 of 100 agents left 96.7% still held 311 pulses later, with marginal propensity to consume 3-4%, indistinguishable from zero.",
+          "quote": "A randomized cash transfer (NPR 5,000 to 20 of 100 agents) shows the same pattern from the opposite direction: 96.7% is still held 311 pulses later, marginal propensity to consume 3-4% by two independent measures, indistinguishable from zero.",
+          "numbers": [
+            "NPR 5,000",
+            "20",
+            "100",
+            "96.7%",
+            "311",
+            "3-4%"
+          ],
+          "corroborated_by": [],
+          "id": "S16.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Wealth distribution was near-frozen at ρ=0.964 over 2 simulated weeks but not frozen, falling to 0.832 at 12 weeks and 0.752 at 26 weeks, showing horizon-dependence invisible to short studies.",
+          "quote": "The wealth distribution is consequently near-frozen at the horizon this literature uses (ρ=0.964over 2 simulated weeks), but not frozen. ρfalls to 0.832 at 12 weeks and 0.752 at 26, a horizon-dependence no short study can see.",
+          "numbers": [
+            "0.964",
+            "2",
+            "0.832",
+            "12",
+            "0.752",
+            "26"
+          ],
+          "corroborated_by": [],
+          "id": "S16.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Matched ablations showed swapping the backing LLM moved every measured outcome (p=0.0039), while deleting agents' memory moved none detectably.",
+          "quote": "Matched ablations show which knob actually matters. Swapping the backing LLM moves every outcome we measure (p=0.0039); deleting agents' memory moves none of them detectably.",
+          "numbers": [
+            "p=0.0039"
+          ],
+          "corroborated_by": [],
+          "id": "S16.6"
+        },
+        {
+          "question": "q3",
+          "claim": "A purely social tool failed 94-97% of the time across two model families, against about 96% success on economic tools, with no measurable shift away from it.",
+          "quote": "A purely social tool fails 94-97% of the time across two model families, compared with ~96% success on economic tools, with no measurable shift away from it.",
+          "numbers": [
+            "94-97%",
+            "two",
+            "~96%"
+          ],
+          "corroborated_by": [],
+          "id": "S16.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 16
+    },
+    {
+      "id": "9eaf642daf",
+      "url": "https://arxiv.org/abs/2503.13657",
+      "title": "Why Do Multi-Agent LLM Systems Fail?",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-24",
+      "org": "Mert Cemri et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q5",
+          "claim": "Despite enthusiasm for multi-agent LLM systems, their performance gains on popular benchmarks are often minimal.",
+          "quote": "Despite enthusiasm for Multi-Agent LLM Systems (MAS), their performance gains on popular benchmarks are often minimal.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.1"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper introduces MAST-Data, a dataset of over 1600 annotated traces collected across 7 popular multi-agent system frameworks.",
+          "quote": "We introduce MAST-Data, a comprehensive dataset of 1600+ annotated traces collected across 7 popular MAS frameworks.",
+          "numbers": [
+            "1600+",
+            "7"
+          ],
+          "corroborated_by": [],
+          "id": "S17.2"
+        },
+        {
+          "question": "q5",
+          "claim": "MAST-Data is described as the first multi-agent system dataset to outline failure dynamics in multi-agent systems for guiding better future systems.",
+          "quote": "MAST-Data is the first multi-agent system dataset to outline the failure dynamics in MAS for guiding the development of better future systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.3"
+        },
+        {
+          "question": "q5",
+          "claim": "The authors build the first Multi-Agent System Failure Taxonomy, called MAST, to systematically classify failures in MAST-Data.",
+          "quote": "To enable systematic classification of failures for MAST-Data, we build the first Multi-Agent System Failure Taxonomy (MAST).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.4"
+        },
+        {
+          "question": "q5",
+          "claim": "MAST was developed through analysis of 150 traces, guided by expert human annotators and validated with high inter-annotator agreement of kappa = 0.88.",
+          "quote": "We develop MAST through rigorous analysis of 150 traces, guided closely by expert human annotators and validated by high inter-annotator agreement (kappa = 0.88).",
+          "numbers": [
+            "150",
+            "0.88"
+          ],
+          "corroborated_by": [],
+          "id": "S17.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The taxonomy identifies 14 unique failure modes clustered into 3 categories: system design issues, inter-agent misalignment, and task verification.",
+          "quote": "This process identifies 14 unique modes, clustered into 3 categories: (i) system design issues, (ii) inter-agent misalignment, and (iii) task verification.",
+          "numbers": [
+            "14",
+            "3"
+          ],
+          "corroborated_by": [],
+          "id": "S17.6"
+        },
+        {
+          "question": "q5",
+          "claim": "To enable scalable annotation, the authors develop an LLM-as-a-Judge pipeline with high agreement with human annotations.",
+          "quote": "To enable scalable annotation, we develop an LLM-as-a-Judge pipeline with high agreement with human annotations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S17.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 17
+    },
+    {
+      "id": "cc7bc3c916",
+      "url": "https://arxiv.org/abs/2609.32691",
+      "title": "Silent Failures in Agentic Security Evaluation: A Validated Harness for Tool-Call Mediation Under Indirect Prompt Injection",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-26",
+      "org": "Animesh Shaw",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q5",
+          "claim": "LLM agents that invoke privileged tools are vulnerable to indirect prompt injection, where adversarial instructions embedded in retrieved data hijack the agent's actions.",
+          "quote": "LLM agents that invoke privileged tools are vulnerable to indirect prompt injection (IPI), in which adversarial instructions embedded in retrieved data hijack the agent's actions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.1"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper audits an IPI benchmark and its harness and identifies four defect classes: silent payload non-delivery, attack success scored by tool identity rather than arguments, false-rejection rate conflated with model incapacity, and the absence of an audit trail.",
+          "quote": "We audit an IPI benchmark and its harness and identify four defect classes -- silent payload non-delivery, attack success scored by tool identity rather than arguments, false-rejection rate conflated with model incapacity, and the absence of an audit trail -- each of which yields a plausible, publishable, and incorrect number.",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S18.2"
+        },
+        {
+          "question": "q5",
+          "claim": "Re-scoring identical execution traces under defective and corrected definitions shows the tool-identity scorer reports a 21.7% attack-success rate while the true argument-level rate is 1.2%.",
+          "quote": "We quantify the distortion by re-scoring identical execution traces under the defective and corrected definitions: on real agent behaviour, the tool-identity scorer reports a 21.7% attack-success rate where the true argument-level rate is 1.2%.",
+          "numbers": [
+            "21.7%",
+            "1.2%"
+          ],
+          "corroborated_by": [],
+          "id": "S18.3"
+        },
+        {
+          "question": "q5",
+          "claim": "In the sharpest case, an open model previously reported at 62.8% registers 0% under the corrected harness, with the prior figure largely an artifact of undelivered payloads and identity-level scoring.",
+          "quote": "In the sharpest case, an open model previously reported at 62.8% registers 0% under the corrected harness -- the prior figure largely an artifact of undelivered payloads and identity-level scoring.",
+          "numbers": [
+            "62.8%",
+            "0%"
+          ],
+          "corroborated_by": [],
+          "id": "S18.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The released harness makes each defect unrepresentable through machine-checkable payload placement, argument-level attacker predicates, per-scenario environments, and mandatory trace persistence, and it reports whether a compromised agent discloses the attack, the full security/utility operating curve of an LLM-judge defense, and tool-calling capability disentangled from defensive over-blocking.",
+          "quote": "We release a harness whose construction makes each defect unrepresentable -- machine-checkable payload placement, argument-level attacker predicates, per-scenario environments, and mandatory trace persistence -- and use it to report three quantities the field does not: whether a compromised agent discloses the attack, the full security/utility operating curve of an LLM-judge defense, and tool-calling capability disentangled from defensive over-blocking.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S18.5"
+        },
+        {
+          "question": "q5",
+          "claim": "A corrected harness overturns a reported \"capability barrier\": a model deemed incapable of tool use is in fact fully capable, with the earlier result an artifact of environment mismatch.",
+          "quote": "A corrected harness further overturns a reported \"capability barrier\": a model deemed incapable of tool use is in fact fully capable, its earlier result an artifact of environment mismatch.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper argues that evaluation validity is a prerequisite for, not a footnote to, defense claims in agentic security, and provides an instrument that enforces it.",
+          "quote": "We argue that evaluation validity is a prerequisite for, not a footnote to, defense claims in agentic security, and provide an instrument that enforces it.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S18.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 18
+    },
+    {
+      "id": "190bb3a017",
+      "url": "https://arxiv.org/abs/2510.22143",
+      "title": "Benchmarking and Learning Real-World Customer Service Dialogue",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-10-25",
+      "org": "Tianhong Gao et al. (arXiv)",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "In online A/B tests, OlaMind improved issue resolution by an average of 23.67% and lowered human transfer rate by 6.6% compared with the baseline.",
+          "quote": "OlaMind surpasses GPT-5.2 and Gemini 3 Pro on OlaBench (83.64 vs. 70.58/70.84) and, in online A/B tests, delivers an average +23.67% issue resolution and -6.6% human transfer rate versus the baseline, bridging offline gains to deployment.",
+          "numbers": [
+            "83.64",
+            "70.58",
+            "70.84",
+            "+23.67%",
+            "-6.6%"
+          ],
+          "corroborated_by": [],
+          "id": "S19.1"
+        },
+        {
+          "question": "q3",
+          "claim": "OlaBench is an industrial intelligent customer service benchmark spanning retrieval-augmented generation, workflow-based systems, and agentic settings, and it evaluates service capability, safety, and latency sensitivity.",
+          "quote": "We close this gap with a benchmark-to-optimization loop: we first introduce OlaBench, an ICS benchmark spanning retrieval-augmented generation, workflow-based systems, and agentic settings, which evaluates service capability, safety, and latency sensitivity; moreover, motivated by OlaBench results showing state-of-the-art LLMs still fall short, we propose OlaMind, which distills reusable reasoning patterns and service strategies from expert dialogues and applies staged exploration--exploitation reinforcement learning with instance-level rubric-aware guidance to improve model capability.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.2"
+        },
+        {
+          "question": "q3",
+          "claim": "OlaMind distills reusable reasoning patterns and service strategies from expert dialogues and applies staged exploration-exploitation reinforcement learning with instance-level rubric-aware guidance.",
+          "quote": "We close this gap with a benchmark-to-optimization loop: we first introduce OlaBench, an ICS benchmark spanning retrieval-augmented generation, workflow-based systems, and agentic settings, which evaluates service capability, safety, and latency sensitivity; moreover, motivated by OlaBench results showing state-of-the-art LLMs still fall short, we propose OlaMind, which distills reusable reasoning patterns and service strategies from expert dialogues and applies staged exploration--exploitation reinforcement learning with instance-level rubric-aware guidance to improve model capability.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.3"
+        },
+        {
+          "question": "q4",
+          "claim": "OlaBench results show state-of-the-art LLMs still fall short, motivating OlaMind.",
+          "quote": "We close this gap with a benchmark-to-optimization loop: we first introduce OlaBench, an ICS benchmark spanning retrieval-augmented generation, workflow-based systems, and agentic settings, which evaluates service capability, safety, and latency sensitivity; moreover, motivated by OlaBench results showing state-of-the-art LLMs still fall short, we propose OlaMind, which distills reusable reasoning patterns and service strategies from expert dialogues and applies staged exploration--exploitation reinforcement learning with instance-level rubric-aware guidance to improve model capability.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.4"
+        },
+        {
+          "question": "q4",
+          "claim": "OlaMind scored 83.64 on OlaBench, surpassing GPT-5.2 and Gemini 3 Pro, which scored 70.58 and 70.84.",
+          "quote": "OlaMind surpasses GPT-5.2 and Gemini 3 Pro on OlaBench (83.64 vs. 70.58/70.84) and, in online A/B tests, delivers an average +23.67% issue resolution and -6.6% human transfer rate versus the baseline, bridging offline gains to deployment.",
+          "numbers": [
+            "83.64",
+            "70.58",
+            "70.84",
+            "+23.67%",
+            "-6.6%"
+          ],
+          "corroborated_by": [],
+          "id": "S19.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Existing benchmarks and training pipelines for industrial intelligent customer service overemphasize verifiable task success and under-measure subjective service quality and realistic failure modes, creating a gap between offline gains and deployable dialogue behavior.",
+          "quote": "Existing benchmarks and training pipelines for industrial intelligent customer service (ICS) remain misaligned with real-world dialogue requirements, overemphasizing verifiable task success while under-measuring subjective service quality and realistic failure modes, leaving a gap between offline gains and deployable dialogue behavior.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S19.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 19
+    },
+    {
+      "id": "2019ad7898",
+      "url": "https://arxiv.org/abs/2604.09579",
+      "title": "Help Without Being Asked: A Deployed Proactive Agent System for On-Call Support with Continuous Self-Improvement",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-02-25",
+      "org": "Fengrui Liu, Xiao He, Tieying Zhang",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "In large-scale cloud service platforms, thousands of customer tickets are generated daily and are typically handled through on-call dialogues, imposing a substantial workload on human support analysts.",
+          "quote": "In large-scale cloud service platforms, thousands of customer tickets are generated daily and are typically handled through on-call dialogues. This high volume of on-call interactions imposes a substantial workload on human support analysts.",
+          "numbers": [
+            "thousands"
+          ],
+          "corroborated_by": [],
+          "id": "S20.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Vigil has been deployed on Volcano Engine, ByteDance's cloud platform, for over ten months, and evaluations based on this deployment demonstrate effectiveness and practicality.",
+          "quote": "Vigil has been deployed on Volcano Engine, ByteDance's cloud platform, for over ten months, and comprehensive evaluations based on this deployment demonstrate its effectiveness and practicality.",
+          "numbers": [
+            "ten months"
+          ],
+          "corroborated_by": [],
+          "id": "S20.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Vigil operates throughout the on-call life cycle and focuses on assisting during the phase when human support is already involved.",
+          "quote": "Unlike reactive agents, Vigil focuses on providing assistance during the phase in which human support is already involved.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Vigil integrates into the customer-analyst dialogue and proactively offers assistance without explicit user invocation.",
+          "quote": "It integrates into the dialogue between the customer and the analyst, proactively offering assistance without explicit user invocation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Vigil uses a continuous self-improvement mechanism that extracts knowledge from human-resolved cases to autonomously update its capabilities.",
+          "quote": "Moreover, Vigil incorporates a continuous self-improvement mechanism that extracts knowledge from human-resolved cases to autonomously update its capabilities.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Reactive support agents are typically disengaged when issues are escalated to human support, preventing them from following up, tracking resolution progress, or learning from failed cases.",
+          "quote": "However, when issues remain unresolved and are escalated to human support, these agents are typically disengaged. As a result, they cannot assist with follow-up inquiries, track resolution progress, or learn from the cases they fail to address.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S20.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 20
+    },
+    {
+      "id": "23fba76131",
+      "url": "https://arxiv.org/abs/2511.08242",
+      "title": "Towards Outcome-Oriented, Task-Agnostic Evaluation of AI Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-11-11",
+      "org": "Waseem AlShikh, Muayad Sayed Ali, Brian Kennedy, Dmytro Mozolevskyi",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "The paper proposes a framework of eleven outcome-based, task-agnostic performance metrics for AI agents.",
+          "quote": "This white paper proposes a novel, comprehensive framework of eleven outcome-based, task-agnostic performance metrics for AI agents that transcend domain boundaries.",
+          "numbers": [
+            "eleven"
+          ],
+          "corroborated_by": [],
+          "id": "S21.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The framework includes Goal Completion Rate (GCR), Autonomy Index (AIx), Multi-Step Task Resilience (MTR), and Business Impact Efficiency (BIE).",
+          "quote": "We introduce metrics such as Goal Completion Rate (GCR), Autonomy Index (AIx), Multi-Step Task Resilience (MTR), and Business Impact Efficiency (BIE).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.2"
+        },
+        {
+          "question": "q3",
+          "claim": "The metrics are designed to evaluate decision quality, autonomy, adaptability to new challenges, and delivered business value regardless of underlying model architecture or specific use case.",
+          "quote": "These metrics are designed to enable organizations to evaluate agents based on the quality of their decisions, their degree of autonomy, their adaptability to new challenges, and the tangible business value they deliver, regardless of the underlying model architecture or specific use case.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The paper reports a large-scale simulated experiment using four agent architectures: ReAct, Chain-of-Thought, Tool-Augmented, and Hybrid, across five domains: Healthcare, Finance, Marketing, Legal, and Customer Service.",
+          "quote": "Through a large-scale simulated experiment involving four distinct agent architectures (ReAct, Chain-of-Thought, Tool-Augmented, Hybrid) across five diverse domains (Healthcare, Finance, Marketing, Legal, and Customer Service), we demonstrate the framework's efficacy.",
+          "numbers": [
+            "four",
+            "five"
+          ],
+          "corroborated_by": [],
+          "id": "S21.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The simulated results show significant performance trade-offs between different agent designs.",
+          "quote": "Our results reveal significant performance trade-offs between different agent designs, highlighting the Hybrid Agent as the most consistently high-performing model across the majority of our proposed metrics, achieving an average Goal Completion Rate of 88.8\\% and the highest Return on Investment (ROI).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S21.5"
+        },
+        {
+          "question": "q2",
+          "claim": "In the simulated experiment, the Hybrid Agent achieved an average Goal Completion Rate of 88.8% and the highest Return on Investment among the tested architectures.",
+          "quote": "Our results reveal significant performance trade-offs between different agent designs, highlighting the Hybrid Agent as the most consistently high-performing model across the majority of our proposed metrics, achieving an average Goal Completion Rate of 88.8\\% and the highest Return on Investment (ROI).",
+          "numbers": [
+            "88.8\\%"
+          ],
+          "corroborated_by": [],
+          "id": "S21.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 21
+    },
+    {
+      "id": "3361937992",
+      "url": "https://arxiv.org/abs/2502.15840",
+      "title": "Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-02-20",
+      "org": "Axel Backlund, Lukas Petersson",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Vending-Bench is a simulated environment designed to test an LLM-based agent's ability to manage a long-running vending machine business.",
+          "quote": "In this paper, we present Vending-Bench, a simulated environment designed to specifically test an LLM-based agent's ability to manage a straightforward, long-running business scenario: operating a vending machine.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.1"
+        },
+        {
+          "question": "q1",
+          "claim": "In Vending-Bench, agents must balance inventories, place orders, set prices, and handle daily fees over long horizons exceeding 20M tokens per run.",
+          "quote": "Agents must balance inventories, place orders, set prices, and handle daily fees - tasks that are each simple but collectively, over long horizons (>20M tokens per run) stress an LLM's capacity for sustained, coherent decision-making.",
+          "numbers": [
+            "20M"
+          ],
+          "corroborated_by": [],
+          "id": "S22.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Experiments show high variance: Claude 3.5 Sonnet and o3-mini manage the machine well in most runs and turn a profit, but all models have runs that derail through misinterpreting delivery schedules, forgetting orders, or meltdown loops.",
+          "quote": "Our experiments reveal high variance in performance across multiple LLMs: Claude 3.5 Sonnet and o3-mini manage the machine well in most runs and turn a profit, but all models have runs that derail, either through misinterpreting delivery schedules, forgetting orders, or descending into tangential \"meltdown\" loops from which they rarely recover.",
+          "numbers": [
+            "3.5"
+          ],
+          "corroborated_by": [],
+          "id": "S22.3"
+        },
+        {
+          "question": "q4",
+          "claim": "The source reports no clear correlation between failures and the point at which the model's context window becomes full, suggesting breakdowns do not stem from memory limits.",
+          "quote": "We find no clear correlation between failures and the point at which the model's context window becomes full, suggesting that these breakdowns do not stem from memory limits.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.4"
+        },
+        {
+          "question": "q4",
+          "claim": "LLMs can perform well on isolated short-term tasks but often fail to maintain coherent performance over longer time horizons.",
+          "quote": "While Large Language Models (LLMs) can exhibit impressive proficiency in isolated, short-term tasks, they often fail to maintain coherent performance over longer time horizons.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.5"
+        },
+        {
+          "question": "q4",
+          "claim": "Vending-Bench also tests models' ability to acquire capital, framed as a necessity in many hypothetical dangerous AI scenarios.",
+          "quote": "Apart from highlighting the high variance in performance over long time horizons, Vending-Bench also tests models' ability to acquire capital, a necessity in many hypothetical dangerous AI scenarios.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 22
+    },
+    {
+      "id": "5680daaf95",
+      "url": "https://arxiv.org/abs/2607.08964",
+      "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-07-09",
+      "org": "Zongxia Li et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "AI agents can autonomously complete short, well-specified tasks.",
+          "quote": "AI agents have become capable of autonomously completing short, well-specified tasks.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper introduces Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks across nine categories.",
+          "quote": "We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing.",
+          "numbers": [
+            "46",
+            "nine"
+          ],
+          "corroborated_by": [],
+          "id": "S23.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Tasks in this benchmark typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging.",
+          "quote": "Tasks in Long-Horizon-Terminal-Bench typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging rather than one-shot problem solving.",
+          "numbers": [
+            "hundreds",
+            "minutes",
+            "hours"
+          ],
+          "corroborated_by": [],
+          "id": "S23.3"
+        },
+        {
+          "question": "q4",
+          "claim": "Across 15 frontier models, agents consumed on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run.",
+          "quote": "We evaluate 15 frontier models and find that agents consume on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run, making Long-Horizon-Terminal-Bench more demanding than prior terminal-based benchmarks.",
+          "numbers": [
+            "15",
+            "9.9M",
+            "231",
+            "85.3"
+          ],
+          "corroborated_by": [],
+          "id": "S23.4"
+        },
+        {
+          "question": "q4",
+          "claim": "The strongest tested model achieved 15.2% pass@1 at a partial-reward threshold of 0.95 and 10.9% at a perfect-reward threshold of 1.0, while the mean pass rate across models was 4.3% and 1.7% under those thresholds.",
+          "quote": "Even the strongest tested model achieves 15.2% pass@1 at a partial-reward threshold of 0.95 and 10.9% at a perfect-reward threshold of 1.0, while the mean pass rate across models is 4.3% and 1.7% under the two thresholds, respectively.",
+          "numbers": [
+            "15.2%",
+            "0.95",
+            "10.9%",
+            "1.0",
+            "4.3%",
+            "1.7%"
+          ],
+          "corroborated_by": [],
+          "id": "S23.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper reports analyzing failure modes and error patterns for long-horizon terminal agents.",
+          "quote": "We further analyze failure modes and error patterns, and release Long-Horizon-Terminal-Bench to support future progress on long-horizon terminal agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 23
+    },
+    {
+      "id": "7f093fce06",
+      "url": "https://arxiv.org/abs/2602.15654",
+      "title": "Zombie Agents: Persistent Control of Self-Evolving LLM Agents via Self-Reinforcing Injections",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-24",
+      "org": "Xianglin Yang, Yufei He, Shuo Ji, Bryan Hooi, Jin Song Dong",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "Self-evolving LLM agents update internal state across sessions by writing and reusing long-term memory, which improves long-horizon task performance but creates a security risk when untrusted external content is stored as memory and later treated as instruction.",
+          "quote": "Self-evolving LLM agents update their internal state across sessions, often by writing and reusing long-term memory. This design improves performance on long-horizon tasks but creates a security risk: untrusted external content observed during a benign session can be stored as memory and later treated as instruction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.1"
+        },
+        {
+          "question": "q5",
+          "claim": "The paper formalizes a persistent attack called a Zombie Agent, in which an attacker implants a payload that survives across sessions and turns the agent into a puppet of the attacker.",
+          "quote": "We study this risk and formalize a persistent attack we call a Zombie Agent, where an attacker covertly implants a payload that survives across sessions, effectively turning the agent into a puppet of the attacker.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.2"
+        },
+        {
+          "question": "q5",
+          "claim": "The black-box attack framework uses only indirect exposure through attacker-controlled web content, with two phases: infection writes the payload into long-term memory during a benign task, and trigger retrieves or carries it forward to cause unauthorized tool behavior.",
+          "quote": "We present a black-box attack framework that uses only indirect exposure through attacker-controlled web content. The attack has two phases. During infection, the agent reads a poisoned source while completing a benign task and writes the payload into long-term memory through its normal update process. During trigger, the payload is retrieved or carried forward and causes unauthorized tool behavior.",
+          "numbers": [
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S24.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The attack uses mechanism-specific persistence strategies for common memory implementations, including sliding-window and retrieval-augmented memory, to resist truncation and relevance filtering.",
+          "quote": "We design mechanism-specific persistence strategies for common memory implementations, including sliding-window and retrieval-augmented memory, to resist truncation and relevance filtering.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.4"
+        },
+        {
+          "question": "q4",
+          "claim": "The attack is evaluated on representative agent setups and tasks by measuring both persistence over time and the ability to induce unauthorized actions while preserving benign task quality.",
+          "quote": "We evaluate the attack on representative agent setups and tasks, measuring both persistence over time and the ability to induce unauthorized actions while preserving benign task quality.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Results show that memory evolution can convert a one-time indirect injection into persistent compromise, and that defenses focused only on per-session prompt filtering are insufficient for self-evolving agents.",
+          "quote": "Our results show that memory evolution can convert one-time indirect injection into persistent compromise, which suggests that defenses focused only on per-session prompt filtering are not sufficient for self-evolving agents.",
+          "numbers": [
+            "one-time"
+          ],
+          "corroborated_by": [],
+          "id": "S24.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 24
+    },
+    {
+      "id": "8ff03f2912",
+      "url": "https://arxiv.org/abs/2608.18740",
+      "title": "A Multi-Agent Platform for Automated Enterprise Analytics and Insight Generation",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-19",
+      "org": "Manoj N M, Vijayakrishna S, Manjunath Srinivas, Rohit Pahan",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "The paper proposes a multi-agent framework built on CrewAI for conversational business intelligence.",
+          "quote": "This paper proposes a multi-agent framework built on CrewAI [1] for conversational business intelligence.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.1"
+        },
+        {
+          "question": "q3",
+          "claim": "Five specialized AI agents operate in a sequential pipeline to process natural language queries, retrieve and analyze data, generate visualizations via the Model Context Protocol, and deliver actionable insights.",
+          "quote": "Five specialized AI agents operate in a sequential pipeline to process natural language queries, retrieve and analyze data, generate visualizations via the Model Context Protocol (MCP) [2], and deliver actionable insights.",
+          "numbers": [
+            "Five"
+          ],
+          "corroborated_by": [],
+          "id": "S25.2"
+        },
+        {
+          "question": "q5",
+          "claim": "The platform includes a defense-in-depth security architecture for multi-tenant data isolation and a query parameterization mechanism for turning conversational insights into reusable dashboard components.",
+          "quote": "The platform features a defense-in-depth security architecture for multi-tenant data isolation and a query parameterization mechanism for transforming conversational insights into reusable dashboard components.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.3"
+        },
+        {
+          "question": "q4",
+          "claim": "Evaluation on 300 end-to-end test cases over synthetic and production enterprise datasets reports 95.3% functional accuracy, 24-second mean response latency, 4.52/5.0 response quality, 93.0% hallucination-free rate, 22.6 percentage point accuracy improvement, and 20.2% quality gain over a single-agent baseline.",
+          "quote": "Evaluation across 300 end-to-end test cases spanning synthetic and production enterprise datasets demonstrates 95.3% functional accuracy, a mean response latency of 24 seconds, and a response quality score of 4.52/5.0 as assessed by an LLM-as-a-Judge framework, with a 93.0% hallucination-free rate, representing a 22.6 percentage point accuracy improvement and 20.2% quality gain over a single-agent baseline.",
+          "numbers": [
+            "300",
+            "95.3%",
+            "24 seconds",
+            "4.52/5.0",
+            "93.0%",
+            "22.6 percentage point",
+            "20.2%"
+          ],
+          "corroborated_by": [],
+          "id": "S25.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Cross-model evaluation across four LLM backends and human expert validation support the platform's architectural generalizability and evaluator reliability.",
+          "quote": "Cross-model evaluation across four LLM backends and human expert validation confirm architectural generalizability and evaluator reliability.",
+          "numbers": [
+            "four"
+          ],
+          "corroborated_by": [],
+          "id": "S25.5"
+        },
+        {
+          "question": "q3",
+          "claim": "An ablation study identifies the Data Analysis and Report Aggregation agents as the main drivers of output quality.",
+          "quote": "An ablation study confirms that the Data Analysis and Report Aggregation agents are the primary drivers of output quality.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 25
+    },
+    {
+      "id": "a87ce5c37f",
+      "url": "https://arxiv.org/abs/2602.09514",
+      "title": "EcoGym: Evaluating LLMs for Long-Horizon Plan-and-Execute in Interactive Economies",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-02-10",
+      "org": "Xavier Hu et al. (arXiv)",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "EcoGym is a benchmark for continuous plan-and-execute decision making in interactive economies that includes three environments: Vending, adapted from the closed-source Vending-Bench with full open-source release, plus new Freelance and Operation environments.",
+          "quote": "EcoGym comprises three diverse environments: Vending (adapted from the closed-source Vending-Bench, with full open-source release), Freelance (new), and Operation (new)",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S26.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Experiments across eleven leading LLMs in EcoGym found no single model dominated across all three scenarios, and models showed significant suboptimality in either high-level strategies or efficient action execution.",
+          "quote": "Experiments across eleven leading LLMs expose a systematic tension: no single model dominates across all three scenarios. Critically, we find that models exhibit significant suboptimality in either high-level strategies or efficient actions executions.",
+          "numbers": [
+            "eleven",
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S26.2"
+        },
+        {
+          "question": "q3",
+          "claim": "EcoGym's environments are implemented in a unified decision-making process with standardized interfaces and budgeted actions over an effectively unbounded horizon of 1000+ steps if 365 day-loops for evaluation.",
+          "quote": "implemented in a unified decision-making process with standardized interfaces, and budgeted actions over an effectively unbounded horizon (1000+ steps if 365 day-loops for evaluation).",
+          "numbers": [
+            "1000+",
+            "365"
+          ],
+          "corroborated_by": [],
+          "id": "S26.3"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper states that long-horizon planning is recognized as a core capability of autonomous LLM-based agents, but current evaluation frameworks are largely episodic, domain-specific, or insufficiently grounded in persistent economic dynamics.",
+          "quote": "Long-horizon planning is widely recognized as a core capability of autonomous LLM-based agents; however, current evaluation frameworks suffer from being largely episodic, domain-specific, or insufficiently grounded in persistent economic dynamics.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.4"
+        },
+        {
+          "question": "q4",
+          "claim": "EcoGym evaluates business-relevant outcomes such as net worth, income, and DAU, targeting long-term strategic coherence and robustness under partial observability and stochasticity.",
+          "quote": "The evaluation of EcoGym is based on business-relevant outcomes (e.g., net worth, income, and DAU), targeting long-term strategic coherence and robustness under partial observability and stochasticity.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.5"
+        },
+        {
+          "question": "q4",
+          "claim": "EcoGym is released as an open, extensible testbed for transparent long-horizon agent evaluation and for studying controllability utility trade-offs in economic settings.",
+          "quote": "EcoGym is released as an open, extensible testbed for transparent long-horizon agent evaluation and for studying controllability utility trade-offs in economic settings.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 26
+    },
+    {
+      "id": "c27ddb4e56",
+      "url": "https://arxiv.org/abs/2608.11323",
+      "title": "Deployment Decision Reliability: A Generalizability-Theory Framework for Sizing Long-Horizon Agent Evaluations",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-08-11",
+      "org": "Vasundra Srinivasan",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Across three open agent-trace benchmarks including TheAgentCompany, the agent main effect explains less than 3% of total variance in every dataset and check type, while the agent-by-task interaction explains 7-23%; leaderboards therefore rank specialization rather than capability.",
+          "quote": "We show, across three open agent-trace benchmarks (TheAgentCompany, τ 2-bench, and AppWorld), that the agent main effect accounts for less than 3% of total variance in every dataset and check type, while the agent-by-task interaction accounts for 7-23%. Leaderboards rank specialization, not capability.",
+          "numbers": [
+            "3%",
+            "7-23%"
+          ],
+          "corroborated_by": [],
+          "id": "S27.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The variance decomposition uses four facets and three estimators that agree to three decimal places.",
+          "quote": "We arrive at this through a four-facet Generalizability Theory variance decomposition, fit with three estimators (Henderson Method-I, REML via lme4, and a Bayesian binomial GLMM) that agree to three decimal places.",
+          "numbers": [
+            "four",
+            "three",
+            "three decimal places"
+          ],
+          "corroborated_by": [],
+          "id": "S27.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Aggregate reliability collapses on the hardest task quartile, with E ρ 2 on τ 2 action_checks falling from 0.752 to 0.000.",
+          "quote": "First, aggregate reliability collapses on the hardest task quartile: E ρ 2on τ 2action_checks falls from 0.752 to 0.000.",
+          "numbers": [
+            "0.752",
+            "0.000"
+          ],
+          "corroborated_by": [],
+          "id": "S27.3"
+        },
+        {
+          "question": "q4",
+          "claim": "Training-cell reliability negatively correlates with held-out reliability (r=−0.90 on τ 2), so designs that appear most reliable replicate worst.",
+          "quote": "Second, training-cell reliability negatively correlates with held-out reliability (r=−0.90on τ 2), meaning the designs that look most reliable replicate worst.",
+          "numbers": [
+            "−0.90"
+          ],
+          "corroborated_by": [],
+          "id": "S27.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Population-level diagnostics transfer across enterprise benchmarks with a stable capability-gap ratio of 0.35-0.40, but per-family agent rankings invert.",
+          "quote": "Third, population-level diagnostics transfer across enterprise benchmarks (capability-gap ratio stable at 0.35-0.40) but per-family agent rankings invert.",
+          "numbers": [
+            "0.35-0.40"
+          ],
+          "corroborated_by": [],
+          "id": "S27.5"
+        },
+        {
+          "question": "q4",
+          "claim": "On the MAST failure taxonomy, trace-level mode profiles are idiosyncratic (MAE = 0.261), while cell-level profiles generalise (MAE = 0.056, r=0.83).",
+          "quote": "Fourth, on the MAST failure taxonomy, trace-level mode profiles are idiosyncratic (MAE = 0.261) while cell-level profiles generalise (MAE = 0.056, r=0.83).",
+          "numbers": [
+            "0.261",
+            "0.056",
+            "0.83"
+          ],
+          "corroborated_by": [],
+          "id": "S27.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 27
+    },
+    {
+      "id": "3042736d61",
+      "url": "https://arxiv.org/abs/2603.28106",
+      "title": "InconLens: Interactive Visual Diagnosis of Behavioral Inconsistencies in LLM-based Agentic Systems",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-03-30",
+      "org": "Shuo Yan et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "LLM-based agentic systems show growing promise for complex, multi-step tasks via autonomous planning, reasoning, and interaction with external environments.",
+          "quote": "Large Language Model (LLM)-based agentic systems have shown growing promise in tackling complex, multi-step tasks through autonomous planning, reasoning, and interaction with external environments.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.1"
+        },
+        {
+          "question": "q4",
+          "claim": "The stochastic nature of LLM generation causes intrinsic behavioral inconsistency, so the same agent may succeed in one execution but fail in another under identical inputs.",
+          "quote": "However, the stochastic nature of LLM generation introduces intrinsic behavioral inconsistency: the same agent may succeed in one execution but fail in another under identical inputs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Diagnosing such inconsistencies is a major challenge for developers because agent execution logs are often lengthy, unstructured, and difficult to compare across runs.",
+          "quote": "Diagnosing such inconsistencies remains a major challenge for developers, as agent execution logs are often lengthy, unstructured, and difficult to compare across runs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.3"
+        },
+        {
+          "question": "q4",
+          "claim": "Existing debugging and evaluation tools mainly inspect single executions and offer limited support for understanding why agent behaviors diverge across repeated runs.",
+          "quote": "Existing debugging and evaluation tools primarily focus on inspecting single executions, offering limited support for understanding how and why agent behaviors diverge across repeated runs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.4"
+        },
+        {
+          "question": "q5",
+          "claim": "InconLens reportedly enables developers to identify divergence points, uncover latent failure modes, and gain insights for improving agentic system reliability and stability.",
+          "quote": "Our results show that InconLens enables developers to more efficiently identify divergence points, uncover latent failure modes, and gain actionable insights into improving the reliability and stability of agentic systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S28.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 28
+    },
+    {
+      "id": "762d502011",
+      "url": "https://arxiv.org/abs/2412.14161",
+      "title": "TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-12-18",
+      "org": "Frank F. Xu et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "TheAgentCompany is a benchmark that builds a self-contained environment mimicking a small software company, with internal websites and data, and tasks that workers in such a company might perform.",
+          "quote": "We build a self-contained environment with internal web sites and data that mimics a small software company environment, and create a variety of tasks that may be performed by workers in such a company.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The most competitive baseline agent in TheAgentCompany completed 30% of tasks autonomously.",
+          "quote": "We test baseline agents powered by both closed API-based and open-weights language models (LMs), and find that the most competitive agent can complete 30% of tasks autonomously.",
+          "numbers": [
+            "30%"
+          ],
+          "corroborated_by": [],
+          "id": "S29.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The benchmark results show a nuanced picture: in a simulated real workplace, many simpler tasks could be solved autonomously, but more difficult long-horizon tasks remain beyond current systems.",
+          "quote": "This paints a nuanced picture on task automation with LM agents--in a setting simulating a real workplace, a good portion of simpler tasks could be solved autonomously, but more difficult long-horizon tasks are still beyond the reach of current systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The benchmark evaluates AI agents that interact with the world in ways similar to a digital worker: browsing the Web, writing code, running programs, and communicating with coworkers.",
+          "quote": "an extensible benchmark for evaluating AI agents that interact with the world in similar ways to those of a digital worker: by browsing the Web, writing code, running programs, and communicating with other coworkers.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.4"
+        },
+        {
+          "question": "q1",
+          "claim": "The paper frames the key question as how performant AI agents are at accelerating or autonomously performing work-related tasks, with implications for industry adoption and economic policy.",
+          "quote": "But how performant are AI agents at accelerating or even autonomously performing work-related tasks? The answer to this question has important implications both for industry looking to adopt AI into their workflows and for economic policy to understand the effects that adoption of AI may have on the labor market.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S29.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 29
+    },
+    {
+      "id": "7fa7c8202b",
+      "url": "https://arxiv.org/abs/2512.02230",
+      "title": "Benchmarking LLM Agents for Wealth-Management Workflows",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-12-01",
+      "org": "Rory Milsom",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "A dissertation extends TheAgentCompany with a finance-focused environment and investigates whether a general purpose LLM agent can complete representative wealth-management tasks accurately and economically.",
+          "quote": "To address this gap, this dissertation extends TheAgentCompany with a finance-focused environment and investigates whether a general purpose LLM agent can complete representative wealth-management tasks both accurately and economically.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The study constructs a benchmark of 12 task-pairs for wealth management assistants spanning retrieval, analysis, and synthesis/communication, with explicit acceptance criteria and deterministic graders.",
+          "quote": "We construct a benchmark of 12 task-pairs for wealth management assistants spanning retrieval, analysis, and synthesis/communication, with explicit acceptance criteria and deterministic graders.",
+          "numbers": [
+            "12"
+          ],
+          "corroborated_by": [],
+          "id": "S30.2"
+        },
+        {
+          "question": "q3",
+          "claim": "The study introduces synthetic domain data, enriches colleague simulations, and prototypes an automatic task-generation pipeline.",
+          "quote": "This study introduces synthetic domain data, enriches colleague simulations, and prototypes an automatic task-generation pipeline.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The study seeded new finance-specific data and introduced a high vs. low-autonomy variant of every task.",
+          "quote": "We seeded a set of new finance-specific data and introduced a high vs. low-autonomy variant of every task.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.4"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper concludes that agents are limited less by mathematical reasoning and more by end-to-end workflow reliability, that autonomy level meaningfully affects them, and that incorrect evaluation of models has hindered benchmarking.",
+          "quote": "The paper concluded that agents are limited less by mathematical reasoning and more so by end-to-end workflow reliability, and meaningfully affected by autonomy level, and that incorrect evaluation of models have hindered benchmarking.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 30
+    },
+    {
+      "id": "b14f939c67",
+      "url": "https://arxiv.org/abs/2609.21841",
+      "title": "EnterpriseVal: Quantifying the Efficacy, Reliability and Value of Generative AI in the Enterprise",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2026-09-18",
+      "org": "Abbas Raza Ali, Muhammad Ajmal Siddiqui, Moona Zahid",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q5",
+          "claim": "Most enterprise GenAI initiatives fail to show a measurable business effect, and a large fraction of agentic projects are expected to be cancelled.",
+          "quote": "Frontier language models now produce professional deliverables that expert graders judge to match human work on a substantial share of economically valuable tasks, yet most enterprise GenAI initiatives fail to show a measurable business effect and a large fraction of agentic projects are expected to be cancelled.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.1"
+        },
+        {
+          "question": "q5",
+          "claim": "The authors frame enterprise GenAI deployment as a measurement problem: public benchmarks ask what models can do, while deployment decisions require assessing whether a workflow is fit, reliable, safe, and worth scaling under local data and controls.",
+          "quote": "We argue that this is substantially a measurement problem: public benchmarks answer \"what can the model do?\", whereas a deployment decision requires \"is this workflow fit, reliable, safe and worth scaling - here, on our data, under our controls?\".",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.2"
+        },
+        {
+          "question": "q3",
+          "claim": "EnterpriseVal specifies a use case and a frozen socio-technical configuration under test consisting of model, prompts, retrieval, tools, guardrails, and human oversight, with autonomy level and consequence tier jointly setting required evaluation intensity; it also includes a metric catalogue covering fidelity, utility, efficiency, reliability, assurance, and oversight, plus a threshold gate mapping metric vectors to REJECT/CONDITIONAL/SCALE decisions.",
+          "quote": "It comprises (i) a formal specification of the use case and of the frozen socio-technical configuration under test, model, prompts, retrieval, tools, guardrails and human oversight, with an autonomy level and consequence tier that jointly set the required evaluation intensity; (ii) a metric catalogue spanning fidelity, utility, efficiency, reliability, assurance and oversight; (iii) a grading protocol that scales blinded expert judgement with calibrated LLM-as-judge scoring through prediction-powered inference; (iv) a two-tier threshold gate, stated as an executable algorithm, that maps metric vectors with confidence bounds to REJECT/CONDITIONAL/SCALE decisions; and (v) a value-and-risk model in which the reviewer catch rate is a measured parameter.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The paper reports a pilot across three workflows in a global bank.",
+          "quote": "We report a pilot across three workflows in a global bank.",
+          "numbers": [
+            "three"
+          ],
+          "corroborated_by": [],
+          "id": "S31.4"
+        },
+        {
+          "question": "q2",
+          "claim": "In the bank pilot, credit-memo drafting achieved 88% human-graded citation precision and 1.6% hallucination rate for the best model against gates of 70% and 5%; in procedure transformation, analyst refinement effort fell from an estimated 27.4 hours to 2.9 hours per document.",
+          "quote": "In credit-memo drafting, human-graded citation precision reached 88% and hallucination rate 1.6% for the best model against gates of 70% and 5%; in procedure transformation, analyst refinement effort fell from an estimated 27.4 to 2.9 hours per document.",
+          "numbers": [
+            "88%",
+            "1.6%",
+            "70%",
+            "5%",
+            "27.4",
+            "2.9"
+          ],
+          "corroborated_by": [],
+          "id": "S31.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 31
+    },
+    {
+      "id": "db654fc969",
+      "url": "https://arxiv.org/abs/2512.12730",
+      "title": "NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents",
+      "provider": "arxiv",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-12-14",
+      "org": "Jingzhe Ding et al.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "NL2Repo Bench is a benchmark designed to evaluate the long-horizon repository generation ability of coding agents, where agents start with only a natural-language requirements document and an empty workspace and must autonomously design architecture, manage dependencies, implement multi-module logic, and produce a fully installable Python library.",
+          "quote": "To address this gap, we present NL2Repo Bench, a benchmark explicitly designed to evaluate the long-horizon repository generation ability of coding agents. Given only a single natural-language requirements document and an empty workspace, agents must autonomously design the architecture, manage dependencies, implement multi-module logic, and produce a fully installable Python library.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.1"
+        },
+        {
+          "question": "q4",
+          "claim": "In experiments across state-of-the-art open- and closed-source models, even the strongest agents achieve below 40% average test pass rates and rarely complete an entire repository correctly.",
+          "quote": "Our experiments across state-of-the-art open- and closed-source models reveal that long-horizon repository generation remains largely unsolved: even the strongest agents achieve below 40% average test pass rates and rarely complete an entire repository correctly.",
+          "numbers": [
+            "40%"
+          ],
+          "corroborated_by": [],
+          "id": "S32.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Analysis uncovers fundamental long-horizon failure modes for coding agents, including premature termination, loss of global coherence, fragile cross-file dependencies, and inadequate planning over hundreds of interaction steps.",
+          "quote": "Detailed analysis uncovers fundamental long-horizon failure modes, including premature termination, loss of global coherence, fragile cross-file dependencies, and inadequate planning over hundreds of interaction steps.",
+          "numbers": [
+            "hundreds"
+          ],
+          "corroborated_by": [],
+          "id": "S32.3"
+        },
+        {
+          "question": "q4",
+          "claim": "The paper states that long-horizon reasoning is a central bottleneck for the next generation of autonomous coding agents.",
+          "quote": "NL2Repo Bench establishes a rigorous, verifiable testbed for measuring sustained agentic competence and highlights long-horizon reasoning as a central bottleneck for the next generation of autonomous coding agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Existing benchmarks fail to rigorously evaluate the long-horizon capabilities required to build complete software systems, and most prior evaluations focus on localized code generation, scaffolded completion, or short-term repair tasks.",
+          "quote": "Recent advances in coding agents suggest rapid progress toward autonomous software development, yet existing benchmarks fail to rigorously evaluate the long-horizon capabilities required to build complete software systems. Most prior evaluations focus on localized code generation, scaffolded completion, or short-term repair tasks, leaving open the question of whether agents can sustain coherent reasoning, planning, and execution over the extended horizons demanded by real-world repository construction.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S32.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 32
+    },
+    {
+      "id": "a9652b4743",
+      "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+      "title": "FireRedTeam/FireRed-OpenStoryline",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-07-31",
+      "org": "FireRedTeam",
+      "quality": 0.9,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "FireRed-OpenStoryline is an AI video editing agent that uses natural language interaction, LLM-powered planning, precise tool orchestration, and human-in-the-loop creation with reusable Style Skills.",
+          "quote": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven directing through natural language interaction, LLM-powered planning, and precise tool orchestration. It facilitates transparent, human-in-the-loop creation with reusable Style Skills for consistent, professional storytelling.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S33.1"
+        },
+        {
+          "question": "q3",
+          "claim": "A commit adds an AI transition workflow with runtime config injection, timeline support, and real-time progress reporting.",
+          "quote": "feat: add AI transition workflow (#74) * feat: add AI transition workflow with runtime config injection and timeline support * update web hint * fix ai transition timeline bug * AI transition generation real-time progress reporting",
+          "numbers": [
+            "#74"
+          ],
+          "corroborated_by": [],
+          "id": "S33.2"
+        },
+        {
+          "question": "q4",
+          "claim": "A commit fixes an undefined variable reference on the VLM failure path in understand_clips.",
+          "quote": "fix(nodes): avoid undefined variable reference on VLM failure path in understand_clips (#102)",
+          "numbers": [
+            "#102"
+          ],
+          "corroborated_by": [],
+          "id": "S33.3"
+        },
+        {
+          "question": "q4",
+          "claim": "A commit prevents orphan tool messages after session restore and sanitizes lc_messages to avoid provider 400 errors.",
+          "quote": "fix: prevent orphan tool messages after session restore Ensure restored AIMessage tool_calls are reconstructed and sanitize lc_messages to avoid provider 400 errors.",
+          "numbers": [
+            "400"
+          ],
+          "corroborated_by": [],
+          "id": "S33.4"
+        },
+        {
+          "question": "q5",
+          "claim": "A commit fixes session restore invariants by failing closed on corrupted tool rows, redacting config secrets, and typing getSession errors.",
+          "quote": "Fix session restore invariants: fail-closed on corrupted tool rows, redact config secrets, and type getSession errors (#79)",
+          "numbers": [
+            "#79"
+          ],
+          "corroborated_by": [],
+          "id": "S33.5"
+        },
+        {
+          "question": "q5",
+          "claim": "A commit persists chat sessions securely across restarts, with safe recovery and secret redaction so chat can continue after server restart.",
+          "quote": "feat: persist chat sessions securely across restarts Persist session state to disk with safe recovery and secret redaction so chat can continue after server restart.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S33.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 33
+    },
+    {
+      "id": "d8de21b8f0",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027",
+      "title": "Gartner Predicts over 40% of Agentic AI Projects Will Be Canceled by End of 2027",
+      "provider": "hn",
+      "discussion": "https://news.ycombinator.com/item?id=44421803",
+      "type": "official",
+      "published": "2025-06-25",
+      "org": "Gartner, Inc.",
+      "quality": 0.9,
+      "claims": [
+        {
+          "question": "q5",
+          "claim": "Gartner predicts that over 40% of agentic AI projects will be canceled by the end of 2027 because of escalating costs, unclear business value, or inadequate risk controls.",
+          "quote": "Over 40% of agentic AI projects will be canceled by the end of 2027, due to escalating costs, unclear business value or inadequate risk controls, according to Gartner, Inc.",
+          "numbers": [
+            "40%",
+            "2027"
+          ],
+          "corroborated_by": [],
+          "id": "S34.1"
+        },
+        {
+          "question": "q5",
+          "claim": "Gartner states that most agentic AI projects are currently early-stage experiments or proof of concepts, largely driven by hype and often misapplied.",
+          "quote": "“Most agentic AI projects right now are early stage experiments or proof of concepts that are mostly driven by hype and are often misapplied,” said [Anushree Verma](https://www.gartner.com/en/experts/anushree-verma), Senior Director Analyst, Gartner.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.2"
+        },
+        {
+          "question": "q5",
+          "claim": "Gartner says hype can blind organizations to the real cost and complexity of deploying AI agents at scale, stalling projects from moving into production.",
+          "quote": "“This can blind organizations to the real cost and complexity of deploying [AI agents at scale](https://www.gartner.com/en/newsroom/press-releases/2025-03-03-gartner-identifies-three-areas-to-help-data-and-analytics-leaders-scale-ai), stalling projects from moving into production.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.3"
+        }
+      ],
+      "dropped": 0,
+      "n": 34
+    },
+    {
+      "id": "8970c31f9b",
+      "url": "https://yourgpt.ai/2-0",
+      "title": "Show HN: YourGPT 2.0 – Complete AI platform for support, sales, and operations",
+      "provider": "hn",
+      "discussion": "https://news.ycombinator.com/item?id=45951753",
+      "type": "vendor",
+      "published": "2025-11-17",
+      "org": "YourGPT / Delta4 Infotech Pvt. Ltd.",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "The vendor markets the platform as building conversational AI agents that handle customer support, boost sales, and automate business operations across web, mobile, and phone channels.",
+          "quote": "Build intelligent conversational AI agents that handle customer support, boost sales, and automate business operations across web, mobile, and phone channels.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The platform includes an AI Copilot in Studio that builds entire workflows from natural language and can create, debug, and optimize automation flows automatically.",
+          "quote": "Build entire workflows with natural language. Let AI create, debug, and optimize your automation flows automatically.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Agents can natively integrate with business platforms including Stripe, Airtable, Google Sheets, Notion, and Supabase to access business data and take actions automatically.",
+          "quote": "Connect with Stripe, Airtable, Google Sheets, Notion, Supabase, and more. Let your AI agents access business data and take actions automatically.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The platform supports MCP integration and an MCP Marketplace for ready-to-use tools to extend conversational agents.",
+          "quote": "Access our MCP Marketplace for ready-to-use tools. Extend your conversational agents with powerful integrations and capabilities.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The platform offers phone AI voice agents for customer support, sales calls, and appointment booking, with natural conversations in more than 100 languages.",
+          "quote": "Deploy AI voice agents for customer support, sales calls, and appointment booking. Natural conversations in 100+ languages.",
+          "numbers": [
+            "100+"
+          ],
+          "corroborated_by": [],
+          "id": "S35.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Agents can be trained by connecting multiple data sources so they learn from business knowledge.",
+          "quote": "Connect multiple data sources and let your AI agents learn from all your business knowledge",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Agents can use MCPs to search real-time information and respond with latest answers.",
+          "quote": "AI agents can now use MCPs to search real-time information and respond with the latest answers.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The vendor advertises SOC 2 Type II enterprise-grade security for the platform.",
+          "quote": "SOC 2 Type II\n\nEnterprise-grade security",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S35.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 35
+    },
+    {
+      "id": "410bf88e3e",
+      "url": "https://github.com/Pradeep-1612/enterprise-ai-rag-agent",
+      "title": "Pradeep-1612/enterprise-ai-rag-agent",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-10-04",
+      "org": "Pradeep Reddy Juturu (Pradeep-1612)",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "The repository describes an enterprise AI agent architecture that combines RAG, memory, tool orchestration, and deterministic decisioning.",
+          "quote": "A production-oriented exploration of **enterprise AI agent architecture** combining RAG, memory, tool orchestration, and deterministic decisioning.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The workflow maintains explicit state, controls tool execution, bounds iterations, and separates LLM reasoning from deterministic application decisions.",
+          "quote": "The workflow maintains explicit state, controls tool execution, bounds iterations, and separates **LLM reasoning from deterministic application decisions**.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.2"
+        },
+        {
+          "question": "q3",
+          "claim": "RAG grounds agent responses using Sentence Transformers, the all-MiniLM-L6-v2 model, and ChromaDB.",
+          "quote": "Grounds agent responses using document retrieval with:\n\n*   Sentence Transformers\n*   `all-MiniLM-L6-v2`\n*   ChromaDB",
+          "numbers": [
+            "all-MiniLM-L6-v2"
+          ],
+          "corroborated_by": [],
+          "id": "S36.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Memory combines structured memory for authoritative state, semantic memory for similarity-based retrieval, and LLM-assisted memory extraction.",
+          "quote": "Combines:\n\n*   **Structured memory** for authoritative state\n*   **Semantic memory** for similarity-based retrieval\n*   LLM-assisted memory extraction",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Tools include certificate lifecycle evaluation and enterprise connection status, with tool arguments validated by Pydantic before execution.",
+          "quote": "Current tools include:\n\n*   Certificate lifecycle evaluation\n*   Enterprise connection status\n\nTool arguments are validated with Pydantic before execution.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Business rules remain in application code; the LLM reasons about what needs to happen while deterministic code decides what is allowed.",
+          "quote": "Business rules remain in application code.\n\nThe LLM can reason about **what needs to happen**; deterministic code decides **what is actually allowed to happen**.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.6"
+        },
+        {
+          "question": "q3",
+          "claim": "The project uses Python, Ollama, Llama 3.x, Sentence Transformers, ChromaDB, and Pydantic, and runs locally without a paid LLM API.",
+          "quote": "**Python · Ollama · Llama 3.x · Sentence Transformers · ChromaDB · Pydantic**\n\nThe project runs locally without a paid LLM API.",
+          "numbers": [
+            "3.x"
+          ],
+          "corroborated_by": [],
+          "id": "S36.7"
+        },
+        {
+          "question": "q3",
+          "claim": "The roadmap lists planned capabilities including conversation memory, RAG plus memory integration, agent evaluation, guardrails, MCP, human-in-the-loop, observability, and production persistence.",
+          "quote": "*   Conversation memory\n*   RAG + memory integration\n*   Agent evaluation\n*   Guardrails\n*   MCP\n*   Human-in-the-loop\n*   Observability\n*   Production persistence",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 36
+    },
+    {
+      "id": "c42e23cf41",
+      "url": "https://github.com/developerjillur/neuron-ai-2x",
+      "title": "developerjillur/neuron-ai-2x",
+      "provider": "github",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-01-09",
+      "org": "developerjillur / Neuron",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "Neuron is a PHP framework for creating and orchestrating AI agents and integrating AI entities into existing PHP applications.",
+          "quote": "Neuron is a PHP framework for creating and orchestrating AI Agents. It allows you to integrate AI entities in your existing PHP applications with a powerful and flexible architecture.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The framework provides tools for the agentic application development lifecycle, including LLM interfaces, data loading, multi-agent orchestration, monitoring, and debugging.",
+          "quote": "We provide tools for the entire agentic application development lifecycle, from LLM interfaces, to data loading, to multi-agent orchestration, to monitoring and debugging.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.2"
+        },
+        {
+          "question": "q3",
+          "claim": "The framework connects LLMs, vector databases, and memory to agents that interact with data, and its modular architecture is intended for RAG, multi-agent workflows, or business process automations.",
+          "quote": "Connect components (LLMs, vector DBs, memory) to agents that can interact with your data. With its modular architecture it's best suited for building RAG, multi-agent workflows, or business process automations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Developers create agents by extending an Agent class that automatically manages memory, tools, function calls, and RAG systems.",
+          "quote": "Neuron provides you with the Agent class you can extend to inherit the main features of the framework and create fully functional agents. This class automatically manages some advanced mechanisms for you, such as memory, tools and function calls, up to the RAG systems.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Agents have memory of ongoing conversations in the framework's example.",
+          "quote": "As you can see in the example above, the Agent has memory of the ongoing conversation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.5"
+        },
+        {
+          "question": "q3",
+          "claim": "For Laravel, Neuron offers an encapsulation pattern to work on AI components in a dedicated namespace.",
+          "quote": "Neuron offers a well-defined encapsulation pattern, allowing you to work on your AI components in a dedicated namespace.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.6"
+        },
+        {
+          "question": "q3",
+          "claim": "For Symfony, Neuron components use their own interface so dependencies and object creation can be automated using the Symfony service container.",
+          "quote": "All Neuron components belong to its own interface, so you can easily define dependencies and automate objects creation using the Symfony service container.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.7"
+        },
+        {
+          "question": "q3",
+          "claim": "The README lists supported LLM providers, tools and toolkits, an MCP connector, structured output, RAG, workflow, and security vulnerabilities as capability or documentation areas.",
+          "quote": "*   [Supported LLM Providers](https://github.com/developerjillur/neuron-ai-2x#providers)\n*   [Tools & Toolkits](https://github.com/developerjillur/neuron-ai-2x#tools)\n*   [MCP Connector](https://github.com/developerjillur/neuron-ai-2x#mcp)\n*   [Structured Output](https://github.com/developerjillur/neuron-ai-2x#structured)\n*   [RAG](https://github.com/developerjillur/neuron-ai-2x#rag)\n*   [Workflow](https://github.com/developerjillur/neuron-ai-2x#workflow)\n*   [Security Vulnerabilities](https://github.com/developerjillur/neuron-ai-2x#security)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S37.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 37
+    },
+    {
+      "id": "f103c7212f",
+      "url": "https://github.com/eagleeyethinker/agentic-ai-platform-enterprise",
+      "title": "eagleeyethinker/agentic-ai-platform-enterprise",
+      "provider": "github",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-03-14",
+      "org": "Satish Gopinathan (eagleeyethinker)",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "The repository describes a compact reference implementation for an enterprise-style agentic AI workflow built with FastAPI, LangGraph, Qdrant, Neo4j, and an OpenAI-compatible reasoning layer.",
+          "quote": "A compact reference implementation for an enterprise-style agentic AI workflow built with FastAPI, LangGraph, Qdrant, Neo4j, and an OpenAI-compatible reasoning layer.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The platform routes operational questions through specialized agents: a router selects the branch, retrieval queries Qdrant documents, tool calls a weather MCP service, graph queries Neo4j, and reasoning produces the final recommendation.",
+          "quote": "*   `router_agent` selects the branch to run\n*   `retrieval_agent` queries vectorized operational documents in Qdrant\n*   `tool_agent` calls the weather MCP service\n*   `graph_agent` queries Neo4j for graph context\n*   `reasoning_agent` produces the final recommendation",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Weather and flight-impact queries are routed through the weather branch, while general policy and operations queries are routed through the RAG branch.",
+          "quote": "*   Weather and flight-impact queries go through the weather branch\n*   General policy and operations queries go through the RAG branch",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The stack uses FastAPI as the API, LangGraph for workflow orchestration, OpenAI-compatible chat completions for reasoning, Qdrant as vector store, Neo4j as graph store, SentenceTransformers for embeddings, a FastAPI weather MCP tool service, and Docker Compose as runtime.",
+          "quote": "| API | FastAPI |\n| Workflow orchestration | LangGraph |\n| Reasoning | OpenAI-compatible chat completions |\n| Vector store | Qdrant |\n| Graph store | Neo4j |\n| Embeddings | SentenceTransformers |\n| Tool service | FastAPI weather MCP |\n| Runtime | Docker Compose |",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.4"
+        },
+        {
+          "question": "q5",
+          "claim": "If no OpenAI API key is set, the application returns a deterministic fallback recommendation.",
+          "quote": "*   If no OpenAI key is set, the app returns a deterministic fallback recommendation",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The reasoning layer records upstream failures in the errors field instead of silently masking them.",
+          "quote": "*   The reasoning layer records upstream failures in the `errors` field instead of silently masking them",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.6"
+        },
+        {
+          "question": "q5",
+          "claim": "Neo4j graph results are currently best-effort, and if the sample database has no Flight nodes, the app still returns a response.",
+          "quote": "*   Neo4j graph results are currently best-effort; if the sample database has no `Flight` nodes, the app still returns a response",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 38
+    },
+    {
+      "id": "e964a8c978",
+      "url": "https://github.com/jassranaeem/ai-agents-automation-framework",
+      "title": "jassranaeem/ai-agents-automation-framework",
+      "provider": "github",
+      "discussion": null,
+      "type": "other",
+      "published": "2026-07-19",
+      "org": "jassranaeem",
+      "quality": 0.3,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "The framework decomposes business processes into sequences of narrow, well-defined tasks and uses small, single-purpose agents coordinated by an orchestration layer rather than a single monolithic AI system.",
+          "quote": "Many business processes decompose naturally into a sequence of narrow, well-defined tasks (research a topic, draft content, validate data, trigger a downstream action) that don't require a single monolithic AI system — they're better served by small, single-purpose agents coordinated by an orchestration layer.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.1"
+        },
+        {
+          "question": "q3",
+          "claim": "The orchestration layer is n8n; it routes work between agents based on task type and pipeline state, handles retries/fallback when an agent's output does not meet validation criteria, and logs agent decisions for auditability.",
+          "quote": "A framework of narrow-purpose AI agents, each responsible for one task type, coordinated through an orchestration layer (n8n) that:\n\n*   Routes work between agents based on task type and current pipeline state\n*   Handles retries and fallback logic when an agent's output doesn't meet validation criteria\n*   Logs agent decisions for auditability",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.2"
+        },
+        {
+          "question": "q3",
+          "claim": "The framework defines research, content generation, data processing, and API-action agents, with API-action agents executing final workflow steps such as publish, notify, or update a record only after upstream validation.",
+          "quote": "*   Research agents that gather and summarize information from specified sources\n*   Content generation agents with configurable style/tone constraints\n*   Data processing agents for validation, transformation, and structured extraction\n*   API-action agents that execute the final step of a workflow (publish, notify, update a record) once upstream steps pass validation",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.3"
+        },
+        {
+          "question": "q3",
+          "claim": "The architecture starts from a schedule, webhook, or manual trigger, goes through an n8n orchestration layer, and then to Research, Content, Validation, and Action agents.",
+          "quote": "Trigger (schedule / webhook / manual)\n        │\n        ▼\n  Orchestration Layer (n8n)\n        │\n        ├──► Research Agent        (gathers/summarizes source material)\n        ├──► Content Agent          (drafts output per task spec)\n        ├──► Validation Agent       (checks output against criteria)\n        └──► Action Agent           (executes downstream API calls)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The listed technologies are n8n for orchestration, LLM APIs with task-specific prompting per agent role, and REST APIs and webhooks for inter-agent and downstream communication.",
+          "quote": "*   n8n (orchestration)\n*   LLM APIs (task-specific prompting per agent role)\n*   REST APIs and webhooks (inter-agent and downstream communication)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.5"
+        },
+        {
+          "question": "q3",
+          "claim": "The framework says off-the-shelf automation tools handle simple linear workflows but struggle when steps require judgment, such as checking whether generated content meets quality criteria before publishing.",
+          "quote": "Off-the-shelf automation tools handle simple linear workflows well but struggle when steps require judgment (e.g., \"does this generated content meet quality criteria before publishing?\"). Task-specific AI agents fill that gap.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Planned improvements include formalizing inter-agent communication into a shared schema instead of ad hoc payloads, adding automated evaluation/scoring before downstream steps, and packaging common agent roles as reusable templates.",
+          "quote": "*   Formalize inter-agent communication into a shared schema rather than ad hoc payloads\n*   Add automated evaluation/scoring for agent outputs before they proceed downstream\n*   Package common agent roles (research, content, validation) as reusable templates",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S39.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 39
+    }
+  ]
+}

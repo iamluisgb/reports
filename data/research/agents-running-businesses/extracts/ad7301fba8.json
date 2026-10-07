@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-04",
+  "author_or_org": "Dutao Zhang, Liaotian",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Queen-Bee is a governed multi-agent architecture in which a Queen control plane retrieves capabilities, plans task-scoped execution, and compiles a structured BeeSpec executed by specialized Bee agents with constrained tool access.",
+      "quote": "We present Queen-Bee, a governed multi-agent architecture in which a Queen control plane retrieves capabilities, plans task-scoped execution, and compiles a structured BeeSpec that is executed by specialized Bee agents under constrained tool access.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A working prototype was implemented with tenant-scoped MCP connectors, audit-backed execution-time governance, retrieval-driven weak incubation, and multiple provisioning backends.",
+      "quote": "We implement a working prototype with tenant-scoped MCP connectors, audit-backed execution-time governance, retrieval-driven weak incubation, and multiple provisioning backends.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The enterprise agent setting requires policy enforcement, tenant-scoped isolation, and execution within explicit operational boundaries, beyond raw task capability.",
+      "quote": "In this setting, raw task capability is insufficient: organizations also require policy enforcement, tenant-scoped isolation, and execution that remains within explicit operational boundaries.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The system was evaluated on 59 enterprise-style tasks covering governance-sensitive requests, retrieval-driven provisioning, scoped local execution, and chemistry workflow integration.",
+      "quote": "We evaluate the system on 59 enterprise-style tasks spanning governance-sensitive requests, retrieval-driven provisioning, scoped local execution, and chemistry workflow integration.",
+      "numbers": [
+        "59"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The retrieval-driven Queen-Bee variant achieved a task success rate of 0.964, zero governance failures, and substantially better scoped execution quality than a static Queen-Bee baseline and a permissive single-agent baseline.",
+      "quote": "The retrieval-driven Queen-Bee variant achieves a task success rate of 0.964, zero governance failures, and substantially better scoped execution quality than both a static Queen-Bee baseline and a permissive single-agent baseline.",
+      "numbers": [
+        "0.964",
+        "zero"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "A multi-Bee chemistry workflow was demonstrated with explicit approval gating and a concrete top-3 shortlist grounded in real upstream evidence and screening artifacts.",
+      "quote": "We further show a multi-Bee chemistry workflow with explicit approval gating and a concrete top-3 shortlist grounded in real upstream evidence and screening artifacts.",
+      "numbers": [
+        "top-3"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Comparisons with hybrid retrieval and LLM-guided provisioning found richer provisioning backends viable but not outperforming the lightweight structured retriever on the small, highly structured capability registry.",
+      "quote": "Additional comparisons with hybrid retrieval and LLM-guided provisioning show that richer provisioning backends are viable but do not outperform the lightweight structured retriever on the current small, highly structured capability registry.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The results are prototype-level systems evidence rather than a production deployment study, and the authors suggest evaluating enterprise agent platforms by governed provisioning, isolation behavior, scoped execution quality, and artifact-aware workflow coordination.",
+      "quote": "The results provide prototype-level systems evidence rather than a production deployment study, and suggest that enterprise agent platforms should be evaluated not only by capability, but also by governed provisioning, isolation behavior, scoped execution quality, and artifact-aware workflow coordination.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.06545"
+}

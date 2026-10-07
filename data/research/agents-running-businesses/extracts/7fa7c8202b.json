@@ -1,0 +1,43 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-12-01",
+  "author_or_org": "Rory Milsom",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A dissertation extends TheAgentCompany with a finance-focused environment and investigates whether a general purpose LLM agent can complete representative wealth-management tasks accurately and economically.",
+      "quote": "To address this gap, this dissertation extends TheAgentCompany with a finance-focused environment and investigates whether a general purpose LLM agent can complete representative wealth-management tasks both accurately and economically.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The study constructs a benchmark of 12 task-pairs for wealth management assistants spanning retrieval, analysis, and synthesis/communication, with explicit acceptance criteria and deterministic graders.",
+      "quote": "We construct a benchmark of 12 task-pairs for wealth management assistants spanning retrieval, analysis, and synthesis/communication, with explicit acceptance criteria and deterministic graders.",
+      "numbers": [
+        "12"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The study introduces synthetic domain data, enriches colleague simulations, and prototypes an automatic task-generation pipeline.",
+      "quote": "This study introduces synthetic domain data, enriches colleague simulations, and prototypes an automatic task-generation pipeline.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The study seeded new finance-specific data and introduced a high vs. low-autonomy variant of every task.",
+      "quote": "We seeded a set of new finance-specific data and introduced a high vs. low-autonomy variant of every task.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper concludes that agents are limited less by mathematical reasoning and more by end-to-end workflow reliability, that autonomy level meaningfully affects them, and that incorrect evaluation of models has hindered benchmarking.",
+      "quote": "The paper concluded that agents are limited less by mathematical reasoning and more so by end-to-end workflow reliability, and meaningfully affected by autonomy level, and that incorrect evaluation of models have hindered benchmarking.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2512.02230"
+}

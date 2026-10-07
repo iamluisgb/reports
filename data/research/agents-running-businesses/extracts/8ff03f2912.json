@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-19",
+  "author_or_org": "Manoj N M, Vijayakrishna S, Manjunath Srinivas, Rohit Pahan",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The paper proposes a multi-agent framework built on CrewAI for conversational business intelligence.",
+      "quote": "This paper proposes a multi-agent framework built on CrewAI [1] for conversational business intelligence.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Five specialized AI agents operate in a sequential pipeline to process natural language queries, retrieve and analyze data, generate visualizations via the Model Context Protocol, and deliver actionable insights.",
+      "quote": "Five specialized AI agents operate in a sequential pipeline to process natural language queries, retrieve and analyze data, generate visualizations via the Model Context Protocol (MCP) [2], and deliver actionable insights.",
+      "numbers": [
+        "Five"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The platform includes a defense-in-depth security architecture for multi-tenant data isolation and a query parameterization mechanism for turning conversational insights into reusable dashboard components.",
+      "quote": "The platform features a defense-in-depth security architecture for multi-tenant data isolation and a query parameterization mechanism for transforming conversational insights into reusable dashboard components.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Evaluation on 300 end-to-end test cases over synthetic and production enterprise datasets reports 95.3% functional accuracy, 24-second mean response latency, 4.52/5.0 response quality, 93.0% hallucination-free rate, 22.6 percentage point accuracy improvement, and 20.2% quality gain over a single-agent baseline.",
+      "quote": "Evaluation across 300 end-to-end test cases spanning synthetic and production enterprise datasets demonstrates 95.3% functional accuracy, a mean response latency of 24 seconds, and a response quality score of 4.52/5.0 as assessed by an LLM-as-a-Judge framework, with a 93.0% hallucination-free rate, representing a 22.6 percentage point accuracy improvement and 20.2% quality gain over a single-agent baseline.",
+      "numbers": [
+        "300",
+        "95.3%",
+        "24 seconds",
+        "4.52/5.0",
+        "93.0%",
+        "22.6 percentage point",
+        "20.2%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Cross-model evaluation across four LLM backends and human expert validation support the platform's architectural generalizability and evaluator reliability.",
+      "quote": "Cross-model evaluation across four LLM backends and human expert validation confirm architectural generalizability and evaluator reliability.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "An ablation study identifies the Data Analysis and Report Aggregation agents as the main drivers of output quality.",
+      "quote": "An ablation study confirms that the Data Analysis and Report Aggregation agents are the primary drivers of output quality.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.18740"
+}

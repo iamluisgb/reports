@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "YourGPT / Delta4 Infotech Pvt. Ltd.",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The vendor markets the platform as building conversational AI agents that handle customer support, boost sales, and automate business operations across web, mobile, and phone channels.",
+      "quote": "Build intelligent conversational AI agents that handle customer support, boost sales, and automate business operations across web, mobile, and phone channels.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The platform includes an AI Copilot in Studio that builds entire workflows from natural language and can create, debug, and optimize automation flows automatically.",
+      "quote": "Build entire workflows with natural language. Let AI create, debug, and optimize your automation flows automatically.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Agents can natively integrate with business platforms including Stripe, Airtable, Google Sheets, Notion, and Supabase to access business data and take actions automatically.",
+      "quote": "Connect with Stripe, Airtable, Google Sheets, Notion, Supabase, and more. Let your AI agents access business data and take actions automatically.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The platform supports MCP integration and an MCP Marketplace for ready-to-use tools to extend conversational agents.",
+      "quote": "Access our MCP Marketplace for ready-to-use tools. Extend your conversational agents with powerful integrations and capabilities.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The platform offers phone AI voice agents for customer support, sales calls, and appointment booking, with natural conversations in more than 100 languages.",
+      "quote": "Deploy AI voice agents for customer support, sales calls, and appointment booking. Natural conversations in 100+ languages.",
+      "numbers": [
+        "100+"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Agents can be trained by connecting multiple data sources so they learn from business knowledge.",
+      "quote": "Connect multiple data sources and let your AI agents learn from all your business knowledge",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Agents can use MCPs to search real-time information and respond with latest answers.",
+      "quote": "AI agents can now use MCPs to search real-time information and respond with the latest answers.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The vendor advertises SOC 2 Type II enterprise-grade security for the platform.",
+      "quote": "SOC 2 Type II\n\nEnterprise-grade security",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://yourgpt.ai/2-0"
+}

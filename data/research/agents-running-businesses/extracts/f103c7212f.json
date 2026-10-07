@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2026-03-14",
+  "author_or_org": "Satish Gopinathan (eagleeyethinker)",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The repository describes a compact reference implementation for an enterprise-style agentic AI workflow built with FastAPI, LangGraph, Qdrant, Neo4j, and an OpenAI-compatible reasoning layer.",
+      "quote": "A compact reference implementation for an enterprise-style agentic AI workflow built with FastAPI, LangGraph, Qdrant, Neo4j, and an OpenAI-compatible reasoning layer.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The platform routes operational questions through specialized agents: a router selects the branch, retrieval queries Qdrant documents, tool calls a weather MCP service, graph queries Neo4j, and reasoning produces the final recommendation.",
+      "quote": "*   `router_agent` selects the branch to run\n*   `retrieval_agent` queries vectorized operational documents in Qdrant\n*   `tool_agent` calls the weather MCP service\n*   `graph_agent` queries Neo4j for graph context\n*   `reasoning_agent` produces the final recommendation",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Weather and flight-impact queries are routed through the weather branch, while general policy and operations queries are routed through the RAG branch.",
+      "quote": "*   Weather and flight-impact queries go through the weather branch\n*   General policy and operations queries go through the RAG branch",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The stack uses FastAPI as the API, LangGraph for workflow orchestration, OpenAI-compatible chat completions for reasoning, Qdrant as vector store, Neo4j as graph store, SentenceTransformers for embeddings, a FastAPI weather MCP tool service, and Docker Compose as runtime.",
+      "quote": "| API | FastAPI |\n| Workflow orchestration | LangGraph |\n| Reasoning | OpenAI-compatible chat completions |\n| Vector store | Qdrant |\n| Graph store | Neo4j |\n| Embeddings | SentenceTransformers |\n| Tool service | FastAPI weather MCP |\n| Runtime | Docker Compose |",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "If no OpenAI API key is set, the application returns a deterministic fallback recommendation.",
+      "quote": "*   If no OpenAI key is set, the app returns a deterministic fallback recommendation",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The reasoning layer records upstream failures in the errors field instead of silently masking them.",
+      "quote": "*   The reasoning layer records upstream failures in the `errors` field instead of silently masking them",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Neo4j graph results are currently best-effort, and if the sample database has no Flight nodes, the app still returns a response.",
+      "quote": "*   Neo4j graph results are currently best-effort; if the sample database has no `Flight` nodes, the app still returns a response",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/eagleeyethinker/agentic-ai-platform-enterprise"
+}

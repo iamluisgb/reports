@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-10-09",
+  "author_or_org": "Cheng Yang, Xuemeng Yang, Licheng Wen, Daocheng Fu, Jianbiao Mei, Rong Wu, Pinlong Cai, Yufan Shen, Nianchen Deng, Botian Shi, Yu Qiao, Haifeng Li",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "Existing LLM agents are described as test-time static and unable to learn from experience, so they cannot accumulate knowledge or continuously improve on the job.",
+      "quote": "Existing LLM agents suffer from a critical limitation: they are test-time static and cannot learn from experience, lacking the ability to accumulate knowledge and continuously improve on the job.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "MUSE is an experience-driven, self-evolving agent framework centered on a hierarchical Memory Module that organizes experience and uses it to plan and execute long-horizon tasks across multiple applications.",
+      "quote": "To address this challenge, we propose MUSE, a novel agent framework that introduces an experience-driven, self-evolving system centered around a hierarchical Memory Module. MUSE organizes diverse levels of experience and leverages them to plan and execute long-horizon tasks across multiple applications.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "After each sub-task, MUSE autonomously reflects on its trajectory, converts the raw trajectory into structured experience, and integrates it back into the Memory Module.",
+      "quote": "After each sub-task execution, the agent autonomously reflects on its trajectory, converting the raw trajectory into structured experience and integrating it back into the Memory Module.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The MUSE mechanism lets the agent evolve beyond its static pretrained parameters, supporting continuous learning and self-evolution.",
+      "quote": "This mechanism enables the agent to evolve beyond its static pretrained parameters, fostering continuous learning and self-evolution.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "MUSE was evaluated on the long-horizon productivity benchmark TAC and achieved new state-of-the-art performance by a significant margin using only a lightweight Gemini-2.5 Flash model.",
+      "quote": "We evaluate MUSE on the long-horizon productivity benchmark TAC. It achieves new SOTA performance by a significant margin using only a lightweight Gemini-2.5 Flash model.",
+      "numbers": [
+        "2.5"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Experiments indicate that as MUSE autonomously accumulates experience, its task completion improves and it shows robust continuous learning and self-evolution.",
+      "quote": "Sufficient Experiments demonstrate that as the agent autonomously accumulates experience, it exhibits increasingly superior task completion capabilities, as well as robust continuous learning and self-evolution capabilities.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "MUSE's accumulated experience shows generalization properties that enable zero-shot improvement on new tasks.",
+      "quote": "Moreover, the accumulated experience from MUSE exhibits strong generalization properties, enabling zero-shot improvement on new tasks.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper positions MUSE as establishing a new paradigm for AI agents capable of real-world productivity task automation.",
+      "quote": "MUSE establishes a new paradigm for AI agents capable of real-world productivity task automation.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2510.08002"
+}

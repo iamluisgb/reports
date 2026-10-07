@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-04",
+  "author_or_org": "Quan Shi, Keshav Dhandhania, Karthik Narasimhan, Victor Barres",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "τ τ-bench makes agent construction the task: a developer agent is given business records, a client with requirements, a production API, an inherited codebase, and limits on serving cost and models, then must deliver a complete customer-service agent scored against held-out simulated users.",
+      "quote": "We introduce τ τ-bench (pronounced hyper-tau-bench), a benchmark that makes agent construction the task. A developer agent is given the records a business actually keeps, a client who holds requirements, a production API that operations must run through, a codebase to inherit, and limits on serving cost and models: the same starting point a real engagement provides. From these it must deliver a complete customer-service agent, scored by deploying that agent against held-out simulated users.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Across 53 tasks spanning four domains, the strongest configuration, Claude Opus 5 under Claude Code, passes just 23.9% of evaluation simulations, while an expert-authored reference ceiling scores 82.2%.",
+      "quote": "Across 53 tasks spanning four domains, the strongest configuration, Claude Opus 5 under Claude Code, passes just 23.9% of evaluation simulations. Meanwhile, an expert-authored reference ceiling scores 82.2%.",
+      "numbers": [
+        "53",
+        "four",
+        "23.9%",
+        "82.2%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper says the work of building LLM agents is increasingly handed to coding agents, but existing benchmarks say little about whether an AI system can deliver one under real client engagement conditions.",
+      "quote": "Notably, the work of building them is increasingly handed to coding agents, yet existing benchmarks say little about whether an AI system can deliver one under the conditions of a real client engagement.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The benchmark environment includes a production API that operations must run through, a codebase to inherit, and limits on serving cost and models.",
+      "quote": "A developer agent is given the records a business actually keeps, a client who holds requirements, a production API that operations must run through, a codebase to inherit, and limits on serving cost and models: the same starting point a real engagement provides.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The benchmark reports low end-to-end reliability for the strongest configuration: a 23.9% pass rate versus an 82.2% expert-authored reference ceiling.",
+      "quote": "Across 53 tasks spanning four domains, the strongest configuration, Claude Opus 5 under Claude Code, passes just 23.9% of evaluation simulations. Meanwhile, an expert-authored reference ceiling scores 82.2%.",
+      "numbers": [
+        "53",
+        "four",
+        "23.9%",
+        "82.2%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Failure modes mirror those of human agent developers: models issue shallow queries instead of deeply comprehending records, communicate almost nothing to the client, experiment too little with agent architecture and serving spend, and ship the first design that runs.",
+      "quote": "The failures mirror ones human agent developers see: models issue shallow queries in place of deep comprehension of the records, communicate almost nothing to the client, and experiment too little with agent architecture and serving spend, shipping the first design that runs.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper states LLM agents are deployed to handle customer service, adjudicate disputes, and operate internal systems.",
+      "quote": "LLM agents are rapidly becoming production software, deployed to handle customer service, adjudicate disputes, and operate internal systems.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.04611"
+}

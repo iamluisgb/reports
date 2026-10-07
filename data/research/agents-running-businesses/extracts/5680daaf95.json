@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-09",
+  "author_or_org": "Zongxia Li et al.",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "AI agents can autonomously complete short, well-specified tasks.",
+      "quote": "AI agents have become capable of autonomously completing short, well-specified tasks.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper introduces Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks across nine categories.",
+      "quote": "We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing.",
+      "numbers": [
+        "46",
+        "nine"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Tasks in this benchmark typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging.",
+      "quote": "Tasks in Long-Horizon-Terminal-Bench typically require hundreds of episodes and minutes to hours of execution, stressing long-horizon planning, long-context management, and iterative debugging rather than one-shot problem solving.",
+      "numbers": [
+        "hundreds",
+        "minutes",
+        "hours"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Across 15 frontier models, agents consumed on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run.",
+      "quote": "We evaluate 15 frontier models and find that agents consume on average 9.9M tokens per task, with roughly 231 episodes and 85.3 minutes of execution time per run, making Long-Horizon-Terminal-Bench more demanding than prior terminal-based benchmarks.",
+      "numbers": [
+        "15",
+        "9.9M",
+        "231",
+        "85.3"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The strongest tested model achieved 15.2% pass@1 at a partial-reward threshold of 0.95 and 10.9% at a perfect-reward threshold of 1.0, while the mean pass rate across models was 4.3% and 1.7% under those thresholds.",
+      "quote": "Even the strongest tested model achieves 15.2% pass@1 at a partial-reward threshold of 0.95 and 10.9% at a perfect-reward threshold of 1.0, while the mean pass rate across models is 4.3% and 1.7% under the two thresholds, respectively.",
+      "numbers": [
+        "15.2%",
+        "0.95",
+        "10.9%",
+        "1.0",
+        "4.3%",
+        "1.7%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper reports analyzing failure modes and error patterns for long-horizon terminal agents.",
+      "quote": "We further analyze failure modes and error patterns, and release Long-Horizon-Terminal-Bench to support future progress on long-horizon terminal agents.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.08964"
+}

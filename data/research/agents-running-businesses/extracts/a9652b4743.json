@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": null,
+  "author_or_org": "FireRedTeam",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "FireRed-OpenStoryline is an AI video editing agent that uses natural language interaction, LLM-powered planning, precise tool orchestration, and human-in-the-loop creation with reusable Style Skills.",
+      "quote": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven directing through natural language interaction, LLM-powered planning, and precise tool orchestration. It facilitates transparent, human-in-the-loop creation with reusable Style Skills for consistent, professional storytelling.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A commit adds an AI transition workflow with runtime config injection, timeline support, and real-time progress reporting.",
+      "quote": "feat: add AI transition workflow (#74) * feat: add AI transition workflow with runtime config injection and timeline support * update web hint * fix ai transition timeline bug * AI transition generation real-time progress reporting",
+      "numbers": [
+        "#74"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "A commit fixes an undefined variable reference on the VLM failure path in understand_clips.",
+      "quote": "fix(nodes): avoid undefined variable reference on VLM failure path in understand_clips (#102)",
+      "numbers": [
+        "#102"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "A commit prevents orphan tool messages after session restore and sanitizes lc_messages to avoid provider 400 errors.",
+      "quote": "fix: prevent orphan tool messages after session restore Ensure restored AIMessage tool_calls are reconstructed and sanitize lc_messages to avoid provider 400 errors.",
+      "numbers": [
+        "400"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A commit fixes session restore invariants by failing closed on corrupted tool rows, redacting config secrets, and typing getSession errors.",
+      "quote": "Fix session restore invariants: fail-closed on corrupted tool rows, redact config secrets, and type getSession errors (#79)",
+      "numbers": [
+        "#79"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A commit persists chat sessions securely across restarts, with safe recovery and secret redaction so chat can continue after server restart.",
+      "quote": "feat: persist chat sessions securely across restarts Persist session state to disk with safe recovery and secret redaction so chat can continue after server restart.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline"
+}

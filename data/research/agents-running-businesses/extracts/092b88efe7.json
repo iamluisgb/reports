@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-05-23",
+  "author_or_org": "Xueyang Zhou et al.",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "LLM-based agents are increasingly deployed in real-world applications such as digital assistants, autonomous customer service, and decision-support systems, where they interact in multi-turn, tool-augmented environments.",
+      "quote": "Large Language Model (LLM)-based agents are increasingly deployed in real-world applications such as \"digital assistants, autonomous customer service, and decision-support systems\", where their ability to \"interact in multi-turn, tool-augmented environments\" makes them indispensable.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Ensuring agent safety is a significant challenge because of diverse and complex risks from dynamic user interactions, external tool usage, and unintended harmful behaviors.",
+      "quote": "However, ensuring the safety of these agents remains a significant challenge due to the diverse and complex risks arising from dynamic user interactions, external tool usage, and the potential for unintended harmful behaviors.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper proposes AutoSafe as the first framework that systematically enhances agent safety through fully automated synthetic data generation.",
+      "quote": "To address this critical issue, we propose AutoSafe, the first framework that systematically enhances agent safety through fully automated synthetic data generation.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "AutoSafe introduces an open and extensible OTS threat model that formalizes how unsafe behaviors emerge from the interplay of user instructions, interaction contexts, and agent actions.",
+      "quote": "Concretely, 1) we introduce an open and extensible threat model, OTS, which formalizes how unsafe behaviors emerge from the interplay of user instructions, interaction contexts, and agent actions.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "AutoSafe develops a fully automated data generation pipeline that simulates unsafe user behaviors, uses self-reflective reasoning to generate safe responses, and builds a safety training dataset without hazardous real-world data collection.",
+      "quote": "2) we develop a fully automated data generation pipeline that simulates unsafe user behaviors, applies self-reflective reasoning to generate safe responses, and constructs a large-scale, diverse, and high-quality safety training dataset-eliminating the need for hazardous real-world data collection.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The framework is evaluated with comprehensive experiments on both synthetic and real-world safety benchmarks.",
+      "quote": "To evaluate the effectiveness of our framework, we design comprehensive experiments on both synthetic and real-world safety benchmarks.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "AutoSafe reportedly boosts safety scores by 45% on average and achieves a 28.91% improvement on real-world tasks.",
+      "quote": "Results demonstrate that AutoSafe boosts safety scores by 45% on average and achieves a 28.91% improvement on real-world tasks, validating the generalization ability of our learned safety strategies.",
+      "numbers": [
+        "45%",
+        "28.91%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The results are presented as highlighting the practical advancement and scalability of AutoSafe for building safer LLM-based agents for real-world deployment.",
+      "quote": "These results highlight the practical advancement and scalability of AutoSafe in building safer LLM-based agents for real-world deployment.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2505.17735"
+}

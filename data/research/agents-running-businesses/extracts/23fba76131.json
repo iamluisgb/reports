@@ -1,0 +1,54 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-11-11",
+  "author_or_org": "Waseem AlShikh, Muayad Sayed Ali, Brian Kennedy, Dmytro Mozolevskyi",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The paper proposes a framework of eleven outcome-based, task-agnostic performance metrics for AI agents.",
+      "quote": "This white paper proposes a novel, comprehensive framework of eleven outcome-based, task-agnostic performance metrics for AI agents that transcend domain boundaries.",
+      "numbers": [
+        "eleven"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The framework includes Goal Completion Rate (GCR), Autonomy Index (AIx), Multi-Step Task Resilience (MTR), and Business Impact Efficiency (BIE).",
+      "quote": "We introduce metrics such as Goal Completion Rate (GCR), Autonomy Index (AIx), Multi-Step Task Resilience (MTR), and Business Impact Efficiency (BIE).",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The metrics are designed to evaluate decision quality, autonomy, adaptability to new challenges, and delivered business value regardless of underlying model architecture or specific use case.",
+      "quote": "These metrics are designed to enable organizations to evaluate agents based on the quality of their decisions, their degree of autonomy, their adaptability to new challenges, and the tangible business value they deliver, regardless of the underlying model architecture or specific use case.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper reports a large-scale simulated experiment using four agent architectures: ReAct, Chain-of-Thought, Tool-Augmented, and Hybrid, across five domains: Healthcare, Finance, Marketing, Legal, and Customer Service.",
+      "quote": "Through a large-scale simulated experiment involving four distinct agent architectures (ReAct, Chain-of-Thought, Tool-Augmented, Hybrid) across five diverse domains (Healthcare, Finance, Marketing, Legal, and Customer Service), we demonstrate the framework's efficacy.",
+      "numbers": [
+        "four",
+        "five"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The simulated results show significant performance trade-offs between different agent designs.",
+      "quote": "Our results reveal significant performance trade-offs between different agent designs, highlighting the Hybrid Agent as the most consistently high-performing model across the majority of our proposed metrics, achieving an average Goal Completion Rate of 88.8\\% and the highest Return on Investment (ROI).",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "In the simulated experiment, the Hybrid Agent achieved an average Goal Completion Rate of 88.8% and the highest Return on Investment among the tested architectures.",
+      "quote": "Our results reveal significant performance trade-offs between different agent designs, highlighting the Hybrid Agent as the most consistently high-performing model across the majority of our proposed metrics, achieving an average Goal Completion Rate of 88.8\\% and the highest Return on Investment (ROI).",
+      "numbers": [
+        "88.8\\%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2511.08242"
+}

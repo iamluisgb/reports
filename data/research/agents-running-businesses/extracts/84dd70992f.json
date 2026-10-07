@@ -1,0 +1,76 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-03-31",
+  "author_or_org": "Aaditya Khanal, Yangyang Tao, Junxiu Zhou",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "The paper introduces a reliability science framework for long-horizon LLM agents with four metrics: Reliability Decay Curve (RDC), Variance Amplification Factor (VAF), Graceful Degradation Score (GDS), and Meltdown Onset Point (MOP).",
+      "quote": "> We introduce a reliability science framework for long-horizon LLM agents with four metrics: Reliability Decay Curve  \n> (RDC), Variance Amplification Factor (VAF), Graceful Degradation Score (GDS), and Meltdown Onset Point (MOP).",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The evaluation covers 10 models across 23,392 episodes on a 396-task benchmark spanning four duration buckets and three domains.",
+      "quote": "> evaluate 10 models across 23,392 episodes on a 396-task benchmark spanning four duration buckets and three domains.",
+      "numbers": [
+        "10",
+        "23,392",
+        "396",
+        "four",
+        "three"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Reliability decay is domain-stratified: SE GDS drops from 0.90 to 0.44 while document processing is nearly flat from 0.74 to 0.71.",
+      "quote": "> Key findings: (1) reliability decay is domain-stratified -- SE GDS drops from 0.90 to 0.44 while document processing  \n> is nearly flat (0.74 to 0.71);",
+      "numbers": [
+        "0.90",
+        "0.44",
+        "0.74",
+        "0.71"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "VAF bifurcates by capability tier; high VAF is a capability signature, not an instability signal.",
+      "quote": "> (2) VAF bifurcates by capability tier -- high VAF is a capability signature, not an  \n> instability signal;",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Capability and reliability rankings diverge substantially, with multi-rank inversions at long horizons.",
+      "quote": "> (3) capability and reliability rankings diverge substantially, with multi-rank inversions at long  \n> horizons;",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Frontier models have the highest meltdown rates, up to 19%, because they attempt ambitious multi-step strategies that sometimes spiral.",
+      "quote": "> (4) frontier models have the highest meltdown rates (up to 19%) because they attempt ambitious multi-step  \n> strategies that sometimes spiral;",
+      "numbers": [
+        "19%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Memory scaffolds universally hurt long-horizon performance across all 10 models.",
+      "quote": "> strategies that sometimes spiral; and (5) memory scaffolds universally hurt long-horizon performance across all 10  \n> models.",
+      "numbers": [
+        "10"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The results motivate reliability as a first-class evaluation dimension alongside capability.",
+      "quote": "> models. These results motivate reliability as a first-class evaluation dimension alongside capability.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2603.29231"
+}

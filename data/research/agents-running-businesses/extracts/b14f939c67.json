@@ -1,0 +1,50 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-18",
+  "author_or_org": "Abbas Raza Ali, Muhammad Ajmal Siddiqui, Moona Zahid",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Most enterprise GenAI initiatives fail to show a measurable business effect, and a large fraction of agentic projects are expected to be cancelled.",
+      "quote": "Frontier language models now produce professional deliverables that expert graders judge to match human work on a substantial share of economically valuable tasks, yet most enterprise GenAI initiatives fail to show a measurable business effect and a large fraction of agentic projects are expected to be cancelled.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The authors frame enterprise GenAI deployment as a measurement problem: public benchmarks ask what models can do, while deployment decisions require assessing whether a workflow is fit, reliable, safe, and worth scaling under local data and controls.",
+      "quote": "We argue that this is substantially a measurement problem: public benchmarks answer \"what can the model do?\", whereas a deployment decision requires \"is this workflow fit, reliable, safe and worth scaling - here, on our data, under our controls?\".",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "EnterpriseVal specifies a use case and a frozen socio-technical configuration under test consisting of model, prompts, retrieval, tools, guardrails, and human oversight, with autonomy level and consequence tier jointly setting required evaluation intensity; it also includes a metric catalogue covering fidelity, utility, efficiency, reliability, assurance, and oversight, plus a threshold gate mapping metric vectors to REJECT/CONDITIONAL/SCALE decisions.",
+      "quote": "It comprises (i) a formal specification of the use case and of the frozen socio-technical configuration under test, model, prompts, retrieval, tools, guardrails and human oversight, with an autonomy level and consequence tier that jointly set the required evaluation intensity; (ii) a metric catalogue spanning fidelity, utility, efficiency, reliability, assurance and oversight; (iii) a grading protocol that scales blinded expert judgement with calibrated LLM-as-judge scoring through prediction-powered inference; (iv) a two-tier threshold gate, stated as an executable algorithm, that maps metric vectors with confidence bounds to REJECT/CONDITIONAL/SCALE decisions; and (v) a value-and-risk model in which the reviewer catch rate is a measured parameter.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper reports a pilot across three workflows in a global bank.",
+      "quote": "We report a pilot across three workflows in a global bank.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "In the bank pilot, credit-memo drafting achieved 88% human-graded citation precision and 1.6% hallucination rate for the best model against gates of 70% and 5%; in procedure transformation, analyst refinement effort fell from an estimated 27.4 hours to 2.9 hours per document.",
+      "quote": "In credit-memo drafting, human-graded citation precision reached 88% and hallucination rate 1.6% for the best model against gates of 70% and 5%; in procedure transformation, analyst refinement effort fell from an estimated 27.4 to 2.9 hours per document.",
+      "numbers": [
+        "88%",
+        "1.6%",
+        "70%",
+        "5%",
+        "27.4",
+        "2.9"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.21841"
+}

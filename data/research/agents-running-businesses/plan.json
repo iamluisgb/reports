@@ -1,0 +1,81 @@
+{
+  "slug": "agents-running-businesses",
+  "title": "Agents that run businesses: autonomy, economics and failure in production",
+  "thesis": "AI agents can run narrow business workflows end to end, but evidence of autonomous agents running whole businesses is thin; measured gains come with human oversight and most failures come from long-horizon reliability.",
+  "audience": "Founders and operators deciding which business workflows to hand to agents",
+  "since": "2024-06-01",
+  "per_question": 8,
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What happens when LLM agents are given a business to run, in experiments and benchmarks (Vending-Bench, Project Vend, TheAgentCompany)?",
+      "queries": [
+        "Vending-Bench long-term coherence agents",
+        "TheAgentCompany benchmark",
+        "Anthropic Project Vend",
+        "LLM agent runs business simulation"
+      ],
+      "providers": [
+        "arxiv",
+        "hn",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "What measured productivity and cost results do companies report from agents in customer support and operations?",
+      "queries": [
+        "generative AI customer support productivity study",
+        "Klarna AI assistant customer service",
+        "AI agents customer service deployment results"
+      ],
+      "providers": [
+        "arxiv",
+        "hn",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "How are business agents built: architectures, tools, orchestration and human-in-the-loop?",
+      "queries": [
+        "LLM agent architecture enterprise workflows",
+        "multi-agent framework business process automation",
+        "human-in-the-loop LLM agents"
+      ],
+      "providers": [
+        "arxiv",
+        "github",
+        "hn"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "How reliable are agents on long-horizon tasks and how is that capability trending?",
+      "queries": [
+        "measuring AI ability to complete long tasks",
+        "long-horizon agent reliability",
+        "agent task completion time horizon"
+      ],
+      "providers": [
+        "arxiv",
+        "hn",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Why do agent projects fail or get cancelled, and what risks (errors, security, liability) show up?",
+      "queries": [
+        "why do multi-agent LLM systems fail",
+        "agentic AI projects cancelled",
+        "AI agent security prompt injection tools"
+      ],
+      "providers": [
+        "arxiv",
+        "hn",
+        "semantic_scholar"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-31",
+  "author_or_org": "Amir Saeidi, Zehua Zhang, Rishitosh Singh, Naman Ahuja, Vivek Gupta, Ali Payani, Gaowen Liu, Jayanth Srinivasa, Chitta Baral",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "LLM agents are increasingly deployed in long-horizon, interactive, and stateful environments.",
+      "quote": "Large language model (LLM) agents are increasingly deployed in long-horizon, interactive, and stateful environments.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A single wrong action, such as refunding the wrong purchase, can cause irreversible task failure and must be intercepted before execution.",
+      "quote": "In these settings, a single wrong action, such as refunding the wrong purchase, can cause irreversible task failure and must be intercepted before execution.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Agent failures may not appear in every run but can emerge across repeated trials, making reliability across steps and trials critical.",
+      "quote": "Such failures may not appear in every single run, but can emerge across repeated trials, making reliability across steps and trials critical.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Ensuring agentic reliability is challenging because even frontier LLMs struggle to explain why an action may be wrong, especially in long, intertwined trajectories governed by domain-specific policies.",
+      "quote": "However, ensuring agentic reliability is challenging: even frontier LLMs struggle to explain why an action may be wrong, especially in long, intertwined trajectories governed by domain-specific policies.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "CAST is a critique-aware training framework that converts sparse task outcomes into action-level supervision for critique learning and policy optimization.",
+      "quote": "We address this gap with CAST, a critique-aware training framework that converts sparse task outcomes into action-level supervision for critique learning and policy optimization.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "CAST analyzes agent trajectories to synthesize structured rationales explaining action validity under partial observability.",
+      "quote": "CAST analyzes agent trajectories to synthesize structured rationales explaining action validity under partial observability.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Fine-tuning Qwen3-family models on dynamic tool-calling benchmarks improved reliability across domains, outperforming GPT-OSS-120B by over 10% pass^4 on Retail tasks and yielding an additional 9% improvement on Telehealth in an out-of-domain setting.",
+      "quote": "Fine-tuning Qwen3-family models on dynamic tool-calling benchmarks, CAST improves reliability across domains, outperforming GPT-OSS-120B by over 10% pass^4 on Retail tasks and yielding an additional 9% improvement on Telehealth in an out-of-domain setting.",
+      "numbers": [
+        "10%",
+        "9%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The results demonstrate that critique-aware training improves the robustness of LLM agents in realistic dynamic environments.",
+      "quote": "These results demonstrate that critique-aware training improves the robustness of LLM agents in realistic dynamic environments.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.30147"
+}

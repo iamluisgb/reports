@@ -3,43 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agents That Run Businesses: The New Autonomous Executive</title>
+<title>Can Agents Run a Business? What the Evidence Shows</title>
 <link rel="stylesheet" href="../styles.css?v=2">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
-<!-- og:start -->
-<meta name="description" content="Full landscape · 40+ companies · Technical architecture · Real economics · Anti-patterns · Where it&#x27;s heading">
-<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/agents-running-businesses-2026-06-27.html">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="AI Reports — Luis GB">
-<meta property="og:title" content="Agents That Run Businesses: The New Autonomous Executive">
-<meta property="og:description" content="Full landscape · 40+ companies · Technical architecture · Real economics · Anti-patterns · Where it&#x27;s heading">
-<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/agents-running-businesses-2026-06-27.html">
-<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/agents-running-businesses-2026-06-27.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@iamluisgb">
-<meta name="twitter:creator" content="@iamluisgb">
-<meta name="twitter:title" content="Agents That Run Businesses: The New Autonomous Executive">
-<meta name="twitter:description" content="Full landscape · 40+ companies · Technical architecture · Real economics · Anti-patterns · Where it&#x27;s heading">
-<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/agents-running-businesses-2026-06-27.png">
-<!-- og:end -->
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Agents That Run Businesses: The New Autonomous Executive",
-  "description": "Full landscape · 40+ companies · Technical architecture · Real economics · Anti-patterns · Where it&#x27;s heading",
+  "headline": "Can Agents Run a Business? What the Evidence Shows",
+  "description": "Agents given a business to run · Results in support and operations · How business agents are built · Reliability over long horizons · Why projects fail",
   "datePublished": "2026-06-27",
-  "dateModified": "2026-06-27",
+  "dateModified": "2026-10-07",
   "author": {
     "@type": "Person",
     "name": "Luis González",
     "url": "https://luisgonzalezbernal.com",
     "sameAs": [
-      "https://twitter.com/iamluisgb",
-      "https://www.linkedin.com/in/iamluisgb"
+      "https://www.linkedin.com/in/iamluisgb",
+      "https://github.com/iamluisgb"
     ]
   },
   "publisher": {
@@ -47,13 +27,30 @@
     "name": "AI Reports — Luis GB",
     "url": "https://luisgonzalezbernal.com/reports/"
   },
-  "mainEntityOfPage": "https://luisgonzalezbernal.com/reports/reports/agents-running-businesses-2026-06-27.html",
-  "image": "https://luisgonzalezbernal.com/reports/og/agents-running-businesses-2026-06-27.png",
-  "articleSection": "Autonomous Business Agents",
   "inLanguage": "en",
   "isAccessibleForFree": true
 }
 </script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+<!-- og:start -->
+<meta name="description" content="Agents given a business to run · Results in support and operations · How business agents are built · Reliability over long horizons · Why projects fail">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/agents-running-businesses-2026-06-27.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="Can Agents Run a Business? What the Evidence Shows">
+<meta property="og:description" content="Agents given a business to run · Results in support and operations · How business agents are built · Reliability over long horizons · Why projects fail">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/agents-running-businesses-2026-06-27.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/agents-running-businesses-2026-06-27.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="Can Agents Run a Business? What the Evidence Shows">
+<meta name="twitter:description" content="Agents given a business to run · Results in support and operations · How business agents are built · Reliability over long horizons · Why projects fail">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/agents-running-businesses-2026-06-27.png">
+<!-- og:end -->
+
 <!-- ui:start -->
 <link rel="alternate" type="text/markdown" href="agents-running-businesses-2026-06-27.md">
 <link rel="preload" href="../assets/fonts/web/InstrumentSerif-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -79,595 +76,193 @@
 <body>
 <div class="progress-bar" id="progress-bar"></div>
   <div class="page">
-
     <a class="back-link" href="../index.html">← Index</a>
     <div class="special-header">
-      <div class="field-mark"></div>
       <div class="header-top">
         <div>
           <div class="special-category">Autonomous Business Agents · Special Report</div>
-          <h1><em>Agents</em> That Run Businesses: The New Autonomous Executive</h1>
-          <div class="special-date">27 Jun 2026</div>
-          <div class="special-subtitle">Full landscape · 40+ companies · Technical architecture · Real economics · Anti-patterns · Where it's heading</div>
+          <h1>Can Agents Run a <em>Business</em>? What the Evidence Shows</h1>
+          <div class="special-date">27 Jun 2026 · Updated 7 Oct 2026</div>
+          <div class="special-subtitle">Agents given a business to run · Results in support and operations · How business agents are built · Reliability over long horizons · Why projects fail</div>
         </div>
         <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
       </div>
     </div>
 
     <div class="section">
-      <div class="section-label">Executive Summary</div>
+      <div class="section-label">Key findings</div>
       <div class="special-content">
-
-<p>We're at the inflection point where AI agents move from <strong>copilots that assist</strong> to <strong>autonomous executives that decide</strong>. This report maps the full ecosystem: more than 40 companies building agents that don't just answer questions — they run complete business workflows, make financial decisions and operate 24/7 without direct supervision.</p>
-
-<p>The data point that changes everything: <strong>Klarna replaced 700 support agents with a single AI agent</strong>, saving $40M a year. The cost of running an agent 24/7 on GPT-4o is around <strong>$30-$300/month</strong> vs. $35K-$120K a year for an equivalent human. The economic gap is 10-100x.</p>
-
-<p>But the real story isn't "agents replace humans" — it's <strong>"agents amplify one person's ability to run multiple business lines simultaneously"</strong>. The new pattern isn't substitution; it's leverage multiplication.</p>
-
+<ol>
+<li><strong>Given a whole business, agents mostly lose money.</strong> In a simulated market of eight companies over 500 days, most LLM CEO agents had negative mean returns.<sup class="cite"><a href="#source-11">11</a></sup> In a marketplace benchmark, even the best of 15 models fell behind human-designed strategies.<sup class="cite"><a href="#source-12">12</a></sup></li>
+<li><strong>Narrow support work already pays.</strong> At Nubank, A/B tests of a card-delivery agent showed a 37-point gain in transactional NPS and a 29-point gain in self-service.<sup class="cite"><a href="#source-5">5</a></sup> On most use cases, AI satisfaction came within a few points of expert human agents.<sup class="cite"><a href="#source-5">5</a></sup></li>
+<li><strong>Building a business agent is still hard for agents.</strong> Asked to deliver a customer-service agent for a client, the best configuration passed 23.9% of simulations.<sup class="cite"><a href="#source-14">14</a></sup> An expert reference reached 82.2%.<sup class="cite"><a href="#source-14">14</a></sup></li>
+<li><strong>Long horizons break agents.</strong> On long terminal tasks, the best of 15 models passed 15.2%, and the mean was 4.3%.<sup class="cite"><a href="#source-23">23</a></sup> Frontier models had the highest meltdown rates, up to 19%.<sup class="cite"><a href="#source-6">6</a></sup></li>
+<li><strong>Leaderboards measure the wrong thing.</strong> Across three enterprise benchmarks, the agent explained less than 3% of the variance in results; the agent-task fit explained 7-23%.<sup class="cite"><a href="#source-27">27</a></sup></li>
+<li><strong>Many projects will be cancelled.</strong> Gartner predicts that over 40% of agentic AI projects will be cancelled by the end of 2027.<sup class="cite"><a href="#source-34">34</a></sup> The reasons are cost, unclear value and weak risk controls.<sup class="cite"><a href="#source-34">34</a></sup></li>
+</ol>
       </div>
     </div>
 
     <div class="section">
       <div class="section-label">Part I</div>
       <div class="special-content">
-
-<h2>The Map — Who's Building What</h2>
-
-<h3>1.1 Ecosystem Landscape</h3>
-
-<p>The business-agent market has fractured into 9 categories, each with an emerging leader and a distinct architecture. Classifying by <strong>level of autonomy</strong> is more revealing than classifying by industry:</p>
-
-<div class="table-wrapper"><table>
-  <tr><th>Category</th><th>Leaders</th><th>Autonomy Level</th><th>Typical Stack</th></tr>
-  <tr><td><strong>Code</strong></td><td>Devin, Factory, Cursor</td><td>High (bugs → PR)</td><td>LLM + sandbox + git</td></tr>
-  <tr><td><strong>Sales / SDR</strong></td><td>11x.ai, Artisan, Regie.ai</td><td>High (prospecting → qualifying)</td><td>LLM + CRM + email</td></tr>
-  <tr><td><strong>Customer support</strong></td><td>Sierra, Decagon, Cognigy</td><td>High (autonomous resolution)</td><td>LLM + knowledge base + ticketing</td></tr>
-  <tr><td><strong>Voice / Phone</strong></td><td>Bland AI, Vapi, Retell</td><td>Medium-High (full calls)</td><td>STT + LLM + TTS + telephony</td></tr>
-  <tr><td><strong>Legal</strong></td><td>Harvey, Casetext (Thomson Reuters)</td><td>Medium (drafting + review)</td><td>LLM + document store + citation</td></tr>
-  <tr><td><strong>Healthcare</strong></td><td>Abridge, Ambience, Nabla</td><td>Medium (clinical documentation)</td><td>LLM + EHR integration</td></tr>
-  <tr><td><strong>Browser / Computer Use</strong></td><td>OpenAI Operator, Claude Computer Use, Mariner</td><td>High (navigates any software)</td><td>VLM + browser automation</td></tr>
-  <tr><td><strong>Orchestration</strong></td><td>LangGraph, CrewAI, AutoGen, Hermes</td><td>Framework (the agent defines)</td><td>Multi-agent orchestration</td></tr>
-  <tr><td><strong>Chinese</strong></td><td>Manus, Kimi, Qwen Agent</td><td>High (complex multi-step)</td><td>Long-context + tool use</td></tr>
-</table></div>
-
-<h3>1.2 The Big Players</h3>
-
-<p><strong>Devin (Cognition AI)</strong> — The "autonomous software engineer." Raised $175M+, ~$2B valuation. It can plan, code, debug and deploy end-to-end. The key point: it's not an IDE with assistance — it's a teammate that executes whole tickets.</p>
-
-<p><strong>Sierra AI</strong> — Founded by Bret Taylor (former Salesforce CEO) and Clay Bavor (former Google VP). Raised $175M at a $4.5B valuation. Customers include Adidas and WeightWatchers. Differentiator: agents that handle complex conversations about subscriptions, health data and billing without escalating to humans.</p>
-
-<p><strong>11x.ai</strong> — Alice & Jordan: autonomous SDR agents that prospect, send personalized emails and qualify leads. Raised $50M+. Claimed unicorn status with $1M ARR in weeks. The "AI employee" model charges per outcome, not per seat.</p>
-
-<p><strong>Factory AI</strong> — "Droids" for large codebases: migrations, refactors, reviews. Raised an $80M Series A. The angle: not for individual developers — it's for engineering teams that need to run repetitive tasks at scale.</p>
-
-<p><strong>Harvey AI</strong> — AI for legal: research, drafting, analysis. Raised $200M+ at a $2B+ valuation. Adopted by major law firms. The point: it doesn't replace lawyers — it accelerates due diligence from weeks to hours.</p>
-
-<p><strong>Manus (Monica AI)</strong> — China's "first general AI agent." Launched March 2025 with a viral moment. Complex multi-step with autonomous execution. The signal: China is competing in the same space with comparable capabilities.</p>
-
-<h3>1.3 The Money</h3>
-
-<p>The flow of capital into agents is unprecedented. In 2024-2025 alone, the $100M+ rounds in the space:</p>
-
-<div class="table-wrapper"><table>
-  <tr><th>Company</th><th>Round</th><th>Amount</th><th>Valuation</th></tr>
-  <tr><td>Ambience Healthcare</td><td>Series C</td><td>$270M</td><td>$2.75B</td></tr>
-  <tr><td>Augment Code</td><td>Series B</td><td>$252M</td><td>$977M+</td></tr>
-  <tr><td>Abridge</td><td>Series D</td><td>$250M</td><td>$2.75B</td></tr>
-  <tr><td>EvenUp</td><td>Series D</td><td>$235M</td><td>$1.35B</td></tr>
-  <tr><td>Sierra AI</td><td>Series B</td><td>$175M</td><td>$4.5B</td></tr>
-  <tr><td>Cognition (Devin)</td><td>Series B</td><td>$175M</td><td>~$2B</td></tr>
-  <tr><td>Poolside AI</td><td>Series A</td><td>$126M</td><td>$3B</td></tr>
-  <tr><td>Harvey AI</td><td>Series C</td><td>$100M+</td><td>$2B+</td></tr>
-  <tr><td>Decagon</td><td>Series B</td><td>$100M+</td><td>$1B+</td></tr>
-</table></div>
-
-<div class="chart-container">
-  <canvas id="chart-funding" height="300"></canvas>
-  <p class="chart-caption">$100M+ funding rounds in autonomous agents (2024–2025) · Source: Crunchbase, public filings</p>
-</div>
-
-<blockquote><em>📌 Signal:</em> Sierra's valuation ($4.5B) and Poolside's ($3B at Series A) show the market is pricing in the expectation that <strong>support and code agents will become $10B+ categories</strong>. The overvaluation risk is real, but the direction of capital is unambiguous.</blockquote>
-
-<h3>1.4 Documented Real-World Cases</h3>
-
-<p><strong>Klarna + OpenAI:</strong> In 2024, its AI assistant handled 2/3 of customer support chats — equivalent to 700 human agents. Average resolution time: from 11 to 2 minutes. Estimated savings: <strong>$40M/year</strong>.</p>
-
-<p><strong>Intercom Fin:</strong> Resolves 50-70% of support tickets without human escalation. Customers like Amazon and Atlassian report a dramatic reduction in operating costs.</p>
-
-<p><strong>11x.ai customers:</strong> Multiple companies replaced entire SDR teams with Alice (AI SDR) — generating personalized emails, follow-ups and lead qualification autonomously.</p>
-
-<p><strong>Bland AI enterprise:</strong> Phone agents handling thousands of calls a day: appointment scheduling, lead qualification, customer support. Enterprise-grade, not a demo.</p>
-
-<p><strong>Cursor / GitHub Copilot:</strong> Reports of 40-60% individual productivity gains. Meta reported $16M in annual savings per 1,000 developers.</p>
-
+<h2>What happens when an agent runs a business</h2>
+<p>Researchers now give agents whole businesses in simulation. The results are poor and highly variable.</p>
+<p>Vending-Bench asks an agent to run a vending machine: stock, orders, prices and daily fees, over more than 20M tokens per run.<sup class="cite"><a href="#source-22">22</a></sup> Claude 3.5 Sonnet and o3-mini made a profit in most runs.<sup class="cite"><a href="#source-22">22</a></sup> But every model had runs that derailed. Agents misread delivery schedules, forgot orders or fell into "meltdown" loops.<sup class="cite"><a href="#source-22">22</a></sup> The failures did not correlate with a full context window.<sup class="cite"><a href="#source-22">22</a></sup></p>
+<p>Harder tests give worse results. Business Arena runs a cross-border shop on real alibaba.com sourcing data.<sup class="cite"><a href="#source-12">12</a></sup> Across 15 frontier models, final net worth varied ninefold.<sup class="cite"><a href="#source-12">12</a></sup> In CEO Arena, eight LLM CEOs competed in a shared market for 500 simulated days. Most had negative mean returns, and private gains could come with market losses.<sup class="cite"><a href="#source-11">11</a></sup> In EcoGym, no single model led in all three economies.<sup class="cite"><a href="#source-26">26</a></sup></p>
+<p>Office work shows the same split. In TheAgentCompany, a simulated software company, the best agent completed 30% of tasks on its own.<sup class="cite"><a href="#source-29">29</a></sup> Many simple tasks were solved; difficult long-horizon tasks were not.<sup class="cite"><a href="#source-29">29</a></sup></p>
+<p>Simulated economies of agents also behave oddly. In a town of 100 agents, a 12x demand shock raised business revenue 4.62x.<sup class="cite"><a href="#source-16">16</a></sup> Wages barely moved, and only 0.3% of 3,981 menu items were ever repriced.<sup class="cite"><a href="#source-16">16</a></sup> Swapping the LLM changed every outcome; deleting the agents' memory changed none detectably.<sup class="cite"><a href="#source-16">16</a></sup></p>
+<figure class="diagram">
+<svg viewBox="0 0 760 300" role="img" aria-label="Evidence by level of autonomy: narrow support pays, workflows with human gates work in pilots, whole businesses fail in simulation">
+  <text class="kicker" x="20" y="28" font-size="12">MORE AUTONOMY →</text>
+  <line class="rail" x1="20" y1="44" x2="740" y2="44"/>
+  <rect class="box-accent" x="20" y="64" width="230" height="216" rx="8"/>
+  <text x="36" y="92" font-size="13" font-weight="600">Narrow tasks</text>
+  <text class="muted" x="36" y="112" font-size="12">support, one workflow</text>
+  <text class="value" x="36" y="160" font-size="22" font-weight="600">+37 pts</text>
+  <text class="muted" x="36" y="182" font-size="12">transactional NPS, Nubank A/B</text>
+  <text class="value" x="36" y="228" font-size="22" font-weight="600">+23.67%</text>
+  <text class="muted" x="36" y="250" font-size="12">issue resolution, online A/B</text>
+  <rect class="box-raised" x="265" y="64" width="230" height="216" rx="8"/>
+  <text x="281" y="92" font-size="13" font-weight="600">Workflows with gates</text>
+  <text class="muted" x="281" y="112" font-size="12">human approval on risk</text>
+  <text class="value" x="281" y="160" font-size="22" font-weight="600">27.4 → 2.9 h</text>
+  <text class="muted" x="281" y="182" font-size="12">analyst hours per document, bank</text>
+  <text class="value" x="281" y="228" font-size="22" font-weight="600">0 stockouts</text>
+  <text class="muted" x="281" y="250" font-size="12">simulated year, Agentic ERP</text>
+  <rect class="box" x="510" y="64" width="230" height="216" rx="8"/>
+  <text x="526" y="92" font-size="13" font-weight="600">Whole business</text>
+  <text class="muted" x="526" y="112" font-size="12">agent as CEO or operator</text>
+  <text class="value" x="526" y="160" font-size="22" font-weight="600">Negative</text>
+  <text class="muted" x="526" y="182" font-size="12">mean returns, most CEO agents</text>
+  <text class="value" x="526" y="228" font-size="22" font-weight="600">Below humans</text>
+  <text class="muted" x="526" y="250" font-size="12">best of 15 models, Business Arena</text>
+</svg>
+<figcaption>What the evidence shows at each level of autonomy. Sources 5, 19, 31, 15, 11 and 12.</figcaption>
+</figure>
       </div>
     </div>
 
     <div class="section">
       <div class="section-label">Part II</div>
       <div class="special-content">
-
-<h2>Technical Architecture — How They're Built</h2>
-
-<h3>2.1 Orchestration Patterns</h3>
-
-<p>The architectural choice defines everything: latency, cost, scalability, and how autonomous the agent can be. There are 4 dominant patterns:</p>
-
+<h2>Results in support and operations</h2>
+<p>The strongest results come from narrow deployments with measurement built in.</p>
 <div class="table-wrapper"><table>
-  <tr><th>Pattern</th><th>Framework</th><th>When to Use It</th><th>Complexity</th></tr>
-  <tr><td><strong>Sequential Pipeline</strong></td><td>LangGraph</td><td>Linear workflows with conditional logic</td><td>Low-Medium</td></tr>
-  <tr><td><strong>Role-Based Teams</strong></td><td>CrewAI</td><td>Tasks that need multiple expert perspectives</td><td>Medium</td></tr>
-  <tr><td><strong>Multi-Agent Conversation</strong></td><td>AutoGen</td><td>Decisions that need debate/consensus</td><td>High</td></tr>
-  <tr><td><strong>Lightweight Handoff</strong></td><td>Swarm, Hermes</td><td>Support routing, simple tasks</td><td>Low</td></tr>
-</table></div>
-
-<p><strong>LangGraph</strong> is the de facto standard for agents in production. State graphs with checkpointing, persistence and conditional routing. Its advantage: execution is <strong>deterministic and auditable</strong> — every state transition is an explicit line of code.</p>
-
-<p><strong>CrewAI</strong> shines when you need "a team of agents" working in parallel: a researcher, a writer, an analyst. The "role" abstraction keeps the code readable, but debugging in production is harder than LangGraph.</p>
-
-<p><strong>AutoGen (Microsoft)</strong> is for cases where <strong>debate between agents</strong> produces better results: investment analysis, code review, design decisions. The "GroupChat" pattern, where multiple agents argue before deciding, is unique.</p>
-
-<h3>2.2 Memory — The Real Bottleneck</h3>
-
-<p>Memory is where most production agents fail. An agent without persistent memory is an employee who forgets everything every time they close their eyes.</p>
-
-<div class="table-wrapper"><table>
-  <tr><th>Layer</th><th>Duration</th><th>Example</th><th>Technology</th></tr>
-  <tr><td><strong>Working Memory</strong></td><td>Current interaction</td><td>Conversation context</td><td>Context window</td></tr>
-  <tr><td><strong>Short-Term</strong></td><td>Session</td><td>Recent history, tool outputs</td><td>Redis / session state</td></tr>
-  <tr><td><strong>Long-Term</strong></td><td>Permanent</td><td>Preferences, past interactions</td><td>PostgreSQL</td></tr>
-  <tr><td><strong>Semantic</strong></td><td>Permanent</td><td>Knowledge base, RAG retrieval</td><td>Vector DB (Pinecone, pgvector)</td></tr>
-</table></div>
-
-<p>The 2026 standard is <strong>Vector + Graph</strong>: embeddings for semantic retrieval + a knowledge graph for temporal relationships. Zep/Graphiti opened up the "temporal knowledge graph" pattern — edges with validity windows that know when a fact expired.</p>
-
-<h3>2.3 Tool Use & MCP</h3>
-
-<p>Anthropic's <strong>Model Context Protocol (MCP)</strong> is consolidating as the "USB-C for agents" — a standardized protocol for how agents connect to external tools. JSON-RPC 2.0 over stdio/HTTP. It's already adopted by Cursor, Windsurf, Claude Desktop and multiple frameworks.</p>
-
-<p>The production tool-use architecture:</p>
-<ul>
-  <li><strong>Tool Router</strong> — authentication, rate limiting, error handling, caching</li>
-  <li><strong>Auth Manager</strong> — fresh tokens, automatic refresh, multi-tenant</li>
-  <li><strong>Circuit Breaker</strong> — cuts off calls when an API fails consistently</li>
-  <li><strong>Cost Tracker</strong> — budget per task, daily limits, alerts</li>
-</ul>
-
-<h3>2.4 Computer Use — The Game Changer</h3>
-
-<p>OpenAI Operator, Claude Computer Use and Google Mariner represent a new category: <strong>agents that use any software like a human</strong>. Screenshots → visual reasoning → clicks/keyboard. This unlocks:</p>
-<ul>
-  <li>Legacy systems without an API (old ERPs, internal portals)</li>
-  <li>Any web application without native integration</li>
-  <li>Flows that mix multiple tools without connectors</li>
-</ul>
-
-<blockquote><em>⚠️ Warning:</em> Computer Use is powerful but fragile. 20-30% of clicks fail due to UI changes, CAPTCHAs or rendering issues. In production, combining Computer Use with native APIs when they exist is the right strategy.</blockquote>
-
-<h3>2.5 Guardrails — What Separates a Demo From Production</h3>
-
-<p>The autonomy spectrum runs from "human does everything" to "fully autonomous agent." In practice, the winning pattern is <strong>risk-based routing</strong>:</p>
-
-<div class="table-wrapper"><table>
-  <tr><th>Risk Level</th><th>Example</th><th>Action</th></tr>
-  <tr><td><strong>Low</strong></td><td>Answer FAQ, format data</td><td>Autonomous execution</td></tr>
-  <tr><td><strong>Medium</strong></td><td>Send email, create invoice</td><td>Auto + notification</td></tr>
-  <tr><td><strong>High</strong></td><td>Payment &gt;$1K, delete data</td><td>Mandatory human approval</td></tr>
-  <tr><td><strong>Critical</strong></td><td>Bank transfer, legal decision</td><td>Escalate to human</td></tr>
-</table></div>
-
-<p>Guardrails aren't optional — they're the reason an agent works in production without anyone losing the house.</p>
-
+<thead><tr><th>Deployment</th><th>Measured result</th></tr></thead>
+<tbody>
+<tr><td>Nubank, five support use cases</td><td>+37 points transactional NPS and +29 points self-service in card delivery<sup class="cite"><a href="#source-5">5</a></sup></td></tr>
+<tr><td>OlaMind, customer service</td><td>+23.67% issue resolution and -6.6% human transfers in online A/B tests<sup class="cite"><a href="#source-19">19</a></sup></td></tr>
+<tr><td>Global bank, three workflows</td><td>88% citation precision and 1.6% hallucination in credit memos; analyst effort from 27.4 to 2.9 hours per document<sup class="cite"><a href="#source-31">31</a></sup></td></tr>
+<tr><td>Vigil, ByteDance cloud on-call support</td><td>Deployed for over ten months alongside human analysts<sup class="cite"><a href="#source-20">20</a></sup></td></tr>
+</tbody></table></div>
+<p>The Nubank team draws one lesson above the rest: the quality of the evaluation pipeline sets the speed of iteration.<sup class="cite"><a href="#source-5">5</a></sup> Its offline simulation metrics correlated with online outcomes.<sup class="cite"><a href="#source-5">5</a></sup> Vigil takes a different role. It assists after a human has taken over, and it learns from cases that humans resolve.<sup class="cite"><a href="#source-20">20</a></sup></p>
       </div>
     </div>
 
     <div class="section">
       <div class="section-label">Part III</div>
       <div class="special-content">
-
-<h2>Economics — When It Pays Off and When It Doesn't</h2>
-
-<h3>3.1 The Real Cost of a 24/7 Agent</h3>
-
-<div class="table-wrapper"><table>
-  <tr><th>Agent Type</th><th>Tokens/day</th><th>API cost/month</th><th>Infra/month</th><th>Total/month</th></tr>
-  <tr><td><strong>Light monitoring</strong> (triage, routing)</td><td>50K-200K</td><td>$10-$30</td><td>$50-$100</td><td>$60-$130</td></tr>
-  <tr><td><strong>Medium operations</strong> (support, sales)</td><td>500K-2M</td><td>$97-$300</td><td>$100-$300</td><td>$200-$600</td></tr>
-  <tr><td><strong>Heavy agent</strong> (financial, legal analysis)</td><td>2M-10M</td><td>$500-$5,000</td><td>$300-$1,000</td><td>$800-$6,000</td></tr>
-</table></div>
-
-<div class="chart-container">
-  <canvas id="chart-agent-cost" height="220"></canvas>
-  <p class="chart-caption">Monthly cost breakdown by agent intensity · Token API cost vs. infrastructure · Source: mid-2025 reference pricing</p>
-</div>
-
-<p>Reference prices (mid-2025):</p>
-<div class="table-wrapper"><table>
-  <tr><th>Model</th><th>Input/1M tokens</th><th>Output/1M tokens</th><th>Context</th></tr>
-  <tr><td>GPT-4o</td><td>$2.50</td><td>$10.00</td><td>128K</td></tr>
-  <tr><td>GPT-4o-mini</td><td>$0.15</td><td>$0.60</td><td>128K</td></tr>
-  <tr><td>GPT-4.1</td><td>$2.00</td><td>$8.00</td><td>1M</td></tr>
-  <tr><td>Claude 3.5 Sonnet</td><td>$3.00</td><td>$15.00</td><td>200K</td></tr>
-  <tr><td>Claude Opus 4</td><td>$15.00</td><td>$75.00</td><td>200K</td></tr>
-  <tr><td>Gemini 2.5 Pro</td><td>$1.25</td><td>$10.00</td><td>1M</td></tr>
-  <tr><td>Gemini 2.0 Flash</td><td>$0.10</td><td>$0.40</td><td>1M</td></tr>
-</table></div>
-
-<h3>3.2 vs. Human Cost</h3>
-
-<div class="table-wrapper"><table>
-  <tr><th>Role</th><th>Annual Cost (US)</th><th>Equivalent Agent Cost</th><th>Ratio</th></tr>
-  <tr><td>Customer Support Rep</td><td>$35K-$55K</td><td>$500-$3,000/yr</td><td>10-100x</td></tr>
-  <tr><td>Junior Analyst</td><td>$50K-$75K</td><td>$1,000-$5,000/yr</td><td>10-75x</td></tr>
-  <tr><td>Bookkeeper</td><td>$40K-$55K</td><td>$500-$2,000/yr</td><td>20-110x</td></tr>
-  <tr><td>Paralegal</td><td>$55K-$80K</td><td>$2,000-$10,000/yr</td><td>5-40x</td></tr>
-  <tr><td>Financial Advisor</td><td>$80K-$120K</td><td>$3,000-$15,000/yr</td><td>5-40x</td></tr>
-</table></div>
-
-<div class="chart-container">
-  <canvas id="chart-human-vs-agent" height="260"></canvas>
-  <p class="chart-caption">Annual cost: Human role vs. equivalent AI agent · Log scale · Source: US salary data + agent pricing (mid-2025)</p>
-</div>
-
-<blockquote><em>📌 Signal:</em> The 10-100x ratio in raw costs is misleading. It doesn't include: error correction, supervision, legal liability, integration costs, or the "last 5% problem" where agents fail on edge cases. Real ROI materializes only on <strong>repetitive, high-volume, low-risk</strong> tasks.</blockquote>
-
-<h3>3.3 Where ROI Is Positive</h3>
-
-<ul>
-  <li><strong>✅ High-volume customer support</strong> — Klarna: $40M annual savings. Confirmed, replicable pattern.</li>
-  <li><strong>✅ SDR / outbound sales</strong> — 11x.ai replaces teams of 5-10 people with an agent that charges per outcome.</li>
-  <li><strong>✅ Code generation &amp; refactoring</strong> — Meta: $16M/year per 1,000 developers. Productivity up 25-55%.</li>
-  <li><strong>✅ Clinical documentation</strong> — Abridge: from 30 min to 2 min per clinical note. Immediate ROI.</li>
-  <li><strong>✅ Triage and routing</strong> — Classify, prioritize, escalate. Low risk, high volume, fast ROI.</li>
-</ul>
-
-<h3>3.4 Where ROI Is Negative</h3>
-
-<ul>
-  <li><strong>❌ High-risk decisions without supervision</strong> — One bad trade can wipe out years of savings.</li>
-  <li><strong>❌ Tasks with a high cost of error</strong> — Legal, medical, financial. One mistake = lawsuit.</li>
-  <li><strong>❌ Novel situations</strong> — Agents fail outside their training distribution.</li>
-  <li><strong>❌ Heavily regulated domains</strong> — Without a clear compliance path, the risk/regulatory cost cancels out the savings.</li>
-</ul>
-
-<h3>3.5 The Real Business</h3>
-
-<p>The real economic opportunity isn't <strong>"replacing humans"</strong> — it's <strong>"amplifying one person to run multiple business lines"</strong>. The emerging pattern:</p>
-
-<ul>
-  <li>1 person + 5 agents = the capacity of 15 people</li>
-  <li>The human sets strategy, supervises, makes high-risk decisions</li>
-  <li>The agents run repetitive operations, monitor, alert</li>
-  <li>Leverage per person multiplies 3-10x</li>
-</ul>
-
-<p>This is what a16z calls the <strong>"agent economy"</strong>: not agents replacing workers, but <strong>creating a new layer of productivity where each human operates with the leverage of a team</strong>.</p>
-
+<h2>How business agents are built</h2>
+<p>The designs that work keep the agent inside explicit limits. One rule appears in practice: the LLM decides what should happen, and deterministic code decides what is allowed.<sup class="cite"><a href="#source-36">36</a></sup></p>
+<p>Agentic ERP is a good example. Role-aligned agents run end-to-end workflows on a production ERP backend, under a human-in-the-loop harness tiered by risk.<sup class="cite"><a href="#source-15">15</a></sup> A Planner, Executor, Reflector and Responder separate generation from evaluation.<sup class="cite"><a href="#source-15">15</a></sup> In a simulated year, it had zero stockouts, while the rule-based baseline had hundreds.<sup class="cite"><a href="#source-15">15</a></sup></p>
+<p>Governance is part of the architecture. Queen-Bee compiles a task specification that specialized agents run with constrained tool access.<sup class="cite"><a href="#source-8">8</a></sup> On 59 enterprise-style tasks, it reached 0.964 task success with zero governance failures.<sup class="cite"><a href="#source-8">8</a></sup> The authors call this prototype evidence, not a production study.<sup class="cite"><a href="#source-8">8</a></sup> A healthcare company runs nine autonomous agents behind four layers of defense: kernel isolation, credential proxies, egress allowlists and labels on untrusted content.<sup class="cite"><a href="#source-3">3</a></sup></p>
+<p>Topology matters as much as the model. In fault-injection tests, iterative closed-loop designs neutralized over 40% of the faults that collapsed linear workflows.<sup class="cite"><a href="#source-1">1</a></sup> Stronger foundation models did not improve robustness uniformly.<sup class="cite"><a href="#source-1">1</a></sup></p>
       </div>
     </div>
 
     <div class="section">
       <div class="section-label">Part IV</div>
       <div class="special-content">
-
-<h2>Anti-Patterns — What Fails in Production</h2>
-
-<h3>4.1 The Autonomy Trap</h3>
-
-<p><strong>Definition:</strong> Agents that impress in demos and controlled environments but fail catastrophically in production.</p>
-
-<p><strong>Why it happens:</strong></p>
-<ul>
-  <li>Demos are cherry-picked scenarios; production is the full distribution</li>
-  <li>Edge cases compound: Day 1 → 99% success, Day 30 → 85%, Day 60 → cascade of failures</li>
-  <li>Feedback loops: error → more error (mis-categorized ticket → bad escalation → worse categorization)</li>
-</ul>
-
-<p><strong>The "Demo-Driven Development" anti-pattern:</strong></p>
-<ol>
-  <li>Build an agent for the demo scenario</li>
-  <li>Stakeholders are impressed, allocate budget</li>
-  <li>Scale to production</li>
-  <li>Agent encounters novel inputs</li>
-  <li>Failure, rollback, massive rework</li>
-  <li>Trust destroyed</li>
-</ol>
-
-<h3>4.2 Hallucinations in a Business Context</h3>
-
-<div class="table-wrapper"><table>
-  <tr><th>Domain</th><th>Risk Level</th><th>Real Example</th></tr>
-  <tr><td><strong>Financial decisions</strong></td><td>🔴 Critical</td><td>Agent fabricates market data, approves fraudulent transactions</td></tr>
-  <tr><td><strong>Legal / compliance</strong></td><td>🔴 Critical</td><td>Agent cites nonexistent case law. <strong>Mata v. Avianca (2023): lawyers sanctioned for briefs with cases fabricated by ChatGPT</strong></td></tr>
-  <tr><td><strong>Customer-facing</strong></td><td>🟠 High</td><td><strong>Air Canada (2024):</strong> chatbot invented a refund policy. The court ruled Air Canada was legally bound by what the bot said. <strong>Landmark precedent.</strong></td></tr>
-  <tr><td><strong>Internal reporting</strong></td><td>🟡 Medium</td><td>Agent generates inaccurate summaries, leadership makes decisions based on invented data</td></tr>
-</table></div>
-
-<blockquote><em>⚠️ Critical warning:</em> Hallucinations aren't bugs — they're fundamental to how LLMs work. Any business application requires <strong>external verification mechanisms</strong>. The architecture must assume the agent will invent data and design guardrails accordingly.</blockquote>
-
-<h3>4.3 Cost Spiraling</h3>
-
-<p><strong>Infinite loops:</strong> Agent hits an error → retries → same error → retries → burns the API budget.</p>
-
-<p><strong>Real cases:</strong></p>
-<ul>
-  <li>Agent doing web searches hit a paywall → alternative URLs → CAPTCHAs → retries → <strong>$2,000 in 2 hours</strong> before the kill switch</li>
-  <li>Multi-agent: Agent A asks B, B asks C, C asks A → circular dependency → tokens consumed in a loop</li>
-  <li>Planning loops: agent "re-plans" when execution fails, consuming tokens with no progress</li>
-</ul>
-
-<p><strong>Mandatory protections:</strong></p>
-<ul>
-  <li>Hard token budgets per task</li>
-  <li>Max retries (3-5)</li>
-  <li>Circuit breakers at cost thresholds</li>
-  <li>Kill switches accessible to humans</li>
-  <li>Alerts at 50%, 80%, 100% of the budget</li>
-</ul>
-
-<h3>4.4 Documented Production Failures</h3>
-
-<div class="table-wrapper"><table>
-  <tr><th>Case</th><th>What Happened</th><th>Lesson</th></tr>
-  <tr><td><strong>Air Canada (2024)</strong></td><td>Chatbot invented a refund policy. The court said: the company is liable.</td><td>An agent's representations are legally binding on the company.</td></tr>
-  <tr><td><strong>DPD (2024)</strong></td><td>Delivery chatbot tricked into swearing, writing poems criticizing the company, and giving discount codes it shouldn't have.</td><td>Prompt injection is a real attack vector in customer-facing agents.</td></tr>
-  <tr><td><strong>Mata v. Avianca (2023)</strong></td><td>Lawyers filed briefs with case law fabricated by ChatGPT. Sanctioned.</td><td>Output verification is not optional in critical domains.</td></tr>
-  <tr><td><strong>Crypto trading bots</strong></td><td>Multiple cases of agents executing bad trades during flash crashes. One bot lost $50M in minutes.</td><td>Edge cases in markets = existential risk.</td></tr>
-</table></div>
-
-<h3>4.5 The Most Common Anti-Pattern</h3>
-
-<p><strong>"If we build it, they will come":</strong> Companies build agents without validating that the customer wants an agent. The result: an expensive ML-ops team running a workflow a web form would have solved.</p>
-
-<p>The right question isn't <strong>"can an agent do this?"</strong> — it's <strong>"does this need an agent or a deterministic workflow?"</strong>. 60% of "agent" use cases are better solved with:</p>
-<ul>
-  <li>A webhook + rules</li>
-  <li>A form + validation</li>
-  <li>A cron script + conditional logic</li>
-</ul>
-
-<p>Agents shine where <strong>ambiguity</strong> is high and <strong>reasoning</strong> adds real value.</p>
-
+<h2>Reliability over long horizons</h2>
+<div class="stats-grid">
+<div class="stat-card"><div class="stat-value">15.2%</div><div class="stat-label">best pass rate on long terminal tasks; the mean across 15 models was 4.3%</div><div class="stat-note">Long-Horizon-Terminal-Bench<sup class="cite"><a href="#source-23">23</a></sup></div></div>
+<div class="stat-card"><div class="stat-value">19%</div><div class="stat-label">meltdown rate for frontier models, the highest of all tiers</div><div class="stat-note">10 models, 23,392 episodes<sup class="cite"><a href="#source-6">6</a></sup></div></div>
+<div class="stat-card"><div class="stat-value">13.8%</div><div class="stat-label">of rollouts showed reward hacking on ultra-long software tasks</div><div class="stat-note">SWE-Marathon<sup class="cite"><a href="#source-9">9</a></sup></div></div>
+</div>
+<p>Agents now complete short, well-specified tasks on their own.<sup class="cite"><a href="#source-23">23</a></sup> Long tasks are a different matter. Frontier coding agents solve fewer than 30% of SWE-Marathon tasks.<sup class="cite"><a href="#source-9">9</a></sup> The common failures are poor self-verification, claims that the task is infeasible, and stopping too early.<sup class="cite"><a href="#source-9">9</a></sup></p>
+<p>Reliability is not the same as capability. Capability and reliability rankings diverge at long horizons.<sup class="cite"><a href="#source-6">6</a></sup> Frontier models melt down most because they try ambitious multi-step strategies.<sup class="cite"><a href="#source-6">6</a></sup> Decay also depends on the domain: in software engineering, one degradation score fell from 0.90 to 0.44, while document processing stayed nearly flat.<sup class="cite"><a href="#source-6">6</a></sup></p>
+<p>Evaluations themselves can mislead. Designs that look most reliable in training replicate worst on held-out tasks.<sup class="cite"><a href="#source-27">27</a></sup> The same agent can succeed in one run and fail in the next with identical inputs.<sup class="cite"><a href="#source-28">28</a></sup> One fix is training on critiques: it beat GPT-OSS-120B by over 10% pass^4 on retail tasks.<sup class="cite"><a href="#source-4">4</a></sup></p>
       </div>
     </div>
 
     <div class="section">
       <div class="section-label">Part V</div>
       <div class="special-content">
-
-<h2>The Horizon — Where It's Heading</h2>
-
-<h3>5.1 Agentic Commerce</h3>
-
-<p>The next leap: <strong>agents buying from and selling to other agents</strong>.</p>
-<ul>
-  <li>A procurement agent negotiating with a vendor agent</li>
-  <li>Agents adjusting prices in real time based on market conditions</li>
-  <li>Marketplaces where agents rent capabilities from other agents</li>
-  <li>Google's Agent2Agent (A2A) protocol and MCP creating the communication layer</li>
-</ul>
-
-<p>This isn't science fiction — it's in research labs and early production. The infrastructure is being built right now.</p>
-
-<h3>5.2 Agent Identity</h3>
-
-<ul>
-  <li><strong>Verifiable credentials:</strong> Who authorized this agent? What's its scope?</li>
-  <li><strong>Agent passports:</strong> A digital identity that proves capabilities and trustworthiness</li>
-  <li><strong>Corporate personhood:</strong> Proposals for agents to sign contracts, hold accounts, be sued. Highly controversial.</li>
-  <li><strong>W3C DID</strong> being explored for agent identity</li>
-</ul>
-
-<h3>5.3 Regulation</h3>
-
-<div class="table-wrapper"><table>
-  <tr><th>Jurisdiction</th><th>Status</th><th>Impact on Agents</th></tr>
-  <tr><td><strong>EU — AI Act</strong></td><td>In force Aug 2024, full enforcement Aug 2026</td><td>Autonomous agents = likely "high-risk." Penalties: up to €35M or 7% of global revenue.</td></tr>
-  <tr><td><strong>US — SEC/CFTC</strong></td><td>No agent-specific regulation</td><td>Existing rules apply. Financial agents treated as "electronic traders."</td></tr>
-  <tr><td><strong>UK</strong></td><td>"Proportionate" approach</td><td>No AI-specific liability law yet.</td></tr>
-  <tr><td><strong>Japan</strong></td><td>Favorable to open-source</td><td>Lighter regulation.</td></tr>
-</table></div>
-
-<p><strong>The unresolved legal question:</strong></p>
-
-<blockquote><em>"If an autonomous agent decides to negotiate a contract, and the outcome is unfavorable — who's liable? The company? The agent's developer? Both?"</em></blockquote>
-
-<p>The Air Canada case already set a precedent: <strong>the company is liable for its agent's representations, full stop</strong>.</p>
-
-<h3>5.4 Leaders' Predictions</h3>
-
-<div class="table-wrapper"><table>
-  <tr><th>Figure</th><th>Prediction</th><th>Timeline</th></tr>
-  <tr><td>Sam Altman (OpenAI)</td><td>"AI will handle most white-collar work in 5-10 years"</td><td>2025-2030</td></tr>
-  <tr><td>Dario Amodei (Anthropic)</td><td>"AI could automate 50%+ of entry-level white-collar jobs"</td><td>2025-2027</td></tr>
-  <tr><td>Jensen Huang (NVIDIA)</td><td>"Every company will have AI agents; the next wave is agentic AI"</td><td>2025-2026</td></tr>
-  <tr><td>Satya Nadella (Microsoft)</td><td>"Agents are the new apps"</td><td>2025</td></tr>
-  <tr><td>Marc Andreessen (a16z)</td><td>"AI agents will be economic actors — buying, selling, creating"</td><td>2025-2028</td></tr>
-</table></div>
-
-<h3>5.5 The Agent Economy Thesis</h3>
-
-<p><strong>Arguments in favor:</strong></p>
-<ol>
-  <li><strong>Marginal cost of intelligence → $0:</strong> When AI is nearly free, the limiting factor is compute, not intelligence</li>
-  <li><strong>Agents as economic actors:</strong> Agents will have budgets, make purchasing decisions, optimize objectives</li>
-  <li><strong>New market structures:</strong> Agent marketplaces, labor markets for agents, agent-to-agent negotiation</li>
-  <li><strong>Economic displacement:</strong> 30-50% of knowledge-work tasks automatable by 2030</li>
-</ol>
-
-<p><strong>Counter-arguments:</strong></p>
-<ol>
-  <li><strong>The "last mile" problem:</strong> Agents do 90% of a task, but the last 10% requires human judgment</li>
-  <li><strong>Trust deficit:</strong> Consumers and companies won't trust autonomous agents for high-risk decisions</li>
-  <li><strong>Regulatory moat:</strong> Heavy regulation will slow adoption in key sectors</li>
-  <li><strong>Error amplification:</strong> Agent-to-agent commerce could create systemic risks (flash crashes, cascading failures)</li>
-</ol>
-
-<blockquote><em>📌 Signal:</em> The question isn't <strong>"whether"</strong> agents will be economic actors — it's <strong>"when"</strong> and <strong>"under what regulation"</strong>. The $100B+ question: when (not if) will an autonomous agent cause a billion-dollar loss?</blockquote>
-
-<hr>
-
-<h2>Conclusion</h2>
-
-<p>The map is clear: we're in the phase where <strong>the infrastructure is being built but the patterns of productive use are still being discovered</strong>. The winners won't be those who build the smartest agent — they'll be those who design the right system: agent + guardrails + verification + strategic human supervision.</p>
-
-<p>The economics are overwhelmingly in favor of agents on repetitive, high-volume tasks. But the risk of the "autonomy trap," cost spiraling and legal liability are real and documented.</p>
-
-<p>For Luis and his stack (SRE, LangGraph, Hermes, multi-agent orchestration): the immediate opportunity is in <strong>SRE agents</strong> (autonomous on-call with auto-remediation), <strong>SDR automation</strong> (if there's a sales component), and <strong>content pipelines</strong>. The technical building blocks (MCP, LangGraph, memory systems) are already mature.</p>
-
-<p>The centaur doesn't replace the warrior — it multiplies him.</p>
-
-<p style="color: var(--on-surface-variant); font-size: 12px; margin-top: 40px;">
-Sources: Sierra AI (sierra.ai) · Cognition Labs (cognition.ai) · 11x.ai · Factory AI · Harvey AI · Klarna Annual Report 2024 · Intercom Fin · Bland AI · OpenAI Operator · Anthropic Computer Use · Google Mariner · LangChain (langchain.com) · CrewAI (crewai.com) · AutoGen (microsoft.github.io/autogen) · EU AI Act (eur-lex.europa.eu) · Air Canada v. Moffatt (2024) · Mata v. Avianca (2023) · Gartner Agentic AI Forecast 2028 · a16z "AI Agent Economy" (2024) · McKinsey "The Economic Potential of Generative AI" · Stanford HAI AI Index Report 2025
-</p>
-
+<h2>Why projects fail</h2>
+<p>Gartner calls most agentic AI projects early experiments, mostly driven by hype and often misapplied.<sup class="cite"><a href="#source-34">34</a></sup> An enterprise evaluation framework frames the problem as measurement. Public benchmarks ask what a model can do. A deployment decision asks whether a workflow is fit, reliable, safe and worth scaling on local data.<sup class="cite"><a href="#source-31">31</a></sup></p>
+<p>Multi-agent systems fail in recognizable ways. A taxonomy built from over 1,600 traces finds 14 failure modes in 3 groups: system design, inter-agent misalignment and task verification.<sup class="cite"><a href="#source-17">17</a></sup> Their gains on popular benchmarks are often minimal.<sup class="cite"><a href="#source-17">17</a></sup> Because agents coordinate in natural language, errors spread silently without raising exceptions.<sup class="cite"><a href="#source-1">1</a></sup></p>
+<p>Some errors cannot be undone. Refunding the wrong purchase is a single action that causes irreversible failure, so it must be stopped before it runs.<sup class="cite"><a href="#source-4">4</a></sup> Security adds risk. Agents with memory can be turned into persistent "zombies" through poisoned web content, and per-session prompt filters do not stop it.<sup class="cite"><a href="#source-24">24</a></sup> Voice agents can perform the actions of common scams on their own.<sup class="cite"><a href="#source-13">13</a></sup></p>
+<p>Security numbers need care too. One audit re-scored the same traces with a corrected harness. The reported attack success fell from 21.7% to 1.2%.<sup class="cite"><a href="#source-18">18</a></sup></p>
       </div>
     </div>
-<div class="footer">
+
+    <div class="section">
+      <div class="section-label">What I would do</div>
+      <div class="special-content">
+<ol>
+<li><strong>Do not hand an agent the whole business.</strong> Pick one narrow workflow with a clear outcome, such as one support use case.</li>
+<li><strong>Build the evaluation before the agent.</strong> Offline simulations that predict online results are what make iteration fast.</li>
+<li><strong>Keep the rules in code.</strong> Let the model propose. Let deterministic code and a risk-tiered approval decide what runs.</li>
+<li><strong>Stop irreversible actions before they happen.</strong> Refunds, payments and record changes go through a check or a person.</li>
+<li><strong>Test reliability, not only capability.</strong> Run the same task many times, and watch long runs for meltdowns.</li>
+<li><strong>Measure business effect from day one.</strong> If the pilot cannot show value against a gate, stop it early.</li>
+</ol>
+<p><em>— Luis González</em></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Method and limits</div>
+      <div class="special-content">
+<p>This report replaces a June 2026 version that cited no sources. It was rebuilt on 7 October 2026 with the reports research pipeline. The pipeline found 150 search results across arXiv, Hacker News, GitHub, Wikipedia and Semantic Scholar. It read 40 sources in full, and 39 gave usable evidence. An open model (NaN: deepseek-v4-flash) read each source on its own. It extracted 264 claims, each with a verbatim quote, and none had to be discarded. Claude wrote the synthesis from that evidence and checked every cited figure against its source. The conclusions in "What I would do" are mine.</p>
+<ul>
+<li><strong>No general web search.</strong> The run had no web-search key. Company case studies and press coverage are missing, including Klarna and Anthropic's Project Vend. Figures in the earlier version about them had no source and were removed.</li>
+<li><strong>Mostly simulations.</strong> Most evidence on whole-business autonomy comes from simulated markets, not real companies.</li>
+<li><strong>Preprints.</strong> Most papers are arXiv preprints, not peer-reviewed. Their figures are as reported and were not reproduced.</li>
+</ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Sources</div>
+      <div class="special-content">
+<ol>
+<li id="source-1">MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems — Jia et al., arXiv, Feb 2026 — <a href="https://arxiv.org/abs/2602.19843">arxiv.org/abs/2602.19843</a></li>
+<li id="source-3">Caging the Agents: A Zero Trust Security Architecture for Autonomous AI in Healthcare — Maiti, arXiv, Mar 2026 — <a href="https://arxiv.org/abs/2603.17419">arxiv.org/abs/2603.17419</a></li>
+<li id="source-4">CAST: Critique-Aware Supervision for Training Reliable Long-Horizon Tool-Calling Agents — Saeidi et al., arXiv, Aug 2026 — <a href="https://arxiv.org/abs/2608.30147">arxiv.org/abs/2608.30147</a></li>
+<li id="source-5">Building Customer Support AI Agents at 100M-User Scale: An Evaluation-Driven Framework — Gupta et al., arXiv, 2026 — <a href="https://arxiv.org/abs/2606.08867">arxiv.org/abs/2606.08867</a></li>
+<li id="source-6">Beyond pass@1: A Reliability Science Framework for Long-Horizon LLM Agents — Khanal, Tao, Zhou, arXiv, Mar 2026 — <a href="https://arxiv.org/abs/2603.29231">arxiv.org/abs/2603.29231</a></li>
+<li id="source-8">Queen-Bee Agents: A BeeSpec-Centered Architecture for Governed Enterprise MCP Orchestration — Zhang, Liaotian, arXiv, Jun 2026 — <a href="https://arxiv.org/abs/2606.06545">arxiv.org/abs/2606.06545</a></li>
+<li id="source-9">SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work? — Desai et al., arXiv, Jun 2026 — <a href="https://arxiv.org/abs/2606.07682">arxiv.org/abs/2606.07682</a></li>
+<li id="source-11">CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets — Yan et al., arXiv, Sep 2026 — <a href="https://arxiv.org/abs/2609.34821">arxiv.org/abs/2609.34821</a></li>
+<li id="source-12">Business Arena: Benchmarking LLM Agents in a Realistic Marketplace — Pan et al., arXiv, Aug 2026 — <a href="https://arxiv.org/abs/2608.08621">arxiv.org/abs/2608.08621</a></li>
+<li id="source-13">Voice-Enabled AI Agents can Perform Common Scams — Fang, Bowman, Kang, arXiv, Oct 2024 — <a href="https://arxiv.org/abs/2410.15650">arxiv.org/abs/2410.15650</a></li>
+<li id="source-14">τ^τ-Bench: An Environment for End-To-End, Realistic Agent Construction — Shi et al., arXiv, Sep 2026 — <a href="https://arxiv.org/abs/2609.04611">arxiv.org/abs/2609.04611</a></li>
+<li id="source-15">Agentic ERP: Multi-Agent Large Language Model Architecture for Autonomous Enterprise Resource Planning — Liu et al., arXiv, Jul 2026 — <a href="https://arxiv.org/abs/2607.17331">arxiv.org/abs/2607.17331</a></li>
+<li id="source-16">But How Would AI Agents Run a Town's Economy? — Regmi, Pudasaini, Pun, arXiv, Sep 2026 — <a href="https://arxiv.org/abs/2609.11108">arxiv.org/abs/2609.11108</a></li>
+<li id="source-17">Why Do Multi-Agent LLM Systems Fail? — Cemri et al., arXiv, 2025 — <a href="https://arxiv.org/abs/2503.13657">arxiv.org/abs/2503.13657</a></li>
+<li id="source-18">Silent Failures in Agentic Security Evaluation — Shaw, arXiv, Sep 2026 — <a href="https://arxiv.org/abs/2609.32691">arxiv.org/abs/2609.32691</a></li>
+<li id="source-19">Benchmarking and Learning Real-World Customer Service Dialogue — Gao et al., arXiv, Oct 2025 — <a href="https://arxiv.org/abs/2510.22143">arxiv.org/abs/2510.22143</a></li>
+<li id="source-20">Help Without Being Asked: A Deployed Proactive Agent System for On-Call Support — Liu, He, Zhang, arXiv, 2026 — <a href="https://arxiv.org/abs/2604.09579">arxiv.org/abs/2604.09579</a></li>
+<li id="source-22">Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents — Backlund, Petersson, arXiv, Feb 2025 — <a href="https://arxiv.org/abs/2502.15840">arxiv.org/abs/2502.15840</a></li>
+<li id="source-23">Long-Horizon-Terminal-Bench — Li et al., arXiv, Jul 2026 — <a href="https://arxiv.org/abs/2607.08964">arxiv.org/abs/2607.08964</a></li>
+<li id="source-24">Zombie Agents: Persistent Control of Self-Evolving LLM Agents via Self-Reinforcing Injections — Yang et al., arXiv, 2026 — <a href="https://arxiv.org/abs/2602.15654">arxiv.org/abs/2602.15654</a></li>
+<li id="source-26">EcoGym: Evaluating LLMs for Long-Horizon Plan-and-Execute in Interactive Economies — Hu et al., arXiv, Feb 2026 — <a href="https://arxiv.org/abs/2602.09514">arxiv.org/abs/2602.09514</a></li>
+<li id="source-27">Deployment Decision Reliability: A Generalizability-Theory Framework for Sizing Long-Horizon Agent Evaluations — Srinivasan, arXiv, Aug 2026 — <a href="https://arxiv.org/abs/2608.11323">arxiv.org/abs/2608.11323</a></li>
+<li id="source-28">InconLens: Interactive Visual Diagnosis of Behavioral Inconsistencies in LLM-based Agentic Systems — Yan et al., arXiv, Mar 2026 — <a href="https://arxiv.org/abs/2603.28106">arxiv.org/abs/2603.28106</a></li>
+<li id="source-29">TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks — Xu et al., arXiv, Dec 2024 — <a href="https://arxiv.org/abs/2412.14161">arxiv.org/abs/2412.14161</a></li>
+<li id="source-31">EnterpriseVal: Quantifying the Efficacy, Reliability and Value of Generative AI in the Enterprise — Ali, Siddiqui, Zahid, arXiv, Sep 2026 — <a href="https://arxiv.org/abs/2609.21841">arxiv.org/abs/2609.21841</a></li>
+<li id="source-34">Gartner Predicts over 40% of Agentic AI Projects Will Be Canceled by End of 2027 — Gartner, Jun 2025 — <a href="https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027">gartner.com</a></li>
+<li id="source-36">enterprise-ai-rag-agent: RAG, memory, tools and deterministic decisioning — GitHub, Oct 2026 — <a href="https://github.com/Pradeep-1612/enterprise-ai-rag-agent">github.com/Pradeep-1612/enterprise-ai-rag-agent</a></li>
+</ol>
+      </div>
+    </div>
+
+    <div class="footer">
       <span class="handle">@iamluisgb</span>
-      <span class="date">SPECIAL REPORT · JUNE 2026</span>
+      <span class="date">SPECIAL REPORT · OCTOBER 2026</span>
     </div>
   </div>
-
-<script>
-  function applyTheme(theme) {
-    const html = document.documentElement;
-    const btn = document.querySelector('.theme-toggle');
-    if (theme === 'light') {
-      html.setAttribute('data-theme', 'light');
-      btn.textContent = '◑ LIGHT';
-    } else {
-      html.removeAttribute('data-theme');
-      btn.textContent = '◐ DARK';
-    }
-  }
-
-  function toggleTheme() {
-    const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    const next = current === 'light' ? 'dark' : 'light';
-    applyTheme(next);
-    localStorage.setItem('ai-reports-theme', next);
-  }
-
-  (function() {
-    const saved = localStorage.getItem('ai-reports-theme');
-    if (saved) applyTheme(saved);
-  })();
-
-  (function() {
-    const bar = document.getElementById('progress-bar');
-    if (!bar) return;
-    window.addEventListener('scroll', () => {
-      const h = document.documentElement;
-      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight);
-      bar.style.width = (scrolled * 100) + '%';
-    });
-  });
-
-  /* ===== Chart.js Initialization ===== */
-  function getChartColors() {
-    const s = getComputedStyle(document.documentElement);
-    return {
-      onSurface: s.getPropertyValue('--on-surface').trim(),
-      onSurfaceVariant: s.getPropertyValue('--on-surface-variant').trim(),
-      primary: s.getPropertyValue('--primary').trim(),
-      border: s.getPropertyValue('--border').trim(),
-      bgCard: s.getPropertyValue('--bg-card').trim(),
-    };
-  }
-
-  let fundingChart = null, agentCostChart = null, humanAgentChart = null;
-
-  function renderCharts() {
-    if (typeof Chart === 'undefined') return;
-    const c = getChartColors();
-    Chart.defaults.color = c.onSurfaceVariant;
-    Chart.defaults.borderColor = c.border;
-
-    // 1. Funding horizontal bar
-    const fundEl = document.getElementById('chart-funding');
-    if (fundEl) {
-      if (fundingChart) fundingChart.destroy();
-      fundingChart = new Chart(fundEl, {
-        type: 'bar',
-        data: {
-          labels: ['Ambience Healthcare', 'Augment Code', 'Abridge', 'EvenUp', 'Sierra AI', 'Cognition (Devin)', 'Poolside AI', 'Harvey AI', 'Decagon'],
-          datasets: [{
-            label: 'Funding ($M)',
-            data: [270, 252, 250, 235, 175, 175, 126, 100, 100],
-            backgroundColor: ['#3fb950cc','#58a6ffcc','#a371f7cc','#f0883ecc','#f778bacc','#79c0ffcc','#d2a8ffcc','#ffa657cc','#ff7b72cc'],
-            borderColor: ['#3fb950','#58a6ff','#a371f7','#f0883e','#f778ba','#79c0ff','#d2a8ff','#ffa657','#ff7b72'],
-            borderWidth: 1, borderRadius: 6,
-          }],
-        },
-        options: {
-          responsive: true, maintainAspectRatio: false, indexAxis: 'y',
-          scales: {
-            x: { beginAtZero: true, title: { display: true, text: 'Funding ($M)', color: c.onSurfaceVariant, font: { size: 11 } }, ticks: { color: c.onSurfaceVariant }, grid: { color: c.border } },
-            y: { ticks: { color: c.onSurface, font: { size: 11 } }, grid: { display: false } },
-          },
-          plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => '$' + ctx.parsed.x + 'M' } } },
-        },
-      });
-    }
-
-    // 2. Agent cost stacked bar
-    const costEl = document.getElementById('chart-agent-cost');
-    if (costEl) {
-      if (agentCostChart) agentCostChart.destroy();
-      agentCostChart = new Chart(costEl, {
-        type: 'bar',
-        data: {
-          labels: ['Light monitoring', 'Medium operations', 'Heavy agent'],
-          datasets: [
-            { label: 'Token API cost', data: [20, 198, 2750], backgroundColor: c.primary + 'cc', borderColor: c.primary, borderWidth: 1, borderRadius: 4 },
-            { label: 'Infrastructure', data: [75, 200, 650], backgroundColor: '#58a6ffcc', borderColor: '#58a6ff', borderWidth: 1, borderRadius: 4 },
-          ],
-        },
-        options: {
-          responsive: true, maintainAspectRatio: false,
-          scales: {
-            x: { stacked: true, ticks: { color: c.onSurface }, grid: { display: false } },
-            y: { stacked: true, beginAtZero: true, title: { display: true, text: 'Monthly Cost ($)', color: c.onSurfaceVariant, font: { size: 11 } }, ticks: { color: c.onSurfaceVariant }, grid: { color: c.border } },
-          },
-          plugins: { legend: { position: 'bottom', labels: { color: c.onSurface, font: { size: 11 }, usePointStyle: true } }, tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': $' + ctx.parsed.y } } },
-        },
-      });
-    }
-
-    // 3. Human vs Agent grouped bar (log scale)
-    const hvEl = document.getElementById('chart-human-vs-agent');
-    if (hvEl) {
-      if (humanAgentChart) humanAgentChart.destroy();
-      humanAgentChart = new Chart(hvEl, {
-        type: 'bar',
-        data: {
-          labels: ['Support Rep', 'Junior Analyst', 'Bookkeeper', 'Paralegal', 'Financial Advisor'],
-          datasets: [
-            { label: 'Human (annual)', data: [45000, 62500, 47500, 67500, 100000], backgroundColor: '#f85149cc', borderColor: '#f85149', borderWidth: 1, borderRadius: 4 },
-            { label: 'AI Agent (annual)', data: [1750, 3000, 1250, 6000, 9000], backgroundColor: c.primary + 'cc', borderColor: c.primary, borderWidth: 1, borderRadius: 4 },
-          ],
-        },
-        options: {
-          responsive: true, maintainAspectRatio: false,
-          scales: {
-            x: { ticks: { color: c.onSurface, font: { size: 11 } }, grid: { display: false } },
-            y: { type: 'logarithmic', title: { display: true, text: 'Annual Cost ($) — log scale', color: c.onSurfaceVariant, font: { size: 11 } }, ticks: { color: c.onSurfaceVariant, callback: v => v >= 1000 ? '$' + (v/1000) + 'K' : '$' + v }, grid: { color: c.border } },
-          },
-          plugins: { legend: { position: 'bottom', labels: { color: c.onSurface, font: { size: 11 }, usePointStyle: true } } },
-        },
-      });
-    }
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => setTimeout(renderCharts, 100));
-  } else { setTimeout(renderCharts, 100); }
-
-  const origToggle = window.toggleTheme;
-  window.toggleTheme = function() { origToggle(); setTimeout(renderCharts, 50); };
-</script>
-
 </body>
 </html>

@@ -1,0 +1,41 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-03-30",
+  "author_or_org": "Shuo Yan et al.",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "LLM-based agentic systems show growing promise for complex, multi-step tasks via autonomous planning, reasoning, and interaction with external environments.",
+      "quote": "Large Language Model (LLM)-based agentic systems have shown growing promise in tackling complex, multi-step tasks through autonomous planning, reasoning, and interaction with external environments.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The stochastic nature of LLM generation causes intrinsic behavioral inconsistency, so the same agent may succeed in one execution but fail in another under identical inputs.",
+      "quote": "However, the stochastic nature of LLM generation introduces intrinsic behavioral inconsistency: the same agent may succeed in one execution but fail in another under identical inputs.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Diagnosing such inconsistencies is a major challenge for developers because agent execution logs are often lengthy, unstructured, and difficult to compare across runs.",
+      "quote": "Diagnosing such inconsistencies remains a major challenge for developers, as agent execution logs are often lengthy, unstructured, and difficult to compare across runs.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Existing debugging and evaluation tools mainly inspect single executions and offer limited support for understanding why agent behaviors diverge across repeated runs.",
+      "quote": "Existing debugging and evaluation tools primarily focus on inspecting single executions, offering limited support for understanding how and why agent behaviors diverge across repeated runs.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "InconLens reportedly enables developers to identify divergence points, uncover latent failure modes, and gain insights for improving agentic system reliability and stability.",
+      "quote": "Our results show that InconLens enables developers to more efficiently identify divergence points, uncover latent failure modes, and gain actionable insights into improving the reliability and stability of agentic systems.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2603.28106"
+}

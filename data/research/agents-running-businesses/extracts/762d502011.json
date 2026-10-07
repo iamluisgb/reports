@@ -1,0 +1,43 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-12-18",
+  "author_or_org": "Frank F. Xu et al.",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "TheAgentCompany is a benchmark that builds a self-contained environment mimicking a small software company, with internal websites and data, and tasks that workers in such a company might perform.",
+      "quote": "We build a self-contained environment with internal web sites and data that mimics a small software company environment, and create a variety of tasks that may be performed by workers in such a company.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The most competitive baseline agent in TheAgentCompany completed 30% of tasks autonomously.",
+      "quote": "We test baseline agents powered by both closed API-based and open-weights language models (LMs), and find that the most competitive agent can complete 30% of tasks autonomously.",
+      "numbers": [
+        "30%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The benchmark results show a nuanced picture: in a simulated real workplace, many simpler tasks could be solved autonomously, but more difficult long-horizon tasks remain beyond current systems.",
+      "quote": "This paints a nuanced picture on task automation with LM agents--in a setting simulating a real workplace, a good portion of simpler tasks could be solved autonomously, but more difficult long-horizon tasks are still beyond the reach of current systems.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The benchmark evaluates AI agents that interact with the world in ways similar to a digital worker: browsing the Web, writing code, running programs, and communicating with coworkers.",
+      "quote": "an extensible benchmark for evaluating AI agents that interact with the world in similar ways to those of a digital worker: by browsing the Web, writing code, running programs, and communicating with other coworkers.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper frames the key question as how performant AI agents are at accelerating or autonomously performing work-related tasks, with implications for industry adoption and economic policy.",
+      "quote": "But how performant are AI agents at accelerating or even autonomously performing work-related tasks? The answer to this question has important implications both for industry looking to adopt AI into their workflows and for economic policy to understand the effects that adoption of AI may have on the labor market.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2412.14161"
+}

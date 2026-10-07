@@ -1,0 +1,32 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2025-06-25",
+  "author_or_org": "Gartner, Inc.",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Gartner predicts that over 40% of agentic AI projects will be canceled by the end of 2027 because of escalating costs, unclear business value, or inadequate risk controls.",
+      "quote": "Over 40% of agentic AI projects will be canceled by the end of 2027, due to escalating costs, unclear business value or inadequate risk controls, according to Gartner, Inc.",
+      "numbers": [
+        "40%",
+        "2027"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Gartner states that most agentic AI projects are currently early-stage experiments or proof of concepts, largely driven by hype and often misapplied.",
+      "quote": "“Most agentic AI projects right now are early stage experiments or proof of concepts that are mostly driven by hype and are often misapplied,” said [Anushree Verma](https://www.gartner.com/en/experts/anushree-verma), Senior Director Analyst, Gartner.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Gartner says hype can blind organizations to the real cost and complexity of deploying AI agents at scale, stalling projects from moving into production.",
+      "quote": "“This can blind organizations to the real cost and complexity of deploying [AI agents at scale](https://www.gartner.com/en/newsroom/press-releases/2025-03-03-gartner-identifies-three-areas-to-help-data-and-analytics-leaders-scale-ai), stalling projects from moving into production.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027"
+}

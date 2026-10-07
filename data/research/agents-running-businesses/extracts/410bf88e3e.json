@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2026-10-04",
+  "author_or_org": "Pradeep Reddy Juturu (Pradeep-1612)",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The repository describes an enterprise AI agent architecture that combines RAG, memory, tool orchestration, and deterministic decisioning.",
+      "quote": "A production-oriented exploration of **enterprise AI agent architecture** combining RAG, memory, tool orchestration, and deterministic decisioning.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The workflow maintains explicit state, controls tool execution, bounds iterations, and separates LLM reasoning from deterministic application decisions.",
+      "quote": "The workflow maintains explicit state, controls tool execution, bounds iterations, and separates **LLM reasoning from deterministic application decisions**.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "RAG grounds agent responses using Sentence Transformers, the all-MiniLM-L6-v2 model, and ChromaDB.",
+      "quote": "Grounds agent responses using document retrieval with:\n\n*   Sentence Transformers\n*   `all-MiniLM-L6-v2`\n*   ChromaDB",
+      "numbers": [
+        "all-MiniLM-L6-v2"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Memory combines structured memory for authoritative state, semantic memory for similarity-based retrieval, and LLM-assisted memory extraction.",
+      "quote": "Combines:\n\n*   **Structured memory** for authoritative state\n*   **Semantic memory** for similarity-based retrieval\n*   LLM-assisted memory extraction",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Tools include certificate lifecycle evaluation and enterprise connection status, with tool arguments validated by Pydantic before execution.",
+      "quote": "Current tools include:\n\n*   Certificate lifecycle evaluation\n*   Enterprise connection status\n\nTool arguments are validated with Pydantic before execution.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Business rules remain in application code; the LLM reasons about what needs to happen while deterministic code decides what is allowed.",
+      "quote": "Business rules remain in application code.\n\nThe LLM can reason about **what needs to happen**; deterministic code decides **what is actually allowed to happen**.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The project uses Python, Ollama, Llama 3.x, Sentence Transformers, ChromaDB, and Pydantic, and runs locally without a paid LLM API.",
+      "quote": "**Python · Ollama · Llama 3.x · Sentence Transformers · ChromaDB · Pydantic**\n\nThe project runs locally without a paid LLM API.",
+      "numbers": [
+        "3.x"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The roadmap lists planned capabilities including conversation memory, RAG plus memory integration, agent evaluation, guardrails, MCP, human-in-the-loop, observability, and production persistence.",
+      "quote": "*   Conversation memory\n*   RAG + memory integration\n*   Agent evaluation\n*   Guardrails\n*   MCP\n*   Human-in-the-loop\n*   Observability\n*   Production persistence",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/Pradeep-1612/enterprise-ai-rag-agent"
+}

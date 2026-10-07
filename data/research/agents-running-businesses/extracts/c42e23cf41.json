@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-01-09",
+  "author_or_org": "developerjillur / Neuron",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Neuron is a PHP framework for creating and orchestrating AI agents and integrating AI entities into existing PHP applications.",
+      "quote": "Neuron is a PHP framework for creating and orchestrating AI Agents. It allows you to integrate AI entities in your existing PHP applications with a powerful and flexible architecture.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The framework provides tools for the agentic application development lifecycle, including LLM interfaces, data loading, multi-agent orchestration, monitoring, and debugging.",
+      "quote": "We provide tools for the entire agentic application development lifecycle, from LLM interfaces, to data loading, to multi-agent orchestration, to monitoring and debugging.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The framework connects LLMs, vector databases, and memory to agents that interact with data, and its modular architecture is intended for RAG, multi-agent workflows, or business process automations.",
+      "quote": "Connect components (LLMs, vector DBs, memory) to agents that can interact with your data. With its modular architecture it's best suited for building RAG, multi-agent workflows, or business process automations.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Developers create agents by extending an Agent class that automatically manages memory, tools, function calls, and RAG systems.",
+      "quote": "Neuron provides you with the Agent class you can extend to inherit the main features of the framework and create fully functional agents. This class automatically manages some advanced mechanisms for you, such as memory, tools and function calls, up to the RAG systems.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Agents have memory of ongoing conversations in the framework's example.",
+      "quote": "As you can see in the example above, the Agent has memory of the ongoing conversation.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "For Laravel, Neuron offers an encapsulation pattern to work on AI components in a dedicated namespace.",
+      "quote": "Neuron offers a well-defined encapsulation pattern, allowing you to work on your AI components in a dedicated namespace.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "For Symfony, Neuron components use their own interface so dependencies and object creation can be automated using the Symfony service container.",
+      "quote": "All Neuron components belong to its own interface, so you can easily define dependencies and automate objects creation using the Symfony service container.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The README lists supported LLM providers, tools and toolkits, an MCP connector, structured output, RAG, workflow, and security vulnerabilities as capability or documentation areas.",
+      "quote": "*   [Supported LLM Providers](https://github.com/developerjillur/neuron-ai-2x#providers)\n*   [Tools & Toolkits](https://github.com/developerjillur/neuron-ai-2x#tools)\n*   [MCP Connector](https://github.com/developerjillur/neuron-ai-2x#mcp)\n*   [Structured Output](https://github.com/developerjillur/neuron-ai-2x#structured)\n*   [RAG](https://github.com/developerjillur/neuron-ai-2x#rag)\n*   [Workflow](https://github.com/developerjillur/neuron-ai-2x#workflow)\n*   [Security Vulnerabilities](https://github.com/developerjillur/neuron-ai-2x#security)",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/developerjillur/neuron-ai-2x"
+}

@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-02-10",
+  "author_or_org": "Xavier Hu et al. (arXiv)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "EcoGym is a benchmark for continuous plan-and-execute decision making in interactive economies that includes three environments: Vending, adapted from the closed-source Vending-Bench with full open-source release, plus new Freelance and Operation environments.",
+      "quote": "EcoGym comprises three diverse environments: Vending (adapted from the closed-source Vending-Bench, with full open-source release), Freelance (new), and Operation (new)",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Experiments across eleven leading LLMs in EcoGym found no single model dominated across all three scenarios, and models showed significant suboptimality in either high-level strategies or efficient action execution.",
+      "quote": "Experiments across eleven leading LLMs expose a systematic tension: no single model dominates across all three scenarios. Critically, we find that models exhibit significant suboptimality in either high-level strategies or efficient actions executions.",
+      "numbers": [
+        "eleven",
+        "three"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "EcoGym's environments are implemented in a unified decision-making process with standardized interfaces and budgeted actions over an effectively unbounded horizon of 1000+ steps if 365 day-loops for evaluation.",
+      "quote": "implemented in a unified decision-making process with standardized interfaces, and budgeted actions over an effectively unbounded horizon (1000+ steps if 365 day-loops for evaluation).",
+      "numbers": [
+        "1000+",
+        "365"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The paper states that long-horizon planning is recognized as a core capability of autonomous LLM-based agents, but current evaluation frameworks are largely episodic, domain-specific, or insufficiently grounded in persistent economic dynamics.",
+      "quote": "Long-horizon planning is widely recognized as a core capability of autonomous LLM-based agents; however, current evaluation frameworks suffer from being largely episodic, domain-specific, or insufficiently grounded in persistent economic dynamics.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "EcoGym evaluates business-relevant outcomes such as net worth, income, and DAU, targeting long-term strategic coherence and robustness under partial observability and stochasticity.",
+      "quote": "The evaluation of EcoGym is based on business-relevant outcomes (e.g., net worth, income, and DAU), targeting long-term strategic coherence and robustness under partial observability and stochasticity.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "EcoGym is released as an open, extensible testbed for transparent long-horizon agent evaluation and for studying controllability utility trade-offs in economic settings.",
+      "quote": "EcoGym is released as an open, extensible testbed for transparent long-horizon agent evaluation and for studying controllability utility trade-offs in economic settings.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2602.09514"
+}

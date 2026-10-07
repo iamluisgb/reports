@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-10-21",
+  "author_or_org": "Richard Fang, Dylan Bowman, Daniel Kang",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The paper shows that voice-enabled AI agents can perform the actions necessary to perform common scams.",
+      "quote": "In this work, we show that voice-enabled AI agents can perform the actions necessary to perform common scams.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The authors selected common scams collected by the government and constructed voice-enabled agents with directions to perform those scams.",
+      "quote": "To do so, we select a list of common scams collected by the government and construct voice-enabled agents with directions to perform these scams.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Experiments showed that the voice-enabled agents could autonomously perform the actions needed for such scams.",
+      "quote": "We conduct experiments on our voice-enabled agents and show that they can indeed perform the actions necessary to autonomously perform such scams.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The results raise questions about widespread deployment of voice-enabled AI agents.",
+      "quote": "Our results raise questions around the widespread deployment of voice-enabled AI agents.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Recent advances in multi-modal, highly capable LLMs have enabled voice-enabled AI agents.",
+      "quote": "Recent advances in multi-modal, highly capable LLMs have enabled voice-enabled AI agents.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Voice-enabled AI agents are enabling new applications such as voice-enabled autonomous customer service.",
+      "quote": "These agents are enabling new applications, such as voice-enabled autonomous customer service.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper states that these new AI capabilities have the potential for dual use.",
+      "quote": "However, with all AI capabilities, these new capabilities have the potential for dual use.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2410.15650"
+}

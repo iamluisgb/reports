@@ -14,13 +14,13 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 - [Single-Agent vs. Multi-Agent LLM Systems: The Architectural Debate](https://luisgonzalezbernal.com/reports/reports/single-agent-vs-multi-agent-llm-systems-2026-07-17.md) — 2026-07-17 · 15 min
 - [Building Agent Skills in 2026: Progressive Disclosure as a Design Pattern](https://luisgonzalezbernal.com/reports/reports/building-agent-skills-2026-06-28.md) — 2026-06-28 · 7 min
-- [Agents That Run Businesses: The New Autonomous Executive](https://luisgonzalezbernal.com/reports/reports/agents-running-businesses-2026-06-27.md) — 2026-06-27 · 15 min
 - [Automated Design of Agentic Systems & Multi-Agent Algorithms: State of the Art 2025-2026](https://luisgonzalezbernal.com/reports/reports/adas-mas-state-of-art-2026-06-08.md) — 2026-06-08 · 26 min
 
 ### Deep Dives
 
 - [What the World's Best Websites Are Doing in the AI Era (2026)](https://luisgonzalezbernal.com/reports/reports/world-class-websites-2026-10-03.md) — 2026-10-03 · 38 min
 - [AI-Native Design Patterns: What Ramp, Linear, and Vercel Got Right](https://luisgonzalezbernal.com/reports/reports/ai-native-design-patterns-2026-07-17.md) — 2026-07-17 · 29 min
+- [Can Agents Run a Business? What the Evidence Shows](https://luisgonzalezbernal.com/reports/reports/agents-running-businesses-2026-06-27.md) — 2026-06-27 · 10 min
 
 ### Enterprise & Adoption
 

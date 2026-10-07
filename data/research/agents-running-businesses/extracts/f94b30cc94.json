@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-09",
+  "author_or_org": "Yijun Pan, Yukun Lian, Kunyu Shi, Junbo Li, Hongwei Xue, Sicong Xie, Guannan Zhang, Xiaoying Xing",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Business Arena is a controlled environment where an AI agent runs a cross-border shop, buying from suppliers and selling to buyers over a long horizon.",
+      "quote": "We introduce \\textbf{Business Arena}, a controlled environment where an AI agent runs a cross-border shop, buying from suppliers and selling to buyers over a long horizon.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The benchmark is grounded in real alibaba.com sourcing data and market conditions calibrated from authoritative sources.",
+      "quote": "We ground the arena in real [this http URL](http://alibaba.com/)sourcing data and market conditions calibrated from authoritative sources.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper evaluates 15 frontier models and finds a ninefold difference in mean final net worth.",
+      "quote": "We evaluate 15 frontier models and find a ninefold difference in mean final net worth.",
+      "numbers": [
+        "15",
+        "ninefold"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Even the best model falls behind human-designed strategies, indicating that business operation remains challenging for LLM agents.",
+      "quote": "Even the best model falls behind human-designed strategies, indicating that business operation remains challenging for LLM agents.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Frontier LLM agents can increasingly complete complex workflows, yet business-related capabilities are rarely evaluated in existing agent benchmarks.",
+      "quote": "Frontier LLM agents can increasingly complete complex workflows, yet business-related capabilities are rarely evaluated in existing agent benchmarks.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Delayed and coupled consequences make individual business decisions difficult to judge, but their combined outcome is measurable through profit.",
+      "quote": "Delayed and coupled consequences make individual business decisions difficult to judge, but their combined outcome is measurable through profit.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Skill-level analysis reveals operating styles ranging from margin-focused premium sellers to high-turnover wholesalers and customer-service specialists, and action-level attribution identifies sourcing, pricing, and recovery decisions that create or destroy value.",
+      "quote": "Skill-level analysis reveals operating styles, from margin-focused premium sellers to high-turnover wholesalers and customer-service specialists, while action-level attribution identifies the sourcing, pricing, and recovery decisions that create or destroy value.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Business operators must infer opportunities from partial signals, commit capital under uncertainty, adapt to delayed outcomes, and satisfy regulatory obligations before trading legally.",
+      "quote": "Operators must infer opportunities from partial signals, commit capital under uncertainty, adapt to delayed outcomes in a changing market, and satisfy regulatory obligations before trading legally.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.08621"
+}

@@ -1,0 +1,51 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-02-25",
+  "author_or_org": "Fengrui Liu, Xiao He, Tieying Zhang",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "In large-scale cloud service platforms, thousands of customer tickets are generated daily and are typically handled through on-call dialogues, imposing a substantial workload on human support analysts.",
+      "quote": "In large-scale cloud service platforms, thousands of customer tickets are generated daily and are typically handled through on-call dialogues. This high volume of on-call interactions imposes a substantial workload on human support analysts.",
+      "numbers": [
+        "thousands"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Vigil has been deployed on Volcano Engine, ByteDance's cloud platform, for over ten months, and evaluations based on this deployment demonstrate effectiveness and practicality.",
+      "quote": "Vigil has been deployed on Volcano Engine, ByteDance's cloud platform, for over ten months, and comprehensive evaluations based on this deployment demonstrate its effectiveness and practicality.",
+      "numbers": [
+        "ten months"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Vigil operates throughout the on-call life cycle and focuses on assisting during the phase when human support is already involved.",
+      "quote": "Unlike reactive agents, Vigil focuses on providing assistance during the phase in which human support is already involved.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Vigil integrates into the customer-analyst dialogue and proactively offers assistance without explicit user invocation.",
+      "quote": "It integrates into the dialogue between the customer and the analyst, proactively offering assistance without explicit user invocation.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Vigil uses a continuous self-improvement mechanism that extracts knowledge from human-resolved cases to autonomously update its capabilities.",
+      "quote": "Moreover, Vigil incorporates a continuous self-improvement mechanism that extracts knowledge from human-resolved cases to autonomously update its capabilities.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Reactive support agents are typically disengaged when issues are escalated to human support, preventing them from following up, tracking resolution progress, or learning from failed cases.",
+      "quote": "However, when issues remain unresolved and are escalated to human support, these agents are typically disengaged. As a result, they cannot assist with follow-up inquiries, track resolution progress, or learn from the cases they fail to address.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.09579"
+}

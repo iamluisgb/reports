@@ -1,0 +1,71 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Aman Gupta et al.",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The paper presents a unified framework bridging offline development with online impact for customer support AI agents at Nubank, a company with over 100 million users.",
+      "quote": "In this paper, we present a unified framework that bridges offline development with online impact for customer support AI agents at Nubank, a company with 100M+ users.",
+      "numbers": [
+        "100M+"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The framework integrates four components: structured context engineering for support agents, systematic human-in-the-loop prompt iteration, LLM judge evaluation with inter-rater agreement and GEPA optimization, and ideation-to-production validation.",
+      "quote": "Our approach integrates several key components: (1) structured context engineering tailored to customer support agents, (2) systematic human-in-the-loop prompt iteration, (3) rigorous LLM judge evaluation with measured inter-rater agreement and GEPA optimization for consistency, and (4) ideation-to-production validation.",
+      "numbers": [
+        "(1)",
+        "(2)",
+        "(3)",
+        "(4)"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Evaluation-pipeline quality is stated to directly determine iteration velocity.",
+      "quote": "A central insight is that evaluation-pipeline quality directly determines iteration velocity.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Results are reported from five production deployments in card delivery, debt management, credit-limit support, card management, and product explanation.",
+      "quote": "We present results from five production deployments spanning distinct domains: card delivery, debt management, credit-limit support, card management, and product explanation.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The deployments produce consistent customer-satisfaction gains while substantially accelerating iteration.",
+      "quote": "These deployments deliver consistent customer-satisfaction gains while substantially accelerating iteration.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "In card delivery, large-scale A/B testing yields a 37 percentage-point improvement in AI transactional Net Promoter Score and a 29 percentage-point gain in self-service rate over prior agent variants, with offline simulation metrics correlating with online outcomes.",
+      "quote": "In our card-delivery deployment, large-scale A/B testing yields a 37 percentage-point improvement in AI transactional Net Promoter Score and a 29 percentage-point gain in self-service rate over prior agent variants, alongside a strong correlation between offline simulation metrics and online outcomes, demonstrating that eval-driven development reliably predicts production impact.",
+      "numbers": [
+        "37",
+        "29"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "On most use cases, AI satisfaction reaches within a few percentage points of expert human agents.",
+      "quote": "On most use cases, AI satisfaction reaches within a few percentage points of expert human agents.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A risk in building production-ready customer-facing agents is that critical pillars developed in isolation create blind spots that only surface after deployment.",
+      "quote": "Yet these critical pillars are typically developed in isolation, creating blind spots that only surface after deployment.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.08867"
+}

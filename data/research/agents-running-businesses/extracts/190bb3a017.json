@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-10-25",
+  "author_or_org": "Tianhong Gao et al. (arXiv)",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "In online A/B tests, OlaMind improved issue resolution by an average of 23.67% and lowered human transfer rate by 6.6% compared with the baseline.",
+      "quote": "OlaMind surpasses GPT-5.2 and Gemini 3 Pro on OlaBench (83.64 vs. 70.58/70.84) and, in online A/B tests, delivers an average +23.67% issue resolution and -6.6% human transfer rate versus the baseline, bridging offline gains to deployment.",
+      "numbers": [
+        "83.64",
+        "70.58",
+        "70.84",
+        "+23.67%",
+        "-6.6%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "OlaBench is an industrial intelligent customer service benchmark spanning retrieval-augmented generation, workflow-based systems, and agentic settings, and it evaluates service capability, safety, and latency sensitivity.",
+      "quote": "We close this gap with a benchmark-to-optimization loop: we first introduce OlaBench, an ICS benchmark spanning retrieval-augmented generation, workflow-based systems, and agentic settings, which evaluates service capability, safety, and latency sensitivity; moreover, motivated by OlaBench results showing state-of-the-art LLMs still fall short, we propose OlaMind, which distills reusable reasoning patterns and service strategies from expert dialogues and applies staged exploration--exploitation reinforcement learning with instance-level rubric-aware guidance to improve model capability.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "OlaMind distills reusable reasoning patterns and service strategies from expert dialogues and applies staged exploration-exploitation reinforcement learning with instance-level rubric-aware guidance.",
+      "quote": "We close this gap with a benchmark-to-optimization loop: we first introduce OlaBench, an ICS benchmark spanning retrieval-augmented generation, workflow-based systems, and agentic settings, which evaluates service capability, safety, and latency sensitivity; moreover, motivated by OlaBench results showing state-of-the-art LLMs still fall short, we propose OlaMind, which distills reusable reasoning patterns and service strategies from expert dialogues and applies staged exploration--exploitation reinforcement learning with instance-level rubric-aware guidance to improve model capability.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "OlaBench results show state-of-the-art LLMs still fall short, motivating OlaMind.",
+      "quote": "We close this gap with a benchmark-to-optimization loop: we first introduce OlaBench, an ICS benchmark spanning retrieval-augmented generation, workflow-based systems, and agentic settings, which evaluates service capability, safety, and latency sensitivity; moreover, motivated by OlaBench results showing state-of-the-art LLMs still fall short, we propose OlaMind, which distills reusable reasoning patterns and service strategies from expert dialogues and applies staged exploration--exploitation reinforcement learning with instance-level rubric-aware guidance to improve model capability.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "OlaMind scored 83.64 on OlaBench, surpassing GPT-5.2 and Gemini 3 Pro, which scored 70.58 and 70.84.",
+      "quote": "OlaMind surpasses GPT-5.2 and Gemini 3 Pro on OlaBench (83.64 vs. 70.58/70.84) and, in online A/B tests, delivers an average +23.67% issue resolution and -6.6% human transfer rate versus the baseline, bridging offline gains to deployment.",
+      "numbers": [
+        "83.64",
+        "70.58",
+        "70.84",
+        "+23.67%",
+        "-6.6%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Existing benchmarks and training pipelines for industrial intelligent customer service overemphasize verifiable task success and under-measure subjective service quality and realistic failure modes, creating a gap between offline gains and deployable dialogue behavior.",
+      "quote": "Existing benchmarks and training pipelines for industrial intelligent customer service (ICS) remain misaligned with real-world dialogue requirements, overemphasizing verifiable task success while under-measuring subjective service quality and realistic failure modes, leaving a gap between offline gains and deployable dialogue behavior.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2510.22143"
+}

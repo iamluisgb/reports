@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-26",
+  "author_or_org": "Animesh Shaw",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "LLM agents that invoke privileged tools are vulnerable to indirect prompt injection, where adversarial instructions embedded in retrieved data hijack the agent's actions.",
+      "quote": "LLM agents that invoke privileged tools are vulnerable to indirect prompt injection (IPI), in which adversarial instructions embedded in retrieved data hijack the agent's actions.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper audits an IPI benchmark and its harness and identifies four defect classes: silent payload non-delivery, attack success scored by tool identity rather than arguments, false-rejection rate conflated with model incapacity, and the absence of an audit trail.",
+      "quote": "We audit an IPI benchmark and its harness and identify four defect classes -- silent payload non-delivery, attack success scored by tool identity rather than arguments, false-rejection rate conflated with model incapacity, and the absence of an audit trail -- each of which yields a plausible, publishable, and incorrect number.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Re-scoring identical execution traces under defective and corrected definitions shows the tool-identity scorer reports a 21.7% attack-success rate while the true argument-level rate is 1.2%.",
+      "quote": "We quantify the distortion by re-scoring identical execution traces under the defective and corrected definitions: on real agent behaviour, the tool-identity scorer reports a 21.7% attack-success rate where the true argument-level rate is 1.2%.",
+      "numbers": [
+        "21.7%",
+        "1.2%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "In the sharpest case, an open model previously reported at 62.8% registers 0% under the corrected harness, with the prior figure largely an artifact of undelivered payloads and identity-level scoring.",
+      "quote": "In the sharpest case, an open model previously reported at 62.8% registers 0% under the corrected harness -- the prior figure largely an artifact of undelivered payloads and identity-level scoring.",
+      "numbers": [
+        "62.8%",
+        "0%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The released harness makes each defect unrepresentable through machine-checkable payload placement, argument-level attacker predicates, per-scenario environments, and mandatory trace persistence, and it reports whether a compromised agent discloses the attack, the full security/utility operating curve of an LLM-judge defense, and tool-calling capability disentangled from defensive over-blocking.",
+      "quote": "We release a harness whose construction makes each defect unrepresentable -- machine-checkable payload placement, argument-level attacker predicates, per-scenario environments, and mandatory trace persistence -- and use it to report three quantities the field does not: whether a compromised agent discloses the attack, the full security/utility operating curve of an LLM-judge defense, and tool-calling capability disentangled from defensive over-blocking.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A corrected harness overturns a reported \"capability barrier\": a model deemed incapable of tool use is in fact fully capable, with the earlier result an artifact of environment mismatch.",
+      "quote": "A corrected harness further overturns a reported \"capability barrier\": a model deemed incapable of tool use is in fact fully capable, its earlier result an artifact of environment mismatch.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper argues that evaluation validity is a prerequisite for, not a footnote to, defense claims in agentic security, and provides an instrument that enforces it.",
+      "quote": "We argue that evaluation validity is a prerequisite for, not a footnote to, defense claims in agentic security, and provide an instrument that enforces it.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.32691"
+}

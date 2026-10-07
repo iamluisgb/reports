@@ -1,0 +1,703 @@
+{
+  "searched": 150,
+  "kept": 40,
+  "web_search": false,
+  "candidates": [
+    {
+      "url": "https://arxiv.org/abs/2502.15840",
+      "title": "Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents",
+      "snippet": "While Large Language Models (LLMs) can exhibit impressive proficiency in isolated, short-term tasks, they often fail to maintain coherent performance over longer time horizons. In this paper, we present Vending-Bench, a simulated environment designed to specifically test an LLM-based agent's ability to manage a straightforward, long-running business scenario: operating a vending machine. Agents must balance inventories, place orders, set prices, and handle daily fees - tasks that are each simple",
+      "provider": "arxiv",
+      "published": "2025-02-20",
+      "id": "3361937992",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "Vending-Bench long-term coherence agents",
+        "Vending-Bench long-term coherence agents",
+        "Vending-Bench long-term coherence agents",
+        "Vending-Bench long-term coherence agents",
+        "Vending-Bench long-term coherence agents",
+        "Vending-Bench long-term coherence agents",
+        "Vending-Bench long-term coherence agents",
+        "LLM agent runs business simulation"
+      ],
+      "relevance": {
+        "q1": 0.9632
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.09514",
+      "title": "EcoGym: Evaluating LLMs for Long-Horizon Plan-and-Execute in Interactive Economies",
+      "snippet": "Long-horizon planning is widely recognized as a core capability of autonomous LLM-based agents; however, current evaluation frameworks suffer from being largely episodic, domain-specific, or insufficiently grounded in persistent economic dynamics. We introduce EcoGym, a generalizable benchmark for continuous plan-and-execute decision making in interactive economies. EcoGym comprises three diverse environments: Vending (adapted from the closed-source Vending-Bench, with full open-source release),",
+      "provider": "arxiv",
+      "published": "2026-02-10",
+      "id": "a87ce5c37f",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "Vending-Bench long-term coherence agents"
+      ],
+      "relevance": {
+        "q1": 0.567
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2412.14161",
+      "title": "TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks",
+      "snippet": "We interact with computers on an everyday basis, be it in everyday life or work, and many aspects of work can be done entirely with access to a computer and the Internet. At the same time, thanks to improvements in large language models (LLMs), there has also been a rapid development in AI agents that interact with and affect change in their surrounding environments. But how performant are AI agents at accelerating or even autonomously performing work-related tasks? The answer to this question h",
+      "provider": "arxiv",
+      "published": "2024-12-18",
+      "id": "762d502011",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "TheAgentCompany benchmark",
+        "TheAgentCompany benchmark",
+        "TheAgentCompany benchmark"
+      ],
+      "relevance": {
+        "q1": 0.4695
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2512.02230",
+      "title": "Benchmarking LLM Agents for Wealth-Management Workflows",
+      "snippet": "Modern work relies on an assortment of digital collaboration tools, yet routine processes continue to suffer from human error and delay. To address this gap, this dissertation extends TheAgentCompany with a finance-focused environment and investigates whether a general purpose LLM agent can complete representative wealth-management tasks both accurately and economically. This study introduces synthetic domain data, enriches colleague simulations, and prototypes an automatic task-generation pipel",
+      "provider": "arxiv",
+      "published": "2025-12-01",
+      "id": "7fa7c8202b",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "TheAgentCompany benchmark"
+      ],
+      "relevance": {
+        "q1": 0.5699
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.11323",
+      "title": "Deployment Decision Reliability: A Generalizability-Theory Framework for Sizing Long-Horizon Agent Evaluations",
+      "snippet": "Enterprise practitioners read agent leaderboards as if they ranked agent capability. We show, across three open agent-trace benchmarks (TheAgentCompany, $τ^2$-bench, and AppWorld), that the agent main effect accounts for less than 3% of total variance in every dataset and check type, while the agent-by-task interaction accounts for 7-23%. Leaderboards rank specialization, not capability. We arrive at this through a four-facet Generalizability Theory variance decomposition, fit with three estimat",
+      "provider": "arxiv",
+      "published": "2026-08-11",
+      "id": "c27ddb4e56",
+      "questions": [
+        "q1",
+        "q4"
+      ],
+      "queries": [
+        "TheAgentCompany benchmark",
+        "long-horizon agent reliability"
+      ],
+      "relevance": {
+        "q1": 0.2915,
+        "q4": 0.8
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.08621",
+      "title": "Business Arena: Benchmarking LLM Agents in a Realistic Marketplace",
+      "snippet": "Running a business is a challenging form of intelligent work. Operators must infer opportunities from partial signals, commit capital under uncertainty, adapt to delayed outcomes in a changing market, and satisfy regulatory obligations before trading legally. Frontier LLM agents can increasingly complete complex workflows, yet business-related capabilities are rarely evaluated in existing agent benchmarks. We introduce \\textbf{Business Arena}, a controlled environment where an AI agent runs a cr",
+      "provider": "arxiv",
+      "published": "2026-08-09",
+      "id": "f94b30cc94",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "LLM agent runs business simulation"
+      ],
+      "relevance": {
+        "q1": 0.8434
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.11108",
+      "title": "But How Would AI Agents Run a Town's Economy?",
+      "snippet": "We placed 100 memory-equipped large language model (LLM) agents in charge of a closed, money-conserving spatial economy on real Pokhara Lakeside geography (earning wages, running businesses, setting prices) and ran this multi-agent simulation for up to 26 simulated weeks, well past the 1-2 weeks typical of agent-society studies. Across 91 validated runs (2.44M agent decisions, 21.5B tokens), the money stops moving, in a specific and measurable way. A 12x tourist demand shock raises business reve",
+      "provider": "arxiv",
+      "published": "2026-09-10",
+      "id": "4e37fb881d",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "LLM agent runs business simulation"
+      ],
+      "relevance": {
+        "q1": 0.9468
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.04611",
+      "title": "$τ^τ$-Bench: An Environment for End-To-End, Realistic Agent Construction",
+      "snippet": "LLM agents are rapidly becoming production software, deployed to handle customer service, adjudicate disputes, and operate internal systems. Notably, the work of building them is increasingly handed to coding agents, yet existing benchmarks say little about whether an AI system can deliver one under the conditions of a real client engagement. We introduce $τ^τ$-bench (pronounced hyper-tau-bench), a benchmark that makes agent construction the task. A developer agent is given the records a busines",
+      "provider": "arxiv",
+      "published": "2026-09-04",
+      "id": "11c7904c47",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "LLM agent runs business simulation"
+      ],
+      "relevance": {
+        "q1": 0.9509
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.34821",
+      "title": "CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets",
+      "snippet": "Long-horizon competition tests agents' ability to coordinate business decisions under uncertainty and adapt to changing rival strategies. We introduce CEO Arena, a benchmark that uses matched replacement evaluation to assess operating returns alongside an agent's effects on rivals and the market. Each CEO agent is compared with a reference policy in the same company under the same economic seed, holding other agents' identities and assignments fixed while all agents adapt. In a shared eight-comp",
+      "provider": "arxiv",
+      "published": "2026-09-28",
+      "id": "dd4eb959af",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "LLM agent runs business simulation"
+      ],
+      "relevance": {
+        "q1": 0.3025
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2507.22542",
+      "title": "A Benchmark Dataset and Evaluation Framework for Vietnamese Large Language Models in Customer Support",
+      "snippet": "With the rapid growth of Artificial Intelligence, Large Language Models (LLMs) have become essential for Question Answering (QA) systems, improving efficiency and reducing human workload in customer service. The emergence of Vietnamese LLMs (ViLLMs) highlights lightweight open-source models as a practical choice for their accuracy, efficiency, and privacy benefits. However, domain-specific evaluations remain limited, and the absence of benchmark datasets reflecting real customer interactions mak",
+      "provider": "arxiv",
+      "published": "2025-07-30",
+      "id": "549b258f08",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "generative AI customer support productivity study"
+      ],
+      "relevance": {
+        "q2": 0.0112
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2510.22143",
+      "title": "Benchmarking and Learning Real-World Customer Service Dialogue",
+      "snippet": "Existing benchmarks and training pipelines for industrial intelligent customer service (ICS) remain misaligned with real-world dialogue requirements, overemphasizing verifiable task success while under-measuring subjective service quality and realistic failure modes, leaving a gap between offline gains and deployable dialogue behavior. We close this gap with a benchmark-to-optimization loop: we first introduce OlaBench, an ICS benchmark spanning retrieval-augmented generation, workflow-based sys",
+      "provider": "arxiv",
+      "published": "2025-10-25",
+      "id": "190bb3a017",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "AI agents customer service deployment results"
+      ],
+      "relevance": {
+        "q2": 0.0135
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.08867",
+      "title": "Building Customer Support AI Agents at 100M-User Scale: An Evaluation-Driven Framework",
+      "snippet": "The rapid rise in LLM capabilities has made AI agents increasingly viable across a broad range of tasks. Among the most promising applications is building production-ready customer-facing agents, a challenge that demands coordinated excellence in evaluation methodology, context engineering, training, and online measurement. Yet these critical pillars are typically developed in isolation, creating blind spots that only surface after deployment. In this paper, we present a unified framework that b",
+      "provider": "arxiv",
+      "published": "2026-06-07",
+      "id": "72f9ff380b",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "AI agents customer service deployment results"
+      ],
+      "relevance": {
+        "q2": 0.1702
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2410.15650",
+      "title": "Voice-Enabled AI Agents can Perform Common Scams",
+      "snippet": "Recent advances in multi-modal, highly capable LLMs have enabled voice-enabled AI agents. These agents are enabling new applications, such as voice-enabled autonomous customer service. However, with all AI capabilities, these new capabilities have the potential for dual use. In this work, we show that voice-enabled AI agents can perform the actions necessary to perform common scams. To do so, we select a list of common scams collected by the government and construct voice-enabled agents with dir",
+      "provider": "arxiv",
+      "published": "2024-10-21",
+      "id": "08a23700b2",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "AI agents customer service deployment results"
+      ],
+      "relevance": {
+        "q2": 0.0016
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.09579",
+      "title": "Help Without Being Asked: A Deployed Proactive Agent System for On-Call Support with Continuous Self-Improvement",
+      "snippet": "In large-scale cloud service platforms, thousands of customer tickets are generated daily and are typically handled through on-call dialogues. This high volume of on-call interactions imposes a substantial workload on human support analysts. Recent studies have explored reactive agents that leverage large language models as a first line of support to interact with customers directly and resolve issues. However, when issues remain unresolved and are escalated to human support, these agents are ty",
+      "provider": "arxiv",
+      "published": "2026-02-25",
+      "id": "2019ad7898",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "AI agents customer service deployment results"
+      ],
+      "relevance": {
+        "q2": 0.0385
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2511.08242",
+      "title": "Towards Outcome-Oriented, Task-Agnostic Evaluation of AI Agents",
+      "snippet": "As AI agents proliferate across industries and applications, evaluating their performance based solely on infrastructural metrics such as latency, time-to-first-token, or token throughput is proving insufficient. These metrics fail to capture the quality of an agent's decisions, its operational autonomy, or its ultimate business value. This white paper proposes a novel, comprehensive framework of eleven outcome-based, task-agnostic performance metrics for AI agents that transcend domain boundari",
+      "provider": "arxiv",
+      "published": "2025-11-11",
+      "id": "23fba76131",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "AI agents customer service deployment results"
+      ],
+      "relevance": {
+        "q2": 0.0097
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2505.17735",
+      "title": "SafeAgent: Safeguarding LLM Agents via an Automated Risk Simulator",
+      "snippet": "Large Language Model (LLM)-based agents are increasingly deployed in real-world applications such as \"digital assistants, autonomous customer service, and decision-support systems\", where their ability to \"interact in multi-turn, tool-augmented environments\" makes them indispensable. However, ensuring the safety of these agents remains a significant challenge due to the diverse and complex risks arising from dynamic user interactions, external tool usage, and the potential for unintended harmful",
+      "provider": "arxiv",
+      "published": "2025-05-23",
+      "id": "092b88efe7",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "AI agents customer service deployment results"
+      ],
+      "relevance": {
+        "q2": 0.0432
+      }
+    },
+    {
+      "url": "https://yourgpt.ai/2-0",
+      "title": "Show HN: YourGPT 2.0 – Complete AI platform for support, sales, and operations",
+      "snippet": "11 points, 3 comments on Hacker News",
+      "provider": "hn",
+      "published": "2025-11-17",
+      "discussion": "https://news.ycombinator.com/item?id=45951753",
+      "id": "8970c31f9b",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "AI agents customer service deployment results"
+      ],
+      "relevance": {
+        "q2": 0.002
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.06545",
+      "title": "Queen-Bee Agents: A BeeSpec-Centered Architecture for Governed Enterprise MCP Orchestration",
+      "snippet": "Enterprise agent systems increasingly need to connect large language models to private tools, internal knowledge, and Model Context Protocol (MCP) interfaces. In this setting, raw task capability is insufficient: organizations also require policy enforcement, tenant-scoped isolation, and execution that remains within explicit operational boundaries. We present Queen-Bee, a governed multi-agent architecture in which a Queen control plane retrieves capabilities, plans task-scoped execution, and co",
+      "provider": "arxiv",
+      "published": "2026-06-04",
+      "id": "ad7301fba8",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "LLM agent architecture enterprise workflows"
+      ],
+      "relevance": {
+        "q3": 0.8308
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.17331",
+      "title": "Agentic ERP: Multi-Agent Large Language Model Architecture for Autonomous Enterprise Resource Planning",
+      "snippet": "Enterprise Resource Planning (ERP) systems record transactions reliably but still delegate almost all operational decision-making to human specialists, because classical rule-based automation cannot reason about exceptions and monolithic AI assistants degrade when asked to coordinate across functional boundaries. This paper presents Agentic ERP, an expert-system architecture that combines role-aligned large-language-model (LLM) agents with a risk-tiered human-in-the-loop harness and a graph-base",
+      "provider": "arxiv",
+      "published": "2026-07-19",
+      "id": "1c22808b94",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "LLM agent architecture enterprise workflows"
+      ],
+      "relevance": {
+        "q3": 0.8595
+      }
+    },
+    {
+      "url": "https://github.com/eagleeyethinker/agentic-ai-platform-enterprise",
+      "title": "eagleeyethinker/agentic-ai-platform-enterprise",
+      "snippet": "Enterprise reference architecture for Agentic AI systems using LangGraph, RAG, knowledge graphs, and LLM reasoning to power autonomous operational decision workflows. (1 stars)",
+      "provider": "github",
+      "published": "2026-03-14",
+      "id": "f103c7212f",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "LLM agent architecture enterprise workflows"
+      ],
+      "relevance": {
+        "q3": 0.6167
+      }
+    },
+    {
+      "url": "https://github.com/Pradeep-1612/enterprise-ai-rag-agent",
+      "title": "Pradeep-1612/enterprise-ai-rag-agent",
+      "snippet": "Enterprise AI agent architecture combining RAG, LLM, semantic memory, tool orchestration, and deterministic decisioning for reliable workflow automation. (1 stars)",
+      "provider": "github",
+      "published": "2026-10-04",
+      "id": "410bf88e3e",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "LLM agent architecture enterprise workflows"
+      ],
+      "relevance": {
+        "q3": 0.8099
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.18740",
+      "title": "A Multi-Agent Platform for Automated Enterprise Analytics and Insight Generation",
+      "snippet": "This paper proposes a multi-agent framework built on CrewAI [1] for conversational business intelligence. Five specialized AI agents operate in a sequential pipeline to process natural language queries, retrieve and analyze data, generate visualizations via the Model Context Protocol (MCP) [2], and deliver actionable insights. The platform features a defense-in-depth security architecture for multi-tenant data isolation and a query parameterization mechanism for transforming conversational insig",
+      "provider": "arxiv",
+      "published": "2026-08-19",
+      "id": "8ff03f2912",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "multi-agent framework business process automation"
+      ],
+      "relevance": {
+        "q3": 0.7629
+      }
+    },
+    {
+      "url": "https://github.com/jassranaeem/ai-agents-automation-framework",
+      "title": "jassranaeem/ai-agents-automation-framework",
+      "snippet": "Task-specific AI agents and multi-agent workflow orchestration for business process automation. (0 stars)",
+      "provider": "github",
+      "published": "2026-07-19",
+      "id": "e964a8c978",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "multi-agent framework business process automation"
+      ],
+      "relevance": {
+        "q3": 0.605
+      }
+    },
+    {
+      "url": "https://github.com/developerjillur/neuron-ai-2x",
+      "title": "developerjillur/neuron-ai-2x",
+      "snippet": "The PHP Agentic Framework to build production-ready AI driven applications. Connect components (LLMs, vector DBs, memory) to agents that can interact with your data. With its modular architecture it's best suited for building RAG, multi-agent workflows, or business process automations. (0 stars)",
+      "provider": "github",
+      "published": "2026-01-09",
+      "id": "c42e23cf41",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "multi-agent framework business process automation"
+      ],
+      "relevance": {
+        "q3": 0.6886
+      }
+    },
+    {
+      "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+      "title": "FireRedTeam/FireRed-OpenStoryline",
+      "snippet": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven directing through natural language interaction, LLM-powered planning, and precise tool orchestration. It facilitates transparent, human-in-the-loop creation with reusable Style Skills for consiste (3458 stars)",
+      "provider": "github",
+      "published": "2026-07-31",
+      "id": "a9652b4743",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "human-in-the-loop LLM agents"
+      ],
+      "relevance": {
+        "q3": 0.9173
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2512.12730",
+      "title": "NL2Repo-Bench: Towards Long-Horizon Repository Generation Evaluation of Coding Agents",
+      "snippet": "Recent advances in coding agents suggest rapid progress toward autonomous software development, yet existing benchmarks fail to rigorously evaluate the long-horizon capabilities required to build complete software systems. Most prior evaluations focus on localized code generation, scaffolded completion, or short-term repair tasks, leaving open the question of whether agents can sustain coherent reasoning, planning, and execution over the extended horizons demanded by real-world repository constr",
+      "provider": "arxiv",
+      "published": "2025-12-14",
+      "id": "db654fc969",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "measuring AI ability to complete long tasks"
+      ],
+      "relevance": {
+        "q4": 0.8663
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.07682",
+      "title": "SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?",
+      "snippet": "AI agents are increasingly expected to complete long-horizon workflows that require sustained progress over hours, millions of tokens, and complex environments. Yet current agent benchmarks largely evaluate short-form tasks, such as single pull requests, small tickets, or 5-10 minute exercises, limiting our ability to measure agents' capabilities in planning, long-context understanding, and memory use. We introduce SWE-Marathon, a benchmark of 20 long-horizon tasks spanning software engineering ",
+      "provider": "arxiv",
+      "published": "2026-06-05",
+      "id": "b20aee7acc",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "measuring AI ability to complete long tasks"
+      ],
+      "relevance": {
+        "q4": 0.96
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.29231",
+      "title": "Beyond pass@1: A Reliability Science Framework for Long-Horizon LLM Agents",
+      "snippet": "Existing benchmarks measure capability -- whether a model succeeds on a single attempt -- but production deployments require reliability -- consistent success across repeated attempts on tasks of varying duration. We show these properties diverge systematically as task duration grows, and that pass@1 on short tasks is structurally blind to this divergence. We introduce a reliability science framework for long-horizon LLM agents with four metrics: Reliability Decay Curve (RDC), Variance Amplifica",
+      "provider": "arxiv",
+      "published": "2026-03-31",
+      "id": "84dd70992f",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "long-horizon agent reliability"
+      ],
+      "relevance": {
+        "q4": 0.9036
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.30147",
+      "title": "CAST: Critique-Aware Supervision for Training Reliable Long-Horizon Tool-Calling Agents",
+      "snippet": "Large language model (LLM) agents are increasingly deployed in long-horizon, interactive, and stateful environments. In these settings, a single wrong action, such as refunding the wrong purchase, can cause irreversible task failure and must be intercepted before execution. Such failures may not appear in every single run, but can emerge across repeated trials, making reliability across steps and trials critical. However, ensuring agentic reliability is challenging: even frontier LLMs struggle t",
+      "provider": "arxiv",
+      "published": "2026-08-31",
+      "id": "4e424ed8a6",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "long-horizon agent reliability"
+      ],
+      "relevance": {
+        "q4": 0.8955
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.15654",
+      "title": "Zombie Agents: Persistent Control of Self-Evolving LLM Agents via Self-Reinforcing Injections",
+      "snippet": "Self-evolving LLM agents update their internal state across sessions, often by writing and reusing long-term memory. This design improves performance on long-horizon tasks but creates a security risk: untrusted external content observed during a benign session can be stored as memory and later treated as instruction. We study this risk and formalize a persistent attack we call a Zombie Agent, where an attacker covertly implants a payload that survives across sessions, effectively turning the age",
+      "provider": "arxiv",
+      "published": "2026-02-17",
+      "id": "7f093fce06",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "agent task completion time horizon"
+      ],
+      "relevance": {
+        "q4": 0.8643
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2510.08002",
+      "title": "Learning on the Job: An Experience-Driven Self-Evolving Agent for Long-Horizon Tasks",
+      "snippet": "Large Language Models have demonstrated remarkable capabilities across diverse domains, yet significant challenges persist when deploying them as AI agents for real-world long-horizon tasks. Existing LLM agents suffer from a critical limitation: they are test-time static and cannot learn from experience, lacking the ability to accumulate knowledge and continuously improve on the job. To address this challenge, we propose MUSE, a novel agent framework that introduces an experience-driven, self-ev",
+      "provider": "arxiv",
+      "published": "2025-10-09",
+      "id": "ca335a8eae",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "agent task completion time horizon"
+      ],
+      "relevance": {
+        "q4": 0.783
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.08964",
+      "title": "Long-Horizon-Terminal-Bench: Testing the Limits of Agents on Long-Horizon Terminal Tasks with Dense Reward-Based Grading",
+      "snippet": "AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including e",
+      "provider": "arxiv",
+      "published": "2026-07-09",
+      "id": "5680daaf95",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "agent task completion time horizon"
+      ],
+      "relevance": {
+        "q4": 0.881
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2503.13657",
+      "title": "Why Do Multi-Agent LLM Systems Fail?",
+      "snippet": "Despite enthusiasm for Multi-Agent LLM Systems (MAS), their performance gains on popular benchmarks are often minimal. This gap highlights a critical need for a principled understanding of why MAS fail. Addressing this question requires systematic identification and analysis of failure patterns. We introduce MAST-Data, a comprehensive dataset of 1600+ annotated traces collected across 7 popular MAS frameworks. MAST-Data is the first multi-agent system dataset to outline the failure dynamics in M",
+      "provider": "arxiv",
+      "published": "2025-03-17",
+      "id": "9eaf642daf",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "why do multi-agent LLM systems fail",
+        "why do multi-agent LLM systems fail",
+        "why do multi-agent LLM systems fail"
+      ],
+      "relevance": {
+        "q5": 0.4082
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.19843",
+      "title": "MAS-FIRE: Fault Injection and Reliability Evaluation for LLM-Based Multi-Agent Systems",
+      "snippet": "As LLM-based Multi-Agent Systems (MAS) are increasingly deployed for complex tasks, ensuring their reliability has become a pressing challenge. Since MAS coordinate through unstructured natural language rather than rigid protocols, they are prone to semantic failures (e.g., hallucinations, misinterpreted instructions, and reasoning drift) that propagate silently without raising runtime exceptions. Prevailing evaluation approaches, which measure only end-to-end task success, offer limited insight",
+      "provider": "arxiv",
+      "published": "2026-02-23",
+      "id": "091188e777",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "why do multi-agent LLM systems fail"
+      ],
+      "relevance": {
+        "q5": 0.2155
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.28106",
+      "title": "InconLens: Interactive Visual Diagnosis of Behavioral Inconsistencies in LLM-based Agentic Systems",
+      "snippet": "Large Language Model (LLM)-based agentic systems have shown growing promise in tackling complex, multi-step tasks through autonomous planning, reasoning, and interaction with external environments. However, the stochastic nature of LLM generation introduces intrinsic behavioral inconsistency: the same agent may succeed in one execution but fail in another under identical inputs. Diagnosing such inconsistencies remains a major challenge for developers, as agent execution logs are often lengthy, u",
+      "provider": "arxiv",
+      "published": "2026-03-30",
+      "id": "3042736d61",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "why do multi-agent LLM systems fail"
+      ],
+      "relevance": {
+        "q5": 0.1669
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.16986",
+      "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
+      "snippet": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions. We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning items. ToMAS applies four explicit convertibility criteria to diagnosed execution traces. A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items. In an 18-trace relia",
+      "provider": "arxiv",
+      "published": "2026-09-15",
+      "id": "90deae7426",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "why do multi-agent LLM systems fail"
+      ],
+      "relevance": {
+        "q5": 0.2544
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.21841",
+      "title": "EnterpriseVal: Quantifying the Efficacy, Reliability and Value of Generative AI in the Enterprise",
+      "snippet": "Frontier language models now produce professional deliverables that expert graders judge to match human work on a substantial share of economically valuable tasks, yet most enterprise GenAI initiatives fail to show a measurable business effect and a large fraction of agentic projects are expected to be cancelled. We argue that this is substantially a measurement problem: public benchmarks answer \"what can the model do?\", whereas a deployment decision requires \"is this workflow fit, reliable, saf",
+      "provider": "arxiv",
+      "published": "2026-09-18",
+      "id": "b14f939c67",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "agentic AI projects cancelled"
+      ],
+      "relevance": {
+        "q5": 0.9319
+      }
+    },
+    {
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027",
+      "title": "Gartner Predicts over 40% of Agentic AI Projects Will Be Canceled by End of 2027",
+      "snippet": "30 points, 12 comments on Hacker News",
+      "provider": "hn",
+      "published": "2025-06-30",
+      "discussion": "https://news.ycombinator.com/item?id=44421803",
+      "id": "d8de21b8f0",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "agentic AI projects cancelled"
+      ],
+      "relevance": {
+        "q5": 0.2914
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.17419",
+      "title": "Caging the Agents: A Zero Trust Security Architecture for Autonomous AI in Healthcare",
+      "snippet": "Autonomous AI agents powered by large language models are being deployed in production with capabilities including shell execution, file system access, database queries, and multi-party communication. Recent red teaming research demonstrates that these agents exhibit critical vulnerabilities in realistic settings: unauthorized compliance with non-owner instructions, sensitive information disclosure, identity spoofing, cross-agent propagation of unsafe practices, and indirect prompt injection thr",
+      "provider": "arxiv",
+      "published": "2026-03-18",
+      "id": "4e2adb57c5",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "AI agent security prompt injection tools"
+      ],
+      "relevance": {
+        "q5": 0.2888
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.32691",
+      "title": "Silent Failures in Agentic Security Evaluation: A Validated Harness for Tool-Call Mediation Under Indirect Prompt Injection",
+      "snippet": "LLM agents that invoke privileged tools are vulnerable to indirect prompt injection (IPI), in which adversarial instructions embedded in retrieved data hijack the agent's actions. A growing body of work evaluates defenses against IPI, but the validity of that evaluation is rarely examined. We audit an IPI benchmark and its harness and identify four defect classes -- silent payload non-delivery, attack success scored by tool identity rather than arguments, false-rejection rate conflated with mode",
+      "provider": "arxiv",
+      "published": "2026-09-26",
+      "id": "cc7bc3c916",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "AI agent security prompt injection tools"
+      ],
+      "relevance": {
+        "q5": 0.2903
+      }
+    }
+  ]
+}
