@@ -1,0 +1,74 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2021-09-10",
+  "author_or_org": "Wikipedia",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "DX measurement uses both perceptual developer surveys and objective workflow/system data, and academic research says neither alone is sufficient.",
+      "quote": "The field employs dual measurement approaches combining perceptual measures (developer surveys) with workflow measures (objective system data). Academic research emphasizes that neither approach alone provides sufficient insight.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Validated measurement frameworks named in the source include SPACE, DORA metrics, and a Developer Experience Index.",
+      "quote": "Validated frameworks include:\n\n*   SPACE Framework (Satisfaction, Performance, Activity, Communication, Efficiency)\n*   DORA Metrics (deployment frequency, [lead time](https://en.wikipedia.org/wiki/Lead_time \"Lead time\"), recovery time, change failure rate)\n*   Developer Experience Index measuring standardized factors across organizations",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The SPACE framework was published in 2021 by researchers from Microsoft, GitHub, and University of Victoria as a comprehensive approach to measuring developer productivity.",
+      "quote": "The field gained significant momentum with the 2021 publication of the SPACE framework by researchers from [Microsoft](https://en.wikipedia.org/wiki/Microsoft \"Microsoft\"), [GitHub](https://en.wikipedia.org/wiki/GitHub \"GitHub\"), and [University of Victoria](https://en.wikipedia.org/wiki/University_of_Victoria \"University of Victoria\"), which established a comprehensive approach to measuring developer productivity.",
+      "numbers": [
+        "2021"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Developers with dedicated deep work time reported 50% higher productivity, and those finding work engaging felt 30% more productive.",
+      "quote": "Developers with dedicated deep work time reported 50% higher productivity, while those finding their work engaging felt 30% more productive.",
+      "numbers": [
+        "50%",
+        "30%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "McKinsey research across technology, finance, and pharmaceutical companies reported 20-30% reductions in customer-reported product defects and 60-percentage-point improvements in customer satisfaction from systematic DX investments.",
+      "quote": "[McKinsey & Company](https://en.wikipedia.org/wiki/McKinsey_&_Company \"McKinsey & Company\") research across technology, finance, and pharmaceutical companies demonstrated 20-30% reductions in customer-reported product defects and 60-percentage-point improvements in customer satisfaction ratings from systematic DX investments.",
+      "numbers": [
+        "20-30%",
+        "60-percentage-point"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Atlassian research across 2,100+ developers found 97% lose significant time to inefficiencies, and 69% lose 8+ hours per week.",
+      "quote": "[Atlassian](https://en.wikipedia.org/wiki/Atlassian \"Atlassian\")'s research across 2,100+ developers revealed that 97% lose significant time to inefficiencies, with 69% losing 8+ hours per week.",
+      "numbers": [
+        "2,100+",
+        "97%",
+        "69%",
+        "8+"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Research indicates 78% of surveyed organizations have formal DevEx initiatives, with investment in dedicated developer experience teams.",
+      "quote": "Research indicates that 78% of surveyed organizations have formal DevEx initiatives, with significant investment in dedicated developer experience teams.",
+      "numbers": [
+        "78%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Jason Yip argues that many activities that feel productive are not actually productive, identifying a productivity equivalence fallacy that can lead to gaming measurement systems.",
+      "quote": "Software consultant Jason Yip argues that many activities that feel productive aren't actually productive, identifying a \"productivity equivalence fallacy\" where measurement systems can lead to gaming behaviors rather than genuine improvement.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://en.wikipedia.org/wiki/Developer_experience"
+}

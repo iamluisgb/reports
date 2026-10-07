@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-07-31",
+  "author_or_org": "Brian Houck, Travis Lowdermilk, Cody Beyer, Steven Clarke, Ben Hanrahan",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A mixed-methods study drawing on survey responses from over 500 developers found that AI is broadly adopted and widely seen as enhancing productivity, particularly for routine tasks.",
+      "quote": "Drawing on survey responses from over 500 developers and qualitative insights from interviews and observational studies, we find that AI is broadly adopted and widely seen as enhancing productivity, particularly for routine tasks.",
+      "numbers": [
+        "500"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The benefits of AI vary depending on task complexity, individual usage patterns, and team-level adoption.",
+      "quote": "However, the benefits vary, depending on task complexity, individual usage patterns, and team-level adoption.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Developers report increased efficiency and satisfaction, with less evidence of impact on collaboration.",
+      "quote": "Developers report increased efficiency and satisfaction, with less evidence of impact on collaboration.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The study examines AI's impact across the SPACE framework dimensions: Satisfaction, Performance, Activity, Collaboration and Efficiency.",
+      "quote": "This paper presents findings from a mixed-methods study examining how developers perceive AI's influence across the dimensions of the SPACE framework: Satisfaction, Performance, Activity, Collaboration and Efficiency.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Organizational support and peer learning play key roles in maximizing AI's value.",
+      "quote": "Organizational support and peer learning play key roles in maximizing AI's value.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The findings suggest AI is augmenting developers rather than replacing them, and effective integration depends as much on team culture and support structures as on the tools themselves.",
+      "quote": "These findings suggest that AI is augmenting developers rather than replacing them, and that effective integration depends as much on team culture and support structures as on the tools themselves.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper concludes with practical recommendations for teams, organizations, and researchers seeking to harness AI's potential in software engineering.",
+      "quote": "We conclude with practical recommendations for teams, organizations and researchers seeking to harness AI's potential in software engineering.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2508.00178"
+}

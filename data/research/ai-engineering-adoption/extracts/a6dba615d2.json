@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2023-06-26",
+  "author_or_org": "Thomas Dohmke, Marco Iansiti, Greg Richards",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A study of 934,533 GitHub Copilot users found that on average they accept nearly 30% of suggested code, which the authors say leads to increased productivity.",
+      "quote": "This study examines the impact of GitHub Copilot on a large sample of Copilot users (n=934,533). The analysis shows that users on average accept nearly 30% of the suggested code, leading to increased productivity.",
+      "numbers": [
+        "934,533",
+        "30%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The acceptance rate of AI code suggestions rises over time and is particularly high among less experienced developers, providing them with substantial benefits.",
+      "quote": "Furthermore, our research demonstrates that the acceptance rate rises over time and is particularly high among less experienced developers, providing them with substantial benefits.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The authors estimate that adoption of generative AI productivity tools could contribute to a $1.5 trillion increase in global GDP by 2030.",
+      "quote": "Additionally, our estimations indicate that the adoption of generative AI productivity tools could potentially contribute to a $1.5 trillion increase in global GDP by 2030.",
+      "numbers": [
+        "$1.5 trillion",
+        "2030"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Less experienced developers are particularly likely to accept AI suggestions and receive substantial benefits, which may affect how teams integrate junior developers.",
+      "quote": "Furthermore, our research demonstrates that the acceptance rate rises over time and is particularly high among less experienced developers, providing them with substantial benefits.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The findings suggest that the driving force behind generative AI software innovation lies within the open-source ecosystem, particularly in the United States.",
+      "quote": "The findings suggest that the driving force behind generative AI software innovation lies within the open-source ecosystem, particularly in the United States.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "A majority of repositories on GitHub are led by individual developers.",
+      "quote": "Remarkably, a majority of repositories on GitHub are led by individual developers.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2306.15033"
+}

@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-05-31",
+  "author_or_org": "Fasheng Xu, Jing Hou, Wei Chen, Karen Xie",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "GenAI's intrinsic fallibility, producing confident but incorrect outputs, requires continuous human oversight.",
+      "quote": "Unlike earlier automation technologies, GenAI can both perform tasks autonomously and assist human workers, while its intrinsic fallibility, the tendency to produce confident but incorrect outputs, demands continuous human oversight.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The effect of GenAI on entry-level skill requirements depends critically on whether it is deployed as automation or augmentation.",
+      "quote": "First, GenAI's effect on entry-level skill requirements is critically mode-dependent.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Worker-level automation leads firms to hire fewer but more skilled workers who validate AI outputs and limit costly escalation to experts.",
+      "quote": "Worker-level automation leads firms to hire fewer but more skilled workers who validate AI outputs and limit costly escalation to experts.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Worker-level augmentation expands workers' effective capability, allowing firms to relax entry-level knowledge requirements while sustaining performance.",
+      "quote": "Worker-level augmentation, by contrast, expands workers' effective capability, allowing firms to relax entry-level knowledge requirements while sustaining performance.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The documented decline in junior employment reflects deployment choices favoring automation over augmentation, not an inevitable consequence of GenAI itself.",
+      "quote": "The decline in junior employment documented in recent studies therefore reflects deployment choices favoring automation over augmentation, not an inevitable consequence of GenAI itself.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Expert-level deployment uniformly lowers entry-level skill requirements, regardless of whether GenAI automates or augments.",
+      "quote": "Second, expert-level deployment uniformly lowers entry-level skill requirements, regardless of whether GenAI automates or augments.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "By expanding experts' capacity to support downstream workers, expert-level deployment enables organizations to employ a broader base of less specialized workers, broadening entry-level access to knowledge work.",
+      "quote": "By expanding experts' capacity to support downstream workers, it enables organizations to employ a broader base of less specialized workers, thereby broadening entry-level access to knowledge work.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Organizational structure evolves non-monotonically as GenAI improves: the span of control initially contracts before eventually expanding across all four deployment architectures.",
+      "quote": "Third, organizational structure evolves non-monotonically as GenAI improves: across all four deployment architectures, the span of control initially contracts before eventually expanding.",
+      "numbers": [
+        "four"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2506.00532"
+}

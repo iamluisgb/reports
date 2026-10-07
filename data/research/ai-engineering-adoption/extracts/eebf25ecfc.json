@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": null,
+  "author_or_org": "Owura Asare, Meiyappan Nagappan, N. Asokan",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "AI code generation tools may increase developer productivity by making writing code easier, but research has shown they can also generate insecure code.",
+      "quote": "The proliferation of these tools may be a double-edged sword because while they can increase developer productivity by making it easier to write code, research has shown that they can also generate insecure code.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper performs a user-centered evaluation of GitHub's Copilot to better understand its strengths and weaknesses with respect to code security.",
+      "quote": "In this paper, we perform a user-centered evaluation GitHub's Copilot to better understand its strengths and weaknesses with respect to code security.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The user study had participants solve programming problems with and without Copilot assistance, using problems with potentially vulnerable solutions, to determine how Copilot affects security performance.",
+      "quote": "We conduct a user study where participants solve programming problems (with and without Copilot assistance) that have potentially vulnerable solutions. The main goal of the user study is to determine how the use of Copilot affects participants' security performance.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Among 25 participants, access to Copilot accompanied a more secure solution when tackling harder problems.",
+      "quote": "In our set of participants (n=25), we find that access to Copilot accompanies a more secure solution when tackling harder problems.",
+      "numbers": [
+        "25"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "For the easier problem, the study observed no effect of Copilot access on the security of solutions.",
+      "quote": "For the easier problem, we observe no effect of Copilot access on the security of solutions.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The study observed no disproportionate impact of Copilot use on particular kinds of vulnerabilities.",
+      "quote": "We also observe no disproportionate impact of Copilot use on particular kinds of vulnerabilities.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The results indicate potential security benefits to using Copilot, but more research is warranted on the effects of code generation tools on technically complex problems with security requirements.",
+      "quote": "Our results indicate that there are potential security benefits to using Copilot, but more research is warranted on the effects of the use of code generation tools on technically complex problems with security requirements.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2308.06587"
+}

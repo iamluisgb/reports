@@ -1,0 +1,44 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-08",
+  "author_or_org": "Kehui Chen, Yicheng Sun, Jacky Keung, Zhenyu Mao, Xiaoxue Ma",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Existing research on MCP has focused mainly on technical design, leaving limited empirical evidence about enterprise adoption, deployment challenges, operational risks, and practitioner expectations.",
+      "quote": "Existing research has mainly focused on MCP's technical design, with limited empirical evidence on how it is adopted and used in enterprise practice, particularly with regard to deployment challenges, operational risks, and practitioner expectations.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The study conducted semi-structured interviews with 20 practitioners from eight companies in the Internet and financial sectors.",
+      "quote": "To address this gap, we conducted semi-structured interviews with 20 practitioners from eight companies in the Internet and financial sectors.",
+      "numbers": [
+        "20",
+        "eight"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "MCP is valued for cross-system collaboration, task decoupling, and knowledge reuse in LLM-based workflows, but adoption is constrained by ecosystem fragmentation, cross-component coordination difficulties, and unresolved distributed state management and fault diagnosis problems.",
+      "quote": "The findings show that MCP is valued for supporting cross-system collaboration, task decoupling, and knowledge reuse in LLM-based workflows, but its adoption remains constrained by ecosystem fragmentation, cross-component coordination difficulties, and unresolved problems in distributed state management and fault diagnosis.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Participants expressed strong demand for better standardization, lower adoption barriers through low-code or plugin-based approaches, and more systematic operational support.",
+      "quote": "Participants also expressed strong demand for better standardization, lower adoption barriers through low-code or plugin-based approaches, and more systematic operational support.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The results provide early empirical evidence on enterprise MCP practice and implications for improving MCP standardization, usability, and deployment readiness in real-world software engineering environments.",
+      "quote": "These results provide early empirical evidence on enterprise MCP practice and offer practical implications for improving MCP's standardization, usability, and deployment readiness in real-world software engineering environments.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.09182"
+}

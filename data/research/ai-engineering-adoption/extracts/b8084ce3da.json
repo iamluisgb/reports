@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-01",
+  "author_or_org": "Razvan Mihai Popescu, David Gros, Andrei Botocan, Rahul Pandita, Prem Devanbu, Maliheh Izadi",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "Autonomous coding agents can create branches, open pull requests, and perform code reviews, and they now actively contribute to real-world projects.",
+      "quote": "Autonomous coding agents, able to create branches, open pull requests, and perform code reviews, now actively contribute to real-world projects.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper investigates AI-driven contributions and their effects on code quality, team dynamics, and software maintainability.",
+      "quote": "Their growing role offers a unique and timely opportunity to investigate AI-driven contributions and their effects on code quality, team dynamics, and software maintainability.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The study constructs a dataset of approximately 110,000 open-source pull requests with associated commits, comments, reviews, issues, and file changes, representing millions of lines of source code.",
+      "quote": "In this work, we construct a novel dataset of approximately $110,000$ open-source pull requests, including associated commits, comments, reviews, issues, and file changes, collectively representing millions of lines of source code.",
+      "numbers": [
+        "$110,000$",
+        "millions"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The study compares five coding agents: OpenAI Codex, Claude Code, GitHub Copilot, Google Jules, and Devin.",
+      "quote": "We compare five popular coding agents, including OpenAI Codex, Claude Code, GitHub Copilot, Google Jules, and Devin, examining how their usage differs in various development aspects such as merge frequency, edited file types, and developer interaction signals, including comments and reviews.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The comparison examines differences in merge frequency, edited file types, and developer interaction signals such as comments and reviews.",
+      "quote": "We compare five popular coding agents, including OpenAI Codex, Claude Code, GitHub Copilot, Google Jules, and Devin, examining how their usage differs in various development aspects such as merge frequency, edited file types, and developer interaction signals, including comments and reviews.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The paper argues that code authoring and review are only a small part of software engineering because resulting code must be maintained and updated over time.",
+      "quote": "Furthermore, we emphasize that code authoring and review are only a small part of the larger software engineering process, as the resulting code must also be maintained and updated over time.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The study provides longitudinal estimates of survival and churn rates for agent-generated versus human-authored code.",
+      "quote": "Hence, we offer several longitudinal estimates of survival and churn rates for agent-generated versus human-authored code.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The findings indicate increasing agent activity in open-source projects, but agent contributions are associated with more churn over time compared with human-authored code.",
+      "quote": "Ultimately, our findings indicate an increasing agent activity in open-source projects, although their contributions are associated with more churn over time compared to human-authored code.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.00917"
+}

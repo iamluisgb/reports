@@ -1,0 +1,44 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-08-20",
+  "author_or_org": "Markus Borg, Dave Hewett, Donald Graham, Noric Couderc, Emma Söderberg, Luke Church, Dave Farley",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source says prior work has highlighted productivity improvements from AI assistants like GitHub Copilot, but this registered report does not itself report controlled-study productivity results.",
+      "quote": "[Background/Context] AI assistants like GitHub Copilot are transforming software engineering; several studies have highlighted productivity improvements.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The source states that the impact of AI assistants on code quality, particularly maintainability, requires further investigation.",
+      "quote": "However, their impact on code quality, particularly in terms of maintainability, requires further investigation.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The proposed study aims to examine how AI assistants affect software maintainability and developers' ability to evolve code.",
+      "quote": "[Objective/Aim] This study aims to examine the influence of AI assistants on software maintainability, specifically assessing how these tools affect the ability of developers to evolve code.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The planned two-phased controlled experiment involves professional developers; Phase 1 adds a Java feature with or without an AI assistant, and Phase 2 is a randomized controlled trial in which different developers evolve random Phase 1 projects without AI assistants.",
+      "quote": "[Method] We will conduct a two-phased controlled experiment involving professional developers. In Phase 1, developers will add a new feature to a Java project, with or without the aid of an AI assistant. Phase 2, a randomized controlled trial, will involve a different set of developers evolving random Phase 1 projects - working without AI assistants.",
+      "numbers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The study plans to use Bayesian analysis to evaluate differences in completion time, perceived productivity, code quality, and test coverage.",
+      "quote": "We will employ Bayesian analysis to evaluate differences in completion time, perceived productivity, code quality, and test coverage.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2408.10758"
+}

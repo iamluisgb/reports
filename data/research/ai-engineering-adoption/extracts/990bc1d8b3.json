@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-03-19",
+  "author_or_org": "Jakub Res, Ivan Homoliak, Martin Perešíni, Aleš Smrčka, Kamil Malinka, Petr Hanacek",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The paper identifies questionable security of AI-generated code as one reason developers and companies avoid harnessing the full potential of coding assistants.",
+      "quote": "AI assistants for coding are on the rise. However one of the reasons developers and companies avoid harnessing their full potential is the questionable security of the generated code.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper reviews the current state of the art and identifies areas for improvement regarding this issue.",
+      "quote": "This paper first reviews the current state-of-the-art and identifies areas for improvement on this issue.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "It proposes and evaluates three prompt-altering methods: scenario-specific, iterative, and general clause, and discusses their combination.",
+      "quote": "In sum, we propose and evaluate three prompt altering methods: (1) scenario-specific, (2) iterative, and (3) general clause, while we discuss their combination.",
+      "numbers": [
+        "three",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Two of the proposed methods, iterative and general clause, require no expert knowledge from the user, unlike a code-security audit.",
+      "quote": "Contrary to the audit of code security, the latter two of the proposed methods require no expert knowledge from the user.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Evaluated on GitHub Copilot using the OpenVPN project in realistic scenarios, the methods reduced insecure generated code samples by up to 16% and increased secure code by up to 8%.",
+      "quote": "We assess the effectiveness of the proposed methods on the GitHub Copilot using the OpenVPN project in realistic scenarios, and we demonstrate that the proposed methods reduce the number of insecure generated code samples by up to 16\\% and increase the number of secure code by up to 8\\%.",
+      "numbers": [
+        "16\\%",
+        "8\\%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The approach does not require access to AI model internals and can be applied to any AI-based code synthesizer, not only GitHub Copilot.",
+      "quote": "Since our approach does not require access to the internals of the AI models, it can be in general applied to any AI-based code synthesizer, not only GitHub Copilot.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper proposes a systematic prompt-altering approach for better security in AI code generators while minimizing application complexity from the user's point of view, computational resources, and operational costs.",
+      "quote": "Then, we propose a systematic approach based on prompt-altering methods to achieve better code security of (even proprietary black-box) AI-based code generators such as GitHub Copilot, while minimizing the complexity of the application from the user point-of-view, the computational resources, and operational costs.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2403.12671"
+}

@@ -1,0 +1,67 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-01",
+  "author_or_org": "James C. Davis, Paschal C. Amusuo, Tanmay Singla, Berk Çakar, Kirsten A. Davis",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Generative AI shifts software engineering from scarce implementation effort toward abundant, low-cost code production.",
+      "quote": "Generative AI is shifting software engineering from a practice organized around scarce implementation effort toward one organized around abundant, low-cost code production.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source's evidence is a first-person case study, not a controlled productivity experiment.",
+      "quote": "We study this problem through a first-person case study: a 12-week development effort in which a single expert software engineer used frontier AI coding agents to build a document accessibility remediation system.",
+      "numbers": [
+        "12-week"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "A single expert software engineer used frontier AI coding agents over a 12-week effort to build a document accessibility remediation system.",
+      "quote": "We study this problem through a first-person case study: a 12-week development effort in which a single expert software engineer used frontier AI coding agents to build a document accessibility remediation system.",
+      "numbers": [
+        "12-week"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The empirical record comprises 88 contemporaneous field notes, 420 KLOC of production code, and 1.16 MLOC of tests, lints, documentation, and agent tooling.",
+      "quote": "The empirical record comprises 88 contemporaneous field notes, 420 KLOC of production code, and 1.16 MLOC of tests, lints, supporting documentation, and agent tooling.",
+      "numbers": [
+        "88",
+        "420 KLOC",
+        "1.16 MLOC"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper develops a candidate middle-range theory of governance conversion, expressed as a process model explaining how high-velocity agentic implementation becomes governable.",
+      "quote": "From this record, we develop a candidate middle-range theory of governance conversion, expressed as a process model explaining how high-velocity agentic implementation becomes governable.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The model explains that agentic implementation velocity surfaces recurring structural failure classes, and engineering judgment sustains velocity by converting those failures into durable governance mechanisms.",
+      "quote": "The model explains how agentic implementation velocity surfaces recurring structural failure classes, and how engineering judgment sustains velocity by converting those failures into durable governance mechanisms.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Existing governance models derive controls from known obligations, while governance conversion explains controls discovered from failures visible only during agentic work.",
+      "quote": "In contrast to existing governance models that derive controls from known obligations, governance conversion explains how controls are discovered from failures that become visible only during agentic work.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The central engineering problem is organizing architectures, tools, evidence, and feedback loops so AI-mediated development remains inspectable, correctable, and maintainable.",
+      "quote": "This shift changes the central engineering problem: not whether AI can generate useful code, but how engineers organize architectures, tools, evidence, and feedback loops so that AI-mediated development remains inspectable, correctable, and maintainable.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.01087"
+}

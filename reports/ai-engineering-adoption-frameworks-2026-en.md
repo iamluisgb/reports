@@ -1,277 +1,145 @@
 ---
-title: "How Elite Engineering Teams Are Adopting AI (2026)"
+title: "AI Adoption in Engineering Teams: What the Evidence Says"
 date: 2026-05-20
 type: special
 url: https://luisgonzalezbernal.com/reports/reports/ai-engineering-adoption-frameworks-2026-en.html
-summary: "AI Adoption Frameworks in High-Performance Engineering Teams"
-tags: [coding, business, security]
-reading_time_minutes: 11
+summary: "Controlled studies of productivity · How to measure it · Code quality and security · How teams and roles change · Governance and adoption"
+tags: [research, coding, business]
+reading_time_minutes: 10
 ---
 AI Engineering · Special Report
 
-# How Elite Engineering Teams Are *Adopting AI* (2026)
+# *AI Adoption* in Engineering Teams: What the Evidence Says
 
-20 May 2026
+20 May 2026 · Updated 7 Oct 2026
 
-AI Adoption Frameworks in High-Performance Engineering Teams
+Controlled studies of productivity · How to measure it · Code quality and security · How teams and roles change · Governance and adoption
 
-## Executive Summary
+## Key findings
 
-How elite engineering teams adopt AI in 2026: organizational reconfiguration, measurement frameworks that actually matter, governance from an SRE perspective, and a staged implementation blueprint. This report synthesizes adoption patterns from teams that succeeded — and analyzes why most implementations fail.
+1. **Experienced developers were slower with AI, and did not notice.** In a randomized trial, AI tools increased task time by 19%.[1] Afterwards, the same developers estimated that AI had saved them 20%.[1]
+2. **Speed gains move effort instead of removing it.** In a survey of 415 practitioners, faster work was offset by more code review and the load of checking AI output.[8]
+3. **Maintainability showed no clear harm in a controlled test.** In a two-phase experiment with 151 participants, code built with AI was no harder for others to evolve.[4]
+4. **Agent code churns more.** Across about 110,000 open-source pull requests, agent contributions showed more churn over time than human code.[9]
+5. **Generated code still carries security flaws.** Security weaknesses appeared in 29.5% of Python and 24.2% of JavaScript snippets from AI tools in real projects.[15]
+6. **The delivery metrics went the wrong way.** The 2024 DORA report, with more than 39,000 respondents, links AI adoption to lower software delivery performance.[37]
 
-## Part I — Structure & Metrics
+## Part I
 
-## 1. Organizational Structure: Team Reconfiguration
+## What controlled studies find
 
-### The End of the Traditional "Developer"
+The most careful study gives the most uncomfortable result. Sixteen experienced open-source developers completed 246 tasks in projects they knew well.[1] Each task was randomly assigned to allow or forbid AI tools.[1] With AI, tasks took 19% longer.[1] The authors checked 20 possible causes and conclude that the slowdown is unlikely to come mainly from the experiment design.[1]
 
-Organizations leading AI adoption aren't simply "adding Copilot" — they're redefining what it means to be a software engineer. The evidence converges on three structural patterns:
+*[Forecast and perceived time savings against the measured 19 percent slowdown]*
 
-**a) The Rise of the AI-Augmented Developer**
+*Experts and developers expected AI to save time; the randomized trial measured a 19% slowdown. Source 1.*
 
-The role is no longer defined by the ability to write code, but by the ability to *orchestrate* code systems. The developer transforms into an *orchestra conductor* who:
+Other studies are more positive but less strict. In one experiment, AI cut median completion time by 30.7%.[4] That figure came from the observational phase, and the randomized phase found any gains "at most small and highly uncertain".[4] A GitHub-authored study of 934,533 Copilot users found that developers accept nearly 30% of suggestions.[20] Acceptance is higher among less experienced developers.[20]
 
-- Defines behavioral specifications (not implementations)
-- Supervises the quality of AI-generated output
-- Reviews code they didn't write
-- Manages AI-generated technical debt
+How developers use the tool also matters. In a field study, moderate use of either code suggestions or chat improved task time and reduced workload.[33] Excessive or combined use reduced those benefits.[33]
 
-Richard Marmorstein describes this as the "Centaur Era" — the developer who uses AI as a tool, not as a replacement. But it goes further: the developer becomes a *producer of structured prompts, evaluator of results, and guardian of architecture*.
+## Part II
 
-**b) Emerging New Roles**
+## How to measure the impact
 
-| Role | Function | Adoption Status |
-| --- | --- | --- |
-| **AI Platform Engineer** | Designs AI infrastructure (gateways, evaluations, governance) | Early adopters (Cloudflare, Stripe, GitHub) |
-| **Evaluation Engineer** | Creates and maintains quality benchmarks for AI output | Nascent — not yet a standard role |
-| **AI Safety Engineer** | Red-teaming, prompt governance, generation risk mitigation | Growing in companies with strict compliance |
-| **Prompt/Spec Architect** | Writes formal specifications that agents use as ground truth | Niche — more relevant for teams with autonomous agents |
-| **Technical Debt Auditor (AI-focused)** | Measures and mitigates AI-induced technical debt | Practically non-existent as a formal role |
+Two frameworks dominate. DORA tracks four delivery metrics: deployment frequency, lead time for changes, change failure rate and time to restore service.[35] SPACE adds five dimensions: satisfaction, performance, activity, collaboration and efficiency.[35] DORA measures deployment efficiency, not developer experience, and fits within a slice of SPACE.[34]
 
-**c) The Cloudflare Model as Reference**
+| Practice | What the sources say |
+| --- | --- |
+| Start from pain points | The first step is to ask developers which problems they want solved[34] |
+| Use surveys and system data | Neither is enough alone; surveys show what system data cannot[35,36] |
+| Avoid dashboards of everything | Measuring every SPACE dimension means focusing on nothing[34] |
+| Do not rank individuals by PRs | PR throughput is a system-health signal, not a measure of a person[34] |
+| Do not compare teams with DORA | The DORA team warned against team-by-team evaluation[37] |
 
-Cloudflare documented its internal AI stack: 20M requests routed through AI Gateway, 241B tokens processed, serving 3,683 internal users. Its key organizational structure:
+Pull request outcomes mislead for agents too. Of rejected agent PRs, only 35.7% reflected clear agent failures.[21] The rest came from workflow constraints or had no visible reason.[21] The 2024 DORA report lists benefits of AI, such as flow and job satisfaction.[37] It also reports lower delivery performance and less time on valuable work.[37]
 
-- **Centralized AI Platform Team** that defines tools, evaluations, and policies
-- **Embedded AI Champions** in each product team acting as bridges
-- **Not** a separate "AI engineers" team — AI is integrated into existing roles
+## Part III
 
-This "centralized platform + embedded champions" model is gaining traction because it avoids fragmentation.
+## Code quality and security
 
-## 2. Measurement Frameworks: Metrics That Actually Matter
+The quality picture is mixed. A controlled test found no systematic maintainability advantage or harm for code built with AI.[4] AI-generated code tends to be simpler and more repetitive, with more unused constructs and hardcoded debugging.[32] In the wild, agent pull requests show more churn over time than human code.[9] In 1,210 merged agent bug fixes, code smells dominated the new issues.[10] Merge success did not reliably reflect quality after the merge.[10]
 
-### The Fundamental Problem: We Don't Know What to Measure
+- **29.5%** of AI-generated Python snippets in real projects had security weaknesses
 
-Lun Wang (May 2026) identifies the most critical problem: **our evaluations are structurally reactive**. We measure what models can do *now*, not what they'll do when they cross into a new capability regime. His central argument:
+733 snippets, 43 CWE categories[15]
 
->
+- **27.25%** of Copilot suggestions were vulnerable in a replication, down from 36.54%
 
-"Eval — not training, not architecture, not data — is the bottleneck for the next capability jump."
+Python, newer Copilot and CodeQL[22]
 
-### Metrics That Matter (Beyond Vanity)
+- **55.5%** of the security issues fixed when Copilot Chat saw static-analysis warnings
 
-**A. GitHub Copilot Coding Metrics (Official API)**
+Same study[15]
 
-GitHub has launched productivity metrics for Copilot Enterprise that measure:
+Security is improving but not solved. Newer Copilot versions still suggested insecure code.[22] In a small user study, Copilot accompanied more secure solutions on harder problems and made no difference on easier ones.[16] Feeding static-analysis warnings back to the model is a cheap fix that works.[15]
 
-- **Acceptance Rate**: % of suggestions accepted by the developer
-- **Time to Accept**: how long it takes to accept a suggestion (proxy for perceived utility)
-- **Conversation Depth**: how many iteration turns a developer needs to solve a problem with AI help
+## Part IV
 
-**Critical limitation**: These metrics measure *adoption*, not *real impact*. A high acceptance rate doesn't mean the code is better.
+## How teams and roles change
 
-**B. AI Output Quality Metrics**
+The work moves from writing code to reviewing and governing it. Developers now spend more time reviewing code than writing it.[18] One analysis describes the shift as supervising, validating and governing systems of humans, agents, tools and evidence gates.[23]
 
-| Metric | What It Measures | Tool/Framework |
-| --- | --- | --- |
-| **Change Failure Rate (AI)** | % of AI-generated changes that cause incidents | DORA + AI origin tagging |
-| **AI Code Review Pass Rate** | % of PRs with AI code that pass review without major rewrites | Custom — requires PR tagging |
-| **Technical Debt Velocity** | Rate of technical debt accumulation in AI-generated code | SonarQube + AI vs. human comparative analysis |
-| **Test Coverage Delta** | Test coverage difference between AI and human code | Coverage tools + tagging |
-| **Security Vulnerability Density** | Vulnerabilities per KLOC in AI-generated vs. human code | SAST/DAST + tagging |
+Review cannot be handed to agents alone. Pull requests reviewed only by code review agents merged 45.20% of the time, against 68.37% for human review.[3] Most of that automated feedback was low-signal.[3] The authors advise that review agents should support human reviewers, not replace them.[3]
 
-**C. Real Productivity Metrics**
+For juniors, the deployment choice decides. One model of organizations finds that automation leads firms to hire fewer, more skilled workers.[7] Augmentation lets firms relax entry-level requirements.[7] The authors attribute the decline in junior employment to that choice, not to generative AI itself.[7]
 
-Traditional DORA metrics *do* apply, but with the "AI" tag:
+Several agents on one codebase need coordination. With a shared, append-only coordination log, the share of work that redid a teammate's task fell from 78% to 0%.[24] Useful throughput more than tripled.[24]
 
-- **Deployment Frequency (AI-assisted)**: Are deployments with AI-assisted code more frequent?
-- **Lead Time for Changes (AI-assisted)**: Is the time from commit to production shorter with AI?
-- **Mean Time to Recovery (AI-affected)**: Are incidents in AI-generated code resolved faster?
+## Part V
 
-**D. The Intelligence Impact Quotient (IIQ) Framework**
+## Governance and adoption
 
-The paper "Intelligence Impact Quotient (IIQ): A Framework for Measuring Organizational AI Impact" proposes a holistic organizational approach that measures:
+Adoption is cultural as much as technical. Organizational support and peer learning play key roles in getting value from AI.[14] A culture of sharing AI practices and tips is a key motive for adoption.[2] Benefits vary with task complexity, personal usage patterns and team adoption.[14]
 
-- **Capability Expansion**: new capabilities enabled by AI
-- **Process Acceleration**: reduction in cycle times
-- **Quality Delta**: quality improvement vs. pre-AI baseline
-- **Risk Adjustment**: risk costs introduced by AI
+Governance often comes from failures. A 12-week case study of agentic development describes "governance conversion".[6] Fast agentic work exposes recurring failures, and engineers turn them into lasting controls.[6] Speed-focused adoption can build hidden technical debt and accountability gaps; bounded autonomy can preserve quality, security and trust.[23]
 
-## Part II — Governance & Adoption
+Compliance is part of tool selection. Rules such as the EU AI Act and NIST AI RMF are hard to turn into technical criteria.[25] Knock-out criteria can stop teams from choosing a capable model with unacceptable compliance risk.[25] For MCP, practitioners value cross-system work, but fragmentation and hard fault diagnosis slow adoption.[26]
 
-## 3. Governance and Risk (SRE Perspective)
+## What I would do
 
-### The AI-SDLC Governance Triangle
+1. **Measure before you believe.** Perceived speed is not measured speed. Run a small trial on real tasks before you scale.
+2. **Budget for review.** The time AI saves in writing moves into review and verification. Plan capacity for it.
+3. **Use SPACE as a lens, not a dashboard.** Pick a few metrics tied to the pain points developers name, and combine surveys with system data.
+4. **Keep humans in code review.** Use review agents to assist, and gate merges on tests and static analysis, not on agent approval.
+5. **Feed security warnings back to the model.** Run static analysis on every AI change and return the warnings for a fix.
+6. **Choose augmentation for juniors.** Give them AI as a tool that extends what they can do, not a reason not to hire them.
 
-**A. Generated Code Security**
+*— Luis González*
 
-The GitHub breach (May 2026) is a critical reminder: when AI generates code, the trust surface expands exponentially. Current standards include:
+## Method and limits
 
-- **SAST/DAST for AI code**: Static and dynamic analysis tools must run on *all* AI-generated code, with stricter thresholds than human code
-- **Secret scanning in prompts**: AI prompts can contain sensitive information (API names, endpoints, infrastructure patterns) that leak to the model
-- **Supply chain security**: AI-generated code may include dependencies with known vulnerabilities or backdoors
-
-**B. Compliance and Privacy**
-
-- **GDPR/CCPA**: AI-generated code may contain patterns that violate privacy regulations (e.g., hardcoding PII fields in schemas)
-- **Copyright**: AI-generated code may infringe copyright from source code used in training (GitHub Copilot case already has legal precedents)
-- **Data classification**: Companies must classify which repositories/code can be used as context for AI
-
-**C. AI-Induced Technical Debt**
-
-This is the least discussed but most dangerous risk:
-
-1. **Abstraction leak**: AI generates code that works but uses suboptimal patterns that are difficult to refactor later
-2. **Test fragility**: AI generates tests that pass but don't cover real edge cases
-3. **Architecture drift**: Without human supervision, AI agents tend to solve problems locally, creating cumulative architectural inconsistencies
-4. **Documentation rot**: AI doesn't document design decisions, creating a knowledge gap
-
-**SRE Mitigation:**
-
-- **AI code review gates**: Every PR with AI code must pass through a human reviewer who verifies architectural patterns
-- **Automated debt detection**: Tools that compare cyclomatic complexity and code patterns between AI and human code
-- **AI usage tagging**: Mark all AI-generated code in the VCS for specific debt tracking
-
-## 3.5. AI Coding Tools Landscape — Comparative Analysis
-
-The adoption frameworks above describe *how* teams integrate AI. The table below compares *what* they integrate. The landscape fragmented hard in 2025-2026; these are the tools that matter for engineering teams today:
-
-| Tool | Type | IDE Integration | Agent Mode | Context Awareness | Best For | Key Risk |
-| --- | --- | --- | --- | --- | --- | --- |
-| **GitHub Copilot** | Completion + Chat | VS Code, JetBrains, Vim | Copilot Workspace (limited) | Repo-level (with Enterprise) | Enterprise teams on GitHub | Vendor lock-in; metrics measure adoption not impact |
-| **Cursor** | AI-native IDE | Fork of VS Code | Yes — Composer agent | Multi-file, repo-wide | Individual devs wanting tight AI loop | IDE lock-in; less mature enterprise governance |
-| **Claude Code** | CLI agent | Terminal-native | Yes — full autonomous | Repo + filesystem | Backend/SRE workflows, CI pipelines | Unbounded file access; needs explicit permission boundaries |
-| **OpenAI Codex CLI** | CLI agent | Terminal-native | Yes — task-level | Repo + filesystem | Quick PRs, multi-file refactors | OpenAI dependency; cost scales with context size |
-| **Aider** | CLI + editor | Terminal + git integration | Yes — pair programming | Repo + git history | Open-source teams wanting local control | Smaller model context; less polished UX |
-| **Windsurf (Codeium)** | AI-native IDE | Fork of VS Code | Yes — Cascade agent | Multi-file + terminal | Teams wanting enterprise-grade AI IDE | Newer platform; enterprise features still maturing |
-
-> **Anti-pattern alert:** Teams that adopt 3+ of these tools simultaneously without a "paved road" policy end up with context fragmentation, duplicated costs, and zero ability to measure which tool actually improves outcomes. Pick one primary tool per workflow (IDE completion, CLI agent, CI integration) and standardize. Let teams experiment with alternatives, but make the paved path dramatically easier.
-
-## 4. Adoption Models
-
-### Approach Comparison
-
-| Model | Description | Pros | Cons | Evidence |
-| --- | --- | --- | --- | --- |
-| **Top-down** | Leadership defines AI tools, policies, and KPIs | Consistency, clear governance, avoids tool sprawl | Cultural resistance, may be disconnected from team reality | Cloudflare, Stripe |
-| **Bottom-up** | Teams experiment and adopt AI on their own | Rapid innovation, high natural adoption | Tool sprawl, fragmentation, uncontrolled security risks | Startups, early adopter teams |
-| **Paved Road / Golden Path** | Central platform offers pre-configured AI tools as the "easy" path | Balances consistency with flexibility, requires more initial effort | Needs strong platform team | GitHub (Copilot Enterprise), GitLab |
-| **Marketplace / Curated** | Company maintains a catalog of approved AI tools | Flexibility within safe boundaries | Decision fatigue, catalog maintenance | Medium-sized companies |
-
-### The Verdict: Paved Road Wins
-
-Evidence from Cloudflare, Stripe, and GitHub points to the **Paved Road** model as the most effective:
-
-- The central platform defines tools, evaluations, and policies
-- Teams can use alternative tools, but the "paved" path is significantly easier
-- Embedded AI Champions in each team act as facilitators, not gatekeepers
-
-The pure top-down model fails due to cultural resistance. The pure bottom-up model fails due to tool sprawl. The paved road balances both.
-
-## Part III — Analysis & Blueprint
-
-## 5. Critical Analysis: Why Implementations Fail
-
-### The 5 Most Common Failures
-
-**1. Measuring the Wrong Thing (the Lun Wang Problem)**
-
-Companies measure Copilot acceptance rate as if it were a productivity KPI. But a 40% acceptance rate can mean:
-
-- 40% useful and 60% noise (good)
-- 40% mediocre code that the developer accepts out of laziness (bad)
-- 40% code that needs complete rewriting (worst)
-
-**Without evals that detect their own obsolescence, metrics become vanity metrics.**
-
-**2. Lack of Technical "AI Literacy" Training**
-
-It's not about teaching developers to use Copilot. It's about teaching them to:
-
-- Write specifications that agents understand correctly
-- Evaluate the quality of AI output (not just that it compiles)
-- Identify when AI is generating code with problematic patterns
-- Understand AI's confidence limits
-
-**3. Excessive Dependence and Skill Degradation**
-
-The "calculator effect" — when developers stop understanding fundamentals because AI solves them. This is particularly dangerous in debugging and architecture, where the complete system context is critical.
-
-**4. Lack of Architectural Supervision**
-
-AI agents tend to solve problems locally. Without a human architect supervising, inconsistencies accumulate that degrade the global architecture. This is "AI-induced technical debt" in action.
-
-**5. Uncontrolled Tool Sprawl**
-
-Each team tests different AI tools (Copilot, Cursor, Claude Code, Codex, etc.) without standardization. The result: context fragmentation, cost duplication, and inability to measure real impact.
-
-## 6. Comparative Table of Recommended Frameworks
-
-| Framework | Approach | Measurement | Governance | Maturity | Implementation Cost |
-| --- | --- | --- | --- | --- | --- |
-| **DORA + AI Tagging** | Value flow metrics | Lead time, deployment freq, change failure rate | Low | High (industry standard) | Low |
-| **GitHub Copilot Coding Metrics** | Individual productivity | Acceptance rate, time to accept | Medium (vendor lock-in) | Medium | Medium (licenses) |
-| **IIQ (Intelligence Impact Quotient)** | Organizational impact | Capability expansion, quality delta, risk adjustment | High | Low (nascent) | High |
-| **Cloudflare AI Platform Model** | Centralized platform | Token usage, request routing, internal NPS | High (central platform) | Medium (emerging best practice) | High (platform team) |
-| **Paved Road / Golden Path** | Guided adoption | Adoption rate, tool sprawl index, security incidents | Medium-High | Medium | Medium-High |
-
-## 7. Staged Implementation Blueprint
-
-### Phase 1: Foundations (Months 1-3)
-
-**Objective:** Establish baseline and basic governance
-
-- ☐ *Current AI inventory**: What AI tools are teams using? How much does it cost?
-- ☐ *AI usage tagging**: Mark AI-generated code in the VCS (metadata in commits/PRs)
-- ☐ *DORA baseline**: Measure current DORA metrics before any changes
-- ☐ *Basic security policy**: Which repositories/code CANNOT be AI context
-- ☐ *Designate AI Champions**: 1-2 people per team as AI facilitators
-
-### Phase 2: Evaluation (Months 4-6)
-
-**Objective:** Measure real impact, not vanity metrics
-
-- ☐ *Implement AI Code Review Gates**: Every PR with AI code requires human reviewer with architectural pattern checklist
-- ☐ *AI quality metrics**: Change Failure Rate (AI), AI Code Review Pass Rate, Security Vulnerability Density
-- ☐ *SonarQube + AI analysis**: Compare cyclomatic complexity and code patterns between AI and human code
-- ☐ *Feedback loop**: Monthly survey to developers on perceived AI utility
-
-### Phase 3: Platform (Months 7-12)
-
-**Objective:** Create the "paved road" for consistent adoption
-
-- ☐ *AI Platform Team**: Central team that defines tools, evaluations, and policies
-- ☐ *Centralized AI Gateway**: Routing, logging, and monitoring of all AI calls (Cloudflare model: 20M requests/routing)
-- ☐ *Continuous evaluation**: Evals framework that detects when current metrics are no longer diagnostic
-- ☐ *Automated debt detection**: Tools that automatically measure AI-induced technical debt
-
-### Phase 4: Maturity (Months 13+)
-
-**Objective:** Systemic integration and continuous improvement
-
-- ☐ *IIQ tracking**: Measure organizational Intelligence Impact Quotient
-- ☐ *AI literacy program**: Technical training in specification, evaluation, and AI supervision
-- ☐ *Autonomous agent governance**: Framework for autonomous agents with action limits and human checkpoints
-- ☐ *AI-focused architecture review board**: Committee that reviews the architectural health of AI-generated code
-
-### Cross-Cutting Principles
-
-1. **Don't measure adoption, measure impact** — A 50% acceptance rate with 90% code review pass rate is better than an 80% acceptance rate with 40% pass rate
-2. **Governance must be invisible** — The paved road must be so easy that no one wants to leave it
-3. **AI doesn't replace the architect** — It amplifies their impact, but human supervision is mandatory
-4. **Measure AI technical debt separately** — You can't mitigate what you don't measure
-5. **Evals must detect their own obsolescence** — If your metrics don't surprise you, you're not measuring what matters
-
-Generated by Hermes Agent — May 20, 2026
-
-Sources: Lun Wang (May 2026) AI productivity measurement research, GitHub Security Lab breach reports (May 2026), DORA metrics framework, Google SRE practices, Richard Marmorstein "Centaur Era" analysis, industry adoption surveys 2025-2026.
+This report replaces a May 2026 version that cited no sources. It was rebuilt on 7 October 2026 with the reports research pipeline. The pipeline found 136 search results across arXiv, Hacker News, GitHub, Wikipedia and Semantic Scholar. It read 40 sources in full, and 37 gave usable evidence. An open model (NaN: deepseek-v4-flash) read each source on its own. It extracted 239 claims, each with a verbatim quote, and none had to be discarded. Claude wrote the synthesis from that evidence and checked every cited figure against its source. The conclusions in "What I would do" are mine.
+
+- **No general web search.** The run had no web-search key. Vendor reports and company case studies are under-represented; 33 of the 37 sources are research papers. The DORA report is cited through its Wikipedia summary.
+- **Fast-moving tools.** Several studies used 2023–2025 tools. Results for current agents may differ.
+- **Preprints.** Most papers are arXiv preprints, not peer-reviewed. Their figures are as reported and were not reproduced.
+
+## Sources
+
+1. Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity — Becker et al. (METR), arXiv, Jul 2025 — [arxiv.org/abs/2507.09089](https://arxiv.org/abs/2507.09089)
+2. AI Tool Use and Adoption in Software Development by Individuals and Organizations: A Grounded Theory Study — Li et al., arXiv, Jun 2024 — [arxiv.org/abs/2406.17325](https://arxiv.org/abs/2406.17325)
+3. From Industry Claims to Empirical Reality: An Empirical Study of Code Review Agents in Pull Requests — Chowdhury et al., arXiv, Apr 2026 — [arxiv.org/abs/2604.03196](https://arxiv.org/abs/2604.03196)
+4. Echoes of AI: Investigating the Downstream Effects of AI Assistants on Software Maintainability — Borg et al., arXiv, Jul 2025 — [arxiv.org/abs/2507.00788](https://arxiv.org/abs/2507.00788)
+5. Cheap Code, Costly Judgment: A Case Study on Governable Agentic Software Engineering — Davis et al., arXiv, Jul 2026 — [arxiv.org/abs/2607.01087](https://arxiv.org/abs/2607.01087)
+6. Generative AI and Organizational Structure in the Knowledge Economy — Xu et al., arXiv, May 2025 — [arxiv.org/abs/2506.00532](https://arxiv.org/abs/2506.00532)
+7. The Fast and Spurious: Developer Productivity with GenAI — Afroz et al., arXiv, Oct 2025 — [arxiv.org/abs/2510.24265](https://arxiv.org/abs/2510.24265)
+8. Investigating Autonomous Agent Contributions in the Wild: Activity Patterns and Code Change over Time — Popescu et al., arXiv, Apr 2026 — [arxiv.org/abs/2604.00917](https://arxiv.org/abs/2604.00917)
+9. Beyond Bug Fixes: Post-Merge Code Quality Issues in Agent-Generated Pull Requests — Cynthia, Muttakin, Roy, arXiv, Jan 2026 — [arxiv.org/abs/2601.20109](https://arxiv.org/abs/2601.20109)
+10. The SPACE of AI: Real-World Lessons on AI's Impact on Developers — Houck et al., arXiv, Jul 2025 — [arxiv.org/abs/2508.00178](https://arxiv.org/abs/2508.00178)
+11. Security Weaknesses of Copilot-Generated Code in GitHub Projects: An Empirical Study — Fu et al., arXiv, 2025 — [arxiv.org/abs/2310.02059](https://arxiv.org/abs/2310.02059)
+12. A User-centered Security Evaluation of Copilot — Asare, Nagappan, Asokan, arXiv, Aug 2023 — [arxiv.org/abs/2308.06587](https://arxiv.org/abs/2308.06587)
+13. Assessing Consensus of Developers' Views on Code Readability — Sergeyuk et al., arXiv, Jul 2024 — [arxiv.org/abs/2407.03790](https://arxiv.org/abs/2407.03790)
+14. Sea Change in Software Development: Economic and Productivity Analysis of the AI-Powered Developer Lifecycle — Dohmke, Iansiti, Richards, arXiv, Jun 2023 — [arxiv.org/abs/2306.15033](https://arxiv.org/abs/2306.15033)
+15. Why Are Agentic Pull Requests Merged or Rejected? An Empirical Study — Peralta et al., arXiv, May 2026 — [arxiv.org/abs/2605.22534](https://arxiv.org/abs/2605.22534)
+16. Assessing the Security of GitHub Copilot Generated Code — A Targeted Replication Study — Majdinasab et al., arXiv, Nov 2023 — [arxiv.org/abs/2311.11177](https://arxiv.org/abs/2311.11177)
+17. From Code-Centric to Intent-Centric Software Engineering — De La Cruz, arXiv, May 2026 — [arxiv.org/abs/2605.11027](https://arxiv.org/abs/2605.11027)
+18. Before the Pull Request: Mining Multi-Agent Coordination — Sarkar, arXiv, Jun 2026 — [arxiv.org/abs/2606.19616](https://arxiv.org/abs/2606.19616)
+19. Operationalizing Regulations into Code: Governance and Compliance in LLM Selection for Software Engineering — Quintino, Moura, Calegário, arXiv, Aug 2026 — [arxiv.org/abs/2608.27703](https://arxiv.org/abs/2608.27703)
+20. Understanding How Enterprises Adopt the Model Context Protocol for LLM-Driven Software Engineering — Chen et al., arXiv, Jun 2026 — [arxiv.org/abs/2606.09182](https://arxiv.org/abs/2606.09182)
+21. Evaluating Human- and AI-Generated Code Quality Based on Code Smell — Guo et al., 2026 — [semanticscholar.org](https://www.semanticscholar.org/paper/17d5906f0a5f201f8f1ae742e736d713317b84a6)
+22. Developers' Experience with Generative AI — First Insights from an Empirical Mixed-Methods Field Study — Brandebusemeyer et al., arXiv, Dec 2025 — [arxiv.org/abs/2512.19926](https://arxiv.org/abs/2512.19926)
+23. Space Framework, PRs per Engineer, AI Research — Brian Houck (Microsoft), DX podcast, Dec 2024 — [getdx.com](https://getdx.com/podcast/developer-productivity-at-microsoft/)
+24. A new way to measure developer productivity — from the creators of DORA and SPACE — Gergely Orosz, The Pragmatic Engineer, May 2023 — [newsletter.pragmaticengineer.com](https://newsletter.pragmaticengineer.com/p/developer-productivity-a-new-framework)
+25. Developer experience — Wikipedia — [en.wikipedia.org/wiki/Developer_experience](https://en.wikipedia.org/wiki/Developer_experience)
+26. DevOps Research and Assessment — Wikipedia — [en.wikipedia.org/wiki/DevOps_Research_and_Assessment](https://en.wikipedia.org/wiki/DevOps_Research_and_Assessment)

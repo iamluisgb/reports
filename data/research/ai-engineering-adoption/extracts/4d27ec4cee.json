@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "DX (getdx.com) / Brian Houck",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "SPACE is a set of principles and a viewpoint that productivity includes human factors and outcomes, not just output.",
+      "quote": "At its core, SPACE is a set of principles. It is a viewpoint of what the definition of productivity even is, and it’s sort of this notion that productivity is not just about output, it’s about a bunch of human factors and outcomes as well.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "DORA is not a system for measuring developer experience; it measures deployment efficiency and is prescriptive.",
+      "quote": "DORA is, in my mind, not a system for measuring developer experience, it’s a way of measuring deployment efficiency, and it is incredible at that. It is the gold standard. I think a lot of the success that DORA has found comes from this notion that it is very prescriptive.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "SPACE is not prescriptive and does not provide a recommended metric set or implementation recipe.",
+      "quote": "That is not what SPACE is. SPACE is not a prescriptive framework that says, “Okay, here’s the recipe you should follow to deploy it. Here are our set of recommended metrics, and here’s how you should think about them, and here are the activities you could go and drive them.” That is clearly missing.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "DORA metrics fit within SPACE, but only within a slice of the SPACE framework.",
+      "quote": "All of the DORA metrics fit within the SPACE framework, but they fit within just a slice of the SPACE framework.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "A common SPACE implementation failure is building dashboards with every dimension and dozens of metrics; measuring everything means focusing on nothing.",
+      "quote": "It’s like, “No, no, no. We did not ever intend everyone to go and try to measure every dimension all at once.” It’s focus on the things that are most relevant for your organization, but we list five dimensions, and so people will go and build a dashboard that has all dimensions, and then they will have dozens of metrics across those dimensions. If you measure everything, you’re actually focused on nothing, because you’re always going to have some things going up and something’s going down.",
+      "numbers": [
+        "five",
+        "dozens"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The first step in measuring developer productivity is to ask developers what pain points they are trying to solve.",
+      "quote": "Step one, and we talked about this in the DX and action paper that we worked on together, is step one is ask your developers. You need to go and find out, what are the actual pain points you are trying to solve for?",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "PR throughput is inappropriate for assessing individual developer productivity but useful for measuring system health and finding friction in code flow.",
+      "quote": "I think, for example, it is incredibly poor as an assessment of individual productivity. If you are using it to assess developers, I think it is probably an outright inappropriate metric. I think it is really, really powerful and really useful at measuring the health of your system. I think it is really useful at finding friction in the developer experiences related to flowing code, and it is a useful way of finding where developers are not able to efficiently complete their work.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "PR throughput is useful as a top-level metric when used as part of a basket of metrics that includes developer satisfaction.",
+      "quote": "I think as a top level metric, as long as it is part of a basket of metrics, including things like developer satisfaction, then it’s useful, then I am a proponent, I’m a proponent for it here at Microsoft.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://getdx.com/podcast/developer-productivity-at-microsoft/"
+}

@@ -1,0 +1,29 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-12-22",
+  "author_or_org": "Charlotte Brandebusemeyer, Tobias Schimmer, Bert Arnrich",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "In controlled sessions, moderate use of either in-code suggestions or chat prompts improved efficiency (task duration) and reduced perceived workload compared with not using GitHub Copilot, while excessive or combined use lessened these benefits; chat interaction improved accuracy (task completion).",
+      "quote": "Results of the controlled sessions in this study indicate that moderate use of either in-code suggestions or chat prompts improves efficiency (task duration) and reduces perceived workload compared to not using Copilot, while excessive or combined use lessens these benefits. Accuracy (task completion) profits from chat interaction.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "During the uncontrolled period of the field study, developers perceived both higher cognitive load and higher productivity when interacting with AI during everyday working tasks.",
+      "quote": "During the uncontrolled period of the study, both higher cognitive load and productivity were perceived when interacting with AI during everyday working tasks.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The study proposes a mixed-method design with controlled and uncontrolled periods inside a firm, using behavioral and subjective experience data to compare no Copilot use, in-code suggestions, chat prompts, and both interaction types on efficiency, accuracy, and perceived workload across task categories.",
+      "quote": "The aim of this paper is (1) to demonstrate a feasible mixed-method study design with controlled and uncontrolled study periods within a firm setting, (2) to give first insights from complementary behavioral and subjective experience data on developers' interaction with GitHub Copilot and (3) to compare the impact of interaction types (no Copilot use, in-code suggestions, chat prompts or both in-code suggestions and chat prompts) on efficiency, accuracy and perceived workload whilst working on different task categories.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2512.19926"
+}

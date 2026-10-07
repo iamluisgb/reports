@@ -1,0 +1,48 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2024-05-20",
+  "author_or_org": "Wikipedia",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The 2024 DORA State of DevOps Report surveyed more than 39,000 professionals across many industries globally.",
+      "quote": "The latest DORA State of DevOps Report, published in 2024, surveyed \"more than 39,000 professionals across many industries globally.\"",
+      "numbers": [
+        "2024",
+        "39,000"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The 2024 DORA report cites flow, productivity, and job satisfaction among 8 benefits of AI adoption for software developers.",
+      "quote": "\"Flow,\" \"productivity,\" and \"job satisfaction\" are cited among 8 benefits of AI adoption for software developers.",
+      "numbers": [
+        "8"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The 2024 DORA report lists reductions to software delivery performance and a reported decrease in time spent doing valuable work as detrimental effects of AI.",
+      "quote": "The detrimental effects of AI were \"reductions to software delivery performance\" and \"a reported decrease in time spent doing valuable work.\"",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "DORA defines four key metrics: change lead time, deployment frequency, change failure rate, and mean time to recovery (MTTR).",
+      "quote": "*   **Change Lead Time** - Time to implement, test, and deliver code for a feature (measured from first commit to deployment)\n*   **Deployment Frequency** - Number of deployments in a given duration of time\n*   **Change Failure Rate** - Percentage of failed changes over all changes (regardless of success)\n*   **Mean Time to Recovery** (_MTTR_) - Time it takes to restore service after production failure",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The DORA team warned in October 2023 against using its metrics to evaluate team-by-team performance.",
+      "quote": "These metrics have been used by organizations to evaluate team-by-team performance, a use-case which the DORA team issued a warning against in October 2023.",
+      "numbers": [
+        "October 2023"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://en.wikipedia.org/wiki/DevOps_Research_and_Assessment"
+}

@@ -1,0 +1,58 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-21",
+  "author_or_org": "Sien Reeve O. Peralta and 10 other authors",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The study says AI coding agents commonly have their performance assessed using only merge and rejection outcomes for pull requests.",
+      "quote": "AI coding agents increasingly submit pull requests (Agentic-PRs) to open-source repositories, yet their performance is commonly assessed using merge and rejection outcomes alone.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The analysis examined 11,048 closed agentic pull requests, refined to 9,799 human-reviewed PRs, and manually inspected 717 representative cases.",
+      "quote": "To test this, we conducted a decision-oriented analysis of 11,048 closed Agentic Pull Requests, refined to 9,799 human-reviewed PRs, and manually inspected 717 representative cases to recover decision rationale from interaction artifacts.",
+      "numbers": [
+        "11,048",
+        "9,799",
+        "717"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Rejection outcomes overstate agent error: only 35.7% of rejected PRs reflected clear agentic failures, while 31.2% were driven by workflow constraints and 33.1% lacked observable decision rationale.",
+      "quote": "We found that rejection outcomes substantially overstate agent error: only 35.7% of rejected PRs reflected clear agentic failures, while 31.2% were driven by workflow constraints and 33.1% lacked observable decision rationale.",
+      "numbers": [
+        "35.7%",
+        "31.2%",
+        "33.1%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Among merged PRs, 15.4% required explicit reviewer involvement through feedback or direct commits, and 5.5% showed no visible interaction trace.",
+      "quote": "Among merged PRs, 15.4% required explicit reviewer involvement through feedback or direct commits, and 5.5% showed no visible interaction trace.",
+      "numbers": [
+        "15.4%",
+        "5.5%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The study observed systematic differences across agents: Copilot and Devin were more often embedded in reviewer-mediated workflows, while Codex and Cursor PRs were typically merged with minimal interaction.",
+      "quote": "We further observed systematic differences across agents, with Copilot and Devin more often embedded in reviewer-mediated workflows, while Codex and Cursor PRs were typically merged with minimal interaction.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The authors reject PR outcomes alone as a measure of agent performance and call for interaction-aware evaluation grounded in review behavior.",
+      "quote": "These results reject the assumption that PR outcomes alone capture agent performance and demonstrate the need for interaction-aware evaluation grounded in review behavior.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.22534"
+}

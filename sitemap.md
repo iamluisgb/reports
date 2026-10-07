@@ -25,7 +25,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 ### Enterprise & Adoption
 
 - [What AI Startups Stole From Palantir's Playbook](https://luisgonzalezbernal.com/reports/reports/palantir-playbook-2026.md) — 2026-05-29 · 13 min
-- [How Elite Engineering Teams Are Adopting AI (2026)](https://luisgonzalezbernal.com/reports/reports/ai-engineering-adoption-frameworks-2026-en.md) — 2026-05-20 · 11 min
+- [AI Adoption in Engineering Teams: What the Evidence Says](https://luisgonzalezbernal.com/reports/reports/ai-engineering-adoption-frameworks-2026-en.md) — 2026-05-20 · 10 min
 
 ### Memory & Knowledge
 

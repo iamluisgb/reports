@@ -1,0 +1,37 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-03-01",
+  "author_or_org": "Feruzbek Azimov and Edip Senyurek",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The source is an academic paper focused on disadvantages of AI-assisted code generation in software development, indicating concern with negative impacts rather than uniform productivity gains.",
+      "quote": "Disadvantages of AI-Assisted Code Generation in Software Development",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper's TLDR states that AI coding tools are used by over 80% of software developers.",
+      "quote": "Despite being used by over 80% of software developers, AI coding tools have been quick to integrate into professional software development but slow to be studied, but the literature points to a number of reinforcing risks.",
+      "numbers": [
+        "80%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The TLDR says AI coding tools integrated quickly into professional software development, but research on them has been slow.",
+      "quote": "Despite being used by over 80% of software developers, AI coding tools have been quick to integrate into professional software development but slow to be studied, but the literature points to a number of reinforcing risks.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper's TLDR states the literature points to a number of reinforcing risks from AI coding tools.",
+      "quote": "Despite being used by over 80% of software developers, AI coding tools have been quick to integrate into professional software development but slow to be studied, but the literature points to a number of reinforcing risks.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.semanticscholar.org/paper/835d0cc1f333dcb9930c19cd6c82ab58aa718ae1"
+}

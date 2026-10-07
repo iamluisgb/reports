@@ -1,0 +1,70 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-06-25",
+  "author_or_org": "Ze Shi Li, Nowshin Nawar Arony, Ahmed Musa Awon, Daniela Damian, Bowen Xu",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper states that numerous studies have examined the positive benefits practitioners achieved from using AI assistance tools in their work.",
+      "quote": "Numerous studies have studied the positive benefits that practitioners have achieved from using these tools in their work.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The study used a mixed methods design with interviews of 26 industry practitioners and 395 survey respondents.",
+      "quote": "In this study, we conducted a mixed methods study involving interviews with 26 industry practitioners and 395 survey respondents.",
+      "numbers": [
+        "26",
+        "395"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The paper says AI assistance tools such as ChatGPT, Copilot, and Gemini have dramatically impacted the nature of software development in recent years.",
+      "quote": "AI assistance tools such as ChatGPT, Copilot, and Gemini have dramatically impacted the nature of software development in recent years.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The authors found several motives and challenges affecting individuals and organizations and developed a theory of AI Tool Adoption.",
+      "quote": "We found that there are several motives and challenges that impact individuals and organizations and developed a theory of AI Tool Adoption.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Creating a culture of sharing AI best practices and tips was identified as a key motive for practitioners adopting and using AI tools.",
+      "quote": "For example, we found creating a culture of sharing of AI best practices and tips as a key motive for practitioners' adopting and using AI tools.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The study identified 2 individual motives, 4 individual challenges, 3 organizational motives, 3 organizational challenges, and 3 interleaved relationships.",
+      "quote": "In total, we identified 2 individual motives, 4 individual challenges, 3 organizational motives, and 3 organizational challenges, and 3 interleaved relationships.",
+      "numbers": [
+        "2",
+        "4",
+        "3",
+        "3",
+        "3"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The 3 interleaved relationships work in a push-pull way: motives pull practitioners to increase AI tool use, while challenges push them away from using AI tools.",
+      "quote": "The 3 interleaved relationships act in a push-pull manner where motives pull practitioners to increase the use of AI tools and challenges push practitioners away from using AI tools.",
+      "numbers": [
+        "3"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Although knowledge about usability aspects of AI tools is growing, the authors say concrete details are still lacking on issues organizations and practitioners need to consider if they want to increase AI tool adoption or use.",
+      "quote": "While there is a growing body of knowledge regarding the usability aspects of leveraging AI tools, we still lack concrete details on the issues that organizations and practitioners need to consider should they want to explore increasing adoption or use of AI tools.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2406.17325"
+}

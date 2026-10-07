@@ -1,0 +1,50 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-27",
+  "author_or_org": "Jonysberg Quintino, Hermano Moura, Filipe Calegário",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Integrating LLMs into the software development life cycle can improve developer productivity, but it also introduces security, privacy and compliance risks during model selection.",
+      "quote": "Integrating Large Language Models (LLMs) into the Software Development Life Cycle (SDLC) can improve developer productivity, but it also introduces security, privacy, and compliance risks during model selection.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Regulations and frameworks including the EU AI Act, NIST AI RMF, GDPR, LGPD and ISO/IEC 42001 create obligations that are often difficult to translate into operational criteria for technical decision-making.",
+      "quote": "Regulations and frameworks such as the EU AI Act, the NIST AI Risk Management Framework (RMF), the General Data Protection Regulation (GDPR), the Lei Geral de Proteção de Dados (LGPD), and ISO/IEC 42001 establish obligations that are often difficult to translate into operational criteria for technical decision-making.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The proposed governance model has three layers: regulatory requirements; organizational governance capabilities instantiated by a multi-criteria decision matrix with knock-out and weighted scoring criteria; and productivity and sustainability outcomes operationalized by the PAG-LLM protocol.",
+      "quote": "The model is developed through Design Science Research (DSR) and is structured in three layers: (i) regulatory requirements, (ii) organizational governance capabilities, instantiated by a multi-criteria decision matrix with knock-out and weighted scoring criteria, and (iii) productivity and sustainability outcomes, operationalized by the LLM governance assessment protocol (PAG-LLM).",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A regulatory feedback loop connects operational results back to the normative layer to enable iterative refinement of the model.",
+      "quote": "A regulatory feedback loop connects operational results back to the normative layer, enabling iterative refinement of the model.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A pilot evaluation using 20 adversarial scenarios based on CWE and the OWASP Top 10 suggests distinct risk profiles between commercial cloud-based LLMs and local open-source LLMs.",
+      "quote": "A pilot evaluation with 20 adversarial scenarios based on Common Weakness Enumeration (CWE) and the OWASP Top 10 suggests distinct risk profiles between commercial cloud-based LLMs and local open-source LLMs.",
+      "numbers": [
+        "20",
+        "Top 10"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Preliminary evidence indicates that regulatory disqualification logic, particularly knock-out criteria, can prevent the selection of technically competitive models that pose unacceptable compliance risks, demonstrating feasibility of governance-oriented LLM selection.",
+      "quote": "The results provide preliminary evidence that regulatory disqualification logic, particularly K.O. criteria, can prevent the selection of technically competitive models that nonetheless pose unacceptable compliance risks, demonstrating the feasibility of governance-oriented LLM selection in software engineering projects.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.27703"
+}

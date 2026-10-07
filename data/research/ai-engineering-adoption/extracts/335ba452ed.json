@@ -1,0 +1,49 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-07-04",
+  "author_or_org": "Agnia Sergeyuk, Olga Lvova, Sergey Titov, Anastasiia Serova, Farid Bagirov, Timofey Bryksin",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The abstract asserts that LLMs and tools such as Copilot and JetBrains AI Assistant are boosting developers' productivity.",
+      "quote": "The rapid rise of Large Language Models (LLMs) has changed software development, with tools like Copilot, JetBrains AI Assistant, and others boosting developers' productivity.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The abstract states that developers now spend more time reviewing code than writing it.",
+      "quote": "However, developers now spend more time reviewing code than writing it, highlighting the importance of Code Readability for code comprehension.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Prior research cited in the paper found existing Code Readability models inaccurate for representing developers' notions and found low consensus among developers.",
+      "quote": "Our previous research found that existing Code Readability models were inaccurate in representing developers' notions and revealed a low consensus among developers, highlighting a need for further investigations in this field.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper reports a survey of 10 Java developers with similar coding experience to assess consensus on Code Readability assessments.",
+      "quote": "Building on this, we surveyed 10 Java developers with similar coding experience to evaluate their consensus on Code Readability assessments and related aspects.",
+      "numbers": [
+        "10"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The study found significant agreement among developers on Code Readability evaluations and identified specific code aspects strongly correlated with Code Readability.",
+      "quote": "We found significant agreement among developers on Code Readability evaluations and identified specific code aspects strongly correlated with Code Readability.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper positions its readability study as relevant to LLM contexts and to aligning models with developers' perceptions in AI-era software development.",
+      "quote": "Overall, our study sheds light on Code Readability within LLM contexts, offering insights into how these models can align with developers' perceptions of Code Readability, enhancing software development in the AI era.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2407.03790"
+}

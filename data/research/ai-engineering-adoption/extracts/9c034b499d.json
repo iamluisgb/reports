@@ -1,0 +1,41 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-11-26",
+  "author_or_org": "Sanchit Kaul, Kevin Nhu, Jason Eissayou, Ivan Eser, Victor Borup",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The paper operationalizes the SPACE framework through extensive repository mining to show limitations of deterministic, unidimensional productivity heuristics.",
+      "quote": "This empirical investigation elucidates the limitations of deterministic, unidimensional productivity heuristics by operationalizing the SPACE framework through extensive repository mining.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "It uses open-source repository data with Generalized Linear Mixed Models and RoBERTa-based sentiment classification to build a holistic, multi-faceted productivity metric.",
+      "quote": "Utilizing a dataset derived from open-source repositories, the study employs rigorous statistical methodologies including Generalized Linear Mixed Models (GLMM) and RoBERTa-based sentiment classification to synthesize a holistic, multi-faceted productivity metric.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "It reports a statistically significant positive correlation between negative affective states and commit frequency, suggesting iterative remediation driven by frustration.",
+      "quote": "Analytical results reveal a statistically significant positive correlation between negative affective states and commit frequency, implying a cycle of iterative remediation driven by frustration.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "It finds contributor interaction topology maps collaborative dynamics with better fidelity than traditional volume-based metrics.",
+      "quote": "Furthermore, the investigation has demonstrated that analyzing the topology of contributor interactions yields superior fidelity in mapping collaborative dynamics compared to traditional volume-based metrics.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "It proposes a Composite Productivity Score (CPS) to address heterogeneity of developer efficacy.",
+      "quote": "Ultimately, this research posits a Composite Productivity Score (CPS) to address the heterogeneity of developer efficacy.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2511.20955"
+}

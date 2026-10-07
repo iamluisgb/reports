@@ -1,0 +1,77 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-07-12",
+  "author_or_org": "Joel Becker, Nate Rush, Elizabeth Barnes, David Rein",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "An RCT had 16 developers with moderate AI experience complete 246 tasks in mature projects where they averaged 5 years of prior experience.",
+      "quote": "16 developers with moderate AI experience complete 246 tasks in mature projects on which they have an average of 5 years of prior experience.",
+      "numbers": [
+        "16",
+        "246",
+        "5 years"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Within the RCT, tasks were randomly assigned to allow or disallow early 2025 AI tools; when allowed, developers primarily used Cursor Pro and Claude 3.5/3.7 Sonnet.",
+      "quote": "Each task is randomly assigned to allow or disallow usage of early 2025 AI tools. When AI tools are allowed, developers primarily use Cursor Pro, a popular code editor, and Claude 3.5/3.7 Sonnet.",
+      "numbers": [
+        "2025",
+        "3.5/3.7"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Before starting tasks, developers forecast that allowing AI would reduce completion time by 24%.",
+      "quote": "Before starting tasks, developers forecast that allowing AI will reduce completion time by 24%.",
+      "numbers": [
+        "24%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "After completion, developers estimated that allowing AI reduced completion time by 20%.",
+      "quote": "After completing the study, developers estimate that allowing AI reduced completion time by 20%.",
+      "numbers": [
+        "20%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The study found that allowing AI actually increased completion time by 19%, meaning AI tooling slowed developers down.",
+      "quote": "Surprisingly, we find that allowing AI actually increases completion time by 19%--AI tooling slowed developers down.",
+      "numbers": [
+        "19%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The observed slowdown contradicts expert predictions of 39% shorter completion time from economics experts and 38% shorter from ML experts.",
+      "quote": "This slowdown also contradicts predictions from experts in economics (39% shorter) and ML (38% shorter).",
+      "numbers": [
+        "39%",
+        "38%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The authors collected and evaluated evidence for 20 properties of the setting that could have contributed to the slowdown.",
+      "quote": "To understand this result, we collect and evaluate evidence for 20 properties of our setting that a priori could contribute to the observed slowdown effect--for example, the size and quality standards of projects, or prior developer experience with AI tooling.",
+      "numbers": [
+        "20"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The authors state that while experimental artifacts cannot be entirely ruled out, the robustness of the slowdown across analyses suggests it is unlikely primarily due to experimental design.",
+      "quote": "Although the influence of experimental artifacts cannot be entirely ruled out, the robustness of the slowdown effect across our analyses suggests it is unlikely to primarily be a function of our experimental design.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2507.09089"
+}

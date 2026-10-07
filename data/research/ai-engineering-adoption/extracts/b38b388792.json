@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-02",
+  "author_or_org": "Charlotte Brandebusemeyer, Kerim Zunic, Thomas Zimmermann, Tobias Schimmer, Bert Arnrich",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper is a developer-centered empirical mixed-methods field study that combines controlled data collection sessions with natural work periods, rather than being a purely controlled laboratory study.",
+      "quote": "This paper presents a developer-centered empirical mixed-methods study to investigate how professional developers engage with Generative AI (GenAI) in their natural work environment. Controlled data collection sessions are combined with natural work periods.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Developers in the study were generally satisfied with GenAI, especially for monotonous, repetitive, and structured tasks, and reported perceived efficiency and productivity gains.",
+      "quote": "Results show that developers are generally satisfied with GenAI, particularly for monotonous, repetitive, and structured tasks, and report perceived efficiency and productivity gains.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Both in-code suggestions and chat-based prompting independently improve task efficiency and reduce perceived workload, but combining these interaction types within a single task diminishes benefits.",
+      "quote": "While both in-code suggestions and chat-based prompting independently improve task efficiency and reduce perceived workload, combining these interaction types within a single task diminishes benefits.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The authors propose a rule-of-thumb for selecting a Copilot interaction type based on task characteristics.",
+      "quote": "We propose a rule-of-thumb for selecting an interaction type based on task characteristics.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "During development-heavy tasks, perceived cognitive load arises from AI interaction, while perceived productivity depends on AI output quality.",
+      "quote": "During development-heavy tasks, results indicate that perceived cognitive load arises from AI interaction, while perceived productivity depends on AI output quality.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Prior research has largely focused on output quality and productivity gains, with limited attention to developers' well-being and interaction experiences.",
+      "quote": "Prior research has largely focused on output quality and productivity gains, with limited attention paid to developers' well-being and interaction experiences.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Participation in the study positively influenced developers' awareness and intentional use of GenAI tools.",
+      "quote": "Participation in this study positively influenced developers' awareness and intentional use of GenAI tools.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.02337"
+}

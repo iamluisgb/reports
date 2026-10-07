@@ -1,0 +1,58 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-29",
+  "author_or_org": "Luiz Parente, James C. Davis",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "DORA framework is the most widely adopted measurement system for performance measurement across engineering teams.",
+      "quote": "The DevOps Research and Assessment (DORA) framework is the most widely adopted measurement system for performance measurement across engineering teams.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Every DORA metric is a first-moment statistic or a simple ratio, which limits insights into engineering process.",
+      "quote": "However, every DORA metric is a first-moment statistic or a simple ratio, which limits the potential insights into engineering process.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Deployment Frequency does not capture the distributional shape of deployment timing, so teams with identical measures can deploy on a metronomic cadence or in undesirably erratic bursts.",
+      "quote": "For example, metrics like Deployment Frequency do not capture the distributional shape of deployment timing, so teams with identical measures can deploy on a metronomic cadence or in undesirably erratic bursts.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Delivery Consistency (DC) is a bounded second-moment measure of cadence regularity derived from the coefficient of variation of inter-release intervals.",
+      "quote": "We have been developing and piloting Delivery Consistency (DC), a bounded second-moment measure of cadence regularity derived from the coefficient of variation of inter-release intervals.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "DC was integrated into the Delivery Health Matrix, an eight-archetype diagnostic that maps joint readings to differentiated interventions.",
+      "quote": "In conjunction with other DORA concepts, we integrated DC into the Delivery Health Matrix, an eight-archetype diagnostic that maps joint readings to differentiated interventions.",
+      "numbers": [
+        "eight"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "An experience evaluation was conducted on a four-platform software delivery group using 120 weeks of data from Jira, GitHub, and Firebase records.",
+      "quote": "We report an experience evaluation on a four-platform software delivery group using 120 weeks of data extracted from our Jira, GitHub, and Firebase records.",
+      "numbers": [
+        "four",
+        "120"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "DC distinguished platforms with identical DORA tier placements but different cadence regularity, and the Matrix summarized readings into an archetype pointing at a shared organization or procedural constraint.",
+      "quote": "DC allowed us to distinguish platforms with identical DORA tier placements but different cadence regularity, and the Matrix summarized the readings into an archetype that pointed at a shared organization or procedural constraint.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.00364"
+}

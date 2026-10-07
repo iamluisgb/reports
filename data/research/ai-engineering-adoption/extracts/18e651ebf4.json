@@ -1,0 +1,52 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-01-19",
+  "author_or_org": "Agnia Sergeyuk, Sergey Titov, Maliheh Izadi",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper states that IDEs have integrated AI to enhance programming efficiency and decision-making.",
+      "quote": "Integrated Development Environments (IDEs) have become central to modern software development, especially with the integration of Artificial Intelligence (AI) to enhance programming efficiency and decision-making.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper states that studying in-IDE Human-AI experience is critical for understanding how AI tools affect programmer productivity and code quality.",
+      "quote": "The study of in-IDE Human-AI Experience is critical in understanding how these AI tools are transforming the software development process, impacting programmer productivity, and influencing code quality.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper is a literature review that studies the current state of in-IDE Human-AI Experience research and bridges a gap in understanding interactions between programmers and AI assistants within IDEs.",
+      "quote": "We conducted a literature review to study the current state of in-IDE Human-AI Experience research, bridging a gap in understanding the nuanced interactions between programmers and AI assistants within IDEs.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The review analyzes 36 selected papers and identifies three primary research branches: Design, Impact, and Quality of Interaction.",
+      "quote": "By analyzing 36 selected papers, our study illustrates three primary research branches: Design, Impact, and Quality of Interaction.",
+      "numbers": [
+        "36",
+        "three"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper states that the trends, challenges, and opportunities it identifies emphasize the evolving software development landscape and inform future research and development directions.",
+      "quote": "The trends, challenges, and opportunities identified in this paper emphasize the evolving landscape of software development and inform future directions for research and development in this dynamic field.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper invites the community to investigate three aspects of these interactions: designing task-specific user interfaces, building trust, and improving readability.",
+      "quote": "Specifically, we invite the community to investigate three aspects of these interactions: designing task-specific user interface, building trust, and improving readability.",
+      "numbers": [
+        "three"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2401.10739"
+}

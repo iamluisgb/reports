@@ -1,0 +1,67 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2023-05-17",
+  "author_or_org": "Gergely Orosz (The Pragmatic Engineer)",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "DORA defines four key metrics for software development team performance: deployment frequency, lead time for changes, change failure rate, and time to restore service.",
+      "quote": "**[DORA](https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance)** is a framework that has defined the four key metrics which indicate the performance of a software development team:\n*   Deployment Frequency – How often an organization successfully releases to production\n*   Lead Time for Changes – The amount of time it takes a commit to get into production\n*   Change Failure Rate – The percentage of deployments causing a failure in production\n*   Time to Restore Service – How long it takes an organization to recover from a failure in production",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "SPACE defines five dimensions for a more accurate picture of developer productivity: satisfaction and wellbeing, performance, activity, communication and collaboration, and efficiency and flow.",
+      "quote": "**[SPACE](https://queue.acm.org/detail.cfm?id=3454124)** defines five dimensions to measure, for a more accurate picture of developer productivity:\n*   **S**atisfaction and wellbeing: how fulfilled developers feel with their work, team, tools, or culture; wellbeing is how healthy and happy they are, and how their work impacts it\n*   **P**erformance: the outcome of a system or process\n*   **A**ctivity: a count of actions or outputs completed in the course of performing work\n*   **C**ommunication and collaboration: how people and teams communicate and work together.\n*   **E**fficiency and flow: the ability to complete work or make progress on it with minimal interruptions or delays, whether individually or through a system",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Many organizations struggle to implement SPACE because it is broad and not easy to apply; the authors say they often see companies focusing on pull request counts, which they do not recommend.",
+      "quote": "Many organizations that try to implement SPACE run into challenges because the framework is broad and not easy to apply. For example, I often see companies focusing on metrics like the number of pull requests, which we do not recommend.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Perceptual data often provides more accurate and complete information than instrumented system data alone; system data may show how long code reviews take but cannot reveal whether reviews block developers or whether feedback is high-quality.",
+      "quote": "Perceptual data that captures these experiences often provides more accurate and complete information, than what can be observed from instrumented system data alone.\n\nFor example, system data may be able to tell you how long code reviews take. But without perceptual data, you won’t know whether reviews are actually blocking developers and slowing down development, or whether developers are receiving high-quality feedback.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Surveys can gather fast, accurate data; even once system data is cleaned and validated, the best companies still collect surveys; cleaning and validating system data usually takes 1-3 years to refine if done right.",
+      "quote": "We can gather fast, accurate data with surveys: people can tell us about their work experience and systems much faster than we can typically instrument, test, and validate system data. And once we have that cleaned, validated system data, we should still be collecting some surveys, and the best companies do this. As a note, cleaning and validating system data usually takes 1-3 years to really refine if it’s done right!",
+      "numbers": [
+        "1-3"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Google, Microsoft, and Spotify have relied heavily on survey-based developer productivity metrics for years; DX has helped hundreds of companies implement this approach, including eBay and Pfizer.",
+      "quote": "Companies like Google, Microsoft, and Spotify have relied heavily on survey-based developer productivity metrics for years. Our company, [DX](https://getdx.com/), has helped hundreds of companies implement this approach – including eBay and Pfizer whom we highlight [in our paper](https://queue.acm.org/detail.cfm?id=3595878) – and we see this trend accelerating, along with the focus on developer experience in general.",
+      "numbers": [
+        "hundreds"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Good survey rules include wording each item carefully so every question asks one thing, not changing wording if comparing results across surveys, and doing rigorous statistical tests if wording changes.",
+      "quote": "A few rules for writing good surveys:\n\n1.   Survey items need to be carefully worded and every question should only ask one thing.\n\n2.   If you want to compare results between surveys, you can’t change any wording – at all.\n\n3.   If you change any wording, you must do rigorous statistical tests.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Research found developers and managers have differing definitions of productivity and misconceptions about each other’s definitions, highlighting the difficulty of pinning down a single definition or measure of productivity.",
+      "quote": "This study found developers and managers have differing definitions of productivity, as well as misconceptions about how the other party defines productivity. This highlights the difficulty of trying to pin down a single definition or measure of productivity.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://newsletter.pragmaticengineer.com/p/developer-productivity-a-new-framework"
+}

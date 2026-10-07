@@ -1,0 +1,690 @@
+{
+  "searched": 136,
+  "kept": 40,
+  "web_search": false,
+  "candidates": [
+    {
+      "url": "https://arxiv.org/abs/2408.10758",
+      "title": "Does Co-Development with AI Assistants Lead to More Maintainable Code? A Registered Report",
+      "snippet": "[Background/Context] AI assistants like GitHub Copilot are transforming software engineering; several studies have highlighted productivity improvements. However, their impact on code quality, particularly in terms of maintainability, requires further investigation. [Objective/Aim] This study aims to examine the influence of AI assistants on software maintainability, specifically assessing how these tools affect the ability of developers to evolve code. [Method] We will conduct a two-phased cont",
+      "provider": "arxiv",
+      "published": "2024-08-20",
+      "id": "afbf216668",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "GitHub Copilot productivity randomized controlled trial"
+      ],
+      "relevance": {
+        "q1": 0.9034
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2507.00788",
+      "title": "Echoes of AI: Investigating the Downstream Effects of AI Assistants on Software Maintainability",
+      "snippet": "[Context] AI assistants, like GitHub Copilot and Cursor, are transforming software engineering. While several studies highlight productivity improvements, their impact on maintainability requires further investigation. [Objective] This study investigates whether co-development with AI assistants affects software maintainability, specifically how easily other developers can evolve the resulting source code. [Method] We conducted a two-phase controlled experiment involving 151 participants, 95% of",
+      "provider": "arxiv",
+      "published": "2025-07-01",
+      "id": "3252c951aa",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "GitHub Copilot productivity randomized controlled trial"
+      ],
+      "relevance": {
+        "q1": 0.945
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.02337",
+      "title": "Developers' Experience with Generative AI Beyond Productivity Assessment -- Insights from an Empirical Mixed-Methods Field Study",
+      "snippet": "With the growing adoption of AI-powered coding assistants, organizations and developers are increasingly seeking to optimize their interaction with these tools. Prior research has largely focused on output quality and productivity gains, with limited attention paid to developers' well-being and interaction experiences. This paper presents a developer-centered empirical mixed-methods study to investigate how professional developers engage with Generative AI (GenAI) in their natural work environme",
+      "provider": "arxiv",
+      "published": "2026-07-02",
+      "id": "b38b388792",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding assistant developer productivity field experiment"
+      ],
+      "relevance": {
+        "q1": 0.603
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2407.03790",
+      "title": "Assessing Consensus of Developers' Views on Code Readability",
+      "snippet": "The rapid rise of Large Language Models (LLMs) has changed software development, with tools like Copilot, JetBrains AI Assistant, and others boosting developers' productivity. However, developers now spend more time reviewing code than writing it, highlighting the importance of Code Readability for code comprehension. Our previous research found that existing Code Readability models were inaccurate in representing developers' notions and revealed a low consensus among developers, highlighting a ",
+      "provider": "arxiv",
+      "published": "2024-07-04",
+      "id": "335ba452ed",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding assistant developer productivity field experiment"
+      ],
+      "relevance": {
+        "q1": 0.7377
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2512.19926",
+      "title": "Developers' Experience with Generative AI -- First Insights from an Empirical Mixed-Methods Field Study",
+      "snippet": "With the rise of AI-powered coding assistants, firms and programmers are exploring how to optimize their interaction with them. Research has so far mainly focused on evaluating output quality and productivity gains, leaving aside the developers' experience during the interaction. In this study, we take a multimodal, developer-centered approach to gain insights into how professional developers experience the interaction with Generative AI (GenAI) in their natural work environment in a firm. The a",
+      "provider": "arxiv",
+      "published": "2025-12-22",
+      "id": "fb5b3e9e9c",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding assistant developer productivity field experiment"
+      ],
+      "relevance": {
+        "q1": 0.6309
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2401.10739",
+      "title": "In-IDE Human-AI Experience in the Era of Large Language Models; A Literature Review",
+      "snippet": "Integrated Development Environments (IDEs) have become central to modern software development, especially with the integration of Artificial Intelligence (AI) to enhance programming efficiency and decision-making. The study of in-IDE Human-AI Experience is critical in understanding how these AI tools are transforming the software development process, impacting programmer productivity, and influencing code quality. We conducted a literature review to study the current state of in-IDE Human-AI Exp",
+      "provider": "arxiv",
+      "published": "2024-01-19",
+      "id": "18e651ebf4",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding assistant developer productivity field experiment"
+      ],
+      "relevance": {
+        "q1": 0.2728
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2507.09089",
+      "title": "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity",
+      "snippet": "Despite widespread adoption, the impact of AI tools on software development in the wild remains understudied. We conduct a randomized controlled trial (RCT) to understand how AI tools at the February-June 2025 frontier affect the productivity of experienced open-source developers. 16 developers with moderate AI experience complete 246 tasks in mature projects on which they have an average of 5 years of prior experience. Each task is randomly assigned to allow or disallow usage of early 2025 AI t",
+      "provider": "arxiv",
+      "published": "2025-07-12",
+      "id": "094c505b2e",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "experienced open-source developers AI productivity study"
+      ],
+      "relevance": {
+        "q1": 0.7818
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2306.15033",
+      "title": "Sea Change in Software Development: Economic and Productivity Analysis of the AI-Powered Developer Lifecycle",
+      "snippet": "This study examines the impact of GitHub Copilot on a large sample of Copilot users (n=934,533). The analysis shows that users on average accept nearly 30% of the suggested code, leading to increased productivity. Furthermore, our research demonstrates that the acceptance rate rises over time and is particularly high among less experienced developers, providing them with substantial benefits. Additionally, our estimations indicate that the adoption of generative AI productivity tools could poten",
+      "provider": "arxiv",
+      "published": "2023-06-26",
+      "id": "a6dba615d2",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "experienced open-source developers AI productivity study"
+      ],
+      "relevance": {
+        "q1": 0.9772
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.00364",
+      "title": "Measuring Delivery Consistency in Practice: A DORA Extension from a Multi-Platform Release Setting",
+      "snippet": "The DevOps Research and Assessment (DORA) framework is the most widely adopted measurement system for performance measurement across engineering teams. However, every DORA metric is a first-moment statistic or a simple ratio, which limits the potential insights into engineering process. For example, metrics like Deployment Frequency do not capture the distributional shape of deployment timing, so teams with identical measures can deploy on a metronomic cadence or in undesirably erratic bursts. W",
+      "provider": "arxiv",
+      "published": "2026-05-29",
+      "id": "5b6fe64539",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "DORA report AI adoption"
+      ],
+      "relevance": {
+        "q2": 0.2743
+      }
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/DevOps_Research_and_Assessment",
+      "title": "DevOps Research and Assessment",
+      "snippet": "benefits of AI adoption for software developers. The detrimental effects of AI were &quot;reductions to software delivery performance&quot; and &quot;a reported decrease",
+      "provider": "wikipedia",
+      "published": "2026-04-21",
+      "id": "27fdabe153",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "DORA report AI adoption"
+      ],
+      "relevance": {
+        "q2": 0.3677
+      }
+    },
+    {
+      "url": "https://getdx.com/podcast/developer-productivity-at-microsoft/",
+      "title": "Space Framework, PRs per Engineer, AI Research – Brian Houck (Microsoft)",
+      "snippet": "2 points, 0 comments on Hacker News",
+      "provider": "hn",
+      "published": "2024-12-02",
+      "discussion": "https://news.ycombinator.com/item?id=42298560",
+      "id": "4d27ec4cee",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "SPACE framework developer productivity"
+      ],
+      "relevance": {
+        "q2": 0.0199
+      }
+    },
+    {
+      "url": "https://newsletter.pragmaticengineer.com/p/developer-productivity-a-new-framework",
+      "title": "A new way to measure developer productivity –from the creators of DORA and SPACE",
+      "snippet": "1 points, 0 comments on Hacker News",
+      "provider": "hn",
+      "published": "2024-09-29",
+      "discussion": "https://news.ycombinator.com/item?id=41690845",
+      "id": "a2263e08bb",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "SPACE framework developer productivity"
+      ],
+      "relevance": {
+        "q2": 0.0284
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2511.20955",
+      "title": "SpaceX: Exploring metrics with the SPACE model for developer productivity",
+      "snippet": "This empirical investigation elucidates the limitations of deterministic, unidimensional productivity heuristics by operationalizing the SPACE framework through extensive repository mining. Utilizing a dataset derived from open-source repositories, the study employs rigorous statistical methodologies including Generalized Linear Mixed Models (GLMM) and RoBERTa-based sentiment classification to synthesize a holistic, multi-faceted productivity metric. Analytical results reveal a statistically sig",
+      "provider": "arxiv",
+      "published": "2025-11-26",
+      "id": "9c034b499d",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "SPACE framework developer productivity"
+      ],
+      "relevance": {
+        "q2": 0.0975
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2510.24265",
+      "title": "The Fast and Spurious: Developer Productivity with GenAI",
+      "snippet": "Generative AI (GenAI) tools are increasingly being adopted in software development as productivity aids, since there is evidence that GenAI tools can improve individual aspects of productivity. However, productivity is multidimensional; accelerating one aspect of work may simply shift effort to another. In this paper, we investigate how GenAI adoption affects different dimensions of developer productivity. We surveyed 415 software practitioners to understand how they perceive productivity change",
+      "provider": "arxiv",
+      "published": "2025-10-28",
+      "id": "9d36267b8b",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "SPACE framework developer productivity"
+      ],
+      "relevance": {
+        "q2": 0.0531
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2508.00178",
+      "title": "The SPACE of AI: Real-World Lessons on AI's Impact on Developers",
+      "snippet": "As artificial intelligence (AI) tools become increasingly embedded in software development workflows, questions persist about their true impact on developer productivity and experience. This paper presents findings from a mixed-methods study examining how developers perceive AI's influence across the dimensions of the SPACE framework: Satisfaction, Performance, Activity, Collaboration and Efficiency. Drawing on survey responses from over 500 developers and qualitative insights from interviews an",
+      "provider": "arxiv",
+      "published": "2025-07-31",
+      "id": "b6e0f58f95",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "SPACE framework developer productivity"
+      ],
+      "relevance": {
+        "q2": 0.5879
+      }
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Developer_experience",
+      "title": "Developer experience",
+      "snippet": "improvement. The creators of the influential SPACE Framework explicitly address several myths about developer productivity measurement, including the single metric",
+      "provider": "wikipedia",
+      "published": "2026-09-04",
+      "id": "5b87edbb72",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "SPACE framework developer productivity"
+      ],
+      "relevance": {
+        "q2": 0.2091
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.02059",
+      "title": "Security Weaknesses of Copilot-Generated Code in GitHub Projects: An Empirical Study",
+      "snippet": "Modern code generation tools utilizing AI models like Large Language Models (LLMs) have gained increased popularity due to their ability to produce functional code. However, their usage presents security challenges, often resulting in insecure code merging into the code base. Thus, evaluating the quality of generated code, especially its security, is crucial. While prior research explored various aspects of code generation, the focus on security has been limited, mostly examining code produced i",
+      "provider": "arxiv",
+      "published": "2023-10-03",
+      "id": "c889b2a773",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "security of code generated by Copilot"
+      ],
+      "relevance": {
+        "q3": 0.93
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2311.11177",
+      "title": "Assessing the Security of GitHub Copilot Generated Code -- A Targeted Replication Study",
+      "snippet": "AI-powered code generation models have been developing rapidly, allowing developers to expedite code generation and thus improve their productivity. These models are trained on large corpora of code (primarily sourced from public repositories), which may contain bugs and vulnerabilities. Several concerns have been raised about the security of the code generated by these models. Recent studies have investigated security issues in AI-powered code generation tools such as GitHub Copilot and Amazon ",
+      "provider": "arxiv",
+      "published": "2023-11-18",
+      "id": "c73a0f08fe",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "security of code generated by Copilot"
+      ],
+      "relevance": {
+        "q3": 0.872
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2308.06587",
+      "title": "A User-centered Security Evaluation of Copilot",
+      "snippet": "Code generation tools driven by artificial intelligence have recently become more popular due to advancements in deep learning and natural language processing that have increased their capabilities. The proliferation of these tools may be a double-edged sword because while they can increase developer productivity by making it easier to write code, research has shown that they can also generate insecure code. In this paper, we perform a user-centered evaluation GitHub's Copilot to better understa",
+      "provider": "arxiv",
+      "published": "2023-08-12",
+      "id": "eebf25ecfc",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "security of code generated by Copilot"
+      ],
+      "relevance": {
+        "q3": 0.8694
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2403.12671",
+      "title": "Enhancing Security of AI-Based Code Synthesis with GitHub Copilot via Cheap and Efficient Prompt-Engineering",
+      "snippet": "AI assistants for coding are on the rise. However one of the reasons developers and companies avoid harnessing their full potential is the questionable security of the generated code. This paper first reviews the current state-of-the-art and identifies areas for improvement on this issue. Then, we propose a systematic approach based on prompt-altering methods to achieve better code security of (even proprietary black-box) AI-based code generators such as GitHub Copilot, while minimizing the comp",
+      "provider": "arxiv",
+      "published": "2024-03-19",
+      "id": "990bc1d8b3",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "security of code generated by Copilot"
+      ],
+      "relevance": {
+        "q3": 0.8167
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.20109",
+      "title": "Beyond Bug Fixes: An Empirical Investigation of Post-Merge Code Quality Issues in Agent-Generated Pull Requests",
+      "snippet": "The increasing adoption of AI coding agents has increased the number of agent-generated pull requests (PRs) merged with little or no human intervention. Although such PRs promise productivity gains, their post-merge code quality remains underexplored, as prior work has largely relied on benchmarks and controlled tasks rather than large-scale post-merge analyses. To address this gap, we analyze 1,210 merged agent-generated bug-fix PRs from Python repositories in the AIDev dataset. Using SonarQube",
+      "provider": "arxiv",
+      "published": "2026-01-27",
+      "id": "f94af8aa76",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "AI-generated code quality churn",
+        "AI-generated code quality churn"
+      ],
+      "relevance": {
+        "q3": 0.7537
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.00917",
+      "title": "Investigating Autonomous Agent Contributions in the Wild: Activity Patterns and Code Change over Time",
+      "snippet": "The rise of large language models for code has reshaped software development. Autonomous coding agents, able to create branches, open pull requests, and perform code reviews, now actively contribute to real-world projects. Their growing role offers a unique and timely opportunity to investigate AI-driven contributions and their effects on code quality, team dynamics, and software maintainability. In this work, we construct a novel dataset of approximately $110,000$ open-source pull requests, inc",
+      "provider": "arxiv",
+      "published": "2026-04-01",
+      "id": "b8084ce3da",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "AI-generated code quality churn"
+      ],
+      "relevance": {
+        "q3": 0.7949
+      }
+    },
+    {
+      "url": "https://www.semanticscholar.org/paper/835d0cc1f333dcb9930c19cd6c82ab58aa718ae1",
+      "title": "Disadvantages of AI-Assisted Code Generation in Software Development",
+      "snippet": "Despite being used by over 80% of software developers, AI coding tools have been quick to integrate\ninto professional software development but slow to be studied. In this article, some of those drawbacks are\ndiscussed. According to PRISMA guidelines, 28 primary studies were retrieved from IEEE Xplore, ACM Digital\nLibrary, Scopus and Google Scholar between 2020 and 2026, and categorized into six categories. Security: About\n40% of the code generated was vulnerable, and 62% under formal verificatio (0 citations)",
+      "provider": "semantic_scholar",
+      "published": "2026",
+      "id": "3f8ad28ae7",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "AI-generated code quality churn"
+      ],
+      "relevance": {
+        "q3": 0.9007
+      }
+    },
+    {
+      "url": "https://www.semanticscholar.org/paper/17d5906f0a5f201f8f1ae742e736d713317b84a6",
+      "title": "Evaluating Human- and AI-Generated Code Quality Based on Code Smell",
+      "snippet": "Software quality plays a critical role in the long-term evolution and maintainability of software systems.AI-tools can rapidly produce functional implementations, which has greatly enhanced development efficiency. However, the internal quality of AI-generated code remains an important concern, particularly with regard to structural issues that may affect maintainability and software evolution. By constructing a dataset containing code produced by human developers and code generated with the assi (0 citations)",
+      "provider": "semantic_scholar",
+      "published": "2026",
+      "id": "c3257ab5c1",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "AI-generated code quality churn"
+      ],
+      "relevance": {
+        "q3": 0.9243
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.26721",
+      "title": "Knowledge-Based Pull Requests: A Trusted Workflow for Agent-Mediated Knowledge Collaboration",
+      "snippet": "AI coding agents are changing the bottleneck in software collaboration: code is increasingly cheap, while understanding intent, negotiating scope, and governing long-term project responsibility remain costly. This paper proposes \\emph{Knowledge-Based Pull Requests} (KPR), a trusted workflow for agent-mediated software collaboration across trust boundaries, including open source, enterprise, vendor, contractor, and customer-driven settings. In KPR, an external collaborator's local code, tests, an",
+      "provider": "arxiv",
+      "published": "2026-06-25",
+      "id": "436ca37067",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "AI coding agents pull requests open source"
+      ],
+      "relevance": {
+        "q4": 0.0434
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.03196",
+      "title": "From Industry Claims to Empirical Reality: An Empirical Study of Code Review Agents in Pull Requests",
+      "snippet": "Autonomous coding agents are generating code at an unprecedented scale, with OpenAI Codex alone creating over 400,000 pull requests (PRs) in two months. As agentic PR volumes increase, code review agents (CRAs) have become routine gatekeepers in development workflows. Industry reports claim that CRAs can manage 80% of PRs in open source repositories without human involvement. As a result, understanding the effectiveness of CRA reviews is crucial for maintaining developmental workflows and preven",
+      "provider": "arxiv",
+      "published": "2026-04-03",
+      "id": "2e2d17a826",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "AI coding agents pull requests open source"
+      ],
+      "relevance": {
+        "q4": 0.2932
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.19616",
+      "title": "Before the Pull Request: Mining Multi-Agent Coordination",
+      "snippet": "Autonomous coding agents now open millions of pull requests, yet large-scale studies find their PRs are produced faster but accepted less often - a coordination and trust gap that pull-request-level telemetry cannot explain. We argue the missing signal lives before the PR, in how concurrent agents claim, divide, and collide over shared work. We study this process through grite, our open-source coordination substrate that needs no central server and stores its records inside git itself, so its ap",
+      "provider": "arxiv",
+      "published": "2026-06-17",
+      "id": "ed6d977525",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "AI coding agents pull requests open source"
+      ],
+      "relevance": {
+        "q4": 0.0038
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.22534",
+      "title": "Why Are Agentic Pull Requests Merged or Rejected? An Empirical Study",
+      "snippet": "AI coding agents increasingly submit pull requests (Agentic-PRs) to open-source repositories, yet their performance is commonly assessed using merge and rejection outcomes alone. We hypothesized that these outcome labels do not reliably reflect agent capability without considering review interactions. To test this, we conducted a decision-oriented analysis of 11,048 closed Agentic Pull Requests, refined to 9,799 human-reviewed PRs, and manually inspected 717 representative cases to recover decis",
+      "provider": "arxiv",
+      "published": "2026-05-21",
+      "id": "bc14f570af",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "AI coding agents pull requests open source"
+      ],
+      "relevance": {
+        "q4": 0.02
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.18190",
+      "title": "Role and Identity Work of Software Engineering Professionals in the Generative AI Era",
+      "snippet": "The adoption of Generative AI (GenAI) suggests major changes for software engineering, including technical aspects but also human aspects of the professionals involved. One of these aspects is how individuals perceive themselves regarding their work, i.e., their work identity, and the processes they perform to form, adapt and reject these identities, i.e., identity work. Existent studies provide evidence of such identity work of software professionals triggered by the adoption of GenAI, however ",
+      "provider": "arxiv",
+      "published": "2026-02-20",
+      "id": "cf451368f0",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "software engineering roles generative AI"
+      ],
+      "relevance": {
+        "q4": 0.0129
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.16306",
+      "title": "Rethinking Artifact Evaluation for Software Engineering in the Age of Generative AI",
+      "snippet": "Peer review in software engineering research operates under tight time constraints, while generative AI has substantially reduced the human effort required to produce polished research narratives. Reviewer attention is often spent on aspects of submissions such as writing quality or literature positioning that have become relatively less effort-intensive to address, rather than on evaluating the scientific substance of a paper. At the same time, assessing whether methods are implemented correctl",
+      "provider": "arxiv",
+      "published": "2026-01-26",
+      "id": "7fb832c006",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "software engineering roles generative AI"
+      ],
+      "relevance": {
+        "q4": 0.0049
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2401.12739",
+      "title": "Decoding University Hierarchy and Prestige in China through Domestic Ph.D. Hiring Network",
+      "snippet": "The academic job market for fresh Ph.D. students to pursue postdoctoral and junior faculty positions plays a crucial role in shaping the future orientations, developments, and status of the global academic system. In this work, we focus on the domestic Ph.D. hiring network among universities in China by exploring the doctoral education and academic employment of nearly 28,000 scientists across all Ph.D.-granting Chinese universities over three decades. We employ the minimum violation rankings al",
+      "provider": "arxiv",
+      "published": "2024-01-23",
+      "id": "1bb8c40f30",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "junior developers AI employment"
+      ],
+      "relevance": {
+        "q4": 0.0079
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2506.00532",
+      "title": "Generative AI and Organizational Structure in the Knowledge Economy",
+      "snippet": "Generative AI (GenAI) is rapidly transforming knowledge work, yet its implications for organizational hierarchies remain poorly understood. Unlike earlier automation technologies, GenAI can both perform tasks autonomously and assist human workers, while its intrinsic fallibility, the tendency to produce confident but incorrect outputs, demands continuous human oversight. We develop a theoretical model to study how GenAI reshapes workforce composition and organizational structure in knowledge-bas",
+      "provider": "arxiv",
+      "published": "2025-05-31",
+      "id": "5bf36f9bf1",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "junior developers AI employment"
+      ],
+      "relevance": {
+        "q4": 0.0208
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.09182",
+      "title": "Understanding How Enterprises Adopt the Model Context Protocol for LLM-Driven Software Engineering",
+      "snippet": "Large Language Models (LLMs) are increasingly used in AI-based software engineering, but their limitations in complex task execution and multi-tool coordination have driven growing interest in the Model Context Protocol (MCP). Existing research has mainly focused on MCP's technical design, with limited empirical evidence on how it is adopted and used in enterprise practice, particularly with regard to deployment challenges, operational risks, and practitioner expectations. To address this gap, w",
+      "provider": "arxiv",
+      "published": "2026-06-08",
+      "id": "87a3e30ee2",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "AI coding tools adoption enterprise barriers"
+      ],
+      "relevance": {
+        "q5": 0.0395
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.01087",
+      "title": "Cheap Code, Costly Judgment: A Case Study on Governable Agentic Software Engineering",
+      "snippet": "Generative AI is shifting software engineering from a practice organized around scarce implementation effort toward one organized around abundant, low-cost code production. This shift changes the central engineering problem: not whether AI can generate useful code, but how engineers organize architectures, tools, evidence, and feedback loops so that AI-mediated development remains inspectable, correctable, and maintainable. We study this problem through a first-person case study: a 12-week devel",
+      "provider": "arxiv",
+      "published": "2026-07-01",
+      "id": "4d28b275af",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "generative AI governance software engineering"
+      ],
+      "relevance": {
+        "q5": 0.0179
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.08221",
+      "title": "FAIL: Analyzing Software Failures from the News Using LLMs",
+      "snippet": "Software failures inform engineering work, standards, regulations. For example, the Log4J vulnerability brought government and industry attention to evaluating and securing software supply chains. Accessing private engineering records is difficult, so failure analyses tend to use information reported by the news media. However, prior works in this direction have relied on manual analysis. That has limited the scale of their analyses. The community lacks automated support to enable such analyses ",
+      "provider": "arxiv",
+      "published": "2024-06-12",
+      "id": "692a6970c7",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "generative AI governance software engineering"
+      ],
+      "relevance": {
+        "q5": 0.0088
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.27703",
+      "title": "Operationalizing Regulations into Code: A Model to Enhance Governance and Compliance in LLM Selection for Software Engineering",
+      "snippet": "Integrating Large Language Models (LLMs) into the Software Development Life Cycle (SDLC) can improve developer productivity, but it also introduces security, privacy, and compliance risks during model selection. Regulations and frameworks such as the EU AI Act, the NIST AI Risk Management Framework (RMF), the General Data Protection Regulation (GDPR), the Lei Geral de Proteção de Dados (LGPD), and ISO/IEC 42001 establish obligations that are often difficult to translate into operational criteria",
+      "provider": "arxiv",
+      "published": "2026-08-27",
+      "id": "ee7ff50320",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "generative AI governance software engineering"
+      ],
+      "relevance": {
+        "q5": 0.0068
+      }
+    },
+    {
+      "url": "https://www.semanticscholar.org/paper/c11127cb9ae0c6a35ec0061279d0f8ae6c5a223a",
+      "title": "Generative AI and the Future of Software Engineering in Saudi Arabia: Governance, Innovation, and Workforce Transformation",
+      "snippet": "As Saudi Arabia advances its Vision 2030 agenda, Generative Artificial Intelligence (GenAI) has emerged as a transformative force in software engineering. This paper is based on socio-technical systems theory, which considers GenAI adoption as an interplay between technological capabilities and social structures. This ensures that implementingGenAI in organizations aligns well with organizational goals within the established social structures. This study explores how GenAI technologies—such as G (3 citations)",
+      "provider": "semantic_scholar",
+      "published": "2025",
+      "id": "10bd87031d",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "generative AI governance software engineering"
+      ],
+      "relevance": {
+        "q5": 0.022
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.11184",
+      "title": "Taking a Pulse on How Generative AI is Reshaping the Software Engineering Research Landscape",
+      "snippet": "Context: Software engineering (SE) researchers increasingly study Generative AI (GenAI) while also incorporating it into their own research practices. Despite rapid adoption, there is limited empirical evidence on how GenAI is used in SE research and its implications for research practices and governance. Aims: We conduct a large-scale survey of 457 SE researchers publishing in top venues between 2023 and 2025. Method: Using quantitative and qualitative analyses, we examine who uses GenAI and wh (2 citations)",
+      "provider": "semantic_scholar",
+      "published": "2026",
+      "id": "591c8f274f",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "generative AI governance software engineering"
+      ],
+      "relevance": {
+        "q5": 0.0374
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.11027",
+      "title": "From Code-Centric to Intent-Centric Software Engineering: A Reflexive Thematic Analysis of Generative AI, Agentic Systems, and Engineering Accountability",
+      "snippet": "Generative artificial intelligence (GenAI) and agentic systems are moving software engineering from code-centric production toward intent-centric human-agent work in which natural language, repository context, tools, tests, and governance shape delivery. Prior studies examine code generation, AI pair programming, and software engineering agents, but less is known about how public technical discourse and peer-reviewed evidence together frame the profession's near-term transition. This study addre (0 citations)",
+      "provider": "semantic_scholar",
+      "published": "2026",
+      "id": "dd321189e0",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "generative AI governance software engineering"
+      ],
+      "relevance": {
+        "q5": 0.0089
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.17325",
+      "title": "AI Tool Use and Adoption in Software Development by Individuals and Organizations: A Grounded Theory Study",
+      "snippet": "AI assistance tools such as ChatGPT, Copilot, and Gemini have dramatically impacted the nature of software development in recent years. Numerous studies have studied the positive benefits that practitioners have achieved from using these tools in their work. While there is a growing body of knowledge regarding the usability aspects of leveraging AI tools, we still lack concrete details on the issues that organizations and practitioners need to consider should they want to explore increasing adop",
+      "provider": "arxiv",
+      "published": "2024-06-25",
+      "id": "2c662f0116",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "AI assistant adoption developers challenges"
+      ],
+      "relevance": {
+        "q5": 0.0091
+      }
+    }
+  ]
+}

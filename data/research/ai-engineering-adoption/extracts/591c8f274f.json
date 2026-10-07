@@ -1,0 +1,51 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-13",
+  "author_or_org": "Bianca Trinkenreich et al. / arXiv",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper says that despite rapid adoption of GenAI in software engineering research, there is limited empirical evidence on how it is used in SE research and its implications for research practices and governance.",
+      "quote": "Despite rapid adoption, there is limited empirical evidence on how GenAI is used in SE research and its implications for research practices and governance.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The survey reports that productivity gains from GenAI are widely perceived, while concerns about trust, correctness, and regulatory uncertainty persist.",
+      "quote": "Although productivity gains are widely perceived, concerns about trust, correctness, and regulatory uncertainty persist.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The study is based on a large-scale survey of 457 software engineering researchers publishing in top venues between 2023 and 2025.",
+      "quote": "We conduct a large-scale survey of 457 SE researchers publishing in top venues between 2023 and 2025.",
+      "numbers": [
+        "457",
+        "2023",
+        "2025"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "GenAI use is widespread, and many researchers report pressure to adopt and align their work with it.",
+      "quote": "GenAI use is widespread, with many researchers reporting pressure to adopt and align their work with it.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "GenAI usage is concentrated in writing and early-stage activities, while methodological and analytical tasks remain largely human-driven.",
+      "quote": "Usage is concentrated in writing and early-stage activities, while methodological and analytical tasks remain largely human-driven.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Researchers highlight risks such as inaccuracies and bias, emphasize mitigation through human oversight and verification, and call for clearer governance including guidance on responsible use and peer review.",
+      "quote": "Researchers highlight risks such as inaccuracies and bias, emphasize mitigation through human oversight and verification, and call for clearer governance, including guidance on responsible use and peer review.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.11184"
+}

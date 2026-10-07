@@ -1,0 +1,68 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-07-01",
+  "author_or_org": "Markus Borg, Dave Hewett, Nadim Hagatulah, Noric Couderc, Emma Söderberg, Donald Graham, Uttam Kini, Dave Farley",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper states several studies highlight productivity improvements from AI assistants, but their impact on maintainability requires further investigation.",
+      "quote": "While several studies highlight productivity improvements, their impact on maintainability requires further investigation.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "In Phase 1 observational results, using an AI assistant yielded a 30.7% median reduction in completion time, and habitual AI users showed an estimated 55.9% speedup.",
+      "quote": "Observational results from Phase 1 corroborate prior research: using an AI assistant yielded a 30.7% median reduction in completion time, and habitual AI users showed an estimated 55.9% speedup.",
+      "numbers": [
+        "1",
+        "30.7%",
+        "55.9%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Phase 2 randomized controlled trial found no significant differences in subsequent evolution with respect to completion time or code quality; Bayesian analysis suggested any speed or quality improvements from AI use were at most small and highly uncertain.",
+      "quote": "Phase 2 revealed no significant differences in subsequent evolution with respect to completion time or code quality. Bayesian analysis suggests that any speed or quality improvements from AI use were at most small and highly uncertain.",
+      "numbers": [
+        "2"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The study used a two-phase controlled experiment with 151 participants, 95% of whom were professional developers.",
+      "quote": "We conducted a two-phase controlled experiment involving 151 participants, 95% of whom were professional developers.",
+      "numbers": [
+        "151",
+        "95%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Overall, the authors did not detect systematic maintainability advantages or disadvantages when other developers evolved code co-developed with AI assistants.",
+      "quote": "Overall, we did not detect systematic maintainability advantages or disadvantages when other developers evolved code co-developed with AI assistants.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Within the scope of their tasks and measures, the authors observed no consistent warning signs of degraded code-level maintainability.",
+      "quote": "Within the scope of our tasks and measures, we observed no consistent warning signs of degraded code-level maintainability.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper calls for future work on risks such as code bloat from excessive code generation and cognitive debt as developers offload more mental effort to assistants.",
+      "quote": "Future work should examine risks such as code bloat from excessive code generation and cognitive debt as developers offload more mental effort to assistants.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The study investigates whether co-development with AI assistants affects software maintainability, specifically how easily other developers can evolve the resulting source code.",
+      "quote": "This study investigates whether co-development with AI assistants affects software maintainability, specifically how easily other developers can evolve the resulting source code.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2507.00788"
+}

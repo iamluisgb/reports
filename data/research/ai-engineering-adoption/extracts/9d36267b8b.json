@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-10-28",
+  "author_or_org": "Sadia Afroz, Zixuan Feng, Tyler Menezes, Katie Kimura, Bianca Trinkenreich, Igor Steinmacher, Anita Sarma",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper argues productivity is multidimensional, so accelerating one aspect of work may just shift effort to another rather than increase overall productivity.",
+      "quote": "However, productivity is multidimensional; accelerating one aspect of work may simply shift effort to another.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "At the current stage of GenAI adoption, the authors suggest perceived productivity gains may be spurious, involving surface-level acceleration plus redistributed effort and hidden costs.",
+      "quote": "Overall, our findings suggest that, at the current stage of GenAI adoption, perceived productivity gains may be spurious -- surface-level acceleration, often accompanied by redistributed effort and hidden costs.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper notes there is evidence GenAI tools can improve individual aspects of productivity, while framing adoption as productivity aids.",
+      "quote": "Generative AI (GenAI) tools are increasingly being adopted in software development as productivity aids, since there is evidence that GenAI tools can improve individual aspects of productivity.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The study surveyed 415 software practitioners about perceived productivity changes from AI adoption using the SPACE framework (Satisfaction and well-being, Performance, Activity, Communication and collaboration, and Efficiency and flow).",
+      "quote": "We surveyed 415 software practitioners to understand how they perceive productivity changes associated with AI adoption, using the SPACE framework (Satisfaction and well-being, Performance, Activity, Communication and collaboration, and Efficiency and flow).",
+      "numbers": [
+        "415"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The survey results show systematic redistribution of effort across SPACE dimensions.",
+      "quote": "Our results reveal systematic redistribution of effort across SPACE dimensions.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Frequent GenAI users reported faster task completion and higher output volume, but these gains were offset by increased code review burden and persistent cognitive load from output verification.",
+      "quote": "While frequent GenAI users reported faster task completion and higher output volume, these gains were offset by increased code review burden, persistent cognitive load from output verification, and unchanged collaboration patterns.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The survey found collaboration patterns remained unchanged even though frequent GenAI users reported output and speed gains.",
+      "quote": "While frequent GenAI users reported faster task completion and higher output volume, these gains were offset by increased code review burden, persistent cognitive load from output verification, and unchanged collaboration patterns.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper provides an empirical mapping between developers' perceived challenges and potential mitigation strategies.",
+      "quote": "We further provide an empirical mapping between the challenges perceived by developers and potential strategies to mitigate them.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2510.24265"
+}
