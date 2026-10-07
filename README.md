@@ -54,9 +54,12 @@ collect.py  →  write_report.py  →  make_audio.py  →  generate_manifest + b
 ```
 
 `collect.py` does all the fetching and no judging: three Hacker News pages with
-every story id checked against the Firebase API, the latest arXiv cs.AI listing
-ranked by keyword relevance, and cross-dedup against the last three reports. It
-writes a JSON bundle where every candidate has an id.
+every story id checked against the Firebase API; the arXiv listings the papers
+section draws on — cs.AI, cs.SE and cs.MA, each with its own quota of abstracts,
+ranked by keyword relevance; an agent-engineering sweep of arXiv's own API for
+the coding-agent and harness work that never reaches a cs.AI listing; and
+cross-dedup against the last three reports. It writes a JSON bundle where every
+candidate has an id.
 
 `write_report.py` makes three calls to NaN (`glm5.3-flash`, falling back to
 `deepseek-v4-flash`) — news, then papers plus *Why It Matters*, then the spoken

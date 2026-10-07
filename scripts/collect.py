@@ -2,8 +2,9 @@
 """Gather the day's raw candidates — no LLM, no judgement, just fetching.
 
 Reads the Hacker News front pages, validates every story id against the
-Firebase API (so a comment id never becomes a "story" link), pulls the most
-recent arXiv cs.AI listing with abstracts, drops anything the last few reports
+Firebase API (so a comment id never becomes a "story" link), pulls the arXiv
+listings the report draws its papers from (cs.AI, cs.SE, cs.MA) plus an
+agent-engineering sweep of arXiv's own API, drops anything the last few reports
 already covered, and writes one JSON bundle for write_report.py to choose from.
 
 Every candidate carries a short id (hn-49672510, arxiv-2609.11318). The writer
@@ -35,7 +36,16 @@ UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
 HN_PAGES = 3
 # ~30 stories a page. The third page is cheap and it is where a story that
 # broke overnight sits while it is still climbing.
-ARXIV_WANT = 14
+# cs.AI was the only listing this report read, and the discipline it is written
+# for gets filed elsewhere: a source-code study of eleven coding harnesses is
+# cs.SE with a cs.MA cross-list, so it was never on the page we downloaded —
+# not ranked low, absent. Each category now carries its own quota instead of
+# competing for one budget of cs.AI submissions.
+ARXIV_BUDGET = (
+    ("cs.AI", 7),
+    ("cs.SE", 3),
+    ("cs.MA", 1),
+)
 # arXiv's listing is submission order, not relevance, so rank titles before
 # spending a request per abstract. Without this the papers section fills up
 # with species identification and recommender regularisation.
@@ -43,7 +53,9 @@ PAPER_KEYWORDS = re.compile(
     r"agent|LLM|language model|reason|inference|eval|benchmark|memory|context|"
     r"retriev|RAG|distill|transformer|attention|reinforcement|RLHF|RLVR|align|"
     r"interpretab|tool.use|code|security|adversarial|jailbreak|scaling|MoE|"
-    r"mixture.of.experts|quantiz|serving|latency|throughput", re.I)
+    r"mixture.of.experts|quantiz|serving|latency|throughput|harness|architect|"
+    r"orchestrat|scaffold|sandbox|runtime|workflow|repositor|developer|"
+    r"multi.agent|coding", re.I)
 # arXiv's API answers "Rate exceeded" often enough that the abs pages, one
 # request each, are the reliable path. Keep the batch small.
 PAUSE = 1.0
@@ -165,18 +177,23 @@ def verify_stories(rows):
 
 # --------------------------------------------------------------------- arXiv
 
-def arxiv():
-    """Most recent cs.AI listing, with abstracts for the top candidates.
+def arxiv_listing(cat, want):
+    """`want` papers with abstracts from one category's most recent listing.
 
     arXiv does not announce at weekends, so on a Saturday or Sunday this
     returns the previous weekday's batch — still fresh relative to the reports,
     because cross-dedup removes whatever yesterday already used.
+
+    A listing shows that category's new submissions *and* the papers
+    cross-listed into it, which is how a cs.AI paper about agent coordination
+    reaches cs.MA.
     """
-    listing = fetch("https://arxiv.org/list/cs.AI/recent?skip=0&show=100")
+    listing = fetch(f"https://arxiv.org/list/{cat}/recent?skip=0&show=100")
     if not listing:
         return []
     day = re.search(r"<h3>(.*?)</h3>", listing)
-    print(f"  arXiv listing: {clean(day.group(1)) if day else 'unknown'}", file=sys.stderr)
+    print(f"  arXiv {cat} listing: {clean(day.group(1)) if day else 'unknown'}",
+          file=sys.stderr)
 
     # Pair each id with the title that follows it, so relevance can be judged
     # before an abstract is worth a request.
@@ -196,7 +213,7 @@ def arxiv():
                                         for m in PAPER_KEYWORDS.finditer(e[1]))))
 
     papers = []
-    for paper_id, _ in entries[:ARXIV_WANT]:
+    for paper_id, _ in entries[:want]:
         page = fetch(f"https://arxiv.org/abs/{paper_id}", tries=2)
         time.sleep(PAUSE)
         if not page:
@@ -212,6 +229,7 @@ def arxiv():
             continue
         papers.append({
             "id": f"arxiv-{paper_id}",
+            "cat": cat,
             "title": clean(title.group(1)),
             "abstract": clean(abstract.group(1)),
             "url": f"http://arxiv.org/abs/{paper_id}{version.group(1) if version else 'v1'}",
@@ -219,7 +237,107 @@ def arxiv():
     return papers
 
 
-# ---------------------------------------------------- the semantic-layer beat
+def arxiv():
+    """Every category listing the report draws papers from, in quota order.
+
+    The pool is handed to the writer whole, and the writer only ever sees
+    write_report.MAX_PAPERS of it, so the quotas have to sum to less than that
+    cap: papers appended past it are not ranked low, they are never shown.
+    """
+    papers = []
+    for cat, want in ARXIV_BUDGET:
+        papers.extend(arxiv_listing(cat, want))
+    return papers
+
+
+# ------------------------------------------------ the agent-engineering beat
+# The extra listing slots are a quota, not a guarantee. A listing only ever
+# shows the most recent announcement day, so a Friday submission read on
+# Monday is already off the page, and a paper whose primary category we do not
+# list stays invisible however relevant it is. This beat asks arXiv's own API
+# instead: one request returns titles and abstracts together, over a window
+# that spans the weekend.
+ENG_TERMS = [
+    "agent", "agentic", "harness", "orchestrat", "multi-agent", "LLM",
+    "code", "software engineering", "developer", "repo", "sandbox",
+    "runtime", "context", "tool use", "scaffold", "workflow",
+]
+# Two tiers, the shape the semantic beat already uses. The specific phrases go
+# first: a generic "agentic" query comes back with sixty papers and buries the
+# one worth having. Measured against the July window this report missed, the
+# tier below puts the harness-engineering study first of sixteen hits, where
+# the generic tier ranks it fifty-eighth of sixty.
+ENG_QUERY = ["harness engineering", "coding harness", "agent harness",
+             "coding agent", "agentic software engineering",
+             "context engineering", "software engineering agent"]
+ENG_QUERY_FALLBACK = ["LLM agent", "agentic", "multi-agent",
+                      "agent orchestration"]
+ENG_WANT = 3
+ENG_WINDOW_DAYS = 5
+
+
+def eng_score(paper):
+    """How much of the beat's vocabulary a paper carries.
+
+    Weighted towards the title, which is where a paper says what it is about,
+    with the abstract as the tie-breaker.
+    """
+    title = paper["title"].lower()
+    body = paper["abstract"].lower()
+    return (3 * sum(1 for t in ENG_TERMS if t in title) +
+            sum(1 for t in ENG_TERMS if t in body))
+
+
+def eng_arxiv(want=ENG_WANT, days=ENG_WINDOW_DAYS):
+    """Fresh cs.SE / cs.MA submissions about building and running agents.
+
+    The `cat:` clause matches cross-lists as well as primary categories, so
+    this also reaches coding-agent work filed under cs.AI or cs.LG that would
+    otherwise only be met if it were announced on a weekday we list.
+    """
+    cutoff = datetime.now().astimezone() - timedelta(days=days)
+    for terms in (ENG_QUERY, ENG_QUERY_FALLBACK):
+        query = ("(cat:cs.SE OR cat:cs.MA) AND (" +
+                 " OR ".join(f'all:"{t}"' for t in terms) + ")")
+        raw = fetch("https://export.arxiv.org/api/query?" + urllib.parse.urlencode({
+            "search_query": query, "max_results": 60,
+            "sortBy": "submittedDate", "sortOrder": "descending"}))
+        time.sleep(PAUSE)
+        if not raw:
+            continue
+        found = []
+        for entry in re.findall(r"<entry>(.*?)</entry>", raw, re.S):
+            ident = re.search(r"<id>https?://arxiv\.org/abs/([^<]+)</id>", entry)
+            title = re.search(r"<title>(.*?)</title>", entry, re.S)
+            abstract = re.search(r"<summary>(.*?)</summary>", entry, re.S)
+            published = re.search(r"<published>([^<]+)</published>", entry)
+            if not (ident and title and abstract and published):
+                continue
+            try:
+                when = datetime.strptime(published.group(1)[:10], "%Y-%m-%d")
+            except ValueError:
+                continue
+            if when.replace(tzinfo=cutoff.tzinfo) < cutoff:
+                continue
+            # The API hands back a versioned id, the listing path does not.
+            # Both have to name the same paper, or the day carries it twice.
+            paper_id = re.sub(r"v\d+$", "", ident.group(1))
+            found.append({
+                "id": f"arxiv-{paper_id}",
+                "cat": "cs.SE/cs.MA",
+                "title": clean(title.group(1)),
+                "abstract": clean(abstract.group(1)),
+                "url": f"https://arxiv.org/abs/{ident.group(1)}",
+                "published": published.group(1)[:10],
+            })
+        if not found:
+            continue
+        found.sort(key=lambda p: -eng_score(p))
+        return found[:want]
+    return []
+
+
+# ---------------------------------------------------------- shared helpers
 
 def _urlkey(url):
     """Scheme- and version-insensitive URL key, for cross-source dedup.
@@ -231,6 +349,43 @@ def _urlkey(url):
     key = re.sub(r"^https?://", "", url or "")
     return re.sub(r"v\d+$", "", key).rstrip("/")
 
+
+def _titlekey(title):
+    """Case- and punctuation-insensitive title key, for exact-title dedup.
+
+    Two unrelated papers can open with the same words — "Harness Engineering"
+    is the first half of the title of two different 2026 papers — so this only
+    ever collapses titles that are equal once normalised, never a near match.
+    Genuinely different papers with similar names both survive.
+    """
+    return re.sub(r"[^a-z0-9]+", " ", (title or "").lower()).strip()
+
+
+def merge_papers(*groups):
+    """The day's paper pool: first paper per arXiv id, then per exact title.
+
+    The listing path and the API beat both name a paper arxiv-<id>, so an id
+    collision is the same paper arriving twice, not two papers.
+    """
+    papers, ids, titles = [], set(), set()
+    for group in groups:
+        for paper in group:
+            if paper["id"] in ids:
+                print(f"  - deduped {paper['id']}: same paper from another source",
+                      file=sys.stderr)
+                continue
+            key = _titlekey(paper["title"])
+            if key and key in titles:
+                print(f"  - deduped {paper['id']}: same title as a paper already "
+                      f"in the pool", file=sys.stderr)
+                continue
+            ids.add(paper["id"])
+            titles.add(key)
+            papers.append(paper)
+    return papers
+
+
+# ---------------------------------------------------- the semantic-layer beat
 
 def semantic_arxiv(want=SEMANTIC_WANT, days=SEMANTIC_WINDOW_DAYS):
     """Fresh arXiv submissions in the semantic-layer family.
@@ -338,9 +493,12 @@ def recent_urls(day, days):
 
 
 def drop_seen(items, seen):
+    """`seen` holds _urlkey keys, so a scheme or version difference is not a
+    new story: the listing links http://arxiv.org/abs/Xv1 and the beat links
+    the same paper as https://arxiv.org/abs/X."""
     fresh = []
     for item in items:
-        if item["url"].rstrip("/") in seen:
+        if _urlkey(item["url"]) in seen:
             print(f"  - deduped {item['id']}: already reported", file=sys.stderr)
             continue
         fresh.append(item)
@@ -360,12 +518,11 @@ def main():
     print("collecting Hacker News…", file=sys.stderr)
     stories = verify_stories(hacker_news())
     print("collecting arXiv…", file=sys.stderr)
-    papers = arxiv()
+    papers = merge_papers(arxiv(), eng_arxiv())
     print("collecting the semantic-layer beat…", file=sys.stderr)
     topic = semantic_arxiv() + semantic_hn()
 
-    seen = recent_urls(day, args.dedup_days)
-    seen_keys = {_urlkey(url) for url in seen}
+    seen = {_urlkey(url) for url in recent_urls(day, args.dedup_days)}
     stories = drop_seen(stories, seen)
     papers = drop_seen(papers, seen)
     # One story, one section. The beat overlaps the front page by design, so
@@ -373,7 +530,7 @@ def main():
     # it — otherwise the same link prints in two sections.
     carried = ({_urlkey(s["url"]) for s in stories} |
                {_urlkey(p["url"]) for p in papers})
-    topic = [t for t in topic if _urlkey(t["url"]) not in seen_keys
+    topic = [t for t in topic if _urlkey(t["url"]) not in seen
              and _urlkey(t["url"]) not in carried]
 
     if not stories:

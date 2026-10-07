@@ -122,7 +122,8 @@ def _arxiv_get(lo, hi, max_results):
     return get(
         "https://export.arxiv.org/api/query",
         {
-            "search_query": f"(cat:cs.AI OR cat:cs.LG OR cat:cs.CL) AND submittedDate:[{lo} TO {hi}]",
+            "search_query": f"(cat:cs.AI OR cat:cs.LG OR cat:cs.CL OR cat:cs.SE "
+                            f"OR cat:cs.MA) AND submittedDate:[{lo} TO {hi}]",
             "max_results": max_results,
             "sortBy": "submittedDate",
             "sortOrder": "descending",

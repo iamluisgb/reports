@@ -67,7 +67,10 @@ AUDIO_ATTEMPTS = 2
 # day's actual lead — at 5 points and rank 39 because it was three hours old.
 TOP_BY_POINTS = 28
 TOP_BY_RANK = 24
-MAX_PAPERS = 9
+# The pool collect.py fills now spans three categories plus the
+# agent-engineering beat, and this cap is applied by simple truncation: raise
+# it with collect.ARXIV_BUDGET or the last harvest is never shown to the model.
+MAX_PAPERS = 14
 MAX_ABSTRACT = 900
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36")
@@ -77,7 +80,9 @@ engineer who builds with LLMs. Declarative, specific, no hype, no filler adjecti
 no "in today's fast-moving landscape", no "it's worth noting". Numbers earn their \
 place. Never pad. British-leaning English, em dashes over semicolons."""
 
-PAPERS_LABEL = "Papers — ArXiv CS.AI"
+# The pool is no longer cs.AI only: three listings plus the engineering
+# beat, so the old label would misdescribe half the section.
+PAPERS_LABEL = "Papers — ArXiv"
 # The semantic-layer beat is a standing section: the vocabulary moves faster
 # than the field does, so one label has to hold ontologies, knowledge graphs,
 # context graphs and semantic layers alike. Its candidates are the only ones
@@ -176,6 +181,10 @@ whole report. Return ONLY a JSON object, no markdown fence, no commentary:
 Rules:
 - Choose 4-6 papers. "id" MUST be copied exactly. "title" may keep the paper's own \
 name; drop a subtitle that adds nothing.
+- The pool spans cs.AI, cs.SE, cs.MA and an agent-engineering sweep of arXiv, so it \
+holds both model work and the engineering around it. Take the stronger items rather \
+than the first five: a harness, coding-agent or orchestration paper that reports real \
+numbers beats a marginal cs.AI one.
 - "desc" is 2-4 sentences: lead with the problem the paper attacks, then the result \
 with its actual numbers, and end with **[three, lowercase, comma-separated tags]** \
 in double asterisks.
@@ -726,8 +735,13 @@ def main():
     # --- papers and the closing argument ----------------------------------
     summary = "\n".join(f'- {i["title"]}: {i["desc"]}'
                         for s in chosen for i in s["items"])
-    candidates = "\n".join(f'{p["id"]} | {p["title"]}\n  {p["abstract"][:MAX_ABSTRACT]}'
-                           for p in papers)
+    # The category travels with the candidate: the writer is choosing across
+    # cs.AI and the engineering beat, and the label is the only cue it has.
+    candidates = "\n".join(
+        f'{p["id"]} | {p["title"]}'
+        + (f' [{p["cat"]}]' if p.get("cat") else "")
+        + f'\n  {p["abstract"][:MAX_ABSTRACT]}'
+        for p in papers)
     why = []
     if papers:
         reply, model = complete(PAPERS_PROMPT.format(
