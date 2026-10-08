@@ -172,7 +172,7 @@ for DAY in $(tr ' ' '\n' <<< "$DAYS" | sort); do
   if [[ "$LABEL" == "dedup" ]]; then
     git commit --quiet -m "🔁 dedup — AI News Daily $PRETTY (items ya citados en otro día)"
   elif [[ "$LABEL" == "audio" ]]; then
-    git commit --quiet -m "🔊 Audio briefing — AI News Daily $PRETTY (Kokoro, Fenrir/Sarah)"
+    git commit --quiet -m "🔊 Audio briefing — AI News Daily $PRETTY (Kokoro, Heart/Bella)"
   else
     git commit --quiet -m "📰 AI News Daily — $PRETTY (backfill)"
   fi

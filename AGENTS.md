@@ -64,7 +64,8 @@ python3 scripts/make_audio.py YYYY-MM-DD        # reads audio/ai-news-YYYY-MM-DD
 python3 scripts/make_audio.py YYYY-MM-DD --check
 ```
 
-It synthesises each segment with Kokoro (`FENRIR` → `am_fenrir`, `SARAH` → `af_sarah`),
+It synthesises each segment with Kokoro (`HOST_A` → `af_heart`, `HOST_B` → `af_bella`;
+`FENRIR`/`SARAH` still work as aliases),
 concatenates them, and injects the "Audio Briefing" section and its player JS into the
 report with the real duration, and writes `audio/ai-news-YYYY-MM-DD.json` with the
 loudness envelope the waveform player draws. Idempotent: re-running replaces, never stacks.

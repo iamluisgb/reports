@@ -33,9 +33,12 @@ ROOT = Path(__file__).resolve().parents[1]
 API = os.environ.get("NAN_BASE_URL", "https://api.nan.builders/v1") + "/audio/speech"
 # The quirón skill `media/long-audio` writes dialogue as [HOST_A]/[HOST_B];
 # both spellings map to the same English dialogue pair it standardises on.
+# af_heart is Kokoro's only A-graded voice and af_bella its A- second: the best
+# pair the model has, and level with each other, unlike the A/C+ mix the male
+# voices forced. FENRIR/SARAH are kept as aliases of the same two turns.
 VOICES = {
-    "HOST_A": "am_fenrir", "A": "am_fenrir", "FENRIR": "am_fenrir",
-    "HOST_B": "af_sarah", "B": "af_sarah", "SARAH": "af_sarah",
+    "HOST_A": "af_heart", "A": "af_heart", "FENRIR": "af_heart",
+    "HOST_B": "af_bella", "B": "af_bella", "SARAH": "af_bella",
 }
 # media/long-audio asks for >= 3 minutes; the briefings deliberately sit in a
 # tighter four-to-five minute window so the read never overstays.

@@ -1,5 +1,5 @@
 ---
-description: Escribe el guion hablado del briefing diario a partir del report y lo sintetiza con Kokoro (voces Fenrir y Sarah), inyectando el reproductor en el HTML.
+description: Escribe el guion hablado del briefing diario a partir del report y lo sintetiza con Kokoro (voces Heart y Bella), inyectando el reproductor en el HTML.
 mode: primary
 model: nan/deepseek-v4-flash
 temperature: 0.4
