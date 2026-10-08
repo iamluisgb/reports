@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Thursday the eighth of October, twenty twenty-six. Lead story: Anthropic ships Claude Haiku five point five — and gives the small model a dedicated product page, the first time the tier has headlined its own release. Eight hundred and fourteen points and three hundred and ninety-nine comments on Hacker News within hours.
+
+[HOST_B] That product-page treatment is the signal. The small-model tier is now a battleground in its own right, not a cheap fallback. Watch whether OpenAI and Google counter with small-model releases this week, and whether pricing, not capability, becomes the differentiator. The frontier model is a commodity; the margin is moving to routing and orchestration.
+
+[HOST_A] OpenAI launches G P T six, and the framing is notable: adaptive interfaces rather than benchmark claims. Five hundred and ninety points, three hundred comments. The pitch is that the model reshapes its own interface around the task — not that it topped another leaderboard.
+
+[HOST_B] Deliberate positioning. Benchmark numbers have stopped moving markets, so OpenAI is selling the experience layer. Developers will demand numbers anyway. Watch comment sentiment and independent evals over the next few days — if the framing lands, expect every future launch to copy it; if it doesn't, G P T six gets judged on the old terms.
+
+[HOST_A] MIT confirms the death of Margaret Hamilton, who led the Apollo onboard flight software and popularised the term software engineering. One thousand two hundred and fifty-six points — the most-upvoted story of the day by a wide margin.
+
+[HOST_B] Worth sitting with. Hamilton's team put humans on the Moon with a fraction of the compute in a modern washing machine, and her discipline — software as engineering, with failure modes and recovery — is exactly what today's agent-harness work is rediscovering.
+
+[HOST_A] Two enterprise stories. Meta and Microsoft are both moving to curb internal Claude usage — three hundred and thirty-four points and three hundred and twenty-four comments, a notable signal about which tools enterprises treat as competitive risk. And Docker has open-sourced Docker Agent, its own agent tooling, on GitHub.
+
+[HOST_B] Read those together. Enterprises are adopting agents faster than their guardrails are verified — HarnessSecurity-Bench, out today, finds roughly half of confirmed security mechanisms in coding-agent harnesses are opt-in, with closed-source harnesses showing substantial evidence gaps. Watch whether other hyperscalers follow the bans, and what Anthropic's response says about how it prices enterprise lock-in risk.
+
+[HOST_A] Papers. S W E C C benchmarks repository policy compliance — eight hundred and twenty-three machine-checkable policies from twelve open-source repositories — and finds coding agents pass unit tests while routinely violating the contribution policies that decide whether a patch actually merges. Separately, a study of L L M judges identifies anchor bias: showing the judge the answer it is verifying collapses its discrimination, with J R O C A U C swinging from nought point one two to nought point eight seven.
+
+[HOST_B] These land alongside Live Mace, which ran five frontier models in live financial markets for thirty days and found similar returns from markedly different behaviour. The pattern is unmistakable — the field is abandoning outcome-based evaluation. If you still report pass at k as the whole story, your numbers are now the least informative part of your eval.
+
+[HOST_A] More papers. CoCo-Prover treats theorem proving as metalevel decision-making under cost, optimising proofs per unit of compute rather than raw pass rates. Dev-Primitives turns repository files into active participants holding state locally — a structural answer to context explosion in long-horizon agents. And Terence Tao argues maths must value A I-assisted progress more holistically than theorem-proving benchmarks allow — rank one on the front page, hours old.
+
+[HOST_B] Tao's complaint is the cost argument in another register: the metrics we optimise no longer match what we want. Cost is becoming the axis of competition — Haiku headlining, CoCo-Prover counting compute, Docker and Ronacher's codemode treating the action space, not the model, as the engineering frontier. Watch whether major agent frameworks expose code-execution action spaces as a first-class mode.
+
+[HOST_A] The sweep. Chrome reverses its twenty twenty-two decision and ships native JPEG X L — five hundred and thirty-three points; pressure now on Firefox and WebKit, or the format stalls as Chromium-only again. Visa and Mastercard face fresh antitrust litigation over merchant fees — five hundred and thirty-eight points, three hundred and eighty-seven comments. ZeroBrew claims package installs one hundred times faster than Homebrew. God of War runs in a browser tab via WebAssembly recompilation. A Commodore sixty-four typeface rebuilt from keycap photographs. Cleo, the pseudonymous mathematician, gets a Wikipedia profile. Google opens an experimental A I gaming platform. And Q R A K E N ships a training-free text to S P A R Q L pipeline grounded in empirical graph evidence.
+
+[HOST_B] The through-line today: evaluation, harnesses, cost. Benchmarks are learning to ask whether a maintainer would merge the patch, whether the harness defends itself, and what the agent actually did — not just what it scored. Full details, links and the written analysis are in the report — AI News Daily, eighth of October, twenty twenty-six.

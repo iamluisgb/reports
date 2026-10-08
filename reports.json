@@ -1,7 +1,22 @@
 {
-  "generated": "2026-10-07T16:43:33+00:00",
-  "count": 163,
+  "generated": "2026-10-08T07:07:24+00:00",
+  "count": 164,
   "reports": [
+    {
+      "file": "ai-news-2026-10-08.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-08",
+      "summary": "Anthropic ships Claude Haiku 5.5 · OpenAI launches GPT-6 around intelligent UI · Docker open-sources Docker Agent · Apollo software pioneer Margaret Hamilton dies",
+      "readingTime": 8,
+      "tags": [
+        "models",
+        "agents",
+        "research",
+        "coding"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-07.html",
       "type": "daily",
@@ -944,7 +959,6 @@
       "summary": "Karpathy's Pelican · Go 1.27 interactive tour · Kimi K3 on MI355X beats B300 per dollar · EU age verification",
       "readingTime": 3,
       "tags": [
-        "research",
         "hardware",
         "multimodal"
       ],
