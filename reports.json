@@ -1,7 +1,20 @@
 {
-  "generated": "2026-10-08T07:07:24+00:00",
-  "count": 164,
+  "generated": "2026-10-09T07:09:00+00:00",
+  "count": 165,
   "reports": [
+    {
+      "file": "ai-news-2026-10-09.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-09",
+      "summary": "DeepSeek 4.1 Flash lands to industry shrugs · OpenAI's revenue gap and retracted proofs · Whistle fits speech-to-text in 16.9 MB · DuckDB ships Ducklake",
+      "readingTime": 8,
+      "tags": [
+        "models",
+        "agents"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-08.html",
       "type": "daily",
@@ -959,6 +972,7 @@
       "summary": "Karpathy's Pelican · Go 1.27 interactive tour · Kimi K3 on MI355X beats B300 per dollar · EU age verification",
       "readingTime": 3,
       "tags": [
+        "research",
         "hardware",
         "multimodal"
       ],
