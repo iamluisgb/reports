@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Cloudflare acquires Deno](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-10.md) — 2026-10-10 · 10 min
+- [OpenAI publishes AI progress in mathematics](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-11.md) — 2026-10-11 · 7 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### October 2026
 
+- [OpenAI publishes AI progress in mathematics](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-11.md) — 2026-10-11 · 7 min
 - [Cloudflare acquires Deno](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-10.md) — 2026-10-10 · 10 min
 - [DeepSeek 4.1 Flash lands to industry shrugs](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-09.md) — 2026-10-09 · 8 min
 - [Anthropic ships Claude Haiku 5.5](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-08.md) — 2026-10-08 · 8 min

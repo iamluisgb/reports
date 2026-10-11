@@ -1,7 +1,20 @@
 {
-  "generated": "2026-10-10T07:08:50+00:00",
-  "count": 166,
+  "generated": "2026-10-11T07:05:28+00:00",
+  "count": 167,
   "reports": [
+    {
+      "file": "ai-news-2026-10-11.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-11",
+      "summary": "OpenAI publishes AI progress in mathematics · Microsoft ships Execution Containers for agent containment · macOS struck from the official Unix registry · DuckDB 2.0's speedups explained",
+      "readingTime": 7,
+      "tags": [
+        "agents",
+        "research"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-10.html",
       "type": "daily",
@@ -986,7 +999,6 @@
       "summary": "Karpathy's Pelican · Go 1.27 interactive tour · Kimi K3 on MI355X beats B300 per dollar · EU age verification",
       "readingTime": 3,
       "tags": [
-        "research",
         "hardware",
         "multimodal"
       ],
