@@ -1,0 +1,29 @@
+[HOST_A] AI News Daily, Monday the twelfth of October, twenty twenty-six. Lead story: Andrej Karpathy's thread on the widening gap in shared understanding of L L M capability drew seven hundred and sixty-three comments — the largest discussion on the front page. His argument: practitioners and the public now hold divergent models of what these systems can and cannot do.
+
+[HOST_B] The disagreement itself is the story. When a team scoping an A I feature cannot agree on what the model does, estimates inflate or collapse, and the error lands in production. Karpathy is describing an engineering hazard, not a discourse problem. Expect capability-alignment inside teams — not with the model, with your colleagues — to become a line item.
+
+[HOST_A] Zod four point six point six appears compromised. A suspicious commit landed on the repository of one of the most widely installed npm validation libraries. No maintainer confirmation yet on provenance.
+
+[HOST_B] Treat it as a live supply-chain incident until provenance is verified. Pin your versions, audit your lockfiles, and check your continuous integration caches — a malicious validation library sits in the trust path of nearly everything. If the maintainer stays silent past today, assume the worst and act accordingly.
+
+[HOST_A] Two governance stories. Q G I S has formally banned A I-assisted contributions — the first major open-source G I S project to codify it. And a seven hundred and forty-point argument that passkeys are a trap: fragmented sync, platform lock-in, and poor recovery paths that fail the threat model they claim to solve.
+
+[HOST_B] The passkey critique deserves reading before any WebAuthn rollout — recovery is where the model breaks, and recovery is where your users live. On QGIS, watch whether other maintainers follow. The timing is not coincidental: it lands the same week as a benchmark showing review agents still cannot carry the load alone.
+
+[HOST_A] The papers. CRBugBench mines one thousand human-verified bugs from ninety-eight open-source repositories, plus eight hundred tasks from proprietary ones, pairing each bug with the pull request that introduced it. Separately, a causal study across twenty-six thousand nine hundred and ninety-nine pull requests from six agent architectures finds dual-scope changes — application code plus deployment infrastructure — carry measurably higher integration overhead.
+
+[HOST_B] The convergence across today's papers is blunt: the model is rarely the failure point — the harness is. LongHarness names evidence drift in corpus-scale agents; the orchestration paper shows blind multi-agent collaboration burns tokens on easy queries, hitting ninety-three point eight one percent by tracking capability rather than assuming it. Your risk budget belongs in state management and deployment awareness, not model choice.
+
+[HOST_A] Two safety papers. One introduces a three-status framework — admissible, inadmissible, unresolved — for verifying what long-term agent memory is allowed to retrieve, because a correct answer can follow forbidden exposure. The other, DRYLAB-Bench, is the first benchmark measuring whether agentic L L Ms can act on hazardous biological mutation design, especially when wired to specialised tools.
+
+[HOST_B] Both papers attack the same blind spot: evaluations test knowledge, not action through plumbing. That connects to the day's security theme — Zod's commit, defrosted fridge fleets across Europe, and inadmissible retrieval are all failures in trusted components around a capable core. Audit what your agents are allowed to recall, not just what they can do.
+
+[HOST_A] Infra round-up. Yandex Cloud confirmed a third data centre incident — five hundred and ninety-eight points and seven hundred and twenty-eight comments, the outage discussion of the day. Memory pricing is pushing Intel and A M D platforms back toward D D R four. A ClickHouse talk argues Postgres is not slow — your storage configuration is, and it is the usual culprit behind mysterious p ninety-nine regressions. And Finnish authorities ordered Google to halt datacentre work over environmental impact concerns.
+
+[HOST_B] The Yandex pattern is the one to watch: a fourth status-page entry or a published root cause settles whether this is systemic failure or a targeted campaign. The Finland order matters more broadly — permitting regimes are tightening for A I-era buildouts, and that constrains capacity plans more than chip supply does.
+
+[HOST_A] Quick sweep. Browser fingerprinting is the post-cookie tracking mechanism, and consent frameworks do not touch it. New York City's Click to Cancel rule is in effect — cancellation must be as easy as sign-up. Nanolathe, a rebuild of the nineteen ninety-seven strategy classic, topped the front page at five hundred and sixty-four points. I R C version three drew three hundred and ninety-three points. PlayStation 2 titles were statically recompiled to WebAssembly. And an analyst called Anthropic's I P O an unprecedented test of investor gullibility.
+
+[HOST_B] On Anthropic, watch how the offering prices and trades — the reception sets the template for valuing frontier-lab risk, and every lab's next raise inherits it. Also worth tracking: the TEXT2SPARQL twenty twenty-six challenge results, which will show whether text-to-query holds up against real schemas.
+
+[HOST_A] That is the briefing. The full written report — with paper links, the watch list, and the numbers behind all of it — is in today's edition of AI News Daily, dated the twelfth of October, twenty twenty-six.

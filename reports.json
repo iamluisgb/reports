@@ -1,7 +1,21 @@
 {
-  "generated": "2026-10-11T07:05:28+00:00",
-  "count": 167,
+  "generated": "2026-10-12T13:06:17+00:00",
+  "count": 168,
   "reports": [
+    {
+      "file": "ai-news-2026-10-12.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-12",
+      "summary": "Karpathy on the widening LLM capability gap · Zod 4.6.6 hit by a malicious commit · QGIS bans AI-assisted contributions · Passkeys called a trap",
+      "readingTime": 10,
+      "tags": [
+        "agents",
+        "research",
+        "memory"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-11.html",
       "type": "daily",
@@ -985,6 +999,7 @@
       "summary": "LLMs reward expertise · Qwen3.8-Max: a new bar for coding · SQLite CVEs or LLM slop? · Databricks completes Panther acquisition",
       "readingTime": 3,
       "tags": [
+        "models",
         "security",
         "multimodal",
         "coding"
