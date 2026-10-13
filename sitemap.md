@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Karpathy on the widening LLM capability gap](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-12.md) — 2026-10-12 · 10 min
+- [Models can provably hide capabilities](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-13.md) — 2026-10-13 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### October 2026
 
+- [Models can provably hide capabilities](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-13.md) — 2026-10-13 · 9 min
 - [Karpathy on the widening LLM capability gap](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-12.md) — 2026-10-12 · 10 min
 - [OpenAI publishes AI progress in mathematics](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-11.md) — 2026-10-11 · 7 min
 - [Cloudflare acquires Deno](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-10.md) — 2026-10-10 · 10 min
