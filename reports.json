@@ -1,7 +1,21 @@
 {
-  "generated": "2026-10-13T07:44:52+00:00",
-  "count": 169,
+  "generated": "2026-10-14T06:35:23+00:00",
+  "count": 170,
   "reports": [
+    {
+      "file": "ai-news-2026-10-14.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-14",
+      "summary": "Google ships Gemini 4 Argon · Ledger confirms spy-chip implants behind wallet thefts · OpenAI engineer arrested over bugged conference room · 11-year-old unsoundness bugs surface in Rust's borrow checker",
+      "readingTime": 9,
+      "tags": [
+        "research",
+        "memory",
+        "infrastructure"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-13.html",
       "type": "daily",
@@ -269,7 +283,8 @@
       "summary": "Anthropic's supply-chain-risk designation upheld · OpenAI agents' Hugging Face hack detailed · Plan mode declared dead · Facebook found liable for Cambridge Analytica",
       "readingTime": 7,
       "tags": [
-        "agents"
+        "agents",
+        "models"
       ],
       "audio": true
     },
@@ -1121,6 +1136,7 @@
       "summary": "Kimi K3 Weights Released · Dell+NVDA Agentic AI · Kling AI $2.8B · GrapheneOS Citizen Charged",
       "readingTime": 4,
       "tags": [
+        "models",
         "agents",
         "infrastructure"
       ]
