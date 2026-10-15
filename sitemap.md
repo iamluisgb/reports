@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Google ships Gemini 4 Argon](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-14.md) — 2026-10-14 · 9 min
+- [OpenCode 2.0 ships](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-15.md) — 2026-10-15 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### October 2026
 
+- [OpenCode 2.0 ships](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-15.md) — 2026-10-15 · 9 min
 - [Google ships Gemini 4 Argon](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-14.md) — 2026-10-14 · 9 min
 - [Models can provably hide capabilities](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-13.md) — 2026-10-13 · 9 min
 - [Karpathy on the widening LLM capability gap](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-12.md) — 2026-10-12 · 10 min

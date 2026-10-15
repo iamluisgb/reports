@@ -1,7 +1,20 @@
 {
-  "generated": "2026-10-14T06:35:23+00:00",
-  "count": 170,
+  "generated": "2026-10-15T06:35:56+00:00",
+  "count": 171,
   "reports": [
+    {
+      "file": "ai-news-2026-10-15.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-15",
+      "summary": "OpenCode 2.0 ships · Liquid AI targets on-device agents · Frontier labs blamed for AI hacking failures · GraphRAG gets a threat model",
+      "readingTime": 9,
+      "tags": [
+        "agents",
+        "coding"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-14.html",
       "type": "daily",
@@ -2156,6 +2169,7 @@
       "summary": "OpenAI to confidentially file for IPO as soon as Friday · GitHub confirms breach of 3,800 repos via malicious VSCode e · Anthropic expanding to Colossus2 with GB200 infrastructure",
       "readingTime": 8,
       "tags": [
+        "models",
         "agents",
         "security"
       ]
