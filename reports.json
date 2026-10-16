@@ -1,7 +1,21 @@
 {
-  "generated": "2026-10-15T06:35:56+00:00",
-  "count": 171,
+  "generated": "2026-10-16T06:34:29+00:00",
+  "count": 172,
   "reports": [
+    {
+      "file": "ai-news-2026-10-16.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-16",
+      "summary": "Meta opens Muse Spark · Citizen Lab exposes ad-delivered mercenary spyware · RPKI now covers 70% of routes · Goodfire argues neural networks are already clean",
+      "readingTime": 8,
+      "tags": [
+        "models",
+        "agents",
+        "research"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-15.html",
       "type": "daily",
@@ -421,7 +435,6 @@
       "summary": "Nvidia ships CUDA in Rust · a 4B model out-plans Postgres · AWS admits unrecoverable Middle East data · Flock cameras cracked open",
       "readingTime": 8,
       "tags": [
-        "agents",
         "infrastructure",
         "hardware"
       ],
@@ -1261,7 +1274,6 @@
       "readingTime": 6,
       "tags": [
         "models",
-        "agents",
         "multimodal"
       ]
     },
