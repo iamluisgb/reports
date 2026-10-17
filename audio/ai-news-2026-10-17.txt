@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Saturday the seventeenth of October, twenty twenty-six. Lead story: Anthropic is investigating the unexplained seed constants behind the NIST elliptic curves — the E C D S A parameters the entire industry takes on trust. Eight hundred and six points on Hacker News and climbing.
+
+[HOST_B] Those seeds have never had a documented derivation; they were generated, published, and trusted for twenty years. If Anthropic can recover the provenance — or prove it's unrecoverable — that settles a long-running argument about whether the curves were fair. Either outcome changes how you treat constants you didn't generate yourself.
+
+[HOST_A] Postgres nineteen has slipped. LLM-assisted review surfaced a patch backlog larger than committer capacity — more bugs found than humans can clear — so the release waits on the queue.
+
+[HOST_B] This is the week's real signal. AI review is no longer a demo; it's a throughput constraint on a critical open-source pipeline. Watch whether the project adds committers or tightens the AI-review thresholds — the next release date tells you which lever they pulled.
+
+[HOST_A] Citizen Lab has documented how DiscoverTech's ad-targeting infrastructure became a zero-click delivery channel for mercenary spyware. Five hundred and one points, six hundred and seventy comments.
+
+[HOST_B] The delivery chain is the point: the same targeting machinery that serves ads can serve exploits, and nobody in that pipeline signed off on it. Ad tech is attack surface you've already deployed.
+
+[HOST_A] Mercor's labour index finds ninety percent of U S working hours sit outside what current AI benchmarks measure. The suite covers roughly a tenth of the actual work.
+
+[HOST_B] That should reframe every leaderboard you read. A benchmark score buys you less than task coverage implies — demand evals shaped like your workload, not like a multiple-choice quiz.
+
+[HOST_A] Two papers in detail. First, scaffolding: an environment-agnostic Codex agent — unchanged code, prompts and tools across A R C A G I three, A G I Maze and Terminal Bench — improves mean scores from a single instruction change, yet still trails a purpose-built harness even on G P T five point six sol. Second, RAG R S T: retrieved exemplars lift discourse parsing from zero point seven nine four to zero point eight four six F one, with no training at all.
+
+[HOST_B] Read those together and the leverage is clear — harness engineering, not model selection, is where gains live, and knowledge that's convention rather than pattern belongs in context, not weights. That cuts against the fine-tune-everything instinct. It's also why Anthropic's Claude Code review write-up — three hundred and eight points — is worth your time. Expect harness engineering to be the hiring priority of twenty twenty-six.
+
+[HOST_A] Releases and demos. Black Forest Labs ships FLUX three Image Klein. Gemini four Argon plays StarCraft under a benchmark harness — long-horizon planning with partial observability, not turn-based boards. Apple demos distributed M L X inference across clustered Mac Studios. And llama.cpp runs G G U F models natively on a jailbroken P S five.
+
+[HOST_B] The StarCraft harness is the one to track — real-time strategy exposes exploration and hypothesis refinement, which is exactly what the inquiry-learning eval paper argues benchmarks should score: the full loop, not isolated capabilities. The P S five result is a reminder that consumer silicon keeps turning up in unexpected inference fleets.
+
+[HOST_A] Quick sweep. Calif's write-up on a thirty-seven-year-old OpenBSD kernel bug — present since the code's origins — is required reading if you run B S D. Waymo launches in Toronto, its first market outside the U S. A Home Assistant integration was found exfiltrating credentials — two hundred and ten points and climbing, so audit your dependency tree. X R I C benchmarks an agentic controller for O RAN radio optimisation. C plus plus twenty six gains a standard debugging header. Jake Archibald benchmarks J P E G X L against A V I F. And the Tesla Roadster thread — one thousand three hundred and thirty-nine points, two thousand three hundred and seventy-eight comments — is fact-checking Tesla's revived page, with no delivery date confirmed.
+
+[HOST_B] Watch list: the Postgres backlog and whether committer capacity or review thresholds move first. The Home Assistant takedown — maintainer response and post-mortem, or silence. Waymo's Toronto service limits, which decide pilot versus rollout. And the Power to the Players Act — Representative Torres's bill against publisher kill-switches is announced, not scheduled, so watch for a bill number and co-sponsors. The full written report has every link and the complete paper summaries — read it before Monday. That's AI News Daily.

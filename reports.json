@@ -1,7 +1,20 @@
 {
-  "generated": "2026-10-16T06:34:29+00:00",
-  "count": 172,
+  "generated": "2026-10-17T06:38:45+00:00",
+  "count": 173,
   "reports": [
+    {
+      "file": "ai-news-2026-10-17.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-17",
+      "summary": "Claude traces the ECDSA curve seeds · Postgres 19 slips as AI reviewers outpace humans · Citizen Lab exposes an ad pipeline for spyware · FLUX 3 Klein and Gemini 4 Argon ship",
+      "readingTime": 8,
+      "tags": [
+        "models",
+        "research"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-16.html",
       "type": "daily",
@@ -2181,7 +2194,6 @@
       "summary": "OpenAI to confidentially file for IPO as soon as Friday · GitHub confirms breach of 3,800 repos via malicious VSCode e · Anthropic expanding to Colossus2 with GB200 infrastructure",
       "readingTime": 8,
       "tags": [
-        "models",
         "agents",
         "security"
       ]
