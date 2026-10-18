@@ -1,7 +1,20 @@
 {
-  "generated": "2026-10-17T06:38:45+00:00",
-  "count": 173,
+  "generated": "2026-10-18T06:34:37+00:00",
+  "count": 174,
   "reports": [
+    {
+      "file": "ai-news-2026-10-18.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-18",
+      "summary": "DeepSeek ships V4.1-Flash-1017 · OpenCode hacked, user credentials leaked · Lean now ships with verified kernels · solar power passes nuclear globally",
+      "readingTime": 6,
+      "tags": [
+        "research",
+        "memory"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-17.html",
       "type": "daily",
@@ -448,6 +461,7 @@
       "summary": "Nvidia ships CUDA in Rust · a 4B model out-plans Postgres · AWS admits unrecoverable Middle East data · Flock cameras cracked open",
       "readingTime": 8,
       "tags": [
+        "agents",
         "infrastructure",
         "hardware"
       ],
@@ -1287,6 +1301,7 @@
       "readingTime": 6,
       "tags": [
         "models",
+        "agents",
         "multimodal"
       ]
     },

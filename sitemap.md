@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Claude traces the ECDSA curve seeds](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-17.md) — 2026-10-17 · 8 min
+- [DeepSeek ships V4.1-Flash-1017](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-18.md) — 2026-10-18 · 6 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### October 2026
 
+- [DeepSeek ships V4.1-Flash-1017](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-18.md) — 2026-10-18 · 6 min
 - [Claude traces the ECDSA curve seeds](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-17.md) — 2026-10-17 · 8 min
 - [Meta opens Muse Spark](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-16.md) — 2026-10-16 · 8 min
 - [OpenCode 2.0 ships](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-15.md) — 2026-10-15 · 9 min
