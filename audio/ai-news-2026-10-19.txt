@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Monday the nineteenth of October, twenty twenty-six. Lead story: DeepSeek has exposed web search and fetching as a first-class A P I, priced at seventy-five cents per one thousand successful requests. Grounding is now a line item — and a cheap one.
+
+[HOST_B] The significance is the price point, not the feature. Search and fetch were premium add-ons — at that rate they become table stakes. Watch whether the frontier labs match within weeks — a matching move confirms grounding has commoditised, silence means they're defending margin.
+
+[HOST_A] Two domain stories. A sysadmin reports Namecheap seized and disabled their entire portfolio of domains at once — the thread sits at two hundred and seventy-three comments of operational detail. Separately, Hagens Berman has filed a consumer class action against Verisign's dot-com registry operation.
+
+[HOST_B] Read the Namecheap thread as a case study in registrar concentration risk — one registrar, one decision, every domain gone the same morning. The lesson is spreading registrations and documented escalation paths. On Verisign, watch whether the motion to dismiss survives — that decides whether the case has a future.
+
+[HOST_A] Meta's reworded terms of service: legal experts say the new language changes the wording but not the grant — Meta retains broad rights to scrape and reuse content.
+
+[HOST_B] This matters if you train on or license web data. The rewording is cosmetic — the rights are unchanged. Watch for a regulator picking it up, or a licensor withdrawing — either would confirm the grant has teeth.
+
+[HOST_A] Three papers attack or measure the agent harness. Privilege escalation attacks on harness-protected coding agents: planted context in a repository steers the agent into requesting a plausibly justified but dangerously broad allow-rule — approve once, and untrusted content writes your permission policy. Doc2Harness benchmarks harness construction itself: a model builds a harness from an interface-only skeleton, then frozen, is driven end to end by scripted mock models. And M S Eval scores sub-agent delegation across eight frontier models — sub-agent specialisation emerges as the best pattern, with open-source models largely competitive.
+
+[HOST_B] The harness has become the load-bearing component, and this week attacked it from three directions. If allow-rules are your safety story, read the privilege-escalation paper before your next code review. Harness engineering going from craft to measurable task changes who can build this infrastructure.
+
+[HOST_A] Two more papers. WebCoder trains frontend agents with reinforcement learning grounded in effects on a shared executable artifact, judged by an independent verifier — credit assignment instead of trajectory-level vibes. And FuTransformer: F P eight prefill with direct K V cache placement, I N T four decode weights with a Hadamard transform — prefill up to one point four eight times faster than compiled PyTorch F P eight on H one hundreds.
+
+[HOST_B] Hand-tuned kernels are still buying real margins. Combined with DeepSeek's pricing, the commodity layers — retrieval, tokens, tooling — are being priced and compressed simultaneously. The defensible engineering moves up to what you can observe and verify. That's the same instinct as the proxy thread: without a proxy you control, you can't see prompts, spend, retries or provider behaviour across your traffic.
+
+[HOST_A] Memory. Q E Mem reframes agent memory as constructing query-specific evidence sets — retrieved memories can all be relevant and still leave the query unanswerable. A Graph RAG workspace lets developers audit and steer what an agent remembers across sessions. AgentOnto organises enterprise databases and documents into an explicit ontology to ground analytics. Plus an error taxonomy for property graph data.
+
+[HOST_B] Convergent claim: a retrieved chunk is not evidence. Flat similarity produces confident wrong answers with no correction path. Expect sufficiency, provenance and auditability to become standard requirements in enterprise agent deployments — vendors who can't show their evidence chains will lose those deals.
+
+[HOST_A] Quick sweep. DeepSeek shipped a V four point one Flash checkpoint — third-party evals are still settling, wait for convergence before re-benchmarking. Superlite hands an agent a written spec instead of a skill library; a marketplace for agent skills opened hours ago. Killswitch-lang is a programming language designed to defeat code generation. Flatpak's permission model trusts app authors more than its isolation implies. Two bugs in one shared parser hit Broadcom WiFi firmware across many vendors. Terry Tao tells the New York Times he's on a war footing over A I in mathematics; Grant Sanderson counters that there's never been a better time to go into the field.
+
+[HOST_B] Watch this week: grounding prices, the V four point one evals, and Namecheap's stated justification for the seizure — whether this reads as one-off or precedent depends on it. Full links, numbers and abstracts in the written report. That's the briefing.

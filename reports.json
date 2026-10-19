@@ -1,7 +1,21 @@
 {
-  "generated": "2026-10-18T06:34:37+00:00",
-  "count": 174,
+  "generated": "2026-10-19T06:35:55+00:00",
+  "count": 175,
   "reports": [
+    {
+      "file": "ai-news-2026-10-19.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-19",
+      "summary": "DeepSeek prices search and fetch at $0.75 per 1,000 requests · Namecheap seizes a sysadmin's entire domain portfolio · Meta's revised terms still grant broad scraping rights · ontologies move into the enterprise agent stack",
+      "readingTime": 9,
+      "tags": [
+        "agents",
+        "research",
+        "memory"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-18.html",
       "type": "daily",
@@ -461,7 +475,6 @@
       "summary": "Nvidia ships CUDA in Rust · a 4B model out-plans Postgres · AWS admits unrecoverable Middle East data · Flock cameras cracked open",
       "readingTime": 8,
       "tags": [
-        "agents",
         "infrastructure",
         "hardware"
       ],
@@ -1301,7 +1314,6 @@
       "readingTime": 6,
       "tags": [
         "models",
-        "agents",
         "multimodal"
       ]
     },
@@ -2209,6 +2221,7 @@
       "summary": "OpenAI to confidentially file for IPO as soon as Friday · GitHub confirms breach of 3,800 repos via malicious VSCode e · Anthropic expanding to Colossus2 with GB200 infrastructure",
       "readingTime": 8,
       "tags": [
+        "models",
         "agents",
         "security"
       ]
