@@ -1,7 +1,20 @@
 {
-  "generated": "2026-10-19T06:35:55+00:00",
-  "count": 175,
+  "generated": "2026-10-20T06:38:38+00:00",
+  "count": 176,
   "reports": [
+    {
+      "file": "ai-news-2026-10-20.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-20",
+      "summary": "MiniMax ships M3.1 Flash · DeepSeek banned from US federal civilian agencies · Wine ported to OpenBSD · Mercury 3 scales diffusion language models",
+      "readingTime": 9,
+      "tags": [
+        "models",
+        "coding"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-19.html",
       "type": "daily",
@@ -2221,7 +2234,6 @@
       "summary": "OpenAI to confidentially file for IPO as soon as Friday · GitHub confirms breach of 3,800 repos via malicious VSCode e · Anthropic expanding to Colossus2 with GB200 infrastructure",
       "readingTime": 8,
       "tags": [
-        "models",
         "agents",
         "security"
       ]
