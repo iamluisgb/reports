@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [MiniMax ships M3.1 Flash](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-20.md) — 2026-10-20 · 9 min
+- [DeepSeek open-sources DeepInfer](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-21.md) — 2026-10-21 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### October 2026
 
+- [DeepSeek open-sources DeepInfer](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-21.md) — 2026-10-21 · 9 min
 - [MiniMax ships M3.1 Flash](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-20.md) — 2026-10-20 · 9 min
 - [DeepSeek prices search and fetch at $0.75 per 1,000 requests](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-19.md) — 2026-10-19 · 9 min
 - [DeepSeek ships V4.1-Flash-1017](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-18.md) — 2026-10-18 · 6 min
