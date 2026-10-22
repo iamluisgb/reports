@@ -77,16 +77,36 @@
     seek.parentNode.insertBefore(wrap, seek);
     wrap.append(seek);
     let bars = [];
+    let drawn = 0;
+    // Peaks arrive at a fixed resolution (~96). A narrow column — a tablet in portrait,
+    // the side of the index — cannot hold that many bars with 2px gaps, and the row ran
+    // past the card and gave the whole page a horizontal scroll. Draw only the bars that
+    // fit, sampling the peaks down; redraw when the column changes width.
+    const drawWave = peaks => {
+      const heights = waveHeights(peaks);
+      const box = wrap.clientWidth || 320;
+      const gap = box < 260 ? 1 : 2;
+      const n = Math.max(12, Math.min(heights.length, Math.floor((box + gap) / (1 + gap))));
+      if (n === drawn) return;
+      drawn = n;
+      let wave = wrap.querySelector('.wave');
+      if (!wave) {
+        wave = document.createElement('div');
+        wave.className = 'wave';
+        wave.setAttribute('aria-hidden', 'true');
+        wrap.prepend(wave);
+      }
+      wave.style.gap = gap + 'px';
+      const step = heights.length / n;
+      wave.innerHTML = Array.from({ length: n }, (_, i) => `<i style="height:${heights[Math.floor(i * step)]}%"></i>`).join('');
+      bars = [...wave.children];
+      paint();
+    };
     fetch(src.replace(/\.mp3$/, '.json')).then(r => r.ok ? r.json() : null).then(data => {
       if (!data || !Array.isArray(data.peaks) || !data.peaks.length) return;
       if (!total && data.duration) { total = data.duration; paint(); }
-      const wave = document.createElement('div');
-      wave.className = 'wave';
-      wave.setAttribute('aria-hidden', 'true');
-      wave.innerHTML = waveHeights(data.peaks).map(h => `<i style="height:${h}%"></i>`).join('');
-      wrap.prepend(wave);
-      bars = [...wave.children];
-      paint();
+      drawWave(data.peaks);
+      if (window.ResizeObserver) new ResizeObserver(() => drawWave(data.peaks)).observe(wrap);
     }).catch(() => {});
 
     // Playback speed, remembered across the index and every report.

@@ -59,7 +59,12 @@
 .yday { font-size: var(--fs-sm); color: var(--muted); }
 .yday a { color: var(--on-surface-variant); border-bottom: 1px solid var(--border); }
 .yday a:hover { color: var(--on-surface); }
-@media (max-width: 780px) { .today { grid-template-columns: 1fr; gap: 28px; } }
+/* Portrait tablets stack too: at 780–860 the headline and the player each got a sliver
+   of a two-column grid, which is worse than the extra scroll a single column costs. */
+@media (max-width: 860px) { .today { grid-template-columns: 1fr; gap: 28px; } }
+/* Touch: a 30px chip is under the comfortable target, and the topic row is where a
+   reader taps first. */
+@media (pointer: coarse) { .chip { padding: 10px 14px; min-height: 36px; } .topics { gap: 8px; } }
 
 /* ----- Sections ----- */
 .sec { padding-top: 52px; }

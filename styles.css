@@ -266,7 +266,9 @@ a:hover .arrow, button:hover .arrow { transform: translateX(3px); }
   position: absolute; inset: 0; width: 100%; height: 100%; margin: 0;
   opacity: 0; cursor: pointer;
 }
-.wave { position: absolute; inset: 0; display: flex; align-items: center; gap: 2px; pointer-events: none; }
+/* overflow: hidden is the backstop — site.js draws only the bars that fit, but a
+   wave that ever ran wide used to give the whole page a horizontal scroll. */
+.wave { position: absolute; inset: 0; display: flex; align-items: center; gap: 2px; overflow: hidden; pointer-events: none; }
 .wave i { flex: 1; min-width: 1px; height: 18%; border-radius: var(--r-sm); background: color-mix(in srgb, var(--on-surface) 22%, transparent); transition: background var(--dur-fast); }
 .wave i.on { background: var(--primary); }
 
@@ -639,6 +641,18 @@ figure.diagram .marker-muted { fill: var(--on-surface-variant); }
 }
 .toast-x:hover { color: var(--on-surface); }
 @media (max-width: 640px) { .toast { inset-inline: 12px; bottom: 12px; } }
+
+/* Touch devices: one notch up in the type scale, and roomier controls. A tablet is read
+   at arm's length, where 15px UI text and a 30px chip look small and are fiddly to hit.
+   Every size moves together, so the hierarchy is unchanged. Last in the file on purpose:
+   it has to win over the component rules above, which set their own heights. */
+@media (pointer: coarse) {
+  :root {
+    --fs-2xs: 12px; --fs-xs: 13px; --fs-sm: 14px; --fs-base: 16px; --fs-md: 18px;
+  }
+  .btn-sm, .theme-toggle { height: 40px; min-width: 40px; }
+  .btn-primary { height: 52px; }
+}
 
 /* Print: a report on paper or PDF — white page, no chrome, sources spelled out. */
 @media print {
