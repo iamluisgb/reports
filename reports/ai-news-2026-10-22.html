@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 22 Oct 2026</title>
+<link rel="stylesheet" href="../styles.css">
+<!-- og:start -->
+<meta name="description" content="PHP ships emergency fix for critical RCE · LiteLLM 1.107.0 backdoored on PyPI · eMudhra CA keys cracked in milliseconds · OpenAI models arrive on Google Cloud">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-22.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="AI News Daily — 22 Oct 2026">
+<meta property="og:description" content="PHP ships emergency fix for critical RCE · LiteLLM 1.107.0 backdoored on PyPI · eMudhra CA keys cracked in milliseconds · OpenAI models arrive on Google Cloud">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-22.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-10-22.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="AI News Daily — 22 Oct 2026">
+<meta name="twitter:description" content="PHP ships emergency fix for critical RCE · LiteLLM 1.107.0 backdoored on PyPI · eMudhra CA keys cracked in milliseconds · OpenAI models arrive on Google Cloud">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-10-22.png">
+<!-- og:end -->
+<!-- ui:start -->
+<link rel="alternate" type="text/markdown" href="ai-news-2026-10-22.md">
+<link rel="preload" href="../assets/fonts/web/InstrumentSerif-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/InstrumentSerif-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/Geist-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/GeistMono-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('ai-reports-theme');if(t==='light'||(!t&&matchMedia('(prefers-color-scheme: light)').matches))document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script type="speculationrules">{"prerender":[{"where":{"or":[{"href_matches":"/reports/"},{"href_matches":"/reports/reports/*.html"},{"href_matches":"/reports/about.html"}]},"eagerness":"moderate"}]}</script>
+<script defer src="/u/s.js" data-website-id="08c1619b-4bb8-471b-9dc9-9b6cda88e8ae" data-host-url="https://cloud.umami.is" data-domains="luisgonzalezbernal.com"></script>
+<link rel="manifest" href="../manifest.json">
+<link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0c0f0e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-title" content="AI Reports">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script src="../pwa.js" defer></script>
+<script src="../site.js" defer></script>
+<script src="../report.js" defer></script>
+<!-- ui:end -->
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">22 Oct 2026 · THURSDAY</div>
+          <div class="subtitle">PHP ships emergency fix for critical RCE · LiteLLM 1.107.0 backdoored on PyPI · eMudhra CA keys cracked in milliseconds · OpenAI models arrive on Google Cloud</div>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-10-22.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 22 OCT 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 4:59</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">PHP issues critical RCE advisory and emergency release</div>
+        <div class="desc">php.net is pushing an out-of-band update for critical remote code execution vulnerabilities — the advisory sits at 1,516 points and 652 comments. Patch every PHP host today; the 8.2.35 release and a PHP Foundation post on hardening the supply chain followed within hours.</div>
+        <div class="sources">
+          <a href="https://www.php.net/archive/2026.php#2026-10-21-5">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50172041">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Compromised LiteLLM 1.107.0 on PyPI steals credentials</div>
+        <div class="desc">A malicious LiteLLM 1.107.0 upload to PyPI installs a credential stealer and backdoor. If you pulled that version, rotate keys and pin to a known-good release.</div>
+        <div class="sources">
+          <a href="https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50181114">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">eMudhra's CA keys cracked in milliseconds</div>
+        <div class="desc">Scott Helme demonstrates full key recovery against eMudhra's CA keys — 'eight bits of trust', broken effectively instantly. Any chain relying on those keys is forgeable.</div>
+        <div class="sources">
+          <a href="https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50177916">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">OpenAI models are coming to Google Cloud</div>
+        <div class="desc">OpenAI announces distribution of its models on Google Cloud — a competitor hosting a rival's frontier models, and a new option for multi-cloud LLM procurement.</div>
+        <div class="sources">
+          <a href="https://openai.com/index/openai-models-google-cloud/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50180079">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">DuckDB 2.0.0 LTS 'Cinnamon Teal'</div>
+        <div class="desc">DuckDB's first long-term-support release, 2.0.0. The LTS label matters for anyone embedding it in production analytics pipelines.</div>
+        <div class="sources">
+          <a href="https://duckdb.org/2026/10/21/announcing-duckdb-200">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50181136">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">In Numbers</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">$25B</div>
+          <div class="stat-label">Meta penalty in New Mexico case</div>
+          <div class="stat-note">largest single number on the board today <a href="https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">1,516</div>
+          <div class="stat-label">points on PHP RCE advisory</div>
+          <div class="stat-note">652 comments alongside <a href="https://www.php.net/archive/2026.php#2026-10-21-5">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">360M</div>
+          <div class="stat-label">parameters in WorldTUI terminal model</div>
+          <div class="stat-note">trained to emulate shell behaviour, not answer questions <a href="https://simedw.com/2026/10/21/world-model-terminal/">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">591</div>
+          <div class="stat-label">points on the BioWare shutdown story</div>
+          <div class="stat-note">371 comments of obituary <a href="https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware">Original</a></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Agents uncover vulnerabilities and coordinate global disclosure</div>
+        <div class="desc">OpenAI describes 'Patch the Planet': agents finding critical vulnerabilities and running coordinated disclosure across vendors worldwide. Agentic security work moving from demo to process.</div>
+        <div class="sources">
+          <a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50181175">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">OpenAI publishes an official CLI</div>
+        <div class="desc">openai/openai-cli on GitHub — hours old and already rank 4 on the front page. Worth a look before third-party wrappers harden into habits.</div>
+        <div class="sources">
+          <a href="https://github.com/openai/openai-cli">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50191507">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">WorldTUI: a 360M model trained to pretend to be a terminal</div>
+        <div class="desc">A small world model that responds to shell input like a terminal would — 360M parameters, trained to emulate command behaviour rather than answer questions.</div>
+        <div class="sources">
+          <a href="https://simedw.com/2026/10/21/world-model-terminal/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50190363">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Omnara: open-source alternative to Claude Managed Agents</div>
+        <div class="desc">Self-hosted agent orchestration positioned against Anthropic's managed offering — relevant if you want agent fleets without the managed control plane.</div>
+        <div class="sources">
+          <a href="https://github.com/omnara-ai/omnara">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50183892">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Using an LLM for confidence scoring is a bad idea</div>
+        <div class="desc">The case against asking a model how confident it is — and what to use instead when you need calibrated uncertainty.</div>
+        <div class="sources">
+          <a href="https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50176082">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">How Much Does the Harness Matter, and for Whom? A Multi-Model Study of Context in LLM-Driven Vulnerability Discovery</div>
+        <div class="desc">Measures whether an agent harness — not the model — determines vulnerability-discovery yield, across 24 model-runner configurations on a production codebase with 265 non-public security root causes. No single configuration covers all findings; the best two-run pair reaches 60.4%, and 14.3% are found by exactly one model. Swapping a minimal prompt for an engineered one with a CodeQL-derived call graph raises criticality-weighted yield 20-86% for smaller and mid-tier models but only 2% for the frontier model. <strong>[agent-harness, security, evaluation]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.28802v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">PAUSE: Search-Free Steering of Coding Agents Before Their First Source-Code Edit</div>
+        <div class="desc">Coding agents burn most of a trajectory on exploration and testing, then commit to a wrong patch with no checkpoint to fall back on. PAUSE exploits the observation that the first source-code edit arrives at a median of 60% of trajectory progress: it intercepts that edit, has a separate Planner write one repair plan from the pre-edit transcript, and resumes the same agent — no learned monitor, no checkpoint search, no extra model call. <strong>[coding-agents, steering, orchestration]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.29870v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">UserSWE: Evaluating Coding Agents in Multi-Turn Conversations with Dynamic Users</div>
+        <div class="desc">SWE-bench-style benchmarks hand the agent a complete issue in one turn; real developers describe bugs badly, in pieces, over many turns. UserSWE converts repository history and existing benchmarks into multi-turn tasks where a simulated user — persona chain calibrated on 20,859 development sessions — reveals information under per-turn constraints, with execution-grounded tests after every turn. Targets the false positives and false negatives single-turn evaluation produces. <strong>[coding-agents, benchmarks, evaluation]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.29822v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust</div>
+        <div class="desc">Persistent agent memory is an undefended injection and poisoning surface, and the same risk blocks memory sharing between agents. PerMIT trusts only user-typed inputs and gate-confirmed values, mediating everything environment-derived through a finite memory interface; two integrity theorems over that interface are machine-checked in Lean 4. Every attack in the threat model reduces to a single auditable gate decision. <strong>[agent-memory, security, formal-methods]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.28987v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Behavior Beyond Text: Evaluating Refusal Transfer Failure in LLM Agents</div>
+        <div class="desc">Safety evaluations test whether a model refuses harmful text, but agents act through tool calls — and refusal does not transfer. Across 2,304 matched prompts and 20 forbidden actions, requests refused in chat still produce unsafe tool calls for 10-52% of cases under standard tool-enabled prompting. The paper traces the gap to a refusal-associated direction in the residual stream that tool framing bypasses. <strong>[agent-safety, tool-use, interpretability]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.28982v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Ontologies, Graphs &amp; Semantics</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Multimodal GraphRAG for post-storm building assessment</div>
+        <div class="desc">An engineering GraphRAG framework linking damage photos and reconnaissance reports to recovery inference over a structured graph — GraphRAG applied to a concrete safety workflow, not retrieval benchmarks.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.28216v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Automated Brick schema knowledge graph completion across buildings</div>
+        <div class="desc">Infers missing equipment, sensor and space relations in Brick building models — treating the schema as a knowledge graph completion problem instead of weeks of manual schematic review.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.27339v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">SCODEL: canonical ontology definitions for food entity linking</div>
+        <div class="desc">Model-agnostic entity linking that grounds ambiguous, context-dependent recipe mentions in a shared food ontology and recipe knowledge graph.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.27637v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">ChronoSynth: constraint-aware question synthesis over temporal KGs</div>
+        <div class="desc">Generates natural-language questions from temporal knowledge graphs while preserving time conditions and answer sets — the constraints fluent prompting baselines routinely corrupt.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.29339v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">GitLab critical patch release: 19.5.1</div>
+        <div class="desc">Critical fixes shipped outside the usual cadence — self-hosted GitLab instances should upgrade now, not at the next scheduled patch.</div>
+        <div class="sources">
+          <a href="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50185869">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">mitmproxy adds --emudhra option</div>
+        <div class="desc">mitmproxy merges a flag to forge certificates from the cracked eMudhra CA keys — a working, one-command exploit for the eight-bit-key story, hours after disclosure.</div>
+        <div class="sources">
+          <a href="https://github.com/mitmproxy/mitmproxy/commit/169234499088fc2c414644a67efaed3d64ae2e3b">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50189232">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Postgres recovery_prefetch can cause outages</div>
+        <div class="desc">A parameter that can stall standby and crash recovery badly enough to take production down — audit your settings; fresh post, few points, hours old.</div>
+        <div class="sources">
+          <a href="https://ardentperf.com/2026/10/20/postgres-recovery_prefetch-considered-harmful-and-causing-outages/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50188614">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">A proposed o(n log n) integer multiplication algorithm</div>
+        <div class="desc">David Harvey (UNSW) posts a paper proposing integer multiplication below the n log n bound — rank 1 on the front page and the day's best pure-algorithms story.</div>
+        <div class="sources">
+          <a href="https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50190455">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Meta ordered to pay $25B in New Mexico Cambridge Analytica case</div>
+        <div class="desc">A $25 billion penalty over the Cambridge Analytica affair — the largest single number on the board today.</div>
+        <div class="sources">
+          <a href="https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50184820">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">EA is shutting down BioWare</div>
+        <div class="desc">EA closes the Dragon Age and Mass Effect studio — 591 points and 371 comments of obituary.</div>
+        <div class="sources">
+          <a href="https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50184586">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">The Future of CSS: Interop 2027</div>
+        <div class="desc">Josh Comeau's tour of what browser vendors have committed to for Interop 2027.</div>
+        <div class="sources">
+          <a href="https://www.joshwcomeau.com/css/interop-2027/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50175070">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Google publishes a Rust style guide</div>
+        <div class="desc">Google's internal Rust conventions, now public — a useful reference as Rust spreads through production codebases.</div>
+        <div class="sources">
+          <a href="https://google.github.io/styleguide/rustguide.html">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50186010">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Today's incident stack — a malicious LiteLLM wheel on PyPI, eMudhra CA keys recoverable in milliseconds, an out-of-band PHP release — is one story wearing three hats: trust placed in a package, a key, or a release channel and repaid with compromise. The papers put the same question to agents. PerMIT's answer is architectural — trust nothing environment-derived until a gate confirms it, and prove the invariant in Lean 4 rather than assert it. That is the supply-chain lesson transposed into agent memory, and it lands the same day OpenAI ships an official CLI that people will pipe untrusted output into within the week.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The harness paper is the day's most actionable result, and it cuts against frontier-model marketing: engineered context bought 20-86% yield for smaller models against 2% for the frontier one, and no configuration found everything. If you are paying frontier prices for security review, you are mostly buying the last 14.3% — the findings only one model catches. Pair that with PAUSE and the practical picture is that where you intervene in an agent's trajectory matters more than which model sits in the loop.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Refusal transfer failure and the multi-turn benchmarks (UserSWE, SWE-DIVE) point at the same gap between evaluation and deployment: agents are tested on single-turn, well-formed text but run as multi-turn tool callers against vague humans. A model that refuses in chat and executes through tools is not a safety regression — it is the default, at up to 52% divergence. OpenAI's 'Patch the Planet' shows agents already running global disclosure processes; PerMIT and the refusal-transfer work are the counterweight saying the trust boundaries for that process do not exist yet unless you build them.</span>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Watch</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>eMudhra key revocation decisions.</strong> Helme's key recovery plus mitmproxy's one-command forge flag mean any chain on those keys is forgeable now. Watch for CA/browser root programme action against eMudhra — mass revocation would confirm the severity; silence would be the worrying outcome.<div class="sources" style="margin-top:4px;"><a href="https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/">Original</a> <a href="https://news.ycombinator.com/item?id=50177916">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>LiteLLM supply chain fallout.</strong> The malicious 1.107.0 upload means affected users must rotate keys and pin known-good releases. Watch for a PyPI takedown, an official LiteLLM post-mortem, and whether the backdoor's exfiltration targets surface — that determines how many credentials are actually compromised.<div class="sources" style="margin-top:4px;"><a href="https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/">Original</a> <a href="https://news.ycombinator.com/item?id=50181114">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>PHP patch adoption and hardening.</strong> The out-of-band 8.2.35 release and the PHP Foundation's supply chain post landed within hours; the advisory's 652 comments suggest broad exposure. Watch for follow-up releases covering other branches and whether the Foundation hardening proposals get funded or stall.<div class="sources" style="margin-top:4px;"><a href="https://www.php.net/archive/2026.php#2026-10-21-5">Original</a> <a href="https://news.ycombinator.com/item?id=50172041">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>OpenAI models on Google Cloud terms.</strong> A competitor hosting a rival's frontier models opens a new multi-cloud procurement option. Watch for pricing, latency and model-version parity versus OpenAI's own API — those details decide whether this is real distribution or a press line.<div class="sources" style="margin-top:4px;"><a href="https://openai.com/index/openai-models-google-cloud/">Original</a> <a href="https://news.ycombinator.com/item?id=50180079">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>GitLab 19.5.1 upgrade window.</strong> Critical fixes shipped outside the usual cadence, so self-hosted instances are exposed until patched. Watch for the advisory detail on exploitability — an in-the-wild report would turn a routine upgrade into an incident.<div class="sources" style="margin-top:4px;"><a href="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/">Original</a> <a href="https://news.ycombinator.com/item?id=50185869">HN</a></div></span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">22 Oct 2026</span>
+    </div>
+  </div>
+
+</body>
+</html>

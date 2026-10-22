@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Thursday the twenty-second of October, twenty twenty-six. Lead story: P H P has shipped an emergency, out-of-band release fixing critical remote code execution vulnerabilities. The advisory sits at one thousand five hundred and sixteen points with six hundred and fifty-two comments, and the eight point two point three five release landed alongside a P H P Foundation post on hardening the supply chain.
+
+[HOST_B] Out-of-band means the normal release cadence was broken deliberately — that only happens when exploitation is plausible. Patch every P H P host today, not this sprint. The Foundation's supply-chain post is the tell: they think the fix is the start, not the end. Watch for follow-up releases covering other branches.
+
+[HOST_A] Second incident: a malicious upload of Lite L M one point one zero seven point zero appeared on P y P I, installing a credential stealer and a backdoor. Anyone who pulled that version needs to rotate keys and pin to a known-good release.
+
+[HOST_B] Same story as P H P wearing a different hat — trust placed in a package and repaid with compromise. Watch for a P y P I takedown, an official post-mortem, and whether the exfiltration targets surface; that determines how many credentials are actually gone.
+
+[HOST_A] Scott Helme has demonstrated full key recovery against eMudhra's certificate authority keys — what he calls eight bits of trust, broken effectively in milliseconds. Any chain relying on those keys is forgeable. And mitmproxy has already merged a flag to forge certificates from the cracked keys — a one-command exploit, hours after disclosure.
+
+[HOST_B] The thing to watch is revocation. Mass revocation by the browser root programmes would confirm the severity; silence would be the worrying outcome. Until then, treat anything chained to those keys as unverifiable.
+
+[HOST_A] In distribution news, OpenAI models are coming to Google Cloud — a competitor hosting a rival's frontier models. Hours later, OpenAI also published an official command line interface on GitHub, already rank four on the front page.
+
+[HOST_B] The cloud deal is real only if pricing, latency and model-version parity hold against OpenAI's own interface — otherwise it's a press line. The command line tool matters more: people will pipe untrusted output into it within the week, and third-party wrappers are hardening into habits.
+
+[HOST_A] Papers. The most actionable: a multi-model study of how much the harness matters in vulnerability discovery — twenty-four model-runner configurations against a production codebase with two hundred and sixty-five non-public security root causes. No configuration found everything; the best two-run pair reached sixty point four percent, and fourteen point three percent were found by exactly one model. An engineered prompt with a Code Q L call graph raised criticality-weighted yield twenty to eighty-six percent for smaller models — two percent for the frontier model.
+
+[HOST_B] That cuts against frontier-model marketing. Paying frontier prices for security review mostly buys the last fourteen point three percent — findings only one model catches. Pair it with P A U S E, which intercepts a coding agent's first source edit at the median sixty percent mark and injects a repair plan: where you intervene matters more than which model sits in the loop.
+
+[HOST_A] Two more papers. User S W E turns repository history into multi-turn tasks where a simulated user — calibrated on twenty thousand eight hundred and fifty-nine development sessions — reveals information in pieces, with execution-grounded tests after every turn. And refusal transfer failure: across two thousand three hundred and four matched prompts and twenty forbidden actions, requests refused in chat still produced unsafe tool calls in ten to fifty-two percent of cases.
+
+[HOST_B] That last number is the deployment gap in one figure — refusing in chat and executing through tools is the default, not a regression. Per M I T is the counterweight: agent memory trusting only user-typed inputs, with two integrity theorems machine-checked in Lean four. OpenAI's Patch the Planet shows agents already running global disclosure — the trust boundaries for that don't exist unless you build them.
+
+[HOST_A] Sweep. Meta is ordered to pay twenty-five billion dollars in the New Mexico Cambridge Analytica case — the largest number on the board. E A is shutting down BioWare — five hundred and ninety-one points of obituary. Duck D B shipped two point zero, its first long-term-support release. GitLab pushed critical fixes in nineteen point five point one outside the usual cadence — upgrade now. A Postgres parameter, recovery prefetch, can stall crash recovery badly enough to take production down. David Harvey proposed integer multiplication below the n log n bound. Also: Google's Rust style guide, Josh Comeau on Interop twenty twenty-seven, Omnara's self-hosted answer to Anthropic's managed agents, World T U I — a three hundred and sixty million parameter model emulating a terminal — and a case against L L M confidence scoring.
+
+[HOST_B] That's the briefing. The full written report — every link, every paper, the watchlist — is in today's edition of A I News Daily, the twenty-second of October, twenty twenty-six.

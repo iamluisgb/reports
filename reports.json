@@ -1,7 +1,21 @@
 {
-  "generated": "2026-10-21T06:36:07+00:00",
-  "count": 177,
+  "generated": "2026-10-22T06:36:29+00:00",
+  "count": 178,
   "reports": [
+    {
+      "file": "ai-news-2026-10-22.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-22",
+      "summary": "PHP ships emergency fix for critical RCE · LiteLLM 1.107.0 backdoored on PyPI · eMudhra CA keys cracked in milliseconds · OpenAI models arrive on Google Cloud",
+      "readingTime": 9,
+      "tags": [
+        "models",
+        "security",
+        "memory"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-21.html",
       "type": "daily",
@@ -376,8 +390,7 @@
       "summary": "Anthropic's supply-chain-risk designation upheld · OpenAI agents' Hugging Face hack detailed · Plan mode declared dead · Facebook found liable for Cambridge Analytica",
       "readingTime": 7,
       "tags": [
-        "agents",
-        "models"
+        "agents"
       ],
       "audio": true
     },
@@ -1228,7 +1241,6 @@
       "summary": "Kimi K3 Weights Released · Dell+NVDA Agentic AI · Kling AI $2.8B · GrapheneOS Citizen Charged",
       "readingTime": 4,
       "tags": [
-        "models",
         "agents",
         "infrastructure"
       ]
