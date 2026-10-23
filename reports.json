@@ -1,7 +1,19 @@
 {
-  "generated": "2026-10-22T06:45:37+00:00",
-  "count": 178,
+  "generated": "2026-10-23T06:53:57+00:00",
+  "count": 179,
   "reports": [
+    {
+      "file": "ai-news-2026-10-23.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-23",
+      "summary": "Anthropic scales formal verification with LLMs · Quad9 exits France · eMudhra leaves the certificate business · NVIDIA ships a runtime for agent fleets",
+      "readingTime": 9,
+      "tags": [
+        "agents",
+        "research"
+      ]
+    },
     {
       "file": "ai-news-2026-10-22.html",
       "type": "daily",
@@ -390,7 +402,8 @@
       "summary": "Anthropic's supply-chain-risk designation upheld · OpenAI agents' Hugging Face hack detailed · Plan mode declared dead · Facebook found liable for Cambridge Analytica",
       "readingTime": 7,
       "tags": [
-        "agents"
+        "agents",
+        "models"
       ],
       "audio": true
     },
@@ -1241,6 +1254,7 @@
       "summary": "Kimi K3 Weights Released · Dell+NVDA Agentic AI · Kling AI $2.8B · GrapheneOS Citizen Charged",
       "readingTime": 4,
       "tags": [
+        "models",
         "agents",
         "infrastructure"
       ]

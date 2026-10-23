@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [PHP ships emergency fix for critical RCE](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-22.md) — 2026-10-22 · 9 min
+- [Anthropic scales formal verification with LLMs](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-23.md) — 2026-10-23 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### October 2026
 
+- [Anthropic scales formal verification with LLMs](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-23.md) — 2026-10-23 · 9 min
 - [PHP ships emergency fix for critical RCE](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-22.md) — 2026-10-22 · 9 min
 - [DeepSeek open-sources DeepInfer](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-21.md) — 2026-10-21 · 9 min
 - [MiniMax ships M3.1 Flash](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-20.md) — 2026-10-20 · 9 min
