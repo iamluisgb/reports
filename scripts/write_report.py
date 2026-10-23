@@ -42,6 +42,14 @@ MODELS = os.environ.get("NAN_MODELS", "glm5.3-flash,deepseek-v4-flash").split(",
 # keeping each call's job small, and complete() treats a short answer as a
 # failure rather than publishing it.
 CALL_TOKENS = 16000
+# ...except the audio pass, which gets its own ceiling. Measured on 23 Oct 2026:
+# a forced 30k-token generation on glm5.3-flash returned completion_tokens=24000
+# with finish=length, so the old "16384 is their hard ceiling, asking for more is
+# silently clamped" note was stale — 24k is honoured. The audio pass needs it
+# because its retry prompt carries the whole report plus the previous script and
+# the model can burn 15k+ tokens reasoning: on 23 Oct the 16k ceiling truncated
+# attempt 2 to a 591-word script and the day shipped without a briefing.
+AUDIO_TOKENS = int(os.environ.get("NAN_AUDIO_TOKENS", "24000"))
 # ...except one: capping the reasoning itself. Without it glm5.3-flash spent all
 # 16000 tokens thinking on the news and audio passes (finish=length, 0 chars) and
 # on 29 Sep deepseek did the same, failing the day. Both accept the parameter;
@@ -276,7 +284,7 @@ def post(payload, key, timeout=240):
             "usage": usage}
 
 
-def complete(prompt, key, label, tries=2, parse=None):
+def complete(prompt, key, label, tries=2, parse=None, tokens=CALL_TOKENS):
     """Ask each model in turn until one returns something substantial.
 
     Three things go wrong in practice and all are survivable by moving on: the
@@ -294,7 +302,7 @@ def complete(prompt, key, label, tries=2, parse=None):
             started = time.time()
             try:
                 payload = {"model": model, "temperature": 0.6,
-                           "max_tokens": CALL_TOKENS,
+                           "max_tokens": tokens,
                            "messages": [{"role": "user", "content": prompt}]}
                 if REASONING_EFFORT:
                     payload["reasoning_effort"] = REASONING_EFFORT
@@ -632,7 +640,7 @@ def audio_script(text, weekday, key):
     prompt = base
     for attempt in range(1, AUDIO_ATTEMPTS + 1):
         try:
-            script, model = complete(prompt, key, "audio")
+            script, model = complete(prompt, key, "audio", tokens=AUDIO_TOKENS)
         except SystemExit as exc:
             # The report is already on disk and publishable. A briefing the models
             # could not produce must not abort the run before the report is
