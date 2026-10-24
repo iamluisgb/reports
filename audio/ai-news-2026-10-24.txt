@@ -1,0 +1,29 @@
+[HOST_A] AI News Daily, Saturday the twenty-fourth of October, twenty twenty-six. Lead story: Moonshot ships Kimi K three point one Pro, with a Highspeed tier alongside the standard Pro from day one. The announcement itself is thin on detail.
+
+[HOST_B] Which is why the argument is happening in the thread, not the blog post — four hundred and ninety-four comments and counting, all fighting over the benchmarks. Watch for independent evals of both tiers against the release-day claims. Third-party reproductions, or their absence, settle whether this is a genuine flagship or a launch-day mirage.
+
+[HOST_A] Security next. Aikido discloses http2shell — remote code execution reachable through HTTP two handling across multiple runtimes, Node and Python included.
+
+[HOST_B] This is weekend patch triage. Work out which of your services terminate HTTP two, then match against per-vendor advisories as they land. Any exploited-in-the-wild report escalates it from patch queue to incident.
+
+[HOST_A] Calif has published a complete end-to-end hack of the iPhone — the full exploit chain, laid out in a post sitting at eight hundred and twenty-one points and five hundred and thirty-eight comments.
+
+[HOST_B] Required reading if you ship on Apple platforms. What makes it valuable is the completeness — not a single bug, the whole path. That is the artifact security teams actually learn from.
+
+[HOST_A] Google has floated a privacy policy update that would let its personal intelligence features feed Gmail and Google Photos content into ad targeting.
+
+[HOST_B] Note the tense — a pending change, not a live one. Check your Workspace and consumer settings now, and watch whether opt-outs ship and whether regulators or enterprise customers force a walk-back. The rollout terms are the tell.
+
+[HOST_A] Three efficiency papers. Bottlecap's ThinkingCap cuts thinking tokens on a twenty-six billion parameter mixture-of-experts model by thirty-nine to sixty-nine percent at flat accuracy. ProQuant attacks mixture-of-experts storage with joint expert pruning and bit-width allocation at ultra-low bits. And DConstrain compiles schemas into transition programs for constrained decoding in diffusion language models.
+
+[HOST_B] Three independent groups, same conclusion — capability is no longer the binding constraint, cost per token is. The response is arriving at every layer: token budget, precision, serving tier. If you pay per inference token, ThinkingCap is the one to read first.
+
+[HOST_A] Two more papers. Adaptive Skill Granularity treats macro-versus-micro execution in coding agents as a policy with a finite-state recovery executor. ColaBench benchmarks memory-guided knowledge acquisition — three hundred and forty-nine tasks across ten profiles over a thirteen thousand and thirty-three document knowledge base, testing whether recalled memory actually changes the answer.
+
+[HOST_B] Agent engineering is graduating from prompting to control theory. ColaBench is the concrete target — recall alone was always the easy half. And the quantum code-generation audit is worth your time: QiskitHumanEval-Standard is saturated at ninety-eight point seven percent pass@1 while the Hard variant retains headroom at sixty-three point eight percent, and loosening evaluator checks materially inflates scores.
+
+[HOST_B] That audit generalises — evaluation is the soft infrastructure underneath all of this, and it is creaking. ClickBench pulled a pgrust entry for per-query caching, and ModelCompare documents convergent answers across models that trace to shared training data. If you pick a model off a leaderboard this quarter, the number is a function of harness choices as much as model quality — and those choices are rarely disclosed.
+
+[HOST_A] Quick sweep. Block's Dessa trained a conversation model natively on speech, skipping text entirely. Corgi is a terminal multiplexer treating agents and shell sessions as first-class panes. Philip O'Toole reflects on twelve years of distributed SQLite. Astral unifies uv and its type checker ty. OpenSSL four point one point zero is out. A close read shows UUIDv7 timestamps are not monotonic. The PHP remote-code-execution embargo slip is a disclosure case study. The Ask H N thread on OpenAI starting a hundred companies hit six hundred and six points. Xbox now charges twenty-four to forty cents an hour to stream games you already own. Apple Music served a bare four-oh-four at scale. And the E F F flags a closing opposition window on Canada's surveillance Bill C twenty-two.
+
+[HOST_B] The through-line today is the harness as the product — the multiplexer, the benchmark rules, the memory benchmark, the token budget — with the model as a replaceable component inside it. Disagree with us in the comments. The full written report, with every link and paper, is at the briefing — read it there, then argue with us properly.
