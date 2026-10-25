@@ -525,6 +525,13 @@ def main():
     seen = {_urlkey(url) for url in recent_urls(day, args.dedup_days)}
     stories = drop_seen(stories, seen)
     papers = drop_seen(papers, seen)
+    if not papers:
+        # arXiv announces nothing at weekends, so a Sunday can arrive with the
+        # previous weekday's batch already spent by Saturday's report. The day
+        # ships without a Papers section; say so here, because the writer's own
+        # failure mode (an empty closing argument) looks nothing like the cause.
+        print("  ! paper pool empty after dedup — arXiv announcement lull; the "
+              "day will carry no Papers section", file=sys.stderr)
     # One story, one section. The beat overlaps the front page by design, so
     # drop whatever the day already carries elsewhere before the writer sees
     # it — otherwise the same link prints in two sections.

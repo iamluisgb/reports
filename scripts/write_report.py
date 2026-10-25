@@ -207,6 +207,30 @@ TODAY'S NEWS, already written up:
 PAPER CANDIDATES:
 {candidates}"""
 
+# The closing argument without the paper pass. arXiv announces nothing at
+# weekends, so a Sunday can arrive with the previous weekday's batch already
+# spent by Saturday's report: the paper pool is legitimately empty. The closing
+# argument is the one part of the page that must exist, so it gets its own call
+# instead of the day dying on a missing Papers section.
+WHY_PROMPT = """{voice}
+
+Write the closing argument for today's briefing ({day}, {weekday}), working only \
+from the items already written up. Return ONLY a JSON object, no markdown fence, \
+no commentary:
+
+{{"why_it_matters": ["bullet", "bullet", "bullet"]}}
+
+Rules:
+- Exactly 3 bullets, 2-4 sentences each, covering the day's news as a whole.
+- Find the through-line; do not summarise item by item. This is the part a reader
+  cannot get from the headlines, so it is where the judgement goes. It may
+  disagree with the sources.
+- There is no arXiv section today. If the news is thin on research, say what the
+  absence itself suggests rather than inventing a paper or padding.
+
+TODAY'S NEWS, already written up:
+{news}"""
+
 AUDIO_PROMPT = """{voice}
 
 Write the spoken briefing script for this report — a two-host dialogue, HOST_A and \
@@ -762,8 +786,22 @@ def main():
             at = min(2, len(chosen))
             chosen.insert(at, {"label": PAPERS_LABEL, "items": items})
         why = [str(b).strip() for b in reply.get("why_it_matters", []) if str(b).strip()]
+    else:
+        # No paper pool: arXiv announced nothing since the last weekday and the
+        # previous report already spent that batch. That is a harvest gap, not a
+        # writer failure, so the day goes out without a Papers section rather
+        # than against a fabricated or recycled one.
+        print("  papers: pool empty — closing argument from the news alone",
+              file=sys.stderr)
+        reply, model = complete(WHY_PROMPT.format(
+            voice=VOICE, day=day, weekday=bundle["weekday"], news=summary),
+            key, "why", parse=parse_json)
+        why = [str(b).strip() for b in reply.get("why_it_matters", []) if str(b).strip()]
     if len(why) < 2:
-        raise SystemExit("Why It Matters came back with fewer than 2 bullets")
+        raise SystemExit(
+            f"Why It Matters came back with {len(why)} usable bullets "
+            f"(papers in pool: {len(papers)}) — refusing to publish a page "
+            f"without a closing argument")
 
     page = render(day, chosen, subtitle, why, index, numbers, watch)
     if len(page) < MIN_REPORT_CHARS:
