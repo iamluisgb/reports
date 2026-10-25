@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Moonshot ships Kimi K3.1 Pro](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-24.md) — 2026-10-24 · 10 min
+- [HTTP2Shell spreads across HTTP libraries](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-25.md) — 2026-10-25 · 7 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### October 2026
 
+- [HTTP2Shell spreads across HTTP libraries](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-25.md) — 2026-10-25 · 7 min
 - [Moonshot ships Kimi K3.1 Pro](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-24.md) — 2026-10-24 · 10 min
 - [Anthropic scales formal verification with LLMs](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-23.md) — 2026-10-23 · 9 min
 - [PHP ships emergency fix for critical RCE](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-22.md) — 2026-10-22 · 9 min
