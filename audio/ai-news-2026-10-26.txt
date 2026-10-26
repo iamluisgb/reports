@@ -1,0 +1,31 @@
+[HOST_A] AI News Daily, Monday the twenty-sixth of October, twenty twenty-six. Lead story: a ten-year-old convolutional network beats frontier language models at skin-cancer diagnosis. Five hundred and nine points and two hundred and twenty-eight comments on Hacker News — the day's biggest argument.
+
+[HOST_B] Read it carefully — the comments aren't about medicine, they're about what the benchmark measures. A decade-old classifier winning suggests the eval rewards narrow pattern matching on curated lesions, not clinical reasoning. Until someone reruns it on a better-designed dataset, treat it as a verdict on the test, not the models.
+
+[HOST_A] OpenAI and Anthropic have cut inference prices by up to eighty percent within months. Maxim's analysis attributes the collapse to batching, distillation and competition — all structural, not promotional.
+
+[HOST_B] That's the sharpest signal of the day. If the cuts are structural, the floor keeps dropping — a second round within the quarter would confirm the economics are still compounding. Price your products assuming inference keeps getting cheaper.
+
+[HOST_A] I B M's chief executive Arvind Krishna told The Register that open-weight models are now, in his words, irresistibly good and cheap — running them in your own datacentre beats renting frontier A P Is.
+
+[HOST_B] Remember the source: a vendor selling exactly that hardware. The claim is plausible but unproven — watch for independent total-cost comparisons with real throughput and maintenance figures. Anything vendor-funded alone doesn't settle it.
+
+[HOST_A] Two quick ones. WorldTUI tops the day at six hundred and fifty-one points — a three hundred and sixty million parameter world model that emulates a terminal session. And Dreamhost is running an active security incident, forcing password resets across accounts; the status page is the only source of detail. If you host there, rotate now.
+
+[HOST_B] WorldTUI matters because a small model doing a narrow simulation well beats a big model doing it badly — that theme runs through everything today. On Dreamhost, watch for a post-incident report. If none appears beyond the reset window, that silence is your signal to move hosts.
+
+[HOST_A] Now the papers. S W E-Shift injects task-relevant changes into a coding agent's workspace mid-execution — one hundred and twenty scenarios across twelve change families. All seventeen systems tested degrade; G P T-six Astra falls from sixty-seven point three five percent success to twenty-four point seven nine.
+
+[HOST_B] A two-thirds collapse from the best agent on a change any developer handles daily. Benchmarks that freeze the workspace flatter the models. If your agent can't survive a colleague pushing to main mid-task, it isn't production-ready.
+
+[HOST_A] Compact-Bench pairs full-history and summary-only continuations from identical repository states — one hundred and forty-six agentic sessions and one hundred and six production chains. Summariser choice alone swings stable damage from five percent to sixty-four percent of full-history successes, with Claude Opus four point eight preserving the most repairs and DeepSeek-Flash the least.
+
+[HOST_B] Compaction is silently deleting the state your agent needs to finish. Your compaction policy is currently your biggest unmeasured risk — and, handled well, your moat.
+
+[HOST_A] Three more. StateMirror intercepts hallucinated tool calls before execution — across four thousand three hundred and ninety-eight trajectories, each hallucination cost a median three extra steps and twenty-two thousand four hundred tokens. TraceTrial-Bench grades harnesses rather than models, across seven components and ninety-five expert tasks. POSEIDON mines code repositories for training environments, yielding ninety-seven thousand six hundred and fifty-nine verifiable environments — roughly ten times prior pipelines. And UniMASO jointly searches prompts and model assignments, finding that most agent roles don't need the frontier model at all.
+
+[HOST_B] That last finding is the day's thesis in one line. Frontier capability is becoming a commodity input, priced like one — the engineering is migrating up the stack to the harness, the environments and the evaluation. That's where differentiation lives now.
+
+[HOST_A] Sweeping the rest: Drew Breunig surveys context engineering — what works, what's cargo cult. An arXiv preprint challenges attention's monopoly on sequence modelling, resurfacing with forty-five comments but no replication. PaperPilot ships a pure-Rust P D F engine running client-side via W A S M with an M C P server. Four hundred and thirty-nine points for a call to organise against censorship ahead of F O S D E M twenty-seven. Ontology papers cover knowledge-graph construction from climate literature and quote-grounded healthcare graphs. A blog hits perfect Lighthouse scores by dropping Next.js. And Nikon stripped a contest winner after scientists spotted signs of A I.
+
+[HOST_B] The attention challenge is the one to watch — a confirmed replication at scale reopens the post-transformer question; a failed one kills the narrative. Everything else points the same way: the discipline is becoming process, versioned and reviewable, while raw capability gets cheaper every quarter. That's the briefing — the full written report has the links and the numbers.
