@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Tuesday the twenty-seventh of October, twenty twenty-six. Lead story: Anthropic's S one filing is public. The document ahead of its I P O lays out revenue, losses and compute commitments in full — fifteen hundred comments on Hacker News and counting.
+
+[HOST_B] Read the primary source before the takes arrive. The number to watch is how investors price those compute commitments against revenue — the valuation band set on the roadshow will tell you whether the market treats frontier training spend as capital expenditure or as a bet.
+
+[HOST_A] Two OpenAI stories. First, a preprint claiming disproof of the exponential time hypothesis — one of three claimed results in mathematics, computer science and physics, released with academic collaborators. Second, G P T six point one Terra shipped this morning; benchmarks and pricing are in the announcement.
+
+[HOST_B] Treat the complexity claim as unverified until referees settle it. Confirmation would rewrite worst-case assumptions underpinning cryptography and algorithms; a flaw in the reduction kills it. On Terra, expect provider rollouts over the coming days — and note that a model-against-model comparison is the least informative number you will collect this week, for reasons the papers make clear.
+
+[HOST_A] Microsoft is offering buyouts to roughly a quarter of its workforce — eight hundred and eleven comments on the thread tracking which teams are affected. And Cloudflare has published a post-mortem on a cross-request K V cache exposure in G L M five point three on Workers A I — a hundred and fifty-five responses on the report.
+
+[HOST_B] The Microsoft departures signal where it plans to cut spend at one of the largest A I infrastructure buyers. The cache leak is the practical one: if you serve multi-tenant inference with shared prefix caching, that stack fails silently. Deterministic tests on payloads, not vibes-based evals.
+
+[HOST_A] Papers. On R C Atlas — ninety validated root-cause-analysis cases — three minimal harnesses, one evidence-package call, a SQL agent and Codex, hit precision at rank one of sixty-five to seventy-seven percent on mid-tier models. Five published agents managed sixteen to fifty-three; statistical and causal baselines, six to thirty-nine.
+
+[HOST_B] The headline is that nobody had checked whether hand-crafted investigation structure beats a capable model left alone. It doesn't. The simple harnesses won on every model where both families ran — harness quality is now measurable, and frequently decisive.
+
+[HOST_A] Why the field missed that: a meta-study annotated three hundred and twenty-five experiments across a hundred and forty-six peer-reviewed papers from twenty twenty-five to twenty twenty-six. Only fifteen report the exact harness version; thirty-one share execution traces. Separately, Sec P R Bench grades agentic security review on two hundred and sixty-five real bug-introducing commits from Firefox, V eight and OpenSSL — recall across eight frontier models spans thirty-two point five to seventy-eight point one percent.
+
+[HOST_B] That forty-five-point spread says model and harness choice dominate, and the ceiling is nowhere near merge-blocking. Existing benchmarks leaked the answer by deriving the diff from its later fix; this one harvests and validates real commits. The reporting standards proposal is overdue.
+
+[HOST_A] Two more agent papers. Rivet scores repository context by utility to the task rather than similarity or length — the failure mode is context utility dilution. And an epistemic parity benchmark builds fifty-two scenarios where injected memory and procedural skills issue contradictory instructions nothing resolves.
+
+[HOST_B] Convergent claim: what goes in the window, and with what precedence, matters more than how cleverly the agent reasons over it. If you're building on Terra or self-hosting open weights, spend the next sprint on context governance — precedence directives, utility-scored injection, conflict tests — not prompt polish.
+
+[HOST_A] Sweep. Cohere documents safety-relevant behaviour in a popular open-weight model — a hundred and fifteen comments. ChatGPT keeps hallucinating four-oh-four Media as tech support, sending real traffic at a newsroom. Five inference providers now host abliterated DeepSeek, hours after the weights surfaced. A Lean pipeline has an agent propose algorithms and prove runtime bounds with no empirical step. Microsoft proposes a Type Server Protocol; photonics manufacturing standards land; S I M D vision on a two-dollar microcontroller; Local Wikipedia takes seventeen hundred and four points; C S S Tricks changes hands.
+
+[HOST_B] The abliterated weights datapoint is the one to track — uncensored hosting went from local curiosity to hosted commodity in hours; watch whether Cohere-style findings push platforms to restrict it. Verification is splitting into two tiers: machine-checked proof at the top, deployment outrunning checking everywhere else. Full links, numbers and papers in the written report — AI News Daily, twenty-seventh of October, twenty twenty-six.

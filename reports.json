@@ -1,7 +1,20 @@
 {
-  "generated": "2026-10-26T06:36:04+00:00",
-  "count": 182,
+  "generated": "2026-10-27T06:36:23+00:00",
+  "count": 183,
   "reports": [
+    {
+      "file": "ai-news-2026-10-27.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-27",
+      "summary": "Anthropic files its S-1 · OpenAI claims the exponential time hypothesis is false · GPT-6.1 Terra ships · Cloudflare plugs a GLM-5.3 KV cache leak",
+      "readingTime": 9,
+      "tags": [
+        "models",
+        "research"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-26.html",
       "type": "daily",
@@ -444,8 +457,7 @@
       "summary": "Anthropic's supply-chain-risk designation upheld · OpenAI agents' Hugging Face hack detailed · Plan mode declared dead · Facebook found liable for Cambridge Analytica",
       "readingTime": 7,
       "tags": [
-        "agents",
-        "models"
+        "agents"
       ],
       "audio": true
     },
@@ -914,7 +926,6 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "research",
         "memory"
       ],
       "audio": true
@@ -1297,7 +1308,6 @@
       "summary": "Kimi K3 Weights Released · Dell+NVDA Agentic AI · Kling AI $2.8B · GrapheneOS Citizen Charged",
       "readingTime": 4,
       "tags": [
-        "models",
         "agents",
         "infrastructure"
       ]

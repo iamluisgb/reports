@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [A 10-year-old CNN beats frontier LLMs at skin cancer](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-26.md) — 2026-10-26 · 9 min
+- [Anthropic files its S-1](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-27.md) — 2026-10-27 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### October 2026
 
+- [Anthropic files its S-1](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-27.md) — 2026-10-27 · 9 min
 - [A 10-year-old CNN beats frontier LLMs at skin cancer](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-26.md) — 2026-10-26 · 9 min
 - [HTTP2Shell spreads across HTTP libraries](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-25.md) — 2026-10-25 · 7 min
 - [Moonshot ships Kimi K3.1 Pro](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-24.md) — 2026-10-24 · 10 min
