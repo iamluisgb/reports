@@ -1,7 +1,21 @@
 {
-  "generated": "2026-10-27T06:36:23+00:00",
-  "count": 183,
+  "generated": "2026-10-28T06:39:13+00:00",
+  "count": 184,
   "reports": [
+    {
+      "file": "ai-news-2026-10-28.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-28",
+      "summary": "DeepMind ships Genie 4 · CPython's experimental JIT headed for removal · UEFI code-execution flaw threatens server fleets · Tailscale publishes SSH incident remediation",
+      "readingTime": 9,
+      "tags": [
+        "agents",
+        "research",
+        "memory"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-27.html",
       "type": "daily",
@@ -457,7 +471,8 @@
       "summary": "Anthropic's supply-chain-risk designation upheld · OpenAI agents' Hugging Face hack detailed · Plan mode declared dead · Facebook found liable for Cambridge Analytica",
       "readingTime": 7,
       "tags": [
-        "agents"
+        "agents",
+        "models"
       ],
       "audio": true
     },
@@ -1308,6 +1323,7 @@
       "summary": "Kimi K3 Weights Released · Dell+NVDA Agentic AI · Kling AI $2.8B · GrapheneOS Citizen Charged",
       "readingTime": 4,
       "tags": [
+        "models",
         "agents",
         "infrastructure"
       ]

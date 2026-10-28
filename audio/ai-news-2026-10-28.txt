@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Wednesday the twenty-eighth of October, twenty twenty-six. Lead story: DeepMind ships Genie four, the next generation of its world-simulation model line. It pulled eight hundred and twenty-three points and four hundred and ninety-three comments — the day's biggest discussion. No technical report accompanies the announcement.
+
+[HOST_B] Treat the announcement as a headline, not evidence. The gap between world-simulation claims and proof closes or doesn't when benchmarks, architecture notes and access terms land. Until then, don't build on it.
+
+[HOST_A] OpenAI reports three discoveries across mathematics, computer science and physics, produced with academic communities. One thousand, one hundred and thirty-four points — the highest-scoring story of the day.
+
+[HOST_B] Only as good as the specialists who confirm it. Watch for named theorems and referee sign-off. Silence from the relevant communities would undercut the claim before it's tested.
+
+[HOST_A] Security now. Ars Technica reports a code-execution flaw in U E F I firmware with reach across most of the world's server fleet — ninety-two points and twenty-four comments. Separately, Tailscale published its S S H incident post-mortem, covering root cause and remediation, at two hundred and fifty-five points.
+
+[HOST_B] The U E F I story is under-discussed relative to its stakes. Firmware inventory is the immediate action; watch for a C V E, affected-vendor lists and advisories. Tailscale's write-up is the model to copy when your own incident lands.
+
+[HOST_A] L W N reports that CPython's experimental J I T compiler is slated for removal — four hundred and seventy-six points and two hundred and fifty-four comments.
+
+[HOST_B] The write-up stops short of a final call. Watch the python-dev thread and any steering council ruling; a counter-proposal to keep it behind a flag would flip the outcome.
+
+[HOST_A] Papers. Context Is a Pipeline, Not a Window measured information attrition in an agent harness. Across seven hundred and twenty runs the largest prompt used five point seven five percent of the context window, yet three thousand eight hundred and twenty-seven of eleven thousand one hundred and eighty-nine tool results were truncated — each cut mid-JSON, so one field reached the model in four point seven percent of calls while a sibling field arrived ninety-nine point three percent of the time. Stratum attacks the reset-every-session problem: mid-size repositories exceed the largest production windows, and the median of seven hundred and fifty-two bug-fix commits touches two files.
+
+[HOST_B] Both papers say the same thing: the failure lives in the harness, not the window. The attrition agent's context was ninety-four percent empty and a third of tool results never arrived. If you're budgeting engineering time, harness and memory work buys more correctness than another context bump — and Ubicloud's V L L M tool-call walkthrough is the same lesson at serving time.
+
+[HOST_A] Three more papers. LiveSearch stores finance questions as typed verifier code executed against live data daily — memorised answers expire by construction. AutoVend puts one agent in charge of twenty vending machines across five site types for a hundred and eighty simulated days of procurement, expiry and cost. ProactMem reaches fifty-two point six percent F one, a twenty-one point four percent relative improvement. O A RAG grounds retrieval in domain ontologies and reports per-answer grounding levels. And Artificial Analysis shipped Intelligence Index version five point nought, hours old at rank two.
+
+[HOST_B] Evaluation is quietly going live. Static benchmarks are becoming an audit of training-data contamination. All three point the same way: if you pick models off a frozen leaderboard, treat that number as a lower bound and re-run against current conditions.
+
+[HOST_A] Sweep. Anthropic published early results on Claude in drug development, and The Stanford Daily reports professors' books were pirated to train Claude. Futurism says Amazon is dismantling its AI division after the Nova effort failed. I triple E Spectrum covers the volunteers stripping AI-generated prose from Wikipedia. Ghostty one point four shipped at nine hundred and three points. Discord will make public server messages Google-indexable. The classification of finite simple groups is formalised in Lean. Solar overtook nuclear in global generation — five hundred and seventeen points and seven hundred and forty-eight comments, the day's most argued thread. Wiz tallies P H P two Shell exploitation. Unannounced Raspberry Pi Zero three W and Pi four Model A boards surfaced in device trees. Nikon's Small World prize went to ink droplets in motion. And the S S United States will be sunk as an artificial reef in November.
+
+[HOST_B] The day splits in two. At the top, capability: OpenAI's three results, Genie four, the Lean formalisation. At the bottom, everything that failed: Amazon's division, the Tailscale post-mortem, the U E F I flaw. The frontier models are no longer the weak link — the plumbing around them is. The full written report has every link and the watch list; read it at the link in the show notes.

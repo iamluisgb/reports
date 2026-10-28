@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 28 Oct 2026</title>
+<link rel="stylesheet" href="../styles.css">
+<!-- og:start -->
+<meta name="description" content="DeepMind ships Genie 4 · CPython&#x27;s experimental JIT headed for removal · UEFI code-execution flaw threatens server fleets · Tailscale publishes SSH incident remediation">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-28.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="AI News Daily — 28 Oct 2026">
+<meta property="og:description" content="DeepMind ships Genie 4 · CPython&#x27;s experimental JIT headed for removal · UEFI code-execution flaw threatens server fleets · Tailscale publishes SSH incident remediation">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-28.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-10-28.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="AI News Daily — 28 Oct 2026">
+<meta name="twitter:description" content="DeepMind ships Genie 4 · CPython&#x27;s experimental JIT headed for removal · UEFI code-execution flaw threatens server fleets · Tailscale publishes SSH incident remediation">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-10-28.png">
+<!-- og:end -->
+<!-- ui:start -->
+<link rel="alternate" type="text/markdown" href="ai-news-2026-10-28.md">
+<link rel="preload" href="../assets/fonts/web/InstrumentSerif-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/InstrumentSerif-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/Geist-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/GeistMono-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('ai-reports-theme');if(t==='light'||(!t&&matchMedia('(prefers-color-scheme: light)').matches))document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script type="speculationrules">{"prerender":[{"where":{"or":[{"href_matches":"/reports/"},{"href_matches":"/reports/reports/*.html"},{"href_matches":"/reports/about.html"}]},"eagerness":"moderate"}]}</script>
+<script defer src="/u/s.js" data-website-id="08c1619b-4bb8-471b-9dc9-9b6cda88e8ae" data-host-url="https://cloud.umami.is" data-domains="luisgonzalezbernal.com"></script>
+<link rel="manifest" href="../manifest.json">
+<link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0c0f0e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-title" content="AI Reports">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script src="../pwa.js" defer></script>
+<script src="../site.js" defer></script>
+<script src="../report.js" defer></script>
+<!-- ui:end -->
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">28 Oct 2026 · WEDNESDAY</div>
+          <div class="subtitle">DeepMind ships Genie 4 · CPython's experimental JIT headed for removal · UEFI code-execution flaw threatens server fleets · Tailscale publishes SSH incident remediation</div>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-10-28.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 28 OCT 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 4:58</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Genie 4: DeepMind's next generation of world simulation</div>
+        <div class="desc">DeepMind announces Genie 4, the newest entry in its world-simulation model line. The day's biggest AI thread at 823 points and 493 comments.</div>
+        <div class="sources">
+          <a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50261319">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">OpenAI reports three discoveries in maths, CS and physics</div>
+        <div class="desc">OpenAI details three new results produced with academic communities across mathematics, computer science and physics. 1,134 points — the highest-scoring story of the day.</div>
+        <div class="sources">
+          <a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50251344">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Code-execution flaw in UEFI firmware threatens most servers</div>
+        <div class="desc">Ars Technica reports a code-execution vulnerability in UEFI firmware with reach across most of the world's server fleet. 92 points and 24 comments — low score, high stakes; firmware inventory is the action item.</div>
+        <div class="sources">
+          <a href="https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50265393">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Python's experimental JIT to be removed</div>
+        <div class="desc">LWN reports that CPython's experimental JIT compiler is slated for removal. 476 points and 254 comments.</div>
+        <div class="sources">
+          <a href="https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50257419">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Tailscale SSH: investigation and remediation update</div>
+        <div class="desc">Tailscale publishes its follow-up on the SSH incident, covering root cause and remediation. 255 points and 127 comments.</div>
+        <div class="sources">
+          <a href="https://tailscale.com/ssh-investigation-update">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50264857">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">Ghostty 1.4 released</div>
+        <div class="desc">The terminal emulator ships 1.4, with full release notes published. 903 points.</div>
+        <div class="sources">
+          <a href="https://ghostty.org/docs/install/release-notes/1-4-0">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50261998">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">In Numbers</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">1,134</div>
+          <div class="stat-label">points on the top story</div>
+          <div class="stat-note">OpenAI's three-science-results announcement <a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">823</div>
+          <div class="stat-label">points on Genie 4</div>
+          <div class="stat-note">the day's biggest discussion, 493 comments <a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">903</div>
+          <div class="stat-label">points on Ghostty 1.4</div>
+          <div class="stat-note"><a href="https://tailscale.com/ssh-investigation-update">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">748</div>
+          <div class="stat-label">comments on solar overtaking nuclear</div>
+          <div class="stat-note">517 points — the day's most argued thread <a href="https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear">Original</a></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Anthropic's early results on accelerating drug development with Claude</div>
+        <div class="desc">Anthropic publishes early progress on using Claude in drug development workflows. 197 points and 172 comments.</div>
+        <div class="sources">
+          <a href="https://www.anthropic.com/research/early-progress-drug-development">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50265609">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Anthropic trained Claude on pirated Stanford professors' books</div>
+        <div class="desc">The Stanford Daily reports that professors' books were pirated and used to train Claude. 502 points and 270 comments.</div>
+        <div class="sources">
+          <a href="https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50260814">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Amazon guts its AI division after sustained failure</div>
+        <div class="desc">Futurism reports Amazon is dismantling its AI division following the Nova effort's failure to deliver. 302 points and 228 comments.</div>
+        <div class="sources">
+          <a href="https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50261589">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Wikipedia's cleanup of AI-generated content</div>
+        <div class="desc">IEEE Spectrum covers WikiProject AI Writing Cleanup — the volunteer effort to strip AI-generated prose from the encyclopaedia. 472 points and 216 comments.</div>
+        <div class="sources">
+          <a href="https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50257326">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Fixing tool-call accuracy in vLLM</div>
+        <div class="desc">Ubicloud walks through diagnosing and repairing tool-call accuracy bugs in vLLM — directly relevant to anyone serving function-calling models.</div>
+        <div class="sources">
+          <a href="https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50242870">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">Artificial Analysis Intelligence Index v5.0</div>
+        <div class="desc">Version 5.0 of the independent model-intelligence benchmark, with updated methodology and rankings. Hours old at rank 2 — worth reading before the next model launch cycle.</div>
+        <div class="sources">
+          <a href="https://artificialanalysis.ai/methodology/intelligence-benchmarking">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50269651">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Context Is a Pipeline, Not a Window: Information Attrition in LLM Agent Harnesses</div>
+        <div class="desc">Measures how much tool output is lost between the tool and the model in a real fault-localisation agent over Linux kernel traces. Across 720 runs the largest prompt used 5.75% of the context window, yet 3,827 of 11,189 tool results were truncated by the harness — each cut mid-JSON, so one field reached the model in 4.7% of calls while a sibling field in the same results arrived 99.3% of the time. The failure lives in the harness, not the window. <strong>[harness, context-pipeline, evaluation]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.36114v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Stratum: Repository Memory for Coding Agents Beyond the Context Window</div>
+        <div class="desc">Attacks the reset-every-session problem in coding agents: they re-read files and re-derive root causes because nothing persists. Measurements on real repositories show mid-size projects exceed the largest production windows, KV-cache storage costs 10^4–10^5× more per byte than indexed text, and the median of 752 bug-fix commits touches two files — under 10% of the repo — so selection, not capacity, is the bottleneck. Builds a persistent, experience-aware repository memory on that basis. <strong>[coding-agents, memory, repositories]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.36153v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">LiveSearch: Questions as Executable Verifier Code for a Live Benchmark of Professional-Source Financial Search Agents</div>
+        <div class="desc">Fixed-answer benchmarks go stale in finance, where prices and disclosures hold only as of a given day — and leaked gold answers reward memorisation over search. LiveSearch stores each question as typed verifier code executed against a professional data service at evaluation time, with a daily job re-running it with no human or LLM in the loop. Memorised answers expire by construction. <strong>[benchmarks, agents, finance]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.37166v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations</div>
+        <div class="desc">Agent benchmarks score individual transactions; online-to-offline commerce needs decisions that survive 180 days of procurement lead times, paid replenishment, expiry and recurring costs. AutoVend puts one LLM agent in charge of 20 vending machines across five site types through a web interface, with a data-grounded simulator behind it. Five LLM agents are evaluated against a rule-based inventory-control baseline, with failures broken down by site coordination and execution. <strong>[agents, benchmark, long-horizon]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.36980v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Proactive Memory for Event-Driven LLM Agents</div>
+        <div class="desc">Proactive agents that surface opportunities from event streams lean on recent context and similarity retrieval, which neither validates recurring patterns nor checks their fit to the current event. ProactMem organises history into recent events, temporal trajectories and behavioural regularities, replaying each regularity against source events before matching. On the new ProactiveStream benchmark it reaches 52.6% F1, a 21.4% relative improvement. <strong>[agents, memory, event-streams]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.36967v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">OA-RAG: Ontology-based Agentic RAG for Faithful LLM Reasoning</div>
+        <div class="desc">Standard RAG retrieves passages and trusts the model to reason over them, which breaks in domains where answers must be entailed by established knowledge. OA-RAG combines formal reasoning over domain ontologies with LLM reasoning, and reports per-answer evidence: the ontology observations used plus a graded grounding level — entailed, supported, related or unrelated. Evaluated on benchmarks from three large-scale ontologies. <strong>[rag, ontology, faithfulness]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.36335v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Ontologies, Graphs &amp; Semantics</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Process-aware knowledge graphs for reliable multi-step agent service calls</div>
+        <div class="desc">Grounds LLM agents in enterprise business processes by integrating OData metadata and process constraints into a knowledge graph — so agents pick valid endpoints, follow process order and emit schema-correct payloads. The retrieval-augmented baseline treats endpoints independently and misses exactly these constraints.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.37242v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">How many negative samples does knowledge-graph embedding need?</div>
+        <div class="desc">Contrastive KGE training leans on negative samples, but the two governing questions — how many per positive, and how much signal each carries — have stayed underexplored. This paper takes them on directly.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.37389v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">An incremental knowledge-graph learner digital twin for evidence-grounded early warning</div>
+        <div class="desc">A learner digital twin that ties early-warning risk scores to inspectable evidence — traces, assessment events, temporal patterns — inside an incrementally updated knowledge graph. Alerts that show their own justification.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.36820v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">PHP2Shell: exploitation attempts and remediation trends</div>
+        <div class="desc">Wiz tallies PHP2Shell exploitation attempts in the wild and how remediation is trending. 186 points and 59 comments.</div>
+        <div class="sources">
+          <a href="https://www.wiz.io/blog/php2shell-exploitation-so-far">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50259343">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Discord to make public server messages Google-indexable</div>
+        <div class="desc">Discord will let anyone find messages from discoverable servers through Google search — a material privacy-posture change for public communities. 290 points and 148 comments.</div>
+        <div class="sources">
+          <a href="https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50263854">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Raspberry Pi Zero 3W and Pi 4 Model A spotted in device trees</div>
+        <div class="desc">Unannounced board entries surface in upstream device trees, previewing a Pi Zero 3W and a Pi 4 Model A. 140 points and 62 comments.</div>
+        <div class="sources">
+          <a href="https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50265594">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Classification of finite simple groups formalised in Lean</div>
+        <div class="desc">The multi-decade classification theorem — one of the largest proofs in mathematics — now has a formalised Lean development. 196 points and 52 comments.</div>
+        <div class="sources">
+          <a href="https://cfsg.axiommath.ai/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50261647">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Solar power overtakes nuclear</div>
+        <div class="desc">BBC Future charts solar's rise past nuclear in global generation. 517 points and 748 comments.</div>
+        <div class="sources">
+          <a href="https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50245385">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">SS United States to be sunk as world's largest artificial reef</div>
+        <div class="desc">The record-holding ocean liner goes down off the US coast in November as an artificial reef. 118 points and 80 comments.</div>
+        <div class="sources">
+          <a href="https://divemagazine.com/scuba-diving-news/ss-united-states-to-be-sunk-as-worlds-largest-artificial-reef-in-november">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50239214">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Ink droplets in motion win Nikon Small World 2026</div>
+        <div class="desc">The photomicrography contest's top prize goes to a shot of ink droplets in motion. 163 points and 25 comments.</div>
+        <div class="sources">
+          <a href="https://arstechnica.com/science/2026/10/meet-the-2026-winner-of-nikons-small-world-photomicrography-contest/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50234796">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The day splits cleanly in two. At the top, capability news: OpenAI's three discoveries at 1,134 points, Genie 4's world simulation, the Lean formalisation of the finite simple groups. At the bottom, everything that failed: Amazon dismantling its AI division, a tool-call accuracy bug in vLLM, Tailscale's SSH post-mortem, a UEFI flaw across most of the server fleet. The frontier models are no longer the weak link — the plumbing around them is.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The papers agree with the failures, not the headlines. The attrition paper found a third of tool results never reached the model in an agent whose context window was 94% empty; Stratum shows the real constraint on coding agents is selection and persistence, not window size. If you are budgeting engineering time, harness and memory work is buying more correctness than another context bump — and the vLLM tool-call walkthrough is the same lesson at serving time.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Evaluation is quietly going live. LiveSearch executes verifier code against daily data so memorised answers expire; Artificial Analysis shipped v5.0 hours before the next model cycle; AutoVend judges agents on 180 simulated days of economics rather than one transaction. Static benchmarks are becoming an audit of training-data contamination. Anyone picking models off a frozen leaderboard should treat that number as a lower bound and re-run against current conditions.</span>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Watch</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Genie 4 technical details.</strong> Today's announcement is a headline without a technical report. Watch for benchmarks, architecture notes and access terms — the gap between world-simulation claims and evidence closes or doesn't there.<div class="sources" style="margin-top:4px;"><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">Original</a> <a href="https://news.ycombinator.com/item?id=50261319">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Independent verification of OpenAI's results.</strong> Three results across maths, CS and physics are only as good as the academic communities that produced them can confirm. Watch for named theorems and referee sign-off; silence from specialists would undercut the claim.<div class="sources" style="margin-top:4px;"><a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/">Original</a> <a href="https://news.ycombinator.com/item?id=50251344">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>UEFI vulnerability disclosure and patching.</strong> A code-execution flaw with reach across most of the server fleet, at 92 points and 24 comments — under-discussed relative to stakes. Watch for a CVE, affected-vendor lists and firmware advisories; server firmware inventory is the immediate action.<div class="sources" style="margin-top:4px;"><a href="https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/">Original</a> <a href="https://news.ycombinator.com/item?id=50265393">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>CPython JIT removal decision.</strong> LWN reports the experimental JIT is slated for removal, but the write-up stops short of a final call. Watch the python-dev thread and any steering council ruling; a counter-proposal to keep it behind a flag would change the outcome.<div class="sources" style="margin-top:4px;"><a href="https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/">Original</a> <a href="https://news.ycombinator.com/item?id=50257419">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Discord Google-indexing rollout.</strong> Public server messages becoming searchable is a privacy-posture change with no stated timeline. Watch for the opt-out mechanics server admins get, and whether discoverable-server defaults shift before indexing goes live.<div class="sources" style="margin-top:4px;"><a href="https://discord.com/blog/making-content-from-discoverable-servers-easier-to-discover">Original</a> <a href="https://news.ycombinator.com/item?id=50263854">HN</a></div></span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">28 Oct 2026</span>
+    </div>
+  </div>
+
+</body>
+</html>
