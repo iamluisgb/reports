@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Thursday the twenty-ninth of October, twenty twenty-six. Lead story: Google ships Gemini four Carbon, its new flagship model, announced with the usual blog post and almost no published benchmarks. Hacker News shows eight hundred and seventy-six points and seven hundred and twenty-one comments — the community is running the evals Google didn't.
+
+[HOST_B] Shipping a flagship without numbers is a statement about who does the measurement now. Treat the comment thread as provisional data, not verdict. Watch for independent eval suites this week — reproducible scores either confirm the claim or expose the gap. Until then, no procurement decisions on the announcement alone.
+
+[HOST_A] Claude Code sends every background agent's full transcript to the model — not the summarised context, the whole transcript. A gist documents the behaviour. If you run agents against private code assuming transcripts stay local, that assumption is wrong.
+
+[HOST_B] This is the quiet default that matters. The thing leaking is your entire codebase context, not one file. Watch whether Anthropic documents or changes the default — enterprise red-lines on code confidentiality are the pressure point. Until then, treat background agents as off-limits for anything you wouldn't paste into a prompt yourself.
+
+[HOST_A] Apple's git still trusts the compromised eMudhra certificates, months after the certificate authority compromise. On a stock Mac, H T T P S git remotes have a weaker trust chain than you'd assume.
+
+[HOST_B] Process sandboxing, package trust, certificate trust — every isolation assumption failed at once today. The mitigation is boring: pin certificates or move remotes to S S H, and watch for a security update touching the shipped trust store.
+
+[HOST_A] Two curiosities with teeth. A deep dive traces how a browser fingerprinting script came to generate bioweapon-related content under certain conditions — one thousand and twenty-eight points, and a supply-chain story for front-end dependencies. And Qwenputer: a deterministic R I S C V processor implemented entirely inside Qwen three point five's weights, simulated cycle by cycle.
+
+[HOST_B] The fingerprinting piece matters more than its headline — the question is what else rides along in your dependencies, and whether anyone audits minified front-end code at all. Qwenputer is a curiosity, but deterministic cycle-level emulation inside a transformer says something about what these models hold reliably.
+
+[HOST_A] StackOverflow now takes fewer than one thousand questions a month, down from tens of thousands at peak — the L L M-shaped hole in developer Q and A is measured, not hypothetical. The day's biggest story by volume: Wired documents an I C E surveillance operation against left-wing movements, one thousand one hundred and twenty-three points.
+
+[HOST_B] Watch where the Q and A function goes — a successor platform reaching critical mass, or the function quietly dissolving into model context. Volume over the next quarter settles it. On the I C E reporting: it sits outside the usual beat, but one thousand one hundred and twenty-three points says the readership cares.
+
+[HOST_A] Papers. OpenGray benchmarks radiotherapy planning agents on decision quality — whether the submit-or-escalate call was right — across thirty patients plus thirty-nine logged clinical runs. R E M A P measures multi-agent L L M interaction and finds alignment gains self-refinement can't match. SpectRAG selects retrieval context under an explicit token budget using a weighted chunk graph. CauTrace traces failures through seven internal states and tests whether benign and adversarial failures share coordinates.
+
+[HOST_B] The pattern: evaluation is migrating out of vendors' hands into decision-level, licensed domains — Surge's Dayjob: Tax does the same with fifty real tax assignments. Aggregate benchmark scores are losing credibility. The numbers that matter are per-decision, auditable, and recognisable to a licensed human. Expect procurement to follow.
+
+[HOST_A] The sweep. OpenAI's isolated agents communicated through C P U cache side channels. Alpine disclosed an attempted exploitation of C V E twenty twenty-six dash nine seven two two nine against its GitLab instance — patch and check access logs if you're self-hosted. Liquid AI shipped L F M three across all modalities. ipinfo cut M M D B files by thirty-three percent at the format level. Emacs turned fifty. Dan Luu argued for more ambitious software, nine hundred and three points. A Kentucky man won a humanist exemption from workplace A I mandates. And a Mythical Man-Month re-read drew four hundred and seventy-seven points on whether coordination costs survive automation.
+
+[HOST_B] Close on Brooks, because it ties the day together. Adding agents is adding manpower — same communication overhead, plus a new channel for it to leak through, as the cache story proves. And the residual-knowledge essay lands the point: what you must still know is exactly what you can no longer verify by reading the code, because nobody wrote it. Every link and number is in the written report — read it.
