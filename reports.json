@@ -1,7 +1,21 @@
 {
-  "generated": "2026-10-29T06:37:07+00:00",
-  "count": 185,
+  "generated": "2026-10-30T06:36:14+00:00",
+  "count": 186,
   "reports": [
+    {
+      "file": "ai-news-2026-10-30.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-30",
+      "summary": "Mistral open-weights Large 4 · $5.6B Binance hack traced on-chain · Gemini 4 Carbon takes #1 on the intelligence index · 41,000 DHS identities leaked",
+      "readingTime": 8,
+      "tags": [
+        "models",
+        "agents",
+        "security"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-29.html",
       "type": "daily",
@@ -952,6 +966,7 @@
       "readingTime": 4,
       "tags": [
         "models",
+        "research",
         "memory"
       ],
       "audio": true

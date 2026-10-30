@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Gemini 4 Carbon lands](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-29.md) — 2026-10-29 · 9 min
+- [Mistral open-weights Large 4](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-30.md) — 2026-10-30 · 8 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### October 2026
 
+- [Mistral open-weights Large 4](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-30.md) — 2026-10-30 · 8 min
 - [Gemini 4 Carbon lands](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-29.md) — 2026-10-29 · 9 min
 - [DeepMind ships Genie 4](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-28.md) — 2026-10-28 · 9 min
 - [Anthropic files its S-1](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-27.md) — 2026-10-27 · 9 min
