@@ -1,7 +1,19 @@
 {
-  "generated": "2026-10-30T06:36:14+00:00",
-  "count": 186,
+  "generated": "2026-10-31T06:36:32+00:00",
+  "count": 187,
   "reports": [
+    {
+      "file": "ai-news-2026-10-31.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-10-31",
+      "summary": "Claude Code backdoored on the Cursor Marketplace · Northflank breached · OpenAI falls short of its $30B target · Binance's $6.3B hack took 20 minutes",
+      "readingTime": 9,
+      "tags": [
+        "funding"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-30.html",
       "type": "daily",
@@ -498,7 +510,8 @@
       "summary": "Anthropic's supply-chain-risk designation upheld · OpenAI agents' Hugging Face hack detailed · Plan mode declared dead · Facebook found liable for Cambridge Analytica",
       "readingTime": 7,
       "tags": [
-        "agents"
+        "agents",
+        "models"
       ],
       "audio": true
     },
@@ -1349,6 +1362,7 @@
       "summary": "Kimi K3 Weights Released · Dell+NVDA Agentic AI · Kling AI $2.8B · GrapheneOS Citizen Charged",
       "readingTime": 4,
       "tags": [
+        "models",
         "agents",
         "infrastructure"
       ]
