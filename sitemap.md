@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Claude Code backdoored on the Cursor Marketplace](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-10-31.md) — 2026-10-31 · 9 min
+- [Linux TCP use-after-free lands at CVSS 9.8](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-01.md) — 2026-11-01 · 8 min
 
 ## Special reports
 
@@ -44,6 +44,10 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 - [Enterprise AI Agent Security — Deep Research Report](https://luisgonzalezbernal.com/reports/reports/enterprise-ai-agent-security-2026-06-02.md) — 2026-06-02 · 13 min
 
 ## Daily briefings
+
+### November 2026
+
+- [Linux TCP use-after-free lands at CVSS 9.8](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-01.md) — 2026-11-01 · 8 min
 
 ### October 2026
 

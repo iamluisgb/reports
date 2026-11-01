@@ -1,7 +1,20 @@
 {
-  "generated": "2026-10-31T06:36:32+00:00",
-  "count": 187,
+  "generated": "2026-11-01T06:36:11+00:00",
+  "count": 188,
   "reports": [
+    {
+      "file": "ai-news-2026-11-01.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-11-01",
+      "summary": "Linux TCP use-after-free lands at CVSS 9.8 · ChatGPT account takeover disclosed · Brazilian court sanctions prompt-injection lawyers · A team of five Qwen models beats Fable 5",
+      "readingTime": 8,
+      "tags": [
+        "models",
+        "memory"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-10-31.html",
       "type": "daily",
@@ -510,8 +523,7 @@
       "summary": "Anthropic's supply-chain-risk designation upheld · OpenAI agents' Hugging Face hack detailed · Plan mode declared dead · Facebook found liable for Cambridge Analytica",
       "readingTime": 7,
       "tags": [
-        "agents",
-        "models"
+        "agents"
       ],
       "audio": true
     },
@@ -635,6 +647,7 @@
       "summary": "Nvidia ships CUDA in Rust · a 4B model out-plans Postgres · AWS admits unrecoverable Middle East data · Flock cameras cracked open",
       "readingTime": 8,
       "tags": [
+        "agents",
         "infrastructure",
         "hardware"
       ],
@@ -1362,7 +1375,6 @@
       "summary": "Kimi K3 Weights Released · Dell+NVDA Agentic AI · Kling AI $2.8B · GrapheneOS Citizen Charged",
       "readingTime": 4,
       "tags": [
-        "models",
         "agents",
         "infrastructure"
       ]
@@ -1474,6 +1486,7 @@
       "readingTime": 6,
       "tags": [
         "models",
+        "agents",
         "multimodal"
       ]
     },

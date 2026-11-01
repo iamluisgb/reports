@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Sunday the first of November, twenty twenty-six. Lead story: a use-after-free in the Linux kernel's T C P path, tracked as C V E twenty twenty-six nine eight four three two, scored nine point eight on the C V S S scale. If you run anything internet-facing, patch triage starts today.
+
+[HOST_B] A nine point eight in the T C P path is about as bad as kernel bugs get — remote, pre-auth, on the one code path every exposed host runs. Watch for the patched release, distro backports, and the first exploitation report. Until those land, treat the severity as unpriced.
+
+[HOST_A] Next: Parameter's lab has published a full walkthrough of an account takeover at OpenAI — they found it by doing the maths the system neglected to do itself. Two hundred and thirty-two comments and counting.
+
+[HOST_B] The interesting part is the method, not the bug. The system trusted a computation it never performed; a human ran it and the account fell over. Same lesson as the Brazilian ruling — a court there sanctioned lawyers for planting a prompt injection in a filing. Text written for an L L M reader now carries legal liability.
+
+[HOST_A] On the offensive side, Cisco Talos documents Volta, an infostealer that uses a language model to rank victims by worth — triage as a service for credential theft.
+
+[HOST_B] So adversaries and institutions are both pricing in L L M s as actors. Volta outsources judgement to a model; the Brazilian court treats a model as a reader with standing. Working assumption for the week: anything your agent reads is attacker-controlled, and enforcement of what it writes is coming.
+
+[HOST_A] Now the technical story of the week. Memdoor's team-solve workflow — five Qwen three point eight twenty-seven B models with shared memory — beats Fable 5 on LiveCodeBench Hard. Open source on GitHub. And the Stratum paper backs the same diagnosis with numbers: across seven hundred and fifty-two real bug-fix commits, the median fix touches two files plus imports, under ten percent of the repository.
+
+[HOST_B] Stratum's sharpest point: K V cache storage costs ten thousand to a hundred thousand times more bytes than indexed text. So the bottleneck is selection, not capacity — a memory-architecture problem, not a context-length one. That is exactly why a memory-layered ensemble of small models can outscore a frontier model. Context windows grew a thousand-fold; the harnesses around them did not.
+
+[HOST_A] Two companions on ArXiv. Retrieval as Traversal reframes retrieval as persistent local traversal through an address space — utility, not geometry, decides what stays reachable. And the three-engine paper, grounded in fifteen production deployments, pairs a financial knowledge graph with a deterministic optimisation engine, leaving the L L M layer intent and validation.
+
+[HOST_B] The corollary: the model is becoming the cheapest component of the stack. Deterministic code owns the maths; the L L M owns interpretation. Prospero, the nullprogram author's new coding harness, is circling the same division in its design notes — one hundred and twenty-one comments say the details landed. Verification and selection are where the leverage sits now; generation is a commodity.
+
+[HOST_A] Anthropic landed two restrictions at once. Users report bans for prompts merely adjacent to training frontier models — two hundred and ninety-eight points, one hundred and sixty-seven comments. Separately, Claude is now gated from reverse-engineering video games after the viral cloning demos. OpenAI, meanwhile, is merging ChatGPT and Codex usage limits into one pool — relevant if you budget agent workloads across both.
+
+[HOST_B] The reverse-engineering gate is the notable one: capability gating by domain, not by harm class. Policy is becoming a product surface. Watch whether Anthropic publishes clear criteria or users keep reporting over-broad bans — a walk-back settles the direction. Also watch replication of the Qwen ensemble; it is open source, so independent runs should appear within days.
+
+[HOST_A] Quick sweep. Jepsen audited ParticleDB one point one point four — one hundred and thirty-six comments already. An essay argues memory latency, not bandwidth, is the binding constraint. Molly, the Signal fork, has gone three months without upstream fixes. A re-surfaced paper exfiltrates data from air-gapped machines via radio emissions from R A M. Karpathy's HackerTube tops the front page at one thousand and thirty-three points. Science profiles Serbia's researcher-dense parliament. A post-mortem ties the Arecibo collapse to zinc creep. N E S Contra is ported to WebAssembly. Buterin writes on digital minimalism. Leo de Moura discusses Lean and formal verification. And A T L A S Bench ships twelve hundred agentic search queries separating hard constraints from soft preferences.
+
+[HOST_B] That's the briefing. The full written report — with the papers, the watch list and the links — is in today's issue. Patch your kernels; we'll see you tomorrow.

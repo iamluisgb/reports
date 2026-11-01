@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 1 Nov 2026</title>
+<link rel="stylesheet" href="../styles.css">
+<!-- og:start -->
+<meta name="description" content="Linux TCP use-after-free lands at CVSS 9.8 · ChatGPT account takeover disclosed · Brazilian court sanctions prompt-injection lawyers · A team of five Qwen models beats Fable 5">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-01.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="AI News Daily — 1 Nov 2026">
+<meta property="og:description" content="Linux TCP use-after-free lands at CVSS 9.8 · ChatGPT account takeover disclosed · Brazilian court sanctions prompt-injection lawyers · A team of five Qwen models beats Fable 5">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-01.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-11-01.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="AI News Daily — 1 Nov 2026">
+<meta name="twitter:description" content="Linux TCP use-after-free lands at CVSS 9.8 · ChatGPT account takeover disclosed · Brazilian court sanctions prompt-injection lawyers · A team of five Qwen models beats Fable 5">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-11-01.png">
+<!-- og:end -->
+<!-- ui:start -->
+<link rel="alternate" type="text/markdown" href="ai-news-2026-11-01.md">
+<link rel="preload" href="../assets/fonts/web/InstrumentSerif-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/InstrumentSerif-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/Geist-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/GeistMono-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('ai-reports-theme');if(t==='light'||(!t&&matchMedia('(prefers-color-scheme: light)').matches))document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script type="speculationrules">{"prerender":[{"where":{"or":[{"href_matches":"/reports/"},{"href_matches":"/reports/reports/*.html"},{"href_matches":"/reports/about.html"}]},"eagerness":"moderate"}]}</script>
+<script defer src="/u/s.js" data-website-id="08c1619b-4bb8-471b-9dc9-9b6cda88e8ae" data-host-url="https://cloud.umami.is" data-domains="luisgonzalezbernal.com"></script>
+<link rel="manifest" href="../manifest.json">
+<link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0c0f0e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-title" content="AI Reports">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script src="../pwa.js" defer></script>
+<script src="../site.js" defer></script>
+<script src="../report.js" defer></script>
+<!-- ui:end -->
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">1 Nov 2026 · SUNDAY</div>
+          <div class="subtitle">Linux TCP use-after-free lands at CVSS 9.8 · ChatGPT account takeover disclosed · Brazilian court sanctions prompt-injection lawyers · A team of five Qwen models beats Fable 5</div>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-11-01.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 1 NOV 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 4:58</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">TCP use-after-free in Linux: CVE-2026-98432, CVSS 9.8</div>
+        <div class="desc">A use-after-free in the kernel's TCP path, scored 9.8. Patch triage for anything internet-facing starts today.</div>
+        <div class="sources">
+          <a href="https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50319143">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">How we took over ChatGPT accounts</div>
+        <div class="desc">Parameter's lab walks through an account-takeover bug at OpenAI, found by doing the maths the system neglected to. 232 comments and counting.</div>
+        <div class="sources">
+          <a href="https://www.parameter.ai/labs/we-found-a-gap-at-openai">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50314699">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Brazilian court sanctions lawyers for prompt injection in a filing</div>
+        <div class="desc">A court punished lawyers for planting a prompt injection in a court document. Legal systems are starting to price in the LLM as a reader.</div>
+        <div class="sources">
+          <a href="https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50322173">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Volta infostealer uses an LLM to rank victims by worth</div>
+        <div class="desc">Cisco Talos documents malware that outsources victim prioritisation to a language model — triage-as-a-service for credential theft.</div>
+        <div class="sources">
+          <a href="https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50316531">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Anthropic blocks users for anything touching training larger models</div>
+        <div class="desc">Users report bans for prompts adjacent to training frontier models. 298 points, 167 comments — enforcement policy is now front-page material.</div>
+        <div class="sources">
+          <a href="https://twitter.com/jiahaoshao1/status/2116475922190922088">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50319358">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">In Numbers</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">9.8</div>
+          <div class="stat-label">CVSS score of Linux TCP flaw</div>
+          <div class="stat-note">patch triage for internet-facing systems starts today <a href="https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">1,033</div>
+          <div class="stat-label">points on HackerTube</div>
+          <div class="stat-note">top of the front page <a href="https://karpathy.bearblog.dev/hacker-tube/">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">298</div>
+          <div class="stat-label">points on Anthropic ban reports</div>
+          <div class="stat-note">with 167 comments <a href="https://twitter.com/jiahaoshao1/status/2116475922190922088">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">3 months</div>
+          <div class="stat-label">since Molly fork last patched</div>
+          <div class="stat-note">upstream fixes missed since August <a href="https://piefed.world/post/1503394">Original</a></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Five Qwen3.8-27B models with shared memory beat Fable 5 on LiveCodeBench Hard</div>
+        <div class="desc">Memdoor's team-solve workflow shows small-model ensembles with a memory layer outscoring a frontier model. Open source on GitHub.</div>
+        <div class="sources">
+          <a href="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50320995">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">GPT-5.6 Sol beats Factorio on peaceful mode</div>
+        <div class="desc">A long-horizon factory-building run completed end to end — a harder test of sustained planning than most agent benchmarks.</div>
+        <div class="sources">
+          <a href="https://ryanmadden.net/gpt-56-beats-factorio/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50318871">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Prospero: a new coding harness</div>
+        <div class="desc">The nullprogram author's take on the coding-agent harness, with design notes. 121 comments suggest the details landed.</div>
+        <div class="sources">
+          <a href="https://nullprogram.com/blog/2026/10/31/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50315226">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Anthropic moves to stop Claude reverse-engineering video games</div>
+        <div class="desc">After viral game-cloning demos, Anthropic has restricted Claude from reverse-engineering games. Capability gating by domain, not just by harm class.</div>
+        <div class="sources">
+          <a href="https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50320255">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">ChatGPT and Codex usage limits are merging</div>
+        <div class="desc">OpenAI consolidates the two products' quotas into one pool — relevant to anyone budgeting agent workloads across both.</div>
+        <div class="sources">
+          <a href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50320588">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">Leo de Moura on AI, Lean and the future of formal verification</div>
+        <div class="desc">The Lean creator on the Data Exchange podcast: where proof assistants and LLMs meet, and what verification looks like next.</div>
+        <div class="sources">
+          <a href="https://thedataexchange.media/leo-de-moura-lean-aws/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50290652">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Stratum: Repository Memory for Coding Agents Beyond the Context Window</div>
+        <div class="desc">Coding agents restart every session with no memory of prior work — re-reading files, retrying failed approaches, losing root causes. The authors argue this is a memory-architecture problem, not a context-length one: KV-cache storage costs 10^4 to 10^5 times more bytes than indexed text, and across 752 real bug-fix commits the median fix touches two files plus imports — under 10% of the repository. The bottleneck is selection, not capacity. <strong>[coding-agents, memory, context]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.36153v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Retrieval as Traversal: Value-Indexed Memory for Stateful Long-Context Agents</div>
+        <div class="desc">Long-context agents re-run a global search on every forward pass, even when consecutive retrievals overlap heavily. The paper reframes retrieval as a persistent local traversal through an address space, separating a memory's content from its address and charging a cost for each locally accessible memory via a marginal-value objective. Utility, not geometry, decides what is worth keeping reachable. <strong>[memory, retrieval, agents]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.40545v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Beyond LLM Wrappers: Context Engineering and the Three-Engine Architecture for Reliable Financial AI</div>
+        <div class="desc">LLMs alone cannot guarantee reproducible calculations or auditable recommendations in payment, collections and compliance workflows. The architecture pairs a financial knowledge graph with a deterministic optimisation engine for the maths, leaving the LLM layer to intent, orchestration and claim validation, coordinated by a context-engineering layer across ERP systems and tenants. Grounded in observations from 15 production deployments. <strong>[architecture, finance, context-engineering]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.39230v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">ATLAS-Bench: An Agentic Tool-Use Benchmark for Local Area Search</div>
+        <div class="desc">Existing agent benchmarks barely test whether search results actually satisfy mandatory requirements versus soft preferences. ATLAS-Bench ships 1,200 queries across three regions, expanded from real search events, each separating hard constraints from subjective judgements with per-requirement evidence and checks, validated by iterative assertion checks and cross-model review. Ships with ATLASBox, a standardised evaluation environment. <strong>[benchmarks, tool-use, agents]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.39438v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Jepsen analyses ParticleDB 1.1.4</div>
+        <div class="desc">The latest distributed-systems audit from Jepsen. 136 comments already — the findings are being picked apart.</div>
+        <div class="sources">
+          <a href="https://jepsen.io/analyses/particledb-1.1.4">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50316100">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">It's the memory latency, stupid</div>
+        <div class="desc">An argument that latency — not bandwidth or compute — is the binding constraint on real workloads, with measurements to back it.</div>
+        <div class="sources">
+          <a href="https://pivotlake.io/blog/its-the-memory-latency-stupid/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50318720">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Molly, the Signal fork, unpatched for three months</div>
+        <div class="desc">No updates since August, leaving the fork exposed to vulnerabilities already fixed upstream. A caution for anyone depending on unmaintained forks.</div>
+        <div class="sources">
+          <a href="https://piefed.world/post/1503394">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50314666">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Leaking secrets from air-gapped machines via radio signals from RAM</div>
+        <div class="desc">A 2024 paper on a covert channel that spells data out over radio emissions from RAM — exfiltration with no extra hardware.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2409.02292">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50322022">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Ontologies, Graphs &amp; Semantics</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Knowledge-graph completion via observation-anchored latent diffusion</div>
+        <div class="desc">Predicts whole missing triple sets rather than isolated links, addressing the fragmented subgraph reasoning of the dominant completion paradigm.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.39114v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">SymAnt grounds long-horizon action anticipation in symbolic priors</div>
+        <div class="desc">A neuro-symbolic approach that uses adaptable symbolic priors so robots anticipate future actions from brief observations — and stay interpretable.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.40632v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Checking Joern's negative reachability verdicts against execution</div>
+        <div class="desc">SourceLens maps Semgrep findings onto a Python call graph from Joern's code property graph, then tests the 'unreachable' verdicts that suppress findings against real execution.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.39504v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">HackerTube: YouTube, but the feed is HN recommendations</div>
+        <div class="desc">Karpathy built a video site where the ranking algorithm is replaced by what Hacker News liked. Top of the front page at 1,033 points.</div>
+        <div class="sources">
+          <a href="https://karpathy.bearblog.dev/hacker-tube/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50319510">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Serbia just elected the world's brainiest parliament</div>
+        <div class="desc">Science profiles an incoming legislature unusually dense with researchers — and asks whether credentials govern any better.</div>
+        <div class="sources">
+          <a href="https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50314654">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Zinc creep brought down the Arecibo telescope</div>
+        <div class="desc">The 2020 collapse traces to zinc creep in the cable spelter sockets — a materials-failure post-mortem with lessons for any long-lived structure.</div>
+        <div class="sources">
+          <a href="https://maketecheasier.com/arecibo-zinc-creep-collapse/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50311045">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">NES Contra (1987) ported from ASM to C to WebAssembly</div>
+        <div class="desc">The full disassembly-to-browser pipeline, playable now. 48 comments on the conversion choices.</div>
+        <div class="sources">
+          <a href="https://epoyraz.github.io/nes-contra-us/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50319169">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Digital minimalism</div>
+        <div class="desc">Vitalik Buterin on attention, tools and deliberate scarcity of inputs. 232 comments.</div>
+        <div class="sources">
+          <a href="https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50313661">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Memory architecture, not context length, is the week's real story. Stratum's numbers make the case bluntly: mid-size repos already exceed production context windows, KV-cache storage costs 10^4-10^5 times more than indexed text, and the median fix touches under 10% of a repository. That is the same diagnosis behind the Qwen3.8-27B ensemble with shared memory outscoring Fable 5 on LiveCodeBench Hard, and behind Retrieval as Traversal making retrieval itself persistent state. Context windows grew a thousand-fold; the harnesses around them did not.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The corollary: the model is becoming the cheapest component of the stack. The three-engine paper puts deterministic code in charge of the maths and the LLM in charge of interpretation and validation — the same division Prospero's design notes are circling, and the same instinct behind Jepsen's ParticleDB audit and checking Joern's negative reachability verdicts against real execution. Verification and selection are where the engineering leverage now sits; generation is a commodity.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Adversaries and institutions are both pricing in LLMs as actors. Volta outsources victim triage to a language model; the ChatGPT account takeover came from doing maths the system skipped; the Brazilian court ruling establishes that text written for an LLM reader carries legal liability. Anthropic gating game reverse-engineering by domain — not harm class — shows capability policy becoming a product surface. Assume anything your agent reads is attacker-controlled, and assume enforcement of what it writes is coming.</span>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Watch</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>TCP patch triage and exploitation risk.</strong> Watch for a patched kernel release and the first reports of CVE-2026-98432 being exploited in the wild. A CVSS 9.8 use-after-free in the TCP path puts every internet-facing host in scope; vendor advisories and distro backports will show how fast the fix lands.<div class="sources" style="margin-top:4px;"><a href="https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf">Original</a> <a href="https://news.ycombinator.com/item?id=50319143">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Anthropic enforcement policy under scrutiny.</strong> Two restrictions landed at once — bans for training-adjacent prompts and gating Claude away from game reverse-engineering. Watch whether Anthropic publishes clearer criteria or users keep reporting over-broad enforcement. A published policy or a visible walk-back of specific bans settles which direction this goes.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Replication of small-model ensemble result.</strong> Memdoor's five-Qwen ensemble with shared memory beating Fable 5 on LiveCodeBench Hard is open source, so replication attempts should follow quickly. Watch for independent runs on other benchmarks — confirmation makes memory-layered ensembles a real alternative to frontier models; failures confine it to one benchmark.<div class="sources" style="margin-top:4px;"><a href="https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve">Original</a> <a href="https://news.ycombinator.com/item?id=50320995">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Jepsen findings picked apart.</strong> The ParticleDB 1.1.4 audit is already drawing 136 comments of scrutiny. Watch for the vendor's response and any follow-up fixes — a concrete patch or documented counteranalysis will determine whether the findings hold.<div class="sources" style="margin-top:4px;"><a href="https://jepsen.io/analyses/particledb-1.1.4">Original</a> <a href="https://news.ycombinator.com/item?id=50316100">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Courts pricing in the LLM reader.</strong> The Brazilian sanction against lawyers for a prompt injection in a filing is a first data point, not a settled rule. Watch whether other jurisdictions treat injected instructions as an offence and whether filing systems add technical defences. A second court following suit would establish a trend.<div class="sources" style="margin-top:4px;"><a href="https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/">Original</a> <a href="https://news.ycombinator.com/item?id=50322173">HN</a></div></span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">1 Nov 2026</span>
+    </div>
+  </div>
+
+</body>
+</html>
