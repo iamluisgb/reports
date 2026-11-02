@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Monday the second of November, twenty twenty-six. Lead story: Postgres nineteen has slipped its release date. The release manager blames a surge in bug reports — far more than in prior cycles — attributed to L L M assisted fuzzing and review hitting a mature codebase all at once. The account is on Hacker News.
+
+[HOST_B] This is the first high-profile data point on what cheap bug discovery does to maintainer capacity. Finding bugs was the bottleneck; now triage is. Watch whether other major projects adopt contributor verification or triage filters — and note the counter-argument: nobody has yet shown the surge is machine-generated rather than just more eyes.
+
+[HOST_A] Trigger.dev has disclosed a security incident exposing customer environment variables — the credentials layer for its background-job platform. No root cause yet; the postmortem is pending. If you run secrets there, rotate them now, before reading further.
+
+[HOST_B] The postmortem decides the blast radius. A logging leak, a compromised dependency, or infrastructure misconfiguration each imply a different re-audit of the secrets-handling layer. Rotation is hygiene; the level of detail in the disclosure is the real signal.
+
+[HOST_A] Nolan Lawson has priced the framework tax: L L Ms burn measurably more context, tokens and money working against framework-heavy codebases than against vanilla JavaScript. Separately, Terry Tao argues mathematics has changed under AI-assisted proof and formalisation, and that journals, hiring and peer review have not caught up. That thread is at two hundred and eighty-eight comments.
+
+[HOST_B] Lawson's number reframes abstraction as an inference bill — a line item, not a style debate. Tao's argument is the institutional version of the same thing: generation got cheap, verification didn't. Whether your field is next is the wrong question; the right one is who pays for checking.
+
+[HOST_A] Papers. RoboArchitect keeps a robot policy frozen and has a coding model watch rollouts, diagnose failures and rewrite the harness around it. On held-out scenes, success goes from nine point seven percent to forty-three point three — four and a half times. Held-out tasks, twelve point seven to forty point two.
+
+[HOST_B] The leverage is moving from weights to harnesses — no weight updates, tripled performance, and the gains are largest where the benchmark sits furthest from the seed harness. The failure case backs it up: fifty agent teams in Minecraft tried to build a civilisation and drowned in coordination overhead instead. Orchestration, not capability, breaks agent teams at scale.
+
+[HOST_A] Real Computation or Merely Naming audits an agent system claiming twenty-five cognitive-architecture modules — global workspace, theory of mind, active inference. Pre-registered protocol, line-number evidence, call-chain tracing, falsifiable predictions for eleven modules, then replication on a second system with repair experiments as positive controls.
+
+[HOST_B] It is a transferable test for the claim-implementation gap, not another benchmark score. The same disease in the wild: Eurogamer documents L L M written game wikis, full of fabricated mechanics, polluting the reference sources players and search engines rely on. And an Apollo economist claims most enterprises see zero financial payoff from A I. Plausible text outrunning checked value, three times over.
+
+[HOST_A] Two architecture papers. The Dynamical Memory Transformer separates encoding from reading — recurrent memory units read by attention, with an associative scan giving linear total work and logarithmic parallel depth at fixed dimensions. D A M I shows gated linear attention's memory parameters stay near their initialisation after training, so initialising them well transfers across five recurrence families. In retrieval: a B M twenty-five and grep harness with MiniMax M three hits eighty-five percent on Browse Comp Plus and ninety-one percent on multi-hop Frames, with no vector index.
+
+[HOST_B] Context and memory are design decisions now, not benchmark footnotes. The B M twenty-five result is the sharper one — a disciplined harness beats vector infrastructure on retrieval benchmarks, which should make everyone justify their index. On text-to-Cypher, strong models plateau at seventy-one point seven six percent with structural errors dominating; CypherGuard grounds corrections in the live schema. Replication on a different graph database is the test.
+
+[HOST_A] Sweep. Lenovo's fingerprint-encrypted USB drive turns out to be an unencrypted SD card in a case. The UK copper landline network switches off in one hundred days with no extensions — alarm panels, lifts, fax. Raph Levien's Nibnib trades compression ratio for near-instant image decode. OmniDiff is a structure-aware diff tool in Rust. A F L plus plus fuzzing guidance lands neatly beside the Postgres story. And an Italian farmer planted unknown seeds found in his attic — seven hundred and eighty-eight points.
+
+[HOST_B] Trust fails at the boring layers — rotate secrets, verify hardware claims before believing the label. Watch this week: the Trigger.dev postmortem, whether Openreach's deadline actually holds, and whether enterprises publish audited returns instead of productivity anecdotes. The full written report, with links to every story and paper, is in the briefing — read it there. That's AI News Daily.

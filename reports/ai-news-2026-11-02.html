@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 2 Nov 2026</title>
+<link rel="stylesheet" href="../styles.css">
+<!-- og:start -->
+<meta name="description" content="Postgres 19 slips as AI-assisted review surfaces more bugs · Trigger.dev leaks customer environment variables · Terry Tao calls on mathematics to adapt to AI · Nolan Lawson prices the token cost of JavaScript frameworks">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-02.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="AI News Daily — 2 Nov 2026">
+<meta property="og:description" content="Postgres 19 slips as AI-assisted review surfaces more bugs · Trigger.dev leaks customer environment variables · Terry Tao calls on mathematics to adapt to AI · Nolan Lawson prices the token cost of JavaScript frameworks">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-02.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-11-02.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="AI News Daily — 2 Nov 2026">
+<meta name="twitter:description" content="Postgres 19 slips as AI-assisted review surfaces more bugs · Trigger.dev leaks customer environment variables · Terry Tao calls on mathematics to adapt to AI · Nolan Lawson prices the token cost of JavaScript frameworks">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-11-02.png">
+<!-- og:end -->
+<!-- ui:start -->
+<link rel="alternate" type="text/markdown" href="ai-news-2026-11-02.md">
+<link rel="preload" href="../assets/fonts/web/InstrumentSerif-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/InstrumentSerif-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/Geist-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/GeistMono-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('ai-reports-theme');if(t==='light'||(!t&&matchMedia('(prefers-color-scheme: light)').matches))document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script type="speculationrules">{"prerender":[{"where":{"or":[{"href_matches":"/reports/"},{"href_matches":"/reports/reports/*.html"},{"href_matches":"/reports/about.html"}]},"eagerness":"moderate"}]}</script>
+<script defer src="/u/s.js" data-website-id="08c1619b-4bb8-471b-9dc9-9b6cda88e8ae" data-host-url="https://cloud.umami.is" data-domains="luisgonzalezbernal.com"></script>
+<link rel="manifest" href="../manifest.json">
+<link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0c0f0e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-title" content="AI Reports">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script src="../pwa.js" defer></script>
+<script src="../site.js" defer></script>
+<script src="../report.js" defer></script>
+<!-- ui:end -->
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">2 Nov 2026 · MONDAY</div>
+          <div class="subtitle">Postgres 19 slips as AI-assisted review surfaces more bugs · Trigger.dev leaks customer environment variables · Terry Tao calls on mathematics to adapt to AI · Nolan Lawson prices the token cost of JavaScript frameworks</div>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-11-02.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 2 NOV 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 4:59</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Postgres 19 is late — the release manager blames AI-generated bug reports</div>
+        <div class="desc">Postgres 19 has missed its schedule because far more bugs are being found now than in prior cycles. RHAAS's account of the delay is a data point on what LLM-assisted fuzzing and review are doing to mature open source projects.</div>
+        <div class="sources">
+          <a href="http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50312408">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Trigger.dev exposed customer environment variables</div>
+        <div class="desc">Trigger.dev has disclosed a security incident exposing customer environment variables — the credentials layer for their background-job platform. If you run secrets there, rotate them now.</div>
+        <div class="sources">
+          <a href="https://trigger.dev/blog/security-incident-nov-2026">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50331784">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">The AI cost of JavaScript frameworks</div>
+        <div class="desc">Nolan Lawson measures how much more context, tokens and money it takes for an LLM to work against a framework-heavy codebase versus vanilla JavaScript. Framework abstraction now carries a direct inference bill.</div>
+        <div class="sources">
+          <a href="https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50323088">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Terry Tao: mathematics has changed, act like it</div>
+        <div class="desc">Tao argues AI-assisted proof and formalisation have shifted how mathematics is done and that institutions — journals, hiring, peer review — have not caught up. 288 comments of engineers arguing about whether their field is next.</div>
+        <div class="sources">
+          <a href="https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50328251">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Lenovo's 'encrypted' fingerprint USB drive is an unencrypted SD card in a case</div>
+        <div class="desc">Teardown of a drive marketed with fingerprint encryption shows the storage is a plain SD card with no hardware encryption at all. A reminder that security claims on consumer hardware need verification, not trust.</div>
+        <div class="sources">
+          <a href="https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50326099">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">In Numbers</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">85%</div>
+          <div class="stat-label">on BrowseComp-Plus with BM25 and grep</div>
+          <div class="stat-note">91% on multi-hop FRAMES, no vector index <a href="https://arxiv.org/abs/2610.41172v1">arXiv</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">71.76%</div>
+          <div class="stat-label">text-to-Cypher plateau for strong models</div>
+          <div class="stat-note">small models manage 31.4%; structural errors dominate <a href="https://arxiv.org/abs/2610.41755v1">arXiv</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">100 days</div>
+          <div class="stat-label">until the UK PSTN switch-off</div>
+          <div class="stat-note">Openreach confirms no further extensions <a href="https://www.theregister.com/networks/2026/11/01/landline-phones-will-switch-off-across-britland-in-100-days-no-extensions-openreach/5306673">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">288</div>
+          <div class="stat-label">comments on Tao's institutional argument</div>
+          <div class="stat-note"><a href="https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/">Original</a></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Proving and improving the Platonic Representation Hypothesis with JEPAs</div>
+        <div class="desc">New work on arXiv tests whether vision and language models converge on a shared statistical model of reality, using JEPA architectures. Evidence for — and a method to improve — representational convergence across modalities.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.39302">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50325454">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">50 agent teams in Minecraft fail to build a civilisation, drown in bureaucracy instead</div>
+        <div class="desc">Researchers unleashed multi-agent swarms in Minecraft to build a thriving society; the teams collapsed into paralyzing coordination overhead. A concrete failure case for agent orchestration at scale.</div>
+        <div class="sources">
+          <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50325662">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Apollo economist: AI delivers 'zero financial payoff' to most companies</div>
+        <div class="desc">TechCrunch reports the claim that most enterprises adopting AI see no measurable return. The gap between pilot enthusiasm and P&amp;L impact keeps widening.</div>
+        <div class="sources">
+          <a href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50330456">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">AI-generated fan wikis are riddled with errors and muddying games culture</div>
+        <div class="desc">Eurogamer documents how LLM-written game wikis — full of fabricated mechanics and lore — are polluting the reference sources players and search engines rely on. Model collapse in the wild, at the documentation layer.</div>
+        <div class="sources">
+          <a href="https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50332086">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory</div>
+        <div class="desc">Frozen robot policies work better inside an agent harness, but those harnesses are hand-built and redesigned per robot or benchmark. RoboArchitect uses a coding model to watch rollouts, diagnose failures and revise the harness around the frozen policy without weight updates. On held-out scenes it lifts average success from 9.7% to 43.3% (4.5x) and on held-out tasks from 12.7% to 40.2% (3.2x), with the largest gains where the benchmark is far from the seed harness. <strong>[agent-harness, robotics, coding-agents]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.42141v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Real Computation or Merely Naming? A Pre-Registered Mechanism Audit of 25 Cognitive-Architecture Modules in an LLM-Based Agent System</div>
+        <div class="desc">Agent systems increasingly claim cognitive-architecture modules — global workspace, theory of mind, active inference — and treat the label as the mechanism. This pre-registered audit uses a four-question static protocol with line-number evidence and call-chain tracing on a system claiming 25 mechanisms, pre-registers falsifiable predictions for 11 modules, then replicates on the IIT-phi core of a second system with two repair experiments as positive controls. The result is a transferable test for the claim-implementation gap, not another benchmark score. <strong>[agent-audit, cognitive-architecture, verification]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.41604v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Dynamical Memory Transformer: Selective Recurrent Memories with Constant Cost Attention</div>
+        <div class="desc">Transformers keep an explicit token history, so KV-cache size and per-token cost grow with context. State-space models compress the past into a fixed state but lose addressability. DMT separates sequence encoding from reading: several complex-diagonal recurrent memory units with input-dependent leak rates are read by attention without going through token history. The recurrence supports an associative scan with O(T) total work and O(log T) parallel depth at fixed dimensions. <strong>[architecture, long-context, linear-attention]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.41850v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">DAMI: Dual-Axis Memory Initialization for Enhanced Long-Context Retrieval in Gated Linear Attention</div>
+        <div class="desc">Gated linear attention has a finite-state memory whose retention is shaped by A_log, dt_bias and input activations, and controlled Gated DeltaNet runs show those parameters stay highly correlated with their initial values after training. DAMI sets geometric timescales across heads and a low-high-low input-sensitivity profile across layers before training, then calibrates the GDN-family implementation from a small activation sample without adding trainable parameters. It is evaluated across GDN, KDA, GDN2, Mamba-2 and RWKV-7 — five recurrence families — so the claim is transfer of initialization, not a single-model tuning result. <strong>[linear-attention, long-context, initialization]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.41994v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Ontologies, Graphs &amp; Semantics</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Context as infrastructure: knowledge compilation for agentic retrieval</div>
+        <div class="desc">Frames the agentic RAG loop — query, read, reformulate, stop — as a context-management problem, and compiles knowledge to keep the harness disciplined. A BM25/grep harness with MiniMax M3 hits 85% on BrowseComp-Plus and 91% on multi-hop FRAMES without vector indexes.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.41172v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">CypherGuard: database-grounded correction for text-to-Cypher</div>
+        <div class="desc">Text-to-Cypher over property graphs stays unreliable — a small model scores 31.4% on Cypher-Bench, a strong one plateaus at 71.76%, with structural errors dominating. CypherGuard grounds corrections in the actual database schema.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.41755v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Extracting ontological structure from Matryoshka retrieval embeddings</div>
+        <div class="desc">Finds that leading prefixes of MRL embeddings encode coarse-to-fine taxonomic structure, offering a cheaper route to hierarchy construction than per-corpus clustering or task-trained LLM pipelines. Taxonomy induction from embeddings you may already have.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2610.41785v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Tips for more effective fuzz testing with AFL++</div>
+        <div class="desc">Practical guidance on corpus construction, dictionary use and harness design for AFL++. Fuzzing discipline is back on the agenda as AI-assisted bug discovery floods maintainers — see Postgres 19 above.</div>
+        <div class="sources">
+          <a href="https://nullprogram.com/blog/2025/02/05/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50271106">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Nibnib: image compression optimised for extreme decompression speed</div>
+        <div class="desc">Raph Levien's experimental format trades compression ratio for near-instant decode. Interesting for anyone serving images at scale where decode latency, not bandwidth, is the bottleneck.</div>
+        <div class="sources">
+          <a href="https://github.com/raphlinus/nibnib">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50299811">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">OmniDiff: content-aware Git diff tool in Rust</div>
+        <div class="desc">An open-source difftool that understands code structure rather than line positions, built for speed. Worth a look if your review workflow still runs on plain unified diffs.</div>
+        <div class="sources">
+          <a href="https://github.com/ivankovic/omnidiff">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50325253">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">An Italian farmer found unknown seeds in his attic and planted them</div>
+        <div class="desc">Smithsonian tells the story of a rediscovered heirloom variety with biblical associations. 788 points — the weekend read of the day.</div>
+        <div class="sources">
+          <a href="https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50320963">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Police chief unplugs Flock cameras after company ignores contract cancellation</div>
+        <div class="desc">A city cancelled its Flock surveillance contract; Flock kept the cameras running, so the chief physically disconnected them. Contract enforcement versus surveillance infrastructure, resolved with a ladder.</div>
+        <div class="sources">
+          <a href="https://www.thedrive.com/news/my-city-canceled-flocks-contract-flock-ignored-it-so-the-police-chief-unplugged-the-cameras">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50326118">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">UK landline phones switch off in 100 days, no extensions</div>
+        <div class="desc">Openreach's PSTN shutdown has a hard deadline with no further reprieves. If you maintain anything that dials out over copper — alarm panels, lifts, fax — the clock is running.</div>
+        <div class="sources">
+          <a href="https://www.theregister.com/networks/2026/11/01/landline-phones-will-switch-off-across-britland-in-100-days-no-extensions-openreach/5306673">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50326609">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">The restrooms along the Norwegian Scenic Routes</div>
+        <div class="desc">Norway's public toilet architecture programme, documented in full seriousness. 683 points of HN agreeing that infrastructure design is a craft.</div>
+        <div class="sources">
+          <a href="https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-routes/worlds-best-toilets/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50324388">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The leverage is moving from weights to harnesses. RoboArchitect lifts a frozen policy from 9.7% to 43.3% on unseen scenes by having a coding model rewrite the control code around it, while Real Computation shows that named cognitive modules can fail a call-chain audit. The Minecraft swarm collapse is the orchestration version of the same lesson — coordination overhead, not model capability, is what breaks agent teams at scale.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Verification is the bottleneck once generation gets cheap. Real Computation gives a pre-registered audit with 25 modules and 11 falsifiable predictions, which is the right shape for claims about agents — AI-generated game wikis and Apollo's zero-payoff finding are the same problem in the wild, where plausible text outruns checked value. Postgres 19's slip is the maintainer-side cost of AI-assisted discovery — more bugs found is only good if triage and review scale with it.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Operational trust still fails at the boring layers. Trigger.dev exposed customer environment variables and Lenovo's fingerprint drive turned out to be an unencrypted SD card, so rotate secrets and verify hardware claims before believing the label. The JavaScript-framework inference bill and the DMT/DAMI memory work point the same way: context, memory and decode costs are now design decisions, not benchmark footnotes.</span>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Watch</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Postgres triage under AI-generated load.</strong> The 19 delay is the first high-profile data point on LLM-assisted bug discovery overwhelming a mature project's review capacity. Watch whether the release manager's account pushes maintainers towards triage tooling or contributor verification. Confirmation looks like other major projects adopting similar filters; a counter-argument would be evidence the bug surge has non-AI causes.<div class="sources" style="margin-top:4px;"><a href="http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html">Original</a> <a href="https://news.ycombinator.com/item?id=50312408">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Trigger.dev root cause disclosure.</strong> Customer environment variables were exposed; rotation is the immediate action. Watch for the postmortem — whether the leak came from logging, a compromised dependency, or infrastructure misconfiguration determines how much of the secrets-handling layer needs re-auditing. The signal that settles it is a detailed incident report with a concrete fix.<div class="sources" style="margin-top:4px;"><a href="https://trigger.dev/blog/security-incident-nov-2026">Original</a> <a href="https://news.ycombinator.com/item?id=50331784">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Copper-dependent kit before the deadline.</strong> The PSTN shutdown has a hard date and no reprieve, so anything dialling out over copper — alarm panels, lifts, fax lines — needs migrating within the window. Watch for a final rush of migration guidance from Openreach and whether edge cases force last-minute exceptions. The test is whether the deadline actually holds.<div class="sources" style="margin-top:4px;"><a href="https://www.theregister.com/networks/2026/11/01/landline-phones-will-switch-off-across-britland-in-100-days-no-extensions-openreach/5306673">Original</a> <a href="https://news.ycombinator.com/item?id=50326609">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Database-grounded correction for text-to-Cypher.</strong> Strong models plateau at 71.76% on Cypher-Bench with structural errors dominating, and CypherGuard claims grounding corrections in the live schema helps. Watch whether the approach generalises beyond Cypher to other text-to-query targets. Confirmation is independent replication on a different graph database; failure is gains confined to the benchmark.<div class="sources" style="margin-top:4px;"><a href="https://arxiv.org/abs/2610.41755v1">arXiv</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Enterprise AI ROI evidence.</strong> The Apollo economist's claim of zero financial payoff for most adopters widens the gap between pilot enthusiasm and P&amp;L impact. Watch whether enterprises start publishing audited returns rather than productivity anecdotes. The signal that settles the argument is a credible longitudinal study of deployed systems, not another survey of intentions.<div class="sources" style="margin-top:4px;"><a href="https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/">Original</a> <a href="https://news.ycombinator.com/item?id=50330456">HN</a></div></span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">2 Nov 2026</span>
+    </div>
+  </div>
+
+</body>
+</html>

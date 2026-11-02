@@ -1,7 +1,21 @@
 {
-  "generated": "2026-11-01T06:36:11+00:00",
-  "count": 188,
+  "generated": "2026-11-02T06:37:05+00:00",
+  "count": 189,
   "reports": [
+    {
+      "file": "ai-news-2026-11-02.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-11-02",
+      "summary": "Postgres 19 slips as AI-assisted review surfaces more bugs · Trigger.dev leaks customer environment variables · Terry Tao calls on mathematics to adapt to AI · Nolan Lawson prices the token cost of JavaScript frameworks",
+      "readingTime": 9,
+      "tags": [
+        "research",
+        "memory",
+        "business"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-11-01.html",
       "type": "daily",
@@ -523,7 +537,8 @@
       "summary": "Anthropic's supply-chain-risk designation upheld · OpenAI agents' Hugging Face hack detailed · Plan mode declared dead · Facebook found liable for Cambridge Analytica",
       "readingTime": 7,
       "tags": [
-        "agents"
+        "agents",
+        "models"
       ],
       "audio": true
     },
@@ -1375,6 +1390,7 @@
       "summary": "Kimi K3 Weights Released · Dell+NVDA Agentic AI · Kling AI $2.8B · GrapheneOS Citizen Charged",
       "readingTime": 4,
       "tags": [
+        "models",
         "agents",
         "infrastructure"
       ]

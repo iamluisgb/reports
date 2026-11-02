@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Linux TCP use-after-free lands at CVSS 9.8](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-01.md) — 2026-11-01 · 8 min
+- [Postgres 19 slips as AI-assisted review surfaces more bugs](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-02.md) — 2026-11-02 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### November 2026
 
+- [Postgres 19 slips as AI-assisted review surfaces more bugs](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-02.md) — 2026-11-02 · 9 min
 - [Linux TCP use-after-free lands at CVSS 9.8](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-01.md) — 2026-11-01 · 8 min
 
 ### October 2026

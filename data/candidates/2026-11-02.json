@@ -1,0 +1,834 @@
+{
+  "day": "2026-11-02",
+  "weekday": "Monday",
+  "collected_at": "2026-11-02T06:31:33+00:00",
+  "stories": [
+    {
+      "id": "hn-50326821",
+      "story_id": "50326821",
+      "rank": 1,
+      "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+      "url": "https://hackerbooks.org",
+      "points": 1190,
+      "comments": 214,
+      "hn_url": "https://news.ycombinator.com/item?id=50326821"
+    },
+    {
+      "id": "hn-50312408",
+      "story_id": "50312408",
+      "rank": 2,
+      "title": "Postgres 19 is late because so many more bugs are being found now",
+      "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
+      "points": 256,
+      "comments": 164,
+      "hn_url": "https://news.ycombinator.com/item?id=50312408"
+    },
+    {
+      "id": "hn-50332163",
+      "story_id": "50332163",
+      "rank": 3,
+      "title": "F/OSS Comics #13: BSD Unix, Part 3 – The Beginning of BSD Unix",
+      "url": "https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/",
+      "points": 70,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50332163"
+    },
+    {
+      "id": "hn-50331784",
+      "story_id": "50331784",
+      "rank": 5,
+      "title": "Trigger.dev customer environment variables exposed",
+      "url": "https://trigger.dev/blog/security-incident-nov-2026",
+      "points": 60,
+      "comments": 20,
+      "hn_url": "https://news.ycombinator.com/item?id=50331784"
+    },
+    {
+      "id": "hn-50315217",
+      "story_id": "50315217",
+      "rank": 6,
+      "title": "Mystery of 60-Second Fluctuations in Power Grids Solved",
+      "url": "https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved",
+      "points": 76,
+      "comments": 29,
+      "hn_url": "https://news.ycombinator.com/item?id=50315217"
+    },
+    {
+      "id": "hn-50328896",
+      "story_id": "50328896",
+      "rank": 7,
+      "title": "Ask HN: Which TV do you recommend for privacy?",
+      "url": "https://news.ycombinator.com/item?id=50328896",
+      "points": 260,
+      "comments": 422,
+      "hn_url": "https://news.ycombinator.com/item?id=50328896"
+    },
+    {
+      "id": "hn-50333339",
+      "story_id": "50333339",
+      "rank": 8,
+      "title": "Show HN: Wikihack – HackerTube, but for Wikipedia articles mentioned on HN",
+      "url": "https://wikihack.netlify.app",
+      "points": 6,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50333339"
+    },
+    {
+      "id": "hn-50299811",
+      "story_id": "50299811",
+      "rank": 9,
+      "title": "Nibnib: Image compression with extreme decompression speed",
+      "url": "https://github.com/raphlinus/nibnib",
+      "points": 124,
+      "comments": 21,
+      "hn_url": "https://news.ycombinator.com/item?id=50299811"
+    },
+    {
+      "id": "hn-50271106",
+      "story_id": "50271106",
+      "rank": 10,
+      "title": "Tips for more effective fuzz testing with AFL++",
+      "url": "https://nullprogram.com/blog/2025/02/05/",
+      "points": 103,
+      "comments": 16,
+      "hn_url": "https://news.ycombinator.com/item?id=50271106"
+    },
+    {
+      "id": "hn-50308754",
+      "story_id": "50308754",
+      "rank": 11,
+      "title": "Copper – A minimal low-level programming language with OOP and generics",
+      "url": "https://tibleiz.net/copper/",
+      "points": 155,
+      "comments": 82,
+      "hn_url": "https://news.ycombinator.com/item?id=50308754"
+    },
+    {
+      "id": "hn-50325253",
+      "story_id": "50325253",
+      "rank": 12,
+      "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+      "url": "https://github.com/ivankovic/omnidiff",
+      "points": 206,
+      "comments": 49,
+      "hn_url": "https://news.ycombinator.com/item?id=50325253"
+    },
+    {
+      "id": "hn-50332086",
+      "story_id": "50332086",
+      "rank": 13,
+      "title": "AI fan wikis riddled with errors are muddying the waters of games culture",
+      "url": "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture",
+      "points": 64,
+      "comments": 40,
+      "hn_url": "https://news.ycombinator.com/item?id=50332086"
+    },
+    {
+      "id": "hn-50325454",
+      "story_id": "50325454",
+      "rank": 14,
+      "title": "Proving and improving the Platonic Representation Hypothesis with JEPAs",
+      "url": "https://arxiv.org/abs/2610.39302",
+      "points": 127,
+      "comments": 66,
+      "hn_url": "https://news.ycombinator.com/item?id=50325454"
+    },
+    {
+      "id": "hn-50299427",
+      "story_id": "50299427",
+      "rank": 15,
+      "title": "New 3D thermal invisibility cloak makes objects disappear from infrared cameras",
+      "url": "https://www.sciencedaily.com/releases/2026/10/261025073051.htm",
+      "points": 65,
+      "comments": 32,
+      "hn_url": "https://news.ycombinator.com/item?id=50299427"
+    },
+    {
+      "id": "hn-50323088",
+      "story_id": "50323088",
+      "rank": 16,
+      "title": "The AI cost of JavaScript frameworks",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+      "points": 344,
+      "comments": 261,
+      "hn_url": "https://news.ycombinator.com/item?id=50323088"
+    },
+    {
+      "id": "hn-50328251",
+      "story_id": "50328251",
+      "rank": 17,
+      "title": "Mathematics has changed. Let's act like it",
+      "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+      "points": 266,
+      "comments": 288,
+      "hn_url": "https://news.ycombinator.com/item?id=50328251"
+    },
+    {
+      "id": "hn-50331402",
+      "story_id": "50331402",
+      "rank": 18,
+      "title": "OccupySaaS",
+      "url": "https://occupysaas.com/",
+      "points": 174,
+      "comments": 118,
+      "hn_url": "https://news.ycombinator.com/item?id=50331402"
+    },
+    {
+      "id": "hn-50314617",
+      "story_id": "50314617",
+      "rank": 19,
+      "title": "One-minute frequency disturbances from synchronization in power systems",
+      "url": "https://www.nature.com/articles/s41560-026-02144-0",
+      "points": 139,
+      "comments": 45,
+      "hn_url": "https://news.ycombinator.com/item?id=50314617"
+    },
+    {
+      "id": "hn-50290533",
+      "story_id": "50290533",
+      "rank": 20,
+      "title": "Show HN: Point your camera at a landscape to learn about its geology",
+      "url": "https://outcrop.rocks/",
+      "points": 185,
+      "comments": 41,
+      "hn_url": "https://news.ycombinator.com/item?id=50290533"
+    },
+    {
+      "id": "hn-50326099",
+      "story_id": "50326099",
+      "rank": 21,
+      "title": "Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case",
+      "url": "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/",
+      "points": 445,
+      "comments": 157,
+      "hn_url": "https://news.ycombinator.com/item?id=50326099"
+    },
+    {
+      "id": "hn-50319749",
+      "story_id": "50319749",
+      "rank": 22,
+      "title": "Bidirectional charging during grid outages",
+      "url": "https://www.jefftk.com/p/bidirectional-charging-during-grid-outages",
+      "points": 95,
+      "comments": 144,
+      "hn_url": "https://news.ycombinator.com/item?id=50319749"
+    },
+    {
+      "id": "hn-50280131",
+      "story_id": "50280131",
+      "rank": 23,
+      "title": "Radiation Map of the World",
+      "url": "https://radiaverse.com/",
+      "points": 151,
+      "comments": 47,
+      "hn_url": "https://news.ycombinator.com/item?id=50280131"
+    },
+    {
+      "id": "hn-50331957",
+      "story_id": "50331957",
+      "rank": 24,
+      "title": "Bones may release proteins that slow aging and extend life span",
+      "url": "https://www.science.org/content/article/bones-may-release-proteins-slow-aging-and-extend-life-span",
+      "points": 12,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50331957"
+    },
+    {
+      "id": "hn-50314508",
+      "story_id": "50314508",
+      "rank": 25,
+      "title": "Show HN: I rebuilt my old canvas 3D library as a small WebGL 2 library – phoria2",
+      "url": "https://kevs3d.co.uk/phoria2/",
+      "points": 85,
+      "comments": 15,
+      "hn_url": "https://news.ycombinator.com/item?id=50314508"
+    },
+    {
+      "id": "hn-50303088",
+      "story_id": "50303088",
+      "rank": 26,
+      "title": "Keeping Up Appearances – The women taking over the funeral industry",
+      "url": "https://lareviewofbooks.org/article/death-industry-mortuary-programs-women-andie-eisen-quarterly/",
+      "points": 39,
+      "comments": 20,
+      "hn_url": "https://news.ycombinator.com/item?id=50303088"
+    },
+    {
+      "id": "hn-50324371",
+      "story_id": "50324371",
+      "rank": 27,
+      "title": "Domain hacks with unusual Unicode characters (2018)",
+      "url": "https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters/",
+      "points": 69,
+      "comments": 49,
+      "hn_url": "https://news.ycombinator.com/item?id=50324371"
+    },
+    {
+      "id": "hn-50318129",
+      "story_id": "50318129",
+      "rank": 28,
+      "title": "The She-Wolves of Jülich",
+      "url": "https://www.historytoday.com/archive/history-matters/she-wolves-julich",
+      "points": 19,
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=50318129"
+    },
+    {
+      "id": "hn-50325694",
+      "story_id": "50325694",
+      "rank": 29,
+      "title": "Novellas with Groff",
+      "url": "https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html",
+      "points": 120,
+      "comments": 51,
+      "hn_url": "https://news.ycombinator.com/item?id=50325694"
+    },
+    {
+      "id": "hn-50327058",
+      "story_id": "50327058",
+      "rank": 30,
+      "title": "Seoul Viosys begins production of rare-earth-free white light emitter",
+      "url": "https://www.semiconductor-today.com/news_items/2026/oct/seoul-291026.shtml",
+      "points": 158,
+      "comments": 45,
+      "hn_url": "https://news.ycombinator.com/item?id=50327058"
+    },
+    {
+      "id": "hn-50313227",
+      "story_id": "50313227",
+      "rank": 31,
+      "title": "Parchment Paper History: How We Got Paper Perfect for Baking (2019)",
+      "url": "https://tedium.co/2019/11/21/nonstick-parchment-paper-history/",
+      "points": 46,
+      "comments": 24,
+      "hn_url": "https://news.ycombinator.com/item?id=50313227"
+    },
+    {
+      "id": "hn-50320963",
+      "story_id": "50320963",
+      "rank": 32,
+      "title": "An Italian farmer found some unknown seeds in his attic and planted them",
+      "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
+      "points": 788,
+      "comments": 203,
+      "hn_url": "https://news.ycombinator.com/item?id=50320963"
+    },
+    {
+      "id": "hn-50327416",
+      "story_id": "50327416",
+      "rank": 33,
+      "title": "I Am the Reason OpenAI Is Killing Unlimited Chats",
+      "url": "https://chaosmanage.github.io/i-killed-unlimited-chatgpt/",
+      "points": 41,
+      "comments": 8,
+      "hn_url": "https://news.ycombinator.com/item?id=50327416"
+    },
+    {
+      "id": "hn-50331158",
+      "story_id": "50331158",
+      "rank": 34,
+      "title": "The Megadonors Who Have Poured $1.2B into the Midterms",
+      "url": "https://www.nytimes.com/interactive/2026/08/28/us/politics/billionaire-midterms-donors.html",
+      "points": 56,
+      "comments": 45,
+      "hn_url": "https://news.ycombinator.com/item?id=50331158"
+    },
+    {
+      "id": "hn-50303984",
+      "story_id": "50303984",
+      "rank": 36,
+      "title": "Running a bootstrapped SaaS for 20 years with my brother",
+      "url": "https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons/",
+      "points": 230,
+      "comments": 55,
+      "hn_url": "https://news.ycombinator.com/item?id=50303984"
+    },
+    {
+      "id": "hn-50327266",
+      "story_id": "50327266",
+      "rank": 37,
+      "title": "Frontier Airlines Likely Breached",
+      "url": "https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam/",
+      "points": 197,
+      "comments": 75,
+      "hn_url": "https://news.ycombinator.com/item?id=50327266"
+    },
+    {
+      "id": "hn-50310038",
+      "story_id": "50310038",
+      "rank": 38,
+      "title": "Understanding Email Encryption (2025)",
+      "url": "https://www.fastmail.com/blog/email-encryption/",
+      "points": 130,
+      "comments": 28,
+      "hn_url": "https://news.ycombinator.com/item?id=50310038"
+    },
+    {
+      "id": "hn-50326609",
+      "story_id": "50326609",
+      "rank": 39,
+      "title": "Landline phones will switch off across Britland in 100 days, no extensions",
+      "url": "https://www.theregister.com/networks/2026/11/01/landline-phones-will-switch-off-across-britland-in-100-days-no-extensions-openreach/5306673",
+      "points": 145,
+      "comments": 120,
+      "hn_url": "https://news.ycombinator.com/item?id=50326609"
+    },
+    {
+      "id": "hn-50327650",
+      "story_id": "50327650",
+      "rank": 41,
+      "title": "Patrick Stewart taught us what good men do with power",
+      "url": "https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism",
+      "points": 410,
+      "comments": 292,
+      "hn_url": "https://news.ycombinator.com/item?id=50327650"
+    },
+    {
+      "id": "hn-50321048",
+      "story_id": "50321048",
+      "rank": 46,
+      "title": "Altoids Project",
+      "url": "https://uvdn7.github.io/altoids-project/",
+      "points": 161,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50321048"
+    },
+    {
+      "id": "hn-50319876",
+      "story_id": "50319876",
+      "rank": 47,
+      "title": "A Chemical Hunger (2021)",
+      "url": "https://slimemoldtimemold.com/2021/07/07/a-chemical-hunger-part-i-mysteries/",
+      "points": 22,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50319876"
+    },
+    {
+      "id": "hn-50331001",
+      "story_id": "50331001",
+      "rank": 48,
+      "title": "In LLM era, can software startup survive?",
+      "url": "https://news.ycombinator.com/item?id=50331001",
+      "points": 15,
+      "comments": 13,
+      "hn_url": "https://news.ycombinator.com/item?id=50331001"
+    },
+    {
+      "id": "hn-50319563",
+      "story_id": "50319563",
+      "rank": 49,
+      "title": "Surviving \"The Graduate\"",
+      "url": "https://www.newyorker.com/culture/the-weekend-essay/dustin-hoffman-on-surviving-the-graduate",
+      "points": 161,
+      "comments": 58,
+      "hn_url": "https://news.ycombinator.com/item?id=50319563"
+    },
+    {
+      "id": "hn-50304718",
+      "story_id": "50304718",
+      "rank": 50,
+      "title": "A 1580 Map Shows Why Data Visualization Is Never Neutral",
+      "url": "https://thereader.mitpress.mit.edu/a-1580-map-shows-why-data-visualization-is-never-neutral/",
+      "points": 77,
+      "comments": 14,
+      "hn_url": "https://news.ycombinator.com/item?id=50304718"
+    },
+    {
+      "id": "hn-50330939",
+      "story_id": "50330939",
+      "rank": 51,
+      "title": "U.S. workers took home their smallest share of capital since at least 1947",
+      "url": "https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/",
+      "points": 269,
+      "comments": 146,
+      "hn_url": "https://news.ycombinator.com/item?id=50330939"
+    },
+    {
+      "id": "hn-50290480",
+      "story_id": "50290480",
+      "rank": 52,
+      "title": "No AI, 52 min. Build all Linux Files utils in C by Hand [video]",
+      "url": "https://www.youtube.com/watch?v=gQRmSlcTq9c",
+      "points": 142,
+      "comments": 110,
+      "hn_url": "https://news.ycombinator.com/item?id=50290480"
+    },
+    {
+      "id": "hn-50325662",
+      "story_id": "50325662",
+      "rank": 53,
+      "title": "AI agent swarms in Minecraft fail to build civilization, drown in bureaucracy",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-agent-swarms-unleashed-in-minecraft-to-build-a-thriving-civilization-50-agent-teams-fail-after-falling-into-paralyzing-bureaucracy",
+      "points": 163,
+      "comments": 78,
+      "hn_url": "https://news.ycombinator.com/item?id=50325662"
+    },
+    {
+      "id": "hn-50289711",
+      "story_id": "50289711",
+      "rank": 54,
+      "title": "A brief history of just-in-time: forty years of JIT work, from 1960–2000",
+      "url": "https://dl.acm.org/doi/10.1145/857076.857077",
+      "points": 67,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50289711"
+    },
+    {
+      "id": "hn-50325718",
+      "story_id": "50325718",
+      "rank": 56,
+      "title": "Previously untranslated Einstein paper in English",
+      "url": "https://www.repository.cam.ac.uk/items/0aaee538-3638-4c47-bf5d-1cb4321d6b0b",
+      "points": 14,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50325718"
+    },
+    {
+      "id": "hn-50321130",
+      "story_id": "50321130",
+      "rank": 57,
+      "title": "When electric cars were for women",
+      "url": "https://spectrum.ieee.org/early-electric-vehicles",
+      "points": 75,
+      "comments": 76,
+      "hn_url": "https://news.ycombinator.com/item?id=50321130"
+    },
+    {
+      "id": "hn-50319061",
+      "story_id": "50319061",
+      "rank": 59,
+      "title": "The Duty of a Scholar",
+      "url": "https://www.daemonology.net/blog/2026-10-31-The-Duty-of-a-Scholar.html",
+      "points": 136,
+      "comments": 38,
+      "hn_url": "https://news.ycombinator.com/item?id=50319061"
+    },
+    {
+      "id": "hn-50309279",
+      "story_id": "50309279",
+      "rank": 60,
+      "title": "Pilot-wave hydrodynamics (Quantum phenomena in macroscopic hydrodynamic systems)",
+      "url": "http://thales.mit.edu/bush/index.php/4801-2/",
+      "points": 87,
+      "comments": 21,
+      "hn_url": "https://news.ycombinator.com/item?id=50309279"
+    },
+    {
+      "id": "hn-50324388",
+      "story_id": "50324388",
+      "rank": 61,
+      "title": "Restrooms along the Norwegian Scenic Routes",
+      "url": "https://www.visitnorway.com/plan-your-trip/travel-tips-a-z/norwegian-scenic-routes/worlds-best-toilets/",
+      "points": 683,
+      "comments": 402,
+      "hn_url": "https://news.ycombinator.com/item?id=50324388"
+    },
+    {
+      "id": "hn-50332497",
+      "story_id": "50332497",
+      "rank": 62,
+      "title": "Postmortem on Claude Code Cursor extension hack",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/",
+      "points": 7,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50332497"
+    },
+    {
+      "id": "hn-50326118",
+      "story_id": "50326118",
+      "rank": 64,
+      "title": "Police chief unplugs cameras after Flock ignores contract cancellation",
+      "url": "https://www.thedrive.com/news/my-city-canceled-flocks-contract-flock-ignored-it-so-the-police-chief-unplugged-the-cameras",
+      "points": 438,
+      "comments": 149,
+      "hn_url": "https://news.ycombinator.com/item?id=50326118"
+    },
+    {
+      "id": "hn-50284789",
+      "story_id": "50284789",
+      "rank": 66,
+      "title": "Edgar Allan Poe, Quintessential American Writer",
+      "url": "https://slate.com/culture/2026/10/edgar-allan-poe-poems-stories-most-influential-american-writer-death-horror-detective.html",
+      "points": 52,
+      "comments": 10,
+      "hn_url": "https://news.ycombinator.com/item?id=50284789"
+    },
+    {
+      "id": "hn-50315782",
+      "story_id": "50315782",
+      "rank": 68,
+      "title": "Show HN: A language model that lives in a boot sector",
+      "url": "https://github.com/kerlenton/bootgpt",
+      "points": 98,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50315782"
+    },
+    {
+      "id": "hn-50328293",
+      "story_id": "50328293",
+      "rank": 69,
+      "title": "Muse AI agent is a commercial surveillance network disguised as an AI assistant",
+      "url": "https://paulfwalsh.substack.com/p/metas-muse-ai-agent-is-a-commercial",
+      "points": 44,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50328293"
+    },
+    {
+      "id": "hn-50309266",
+      "story_id": "50309266",
+      "rank": 70,
+      "title": "The oldest ice disappears and the Stone Age emerges from it",
+      "url": "https://www.sciencenorway.no/archaeology-climate-culture/the-oldest-ice-is-disappearing-the-stone-age-is-emerging-from-the-melting-ice/2713921",
+      "points": 214,
+      "comments": 109,
+      "hn_url": "https://news.ycombinator.com/item?id=50309266"
+    },
+    {
+      "id": "hn-50289844",
+      "story_id": "50289844",
+      "rank": 71,
+      "title": "SS27 Color Stats",
+      "url": "https://sarahconstantin.substack.com/p/ss27-color-stats",
+      "points": 12,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50289844"
+    },
+    {
+      "id": "hn-50326530",
+      "story_id": "50326530",
+      "rank": 72,
+      "title": "Enlightenment 0.28.0 Release",
+      "url": "https://www.enlightenment.org/news/2026-10-31-enlightenment-0.28.0",
+      "points": 66,
+      "comments": 30,
+      "hn_url": "https://news.ycombinator.com/item?id=50326530"
+    },
+    {
+      "id": "hn-50321522",
+      "story_id": "50321522",
+      "rank": 73,
+      "title": "Show HN: BBRouter – Ben Eater's 8-bit computer, simulated on 3D breadboards",
+      "url": "https://bbrouter.com/bbrouter/ben-eater-sap-1",
+      "points": 49,
+      "comments": 10,
+      "hn_url": "https://news.ycombinator.com/item?id=50321522"
+    },
+    {
+      "id": "hn-50320599",
+      "story_id": "50320599",
+      "rank": 74,
+      "title": "AI text watermarking and quality loss",
+      "url": "https://blog.keyvan.net/p/ai-text-watermarking-and-quality",
+      "points": 72,
+      "comments": 16,
+      "hn_url": "https://news.ycombinator.com/item?id=50320599"
+    },
+    {
+      "id": "hn-50329425",
+      "story_id": "50329425",
+      "rank": 77,
+      "title": "The Linux 7.4 Merge Window Is Easily the Largest in Kernel History",
+      "url": "https://www.phoronix.com/news/Linux-7.4-Massive-Window",
+      "points": 22,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50329425"
+    },
+    {
+      "id": "hn-50325821",
+      "story_id": "50325821",
+      "rank": 78,
+      "title": "Small internet forums are making a comeback in Google Search",
+      "url": "https://www.stanventures.com/research/data-reveals-google-loves-forums-and-hates-the-sites-it-told-us-to-trust/",
+      "points": 11,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50325821"
+    },
+    {
+      "id": "hn-50330456",
+      "story_id": "50330456",
+      "rank": 80,
+      "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "points": 214,
+      "comments": 211,
+      "hn_url": "https://news.ycombinator.com/item?id=50330456"
+    },
+    {
+      "id": "hn-50302686",
+      "story_id": "50302686",
+      "rank": 81,
+      "title": "Decode kernel panic from QR Code photo",
+      "url": "https://gist.github.com/skorotkiewicz/c59e591c26661cb52b06afc42d8ac546",
+      "points": 40,
+      "comments": 20,
+      "hn_url": "https://news.ycombinator.com/item?id=50302686"
+    },
+    {
+      "id": "hn-50326281",
+      "story_id": "50326281",
+      "rank": 84,
+      "title": "Ant: Can unprecedented revenue growth outrun irresponsibly large investment",
+      "url": "https://leonlins.com/writing/anthropic_ipo",
+      "points": 11,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50326281"
+    },
+    {
+      "id": "hn-50327406",
+      "story_id": "50327406",
+      "rank": 85,
+      "title": "A playable version of Portal prequel F-Stop leaked",
+      "url": "https://www.theverge.com/games/1024206/playable-portal-prequel-f-stop-leak",
+      "points": 34,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50327406"
+    },
+    {
+      "id": "hn-50301723",
+      "story_id": "50301723",
+      "rank": 87,
+      "title": "Sculpture re-creates odd optical effects of famed Lycurgus Cup",
+      "url": "https://arstechnica.com/science/2026/10/scientists-recreate-the-1600-year-old-recipe-of-lycurgus-cup/",
+      "points": 49,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50301723"
+    },
+    {
+      "id": "hn-50331340",
+      "story_id": "50331340",
+      "rank": 88,
+      "title": "Martian dust presents additional risks for future crewed missions to Mars",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2620747123",
+      "points": 8,
+      "comments": 12,
+      "hn_url": "https://news.ycombinator.com/item?id=50331340"
+    },
+    {
+      "id": "hn-50318376",
+      "story_id": "50318376",
+      "rank": 90,
+      "title": "William Nordhaus has died",
+      "url": "https://news.yale.edu/2026/10/31/william-nordhaus-nobel-laureate-who-integrated-economics-and-climate-change-devoted-yale",
+      "points": 73,
+      "comments": 28,
+      "hn_url": "https://news.ycombinator.com/item?id=50318376"
+    }
+  ],
+  "papers": [
+    {
+      "id": "arxiv-2610.41994",
+      "cat": "cs.AI",
+      "title": "DAMI: Dual-Axis Memory Initialization for Enhanced Long-Context Retrieval in Gated Linear Attention",
+      "abstract": "Linear attention scales linearly with sequence length, but its finite-state memory can limit long-context retrieval. In gated linear recurrences, memory retention depends on state decay, which is shaped jointly by gate parameters A_log and dt_bias and by input activations. In controlled Gated DeltaNet (GDN) experiments, both parameters remain highly correlated with their initial values after training, highlighting the importance of initialization. Therefore, we introduce Dual-Axis Memory Initialization (DAMI), which jointly configures these parameters before training. DAMI assigns geometric timescales across heads for varied retrieval distances and a low-high-low input-sensitivity profile across layers. A small activation sample calibrates the GDN-family implementation to match both behavioral targets without adding trainable parameters. Across GDN, KDA, GDN2, Mamba-2, and RWKV-7, DAMI improves average RULER-style retrieval accuracy by 5.29 to 16.71 percentage points over the corresponding random-initialization baselines. Performance on language modeling, commonsense reasoning, and 2K real-world retrieval remains broadly comparable to those baselines. Our code is available at this https URL.",
+      "url": "http://arxiv.org/abs/2610.41994v1"
+    },
+    {
+      "id": "arxiv-2610.42004",
+      "cat": "cs.AI",
+      "title": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
+      "abstract": "Multi-turn negotiation remains a challenging problem for large language model (LLM) agents. While LLMs can conduct natural-language dialogue, existing benchmarks predominantly assess only agreement rates, overlooking whether negotiated commitments actually create value once executed. To address this gap, we introduce TradeWar, a multi-country simulation benchmark that translates negotiation dialogues into concrete tariff and trade-share policies, enforces capacity and network constraints during settlement, and evaluates outcomes via an Economic Health Index (EHI). To solve this execution-grounded task, we propose TACTIC (Trade-aware Adaptive Consolidation and Theory-of-mind for International Commerce), an agent that iteratively refines its negotiation strategy across episodes-without updating base LLM weights-by leveraging prior experience, opponent behavior, and past settlement outcomes. Despite using zero-shot chain-of-thought (CoT) prompting, PromptLLM attains a 75% agreement rate but only 57.1 final EHI (*100), whereas TACTIC reaches 68.8. Across 20 sequential episodes and three seeds, TACTIC's final EHI improves from 58.2 to 73.2, compared with 65.2 for an ablation without cross-episode updates. Under technology-controls and energy-crisis shocks, TACTIC also exhibits smaller performance degradation than PromptLLM and MemoryLLM. These results indicate that CoT deliberation and interaction memory alone do not fully address delayed execution feedback, whereas settlement-grounded adaptation improves long-horizon negotiation in TradeWar.",
+      "url": "http://arxiv.org/abs/2610.42004v1"
+    },
+    {
+      "id": "arxiv-2610.41850",
+      "cat": "cs.AI",
+      "title": "Dynamical Memory Transformer: Selective Recurrent Memories with Constant Cost Attention",
+      "abstract": "Transformers retain an explicit history of the sequence, allowing attention to directly retrieve past representations. However, the size of the KV-Cache and the cost of a new token increase with the context length. State Space Models compress the past into a fixed-size recurrent state, at the cost of reduced addressability. We present the Dynamical Memory Transformer (DMT), a hybrid architecture that separates sequence encoding from information reading. The encoder uses several memory units, each implemented by a dynamical system with a complex diagonal recurrent matrix. An input-dependent leak rate controls their updates. The decoder then uses attention to read and combine their outputs, without going through the token history. The formulation of the recurrence allows an associative scan with O(T ) total work and O(log T ) parallel depth, with fixed dimensions. During autoregressive inference, the recurrent states and the convolution cache remain fixed in size. We compare DMT with Mamba and Transformer on cognitive and language modeling tasks, and show its strengths and limitations: DMT achieves the best results on several cognitive tasks and language modeling performance close to that of Transformer, but remains behind Mamba in language modeling. On selective copy, DMT also shows stronger length extrapolation than Mamba and Transformer. These results demonstrate that parallel dynamical memory units are a promising mechanism for retaining and using information over sequences.",
+      "url": "http://arxiv.org/abs/2610.41850v1"
+    },
+    {
+      "id": "arxiv-2610.41604",
+      "cat": "cs.AI",
+      "title": "Real Computation or Merely Naming? A Pre-Registered Mechanism Audit of 25 Cognitive-Architecture Modules in an LLM-Based Agent System",
+      "abstract": "Agent systems built on local large language models are increasingly marketed through the vocabulary of cognitive architecture: modules named global workspace, theory of mind, causal reasoning, or active inference are listed as features, and the presence of the name is taken as the presence of the mechanism. We ask the prior question -- does the named computation actually happen -- and contribute a transferable verification method for the claim-implementation gap: a four-question static audit protocol with line-number evidence and call-chain tracing, demonstrated on two systems. We audit a system claiming 25 cognitive mechanisms, pre-register falsifiable predictions for 11 modules and execute the interventions, replicate the protocol on the IIT-phi core of a second, independent system with its own pre-committed falsification criteria, and run two repair experiments as positive controls. In 18 of 25 modules the computed value never reaches any production output; three idle-wiring shapes new to the dead-code and code-smell literatures emerge (connected-but-never-called, called-but-inert, called-but-content-blind). Of 61 frozen criteria across 12 interventions, 53 were confirmed, two partially adjudicated, five falsified, one adjudication-ambiguous. Repairs raised planner task success from 0.028 to 1.000 and cut state-controller error by 52%. Module names and module computations must be audited as independent claims; the protocol and the five-class failure taxonomy are reusable for the claim-implementation gap at two-system, case-level depth.",
+      "url": "http://arxiv.org/abs/2610.41604v1"
+    },
+    {
+      "id": "arxiv-2610.41236",
+      "cat": "cs.AI",
+      "title": "Experts Exhibit Structured Redundancy: Structure-Preserving Expert Pruning for Mixture-of-Experts Large Language Models",
+      "abstract": "Sparse MoE mechanism significantly improves the trade-off between model capacity and inference efficiency. However, practical deployment still requires storing all experts, resulting in substantial memory overhead. We show that expert outputs in MoE layers exhibit structured redundancy. Across different models and task categories, the stable rank and entropy effective rank of expert outputs are consistently far below the nominal number of experts, while expert output distributions also exhibit fewer effective modes. Motivated by these observations, we reformulate expert pruning as a structure-preserving expert subset selection problem and efficiently optimize it via a greedy strategy, rather than only independently scoring and ranking individual experts or exhaustively searching over expert combinations. We propose two expert pruning methods under the unified structure-preserving framework: Projection Energy Expert Pruning (PEEP), which preserves the functional subspace by maximizing weighted projection energy, and Distributional Coverage Expert Pruning (DCEP), which preserves the distributional geometry by minimizing weighted coverage error. Both methods incorporate router-derived weights as priors, enabling them to jointly preserve the global structural relationships among experts while accounting for the local importance of individual experts. Experiments on DeepSeek-V2-Lite and Qwen3-30B-A3B demonstrate that, at the expert retention ratios of 75% and 50%, our methods outperform the state-of-the-art baselines on the majority of benchmarks and consistently achieve the best average performance across both general tasks and mathematical reasoning tasks.",
+      "url": "http://arxiv.org/abs/2610.41236v1"
+    },
+    {
+      "id": "arxiv-2610.41169",
+      "cat": "cs.AI",
+      "title": "ImplicitHop: Evaluating knowledge integration across context and memory",
+      "abstract": "The ability to integrate new information and deduce its consequences is central to learning, understanding, and reasoning in large language models (LLMs). Whether information arrives during training or in-context, models must not only store local facts, but propagate their long-range implications globally. To explore information integration in LLMs, we introduce two complementary natural language benchmarks for large-scale evaluation of deductive reasoning as a function of inference depth. The first is a formal graph benchmark enabling controlled evaluation over a wide range of graph topologies and integration tasks; the second is a knowledge composition benchmark grounded in real-world knowledge graphs. We use these benchmarks to compare knowledge integration from information encoded in context versus information encoded in model weights during pretraining, evaluating a set of open models implicitly, without chain of thought. We find that accuracy decays sharply with increased composition length for both pretrained and in-context knowledge. Information presented in-context, however, substantially outperforms deduction over information encoded in weights. These results quantify a fundamental limitation of current models with direct implications for prompt-based control of agent behavior and for continual learning strategies, and they provide a foundation for developing training, prompting, and integration methods that support deeper reasoning.",
+      "url": "http://arxiv.org/abs/2610.41169v1"
+    },
+    {
+      "id": "arxiv-2610.42141",
+      "cat": "cs.AI",
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+      "abstract": "Recent work shows that a frozen robot policy performs far better inside an agent harness, where control code decides when to query the policy, consult vision tools, or command the arm directly. Yet today these harnesses are built by hand and redesigned for each new robot or benchmark. We show that harness design can be automated, offering a strong alternative to finetuning on a novel setup. In RoboArchitect, a coding model observes a robot's rollouts, diagnoses failures, and iteratively revises the harness around the frozen policy. The harness evolves on a set of episodes for its optimization and is evaluated on held-out scenes and tasks. Without updating any model weights, RoboArchitect raises average success from 9.7% to 43.3% on unseen scenes (4.5x) and from 12.7% to 40.2% on unseen tasks (3.2x), across multiple benchmarks and policies. The gains are largest where the benchmark is far from the policy's training data: wrapping a general-purpose policy, the evolved harness yields a specialist that often outperforms even the finetuned version. Intuitive control strategies are automatically designed, such as lifting a jammed arm clear or reaching in horizontally when an obstacle blocks the way from above. The harness also evolves its own persistent memory, carrying learned experience, such as effective grasp depths, into later decisions. These results suggest that substantial headroom in robotic manipulation lies in the agent harness, and its design can be effectively automated and optimized without weight updates.",
+      "url": "http://arxiv.org/abs/2610.42141v1"
+    },
+    {
+      "id": "arxiv-2610.40721",
+      "cat": "cs.SE/cs.MA",
+      "title": "MetaVul: Agentic Harness Discovery for Vulnerability Detection",
+      "abstract": "LLM agents are increasingly used to automate vulnerability detection, but reliable detection is challenging because agents must distinguish subtle, security-relevant fixes from benign code variation. While underlying LLM capability has improved significantly, the accuracy of the agent still depends heavily on the harness: the code that defines the scaffolding around the LLM. Harnesses are typically fixed, and largely hand-written, limiting adaptation to evaluator feedback. Additionally, when harnesses are static, improvements on one dataset or model may not transfer to others. To address these challenges, we introduce MetaVul, a self-improving framework for harness discovery in vulnerability detection. Starting from a seed structured reasoning scaffold, MetaVul uses a workflow-based optimization loop to iteratively refine the harness using feedback from paired vulnerable and patched functions, while preserving the structured reasoning and verdict format. At each iteration, it searches over the history of prior harnesses, with access to their trajectories, logs, and metrics, and it returns a set of Pareto-optimal harnesses. We apply MetaVul to discover agent harnesses for various architectures. A validation set (202 pairs) is used for optimization, while an unseen dataset (430 pairs) is kept as the held-out set. We test whether harnesses learned from one model transfer to others not seen during optimization. Results on both frontier and small LLMs show that the optimized harnesses improve pairwise vulnerability detection up to 23.3 percentage points on the validation set and up to 25.8 points on the held-out set with a Pareto-frontier harness. Harnesses learned with one model also transfer to others. We show that harnesses optimized with one model transfer to another, improving held-out pairwise accuracy by 14.7 points without further optimization.",
+      "url": "https://arxiv.org/abs/2610.40721v1",
+      "published": "2026-10-29"
+    },
+    {
+      "id": "arxiv-2610.39417",
+      "cat": "cs.SE/cs.MA",
+      "title": "Well-Specified and Well-Tested? Assessing SWE-bench-Style Datasets with a Self-Evolving Agent",
+      "abstract": "Large language models (LLMs) have shown strong performance on software engineering (SE) tasks, driving the need for high-quality datasets for reliable training and evaluation. SWE-bench-style datasets (SWE datasets) are widely used to evaluate LLM-based coding agents on real-world software issues, where task clarity and test coverage directly affect whether instances are solvable and verifiable. However, quality issues persist in existing SWE datasets, and manual annotation is costly and labor-intensive, motivating LLM-based annotation. Existing approaches typically rely on static, overly general rubrics, limiting their ability to handle diverse and nuanced scenarios and often yielding high false positive rates. In contrast, human annotators draw on accumulated experience to make context-aware judgments. Inspired by this, we propose ExLabel, an LLM-based, self-evolving, experience-guided assistant for task clarity and test coverage assessment in SWE datasets. ExLabel maintains an evolving experience bank that distills cross-instance knowledge into stable yet adaptive judgment criteria and reuses relevant experience to guide the assessment of new instances. For systematic evaluation, we construct SWE-TQ, a new benchmark spanning eight programming languages, by cleaning human annotations from SWE-bench and Multi-SWE-bench. Experiments with three backbone LLMs show that ExLabel achieves the best F1 across all settings, with relative improvements of 44.2%/49.9% and 24.0%/18.4% over the best baseline for task clarity and test coverage assessment on the Python/Multilingual subsets, respectively. Moreover, a coding model fine-tuned on SWE-rebench data filtered by ExLabel resolves 66.2% of issues on SWE-bench Verified, outperforming the model trained on data filtered by the best baseline by 14.5%.",
+      "url": "https://arxiv.org/abs/2610.39417v1",
+      "published": "2026-10-29"
+    }
+  ],
+  "topic": [
+    {
+      "id": "kg-arxiv-2610.41669v1",
+      "title": "Supervised and LLM-Augmented Cardinality Estimation for Similarity Queries on Knowledge Graphs",
+      "abstract": "Over the past decades, query cardinality estimation on relational databases has been proven crucial, enabling the result size estimation of all sub-plans of each query. This allowed query optimizers to design efficient query plans, towards minimizing the query response time. Lately, knowledge graphs are being preferred over traditional databases in various applications, due to their ability to represent complex relationships and semantic meaning in a domain-specific context. In this work, we present a novel approach for supervised similarity-aware cardinality estimation on knowledge graphs that incorporates similarities into the model training process, thus treating them as first-class citizens. To this end, we present SCE-KG, a model that employs a novel encoding scheme for cardinality estimation, named SGsplit. We further extend our approach by leveraging a Large Language Model (LLM) to generate training queries that resemble realistic user workloads, and show that combining LLM-generated and random walk samples consistently improves estimation accuracy on test workloads generated by two independent LLMs. Our experimental evaluation reveals that our approach outperforms the state-of-the-art techniques in terms of prediction error, achieving 40x and 37x improvement for star and chain queries, respectively (95th percentile), whereas its online overhead accounts for less than 0.05% of the average query execution time and less than 1% of the average query planning time, showing a sub-millisecond latency in all cases.",
+      "url": "https://arxiv.org/abs/2610.41669v1",
+      "published": "2026-10-30",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2610.41172v1",
+      "title": "Context as Infrastructure: Knowledge Compilation for Retrieval in Agentic Systems with Harnesses",
+      "abstract": "Retrieval-augmented generation is becoming agentic. A search harness writes queries, reads results, reformulates, and decides when to stop. This largely solves accuracy: a harness with only BM25/grep and MiniMax M3 answers 85% of BrowseComp-Plus and 91% on multi-hop FRAMES in our runs, without compiled or vector indexes. It exposes a context problem: an undisciplined loop repeats queries, rereads documents, and fills the window with unused passages. The missing layer is knowledge compilation: a configurable ingestion pipeline where LLMs enrich documents with context no chunk contains alone--navigation hierarchies with claim-evidence leaves, entity graphs, timelines, mind maps, ontologies, wikis, and memory. Compilation is not a better retriever: under a competent harness, structural artifacts gave no detectable accuracy gain on FRAMES, and a PageIndex-style outline degraded at scale. It is a supply layer. A navigation tree whose leaves are claim-evidence pairs--the mechanism we measure--cuts query tokens by 91% when evidence suffices and adds 1.9% when it does not, a 38% average reduction; this implies a 2% break-even sufficiency rate and a measured rate near 43%. A decision gate cuts latency from 140 s to 30 s, though substitution's token saving is bought with retrieval rounds and carries its own latency cost. Other artifacts--ontology, graph, wiki, timeline, mind map, memory--pay off in deployment (governance, integration, onboarding, temporal orientation, continuity) where accuracy benchmarks cannot see them. We describe RAGFlow's pipeline and harness (open source at https://github.com/infiniflow/ragflow), which turns the loop into five disciplined stations and keeps the context entering the model the smallest sufficient set; together they form an agent-native database: a store that hands the agent compiled, governed context instead of a ranked list of passages.",
+      "url": "https://arxiv.org/abs/2610.41172v1",
+      "published": "2026-10-30",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2610.41901v1",
+      "title": "ReX-GG: a LLM Ensemble Pipeline for Relation-extraction and Graph Generation",
+      "abstract": "Current LLM ensemble frameworks focus on multi-step setups with additional modules for answer ranking, often opting for token and span analysis rather than structured outputs, leading to heavyweight architectures with potential fail states along the pipeline. Faster, lighter solutions are more vulnerable to hallucination propagation and can lack output control in more complex pipelines. This paper proposes a customisable, lightweight ensemble workflow of coordinated Large Language Models that leverages JSON-structured outputs and anonymous peer-review ranking to mitigate hallucinatory outputs and single-model failure points. The pipeline is demonstrated on a relation extraction task applied to popular science articles in English, targeting four ontologically-grounded relation types (strong causation, weak causation, contrastive, and compositional), with semantic node canonicalisation and interactive, colour-coded HTML causal graphs as the final output. Performance is evaluated through an anonymous user study, achieving an average perceived accuracy of 0.778 against a human-annotated gold standard. The modular architecture supports flexible deployment across both API-based and in-house LLM setups, and the full framework is released under an open license to foster reproducibility and collaborative research.",
+      "url": "https://arxiv.org/abs/2610.41901v1",
+      "published": "2026-10-30",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2610.41785v1",
+      "title": "Peeling the Matryoshka: Extracting Ontological Structure from Retrieval Embeddings",
+      "abstract": "Taxonomy construction is essential for knowledge-intensive NLP yet remains costly: clustering-based methods (i) need careful per-corpus tuning and yield unstable hierarchies, while LLM-based pipelines (ii) depend on expensive task-specific training that does not transfer across domains. We report an empirical finding that bears on both: in Matryoshka Representation Learning (MRL) embeddings, where each leading prefix is itself a usable, coarser vector, prefix length aligns with the coarse-to-fine granularity of gold taxonomies; shuffled- and reverse-dimension controls isolate the alignment to the learned early prefix dimensions. The pattern holds across three architecturally distinct MRL models. To test whether this regularity is usable, we introduce PEEL (Peeling Embeddings to Extract Latent ontologies): a minimal probe over these frozen embeddings, trained once with an order-embedding objective that represents hierarchy as vector containment; a minimum spanning arborescence then decodes taxonomic DAGs. Using only a concept vocabulary (no documents), PEEL recovers taxonomic DAGs with high structural fidelity on two OLLM benchmarks, transferring to a new domain with no target-edge supervision. The end-to-end OLLM pipeline, which jointly discovers concepts and induces structure from document corpora, is reported as a cross-task reference. Pre-trained retrieval embeddings encode a decodable granularity gradient; a minimal probe renders it as explicit parent-child (is-a) structure.",
+      "url": "https://arxiv.org/abs/2610.41785v1",
+      "published": "2026-10-30",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2610.41755v1",
+      "title": "CypherGuard: Database-Grounded Correction for Reliable Text-to-Cypher",
+      "abstract": "Text-to-Cypher translates natural-language questions into Cypher queries over property graphs. Graph database systems increasingly adopt this translation as a native query interface. Large language models generate fluent Cypher but stay unreliable. On Cypher-Bench a small model answers only 31.4% of questions correctly, and even a strong model plateaus at 71.76%. The dominant failure modes are structural rather than linguistic. For example, a generated query may parse correctly and follow the schema, yet still return zero rows because it traverses a relationship against the stored graph direction. To address this issue, we present CypherGuard, a training-free framework that detects and corrects these structural faults. Our approach uses two core components: a graph-native error taxonomy to guide repair, and a mined rule library to guide query generation. At inference time, CypherGuard first rewrites schema-detectable faults, then re-executes each draft and repairs it only when the query errors or returns nothing. On CypherBench test questions, across seven graphs, CypherGuard reaches 88.50% overall execution accuracy, +25.08% over the same-backbone zero-shot floor, surpassing an RL-fine-tuned 7B specialist and the strongest training-based system that we compare against.",
+      "url": "https://arxiv.org/abs/2610.41755v1",
+      "published": "2026-10-30",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2610.41202v1",
+      "title": "Iris on Indirection Theory: Lightweight Higher-order Ghost State",
+      "abstract": "Today, semantic models of languages with concurrency and higher-order state are constructed using step-indexed predicates over resources and higher-order ghost state. There are two main lines of work for constructing such models. On the one hand, Iris provides these in full generality, at the cost of a large body of mechanised domain theory that is difficult to learn and port to new proof assistants. On the other hand, Indirection Theory is much simpler through the use of ordinary dependent types, but its foundation in separation algebra limits the expressiveness of its resource model compared to Iris-style higher-order ghost state. We resolve this conundrum by showing that Indirection Theory can be as expressive as Iris. To that end, we give a lightweight mechanisation of Indirection Theory in Lean, generalised so knots contain resources from an Iris-style resource algebra functor. We then reconstruct the Iris base logic on top of it. The advantage of this approach is in the elementary metatheory: a user can follow the whole construction without domain theory. We conduct two case studies to show that the base logic is expressive and faithful to Iris: a biorthogonal logical relation for higher-order state, and an Iris-style program logic with invariants and user-definable ghost state, complete enough to verify concurrent and higher-order programs.",
+      "url": "https://arxiv.org/abs/2610.41202v1",
+      "published": "2026-10-30",
+      "kind": "paper"
+    }
+  ]
+}
