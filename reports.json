@@ -1,7 +1,21 @@
 {
-  "generated": "2026-11-02T06:37:05+00:00",
-  "count": 189,
+  "generated": "2026-11-03T06:37:58+00:00",
+  "count": 190,
   "reports": [
+    {
+      "file": "ai-news-2026-11-03.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-11-03",
+      "summary": "Astra reads and writes Qwen's weights · Ubuntu leaves a Linux 0-day RCE unpatched for three weeks · OpenAI explains how it scales Git · Anthropic's growth flattens",
+      "readingTime": 10,
+      "tags": [
+        "agents",
+        "research",
+        "coding"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-11-02.html",
       "type": "daily",
@@ -2410,6 +2424,7 @@
       "summary": "OpenAI to confidentially file for IPO as soon as Friday · GitHub confirms breach of 3,800 repos via malicious VSCode e · Anthropic expanding to Colossus2 with GB200 infrastructure",
       "readingTime": 8,
       "tags": [
+        "models",
         "agents",
         "security"
       ]

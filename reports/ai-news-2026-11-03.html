@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Daily — 3 Nov 2026</title>
+<link rel="stylesheet" href="../styles.css">
+<!-- og:start -->
+<meta name="description" content="Astra reads and writes Qwen&#x27;s weights · Ubuntu leaves a Linux 0-day RCE unpatched for three weeks · OpenAI explains how it scales Git · Anthropic&#x27;s growth flattens">
+<link rel="canonical" href="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-03.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Reports — Luis GB">
+<meta property="og:title" content="AI News Daily — 3 Nov 2026">
+<meta property="og:description" content="Astra reads and writes Qwen&#x27;s weights · Ubuntu leaves a Linux 0-day RCE unpatched for three weeks · OpenAI explains how it scales Git · Anthropic&#x27;s growth flattens">
+<meta property="og:url" content="https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-03.html">
+<meta property="og:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-11-03.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@iamluisgb">
+<meta name="twitter:creator" content="@iamluisgb">
+<meta name="twitter:title" content="AI News Daily — 3 Nov 2026">
+<meta name="twitter:description" content="Astra reads and writes Qwen&#x27;s weights · Ubuntu leaves a Linux 0-day RCE unpatched for three weeks · OpenAI explains how it scales Git · Anthropic&#x27;s growth flattens">
+<meta name="twitter:image" content="https://luisgonzalezbernal.com/reports/og/ai-news-2026-11-03.png">
+<!-- og:end -->
+<!-- ui:start -->
+<link rel="alternate" type="text/markdown" href="ai-news-2026-11-03.md">
+<link rel="preload" href="../assets/fonts/web/InstrumentSerif-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/InstrumentSerif-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/Geist-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/web/GeistMono-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('ai-reports-theme');if(t==='light'||(!t&&matchMedia('(prefers-color-scheme: light)').matches))document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<script type="speculationrules">{"prerender":[{"where":{"or":[{"href_matches":"/reports/"},{"href_matches":"/reports/reports/*.html"},{"href_matches":"/reports/about.html"}]},"eagerness":"moderate"}]}</script>
+<script defer src="/u/s.js" data-website-id="08c1619b-4bb8-471b-9dc9-9b6cda88e8ae" data-host-url="https://cloud.umami.is" data-domains="luisgonzalezbernal.com"></script>
+<link rel="manifest" href="../manifest.json">
+<link rel="icon" href="../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#0c0f0e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f4f5f2" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-title" content="AI Reports">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script src="../pwa.js" defer></script>
+<script src="../site.js" defer></script>
+<script src="../report.js" defer></script>
+<!-- ui:end -->
+</head>
+<body>
+  <div class="page">
+    <a class="back-link" href="../index.html">← Index</a>
+    <div class="header" style="position:relative;">
+      <div class="field-mark"></div>
+
+      <div class="header-top">
+        <div>
+          <div class="category">AI NEWS DAILY</div>
+          <h1>The <em>AI</em> Briefing</h1>
+          <div class="date-line">3 Nov 2026 · TUESDAY</div>
+          <div class="subtitle">Astra reads and writes Qwen's weights · Ubuntu leaves a Linux 0-day RCE unpatched for three weeks · OpenAI explains how it scales Git · Anthropic's growth flattens</div>
+        </div>
+        <button class="theme-toggle" type="button" data-theme-toggle>◐</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">Audio Briefing</div>
+
+      <div class="audio-player" id="audioPlayer">
+        <audio id="audioEl" preload="none">
+          <source src="../audio/ai-news-2026-11-03.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <button class="play-btn" aria-label="Play audio briefing">
+          <svg class="icon-play" viewBox="0 0 16 16"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 16 16"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z"/></svg>
+        </button>
+        <div class="player-body">
+          <div class="player-meta">
+            <span class="player-title">AI NEWS DAILY · 3 NOV 2026 · EN</span>
+            <span class="player-time" id="playerTime">0:00 / 4:59</span>
+          </div>
+          <input type="range" id="playerSeek" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        </div>
+      </div>
+
+    </div>
+    <div class="section">
+      <div class="section-label">Headlines</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Astra can read and write weights to improve Qwen</div>
+        <div class="desc">Weight-space programming: treating model weights as a readable, writable address space rather than a black box. The write-up claims measurable improvements to Qwen by editing weights directly — 2,347 points and 738 comments suggest the community is treating this as more than a demo.</div>
+        <div class="sources">
+          <a href="https://rikiyat.github.io/blog/weight-space-programming/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50341174">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Ubuntu still unpatched for Linux 0-day RCE nearly three weeks on</div>
+        <div class="desc">Critical CVE-2026-98432, a remote code execution in LTS kernels, remains unfixed in Ubuntu almost three weeks after disclosure. If you run Ubuntu LTS in production, patch status is worth checking before anything else today.</div>
+        <div class="sources">
+          <a href="https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50341462">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Scaling Git at OpenAI</div>
+        <div class="desc">OpenAI details the infrastructure behind Git at the scale of thousands of engineers and AI agents committing in parallel. Rare public material on version control as a systems problem at AI-lab scale.</div>
+        <div class="sources">
+          <a href="https://openai.com/index/scaling-git-at-openai/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50345924">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">The case for the SEC blocking Anthropic's IPO</div>
+        <div class="desc">A Tech Policy Press argument that Anthropic's IPO poses disclosure and public-interest problems — 225 comments on the governance question alone. Anthropic's growth trajectory flattening is the financial backdrop to the filing.</div>
+        <div class="sources">
+          <a href="https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50344919">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Oracle files to raise $20B for AI buildout</div>
+        <div class="desc">New stock and bond offerings to finance Oracle's AI infrastructure commitments. Another data point on how heavily the AI capex cycle is now leveraged.</div>
+        <div class="sources">
+          <a href="https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50342284">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">In Numbers</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">2,347</div>
+          <div class="stat-label">points on weight-space Qwen editing</div>
+          <div class="stat-note">738 comments alongside <a href="https://rikiyat.github.io/blog/weight-space-programming/">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">$20B</div>
+          <div class="stat-label">Oracle raise for AI buildout</div>
+          <div class="stat-note">stock and bond offerings <a href="https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">85%</div>
+          <div class="stat-label">memory cut in Cloudflare DNS builds</div>
+          <div class="stat-note">plus halved build delay <a href="https://blog.cloudflare.com/dns-targeted-zone-builds/">Original</a></div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-value">1,818</div>
+          <div class="stat-label">points on HackerBooks index</div>
+          <div class="stat-note"><a href="https://hackerbooks.org">Original</a></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-label">AI / LLM / Agents</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Subvocal: talk to your computer without making a sound</div>
+        <div class="desc">A Show HN for silent speech input — 634 points and 324 comments. If the accuracy claims hold up, this is a plausible input channel for pair-programming with agents in open offices.</div>
+        <div class="sources">
+          <a href="https://news.ycombinator.com/item?id=50340088">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">Anthropic's growth just flattened</div>
+        <div class="desc">An analysis arguing Anthropic's revenue curve has bent — 226 comments dissecting the numbers. The first serious crack in the assumption that frontier-lab growth is uniformly exponential.</div>
+        <div class="sources">
+          <a href="https://www.regenerator1.com/p/anthropics-growth-just-flattened">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50344958">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Anthropic's internal AI spend now exceeds its employee pay</div>
+        <div class="desc">Business Insider reports Claude usage at retail prices costs Anthropic more than its payroll. Whether that is efficiency or a pricing anomaly, it is a striking internal unit-economics figure.</div>
+        <div class="sources">
+          <a href="https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50339494">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Momentic (YC W24) launches agents that catch bugs by using your app</div>
+        <div class="desc">Test automation agents that exercise your application like a user rather than a script. Launch HN thread has 92 comments of scepticism and war stories about AI testing tools.</div>
+        <div class="sources">
+          <a href="https://momentic.ai/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50339913">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Terry Tao on egoless mathematics in the AI era</div>
+        <div class="desc">Tao on what changes when proof assistance and AI collaboration make mathematical work more collective and less about individual credit. Short, and from someone actually doing it.</div>
+        <div class="sources">
+          <a href="https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50341736">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Papers — ArXiv</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">When Relevant Code Is Wrong: Runtime-Aware Context for AI Coding Agents</div>
+        <div class="desc">Retrieval for coding agents ranks code by semantic similarity and recency, neither of which establishes that a snippet still applies under feature flags, migrations, or deployment-specific configs. The paper defines operational context validity — a task-, deployment- and time-dependent criterion — and instantiates it in CASE, an agent-agnostic framework that ties repository artifacts to runtime configuration and architectural evolution, labelling evidence valid, invalid or unknown before it reaches the agent. Retrieval quality becomes a runtime question, not an embedding question. <strong>[coding-agents, retrieval, context-engineering]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.38800v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">CARI: Cross-Boundary Adversarial Runtime Injection in Coding-Agent Workflows</div>
+        <div class="desc">When coding agents build software from components owned by other teams, a compromised peer service, test harness or CI job can lie in its runtime feedback — diagnostic authority without action authority, exploited. CARI formalises this injection setting and shows an attacker can steer a victim agent's edits without ever touching its prompt, model or tools. A concrete attack surface for the multi-team agent workflows most organisations are already running. <strong>[security, coding-agents, prompt-injection]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.38799v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Launder-Bench: Can Repository-Level Agentic Code Laundering Be Detected?</div>
+        <div class="desc">Agents can now rewrite whole repositories while preserving tested behaviour, breaking plagiarism detection, licence auditing and provenance. Launder-Bench is the first repository-level benchmark for provenance under agentic rewriting, built from 282 real-world repositories, with a source-hidden protocol that decomposes and reconstructs modules so similarity ranking alone cannot establish derivation. The result is a measurement problem for every licence-compliance pipeline that assumed textual similarity implies copying. <strong>[provenance, code-generation, benchmark]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2611.01966v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Decentralized Multi-Agent Coordination and Communication in Shared Codebases</div>
+        <div class="desc">Orchestrator-free multi-agent coding is the realistic case: separate developers file separate requests and agents collide in the same repository. ParallACT benchmarks complementary and contradictory task pairs, comparing a single-agent oracle against multi-agent settings varying execution order and visibility. Independent solutions that each pass their tests can still fail when merged — the benchmark quantifies exactly how much. <strong>[multi-agent, code-generation, benchmark]</strong></div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2611.00314v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">Experts Exhibit Structured Redundancy: Structure-Preserving Expert Pruning for MoE LLMs</div>
+        <div class="desc">MoE models must store every expert at inference even though expert outputs carry far fewer effective modes than the nominal expert count — stable and entropy effective ranks sit well below it across models and tasks. The paper reframes pruning as structure-preserving subset selection solved greedily, rather than scoring experts independently. A memory-reduction lever that follows from measured rank structure, not heuristic importance scores. <strong>[moe, pruning, inference-efficiency]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.41236v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">06</div>
+        <div class="title">ImplicitHop: Evaluating knowledge integration across context and memory</div>
+        <div class="desc">Models must propagate the long-range consequences of new facts, whether those facts arrive in-context or in pretrained weights — and the two channels behave differently. ImplicitHop supplies two benchmarks: a formal graph benchmark with controlled topologies, and a composition benchmark grounded in real knowledge graphs, evaluating deductive reasoning as a function of inference depth. Direct evidence for the context-versus-weights asymmetry that retrieval and fine-tuning decisions quietly depend on. <strong>[reasoning, evaluation, knowledge-integration]</strong></div>
+        <div class="sources">
+          <a href="http://arxiv.org/abs/2610.41169v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Ontologies, Graphs &amp; Semantics</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Selecting compact knowledge-graph contexts for LLM reasoning</div>
+        <div class="desc">Uses relation knowledge — hand-written or learned — to pick a minimal set of graph facts that suffices for an answer, then checks derivability and consistency. A concrete answer to whether retrieved KG facts suffice or conflict.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2611.01733v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">OntoDoc: generating natural-language descriptions for ontology terms</div>
+        <div class="desc">Moves beyond rule-based verbalisation of formal schema axioms to richer descriptions of ontology resources. Addresses the chronic reuse problem: terms without readable documentation don't get reused.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2611.01276v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">A bounded AppSec ontology applied at the point of change</div>
+        <div class="desc">Consolidates security guidance scattered across frameworks, controls catalogues and threat taxonomies — including NIS2 — into an ontology surfaced to the engineer or AI assistant mid-edit. A semantic layer aimed at the commit, not the audit.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2611.01127v1">arXiv</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Declarative spatial manifolds in a graph DBMS</div>
+        <div class="desc">Argues property graphs treat node coordinates as opaque scalars; proposes Z-order monoid roll-ups so spatial and subsumption structure is indexed in-database, eliminating O(V²) client-side visualisation. Proteins in R³, telecoms on S²×R, ontologies as posets — one model.</div>
+        <div class="sources">
+          <a href="https://arxiv.org/abs/2611.01879v1">arXiv</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Infra / SRE / DevOps</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">Cloudflare halved DNS build delay and cut memory use 85%</div>
+        <div class="desc">Targeted zone builds — rebuilding only what changed — instead of full zone regenerations. A tidy case study in incrementalising a build pipeline.</div>
+        <div class="sources">
+          <a href="https://blog.cloudflare.com/dns-targeted-zone-builds/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50337558">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">European RISC-V Industrial Computing Initiative launches</div>
+        <div class="desc">A coordinated European effort on RISC-V for industrial computing. Sovereignty-driven silicon procurement is becoming an infrastructure planning variable.</div>
+        <div class="sources">
+          <a href="https://erici.eu">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50334523">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">Second suspected cyber-attack hits supermarket freezers across Europe</div>
+        <div class="desc">The second such incident targeting refrigeration infrastructure — IoT fleet security failing at physical scale. If you operate connected devices in the field, this is your threat model made concrete.</div>
+        <div class="sources">
+          <a href="https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50335615">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Shrinking NixOS to the bare minimum</div>
+        <div class="desc">A practical walkthrough of cutting NixOS RAM footprint and resource requirements to near-nothing. Useful for NixOS on small VMs and edge boxes.</div>
+        <div class="sources">
+          <a href="https://lowendspirit.com/discussion/11543/shrinking-nixos-ram-footprint-and-resource-requirements-to-the-bare-minimum">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50326246">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Hacker News</div>
+
+      <div class="news-item">
+        <div class="num">01</div>
+        <div class="title">HackerBooks: HackerTube, but for books mentioned on HN</div>
+        <div class="desc">A searchable index of books that have surfaced on Hacker News — 1,818 points. The follow-up to the HackerTube format, and clearly wanted.</div>
+        <div class="sources">
+          <a href="https://hackerbooks.org">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50326821">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">02</div>
+        <div class="title">If you love a website, back it up</div>
+        <div class="desc">A case for personal archiving as the web's link rot accelerates. 103 comments of tools and horror stories.</div>
+        <div class="sources">
+          <a href="https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50336518">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">03</div>
+        <div class="title">US boy names that became girl names and vice versa</div>
+        <div class="desc">A data-driven look at name-gender drift in American naming records. 343 comments, most of them personal.</div>
+        <div class="sources">
+          <a href="https://namedaisy.com/blog/boy-names-that-became-girl-names">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50339397">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">04</div>
+        <div class="title">Mystery of 60-second fluctuations in power grids solved</div>
+        <div class="desc">Jülich researchers explain the periodic grid oscillations that have puzzled operators. Grid-frequency stability is about to matter more, not less.</div>
+        <div class="sources">
+          <a href="https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50315217">HN</a>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <div class="num">05</div>
+        <div class="title">BYD sold more EVs last month than the US did all quarter</div>
+        <div class="desc">A single month versus a full quarter — the scale gap in EV manufacturing laid bare in one comparison.</div>
+        <div class="sources">
+          <a href="https://electrek.co/2026/11/02/byd-sold-more-evs-last-month-than-the-us-did-all-quarter/">Original</a>
+          <a href="https://news.ycombinator.com/item?id=50344181">HN</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Why It Matters</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>The through-line across today's papers is that the coding agent's environment — not the model — is now the research frontier. CASE attacks retrieval that surfaces plausible but dead code, CARI attacks runtime feedback that can be forged, ParallACT attacks agents colliding in shared repos. None of these are model problems; all of them are harness problems. The teams shipping agents fastest are the ones instrumenting the environment, and this batch gives you three concrete failure modes to test against.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Provenance is about to become an operational burden rather than a legal afterthought. Launder-Bench shows agents can rewrite repositories past the reach of clone detection, while OpenAI's write-up on Git at thousands-of-engineers-plus-agents scale is the infrastructure response to the same pressure. If your compliance story assumes similarity implies derivation, or that your VCS metadata is trustworthy at agent commit volume, both assumptions now have expiry dates.</span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span>Two different writable substrates appeared today and they point the same direction: Astra treating weights as a readable, writable address space, and the agent papers treating repos and runtime feedback as programmable surfaces. Meanwhile Anthropic's internal AI spend exceeding payroll and its flattening growth curve suggest the unit economics of doing all this at frontier scale are worse than the capex narrative admits — Oracle raising $20B against that backdrop is a bet someone will have to underwrite. Watch whether weight-editing and harness work converge: cheap post-hoc model improvement is the obvious answer to expensive pretraining.</span>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-label">Watch</div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Ubuntu patch for CVE-2026-98432.</strong> Nearly three weeks after disclosure, the LTS remote code execution remains unpatched. Watch for an updated kernel landing in Ubuntu's security archive — and for other distros shipping fixes first, which would sharpen the pressure.<div class="sources" style="margin-top:4px;"><a href="https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432">Original</a> <a href="https://news.ycombinator.com/item?id=50341462">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>SEC response to Anthropic IPO filing.</strong> Tech Policy Press argues disclosure and public-interest grounds for blocking the offering, with flattening growth as financial backdrop. Watch whether regulators engage with the governance arguments or the filing proceeds on standard terms.<div class="sources" style="margin-top:4px;"><a href="https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/">Original</a> <a href="https://news.ycombinator.com/item?id=50344919">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Whether Anthropic's growth curve holds.</strong> The analysis claims revenue has bent; 226 comments are still dissecting the numbers. Next quarter's revenue data — or a credible rebuttal of the methodology — settles whether frontier-lab growth is uniformly exponential.<div class="sources" style="margin-top:4px;"><a href="https://www.regenerator1.com/p/anthropics-growth-just-flattened">Original</a> <a href="https://news.ycombinator.com/item?id=50344958">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Independent replication of Astra's weight edits.</strong> The claim of measurable Qwen gains from direct weight editing rests on one write-up so far. Watch for third parties reproducing the results on the same checkpoints — a failed replication kills it, a confirmed one opens weight-space tooling as a discipline.<div class="sources" style="margin-top:4px;"><a href="https://rikiyat.github.io/blog/weight-space-programming/">Original</a> <a href="https://news.ycombinator.com/item?id=50341174">HN</a></div></span>
+      </div>
+
+      <div class="follow-item">
+        <span class="bullet">▸</span>
+        <span><strong>Subvocal accuracy under scrutiny.</strong> The Show HN claims silent speech input works; 324 comments are largely unconvinced. Watch for independent testing outside the demo environment — word error rate on technical vocabulary is the signal that decides if it is a viable agent-pairing input.<div class="sources" style="margin-top:4px;"><a href="https://news.ycombinator.com/item?id=50340088">HN</a></div></span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span class="handle">@iamluisgb</span>
+      <span class="date">3 Nov 2026</span>
+    </div>
+  </div>
+
+</body>
+</html>
