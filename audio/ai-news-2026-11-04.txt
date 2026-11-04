@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Wednesday the fourth of November, twenty twenty-six. Lead story: the viral claim that Astra can read and write model weights to improve Qwen has fallen apart. A point-by-point teardown shows the weight-reading and weight-writing improvements don't survive scrutiny. Nine hundred and fifty-one points on Hacker News, three hundred and eighty-three comments and counting.
+
+[HOST_B] The interesting part is that the tools to check this are already public. Qwen three point eight, twenty-seven billion parameters, runs on a laptop and can analyse model weights locally — the capability at the centre of the disputed claim. Simon Willison walked through it. Expect a community replication within days. A clean local result either confirms the capability or kills the post outright.
+
+[HOST_A] Postman is silently auto-installing A I plugins and attempting to upload users' A P I traffic to third parties. No consent sought. The GitHub issue sits at one thousand one hundred and sixty-eight points.
+
+[HOST_B] Treat it as a supply-chain incident if Postman sits anywhere near your toolchain. Watch Postman's response: silence, or a terms-of-service dodge, settles it as a company whose defaults you cannot trust.
+
+[HOST_A] Two trust stories. OpenAI appears to be re-enabling training on Codex chats despite prior opt-outs, with no notice — four hundred and sixty-five points. And the New York Times reports Google will withdraw Search from schools that restrict A I use — five hundred and ninety-six points.
+
+[HOST_B] Same pattern, different scale: systems doing things nobody configured. Check your Codex settings today. On Google — that's distribution leverage deployed directly against institutional policy; watch whether schools concede or regulators take notice. The first public reversal sets the precedent.
+
+[HOST_A] Papers. Cross S W E benchmarks coding agents across interdependent repositories — one hundred and seventy-one verified instances, one hundred and sixty-five repositories, twenty domains, thirteen languages, with checks that partial modifications cannot pass. Five frontier models fail badly; the strongest leaves most coordinated changes incomplete. D S L Bench covers eighteen domain-specific languages: syntax pass rate thirty-one point four percent, semantic correctness eleven point six, and the language itself explains seventy-seven percent of the variance.
+
+[HOST_B] Agent capability is benchmark-shaped, and the benchmarks are the flattering shape. Models that pass single-repo suites collapse when changes must propagate across repositories. Gains claimed in the distribution that generated the hype don't survive contact with the distribution you ship into.
+
+[HOST_A] The quantization survey: teams serving nine-to-twenty-billion-parameter open models get fragments from the published record — speedups and accuracy scores that never appear together. Only two four-bit checkpoints of Gemma three twelve B have both a timing and any accuracy score, calibrated on a single subject of one benchmark. The governing rule: four-bit weights roughly double small-batch decode speed, two point one two times for Qwen two point five fourteen B on an A one hundred, but the gain collapses to one point zero two under large batches.
+
+[HOST_B] That's the Astra story at a different scale — the field's performance claims are largely folklore, yet four-bit is two x drives capacity planning daily. Reproduce numbers on your own hardware before they reach a design doc. Related: speculative decoding, sold as behaviour-preserving, shifts long-horizon agent output distributions after thirty steps. And a safety result: across five environments, every tested frontier model was flipped from rejection to approval by a malicious peer — persuasion, deception or coercion. No model resisted.
+
+[HOST_A] A clean negative result: the Graphify benchmark ran three hundred and sixty trials comparing coding agents with and without a code knowledge graph. No measurable improvement. Alongside it, an argument that the Semantic Web died of ontology maintenance cost, not bad theory.
+
+[HOST_B] Useful ammunition against the Graph-RAG-for-code pitch. If someone sells you a knowledge graph today, ask who maintains it in three years. The lakehouse paper formalising enterprise graph machinery is the serious version of the idea.
+
+[HOST_A] In the sweep: Nikkei tallies hidden A I debt at the hyperscalers at three point two trillion dollars, up ninety percent in six months. Fujifilm is quintupling L T O tape output for archive demand. GitBook disclosed a breach. C plus plus twenty-six failed its D I S ballot. Figma detailed a model trained to operate its own editor, and an argument says no shared posttraining corpus exists — every lab curates proprietary data. On Hacker News: a rooted Renault clock, Carlini asking whether a Pentium-era engine could have beaten Kasparov, an eight-hundred-dollar room-scale gripper robot, and the free Internals of PostgreSQL book.
+
+[HOST_B] Also worth your time: a gated spec-driven Claude Code workflow audited across nine features — two hundred and eighty-eight of five hundred and eighty-one tasks completed, with the audit trail showing where the rest went. File-inventory checks and fixed defect lists are the engineering answer to hostile defaults. Full links, numbers and watchlist in the written report — read that next.

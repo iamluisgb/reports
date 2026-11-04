@@ -1,0 +1,963 @@
+{
+  "day": "2026-11-04",
+  "weekday": "Wednesday",
+  "collected_at": "2026-11-04T06:31:33+00:00",
+  "stories": [
+    {
+      "id": "hn-50361268",
+      "story_id": "50361268",
+      "rank": 1,
+      "title": "Jelly Sheet",
+      "url": "https://mrdoob.github.io/codevember-2026/01/",
+      "points": 88,
+      "comments": 16,
+      "hn_url": "https://news.ycombinator.com/item?id=50361268"
+    },
+    {
+      "id": "hn-50360164",
+      "story_id": "50360164",
+      "rank": 2,
+      "title": "C++26 Disapproved",
+      "url": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/",
+      "points": 209,
+      "comments": 103,
+      "hn_url": "https://news.ycombinator.com/item?id=50360164"
+    },
+    {
+      "id": "hn-50361154",
+      "story_id": "50361154",
+      "rank": 3,
+      "title": "Distinct cellular and genetic differences in colorectal cancer in young patients",
+      "url": "https://www.dana-farber.org/newsroom/news-releases/2026/study-reveals-distinct-cellular-and-genetic-differences-in-colorectal-cancer-in-younger-patients",
+      "points": 48,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50361154"
+    },
+    {
+      "id": "hn-50358702",
+      "story_id": "50358702",
+      "rank": 4,
+      "title": "The Internals of PostgreSQL",
+      "url": "https://www.interdb.jp/pg/index.html",
+      "points": 223,
+      "comments": 13,
+      "hn_url": "https://news.ycombinator.com/item?id=50358702"
+    },
+    {
+      "id": "hn-50339288",
+      "story_id": "50339288",
+      "rank": 5,
+      "title": "Jailbreaking my car's navigation system just so I can change the time",
+      "url": "https://blog.nns.ee/2026/11/02/renault-hack/",
+      "points": 722,
+      "comments": 295,
+      "hn_url": "https://news.ycombinator.com/item?id=50339288"
+    },
+    {
+      "id": "hn-50354358",
+      "story_id": "50354358",
+      "rank": 6,
+      "title": "Stringman, an $800 open-source room scale gripper robot",
+      "url": "https://neufangled.com/",
+      "points": 498,
+      "comments": 174,
+      "hn_url": "https://news.ycombinator.com/item?id=50354358"
+    },
+    {
+      "id": "hn-50360573",
+      "story_id": "50360573",
+      "rank": 7,
+      "title": "Giant canyon on Mars is still tectonically active",
+      "url": "https://lamont.columbia.edu/news/giant-canyon-mars-still-tectonically-active-today",
+      "points": 63,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50360573"
+    },
+    {
+      "id": "hn-50346755",
+      "story_id": "50346755",
+      "rank": 8,
+      "title": "Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels",
+      "url": "https://hackertv.org",
+      "points": 270,
+      "comments": 54,
+      "hn_url": "https://news.ycombinator.com/item?id=50346755"
+    },
+    {
+      "id": "hn-50361936",
+      "story_id": "50361936",
+      "rank": 9,
+      "title": "US midterm elections 2026 live updates: Democrats win Senate control and edge",
+      "url": "https://www.theguardian.com/us-news/live/2026/nov/03/midterm-election-results-live-updates",
+      "points": 41,
+      "comments": 12,
+      "hn_url": "https://news.ycombinator.com/item?id=50361936"
+    },
+    {
+      "id": "hn-50358352",
+      "story_id": "50358352",
+      "rank": 10,
+      "title": "Show HN: Uncracked City, detective game where you question LLM suspects that lie",
+      "url": "https://uncracked.city",
+      "points": 20,
+      "comments": 9,
+      "hn_url": "https://news.ycombinator.com/item?id=50358352"
+    },
+    {
+      "id": "hn-50336918",
+      "story_id": "50336918",
+      "rank": 11,
+      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
+      "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
+      "points": 435,
+      "comments": 181,
+      "hn_url": "https://news.ycombinator.com/item?id=50336918"
+    },
+    {
+      "id": "hn-50333131",
+      "story_id": "50333131",
+      "rank": 12,
+      "title": "Japan's Jimi 'Mundane' Halloween Costumes of 2026",
+      "url": "https://spoon-tamago.com/japan-jimi-mundane-halloween-costumes-2026/",
+      "points": 162,
+      "comments": 26,
+      "hn_url": "https://news.ycombinator.com/item?id=50333131"
+    },
+    {
+      "id": "hn-50358562",
+      "story_id": "50358562",
+      "rank": 13,
+      "title": "Safari introduces Adaptive Dark Mode in 27.3",
+      "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+      "points": 382,
+      "comments": 209,
+      "hn_url": "https://news.ycombinator.com/item?id=50358562"
+    },
+    {
+      "id": "hn-50361107",
+      "story_id": "50361107",
+      "rank": 14,
+      "title": "Arrows to arrows, categories to queries (2025)",
+      "url": "https://reasonablypolymorphic.com/blog/arrows-to-arrows/",
+      "points": 23,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50361107"
+    },
+    {
+      "id": "hn-50355251",
+      "story_id": "50355251",
+      "rank": 15,
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "points": 564,
+      "comments": 172,
+      "hn_url": "https://news.ycombinator.com/item?id=50355251"
+    },
+    {
+      "id": "hn-50351298",
+      "story_id": "50351298",
+      "rank": 16,
+      "title": "Why Clip Art Was Everywhere Until It Wasn't [video]",
+      "url": "https://www.youtube.com/watch?v=XfLlpxE6AYM",
+      "points": 30,
+      "comments": 9,
+      "hn_url": "https://news.ycombinator.com/item?id=50351298"
+    },
+    {
+      "id": "hn-50354960",
+      "story_id": "50354960",
+      "rank": 17,
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "points": 1168,
+      "comments": 383,
+      "hn_url": "https://news.ycombinator.com/item?id=50354960"
+    },
+    {
+      "id": "hn-50322603",
+      "story_id": "50322603",
+      "rank": 18,
+      "title": "We're training a Figma-fluent editing model",
+      "url": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/",
+      "points": 101,
+      "comments": 46,
+      "hn_url": "https://news.ycombinator.com/item?id=50322603"
+    },
+    {
+      "id": "hn-50358582",
+      "story_id": "50358582",
+      "rank": 19,
+      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+      "url": "https://arxiv.org/abs/2605.29713",
+      "points": 300,
+      "comments": 49,
+      "hn_url": "https://news.ycombinator.com/item?id=50358582"
+    },
+    {
+      "id": "hn-50355767",
+      "story_id": "50355767",
+      "rank": 20,
+      "title": "How I use AI (Oct 2026)",
+      "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+      "points": 130,
+      "comments": 111,
+      "hn_url": "https://news.ycombinator.com/item?id=50355767"
+    },
+    {
+      "id": "hn-50352641",
+      "story_id": "50352641",
+      "rank": 21,
+      "title": "There is no posttraining data commons",
+      "url": "https://openathena.ai/blog/there-is-no-posttraining-data-commons/",
+      "points": 56,
+      "comments": 17,
+      "hn_url": "https://news.ycombinator.com/item?id=50352641"
+    },
+    {
+      "id": "hn-50358314",
+      "story_id": "50358314",
+      "rank": 22,
+      "title": "Show HN: Kairos – Open-source risk and fraud decisioning platform",
+      "url": "https://github.com/finic-ai/kairos",
+      "points": 83,
+      "comments": 17,
+      "hn_url": "https://news.ycombinator.com/item?id=50358314"
+    },
+    {
+      "id": "hn-50351463",
+      "story_id": "50351463",
+      "rank": 23,
+      "title": "Microsoft fixes a Windows 11 annoyance as PC revenue declines",
+      "url": "https://arstechnica.com/gadgets/2026/10/windows-11-gets-right-click-menu-improvements-as-pc-revenue-slides/",
+      "points": 47,
+      "comments": 120,
+      "hn_url": "https://news.ycombinator.com/item?id=50351463"
+    },
+    {
+      "id": "hn-50351163",
+      "story_id": "50351163",
+      "rank": 24,
+      "title": "Runs Scored in World Baseball Classic",
+      "url": "https://entropicthoughts.com/sums-of-overdispersed-counts",
+      "points": 4,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50351163"
+    },
+    {
+      "id": "hn-50338334",
+      "story_id": "50338334",
+      "rank": 25,
+      "title": "Curiosity Traps",
+      "url": "https://www.autodidacts.io/curiosity-traps/",
+      "points": 64,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50338334"
+    },
+    {
+      "id": "hn-50351111",
+      "story_id": "50351111",
+      "rank": 26,
+      "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+      "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+      "points": 951,
+      "comments": 197,
+      "hn_url": "https://news.ycombinator.com/item?id=50351111"
+    },
+    {
+      "id": "hn-50352758",
+      "story_id": "50352758",
+      "rank": 27,
+      "title": "Mac at any scale",
+      "url": "https://namespace.so/blog/mac-at-any-scale",
+      "points": 357,
+      "comments": 202,
+      "hn_url": "https://news.ycombinator.com/item?id=50352758"
+    },
+    {
+      "id": "hn-50342931",
+      "story_id": "50342931",
+      "rank": 28,
+      "title": "Union Types and Option Types (2025)",
+      "url": "https://tibleiz.net/blog/2025-03-16-union-types-and-option-types.html",
+      "points": 38,
+      "comments": 14,
+      "hn_url": "https://news.ycombinator.com/item?id=50342931"
+    },
+    {
+      "id": "hn-50356913",
+      "story_id": "50356913",
+      "rank": 29,
+      "title": "Introduction to Programming in ATS",
+      "url": "https://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html",
+      "points": 65,
+      "comments": 9,
+      "hn_url": "https://news.ycombinator.com/item?id=50356913"
+    },
+    {
+      "id": "hn-50342119",
+      "story_id": "50342119",
+      "rank": 30,
+      "title": "Writing seen in PHerc. 306B, for the first time in 2000 years",
+      "url": "https://scrollprize.substack.com/p/writing-seen-in-pherc-306b-for-the",
+      "points": 125,
+      "comments": 18,
+      "hn_url": "https://news.ycombinator.com/item?id=50342119"
+    },
+    {
+      "id": "hn-50334363",
+      "story_id": "50334363",
+      "rank": 31,
+      "title": "Antimony: CAD Software Evolved from Lisp Machines and Not Drafting Tables (2015)",
+      "url": "https://www.mattkeeter.com/projects/antimony/3/",
+      "points": 118,
+      "comments": 62,
+      "hn_url": "https://news.ycombinator.com/item?id=50334363"
+    },
+    {
+      "id": "hn-50357457",
+      "story_id": "50357457",
+      "rank": 33,
+      "title": "Pratt parsing is a black box",
+      "url": "https://vinipsmaker.github.io/blog/article/pratt-parsing-is-a-black-box/",
+      "points": 51,
+      "comments": 25,
+      "hn_url": "https://news.ycombinator.com/item?id=50357457"
+    },
+    {
+      "id": "hn-50352577",
+      "story_id": "50352577",
+      "rank": 34,
+      "title": "Practice speaking Japanese with real YouTube videos, graded line by line",
+      "url": "https://jivx.com/yt",
+      "points": 93,
+      "comments": 33,
+      "hn_url": "https://news.ycombinator.com/item?id=50352577"
+    },
+    {
+      "id": "hn-50356994",
+      "story_id": "50356994",
+      "rank": 35,
+      "title": "Preparing for the Flipper One Kickstarter and opening pre-orders",
+      "url": "https://flipper.net/pages/flipper-one",
+      "points": 199,
+      "comments": 87,
+      "hn_url": "https://news.ycombinator.com/item?id=50356994"
+    },
+    {
+      "id": "hn-50357973",
+      "story_id": "50357973",
+      "rank": 36,
+      "title": "The Pnyx and the Agora (2016)",
+      "url": "https://www.readingdesign.org/the-pnyx-and-the-agora",
+      "points": 5,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50357973"
+    },
+    {
+      "id": "hn-50337980",
+      "story_id": "50337980",
+      "rank": 37,
+      "title": "Killing what can't be handled – putting a spaghetti demon to eternal rest",
+      "url": "https://themaister.net/blog/2026/10/29/killing-what-cant-be-handled-putting-a-spaghetti-demon-to-eternal-rest/",
+      "points": 39,
+      "comments": 9,
+      "hn_url": "https://news.ycombinator.com/item?id=50337980"
+    },
+    {
+      "id": "hn-50321605",
+      "story_id": "50321605",
+      "rank": 38,
+      "title": "Toit v2.0.0",
+      "url": "https://toit.io/blog/toit-v2-0-0/",
+      "points": 224,
+      "comments": 70,
+      "hn_url": "https://news.ycombinator.com/item?id=50321605"
+    },
+    {
+      "id": "hn-50356944",
+      "story_id": "50356944",
+      "rank": 39,
+      "title": "macOS 27 does not support CoreStorage volumes",
+      "url": "https://wadetregaskis.com/macos-27-golden-gate-does-not-actually-support-corestorage-or-hfs-volumes/",
+      "points": 127,
+      "comments": 88,
+      "hn_url": "https://news.ycombinator.com/item?id=50356944"
+    },
+    {
+      "id": "hn-50333332",
+      "story_id": "50333332",
+      "rank": 40,
+      "title": "Why Don't We Live in an Art Nouveau World?",
+      "url": "https://asteriskmag.com/issues/16/why-don-t-we-life-in-an-art-nouveau-world",
+      "points": 130,
+      "comments": 118,
+      "hn_url": "https://news.ycombinator.com/item?id=50333332"
+    },
+    {
+      "id": "hn-50360947",
+      "story_id": "50360947",
+      "rank": 41,
+      "title": "Tell HN: Don't use Postman, they proxy your info without your permission",
+      "url": "https://news.ycombinator.com/item?id=50360947",
+      "points": 15,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50360947"
+    },
+    {
+      "id": "hn-50354250",
+      "story_id": "50354250",
+      "rank": 42,
+      "title": "USDB: Scaling Storage for Next-Generation Recommender Systems at ByteDance",
+      "url": "https://arxiv.org/abs/2611.02618",
+      "points": 47,
+      "comments": 8,
+      "hn_url": "https://news.ycombinator.com/item?id=50354250"
+    },
+    {
+      "id": "hn-50352757",
+      "story_id": "50352757",
+      "rank": 43,
+      "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+      "url": "https://news.ycombinator.com/item?id=50352757",
+      "points": 465,
+      "comments": 144,
+      "hn_url": "https://news.ycombinator.com/item?id=50352757"
+    },
+    {
+      "id": "hn-50353073",
+      "story_id": "50353073",
+      "rank": 44,
+      "title": "Tiny Basic for Arduino",
+      "url": "https://dilshan.github.io/tiny-basic/",
+      "points": 66,
+      "comments": 19,
+      "hn_url": "https://news.ycombinator.com/item?id=50353073"
+    },
+    {
+      "id": "hn-50348962",
+      "story_id": "50348962",
+      "rank": 45,
+      "title": "Nvidia – open-source auto-ontology",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "points": 272,
+      "comments": 132,
+      "hn_url": "https://news.ycombinator.com/item?id=50348962"
+    },
+    {
+      "id": "hn-50332342",
+      "story_id": "50332342",
+      "rank": 46,
+      "title": "Katamari Damacy but it's The Met collection",
+      "url": "https://katamari.vaguespac.es/",
+      "points": 148,
+      "comments": 48,
+      "hn_url": "https://news.ycombinator.com/item?id=50332342"
+    },
+    {
+      "id": "hn-50361739",
+      "story_id": "50361739",
+      "rank": 47,
+      "title": "An 80-Cent Plastic Pouch Is Saving Women from Dying in Childbirth",
+      "url": "https://www.nytimes.com/2026/11/03/health/maternal-drapes-nigeria-childbirth.html",
+      "points": 6,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50361739"
+    },
+    {
+      "id": "hn-50353192",
+      "story_id": "50353192",
+      "rank": 48,
+      "title": "Google will turn off search for schools that reject AI",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "points": 596,
+      "comments": 425,
+      "hn_url": "https://news.ycombinator.com/item?id=50353192"
+    },
+    {
+      "id": "hn-50353383",
+      "story_id": "50353383",
+      "rank": 49,
+      "title": "Bear turns 10, and it still feels like day one",
+      "url": "https://blog.bear.app/2026/11/bear-turns-10-and-it-still-feels-like-day-one/",
+      "points": 110,
+      "comments": 74,
+      "hn_url": "https://news.ycombinator.com/item?id=50353383"
+    },
+    {
+      "id": "hn-50323123",
+      "story_id": "50323123",
+      "rank": 50,
+      "title": "Resisting Cognitive Surrender",
+      "url": "https://knlb.dev/essays/surrender",
+      "points": 310,
+      "comments": 157,
+      "hn_url": "https://news.ycombinator.com/item?id=50323123"
+    },
+    {
+      "id": "hn-50354336",
+      "story_id": "50354336",
+      "rank": 51,
+      "title": "Gitbook Breached",
+      "url": "https://news.ycombinator.com/item?id=50354336",
+      "points": 152,
+      "comments": 36,
+      "hn_url": "https://news.ycombinator.com/item?id=50354336"
+    },
+    {
+      "id": "hn-50338062",
+      "story_id": "50338062",
+      "rank": 53,
+      "title": "Queen of the Bagel Business",
+      "url": "https://thehustle.co/originals/the-unlikely-queen-of-the-bagel-business",
+      "points": 33,
+      "comments": 10,
+      "hn_url": "https://news.ycombinator.com/item?id=50338062"
+    },
+    {
+      "id": "hn-50349276",
+      "story_id": "50349276",
+      "rank": 54,
+      "title": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996?",
+      "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
+      "points": 465,
+      "comments": 230,
+      "hn_url": "https://news.ycombinator.com/item?id=50349276"
+    },
+    {
+      "id": "hn-50358422",
+      "story_id": "50358422",
+      "rank": 55,
+      "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+      "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+      "points": 323,
+      "comments": 140,
+      "hn_url": "https://news.ycombinator.com/item?id=50358422"
+    },
+    {
+      "id": "hn-50353229",
+      "story_id": "50353229",
+      "rank": 57,
+      "title": "Kalshi and its co-founders face felony charges for violating Utah gambling laws",
+      "url": "https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/",
+      "points": 464,
+      "comments": 454,
+      "hn_url": "https://news.ycombinator.com/item?id=50353229"
+    },
+    {
+      "id": "hn-50351319",
+      "story_id": "50351319",
+      "rank": 58,
+      "title": "Charles Tandy, the mastermind behind Radio Shack",
+      "url": "https://dfarq.homeip.net/charles-tandy-the-mastermind-behind-radio-shack/",
+      "points": 115,
+      "comments": 89,
+      "hn_url": "https://news.ycombinator.com/item?id=50351319"
+    },
+    {
+      "id": "hn-50352767",
+      "story_id": "50352767",
+      "rank": 59,
+      "title": "Handles are the better pointers (2018)",
+      "url": "https://floooh.github.io/2018/06/17/handles-vs-pointers.html",
+      "points": 61,
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=50352767"
+    },
+    {
+      "id": "hn-50351632",
+      "story_id": "50351632",
+      "rank": 60,
+      "title": "The cryptography behind e-voting (and why paper ballots are still essential)",
+      "url": "https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential/",
+      "points": 40,
+      "comments": 10,
+      "hn_url": "https://news.ycombinator.com/item?id=50351632"
+    },
+    {
+      "id": "hn-50357782",
+      "story_id": "50357782",
+      "rank": 61,
+      "title": "I dumped Apple’s word list",
+      "url": "https://helgesver.re/articles/macos-vulgar-word-flags",
+      "points": 146,
+      "comments": 81,
+      "hn_url": "https://news.ycombinator.com/item?id=50357782"
+    },
+    {
+      "id": "hn-50357236",
+      "story_id": "50357236",
+      "rank": 64,
+      "title": "$20M in Fines and Vizio Smart TVs Opt Out of Spying Option Does Nothing",
+      "url": "https://pcper.com/2026/11/20-million-in-fines-and-still-vizio-smart-tvs-opt-out-of-spying-option-does-nothing/",
+      "points": 55,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50357236"
+    },
+    {
+      "id": "hn-50346849",
+      "story_id": "50346849",
+      "rank": 65,
+      "title": "DiscImageStudio: burn visible artwork onto CDs, DVDs and Blu-ray discs",
+      "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+      "points": 346,
+      "comments": 77,
+      "hn_url": "https://news.ycombinator.com/item?id=50346849"
+    },
+    {
+      "id": "hn-50360067",
+      "story_id": "50360067",
+      "rank": 67,
+      "title": "Tesla allegedly misled South Korean customers about automated-driving tech",
+      "url": "https://www.reuters.com/business/autos-transportation/tesla-misled-south-korean-customers-about-automated-driving-tech-consumer-group-2026-11-04/",
+      "points": 22,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50360067"
+    },
+    {
+      "id": "hn-50326545",
+      "story_id": "50326545",
+      "rank": 68,
+      "title": "Embedding boolean circuits in a neural network",
+      "url": "https://edwardbenson.com/2026/10/embedding-boolean-circuits-in-a-neural-network",
+      "points": 28,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50326545"
+    },
+    {
+      "id": "hn-50357683",
+      "story_id": "50357683",
+      "rank": 69,
+      "title": "Apple opens the door to a nightmare world of always-listening tech",
+      "url": "https://this.weekinsecurity.com/watch-what-you-say-apple-opens-the-door-to-a-nightmare-world-of-always-listening-tech/",
+      "points": 60,
+      "comments": 25,
+      "hn_url": "https://news.ycombinator.com/item?id=50357683"
+    },
+    {
+      "id": "hn-50346981",
+      "story_id": "50346981",
+      "rank": 71,
+      "title": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+      "url": "https://hackertimes.ca/",
+      "points": 452,
+      "comments": 146,
+      "hn_url": "https://news.ycombinator.com/item?id=50346981"
+    },
+    {
+      "id": "hn-50344224",
+      "story_id": "50344224",
+      "rank": 73,
+      "title": "SLAC researchers find proof of altermagnetism, a new magnetic phase",
+      "url": "https://www6.slac.stanford.edu/news/2026-10-29-slac-researchers-find-proof-altermagnetism-new-magnetic-phase",
+      "points": 108,
+      "comments": 13,
+      "hn_url": "https://news.ycombinator.com/item?id=50344224"
+    },
+    {
+      "id": "hn-50344861",
+      "story_id": "50344861",
+      "rank": 75,
+      "title": "LLMs are not superhuman at reading and writing neural network weights",
+      "url": "https://www.seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/",
+      "points": 142,
+      "comments": 22,
+      "hn_url": "https://news.ycombinator.com/item?id=50344861"
+    },
+    {
+      "id": "hn-50331988",
+      "story_id": "50331988",
+      "rank": 77,
+      "title": "Optical Circuit Switch Technology Built on Low-Loss Silicon Photonics Platform",
+      "url": "https://www.psiquantum.com/news-import/psiquantum-unveils-optical-circuit-switch-technology-built-on-advanced-low-loss-silicon-photonics-platform",
+      "points": 40,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50331988"
+    },
+    {
+      "id": "hn-50355365",
+      "story_id": "50355365",
+      "rank": 78,
+      "title": "How to write comparison content that doesn't age like milk",
+      "url": "https://posthog.com/blog/comparison-content-guide",
+      "points": 28,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50355365"
+    },
+    {
+      "id": "hn-50353818",
+      "story_id": "50353818",
+      "rank": 79,
+      "title": "Binance hackers used fake job interview to breach PC before $6.3B attack",
+      "url": "https://www.reuters.com/world/binance-says-hackers-used-fake-job-interview-compromise-computer-before-63-2026-11-03/",
+      "points": 89,
+      "comments": 26,
+      "hn_url": "https://news.ycombinator.com/item?id=50353818"
+    },
+    {
+      "id": "hn-50361889",
+      "story_id": "50361889",
+      "rank": 80,
+      "title": "Democrats take control of US Congress as voters reject Trump's Republicans",
+      "url": "https://www.bbc.com/news/live/cj1dw0ydn595t",
+      "points": 11,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50361889"
+    },
+    {
+      "id": "hn-50360122",
+      "story_id": "50360122",
+      "rank": 81,
+      "title": "French blood storage facilities targeted in cyberattack",
+      "url": "https://twitter.com/etnshow/status/2117728420477936043",
+      "points": 14,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50360122"
+    },
+    {
+      "id": "hn-50353335",
+      "story_id": "50353335",
+      "rank": 82,
+      "title": "Study estimates 75% of NFL players who died over 15-year span had CTE",
+      "url": "https://www.nbcnews.com/health/health-news/study-estimates-75-nfl-players-died-15-year-span-may-cte-rcna605975",
+      "points": 258,
+      "comments": 227,
+      "hn_url": "https://news.ycombinator.com/item?id=50353335"
+    },
+    {
+      "id": "hn-50347464",
+      "story_id": "50347464",
+      "rank": 85,
+      "title": "Open-Source 5G Ran Platforms: A Dual Perspective on Performance and Capabilities",
+      "url": "https://arxiv.org/abs/2608.25820",
+      "points": 51,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50347464"
+    },
+    {
+      "id": "hn-50340619",
+      "story_id": "50340619",
+      "rank": 86,
+      "title": "Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You",
+      "url": "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you",
+      "points": 322,
+      "comments": 91,
+      "hn_url": "https://news.ycombinator.com/item?id=50340619"
+    },
+    {
+      "id": "hn-50353468",
+      "story_id": "50353468",
+      "rank": 87,
+      "title": "Show HN: Interactive notes on RLHF, attention, LoRA and LLM evals",
+      "url": "https://concepts.laxmena.com/",
+      "points": 40,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50353468"
+    },
+    {
+      "id": "hn-50353163",
+      "story_id": "50353163",
+      "rank": 88,
+      "title": "Is There Anything Left in the Dream of Cold Fusion?",
+      "url": "https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/",
+      "points": 15,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50353163"
+    },
+    {
+      "id": "hn-50341028",
+      "story_id": "50341028",
+      "rank": 90,
+      "title": "Sneaking into the auditorium for the Windows 2000 launch rehearsal",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20261102-00/?p=112818/",
+      "points": 150,
+      "comments": 56,
+      "hn_url": "https://news.ycombinator.com/item?id=50341028"
+    }
+  ],
+  "papers": [
+    {
+      "id": "arxiv-2611.05345",
+      "cat": "cs.AI",
+      "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
+      "abstract": "Speculative decoding has been treated purely as a systems optimization that speeds up large language model decoding without changing the model behavior. Under this view, the growing effort to train better draft models has been focused solely on acceptance rate. We argue that this view does not hold true for long-horizon agent reasoning. Measuring frontier open-weight models on complex agentic tasks with different speculative decoding approaches, we found that numerical noise grows within verification windows, and the draft acceptance results of the thinking process can change the output distribution of the model after 30 steps, thus noticeably influencing the reasoning accuracy of long-horizon agents in random directions. In this work, we improve the reasoning capability of target models by controlling such noise. While we cannot change the overall token distribution verified by the target model, we can encode critical reasoning with highest precision by training the draft model to be rejected. We identify these points in agent traces and train the draft model to favor adversarial preference. At inference the trained draft and the target part ways precisely at these decision points, verification restarts, so that critical thinking tokens are sampled from the target model and encoded under its least noisy conditions. This approach makes critical reasoning better indexed and more durable over a long horizon. On complex agentic coding benchmarks, our approach raises end-to-end success rate with no change to the target model or its output distribution. Our results recast the speculative decoding mechanism from a pure accelerator into an active allocator for context precision that improves the accuracy of long-horizon agents by training 0.06% to 0.28% of hosted parameters.",
+      "url": "http://arxiv.org/abs/2611.05345v1"
+    },
+    {
+      "id": "arxiv-2611.04556",
+      "cat": "cs.AI",
+      "title": "Inter-Agent Influence: Evaluating Persuasion, Deception, and Coercion in Multi-Agent Systems",
+      "abstract": "The deployment of AI agents in multi-agent settings enables inter-agent influence, whereby agents can strategically steer each other's behaviour towards an intended outcome. Such capabilities pose novel risks, as malicious agents could direct others towards harmful actions. In this work we investigate three such capabilities - persuasion, deception, and coercion - across five realistic evaluation environments and a variety of agents instantiated with frontier language models. We observed significant inter-agent influence capabilities; in oversight environments, all tested models shifted overseer decisions from rejection to approval through persuasion, deception, or coercion. We also observed successful influence in non-hierarchical 'peer-to-peer' settings through redirection of a peer's safety research trajectory. As multi-agent deployments become increasingly commonplace, these results point to a pressing need for work on mitigating the risks from inter-agent influence. Code and data are available at this https URL.",
+      "url": "http://arxiv.org/abs/2611.04556v1"
+    },
+    {
+      "id": "arxiv-2611.04380",
+      "cat": "cs.AI",
+      "title": "Twice as Fast, Until It Isn't: Quantized Serving of Mid-Size Open LLMs",
+      "abstract": "A team serving a 9B-20B open-weight language model on vLLM or SGLang must choose a quantization recipe, and needs two numbers: the speedup over BF16 and the accuracy given up. We assemble every public measurement of these numbers that we could verify and find that the record supplies them only in pieces. Only two checkpoints, both INT4 builds of Gemma 3 12B, have both a vLLM timing and an accuracy score, and that score covers a single MMLU subject, one that the AWQ build was calibrated on. The batch-1 timings predate current engine releases, AMD and Intel Gaudi have no timing in this band at all, and FP4 has none against BF16. The timings that do exist follow one rule. Decoding a small batch is limited by memory bandwidth, so 4-bit weights roughly double speed (2.12x for Qwen2.5-14B on an A100), but the gain vanishes once a large batch makes the GPU compute-bound (1.02x for Gemma 3 12B at batch size 256), where FP8 is the recipe that can still help. Many published accuracy deltas, including every HumanEval delta, lie within benchmark sampling noise. We close with a seven-item reporting checklist for future measurements.",
+      "url": "http://arxiv.org/abs/2611.04380v1"
+    },
+    {
+      "id": "arxiv-2611.04320",
+      "cat": "cs.AI",
+      "title": "Planning-Coding Separation in LLM-Based Code Generation: An Empirical Study",
+      "abstract": "Planning has been identified as an important factor for improved code generation with Large Language Models (LLMs). However, the interaction between planning capability and coding capability remains largely underexplored, especially when the two capabilities are from different LLMs. In this paper, we conduct the first comprehensive empirical study of planning-coding interaction in LLM-based code generation, where planning and coding are assigned to different LLMs (i.e., planning-coding separation). Specifically, we explore different planner-coder combinations to investigate the effectiveness for coders to utilize planning information from various planners and the impact of further training of coders on planner-coder combinations. Our results demonstrate that almost all planner-coder combinations are as competitive as using the same LLM for planning and coding, and the combination of a stronger planner and a stronger coder typically achieves improved effectiveness. Furthermore, using a large model as the planner paired with a much smaller model as the coder can sometimes be as competitive as using the large model as both the planner and the coder, and further training of the coder can typically boost various planner-coder combinations. These findings provide empirical evidence that planning and coding can be separated to a considerable extent in LLM-based code generation, which may offer a more flexible way to construct code-generation systems.",
+      "url": "http://arxiv.org/abs/2611.04320v1"
+    },
+    {
+      "id": "arxiv-2611.04101",
+      "cat": "cs.AI",
+      "title": "Structured Clinical Memory as Context for Probabilistic Decision Models: A Synthetic Evaluation with Jev",
+      "abstract": "Longitudinal clinical context is often distributed across noisy, repetitive forms and narrative records. We study whether a compact structured memory can improve a probabilistic decision model's answers when the underlying patient vignette is already available. We created 30 fully synthetic cases spanning twelve clinical domains, paired each with synthetically generated structured memory, and evaluated 120 typed questions with Jev. The raw-vignette arm achieved 90.0% accuracy (95% normal-approximation confidence interval: 84.6%-95.4%); adding memory achieved 93.3% (88.9%-97.8%). Five questions changed from incorrect to correct and one changed in the opposite direction (exact McNemar $p=0.219$). Choice log loss decreased from 0.258 to 0.175 and binary Brier score from 0.054 to 0.022. Memory added 310 input tokens per call on average, while observed mean latency was unchanged at approximately 0.5 seconds. These results are directionally positive rather than clinically validating: the cases are synthetic, the labels are single-author judgments, and the memory is an oracle upper bound rather than extracted production output. The pilot supports evaluating structured clinical memory as a reusable state interface for decision models.",
+      "url": "http://arxiv.org/abs/2611.04101v1"
+    },
+    {
+      "id": "arxiv-2611.04055",
+      "cat": "cs.AI",
+      "title": "HybridSpec: Throughput-Aware Speculative Decoding for Hybrid GDN-MoE Models",
+      "abstract": "In speculative decoding, parallel drafters such as DFlash make drafting cheap, so target verification dominates each round. A central choice is the verification length, the number of tokens that the target processes in each round. Verifying more draft tokens can accept more of them, but work after the first rejection is wasted. For hybrid target models that combine Gated DeltaNet (GDN) and mixture-of-experts (MoE) layers, verification time grows much faster with this length than for dense models. In a single-request profile of Qwen3.6-35B-A3B with DFlash, it grew by 71% from length 4 to 16, almost entirely in GDN and MoE layers, compared with 4%-6% for a dense Qwen3-4B target. Each GDN layer must update a recurrent state at every token and recover it at the end of the accepted prefix. The MoE cost depends on the experts that the tokens activate, which are known only once verification runs. We present HybridSpec, which selects the verification length on the GPU from draft-side acceptance estimates and measured target latency. Verification then runs this length plus one extra token up to the first MoE router, before any expert runs. There, a lightweight routing correction uses the observed expert assignments to decide whether to keep that token. The rest of verification runs only on the selected tokens. Block-parallel GDN kernels avoid storing a state after every token and reconstruct the accepted state of every GDN layer in one launch. In isolated benchmarks at verification lengths 4 to 16 with every draft token accepted, these kernels, including accepted-state reconstruction, are $1.54\\times$-$4.04\\times$ faster than the default kernels. With three GDN-MoE target models in single-request greedy decoding, HybridSpec is $1.75\\times$-$1.88\\times$ faster than autoregressive decoding and $1.30\\times$-$1.33\\times$ faster than DFlash.",
+      "url": "http://arxiv.org/abs/2611.04055v1"
+    },
+    {
+      "id": "arxiv-2611.05272",
+      "cat": "cs.AI",
+      "title": "The Geometry of Ignorance: Detecting Suppressed Knowledge in LLMs through Activation Fragmentation",
+      "abstract": "Evaluating whether a large language model (LLM) genuinely knows a concept remains a fundamental problem, since behavioral metrics can be fooled by suppression: a model that refuses to answer may still harbor recoverable knowledge. The framework measures the geometric coherence of \\textit{anon-vectors}, the differences in hidden states between a concept-specific query and its anonymized paraphrase, and shows that genuine knowledge forms a tight, low-entropy cluster while ignorance forces geometric fragmentation. Across ten instruction-tuned LLMs from three model families, all fragmentation metrics reliably separate known from unknown concepts, and post-unlearning, fragmentation geometry correlates with adversarial recovery across four attack types and five unlearning algorithms, though the direction of that relationship is shown to depend on attack methodology. Furthermore, a layer-resolved analysis reveals that different adversarial mechanisms exploit this geometry at varying depths, with high attack-specific correlations that are invisible to behavioral evaluation. Together, these results constitute a single-phase, attack-free proxy for unlearning robustness that captures aspects of parametric knowledge inaccessible to output-level metrics. A reference implementation is available at this https URL",
+      "url": "http://arxiv.org/abs/2611.05272v1"
+    },
+    {
+      "id": "arxiv-2611.01484",
+      "cat": "cs.SE",
+      "title": "CrossSWE: Benchmarking Cross-Repository Joint Development for Coding Agents",
+      "abstract": "As coding agents achieve increasingly high success rates on software engineering benchmarks, recent efforts have sought to increase task complexity through longer horizons and more extensive code modifications. However, real-world software development often spans multiple interdependent repositories, introducing additional challenges in dependency reasoning, change propagation, and interface consistency. Rather than further increasing complexity within individual repositories, we introduce CrossSWE, a benchmark for cross-repository joint development comprising 171 real-world instances spanning 165 repositories, 20 technical domains, and 13 programming languages. CrossSWE verifies the necessity of coordinated changes by testing whether partial repository modifications are insufficient to achieve the intended behavior. Our evaluation of five LLMs reveals substantial challenges, with the strongest model, GPT-6.1 Sol, achieving only 58.48% Pass@1. Furthermore, cross-repository inconsistencies emerge as the most prevalent failure mode (44.2%), highlighting the difficulty of maintaining consistency across interdependent repositories.",
+      "url": "http://arxiv.org/abs/2611.01484v1"
+    },
+    {
+      "id": "arxiv-2611.05168",
+      "cat": "cs.SE",
+      "title": "DSL-Bench: Evaluating and Explaining LLM Code Generation Across Domain-Specific Languages",
+      "abstract": "Large language models (LLMs) are increasingly used in software-engineering workflows, but code-generation benchmarks largely focus on general-purpose languages. Domain-specific languages (DSLs) have distinct syntax, semantics, and validation requirements, making results from individual DSL benchmarks difficult to compare. We present DSL-Bench, an executable benchmark and analysis framework for cross-DSL code generation. Starting from 13,045 DSL-related papers, LLM-assisted open card sorting identifies 18 representative application domains. For each domain, we select an evaluable DSL and provide a syntax checker and task-level semantic oracle. Evaluating 7 LLMs on 18 DSLs, we observe mean syntax and semantic pass rates of 31.37% and 11.64%, respectively, revealing a substantial gap between syntax acceptance and semantic correctness. A variance decomposition attributes 76.99% of semantic pass-rate variation to differences among DSLs and 7.86% to differences among models. Among four DSL-level factors, Knowledge Demand has the strongest negative association with semantic correctness (r = -0.508). We evaluate prompt engineering across all 18 DSLs and study five improvement methods on five targeted DSLs. Prompt engineering yields uneven gains; RAG-Refinement, the strongest targeted method, improves semantic correctness by 16.29 percentage points on average over matched baselines. We further derive capability profiles and DSL-Profiler summaries for interpreting data-scarce DSLs. These results highlight toolchain-specific semantic bottlenecks and the need to evaluate DSL code generation beyond syntax acceptance.",
+      "url": "http://arxiv.org/abs/2611.05168v1"
+    },
+    {
+      "id": "arxiv-2611.05094",
+      "cat": "cs.SE",
+      "title": "A Gated Spec-Driven Workflow: An Audit-Trail Study of Coding-Agent Work",
+      "abstract": "Spec-driven development (SDD) asks a coding agent to work from specifications, plans, and task lists rather than from the chat transcript. We study one such workflow for Claude Code, in which almost every control is an instruction carried out by the same model that it constrains. The user must approve each stage before the next begins. A reviewer subagent checks each artefact against a fixed, stage-specific defect list, and an executor subagent may only touch the files listed in its task. After each block of tasks, the orchestrator runs a file-inventory check to detect undeclared changes. We analyse the logs and transcripts of nine features in seven projects, all run by the authors, ranging from a Fortran solver and Python programs to books and this paper. Of these, five finished with every planned task done, including the Fortran solver feature, and 288 of the 581 planned tasks were completed block by block. The executor kept to its declared files: it left only one undeclared change in the deliverable folder, and the check caught it, although its reports record other departures from the protocol. The weak point was the orchestrator, which runs and judges its own checks. It recorded undeclared changes in 11 of 247 block checks, mostly from the authors' in-round requests and the environment, and stopped work in only four.",
+      "url": "http://arxiv.org/abs/2611.05094v1"
+    },
+    {
+      "id": "arxiv-2611.01742",
+      "cat": "cs.MA",
+      "title": "From Single-Agent Self-Discovery to Multi-Agent Adaptation: Scaling Laws of Partner Feedback and Convention Rigidity in Meta Reinforcement Learning Algorithms",
+      "abstract": "A key milestone toward Recursive Self-Improvement (RSI) is replacing hand-crafted optimizers with meta-learned update rules (such as Disco103 and OPEN) that discover how agents learn. Yet when a self-discovered RL model trains with adapting teammates, does co-evolution sustain capability gains or trap agents in brittle conventions? Across 1,800+ runs in continuous collective robotics (VMAS) and discrete coordination (Overcooked), we establish five laws of multi-agent adaptation. First, four-cell counterfactual partner swaps expose an evaluation illusion: apparent team progress often masks focal regression (+1.066 team gain concealing -0.119 focal loss) and inflates transfer by +0.649 to +1.210. Second, a 288-run physical-coupling sweep ($\\alpha \\in [0, 1.5]$) reveals a linear scaling law ($\\beta = +0.255$, $p = 0.000488$, Spearman $\\rho = 1.0$): live reciprocal feedback keeps Disco103 invariant (AUC 0.297--0.322), whereas severing feedback triggers a monotonic collapse (-0.172 to -0.490), with OPEN establishing a sensitivity spectrum (Disco103 > OPEN > MAPPO). Third, extending navigation training eightfold (1.05M steps) enables Disco103 to overtake MAPPO (+0.087 team return, +0.133 bank gain), while decoupled training boosts cross-partner completion by +10.16% (56.25% vs. 46.09%). Fourth, in Overcooked, MAPPO's self-play conventions induce a 28.13% cross-partner collision rate, whereas Disco103 cuts collisions to 12.77% and achieves 3.33x higher bank return (9.96 vs. 2.99; net gain +6.43), further improved by decoupled meta-adaptation (+1.39 with scripted partners). Finally, perturbation pulses ($p=0.00098$), auxiliary entropy diagnostics (8.485 nats), and 48 multi-lifetime meta-evolved rules ($L_2 \\in [2.11, 4.91]$) trace these dynamics to partner-gradient blindness and auxiliary drift, informing multi-agent self-discoverd algorithms.",
+      "url": "http://arxiv.org/abs/2611.01742v1"
+    },
+    {
+      "id": "arxiv-2611.03231",
+      "cat": "cs.SE/cs.MA",
+      "title": "Specification-Driven Governance for Fairness-by-Design in Agentic Software Engineering: How Far Can We Go?",
+      "abstract": "Agentic AI is shifting developers' responsibilities from software implementation to software governance. While this paradigm improves productivity, it also raises challenges in ensuring that autonomous coding agents preserve developers' intentions. Among these, operationalizing fairness-by-design is largely unexplored, as existing approaches provide limited support for representing and propagating fairness requirements throughout agentic development workflows. In this paper, we investigate whether specification-driven development can operationalize fairness-by-design in the agentic development of machine learning systems. We study three coding agents on four machine learning applications, using four prompts that progressively operationalize fairness through nine Fairness Specification Elements, and analyze the traceability of fairness requirements across the generated artifacts, the fairness-accuracy trade-off of the resulting models, and the agents' design decisions and rationales. The results show that when fairness is operationalized, agents capture almost all fairness requirements in the specification (97.22%) and preserve most of them in the code (82.41%). However, the resulting models are not significantly fairer, as agents implement fairness as a post-hoc audit that neither shapes training nor prevents model delivery. Specifications thus make fairness traceable, but not enforceable, calling for fairness specifications that state what agents should do when requirements are not met, and for workflows that make the fairness decisions agents delegate to developers explicit.",
+      "url": "https://arxiv.org/abs/2611.03231v1",
+      "published": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.02784",
+      "cat": "cs.SE/cs.MA",
+      "title": "HLSClaw: Bringing Vibe Coding to High-Level Synthesis through Skill-Based Agentic Harness",
+      "abstract": "LLM agents are rapidly shifting software development toward intent-driven \\emph{vibe coding}, yet their effectiveness drops sharply in high-level synthesis (HLS), where code optimization must jointly consider design structure, directive search, and downstream hardware constraints. Existing HLS optimization approaches, including both heuristic-based methods and recent LLM-assisted pipelines, typically operate at fixed abstraction levels or in weakly coupled stages, limiting their ability to leverage the strong interplay between source code restructuring and directive search outcomes. Our key insight is that HLS optimization can be reframed from a fixed, hardwired transformation pipeline into a skill-based agentic control problem: an LLM agent equipped with modular, executable optimization skills and a feedback-driven orchestrator can autonomously navigate the coupled space of code restructuring and directive search. This motivates the design of HLSClaw, the first HLS-specific, skill-based agentic harness for holistic HLS optimization. On real-world HLS benchmarks, HLSClaw achieves a 39.12x geometric-mean latency speedup, outperforming the compiler baseline ScaleHLS by 1.98x, and surpassing the commercial coding agents Claude Code and Codex by 1.86x and 1.70x, respectively, while maintaining strong timing robustness.",
+      "url": "https://arxiv.org/abs/2611.02784v1",
+      "published": "2026-11-02"
+    }
+  ],
+  "topic": [
+    {
+      "id": "kg-arxiv-2611.04899v1",
+      "title": "Knowledge Graph Lakehouse: A Cloud-Native Architecture for Managing Enterprise Knowledge Graphs at Scale",
+      "abstract": "Modern data architectures for integrating heterogeneous data sources to discover actionable knowledge include the data warehouse, the data lake, and the data lakehouse, which combines the flexibility of the data lake with the structured data management capabilities of the data warehouse through metadata, indexes, and caching. Enterprise knowledge graphs (KGs) offer an alternative approach to such integration for the purposes of data analysis, but handling them at scale must address the Three Vs of big data: volume, velocity, and variety. Contextualized KGs (CKGs) meet part of that challenge by enriching facts with contextual information, yet many applications require only a context-specific subset of that knowledge. We propose the Knowledge Graph Lakehouse (KG Lakehouse), a cloud-native microservice architecture that adapts the data lakehouse paradigm for management of CKGs at scale. The KG Lakehouse indexes incoming source documents along configurable context dimensions and stores these documents in a data lake, from which application-specific CKGs are constructed on demand instead of maintaining a single, monolithic KG. We realize the proposed architecture as a proof of concept, with independently deployable services built from established cloud technology; context dimensions and format-specific document handling enter as configuration, leaving the architecture independent of the application domain. We evaluate the implemented system in experiments on a distributed cluster deployment.",
+      "url": "https://arxiv.org/abs/2611.04899v1",
+      "published": "2026-11-03",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.04809v1",
+      "title": "RAHC: Rule-Augmented Hyper-Relational Knowledge Graph Completion for Materials Synthesis",
+      "abstract": "Scientific discovery depends on reusing experimental knowledge, yet records scattered across papers and repositories are often incomplete. In materials synthesis, recovering missing conditions requires reasoning about the target material and the observed context of a specific experiment. Hyper-relational knowledge graphs (HKGs) represent this context through qualifiers, but existing completion methods leave domain knowledge and experimental regularities implicit. We propose RAHC, a rule-augmented HKG framework for single-slot and joint multi-slot synthesis-condition completion. RAHC builds a traceable rule catalog from training records and retrieved literature, retrieves rules for each query-candidate pair, and separately encodes graph structure and rule evidence. Hard rules constrain candidate validity, while soft rules guide ranking. RAHC-G aggregates rules using global reliability; RAHC-Q additionally learns query-specific relevance. Gated fusion combines structural and rule representations, while tuple-conclusion rules provide cross-condition evidence for joint completion. Experiments on five materials-synthesis datasets show improvements in single-slot and joint completion under Semi-inductive and Open-Answer Inductive settings, with Semi-inductive MRR gains of up to 15.6% over MAYPL. RAHC also improves performance on the entity-disjoint ILPC'22 Small benchmark, supporting transfer to fully inductive KG completion. These results support experimental condition selection, synthesis planning, and the reuse of scientific knowledge.",
+      "url": "https://arxiv.org/abs/2611.04809v1",
+      "published": "2026-11-03",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.03080v1",
+      "title": "VL-Dedup: Graded Multimodal Entity Resolution for Image-Text Data Deduplication",
+      "abstract": "Image-text corpora contain copies of one image, captions that describe one image in different ways, captions reused for different images, and captions that do not match their images. Each case calls for a different curation action. Deduplication and multimodal entity resolution (ER) only decide whether records are the same, and they are evaluated on labeled pairs. Yet pair scores do not tell which records end up in the same cluster or which useful captions get deleted. We therefore formulate image-text deduplication as graded multimodal ER, which decides visual identity, caption handling, and mismatches for each pair, and we evaluate it at three levels: pairs, clusters, and the retained set. Our method, VL-Dedup, groups records of the same visual entity into clusters and caps the size of each cluster. Within each cluster, a vision-language model (VLM) and CLIPScore decide which captions to keep and which to flag. We also build VL-DedupBench, with 50,000 COCO and SOP records and 66,788 labeled pairs. On it, a classifier that selects no false edge among the labeled pairs still joins millions of record pairs from different entities. Spending VLM calls on the pairs inside clusters, rather than on pairs with uncertain scores, gives better caption decisions from the same model. Even when almost all clusters are correct, keeping one record per cluster loses facts in many deletions, while the deletions of VL-Dedup lose much less information.",
+      "url": "https://arxiv.org/abs/2611.03080v1",
+      "published": "2026-11-02",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.01970v1",
+      "title": "Knowledge-Guided Floodwater Level Reasoning for Cloud-Edge Collaborative Monitoring",
+      "abstract": "Frequent urban floodwater poses a serious threat to the safety and efficiency of intelligent transportation systems. Existing vision-based methods for floodwater level detection face two main limitations. First, the lack of explicit reasoning leads to poor detection performance and little interpretability. Second, these methods struggle to generalize to the complex and varied real-world road scenes seen from different viewpoints. To address this, we reformulate the task as an explicit visual reasoning problem and propose HydroReasoner, a floodwater level reasoning framework designed for cloud-edge collaboration. HydroReasoner builds on Qwen2.5-VL and is trained with Group Relative Policy Optimization. To address the scarcity of reasoning process annotations, we build a floodwater domain knowledge graph HydroKG and design a novel KG path reward. Through deterministic graph traversal over HydroKG, this reward supervises the model's reasoning process at a fine granularity, which improves both reasoning and generalization. For edge deployment, we apply 4-bit quantization to the model, cutting GPU memory usage by 57% and inference latency by 43% while out-of-domain accuracy drops by only 0.2 percentage points. We also propose a confidence-based cloud-edge routing mechanism, which improves system safety and eases the computational load on the cloud. In addition, we build HydroLevel, a floodwater benchmark dataset of 3,000 images, for training and evaluating the model. Experimental results show that HydroReasoner achieves detection accuracy 4.0 and 13.6 percentage points higher than conventional vision baselines in the in-domain and out-of-domain evaluations respectively, with performance dropping by only 4.4 percentage points out of domain.",
+      "url": "https://arxiv.org/abs/2611.01970v1",
+      "published": "2026-11-01",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.05179v1",
+      "title": "OperAItor: An Agentic Framework for Fault-Tolerant Operation of Chemical Processes",
+      "abstract": "OperAItor, an open-source framework for developing and evaluating large language model agents for supervisory fault management in chemical processes. The framework is demonstrated on a dynamic reactor-distillation process representing isopropanol dehydrogenation, with physically based thermodynamics and modified reaction kinetics to permit liquid-phase operation. The process is represented by a 113-variable differential-algebraic model and operates at a nominal feed rate of 100kmol/h, producing approximately 4t/h of acetone. The simulated plant includes 8 PI control loops, 22 process alarms, 5 duty-standby pump trains, and 11 independent safety instrumented functions. The agent architecture integrates multivariate statistical process monitoring, fault diagnosis, knowledge-graph retrieval, action planning, and supervisory action generation. Five action-validation configurations are investigated, comprising operation without validation, an LLM-based judge, digital-twin simulation, and deterministic admissibility checks with and without consequence projection. The framework is evaluated using four LLMs across 20 scenarios involving single and multiple simultaneous faults. Without agent intervention, 18 scenarios result in plant stops, corresponding to an economic loss of $399,000 relative to fault-free operation under the assumed benchmark economics. For GPT-5 nano, Qwen3 8B, and Mistral 7B, validated agent configurations reduce the number of stops to 5-8 and recover $265,000 of the loss. The study provides a reproducible benchmark for comparing agent architectures, language models, and action-validation methods for supervisory fault management in chemical processes.",
+      "url": "https://arxiv.org/abs/2611.05179v1",
+      "published": "2026-11-03",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.05071v1",
+      "title": "Dataset Recommendation for Heterogeneous and Dynamic Scholarly Graphs via Multimodal Representation Learning",
+      "abstract": "Researchers struggle to find relevant datasets amid the growing volume of data across repositories and scholarly publications. Manual dataset retrieval is time-consuming and often fails to identify valuable resources that are not easily discoverable through direct links or popularity metrics. Dataset recommendation, which aims to identify datasets relevant to a paper, author, or query, has become essential for improving dataset discoverability and reuse. However, this task remains challenging because Scholarly Knowledge Graphs (SKGs) are large-scale, heterogeneous, dynamic, and incomplete. Although openly available SKGs organize scientific knowledge by linking scholarly outcomes, they often lack meaningful connections between datasets, leaving them isolated and underutilized. These graphs contain millions of evolving relations but still suffer from missing or inaccurate metadata, duplicate records, and weak dataset integration. This work presents the Multimodal Scholarly Attention Network (MM-SAN), a heterogeneous multimodal graph representation learning method for recommending datasets relevant to research publications within real-world SKGs. MM-SAN combines topology-aware and text-based embeddings, enabling effective recommendations even when textual metadata is limited or absent. It operates in transductive, semi-inductive, and fully inductive settings, adapting to evolving SKGs without requiring retraining. Experiments show that MM-SAN outperforms state-of-the-art methods, providing a robust and scalable solution for dataset recommendation.",
+      "url": "https://arxiv.org/abs/2611.05071v1",
+      "published": "2026-11-03",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.04274v1",
+      "title": "Reasoning about Shared-Qubit Concurrency in Quantum Computing",
+      "abstract": "In this paper, we develop a semantic model for the parallel execution of quantum circuits, providing a formal foundation for studying shared-qubit concurrency in quantum computing. As in classical shared-memory concurrency, parallel quantum circuits may interfere with one another through operations on shared qubits. However, quantum entanglement and the noncommutativity of quantum operations introduce additional challenges for reasoning about their correctness. To address these challenges, we generalise the classical Owicki-Gries method to quantum computing at the level of quantum circuits. Our approach enables compositional reasoning about parallel quantum circuits by separating the verification of individual components from the analysis of interference between them. We formulate proof rules for establishing the correctness of parallel quantum circuits and prove their soundness with respect to the proposed semantic model.",
+      "url": "https://arxiv.org/abs/2611.04274v1",
+      "published": "2026-11-03",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-hn-50354003",
+      "story_id": "50354003",
+      "title": "The Semantic Web didn't fail because ontologies were wrong",
+      "url": "https://www.thisandthat.chat/blog/semantic-web-failed-on-upkeep/",
+      "hn_url": "https://news.ycombinator.com/item?id=50354003",
+      "points": 3,
+      "comments": 0,
+      "created": "2026-11-03",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50353269",
+      "story_id": "50353269",
+      "title": "Does a code knowledge graph help coding agents? 360 trials found no clear gain",
+      "url": "https://www.srijans.space/graphify-benchmark",
+      "hn_url": "https://news.ycombinator.com/item?id=50353269",
+      "points": 3,
+      "comments": 1,
+      "created": "2026-11-03",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50361917",
+      "story_id": "50361917",
+      "title": "Nvidia Auto Ontology, but a Graph",
+      "url": "https://nidra.computer/",
+      "hn_url": "https://news.ycombinator.com/item?id=50361917",
+      "points": 1,
+      "comments": 1,
+      "created": "2026-11-04",
+      "kind": "story"
+    }
+  ]
+}
