@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Astra's Qwen weight-editing claim falls apart](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-04.md) — 2026-11-04 · 9 min
+- [OpenAI ships Images 2.6](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-05.md) — 2026-11-05 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### November 2026
 
+- [OpenAI ships Images 2.6](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-05.md) — 2026-11-05 · 9 min
 - [Astra's Qwen weight-editing claim falls apart](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-04.md) — 2026-11-04 · 9 min
 - [Astra reads and writes Qwen's weights](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-03.md) — 2026-11-03 · 10 min
 - [Postgres 19 slips as AI-assisted review surfaces more bugs](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-02.md) — 2026-11-02 · 9 min

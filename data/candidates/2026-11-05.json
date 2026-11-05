@@ -1,0 +1,993 @@
+{
+  "day": "2026-11-05",
+  "weekday": "Thursday",
+  "collected_at": "2026-11-05T06:32:17+00:00",
+  "stories": [
+    {
+      "id": "hn-50371246",
+      "story_id": "50371246",
+      "rank": 1,
+      "title": "Residential proxies detected on White House network",
+      "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+      "points": 892,
+      "comments": 274,
+      "hn_url": "https://news.ycombinator.com/item?id=50371246"
+    },
+    {
+      "id": "hn-50375354",
+      "story_id": "50375354",
+      "rank": 2,
+      "title": "Lemmings CSS Animation",
+      "url": "https://markblah.github.io/lemmings/",
+      "points": 34,
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=50375354"
+    },
+    {
+      "id": "hn-50372945",
+      "story_id": "50372945",
+      "rank": 3,
+      "title": "Images 2.6",
+      "url": "https://openai.com/index/introducing-images-2-6/",
+      "points": 219,
+      "comments": 143,
+      "hn_url": "https://news.ycombinator.com/item?id=50372945"
+    },
+    {
+      "id": "hn-50372929",
+      "story_id": "50372929",
+      "rank": 4,
+      "title": "A thousand fewer paths to root",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+      "points": 259,
+      "comments": 148,
+      "hn_url": "https://news.ycombinator.com/item?id=50372929"
+    },
+    {
+      "id": "hn-50373308",
+      "story_id": "50373308",
+      "rank": 5,
+      "title": "Starfall – Affordable, routine access to microgravity",
+      "url": "https://www.spacex.com/starfall",
+      "points": 186,
+      "comments": 119,
+      "hn_url": "https://news.ycombinator.com/item?id=50373308"
+    },
+    {
+      "id": "hn-50369925",
+      "story_id": "50369925",
+      "rank": 6,
+      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+      "url": "https://www.ricursive.com/ripple",
+      "points": 272,
+      "comments": 99,
+      "hn_url": "https://news.ycombinator.com/item?id=50369925"
+    },
+    {
+      "id": "hn-50366999",
+      "story_id": "50366999",
+      "rank": 7,
+      "title": "Kimi K3.1 Pro model weights are out",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "points": 461,
+      "comments": 132,
+      "hn_url": "https://news.ycombinator.com/item?id=50366999"
+    },
+    {
+      "id": "hn-50375653",
+      "story_id": "50375653",
+      "rank": 8,
+      "title": "Altera Announces Agilex 2X, a Complete FPGA and SoC Portfolio",
+      "url": "https://www.altera.com/newsroom/agilex-2x",
+      "points": 5,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50375653"
+    },
+    {
+      "id": "hn-50370610",
+      "story_id": "50370610",
+      "rank": 9,
+      "title": "Insects don't swarm at LED lights",
+      "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+      "points": 221,
+      "comments": 118,
+      "hn_url": "https://news.ycombinator.com/item?id=50370610"
+    },
+    {
+      "id": "hn-50369106",
+      "story_id": "50369106",
+      "rank": 10,
+      "title": "A new Go API for JSON",
+      "url": "https://go.dev/blog/jsonv2",
+      "points": 275,
+      "comments": 125,
+      "hn_url": "https://news.ycombinator.com/item?id=50369106"
+    },
+    {
+      "id": "hn-50341576",
+      "story_id": "50341576",
+      "rank": 11,
+      "title": "Spreading Liquid with Three.js",
+      "url": "https://mofu-dev.com/en/blog/fluid-foundation/",
+      "points": 36,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50341576"
+    },
+    {
+      "id": "hn-50372164",
+      "story_id": "50372164",
+      "rank": 12,
+      "title": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
+      "url": "https://icode4.coffee/?p=1746",
+      "points": 99,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50372164"
+    },
+    {
+      "id": "hn-50369503",
+      "story_id": "50369503",
+      "rank": 13,
+      "title": "Conductor is joining Meta",
+      "url": "https://www.conductor.build/announcement",
+      "points": 159,
+      "comments": 171,
+      "hn_url": "https://news.ycombinator.com/item?id=50369503"
+    },
+    {
+      "id": "hn-50369895",
+      "story_id": "50369895",
+      "rank": 14,
+      "title": "Show HN: After a decade of reversing, I got co-op working in DOS Wing Commander",
+      "url": "https://fireflyk64.github.io/wcmulti/",
+      "points": 152,
+      "comments": 17,
+      "hn_url": "https://news.ycombinator.com/item?id=50369895"
+    },
+    {
+      "id": "hn-50370654",
+      "story_id": "50370654",
+      "rank": 15,
+      "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
+      "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+      "points": 131,
+      "comments": 53,
+      "hn_url": "https://news.ycombinator.com/item?id=50370654"
+    },
+    {
+      "id": "hn-50364336",
+      "story_id": "50364336",
+      "rank": 16,
+      "title": "AI is forcing us to pay off 40 years of technical debt",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "points": 1144,
+      "comments": 663,
+      "hn_url": "https://news.ycombinator.com/item?id=50364336"
+    },
+    {
+      "id": "hn-50368626",
+      "story_id": "50368626",
+      "rank": 17,
+      "title": "Progress on provable inference for large language models",
+      "url": "https://www.anthropic.com/research/provable-inference",
+      "points": 202,
+      "comments": 89,
+      "hn_url": "https://news.ycombinator.com/item?id=50368626"
+    },
+    {
+      "id": "hn-50368804",
+      "story_id": "50368804",
+      "rank": 18,
+      "title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
+      "url": "https://news.ycombinator.com/item?id=50368804",
+      "points": 83,
+      "comments": 33,
+      "hn_url": "https://news.ycombinator.com/item?id=50368804"
+    },
+    {
+      "id": "hn-50366117",
+      "story_id": "50366117",
+      "rank": 19,
+      "title": "Ask HN: What's your current AI agentic setup?",
+      "url": "https://news.ycombinator.com/item?id=50366117",
+      "points": 251,
+      "comments": 240,
+      "hn_url": "https://news.ycombinator.com/item?id=50366117"
+    },
+    {
+      "id": "hn-50349165",
+      "story_id": "50349165",
+      "rank": 20,
+      "title": "Future Maintenance of Mbed TLS",
+      "url": "https://lists.trustedfirmware.org/archives/list/mbed-tls@lists.trustedfirmware.org/thread/YPIGCB7WN6GCHOGEGKOJXUYAP7OK527W/",
+      "points": 4,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50349165"
+    },
+    {
+      "id": "hn-50366522",
+      "story_id": "50366522",
+      "rank": 21,
+      "title": "Guerrilla bike lanes: San Francisco makes illicit infrastructure permanent (2016)",
+      "url": "https://99percentinvisible.org/article/guerrilla-bike-lanes-san-francisco-makes-illicit-infrastructure-permanent/",
+      "points": 284,
+      "comments": 204,
+      "hn_url": "https://news.ycombinator.com/item?id=50366522"
+    },
+    {
+      "id": "hn-50366863",
+      "story_id": "50366863",
+      "rank": 22,
+      "title": "OpenAI to acquire Pierre Computer Company",
+      "url": "https://openai.com/index/openai-to-acquire-pierre/",
+      "points": 225,
+      "comments": 69,
+      "hn_url": "https://news.ycombinator.com/item?id=50366863"
+    },
+    {
+      "id": "hn-50364860",
+      "story_id": "50364860",
+      "rank": 23,
+      "title": "So my ISP was hijacking my DNS",
+      "url": "https://www.karthihegde.dev/posts/dns_tampering",
+      "points": 19,
+      "comments": 8,
+      "hn_url": "https://news.ycombinator.com/item?id=50364860"
+    },
+    {
+      "id": "hn-50338474",
+      "story_id": "50338474",
+      "rank": 24,
+      "title": "Basically no one is using AI agents for their DoorDash orders",
+      "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
+      "points": 112,
+      "comments": 206,
+      "hn_url": "https://news.ycombinator.com/item?id=50338474"
+    },
+    {
+      "id": "hn-50366853",
+      "story_id": "50366853",
+      "rank": 25,
+      "title": "A wave of plastic-free coffee pods and machines",
+      "url": "https://www.cnn.com/2026/11/02/food/coffee-machine-plastic-free",
+      "points": 73,
+      "comments": 88,
+      "hn_url": "https://news.ycombinator.com/item?id=50366853"
+    },
+    {
+      "id": "hn-50365780",
+      "story_id": "50365780",
+      "rank": 26,
+      "title": "Tencent Hy4",
+      "url": "https://hy.tencent.ai/research/hy4",
+      "points": 221,
+      "comments": 72,
+      "hn_url": "https://news.ycombinator.com/item?id=50365780"
+    },
+    {
+      "id": "hn-50363353",
+      "story_id": "50363353",
+      "rank": 27,
+      "title": "11 Nanoseconds per Word: Over-Optimizing Anagrams",
+      "url": "https://wiredream.com/anagram-fun/",
+      "points": 15,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50363353"
+    },
+    {
+      "id": "hn-50339183",
+      "story_id": "50339183",
+      "rank": 28,
+      "title": "Show HN: The DNA of DOOM – How code structure survives across 44 ports",
+      "url": "https://squid-protocol.github.io/gitgalaxy/museum-of-code/doom-dna/",
+      "points": 41,
+      "comments": 21,
+      "hn_url": "https://news.ycombinator.com/item?id=50339183"
+    },
+    {
+      "id": "hn-50367653",
+      "story_id": "50367653",
+      "rank": 29,
+      "title": "'It's just vape, nail, charity shops': Can anything save UK high street?",
+      "url": "https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham",
+      "points": 103,
+      "comments": 213,
+      "hn_url": "https://news.ycombinator.com/item?id=50367653"
+    },
+    {
+      "id": "hn-50356791",
+      "story_id": "50356791",
+      "rank": 30,
+      "title": "Is Curiosity Good for Us?",
+      "url": "https://www.lrb.co.uk/the-paper/v48/n20/adam-phillips/is-curiosity-good-for-us",
+      "points": 35,
+      "comments": 18,
+      "hn_url": "https://news.ycombinator.com/item?id=50356791"
+    },
+    {
+      "id": "hn-50367125",
+      "story_id": "50367125",
+      "rank": 31,
+      "title": "AMD expects to outsell Intel in Q4 for the first time in history",
+      "url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
+      "points": 521,
+      "comments": 193,
+      "hn_url": "https://news.ycombinator.com/item?id=50367125"
+    },
+    {
+      "id": "hn-50347425",
+      "story_id": "50347425",
+      "rank": 32,
+      "title": "Ask HN: What cryptography book do you recommend for reading with 10 year olds?",
+      "url": "https://news.ycombinator.com/item?id=50347425",
+      "points": 70,
+      "comments": 64,
+      "hn_url": "https://news.ycombinator.com/item?id=50347425"
+    },
+    {
+      "id": "hn-50363461",
+      "story_id": "50363461",
+      "rank": 33,
+      "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+      "url": "https://news.ycombinator.com/item?id=50363461",
+      "points": 652,
+      "comments": 168,
+      "hn_url": "https://news.ycombinator.com/item?id=50363461"
+    },
+    {
+      "id": "hn-50342219",
+      "story_id": "50342219",
+      "rank": 34,
+      "title": "PageScribe: Handwriting and offline dictionary audio for KOReader",
+      "url": "https://aspireai.kiranadimatyam.com/builds/pagescribe/",
+      "points": 18,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50342219"
+    },
+    {
+      "id": "hn-50362905",
+      "story_id": "50362905",
+      "rank": 35,
+      "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "points": 597,
+      "comments": 276,
+      "hn_url": "https://news.ycombinator.com/item?id=50362905"
+    },
+    {
+      "id": "hn-50366971",
+      "story_id": "50366971",
+      "rank": 36,
+      "title": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+      "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+      "points": 78,
+      "comments": 97,
+      "hn_url": "https://news.ycombinator.com/item?id=50366971"
+    },
+    {
+      "id": "hn-50365755",
+      "story_id": "50365755",
+      "rank": 37,
+      "title": "North Korean fake job interview led to $6.3B Binance heist",
+      "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
+      "points": 597,
+      "comments": 368,
+      "hn_url": "https://news.ycombinator.com/item?id=50365755"
+    },
+    {
+      "id": "hn-50366929",
+      "story_id": "50366929",
+      "rank": 38,
+      "title": "Show HN: I built a tool that prices a pre-built PC part by part",
+      "url": "https://pcdealcheck.com/",
+      "points": 99,
+      "comments": 72,
+      "hn_url": "https://news.ycombinator.com/item?id=50366929"
+    },
+    {
+      "id": "hn-50371090",
+      "story_id": "50371090",
+      "rank": 39,
+      "title": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
+      "url": "https://github.com/gauge-sh/gauge-cli",
+      "points": 27,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50371090"
+    },
+    {
+      "id": "hn-50371693",
+      "story_id": "50371693",
+      "rank": 40,
+      "title": "Hacking the T-Mobile Sidekick, 20 Years Too Late",
+      "url": "https://x86.cx/blog/redanger",
+      "points": 38,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50371693"
+    },
+    {
+      "id": "hn-50369754",
+      "story_id": "50369754",
+      "rank": 41,
+      "title": "Have I befriended a murderer?",
+      "url": "https://longreads.com/2026/11/03/murder-friendship-doubt/",
+      "points": 117,
+      "comments": 66,
+      "hn_url": "https://news.ycombinator.com/item?id=50369754"
+    },
+    {
+      "id": "hn-50366919",
+      "story_id": "50366919",
+      "rank": 42,
+      "title": "Evergreen: A Provably Safe Systems Language",
+      "url": "https://evergreenlang.net",
+      "points": 105,
+      "comments": 86,
+      "hn_url": "https://news.ycombinator.com/item?id=50366919"
+    },
+    {
+      "id": "hn-50369527",
+      "story_id": "50369527",
+      "rank": 43,
+      "title": "From wild to mild: Friendly foxes show changes in brain region",
+      "url": "https://news.cornell.edu/stories/2026/11/wild-mild-friendly-foxes-show-changes-brain-region",
+      "points": 38,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50369527"
+    },
+    {
+      "id": "hn-50362980",
+      "story_id": "50362980",
+      "rank": 44,
+      "title": "Kitty 0.50",
+      "url": "https://sw.kovidgoyal.net/kitty/changelog/#",
+      "points": 368,
+      "comments": 229,
+      "hn_url": "https://news.ycombinator.com/item?id=50362980"
+    },
+    {
+      "id": "hn-50369098",
+      "story_id": "50369098",
+      "rank": 45,
+      "title": "512GB Mac Studio",
+      "url": "https://www.apple.com/shop/buy-mac/mac-studio/m5-ultra-chip-36-core-cpu-80-core-gpu-512gb-memory-1tb-storage",
+      "points": 33,
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=50369098"
+    },
+    {
+      "id": "hn-50373505",
+      "story_id": "50373505",
+      "rank": 46,
+      "title": "American Voters Overwhelmingly Reject AI Data Centers",
+      "url": "https://www.404media.co/american-voters-overwhelmingly-reject-ai-data-centers/",
+      "points": 36,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50373505"
+    },
+    {
+      "id": "hn-50371408",
+      "story_id": "50371408",
+      "rank": 47,
+      "title": "Death Comes for XSLT",
+      "url": "https://dbushell.com/2026/11/03/xslt-rip/",
+      "points": 64,
+      "comments": 46,
+      "hn_url": "https://news.ycombinator.com/item?id=50371408"
+    },
+    {
+      "id": "hn-50371890",
+      "story_id": "50371890",
+      "rank": 48,
+      "title": "Don't Call It a Decision Model",
+      "url": "https://typesafe.ai/blog/dont-call-it-a-decision-model",
+      "points": 15,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50371890"
+    },
+    {
+      "id": "hn-50363019",
+      "story_id": "50363019",
+      "rank": 49,
+      "title": "Verification Is Not Knowledge: Science needs more than answers",
+      "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
+      "points": 231,
+      "comments": 131,
+      "hn_url": "https://news.ycombinator.com/item?id=50363019"
+    },
+    {
+      "id": "hn-50372038",
+      "story_id": "50372038",
+      "rank": 50,
+      "title": "Harmony: Chat like Discord. Federated like email",
+      "url": "https://mony.lol/",
+      "points": 21,
+      "comments": 16,
+      "hn_url": "https://news.ycombinator.com/item?id=50372038"
+    },
+    {
+      "id": "hn-50374791",
+      "story_id": "50374791",
+      "rank": 51,
+      "title": "Why Isn't Retatrutide Approved Yet?",
+      "url": "https://lettersfrombethlehem.substack.com/p/why-isnt-retatrutide-approved-yet",
+      "points": 10,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50374791"
+    },
+    {
+      "id": "hn-50363378",
+      "story_id": "50363378",
+      "rank": 52,
+      "title": "Incident with Pull Requests, Git Operations and Issues",
+      "url": "https://www.githubstatus.com/incidents/smtdswd1h2w4",
+      "points": 261,
+      "comments": 129,
+      "hn_url": "https://news.ycombinator.com/item?id=50363378"
+    },
+    {
+      "id": "hn-50371082",
+      "story_id": "50371082",
+      "rank": 53,
+      "title": "Juju: Modern Codeforge",
+      "url": "https://juju.bi/",
+      "points": 13,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50371082"
+    },
+    {
+      "id": "hn-50375066",
+      "story_id": "50375066",
+      "rank": 54,
+      "title": "Smiling can make you happier – unless someone forces you to do it",
+      "url": "https://news.ufl.edu/2026/11/smiling-happiness/",
+      "points": 9,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50375066"
+    },
+    {
+      "id": "hn-50342031",
+      "story_id": "50342031",
+      "rank": 55,
+      "title": "Frustrated Ranchers Want People to Quit 'Rescuing' Their Working Guardian Dogs",
+      "url": "https://cowboystatedaily.com/2026/10/15/frustrated-ranchers-want-people-to-quit-rescuing-their-working-guardian-dogs/",
+      "points": 71,
+      "comments": 86,
+      "hn_url": "https://news.ycombinator.com/item?id=50342031"
+    },
+    {
+      "id": "hn-50361154",
+      "story_id": "50361154",
+      "rank": 56,
+      "title": "Distinct cellular and genetic differences in colorectal cancer in young patients",
+      "url": "https://www.dana-farber.org/newsroom/news-releases/2026/study-reveals-distinct-cellular-and-genetic-differences-in-colorectal-cancer-in-younger-patients",
+      "points": 125,
+      "comments": 58,
+      "hn_url": "https://news.ycombinator.com/item?id=50361154"
+    },
+    {
+      "id": "hn-50361268",
+      "story_id": "50361268",
+      "rank": 57,
+      "title": "Jelly Sheet",
+      "url": "https://mrdoob.github.io/codevember-2026/01/",
+      "points": 452,
+      "comments": 113,
+      "hn_url": "https://news.ycombinator.com/item?id=50361268"
+    },
+    {
+      "id": "hn-50363861",
+      "story_id": "50363861",
+      "rank": 60,
+      "title": "RTX 5090 Street Prices Top $9k as Nvidia GPU Costs Climb",
+      "url": "https://aroundprague.cz/en/news/us/rtx-5090-street-prices-top-9-000-as-nvidia-gpu-costs-climb",
+      "points": 52,
+      "comments": 77,
+      "hn_url": "https://news.ycombinator.com/item?id=50363861"
+    },
+    {
+      "id": "hn-50358352",
+      "story_id": "50358352",
+      "rank": 61,
+      "title": "Show HN: Uncracked City, detective game where you question LLM suspects that lie",
+      "url": "https://uncracked.city",
+      "points": 124,
+      "comments": 66,
+      "hn_url": "https://news.ycombinator.com/item?id=50358352"
+    },
+    {
+      "id": "hn-50367004",
+      "story_id": "50367004",
+      "rank": 62,
+      "title": "Letting users trust their own MCP clients, without opening a phishing hole",
+      "url": "https://streamvessel.com/blog/mcp-trusted-redirect-uris",
+      "points": 33,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50367004"
+    },
+    {
+      "id": "hn-50372303",
+      "story_id": "50372303",
+      "rank": 63,
+      "title": "The SBND collaboration releases first neutrino results",
+      "url": "https://news.fnal.gov/2026/10/the-sbnd-collaboration-releases-first-neutrino-results/",
+      "points": 6,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50372303"
+    },
+    {
+      "id": "hn-50371526",
+      "story_id": "50371526",
+      "rank": 64,
+      "title": "Bruno: The Git-native API client",
+      "url": "https://www.usebruno.com",
+      "points": 10,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50371526"
+    },
+    {
+      "id": "hn-50362466",
+      "story_id": "50362466",
+      "rank": 65,
+      "title": "The lost malloc()",
+      "url": "https://napcakes.nekoweb.org/posts/malloc/",
+      "points": 153,
+      "comments": 74,
+      "hn_url": "https://news.ycombinator.com/item?id=50362466"
+    },
+    {
+      "id": "hn-50369462",
+      "story_id": "50369462",
+      "rank": 66,
+      "title": "Benchfmt.rs: Bringing Go's benchmarking and benchstat workflow to Rust",
+      "url": "https://www.bwplotka.dev/2026/rust-microbenchmarks-benchstat/",
+      "points": 29,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50369462"
+    },
+    {
+      "id": "hn-50363968",
+      "story_id": "50363968",
+      "rank": 67,
+      "title": "Synaptics Appears to Use Legal Threats to Block Open-Source DisplayLink Driver",
+      "url": "https://www.phoronix.com/news/Synaptics-Blocks-Vino-Driver",
+      "points": 213,
+      "comments": 97,
+      "hn_url": "https://news.ycombinator.com/item?id=50363968"
+    },
+    {
+      "id": "hn-50373051",
+      "story_id": "50373051",
+      "rank": 71,
+      "title": "Postal Service Surveilled Protest Activities Online with Little Rules, Oversight",
+      "url": "https://www.eff.org/deeplinks/2026/11/postal-service-surveilled-protest-activities-online-little-rules-oversight",
+      "points": 25,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50373051"
+    },
+    {
+      "id": "hn-50365516",
+      "story_id": "50365516",
+      "rank": 72,
+      "title": "Mocktastic: A Meshtastic Node on Arduino",
+      "url": "https://github.com/Vapmuz/Mocktastic",
+      "points": 31,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50365516"
+    },
+    {
+      "id": "hn-50371427",
+      "story_id": "50371427",
+      "rank": 73,
+      "title": "Kernel.sh Hacked",
+      "url": "https://www.kernel.sh/blog/public-notice-of-security-incident-nov-4-2026",
+      "points": 12,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50371427"
+    },
+    {
+      "id": "hn-50358562",
+      "story_id": "50358562",
+      "rank": 75,
+      "title": "Safari introduces Adaptive Dark Mode in 27.3",
+      "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+      "points": 503,
+      "comments": 259,
+      "hn_url": "https://news.ycombinator.com/item?id=50358562"
+    },
+    {
+      "id": "hn-50361107",
+      "story_id": "50361107",
+      "rank": 76,
+      "title": "Arrows to arrows, categories to queries (2025)",
+      "url": "https://reasonablypolymorphic.com/blog/arrows-to-arrows/",
+      "points": 81,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50361107"
+    },
+    {
+      "id": "hn-50366575",
+      "story_id": "50366575",
+      "rank": 77,
+      "title": "Debian apt security update (man-in-the-middle)",
+      "url": "https://lists.debian.org/debian-security-announce/2026/msg00526.html?pow_referer=",
+      "points": 140,
+      "comments": 30,
+      "hn_url": "https://news.ycombinator.com/item?id=50366575"
+    },
+    {
+      "id": "hn-50371346",
+      "story_id": "50371346",
+      "rank": 78,
+      "title": "If you're on Replit Pro, you have until November 8 to opt out of arbitration",
+      "url": "https://readthediff.substack.com/p/replit-pro-arbitration-opt-out-november-8",
+      "points": 48,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50371346"
+    },
+    {
+      "id": "hn-50372660",
+      "story_id": "50372660",
+      "rank": 82,
+      "title": "Successful People (2013)",
+      "url": "https://blog.samaltman.com/successful-people",
+      "points": 20,
+      "comments": 17,
+      "hn_url": "https://news.ycombinator.com/item?id=50372660"
+    },
+    {
+      "id": "hn-50372759",
+      "story_id": "50372759",
+      "rank": 83,
+      "title": "Nvidia store pulls RTX 5080 following RTX 5090 removal, prices rise to 2.2X MSRP",
+      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-store-quietly-pulls-the-rtx-5080-following-rtx-5090-removal-street-prices-climb-to-2-2x-over-msrp",
+      "points": 23,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50372759"
+    },
+    {
+      "id": "hn-50342119",
+      "story_id": "50342119",
+      "rank": 84,
+      "title": "Writing seen in PHerc. 306B, for the first time in 2000 years",
+      "url": "https://scrollprize.substack.com/p/writing-seen-in-pherc-306b-for-the",
+      "points": 143,
+      "comments": 21,
+      "hn_url": "https://news.ycombinator.com/item?id=50342119"
+    },
+    {
+      "id": "hn-50366860",
+      "story_id": "50366860",
+      "rank": 85,
+      "title": "Adding Window Functions to a Spreadsheet",
+      "url": "https://www.getgrist.com/blog/running-totals-you-dont-have-to-chase/",
+      "points": 44,
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=50366860"
+    },
+    {
+      "id": "hn-50346755",
+      "story_id": "50346755",
+      "rank": 86,
+      "title": "Show HN: HackerTV – HN's most-recommended Youtube videos as 24/7 TV channels",
+      "url": "https://hackertv.org",
+      "points": 463,
+      "comments": 80,
+      "hn_url": "https://news.ycombinator.com/item?id=50346755"
+    },
+    {
+      "id": "hn-50361106",
+      "story_id": "50361106",
+      "rank": 87,
+      "title": "NetBSD 11.1",
+      "url": "https://netbsd.org/releases/formal-11/NetBSD-11.1.html",
+      "points": 50,
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=50361106"
+    },
+    {
+      "id": "hn-50373149",
+      "story_id": "50373149",
+      "rank": 88,
+      "title": "You'll need nerves of steel to work with AI agents",
+      "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/",
+      "points": 46,
+      "comments": 62,
+      "hn_url": "https://news.ycombinator.com/item?id=50373149"
+    },
+    {
+      "id": "hn-50338334",
+      "story_id": "50338334",
+      "rank": 89,
+      "title": "Curiosity Traps",
+      "url": "https://www.autodidacts.io/curiosity-traps/",
+      "points": 112,
+      "comments": 16,
+      "hn_url": "https://news.ycombinator.com/item?id=50338334"
+    },
+    {
+      "id": "hn-50373004",
+      "story_id": "50373004",
+      "rank": 90,
+      "title": "Vi Turns 50: The True History of vi",
+      "url": "https://lunduke.substack.com/p/the-true-history-of-vi",
+      "points": 16,
+      "comments": 8,
+      "hn_url": "https://news.ycombinator.com/item?id=50373004"
+    }
+  ],
+  "papers": [
+    {
+      "id": "arxiv-2611.06841",
+      "cat": "cs.AI",
+      "title": "ServerBench: How can your coding agents design specialized LLM serving systems?",
+      "abstract": "Large language model (LLM) coding agents develop software through experimentation, offering an opportunity to design the serving systems supporting their own operation. Effective serving requires coordinating implementation and operating decisions under session dependencies, latency constraints, and correctness requirements. We introduce ServerBench, a benchmark for agentic design of complete, specialized LLM serving systems. Agents experiment against a common objective, dollars per dollar: latency-qualified token value per dollar of GPU cost. Stateful replay preserves session dependencies, and independent verification checks the submitted system. Across 11 coding-agent models and three deployments, Claude Sonnet 5.5 achieves 2.97 dollars per dollar on Gemma E4B, $4.87\\times$ the vLLM reference; 22 of 33 runs yield verified systems, and 13 exceed the strongest baseline. Our analysis identifies three findings: high-value designs coordinate capacity improvements with load selection; agents interpret performance feedback through workload-relevant experiments; and reliable delivery requires verification of the execution paths introduced by optimization. Overall, ServerBench supports systematic study of how agents translate service objectives and feedback into effective, verified serving systems for given task specifications.",
+      "url": "http://arxiv.org/abs/2611.06841v1"
+    },
+    {
+      "id": "arxiv-2611.06259",
+      "cat": "cs.AI",
+      "title": "A Systematic Benchmark for Evaluating Multimodal Personalized Reasoning of Vision-Language Models",
+      "abstract": "People often make decisions by holistically reasoning over heterogeneous forms of personal information. In this paper, we study the relatively underexplored capability of multimodal personalized reasoning in multimodal large language models (MLLMs). To this end, we introduce \\texttt{MPRBench}, a novel and comprehensive benchmark specifically designed to evaluate personalized reasoning across a wide range of tasks and real-world challenges. \\texttt{MPRBench} consists of 12 sub-tasks and additionally supports interpretable analysis of representative error cases. Through extensive experiments, we find that current personalized MLLMs still struggle with personalized reasoning due to several key challenges, including inaccurate recognition of personalized concepts and sensitivity to irrelevant personal information. We hope that MPRBench will stimulate further research on personalized reasoning in MLLMs. Code and data are available at this https URL",
+      "url": "http://arxiv.org/abs/2611.06259v1"
+    },
+    {
+      "id": "arxiv-2611.05953",
+      "cat": "cs.AI",
+      "title": "Graph-Mediated Large Language Model Systems in the Agentic Era: Reasoning, Knowledge, Retrieval, Execution, and Coordination",
+      "abstract": "Graphs play an increasingly important role in large language model (LLM) systems, supporting structural reasoning, knowledge grounding, retrieval, and memory. As these systems evolve toward the agentic era, graphs also organize execution dependencies and multi-agent communication, linking intermediate observations and retained information to subsequent decisions. However, understanding their contribution requires distinguishing the function of each graph operation, the component responsible for its computation, and the subsequent use of its output. This survey introduces an operation-level role--locus taxonomy for reasoning, knowledge and evidence, retrieval and memory, execution, and coordination. We compare how graph observations and external computations guide decisions, how memory representations and updates support later tasks, and how dependencies constrain execution and information delivery. These comparisons distinguish improvements in local metrics from downstream task performance while retaining the conditions under which results were reported. We then organize benchmarks, comparison designs, process diagnostics, and system costs into an evaluation framework. Finally, we identify open challenges in adaptive computation and stopping, memory maintenance, and dependency-aware recovery. The survey provides a basis for assessing when graph mechanisms are useful and for evaluating their effects across components and stages.",
+      "url": "http://arxiv.org/abs/2611.05953v1"
+    },
+    {
+      "id": "arxiv-2611.05739",
+      "cat": "cs.AI",
+      "title": "PersonaCodeBench: Evaluating Coding Agents in Persona-driven Human-Interactive Sessions",
+      "abstract": "Coding agents must deliver correct software while respecting users' expertise, preferences, and working conditions. Existing benchmarks increasingly incorporate interaction, yet personalized requirement fulfillment remains underexplored. We introduce PersonaCodeBench, which turns user characteristics into verifiable obligations in persona-driven multi-turn coding sessions. Our persona pool spans roles, technical abilities, interaction preferences, and practical constraints, yielding task-grounded evolved requirements for implementation, permissions, testing, explanation, and delivery. At runtime, a controller governs user simulator responses and requirement disclosure, using online requirement evaluation to provide feedback and advance the interaction. Requirements emerge progressively, with their content, disclosure conditions, and acceptance criteria fixed before evaluation. A completion verifier and a personalization verifier separately assess native correctness and persona fulfillment. Joint pass requires both adherence to the declared budget and compliance with validity conditions. We evaluate all major frontier agents, establish a comprehensive leaderboard, and conduct detailed experimental analyses to validate effectiveness. PersonaCodeBench supports reproducible evaluation of coding agents' ability to meet explicit, personalized user expectations alongside coding objectives.",
+      "url": "http://arxiv.org/abs/2611.05739v1"
+    },
+    {
+      "id": "arxiv-2611.05512",
+      "cat": "cs.AI",
+      "title": "SlackBench: Benchmarking Agents on Collaborative Projects Grounded in Real Code Repositories",
+      "abstract": "AI Agents are becoming digital coworkers that can browse the web, write code, run experiments, and assist humans over extended horizons. Yet existing benchmarks fall short of real knowledge work: many rely on synthetic data or isolated tasks, missing the complex, multi-party dynamics of collaborative projects, where critical information is scattered across conversations, code, and evolving decisions. Even simple workplace questions may require locating relevant channels and direct messages, recovering context from long discussions, inspecting repository state, reconciling stale or conflicting evidence, and synthesizing across sources. We introduce SlackBench, a benchmark for evaluating agents on realistic research and engineering workflows that require joint reasoning over workplace communication and evolving repository state. Grounded in privacy-preserving reenactments of real academic research projects, SlackBench provides reproducible environments with realistic multi-party dialogue, evolving decisions, and corresponding code changes grounded in GitHub repositories and Google Docs. It contains 140 queries spanning heterogeneous-source agentic search, abstention on unanswerable or false-premise questions, goal-directed summarization, and circumstance inference over long conversations. These tasks are not reducible to static corpus question answering: agents must determine which conversations matter, traverse threads, inspect repository state, and synthesize evidence across communication and code artifacts. Across 33 frontier models and agent harnesses, the best system scores around 80% and most agents score below 66%, highlighting substantial headroom for improvement. SlackBench thus provides an extensible framework for evaluating agents in collaborative work environments. The SlackBench dataset is available at this https URL .",
+      "url": "http://arxiv.org/abs/2611.05512v1"
+    },
+    {
+      "id": "arxiv-2611.06868",
+      "cat": "cs.AI",
+      "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+      "abstract": "In this work, we evaluate a simple inference-time scaling approach based on \\textit{turn-level best-of-N sampling} (\\method) for large language model (LLM) agents on complex, long-horizon tasks. We instantiate this using a \\textit{generator-selector} framework with two LLMs; at each turn, a \\emph{generator} model generates $N$ candidate actions and a \\emph{selector} model selects one of them, which is then executed in the environment. This paper is closely related to the work of \\cite{zainullina2025guided} who used critic models for guided search at inference time. Different from their work, we evaluate if off-the-shelf, open-weight LLMs can be effective at comparing different candidate actions directly. Experiments on long-horizon terminal tasks show that \\method can lead to significant performance improvements, both in terms of accuracy (5--10\\%) and consistency across repeated attempts. Analysis of agent trajectories reveal a shift in agent behaviour towards desirable patterns such as reduction in number of attempts to solve the task, improved task instruction following, debugging and testing.",
+      "url": "http://arxiv.org/abs/2611.06868v1"
+    },
+    {
+      "id": "arxiv-2611.06858",
+      "cat": "cs.AI",
+      "title": "CompressionBench: How can your coding agents compress LLMs?",
+      "abstract": "Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage budget. We study whether coding agents can carry out this step autonomously. We formulate compression as a terminal task in which an agent receives a source checkpoint, storage limit, inference environment, and time budget, then constructs compressed weights and executable inference code. The agent controls its algorithm and experiments; perplexity feedback guides search, and independent verification checks the final model. Across six agents and six model--size settings, 29 of 36 submissions pass verification. Selecting the lowest-perplexity agent design per task yields an average 3.4% perplexity increase over BF16 and 77.33% downstream accuracy, compared with 79.56% for BF16. Recorded experiments reveal how agents achieve these outcomes and where improvement breaks down. Agents lower PPL in 21 of 24 revisions at nearly fixed storage; complete-model feedback reverses 17 of 79 prior local rankings; and generation and inference tests expose failures that likelihood alone misses. The results identify representation design, experimental judgment, and capability validation as central to agent-driven model compression, a measurable component of efficiency-oriented self-improvement.",
+      "url": "http://arxiv.org/abs/2611.06858v1"
+    },
+    {
+      "id": "arxiv-2611.01742",
+      "cat": "cs.MA",
+      "title": "From Single-Agent Self-Discovery to Multi-Agent Adaptation: Scaling Laws of Partner Feedback and Convention Rigidity in Meta Reinforcement Learning Algorithms",
+      "abstract": "A key milestone toward Recursive Self-Improvement (RSI) is replacing hand-crafted optimizers with meta-learned update rules (such as Disco103 and OPEN) that discover how agents learn. Yet when a self-discovered RL model trains with adapting teammates, does co-evolution sustain capability gains or trap agents in brittle conventions? Across 1,800+ runs in continuous collective robotics (VMAS) and discrete coordination (Overcooked), we establish five laws of multi-agent adaptation. First, four-cell counterfactual partner swaps expose an evaluation illusion: apparent team progress often masks focal regression (+1.066 team gain concealing -0.119 focal loss) and inflates transfer by +0.649 to +1.210. Second, a 288-run physical-coupling sweep ($\\alpha \\in [0, 1.5]$) reveals a linear scaling law ($\\beta = +0.255$, $p = 0.000488$, Spearman $\\rho = 1.0$): live reciprocal feedback keeps Disco103 invariant (AUC 0.297--0.322), whereas severing feedback triggers a monotonic collapse (-0.172 to -0.490), with OPEN establishing a sensitivity spectrum (Disco103 > OPEN > MAPPO). Third, extending navigation training eightfold (1.05M steps) enables Disco103 to overtake MAPPO (+0.087 team return, +0.133 bank gain), while decoupled training boosts cross-partner completion by +10.16% (56.25% vs. 46.09%). Fourth, in Overcooked, MAPPO's self-play conventions induce a 28.13% cross-partner collision rate, whereas Disco103 cuts collisions to 12.77% and achieves 3.33x higher bank return (9.96 vs. 2.99; net gain +6.43), further improved by decoupled meta-adaptation (+1.39 with scripted partners). Finally, perturbation pulses ($p=0.00098$), auxiliary entropy diagnostics (8.485 nats), and 48 multi-lifetime meta-evolved rules ($L_2 \\in [2.11, 4.91]$) trace these dynamics to partner-gradient blindness and auxiliary drift, informing multi-agent self-discoverd algorithms.",
+      "url": "http://arxiv.org/abs/2611.01742v1"
+    },
+    {
+      "id": "arxiv-2611.03231",
+      "cat": "cs.SE/cs.MA",
+      "title": "Specification-Driven Governance for Fairness-by-Design in Agentic Software Engineering: How Far Can We Go?",
+      "abstract": "Agentic AI is shifting developers' responsibilities from software implementation to software governance. While this paradigm improves productivity, it also raises challenges in ensuring that autonomous coding agents preserve developers' intentions. Among these, operationalizing fairness-by-design is largely unexplored, as existing approaches provide limited support for representing and propagating fairness requirements throughout agentic development workflows. In this paper, we investigate whether specification-driven development can operationalize fairness-by-design in the agentic development of machine learning systems. We study three coding agents on four machine learning applications, using four prompts that progressively operationalize fairness through nine Fairness Specification Elements, and analyze the traceability of fairness requirements across the generated artifacts, the fairness-accuracy trade-off of the resulting models, and the agents' design decisions and rationales. The results show that when fairness is operationalized, agents capture almost all fairness requirements in the specification (97.22%) and preserve most of them in the code (82.41%). However, the resulting models are not significantly fairer, as agents implement fairness as a post-hoc audit that neither shapes training nor prevents model delivery. Specifications thus make fairness traceable, but not enforceable, calling for fairness specifications that state what agents should do when requirements are not met, and for workflows that make the fairness decisions agents delegate to developers explicit.",
+      "url": "https://arxiv.org/abs/2611.03231v1",
+      "published": "2026-11-02"
+    },
+    {
+      "id": "arxiv-2611.02784",
+      "cat": "cs.SE/cs.MA",
+      "title": "HLSClaw: Bringing Vibe Coding to High-Level Synthesis through Skill-Based Agentic Harness",
+      "abstract": "LLM agents are rapidly shifting software development toward intent-driven \\emph{vibe coding}, yet their effectiveness drops sharply in high-level synthesis (HLS), where code optimization must jointly consider design structure, directive search, and downstream hardware constraints. Existing HLS optimization approaches, including both heuristic-based methods and recent LLM-assisted pipelines, typically operate at fixed abstraction levels or in weakly coupled stages, limiting their ability to leverage the strong interplay between source code restructuring and directive search outcomes. Our key insight is that HLS optimization can be reframed from a fixed, hardwired transformation pipeline into a skill-based agentic control problem: an LLM agent equipped with modular, executable optimization skills and a feedback-driven orchestrator can autonomously navigate the coupled space of code restructuring and directive search. This motivates the design of HLSClaw, the first HLS-specific, skill-based agentic harness for holistic HLS optimization. On real-world HLS benchmarks, HLSClaw achieves a 39.12x geometric-mean latency speedup, outperforming the compiler baseline ScaleHLS by 1.98x, and surpassing the commercial coding agents Claude Code and Codex by 1.86x and 1.70x, respectively, while maintaining strong timing robustness.",
+      "url": "https://arxiv.org/abs/2611.02784v1",
+      "published": "2026-11-02"
+    }
+  ],
+  "topic": [
+    {
+      "id": "kg-arxiv-2611.06481v1",
+      "title": "ArcRAG: Agentic Compositional Retrieval over Knowledge Graphs",
+      "abstract": "Graph-based retrieval-augmented generation (GraphRAG) answers questions by retrieving over a knowledge graph built from a corpus. Yet retrieval strategies are designed around the structure their own construction pipeline produces, and whether they survive a change of construction is rarely tested. We study this cross-construction portability: whether one retrieval procedure, with no construction-specific schema, relation names, or retuning, stays effective when the graph is built differently. We introduce ArcRAG, which induces a query-local graph interface at inference time (the node labels, relation descriptors, and property keys reachable from the entities a question names), plans multi-hop traversals against it, and executes and repairs them as Cypher. We build each of the MuSiQue, HotpotQA, and TriviaQA corpora as a schema-guided graph (typed nodes, a closed relation set, source provenance) and as an open-information-extraction graph (untyped nodes, free-text relations), with the retriever's configuration fixed across them. We compare against a construction-agnostic Direct-Cypher agent, ablate each stage across retry and pass budgets on both graph families, and compare with results reported for prior GraphRAG systems, most of which design retrieval together with their own graph construction. Across the two constructions, we find that retrieval need not be co-designed with the graph: query-time interface induction keeps a construction-agnostic retriever effective when the construction changes, although construction still shapes absolute accuracy.",
+      "url": "https://arxiv.org/abs/2611.06481v1",
+      "published": "2026-11-04",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.04809v1",
+      "title": "RAHC: Rule-Augmented Hyper-Relational Knowledge Graph Completion for Materials Synthesis",
+      "abstract": "Scientific discovery depends on reusing experimental knowledge, yet records scattered across papers and repositories are often incomplete. In materials synthesis, recovering missing conditions requires reasoning about the target material and the observed context of a specific experiment. Hyper-relational knowledge graphs (HKGs) represent this context through qualifiers, but existing completion methods leave domain knowledge and experimental regularities implicit. We propose RAHC, a rule-augmented HKG framework for single-slot and joint multi-slot synthesis-condition completion. RAHC builds a traceable rule catalog from training records and retrieved literature, retrieves rules for each query-candidate pair, and separately encodes graph structure and rule evidence. Hard rules constrain candidate validity, while soft rules guide ranking. RAHC-G aggregates rules using global reliability; RAHC-Q additionally learns query-specific relevance. Gated fusion combines structural and rule representations, while tuple-conclusion rules provide cross-condition evidence for joint completion. Experiments on five materials-synthesis datasets show improvements in single-slot and joint completion under Semi-inductive and Open-Answer Inductive settings, with Semi-inductive MRR gains of up to 15.6% over MAYPL. RAHC also improves performance on the entity-disjoint ILPC'22 Small benchmark, supporting transfer to fully inductive KG completion. These results support experimental condition selection, synthesis planning, and the reuse of scientific knowledge.",
+      "url": "https://arxiv.org/abs/2611.04809v1",
+      "published": "2026-11-03",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.06682v1",
+      "title": "SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents",
+      "abstract": "Tool-using large language model (LLM) agents translate model outputs into consequential actions, turning indirect prompt injection into an execution-security problem. Existing defenses constrain tool calls, trajectories, or information flows, but often leave action semantics, state dependencies, and evidence relations implicit, limiting generalization across heterogeneous tools and complicating safe updates. We present \\ours{}, a dynamic ontology-guided governance framework. \\ours{} grounds heterogeneous calls in a shared semantic representation and combines an executable ontology with episode-level task state to derive deterministic ready, waiting, and forbidden decisions. A waiting decision identifies an unmet but recoverable obligation, enabling bounded replanning without expanding the agent's authorization boundary. \\ours{} evolves its ontology offline from verified training executions. An offline LLM proposes instance-independent action--state axioms, which are accepted only if they address ontology errors exposed by training failures, preserve logical consistency and protected entailments, and pass held-out validation before the ontology is frozen. We evaluate \\ours{} on AgentDojo, ASB, and AgentDyn under benign and indirect prompt-injection settings. \\ours{} achieves a 0\\% attack success rate (ASR) across all three benchmarks while improving task utility under attack compared with existing baselines. These results show that explicit semantic governance can strengthen execution security without indiscriminate blocking.",
+      "url": "https://arxiv.org/abs/2611.06682v1",
+      "published": "2026-11-04",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.05877v1",
+      "title": "When Does Better Confidence Improve a Knowledge-Graph Audit?",
+      "abstract": "Confidence estimates guide human review in LLM-built knowledge graphs, but better error prediction can yield little improvement in an audit. We study this gap through repairability, selection headroom and label validity. Modelling non-adaptive auditing as budgeted covering, we characterise the minimal decision-relevant error statistics and bound the regret of scalar-preserving first-order planning by a structural mass $Δ^{\\mathrm{cl}}$. We simulate ideal repair against benchmark-aligned labels for five extraction configurations and two cross-document graphs on Re-DocRED, followed by frozen confirmation on test and replication on 500 hash-selected training documents. On the held-out cross-document graphs, an error-rate $\\times$ fan-out queue leaves 3.98-4.74 percentage points more errors than a joint model with the same actions. By comparison, opening shared actions for that joint planner reduces residual errors by 0.89-1.43 points relative to its own fact-only plans, in point estimates. Equivalence between joint and independent-block models remains inconclusive. Generic LLM verification improves three of four model-budget configurations on each held-out set. LLM adjudication identifies possible benchmark omissions.",
+      "url": "https://arxiv.org/abs/2611.05877v1",
+      "published": "2026-11-04",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.05753v1",
+      "title": "Toward a Compositional Knowledge Architecture for a Shared Organizational Cortex",
+      "abstract": "Organizations accumulate evidence in conversations, documents, decisions and relationships, but they act on interpretations: judgements assembled from several observations, resting on assumptions, and revised as circumstances change. Existing retrieval, knowledge graphs and agent memory keep the records and lose the interpretation. We propose a four-layer architecture, Signals, Domains, Claims and Dimensions, in which interpretations persist with their justifications and standing, a truth-maintenance network revises that standing as evidence changes, and validated, versioned Dimensions position interpretations on named axes. We call the result a shared organizational cortex. In a registered retrieval experiment, the Dimension term gains 0.028 nDCG@10 (p = 0.002). In system-level comparisons, the full retrieval configuration improves nDCG@10 by 0.081 over Signals-only and 0.053 over graph-augmented Signals-only retrieval (both reported p < 0.001). The architecture gives organizations a persistent, revisable basis for shared judgement.",
+      "url": "https://arxiv.org/abs/2611.05753v1",
+      "published": "2026-11-03",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.03080v1",
+      "title": "VL-Dedup: Graded Multimodal Entity Resolution for Image-Text Data Deduplication",
+      "abstract": "Image-text corpora contain copies of one image, captions that describe one image in different ways, captions reused for different images, and captions that do not match their images. Each case calls for a different curation action. Deduplication and multimodal entity resolution (ER) only decide whether records are the same, and they are evaluated on labeled pairs. Yet pair scores do not tell which records end up in the same cluster or which useful captions get deleted. We therefore formulate image-text deduplication as graded multimodal ER, which decides visual identity, caption handling, and mismatches for each pair, and we evaluate it at three levels: pairs, clusters, and the retained set. Our method, VL-Dedup, groups records of the same visual entity into clusters and caps the size of each cluster. Within each cluster, a vision-language model (VLM) and CLIPScore decide which captions to keep and which to flag. We also build VL-DedupBench, with 50,000 COCO and SOP records and 66,788 labeled pairs. On it, a classifier that selects no false edge among the labeled pairs still joins millions of record pairs from different entities. Spending VLM calls on the pairs inside clusters, rather than on pairs with uncertain scores, gives better caption decisions from the same model. Even when almost all clusters are correct, keeping one record per cluster loses facts in many deletions, while the deletions of VL-Dedup lose much less information.",
+      "url": "https://arxiv.org/abs/2611.03080v1",
+      "published": "2026-11-02",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.06628v1",
+      "title": "From Certified Pairs to a Certified Hub: Reasoner-Checked Crosswalks for the Information Exchange Standard",
+      "abstract": "A national digital twin was conceived as an ecosystem of twins connected through mappings to a common foundation, but the roadmap that promises to confirm those mappings are valid never says what valid means. We give the test a precise form, coherence and conservativity of the merged ontology, borrowed from logic-based alignment repair, and apply it to the Information Exchange Standard (IES), first pair by pair and then to whole hubs. Crosswalks from IES into thirteen ontologies across seven sector groups, anchored on the building ontologies BOT, Brick, and SAREF4BLDG, pass through separate stages of matching, human review, certification of each SKOS correspondence against the two class hierarchies, and reasoning with HermiT. Pair by pair, the stages catch different failures: certification alone removed all 526 conservativity violations of the raw crosswalks, review alone left 73, and together they made eleven of twelve overlapping pairs coherent and conservative. Pairwise certification does not compose. Merging the three certified building crosswalks into one hub made five Brick classes unsatisfiable, through a homonym between the IES and Brick notions of a floor that only BOT's disjointness axioms expose; rejecting that one row gave a coherent and conservative hub that entails 290 cross-ontology links nobody wrote down. The core hub is inconsistent before any crosswalk is added, because two published standards, the Open Energy Ontology and BFO 2020, contradict each other; with either one left out it is coherent and conservative. A hub, not a pair, is the unit an ecosystem of twins has to certify.",
+      "url": "https://arxiv.org/abs/2611.06628v1",
+      "published": "2026-11-04",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-hn-50348962",
+      "story_id": "50348962",
+      "title": "Nvidia – open-source auto-ontology",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "hn_url": "https://news.ycombinator.com/item?id=50348962",
+      "points": 288,
+      "comments": 138,
+      "created": "2026-11-03",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50371948",
+      "story_id": "50371948",
+      "title": "Nvidia Auto Ontology lidera GitHub Trending e amplia propostas",
+      "url": "https://rendernet.com.br/35/nvidia-auto-ontology-github-trending-atualizacoes/",
+      "hn_url": "https://news.ycombinator.com/item?id=50371948",
+      "points": 1,
+      "comments": 0,
+      "created": "2026-11-04",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50363667",
+      "story_id": "50363667",
+      "title": "Show HN: Alternative to Nvidia Auto-Ontology",
+      "url": "https://github.com/GetCassis/ontology-skills",
+      "hn_url": "https://news.ycombinator.com/item?id=50363667",
+      "points": 1,
+      "comments": 0,
+      "created": "2026-11-04",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50361917",
+      "story_id": "50361917",
+      "title": "Nvidia Auto Ontology, but a Graph",
+      "url": "https://nidra.computer/",
+      "hn_url": "https://news.ycombinator.com/item?id=50361917",
+      "points": 1,
+      "comments": 1,
+      "created": "2026-11-04",
+      "kind": "story"
+    }
+  ]
+}

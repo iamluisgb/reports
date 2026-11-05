@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Thursday the fifth of November, twenty twenty-six. Lead story: OpenAI has shipped Images 2.6, a new image model, hours old and near the top of Hacker News. Details are thin beyond the announcement page — no benchmarks, no comparisons, nothing independent yet.
+
+[HOST_B] Treat the announcement as a claim, not a result. The image-model leaderboard has been moving quickly, and third-party evals in the next day or two will settle whether 2.6 actually moves it. Until then there is nothing to integrate against.
+
+[HOST_A] Moonshot has released full weights for Kimi K3.1 Pro on Hugging Face, following K3's open-weight release. Directly usable for self-hosting and fine-tuning.
+
+[HOST_B] This matters for the audit story. When you can inspect the weights and the harness, trust becomes something you engineer rather than a vendor claim. If you are fine-tuning for production, K3.1 Pro is the day's most actionable release.
+
+[HOST_A] The Register reports a six point three billion dollar Binance heist traced to a fabricated job interview — a North Korean operation that used the interview to reach Binance systems. The largest single crypto theft on record.
+
+[HOST_B] Note the vector: not a zero-day, a hiring process. The same theme runs through the day's most-discussed piece — an IEEE Spectrum argument at one thousand one hundred and forty-four points that A I is forcing us to pay off forty years of technical debt, with legacy patterns like P H P to shell vulnerabilities becoming the attack surface that agents amplify. OpenAI's security team, separately, reports eliminating over a thousand privilege-escalation paths in its own infrastructure. Agents amplify whatever surface you hand them.
+
+[HOST_A] An active GitHub incident is disrupting pull requests, git operations and issues — the core developer surface. Check status before trusting C I or merges today.
+
+[HOST_B] Treat C I as untrusted until it closes, and watch the root-cause report. The question that matters is whether history was affected — a merge-path outage is different in kind from a latency blip.
+
+[HOST_A] The papers. ServerBench tests whether coding agents can design the L L M serving systems they themselves run on, scored in dollars per dollar — latency-qualified token value per dollar of G P U cost. Claude Sonnet five point five reaches two point nine seven dollars per dollar on Gemma E four B, four point eight seven times the v L L M reference. Twenty-two of thirty-three runs produce verified systems, and thirteen beat the strongest baseline.
+
+[HOST_B] The thesis across today's benchmark papers is that static task suites are done. The interesting question is whether agents survive contact with real environments — and ServerBench and CompressionBench close the loop by asking agents to build the infrastructure agents run on. Verified-run rates of twenty-two out of thirty-three say this is no longer speculative.
+
+[HOST_A] CompressionBench frames compression as a terminal agentic task — given a checkpoint, a storage limit and a time budget, produce compressed weights and executable inference code. Twenty-nine of thirty-six submissions pass independent verification; the best designs land at three point four percent average perplexity increase over B F sixteen and seventy-seven point three three percent downstream accuracy. Also: SlackBench evaluates agents on privacy-preserving reenactments of real projects, reasoning over scattered channels and stale repository state. And turn-level best-of-N sampling — a selector model picking among N candidate actions each turn — yields five to ten percent accuracy gains on long-horizon terminal tasks with off-the-shelf open-weight models, no fine-tuning.
+
+[HOST_B] Turn-level sampling is the cheap one to steal — an inference-time lever you can wire up this week. SlackBench targets the gap between toy task completion and multi-party reality. The pattern across all three: harness design, not raw model quality, decides performance.
+
+[HOST_A] Sweep. Tencent announced Hy four, the next Hunyuan model — no benchmarks or weights yet. Gemini trains on chat history with no opt-out, including paid tiers — stop pasting proprietary code into it. DoorDash says external A I agents have driven only hundreds of orders. Nvidia open-sourced an auto-ontology tool at two hundred and eighty-eight points on GitHub. R T X Spark encrypted firmware cuts Linux inference to thirty-five percent of expected speed. A M D's seventeen billion dollar Q four guidance would outsell Intel for the first time. Go details a ground-up redesign of encoding/json. Mbed T L S maintenance is in question — low visibility, high blast radius. Safari twenty-seven point three ships Adaptive Dark Mode. Kitty hits zero point five zero. And the Xbox three sixty hypervisor series returns.
+
+[HOST_B] Two threads to hold. Graphs and ontologies are becoming the control plane for agents — expect the semantic layer to arrive as a governance requirement before it arrives as a performance win. And set agentic capability compounding in the back office against DoorDash's hundreds of orders: consumer agent commerce is not where this is landing first. The full written report has the links, the papers and the watch list — read it. Back tomorrow.

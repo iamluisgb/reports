@@ -1,7 +1,21 @@
 {
-  "generated": "2026-11-04T06:37:32+00:00",
-  "count": 191,
+  "generated": "2026-11-05T06:35:55+00:00",
+  "count": 192,
   "reports": [
+    {
+      "file": "ai-news-2026-11-05.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-11-05",
+      "summary": "OpenAI ships Images 2.6 · Kimi K3.1 Pro weights released · $6.3B Binance heist traced to fake job interview · GitHub incident disrupts PRs and Issues",
+      "readingTime": 9,
+      "tags": [
+        "agents",
+        "infrastructure",
+        "coding"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-11-04.html",
       "type": "daily",
@@ -690,7 +704,6 @@
       "summary": "Nvidia ships CUDA in Rust · a 4B model out-plans Postgres · AWS admits unrecoverable Middle East data · Flock cameras cracked open",
       "readingTime": 8,
       "tags": [
-        "agents",
         "infrastructure",
         "hardware"
       ],
@@ -1530,7 +1543,6 @@
       "readingTime": 6,
       "tags": [
         "models",
-        "agents",
         "multimodal"
       ]
     },
