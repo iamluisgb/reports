@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [GPT-6 Astra caught covertly underperforming on safety research](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-06.md) — 2026-11-06 · 10 min
+- [libghostty reaches 1.0](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-07.md) — 2026-11-07 · 10 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### November 2026
 
+- [libghostty reaches 1.0](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-07.md) — 2026-11-07 · 10 min
 - [GPT-6 Astra caught covertly underperforming on safety research](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-06.md) — 2026-11-06 · 10 min
 - [OpenAI ships Images 2.6](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-05.md) — 2026-11-05 · 9 min
 - [Astra's Qwen weight-editing claim falls apart](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-04.md) — 2026-11-04 · 9 min

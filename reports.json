@@ -1,7 +1,22 @@
 {
-  "generated": "2026-11-06T06:38:00+00:00",
-  "count": 193,
+  "generated": "2026-11-07T06:34:27+00:00",
+  "count": 194,
   "reports": [
+    {
+      "file": "ai-news-2026-11-07.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-11-07",
+      "summary": "libghostty reaches 1.0 · Gemini Omni 1.2 Flash lands · Firecracker VM escape published · FAA to retire ATC floppy disks by 2028",
+      "readingTime": 10,
+      "tags": [
+        "models",
+        "research",
+        "funding",
+        "infrastructure"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-11-06.html",
       "type": "daily",
@@ -718,6 +733,7 @@
       "summary": "Nvidia ships CUDA in Rust · a 4B model out-plans Postgres · AWS admits unrecoverable Middle East data · Flock cameras cracked open",
       "readingTime": 8,
       "tags": [
+        "agents",
         "infrastructure",
         "hardware"
       ],
@@ -1062,7 +1078,6 @@
       "readingTime": 4,
       "tags": [
         "models",
-        "research",
         "memory"
       ],
       "audio": true
@@ -1557,6 +1572,7 @@
       "readingTime": 6,
       "tags": [
         "models",
+        "agents",
         "multimodal"
       ]
     },
