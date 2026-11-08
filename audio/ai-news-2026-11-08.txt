@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Sunday the eighth of November, twenty twenty-six. Lead story: Claude Code's "don't ask again" button has leaked credentials into one thousand one hundred and twenty-two public GitHub files. Apiiro did the counting. The failure mode is simple — a developer approves the agent's permission prompt once, the agent then writes secrets into files, and the blanket approval pushes them straight to a public repository.
+
+[HOST_B] This is the permission model failing at the exact point it was meant to help. One approval becomes standing consent for everything after it, including commits no human reviewed. The number is a snapshot, not a ceiling — blanket approvals are still pushing secrets out today. Watch whether the tally grows, and whether notified repos actually rotate keys. A second sample with a flat count means the failure mode is understood; a rising one means it isn't.
+
+[HOST_A] Microsoft Research is winding down its AI Frontiers group. The news broke via an inside account, now two hundred and sixty comments deep on Hacker News. Frontiers was one of the few industrial labs publishing open, long-horizon AI work.
+
+[HOST_B] One closure is a decision; two would be a trend. The uncomfortable read is that the supply side of careful work is shrinking while demand for it rises — the people who would catch benchmark inflation or document agent behaviour are being reassigned to product. Watch whether staff resurface elsewhere and whether other industrial labs make similar cuts before the year is out.
+
+[HOST_A] Anthropic has published a decomposition of agent memory — what to store, how to consolidate across sessions, and how retrieval feeds back into behaviour. It's a reference architecture, not a product announcement.
+
+[HOST_B] This is the boring documentation that makes stateful agents auditable rather than folkloric. Most teams are inventing memory from first principles and getting the consolidation step wrong. If you're building anything with state, read it as a checklist and disagree with it on the record — that's how a reference becomes standard.
+
+[HOST_A] MaxxBench re-ran published agent benchmark numbers under controlled conditions and a headline Deep S W E result did not reproduce. The discussion sits at two hundred and thirteen comments.
+
+[HOST_B] Benchmark integrity is the open wound of this field. Numbers get published faster than anyone checks them, and the correction arrives after adoption — same shape as the credential leak, different layer. Watch for a response from the original authors. Silence would say plenty. And watch whether controlled re-runs become standard practice before numbers get cited, which is the only fix that matters.
+
+[HOST_A] One paper worth your time: value-oriented policy distillation for wind farm power control. Wind farms can cut imbalance costs by adjusting setpoints against a settlement price the transmission system operator publishes only after the fact. Reinforcement learning solves it, but can't be deployed on real turbines without an auditable policy — so the authors distil the R L controller into an explainable boosting machine, a generalized additive model a human can inspect term by term.
+
+[HOST_B] Note what they bought: they paid a performance tax specifically to purchase inspectability. That's the through-line of the week in miniature — deployability outrunning accountability everywhere else, and here someone deliberately trading capability back for audit. An operator has to sign off at price-time; a policy nobody can read is worthless regardless of its benchmark score.
+
+[HOST_A] In the rest of AI: a playable probe of Apple's on-device personal knowledge graph shows an undocumented classifier inferring which of your contacts count as family — six hundred and seventy-two points and no documentation of the inference. A developer documents switching daily coding work from Claude Code to Pi. And Day A I is another vendor selling a context graph as the control plane for go-to-market agents.
+
+[HOST_B] The semantic layer keeps being reinvented under new names — that's now three separate convergences this month. And Apple's classifier is the accountability problem again, this time on your phone: an inference that decides who your family is, shipped with no way to inspect or contest it.
+
+[HOST_A] Quick sweep. Scott Helme has identified fifteen thousand, five hundred and seventy-nine infected websites and no reliable way to tell most owners. Discord's native Windows rewrite uses seventy percent less memory than Electron with two accounts signed in. Asahi Linux ships progress report seven point three. GitHub's redesigned pull request overview is in public preview. A ten-dollar Qualcomm modem stick runs a full homelab; Coldframe is a honeypot posing as a supermarket fridge controller; a repo argues Blender's interface toolkit beats G P U I on speed. Need for Speed Underground 2 is playable in the browser, the Guardian documents Apple's autocorrect grey list, and someone remembers Turbo Pascal 7 fondly.
+
+[HOST_B] The full written report has every link, the papers in detail, and the watch list — including which notification route Helme lands on and whether the pull request redesign survives to general availability. Read it before Monday. That's the briefing.

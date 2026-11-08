@@ -1,0 +1,837 @@
+{
+  "day": "2026-11-08",
+  "weekday": "Sunday",
+  "collected_at": "2026-11-08T06:31:35+00:00",
+  "stories": [
+    {
+      "id": "hn-50410107",
+      "story_id": "50410107",
+      "rank": 1,
+      "title": "Goodbye Claude, Hello Pi",
+      "url": "https://caleb.software/posts/claude-to-pi.html",
+      "points": 114,
+      "comments": 61,
+      "hn_url": "https://news.ycombinator.com/item?id=50410107"
+    },
+    {
+      "id": "hn-50406670",
+      "story_id": "50406670",
+      "rank": 2,
+      "title": "What I run on my $10 USD OpenStick homelab",
+      "url": "https://blog.bosscher.ch/posts/openstick/",
+      "points": 492,
+      "comments": 99,
+      "hn_url": "https://news.ycombinator.com/item?id=50406670"
+    },
+    {
+      "id": "hn-50407882",
+      "story_id": "50407882",
+      "rank": 3,
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "points": 310,
+      "comments": 213,
+      "hn_url": "https://news.ycombinator.com/item?id=50407882"
+    },
+    {
+      "id": "hn-50408713",
+      "story_id": "50408713",
+      "rank": 4,
+      "title": "Making any integer with four 2s (2025)",
+      "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
+      "points": 105,
+      "comments": 26,
+      "hn_url": "https://news.ycombinator.com/item?id=50408713"
+    },
+    {
+      "id": "hn-50409855",
+      "story_id": "50409855",
+      "rank": 5,
+      "title": "ZapFast: A fast, native WhatsApp client in Rust and egui",
+      "url": "https://github.com/crmne/zapfast",
+      "points": 42,
+      "comments": 17,
+      "hn_url": "https://news.ycombinator.com/item?id=50409855"
+    },
+    {
+      "id": "hn-50403052",
+      "story_id": "50403052",
+      "rank": 6,
+      "title": "Need for Speed Underground 2 online in the browser",
+      "url": "https://nfsu2.xyz/",
+      "points": 904,
+      "comments": 242,
+      "hn_url": "https://news.ycombinator.com/item?id=50403052"
+    },
+    {
+      "id": "hn-50410359",
+      "story_id": "50410359",
+      "rank": 7,
+      "title": "Kirlian Photography: Building Your Own Equipment",
+      "url": "https://imagesco.com/articles/kirlian/kirlian-photography.html",
+      "points": 13,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50410359"
+    },
+    {
+      "id": "hn-50377661",
+      "story_id": "50377661",
+      "rank": 8,
+      "title": "Uranium cubes reveal why the German nuclear project failed",
+      "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
+      "points": 106,
+      "comments": 69,
+      "hn_url": "https://news.ycombinator.com/item?id=50377661"
+    },
+    {
+      "id": "hn-50406222",
+      "story_id": "50406222",
+      "rank": 9,
+      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+      "points": 264,
+      "comments": 74,
+      "hn_url": "https://news.ycombinator.com/item?id=50406222"
+    },
+    {
+      "id": "hn-50409856",
+      "story_id": "50409856",
+      "rank": 10,
+      "title": "Consumer brain wave headsets threaten privacy",
+      "url": "https://www.science.org/content/article/wearable-device-makers-are-harvesting-brain-data-train-ai-without-telling-users?referrer=https%3A%2F%2Fwww.google.com%2F",
+      "points": 16,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50409856"
+    },
+    {
+      "id": "hn-50403097",
+      "story_id": "50403097",
+      "rank": 11,
+      "title": "Every Mac comes with an (undocumented) family member classifier",
+      "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+      "points": 672,
+      "comments": 372,
+      "hn_url": "https://news.ycombinator.com/item?id=50403097"
+    },
+    {
+      "id": "hn-50406292",
+      "story_id": "50406292",
+      "rank": 12,
+      "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+      "url": "https://github.com/hedgerow-dev/coldframe",
+      "points": 213,
+      "comments": 49,
+      "hn_url": "https://news.ycombinator.com/item?id=50406292"
+    },
+    {
+      "id": "hn-50351954",
+      "story_id": "50351954",
+      "rank": 13,
+      "title": "Amsterdam School",
+      "url": "https://architecture-history.org/schools/AMSTERDAM%20SCHOOL.html",
+      "points": 18,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50351954"
+    },
+    {
+      "id": "hn-50403507",
+      "story_id": "50403507",
+      "rank": 14,
+      "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
+      "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
+      "points": 280,
+      "comments": 250,
+      "hn_url": "https://news.ycombinator.com/item?id=50403507"
+    },
+    {
+      "id": "hn-50408961",
+      "story_id": "50408961",
+      "rank": 15,
+      "title": "Commodore PET – The Worlds First Personal Computer",
+      "url": "https://www.commodore.ca/commodore-products/commodore-pet-the-worlds-first-personal-computer/",
+      "points": 43,
+      "comments": 15,
+      "hn_url": "https://news.ycombinator.com/item?id=50408961"
+    },
+    {
+      "id": "hn-50408931",
+      "story_id": "50408931",
+      "rank": 16,
+      "title": "GitHub New pull request overview page in public preview",
+      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+      "points": 109,
+      "comments": 79,
+      "hn_url": "https://news.ycombinator.com/item?id=50408931"
+    },
+    {
+      "id": "hn-50406563",
+      "story_id": "50406563",
+      "rank": 17,
+      "title": "The end of Microsoft Research's AI Frontiers group",
+      "url": "https://hunch.net/?p=13764006",
+      "points": 433,
+      "comments": 260,
+      "hn_url": "https://news.ycombinator.com/item?id=50406563"
+    },
+    {
+      "id": "hn-50406111",
+      "story_id": "50406111",
+      "rank": 18,
+      "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+      "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
+      "points": 425,
+      "comments": 280,
+      "hn_url": "https://news.ycombinator.com/item?id=50406111"
+    },
+    {
+      "id": "hn-50358337",
+      "story_id": "50358337",
+      "rank": 19,
+      "title": "Turning every radio into a radar",
+      "url": "https://tiaminetworks.com/turning-every-radio-into-a-radar/",
+      "points": 52,
+      "comments": 12,
+      "hn_url": "https://news.ycombinator.com/item?id=50358337"
+    },
+    {
+      "id": "hn-50404599",
+      "story_id": "50404599",
+      "rank": 20,
+      "title": "The $8 Linux Computer (2022)",
+      "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
+      "points": 216,
+      "comments": 87,
+      "hn_url": "https://news.ycombinator.com/item?id=50404599"
+    },
+    {
+      "id": "hn-50406319",
+      "story_id": "50406319",
+      "rank": 21,
+      "title": "Five memorable books about programming (2008)",
+      "url": "https://prog21.dadgum.com/19.html",
+      "points": 105,
+      "comments": 65,
+      "hn_url": "https://news.ycombinator.com/item?id=50406319"
+    },
+    {
+      "id": "hn-50406502",
+      "story_id": "50406502",
+      "rank": 22,
+      "title": "GeoWorks, Microsoft Windows' Upstart '90s Competitor (2016)",
+      "url": "https://www.atlasobscura.com/articles/the-history-of-geoworks-microsoft-windows-upstart-90s-competitor",
+      "points": 54,
+      "comments": 20,
+      "hn_url": "https://news.ycombinator.com/item?id=50406502"
+    },
+    {
+      "id": "hn-50401867",
+      "story_id": "50401867",
+      "rank": 23,
+      "title": "Asahi Linux Progress Linux 7.3",
+      "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
+      "points": 354,
+      "comments": 302,
+      "hn_url": "https://news.ycombinator.com/item?id=50401867"
+    },
+    {
+      "id": "hn-50408750",
+      "story_id": "50408750",
+      "rank": 24,
+      "title": "IRA Velinsky – Commodore's Industrial Designer",
+      "url": "https://www.commodore.ca/commodore-history/ira-velinsky-commodores-amazing-industrial-designer/",
+      "points": 27,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50408750"
+    },
+    {
+      "id": "hn-50405172",
+      "story_id": "50405172",
+      "rank": 25,
+      "title": "Retro Song Bird: Plug in any Game Boy cartridge to hear the soundtrack",
+      "url": "https://www.retrosongbird.com/",
+      "points": 60,
+      "comments": 16,
+      "hn_url": "https://news.ycombinator.com/item?id=50405172"
+    },
+    {
+      "id": "hn-50386556",
+      "story_id": "50386556",
+      "rank": 26,
+      "title": "The Unwilding of Patagonia's Pollinators",
+      "url": "https://biographic.com/the-unwilding-of-patagonias-pollinators/",
+      "points": 4,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50386556"
+    },
+    {
+      "id": "hn-50403066",
+      "story_id": "50403066",
+      "rank": 27,
+      "title": "Running a law firm on Free software",
+      "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+      "points": 255,
+      "comments": 125,
+      "hn_url": "https://news.ycombinator.com/item?id=50403066"
+    },
+    {
+      "id": "hn-50405782",
+      "story_id": "50405782",
+      "rank": 28,
+      "title": "Every processor die anyone has photographed and given away",
+      "url": "https://sheets.works/data-viz/cpu-dies",
+      "points": 103,
+      "comments": 18,
+      "hn_url": "https://news.ycombinator.com/item?id=50405782"
+    },
+    {
+      "id": "hn-50401740",
+      "story_id": "50401740",
+      "rank": 29,
+      "title": "A barbarian tribe's mythic origin story is true, ancient DNA reveals",
+      "url": "https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story-true-ancient-dna-reveals",
+      "points": 225,
+      "comments": 201,
+      "hn_url": "https://news.ycombinator.com/item?id=50401740"
+    },
+    {
+      "id": "hn-50361657",
+      "story_id": "50361657",
+      "rank": 30,
+      "title": "Text.js: Build full-stack React apps that render inside console.log",
+      "url": "https://textjs.org/",
+      "points": 95,
+      "comments": 49,
+      "hn_url": "https://news.ycombinator.com/item?id=50361657"
+    },
+    {
+      "id": "hn-50408082",
+      "story_id": "50408082",
+      "rank": 31,
+      "title": "Show HN: Where Were We",
+      "url": "https://wherewerewe.app/",
+      "points": 38,
+      "comments": 16,
+      "hn_url": "https://news.ycombinator.com/item?id=50408082"
+    },
+    {
+      "id": "hn-50361212",
+      "story_id": "50361212",
+      "rank": 32,
+      "title": "Study solved a 150-year-old mystery into the identity of the extinct giant crane",
+      "url": "https://www.bournemouth.ac.uk/news/2026-10-28/study-has-solved-150-year-old-mystery-identity-extinct-giant-crane",
+      "points": 22,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50361212"
+    },
+    {
+      "id": "hn-50405674",
+      "story_id": "50405674",
+      "rank": 33,
+      "title": "Terry Pratchett's Study",
+      "url": "https://www.sussi.dk/terry-pratchetts-study",
+      "points": 120,
+      "comments": 32,
+      "hn_url": "https://news.ycombinator.com/item?id=50405674"
+    },
+    {
+      "id": "hn-50410649",
+      "story_id": "50410649",
+      "rank": 34,
+      "title": "My parents chose to die together and I was left to grieve alone",
+      "url": "https://www.bbc.com/news/articles/c81dwllzv113o",
+      "points": 10,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50410649"
+    },
+    {
+      "id": "hn-50396064",
+      "story_id": "50396064",
+      "rank": 35,
+      "title": "We know 15k websites are infected. how do we tell them?",
+      "url": "https://scotthelme.co.uk/we-know-15-579-websites-are-infected-how-do-we-tell-them/",
+      "points": 200,
+      "comments": 168,
+      "hn_url": "https://news.ycombinator.com/item?id=50396064"
+    },
+    {
+      "id": "hn-50410253",
+      "story_id": "50410253",
+      "rank": 36,
+      "title": "Show HN: Maple – Sub-2-BPW Moe Pruning to Run Gemma 4 26B at 45 TPS on a 6GB GPU",
+      "url": "https://github.com/AmSach/maple",
+      "points": 4,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50410253"
+    },
+    {
+      "id": "hn-50410249",
+      "story_id": "50410249",
+      "rank": 37,
+      "title": "ISponsorBlockTV: SponsorBlock client for all YouTube TV clients",
+      "url": "https://github.com/dmunozv04/isponsorblocktv",
+      "points": 4,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50410249"
+    },
+    {
+      "id": "hn-50373980",
+      "story_id": "50373980",
+      "rank": 38,
+      "title": "Here Be Monsters",
+      "url": "https://www.nybooks.com/online/2026/10/30/here-be-monsters/",
+      "points": 3,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50373980"
+    },
+    {
+      "id": "hn-50408350",
+      "story_id": "50408350",
+      "rank": 39,
+      "title": "Show HN: An offline desktop companion to help maintain a healthy blink rhythm",
+      "url": "https://eyesrhythm.com/",
+      "points": 31,
+      "comments": 15,
+      "hn_url": "https://news.ycombinator.com/item?id=50408350"
+    },
+    {
+      "id": "hn-50402212",
+      "story_id": "50402212",
+      "rank": 40,
+      "title": "The Components of Agent Memory",
+      "url": "https://www.anthropic.com/research/components-of-agent-memory",
+      "points": 155,
+      "comments": 86,
+      "hn_url": "https://news.ycombinator.com/item?id=50402212"
+    },
+    {
+      "id": "hn-50384263",
+      "story_id": "50384263",
+      "rank": 41,
+      "title": "What do the next 4000 emoji look like?",
+      "url": "https://jenniferdaniel.substack.com/p/what-do-the-next-4000-emoji-look",
+      "points": 89,
+      "comments": 93,
+      "hn_url": "https://news.ycombinator.com/item?id=50384263"
+    },
+    {
+      "id": "hn-50404438",
+      "story_id": "50404438",
+      "rank": 42,
+      "title": "Cancer at Sea",
+      "url": "https://biographic.com/cancer-at-sea/",
+      "points": 25,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50404438"
+    },
+    {
+      "id": "hn-50405789",
+      "story_id": "50405789",
+      "rank": 43,
+      "title": "How Long Can Life Wait?",
+      "url": "https://mceglowski.substack.com/p/how-long-can-life-wait",
+      "points": 133,
+      "comments": 85,
+      "hn_url": "https://news.ycombinator.com/item?id=50405789"
+    },
+    {
+      "id": "hn-50408104",
+      "story_id": "50408104",
+      "rank": 45,
+      "title": "Shadow of the Sun (2021)",
+      "url": "https://mattlakeman.org/2021/07/27/shadow-of-the-sun/",
+      "points": 24,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50408104"
+    },
+    {
+      "id": "hn-50405263",
+      "story_id": "50405263",
+      "rank": 46,
+      "title": "Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8",
+      "url": "https://github.com/Video-Rebirth/hyperflow-h3-flash",
+      "points": 63,
+      "comments": 12,
+      "hn_url": "https://news.ycombinator.com/item?id=50405263"
+    },
+    {
+      "id": "hn-50360810",
+      "story_id": "50360810",
+      "rank": 47,
+      "title": "Greece has its own Pompeii: Thera buried Akrotiri in ash 17th-16th century BCE",
+      "url": "https://www.smithsonianmag.com/history/greece-has-its-own-pompeii-and-the-ruins-tell-a-captivating-story-of-a-sophisticated-seafaring-bronze-age-society-180989747/",
+      "points": 197,
+      "comments": 26,
+      "hn_url": "https://news.ycombinator.com/item?id=50360810"
+    },
+    {
+      "id": "hn-50362187",
+      "story_id": "50362187",
+      "rank": 48,
+      "title": "Multi-Token Prediction Done Right",
+      "url": "https://arxiv.org/abs/2610.38331",
+      "points": 4,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50362187"
+    },
+    {
+      "id": "hn-50380246",
+      "story_id": "50380246",
+      "rank": 49,
+      "title": "Yes, You Can Pass a Nuclear Missile Driving on Interstate 80 Through Wyoming",
+      "url": "https://cowboystatedaily.com/2026/11/04/yes-you-can-pass-a-nuclear-missile-driving-on-interstate-80-through-wyoming/",
+      "points": 52,
+      "comments": 29,
+      "hn_url": "https://news.ycombinator.com/item?id=50380246"
+    },
+    {
+      "id": "hn-50356037",
+      "story_id": "50356037",
+      "rank": 50,
+      "title": "ToothPaste",
+      "url": "https://brisk4t.github.io/blog/toothpaste/",
+      "points": 96,
+      "comments": 19,
+      "hn_url": "https://news.ycombinator.com/item?id=50356037"
+    },
+    {
+      "id": "hn-50405678",
+      "story_id": "50405678",
+      "rank": 51,
+      "title": "They don't make 'em like that any more: Borland Turbo Pascal 7",
+      "url": "https://kevinboone.me/tpwin.html",
+      "points": 198,
+      "comments": 110,
+      "hn_url": "https://news.ycombinator.com/item?id=50405678"
+    },
+    {
+      "id": "hn-50352791",
+      "story_id": "50352791",
+      "rank": 52,
+      "title": "British Library Legal deposit and web archiving",
+      "url": "https://www.bl.uk/services/legal-deposit/web-archiving",
+      "points": 62,
+      "comments": 26,
+      "hn_url": "https://news.ycombinator.com/item?id=50352791"
+    },
+    {
+      "id": "hn-50370787",
+      "story_id": "50370787",
+      "rank": 53,
+      "title": "The typo generation is damaging literature",
+      "url": "https://www.metropolitanreview.org/p/the-typo-generation-is-damaging-literature",
+      "points": 65,
+      "comments": 79,
+      "hn_url": "https://news.ycombinator.com/item?id=50370787"
+    },
+    {
+      "id": "hn-50407504",
+      "story_id": "50407504",
+      "rank": 54,
+      "title": "What should we learn now?",
+      "url": "https://ducktape.blot.im/what-should-we-learn-now",
+      "points": 26,
+      "comments": 9,
+      "hn_url": "https://news.ycombinator.com/item?id=50407504"
+    },
+    {
+      "id": "hn-50404747",
+      "story_id": "50404747",
+      "rank": 56,
+      "title": "The Gordon Gekko Effect: The Role of Culture in the Financial Industry [pdf] (2016)",
+      "url": "https://www.newyorkfed.org/medialibrary/media/research/epr/2016/epr_2016_gordon-gekko-effect_lo.pdf",
+      "points": 57,
+      "comments": 39,
+      "hn_url": "https://news.ycombinator.com/item?id=50404747"
+    },
+    {
+      "id": "hn-50395183",
+      "story_id": "50395183",
+      "rank": 57,
+      "title": "Notes on San Marino",
+      "url": "https://mattlakeman.org/2026/11/05/notes-on-san-marino/",
+      "points": 150,
+      "comments": 50,
+      "hn_url": "https://news.ycombinator.com/item?id=50395183"
+    },
+    {
+      "id": "hn-50369283",
+      "story_id": "50369283",
+      "rank": 58,
+      "title": "8088 Domination Post-Mortem",
+      "url": "https://trixter.oldskool.org/2014/06/19/8088-domination-post-mortem-part-1/",
+      "points": 78,
+      "comments": 16,
+      "hn_url": "https://news.ycombinator.com/item?id=50369283"
+    },
+    {
+      "id": "hn-50358094",
+      "story_id": "50358094",
+      "rank": 59,
+      "title": "Tasfer: a text editor drawn on a 2D canvas",
+      "url": "https://www.hamza.se/blog/tasfer",
+      "points": 55,
+      "comments": 33,
+      "hn_url": "https://news.ycombinator.com/item?id=50358094"
+    },
+    {
+      "id": "hn-50377613",
+      "story_id": "50377613",
+      "rank": 60,
+      "title": "Show HN: Spindle – a full-featured, type-safe web framework for OCaml 5",
+      "url": "https://github.com/hyphatech/spindle",
+      "points": 58,
+      "comments": 8,
+      "hn_url": "https://news.ycombinator.com/item?id=50377613"
+    },
+    {
+      "id": "hn-50378228",
+      "story_id": "50378228",
+      "rank": 62,
+      "title": "sshole",
+      "url": "https://sshhole.com",
+      "points": 2960,
+      "comments": 743,
+      "hn_url": "https://news.ycombinator.com/item?id=50378228"
+    },
+    {
+      "id": "hn-50380134",
+      "story_id": "50380134",
+      "rank": 63,
+      "title": "Show HN: Green tests are not proof – verifier for C/C++ and firmware fixes",
+      "url": "https://unfix.dev/",
+      "points": 15,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50380134"
+    },
+    {
+      "id": "hn-50405250",
+      "story_id": "50405250",
+      "rank": 64,
+      "title": "Ask HN: How did you convince family and friends to join your XMPP/Matrix server?",
+      "url": "https://news.ycombinator.com/item?id=50405250",
+      "points": 82,
+      "comments": 77,
+      "hn_url": "https://news.ycombinator.com/item?id=50405250"
+    },
+    {
+      "id": "hn-50394855",
+      "story_id": "50394855",
+      "rank": 66,
+      "title": "First steps in bare-metal programming using UEFI",
+      "url": "https://kevinboone.me/efitest_index.html",
+      "points": 248,
+      "comments": 54,
+      "hn_url": "https://news.ycombinator.com/item?id=50394855"
+    },
+    {
+      "id": "hn-50361417",
+      "story_id": "50361417",
+      "rank": 67,
+      "title": "Building the NBC News Big Board",
+      "url": "https://ejfox.com/projects/nbc-big-board",
+      "points": 59,
+      "comments": 24,
+      "hn_url": "https://news.ycombinator.com/item?id=50361417"
+    },
+    {
+      "id": "hn-50373513",
+      "story_id": "50373513",
+      "rank": 68,
+      "title": "The great butter and cheese fire of 1991",
+      "url": "https://www.wisfarmer.com/story/opinion/columnists/2022/05/11/over-20-m-lbs-commodities-lost-great-butter-fire-1991/9650051002/",
+      "points": 84,
+      "comments": 23,
+      "hn_url": "https://news.ycombinator.com/item?id=50373513"
+    },
+    {
+      "id": "hn-50409979",
+      "story_id": "50409979",
+      "rank": 69,
+      "title": "Microsoft Removes PC-to-PC Migration from Windows 11, Pushes Users to OneDrive",
+      "url": "https://www.ghacks.net/2026/11/03/microsoft-removes-pc-to-pc-migration-from-windows-11-and-points-users-to-onedrive-based-windows-backup/",
+      "points": 9,
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=50409979"
+    },
+    {
+      "id": "hn-50361765",
+      "story_id": "50361765",
+      "rank": 72,
+      "title": "PostgreSQL Internals [pdf] (2023)",
+      "url": "https://edu.postgrespro.com/postgresql_internals-14_en.pdf",
+      "points": 87,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50361765"
+    },
+    {
+      "id": "hn-50352701",
+      "story_id": "50352701",
+      "rank": 73,
+      "title": "The Flash C Compiler",
+      "url": "https://blog.adafruit.com/2026/10/31/flash-c-compiler/",
+      "points": 104,
+      "comments": 53,
+      "hn_url": "https://news.ycombinator.com/item?id=50352701"
+    },
+    {
+      "id": "hn-50357763",
+      "story_id": "50357763",
+      "rank": 75,
+      "title": "Optimising the Rail Cube",
+      "url": "https://owenlacey.dev/railcube-optimisation/post",
+      "points": 35,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50357763"
+    },
+    {
+      "id": "hn-50389570",
+      "story_id": "50389570",
+      "rank": 77,
+      "title": "Chomsky and the two cultures of statistical learning (2011)",
+      "url": "https://www.norvig.com/chomsky.html",
+      "points": 144,
+      "comments": 135,
+      "hn_url": "https://news.ycombinator.com/item?id=50389570"
+    },
+    {
+      "id": "hn-50395450",
+      "story_id": "50395450",
+      "rank": 78,
+      "title": "Devvm.dev: One VM for every project",
+      "url": "https://devvm.dev/",
+      "points": 182,
+      "comments": 72,
+      "hn_url": "https://news.ycombinator.com/item?id=50395450"
+    },
+    {
+      "id": "hn-50389370",
+      "story_id": "50389370",
+      "rank": 81,
+      "title": "Kugelblitz – Mac-Native Google Earth Alternative",
+      "url": "https://apps.metaebene.me/en/kugelblitz",
+      "points": 267,
+      "comments": 66,
+      "hn_url": "https://news.ycombinator.com/item?id=50389370"
+    },
+    {
+      "id": "hn-50408383",
+      "story_id": "50408383",
+      "rank": 83,
+      "title": "Ex-PlayStation boss says \"true innovation\" would be making a $300 console again",
+      "url": "https://www.gamesradar.com/platforms/playstation/ps6-doesnt-need-more-power-ex-playstation-boss-says-because-true-innovation-would-be-making-a-usd300-console-again/",
+      "points": 36,
+      "comments": 13,
+      "hn_url": "https://news.ycombinator.com/item?id=50408383"
+    },
+    {
+      "id": "hn-50389333",
+      "story_id": "50389333",
+      "rank": 84,
+      "title": "Blender's UI and Runtime: Much Faster Than GPUI",
+      "url": "https://github.com/ppmpreetham/BUI",
+      "points": 725,
+      "comments": 289,
+      "hn_url": "https://news.ycombinator.com/item?id=50389333"
+    },
+    {
+      "id": "hn-50387796",
+      "story_id": "50387796",
+      "rank": 86,
+      "title": "Pwn.college",
+      "url": "https://pwn.college/",
+      "points": 331,
+      "comments": 54,
+      "hn_url": "https://news.ycombinator.com/item?id=50387796"
+    },
+    {
+      "id": "hn-50397017",
+      "story_id": "50397017",
+      "rank": 87,
+      "title": "Restaurant Delivery Payment-Skimming Campaign",
+      "url": "https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming",
+      "points": 166,
+      "comments": 96,
+      "hn_url": "https://news.ycombinator.com/item?id=50397017"
+    },
+    {
+      "id": "hn-50354763",
+      "story_id": "50354763",
+      "rank": 89,
+      "title": "ZeBridge – PostgreSQL replicas on devices, synchronized over NATS",
+      "url": "https://github.com/ndrean/ZeBridge",
+      "points": 27,
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=50354763"
+    },
+    {
+      "id": "hn-50390525",
+      "story_id": "50390525",
+      "rank": 90,
+      "title": "Living beyond the limits of survival: wood ants trapped in a gigantic pitfall (2016)",
+      "url": "https://jhr.pensoft.net/articles.php?id=9096",
+      "points": 181,
+      "comments": 60,
+      "hn_url": "https://news.ycombinator.com/item?id=50390525"
+    }
+  ],
+  "papers": [
+    {
+      "id": "arxiv-2611.08245",
+      "cat": "cs.AI",
+      "title": "Value-oriented policy distillation for interpretable wind farm power control",
+      "abstract": "Wind farm power control can help the system maintain balance and avoid blackouts. In Europe, this can be achieved through implicit balancing, where a wind farm adjusts its power setpoint in anticipation of the imbalance price using information published by the Transmission System Operator. Thereby, the wind farm helps restore system balance while also reducing its own imbalance costs resulting from forecast errors. However, implicit balancing is a challenging problem since the settlement price is unknown in advance and can be impacted by the pursued control strategy. Reinforcement learning methods could help to solve this problem, but lack the interpretability needed to be deployed on real wind farms. Therefore, we propose a policy distillation framework using explainable boosting machines (EBMs), a variant of generalized additive models, to obtain a transparent control policy. To increase the value captured by the EBM model, we introduce a value-oriented perspective to policy distillation inspired by research in the field of energy forecasting. Furthermore, we suggest to include expert knowledge during model design, such that the control strategy is also justifiable to stakeholders. Using real data of the Belgian grid and an offshore wind farm, we find that our value-oriented and expert-based controller can reduce imbalance costs by 82%, while outperforming a price threshold controller as well as a policy distillation baseline using decision trees.",
+      "url": "http://arxiv.org/abs/2611.08245v1"
+    }
+  ],
+  "topic": [
+    {
+      "id": "kg-arxiv-2611.07971v1",
+      "title": "ArcadeDB in Python: An In-Process Multi-Model Database",
+      "abstract": "Some Python workflows need transactional reads and writes over documents, traversals over a graph, and similarity search over vector embeddings. In practice these are split across separate systems (a document store, a graph engine, and a vector index), and the data is copied between them and kept consistent by application code. ArcadeDB is an open-source multi-model database engine, written in Java, that supports all three access patterns and can be embedded in a host process. We present arcadedb-embedded, a Python package that runs ArcadeDB inside the Python process via JPype, using a Java Runtime Environment bundled in the wheel. One pip install gives a database with documents, a property graph, and vector search, and needs no Java installation. Query results can be returned as Python lists, NumPy arrays, pandas DataFrames, or Arrow tables. We demonstrate a hybrid retrieval workflow that chains vector search, SQL filtering, and graph traversal over one dataset. We benchmark arcadedb-embedded against SQLite, DuckDB, LadybugDB, and Chroma, and report its costs.",
+      "url": "https://arxiv.org/abs/2611.07971v1",
+      "published": "2026-11-05",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.07825v1",
+      "title": "Generate-then-Rank: Learning Symbolic Goal Interpretation for Embodied Agents",
+      "abstract": "Goal interpretation is to translate a natural language instruction into a formal symbolic goal that a planner can execute. It is critical for embodied agents because any error here propagates to every downstream planning and action step. Doing it well requires both generating suitable candidates and reliably selecting among them. We present a two-stage generate-then-rank approach to Goal Interpretation in the Embodied Agent Interface (EAI). First, supervised fine-tuning adapts a Large Language Model (LLM) to EAI's output convention. Second, Candidate-Output Ranking from Errors (CORE) learns preferences over complete outputs from the model's own generated alternatives. We conducted experiments on the household scenes of the Embodied Agent Interface Benchmark. Multiple open source LLMs including DeepSeek-V3 chat, DeepSeek-Reasoner, and Qwen2.5-7B and Qwen2.5-72B were evaluated. The proposed method outperformed the baseline models including LLMs with simple prompting, chain-of-thought, and knowledge graph based approaches.",
+      "url": "https://arxiv.org/abs/2611.07825v1",
+      "published": "2026-11-05",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-hn-50405136",
+      "story_id": "50405136",
+      "title": "Weaponizing Personalization: From Knowledge Graph to Extortion",
+      "url": "https://8rank.ai/game/apple-intelligence-knowledge-graph-in-the-wrong-hands",
+      "hn_url": "https://news.ycombinator.com/item?id=50405136",
+      "points": 4,
+      "comments": 0,
+      "created": "2026-11-07",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50363667",
+      "story_id": "50363667",
+      "title": "Show HN: Alternative to Nvidia Auto-Ontology",
+      "url": "https://github.com/GetCassis/ontology-skills",
+      "hn_url": "https://news.ycombinator.com/item?id=50363667",
+      "points": 1,
+      "comments": 0,
+      "created": "2026-11-04",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50407219",
+      "story_id": "50407219",
+      "title": "Day AI: Context Graph and Agent Control Plane for GTM",
+      "url": "https://day.ai/",
+      "hn_url": "https://news.ycombinator.com/item?id=50407219",
+      "points": 1,
+      "comments": 0,
+      "created": "2026-11-07",
+      "kind": "story"
+    }
+  ]
+}
