@@ -1,7 +1,19 @@
 {
-  "generated": "2026-11-08T06:35:44+00:00",
-  "count": 195,
+  "generated": "2026-11-09T07:41:30+00:00",
+  "count": 196,
   "reports": [
+    {
+      "file": "ai-news-2026-11-09.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-11-09",
+      "summary": "Goldman Sachs pulls Claude Code from its bankers · DeepSeek's 284B model runs on 64GB RAM, no GPU · researcher unlocks cars of one brand worldwide · Outlook.com now rejects mail without DMARC",
+      "readingTime": 8,
+      "tags": [
+        "models"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-11-08.html",
       "type": "daily",
@@ -1092,6 +1104,7 @@
       "readingTime": 4,
       "tags": [
         "models",
+        "research",
         "memory"
       ],
       "audio": true

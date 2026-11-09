@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Monday the ninth of November, twenty twenty-six. Lead story: Goldman Sachs is pulling Claude Code from its bankers and traders, withdrawing Anthropic's coding agent from front-office staff and reversing one of the most prominent enterprise Claude deployments. Seven hundred and twenty-four points and three hundred and ninety-six comments make it the day's most-discussed AI story.
+
+[HOST_B] Read this as return on investment settling where the work is structured, not a retreat from AI. Coding agents earn their keep on well-specified engineering tasks; they underperform where intent is negotiated in prose and the audit trail dies in the chat log. Watch whether peer banks disclose similar verdicts — or whether Goldman clarifies this as a scope decision rather than a failure.
+
+[HOST_A] DeepSeek's two hundred and eighty-four billion parameter model now runs on sixty-four gigabytes of RAM with no graphics card, via an open-source project called Llama-modchip. Four hundred and nine points within hours of hitting the front page.
+
+[HOST_B] The cost curve is bending from two directions at once. Hardware first — a frontier-scale model on a machine without a GPU. Software second — a paper called CPU-ARC compiles reasoning traces into CPU-executable caches, matching frontier performance on hard maths at sixteen to two hundred and ninety-one times lower invocation cost. The next efficiency win isn't a faster chip; it's refusing to pay for inference you've already paid for. That reprices every serving-stack business case.
+
+[HOST_A] Security: a researcher has published a working method to unlock vehicles from a single marque across most global markets. Rank two on the Hacker News front page and still climbing — recall-grade territory.
+
+[HOST_B] Watch for a vendor advisory or patch timeline this week. Silence would suggest the flaw is harder to fix than it looks. The disclosure pattern matters too — this went public rather than through a brokered channel, which usually means the vendor was slow.
+
+[HOST_A] Nvidia: Jensen Huang has written to staff about an affair, with the board issuing its own statement hours later. Five hundred and sixty points — governance news landing mid-way through the largest capex cycle in the industry's history.
+
+[HOST_B] The signal to watch is containment. A closed internal matter plus no follow-up from institutional holders means it stays contained; anything else, and you have a governance overhang on the single largest capital spender in the sector.
+
+[HOST_A] Papers. PatternOps assessment across five released agent harnesses and fourteen independently written plugins shows guardrail relationships breaking silently after mundane actions — reapplying a plugin, saving an allow rule — with no code change. Separately, thought injection attacks: untrusted text styled as the model's own deliberation, fed back into the loop. Effects are model-specific across G L M five point three, MiniMax M two point five, and Qwen three point eight Flash Next.
+
+[HOST_B] The papers converge on an uncomfortable finding — agent systems fail in the seams, not the models. Harnesses drop guarantees after config changes; reasoning models are injectable through their own deliberation format; static benchmarks can't tell you when human intervention pays. The twenty twenty-seven frontier is verification, not capability.
+
+[HOST_A] More papers. Tracybot pairs planning prompts with agent-generated diffs so intent survives review and blame. DeCAF tunes prompts, topology, model choice and tool policies jointly, with reasoning traces per decision. A causal-evaluation paper frames mid-trajectory intervention value as an inference problem. And differentially private GraphRAG — black-box access lets adversaries reconstruct the knowledge graph; this adds formal guarantees.
+
+[HOST_B] That cluster is the engineering answer to the Goldman story. Provenance, causal evaluation and harness auditing are the tools that make autonomy insurable. If you're deploying agents, budget for the verification layer now — it's cheaper than the first incident.
+
+[HOST_A] Sweep. Outlook dot com now rejects mail from domains without D M A R C — three hundred and sixty-seven points, and self-hosters face vanishing mail until they publish records; expect a bounce wave. An essay disputing the AI bubble drew two hundred and sixty comments. Agent-memory standardisation — its OpenTelemetry moment — took one hundred and seventy-eight points and pairs with a practitioner thread on context management. Writing as a thinking tool hit three hundred and thirty-four; fighting AI brain fry, two hundred and twenty-three. Elsewhere: a critique of G P U I, Zed's Rust UI framework; Dux, a Wayland desktop shell; KetchUp, an open-source SketchUp alternative in Rust and WebGPU at rank one; the November roll call at six hundred and fifty-three comments; uranium cubes and the German nuclear project at two hundred and nine; and Chimera, a browser vocal synth.
+
+[HOST_B] That's the brief. The full written report — every link, every paper, the watch list — is in the briefing. Read it before you size your next infrastructure commitment.

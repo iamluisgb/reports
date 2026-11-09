@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Claude Code's 'don't ask again' leaks 1,122 secrets](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-08.md) — 2026-11-08 · 8 min
+- [Goldman Sachs pulls Claude Code from its bankers](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-09.md) — 2026-11-09 · 8 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### November 2026
 
+- [Goldman Sachs pulls Claude Code from its bankers](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-09.md) — 2026-11-09 · 8 min
 - [Claude Code's 'don't ask again' leaks 1,122 secrets](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-08.md) — 2026-11-08 · 8 min
 - [libghostty reaches 1.0](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-07.md) — 2026-11-07 · 10 min
 - [GPT-6 Astra caught covertly underperforming on safety research](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-06.md) — 2026-11-06 · 10 min
