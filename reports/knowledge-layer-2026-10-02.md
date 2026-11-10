@@ -11,15 +11,15 @@ Memory & Knowledge · Special Report
 
 # The *Knowledge Layer* for Agents: Ontologies, Graphs and Where ML Fits
 
-2 Oct 2026 · Updated 5 Oct 2026
+2 Oct 2026 · Updated 10 Nov 2026
 
 What the layer is · GraphRAG versus vector RAG · Accuracy on enterprise data · Operational ontologies and actions · Where ML goes · Graphs in root cause analysis
 
 ## Key findings
 
-1. **Grounding helps most where the model knows least.** In 1,800 runs, ontology-coupled agents beat ungrounded agents on metric accuracy.[5] The lift in Vietnam-localized domains was 2x the lift in English domains.[5]
-2. **A knowledge graph over SQL raises accuracy on enterprise questions.** Earlier benchmark work moved accuracy from 16% to 54% with a knowledge graph.[24] Adding ontology-based checks raised it to 72%, with an error rate of 20%.[24]
-3. **GraphRAG gains are smaller than reported.** An unbiased evaluation of 3 GraphRAG methods found gains "much more moderate" than earlier claims.[27] Other studies report that GraphRAG often underperforms vanilla RAG on real tasks.[17]
+1. **Grounding helps most where the model knows least.** In a controlled test of 1,800 runs across five industries and three LLMs, ontology-coupled agents gave more accurate metrics than ungrounded agents.[5] The lift was twice as large in Vietnam-localized domains as in English ones.[5] Your internal terms are the same case: the model has not seen them.
+2. **A knowledge graph over SQL raises accuracy on enterprise questions.** In the authors' first benchmark, a knowledge graph moved accuracy from 16% to 54%.[24] Ontology-based checks then raised it to 72%, a figure that includes 8% honest "I don't know" answers.[24] The error rate was 20%.[24]
+3. **GraphRAG gains are smaller than reported.** An unbiased evaluation of 3 GraphRAG methods found gains "much more moderate" than earlier claims.[27] A benchmark paper notes that recent studies find GraphRAG often underperforms vanilla RAG on real-world tasks.[17]
 4. **A typed ontology is also a guard.** On 1,072 BIRD questions, queries over typed ontology worlds scored 67.5% against 63.5% for direct SQL.[8] The same write chain stopped 20/20 hallucinated actions with zero false positives.[8]
 5. **Most of the value is in joins across systems.** In a manufacturing graph, blocking 24 cross-system tools cut recall from 1.00 to 0.31.[9] 69% of the signals needed cross-system graph joins.[9]
 6. **Graphs plus agents already work in operations.** A root cause system at Kuaishou has run in production for over six months.[11] It cut average diagnosis time by 77.3%.[11]
@@ -64,11 +64,11 @@ The clearest gain is on multi-hop questions. These need facts from two or more p
 
 Here the evidence for ontologies is stronger. The question is how well an LLM answers business questions over company data.
 
-- **16% → 72%** accuracy from Text-to-SQL to an ontology-backed graph
+- **16% → 72%** accuracy, in two steps: a knowledge graph over SQL, then ontology-based checks
 
 Allemang and Sequeda, chat-with-the-data benchmark[24]
 
-- **2x** ontology lift in Vietnam-localized domains over English ones
+- **2x** ontology lift in domains the model knows less (Vietnam-localized) than in English ones
 
 1,800 runs, three LLMs[5]
 
@@ -120,7 +120,7 @@ Knowledge graph reasoning is often framed as link prediction, tested on datasets
 
 ## Graphs in root cause analysis
 
-AIOps is where graph ML already pays. Root cause analysis must correlate failures across telemetry inside service dependency graphs.[18] Supervised graph neural networks are the state of the art for finding the faulty component and the fault type.[4]
+AIOps is where graph ML already pays. Root cause analysis must correlate failures across telemetry inside service dependency graphs.[18] Supervised graph neural networks are the state of the art for finding the faulty component and the fault type.[4] A review of five years of RCA research names two main threads: dynamic causal discovery and fusion of metrics, logs and traces.[26]
 
 | System | How it uses the graph | Reported result |
 | --- | --- | --- |
@@ -148,7 +148,7 @@ The best designs keep a deterministic check on the verdict. In one Kubernetes ag
 
 ## Method and limits
 
-This report replaces two earlier versions. "Ontologies, Graph Knowledge, Semantic Layer & Context Layer" (2 October 2026) listed 53 sources but cited none in the text. "Ontologies, Graph ML & AIOps" (1 October 2026) had no sources; its address now redirects here. The merged report was rebuilt on 5 October 2026 with the reports research pipeline. The pipeline found 227 search results across arXiv, Hacker News, GitHub, Wikipedia and Semantic Scholar. It read 46 sources in full, and 44 gave usable evidence. An open model (NaN: deepseek-v4-flash) read each source on its own. It extracted 298 claims, each with a verbatim quote. 7 claims whose quote did not appear in the source were discarded. Claude wrote the synthesis from that evidence and checked every cited figure against its source. The conclusions in "What I would do" are mine.
+This report replaces two earlier versions. "Ontologies, Graph Knowledge, Semantic Layer & Context Layer" (2 October 2026) listed 53 sources but cited none in the text. "Ontologies, Graph ML & AIOps" (1 October 2026) had no sources; its address now redirects here. The merged report was rebuilt on 5 October 2026 with the reports research pipeline. The pipeline found 227 search results across arXiv, Hacker News, GitHub, Wikipedia and Semantic Scholar. It read 46 sources in full, and 44 gave usable evidence. An open model (NaN: deepseek-v4-flash) read each source on its own. It extracted 298 claims, each with a verbatim quote. 7 claims whose quote did not appear in the source were discarded. Claude wrote the synthesis from that evidence and checked every cited figure against its source. On 10 November 2026 the key findings were rewritten for precision against the same evidence, and one more source was cited. The conclusions in "What I would do" are mine.
 
 - **No general web search.** The run had no web-search key. Official documentation from Palantir, Microsoft and semantic-layer vendors is missing. Palantir's design is described through one documentation synthesis and open-source reimplementations.
 - **Author-built benchmarks.** Several results come from benchmarks the authors built themselves. One paper calls its own result verification, not independent validation.
@@ -181,16 +181,17 @@ This report replaces two earlier versions. "Ontologies, Graph Knowledge, Semanti
 23. A Systematic Comparison of RAG Architectures for Geographic POI Question Answering Using OpenStreetMap Data — Otsuka, 2026 — [semanticscholar.org](https://www.semanticscholar.org/paper/28bf587adc26e4bbd1987f1e19d66b8c87dd752d)
 24. Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue! — Allemang, Sequeda, arXiv, May 2024 — [arxiv.org/abs/2405.11706](https://arxiv.org/abs/2405.11706)
 25. Construct, Align, and Reason: Large Ontology Models for Enterprise Knowledge Management — Zhang, Zhu, arXiv, Jan 2026 — [arxiv.org/abs/2602.00029](https://arxiv.org/abs/2602.00029)
-26. How Significant Are the Real Performance Gains? An Unbiased Evaluation Framework for GraphRAG — Zeng et al., arXiv, 2025 — [arxiv.org/abs/2506.06331](https://arxiv.org/abs/2506.06331)
-27. Beyond Vector Search: Comparing Classical RAG with Hybrid GraphRAG for Climate Science Q&A — Naiff, Alves, Pinto, arXiv, Aug 2026 — [arxiv.org/abs/2608.28766](https://arxiv.org/abs/2608.28766)
-28. Toward a Hybrid Ontology Framework for Semantic Data Understanding in AI-Augmented Data Warehousing — Sridharan et al., 2025 — [semanticscholar.org](https://www.semanticscholar.org/paper/29c2301457458a4ebbd6a6445e9af355ee4d7df1)
-29. graph-rag-agent: GraphRAG with private-domain deep search — GitHub, Nov 2025 — [github.com/1517005260/graph-rag-agent](https://github.com/1517005260/graph-rag-agent)
-30. AutoKG: LLMs for knowledge graph construction and reasoning — Zhu et al. (zjunlp), GitHub, Jan 2025 — [github.com/zjunlp/AutoKG](https://github.com/zjunlp/AutoKG)
-31. actionTypesR: executable ontology actions — GitHub, May 2026 — [github.com/CathalByrneGit/actionTypesR](https://github.com/CathalByrneGit/actionTypesR)
-32. operational-ontology: a lightweight operational ontology inspired by Foundry — GitHub, Aug 2026 — [github.com/Aryan1718/operational-ontology](https://github.com/Aryan1718/operational-ontology)
-33. graph-versus-vector: GraphRAG and vector RAG benchmark — GitHub, Sep 2026 — [github.com/GeenccMustafa/graph-versus-vector](https://github.com/GeenccMustafa/graph-versus-vector)
-34. financial-ontology: payment settlement control system — GitHub, Sep 2026 — [github.com/nick-stafford/financial-ontology](https://github.com/nick-stafford/financial-ontology)
-35. Semantic Web — Wikipedia — [en.wikipedia.org/wiki/Semantic_Web](https://en.wikipedia.org/wiki/Semantic_Web)
-36. foundry-ontology-open: open implementation of Foundry's ontology architecture — GitHub, Jul 2026 — [github.com/cloudbadal007/foundry-ontology-open](https://github.com/cloudbadal007/foundry-ontology-open)
-37. ontology-ingestion-layer: research notes on Palantir and Microsoft ontologies — Gabriel Cha, GitHub, Jul 2026 — [github.com/gabrielchasukjin/ontology-ingestion-layer](https://github.com/gabrielchasukjin/ontology-ingestion-layer)
-38. Knowledge graph — Wikipedia — [en.wikipedia.org/wiki/Knowledge_graph](https://en.wikipedia.org/wiki/Knowledge_graph)
+26. Research on fault diagnosis and root cause analysis based on full stack observability — Hou, arXiv, Sep 2025 — [arxiv.org/abs/2509.12231](https://arxiv.org/abs/2509.12231)
+27. How Significant Are the Real Performance Gains? An Unbiased Evaluation Framework for GraphRAG — Zeng et al., arXiv, 2025 — [arxiv.org/abs/2506.06331](https://arxiv.org/abs/2506.06331)
+28. Beyond Vector Search: Comparing Classical RAG with Hybrid GraphRAG for Climate Science Q&A — Naiff, Alves, Pinto, arXiv, Aug 2026 — [arxiv.org/abs/2608.28766](https://arxiv.org/abs/2608.28766)
+29. Toward a Hybrid Ontology Framework for Semantic Data Understanding in AI-Augmented Data Warehousing — Sridharan et al., 2025 — [semanticscholar.org](https://www.semanticscholar.org/paper/29c2301457458a4ebbd6a6445e9af355ee4d7df1)
+30. graph-rag-agent: GraphRAG with private-domain deep search — GitHub, Nov 2025 — [github.com/1517005260/graph-rag-agent](https://github.com/1517005260/graph-rag-agent)
+31. AutoKG: LLMs for knowledge graph construction and reasoning — Zhu et al. (zjunlp), GitHub, Jan 2025 — [github.com/zjunlp/AutoKG](https://github.com/zjunlp/AutoKG)
+34. actionTypesR: executable ontology actions — GitHub, May 2026 — [github.com/CathalByrneGit/actionTypesR](https://github.com/CathalByrneGit/actionTypesR)
+35. operational-ontology: a lightweight operational ontology inspired by Foundry — GitHub, Aug 2026 — [github.com/Aryan1718/operational-ontology](https://github.com/Aryan1718/operational-ontology)
+37. graph-versus-vector: GraphRAG and vector RAG benchmark — GitHub, Sep 2026 — [github.com/GeenccMustafa/graph-versus-vector](https://github.com/GeenccMustafa/graph-versus-vector)
+38. financial-ontology: payment settlement control system — GitHub, Sep 2026 — [github.com/nick-stafford/financial-ontology](https://github.com/nick-stafford/financial-ontology)
+39. Semantic Web — Wikipedia — [en.wikipedia.org/wiki/Semantic_Web](https://en.wikipedia.org/wiki/Semantic_Web)
+40. foundry-ontology-open: open implementation of Foundry's ontology architecture — GitHub, Jul 2026 — [github.com/cloudbadal007/foundry-ontology-open](https://github.com/cloudbadal007/foundry-ontology-open)
+41. ontology-ingestion-layer: research notes on Palantir and Microsoft ontologies — Gabriel Cha, GitHub, Jul 2026 — [github.com/gabrielchasukjin/ontology-ingestion-layer](https://github.com/gabrielchasukjin/ontology-ingestion-layer)
+42. Knowledge graph — Wikipedia — [en.wikipedia.org/wiki/Knowledge_graph](https://en.wikipedia.org/wiki/Knowledge_graph)

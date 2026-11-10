@@ -100,7 +100,10 @@ class Markdown(HTMLParser):
             indent = "  " * (len(self.lists) - 1)
             if self.lists and self.lists[-1] == "ol":
                 self.ol_n[-1] += 1
-                self.emit(f"\n{indent}{self.ol_n[-1]}. ")
+                # Sources keep their evidence-pack number (id="source-n"), which can skip:
+                # the text cites [n], so the twin must not renumber them 1..k.
+                m = re.fullmatch(r"source-(\d+)", a.get("id") or "")
+                self.emit(f"\n{indent}{m.group(1) if m else self.ol_n[-1]}. ")
             else:
                 self.emit(f"\n{indent}- ")
         elif tag == "blockquote":
