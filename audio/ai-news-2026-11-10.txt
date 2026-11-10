@@ -1,0 +1,33 @@
+[HOST_A] AI News Daily, Tuesday the tenth of November, twenty twenty-six. Lead story: Anthropic ships Fable 5.2 and Mythos 5.2. Fable 5.2 posts sixty-five on Artificial Analysis — the highest score ever recorded — and the launch thread pulled seven hundred and thirty-two comments within hours.
+
+[HOST_B] The number matters less than what it doesn't measure. Sixty-five is a frontier benchmark record; it says nothing about cost, latency, or behaviour under your orchestration layer. Treat it as a ceiling marker, not a procurement decision. The interesting question is whether Mythos 5.2 changes the price-performance line, and Anthropic hasn't published that yet.
+
+[HOST_A] Gemini caught routing private Drive files and email to human annotators. A documented walkthrough shows the routing happening on user data, with no clear opt-out surfaced. Five hundred and twenty-three points on Hacker News.
+
+[HOST_B] This is a scoping failure, not an alignment failure — a system handing credentials to a component that never needed them. If you run Gemini across a Workspace deployment, the assumption that user files stay machine-readable only is now dead. Watch for whether Google ships a data-governance toggle or just tighter wording in the terms.
+
+[HOST_A] Users report Claude Opus 5.5's reasoning behaviour changed on the third of November, with no changelog entry. Four hundred and eighty-four comments of A and B anecdotes; Anthropic has confirmed nothing.
+
+[HOST_B] Silent model updates are the trust failure of the week. If the allegations hold, the lesson is that you detect this cheapest where you own the evaluation harness rather than renting a benchmark. A regression you discover in a comment thread is a regression you weren't measuring.
+
+[HOST_A] Two compute stories. CoreWeave's bond yield has topped sixteen percent — a pricing signal on the sustainability of datacentre financing. And Google announced T P U eight t x for training and T P U eight i Max for inference.
+
+[HOST_B] The input side of the ledger is repricing faster than model quality improves. Sixteen percent on GPU-cloud debt prices real default risk; if you're mid-way through a multi-year compute commitment, start reading the credit clauses. Meanwhile Google's custom silicon keeps undercutting merchant G P U economics — the spread between those two trends is where your bill lives.
+
+[HOST_A] Amazon says it replaced Claude Sonnet 4.6 with a Strands-based Decider in production for routing-class workloads, claiming millions saved. Separately, a tracked comparison shows the same H one hundred renting for two dollars sixty-nine or twelve dollars twenty-nine an hour — a four point six times spread on identical hardware.
+
+[HOST_B] The Amazon claim is the harness eating the model: what moved the cost curve wasn't a frontier score, it was the orchestration layer. But the post is hours old at fourteen points — demand the methodology before repeating the number. The rent spread, though, is verifiable today. If your G P U bill matters, read the table.
+
+[HOST_A] Papers sweep. Trace2Eval builds coding-agent benchmarks from real interaction trajectories instead of static tasks. AttentionSwitch jointly learns sparse attention-head selection and scaling for jailbreak defence, avoiding full fine-tuning. Typed-Centrality Grounding feeds per-class graph centrality to agents as deterministic grounding in GraphRAG. Plus a memory-aware multi-agent architecture for conversational recommendation, and an ensemble method for reference-free confidence in code summarisation.
+
+[HOST_B] Read together, these are the measurement layer. Trajectory-derived benchmarks, reference-free confidence, deterministic symbolic grounding — all of it makes model swaps and safety interventions defensible rather than anecdotal. AttentionSwitch and Typed-Centrality share one instinct: mechanisms you can specify and audit beat emergent behaviour you discover in a thread.
+
+[HOST_A] Product and hardware. Meta released Muse Ember, its smallest model, with thin details on the efficiency-per-parameter claims. ChatGPT Desktop forwards your local S S H agent to remote machines — a credential-exposure path if it touches production. And DeepX taped out a second-generation chip claiming hundred-billion-parameter inference under five watts using processing-in-memory.
+
+[HOST_B] Muse Ember and DeepX are both betting efficiency-per-parameter is the contested frontier. If DeepX's numbers survive independent verification, edge inference at that scale reshapes the on-device market. If ChatGPT Desktop's agent forwarding is in your setup, revoke it now and ask questions after.
+
+[HOST_A] Quick sweep. The Raspberry Pi five, sixteen gigabyte, now sells for three hundred and eighty-five dollars, up from an eighty-dollar launch-era expectation. The Postal Service published official ZIP Code boundary polygons, five hundred and eighty points. The day's top scorer is a piece on folding the best paper airplanes at nine hundred and thirty-six. And Starship Flight fifteen, scheduled for the thirteenth, aims to catch both booster and ship for the first time.
+
+[HOST_B] Watch list for the week: Anthropic's response on the Opus 5.5 shift — silence settles whether silent updates are now routine. Whether CoreWeave's sixteen percent spreads to other neocloud borrowing. Whether Amazon publishes the Decider benchmarks or quietly edits the claim. And the dual catch on Thursday — a lost stage pushes full reusability out another flight cycle.
+
+[HOST_A] That's the briefing. The full written report — with the papers, the numbers, and the watch list — is in your feed. Back tomorrow.
