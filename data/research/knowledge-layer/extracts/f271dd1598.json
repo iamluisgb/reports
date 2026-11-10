@@ -1,0 +1,47 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": null,
+  "author_or_org": "Palantir",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "Palantir Foundry documentation lists action types for interfaces, structs, and function-backed actions.",
+      "quote": "    *   [Actions on interfaces](https://www.palantir.com/docs/foundry/action-types/actions-on-interfaces/)\n    *   [Actions on structs](https://www.palantir.com/docs/foundry/action-types/actions-on-structs/)\n    *   Function-backed actions \n        *   [Overview](https://www.palantir.com/docs/foundry/action-types/function-actions-overview/)",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Palantir Foundry action types include side effects implemented through notifications and webhooks.",
+      "quote": "    *   Side effects \n        *   [Overview](https://www.palantir.com/docs/foundry/action-types/side-effects-overview/)\n        *   [Notifications](https://www.palantir.com/docs/foundry/action-types/notifications/)\n        *   [Set up a notification](https://www.palantir.com/docs/foundry/action-types/set-up-notification/)\n        *   [Webhooks](https://www.palantir.com/docs/foundry/action-types/webhooks/)",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Palantir Foundry action-type documentation includes read and write authorizations, consistency and isolation, and an action log.",
+      "quote": "    *   [Read and write authorizations](https://www.palantir.com/docs/foundry/action-types/read-write-authorizations/)\n    *   [Consistency and isolation](https://www.palantir.com/docs/foundry/action-types/consistency-guarantees/)\n    *   [Monitoring](https://www.palantir.com/docs/foundry/action-types/monitoring/)\n    *   [Undo or revert Actions](https://www.palantir.com/docs/foundry/action-types/action-reverts/)\n    *   [Branching action types](https://www.palantir.com/docs/foundry/action-types/branching-action-types/)\n    *   [Action metrics](https://www.palantir.com/docs/foundry/action-types/action-metrics/)\n    *   [Action log](https://www.palantir.com/docs/foundry/action-types/action-log/)",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Palantir Foundry function documentation includes ontology edits and staged writes for TypeScript v2.",
+      "quote": "    *   TypeScript v2 \n        *   [Getting started](https://www.palantir.com/docs/foundry/functions/typescript-v2-getting-started/)\n        *   [Local Ontology SDKs](https://www.palantir.com/docs/foundry/functions/local-sdks/)\n        *   [Migrate from TypeScript v1 to TypeScript v2](https://www.palantir.com/docs/foundry/functions/typescript-v2-migration/)\n        *   [Ontology edits](https://www.palantir.com/docs/foundry/functions/typescript-v2-ontology-edits/)\n        *   [Staged writes](https://www.palantir.com/docs/foundry/functions/typescript-v2-staged-writes/)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir's ontology-building documentation includes a semantic search section covering document processing, embedding models, and ontology-augmented generation.",
+      "quote": "*   Semantic search \n    *   [Overview](https://www.palantir.com/docs/foundry/ontology/overview-semantic-search/)\n    *   [Document processing](https://www.palantir.com/docs/foundry/ontology/document-processing/)\n    *   [Choose multimodal and embedding models](https://www.palantir.com/docs/foundry/ontology/aip-multimodal-and-embedding-models/)\n    *   [Ontology augmented generation](https://www.palantir.com/docs/foundry/ontology/ontology-augmented-generation/)",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Palantir Foundry's documentation lists a language-agnostic 'Ontology edits' feature under functions.",
+      "quote": "    *   Language-agnostic features \n        *   [Ontology edits](https://www.palantir.com/docs/foundry/functions/edits-overview/)",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://palantir.com/docs/foundry/action-types/overview/"
+}

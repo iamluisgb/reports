@@ -1,0 +1,47 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": null,
+  "author_or_org": "Microsoft",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "An ontology item gives AI agents a governed, shared business understanding that includes entity types, relationships, definitions, rules, and source mappings.",
+      "quote": "An ontology (preview) item gives AI agents a governed, shared understanding of your business, including key entity types, relationships, definitions, rules, and source mappings.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "When an agent uses an ontology as context, its responses are more grounded, explainable, and consistent across systems than responses based only on raw data or prompts.",
+      "quote": "When an agent uses an ontology as context, it produces responses that are more grounded, explainable, and consistent across systems instead of relying only on raw data or prompts.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Foundry IQ exposes the ontology as a reusable knowledge source and knowledge base that agents query at runtime, providing a semantically rich governed view of Fabric data as a single source of truth.",
+      "quote": "Foundry IQ exposes the ontology as a reusable knowledge source and knowledge base that the agent queries at runtime, which gives the agent a semantically rich, governed view of your Fabric data as a single source of truth.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A Fabric data agent can add ontology as a data source so users ask business questions in natural language and receive answers grounded in ontology definitions and bindings.",
+      "quote": "You create the agent directly in Fabric and add your ontology as a data source, so users can ask business questions in natural language and receive answers grounded in the ontology's definitions and bindings.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Custom agents can connect external or custom AI systems and tools to the ontology through the Model Context Protocol.",
+      "quote": "Connecting external or custom AI systems and tools to ontology through the Model Context Protocol (MCP)",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The built-in ontology agent can describe an ontology, query underlying data using DAX, KQL, SQL, or GQL, and improve the ontology as sources evolve.",
+      "quote": "The agent can describe the ontology, query the data behind it by using Data Analysis Expressions (DAX), Kusto Query Language (KQL), SQL, or Graph Query Language (GQL), and improve it as your sources evolve.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://learn.microsoft.com/en-us/fabric/iq/ontology/concepts-agent-integration"
+}

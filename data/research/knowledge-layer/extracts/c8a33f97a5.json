@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2025-08-10",
+  "author_or_org": "Russell Jurney / Graphlet AI Blog",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Knowledge graphs extracted from text power most autonomous agents, but such graphs contain many duplicates.",
+      "quote": "Knowledge graphs extracted from text power most autonomous agents, but these contain many duplicates.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Splitting concepts across multiple entities produces wrong answers and limits raw extracted graphs' ability to power agents.",
+      "quote": "When concepts are split across multiple entities, wrong answers emerge. This limits raw, extracted graphs’ ability to power agents.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "In knowledge-graph entity resolution, a connected component of nodes corresponds to one resolved record.",
+      "quote": "This forms clusters of connected nodes called connected components. One component corresponds to one resolved record.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "When nodes are merged during entity resolution, fields may become lists and are then deduplicated.",
+      "quote": "Nodes in components are merged — fields may become lists, which are then deduplicated.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Edge deduplication merges duplicate edges using rules for combining properties such as weights.",
+      "quote": "Edges are then merged using rules for how to combine properties like weights.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Semantic clustering is used as a blocking method because it creates smaller blocks with more positive matches than string-similarity blocking by leveraging language-model contextual understanding.",
+      "quote": "Semantic clustering is an efficient method of blocking that results in smaller blocks with more positive matches because unlike traditional syntactic blocking methods that employ string similarity measures to form blocking keys to group records, semantic clustering leverages the rich contextual understanding of modern language models to capture deeper relationships between the fields of records, even when their strings differ dramatically.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The latest generation of large language models is powerful for matching JSON records.",
+      "quote": "The latest generation of Large Language Models is surprisingly powerful for matching JSON records, which shouldn’t be surprising given how well they can perform information extraction.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Ditto and BERT were used for entity resolution on billions of nodes at Deep Discovery in 2021.",
+      "quote": "We used Ditto and BERT do entity resolution for billions of nodes at Deep Discovery in 2021.",
+      "numbers": [
+        "billions",
+        "2021"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://blog.graphlet.ai/the-rise-of-semantic-entity-resolution-45c48d5eb00a"
+}

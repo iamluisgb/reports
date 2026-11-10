@@ -1,0 +1,75 @@
+{
+  "relevant": true,
+  "source_type": "news",
+  "published": "2026-10-10",
+  "author_or_org": "Rajesh Beri / THE D*AI*LY BRIEF",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Microsoft's standard GraphRAG method uses a language model for entity extraction, relationship extraction, description summarisation, and community reports.",
+      "quote": "Microsoft's [standard method](https://microsoft.github.io/graphrag/index/methods/) \"uses a language model for all reasoning tasks\": entity extraction, relationship extraction, description summarisation and community reports.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "GraphRAG indexing costs roughly 300x to 2,000x a vector index at the article's workload, because an LLM reads each chunk at least twice and writes a community report.",
+      "quote": "GraphRAG indexing costs roughly 300x to 2,000x a vector index at our workload, because an LLM reads every chunk at least twice and then writes a report for every community it finds.",
+      "numbers": [
+        "300x",
+        "2,000x"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "An independent benchmark measured GraphRAG global search at an average of 331,375 prompt tokens per question versus 879 for plain vector RAG, or 377 times as many.",
+      "quote": "An independent benchmark then measured GraphRAG's global search using an average of [331,375 tokens per question against 879 for plain vector RAG](https://arxiv.org/html/2506.05690v3), 377 times as many, on every query.",
+      "numbers": [
+        "331,375",
+        "879",
+        "377"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "On GraphRAG-Bench's novel-text dataset, reranked vector RAG scored 60.92 on fact retrieval versus 49.29 for Microsoft GraphRAG.",
+      "quote": "On its novel-text dataset, reranked vector RAG scored 60.92 on fact retrieval against 49.29 for Microsoft GraphRAG.",
+      "numbers": [
+        "60.92",
+        "49.29"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "On complex-reasoning tasks over novels, reranked RAG scored 42.93 while Microsoft GraphRAG scored 50.93.",
+      "quote": "On GraphRAG-Bench's complex-reasoning tasks over novels, reranked RAG scored 42.93 while Microsoft GraphRAG scored 50.93.",
+      "numbers": [
+        "42.93",
+        "50.93"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "A hybrid stack of dense vectors, BM25 keyword search, and a reranker closes most of the gap that teams try to fix with a graph.",
+      "quote": "A hybrid stack of dense vectors, BM25 keyword search and a reranker closes most of the gap that teams try to fix with a graph.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "GraphRAG answer quality depends on extraction accuracy, entity resolution, and deduplication, which are not supplied by the database licence.",
+      "quote": "The quality of a GraphRAG answer is decided by extraction accuracy, entity resolution and deduplication, and none of those comes with the database licence.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Building the ontology for a graph is expensive human work: defining 10 to 20 entity types, writing resolution rules, and reviewing sample merges.",
+      "quote": "The expensive part is the person-weeks to define 10 to 20 entity types around the questions your users ask, write the resolution rules, and review a sample of merges.",
+      "numbers": [
+        "10",
+        "20"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.beri.net/article/graphrag-vs-vector-rag-indexing-query-cost-lightrag-lazygraphrag-2026"
+}

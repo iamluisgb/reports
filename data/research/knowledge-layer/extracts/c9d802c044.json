@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2025-05-16",
+  "author_or_org": "Per Jacobsson (Google Cloud)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Google Cloud describes a semantic layer over raw data as a bridge between complex data structures and the everyday language used by customers.",
+      "quote": "Semantic layer over raw data. This provides a bridge between complex data structures and the everyday language used by the customer",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Google Cloud says LLMs need explicit schema/column/data context and implicit semantic/business context to generate accurate SQL.",
+      "quote": "Just like data analysts or engineers, LLMs need significant amounts of knowledge or \"context\" to generate accurate SQL. The context can be both explicit (what does the schema look like, what are the relevant columns, and what does the data itself look like?) or more implicit (what is the precise semantic meaning of a piece of data? what does it mean for the specific business case?).",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Google Cloud states that fine-tuning models on every database schema is not scalable because schema/data changes are costly and business semantics are often undocumented.",
+      "quote": "Specialized model training, or fine tuning, is typically not a scalable solution to this problem. Training on the shape of every database or dataset, and keeping up with schema or data changes, is both difficult and cost-prohibitive. Business knowledge and semantics are often not well documented in the first place, and difficult to turn into training data.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Google Cloud uses vector search for multi-stage semantic matching to identify relevant datasets, tables, and columns before loading additional context for text-to-SQL.",
+      "quote": "We use a variety of indexing and retrieval techniques — first to identify relevant datasets, tables and columns, typically using vector search for multi-stage semantic matching, then to load additional useful context.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Google Cloud says non-AI query parsing or dry-running generated SQL gives a deterministic signal when the LLM has missed something, which is passed back for a second model pass.",
+      "quote": "To address this we have found that non-AI approaches like query parsing or doing a dry run of the generated SQL complements model-based workflows well. We can get a clear, deterministic signal if the LLM has missed something crucial, which we then pass back to the model for a second pass.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Google Cloud uses self-consistency by generating multiple SQL queries for the same user question and picking the best candidate.",
+      "quote": "The idea of self-consistency is to not depend on a single round of generation, but to generate multiple queries for the same user question, potentially using different prompting techniques or model variants, and picking the best one from all candidates.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Google Cloud evaluates text-to-SQL with user metrics and offline metrics, combining human and automated evaluation, including LLM-as-a-judge techniques.",
+      "quote": "We combine user metrics and offline eval metrics, and employ both human and automated evaluation, particularly using LLM-as-a-judge techniques, which reduce cost but still allow us to understand performance on ambiguous and unclear tasks.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://cloud.google.com/blog/products/databases/techniques-for-improving-text-to-sql"
+}

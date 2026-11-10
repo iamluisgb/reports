@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": null,
+  "author_or_org": "Microsoft",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Fabric IQ ontology is a shared machine-understandable business representation defining concepts such as customers, products, assets, orders, and locations with properties, relationships, rules, and metrics, then binding them to enterprise data so people, applications, and AI agents share vocabulary and context.",
+      "quote": "The **ontology (preview)** item in Microsoft Fabric IQ provides a shared, machine-understandable representation of your business. It defines the concepts that matter to your organization, such as customers, products, assets, orders, and locations, along with their properties, how they relate, and the rules and metrics that give them business meaning. You then bind these definitions to enterprise data so people, applications, and AI agents can use the same vocabulary and context.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Fabric positions ontology as a business context and semantic modeling layer between enterprise data and consuming experiences; it stores and serves definitions and bindings, is not a general-purpose data-query engine, and agents and visualizations use it as context while executing against bound data sources.",
+      "quote": "Ontology is the **business context and semantic modeling layer** between enterprise data and the experiences that consume it. It stores and serves ontology definitions and bindings (it isn't itself a general-purpose data-query engine). Agent and visualization experiences use the ontology as context and execute against the appropriate bound data sources.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Fabric ontology aligns with semantic-model constructs while extending them with ontology-specific concepts, representing tables, columns, measures, and relationships alongside entity hierarchies, business rules, source bindings, namespaces, and other semantic metadata.",
+      "quote": "Ontology aligns with familiar semantic-model constructs while extending them with ontology-specific modeling concepts. You can represent tables, columns, measures, and relationships alongside entity hierarchies, business rules, source bindings, namespaces, and other semantic metadata.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A Fabric ontology can be generated from a Power BI semantic model to reuse existing business definitions; semantic-model tables and relationships provide the starting structure while ontology adds business context for operational and agent-based consumption, including calculated columns and DAX measures.",
+      "quote": "One way to create an ontology is to generate it from a Power BI semantic model to reuse existing business definitions. Semantic-model tables and relationships provide the starting structure, while ontology adds business context and capabilities for operational and agent-based consumption. The updated experience expands semantic-model alignment to include calculated columns and DAX measures.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Power BI measures appear in Fabric ontology as metrics associated with entities; the source semantic model owns the DAX expression while ontology retains the metric's source and business context so agents can use the organization's defined calculations rather than recreating them.",
+      "quote": "Measures from a source semantic model appear in ontology as **metrics** associated with the relevant entities. The source semantic model remains the owner of the DAX expression, while ontology retains the metric's source and business context so agents can recognize and use the organization's defined calculations rather than recreating them.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Data binding connects an ontology definition to real data, describes which source supplies an entity's properties, metrics, instances, or relationships, and preserves the mapping between business terminology and source structures; preview source options include semantic models, lakehouses, eventhouses, warehouses, SQL databases, mirrored databases, and OneLake constructs such as shortcuts, views, and materialized views.",
+      "quote": "A **data binding** connects an ontology definition to real data. Bindings describe which source supplies an entity's properties, metrics, instances, or relationships and preserve the mapping between business terminology and source structures. During preview, source options include semantic models, lakehouses, eventhouses, warehouses, SQL databases, mirrored databases, and supported OneLake constructs such as shortcuts, views, and materialized views.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Fabric ontology acts as a virtual semantic and context layer over source systems; source data remains in its owning system, and consuming experiences can query the live bound source rather than copying all data into the ontology.",
+      "quote": "Ontology acts as a virtual semantic and context layer over these sources. Source data remains in the system that owns it, and consuming experiences can query the live bound source rather than copying all data into the ontology.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Fabric ontology rules capture business logic in natural language and link it to entities, properties, and relationships; representing a rule in ontology makes the same rule context available to multiple consumers and reduces duplication across prompts, agents, and applications.",
+      "quote": "**Rules** capture business logic in natural language and link it to entities, properties, and relationships. Representing a rule in the ontology makes the same rule context available to multiple consumers, which reduces the need to duplicate business instructions across individual prompts, agents, and applications.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://learn.microsoft.com/en-us/fabric/iq/ontology/overview"
+}

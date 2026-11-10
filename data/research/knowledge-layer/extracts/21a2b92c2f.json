@@ -1,0 +1,78 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-05-30",
+  "author_or_org": "Till Freitag",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Entity extraction from documents has shifted from custom ML work to LLM structured-output engineering, with deduplication and resolution as the harder parts.",
+      "quote": "Two years ago entity extraction was its own ML project. Today it's a well-shaped prompt with a JSON schema and 200 lines of pipeline code. The hard work isn't extraction — it's deduplication and resolution.",
+      "numbers": [
+        "Two",
+        "200"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "In knowledge-graph entity deduplication, exact normalization catches 60–70% and embedding-based similarity catches another 20–25%.",
+      "quote": "*   **Exact match**: normalize to lowercase, strip whitespace, drop trade suffixes (`gmbh`, `inc`, `ltd`). Catches 60–70%.\n*   **Embedding-based**: cosine similarity over entity embeddings + threshold. Catches another 20–25%.",
+      "numbers": [
+        "60–70%",
+        "20–25%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Entity resolution links graph entities to operational records such as CRM user and customer IDs, and this rarely works fully automatically.",
+      "quote": "Deduplication is intra-corpus. **Resolution** links to reality: \"Anna Becker\" is `user_id=4471` in the CRM, \"Acme GmbH\" is `customer_id=cust_8821`.\n\nThat rarely works fully automatically.",
+      "numbers": [
+        "4471",
+        "cust_8821"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Knowledge-graph extraction needs predefined relation vocabularies or LLM label mapping for inconsistent relation labels, plus versioned schemas and audits for schema drift.",
+      "quote": "3.   **Inconsistent relation labels**: \"works at\", \"employed by\", \"employee of\" → three edges. → Predefined relation vocabularies or LLM-based label mapping as post-processing.\n4.   **Schema drift over time**: new document types → new fields. → Versioned schemas, regular sample audits.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "For a typical enterprise setup of 10,000 documents and about 5M tokens, extraction costs 80–200 USD one-off, embedding deduplication 5–15 USD, LLM reconciliation 20–60 USD, and incremental updates about 1–3 USD per 100 new documents.",
+      "quote": "For a typical enterprise setup (10,000 documents, ~5M tokens):\n\n*   **Extraction with GPT-4.1 / Claude Sonnet 4.5**: 80–200 USD one-off\n*   **Embedding-based deduplication**: 5–15 USD\n*   **LLM reconciliation**: 20–60 USD\n*   **Incremental updates**: ~1–3 USD per 100 new documents",
+      "numbers": [
+        "10,000",
+        "~5M",
+        "80–200",
+        "5–15",
+        "20–60",
+        "1–3",
+        "100"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Microsoft GraphRAG has built-in community detection and is batch-oriented, but is Python-only and opinionated.",
+      "quote": "| **Microsoft GraphRAG** | community detection built in, batch-oriented | Python-only, opinionated |",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The author's default is LlamaIndex KG Index for prototypes and Instructor plus a custom pipeline plus Neo4j for production.",
+      "quote": "Our default for prototypes: **LlamaIndex KG Index**. For production: **Instructor + custom pipeline + Neo4j**.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "LLM extraction pipelines can use stable entity IDs, a confidence score, and a small schema to avoid duplicate nodes and quality loss.",
+      "quote": "1.   **`confidence` is mandatory.** Models that mark everything 1.0 are broken — but if you don't ask, you don't get it.\n2.   **Stable `id`s.** Otherwise \"Anna Becker\", \"A. Becker\" and \"Ms Becker\" land as three nodes.\n3.   **Keep the schema small.** The more fields you demand, the worse the quality. Two passes beat one fat pass.",
+      "numbers": [
+        "1.0"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://till-freitag.com/en/blog/entity-extraction-llm-knowledge-graph-en"
+}

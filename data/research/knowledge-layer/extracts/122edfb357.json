@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2024-08-07",
+  "author_or_org": "LucaStamatescu (Microsoft Foundry Blog)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The article defines graph nodes as key entities in documents, such as characters, objects, and places.",
+      "quote": "**Nodes**: Key entities in the documents, such as characters, objects, and places (e.g. Dorothy, the main character, or Toto, her dog).",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The article defines graph edges as relationships between entities, with an example of Toto and Dorothy being friends or pet.",
+      "quote": "**Edges**: The relationships between these entities, such as the connection between Toto and Dorothy (friends, pet).",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The article says traditional retrieval returns only isolated chunks, while a knowledge graph captures relationships between entities, objects, and systems to provide holistic document understanding.",
+      "quote": "This limitation arises because traditional retrieval systems return only isolated chunks of information. In contrast, a knowledge graph captures the relationships between various entities, objects, and systems, thereby providing a holistic understanding of the documents in a memory-efficient manner.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The article claims typical RAG struggles on questions that require comprehensive understanding of an entire document or a set of documents.",
+      "quote": "However, they struggle when it comes to answering questions that require a comprehensive understanding of an entire document or a set of documents:",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Vectorizing the full Wizard of Oz text cost $0.0056 USD, which the article says is negligible compared with graph-building costs.",
+      "quote": "Vectorizing the entire text of the Wizard of Oz cost only $0.0056 USD, which is negligible in comparison with the costs of building the graph.",
+      "numbers": [
+        "0.0056"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The article states that no proper benchmarking was conducted to compare the performance of different models.",
+      "quote": "Proper benchmarking was not conducted in this work, to compare the performance of the different models.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Graph construction analyzes documents in chunks and uses LLMs to create nodes and edges.",
+      "quote": "Documents are analyzed in chunks, and nodes and edges are created through the clever use of Large Language Models (LLMs).",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The article describes a research direction combining traditional NLP techniques with new techniques to build graphs at lower cost instead of relying solely on LLMs for every entity and relationship.",
+      "quote": "One key area of research combines traditional NLP techniques with new techniques to develop graphs at a significantly reduced cost, rather than relying solely on LLMs to generate every entity and relationship.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/graphrag-costs-explained-what-you-need-to-know/4207978"
+}

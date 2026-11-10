@@ -1,0 +1,268 @@
+{
+ "semantic layer context layer ontology for AI agents": [
+  {
+   "url": "https://www.digetiers.com/en/insights/library/what-is-a-context-layer",
+   "title": "What Is a Context Layer? A Definitive Guide for Enterprise AI",
+   "snippet": "A semantic layer defines what the business rules are; a context layer delivers those rules alongside the situational reality an LLM needs.",
+   "provider": "tinyfish",
+   "published": "2026-07-13"
+  },
+  {
+   "url": "https://www.snowflake.com/en/blog/snowflake-internal-context-layer-for-ai-agents/",
+   "title": "Building a Context Layer for AI Agents \u2014 Snowflake",
+   "snippet": "How Snowflake built its internal context layer using semantics, and the best practices learned.",
+   "provider": "tinyfish",
+   "published": "2026-08-17"
+  },
+  {
+   "url": "https://datahub.com/blog/context-layer-components/",
+   "title": "Context Layer Components for AI Agents \u2014 DataHub",
+   "snippet": "The context layer sits between your data infrastructure and your agent infrastructure.",
+   "provider": "tinyfish",
+   "published": "2026-06-15"
+  },
+  {
+   "url": "https://datacoves.com/post/context-layer-vs-semantic-layer",
+   "title": "Context Layer vs Semantic Layer: What AI Agents Need",
+   "snippet": "A semantic layer is a governed set of metric, dimension, and entity definitions that sits between your warehouse and every tool that queries it.",
+   "provider": "tinyfish",
+   "published": "2026-10-17"
+  },
+  {
+   "url": "https://www.ey.com/en_us/insights/consumer-products/ontologies-as-the-missing-layer-in-enterprise-ai",
+   "title": "Ontologies as the missing layer in enterprise AI \u2014 EY",
+   "snippet": "How ontologies create a semantic foundation that helps enterprise AI reason accurately and explain decisions.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://medium.com/@gib.bassett/agents-need-two-kinds-of-context-c8c227431401",
+   "title": "Agents need two kinds of context",
+   "snippet": "A semantic layer tells an agent what the numbers mean. It will not tell it who owns the work, or what breaks when that work changes.",
+   "provider": "tinyfish",
+   "published": ""
+  }
+ ],
+ "GraphRAG versus vector RAG cost in production": [
+  {
+   "url": "https://www.beri.net/article/graphrag-vs-vector-rag-indexing-query-cost-lightrag-lazygraphrag-2026",
+   "title": "GraphRAG vs Vector RAG: The 1000x Index Bill Is the Small Part",
+   "snippet": "GraphRAG indexing costs roughly 300x to 2,000x a vector index at our workload.",
+   "provider": "tinyfish",
+   "published": "2026-10-09"
+  },
+  {
+   "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/graphrag-costs-explained-what-you-need-to-know/4207978",
+   "title": "GraphRAG Costs Explained \u2014 Microsoft",
+   "snippet": "GraphRAG costs: what you need to know.",
+   "provider": "tinyfish",
+   "published": "2024-08-06"
+  },
+  {
+   "url": "https://neo4j.com/blog/agentic-ai/vector-rag-vs-graphrag/",
+   "title": "Vector RAG vs. GraphRAG: Which retrieval do you need? \u2014 Neo4j",
+   "snippet": "Vector RAG chunks records separately and ranks by similarity; GraphRAG follows relationships.",
+   "provider": "tinyfish",
+   "published": "2026-09-23"
+  },
+  {
+   "url": "https://www.paperclipped.de/en/blog/graph-rag-production/",
+   "title": "Graph RAG in 2026: What Actually Works in Production",
+   "snippet": "Graph RAG costs 10-40x more to index than vector RAG.",
+   "provider": "tinyfish",
+   "published": "2026-03-22"
+  },
+  {
+   "url": "https://www.llms.blog/posts/graphrag-vs-vector-rag-in-production-architecture-community-summaries-and-cost-latency-trade-offs",
+   "title": "GraphRAG vs. Vector RAG in Production",
+   "snippet": "Indexing compute costs, query-time latency overheads and trade-offs.",
+   "provider": "tinyfish",
+   "published": "2026-08-18"
+  }
+ ],
+ "semantic layer text-to-SQL accuracy benchmark": [
+  {
+   "url": "https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026",
+   "title": "Semantic Layer vs. Text-to-SQL: 2026 Benchmark Update \u2014 dbt Labs",
+   "snippet": "Text-to-SQL accuracy nearly doubled, from 32.7% to 64.5% on the full question set.",
+   "provider": "tinyfish",
+   "published": "2026-04-07"
+  },
+  {
+   "url": "https://www.atscale.com/blog/semantic-layer-text-to-sql-accuracy/",
+   "title": "Semantic Layer vs. a Better LLM for Text-to-SQL \u2014 AtScale",
+   "snippet": "Switching LLMs moved accuracy by up to 17.6 points. The semantic layer added 20 to 31 points.",
+   "provider": "tinyfish",
+   "published": "2026-10-28"
+  },
+  {
+   "url": "https://www.snowflake.com/en/blog/engineering/cortex-analyst-text-to-sql-accuracy-bi/",
+   "title": "Snowflake Cortex Analyst: Evaluating Text-to-SQL Accuracy for Real-World BI",
+   "snippet": "Benchmarking results for Cortex Analyst with semantic models.",
+   "provider": "tinyfish",
+   "published": "2024-08-29"
+  },
+  {
+   "url": "https://www.snowflake.com/en/blog/engineering/agentic-semantic-model-text-to-sql/",
+   "title": "Agentic Semantic Model Improvement \u2014 Snowflake",
+   "snippet": "Agentic system enhances semantic models for text-to-SQL, reducing manual work.",
+   "provider": "tinyfish",
+   "published": "2025-03-31"
+  },
+  {
+   "url": "https://colrows.com/blogs/text-to-sql-accuracy-cliff/",
+   "title": "Text-to-SQL Accuracy: 91% in Benchmarks, 21% on Real Schemas",
+   "snippet": "On academic benchmarks text-to-SQL hits 86-91%. On real enterprise schemas it drops to 10-21%.",
+   "provider": "tinyfish",
+   "published": "2026-06-11"
+  },
+  {
+   "url": "https://cloud.google.com/blog/products/databases/techniques-for-improving-text-to-sql",
+   "title": "Techniques for improving text-to-SQL \u2014 Google Cloud",
+   "snippet": "Context building, table retrieval, LLM-as-a-judge.",
+   "provider": "tinyfish",
+   "published": "2025-05-16"
+  },
+  {
+   "url": "https://arxiv.org/abs/2606.31041",
+   "title": "A Semantic-Layer-Mediated Agent for Natural Language to SQL",
+   "snippet": "Architecture of a semantic-layer-mediated NL2SQL agent that decouples intent from physical execution.",
+   "provider": "tinyfish",
+   "published": "2026-06-30"
+  }
+ ],
+ "Palantir Foundry ontology actions and AIP agents": [
+  {
+   "url": "https://palantir.com/docs/foundry/action-types/overview/",
+   "title": "Action types \u2022 Overview \u2014 Palantir",
+   "snippet": "An action is a single transaction that changes objects, properties and links.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://palantir.com/docs/foundry/action-types/webhooks/",
+   "title": "Action types \u2022 Webhooks \u2014 Palantir",
+   "snippet": "A writeback webhook guarantees that if the request to the external system fails, no changes are applied to the Ontology.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://palantir.com/docs/foundry/architecture-center/aip-architecture/",
+   "title": "AIP architecture overview \u2014 Palantir",
+   "snippet": "The Ontology models the nouns and verbs of operational processes for humans and agents.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://palantir.com/docs/foundry/logic/overview/",
+   "title": "AIP Logic \u2022 Overview \u2014 Palantir",
+   "snippet": "Ontology edits can be automatically applied or staged for human review.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://palantir.com/docs/foundry/aip/ethics-governance/",
+   "title": "AI ethics and governance \u2014 Palantir",
+   "snippet": "Human oversight workflows through Ontology actions and approval processes.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://dvdmaru.com/articles/palantir-ontology-02-actions-en/",
+   "title": "When a Palantir Action Succeeds, What Has Changed?",
+   "snippet": "An action type binds submission criteria, object edits, notifications and webhooks into one definition.",
+   "provider": "tinyfish",
+   "published": ""
+  }
+ ],
+ "Microsoft Fabric IQ ontology agents": [
+  {
+   "url": "https://learn.microsoft.com/en-us/fabric/iq/ontology/overview",
+   "title": "What Is Ontology (Preview)? \u2014 Microsoft Fabric",
+   "snippet": "The ontology agent supports the ontology lifecycle through natural-language interactions.",
+   "provider": "tinyfish",
+   "published": "2026-10-16"
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/fabric/iq/ontology/concepts-agent-integration",
+   "title": "Agent Integration Options for Ontology (Preview) \u2014 Microsoft",
+   "snippet": "How an ontology item can be a source for AI agents.",
+   "provider": "tinyfish",
+   "published": "2026-09-28"
+  },
+  {
+   "url": "https://learn.microsoft.com/en-us/fabric/iq/overview",
+   "title": "What is Fabric IQ? \u2014 Microsoft",
+   "snippet": "Fabric IQ and its built-in ontology agent.",
+   "provider": "tinyfish",
+   "published": "2026-09-28"
+  }
+ ],
+ "LLM knowledge graph extraction entity resolution production": [
+  {
+   "url": "https://www.tigergraph.com/blog/how-to-build-knowledge-graph-with-llms-for-enterprise-ai/",
+   "title": "Knowledge Graph with LLMs: Enterprise AI Guide \u2014 TigerGraph",
+   "snippet": "A production-ready knowledge graph with LLMs requires five stages.",
+   "provider": "tinyfish",
+   "published": "2026-06-23"
+  },
+  {
+   "url": "https://till-freitag.com/en/blog/entity-extraction-llm-knowledge-graph-en",
+   "title": "Entity extraction with LLMs \u2014 from document to knowledge graph",
+   "snippet": "Chunking, extraction, deduplication, resolution: what works, what fails.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://blog.graphlet.ai/the-rise-of-semantic-entity-resolution-45c48d5eb00a",
+   "title": "The Rise of Semantic Entity Resolution",
+   "snippet": "LLMs extract structured information from text; entity resolution becomes central.",
+   "provider": "tinyfish",
+   "published": "2025-08-10"
+  },
+  {
+   "url": "https://aclanthology.org/2026.kallm-1.21.pdf",
+   "title": "Large Language Models for Knowledge Graph Extraction",
+   "snippet": "LLMs enable zero-shot knowledge graph extraction from text.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://senzing.com/knowledge-graphs-graphrag/",
+   "title": "GraphRAG & Why Knowledge Graphs Need Entity Resolution \u2014 Senzing",
+   "snippet": "Why GraphRAG goes bad without entity resolution.",
+   "provider": "tinyfish",
+   "published": ""
+  }
+ ],
+ "topology root cause analysis deterministic causal AI": [
+  {
+   "url": "https://docs.dynatrace.com/docs/dynatrace-intelligence/root-cause-analysis",
+   "title": "Root cause analysis \u2014 Dynatrace Docs",
+   "snippet": "Includes relevant anomalies and ranks root cause contributors to determine the primary cause.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://www.dynatrace.com/news/blog/what-is-causal-ai-deterministic-ai/",
+   "title": "What is causal AI? \u2014 Dynatrace",
+   "snippet": "Deterministic causal AI as a basis for automation and for facts supplied to generative AI.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://docs.broadcom.com/docs/aiops-essentials-of-root-cause-analytics",
+   "title": "A Unified Data Model as the Foundation for AIOps \u2014 Broadcom",
+   "snippet": "Unified data model for root-cause analysis.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://healsoftware.ai/blog/is-topology-really-needed-while-finding-root-cause-2.html",
+   "title": "Is Topology really needed while finding Root Cause?",
+   "snippet": "Topology and data flow in root cause identification.",
+   "provider": "tinyfish",
+   "published": "2023-08-24"
+  }
+ ]
+}

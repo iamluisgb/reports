@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-08-27",
+  "author_or_org": "dvdmaru",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "Palantir’s documentation defines an action as a single transaction that changes properties of one or more objects based on user-defined logic.",
+      "quote": "An action is a single transaction that changes the properties of one or more objects, based on a user-defined logic.",
+      "numbers": [
+        "one"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "User edits to an Ontology object are not written to the dataset backing the object type.",
+      "quote": "A user’s edit to an Ontology object is not written to the dataset backing the object type.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "With a writeback webhook, the external system can succeed while the Ontology change fails.",
+      "quote": "With a writeback webhook, the outside system can succeed while the Ontology fails.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "A newly added webhook defaults to side-effect mode, runs after objects have changed, hides failure from the user, and multiple side-effect webhooks can run in no guaranteed order.",
+      "quote": "A newly added webhook is configured as a side effect by default (set-up-a-webhook page). It runs after the objects have changed. Its failure is not shown to the user, who may already have seen a success message by the time it runs. Several can be attached to one action, in no guaranteed order.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "A Palantir action revert only reverts object-instance edits and does not revert or re-call side effects such as notifications or webhooks.",
+      "quote": "An action revert only reverts the edits to the object instance, but it will not revert side effects, such as notifications or webhooks, nor will it call them in the same way that the applied action would have.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Palantir’s action log does not support storing edited-object properties other than the primary key.",
+      "quote": "Note that storing properties of edited objects other than the primary key is not supported.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "For Palantir’s Apply Action API, a 200 HTTP status only means the request was received and processed by the server, not that the action succeeded.",
+      "quote": "Note that a 200 HTTP status code only indicates that the request was received and processed by the server.",
+      "numbers": [
+        "200"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Palantir Automate action effects use at-least-once execution semantics rather than exactly-once guarantees.",
+      "quote": "Effects follow at-least-once execution semantics rather than exactly-once guarantees.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://dvdmaru.com/articles/palantir-ontology-02-actions-en/"
+}

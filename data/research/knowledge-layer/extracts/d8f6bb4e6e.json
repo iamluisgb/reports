@@ -1,0 +1,57 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-08-18",
+  "author_or_org": "axc",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Vector RAG is effective for localized fact retrieval but struggles with global, corpus-wide synthesis and multi-hop relationship tracking.",
+      "quote": "While effective for localized fact retrieval, this approach struggles with global, corpus-wide synthesis and multi-hop relationship tracking.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "GraphRAG global search has 5–15 second end-to-end latency, while vector RAG typically runs under 3 seconds.",
+      "quote": "Vector RAG: Query latency is determined by vector similarity search (10 to 50 milliseconds) plus a single LLM generation call (1 to 3 seconds), resulting in typical end-to-end latencies under 3 seconds. GraphRAG Global Search: Because Global Search executes a map-reduce sequence across dozens of community summaries, it requires multiple LLM invocations and substantial context windows before delivering the first response token. End-to-end query latency often ranges between 5 and 15 seconds, with high per-query token consumption.",
+      "numbers": [
+        "10 to 50",
+        "1 to 3",
+        "under 3",
+        "5 and 15"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "GraphRAG local search retrieves 1-hop and 2-hop neighbor nodes around seed entities, along with connecting edges and linked raw text chunks.",
+      "quote": "The retrieval engine traverses the graph around identified seed entities, collecting 1-hop and 2-hop neighbor nodes, connecting relationship edges, and the raw text chunks originally linked to those entities.",
+      "numbers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Incremental updates to a knowledge graph can require re-clustering and updating community summaries, unlike vector databases that support simple insert/update/delete.",
+      "quote": "Standard vector databases allow simple insert, update, and delete operations on single document chunks. In contrast, adding new documents to a knowledge graph can alter graph connectivity, requiring graph re-clustering and updating community summaries across parent hierarchical levels.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "GraphRAG global search uses a map-reduce approach over community summaries, with LLM relevance scores rated 0 to 100.",
+      "quote": "GraphRAG distributes the query across community summaries in parallel batches (map phase), prompting an LLM to generate intermediate response segments alongside relevance score ratings (0 to 100).",
+      "numbers": [
+        "0 to 100"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Vector RAG is recommended for point-lookup fact retrieval and streaming or high-velocity ingestion where new documents must be indexed within seconds.",
+      "quote": "When to Standardize on Vector RAG (or Hybrid BM25 + Vector) *   **Point-lookup fact retrieval:** When user queries target specific, localized facts contained within single sections or paragraphs. *   **Streaming or high-velocity ingestion:** When new documents arrive continuously and must be indexed within seconds.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.llms.blog/posts/graphrag-vs-vector-rag-in-production-architecture-community-summaries-and-cost-latency-trade-offs"
+}

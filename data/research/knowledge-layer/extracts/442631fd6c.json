@@ -1,0 +1,41 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2024-10-04",
+  "author_or_org": "Bipin Singh / Dynatrace",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "Causal AI uses relationships, dependencies, and context among network entities and events to determine precise root cause.",
+      "quote": "Causal AI draws on supporting data, such as relationships, dependencies, and other context among network entities and events. With this context, causal AI determines the precise root cause of an issue.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The source contrasts correlation-based AI as probabilistic and human-verified with causal AI as fact-based and automated.",
+      "quote": "Correlation-based AI is probabilistic and requires humans to verify the accuracy of results.Causal AI is fact-based and thus can do automated analyses.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Dynatrace's causal analysis combines topological context with metric data to identify observability signals and every entity affected by a problem.",
+      "quote": "Using fault-tree analysis, this causal AI approach seamlessly combines topological context with metric data to quickly identify observability signals for any behavior of interest. The analysis provides insights into every entity a problem affects, enabling developers to solve problems without having to reproduce errors.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The source states correlation does not equal causation and predictive analysis cannot show that an outcome occurred because of an event.",
+      "quote": "Predictive analysis can observe an event and predict an outcome will occur, but it can’t show that the outcome occurred because of the event. In other words, correlation doesn’t equal causation.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Fault-tree analysis in causal AI uses boolean logic and a top-down approach to identify component-level basic events that caused top-level system failures.",
+      "quote": "Fault-tree analysis uses boolean logic to explore system-level failures. It’s a top-down approach used to identify the component-level failure, or basic event, that caused the system-level failure, or top event.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.dynatrace.com/news/blog/what-is-causal-ai-deterministic-ai/"
+}

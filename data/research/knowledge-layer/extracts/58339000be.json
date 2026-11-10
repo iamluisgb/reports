@@ -1,0 +1,17 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-04-29",
+  "author_or_org": "EY (Ernst & Young)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "EY frames ontologies as the missing layer required for trustworthy AI in consumer products, positioning ontology as a distinct architectural layer rather than a model or data pipeline component.",
+      "quote": "Title: Ontologies: the missing layer for trustworthy AI in consumer products",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.ey.com/en_us/insights/consumer-products/ontologies-as-the-missing-layer-in-enterprise-ai"
+}

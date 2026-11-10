@@ -1,0 +1,26 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-16",
+  "author_or_org": "Markus Ilves, Eduard Barbu, Jaan Übi (University of Tartu)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper presents a schema-constrained evaluation framework that combines an explicit ontology of six entity types and 96 relation types with schema-injected prompts.",
+      "quote": "We present a schema-constrained evaluation framework that combines an explicit ontology of six entity types and 96 relation types with structured generation guided by schema-injected prompts.",
+      "numbers": [
+        "six",
+        "96"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "LLMs capable of zero-shot and few-shot structured generation can directly generate typed entities and relations from raw text instead of training task-specific extraction models.",
+      "quote": "The emergence of large language models (LLMs) capable of zero-shot and few-shot structured generation has introduced a different paradigm for KG construction. Instead of training task-specific extraction models, LLMs can directly generate typed entities and relations from raw text.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 6,
+  "model": "deepseek-v4-flash",
+  "url": "https://aclanthology.org/2026.kallm-1.21.pdf"
+}

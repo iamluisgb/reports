@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2007-03-01",
+  "author_or_org": "Wikipedia",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A business-oriented semantic layer maps complex corporate data to common business terms such as product, customer, or revenue to provide a unified view across the organization.",
+      "quote": "A semantic layer maps complex data into familiar business terms such as product, customer, or revenue to offer a unified, consolidated view of data across the organization.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Knowledge/meaning semantic layers are built with semantic web standards RDF, SKOS, and OWL.",
+      "quote": "These semantic layers are built using semantic standards such as [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework \"Resource Description Framework\"), [SKOS](https://en.wikipedia.org/wiki/SKOS \"SKOS\"), and [OWL](https://en.wikipedia.org/wiki/Web_Ontology_Language \"Web Ontology Language\").",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "RDF encodes information as subject-predicate-object statements and is intended to let independently created schemas be combined and merged.",
+      "quote": "RDF represents information as statements linking a subject, a predicate, and an object, and is designed to let data from different sources be combined and merged even when the underlying schemas were created independently.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "OWL is a computational logic-based language whose knowledge can be reasoned over by programs to check consistency or make implicit knowledge explicit.",
+      "quote": "OWL extends this foundation with a more expressive, logic-based vocabulary for defining classes, properties, and the relationships between them; because OWL is a computational logic-based language, knowledge expressed in it can be reasoned over by computer programs to verify consistency or make implicit knowledge explicit.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Within the semantic layer's core components, an ontology model and knowledge graph represent relationships between assets and concepts.",
+      "quote": "an [ontology](https://en.wikipedia.org/wiki/Ontology \"Ontology\") model and [knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph \"Knowledge graph\") represent relationships between assets and concepts.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Interest in standalone semantic layers has grown with generative AI tools for data analysis, which rely on centrally defined metrics to produce consistent results when querying enterprise data.",
+      "quote": "Interest in standalone semantic layers has grown alongside the adoption of generative AI tools for data analysis, which draw on centrally defined metrics to produce consistent results when querying enterprise data.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "MIT CISR research briefings argue organizations face pressure to invest in semantic technologies that make data assets usable by business users and AI models or agents.",
+      "quote": "Research briefings from MIT's Center for Information Systems Research have argued that organizations face increasing pressure to invest in semantic technologies capable of making data assets usable by both business users and AI models or [AI agents](https://en.wikipedia.org/wiki/AI_agents \"AI agents\").",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://en.wikipedia.org/wiki/Semantic_layer"
+}

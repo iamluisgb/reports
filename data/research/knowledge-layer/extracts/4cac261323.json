@@ -1,0 +1,43 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-06-23",
+  "author_or_org": "Paige Leidig / TigerGraph",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "LLMs automate entity and relationship extraction from unstructured text, but they do not store, validate, or reason over that data; that role belongs to the knowledge graph.",
+      "quote": "LLMs automate entity and relationship extraction from unstructured text, but they do not store, validate, or reason over that data – that is the knowledge graph’s job.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A production-ready knowledge graph with LLMs requires five stages: data ingestion, LLM-based extraction, entity resolution, graph ingestion with schema validation, and a GraphRAG retrieval layer.",
+      "quote": "A production-ready knowledge graph with LLMs requires five stages: data ingestion, LLM-based extraction, entity resolution, graph ingestion with schema validation, and a GraphRAG retrieval layer.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Schema design must happen before ingestion begins; retrofitting a schema at enterprise scale requires full re-extraction and re-ingestion and typically takes months.",
+      "quote": "Schema design must happen before ingestion begins. Retrofitting a schema at enterprise scale requires full re-extraction and re-ingestion – a remediation effort that typically takes months.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Vector search returns semantically similar text but cannot follow a chain of relationships, enforce access controls, or explain why a result was returned.",
+      "quote": "Vector search returns semantically similar text; it cannot follow a chain of relationships, enforce access controls, or explain why a result was returned.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "GraphRAG grounds LLM responses in verified, relationship-structured facts rather than statistical patterns, making enterprise AI systems accurate, explainable, and auditable.",
+      "quote": "GraphRAG grounds LLM responses in verified, relationship-structured facts rather than statistical patterns, making enterprise AI systems accurate, explainable, and auditable.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.tigergraph.com/blog/how-to-build-knowledge-graph-with-llms-for-enterprise-ai/"
+}

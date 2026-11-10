@@ -1,0 +1,67 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-28",
+  "author_or_org": "Michael Rumiantsau and Ivan Fokeev",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper treats a semantic layer as explicit business semantics supplied as context because database schemas do not encode those semantics.",
+      "quote": "LLMs deployed for natural-language querying of analytical databases suffer from two intertwined failures - incorrect answers and confident hallucinations - both rooted in the same cause: the model is forced to infer business semantics that the schema does not encode. We test whether supplying those semantics as context closes the gap.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The benchmark used 100 natural-language questions over the Cleaned Contoso Retail Dataset in ClickHouse and a paired single-shot protocol.",
+      "quote": "We benchmark three frontier LLMs (Claude Opus 4.7, Claude Sonnet 4.6, GPT-5.4) on 100 natural-language questions over the Cleaned Contoso Retail Dataset in ClickHouse, using a paired single-shot protocol.",
+      "numbers": [
+        "100"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Each model was evaluated twice: with schema only, and with schema plus a 4 KB hand-authored markdown document describing measures, conventions, and disambiguation rules.",
+      "quote": "Each model is evaluated twice: once given only the warehouse schema, and once given the schema plus a 4 KB hand-authored markdown document describing the dataset's measures, conventions, and disambiguation rules.",
+      "numbers": [
+        "4"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Adding the semantic-layer document improved accuracy by +17 to +23 percentage points across all three models.",
+      "quote": "Adding the document improves accuracy by +17 to +23 percentage points across all three models.",
+      "numbers": [
+        "+17",
+        "+23",
+        "three"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "With the document, accuracy was 67.7-68.7%; without it, accuracy was 45.5-50.5%; every cross-cluster comparison was significant at p <0.01.",
+      "quote": "With it, the three models are statistically indistinguishable (67.7-68.7%); without it, they are also indistinguishable (45.5-50.5%). Every cross-cluster comparison is significant at p <0.01.",
+      "numbers": [
+        "67.7",
+        "68.7",
+        "45.5",
+        "50.5",
+        "0.01"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The semantic-layer document accounted for essentially all of the significant variance, while model choice within tier did not.",
+      "quote": "The presence of the semantic-layer document accounts for essentially all of the significant variance; model choice within tier does not.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The authors interpret explicit business semantics as suppressing the dominant class of text-to-SQL errors by changing what the model is asked to do, not by making the model more capable.",
+      "quote": "We interpret this as a structural result: explicit business semantics suppress the dominant class of text-to-SQL errors not by making the model more capable, but by changing what the model is being asked to do.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.25149"
+}

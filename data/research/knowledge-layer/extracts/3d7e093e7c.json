@@ -1,0 +1,17 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": null,
+  "author_or_org": "gib.bassett",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A semantic layer tells an agent what numbers mean, but it does not tell the agent who owns the work or what breaks when that work changes.",
+      "quote": "A semantic layer tells an agent what the numbers mean. It will not tell it who owns the work, or what breaks when that work changes.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://medium.com/@gib.bassett/agents-need-two-kinds-of-context-c8c227431401"
+}

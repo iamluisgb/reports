@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": null,
+  "author_or_org": "meghana1711",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The project extracts concepts, taxonomic relations, non-taxonomic relations, and OWL ontology structures from technical documentation such as SLURM and IBM Spectrum LSF.",
+      "quote": "The system extracts concepts, taxonomic relations, non-taxonomic relations, and OWL ontology structures from technical documentation such as **SLURM** and **IBM Spectrum LSF**.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Axiom generation converts extracted concepts and relations into OWL classes, properties, domain/range constraints, and other ontology elements.",
+      "quote": "Extracted concepts and relations are converted into OWL classes, properties, domain/range constraints, and other ontology elements.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Taxonomy extraction identifies hierarchical is-a relations and converts them into subclass relations.",
+      "quote": "Taxonomy Extraction: Hierarchical is-a relations are identified and converted into subclass relations.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The OLAF Hybrid ontology-learning approach combines classical NLP, statistical methods, rule-based filtering, and LLM support.",
+      "quote": "This approach combines classical NLP, statistical methods, rule-based filtering, and LLMs support.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The OLAF LLM variant uses the LLM for concept identification, enrichment, taxonomy construction, relation extraction, and axiom generation through task-specific prompts.",
+      "quote": "The model supports concept identification, enrichment, taxonomy construction, relation extraction, and axiom generation through task-specific prompts.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Text2OWL directly generates OWL-compatible ontology structures from contextual chunks and prompts using an LLM.",
+      "quote": "It uses contextual chunks and prompts to directly generate OWL-compatible ontology structures.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The project evaluates generated ontologies with sample-based precision by manually validating extracted concepts, taxonomy relations, and non-taxonomic relations.",
+      "quote": "Sample-based precision: manual validation of extracted concepts, taxonomy relations, and non-taxonomic relations.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/meghana1711/hpc-ontology-learning"
+}

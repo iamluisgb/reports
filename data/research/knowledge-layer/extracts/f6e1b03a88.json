@@ -1,0 +1,68 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-04-07",
+  "author_or_org": "Jason Ganz and Benoit Perigaud (dbt Labs)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A semantic layer is an ontology-driven approach that defines metrics, dimensions, entities, and their relationships to encode business logic; the LLM maps a question into metrics and dimensions, and MetricFlow deterministically generates SQL.",
+      "quote": "Instead of asking the LLM to write raw SQL, you define a structured ontology (metrics, dimensions, entities, and the relationships between them) that encodes your business logic. The LLM's job is then reduced to decomposing a natural language question into the correct combination of metrics and dimensions. dbt's Semantic Layer uses its engine MetricFlow to handle the actual query generation deterministically.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "For queries covered by a well-modeled Semantic Layer, accuracy approaches or hits 100% because deterministic query generation prevents subtly wrong results.",
+      "quote": "**For queries covered by a well-modeled Semantic Layer, accuracy approaches or hits 100%.** The Semantic Layer's deterministic query generation means the LLM can't produce subtly wrong results.",
+      "numbers": [
+        "100%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Text-to-SQL accuracy nearly doubled from 32.7% to 64.5% on the full benchmark question set.",
+      "quote": "**Text-to-SQL accuracy nearly doubled**, from 32.7% to 64.5% on the full question set. That's a massive improvement.",
+      "numbers": [
+        "32.7%",
+        "64.5%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "For questions within the Semantic Layer's scope, both tested models returned correct results 100% of the time.",
+      "quote": "**For questions within the Semantic Layer's scope, both models now return correct results 100% of the time.**",
+      "numbers": [
+        "100%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Semantic Layer failure is an error message when it cannot answer, whereas text-to-SQL failure can be a plausible but incorrect answer.",
+      "quote": "With text-to-SQL, failure looks like a plausible but incorrect answer. With the Semantic Layer, failure looks like an error message.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The Semantic Layer can only answer questions that fall within the scope of what has been modeled.",
+      "quote": "The trade-off is coverage: the Semantic Layer can only answer questions that fall within the scope of what's been modeled.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Adding just 3 additional models allowed the Semantic Layer to answer every benchmark question and also improved text-to-SQL.",
+      "quote": "With just 3 additional models, the Semantic Layer can now answer every question in the benchmark. And text-to-SQL improved too, confirming that **better modeling helps both approaches.**",
+      "numbers": [
+        "3"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Text-to-SQL is flexible for any question if the data exists, but fragile because the LLM can join tables incorrectly, misinterpret a column, or return wrong results.",
+      "quote": "This makes it flexible (any question is fair game as long as the data exists), but also fragile. The LLM might join tables incorrectly, misinterpret a column's meaning, or produce a query that runs successfully but returns wrong results.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://docs.getdbt.com/blog/semantic-layer-vs-text-to-sql-2026"
+}

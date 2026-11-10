@@ -1,0 +1,74 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": null,
+  "author_or_org": "Nilanshjain",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "In this benchmark, the default GraphRAG config used 42.8% fewer tokens than Basic RAG (805 vs 1,407) while achieving higher judge accuracy (71.4 vs 64.3).",
+      "quote": "The default GraphRAG config uses 42.8% fewer tokens than Basic RAG (805 vs 1,407) while posting higher judge accuracy (71.4 vs 64.3).",
+      "numbers": [
+        "42.8%",
+        "805",
+        "1,407",
+        "71.4",
+        "64.3"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The adaptive GraphRAG config achieved 92.9% judge accuracy and 0.891 BERTScore F1_raw in the same eval run, paying roughly 3x the tokens for the accuracy bonus.",
+      "quote": "The adaptive GraphRAG config (one flag, opt-in) gets judge 92.9% and BERTScore F1_raw 0.891 in the same eval run. Both bonus thresholds met simultaneously. It pays roughly 3x the tokens for the accuracy bonus, by design.",
+      "numbers": [
+        "92.9%",
+        "0.891",
+        "3x"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The source reports that pure vector embeddings struggle with multi-hop entity questions, while walking the entity graph with num_hops=2 fixes the example question about Hinton's PhD student.",
+      "quote": "Pure vector embeddings struggle with multi-hop entity questions. \"Which OpenAI co-founder was Hinton's PhD student?\" embeds toward OpenAI-funder chunks and never surfaces Sutskever's biography. Walking the entity graph with `num_hops=2` fixes it. This is the textbook GraphRAG advantage, realized through a config flag rather than custom code.",
+      "numbers": [
+        "2"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The benchmark explicitly does not claim GraphRAG beats vector RAG in general; it tested one corpus of AI/ML Wikipedia and says behavior will likely differ on legal documents, support tickets, or sparse-relationship scientific papers.",
+      "quote": "## What this benchmark does not claim\n\n- GraphRAG beats vector RAG in general. We tested one corpus (AI/ML Wikipedia). It will likely behave differently on legal documents, support tickets, or sparse-relationship scientific papers.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The adaptive GraphRAG config does not beat Basic RAG on tokens; it uses about 1.8x more tokens, trading that for +35.8pp judge accuracy.",
+      "quote": "- The adaptive config does not beat Basic RAG on tokens. It uses about 1.8x more. The trade is +35.8pp judge accuracy for that token premium. Two configs, two trade-offs. Use the one that fits your budget.",
+      "numbers": [
+        "1.8x",
+        "+35.8pp"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The source says 14 questions are too few for tight error bars and that scaling to 100+ is the obvious next step.",
+      "quote": "- 14 questions is too few for tight error bars. Scaling to 100+ is the obvious next step.",
+      "numbers": [
+        "14",
+        "100+"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "In the early sweep, the combine=True knob raised judge accuracy from 80% to 90% by skipping the per-chunk LLM re-ranker, which was over-filtering relevant chunks.",
+      "quote": "The `combine=True` knob (skip the per-chunk LLM re-ranker, dump all retrieved candidates into one synthesis prompt) raised judge accuracy from 80% to 90% in the early sweep. I expected the opposite. The re-ranker was over-filtering: it would discard chunks that contained the actual answer because the isolated quality score was lower than less-relevant but more confidently-rated chunks. Single-pass synthesis lets the strong LLM judge relevance during generation instead.",
+      "numbers": [
+        "80%",
+        "90%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/Nilanshjain/three-pipeline-comparison"
+}

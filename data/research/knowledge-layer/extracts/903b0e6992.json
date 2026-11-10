@@ -1,0 +1,57 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-06-15",
+  "author_or_org": "Shirshanka Das (DataHub)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A context layer is the architectural component that curates, integrates, and delivers information AI agents need to interpret, decide, and act reliably.",
+      "quote": "A context layer is the dedicated architectural component that curates, integrates, and delivers the information AI agents need to interpret, decide, and act reliably.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Semantics is defined as explicit representation of meaning and relationships in business data, including ontologies and knowledge graphs that link data, metrics, rules, security, ownership, and policies.",
+      "quote": "It includes the development and use of ontologies and knowledge graphs, which act as the connective tissue linking data, metrics, rules, security, ownership, and policies.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Operational state is an agent's ability to access right-time information about business entities, process status, and environmental conditions.",
+      "quote": "An agent’s ability to access right-time information about key business entities such as customers, products, or suppliers, as well as the current status of business processes and environmental conditions.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Provenance is the ability to systematically track data lineage, decisions, actions, outcomes, and feedback across AI agent operations.",
+      "quote": "The ability to systematically track data lineage, decisions, actions, outcomes, and feedback throughout the life cycle of AI agent operations.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The context layer sits between data infrastructure and agent infrastructure.",
+      "quote": "The context layer sits between your data infrastructure and your agent infrastructure.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Gartner projects that by 2027 organizations prioritizing semantics in AI-ready data will increase agentic AI accuracy by up to 80% and reduce costs by up to 60%.",
+      "quote": "According to Gartner®, “By 2027, organizations that prioritize semantics in AI-ready data will increase their agentic AI accuracy by up to 80% and reduce costs by up to 60%.”¹",
+      "numbers": [
+        "2027",
+        "80%",
+        "60%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "DataHub's Context Intelligence continuously generates semantic context automatically from behavioral signals including query logs, dbt semantic models, BI dashboard patterns, and usage patterns.",
+      "quote": "Context Intelligence runs continuously, generating semantic context automatically from behavioral signals already embedded in the data estate: query logs, dbt semantic models, BI dashboard patterns, and usage patterns.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://datahub.com/blog/context-layer-components/"
+}

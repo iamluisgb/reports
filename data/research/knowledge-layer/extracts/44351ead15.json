@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-10-16",
+  "author_or_org": "Dayan Pan, Bincheng Zuo, Xiaojian Wang, Daogang Zhang, Jingyuan Wang",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper describes organizing heterogeneous enterprise knowledge into an ontology that directly guides analysis and incorporates confirmed feedback.",
+      "quote": "AgentOnto organizes heterogeneous enterprise knowledge into an ontology that directly guides analysis and incorporates confirmed feedback.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source states that enterprise data analysis requires connecting analytical requests with knowledge spread across databases, business documents, and existing example tasks, and that lacking an explicit representation can cause incorrect results and unreliable feedback incorporation.",
+      "quote": "Enterprise data analysis requires agents to connect analytical requests with knowledge distributed across databases, business documents, and existing example tasks. Without an explicit representation of this knowledge, an agent may produce incorrect analytical results and cannot reliably incorporate feedback.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "AgentOnto substantially outperforms representative methods on two public data sources.",
+      "quote": "We evaluate AgentOnto on two public data sources. AgentOnto substantially outperforms representative methods, while module-level evaluations confirm the effectiveness of ontology construction, analysis, and updating.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Module-level evaluations confirm the effectiveness of ontology construction, analysis, and updating.",
+      "quote": "AgentOnto substantially outperforms representative methods, while module-level evaluations confirm the effectiveness of ontology construction, analysis, and updating.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A real-world deployment demonstrates the practical value of AgentOnto in enterprise analytics.",
+      "quote": "A real-world deployment further demonstrates its practical value in enterprise analytics.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Iterative Ontology Preparation improves the ontology through self-generated analysis tasks.",
+      "quote": "Iterative Ontology Preparation further improves the ontology through self-generated analysis tasks.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper concludes that explicitly constructing, using, and updating enterprise knowledge supports reliable and adaptable data analysis.",
+      "quote": "These results demonstrate that explicitly constructing, using, and updating enterprise knowledge supports reliable and adaptable data analysis.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2610.23317"
+}

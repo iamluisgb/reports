@@ -1,0 +1,82 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-19",
+  "author_or_org": "Rajan Bastakoti, Sagar Bhetwal, Nirajan Acharya, Gaurav Kumar Gupta",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Conventional vector-based RAG is fundamentally limited in capturing structured multi-entity relationships that underpin financial market analysis.",
+      "quote": "Retrieval-Augmented Generation (RAG) has become foundational for grounding large language models in domain-specific corpora, yet conventional vector-based RAG systems are fundamentally limited in their ability to capture the structured, multi-entity relationships that underpin financial market analysis.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper compares a two-hop Graph-RAG architecture against a standard vector-only baseline for cross-entity financial sentiment analysis.",
+      "quote": "This paper presents a comprehensive comparative study of a novel two-hop Graph-RAG architecture versus a standard vector-only baseline for cross-entity financial sentiment analysis.",
+      "numbers": [
+        "two-hop"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The system constructs a sentiment-weighted knowledge graph of 59 equity entities from 255 news articles covering 10 major technology stocks and augments dense retrieval with intensity-filtered traversal over INFLUENCES edges.",
+      "quote": "Our system constructs a sentiment-weighted knowledge graph of 59 equity entities from 255 news articles covering 10 major technology stocks, then augments dense retrieval with intensity-filtered graph traversal over INFLUENCES edges to surface relational evidence inaccessible to vector search alone.",
+      "numbers": [
+        "59",
+        "255",
+        "10"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The evaluation uses 100 grounded queries, split into 30 Direct and 70 Relational queries, and measures semantic similarity, entity recall, RAGAS metrics, latency, and ablations.",
+      "quote": "We evaluate both architectures on 100 grounded queries (30 Direct, 70 Relational) using semantic similarity, entity recall, RAGAS metrics, latency benchmarks, and ablation studies.",
+      "numbers": [
+        "100",
+        "30",
+        "70"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Graph-RAG improves entity recall by 6.4% with p <0.001 by Wilcoxon signed-rank, improves Answer Relevancy by 11.7% for complex multi-entity queries, and gains 16.1% on relational question types.",
+      "quote": "Graph-RAG achieves a statistically significant improvement in entity recall (+6.4%, p <0.001, Wilcoxon signed-rank) and delivers substantially more relevant answers for complex multi-entity queries (+11.7% Answer Relevancy), with gains concentrating in relational question types (+16.1%).",
+      "numbers": [
+        "+6.4%",
+        "p <0.001",
+        "+11.7%",
+        "+16.1%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The Graph-RAG improvements come at no measurable answer-quality cost, with delta +0.001 semantic similarity and Cohen's d 0.078, while mean latency rises 22.6% and latency variance falls 80%.",
+      "quote": "Critically, these improvements come at no measurable cost to answer quality (delta = +0.001 semantic similarity, Cohen's d = 0.078), with a modest 22.6% increase in mean latency offset by an 80% reduction in latency variance.",
+      "numbers": [
+        "+0.001",
+        "0.078",
+        "22.6%",
+        "80%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "An ablation on graph traversal intensity finds an inverted-U relationship with answer quality, with tau = 0.5 optimal versus the production default tau = 0.7.",
+      "quote": "An ablation study on the graph traversal intensity threshold reveals an inverted-U relationship with answer quality, identifying tau = 0.5 as optimal over the production default of tau = 0.7.",
+      "numbers": [
+        "0.5",
+        "0.7"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Graph-augmented retrieval involves a precision-for-coverage trade-off.",
+      "quote": "These findings characterize a precision-for-coverage trade-off inherent to graph-augmented retrieval and provide actionable architectural guidance for practitioners building RAG systems for multi-entity financial analysis.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.00062"
+}

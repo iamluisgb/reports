@@ -1,0 +1,89 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-06-11",
+  "author_or_org": "Harshit Chouhan / Colrows",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A semantic compiler resolves business metrics into governed SQL at compile time and injects policies before the warehouse is touched.",
+      "quote": "A [semantic compiler](https://colrows.com/docs/saas/) resolves your business metrics into governed SQL at compile time, with policies injected before the warehouse is touched.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "In a cited study, GPT-4 zero-shot on an enterprise insurance schema scored 16.7% overall and 0% on high-schema-complexity questions, while the same questions over a knowledge-graph representation reached 54.2%.",
+      "quote": "The [Sequeda, Allemang and Jacob study](https://arxiv.org/abs/2311.07509) isolated this variable: GPT-4 zero-shot on an enterprise insurance schema scored 16.7%, and on the high-schema-complexity questions, **0%**. The same questions over a knowledge-graph representation of the same database: 54.2%. Nothing about the model changed. The available meaning did.",
+      "numbers": [
+        "16.7%",
+        "0%",
+        "54.2%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "On Spider 2.0, an o1-preview-based agent framework solved 21.3% versus 91.2% on Spider 1.0, and GPT-4o scored 10.1% versus 86.6%, an 8.5x collapse.",
+      "quote": "The authors' o1-preview-based agent framework solved **21.3%**, versus 91.2% on Spider 1.0. The project site puts GPT-4o at **10.1%**, versus 86.6% on Spider 1.0. Same models, honest data, an 8.5× collapse.",
+      "numbers": [
+        "21.3%",
+        "91.2%",
+        "10.1%",
+        "86.6%",
+        "8.5×"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "On BEAVER, off-the-shelf GPT-4o scored 0.0% under the retrieval setting and 2.0% retrieval-free, and the authors said none of the off-the-shelf LLMs could answer any question correctly.",
+      "quote": "Off-the-shelf GPT-4o scored **0.0% under the retrieval setting and 2.0% retrieval-free**, and the authors state plainly that \"none of the off-the-shelf LLMs (even GPT-4o) can answer any question correctly.\"",
+      "numbers": [
+        "0.0%",
+        "2.0%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Snowflake's engineering team measured GPT-4o at 51% on an internal set of 150 real BI questions, meaning roughly every second answer was wrong.",
+      "quote": "Snowflake's engineering team [measured GPT-4o at 51%](https://www.snowflake.com/en/engineering-blog/cortex-analyst-text-to-sql-accuracy-bi/) on their internal set of 150 real BI questions - which means roughly every second answer was wrong, fluently.",
+      "numbers": [
+        "51%",
+        "150"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The source's table reports Snowflake improving from 51% without structure to 90%+ with a hand-authored semantic model, and dbt Labs improving from 84-90% to 98-100% with a deterministic semantic layer on an 11-question set.",
+      "quote": "| Snowflake (2024) | 51% | 90%+ | Hand-authored semantic model |\n| dbt Labs (2026) | 84-90% | 98-100% | Deterministic semantic layer (11-question set) |",
+      "numbers": [
+        "2024",
+        "51%",
+        "90%+",
+        "2026",
+        "84-90%",
+        "98-100%",
+        "11"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The Spider 2.0 leaderboard table lists 10-21% raw performance versus 70-96% self-reported with multi-step agentic scaffolds that use schema exploration and self-correction.",
+      "quote": "| Spider 2.0 leaderboard (2026) | 10-21% raw | 70-96% self-reported | Multi-step agentic scaffolds with schema exploration and self-correction |",
+      "numbers": [
+        "2026",
+        "10-21%",
+        "70-96%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "On a 1,400-column estate, the schema may not fit usefully in context, and the model must guess which schema subset matters before writing SQL, with a wrong guess being unrecoverable.",
+      "quote": "On a 1,400-column estate, the schema does not fit usefully in context - and even when it technically fits, relevance gets diluted. The model must _guess which subset of the schema matters_ before it writes a line of SQL, and a wrong guess at that step is unrecoverable.",
+      "numbers": [
+        "1,400"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://colrows.com/blogs/text-to-sql-accuracy-cliff/"
+}

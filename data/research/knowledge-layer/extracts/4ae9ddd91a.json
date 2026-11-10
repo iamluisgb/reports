@@ -1,0 +1,67 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-11-04",
+  "author_or_org": "Noel Gomez / Datacoves",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A semantic layer is a governed set of metric, dimension, and entity definitions that sits between the warehouse and every tool that queries it.",
+      "quote": "A semantic layer is a governed set of metric, dimension, and entity definitions that sits between your warehouse and every tool that queries it.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A context layer is the business knowledge an AI agent reads before writing SQL or answering; it bundles semantic models, documentation, lineage, glossary terms, example queries, and unstructured knowledge and exposes them to agents, often over MCP.",
+      "quote": "A context layer is the business knowledge an AI agent reads before it writes SQL or answers a question. It usually bundles semantic models, model and column documentation, lineage, glossary terms, example queries, and unstructured knowledge from wikis and tickets, then exposes all of it to agents, often over MCP.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "In most stacks, the semantic layer is one input to the context layer.",
+      "quote": "In most stacks, the semantic layer is one input to the context layer.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A Definition of Record is a plain-English, versioned, attributed statement of an agreed business-term meaning, published so people and AI agents use the same meaning.",
+      "quote": "A Definition of Record is a plain-English, versioned, attributed statement of what an organization has agreed a business term means, published so that people and AI agents use the same meaning.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Without governed definitions, an agent asked how many active vendors exist found three defensible answers: 25, 24, and 21, each traced to a tested model.",
+      "quote": "Asked “how many active vendors do we have?”, an agent reading a sample project found 25, 24, and 21. Each number traced to a tested model in that project.",
+      "numbers": [
+        "25",
+        "24",
+        "21"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "With a governed Definition of Record served over MCP, the same agent returned 25, cited its source column, and flagged an ERP field that disagreed with actual buying in 6 of 34 vendors.",
+      "quote": "With a governed Definition of Record served over MCP, the same agent returned 25, cited its source column, and flagged an ERP field that disagreed with actual buying in 6 of 34 vendors.",
+      "numbers": [
+        "25",
+        "6",
+        "34"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "A semantic layer will consistently compute whichever definition is encoded, even if that definition is the wrong business choice.",
+      "quote": "A semantic layer will compute whichever one you encode, consistently, forever.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "More context about an undecided term can make an agent more confidently wrong.",
+      "quote": "More context about an undecided term gives an agent more ways to be confidently wrong.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://datacoves.com/post/context-layer-vs-semantic-layer"
+}

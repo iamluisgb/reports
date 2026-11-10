@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": null,
+  "author_or_org": "Palantir Technologies Inc.",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir defines the Ontology system as activating context by integrating disparate data, logic, action, and security into a unified representation of enterprise decision-making.",
+      "quote": "Activating context by integrating disparate data, logic, action, and security into a unified representation of enterprise decision-making.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Context engineering provides no-, low-, and pro-code tools for integrating contextual data, logic, and action that power the Ontology and dependent workflows.",
+      "quote": "Equipping developers with no-, low-, and pro-code tools for integrating the contextual data, logic, action that power the Ontology and all dependent workflows.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The Ontology language models operational processes as nouns and verbs in a form legible to both humans and agents.",
+      "quote": "The Ontology’s language models the \"nouns\" and \"verbs\" of operational processes into a legible form for both humans and agents.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The Ontology engine can query billions of objects, orchestrate tens of thousands of actions, and continuously incorporate feedback-based learning.",
+      "quote": "The Ontology’s engine enables querying billions of objects, orchestrating tens-of-thousands of actions, and continuously incorporating feedback-based learning.",
+      "numbers": [
+        "billions",
+        "tens-of-thousands"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The Ontology toolchain lets developers build complex AI-powered applications on a common foundation.",
+      "quote": "The Ontology’s toolchain empowers developers to build diverse and complex AI-powered applications, atop a common foundation.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Operational automations can use Ontology data, logic, and action primitives along with execution and notification configurations.",
+      "quote": "Regardless of the modality, every automation can leverage the rich set of data, logic, and action primitives in the Ontology system, and a wide array of execution and notification configurations.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "AIP provides logging for every action taken by human users or AI agents and can trace chained executions in a workflow.",
+      "quote": "This includes fine-grained monitoring for all data flows that feed the Ontology, logging for every action taken by human users or AI agents, and the ability to trace the cascade of chained executions in a workflow.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Every operation by humans and agents is governed by role-, marking-, and purpose-based controls.",
+      "quote": "Ensuring that every operation made by humans and agents abides by rigorous role-, marking-, and purpose-based controls.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://palantir.com/docs/foundry/architecture-center/aip-architecture/"
+}

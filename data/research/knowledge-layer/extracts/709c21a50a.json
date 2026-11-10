@@ -1,0 +1,52 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2024-08-29",
+  "author_or_org": "Renee Huang / Snowflake",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Snowflake claims Cortex Analyst is nearly twice as accurate as single-prompt GPT-4o SQL generation and about 14% more accurate than other market solutions in its internal evaluation.",
+      "quote": "Based on an internal evaluation mirroring real-world use cases, Cortex Analyst outperforms alternatives — nearly 2x as accurate as single-prompt SQL generation from GPT-4o and about 14% more accurate than other solutions on the market.",
+      "numbers": [
+        "2x",
+        "14%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "In Snowflake's internal evaluation, GPT-4o's text-to-SQL accuracy fell to 51% on real-world BI-style questions.",
+      "quote": "For instance, when we tested a state-of-the-art language model, GPT-4o, using our internal evaluation set, its accuracy plummeted to 51%.",
+      "numbers": [
+        "51%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Cortex Analyst's semantic model enforces user-defined measures and filters consistently in generated SQL.",
+      "quote": "One of the standout features of Cortex Analyst is its semantic model, which guarantees that user-defined measures and filters are applied highly consistently in the generated SQL queries.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The source shows a semantic-model filter definition for 'North America' with synonym 'NA region' and expression region in ('United States','Canada','Mexico').",
+      "quote": "filters:\n- name: North America\nsynonyms:\n- NA region\nexpr: region in (\"United States\", \"Canada\", \"Mexico\")",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In a benchmark question about ranking product lines by forecast accuracy, Snowflake reports Cortex Analyst succeeded via the semantic model while GPT-4o and another solution missed the client's metric definition.",
+      "quote": "GPT-4o and Other Solution were missing the client's specific metric definition.Cortex Analyst captures the specific metric definition with the semantic model.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Cortex Analyst integrates Cortex Search to retrieve correct literals for SQL generation via semantic search over high-cardinality columns; the feature was in private preview.",
+      "quote": "To address this, we introduced integration with Cortex Search, which allows Cortex Analyst to retrieve the correct literals for SQL generation by performing a semantic search over the data stored in those columns. This functionality is currently in private preview.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.snowflake.com/en/blog/engineering/cortex-analyst-text-to-sql-accuracy-bi/"
+}

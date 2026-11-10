@@ -1,0 +1,41 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "Palantir Technologies Inc.",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "AIP Logic is a no-code environment for LLM-powered functions that use the Ontology; functions can take Ontology objects or text as inputs and return objects/strings or make Ontology edits.",
+      "quote": "AIP Logic provides an intuitive interface to leverage the Ontology and LLMs via a Logic function that takes inputs (like Ontology objects or text strings) and can return an output (objects and/or strings) or make edits to the Ontology.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Logic functions can be automated so Ontology edits are either applied automatically or staged for human review.",
+      "quote": "Logic functions can also be [automated](https://www.palantir.com/docs/foundry/automate/overview/) so that [Ontology edits can be automatically applied or staged for human review](https://www.palantir.com/docs/foundry/logic/aip-logic-integration-automate/).",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "AIP Logic's platform security controls grant an LLM access only to what is necessary to complete a task.",
+      "quote": "These platform security controls grant an LLM access only to what is necessary to complete a task.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The model cannot see data that the user is not authorized to read.",
+      "quote": "The model can never see data the user is not authorized to read.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Read-time access controls do not extend to the model's output or any Ontology edits it composes.",
+      "quote": "These controls do not extend to the model's output or any Ontology edits it composes.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://palantir.com/docs/foundry/logic/overview/"
+}

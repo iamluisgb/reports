@@ -1,0 +1,41 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2023-02-06",
+  "author_or_org": "Dynatrace",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "Dynatrace causal AI root cause analysis automatically evaluates all captured and ingested information and highlights entities within the causal topology as the root cause of a complex situation.",
+      "quote": "Dynatrace Intelligence causal AI root cause analysis automatically evaluates all captured and ingested information and highlights entities within the causal topology identified as the root cause of a complex situation.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Dynatrace root cause analysis uses a context-aware approach that incorporates available context information, including code-level information topology, to determine the precise cause of an issue.",
+      "quote": "It offers a context-aware approach that uses available context information, such as the code-level information topology, to determine the precise cause of the issue.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Dynatrace root cause analysis can reduce alert load by combining multiple connected anomalies into a single problem.",
+      "quote": "Reduce the alert load by combining multiple connected anomalies into a single problem.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Dynatrace root cause analysis aims to improve precision by using all available data from multiple sources.",
+      "quote": "Improve the precision of root cause analysis using all the available data from multiple sources.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Dynatrace root cause analysis includes relevant anomalies and ranks root cause contributors to determine the primary cause.",
+      "quote": "Save time by including all relevant anomalies and ranking root cause contributors to determine the primary cause.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://docs.dynatrace.com/docs/dynatrace-intelligence/root-cause-analysis"
+}

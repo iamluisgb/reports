@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2024-08-09",
+  "author_or_org": "Dr. Clair Sullivan (Senzing blog)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "GraphRAG is presented as a more accurate way to do RAG by using a knowledge graph.",
+      "quote": "a more accurate way of doing RAG is with a knowledge graph – thus GraphRAG",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "A common RAG approach converts a text corpus into word embeddings.",
+      "quote": "For many practitioners, this means taking a corpus of text and converting it to a series of word embeddings.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Knowledge graphs can be hard to assemble.",
+      "quote": "Knowledge graphs can be hard to assemble.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Knowledge graph data still suffers from garbage-in, garbage-out problems.",
+      "quote": "However, like many cases in data science, the data associated with knowledge graphs still suffer from the problem of GIGO: “garbage in, garbage out.”",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Lack of quality entity resolution is a common source of data garbage, especially for knowledge graphs.",
+      "quote": "One of the most common sources of data “garbage,” which is particularly true for knowledge graphs, is lack of quality entity resolution.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The author states that regex and edit distance cannot resolve a hard identity case involving name variants and shared identifiers.",
+      "quote": "No RegEx in the world is going to save you in this case! Neither will an edit distance algorithm.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Kroger operates grocery stores under its own name and also owns City Market, Smith’s, and Harris Teeter.",
+      "quote": "For example, consider the retail company of Kroger. They operate many grocery stores called “Kroger,” but they also own a variety of other stores including City Market, Smith’s, and Harris Teeter, to name a few.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://senzing.com/knowledge-graphs-graphrag/"
+}

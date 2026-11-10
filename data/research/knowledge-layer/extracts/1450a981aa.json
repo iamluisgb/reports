@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-09-23",
+  "author_or_org": "Enzo Htet, Neo4j",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Vector RAG retrieves context by semantic similarity, finding text most relevant to a question rather than by explicit relationships.",
+      "quote": "Vector RAG uses semantic similarity to find the text most relevant to a question.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "GraphRAG follows relationships in a graph, which can be a knowledge graph capturing facts and relationships, or a context graph that also includes situational information such as current state, conversation history, prior decisions, and reasoning traces.",
+      "quote": "Instead of ranking by similarity, [GraphRAG](https://neo4j.com/blog/genai/what-is-graphrag/) follows relationships in a graph. The graph can be a [knowledge graph](https://neo4j.com/blog/knowledge-graph/what-is-knowledge-graph/) that captures facts and relationships between them, or a [context graph](https://neo4j.com/blog/agentic-ai/what-is-context-graph/) that also includes situational information such as current state, conversation history, prior decisions, and reasoning traces.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "A vector-only pipeline can work well until an accurate, explainable response depends on how disparate facts connect.",
+      "quote": "A vector-only pipeline can be a great fit for your agentic AI project — right up until an accurate, explainable response depends on how disparate facts connect.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "In a support example with three tickets, vendor record, and outage report in the index, similarity search cannot string them together if they do not mention each other by name, producing an incomplete or inaccurate answer or none at all.",
+      "quote": "Take a support example, where a manager asks which vendor’s outage caused three tickets last week. The tickets, the vendor record, and the outage report are all in the index, but none mention each other by name, so a similarity search has no way to string them together. The result: an incomplete or inaccurate answer, or none at all.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "GraphRAG has been shown to more than double factual accuracy, offer better token efficiency, and provide a traceable path back to each answer’s sources.",
+      "quote": "GraphRAG takes a different approach, which is why it has been shown to more than double factual accuracy, offer better token efficiency, and provide a traceable path back to each answer’s sources.",
+      "numbers": [
+        "more than double"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Vector RAG’s semantic matching works well for documentation search, product discovery, and cases where people describe the same idea in many different ways.",
+      "quote": "That’s why this kind of matching works well in documentation search, product discovery, and anywhere people describe the same idea a dozen different ways.",
+      "numbers": [
+        "a dozen"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://neo4j.com/blog/agentic-ai/vector-rag-vs-graphrag/"
+}

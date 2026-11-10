@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": null,
+  "author_or_org": "Nithin Kumar, Chinmay",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The project describes Palantir Foundry's ontology as a single language that unifies fragmented upstream system data for a PO-to-fulfillment control tower.",
+      "quote": "**PO-to-Fulfillment Control Tower** treats each *PO line* as the atomic “case” to track end-to-end. Every upstream system tells part of the story; Foundry translates them into a single language (ontology) and surfaces **actionable** insights in a **Workshop App**, while an **AIP automation agent** proposes next-best-actions based on live context and user inputs.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The ontology is modeled around PurchaseOrderLine linked to metrics, event log, shipment, receipt, and allocation objects, with filter propagation from PO Line to linked datasets.",
+      "quote": "Central object `PurchaseOrderLine` linked to `MetricsTable`, `EventLog`, `Shipment`, `Receipt`, and `Allocation`. Configure **filter propagation** from PO Line to linked datasets.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The implementation builds a per-PO-line event log with defined schema fields and precedence/dedupe rules so KPIs and process mining remain stable.",
+      "quote": "Build a single “movie reel” per PO line with schema: `event_id`, `po_line_id`, `event_type`, `event_ts`, `source_system`, `is_authoritative`, `note`. Apply precedence + dedupe rules (e.g., Receipt > Shipment for DC arrival).",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The AIP Logic agent consumes a PO line ID, fetches context through the ontology, and returns a structured recommendation with action, rationale, confidence, and expected impact value.",
+      "quote": "A reasoning agent that consumes a `po_line_id`, fetches context via the ontology, and returns a structured recommendation (`recommended_action`, `rationale_md`, `confidence`, `expected_impact_value`).",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "In the Workshop app, selecting a PO row passes the selected PO line ID to AIP Logic and displays the recommendation inline.",
+      "quote": "Row click sets `selectedPOLineID` → passed to AIP Logic → recommendation displays inline.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The planned write-back path is to apply recommendations such as updating a promise date or creating a supplier task from the app and logging it to an audit dataset.",
+      "quote": "Ontology Actions / Write-back: apply recommendations (update promise date, create supplier task) directly from the app and log to an audit dataset.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The transformation pipelines standardize domain datasets, cast timestamps to UTC, compute transport durations, and flag SLA breaches before ontology mapping and metrics.",
+      "quote": "Standardize and clean each domain dataset, cast timestamps to UTC, compute durations (Ex-Factory→Hub, Hub→DC, Ex-Factory→DC), and flag SLA breaches.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/NK12131/Palantir_Foundry_Supply_Chain_Control_Tower"
+}

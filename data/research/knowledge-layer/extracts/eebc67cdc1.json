@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-08-17",
+  "author_or_org": "Aniruth Narayanan / Snowflake",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Defines a semantic view as a top-level object between downstream consumers and raw data tables that translates governed business language into physical database schemas.",
+      "quote": "A semantic view is a top-level object that sits between the downstream consumers and raw data tables, translating governed business language into physical database schemas.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "States that every interface needs consistent meaning or context for its data, which can be achieved with a semantic layer.",
+      "quote": "Every interface needs consistent meaning, or context, for its data, which can be achieved by using a semantic layer.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "States that a semantic view standardizes data flow from physical tables to facts, dimensions and metrics instead of exposing raw tables directly to dashboards or AI agents.",
+      "quote": "Instead of exposing raw tables to dashboards or AI agents directly, the semantic view standardizes the data flow from physical tables to facts, dimensions and metrics.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Cites AtScale benchmark testing where adding semantic context raised text-to-SQL accuracy from 20% to more than 90% across 40 business questions on TPC-DS.",
+      "quote": "In AtScale’s [benchmark testing](https://www.atscale.com/blog/enable-natural-language-prompting-with-semantic-layer-genai/), adding semantic context increased text-to-SQL accuracy from 20% to more than 90% across 40 business questions on TPC-DS.",
+      "numbers": [
+        "20%",
+        "more than 90%",
+        "40"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Reports Snowflake internal usage in July 2025: more than 400 distinct users ran over 5,400 queries through the product data science agent and semantic layer, while more than 5,600 employees ran over 320,000 queries using the broad semantic layer.",
+      "quote": "In July 2025 alone, more than 400 distinct internal users ran over 5,400 queries through the product data science agent and the semantic layer. And in the same time frame, more than 5,600 internal employees across all Snowflake teams and agents ran over 320,000 queries using the broad semantic layer in sales, HR, support and other areas.",
+      "numbers": [
+        "July 2025",
+        "400",
+        "5,400",
+        "5,600",
+        "320,000"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "States that agents using semantic views can go directly to SQL execution instead of spending time finding, understanding and sampling multiple raw data sources.",
+      "quote": "Agents querying raw data spend time finding, understanding and sampling multiple data sources. At scale, these processes can dominate runtime. Instead, agents can use semantic views to go directly to SQL execution.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "States that agents are more token-efficient when using table relationships and join data in semantic views, and that materialization reduces repeated computation by leveraging preaggregated data.",
+      "quote": "Agents are significantly more token-efficient when using table relationships and join data in semantic views. With materialization, semantic SQL natively leverages preaggregated data, reducing repeated computation.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "States that a Snowflake semantic view can be queried directly using standard SQL without dealing with underlying joins or raw column names.",
+      "quote": "Now we can query the semantic view directly using standard SQL, without ever having to worry about underlying joins or raw column names:",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.snowflake.com/en/blog/snowflake-internal-context-layer-for-ai-agents/"
+}

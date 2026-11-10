@@ -12,13 +12,15 @@
       "queries": [
         "enterprise ontology knowledge graph semantic layer",
         "semantic layer LLM agents",
-        "context engineering LLM agents"
+        "context engineering LLM agents",
+        "semantic layer context layer ontology for AI agents"
       ],
       "providers": [
         "wikipedia",
         "arxiv",
         "hn",
-        "semantic_scholar"
+        "semantic_scholar",
+        "web"
       ]
     },
     {
@@ -27,13 +29,15 @@
       "queries": [
         "GraphRAG evaluation",
         "knowledge graph retrieval augmented generation benchmark",
-        "GraphRAG versus vector RAG"
+        "GraphRAG versus vector RAG",
+        "GraphRAG versus vector RAG cost in production"
       ],
       "providers": [
         "arxiv",
         "semantic_scholar",
         "hn",
-        "github"
+        "github",
+        "web"
       ]
     },
     {
@@ -42,12 +46,14 @@
       "queries": [
         "knowledge graph text-to-SQL accuracy LLM",
         "semantic layer LLM accuracy enterprise questions",
-        "ontology grounding LLM enterprise data"
+        "ontology grounding LLM enterprise data",
+        "semantic layer text-to-SQL accuracy benchmark"
       ],
       "providers": [
         "arxiv",
         "semantic_scholar",
-        "hn"
+        "hn",
+        "web"
       ]
     },
     {
@@ -56,28 +62,33 @@
       "queries": [
         "Palantir ontology",
         "Palantir Foundry ontology AIP agents",
-        "operational ontology actions"
+        "operational ontology actions",
+        "Palantir Foundry ontology actions and AIP agents",
+        "Microsoft Fabric IQ ontology agents"
       ],
       "providers": [
         "hn",
         "wikipedia",
         "github",
-        "arxiv"
+        "arxiv",
+        "web"
       ]
     },
     {
       "id": "q5",
-      "question": "Where does machine learning fit in a knowledge graph: construction, link prediction, graph embeddings, GNNs — and can ontologies update themselves?",
+      "question": "Where does machine learning fit in a knowledge graph: construction, link prediction, graph embeddings, GNNs \u2014 and can ontologies update themselves?",
       "queries": [
         "LLM knowledge graph construction",
         "knowledge graph link prediction",
         "graph neural networks knowledge graph completion",
-        "automatic ontology learning LLM"
+        "automatic ontology learning LLM",
+        "LLM knowledge graph extraction entity resolution production"
       ],
       "providers": [
         "arxiv",
         "semantic_scholar",
-        "github"
+        "github",
+        "web"
       ]
     },
     {
@@ -86,13 +97,18 @@
       "queries": [
         "AIOps root cause analysis graph",
         "microservice root cause analysis causal graph",
-        "LLM agents incident root cause analysis"
+        "LLM agents incident root cause analysis",
+        "topology root cause analysis deterministic causal AI"
       ],
       "providers": [
         "arxiv",
         "semantic_scholar",
-        "hn"
+        "hn",
+        "web"
       ]
     }
+  ],
+  "keep_providers": [
+    "tinyfish"
   ]
 }

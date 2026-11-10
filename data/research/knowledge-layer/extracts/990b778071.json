@@ -1,0 +1,65 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-03-22",
+  "author_or_org": "Paperclipped",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Microsoft’s GraphRAG system improved answer comprehensiveness by 26% and diversity by 57% versus standard vector retrieval in Microsoft’s own benchmarks.",
+      "quote": "Microsoft’s GraphRAG system improved answer comprehensiveness by 26% and diversity by 57% compared to standard vector retrieval in their own benchmarks.",
+      "numbers": [
+        "26%",
+        "57%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "GraphRAG indexing is far more expensive than vector embedding: the same corpus costs under $5 to embed in a vector database but $50-200 through GraphRAG’s entity extraction and community summarization pipeline.",
+      "quote": "Then you look at the indexing bill: the same corpus that costs under $5 to embed into a vector database runs $50-200 through GraphRAG’s entity extraction and community summarization pipeline.",
+      "numbers": [
+        "$5",
+        "$50-200"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "LightRAG indexes a 500-page corpus in about 3 minutes for roughly $0.50 and achieves 70-90% of GraphRAG’s performance at 1/100th the cost.",
+      "quote": "Indexing the same 500-page corpus takes about 3 minutes and costs roughly $0.50. Quality benchmarks show 70-90% of GraphRAG’s performance at 1/100th the cost.",
+      "numbers": [
+        "500-page",
+        "3 minutes",
+        "$0.50",
+        "70-90%",
+        "1/100th"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Vector RAG is sufficient for direct factual lookups that map to single chunks; adding a knowledge graph to such use cases adds cost and complexity without improving accuracy.",
+      "quote": "Vector RAG handles direct factual lookups efficiently: “What is our return policy?” “When does the contract expire?” These queries map cleanly to single chunks. Adding a knowledge graph to this use case adds cost and complexity without improving accuracy.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Graph RAG adds a knowledge graph layer between documents and retrieval, traversing relationships between entities such as people, companies, concepts, and events instead of relying only on similar text search.",
+      "quote": "Graph RAG adds a knowledge graph layer between your documents and the retrieval step. Instead of searching for similar text, the system traverses relationships between entities: people, companies, concepts, events.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Microsoft GraphRAG uses LLM-powered open-ended extraction in which the model decides what entities and relationships exist; this is useful for exploration but produces noisy graphs at scale.",
+      "quote": "Microsoft GraphRAG sidesteps this by using LLM-powered open-ended extraction: the model decides what entities and relationships exist. This works for exploration but produces noisy graphs at scale.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The article states that the hardest part of Graph RAG is designing the ontology—which entity types matter, which relationship types to extract, and how granular to go.",
+      "quote": "The hardest part of Graph RAG is not the framework. It is designing the ontology: which entity types matter, what relationship types to extract, how granular to go.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.paperclipped.de/en/blog/graph-rag-production/"
+}

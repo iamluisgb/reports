@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2025-03-31",
+  "author_or_org": "Tom Zayats (Snowflake)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Snowflake describes its semantic model as acting like a knowledge base that gives LLMs the context to understand user questions accurately, similar to a human analyst.",
+      "quote": "At its core, it combines these LLMs with a detailed semantic model of data sources. This semantic model acts like a knowledge base, giving LLMs the context they need to understand user questions accurately — similar to how a human analyst would.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A semantic model connects business terms to database schema and guides LLM SQL generation by including correct elements such as joins and filters.",
+      "quote": "Cortex Analyst helps businesses query their data using natural language by translating it into SQL. This works thanks to a semantic model that connects business terms to database schema. It guides LLMs to build more accurate SQL queries by including the right elements, such as joins and filters.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A semantic model captures descriptive names, business-specific metrics and filters, synonyms, table relationships, and custom query instructions.",
+      "quote": "The [semantic model](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst/semantic-model-spec) captures important details, such as:\n\n*   Descriptive names for database elements\n\n*   Metrics/filters specific to the data and the business\n\n*   Synonyms for fields and business terms\n\n*   Relationships between tables\n\n*   Custom instructions for specific queries",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Snowflake reports that its agentic system uses LLMs to improve a provided semantic model and boosted SQL accuracy by 20% on average over LLMs alone.",
+      "quote": "We've developed a new approach: an agentic system that uses LLMs to improve the provided semantic model. By combining this system with structured validation and schema-aware parsing, we observed a reduction in manual effort and a boost in SQL accuracy by 20% (on average) over LLMs alone.",
+      "numbers": [
+        "20%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "On four BIRD-SQL dev subsets, Cortex Analyst averaged 78% accuracy versus 57% for vanilla Claude 3.5 Sonnet, a 21% improvement.",
+      "quote": "| Data set name | # of questions | Vanilla Claude 3.5 Sonnet | Cortex Analyst (Claude 3.5 Sonnet) | Improvement |\n| --- | --- | --- | --- | --- |\n| debit_card_specializing | 60 | 52% | 83% | 31% |\n| california_schools | 80 | 63% | 80% | 17% |\n| thrombosis_prediction | 111 | 45% | 70% | 25% |\n| toxicology | 141 | 69% | 79% | 10% |\n| **Average** |  | **57%** | **78%** | **21%** |",
+      "numbers": [
+        "78%",
+        "57%",
+        "21%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A Relationships Agent infers how tables are connected by looking at correct SQL and primary keys, even without explicit database definitions.",
+      "quote": "**Relationships Agent:**This agent looks at the correct SQL and primary keys to figure out how tables are connected. It can do this even without explicit database definitions.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A Semantic Model Editor agent reviews the current model, correct SQL, and generated SQL, evaluates the results, and suggests edits to align with business logic, fix errors, and improve column and metric descriptions.",
+      "quote": "**Semantic Model Editor:**This agent reviews the current model, correct SQL and generated SQL, and then evaluates the results. It suggests edits to align with business logic and fix errors. It also uses question evidence to improve column and metric descriptions.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.snowflake.com/en/blog/engineering/agentic-semantic-model-text-to-sql/"
+}

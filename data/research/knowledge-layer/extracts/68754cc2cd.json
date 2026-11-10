@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-07-13",
+  "author_or_org": "Julius Hollmann / digetiers",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A context layer is defined as the persistent, governed architectural tier that delivers business meaning, relationships, policies, and history to AI systems at runtime.",
+      "quote": "A context layer is the persistent, governed tier of your enterprise architecture that delivers business meaning, relationships, policies, and history to AI systems at runtime.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The context layer sits between the data estate and the AI estate and encodes business knowledge in a machine-usable form.",
+      "quote": "A context layer sits between your data estate and your AI estate, encoding what your business knows in a form machines can use.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A semantic layer is described as content-centric, standardizing business terms and metrics for BI tools and human analysts.",
+      "quote": "A semantic layer is content-centric: it standardizes how business terms and metrics (like “active customer” or “net revenue”) are defined, historically for BI tools and human analysts.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A context layer is described as usage-centric, mapping semantic definitions into the operational, real-time environment in which an AI agent executes a task.",
+      "quote": "A context layer is usage-centric: it takes those semantic definitions and maps them directly to the operational, real-time environment an AI agent needs to execute a task.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Knowledge graphs are described as structural representations of entities, relationships, and connecting rules, and as the queryable shape of semantic reasoning across systems.",
+      "quote": "The third is **knowledge graphs** i.e., the structural representation of entities, relationships, and the rules that connect them, which is the natural shape semantic reasoning takes when made queryable across systems.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source states that a reliable context layer requires an ontology-driven knowledge graph as its core.",
+      "quote": "You cannot build a reliable context layer without a disciplined, [ontology-driven knowledge graph](https://www.digetiers.com/en/product) as its core.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Raw RAG retrieves documents by keyword or vector similarity but lacks conceptual understanding of business structure.",
+      "quote": "Raw RAG retrieves documents based on keyword or vector similarity, but it lacks a conceptual understanding of your business structure.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "OpenAI's internal data agent, serving roughly 4,000 of 5,000 employees daily, reduced a complex business question’s time-to-answer from over 22 minutes without context infrastructure to 1 minute 22 seconds with the full context stack.",
+      "quote": "In early 2026, OpenAI's engineering team published the design of their internal data agent, which serves roughly 4,000 of their 5,000 employees daily. The team explicitly built six layers of context. As documented in an enterprise context layer guide that records the case, time-to-answer for a complex business question fell from over 22 minutes without context infrastructure to 1 minute 22 seconds with the full stack in place. It is the most public, well-instrumented validation of the pattern so far — and worth taking seriously, because the team building the foundation models was the same team that concluded the models were not the constraint.",
+      "numbers": [
+        "4,000",
+        "5,000",
+        "22",
+        "1 minute 22 seconds"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.digetiers.com/en/insights/library/what-is-a-context-layer"
+}

@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-10-28",
+  "author_or_org": "Ryan Siegler (AtScale); reviewed by Dave Mariani",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A semantic layer is defined as a governed shared dictionary where business metrics are defined once so every tool and AI returns the same number.",
+      "quote": "A semantic layer is the shared dictionary for a company’s business — the one governed place where metrics like revenue, active customers, and margin are defined once, so every tool and every AI answers with the same number.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In a BIRD-Interact sweep of seven LLMs over 410 business questions, accuracy without a semantic layer ranged from 21.5% to 36.1%, while with an AtScale semantic layer it ranged from 44.6% to 62.2%, adding 20 to 31 points to every model tested.",
+      "quote": "Yes. In a BIRD-Interact sweep of seven LLMs on 410 business questions, accuracy without a semantic layer ranged from 21.5% to 36.1%. With an AtScale semantic layer, it ranged from 44.6% to 62.2%. The layer added 20 to 31 points to every model tested.",
+      "numbers": [
+        "410",
+        "21.5%",
+        "36.1%",
+        "44.6%",
+        "62.2%",
+        "20",
+        "31"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Switching models changed text-to-SQL accuracy by at most 17.6 points, while without the semantic layer the other six models were separated by just 4.4 points.",
+      "quote": "By comparison, switching models changed accuracy by at most 17.6 points. Gemini defined one end of the range in both conditions. Without the layer, the other six models were separated by just 4.4 points.",
+      "numbers": [
+        "17.6",
+        "4.4"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Full schema documentation was insufficient: even with schema, plain-English column meanings, and a knowledge base of formulas, the no-layer arm scored about half as well.",
+      "quote": "Full documentation was not enough. The no-layer arm received the schema, a plain-English meaning for every column, and a knowledge base with every formula the questions rely on. It still scored about half as well.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "For GPT-5, switching to Gemini raised accuracy from 21.5% to 36.1%, but keeping GPT-5 and adding the semantic layer raised it to 50.5%, so the upgrade was worth 14.6 points while the layer was worth 29.",
+      "quote": "Say you’re on GPT-5 today, at 21.5%. Switching to Gemini, the highest scorer here, gets you to 36.1%. Keeping GPT-5 and adding the layer gets you to 50.5%. The upgrade is worth 14.6 points. The layer is worth 29. Even Gemini, already the strongest model before the layer, gained 26.1.",
+      "numbers": [
+        "21.5%",
+        "36.1%",
+        "50.5%",
+        "14.6",
+        "29",
+        "26.1"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.atscale.com/blog/semantic-layer-text-to-sql-accuracy/"
+}

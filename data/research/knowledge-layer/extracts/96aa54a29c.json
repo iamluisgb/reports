@@ -1,0 +1,46 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-30",
+  "author_or_org": "Ha Jeong Kim, Saksonita Khoeurn, Ye Ji Yoon",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper describes a semantic-layer-mediated NL2SQL agent that separates semantic intent from physical SQL execution by having the agent reason over a curated semantic layer via a compact intermediate representation called the Semantic Model Query (SMQ), instead of generating SQL directly over raw schemas.",
+      "quote": "We present a semantic-layer-mediated NL2SQL agent that decouples semantic intent from physical SQL execution. Rather than generating SQL directly over raw schemas, the agent reasons over a curated semantic layer through a compact intermediate representation called the Semantic Model Query (SMQ).",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A deterministic compiler translates each SMQ into dialect-specific SQL, producing verified building blocks that the agent composes into the final query.",
+      "quote": "A deterministic compiler translates each SMQ into dialect-specific SQL, providing verified building blocks that the agent composes into the final query.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Using Gemini 3 Pro, the system achieves 94.15% execution accuracy on the 547-task Spider2-snow benchmark, ranks third on the official leaderboard, and substantially outperforms schema-only approaches.",
+      "quote": "Using Gemini 3 Pro, the system achieves 94.15% execution accuracy on the 547-task Spider2-snow benchmark, ranking third on the official leaderboard and substantially outperforming schema-only approaches.",
+      "numbers": [
+        "3",
+        "94.15%",
+        "547",
+        "third"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The system supports SQLite, BigQuery, and Snowflake backends and is integrated into an end-to-end evaluation framework.",
+      "quote": "The system employs a constrained think-act loop, supports SQLite, BigQuery, and Snowflake backends, and is integrated into an end-to-end evaluation framework.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper discusses semantic-layer quality and the trade-off between improved grounding and overfitting.",
+      "quote": "We describe the system architecture, SMQ representation, agent workflow, evaluation results, and discuss semantic-layer quality and the trade-off between improved grounding and overfitting.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.31041"
+}
