@@ -5,7 +5,7 @@ type: special
 url: https://luisgonzalezbernal.com/reports/reports/knowledge-layer-2026-10-02.html
 summary: "What the layer is · GraphRAG versus vector RAG · Accuracy on enterprise data · Operational ontologies and actions · Where ML goes · Graphs in root cause analysis"
 tags: [research, memory]
-reading_time_minutes: 15
+reading_time_minutes: 21
 ---
 Memory & Knowledge · Special Report
 

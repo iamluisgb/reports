@@ -29,7 +29,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### Memory & Knowledge
 
-- [The Knowledge Layer for Agents: Ontologies, Graphs and Where ML Fits](https://luisgonzalezbernal.com/reports/reports/knowledge-layer-2026-10-02.md) — 2026-10-02 · 15 min
+- [The Knowledge Layer for Agents: Ontologies, Graphs and Where ML Fits](https://luisgonzalezbernal.com/reports/reports/knowledge-layer-2026-10-02.md) — 2026-10-02 · 21 min
 - [Context Lakes: What Multi-Agent Systems Need to Share](https://luisgonzalezbernal.com/reports/reports/context-lake-2026-07-27.md) — 2026-07-27 · 12 min
 - [Agent Memory: What Works, What It Costs, What Breaks](https://luisgonzalezbernal.com/reports/reports/ai-agent-memory-2026-06-28.md) — 2026-06-28 · 12 min
 
