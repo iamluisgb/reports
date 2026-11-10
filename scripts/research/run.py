@@ -114,6 +114,8 @@ def stage_search(plan: dict, d: Path) -> None:
             i.setdefault("relevance", {})[q["id"]] = round(s, 4)
         for i in sorted(pool, key=lambda i: -i["relevance"][q["id"]])[: plan.get("per_question", 10)]:
             keep.add(i["id"])
+    # Hits already screened by hand (plan "keep_providers", e.g. curated web search) skip the cut.
+    keep |= {i["id"] for i in items if i.get("provider") in plan.get("keep_providers", [])}
     chosen = [i for i in items if i["id"] in keep]
     save(out, {"searched": len(found), "kept": len(chosen), "web_search": sources.has_web(), "candidates": chosen})
     print(f"search: {len(found)} results, {len(chosen)} kept")

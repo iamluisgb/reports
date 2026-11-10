@@ -104,8 +104,17 @@ def semantic_scholar(query: str, n: int = 6) -> list[dict]:
     return out
 
 
+def _web_hits() -> dict:
+    """Hits gathered outside the script (e.g. by the agent with TinyFish search, which has
+    no key to call from here): RESEARCH_WEB_HITS points to {query: [hit, ...]}."""
+    p = os.environ.get("RESEARCH_WEB_HITS")
+    return json.load(open(p)) if p and os.path.exists(p) else {}
+
+
 def web(query: str, n: int = 8) -> list[dict]:
-    """General web search, when a key is configured."""
+    """General web search, when a key is configured (or hits were gathered by hand)."""
+    if query in _web_hits():
+        return _web_hits()[query][:n]
     if os.environ.get("TAVILY_API_KEY"):
         data = _post("https://api.tavily.com/search", {"query": query, "max_results": n, "search_depth": "basic"},
                      {"Authorization": f"Bearer {os.environ['TAVILY_API_KEY']}"})
@@ -124,7 +133,7 @@ PROVIDERS = {"arxiv": arxiv, "hn": hackernews, "github": github, "wikipedia": wi
 
 
 def has_web() -> bool:
-    return bool(os.environ.get("TAVILY_API_KEY") or os.environ.get("EXA_API_KEY"))
+    return bool(os.environ.get("TAVILY_API_KEY") or os.environ.get("EXA_API_KEY") or _web_hits())
 
 
 def read_page(url: str) -> str:
