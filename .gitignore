@@ -8,4 +8,4 @@ __pycache__/
 # Research pipeline: full copies of third-party pages stay local (copyright);
 # the plan, extracts (short quotes) and evidence pack are versioned.
 data/research/*/pages/
-data/research/*/run.log
+data/research/*/run*.log
