@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-05-11",
+  "author_or_org": "OpenAI",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "OpenAI created a dedicated Deployment Company whose core mechanism is embedding Forward Deployed Engineers (FDEs) — engineers specialized in frontier AI deployment — inside customer organizations to redesign workflows and build durable systems.",
+      "quote": "The OpenAI Deployment Company will extend OpenAI’s ability to embed engineers specialized in frontier AI deployment, known as Forward Deployed Engineers, or FDEs, into organizations working on complex problems in demanding environments. These FDEs will work closely with business leaders, operators, and frontline teams to identify where AI can make the biggest impact, redesign organizational infrastructure and critical workflows around it, and turn those gains into durable systems.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "OpenAI agreed to acquire the applied AI consulting and engineering firm Tomoro, bringing roughly 150 experienced Forward Deployed Engineers and Deployment Specialists into its deployment unit from day one.",
+      "quote": "In connection with the OpenAI Deployment Company’s launch, OpenAI has agreed to acquire Tomoro, an applied AI consulting and engineering firm that helps enterprises turn AI into operational advantage. The acquisition will bring approximately 150 experienced Forward Deployed Engineers and Deployment Specialists to the OpenAI Deployment Company from day one.",
+      "numbers": [
+        "150"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The deployment venture is structured as a partnership with 19 global investment firms, consultancies, and system integrators, co-led by TPG with Advent, Bain Capital, and Brookfield.",
+      "quote": "The OpenAI Deployment Company is a committed partnership between OpenAI and 19 leading global investment firms, consultancies, and system integrators. The partnership is led by TPG, with Advent, Bain Capital, and Brookfield as co-lead founding partners, and B Capital, BBVA, Emergence Capital, Goanna, Goldman Sachs, SoftBank Corp., Warburg Pincus, and WCAS as founding partners.",
+      "numbers": [
+        "19"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The unit is majority-owned and controlled by OpenAI and launched with more than $4 billion of initial investment, part of which is earmarked for acquiring firms.",
+      "quote": "The OpenAI Deployment Company is majority-owned and controlled by OpenAI, giving customers a unified experience whether they work with OpenAI, the OpenAI Deployment Company, or both. It will launch with more than $4 billion of initial investment, which it will use to scale operations and acquire firms that can accelerate our mission of ensuring that artificial general intelligence benefits all of humanity.",
+      "numbers": [
+        "4 billion"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The venture's investment and consulting partners sponsor more than 2,000 businesses worldwide, giving it a built-in distribution channel for deployments.",
+      "quote": "The OpenAI Deployment Company’s investment and consulting partners sponsor more than 2,000 businesses around the world, and its consulting and integrator partners work with many thousands more.",
+      "numbers": [
+        "2,000"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "OpenAI frames deployment — not model capability — as the binding constraint on enterprise value, noting over one million businesses have adopted its products and APIs but that the next phase hinges on how effectively AI gets deployed into real workflows.",
+      "quote": "Over the past several years, more than one million businesses have adopted OpenAI’s products and APIs. Across those deployments, one pattern has become increasingly clear: the next stage of enterprise AI will be defined by how effectively businesses can deploy this technology into real-world use cases, and how well we and our Alliance partner ecosystem can help them.",
+      "numbers": [
+        "one million"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The standard engagement playbook is a diagnostic to find high-value AI opportunities, selection of a few priority workflows with customer leadership, then FDEs working inside the organization to build production systems wired into the customer's data, tools, controls, and processes.",
+      "quote": "A typical OpenAI Deployment Company engagement will begin with a focused diagnostic of where AI can create the most value, followed by a small number of priority workflows selected with the customer’s leadership and operating teams. The OpenAI Deployment Company FDEs will then work inside the organization to design, build, test, and deploy production systems, connecting OpenAI models to the customer’s data, tools, controls, and business processes so teams can use them reliably in day-to-day work.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "OpenAI's chief revenue officer states that the challenge is integrating AI into existing infrastructure and workflows, and positions the deployment unit as the bridge from AI capability to operational impact.",
+      "quote": "“AI is becoming capable of doing increasingly meaningful work inside organizations. The challenge now is helping companies integrate these systems into the infrastructure and workflows that power their businesses. DeployCo is designed to help organizations bridge that gap and turn AI capability into real operational impact.”",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://openai.com/index/openai-launches-the-deployment-company/"
+}

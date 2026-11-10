@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-10-16",
+  "author_or_org": "Microsoft",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "Microsoft Fabric IQ includes an ontology preview that provides a shared, machine-understandable business representation defining concepts, properties, relationships, rules, and metrics, then binds them to enterprise data so people, applications, and AI agents use the same vocabulary and context.",
+      "quote": "The **ontology (preview)** item in Microsoft Fabric IQ provides a shared, machine-understandable representation of your business. It defines the concepts that matter to your organization, such as customers, products, assets, orders, and locations, along with their properties, how they relate, and the rules and metrics that give them business meaning. You then bind these definitions to enterprise data so people, applications, and AI agents can use the same vocabulary and context.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Microsoft positions Fabric ontology as a business context and semantic modeling layer between enterprise data and consuming experiences, not as a general-purpose data-query engine; agents and visualizations use the ontology as context and query the bound data sources.",
+      "quote": "Ontology is the **business context and semantic modeling layer** between enterprise data and the experiences that consume it. It stores and serves ontology definitions and bindings (it isn't itself a general-purpose data-query engine). Agent and visualization experiences use the ontology as context and execute against the appropriate bound data sources.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Fabric ontology can be generated from Power BI semantic models to reuse existing business definitions, with semantic-model tables and relationships as the starting structure and ontology adding operational and agent-based context; the newer experience includes calculated columns and DAX measures.",
+      "quote": "One way to create an ontology is to generate it from a Power BI semantic model to reuse existing business definitions. Semantic-model tables and relationships provide the starting structure, while ontology adds business context and capabilities for operational and agent-based consumption. The updated experience expands semantic-model alignment to include calculated columns and DAX measures.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Fabric ontology acts as a virtual semantic and context layer over source systems, leaving source data in place and allowing consuming experiences to query the live bound source rather than copying all data into the ontology.",
+      "quote": "Ontology acts as a virtual semantic and context layer over these sources. Source data remains in the system that owns it, and consuming experiences can query the live bound source rather than copying all data into the ontology.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Fabric ontology metrics expose trusted calculations from Power BI semantic models, letting people and agents use established measures such as revenue or inventory value instead of generating new formulas for each consumer.",
+      "quote": "**Metrics** give people and agents access to trusted calculations from Power BI semantic models. By carrying source-owned measures into the ontology context, business questions can use established calculations such as revenue, inventory value, or active-customer measures instead of generating new formulas for each consumer.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Fabric ontology rules capture business logic in natural language and link it to entities, properties, and relationships, making the same rule context available to multiple consumers and reducing duplicated business instructions across prompts, agents, and applications.",
+      "quote": "**Rules** capture business logic in natural language and link it to entities, properties, and relationships. Representing a rule in the ontology makes the same rule context available to multiple consumers, which reduces the need to duplicate business instructions across individual prompts, agents, and applications.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Microsoft states that the old ontology experience retires on January 31, 2027.",
+      "quote": "The old experience of ontology retires on Jan 31, 2027.",
+      "numbers": [
+        "Jan 31, 2027"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://learn.microsoft.com/en-us/fabric/iq/ontology/overview"
+}

@@ -1,0 +1,17 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-07-19",
+  "author_or_org": "Guancheng Zeng et al.",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Enterprise agent system deployments are hindered because common models lack domain-specific process knowledge, which leads to disorganized plans, missing key tools, and poor execution stability.",
+      "quote": "The deployment of agent systems in an enterprise environment is often hindered by several challenges: common models lack domain-specific process knowledge, leading to disorganized plans, missing key tools, and poor execution stability.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2507.14447"
+}

@@ -1,0 +1,72 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2025-12-23",
+  "author_or_org": "Justin Reock / DX",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The MIT NANDA report summarized here characterizes GenAI as high-adoption/low-transformation: 95% of organizations see zero measurable return.",
+      "quote": "As the authors put it, the GenAI Divide reflects “high adoption but low transformation,” with 95% of organizations seeing zero measurable return.",
+      "numbers": [
+        "95%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Only 5% of organizations reach deployment with sustained productivity or P&L impact; about 60% evaluate and about 20% pilot.",
+      "quote": "Roughly 60% evaluated task-specific or enterprise AI systems, about 20% reached pilot stage, and just 5% deployed systems that delivered sustained productivity or P&L impact.",
+      "numbers": [
+        "60%",
+        "20%",
+        "5%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Large enterprises have the lowest successful scale-up despite leading in pilot volume and investment; mid-market organizations often reach full implementation within 90 days.",
+      "quote": "Large enterprises struggled most with this transition. They led in pilot volume and investment, but had the lowest rates of successful scale-up. Mid-market organizations moved faster and more decisively, often reaching full implementation within 90 days.",
+      "numbers": [
+        "90 days"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Successful cases used narrow, workflow-specific use cases with clear operational outcomes rather than broad or generalized AI deployments.",
+      "quote": "Successful teams focused on narrow, workflow-specific use cases with clearly defined operational outcomes, rather than broad or generalized AI deployments.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Externally sourced tools reach deployment at roughly twice the rate of internal builds, which often fail due to brittleness and poor workflow fit.",
+      "quote": "Externally sourced tools reached deployment at roughly twice the rate of internal builds, which frequently failed due to brittleness and poor workflow fit.",
+      "numbers": [
+        "twice"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Successful buyers treat AI vendors as service partners, demanding deep customization, measurable outcomes, and integration into existing workflows.",
+      "quote": "Additionally, successful buyers treated AI vendors less like SaaS providers and more like service partners. They demanded deep customization, evaluated tools based on measurable outcomes, and expected systems to integrate into existing workflows with minimal disruption.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Users prefer AI for quick tasks (70%) but prefer human colleagues for complex multi-week and stakeholder work (90%).",
+      "quote": "70% of users in the study prefer AI for quick tasks like generating simple unit tests or performing basic refactoring, but for complex projects involving multi-week work and stakeholder management, 90% of users still prefer human colleagues.",
+      "numbers": [
+        "70%",
+        "90%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The human-agent divide is context, not just intelligence; current AI lacks contextual adaptability and persistent memory needed for complex human tasks.",
+      "quote": "Ultimately, the dividing line between human and agent isn’t just “intelligence,” it’s context. Engineers don’t just generate code; they maintain a mental model of the codebase, the business requirements, and the team’s historical preferences, culture, and style. Current AI solutions lack the contextual adaptability and true persistent memory necessary to perform complex human tasks.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://getdx.com/blog/the-ai-divide/"
+}

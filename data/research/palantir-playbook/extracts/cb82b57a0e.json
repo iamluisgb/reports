@@ -1,0 +1,25 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-16",
+  "author_or_org": "Paresh Dashore, Shreyas Kulkarni, Uttam Gurram, Nadia Bathaee, Kartik Balasubramaniam, Genta Indra Winata, Sambit Sahu, Shi-Xiong Zhang",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Production deployment of LLM-based multi-agent systems remains challenging because of domain-specific customization requirements and high latency and inference costs in agentic workflows.",
+      "quote": "However, production deployment remains challenging due to domain-specific customization requirements and high latency and inference costs in agentic workflows.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper's framework enables rapid domain adaptation across enterprise workloads and achieves a 4.48x throughput speedup while maintaining performance and improving long-tail robustness.",
+      "quote": "Across enterprise workloads, our framework enables rapid domain adaptation and achieves a 4.48x speedup in throughput while maintaining performance and improving robustness on long-tail scenarios.",
+      "numbers": [
+        "4.48x"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.18502"
+}

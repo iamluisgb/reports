@@ -1,0 +1,72 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2025-06-04",
+  "author_or_org": "Joe Schmidt (Andreessen Horowitz)",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "OpenAI and Anthropic have been hiring forward deployed engineers and solutions engineers to win enterprise business; as of the article, 22 of 311 open OpenAI roles were in those categories.",
+      "quote": "As the foundational models have become more interchangeable and owning the application layer has grown in importance, even model providers like OpenAI and Anthropic have been hiring forward deployed engineers and solutions engineers to win at the enterprise. As of this writing, 22 of the 311 open roles on OpenAI’s career page fall into these categories.",
+      "numbers": [
+        "22",
+        "311"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Decagon uses a sizable team of human Agent Product Managers to work closely with customers to implement AI support agents.",
+      "quote": "Take a company like Decagon, whose agents automate customer support. The company has a sizable team of human “Agent Product Managers” who work closely with customers to stand up AI support agents.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "At IPO, ServiceNow and Workday had gross margins of 63.2% and 54.1%, respectively, below the roughly 80% ideal for software.",
+      "quote": "At IPO, ServiceNow’s gross margin was 63.2%, and Workday’s was just 54.1% — far below the ideal ~80% for software.",
+      "numbers": [
+        "63.2%",
+        "54.1%",
+        "~80%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "By 2024, ServiceNow had 79% gross margins and Workday had 75%, showing margin expansion over time.",
+      "quote": "Such pricing power is reflected in increased gross margin percentages over time; in 2024, ServiceNow had 79% gross margins; Workday was at 75%.",
+      "numbers": [
+        "2024",
+        "79%",
+        "75%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The article recommends allowing services to be sold at cost and focusing on ACV growth, success, and retention.",
+      "quote": "Instead, design incentive structures that allow services to be sold at cost. As ACVs grow, all that matters is success (and retention).",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The article argues AI startups should not optimize for 80% gross margin and should instead grow total gross profit as fast as possible.",
+      "quote": "As they race to own the data ingestion layer, it’s shortsighted to be optimizing for 80% gross margin. The only thing businesses should be optimizing for today is growing total gross profit as fast as possible.",
+      "numbers": [
+        "80%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Lightweight, wrapper-like integrations replacing core workflows often cause AI agents to break or fail outright.",
+      "quote": "Companies attempting to replace core workflows owned by legacy systems of record with lightweight, wrapper-like integrations too often see their agents break or fail outright.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Without hands-on implementation support, AI risks falling short of the standards set by a dedicated employee.",
+      "quote": "Without hands-on implementation support, AI risks falling short of the standards set by a dedicated employee.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://a16z.com/services-led-growth/"
+}

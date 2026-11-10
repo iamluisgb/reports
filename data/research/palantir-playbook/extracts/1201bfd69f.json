@@ -1,0 +1,39 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-06-02",
+  "author_or_org": "Cooley M&A",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "OpenAI formed a private-equity backed joint venture, OpenAI Deployment Company, designed to help organizations build and deploy reliable AI systems across important work.",
+      "quote": "Cooley advised OpenAI on the formation of OpenAI Deployment Company, a private-equity backed joint venture designed to help organizations build and deploy AI systems they can rely on every day across their most important work.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The OpenAI Deployment Company is a partnership between OpenAI and 19 leading global investment firms, consultancies, and system integrators.",
+      "quote": "This is a committed partnership between OpenAI and 19 leading global investment firms, consultancies, and system integrators.",
+      "numbers": [
+        "19"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "In connection with the OpenAI Deployment Company launch, OpenAI agreed to acquire Tomoro, an applied AI consulting and engineering firm.",
+      "quote": "In connection with the OpenAI Deployment Company’s launch, Cooley also advised OpenAI on its agreement to acquire Tomoro, an applied AI consulting and engineering firm that helps enterprises turn AI into operational advantage.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The Tomoro acquisition will bring approximately 150 experienced Forward Deployed Engineers and Deployment Specialists to the OpenAI Deployment Company from day one.",
+      "quote": "The acquisition will bring approximately 150 experienced Forward Deployed Engineers and Deployment Specialists to the OpenAI Deployment Company from day one.",
+      "numbers": [
+        "150"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://cooleyma.com/deals/openai-forms-new-joint-venture-openai-deployment-company-and-acquires-tomoro/"
+}

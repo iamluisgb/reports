@@ -1,0 +1,74 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2010-05-03",
+  "author_or_org": "Wikipedia",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "In 2009, 120 Palantir forward-deployed engineers supported JPMorgan's use of Metropolis for employee communications surveillance.",
+      "quote": "Aided by 120 \"forward-deployed engineers\" of Palantir in 2009, Peter Cavicchia III of JPMorgan used Metropolis to surveil employee communications[127] and alert the insider threat team when an employee showed signs of potential disgruntlement: the insider alert team would further scrutinize the employee and possibly stalk them after hours with bank security personnel.[126][127]",
+      "numbers": [
+        "120",
+        "2009"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir's AIP uses agents that interact with an ontology to access documents/resources, and Palantir offers five-day boot camps to onboard prospective customers.",
+      "quote": "AIP lets users create LLMs called \"agents\" through a graphical user interface. Agents can interact with a digital representation of a company's business known as an ontology. This lets the models access an organization's documents and other external resources. Users can define output schemas and test cases to validate AI-generated responses. AIP comes with a library of templates that can be extended by clients.[116] Palantir also offers five-day boot camps to onboard prospective customers.[117]",
+      "numbers": [
+        "five-day"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Early Palantir continuously revised its technology for two years based on intelligence analysts' demands via In-Q-Tel introductions.",
+      "quote": "According to the Journal, for two years the company continuously revised its technology based on the demands of analysts from the intelligence agencies, introduced to them by In-Q-Tel.",
+      "numbers": [
+        "two years"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Palantir argued AI alone could not defeat an adaptive adversary and proposed human analysts exploring multi-source data, called intelligence augmentation.",
+      "quote": "Palantir said computers alone using artificial intelligence could not defeat an adaptive adversary. Instead, it proposed using human analysts to explore data from many sources, called intelligence augmentation.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir reported its first positive GAAP net income quarter in February 2023, totaling $31 million.",
+      "quote": "In February 2023, Palantir reported its first quarter of positive GAAP net income, totaling $31 million.",
+      "numbers": [
+        "February 2023",
+        "$31 million"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "In 2025 Palantir had over $400 billion market capitalization but revenue below the Fortune 500 threshold; its August 2025 headcount was 4,100 and Karp wanted to reduce it to 3,600.",
+      "quote": "In 2025, Fortune noted that Palantir, with a market capitalization exceeding $400 billion, ranked among the world's most valuable companies by market cap, yet would fail to meet Fortune 500 revenue thresholds (requiring $50+ billion annually in sales). The company's headcount in August 2025 was 4,100, but Karp wanted to reduce it to 3,600.",
+      "numbers": [
+        "2025",
+        "$400 billion",
+        "$50+ billion",
+        "August 2025",
+        "4,100",
+        "3,600"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "NATO Admiral Pierre Vandier said in May 2026 there is currently no competitor for Palantir, and European alternatives need months or years rather than a decade to prove themselves.",
+      "quote": "In May 2026, Admiral Pierre Vandier, NATO's supreme allied commander transformation, said that currently there is no competitor for Palantir, and if European countries want alternatives, these alternatives should prove themselves in a few months or years, and not a decade.",
+      "numbers": [
+        "May 2026",
+        "a few months or years",
+        "a decade"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://en.wikipedia.org/wiki/Palantir"
+}

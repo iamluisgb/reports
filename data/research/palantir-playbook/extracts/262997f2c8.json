@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2019-04-08",
+  "author_or_org": "Palantir Blog",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir calls Software Engineers “Devs” and Forward Deployed Software Engineers “Deltas,” and says these are its biggest engineering roles by headcount.",
+      "quote": "**Software Engineers**and**Forward Deployed Software Engineers**are our biggest engineering roles by headcount. Internally, we call them “Devs” and “Deltas.”",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir says Deltas are in Business Development, deploy and customize Palantir platforms for one directly supported customer, and are mandated to achieve technical outcomes.",
+      "quote": "**Deltas (Forward Deployed Software Engineers) deploy our software platforms to customers**. Deltas are part of Business Development, and their mandate is to achieve technical outcomes for our customers. As part of a team that directly supports one customer, a Delta focuses on technology-driven value creation: deploying and customizing Palantir platforms to tackle critical business problems.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir describes Dev focus as “one capability, many customers” and Delta focus as “one customer, many capabilities.”",
+      "quote": "You can think of a Dev’s focus as “one capability, many customers,” while a Delta’s focus is “one customer, many capabilities.”",
+      "numbers": [
+        "one",
+        "one"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "A Palantir Delta distinguishes the role from consulting by saying consultants generally deliver one-time analyses, recommendations, or solutions, while Palantir works with customers to build a long-term solution for continuous improvement.",
+      "quote": "“However, consultants generally create a one-time analysis, recommendation, or solution to a specific problem, while at Palantir we work together with our customers to build a long-term solution that allows the customer to continuously improve themselves.”",
+      "numbers": [
+        "one-time"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Palantir Deltas say they do significantly more engineering and technical work than consultants and require technical experience rare in consulting work.",
+      "quote": "“A Delta does significantly more engineering and technical work than a consultant,” adds G.M., who works in São Paulo. Being a Delta “requires a degree of technical experience that is rare to see in consulting work.”",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A Palantir Delta says the critical difference from consulting is that Deltas actually deploy existing software products to achieve customer outcomes.",
+      "quote": "“In my mind, the critical difference is that we are actually deploying existing software products to achieve the customer’s outcomes,” says Dyon, a Delta who works in our Abu Dhabi office.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir says Deltas often contribute code back to the core product when a missing platform feature, capability, or bug fix blocks a customer outcome, coordinating with the product team.",
+      "quote": "Several of the Deltas I spoke to also mentioned that they often contribute code back to the core product. “If what’s standing between a Business Development team and a successful outcome is a missing feature, capability, or bug fix in one of our platforms, it may make sense for them to spend time doing it,” says Ian, a Washington D.C.-based Dev who previously worked as a Delta, adding that it’s “important that they coordinate with the product team.”",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A Palantir Delta describes spending a couple of days most weeks at customer premises, including meetings with technical or business stakeholders and monitoring, debugging, deploying, or configuring software.",
+      "quote": "Most weeks, I spend a couple of days working at the customer premises, some of that time in meetings with technical or business stakeholders and the rest of the time monitoring, debugging, deploying, or configuring our software for that customer.",
+      "numbers": [
+        "a couple"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87"
+}

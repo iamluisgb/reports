@@ -1,0 +1,68 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "Palantir Technologies",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir markets its AIP Bootcamp as taking a customer from zero to a working use case in five days.",
+      "quote": "From 0 to use case in 5 days.",
+      "numbers": [
+        "0",
+        "5"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir states the five-day AIP Bootcamp is aimed at customers with time-critical missions and has three steps, the first being to understand how to apply AI to mission-critical operations.",
+      "quote": "1 / Understand how to apply AI to mission-critical operations",
+      "numbers": [
+        "1"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The second bootcamp step is developing initial use cases inside the software itself.",
+      "quote": "2 / Develop initial use cases in the software",
+      "numbers": [
+        "2"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The third bootcamp step is onboarding and training users so the use case can be rolled out into operations.",
+      "quote": "3 / Onboard and train users for rollout in operations",
+      "numbers": [
+        "3"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Bootcamp sessions are framed around defining the customer's architecture empirically rather than up front, and moving from chat interfaces to automation.",
+      "quote": "Defining Your Architecture Empirically",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir positions AIP as a way to run LLMs and other AI on a customer's private network securely, which is the platform the bootcamps build on.",
+      "quote": "Activate LLMs and other AI on your private network, safely and securely.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "As evidence of results, Palantir cites a news report that its software halved sepsis deaths at a US hospital, with the Sepsis Hub built with Tampa General Hospital in Florida detecting subtle changes in vital signs so antibiotics are given early.",
+      "quote": "Palantir software halves sepsis deaths at US hospital The Sepsis Hub, developed with Tampa General Hospital in Florida, detects subtle changes in vital signs so antibiotics are given early",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Palantir's site highlights a CNBC segment in which CEO Alex Karp says something has gone completely wrong with how AI is sold, implying a critique of enterprise AI sales practice.",
+      "quote": "Palantir CEO Alex Karp says 'something has gone completely wrong' with how AI is sold",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.palantir.com/platforms/aip/bootcamp/"
+}

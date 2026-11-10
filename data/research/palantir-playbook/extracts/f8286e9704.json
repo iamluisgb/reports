@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-08-16",
+  "author_or_org": "Julius Hollmann / digetiers",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "The article lists Stardog alternatives as d.AP, GraphDB, Neo4j, eccenca, TopBraid EDG, Amazon Neptune, Denodo, and TigerGraph.",
+      "quote": "Stardog alternatives include d.AP, GraphDB, Neo4j, eccenca, TopBraid EDG, Amazon Neptune, Denodo, and TigerGraph.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "d.AP is described as an AI context platform focused on making explicit business meaning usable by agents through ontology-guided context assembly.",
+      "quote": "An AI context platform focused on making explicit business meaning usable by agents through ontology-guided context assembly.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog is described as a semantic platform that combines knowledge graph storage, ontology-based modeling, inference, and data virtualization.",
+      "quote": "Stardog is a semantic platform that combines knowledge graph storage, ontology-based modeling, inference, and data virtualization.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "GraphDB is described as an RDF database with SPARQL, rule-based inference, management tools, and AI integration capabilities.",
+      "quote": "An RDF database with SPARQL, rule-based inference, management tools, and AI integration capabilities.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Neo4j is described as a property-graph platform for graph applications, analytics, and graph-grounded AI.",
+      "quote": "A property-graph platform for graph applications, analytics, and graph-grounded AI.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "eccenca Corporate Memory is described as an enterprise knowledge graph platform for semantic integration, modeling, and governance.",
+      "quote": "An enterprise knowledge graph platform for semantic integration, modeling, and governance.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "TopBraid EDG / TopQuadrant is described as semantic governance and knowledge modeling, with TQ Data Foundation extending into agent context delivery.",
+      "quote": "Semantic governance and knowledge modeling, with the current TQ Data Foundation offering extending into agent context delivery.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The article states that formal inference, context selection, and action authorization are distinct capabilities, and a platform can do well on one without satisfying the others.",
+      "quote": "Formal inference, context selection, and action authorization are different capabilities. A platform can perform well on one without satisfying the others.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.digetiers.com/en/insights/library/stardog-alternatives"
+}

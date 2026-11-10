@@ -1,0 +1,67 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-01-16",
+  "author_or_org": "Marc Andrusko (Andreessen Horowitz / a16z)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir's forward-deployed engineers sit inside customer organizations for months, stitch systems together, and ship custom workflows on Foundry or Gotham; pricing is fixed fee with no traditional SKUs, and engineers build and maintain those capabilities.",
+      "quote": "Forward-deployed engineers (“Deltas” and “Echoes” in Palantir’s internal jargon) sit inside the customer’s organization (often for months), to understand domain context, stitch systems together, and ship custom workflows on top of Foundry (or Gotham in higher-security situations). Since pricing is fixed fee, there are no “SKUs” in a traditional sense. Engineers are responsible for building and maintaining those capabilities.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir's Ontology is defined as a dynamic, actionable digital model of an organization's real-world entities, relationships, and logic that powers applications and decision-making within Foundry.",
+      "quote": "the dynamic, actionable digital model of an organization’s real-world entities, relationships, and logic that powers applications and decision-making within Foundry.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir contracts start small with a bootcamp and limited licenses; if value is proven, more use cases and data domains are added, and revenue mix over time tilts toward software subscription rather than services.",
+      "quote": "Palantir’s contracts start small. A first engagement might cover a short bootcamp and limited licenses. If value is proven, additional use cases, workflows, and data domains are layered in. Over time, the revenue mix tilts toward software subscription rather than services. Unlike consulting firms, services are a means to drive product adoption, not the primary revenue stream.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "FDE job postings exploded 800–1000% in a year as AI startups embedded engineers to make deployments work.",
+      "quote": "Media coverage and data on job postings show FDE roles exploding —[up 800–1000% this year](https://www.interviewquery.com/p/ai-forward-deployed-engineer-jobs-2025?utm_source=chatgpt.com), depending on the source — as AI startups embed engineers in an effort to make deployments actually work.",
+      "numbers": [
+        "800–1000%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Job postings for forward-deployed engineers rose hundreds of percent as companies copied the model Palantir pioneered in the early 2010s.",
+      "quote": "Job postings for “forward-deployed engineers”are up hundreds of percent this year as companies copy the model that Palantir pioneered in the early 2010s.",
+      "numbers": [
+        "hundreds of percent"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Early-stage companies will trade gross margin for momentum if putting engineers on planes lands $1M+ deals with Fortune 500 or government customers.",
+      "quote": "If putting engineers on planes is what it takes to land a $1M+ deal with a Fortune 500 or government agency, many early-stage companies will gladly trade gross margin for momentum.",
+      "numbers": [
+        "$1M+"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Palantir works because a real platform underlies bespoke work; copying only the embedded-engineer part produces thousands of bespoke deployments that are hard to maintain or upgrade.",
+      "quote": "Palantir works _because_ there is a real platform underneath the bespoke work. Thoughtful observers point out that if you only copy the embedded-engineer part, you end up with thousands of bespoke deployments that are impossible to maintain or upgrade.",
+      "numbers": [
+        "thousands"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A large fraction of AI projects stall before reaching production, often because of messy data, integration headaches, and lack of internal ownership.",
+      "quote": "[A large fraction of AI projects still stall](https://www.crewscale.com/blog/forward-deployed-engineers-in-ai-saas-startups?utm_source=chatgpt.com)before they[ever reach production environments](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf), often due to messy data, integration headaches, and lack of internal ownership.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://a16z.com/the-palantirization-of-everything/"
+}

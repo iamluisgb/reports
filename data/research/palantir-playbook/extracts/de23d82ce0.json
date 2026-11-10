@@ -1,0 +1,44 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-01-29",
+  "author_or_org": "Khush Patel, Siva Surendira, Jithin George, Shreyas Kapale (arXiv)",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The paper attributes critical enterprise deployment challenges to large language models remaining fundamentally probabilistic.",
+      "quote": "Large Language Models demonstrate remarkable capabilities yet remain fundamentally probabilistic, presenting critical reliability challenges for enterprise deployment.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper proposes task decomposition, parallel micro-agent sampling across diverse LLMs, and consensus voting with dynamic scaling as an architecture for enterprise-grade reliability.",
+      "quote": "We introduce the Six Sigma Agent, a novel architecture that achieves enterprise-grade reliability through three synergistic components: (1) task decomposition into a dependency tree of atomic actions; (2) micro-agent sampling where each task is executed n times in parallel across diverse LLMs to generate independent outputs; and (3) consensus voting with dynamic scaling, clustering outputs and selecting the answer from the winning cluster with maximum votes.",
+      "numbers": [
+        "three",
+        "(1)",
+        "(2)",
+        "(3)"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper reports that consensus architecture improved reliability by 14,700x over single-agent execution while reducing costs by 80% across three enterprise use cases.",
+      "quote": "Evaluation across three enterprise use cases demonstrates a 14,700x reliability improvement over single-agent execution while reducing costs by 80%.",
+      "numbers": [
+        "three",
+        "14,700x",
+        "80%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper states that reliability in AI systems emerges from principled redundancy and consensus rather than model scaling alone.",
+      "quote": "Our work establishes that reliability in AI systems emerges from principled redundancy and consensus rather than model scaling alone.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2601.22290"
+}

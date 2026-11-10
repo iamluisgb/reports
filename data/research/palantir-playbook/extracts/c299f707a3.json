@@ -1,0 +1,90 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-07-25",
+  "author_or_org": "Plank Research",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "OpenAI's DeployCo embeds forward-deployed engineers in large organizations to build production systems on OpenAI models; OpenAI majority-owns it, a TPG-led group of 19 firms committed $4B+ in May 2026, and the Tomoro and Northslope acquisitions supplied hundreds of FDEs.",
+      "quote": "The OpenAI Deployment Company (DeployCo) embeds forward-deployed engineers (FDEs) in large organizations to build production systems on OpenAI models. OpenAI owns a majority; a TPG-led group of 19 firms committed $4B+ in May 2026, and the Tomoro and Northslope acquisitions gave it hundreds of FDEs.",
+      "numbers": [
+        "$4B+",
+        "19",
+        "May 2026",
+        "hundreds"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Tomoro brought about 150 FDEs and deployment specialists to DeployCo, while Northslope was founded by former Palantir FDEs, was Palantir's first Vanguard: Elite partner, and took DeployCo's FDE count into the hundreds.",
+      "quote": "Tomoro, founded in 2023 in alliance with OpenAI, brought about 150 FDEs and deployment specialists. Northslope, founded by former Palantir FDEs and Palantir's first Vanguard: Elite partner, took the count into the hundreds.",
+      "numbers": [
+        "2023",
+        "about 150",
+        "hundreds"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "DeployCo CTO Arnaud Fournier co-founded OpenAI's forward-deployed engineering team in 2024, was its first FDE, headed FDE for EMEA and global verticals from March 2025 to May 2026, and earlier worked at Palantir in Paris in 2020–22.",
+      "quote": "Co-founded OpenAI's forward-deployed engineering team in 2024 and was its first FDE; headed FDE for EMEA and global verticals from March 2025 to May 2026. Earlier at Palantir in Paris (2020–22) and co-founder and CEO of Bastion Technologies.",
+      "numbers": [
+        "2024",
+        "March 2025",
+        "May 2026",
+        "2020–22"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Investors committed $4B+ at a $10B pre-money and $14B post-money valuation, OpenAI kept majority control, and private-equity backers are guaranteed a minimum 17.5% annual return over five years with profits capped.",
+      "quote": "Investors put in the $4B+ at a $10B pre-money valuation ($14B post-money), and OpenAI kept majority control. Its private-equity backers are guaranteed a minimum 17.5% annual return over five years, with profits capped, Axios and The Next Web report.",
+      "numbers": [
+        "$4B+",
+        "$10B",
+        "$14B",
+        "17.5%",
+        "five"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "DeployCo's integration work is custom per client and no software product has been announced, though it was hiring a Product Lead for internal products as of October 2026.",
+      "quote": "Integration work is custom per client; no software product has been announced, though DeployCo is hiring a Product Lead for internal products (Oct 2026).",
+      "numbers": [
+        "Oct 2026"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A typical DeployCo engagement starts with a diagnostic, selects a small number of priority workflows with customer leaders, and then FDEs work inside the organization to design, build, test and deploy production systems connected to customer data, tools, controls and processes.",
+      "quote": "OpenAI says a typical engagement starts with a focused diagnostic of where AI can create the most value, followed by a small number of priority workflows chosen with the customer's leadership and operating teams. FDEs then work inside the organization to design, build, test and deploy production systems, connecting OpenAI models to the customer's data, tools, controls and business processes.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Tomoro's support system for Supercell processes 500 million daily tokens on GPT-4o and 200 million on GPT-4o-mini across five games, and cut the cost of resolving a support ticket by 90%.",
+      "quote": "Tomoro's support system for Supercell processes 500 million daily tokens on GPT-4o and 200 million on GPT-4o-mini across five games, and cut the cost of resolving a support ticket by 90%.",
+      "numbers": [
+        "500 million",
+        "GPT-4o",
+        "200 million",
+        "GPT-4o-mini",
+        "five",
+        "90%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "DeployCo's investment and consulting partners sponsor more than 2,000 businesses, with Bain & Company, Capgemini and McKinsey & Company as investors, and it works alongside OpenAI Frontier Alliance consultancies Accenture, BCG, Capgemini and McKinsey.",
+      "quote": "Its investment and consulting partners sponsor more than 2,000 businesses, OpenAI says. Bain & Company, Capgemini and McKinsey & Company are investors, and DeployCo also works alongside OpenAI's Frontier Alliance consultancies: Accenture, BCG, Capgemini and McKinsey.",
+      "numbers": [
+        "2,000"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://joinplank.com/research/openai-deployment-company"
+}

@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-08-20",
+  "author_or_org": "MIT NANDA (Aditya Challapally, Chris Pease, Ramesh Raskar, Pradyumna Chari)",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The report states that despite $30–40 billion in enterprise GenAI investment, 95% of organizations are getting zero return.",
+      "quote": "Despite $30 –40 billion in enterprise investment into GenAI, this report uncovers a surprising result in that 95% of organizations are getting zero return.",
+      "numbers": [
+        "$30 –40 billion",
+        "95%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Only 5% of integrated AI pilots are extracting millions in value, while the vast majority have no measurable P&L impact.",
+      "quote": "Just 5% of integrated AI pilots are extracting millions in value, while the vast majority remain stuck with no measurable P&L impact.",
+      "numbers": [
+        "5%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Sixty percent of organizations evaluated enterprise-grade AI tools, but only 20 percent reached pilot stage and 5 percent reached production; most fail due to brittle workflows, lack of contextual learning, and misalignment with operations.",
+      "quote": "Sixty percent of organizations evaluated such tools, but only 20 percent reached pilot stage and just 5 percent reached production. Most fail due to brittle workflows, lack of contextual learning, and misalignment with day-to-day operations.",
+      "numbers": [
+        "Sixty percent",
+        "20 percent",
+        "5 percent"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The core barrier to scaling is learning, not infrastructure, regulation, or talent; most GenAI systems do not retain feedback, adapt to context, or improve over time.",
+      "quote": "The core barrier to scaling is not infrastructure, regulation, or talent. It is learning. Most GenAI systems do not retain feedback, adapt to context, or improve over time.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "External partnerships have twice the success rate of internal builds.",
+      "quote": "Implementation advantage : External partnerships see twice the success rate of internal builds",
+      "numbers": [
+        "twice"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Successful buyers demand process-specific customization and evaluate tools based on business outcomes rather than software benchmarks.",
+      "quote": "Buyers who succeed demand process-specific customization and evaluate tools based on business outcomes rather than software benchmarks.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Users are skeptical of custom or vendor-pitched AI tools, describing them as brittle, overengineered, or misaligned with actual workflows.",
+      "quote": "Yet the same users were overwhelmingly skeptical of custom or vendor-pitched AI tools, describing them as brittle, overengineered, or misaligned with actual workflows.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf"
+}

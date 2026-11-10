@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2022-03-08",
+  "author_or_org": "Palantir",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir says it often embeds closely with clients to design, configure, and implement workflows and applications, and it builds a digital twin of operations.",
+      "quote": "At Palantir, we help companies leverage their data for a deep understanding of their business and build a digital twin of their operations. To solve our clients’ toughest problems, we often embed closely with them to design, configure and implement innovative workflows and applications.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A typical Palantir project mixes Deployment Strategists with Forward-Deployed Engineers, internally called Deltas.",
+      "quote": "On a typical project, you’ll find a mix of Deployment Strategists and Forward-Deployed Engineers (commonly dubbed “Deltas”).",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir says Deployment Strategists are theoretically more product-manager-like and Forward-Deployed Engineers more technical, but in practice both roles blend product management, software engineering, and strategy.",
+      "quote": "Theoretically, Echos are more product-managers while Deltas are more technical, but in reality, both roles are a mix between product manager, software engineer and strategist and the lines between the two roles blur heavily quite often.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Deployment Strategists focus on understanding client operations, designing user-centric workflows and applications, iterating with users, and scaling developed solutions.",
+      "quote": "*   Understanding the client’s operations and figuring out where Palantir software can have the biggest impact\n*   Designing and implementing user-centric workflows and applications around problems or gaps in the existing systems\n*   Iterating rapidly with users to make sure the solution is what they want and need\n*   Implementing and scaling developed solutions",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The author says she has worked on multiple 4–12 week pilot engagements.",
+      "quote": "I personally enjoy context-switching, so I’ve worked on a number of 4–12 week pilot engagements to see new industries and meet new colleagues, but there are many Echos that stick to one project for a long time and immerse themselves deep into the topic while building long-lasting client relationships.",
+      "numbers": [
+        "4–12"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir says Foundry supports iterative rapid building, tearing down, and adapting of solutions.",
+      "quote": "Getting to work on Palantir Foundry has given me the opportunity to create things from scratch, and Foundry makes it easy to be iterative and rapidly build up, tear down, and adapt solutions.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Palantir says Deployment Strategists design and implement applications side-by-side with future users rather than working in a black box.",
+      "quote": "As an Echo, I have tangible output — I’m actually designing and implementing applications that will make clients’ jobs easier and more efficient — and I get to work side-by-side with the future users instead of working in a black box.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://blog.palantir.com/a-day-in-the-life-of-a-palantir-deployment-strategist-951cb59a5a96"
+}

@@ -1,0 +1,45 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-01-06",
+  "author_or_org": "Accenture",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Accenture agreed to acquire Faculty, a UK-based AI-native services and products business built on applied AI skills and a decision intelligence product.",
+      "quote": "LONDON; Jan. 6, 2026 – Accenture (NYSE: ACN) has agreed to acquire Faculty, a leading UK-based AI native services and products business built on highly technical applied AI skills and a unique decision intelligence product that features advanced simulation and optimization capabilities.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Faculty has more than 400 AI-native professionals, including data scientists and AI engineers, who will integrate with Accenture’s teams.",
+      "quote": "Upon closing of the transaction, Faculty’s team of more than 400 AI native professionals, including highly qualified data scientists and AI engineers, will integrate with Accenture’s teams to scale world‑class AI capabilities for clients.",
+      "numbers": [
+        "400"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Accenture plans to use Faculty’s Fellowship Program, a structured early-career training and placement program for STEM PhD and master’s graduates and post-doctoral researchers, and extend it globally.",
+      "quote": "Accenture will leverage Faculty’s Fellowship Program, a highly structured early career training and placement program that helps promising STEM PhD and master’s graduates as well as post-doctoral researchers transition from academia to industry.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Accenture and Faculty have collaborated since December 2023, when Accenture was confirmed as a preferred implementation partner for Faculty Frontier.",
+      "quote": "Accenture and Faculty have collaborated since December 2023 when Accenture was confirmed as a preferred implementation partner for Faculty Frontier TM.",
+      "numbers": [
+        "December 2023"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Faculty Frontier is an enterprise decision intelligence product that will join Accenture’s products by connecting data, AI models, and business processes into a unified decision system.",
+      "quote": "As part of the acquisition integration, Faculty Frontier TM, Faculty’s enterprise decision intelligence product, will join Accenture’s suite of products that help organizations make better, faster decisions by connecting data, AI models and business processes into a unified decision system.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://newsroom.accenture.com/news/2026/accenture-to-acquire-faculty-to-scale-ai-capabilities"
+}

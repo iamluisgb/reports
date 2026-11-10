@@ -1,0 +1,81 @@
+{
+  "slug": "palantir-playbook",
+  "title": "What AI startups took from Palantir's playbook: forward deployed engineers and ontologies",
+  "thesis": "AI startups and labs copy Palantir's playbook (forward deployed engineers plus an ontology over existing data) because it works, and the bottleneck is people, not technology.",
+  "audience": "Founders and enterprise AI leaders deciding whether to build a forward-deployed, ontology-led delivery model",
+  "since": "2019-01-01",
+  "per_question": 8,
+  "keep_providers": [
+    "tinyfish"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is Palantir's playbook (forward deployed engineers, deployment strategists, ontology, AIP bootcamps), and what do its results show?",
+      "queries": [
+        "Palantir forward deployed engineer",
+        "Palantir ontology Foundry",
+        "Palantir forward deployed engineering model and ontology"
+      ],
+      "providers": [
+        "hn",
+        "wikipedia",
+        "web"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Who is copying the forward deployed engineer model, and what evidence shows it (acquisitions, labs, hiring data)?",
+      "queries": [
+        "forward deployed engineer",
+        "forward deployed engineers AI startups",
+        "companies copying the forward deployed engineer model"
+      ],
+      "providers": [
+        "hn",
+        "web"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "What are the economics of the FDE model: margins, pricing, and does services turn into software, or is it consulting by another name?",
+      "queries": [
+        "services-led growth AI startups margins",
+        "forward deployed engineering consulting",
+        "forward deployed engineer economics gross margin"
+      ],
+      "providers": [
+        "hn",
+        "web"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "Which ontology and semantic-layer platforms compete with Palantir's ontology, and how do they differ?",
+      "queries": [
+        "enterprise ontology platform knowledge graph",
+        "semantic layer enterprise AI agents",
+        "Palantir ontology competitors knowledge graph platforms"
+      ],
+      "providers": [
+        "hn",
+        "arxiv",
+        "web"
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Why do enterprise AI and agent deployments fail, and does embedding engineers with customers address the cause?",
+      "queries": [
+        "enterprise generative AI adoption failure",
+        "LLM agents enterprise deployment challenges",
+        "why enterprise AI pilots and agentic AI projects fail"
+      ],
+      "providers": [
+        "arxiv",
+        "hn",
+        "web"
+      ]
+    }
+  ]
+}

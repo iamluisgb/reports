@@ -1,0 +1,93 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-11-02",
+  "author_or_org": "Shivank Agrawal / Scaler",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "The article says the margin given up early in the FDE model can buy the customer.",
+      "quote": "Because the margin you give up early can buy you the customer.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The article says everyone from Palantir to the AI labs uses the expensive embedded-engineer model anyway.",
+      "quote": "So why does everyone from Palantir to the AI labs do it anyway?",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The cited a16z argument is that enterprise AI products are too complex to sell like self-serve software, so hands-on services are worth the early cost.",
+      "quote": "Its argument: enterprise AI products are too complex to sell like self-serve software, so hands-on services are worth the cost early.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "A survey cited in the article says 60% of surveyed enterprises plan FDE or FDE-like hiring within 12 months.",
+      "quote": "60% of surveyed enterprises plan FDE/FDE-like hiring within 12 months",
+      "numbers": [
+        "60%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Compiled benchmarks show SaaS median gross margin of 80%, AI products at 45% in 2025, expected 53% in 2026 and 59% in 2027, with Bessemer Shooting Stars about 60% and Supernovas about 25%.",
+      "quote": "Bars: SaaS median 80 percent; AI products 45 percent in 2025, 53 expected in 2026, 59 expected in 2027; Bessemer Shooting Stars about 60 percent and Supernovas about 25 percent",
+      "numbers": [
+        "80 percent",
+        "45 percent",
+        "2025",
+        "53",
+        "2026",
+        "59",
+        "2027",
+        "60 percent",
+        "25 percent"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "A unit-economics analysis cites Levels.fyi May 2026 median total compensation of $582K at Anthropic, around $450K at OpenAI and about $238K at Palantir, and models a fully loaded frontier-lab cost of $845K per year.",
+      "quote": "cites Levels.fyi from May 2026: Anthropic median total compensation of $582K, OpenAI around $450K and Palantir about $238K on average. It then models a fully loaded cost of $845K a year at a frontier lab.",
+      "numbers": [
+        "May 2026",
+        "$582K",
+        "$450K",
+        "$238K",
+        "$845K"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "An illustrative model says $3M-$15M annual enterprise contracts cover an FDE 2.5x to 6x, mid-market deals cover 0.7x to 1.9x, and deals under $500K cover well under half an FDE's cost.",
+      "quote": "• **Large enterprise deals cover the cost with room to spare.** Contracts of $3M to $15M a year, in the model, cover an FDE 2.5x to 6x.\n\n• **Mid-market is knife-edge.** Between 0.7x and 1.9x. Some deals pay, some don’t.\n\n• **Small deals lose money.** Under $500K a year, the model has an FDE covering well under half their cost.",
+      "numbers": [
+        "$3M",
+        "$15M",
+        "2.5x",
+        "6x",
+        "0.7x",
+        "1.9x",
+        "$500K"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir's Q1 2026 filing showed revenue of about $1.63B, up 85% year on year; US commercial revenue of $595M, up 133%; adjusted operating margin of 60%; and gross profit of about $1.42B, roughly 87% of revenue by the author's arithmetic.",
+      "quote": "• **Revenue:** about $1.63 billion, up 85% year on year.\n\n• **US commercial revenue:** $595 million, up 133%.\n\n• **Adjusted operating margin:** 60%.\n\n• **Gross profit:** about $1.42 billion. By my own arithmetic that is roughly 87% of revenue.",
+      "numbers": [
+        "$1.63 billion",
+        "85%",
+        "$595 million",
+        "133%",
+        "60%",
+        "$1.42 billion",
+        "87%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.scaler.com/topics/the-economics-of-the-forward-deployed-engineer/"
+}

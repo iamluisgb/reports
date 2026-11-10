@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": null,
+  "author_or_org": "Anthropic",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Anthropic posted a Forward Deployed Engineer role located in London, UK.",
+      "quote": "Forward Deployed Engineer\n\nLondon, UK",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Anthropic says its Forward Deployed Engineers embed directly with its most strategic customers to drive AI adoption.",
+      "quote": "As a member of the Applied AI team at Anthropic, you will be a Forward Deployed Engineer (FDE) who embeds directly with our most strategic customers to drive transformational AI adoption.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Anthropic describes this hire as one of its founding Forward Deployed Engineers who will help shape its forward-deployed motion.",
+      "quote": "You will sit at the frontier of enterprise AI deployments and serve as one of our founding FDEs who helps to shape our forward-deployed motion.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The role’s responsibilities include working inside customer systems to build production applications with Claude models.",
+      "quote": "Work within customer systems to build production applications with Claude models, ensuring that these products meet customer requirements.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The role requires delivering technical artifacts such as MCP servers, sub-agents, and agent skills for customer production workflows.",
+      "quote": "Deliver technical artifacts for customers like MCP servers, sub-agents, and agent skills that will be used in production workflows.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The role includes identifying and codifying repeatable deployment patterns and feeding insights back to Product and Engineering teams.",
+      "quote": "Identify and codify repeatable deployment patterns and contribute insights back to our Product and Engineering teams.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The role requires frequent travel of 25-50% to customer sites to build in person with customers.",
+      "quote": "Travel frequently (25-50%) to customer sites to build in person with customers.",
+      "numbers": [
+        "25-50%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The annual salary range for the Forward Deployed Engineer role is £225,000 to £255,000 GBP.",
+      "quote": "Annual Salary:\n\n£225,000 - £255,000 GBP",
+      "numbers": [
+        "£225,000",
+        "£255,000"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "http://job-boards.greenhouse.io/anthropic/jobs/5423029008"
+}

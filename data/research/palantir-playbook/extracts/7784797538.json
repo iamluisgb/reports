@@ -1,0 +1,25 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2025-02-14",
+  "author_or_org": "Wikipedia",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "In June 2025, Gautier Cloix, formerly CEO of Palantir France, replaced Charles Kantor as CEO of H Company.",
+      "quote": "Gautier Cloix (formerly CEO Palantir France) replaced Charles Kantor as CEO of H Company",
+      "numbers": [
+        "June 2025"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "After the CEO change, H Company aimed to pivot toward a forward deployed engineers model.",
+      "quote": "aiming to pivot the company towards a \"[forward deployed engineers](https://en.wikipedia.org/wiki/Forward_deployed_engineer \"Forward deployed engineer\")\" model.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://en.wikipedia.org/wiki/H_%28company%29"
+}

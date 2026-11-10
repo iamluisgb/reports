@@ -1,0 +1,47 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-05-29",
+  "author_or_org": "Perspective AI Team",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Palantir invented the forward deployed engineer role, and OpenAI and Anthropic ported it to the frontier-model era.",
+      "quote": "Palantir invented the role, OpenAI and Anthropic ported it to the frontier-model era, and the pattern now defines how every serious AI-application company sells, ships, and learns.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The forward deployed engineer embeds with the customer, builds the integration, owns the deployment, and carries learning back to the product team.",
+      "quote": "an engineer who embeds with the customer, builds the integration, owns the deployment, and carries the learning back to the product team.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The FDE compounding loop runs 5–10x faster than a sales-led go-to-market at the application layer.",
+      "quote": "The compounding loop — engineer embeds with customer, ships custom workflow, harvests product insight, feeds it back to core engineering — runs 5–10x faster than a sales-led GTM at the application layer.",
+      "numbers": [
+        "5–10x"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Public comp data from 1,200 FDEs shows $250k–$450k all-in pay at Series A, less than the fully loaded cost of an enterprise AE plus an SE.",
+      "quote": "Public comp data from 1,200 FDEs shows the role pays $250k–$450k all-in at Series A, less than the fully loaded cost of an enterprise AE plus an SE.",
+      "numbers": [
+        "1,200",
+        "$250k",
+        "$450k"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A strong AE cannot substitute for an FDE because the Series A bottleneck is workflow integration, not pipeline volume.",
+      "quote": "A strong AE cannot substitute for an FDE because the bottleneck at Series A is workflow integration, not pipeline volume.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 3,
+  "model": "deepseek-v4-flash",
+  "url": "https://getperspective.ai/blog/why-series-a-ai-startup-needs-fde-first-10-hires-2026"
+}

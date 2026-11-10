@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2019-01-06",
+  "author_or_org": "Wikipedia",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Faculty provides software, consulting, and services related to AI.",
+      "quote": "It provides software, consulting, and services related to [artificial intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence \"Artificial intelligence\").",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Faculty clients typically own the models developed for them, while Faculty retains rights to certain algorithms and libraries for other clients.",
+      "quote": "Faculty clients typically own the models that are developed for them, though Faculty retains the right to use certain algorithms and libraries for other clients.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In January 2026, Accenture agreed to acquire Faculty for over £740 million to improve its AI capabilities.",
+      "quote": "In January 2026, the consulting company [Accenture](https://en.wikipedia.org/wiki/Accenture \"Accenture\") agreed to acquire Faculty for over £740 million as it sought to improve the company's AI capabilities.",
+      "numbers": [
+        "2026",
+        "740"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Faculty raised £30 million in May 2021 from the Apax Digital Fund, bringing total funding to £40 million, and expected the funding to create 400 new jobs.",
+      "quote": "In May 2021, Faculty raised £30 million in funding from the [Apax Digital Fund](https://en.wikipedia.org/wiki/Apax_Partners \"Apax Partners\"), bringing their total funding raised to £40 million. The funding was expected to create 400 new jobs.",
+      "numbers": [
+        "2021",
+        "30",
+        "40",
+        "400"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "In 2020, about 80 percent of Faculty's business came from the private sector, with the remainder from government work.",
+      "quote": "In 2020, Warner stated that about 80 percent of its business comes from the private sector with the remainder from government work.",
+      "numbers": [
+        "2020",
+        "80"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Faculty was awarded at least £3 million in government contracts between early 2018 and July 2020.",
+      "quote": "Faculty was awarded at least £3 million in government contracts between early 2018 and July 2020.",
+      "numbers": [
+        "3",
+        "2018",
+        "2020"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://en.wikipedia.org/wiki/Faculty_(company)"
+}

@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-09",
+  "author_or_org": "Ling Wang et al. / arXiv",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Applying LLMs to heterogeneous enterprise systems is hindered by hallucinations and failures in multi-hop, n-ary reasoning.",
+      "quote": "Applying Large Language Models (LLMs) to heterogeneous enterprise systems is hindered by hallucinations and failures in multi-hop, n-ary reasoning.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Existing approaches such as GraphRAG and NL2SQL lack the semantic grounding and auditable execution required for complex enterprise environments.",
+      "quote": "Existing paradigms (e.g., GraphRAG, NL2SQL) lack the semantic grounding and auditable execution required for these complex environments.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "HEAR is an enterprise agentic reasoner built on a Stratified Hypergraph Ontology.",
+      "quote": "We introduce HEAR, an enterprise agentic reasoner built on a Stratified Hypergraph Ontology.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "HEAR's base Graph Layer virtualizes provenance-aware data interfaces, while its Hyperedge Layer encodes n-ary business rules and procedural protocols.",
+      "quote": "Its base Graph Layer virtualizes provenance-aware data interfaces, while the Hyperedge Layer encodes n-ary business rules and procedural protocols.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "HEAR uses an evidence-driven reasoning loop to orchestrate ontology tools for structured multi-hop analysis without requiring LLM retraining.",
+      "quote": "Operating an evidence-driven reasoning loop, HEAR dynamically orchestrates ontology tools for structured multi-hop analysis without requiring LLM retraining.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "On supply-chain tasks including order fulfillment blockage root cause analysis, HEAR achieves up to 94.7% accuracy.",
+      "quote": "Evaluations on supply-chain tasks, including order fulfillment blockage root cause analysis (RCA), show HEAR achieves up to 94.7% accuracy.",
+      "numbers": [
+        "94.7%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "HEAR uses procedural hyperedges to reduce token costs and topological exploration for correctness on complex queries.",
+      "quote": "Crucially, HEAR demonstrates adaptive efficiency: utilizing procedural hyperedges to minimize token costs, while leveraging topological exploration for rigorous correctness on complex queries.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "HEAR matches proprietary model performance with open-weight backbones and automates manual diagnostics.",
+      "quote": "By matching proprietary model performance with open-weight backbones and automating manual diagnostics, HEAR establishes a scalable, auditable foundation for enterprise intelligence.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.14259"
+}

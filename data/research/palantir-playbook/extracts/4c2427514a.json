@@ -1,0 +1,25 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-03-16",
+  "author_or_org": "Accenture",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Faculty was founded in 2014 and provides AI strategy, AI safety, and design, build, and implementation of high-performance AI systems.",
+      "quote": "Founded in 2014, Faculty is one of Europe’s leading and longest standing applied AI companies. Its services—which include AI strategy, AI safety and the design, build and implementation of high performance AI systems—support the scaled and safe adoption of AI by client organizations.",
+      "numbers": [
+        "2014"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Faculty’s Frontier TM enterprise decision-intelligence product connects data, AI models, and business processes into a unified system and joins Accenture’s product suite.",
+      "quote": "Faculty’s enterprise decision intelligence product, Frontier TM, joins Accenture’s suite of products that help organizations make better, faster decisions by connecting data, AI models and business processes into a unified system.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty"
+}

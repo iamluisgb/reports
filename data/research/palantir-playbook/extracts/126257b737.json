@@ -1,0 +1,94 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-05-26",
+  "author_or_org": "Filip Drazdou, Aventis Advisors",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "OpenAI launched the OpenAI Deployment Company on May 11, 2026, a TPG-anchored vehicle with $4 billion initial investment from 19 investors and a $14 billion valuation; its founding acquisition was Tomoro, a London applied AI consulting and engineering firm of roughly 150 forward-deployed engineers and deployment specialists.",
+      "quote": "On May 11, 2026, it launched the OpenAI Deployment Company, a TPG-anchored vehicle that opened with$4 billion of initial investment from 19 investors, a $14 billion valuation, and a guaranteed 17.5% return structure for capital partners. Its founding acquisition was Tomoro ([https://tomoro.ai/](https://tomoro.ai/)), a London-based applied AI consulting and engineering firm of roughly 150 forward-deployed engineers and deployment specialists.",
+      "numbers": [
+        "May 11, 2026",
+        "$4 billion",
+        "19",
+        "$14 billion",
+        "17.5%",
+        "150"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Anthropic partnered with Blackstone, Hellman & Friedman, and Goldman Sachs in May 2026 to launch an AI-native enterprise services company with about $1.5 billion committed capital, designed to embed Anthropic engineers and Claude models directly into mid-size enterprise operations.",
+      "quote": "to launch a new AI-native enterprise services company, backed by approximately$1.5 billion of committed capital, designed to embed Anthropic engineers and Claude models directly into mid-size enterprise operations.",
+      "numbers": [
+        "May 2026",
+        "$1.5 billion"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Anthropic announced on May 21, 2026 its founding acquisition of Fractional AI, a San Francisco applied AI services company founded in 2024, whose team and delivery capabilities became the operational centerpiece of the new venture.",
+      "quote": "On May 21, 2026 Anthropic announced its founding acquisition of Fractional AI, a San Francisco-based applied AI services company founded in 2024. Fractional AI had quickly become one of the leading end-to-end AI implementation partners for US enterprises; its team and delivery capabilities will serve as the operational centerpiece of the new venture.",
+      "numbers": [
+        "May 21, 2026",
+        "2024"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Tomoro’s estimated FY26 revenue was around £20 million with a plausible £18-25 million range, representing 4-5x year-on-year growth and a profit margin above 40%.",
+      "quote": "The three methods converge on a central estimate of around £20 million in FY26 revenue, with a plausible range of £18-25 million. That is 4-5x year-on-year growth, with a profit margin of north of 40%.",
+      "numbers": [
+        "£20 million",
+        "£18-25 million",
+        "4-5x",
+        "40%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Tomoro generated about £225k revenue per head at 40%+ margins, while Halfspace is presented as a mainstream comparison: 10 years old, €8-9.5m revenue, and 75 senior practitioners.",
+      "quote": "Tomoro is the unicorn: 2.5 years old, ~£20m of revenue at 40%+ margins, £225k revenue per head. Halfspace is the mainstream comp: 10 years old, €8-9.5m of revenue at 75 senior practitioners across the Nordics.",
+      "numbers": [
+        "2.5 years",
+        "£20m",
+        "40%+",
+        "£225k",
+        "10 years",
+        "€8-9.5m",
+        "75"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Accenture’s Faculty deal had a reported headline price of $1B, with Faculty revenue of £41.7 million for the period ending March 2025 and a run-rate above £50 million annually; the implied multiple was roughly 15x run-rate revenue, above the 11-13x EV/EBITDA band for public IT consulting peers.",
+      "quote": "Announced January 6, 2026 and closed March 16, 2026, Faculty reported revenue of£41.7 million for the period ending March 2025, with a run-rate of more than £50 million annually. Reported headline price was$1B. At those figures, the multiple lands at roughly 15x run-rate revenue and well above the 11-13x EV/EBITDA band where public IT consulting peers trade.",
+      "numbers": [
+        "January 6, 2026",
+        "March 16, 2026",
+        "£41.7 million",
+        "March 2025",
+        "£50 million",
+        "$1B",
+        "15x",
+        "11-13x"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The acquisitions and joint ventures are all aimed at the implementation layer that turns frontier models into production enterprise systems.",
+      "quote": "All directed at the same prize: the implementation layer that turns frontier models into production enterprise systems.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The source argues the acquired AI services firms were not valued for frontier research or models but for a sharp thesis, credible team, and clients willing to pay.",
+      "quote": "There is no Nobel-track research and no frontier model. There is a sharp thesis, a credible team, and clients willing to pay for it.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://aventis-advisors.com/ai-services-ma-2026/"
+}

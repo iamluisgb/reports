@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2025-08-12",
+  "author_or_org": "Gergely Orosz / The Pragmatic Engineer",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir created the Forward Deployed Software Engineer role in the early 2010s and called it a Delta.",
+      "quote": "The “Forward Deployed Software Engineer” role was created at data mining giant Palantir in the early 2010s, and was named “Delta.”",
+      "numbers": [
+        "early 2010s"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir contrasts a Dev’s focus as one capability for many customers with a Delta’s focus as one customer and many capabilities.",
+      "quote": "You can think of a Dev’s focus as “one capability, many customers,” while a Delta’s focus is “one customer, many capabilities”.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "OpenAI set up its FDE team at the beginning of the year, starting with two FDEs and growing to more than 10 across multiple regions.",
+      "quote": "At the beginning of this year, Colin presented a business case for setting up a Forward Deployed Engineering Team, to have a more targeted offering. The group started with two FDEs, and today there are more than 10 at the company in:",
+      "numbers": [
+        "two",
+        "more than 10"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Ramp put FDEs in place 9 months ago and has around 15 FDEs in pods working according to four core operating principles.",
+      "quote": "Put in place 9 months ago, Ramp has around 15 FDEs in pods who work according to four core operating principles.",
+      "numbers": [
+        "9",
+        "15",
+        "four"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Startups use FDEs in the sales process when a customer is undecided, offering an FDE to help the customer integrate the product.",
+      "quote": "Basically, when a customer is undecided on whether they can effectively use a product, Sales offers to provide an FDE to help them successfully integrate it.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The source distinguishes FDEs from consultants by saying consultants make one-off recommendations while FDEs generally work with customers long-term.",
+      "quote": "FDEs are sometimes mistakenly thought of as consultants, but the difference between consultants and FDEs is that the former make one-off recommendations, whereas FDEs generally work with customers, long-term.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Palantir sends empowered engineers to integrate its software for customer value, and the article says contracting companies see faster integration progress than by doing it themselves.",
+      "quote": "By sending in empowered engineers whose mission is to integrate Palantir’s software in a way that delivers customer value, Palantir “kills two birds with one stone”: they don’t need to worry too much about internal bureaucracy because they are blissfully unaware of it, and they send a “startup-minded” dev for the integration with the mindset of “how can I get this to work”, not “what are reasons this won’t work.” Companies contracting with Palantir see faster progress in software integration than by doing it themselves.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers"
+}

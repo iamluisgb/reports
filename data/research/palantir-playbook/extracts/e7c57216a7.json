@@ -1,0 +1,49 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-31",
+  "author_or_org": "Seonwoo Kim, Jinwoo Kim, Daegyu Kang, Daeseong Kim, Insup Lee",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "The paper contrasts traditional CTI platforms using fixed schemas such as STIX, which reduce intelligence to isolated indicators, with ontology-based representations that preserve semantic relationships for structured threat analysis.",
+      "quote": "While traditional CTI platforms reduce this intelligence to isolated indicators through fixed schemas such as STIX, ontology-based representations preserve the semantic relationships needed for structured threat analysis.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper identifies three challenges for ontology-aligned CTI extraction: schema-specific pipelines needing manual reconfiguration when schemas change, prompt-based schema inclusion failing to scale on large ontologies such as UCO, and reliance on enterprise LLM APIs conflicting with privacy constraints for sensitive internal incident data.",
+      "quote": "However, existing approaches for ontology-aligned CTI extraction face three challenges: (i) schema-specific pipelines that require manual reconfiguration whenever the schema changes, (ii) prompt-based schema inclusion that fails to scale on large ontologies such as UCO, and (iii) reliance on enterprise LLM APIs that conflicts with privacy constraints when integrating sensitive internal incident data.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "ANCHOR is presented as a schema-agnostic CTI knowledge graph construction system that bridges LLMs and formal ontology schemas.",
+      "quote": "In this paper, we present ANCHOR, a schema-agnostic CTI knowledge graph construction system that bridges LLMs and formal ontology schemas.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "ANCHOR uses hybrid ontology discovery, described as a search-and-navigate mechanism that dynamically explores large-scale ontology schemas, combined with SHACL-based validation to enforce schema-compliant type assignments.",
+      "quote": "At the core of ANCHOR is hybrid ontology discovery, a search-and-navigate mechanism that dynamically explores large-scale ontology schemas, combined with SHACL-based validation to enforce schema-compliant type assignments.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Experimental results on the UCO, STIX, and MALOnt schemas show ANCHOR outperforming existing baselines in ontology typing and schema compliance.",
+      "quote": "Experimental results on the UCO, STIX, and MALOnt schemas show that ANCHOR outperforms existing baselines in ontology typing and schema compliance.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "ANCHOR with a local LLM closely matches enterprise LLM typing performance while enabling privacy-preserving CTI analysis with high fidelity.",
+      "quote": "In addition, ANCHOR with a local LLM closely matches enterprise LLM typing performance, enabling privacy-preserving CTI analysis with high fidelity.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.01208"
+}

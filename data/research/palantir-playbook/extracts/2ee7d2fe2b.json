@@ -1,0 +1,72 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2023-10-12",
+  "author_or_org": "Palantir (Ted Mabrey, Head of Global Commercial)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "AIP Bootcamps are immersive hands-on-keyboard sessions where participants can go from zero to a use case in one to five days.",
+      "quote": "In these immersive, hands-on-keyboard sessions, participants can expect to go from zero to use case in just one to five days.",
+      "numbers": [
+        "one",
+        "five"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir says partners have solved problems they struggled with for years in days and can independently identify and execute AIP use cases in subsequent weeks.",
+      "quote": "Our partners have been able to solve problems that they have been struggling with for years in a matter of days. They are able to build their own intuition and skillset to be able to independently identify and execute on AIP use cases in subsequent weeks.",
+      "numbers": [
+        "years",
+        "days",
+        "weeks"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir reports a growing backlog of AIP Bootcamps due to overwhelming demand.",
+      "quote": "We have a growing backlog of AIP Bootcamps due to the overwhelming demand.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir describes AIP as fully integrated, interoperable, enterprise-grade software for sensitive data.",
+      "quote": "AIP comes fully integrated and interoperable; it's enterprise-grade software that's equipped to handle your most sensitive data and primed for your fingertips.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir states AI use cases require blending stochastic foundation models, calculus-driven enterprise data and tools, and expert feedback loops.",
+      "quote": "AI use cases require a thoughtful blending of stochastic foundation models, calculus-driven enterprise data and tools, and expert feedback loops.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir says AIP Bootcamp participants spend 100% of their time engineering value rather than assembling parts.",
+      "quote": "AIP Bootcamp participants spend 100% of their time engineering value, not assembling parts.",
+      "numbers": [
+        "100%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir says participants build prompts from real-world events translated through the Ontology, not only user input.",
+      "quote": "When participants build with prompts derived from real world events translated through the Ontology — not only user input — they become exceptionally creative and ambitious.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir cites 50+ examples of organizations deploying AIP across functions and industries in a few months.",
+      "quote": "At AIPCon earlier this month, I walked through 50+ examples of how organizations have deployed AIP to drive bottom line impact across virtually every function in dozens of industries in a few short months.",
+      "numbers": [
+        "50+",
+        "dozens",
+        "a few"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://blog.palantir.com/deploying-full-spectrum-ai-in-days-how-aip-bootcamps-work-21829ec8d560"
+}

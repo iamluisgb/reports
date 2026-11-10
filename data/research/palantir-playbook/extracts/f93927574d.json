@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2026-11-02",
+  "author_or_org": "Palantir Technologies Inc.",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir reported Q3 2026 revenue of $2.313 billion, up 96% year-over-year and 20% quarter-over-quarter.",
+      "quote": "Revenue grew 96% year-over-year and 20% quarter-over-quarter to $2.313 billion",
+      "numbers": [
+        "96%",
+        "20%",
+        "$2.313 billion"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "U.S. commercial revenue grew 148% year-over-year and 29% quarter-over-quarter to $984 million in Q3 2026.",
+      "quote": "U.S. commercial revenue grew 148% year-over-year and 29% quarter-over-quarter to $984 million",
+      "numbers": [
+        "148%",
+        "29%",
+        "$984 million"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir describes its products as spanning Foundry and Ontology to AIP with ontologized, fine-tuned open-weight models.",
+      "quote": "Our products—from Foundry and Ontology to AIP with its ontologized, fine-tuned open-weight models—ignite a self-improvement loop that joins and aligns the workflow with its optimal model and us with our partners.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Palantir reported Q3 2026 GAAP income from operations of $1.085 billion, a 47% margin.",
+      "quote": "GAAP income from operations of $1.085 billion, representing a 47% margin",
+      "numbers": [
+        "$1.085 billion",
+        "47%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Palantir reported Q3 2026 adjusted income from operations of $1.427 billion, a 62% margin.",
+      "quote": "Adjusted income from operations of $1.427 billion, representing a 62% margin",
+      "numbers": [
+        "$1.427 billion",
+        "62%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Palantir reported Q3 2026 adjusted free cash flow of $1.216 billion, a 53% margin.",
+      "quote": "Adjusted free cash flow of $1.216 billion, representing a 53% margin",
+      "numbers": [
+        "$1.216 billion",
+        "53%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm"
+}

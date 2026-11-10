@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-09-16",
+  "author_or_org": "Stardog Team",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir is a broad enterprise platform rather than a single product, covering data management, analytics, AI, intelligence, workflows, visualization, and software deployment.",
+      "quote": "Palantir is a broad enterprise platform and not a single product. It covers data management, analytics, AI, intelligence, workflows, visualization and software deployment.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Foundry is Palantir’s data operations platform with data integration/transformation, analytics, ontology development, application development, logic, and workflows; its ontology maps data to real-world objects and relationships for applications and AI.",
+      "quote": "Foundry is Palantir’s data operations platform. It provides data integration and transformation, analytics, ontology development, application development, logic, and workflows. The ontology maps data to real-world objects and relationships and can expose those concepts to applications and AI.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir AIP connects generative AI to enterprise data and operations and includes LLM connectivity, context engineering, agent development, AI-powered workflows, automation, observability, and evaluation; it is designed to operate on top of the Ontology rather than treating an LLM as a standalone enterprise data interface.",
+      "quote": "Artificial Intelligence Platform (AIP) connects generative AI to enterprise data and operations. Its capabilities include LLM connectivity, context engineering, agent development, AI-powered workflows, automation, observability, and evaluation. AIP is designed to operate on top of the Ontology rather than treating an LLM as a standalone interface to enterprise data.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Gotham targets defense, intelligence, investigations, and operational decision-making, and its APIs expose a dynamic ontology and applications for connected information.",
+      "quote": "Gotham is oriented toward defense, intelligence, investigations, and operational decision-making. Its APIs expose capabilities around a dynamic ontology and applications for working with connected information.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Apollo is Palantir’s software delivery and operations layer for cloud, on-premises, hybrid, disconnected, and air-gapped environments, including environments without continuous connectivity.",
+      "quote": "Apollo is the software delivery and operations layer. It manages deployments across cloud, on-premises, hybrid, disconnected, and air-gapped environments, including environments where continuous connectivity is not available.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The source states that no single product replaces Foundry, AIP, Gotham, and Apollo equally well, implying competition is fragmented by Palantir product area.",
+      "quote": "No single product replaces Foundry, AIP, Gotham, and Apollo equally well.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog positions itself as strongest where semantic interoperability, federation, and trusted AI context are the priority.",
+      "quote": "Stardog is strongest where semantic interoperability, federation, and trusted AI context are the priority.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The source argues data portability differs from semantic or workflow portability because moving data out of a platform does not move the meaning or logic attached to it.",
+      "quote": "Data portability is not the same as semantic or workflow portability. Moving data out of a platform doesn’t move the meaning or logic attached to it.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.stardog.com/blog/best-palantir-competitors-alternatives/"
+}

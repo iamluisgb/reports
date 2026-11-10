@@ -1,0 +1,29 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2026-05-05",
+  "author_or_org": "Wikipedia",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A forward-deployed engineer is a customer-facing software engineer employed by a product company who helps implement that product inside a client company, often working alongside the client's employees for a defined period.",
+      "quote": "A **forward-deployed engineer** (**FDE**), also called a **forward-deployed software engineer** (**FDSE**), is a customer-facing [software engineer](https://en.wikipedia.org/wiki/Software_engineer \"Software engineer\") who works for a company that makes a product and helps implement that product within a client company, often working alongside the client's employees for a defined period of time.[[1]](https://en.wikipedia.org/wiki/Forward_deployed_engineer#cite_note-NewStack-1)[[2]](https://en.wikipedia.org/wiki/Forward_deployed_engineer#cite_note-MarketWatchFDE-2)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The FDE role overlaps with solutions architects, sales engineers, customer engineers, professional services engineers, systems integrators, and IT consultants.",
+      "quote": "The responsibilities of forward-deployed engineers overlap with those of [solutions architects](https://en.wikipedia.org/wiki/Solutions_architect \"Solutions architect\"), [sales engineers](https://en.wikipedia.org/wiki/Sales_engineer \"Sales engineer\"), [customer engineers](https://en.wikipedia.org/wiki/Customer_engineer \"Customer engineer\"), [professional services](https://en.wikipedia.org/wiki/Professional_services \"Professional services\") engineers, [systems integrators](https://en.wikipedia.org/wiki/Systems_integrator \"Systems integrator\"), and [information technology consultants](https://en.wikipedia.org/wiki/Information_technology_consulting \"Information technology consulting\").[[1]](https://en.wikipedia.org/wiki/Forward_deployed_engineer#cite_note-NewStack-1)[[2]](https://en.wikipedia.org/wiki/Forward_deployed_engineer#cite_note-MarketWatchFDE-2)",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The term forward-deployed comes from U.S. military jargon.",
+      "quote": "The term \"[forward-deployed](https://en.wikipedia.org/wiki/Forward-basing \"Forward-basing\")\" comes from U.S. military jargon.[[3]](https://en.wikipedia.org/wiki/Forward_deployed_engineer#cite_note-3)",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://en.wikipedia.org/wiki/Forward_deployed_engineer"
+}

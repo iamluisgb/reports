@@ -1,0 +1,67 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-11-10",
+  "author_or_org": "R&D, FDE Academy",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir invented the Forward Deployed Engineer model in the early 2010s because intelligence agency customers could not disclose their needs through normal product discovery.",
+      "quote": "The Forward Deployed Engineer model was invented by Palantir in the early 2010s as a response to working with intelligence agency customers who could not disclose their needs through normal product discovery.",
+      "numbers": [
+        "2010s"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir embedded engineers directly at customer sites, and by 2016 FDEs outnumbered traditional software engineers.",
+      "quote": "Palantir embedded engineers directly at customer sites, a model that grew until FDEs outnumbered traditional software engineers by 2016",
+      "numbers": [
+        "2016"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir's FDE structure uses Echo teams of domain experts to identify problems and Delta teams of rapid-prototyping engineers to build solutions.",
+      "quote": "Echo teams are domain experts embedded from the client's own field, such as former military officers or healthcare practitioners, who act as product discovery leads and account managers. Delta teams are rapid prototyping engineers who turn Echo team insights into functional solutions quickly.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The gravel road to paved highway loop converts custom FDE field work into standardised product features, which the source says separates FDE from traditional consulting.",
+      "quote": "The gravel road to paved highway is a metaphor for how FDE field work feeds into core product development. FDEs build custom, rough solutions for individual clients, the gravel road. The core engineering team at headquarters observes these solutions and converts them into standardised product features that work for many customers, the paved highway. This feedback loop is what separates FDE from traditional consulting, where one-off work rarely influences the core product.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The FDE model risks becoming unscalable pure custom work without discipline, and Palantir succeeded by balancing custom field work with productisation.",
+      "quote": "However, this system requires discipline. If not managed well, it can become pure custom work which is hard to scale. Palantir was successful because it struck a balance.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "OpenAI established its Forward Deployed Engineering team in early 2025, led by Colin Jarvis, and it expanded across multiple cities and continents.",
+      "quote": "In early 2025, it established its **Forward Deployed Engineering** team, led by **Colin Jarvis**. The team started small but quickly expanded across multiple cities and continents.",
+      "numbers": [
+        "2025"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Ramp built a Forward Deployed Engineering team of around 15 engineers organised into pods to improve enterprise customer outcomes.",
+      "quote": "Ramp is another company that adopted the FDE model. It built a Forward Deployed Engineering team of around **15 engineers**, organised into pods. This structure helped improve outcomes for enterprise customers.",
+      "numbers": [
+        "15"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "AI models that work in research settings frequently fail in production because of messy real-world data and legacy infrastructure, and the source argues FDEs are effective for product discovery where customer needs are unclear and variable.",
+      "quote": "AI systems face the same challenges Palantir faced in the early 2000s. There are no mature products to benchmark against, customer environments vary enormously, and AI models that work in research settings frequently fail in production due to messy real-world data and legacy infrastructure. The FDE model is the most effective way to do product discovery at scale in a market where customer needs are unclear and highly variable.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://fde.academy/blog/how-palantir-invented-the-forward-deployed-engineer-model"
+}

@@ -1,0 +1,51 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-12-06",
+  "author_or_org": "Raphael Shu, Nilaksh Das, Michelle Yuan, Monica Sunkara, Yi Zhang",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The report identifies designing collaboration protocols and evaluating system effectiveness as significant challenges, especially for enterprise applications.",
+      "quote": "However, designing the collaboration protocols and evaluating the effectiveness of these systems remains a significant challenge, especially for enterprise applications.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The report evaluates two operational modes: coordination for complex task completion via parallel communication and payload referencing, and routing for efficient message forwarding between agents.",
+      "quote": "We evaluate two key operational modes: (1) a coordination mode enabling complex task completion through parallel communication and payload referencing, and (2) a routing mode for efficient message forwarding between agents.",
+      "numbers": [
+        "(1)",
+        "(2)"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The benchmark uses handcrafted scenarios from three enterprise domains that are publicly released with the report.",
+      "quote": "We benchmark on a set of handcrafted scenarios from three enterprise domains, which are publicly released with the report.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Inter-agent communication and payload referencing mechanisms achieved 90% end-to-end goal success rates in coordination capabilities.",
+      "quote": "For coordination capabilities, we demonstrate the effectiveness of inter-agent communication and payload referencing mechanisms, achieving end-to-end goal success rates of 90%.",
+      "numbers": [
+        "90%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Multi-agent collaboration improved goal success rates by up to 70% versus single-agent approaches, payload referencing improved code-intensive task performance by 23%, and a routing mechanism can substantially reduce latency by selectively bypassing agent orchestration.",
+      "quote": "Our analysis yields several key findings: multi-agent collaboration enhances goal success rates by up to 70% compared to single-agent approaches in our benchmarks; payload referencing improves performance on code-intensive tasks by 23%; latency can be substantially reduced with a routing mechanism that selectively bypasses agent orchestration.",
+      "numbers": [
+        "70%",
+        "23%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2412.05449"
+}

@@ -1,0 +1,60 @@
+{
+  "relevant": true,
+  "source_type": "news",
+  "published": "2026-08-05",
+  "author_or_org": "Matt Ashare, Channel Dive",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir's US commercial revenue grew 149% year over year to $764 million in Q2, while US government revenue was $809 million, up 90% year over year.",
+      "quote": "The company’s U.S. commercial revenue grew 149% year over year to $764 million in Q2. The U.S. government contributed $809 million to Palantir’s revenue during the same period, marking a 90% year-over-year increase.",
+      "numbers": [
+        "149%",
+        "$764 million",
+        "Q2",
+        "$809 million",
+        "90%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Big tech copied the model: AWS put $1 billion into a dedicated FDE organization in June, Google Cloud made a similar move in May, Microsoft created an AI-deployment organization staffed with thousands, and OpenAI and Anthropic pivoted to FDEs this year.",
+      "quote": "Big tech has since embraced the model.\n\nAWS invested $1 billion in a [dedicated FDE organization](https://www.channeldive.com/news/aws-bets-1b-on-forward-deployed-engineers-in-ai-land-grab/824102/)in June. Google Cloud made [a similar move](https://www.channeldive.com/news/google-cloud-forward-deployed-engineering-jobs/820176/)in May and Microsoft created [an AI-deployment organization](https://www.channeldive.com/news/microsoft-hires-ai-engineers-guts-xbox/824512/)staffed with thousands of industry and engineering experts last month. OpenAI and Anthropic have also [pivoted to FDEs](https://www.channeldive.com/news/openai-deployment-company-4-billion-ai-consulting-integration/819888/)this year.",
+      "numbers": [
+        "$1 billion",
+        "June",
+        "May",
+        "thousands"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Omdia's Noah Dantes says Palantir pioneered the FDE model in the early 2010s and competitors followed during the generative AI boom.",
+      "quote": "Palantir was ahead of the pack in dispatching IT modernization teams to its government and enterprise clients, according to Noah Dantes, research manager at Omdia, a Channel Dive sister company. The company pioneered the FDE model in the early 2010s, ahead of competitors who followed suit as the generative AI boom took hold of the tech industry, Dantes said.",
+      "numbers": [
+        "early 2010s"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Dantes says Palantir cannot displace channel partners; FDEs are another resource for complex government and large-enterprise use cases, and AWS/OpenAI have succeeded partly because of channel partners.",
+      "quote": "“Even Palantir isn’t able to displace the channel partner,” Dantes said, pointing to the company’s robust partner program. “Ultimately, FDEs are another resource for government and massive enterprise customers to take advantage of in complex use cases. AWS, OpenAI and the rest might be behind Palantir in regard to FDEs, but they have had massive success with government and enterprise AI projects. That’s because of the channel partner.”",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Palantir's CRO says enterprises not using Palantir see token meters spinning to produce 'slop' without value, and that the token model breaks corporate budgets without results.",
+      "quote": "“Enterprises that are not using Palantir are seeing their token meters spinning endlessly just to get slop without any correlation to value,” CRO and Chief Legal Officer Ryan Taylor said during the call. “This token model may be working for the labs, but it is not working for anyone else. It’s breaking corporate budgets without results to justify the expense.”",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Palantir CEO Alex Karp said the company does not get paid for clicks, tokens, or chats.",
+      "quote": "“We do not get paid for clicks or tokens or chats,” he said.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.channeldive.com/news/palantir-forward-deployed-engineers-ai-revenue-spike/827139/"
+}

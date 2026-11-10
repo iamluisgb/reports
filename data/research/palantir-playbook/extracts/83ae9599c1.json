@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-07-10",
+  "author_or_org": "Alex Demeule, Senior Analyst, Technology Business Research (TBR)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir popularized the forward-deployed engineer role through a high-touch, FDE-led operating model in which each engagement starts from modular microservices and produces a bespoke platform combining configured and custom-built microservices.",
+      "quote": "The distinction between FDEs and solution architects that vendors might point to can be traced back to Palantir, which popularized the role through its high-touch, FDE-led operating model. Each Palantir engagement starts with the company’s portfolio of modular microservices, and the solution that comes out of the engagement is a unique configuration of these microservices combined with custom-built microservices to form a bespoke platform.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "TBR argues the broader FDE push is not an industrywide shift to Palantir’s operating model and expects Palantir to remain an exception.",
+      "quote": "In TBR’s opinion, the push toward FDEs does not represent an industrywide shift toward Palantir’s operating model, and TBR expects the company to remain an “n of 1.”",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Hyperscalers, independent software vendors, and model leaders have begun positioning forward-deployed engineers as embedded technical builders working inside customer environments to identify AI use cases, build or configure agentic systems, contextualize them on enterprise data, and move deployments to production.",
+      "quote": "Against this backdrop, hyperscalers, ISVs and model leaders have begun rapidly positioning forward-deployed engineers (FDEs) as embedded technical builders who work directly inside customer environments to identify high-value AI use cases, build or configure agentic systems, contextualize those systems on enterprise data, and help move deployments from pilot to production.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Named evidence of FDE copying includes Salesforce’s FDE Partner Program and Microsoft’s Frontier announcement, which followed Accenture’s formal Microsoft FDE practice and Microsoft’s FDE-oriented partnership expansion with EY.",
+      "quote": "Salesforce was early with its launch of a new FDE Partner Program. Microsoft’s Frontier announcement followed the launch of Accenture’s formal Microsoft FDE practice, as well as Microsoft’s FDE-oriented partnership expansion with EY.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "For technology vendors, FDE support is likely to be a loss leader whose cost is embedded in software, cloud consumption, enterprise agreements, marketplace, premium support, or strategic account economics rather than a stand-alone line item.",
+      "quote": "For technology vendors, FDE or FDE-like support is unlikely to appear as a stand-alone line item in every engagement. Instead, the cost can be embedded in broader software, cloud consumption, enterprise agreement, marketplace, premium support or strategic account economics.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Systems integrators and consulting firms generally cannot recover FDE investment through platform pricing, model usage, or cloud consumption, so they must monetize FDE-like resources through advisory, implementation, managed services, engineering, governance, or transformation fees.",
+      "quote": "SIs and consulting firms cannot usually recover FDE investment through core platform pricing, model usage or cloud consumption in the same way a hyperscaler, AI model provider or enterprise software vendor can. Their FDE-like resources, therefore, need to be monetized more directly through advisory, implementation, managed services, engineering, governance or transformation fees.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A cited failure mode is that agentic AI engagements stall because the value is not proven.",
+      "quote": "In other cases, agentic engagements are stalling because the value is not proven.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Vendors are betting that pairing the right FDE with customer technical talent can identify agentic automation opportunities that overcome adoption hurdles, expand usage, and convert AI experimentation into repeatable commercial value.",
+      "quote": "By putting boots on the ground, vendors are betting that the right FDE paired with the customer’s technical talent can identify the opportunities for agentic automation that overcome these adoption hurdles, expand usage, and convert AI experimentation into repeatable commercial value.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://tbri.com/special-reports/forward-deployed-engineers-the-last-mile-of-the-ai-value-chain/"
+}

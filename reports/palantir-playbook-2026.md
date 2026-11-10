@@ -3,252 +3,170 @@ title: "What AI Startups Stole From Palantir's Playbook"
 date: 2026-05-29
 type: special
 url: https://luisgonzalezbernal.com/reports/reports/palantir-playbook-2026.html
-summary: "Forward Deployed Engineers · Ontological/Semantic Layers · Agentic Orchestration on Enterprise Legacy Systems · Market Map 2025-2026"
-tags: [agents, business, memory]
+summary: "The playbook · Who copies it · The economics · Ontology platforms · Why deployments fail"
+tags: [business, funding]
 reading_time_minutes: 13
 ---
 Market Analysis · Special Report
 
 # What AI Startups Stole From *Palantir's Playbook*
 
-29 May 2026
+29 May 2026 · Updated 10 Nov 2026
 
-Forward Deployed Engineers · Ontological/Semantic Layers · Agentic Orchestration on Enterprise Legacy Systems · Market Map 2025-2026
+The playbook · Who copies it · The economics · Ontology platforms · Why deployments fail
 
-## Executive Summary
+## Key findings
 
-**The Palantir playbook** — Forward Deployed Engineers (FDEs) + an ontological/semantic layer over fragmented data — is being consciously replicated by a new wave of AI startups. The acquisitions of **Tomoro** by OpenAI (May 2026, as the founding piece of a $14B Deployment Company) and **Faculty** by Accenture ($1B, Jan 2026) validate that FDE talent is the critical bottleneck for enterprise AI. No single player yet combines *all* pieces of the original playbook, creating a 12–18 month window of opportunity.
+1. **The model labs bought the playbook.** OpenAI launched a Deployment Company with more than $4 billion of initial investment to embed forward deployed engineers (FDEs) in customers.[21] Its founding acquisition, Tomoro, brought roughly 150 FDEs and deployment specialists.[21] Anthropic launched a services company with about $1.5 billion committed and bought Fractional AI.[29]
+2. **Big tech followed.** AWS put $1 billion into a dedicated FDE organization, and Google Cloud and Microsoft made similar moves.[16] FDE job postings rose 800–1000% in a year.[35]
+3. **The original still works.** Palantir's Q3 2026 revenue grew 96% to $2.313 billion.[4] US commercial revenue grew 148% to $984 million, with a 47% GAAP operating margin.[4]
+4. **Most copies take the engineers, not the platform.** a16z says Palantir works because a real platform sits under the bespoke work.[35] Copying only the embedded engineers produces thousands of bespoke deployments that are hard to maintain.[35] OpenAI's Deployment Company has announced no software product; in October 2026 it was hiring a lead for internal products.[23]
+5. **Margin is the price of the model.** Compiled benchmarks put AI products at 45% gross margin in 2025, against an 80% SaaS median.[34] ServiceNow went from 63.2% at IPO to 79% in 2024.[31]
+6. **Deployment is the bottleneck, but not only for lack of people.** MIT NANDA found 95% of organizations get zero return from GenAI.[2] It names learning as the core barrier, not infrastructure, regulation or talent.[2] External partnerships succeed twice as often as internal builds.[2]
 
 ## Part I
 
-## 1. Market Map and Key Players
+## The playbook, as Palantir describes it
 
-### 1.1 Startup Taxonomy by Approach
+Palantir has two big engineering roles. "Devs" build the product; "Deltas", its forward deployed software engineers, deploy it for one customer each.[30] Palantir sums it up as "one capability, many customers" against "one customer, many capabilities".[30] Deltas sit in Business Development and are mandated to achieve technical outcomes.[30]
 
-| Focus | Company | HQ | Key Signal | URL |
-| --- | --- | --- | --- | --- |
-| **Agentic Workflows** | Tomoro → OpenAI | Edinburgh | ~150 FDEs acquired as founding piece of OpenAI Deployment Company. Clients: Mattel, Tesco. May 2026. | [tomoro.ai](https://tomoro.ai) |
-| Agentic Workflows | Faculty → Accenture | London | Frontier Decision Intelligence platform. Acquired Jan 2026. NHS use case. ~$1B. | [faculty.ai](https://faculty.ai) |
-| Agentic Workflows | Invisible Tech. | New York | $134M revenue. Most explicit Palantir emulator — FDE whitepaper citing Palantir as inspiration. Modular data + agents + human-in-the-loop platform. | [invisibletech.ai](https://invisibletech.ai) |
-| Agentic Workflows | ElevenLabs | London/NY | Voice AI + explicit FDE team on website. $1B+ valuation. Enterprise voice agent deployment. | [elevenlabs.io](https://elevenlabs.io) |
-| Agentic Workflows | AI/R | Paris | Pure-play Agentic AI. "AI Forward Deployed Engineers" with proprietary algorithm. | [aircompany.ai](https://aircompany.ai) |
-| Agentic Workflows | Nurix AI | US/India | Multi-agent orchestration (NuPlay). Gartner 4.9. Hiring FDE/Solution Architect roles. | [nurix.ai](https://nurix.ai) |
-| Agentic Workflows | CrewAI | — | Multi-agent framework. Hiring AI Deployment Engineers. | [crewai.com](https://crewai.com) |
-| **Knowledge Graphs / Semantics** | Digetiers / d.AP | Munich | **Most direct Foundry ontology competitor.** Public benchmark d.AP vs Foundry, Stardog, Neo4j, eccenca. Ontology + KG + LLM orchestration. | [digetiers-dap.com](https://digetiers-dap.com) |
-| Knowledge Graphs | Stardog | Arlington, VA | Enterprise KG platform. Ontologies + GraphRAG. Closest pure-KG to Foundry. ~$25M raised. | [stardog.com](https://stardog.com) |
-| Knowledge Graphs | eccenca | Leipzig | Corporate Memory KG. Ontology-first for pharma and manufacturing. | [eccenca.com](https://eccenca.com) |
-| Knowledge Graphs | Fluree | Winston-Salem, NC | Semantic layer for enterprise AI. Public guides "How to Build a Semantic Layer" addressing Foundry's use case. | [flur.ee](https://flur.ee) |
-| Knowledge Graphs | Addepto | Poland | KG for technical documentation (ContextClue). LLM-powered KGs + Databricks. Forbes, Deloitte, FT. | [addepto.com](https://addepto.com) |
-| **Vertical Solutions** | QuantumBlack (McKinsey) | London/Global | **Hiring "Senior Forward Deployment Engineer"** — same title as Palantir. Combines McKinsey strategic access + AI deployment. | [quantumblack](https://mckinsey.com/quantumblack) |
-| Vertical Solutions | Innovaccer | San Francisco | Healthcare. Gravity platform + AI FDEs. >$375M raised, ~$3.2B valuation. | [innovaccer.com](https://innovaccer.com) |
-| Vertical Solutions | Resilinc | Milpitas, CA | Supply Chain. Agentic AI for disruption intelligence. Hiring Software Engineer FDE. | [resilinc.com](https://resilinc.com) |
+Deltas work with Deployment Strategists, known as Echos. In theory Echos are more like product managers and Deltas more technical; in practice both roles blend.[26] Palantir built the model in the early 2010s, when intelligence customers could not disclose their needs through normal product discovery.[32] By 2016, FDEs outnumbered traditional software engineers.[32]
 
-### 1.2 Positioning Against the Giants
+The field work feeds the product. Deltas contribute code back to the core platform when a missing feature blocks a customer outcome.[30] One account calls this loop the "gravel road to paved highway": custom work becomes standard product features.[32] Without that discipline, the same source says, the model becomes unscalable custom work.[32]
 
-| Competitor | Strength | Weakness vs FDE Startups | Exploitable Gap |
-| --- | --- | --- | --- |
-| **Palantir Foundry/Gotham** | Mature ontology, AIP (LLM layer), gov/defense ecosystem, $2.8B revenue | Vendor lock-in perceived, high cost ($25M+ initial contracts), long sales cycle (12-18 months) | Startups offer ontology+LLM at 1/10 the cost with onsite FDEs building trust faster |
-| **Accenture / McKinsey** | C-suite access, global scale, massive delivery capacity | Hourly billing misaligned with AI outcomes; heavy project management structures | Startups offer outcome-based pricing + shared IP; faster 2-week iteration cycles |
-| **Hyperscalers (AWS/GCP/Azure)** | Infrastructure, models (Bedrock, Vertex), distribution | Don't do implementation. Sell tools, not solutions. The "integration gap" is enormous. | FDE startups are the glue hyperscalers cannot (or will not) provide |
+*[Palantir's loop turns field work into platform features; a copy without a platform turns field work into bespoke deployments to maintain]*
 
-> *📌 Market Signal:* a16z published "Trading Margin for Moat: Why the Forward Deployed Engineer Is the Hottest Job in Startups" (June 2025). Thesis: sacrificing PLG margins early for heavy implementation creates deeper moats. Salesforce, ServiceNow, and Workday did it in the cloud transition. AI startups are doing it now.
+*The difference between the original and most copies. Built from sources 30, 32 and 35.*
+
+The sale starts small. Contracts begin with a bootcamp and limited licenses, and grow use case by use case if value is proven.[35] Over time the revenue mix tilts toward software subscription rather than services.[35] In an AIP Bootcamp, participants go from zero to a use case in one to five days.[19] Pricing is a fixed fee, with no traditional SKUs.[35]
+
+Under the bootcamp sits the ontology. It maps datasets, virtual tables and models to business objects such as plants and orders.[18] It also defines the actions that people and AI agents may take.[18] Since June 2026, an Ontology MCP server exposes object types, actions and functions as tools for agents.[18]
+
+- **$2.313B** Q3 2026 revenue, up 96% year over year
+
+Palantir, SEC filing[4]
+
+- **+148%** US commercial revenue growth, to $984 million
+
+Q3 2026[4]
+
+- **47%** GAAP operating margin
+
+Q3 2026[4]
 
 ## Part II
 
-## 2. Technical Architecture and Stack
+## Who is copying it
 
-### 2.1 The Data Fragmentation Problem
+The largest copies come from the model labs and the consultancies that serve them. Most of them were announced in 2026.
 
-The standard approach (mass migration to Data Lake / Lakehouse) fails at companies with 15+ years of data in SAP, Oracle EBS, Salesforce, ServiceNow, legacy ERPs, and spreadsheets. A typical migration costs $5–20M and takes 18–36 months — unaffordable for FDE startups.
-
-**The Palantir solution (being replicated):** Don't move the data. Build a **virtual ontological layer** over existing systems.
-
-### 2.2 Ontology + Knowledge Graph + LLM Stack
-
-### 2.3 Ontology+Graph+LLM vs. Vector Search + Basic RAG
-
-| Dimension | Vector Search + RAG | Ontology + Graph + LLM (GraphRAG) |
+| Who | What they did | Signal |
 | --- | --- | --- |
-| **Factual accuracy** | Depends on chunking + cosine similarity. Approximate semantic retrieval. Fails on multi-layer joins. | Facts retrieved via SPARQL/Cypher = deterministic exactness. LLM only reformats. |
-| **Hallucinations** | High. LLM "fills in" when top-K chunks miss relevant context. | Low. Ontology constrains answer space to verified facts. GraphRAG reduces hallucinations ~40-60% (Microsoft 2024, NebulaGraph 2025 studies). |
-| **Logical consistency** | None across queries. Each query is independent. No notion of "order cannot be paid if it has no items." | SHACL shapes enforce ontological constraints. "Order without items is invalid" is enforceable at the graph layer. |
-| **Cross-system joins** | Impossible without pre-joining in vector indices. Each source needs its own embedding pipeline. | Ontology models cross-system relationships as graph edges. Federated SPARQL 1.1 queries. |
-| **Data model evolution** | Massive re-embedding when schema changes. Weeks of reprocessing. | Ontology evolves incrementally. New classes/subclasses without reindexing. |
-| **Audit trail / Traceability** | No inherent traceability. "LLM used chunk X, but we don't know why it weighted more than Y." | Every answer maps to concrete graph nodes/edges. Full traceability. |
-| **Operational cost** | Low initial. High at scale (embedding millions of docs, GPUs for inference). | High initial (ontological modeling). Low marginal. Graph is queryable without LLM for simple queries. |
+| OpenAI | Deployment Company that embeds FDEs inside customers[21] | $4B+ committed; $14B post-money valuation[23] |
+| OpenAI ← Tomoro | Founding acquisition of an applied AI firm[21] | About 150 FDEs and deployment specialists[38] |
+| OpenAI ← Northslope | Firm founded by former Palantir FDEs[23] | Took the FDE count into the hundreds[23] |
+| Anthropic | Services company with Blackstone, Hellman & Friedman and Goldman Sachs[29] | About $1.5B committed; acquired Fractional AI[29] |
+| Accenture ← Faculty | Bought a UK AI-native services and products firm, founded in 2014[12,13] | 400+ AI professionals; reported $1B headline price[12,29] |
+| AWS, Google Cloud, Microsoft | Dedicated FDE or AI-deployment organizations[16] | AWS: $1B into its FDE organization[16] |
+| H Company | Pivot toward FDEs under a former Palantir France CEO[42] | CEO change in June 2025[42] |
 
-> *📌 Architectural Decision:* Ontology+Graph+LLM doesn't replace vector RAG — it complements it. The emerging pattern (Digetiers, Stardog, Microsoft GraphRAG) is **Hybrid GraphRAG** = graph retrieval for exact facts + vector search for fuzzy semantic context. A router decides which channel to use based on the query.
+The labs say why. OpenAI calls deployment, not model capability, the binding constraint on enterprise value.[21] Its engagements start with a diagnostic, pick a few priority workflows, then put FDEs inside the organization.[21] Anthropic's FDEs embed with strategic customers and build MCP servers, sub-agents and agent skills.[10] They also codify repeatable deployment patterns and feed them back to product.[10]
 
-### 2.4 Agentic Orchestration with Read/Write Capability
-
-**Dominant production design patterns (2025-2026):**
-
-- **State Graph (LangGraph):** De facto standard for multi-step agents. Each graph node is a step: `human_reviews → extracts_data → validates → writes_to_SAP → notifies`. State persisted in PostgreSQL / Temporal.io for resilience.
-- **Human-in-the-Loop mandatory for writes:** No serious FDE startup writes directly to production without human approval. Pattern: agent prepares payload → human reviews in UI → agent executes. Invisible Technologies has this as core platform feature.
-- **Rollback Contracts:** Every write operation carries a reversible "contract." If the agent writes incorrect data to the ERP, it must be able to undo within a configurable time window.
-- **Circuit Breakers per tenant:** If an agent exceeds N errors on the same system in T minutes, the circuit opens. The FDE intervenes manually.
-
-**Concrete example (synthesized from Tomoro and AI/R architectures):**
-
-```
-# Pseudo-architecture of an SAP provisioning agent
-graph = StateGraph(AgentState)
-
-graph.add_node("extract_order")
-graph.add_node("validate_with_ontology")   # SHACL shape check
-graph.add_node("human_approval")            # UI + WebSocket
-graph.add_node("write_to_sap")              # BAPI/RFC call + rollback contract
-graph.add_node("notify")                    # Teams/Slack/Email
-
-graph.add_edge("extract_order", "validate_with_ontology")
-graph.add_conditional_edges(
-    "validate_with_ontology",
-    lambda s: "write_to_sap" if s.validation_passed else "human_approval",
-)
-graph.add_conditional_edges(
-    "write_to_sap",
-    lambda s: "notify" if s.sap_ok else "human_approval",
-)
-
-# State checkpoined in PostgreSQL via Temporal.io
-# Every transition logged with correlation_id for audit
-```
+Smaller companies copy the role too. Ramp built an FDE team of about 15 engineers in pods.[37] Decagon uses human Agent Product Managers to implement its support agents.[31] At the time of a16z's analysis, 22 of 311 open OpenAI roles were FDE or solutions engineering.[31]
 
 ## Part III
 
-## 3. The Operating Model — The FDE Factor
+## The economics: margin for moat, or consulting by another name
 
-### 3.1 Forward Deployed Engineer Profile
+The case for the model is a16z's "trading margin for moat". At IPO, ServiceNow and Workday had gross margins of 63.2% and 54.1%.[31] By 2024 they reached 79% and 75%.[31] a16z tells AI startups to grow total gross profit, not to optimize for an 80% gross margin.[31] It even suggests selling services at cost.[31]
 
-| Dimension | Typical Profile |
-| --- | --- |
-| **Background** | CS/Engineering. 3-7 years experience. Former Palantir, FAANG, technical consulting. |
-| **Stack** | Python, TypeScript, SQL, REST APIs, GraphQL, Docker, Kubernetes, CI/CD. Plus: LangChain/LangGraph, Neo4j/SPARQL, ontological modeling. |
-| **Soft skills** | Communication with non-technical stakeholders. Ability to translate "I need to know when the order arrives" into "SPARQL query against supply chain ontology." |
-| **Pace** | 1-2 week cycles. Monday: understand problem with domain experts. Wednesday: ontology + agent POC. Friday: C-level demo. |
-| **Ratio** | 1 FDE per 1-2 simultaneous clients. More than 3 = integration quality drops. |
+The current numbers are far from software margins. Compiled benchmarks put AI products at 45% gross margin in 2025, with 53% expected in 2026.[34] An FDE is expensive. Anthropic advertises £225,000 to £255,000 a year for one in London.[10] One analysis models a fully loaded frontier-lab FDE at $845K a year.[34]
 
-### 3.2 Economics of the FDE Model for a Startup
+Deal size decides whether that cost pays. In one illustrative model, $3M–15M enterprise contracts cover an FDE 2.5 to 6 times.[34] Deals under $500K cover well under half of one.[34] That is a model, not measured data, but it explains why FDEs go to the largest accounts.
 
-> *💰 The Fundamental Equation (per a16z):*
+The firms that were bought look like good services businesses. One estimate puts Tomoro at about £225k revenue per head, with margins above 40%.[29] Faculty's reported price was about 15 times its run-rate revenue.[29] The buyers paid for teams and clients, not for models or research.[29]
 
- **Phase 1 (Years 1-2):** Gross margin 40-55%. Each FDE costs ~$200-250K/yr (all-in). Client billed $300-400K/yr per FDE. Spread: ~$100-150K/FDE/yr. Well below the 80% SaaS expectations.
-
- **Phase 2 (Years 3-4):** Reusable software (ontologies, connectors, agent templates) pushes margin to 65-75%. Junior FDEs added supervised by seniors (4:1 ratio).
-
- **Phase 3 (Year 5+):** Platform product + implementation ecosystem. Margin 75-80%. ServiceNow: 63% at IPO → 79% in 2024. Workday: 54% → 75%.
-
-**Concrete scalability mechanisms (observed in Tomoro, Invisible Tech, Resolve AI):**
-
-- **Reusable connectors:** Each SAP/Salesforce/ServiceNow integration becomes a packaged adapter. Next similar client: connector already exists. Marginal integration cost drops 70%.
-- **Vertical ontologies:** A supply chain ontology for manufacturing is 80% reusable across clients in the same sector. Only the final 20% requires on-site customization.
-- **Agent Templates:** Common agentic workflows (invoice approval, order reconciliation, inventory anomaly detection) packaged as "blueprints." The FDE configures, doesn't code from scratch.
-- **Outcome-based pricing:** Instead of hourly billing, some startups (Invisible Tech, Resolve) charge a % of savings generated or a fixed fee per "deployed and operational agent." Aligns incentives and raises revenue ceiling.
+So is it consulting? Palantir's Deltas say no: consultants deliver one-time analyses, while Deltas deploy existing software products.[30] That defence needs a product. TBR expects Palantir to remain an exception, not the template for an industrywide shift.[33] For vendors, it says, FDE support is likely a loss leader paid for by software or cloud consumption.[33] Systems integrators cannot recover it that way and must bill it as services.[33]
 
 ## Part IV
 
-## 4. Infrastructure, SRE, and Governance Challenges
+## The ontology: what competitors offer
 
-### 4.1 State Management in Long-Running Agents
+Palantir's platform is several products. Foundry handles data operations and the ontology; AIP connects generative AI on top of it.[24] Gotham serves defense and intelligence, and Apollo delivers software to any environment, even air-gapped ones.[24] No single product replaces all four equally well.[24]
 
-**The problem:** An agent monitoring a purchase order can last weeks — from creation through delivery and invoicing. The LLM has no memory beyond its context window. The agent can be interrupted (deploy, crash, scaling event).
+The ontology itself is hard to swap. Palantir's ontology and the open W3C standards (OWL, RDF, SHACL) are not supersets of each other.[18] OWL lacks permissioned actions, and Foundry is not built around open-world inference.[18] One user-built converter found that 7 of 22 Palantir property types had no counterpart in any published standard.[18] Moving the data out does not move its meaning or logic.[24]
 
-**Production solutions:**
+| Platform | What it is |
+| --- | --- |
+| Microsoft Fabric IQ | Ontology preview: a virtual semantic layer over source systems, generated from Power BI models[11] |
+| Stardog | RDF/OWL knowledge graph with query-time reasoning and data virtualization[22] |
+| d.AP | AI context platform with ontology-guided context assembly for agents[25] |
+| eccenca Corporate Memory | Knowledge graph platform for semantic integration, modeling and governance[25] |
+| Neo4j | Property-graph platform, no formal semantics layer on top[22,25] |
 
-- **Database checkpointing:** Graph state (LangGraph) persisted in PostgreSQL after each node transition. If the agent fails, it resumes from the last checkpoint.
-- **Temporal.io / Airflow for long orchestration:** Workflows spanning days use Temporal as external "clock." The agent is an Activity inside a Temporal Workflow. If the agent doesn't respond within N minutes, Temporal retries with backoff.
-- **State TTL and garbage collection:** Orphan states (agent started but never finished) must have configurable TTL. A cleanup cron job removes expired states.
-- **Event sourcing:** Every agent action is an immutable event. Current state is the projection of all past events. Allows "rewinding" and auditing.
+The gaps are specific. Stardog's documentation describes single-node-sized datasets with no sharding.[22] Its own docs flag that its LLM agent output can contain hallucinations.[22] Formal inference, context selection and action authorization are distinct capabilities; a platform can do one well and not the others.[25] Databricks and Microsoft Fabric now ship semantic or ontology features, but none is a one-for-one replacement.[18]
 
-### 4.2 Observability and Traceability of AI Decisions
-
-| Layer | What to Monitor | Tools/Systems | Key Metric |
-| --- | --- | --- | --- |
-| **LLM Calls** | Prompt input/output, tokens, latency, cost, model used | LangSmith, Helicone, Langfuse, W&B | `accuracy_rate` · `hallucination_rate` · `cost_per_query` |
-| **Agent Steps** | Each state graph transition: node, duration, decision | OpenTelemetry + custom spans, LangGraph callbacks | `step_success_rate` · `avg_steps_per_task` · `loop_detection` |
-| **Ontology Queries** | SPARQL/Cypher queries executed, results returned, response time | Prometheus + custom exporter in Neo4j/Stardog | `query_latency_p99` · `cache_hit_ratio` |
-| **System Writes** | Each write to legacy system: endpoint, payload, status, rollback status | Custom middleware on integration layer + structured logs | `write_success_rate` · `rollback_rate` · `human_override_count` |
-| **Business Outcome** | Final business metric: was the invoice processed? Was inventory updated? | Dashboard in Superset/Grafana fed by legacy system + ontology | `completion_time` · `error_downstream` · `manual_interventions` |
-
-### 4.3 RBAC and Security at the Ontology Layer
-
-**The challenge:** When multiple agents (each representing different departments/users) interact with the same shared ontology, access control cannot live only at the application layer — it must be embedded in the ontology itself.
-
-**Emerging pattern (synthesized from Stardog, d.AP):**
-
-- **Ontology-level RBAC:** Each triple/node in the graph carries access metadata. An HR agent cannot read payroll triples even if they're in the same graph as public employee data.
-- **Automatic SPARQL/Cypher filtering:** The LLM's query is rewritten before execution: `SELECT ?invoice WHERE { ... }` → `SELECT ?invoice WHERE { ... FILTER(?department = "sales") }`. The rewriter adds RBAC conditions based on agent identity.
-- **Data masking in graph responses:** If an agent lacks permission to see the "cost" field of an order, the ontology returns `null` or `***` instead of the real value. The LLM never sees the data.
-- **Audit log per triple:** Every access to a node/edge is logged with: agent_id, timestamp, query, returned result. Enables forensic auditing: "which agent saw what data and when?"
-
-> *📌 SRE Warning:* The biggest production risk isn't the AI making an incorrect decision — it's the AI *acting* on an incorrect decision without supervision. Every write action must pass through: (1) ontological validation, (2) rate limiting, (3) human approval gate, (4) circuit breaker, (5) rollback contract. Without these 5 gates, an agent can cause damage in seconds that would take weeks to repair.
+In defense the gap is wider. In May 2026, a NATO admiral said there is currently no competitor for Palantir.[39]
 
 ## Part V
 
-## 5. Anti-Patterns and Common Failure Modes
+## Why deployments fail, and what FDEs fix
 
-> *⚠️ This is the most important section of the report.* Based on documented failures of startups that tried to replicate the Palantir model without understanding its structural limits.
+The failure rate explains the demand. MIT NANDA found that 95% of organizations get zero return from $30–40 billion of GenAI investment.[2] Of organizations that evaluated enterprise tools, 20% reached a pilot and 5% reached production.[2] Gartner predicts that over 40% of agentic AI projects will be canceled by the end of 2027.[14]
 
-### Anti-Pattern #1: "Ontology on Day 1"
+The causes are integration and learning. Pilots fail through brittle workflows, lack of contextual learning and misalignment with operations.[2] Projects stall on messy data, integration problems and lack of internal ownership.[35] Lightweight, wrapper-like integrations of core workflows often make agents break.[31] Research on enterprise agents finds the same gap: models lack domain-specific process knowledge, so plans and execution become unstable.[9]
 
-**Error:** Trying to model the entire enterprise ontology before getting a single agent working.
+FDEs answer part of this. Externally sourced tools reach deployment about twice as often as internal builds.[36] Successful buyers demand deep customization and measurable outcomes.[2] Mid-market organizations often reach full implementation within 90 days; large enterprises scale up least.[36]
 
-**Failure mode:** Months of modeling with zero demonstrable value. Ontology is too abstract or wrong. Client loses patience.
+But people are not the whole answer. MIT names learning as the core barrier, not talent: most systems do not retain feedback or improve.[2] An engineer on site can wire a workflow. Only a platform that keeps what the engineer learned makes the next deployment cheaper.
 
-**Correct:** Minimum viable ontology (3-5 classes, 5-10 relations). Enough to solve the first use case. The ontology evolves with each new agent. Palantir calls this "ontogenesis" — the ontology grows organically with usage.
+## What I would do
 
-### Anti-Pattern #2: "FDEs without a Platform"
+1. **Start with a bootcamp, not a transformation.** Prove one workflow on the customer's own data in days. Expand only use case by use case.
+2. **Do not hire FDEs before you have a product to feed.** Each engagement must leave a reusable piece behind. Measure the share of field work that becomes product every quarter.
+3. **Match the model to the deal size.** Put FDEs on large accounts. Below about $500K a year, use lighter onboarding and templates.
+4. **Choose an ontology platform by capability.** Decide if you need inference, context for agents or authorized actions. No platform does all three like Foundry.
+5. **Build for learning, not only for the launch.** Capture corrections and feedback in the platform, so the system improves after the engineer leaves.
 
-**Error:** Hiring FDEs but not investing in reusable platform. Each FDE solves every problem from scratch.
+*— Luis González*
 
-**Failure mode:** The startup becomes a glorified consultancy. Margin 20-30%, not 40-55%. Scaling = hiring more FDEs, not more software. Unsustainable.
+## Method and limits
 
-**Correct:** Every FDE must spend 20-30% of their time building connectors, templates, and reusable components. The platform/services ratio must improve every quarter.
+This report replaces the version of 29 May 2026, which cited no sources in the text. It was rebuilt on 10 November 2026 with the reports research pipeline. I screened 35 web results from 5 TinyFish queries by hand. The pipeline added results from Hacker News, arXiv and Wikipedia: 85 in total. It read 47 sources, and 43 gave usable evidence. An open model (NaN: deepseek-v4-flash) read each source on its own. It extracted 245 claims with verbatim quotes and discarded 10 whose quote was not in the source. Claude wrote the synthesis from that evidence and checked every cited figure against its source. The conclusions in "What I would do" are mine.
 
-### Anti-Pattern #3: "Autonomous Agents Without Gates"
+- **Removed claims.** The old version said that Palantir starts with contracts above $25 million and that GraphRAG cuts hallucinations by 40–60%. No source in the pack supports either claim; a16z describes small initial contracts. Market sizes, a 12–18 month window and per-company revenue figures without sources were also removed.
+- **Estimates, not filings.** Tomoro's revenue, the Faculty multiple and the FDE cost model are analysts' estimates or illustrations. Only the Palantir figures come from an SEC filing.
+- **Secondary reports.** Anthropic's services company and the AWS figure come from one secondary source each. FDE hiring growth comes from a16z's summary of job-posting data.
+- **Vendor sources.** The platform comparison relies on vendors describing themselves and their competitors.
 
-**Error:** Trusting the LLM won't hallucinate a write operation in production. "The model is very good, it won't fail."
+## Sources
 
-**Failure mode:** An agent writes 10,000 incorrect records to SAP because the prompt had an ambiguous example. Client demands compensation or leaves.
-
-**Correct:** Human-in-the-loop mandatory on writes for the first 6 months of each client. Only then, semi-autonomous mode with approval-by-exception. The 5 security gates are non-negotiable.
-
-### Anti-Pattern #4: "Feature-Benchmarking Against Palantir"
-
-**Error:** Trying to match Foundry/Gotham's feature set. Palantir has 20 years and 3,000+ engineers.
-
-**Failure mode:** Over-engineered product for a market that doesn't need 80% of the features. Wasted development time. Client confusion.
-
-**Correct:** Compete on simplicity + deployment speed + price. The client chooses the startup not because it has more features, but because an FDE is on-site this week and Palantir takes 6 months to run a POC.
-
-### Anti-Pattern #5: "Deferring Security"
-
-**Error:** Not implementing ontological RBAC from day 1. Assuming "we'll add it later."
-
-**Failure mode:** Client security audit reveals a sales agent could view financial data. Deal falls through. Regulatory compliance (GDPR, SOX, HIPAA) becomes a blocker.
-
-**Correct:** Ontological RBAC is part of the MVP. Each triple inherits permissions from its class. Default: deny all, allow explicitly.
-
-### Anti-Pattern #6: "Underestimating Ontological Modeling Cost"
-
-**Error:** Assuming LLMs can generate the ontology automatically with a single prompt.
-
-**Failure mode:** Inconsistent, redundant ontology with logical errors. SHACL validation fails at every turn. Agents make decisions based on incorrect relationships.
-
-**Correct:** The LLM assists, doesn't replace. The ontology is defined by an **ontological engineer** (or an FDE trained in semantic modeling) in collaboration with the client's domain experts. The LLM can suggest relationships, but a human validates each one.
-
----
-
-## 6. Conclusions and Opportunity Window
-
-> **🎯 Synthesis for Strategic Decision:**
-
- **1.** The FDE + ontology model is validated by high-profile exits (OpenAI-Tomoro, Accenture-Faculty) and a16z's explicit thesis. It is not experimental — it is the new standard of entry for enterprise AI.
-
- **2.** A clear gap exists: no startup combines **ontological platform (like Foundry)** + **FDE model** + **mid-market pricing**. Digetiers/d.AP has the platform but consultancy-style engagement. Invisible Technologies has the FDE model but a different platform. Opportunity for "Palantir for mid-market companies."
-
- **3.** The bottleneck is not technical — it is **FDE talent**. OpenAI paid a premium for Tomoro (~150 FDEs) precisely because they cannot be "trained" quickly. Any serious startup must build its FDE pipeline from day 1.
-
- **4.** The opportunity window is **12-18 months**. Palantir is moving to mid-market with AIP. Hyperscalers are building their own implementation layers. The time to build is now.
-
- Sources: a16z · openai.com · accenture.com · digetiers-dap.com · invisibletech.ai · resolve.ai · elevenlabs.io · aircompany.ai · stardog.com · flur.ee · innovateer.com · resilinc.com · arxiv.org · Research conducted via 80+ web searches across 3 parallel agents
+2. The GenAI Divide: State of AI in Business 2025 — MIT NANDA — Aug 2025 — [mlq.ai/media/quarterly_decks/v0.1_State_of_AI…](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)
+4. Palantir Reports Q3 2026 results — SEC exhibit 99.1 — Nov 2026 — [sec.gov/Archives/edgar/data/1321655/000132165…](https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/a2026q3ex991pressrelease.htm)
+9. Routine: A Structural Planning Framework for LLM Agent System in Enterprise — Jul 2025 — [arxiv.org/abs/2507.14447](https://arxiv.org/abs/2507.14447)
+10. Forward Deployed Engineer — Anthropic — [job-boards.greenhouse.io/anthropic/jobs/54230…](http://job-boards.greenhouse.io/anthropic/jobs/5423029008)
+11. What Is Ontology (Preview)? — Microsoft Fabric — Oct 2026 — [learn.microsoft.com/en-us/fabric/iq/ontology/…](https://learn.microsoft.com/en-us/fabric/iq/ontology/overview)
+12. Accenture to Acquire Faculty to Scale AI Capabilities — Jan 2026 — [newsroom.accenture.com/news/2026/accenture-to…](https://newsroom.accenture.com/news/2026/accenture-to-acquire-faculty-to-scale-ai-capabilities)
+13. Accenture Completes Acquisition of Faculty — Mar 2026 — [newsroom.accenture.com/news/2026/accenture-compl](https://newsroom.accenture.com/news/2026/accenture-completes-acquisition-of-faculty)
+14. Gartner predicts over 40% of agentic AI projects will be canceled by end of 2027 — Gartner, Inc., Jun 2025 — [gartner.com/en/newsroom/press-releases/2025-0…](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027)
+16. Palantir touts forward deployed engineers, reports record revenue — Channel Dive — Matt Ashare, Channel Dive, Aug 2026 — [channeldive.com/news/palantir-forward-deploye…](https://www.channeldive.com/news/palantir-forward-deployed-engineers-ai-revenue-spike/827139/)
+18. Palantir Ontology Explained: How It Works in Foundry — Fluree — Kevin Doubleday (Fluree), Oct 2026 — [flur.ee/blog/palantir-ontology-explained](https://flur.ee/blog/palantir-ontology-explained)
+19. Deploying Full Spectrum AI in Days: How AIP Bootcamps Work — Palantir — Oct 2023 — [blog.palantir.com/deploying-full-spectrum-ai-…](https://blog.palantir.com/deploying-full-spectrum-ai-in-days-how-aip-bootcamps-work-21829ec8d560)
+21. OpenAI launches DeployCo to help businesses build — OpenAI — May 2026 — [openai.com/index/openai-launches-the-deployme…](https://openai.com/index/openai-launches-the-deployment-company/)
+22. Stardog Knowledge Graph Platform: Claims vs. Its Docs — Atlan — Emily Winks / Atlan, Sep 2026 — [atlan.com/know/ai-agent/knowledge-graph/what-…](https://atlan.com/know/ai-agent/knowledge-graph/what-is-stardog/)
+23. OpenAI Deployment Company (DeployCo): FDE Profile — Plank — Jul 2026 — [joinplank.com/research/openai-deployment-company](https://joinplank.com/research/openai-deployment-company)
+24. The 8 Best Palantir Competitors & Alternatives — Stardog — Sep 2026 — [stardog.com/blog/best-palantir-competitors-al…](https://www.stardog.com/blog/best-palantir-competitors-alternatives/)
+25. 8 Stardog Alternatives in 2026 — Digetiers — Julius Hollmann / digetiers, Aug 2026 — [digetiers.com/en/insights/library/stardog-alt…](https://www.digetiers.com/en/insights/library/stardog-alternatives)
+26. A Day in the Life of a Palantir Deployment Strategist — Mar 2022 — [blog.palantir.com/a-day-in-the-life-of-a-pala…](https://blog.palantir.com/a-day-in-the-life-of-a-palantir-deployment-strategist-951cb59a5a96)
+29. OpenAI's Tomoro Acquisition: Revenue, Valuation & AI services M&A — Aventis — Filip Drazdou, Aventis Advisors, May 2026 — [aventis-advisors.com/ai-services-ma-2026](https://aventis-advisors.com/ai-services-ma-2026/)
+30. Dev versus Delta: Demystifying engineering roles at Palantir — Apr 2019 — [blog.palantir.com/dev-versus-delta-demystifyi…](https://blog.palantir.com/dev-versus-delta-demystifying-engineering-roles-at-palantir-ad44c2a6e87)
+31. Trading Margin for Moat: Why the Forward Deployed Engineer Is the Hottest Job in Startups — a16z — Joe Schmidt (Andreessen Horowitz), Jun 2025 — [a16z.com/services-led-growth](https://a16z.com/services-led-growth/)
+32. How Palantir Invented the Forward Deployed Engineer Model — R&D, FDE Academy, Nov 2026 — [fde.academy/blog/how-palantir-invented-the-fo…](https://fde.academy/blog/how-palantir-invented-the-forward-deployed-engineer-model)
+33. Forward-deployed Engineers: The Last Mile of the AI Value Chain — TBR — Alex Demeule, Senior Analyst, Technology Business Research (TBR), Jul 2026 — [tbri.com/special-reports/forward-deployed-eng…](https://tbri.com/special-reports/forward-deployed-engineers-the-last-mile-of-the-ai-value-chain/)
+34. The Economics of the Forward Deployed Engineer Model — Shivank Agrawal / Scaler, Nov 2026 — [scaler.com/topics/the-economics-of-the-forwar…](https://www.scaler.com/topics/the-economics-of-the-forward-deployed-engineer/)
+35. The Palantirization of everything — a16z — Marc Andrusko (Andreessen Horowitz / a16z), Jan 2026 — [a16z.com/the-palantirization-of-everything](https://a16z.com/the-palantirization-of-everything/)
+36. The AI Divide — DX — Justin Reock / DX, Dec 2025 — [getdx.com/blog/the-ai-divide](https://getdx.com/blog/the-ai-divide/)
+37. What are Forward Deployed Engineers, and why are they so in demand? (2025) — Gergely Orosz / The Pragmatic Engineer, Aug 2025 — [newsletter.pragmaticengineer.com/p/forward-de…](https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers)
+38. OpenAI Forms New Joint Venture and Acquires Tomoro — Cooley — Jun 2026 — [cooleyma.com/deals/openai-forms-new-joint-ven…](https://cooleyma.com/deals/openai-forms-new-joint-venture-openai-deployment-company-and-acquires-tomoro/)
+39. Palantir — Wikipedia — [en.wikipedia.org/wiki/Palantir](https://en.wikipedia.org/wiki/Palantir)
+42. H (company) — Wikipedia — [en.wikipedia.org/wiki/H_%28company%29](https://en.wikipedia.org/wiki/H_%28company%29)

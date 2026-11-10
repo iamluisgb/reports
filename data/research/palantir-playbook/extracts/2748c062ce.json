@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-10-30",
+  "author_or_org": "Kevin Doubleday (Fluree)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir Ontology is the operational layer of Foundry that maps datasets, virtual tables, and models to business entities like plants, orders, and transactions, and adds actions for people and AI agents.",
+      "quote": "The Palantir Ontology is the operational layer of Palantir Foundry. It maps datasets, virtual tables, and models to the things a business runs on, such as plants, customer orders, and transactions, and adds the actions people and AI agents can take on them.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The ontology represents real-world things such as orders and plants as objects with links, and defines allowed actions for people and AI agents.",
+      "quote": "It represents real things like orders and plants as objects with links between them, and defines the actions people and AI agents are allowed to take on them.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir's ontology includes kinetic elements: action types for permitted data changes, functions for business logic, and dynamic security for permissions.",
+      "quote": "**Action types** define the permitted ways to change data, with parameters, rules, and submission criteria. **Functions** hold business logic. **Dynamic security** controls who can see and do what.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir's Ontology MCP, generally available since June 2026, exposes object types, action types, and functions as tools for MCP-compatible agents, and the Ontology SDK supports multiple languages.",
+      "quote": "Ontology MCP, generally available since June 2026, exposes object types, action types, and functions as tools for MCP-compatible agents, and the Ontology SDK serves code in several languages.",
+      "numbers": [
+        "June 2026"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "OWL, RDF, and SHACL are open W3C standards for describing meaning and exchanging it across tools.",
+      "quote": "OWL, RDF, and SHACL are open W3C standards built for describing meaning and exchanging it across tools.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Palantir's ontology and open-standards ontologies are not supersets of each other; OWL lacks permissioned actions and Foundry is not built around open-world logical inference.",
+      "quote": "Neither is a superset of the other. OWL has no concept of a permissioned action, and Foundry is not built around open-world logical inference.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "A user-built converter reported that 7 of 22 Palantir property types had no counterpart in any published standard.",
+      "quote": "The author built their own converter and reported that 7 of 22 property types had no counterpart in any published standard.",
+      "numbers": [
+        "7",
+        "22"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Databricks and Microsoft Fabric now include semantic or ontology features, while Stardog, Graphwise GraphDB, Neo4j, and Fluree serve the graph layer; none is a one-for-one replacement.",
+      "quote": "Data platforms such as Databricks and Microsoft Fabric now include semantic or ontology features, while Stardog, Graphwise GraphDB, Neo4j, and Fluree serve the graph layer. None is a one-for-one replacement.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://flur.ee/blog/palantir-ontology-explained"
+}

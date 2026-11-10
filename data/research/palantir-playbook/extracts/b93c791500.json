@@ -1,0 +1,67 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-09-10",
+  "author_or_org": "Emily Winks / Atlan",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "Stardog is a commercial RDF/OWL knowledge-graph database founded in 2006 that reasons over data at query time and virtualizes relational sources into a graph without moving them.",
+      "quote": "Stardog is a commercial RDF/OWL knowledge-graph database, founded in 2006, that reasons over data at query time and virtualizes relational sources into a graph without moving them.",
+      "numbers": [
+        "2006"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog lists named customers including NASA since 2006, Bosch, Boehringer Ingelheim, NIH, Springer Nature, and Raytheon.",
+      "quote": "Named customers | NASA (since 2006), Bosch, Boehringer Ingelheim, NIH, Springer Nature, Raytheon",
+      "numbers": [
+        "2006"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog offers a free tier with a 1-year renewable license that excludes HA, backups, LDAP, and full connectors; enterprise pricing is quote-gated.",
+      "quote": "Pricing | Free tier (1-year renewable license, excludes HA/backups/LDAP/full connectors); Enterprise is quote-gated",
+      "numbers": [
+        "1-year"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog uses RDF triples/quads with formal OWL 2 reasoning, while Neo4j uses a labeled-property graph with no built-in ontology layer.",
+      "quote": "Stardog's model is RDF triples and quads with formal OWL 2 reasoning; Neo4j's is a labeled-property graph with no ontology layer built in.",
+      "numbers": [
+        "2"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog is positioned for use cases requiring provable logical inference, entailment, and consistency checking, such as classifying transactions against regulatory taxonomy with proof.",
+      "quote": "Stardog suits use cases that need provable logical inference, entailment, and consistency checking, for example classifying a transaction against a regulatory taxonomy and being able to show the proof.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Neo4j is positioned for fast graph traversal without a formal semantics layer on top.",
+      "quote": "Neo4j suits use cases that need fast graph traversal without a formal semantics layer on top.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog's scale model is single-node-sized datasets with no sharding per its documentation, while Neo4j is horizontally scalable via Aura and Fabric.",
+      "quote": "Scale model | Single-node-sized datasets; no sharding, per Stardog's own documentation | Horizontally scalable via Aura and Fabric",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Stardog's own docs flag the External LLM Agent output as potentially containing hallucinations, contradicting the marketed hallucination-free claim.",
+      "quote": "Where the marketing gets ahead of the docs: \"hallucination-free\" is a system-property claim, and Stardog's own docs flag the External LLM Agent's output with \"Note: This may contain Hallucinations.\"",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://atlan.com/know/ai-agent/knowledge-graph/what-is-stardog/"
+}

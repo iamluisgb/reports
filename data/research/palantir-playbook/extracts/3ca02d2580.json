@@ -1,0 +1,17 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-03-23",
+  "author_or_org": "Xi Yang, Aurelie Lozano, Naoki Abe, Bhavya, Saurabh Jha, Noah Zheutlin, Rohan R. Arora, Yu Deng, Daby M. Sow",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Enterprise AI agent real-world deployment and further performance gains are constrained by limited data quality and quantity, complex real-world reasoning demands, difficulties with self-play, and the lack of reliable feedback signals.",
+      "quote": "Despite rapid progress in AI agents for enterprise automation and decision-making, their real-world deployment and further performance gains remain constrained by limited data quality and quantity, complex real-world reasoning demands, difficulties with self-play, and the lack of reliable feedback signals.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2603.22083"
+}
