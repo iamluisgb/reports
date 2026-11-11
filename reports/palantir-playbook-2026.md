@@ -3,9 +3,9 @@ title: "What AI Startups Stole From Palantir's Playbook"
 date: 2026-05-29
 type: special
 url: https://luisgonzalezbernal.com/reports/reports/palantir-playbook-2026.html
-summary: "The playbook · The market map · What an FDE does · The economics · Ontology platforms · Why deployments fail"
+summary: "The playbook · The market map · What an FDE does · How to run an engagement · The economics · Ontology platforms · Why deployments fail"
 tags: [business, funding]
-reading_time_minutes: 21
+reading_time_minutes: 28
 ---
 Market Analysis · Special Report
 
