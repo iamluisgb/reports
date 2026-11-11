@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-08-21",
+  "author_or_org": "Charlie Mitchell / CX Foundation",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Outcome-based pricing charges a customer only after a pre-agreed, measurable result has been achieved.",
+      "quote": "Outcome-based pricing is a model in which a seller charges a customer only after a pre-agreed, measurable result has been achieved.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "76% of enterprise CX buyers are open to outcome-based pricing, but as of July 2026 only 5% were contracted on it, a 15x gap.",
+      "quote": "These companies typically sell to enterprise CX buyers, 76% of whom are open to outcome-based pricing models, according to HFS Research.\n\nStill, as of July 2026,[only 5% are contracted on outcome-based pricing.](https://www.hfsresearch.com/research/outcome-based-pricing-effort-based-contracts/)\n\nUltimately, that reveals a 15x gap in what the market says it wants and what it has signed.",
+      "numbers": [
+        "76%",
+        "July 2026",
+        "5%",
+        "15x"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Fin AI Agent counts explicit satisfaction or no human escalation within 24 hours as a resolution and lists $0.99 per successful resolution.",
+      "quote": "**Fin AI Agent**If the customer explicitly confirms satisfaction with the conversation or leaves without escalating to a human within 24 hours, that’s a resolution.$0.99 per successful resolution",
+      "numbers": [
+        "24 hours",
+        "$0.99"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Outcome-based sellers typically charge a flat fee per outcome regardless of how many steps the AI agent takes.",
+      "quote": "Sellers typically charge a flat fee per outcome, regardless of how many steps the AI agent takes to achieve it.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Sierra and Fin AI use a consultative approach and forward-deploy engineers to improve implementation success.",
+      "quote": "Indeed, companies using outcome-based pricing, like Sierra and Fin AI, often take a more consultative approach, forward-deploying engineers to increase the chances of a successful implementation.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A key challenge is that buyers and sellers may define outcomes differently and providers may not track outcomes aligned with buyer definitions.",
+      "quote": "Given this, significant negotiation is often involved, and buyers should be wary that the provider may not be able to track outcomes in a way that aligns with their definition.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://cxfoundation.com/blog/outcome-based-pricing"
+}

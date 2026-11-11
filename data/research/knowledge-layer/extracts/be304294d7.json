@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-06-10",
+  "author_or_org": "Fluree (Kevin Doubleday)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source distinguishes a graph database, which stores nodes and relationships, from a knowledge graph, which adds an ontology defining what things are and how they relate in a machine-readable standard format.",
+      "quote": "**A graph database stores nodes and relationships. A knowledge graph adds shared meaning: an ontology that defines what each thing is and how it relates, in a standard format other systems can read.**",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Semantic knowledge graphs represent facts as subject-predicate-object triples conforming to a shared ontology that encodes domain meaning.",
+      "quote": "**Semantic knowledge graphs** (Stardog, Fluree, Graphwise, eccenca, and AWS Neptune in RDF mode) represent data using the [RDF vs. LPG](https://flur.ee/blog/rdf-versus-lpg) model: every fact is a subject–predicate–object triple, and those triples conform to a shared [ontology](https://flur.ee/blog/taxonomies-versus-ontologies-a-short-guide) that encodes domain meaning.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source says an LLM querying a semantic graph gets data with meaning because the ontology lets the graph infer relationships implied by the data model.",
+      "quote": "An LLM querying a semantic graph gets data _with meaning_ back: the graph can infer relationships the data model implies, because the ontology defines what “supplier” means and how it relates to “contract” and “compliance requirement.”",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source says a semantic layer is needed to unify enterprise data across systems such as SAP, Salesforce, a data warehouse, and a document repository around a shared vocabulary.",
+      "quote": "When enterprise data spans SAP, Salesforce, a data warehouse, and a document repository, the semantic layer needs to unify these sources around a shared vocabulary.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The source positions semantic graph reasoning as the foundation of accurate GraphRAG on complex, multi-domain enterprise data.",
+      "quote": "This is the foundation of accurate [GraphRAG](https://flur.ee/blog/graphrag-vs-vector-rag-when-knowledge-graphs-outperform-semantic-search) on complex, multi-domain enterprise data.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Fluree says GraphRAG retrieval is native and combines graph traversal, BM25 full-text search, and HNSW vector search in one governed query against the same engine.",
+      "quote": "GraphRAG retrieval is native: graph traversal, [BM25 full-text and HNSW vector search](https://labs.flur.ee/docs/db/indexing-and-search) compose in one governed query against the same engine.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Stardog's Voicebox turns plain-language questions into SPARQL over the graph and its virtual sources and adds a document RAG pipeline.",
+      "quote": "Query-time reasoning plus Voicebox, which turns plain-language questions into SPARQL over the graph and its virtual sources and adds a document RAG pipeline.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source states that ontology modeling requires domain expertise and upfront investment.",
+      "quote": "Ontology modeling requires domain expertise and upfront investment.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://flur.ee/blog/enterprise-kg-buyers-guide-2026"
+}

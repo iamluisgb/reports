@@ -1,0 +1,78 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-10-31",
+  "author_or_org": "JoinPlank",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir originated forward-deployed engineering around 2006; its senior engineers called Deltas embed with customers for 6 to 18 months to put Foundry and AIP into production and feed lessons back into software.",
+      "quote": "Palantir originated forward-deployed engineering around 2006. Its senior engineers (\"Deltas\") embed with government and enterprise customers for 6 to 18 months to put Foundry and AIP into production, and fold what they learn back into the software.",
+      "numbers": [
+        "2006",
+        "6",
+        "18"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Each Delta is paired with an Echo deployment strategist; engagements run through Acquire, Expand, and Scale phases, with Palantir absorbing pilot costs, developing use cases at a loss, then reaching positive contribution margin.",
+      "quote": "Each Delta works with an Echo, a strategist who maps institutional politics, barriers to adoption and executive alignment. Engagements run in three phases: Acquire, where Palantir absorbs pilot costs; Expand, where the two sides develop use cases together at a loss to Palantir; and Scale, where the account reaches positive contribution margin.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "In Q2 2026, Palantir reported net dollar retention of 157% and closed 73 deals worth at least $10M.",
+      "quote": "The expansion shows: net dollar retention was 157% in Q2 2026, when Palantir closed 73 deals worth at least $10M.",
+      "numbers": [
+        "157%",
+        "Q2 2026",
+        "73",
+        "$10M"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "AIP Bootcamps are short pilots on prospects' own data; by February 2024 Palantir had run more than 560 across 465 organizations, exceeding its goal of 500 within a year.",
+      "quote": "AIP Bootcamps are short pilots built on a prospect's own data; Palantir calls them its go-to-market approach for AIP. By February 2024 it had run more than 560 across 465 organizations, past its goal of 500 within a year.",
+      "numbers": [
+        "February 2024",
+        "560",
+        "465",
+        "500"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Palantir uses custom contracts with no published list prices, charging for multi-year software subscriptions, usage-based compute and storage, and FDE services bundled into early-phase costs and absorbed upfront rather than billed by time and materials.",
+      "quote": "Custom contracts with no published list prices, built from three charges: multi-year software subscriptions for platform access; usage-based compute and storage fees; and forward-deployed engineering services, bundled into early-phase contract costs and absorbed upfront rather than billed by time and materials.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Palantir's Foundry centers on an Ontology defined as a semantic representation of an organization's data, logic, and actions that ties raw data to live operations.",
+      "quote": "Foundry handles enterprise data integration, workflow orchestration and AI deployment, centered on the Ontology, a semantic representation of an organization's data, logic and actions that ties raw data to live operations.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A 2025 MIT study found 95% of enterprise AI pilots fail to deliver business value; Palantir argues its bootcamps and FDE engagements put working prototypes on real customer data from day one.",
+      "quote": "A 2025 MIT study found 95% of enterprise AI pilots fail to deliver business value; Palantir's Bootcamps and forward-deployed engagements put working prototypes on real customer data from day one.",
+      "numbers": [
+        "2025",
+        "95%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Fujitsu signed a new AIP and Foundry agreement and became a Global Forward Deployed Engineering Partner on Sep 10, 2026.",
+      "quote": "Fujitsu signed a new AIP and Foundry agreement and became a Global Forward Deployed Engineering Partner (Sep 10, 2026)",
+      "numbers": [
+        "Sep 10, 2026"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://joinplank.com/research/palantir"
+}

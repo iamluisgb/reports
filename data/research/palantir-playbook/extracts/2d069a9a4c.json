@@ -1,0 +1,58 @@
+{
+  "relevant": true,
+  "source_type": "news",
+  "published": "2026-01-28",
+  "author_or_org": "David Lidsky / Fast Company",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Fast Company says Palantir's power and success can be explained by its ability to attract elite talent and empower that talent to develop skills on projects.",
+      "quote": "Last week, I published a deep exploration into [Palantir and its founder factory](https://www.fastcompany.com/91476499/inside-the-founder-factory-known-as-palantir-americas-most-polarizing-company) and how the company’s power and success can be explained by its ability to attract elite talent and how it empowers them to develop their skills and learn new ones in the projects they pursue.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The author says he found another 21 former Palantir employees turned founders, bringing the public dataset of these people to 335.",
+      "quote": "I’ve found another 21 former Palantir employees turned founders, bringing what was already the largest public dataset of these people to 335.",
+      "numbers": [
+        "21",
+        "335"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Anduril, a defense contractor valued at $30.5 billion, was cofounded by Palantir alumni Brian Schimpf, Matt Grimm, and Trae Stephens.",
+      "quote": "*   [Anduril](https://www.anduril.com/), the defense contractor ($30.5 billion valuation), cofounded by Brian Schimpf, Matt Grimm, and Trae Stephens;",
+      "numbers": [
+        "30.5 billion"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Kalshi, a predictions market valued at $11 billion, was cofounded by Palantir alum Tarek Mansour.",
+      "quote": "*   [Kalshi](https://kalshi.com/category/all), the predictions market ($11 billion valuation), cofounded by Tarek Mansour;",
+      "numbers": [
+        "11 billion"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Eleven Labs, a voice AI platform valued at $6.6 billion, was cofounded by Palantir alum Mati Staniszewski.",
+      "quote": "*   [Eleven Labs](https://elevenlabs.io/), the voice [AI](https://www.fastcompany.com/section/artificial-intelligence \"AI\") platform ($6.6 billion valuation), cofounded by Mati Staniszewski;",
+      "numbers": [
+        "6.6 billion"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The article says nine Palantir-alumni startups span healthcare, government services, cybersecurity, law, clean energy, hardware development, and not-for-profits, exemplifying acculturation to finding hard problems and having the skills to tackle them.",
+      "quote": "The nine companies showcased below, which span healthcare, government services, cybersecurity, law, clean energy, hardware development, and not-for-profits, exemplify the power of being acculturated to finding a big, hard problem—and having the skills to tackle it.",
+      "numbers": [
+        "nine"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.fastcompany.com/91480910/9-startups-from-palantir-alumni-you-need-to-know"
+}

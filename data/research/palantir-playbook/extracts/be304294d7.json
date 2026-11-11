@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-06-10",
+  "author_or_org": "Kevin Doubleday (Fluree)",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "The source defines a graph database as storing nodes and relationships, while a knowledge graph adds shared meaning via an ontology that defines what each thing is and how it relates in a standard format other systems can read.",
+      "quote": "A graph database stores nodes and relationships. A knowledge graph adds shared meaning: an ontology that defines what each thing is and how it relates, in a standard format other systems can read.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog's distinguishing capability is a virtual graph engine that federates SPARQL queries across more than 20 relational databases and NoSQL stores without ETL, leaving data in place behind one endpoint.",
+      "quote": "Stardog’s distinguishing capability is its virtual graph engine: it federates SPARQL queries across more than 20 relational databases and NoSQL stores such as MongoDB without ETL, so data stays in place behind a single endpoint.",
+      "numbers": [
+        "20"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Neo4j is positioned as property-graph-first and lacks native ontology reasoning and as-of queries.",
+      "quote": "Property graph first, with no native ontology reasoning or as-of queries.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The guide positions Graphwise for packaged semantic search and GraphRAG, eccenca for ontology-first governance, AWS Neptune for AWS-native teams, and Fluree for governed, auditable data queried by AI agents.",
+      "quote": "Graphwise for packaged semantic search and GraphRAG, eccenca for ontology-first governance, AWS Neptune for AWS-native teams, and Fluree for governed, auditable data that AI agents query.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Fluree is described as a verifiable knowledge graph database with an immutable ledger and triple-level access control.",
+      "quote": "Fluree is a verifiable knowledge graph database with an immutable ledger and triple-level access control.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "AWS Neptune is described as a managed service supporting three query languages across two graph models.",
+      "quote": "AWS Neptune is a managed service that speaks three query languages across two graph models.",
+      "numbers": [
+        "three",
+        "two"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Ontology modeling requires domain expertise and upfront investment, both of which should be factored into build cost.",
+      "quote": "Ontology modeling requires domain expertise and upfront investment. Factor both into the build cost.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Stardog's virtual-graph approach can eliminate significant ETL cost but requires a SPARQL-capable team to exploit fully.",
+      "quote": "The virtual-graph approach can eliminate significant ETL cost, but it needs a SPARQL-capable team to exploit fully.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://flur.ee/blog/enterprise-kg-buyers-guide-2026"
+}

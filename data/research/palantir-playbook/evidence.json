@@ -16,7 +16,8 @@
         "queries": [
           "Palantir forward deployed engineer",
           "Palantir ontology Foundry",
-          "Palantir forward deployed engineering model and ontology"
+          "Palantir forward deployed engineering model and ontology",
+          "Palantir customers net dollar retention deals"
         ],
         "providers": [
           "hn",
@@ -30,7 +31,8 @@
         "queries": [
           "forward deployed engineer",
           "forward deployed engineers AI startups",
-          "companies copying the forward deployed engineer model"
+          "companies copying the forward deployed engineer model",
+          "AI startups and consultancies with forward deployed engineering teams"
         ],
         "providers": [
           "hn",
@@ -56,7 +58,8 @@
         "queries": [
           "enterprise ontology platform knowledge graph",
           "semantic layer enterprise AI agents",
-          "Palantir ontology competitors knowledge graph platforms"
+          "Palantir ontology competitors knowledge graph platforms",
+          "enterprise knowledge graph and ontology vendors compared"
         ],
         "providers": [
           "hn",
@@ -80,15 +83,15 @@
       }
     ]
   },
-  "generated": "2026-11-10",
+  "generated": "2026-11-11",
   "stats": {
-    "searched": 85,
-    "candidates": 47,
+    "searched": 114,
+    "candidates": 76,
     "web_search": true,
-    "read": 47,
-    "sources_with_evidence": 43,
-    "claims": 245,
-    "quotes_dropped_as_unverified": 10
+    "read": 76,
+    "sources_with_evidence": 70,
+    "claims": 422,
+    "quotes_dropped_as_unverified": 17
   },
   "sources": [
     {
@@ -173,6 +176,123 @@
       "n": 1
     },
     {
+      "id": "8b598bcad7",
+      "url": "https://investors.palantir.com/files/Palantir%20-%20Q2%202026%20Business%20Update.pdf",
+      "title": "Business Update Q2 2026 — Palantir",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "primary",
+      "published": "2026-08-03",
+      "org": "Palantir Technologies Inc.",
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Palantir reported Q2 2026 total revenue of $1.94 billion, up 93% year over year and 19% quarter over quarter.",
+          "quote": "Revenue grew +93% Y/Y and +19% Q/Q to $1.94 billion",
+          "numbers": [
+            "93%",
+            "19%",
+            "$1.94 billion"
+          ],
+          "corroborated_by": [
+            5
+          ],
+          "id": "S2.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Palantir reported its highest-ever quarter of US commercial total contract value at $2.13 billion, up 153% year over year.",
+          "quote": "Highest ever quarter of US commercial total contract value (“TCV”) of $2.13 billion; +153% Y/Y",
+          "numbers": [
+            "$2.13 billion",
+            "153%"
+          ],
+          "corroborated_by": [
+            20
+          ],
+          "id": "S2.2"
+        },
+        {
+          "question": "q1",
+          "claim": "US commercial revenue grew 149% year over year and 28% quarter over quarter to $764 million.",
+          "quote": "US commercial revenue grew +149% Y/Y  and +28% Q/Q to $764 million",
+          "numbers": [
+            "149%",
+            "28%",
+            "$764 million"
+          ],
+          "corroborated_by": [],
+          "id": "S2.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Palantir reported adjusted free cash flow of $1.22 billion at a 63% margin.",
+          "quote": "Adjusted free cash ﬂow of $1.22 billion; 63% margin",
+          "numbers": [
+            "$1.22 billion",
+            "63%"
+          ],
+          "corroborated_by": [
+            5
+          ],
+          "id": "S2.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Palantir reported adjusted operating income of $1.19 billion at a 62% margin.",
+          "quote": "Adjusted opera/t_ing income of $1.19 billion; 62% margin",
+          "numbers": [
+            "$1.19 billion",
+            "62%"
+          ],
+          "corroborated_by": [
+            20
+          ],
+          "id": "S2.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Palantir reported net dollar retention of 157% in Q2 2026.",
+          "quote": "Net dollar retention was 157% in Q2 2026.",
+          "numbers": [
+            "157%"
+          ],
+          "corroborated_by": [
+            40
+          ],
+          "id": "S2.6"
+        },
+        {
+          "question": "q4",
+          "claim": "Palantir cites USDA as using AIP to turn hundreds of fragmented legacy systems into a single governed Ontology.",
+          "quote": "USDA used AIP to turn hundreds of fragmented legacy systems into a single, governed Ontology.",
+          "numbers": [
+            "hundreds"
+          ],
+          "corroborated_by": [],
+          "id": "S2.7"
+        },
+        {
+          "question": "q1",
+          "claim": "Palantir closed 220 deals of at least $1 million in Q2 2026, including 98 at least $5 million and 73 at least $10 million.",
+          "quote": "Closed 220 deals of at least $1 million, 98 deals of at least $5 million, and 73 deals of at least $10 million",
+          "numbers": [
+            "220",
+            "$1 million",
+            "98",
+            "$5 million",
+            "73",
+            "$10 million"
+          ],
+          "corroborated_by": [],
+          "id": "S2.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 2
+    },
+    {
       "id": "22bf03950a",
       "url": "https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf",
       "title": "The GenAI Divide: State of AI in Business 2025 — MIT NANDA",
@@ -192,7 +312,7 @@
             "95%"
           ],
           "corroborated_by": [],
-          "id": "S2.1"
+          "id": "S3.1"
         },
         {
           "question": "q5",
@@ -202,7 +322,7 @@
             "5%"
           ],
           "corroborated_by": [],
-          "id": "S2.2"
+          "id": "S3.2"
         },
         {
           "question": "q5",
@@ -214,7 +334,7 @@
             "5 percent"
           ],
           "corroborated_by": [],
-          "id": "S2.3"
+          "id": "S3.3"
         },
         {
           "question": "q5",
@@ -222,7 +342,7 @@
           "quote": "The core barrier to scaling is not infrastructure, regulation, or talent. It is learning. Most GenAI systems do not retain feedback, adapt to context, or improve over time.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S2.4"
+          "id": "S3.4"
         },
         {
           "question": "q5",
@@ -232,7 +352,7 @@
             "twice"
           ],
           "corroborated_by": [],
-          "id": "S2.5"
+          "id": "S3.5"
         },
         {
           "question": "q5",
@@ -240,7 +360,7 @@
           "quote": "Buyers who succeed demand process-specific customization and evaluate tools based on business outcomes rather than software benchmarks.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S2.6"
+          "id": "S3.6"
         },
         {
           "question": "q5",
@@ -248,11 +368,11 @@
           "quote": "Yet the same users were overwhelmingly skeptical of custom or vendor-pitched AI tools, describing them as brittle, overengineered, or misaligned with actual workflows.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S2.7"
+          "id": "S3.7"
         }
       ],
       "dropped": 0,
-      "n": 2
+      "n": 3
     },
     {
       "id": "e7c57216a7",
@@ -271,7 +391,7 @@
           "quote": "While traditional CTI platforms reduce this intelligence to isolated indicators through fixed schemas such as STIX, ontology-based representations preserve the semantic relationships needed for structured threat analysis.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S3.1"
+          "id": "S4.1"
         },
         {
           "question": "q5",
@@ -281,7 +401,7 @@
             "three"
           ],
           "corroborated_by": [],
-          "id": "S3.2"
+          "id": "S4.2"
         },
         {
           "question": "q4",
@@ -289,7 +409,7 @@
           "quote": "In this paper, we present ANCHOR, a schema-agnostic CTI knowledge graph construction system that bridges LLMs and formal ontology schemas.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S3.3"
+          "id": "S4.3"
         },
         {
           "question": "q4",
@@ -297,7 +417,7 @@
           "quote": "At the core of ANCHOR is hybrid ontology discovery, a search-and-navigate mechanism that dynamically explores large-scale ontology schemas, combined with SHACL-based validation to enforce schema-compliant type assignments.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S3.4"
+          "id": "S4.4"
         },
         {
           "question": "q4",
@@ -305,7 +425,7 @@
           "quote": "Experimental results on the UCO, STIX, and MALOnt schemas show that ANCHOR outperforms existing baselines in ontology typing and schema compliance.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S3.5"
+          "id": "S4.5"
         },
         {
           "question": "q5",
@@ -313,11 +433,11 @@
           "quote": "In addition, ANCHOR with a local LLM closely matches enterprise LLM typing performance, enabling privacy-preserving CTI analysis with high fidelity.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S3.6"
+          "id": "S4.6"
         }
       ],
       "dropped": 0,
-      "n": 3
+      "n": 4
     },
     {
       "id": "f93927574d",
@@ -332,18 +452,6 @@
       "claims": [
         {
           "question": "q1",
-          "claim": "Palantir reported Q3 2026 revenue of $2.313 billion, up 96% year-over-year and 20% quarter-over-quarter.",
-          "quote": "Revenue grew 96% year-over-year and 20% quarter-over-quarter to $2.313 billion",
-          "numbers": [
-            "96%",
-            "20%",
-            "$2.313 billion"
-          ],
-          "corroborated_by": [],
-          "id": "S4.1"
-        },
-        {
-          "question": "q1",
           "claim": "U.S. commercial revenue grew 148% year-over-year and 29% quarter-over-quarter to $984 million in Q3 2026.",
           "quote": "U.S. commercial revenue grew 148% year-over-year and 29% quarter-over-quarter to $984 million",
           "numbers": [
@@ -352,7 +460,7 @@
             "$984 million"
           ],
           "corroborated_by": [],
-          "id": "S4.2"
+          "id": "S5.1"
         },
         {
           "question": "q1",
@@ -360,7 +468,7 @@
           "quote": "Our products—from Foundry and Ontology to AIP with its ontologized, fine-tuned open-weight models—ignite a self-improvement loop that joins and aligns the workflow with its optimal model and us with our partners.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S4.3"
+          "id": "S5.2"
         },
         {
           "question": "q3",
@@ -371,24 +479,13 @@
             "47%"
           ],
           "corroborated_by": [
-            4
+            5
           ],
-          "id": "S4.4"
-        },
-        {
-          "question": "q3",
-          "claim": "Palantir reported Q3 2026 adjusted free cash flow of $1.216 billion, a 53% margin.",
-          "quote": "Adjusted free cash flow of $1.216 billion, representing a 53% margin",
-          "numbers": [
-            "$1.216 billion",
-            "53%"
-          ],
-          "corroborated_by": [],
-          "id": "S4.5"
+          "id": "S5.3"
         }
       ],
       "dropped": 2,
-      "n": 4
+      "n": 5
     },
     {
       "id": "ffca9102cf",
@@ -407,7 +504,7 @@
           "quote": "However, designing the collaboration protocols and evaluating the effectiveness of these systems remains a significant challenge, especially for enterprise applications.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S5.1"
+          "id": "S6.1"
         },
         {
           "question": "q5",
@@ -418,7 +515,7 @@
             "(2)"
           ],
           "corroborated_by": [],
-          "id": "S5.2"
+          "id": "S6.2"
         },
         {
           "question": "q5",
@@ -428,7 +525,7 @@
             "three"
           ],
           "corroborated_by": [],
-          "id": "S5.3"
+          "id": "S6.3"
         },
         {
           "question": "q5",
@@ -438,7 +535,7 @@
             "90%"
           ],
           "corroborated_by": [],
-          "id": "S5.4"
+          "id": "S6.4"
         },
         {
           "question": "q5",
@@ -449,11 +546,11 @@
             "23%"
           ],
           "corroborated_by": [],
-          "id": "S5.5"
+          "id": "S6.5"
         }
       ],
       "dropped": 0,
-      "n": 5
+      "n": 6
     },
     {
       "id": "de23d82ce0",
@@ -472,7 +569,7 @@
           "quote": "Large Language Models demonstrate remarkable capabilities yet remain fundamentally probabilistic, presenting critical reliability challenges for enterprise deployment.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S6.1"
+          "id": "S7.1"
         },
         {
           "question": "q5",
@@ -485,7 +582,7 @@
             "(3)"
           ],
           "corroborated_by": [],
-          "id": "S6.2"
+          "id": "S7.2"
         },
         {
           "question": "q5",
@@ -497,7 +594,7 @@
             "80%"
           ],
           "corroborated_by": [],
-          "id": "S6.3"
+          "id": "S7.3"
         },
         {
           "question": "q5",
@@ -505,11 +602,11 @@
           "quote": "Our work establishes that reliability in AI systems emerges from principled redundancy and consensus rather than model scaling alone.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S6.4"
+          "id": "S7.4"
         }
       ],
       "dropped": 0,
-      "n": 6
+      "n": 7
     },
     {
       "id": "cb82b57a0e",
@@ -528,7 +625,7 @@
           "quote": "However, production deployment remains challenging due to domain-specific customization requirements and high latency and inference costs in agentic workflows.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S7.1"
+          "id": "S8.1"
         },
         {
           "question": "q5",
@@ -538,11 +635,11 @@
             "4.48x"
           ],
           "corroborated_by": [],
-          "id": "S7.2"
+          "id": "S8.2"
         }
       ],
       "dropped": 0,
-      "n": 7
+      "n": 8
     },
     {
       "id": "3ca02d2580",
@@ -561,11 +658,11 @@
           "quote": "Despite rapid progress in AI agents for enterprise automation and decision-making, their real-world deployment and further performance gains remain constrained by limited data quality and quantity, complex real-world reasoning demands, difficulties with self-play, and the lack of reliable feedback signals.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S8.1"
+          "id": "S9.1"
         }
       ],
       "dropped": 0,
-      "n": 8
+      "n": 9
     },
     {
       "id": "6b8e88af7c",
@@ -584,11 +681,11 @@
           "quote": "The deployment of agent systems in an enterprise environment is often hindered by several challenges: common models lack domain-specific process knowledge, leading to disorganized plans, missing key tools, and poor execution stability.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S9.1"
+          "id": "S10.1"
         }
       ],
       "dropped": 0,
-      "n": 9
+      "n": 10
     },
     {
       "id": "29f650d4f3",
@@ -607,7 +704,7 @@
           "quote": "Forward Deployed Engineer\n\nLondon, UK",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S10.1"
+          "id": "S11.1"
         },
         {
           "question": "q2",
@@ -615,7 +712,7 @@
           "quote": "As a member of the Applied AI team at Anthropic, you will be a Forward Deployed Engineer (FDE) who embeds directly with our most strategic customers to drive transformational AI adoption.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S10.2"
+          "id": "S11.2"
         },
         {
           "question": "q2",
@@ -623,7 +720,7 @@
           "quote": "You will sit at the frontier of enterprise AI deployments and serve as one of our founding FDEs who helps to shape our forward-deployed motion.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S10.3"
+          "id": "S11.3"
         },
         {
           "question": "q5",
@@ -631,7 +728,7 @@
           "quote": "Work within customer systems to build production applications with Claude models, ensuring that these products meet customer requirements.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S10.4"
+          "id": "S11.4"
         },
         {
           "question": "q5",
@@ -639,7 +736,7 @@
           "quote": "Deliver technical artifacts for customers like MCP servers, sub-agents, and agent skills that will be used in production workflows.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S10.5"
+          "id": "S11.5"
         },
         {
           "question": "q3",
@@ -647,7 +744,7 @@
           "quote": "Identify and codify repeatable deployment patterns and contribute insights back to our Product and Engineering teams.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S10.6"
+          "id": "S11.6"
         },
         {
           "question": "q5",
@@ -657,7 +754,7 @@
             "25-50%"
           ],
           "corroborated_by": [],
-          "id": "S10.7"
+          "id": "S11.7"
         },
         {
           "question": "q3",
@@ -668,11 +765,262 @@
             "£255,000"
           ],
           "corroborated_by": [],
-          "id": "S10.8"
+          "id": "S11.8"
         }
       ],
       "dropped": 0,
-      "n": 10
+      "n": 11
+    },
+    {
+      "id": "d61fe4e234",
+      "url": "https://news.cognizant.com/2026-04-22-Cognizant-Google-Cloud-Diamond-Partnership-Gemini-Enterprise-Practice",
+      "title": "Cognizant Establishes Dedicated Gemini Enterprise Practice",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "official",
+      "published": "2026-04-22",
+      "org": "Cognizant",
+      "quality": 0.9,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Cognizant established a dedicated Gemini Enterprise practice with Google Cloud to accelerate enterprise adoption of Gemini Enterprise at scale.",
+          "quote": "Cognizant announced the establishment of a dedicated Gemini Enterprise Practice, in collaboration with Google Cloud, to accelerate enterprise adoption of Gemini Enterprise at scale.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Under the program, Cognizant plans to provide forward-deployed engineers who are senior engineering talent embedded directly in client environments and work with Google Cloud teams.",
+          "quote": "Under the program, Cognizant plans to provide forward-deployed engineers, senior engineering talent embedded directly within client environments, working in close collaboration with Google Cloud’s teams to accelerate time to value on Gemini Enterprise deployments.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Google Cloud designated Cognizant as a Diamond partner, the highest tier in its partner program, citing Cognizant’s AI Builder approach and production AI track record.",
+          "quote": "Cognizant has also been designated by Google Cloud as a Diamond partner, the highest tier in the Google Cloud partner program, in recognition of its AI Builder approach, combining engineering depth, industry expertise and a proven track record of operationalizing AI in production environments.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Cognizant is investing directly in Gemini Enterprise certification and skilling across its global delivery teams to build technical depth at scale.",
+          "quote": "Cognizant is investing directly in Gemini Enterprise certification and skilling across its global delivery teams, building the technical depth to deliver at scale.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.4"
+        },
+        {
+          "question": "q2",
+          "claim": "A Cognizant executive said the company has built and proven its forward-deployed engineer capability internally and is accelerating it to joint clients at scale.",
+          "quote": "Forward-deployed engineers working directly alongside Google Cloud’s teams, solving real problems in production, on site. We have built this capability, proven it internally and are now accelerating how we bring it to joint clients at scale.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.5"
+        },
+        {
+          "question": "q5",
+          "claim": "In an initial telecom engagement, Cognizant deployed AI agents targeting billing discrepancies across hundreds of millions in revenue, and the engagement surfaced more than a dozen additional Gemini Enterprise use cases.",
+          "quote": "A leading North American telecommunications provider engaged Cognizant to deploy AI-powered agents targeting billing discrepancies across hundreds of millions in revenue – an initial engagement that has surfaced more than a dozen additional Gemini Enterprise use cases across the client’s operations, spanning revenue recovery, invoice reconciliation and workflow automation.",
+          "numbers": [
+            "hundreds of millions",
+            "more than a dozen"
+          ],
+          "corroborated_by": [],
+          "id": "S12.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The Agentic Employee Platform can automate up to 60-70 percent of manual effort within targeted workflows and compress deployment timelines from quarters to weeks.",
+          "quote": "Operating under a human-led, agent-operated model, the platform can automate up to 60-70 percent of manual effort within targeted workflows, compressing deployment timelines from quarters to weeks.",
+          "numbers": [
+            "60-70 percent",
+            "quarters",
+            "weeks"
+          ],
+          "corroborated_by": [],
+          "id": "S12.7"
+        },
+        {
+          "question": "q5",
+          "claim": "A Google Cloud executive said scaling AI into production requires an enterprise-ready platform plus partners that engineer targeted outcomes directly in the field.",
+          "quote": "Scaling AI into production requires an enterprise-ready platform combined with partners who can engineer targeted outcomes directly in the field,\" said Kevin Ichhpurani, President, Global Partner Ecosystem at Google Cloud.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S12.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 12
+    },
+    {
+      "id": "f8a53f3710",
+      "url": "https://www.blackstone.com/news/press/the-ai-native-enterprise-services-firm-backed-by-anthropic-blackstone-and-hellman-friedman-announces-acquisition-of-fractional-ai/",
+      "title": "The AI-Native Enterprise Services Firm Backed by Anthropic, Blackstone, and Hellman & Friedman Announces Acquisition of Fractional AI",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "official",
+      "published": "2026-05-21",
+      "org": "Blackstone",
+      "quality": 0.9,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "An AI-native enterprise services firm backed by Anthropic, Blackstone, and Hellman & Friedman announced the acquisition of Fractional AI.",
+          "quote": "The AI-Native Enterprise Services Firm Backed by Anthropic, Blackstone, and Hellman & Friedman Announces Acquisition of Fractional AI",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Fractional AI's team and delivery capabilities will become the founding operational centerpiece of the new firm.",
+          "quote": "Fractional AI’s team and delivery capabilities will serve as the founding operational centerpiece of the new company.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Fractional AI's engineering team will work with Anthropic's Applied AI organization from day one to guide clients' AI transformation.",
+          "quote": "Fractional AI's engineering team will work with Anthropic's Applied AI organization from day one, enabling collaboration and close technical alignment to guide clients’ AI transformation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The new AI-native enterprise services company is backed by a consortium including Goldman Sachs, General Atlantic, Leonard Green & Partners, Apollo Global Management, GIC, and Sequoia Capital.",
+          "quote": "The new AI-native enterprise services company is backed by a consortium of leading alternative asset managers including Goldman Sachs, General Atlantic, Leonard Green & Partners, Apollo Global Management, GIC, and Sequoia Capital.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.4"
+        },
+        {
+          "question": "q5",
+          "claim": "An Anthropic Applied AI leader says bringing frontier AI into a business requires more than a great model; it requires engineering judgment to rebuild real systems around what is now possible.",
+          "quote": "“Bringing frontier AI into a business takes more than a great model,” said Garvan Doyle, a leader in Anthropic’s Applied AI organization. “It takes the engineering judgment to rebuild real systems around what's now possible, and Fractional has assembled a team with exactly that capability.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Blackstone's operating head says durable AI value hinges on execution capability: team caliber, technical judgment, and ability to change how a business operates.",
+          "quote": "Blackstone has spent years studying where AI creates durable value, and we believe the answer hinges on execution capability – the caliber of the team, the depth of their technical judgment, and their ability to change how a business operates.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.6"
+        },
+        {
+          "question": "q2",
+          "claim": "Fractional AI was founded in 2024 by Chris Taylor, Eddie Siegel, and Travis May.",
+          "quote": "Fractional AI was founded in 2024 by Chris Taylor, Eddie Siegel, and Travis May, and has quickly become a top destination for the industry’s best applied AI engineers.",
+          "numbers": [
+            "2024"
+          ],
+          "corroborated_by": [],
+          "id": "S13.7"
+        },
+        {
+          "question": "q3",
+          "claim": "The financial terms of the Fractional AI acquisition were not disclosed.",
+          "quote": "Terms of the Fractional AI acquisition were not disclosed.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S13.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 13
+    },
+    {
+      "id": "4a4cbb3f8b",
+      "url": "https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers",
+      "title": "AWS invests $1 billion in forward deployed AI engineers — Amazon",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "official",
+      "published": "2026-06-30",
+      "org": "Francessca Vasquez, Vice President of Frontier AI Engineering and Services, AWS",
+      "quality": 0.9,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "AWS announced a dedicated Forward Deployed Engineering organization to embed thousands of experts with customers to co-develop and deploy agentic AI solutions in days.",
+          "quote": "A new AWS Forward Deployed Engineering organization will embed thousands of experts with customers to co-develop and deploy agentic AI solutions in days.",
+          "numbers": [
+            "thousands",
+            "days"
+          ],
+          "corroborated_by": [],
+          "id": "S14.1"
+        },
+        {
+          "question": "q3",
+          "claim": "AWS backs its FDE model with a $1 billion investment and says it differs in three key ways: agentic-first, compressing timelines from months to days, and customer self-sufficiency after deployment.",
+          "quote": "Backed by a $1 billion investment, the AWS FDE model is different in three key ways: it is agentic-first, it compresses timelines from months to days, and it is designed so customers are self-sufficient when a deployment ends.",
+          "numbers": [
+            "1 billion",
+            "three",
+            "months",
+            "days"
+          ],
+          "corroborated_by": [],
+          "id": "S14.2"
+        },
+        {
+          "question": "q3",
+          "claim": "AWS says FDE deployments are structured around shared goals and business results, not billable hours.",
+          "quote": "Deployments are structured around shared goals and business results, not billable hours.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.3"
+        },
+        {
+          "question": "q4",
+          "claim": "AWS FDE deploys a semantic layer into the customer's AWS account that connects enterprise data sources, enriches metadata, and publishes a governed, versioned knowledge graph over which agents reason.",
+          "quote": "At the heart of this is a semantic layer that FDE teams deploy into the customer's own AWS account. It connects to enterprise data sources, enriches metadata, and uses AI to publish a governed, versioned knowledge graph. Agents reason over that knowledge graph, so domain expertise lives in the customer’s code, not in institutional knowledge that could rotate off.",
+          "numbers": [],
+          "corroborated_by": [
+            23
+          ],
+          "id": "S14.4"
+        },
+        {
+          "question": "q5",
+          "claim": "AWS says many customers need expert AI engineers working directly with their teams to build and become AI-native organizations.",
+          "quote": "I have also heard loud and clear that many customers need expert AI engineers working directly with their teams to help them build and become AI-native organizations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.5"
+        },
+        {
+          "question": "q2",
+          "claim": "AWS FDEs are already embedded with customers including the Allen Institute, Cox Automotive, the NBA, Ricoh, Southwest Airlines, and the NFL.",
+          "quote": "AWS FDEs are already embedded and working with customers such as the Allen Institute, Cox Automotive, the NBA, Ricoh, Southwest Airlines, and the NFL.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S14.6"
+        },
+        {
+          "question": "q5",
+          "claim": "The NFL partnered with AWS FDE and got engineers building alongside its team to launch into production in just weeks; it created NFL Fantasy AI and NFL IQ, with fan and broadcaster engagement measurable from day one.",
+          "quote": "To create new digital experiences for our fans, the NFL partnered with AWS FDE and got engineers building alongside our team to launch into production in just weeks. Together, we created new fan-facing products like NFL Fantasy AI and NFL IQ that allow fans to interact with NFL data like never before. The engagement from fans and broadcasters was measurable from day one and was made possible by AWS’s delivery model.",
+          "numbers": [
+            "weeks",
+            "day one"
+          ],
+          "corroborated_by": [],
+          "id": "S14.7"
+        }
+      ],
+      "dropped": 1,
+      "n": 14
     },
     {
       "id": "9839be0ed7",
@@ -691,7 +1039,7 @@
           "quote": "The **ontology (preview)** item in Microsoft Fabric IQ provides a shared, machine-understandable representation of your business. It defines the concepts that matter to your organization, such as customers, products, assets, orders, and locations, along with their properties, how they relate, and the rules and metrics that give them business meaning. You then bind these definitions to enterprise data so people, applications, and AI agents can use the same vocabulary and context.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S11.1"
+          "id": "S15.1"
         },
         {
           "question": "q4",
@@ -699,7 +1047,7 @@
           "quote": "Ontology is the **business context and semantic modeling layer** between enterprise data and the experiences that consume it. It stores and serves ontology definitions and bindings (it isn't itself a general-purpose data-query engine). Agent and visualization experiences use the ontology as context and execute against the appropriate bound data sources.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S11.2"
+          "id": "S15.2"
         },
         {
           "question": "q4",
@@ -707,7 +1055,7 @@
           "quote": "One way to create an ontology is to generate it from a Power BI semantic model to reuse existing business definitions. Semantic-model tables and relationships provide the starting structure, while ontology adds business context and capabilities for operational and agent-based consumption. The updated experience expands semantic-model alignment to include calculated columns and DAX measures.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S11.3"
+          "id": "S15.3"
         },
         {
           "question": "q4",
@@ -715,7 +1063,7 @@
           "quote": "Ontology acts as a virtual semantic and context layer over these sources. Source data remains in the system that owns it, and consuming experiences can query the live bound source rather than copying all data into the ontology.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S11.4"
+          "id": "S15.4"
         },
         {
           "question": "q4",
@@ -723,7 +1071,7 @@
           "quote": "**Metrics** give people and agents access to trusted calculations from Power BI semantic models. By carrying source-owned measures into the ontology context, business questions can use established calculations such as revenue, inventory value, or active-customer measures instead of generating new formulas for each consumer.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S11.5"
+          "id": "S15.5"
         },
         {
           "question": "q5",
@@ -731,7 +1079,7 @@
           "quote": "**Rules** capture business logic in natural language and link it to entities, properties, and relationships. Representing a rule in the ontology makes the same rule context available to multiple consumers, which reduces the need to duplicate business instructions across individual prompts, agents, and applications.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S11.6"
+          "id": "S15.6"
         },
         {
           "question": "q4",
@@ -741,11 +1089,69 @@
             "Jan 31, 2027"
           ],
           "corroborated_by": [],
-          "id": "S11.7"
+          "id": "S15.7"
         }
       ],
       "dropped": 0,
-      "n": 11
+      "n": 15
+    },
+    {
+      "id": "1fa1df4ceb",
+      "url": "https://newsroom.accenture.com/news/2026/accenture-and-google-cloud-deepen-partnership-with-formation-of-new-accenture-gemini-enterprise-business-group",
+      "title": "Accenture and Google Cloud Deepen Partnership — Accenture",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "official",
+      "published": "2026-09-08",
+      "org": "Accenture and Google Cloud",
+      "quality": 0.9,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Accenture and Google Cloud launched a global business group intended to help clients scale Gemini Enterprise outcomes in the agentic AI era.",
+          "quote": "Accenture (NYSE: ACN) and Google Cloud today launched the Accenture Gemini Enterprise Business Group, a global group designed to help clients scale Gemini Enterprise outcomes in the agentic AI era.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The new group brings together Gemini Enterprise-certified professionals, FDEs, specialized Google Cloud engineering talent, and Accenture industry and functional experience.",
+          "quote": "Part of the Accenture Google Business Group, the new group represents a significant joint investment and brings together Accenture’s Gemini Enterprise-certified professionals, FDEs, specialized Google Cloud engineering talent and Accenture's industry and functional experience to help clients realize measurable business value from their agentic AI and data investments.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.2"
+        },
+        {
+          "question": "q2",
+          "claim": "The group will establish a 1,000-person FDE workforce, building on nearly 50,000 Google Cloud-skilled Accenture professionals.",
+          "quote": "Building on Accenture’s nearly 50,000 Google Cloud-skilled professionals, the group will further expand Gemini Enterprise training and certification and establish a 1,000-person FDE workforce.",
+          "numbers": [
+            "50,000",
+            "1,000"
+          ],
+          "corroborated_by": [],
+          "id": "S16.3"
+        },
+        {
+          "question": "q5",
+          "claim": "One stated priority is bridging the gap between AI experimentation and enterprise-scale transformation with dedicated capability centers.",
+          "quote": "Bridging the gap between AI experimentation and enterprise-scale transformation with dedicated capability centers; and",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.4"
+        },
+        {
+          "question": "q5",
+          "claim": "Another stated priority is building repeatable, industry-specific solutions that reduce time-to-value.",
+          "quote": "Building repeatable, industry-specific solutions that reduce time-to-value;",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S16.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 16
     },
     {
       "id": "e400d5f418",
@@ -764,7 +1170,7 @@
           "quote": "LONDON; Jan. 6, 2026 – Accenture (NYSE: ACN) has agreed to acquire Faculty, a leading UK-based AI native services and products business built on highly technical applied AI skills and a unique decision intelligence product that features advanced simulation and optimization capabilities.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S12.1"
+          "id": "S17.1"
         },
         {
           "question": "q2",
@@ -774,7 +1180,7 @@
             "400"
           ],
           "corroborated_by": [],
-          "id": "S12.2"
+          "id": "S17.2"
         },
         {
           "question": "q2",
@@ -782,7 +1188,7 @@
           "quote": "Accenture will leverage Faculty’s Fellowship Program, a highly structured early career training and placement program that helps promising STEM PhD and master’s graduates as well as post-doctoral researchers transition from academia to industry.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S12.3"
+          "id": "S17.3"
         },
         {
           "question": "q3",
@@ -792,11 +1198,11 @@
             "December 2023"
           ],
           "corroborated_by": [],
-          "id": "S12.4"
+          "id": "S17.4"
         }
       ],
       "dropped": 0,
-      "n": 12
+      "n": 17
     },
     {
       "id": "4c2427514a",
@@ -817,7 +1223,7 @@
             "2014"
           ],
           "corroborated_by": [],
-          "id": "S13.1"
+          "id": "S18.1"
         },
         {
           "question": "q4",
@@ -825,13 +1231,13 @@
           "quote": "Faculty’s enterprise decision intelligence product, Frontier TM, joins Accenture’s suite of products that help organizations make better, faster decisions by connecting data, AI models and business processes into a unified system.",
           "numbers": [],
           "corroborated_by": [
-            12
+            17
           ],
-          "id": "S13.2"
+          "id": "S18.2"
         }
       ],
       "dropped": 2,
-      "n": 13
+      "n": 18
     },
     {
       "id": "d8de21b8f0",
@@ -853,7 +1259,7 @@
             "2027"
           ],
           "corroborated_by": [],
-          "id": "S14.1"
+          "id": "S19.1"
         },
         {
           "question": "q5",
@@ -861,11 +1267,102 @@
           "quote": "Most agentic AI projects right now are early stage experiments or proof of concepts that are mostly driven by hype and are often misapplied",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S14.2"
+          "id": "S19.2"
         }
       ],
       "dropped": 0,
-      "n": 14
+      "n": 19
+    },
+    {
+      "id": "5e107168f7",
+      "url": "https://pulse2.com/palantir-closes-220-deals-worth-at-least-1-million-as-revenue-jumps-93-for-q2-2026/",
+      "title": "Palantir Closes 220 Deals Worth At Least $1 Million — Pulse 2.0",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "news",
+      "published": "2026-08-03",
+      "org": "Amit Chowdhry / Pulse 2.0",
+      "quality": 0.7,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "In Q2 2026, Palantir closed 220 transactions worth at least $1 million, including 98 worth at least $5 million and 73 worth at least $10 million, as demand for its Artificial Intelligence Platform accelerated.",
+          "quote": "Palantir Technologies closed 220 transactions worth at least $1 million during the second quarter of 2026 as demand for its Artificial Intelligence Platform accelerated across commercial and government customers. Of those transactions, 98 were worth at least $5 million and 73 were worth at least $10 million.",
+          "numbers": [
+            "220",
+            "$1 million",
+            "2026",
+            "98",
+            "$5 million",
+            "73",
+            "$10 million"
+          ],
+          "corroborated_by": [],
+          "id": "S20.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Palantir total revenue increased 93% year over year and 19% sequentially to $1.94 billion.",
+          "quote": "Total revenue increased 93% year over year and 19% sequentially to $1.94 billion.",
+          "numbers": [
+            "93%",
+            "19%",
+            "$1.94 billion"
+          ],
+          "corroborated_by": [],
+          "id": "S20.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Palantir U.S. commercial revenue surged 149% to $764 million from $306 million.",
+          "quote": "U.S. commercial revenue surged 149% to $764 million from $306 million.",
+          "numbers": [
+            "149%",
+            "$764 million",
+            "$306 million"
+          ],
+          "corroborated_by": [
+            27
+          ],
+          "id": "S20.3"
+        },
+        {
+          "question": "q1",
+          "claim": "Palantir net dollar retention reached 157%, meaning existing-customer revenue increased about 57% before new customers are counted.",
+          "quote": "Palantir’s net dollar retention rate reached 157%. This means revenue from the existing customer group increased approximately 57% before accounting for revenue generated by newly added customers.",
+          "numbers": [
+            "157%",
+            "57%"
+          ],
+          "corroborated_by": [],
+          "id": "S20.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Palantir reported GAAP operating income of $912 million and a GAAP operating margin of 47%.",
+          "quote": "GAAP operating income reached $912 million, producing a GAAP operating margin of 47%.",
+          "numbers": [
+            "$912 million",
+            "47%"
+          ],
+          "corroborated_by": [],
+          "id": "S20.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Palantir achieved a Rule of 40 score of 155%, combining 93% revenue growth with a 62% adjusted operating margin.",
+          "quote": "Palantir achieved a Rule of 40 score of 155%, combining 93% revenue growth with its 62% adjusted operating margin.",
+          "numbers": [
+            "155%",
+            "93%",
+            "62%"
+          ],
+          "corroborated_by": [],
+          "id": "S20.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 20
     },
     {
       "id": "87a0504b04",
@@ -886,7 +1383,7 @@
             "5%"
           ],
           "corroborated_by": [],
-          "id": "S15.1"
+          "id": "S21.1"
         },
         {
           "question": "q5",
@@ -894,7 +1391,7 @@
           "quote": "The core issue? Not the quality of the AI models, but the “learning gap” for both tools and organizations. While executives often blame regulation or model performance, MIT’s research points to flawed enterprise integration.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S15.2"
+          "id": "S21.2"
         },
         {
           "question": "q5",
@@ -902,7 +1399,7 @@
           "quote": "Generic tools like ChatGPT excel for individuals because of their flexibility, but they stall in enterprise use since they don’t learn from or adapt to workflows, Challapally explained.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S15.3"
+          "id": "S21.3"
         },
         {
           "question": "q5",
@@ -913,7 +1410,7 @@
             "one-third"
           ],
           "corroborated_by": [],
-          "id": "S15.4"
+          "id": "S21.4"
         },
         {
           "question": "q5",
@@ -923,7 +1420,7 @@
             "2025"
           ],
           "corroborated_by": [],
-          "id": "S15.5"
+          "id": "S21.5"
         },
         {
           "question": "q5",
@@ -931,7 +1428,7 @@
           "quote": "Other key factors for success include empowering line managers—not just central AI labs—to drive adoption, and selecting tools that can integrate deeply and adapt over time.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S15.6"
+          "id": "S21.6"
         },
         {
           "question": "q5",
@@ -941,7 +1438,7 @@
             "More than half"
           ],
           "corroborated_by": [],
-          "id": "S15.7"
+          "id": "S21.7"
         },
         {
           "question": "q5",
@@ -953,11 +1450,376 @@
             "300"
           ],
           "corroborated_by": [],
-          "id": "S15.8"
+          "id": "S21.8"
         }
       ],
       "dropped": 0,
-      "n": 15
+      "n": 21
+    },
+    {
+      "id": "d731db7c9e",
+      "url": "https://pulse2.com/northslope-22-million-series-a-raised-to-scale-palantir-native-and-mission-specific-ai-applications/",
+      "title": "Northslope: $22 Million Series A — Pulse 2.0",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "news",
+      "published": "2026-01-30",
+      "org": "Amit Chowdhry, Pulse 2.0",
+      "quality": 0.7,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Northslope, an applied AI company built specifically on Palantir's operating system, raised a $22 million Series A to scale its forward-deployed engineering model and expand a Palantir-native AI application platform.",
+          "quote": "Northslope, an applied AI company built specifically for the Palantir operating system, has raised $22 million in a Series A financing to scale its forward-deployed engineering model and expand its Palantir-native AI application platform.",
+          "numbers": [
+            "$22 million"
+          ],
+          "corroborated_by": [],
+          "id": "S22.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Northslope was founded by former Palantir Forward-Deployed Engineers and builds connected AI application suites that aim to combine custom-software precision with SaaS-like speed, cost structure and maintainability.",
+          "quote": "Founded by former Palantir Forward-Deployed Engineers, Northslope develops connected AI application suites that deliver the precision and control of custom software while maintaining the speed, cost structure, and maintainability typically associated with enterprise SaaS.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Northslope said it delivered production customer outcomes across multiple industries and grew revenue nearly 7x in its most recent year.",
+          "quote": "The Denver-based company said the round follows a “breakout year,” during which it delivered production customer outcomes across multiple industries and grew revenue nearly 7x.",
+          "numbers": [
+            "7x"
+          ],
+          "corroborated_by": [],
+          "id": "S22.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The round was co-led by Friends & Family Capital, founded by former Palantir CFO Colin Anderson, and Goldcrest Capital, founded by Adam Ross, Palantir's first independent board member.",
+          "quote": "The Series A was co-led by Friends & Family Capital, founded by former Palantir CFO Colin Anderson, and Goldcrest Capital, founded by Adam Ross, Palantir’s first independent board member.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Northslope was named Palantir's first and only 'Vanguard: Elite' partner, a designation tied to delivering customer outcomes on Palantir's platform.",
+          "quote": "The financing also comes after Northslope was named Palantir’s first and only Vanguard: Elite partner, a designation the company said reflects its effectiveness in delivering customer outcomes on Palantir’s platform.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.5"
+        },
+        {
+          "question": "q1",
+          "claim": "Northslope's software runs on Palantir AIP, Foundry and Gotham, and the company operates hub offices in New York, London and Denver.",
+          "quote": "Northslope stated its software runs on Palantir AIP, Foundry, and Gotham, and that it operates hub offices in New York, London, and Denver.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.6"
+        },
+        {
+          "question": "q5",
+          "claim": "Investor Adam Ross argues that the winners in enterprise AI will be those able to deploy deep inside the most important institutions.",
+          "quote": "The winners of Enterprise AI will be the ones who know how to deploy deep inside the most important institutions in the world.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.7"
+        },
+        {
+          "question": "q3",
+          "claim": "Northslope positions itself as an alternative to generic enterprise SaaS, arguing organizations need mission-specific software rather than standardized tools that push companies toward the same operating model.",
+          "quote": "Northslope positions its platform as an alternative to generic enterprise SaaS, arguing that leading organizations increasingly need software tailored to their missions rather than standardized tools that push companies toward the same operating model.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S22.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 22
+    },
+    {
+      "id": "9df2d95b8f",
+      "url": "https://www.ciodive.com/news/aws-creates-forward-deployed-engineering-hub/824109/",
+      "title": "AWS funnels $1B into forward deployed engineering hub — CIO Dive",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "news",
+      "published": "2026-06-30",
+      "org": "Makenzie Holland / CIO Dive",
+      "quality": 0.7,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "AWS is investing $1 billion in a dedicated forward deployed engineering organization that combines software engineers with AI agents to build and deploy AI systems inside customer environments.",
+          "quote": "AWS i s investing $1 billion into a dedicated [forward deployed engineering organization](https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers) that combines its frontier teams, composed of software engineers, with AI agents to build and deploy AI systems within a customer’s environment, the cloud giant shared in a Tuesday announcement.",
+          "numbers": [
+            "$1 billion"
+          ],
+          "corroborated_by": [],
+          "id": "S23.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The AWS FDE model is agentic-first: pods of five to six human engineers initially work inside the customer organization to compress deployment timelines, while AI agents are meant to keep running long-term.",
+          "quote": "The AWS FDE model is designed to be agentic-first, meaning that while pods of five to six human engineers will work within a customer’s organization initially to compress deployment timelines, the goal is for AI agents to continue running in a business environment long-term to support continued innovation, said Francessca Vasquez, VP of frontier AI engineering and services, at AWS.",
+          "numbers": [
+            "five to six"
+          ],
+          "corroborated_by": [],
+          "id": "S23.2"
+        },
+        {
+          "question": "q3",
+          "claim": "AWS positions its FDE execution around compressed timelines and 45-day sprints with human experts plus agents to accelerate customer value.",
+          "quote": "“We definitely see a differentiator in our execution of FDE in being able to bring the power of both human expertise alongside agents in very short, compressed timelines, 45-day sprints, as a way to help our customers accelerate value,” Vasquez told CIO Dive.",
+          "numbers": [
+            "45-day"
+          ],
+          "corroborated_by": [],
+          "id": "S23.3"
+        },
+        {
+          "question": "q5",
+          "claim": "AWS, Google and Microsoft are heavily investing in FDE programs to help customers address enterprise AI adoption pain points.",
+          "quote": "As enterprises scale AI across their environments, companies such as AWS, Google and Microsoft are heavily investing in FDE programs to help customers address adoption pain points.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Accenture announced plans with Microsoft in March to launch a forward deployed engineering practice.",
+          "quote": "Meanwhile, Accenture in March shared plans with Microsoft to launch a forward deployed engineering practice.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.5"
+        },
+        {
+          "question": "q1",
+          "claim": "AWS FDE is already being used by Cox Automotive, the NBA and the NFL, and the NFL built NFL Fantasy AI and NFL IQ with AWS FDE in weeks.",
+          "quote": "AWS customers including Cox Automotive, the NBA and the NFL a re already tapping into the AWS FDE organization resource. The NFL partnered with AWS FDE to build new customer-facing features including NFL Fantasy AI and NFL IQ alongside their tech teams in weeks, Gary Brantley, CIO of the NFL, said in the announcement.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S23.6"
+        }
+      ],
+      "dropped": 1,
+      "n": 23
+    },
+    {
+      "id": "f087ad7247",
+      "url": "https://aiweekly.co/alerts/anthropic-blackstone-launch-15b-ode-enterprise-services-firm",
+      "title": "Anthropic, Blackstone launch $1.5B Ode enterprise services firm — AI Weekly",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "news",
+      "published": "2026-07-15",
+      "org": "Alexis Dufresne / AI News Weekly",
+      "quality": 0.7,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Anthropic acquired Fractional AI in May 2026 and built Ode on it, launching with about 100 engineers and an existing client base.",
+          "quote": "Ode built on Fractional AI's May 2026 acquisition, launching with an existing client base and 100 engineers already in place.",
+          "numbers": [
+            "May 2026",
+            "100"
+          ],
+          "corroborated_by": [],
+          "id": "S24.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Ode embeds small teams of Applied AI engineers inside customer organizations and operates Claude-first but not Claude-exclusive.",
+          "quote": "Ode operates Claude-first but not Claude-exclusive, allowing it to deploy rival AI models when client requirements demand it.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Ode targets community banks, regional health systems, and mid-sized manufacturers that want AI but do not employ engineers to build it.",
+          "quote": "The pitch is that Ode embeds small teams of Applied AI engineers inside customer organizations, works on a 'Claude-first' basis, and targets a customer segment the big labs have not really served: community banks, regional health systems, and mid-sized manufacturers that want AI but do not employ the engineers to build it.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.3"
+        },
+        {
+          "question": "q5",
+          "claim": "Ode's thesis is that the moat is process rewiring, not tokens; model selection matters but is not where most effort goes.",
+          "quote": "Siegel's framing that 'Model selection matters, but it's not where the majority of calories are spent' is essentially the whole thesis: the moat is process rewiring, not tokens.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.4"
+        },
+        {
+          "question": "q3",
+          "claim": "The TechCrunch account does not cover Ode's pricing structure, unit economics, or whether sponsor-owned portfolio customers get priority access to engineering capacity.",
+          "quote": "TechCrunch's account skips pricing structure, unit economics, and whether sponsor-owned portfolio customers get first pick of engineering capacity.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.5"
+        },
+        {
+          "question": "q2",
+          "claim": "Ode puts Anthropic in direct commercial contact with the Deloitte and Accenture layer of enterprise IT and against OpenAI's own delivery arm.",
+          "quote": "First, it puts Anthropic in direct commercial contact with the Deloitte and Accenture layer of enterprise IT, and against OpenAI's own delivery arm.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.6"
+        },
+        {
+          "question": "q2",
+          "claim": "Anthropic's CFO said enterprise demand for Claude is significantly outpacing any single delivery model.",
+          "quote": "Anthropic CFO Krishna Rao framed the logic bluntly, saying 'Enterprise demand for Claude is significantly outpacing any single delivery model.'",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S24.7"
+        }
+      ],
+      "dropped": 1,
+      "n": 24
+    },
+    {
+      "id": "2d069a9a4c",
+      "url": "https://www.fastcompany.com/91480910/9-startups-from-palantir-alumni-you-need-to-know",
+      "title": "9 startups from Palantir alumni you need to know — Fast Company",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "news",
+      "published": "2026-01-28",
+      "org": "David Lidsky / Fast Company",
+      "quality": 0.7,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Fast Company says Palantir's power and success can be explained by its ability to attract elite talent and empower that talent to develop skills on projects.",
+          "quote": "Last week, I published a deep exploration into [Palantir and its founder factory](https://www.fastcompany.com/91476499/inside-the-founder-factory-known-as-palantir-americas-most-polarizing-company) and how the company’s power and success can be explained by its ability to attract elite talent and how it empowers them to develop their skills and learn new ones in the projects they pursue.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S25.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The author says he found another 21 former Palantir employees turned founders, bringing the public dataset of these people to 335.",
+          "quote": "I’ve found another 21 former Palantir employees turned founders, bringing what was already the largest public dataset of these people to 335.",
+          "numbers": [
+            "21",
+            "335"
+          ],
+          "corroborated_by": [],
+          "id": "S25.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Anduril, a defense contractor valued at $30.5 billion, was cofounded by Palantir alumni Brian Schimpf, Matt Grimm, and Trae Stephens.",
+          "quote": "*   [Anduril](https://www.anduril.com/), the defense contractor ($30.5 billion valuation), cofounded by Brian Schimpf, Matt Grimm, and Trae Stephens;",
+          "numbers": [
+            "30.5 billion"
+          ],
+          "corroborated_by": [],
+          "id": "S25.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Kalshi, a predictions market valued at $11 billion, was cofounded by Palantir alum Tarek Mansour.",
+          "quote": "*   [Kalshi](https://kalshi.com/category/all), the predictions market ($11 billion valuation), cofounded by Tarek Mansour;",
+          "numbers": [
+            "11 billion"
+          ],
+          "corroborated_by": [],
+          "id": "S25.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Eleven Labs, a voice AI platform valued at $6.6 billion, was cofounded by Palantir alum Mati Staniszewski.",
+          "quote": "*   [Eleven Labs](https://elevenlabs.io/), the voice [AI](https://www.fastcompany.com/section/artificial-intelligence \"AI\") platform ($6.6 billion valuation), cofounded by Mati Staniszewski;",
+          "numbers": [
+            "6.6 billion"
+          ],
+          "corroborated_by": [],
+          "id": "S25.5"
+        },
+        {
+          "question": "q2",
+          "claim": "The article says nine Palantir-alumni startups span healthcare, government services, cybersecurity, law, clean energy, hardware development, and not-for-profits, exemplifying acculturation to finding hard problems and having the skills to tackle them.",
+          "quote": "The nine companies showcased below, which span healthcare, government services, cybersecurity, law, clean energy, hardware development, and not-for-profits, exemplify the power of being acculturated to finding a big, hard problem—and having the skills to tackle it.",
+          "numbers": [
+            "nine"
+          ],
+          "corroborated_by": [],
+          "id": "S25.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 25
+    },
+    {
+      "id": "af7ef39351",
+      "url": "https://siliconangle.com/2025/09/22/enterprise-ai-consultancy-distyl-ais-valuation-soars-1-8b-bumper-funding-round/",
+      "title": "Enterprise AI consultancy Distyl AI's valuation soars to $1.8B — SiliconANGLE",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "news",
+      "published": "2025-09-23",
+      "org": "Mike Wheatley, SiliconANGLE",
+      "quality": 0.7,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Distyl AI was founded in 2022 by Arjun Prakash and Derek Ho, who had previously worked at Palantir.",
+          "quote": "The company was founded in 2022 by Arjun Prakash and Derek Ho, who previously made their names at the data mining firm Palantir Technologies Inc.",
+          "numbers": [
+            "2022"
+          ],
+          "corroborated_by": [],
+          "id": "S26.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Distyl’s founders combined Palantir data-platform experience with AI engineers and researchers from OpenAI and Apple.",
+          "quote": "The founders say they’ve combined their years of experience in building complex data platforms at Palantir with a staff of talented AI engineers and researchers who earned their chops at companies like OpenAI and Apple Inc.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Distyl’s stated advantage over traditional consultancies is implementing AI more successfully with smaller teams and lower costs.",
+          "quote": "The startup’s advantage over traditional consultancies is that it helps enterprises implement AI more successfully, with smaller teams, and at lower costs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.3"
+        },
+        {
+          "question": "q5",
+          "claim": "Distyl positions itself as the consultancy enterprises call when they are not getting enough from endless AI pilots and need results.",
+          "quote": "It has forged a growing reputation as the consultancy to call when enterprises realize that they’re not getting enough out of their endless AI pilots, and that it’s time to start showing results.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.4"
+        },
+        {
+          "question": "q5",
+          "claim": "Distyl says it builds outcome-driven partnerships focused on immediately automating workloads rather than having consultants spend months in boardrooms discussing possibilities.",
+          "quote": "Chief Executive Prakash told The Information that the startup builds “outcome-driven partnerships” with its clients. The focus is on integrating AI in such a way that it can immediately begin automating workloads and solving their biggest business challenges, rather than having consultants sit in boardrooms for months on end just talking about how it might be done.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.5"
+        },
+        {
+          "question": "q4",
+          "claim": "The Distillery engine taps customers’ proprietary data so AI agents can possess organizational knowledge needed for work.",
+          "quote": "The engine taps into each customer’s proprietary data to ensure these agents possess the “organizational knowledge” needed to do this work.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.6"
+        }
+      ],
+      "dropped": 2,
+      "n": 26
     },
     {
       "id": "bbbc6afc7f",
@@ -971,20 +1833,6 @@
       "quality": 0.7,
       "claims": [
         {
-          "question": "q1",
-          "claim": "Palantir's US commercial revenue grew 149% year over year to $764 million in Q2, while US government revenue was $809 million, up 90% year over year.",
-          "quote": "The company’s U.S. commercial revenue grew 149% year over year to $764 million in Q2. The U.S. government contributed $809 million to Palantir’s revenue during the same period, marking a 90% year-over-year increase.",
-          "numbers": [
-            "149%",
-            "$764 million",
-            "Q2",
-            "$809 million",
-            "90%"
-          ],
-          "corroborated_by": [],
-          "id": "S16.1"
-        },
-        {
           "question": "q2",
           "claim": "Big tech copied the model: AWS put $1 billion into a dedicated FDE organization in June, Google Cloud made a similar move in May, Microsoft created an AI-deployment organization staffed with thousands, and OpenAI and Anthropic pivoted to FDEs this year.",
           "quote": "Big tech has since embraced the model.\n\nAWS invested $1 billion in a [dedicated FDE organization](https://www.channeldive.com/news/aws-bets-1b-on-forward-deployed-engineers-in-ai-land-grab/824102/)in June. Google Cloud made [a similar move](https://www.channeldive.com/news/google-cloud-forward-deployed-engineering-jobs/820176/)in May and Microsoft created [an AI-deployment organization](https://www.channeldive.com/news/microsoft-hires-ai-engineers-guts-xbox/824512/)staffed with thousands of industry and engineering experts last month. OpenAI and Anthropic have also [pivoted to FDEs](https://www.channeldive.com/news/openai-deployment-company-4-billion-ai-consulting-integration/819888/)this year.",
@@ -995,7 +1843,7 @@
             "thousands"
           ],
           "corroborated_by": [],
-          "id": "S16.2"
+          "id": "S27.1"
         },
         {
           "question": "q2",
@@ -1005,7 +1853,7 @@
             "early 2010s"
           ],
           "corroborated_by": [],
-          "id": "S16.3"
+          "id": "S27.2"
         },
         {
           "question": "q2",
@@ -1013,7 +1861,7 @@
           "quote": "“Even Palantir isn’t able to displace the channel partner,” Dantes said, pointing to the company’s robust partner program. “Ultimately, FDEs are another resource for government and massive enterprise customers to take advantage of in complex use cases. AWS, OpenAI and the rest might be behind Palantir in regard to FDEs, but they have had massive success with government and enterprise AI projects. That’s because of the channel partner.”",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S16.4"
+          "id": "S27.3"
         },
         {
           "question": "q5",
@@ -1021,7 +1869,7 @@
           "quote": "“Enterprises that are not using Palantir are seeing their token meters spinning endlessly just to get slop without any correlation to value,” CRO and Chief Legal Officer Ryan Taylor said during the call. “This token model may be working for the labs, but it is not working for anyone else. It’s breaking corporate budgets without results to justify the expense.”",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S16.5"
+          "id": "S27.4"
         },
         {
           "question": "q3",
@@ -1029,11 +1877,37 @@
           "quote": "“We do not get paid for clicks or tokens or chats,” he said.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S16.6"
+          "id": "S27.5"
         }
       ],
       "dropped": 2,
-      "n": 16
+      "n": 27
+    },
+    {
+      "id": "135aca21c0",
+      "url": "https://www.businessinsider.com/palantir-mafia-former-employees-startups-anduril-2025-3",
+      "title": "The Palantir Mafia — Business Insider",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "news",
+      "published": "2025-05-04",
+      "org": "Business Insider",
+      "quality": 0.7,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "The source reports that 39 alumni startups have raised more than $6 billion.",
+          "quote": "39 alumni startups have raised more than $6 billion.",
+          "numbers": [
+            "39",
+            "$6 billion"
+          ],
+          "corroborated_by": [],
+          "id": "S28.1"
+        }
+      ],
+      "dropped": 0,
+      "n": 28
     },
     {
       "id": "b73a3bbb02",
@@ -1052,11 +1926,187 @@
           "quote": "Why OpenAI and Anthropic are hiring forward deployed engineer teams",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S17.1"
+          "id": "S29.1"
         }
       ],
       "dropped": 0,
-      "n": 17
+      "n": 29
+    },
+    {
+      "id": "1782b6c22b",
+      "url": "https://invisibletech.ai/blog/invisible-technologies-raises-100-million",
+      "title": "$100M Fundraise to Power the Next Gen of AI Infrastructure — Invisible",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2025-09-16",
+      "org": "Invisible Technologies",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Invisible says new hires have joined as Field CTOs to bolster its technical leadership.",
+          "quote": "have all joined as Field CTOs, bolstering the company’s technical leadership.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.1"
+        },
+        {
+          "question": "q3",
+          "claim": "Invisible’s chairman says the company built profitably for years by combining technology and human intelligence.",
+          "quote": "“We built Invisible quietly and profitably for years because we believe deeply in the combined power of technology and human intelligence. Making AI work requires both,” said Francis Pedraza, Co-Founder and Chairman of the Board.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Invisible reached $134M in revenue in 2024 and was named #2 fastest-growing AI company on the Inc. 5000.",
+          "quote": "In 2024, we reached $134M in revenue and were named the #2 fastest growing AI company on the Inc. 5000.",
+          "numbers": [
+            "2024",
+            "$134M",
+            "#2",
+            "5000"
+          ],
+          "corroborated_by": [],
+          "id": "S30.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Invisible’s total capital raised reached $144 million after the investment.",
+          "quote": "This investment brings Invisible’s total capital raised to $144 million, and marks Vanara’s first publicly announced deal.",
+          "numbers": [
+            "$144 million"
+          ],
+          "corroborated_by": [],
+          "id": "S30.4"
+        },
+        {
+          "question": "q5",
+          "claim": "Invisible’s CEO says 70% of the world’s software is over 20 years old, and most enterprises still struggle to get AI models into production and quantify ROI.",
+          "quote": "“I have spent the last decade experiencing both the promises and limitations of enterprise AI, driven by the fact that 70% of the software in the world is over 20 years old,” said Fitzpatrick. “Despite the recent excitement, most enterprises are still struggling to get AI models into production and to quantify ROI.",
+          "numbers": [
+            "70%",
+            "20"
+          ],
+          "corroborated_by": [],
+          "id": "S30.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Invisible says its software platform combined with an expert network helps companies organize, clean, label, and map data, enabling agentic workflows.",
+          "quote": "Our software platform, combined with our expert network, enables companies to organize, clean, label, and map their data. This foundation enables them to build agentic workflows that drive real impact.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S30.6"
+        },
+        {
+          "question": "q4",
+          "claim": "Invisible describes its core AI Software Platform as five modular components covering the AI lifecycle.",
+          "quote": "Invisible will use the funding to invest further in its core AI Software Platform, which consists of five modular components that deliver end-to-end capabilities across the AI lifecycle:",
+          "numbers": [
+            "five"
+          ],
+          "corroborated_by": [],
+          "id": "S30.7"
+        },
+        {
+          "question": "q5",
+          "claim": "Invisible claims it has trained foundation models for more than 80% of the world’s leading AI model providers, including Cohere, Microsoft, and AWS.",
+          "quote": "Invisible has trained foundation models for more than 80% of the world’s leading AI model providers, including Cohere, Microsoft, and AWS, and we have the expertise to customize AI for any industry, function, or use case.",
+          "numbers": [
+            "80%"
+          ],
+          "corroborated_by": [],
+          "id": "S30.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 30
+    },
+    {
+      "id": "194a15b79b",
+      "url": "https://www.northslope.com/",
+      "title": "Northslope | AI Application Layer for Palantir AIP",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": null,
+      "org": "Northslope",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Northslope describes itself as the AI application layer for a customer’s Palantir operating system.",
+          "quote": "The AI Application Layer for your Palantir Operating System",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Northslope states it is Palantir’s first and only Vanguard: Elite partner, citing expanding AI outcomes for customers on Palantir platforms.",
+          "quote": "Northslope is Palantir’s first and only Vanguard: Elite partner, reflecting Northslope’s expanding AI outcomes for customers on Palantir platforms.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Palantir’s global commercial head is quoted saying Northslope enables customers to win with AIP and dominate their industry.",
+          "quote": "Northslope enables customers to win with AIP and dominate their industry.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Northslope says all of its people are forward deployed engineers and that enduring software is built in the field with operators.",
+          "quote": "At Northslope we are all Forward Deployed Engineers. We believe that enduring software is built in the field, with operators, tackling problems that previously seemed impossible.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Northslope says it is backed by former Palantir leadership, including a co-founder, board member, CFO, director, and many FDEs.",
+          "quote": "Proudly backed by former Palantir leadership who know what it takes to build world-changing software; including a co-founder, board member, CFO, director (and many FDEs).",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.5"
+        },
+        {
+          "question": "q1",
+          "claim": "Northslope advertises a healthcare utilization-review application that cuts diligence time by 50–60%.",
+          "quote": "Auto-prioritises cases by denial risk, flags missing docs before deadlines, and cuts diligence time by 50–60%.",
+          "numbers": [
+            "50–60%"
+          ],
+          "corroborated_by": [],
+          "id": "S31.6"
+        },
+        {
+          "question": "q1",
+          "claim": "Northslope advertises 40% fewer denied days without adding headcount for its utilization-review application.",
+          "quote": "40% fewer denied days without adding headcount",
+          "numbers": [
+            "40%"
+          ],
+          "corroborated_by": [],
+          "id": "S31.7"
+        },
+        {
+          "question": "q5",
+          "claim": "Northslope argues that generic tools fail adoption when they skip mapping data and rules to a customer’s specific workflows.",
+          "quote": "Building a working rules engine means mapping all of that to your specific workflows. Generic tools skip this step, which is why adoption fails.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S31.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 31
     },
     {
       "id": "2748c062ce",
@@ -1075,9 +2125,9 @@
           "quote": "The Palantir Ontology is the operational layer of Palantir Foundry. It maps datasets, virtual tables, and models to the things a business runs on, such as plants, customer orders, and transactions, and adds the actions people and AI agents can take on them.",
           "numbers": [],
           "corroborated_by": [
-            35
+            60
           ],
-          "id": "S18.1"
+          "id": "S32.1"
         },
         {
           "question": "q1",
@@ -1085,7 +2135,7 @@
           "quote": "It represents real things like orders and plants as objects with links between them, and defines the actions people and AI agents are allowed to take on them.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S18.2"
+          "id": "S32.2"
         },
         {
           "question": "q1",
@@ -1093,7 +2143,7 @@
           "quote": "**Action types** define the permitted ways to change data, with parameters, rules, and submission criteria. **Functions** hold business logic. **Dynamic security** controls who can see and do what.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S18.3"
+          "id": "S32.3"
         },
         {
           "question": "q1",
@@ -1103,7 +2153,7 @@
             "June 2026"
           ],
           "corroborated_by": [],
-          "id": "S18.4"
+          "id": "S32.4"
         },
         {
           "question": "q4",
@@ -1111,7 +2161,7 @@
           "quote": "OWL, RDF, and SHACL are open W3C standards built for describing meaning and exchanging it across tools.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S18.5"
+          "id": "S32.5"
         },
         {
           "question": "q4",
@@ -1119,7 +2169,7 @@
           "quote": "Neither is a superset of the other. OWL has no concept of a permissioned action, and Foundry is not built around open-world logical inference.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S18.6"
+          "id": "S32.6"
         },
         {
           "question": "q4",
@@ -1130,7 +2180,7 @@
             "22"
           ],
           "corroborated_by": [],
-          "id": "S18.7"
+          "id": "S32.7"
         },
         {
           "question": "q4",
@@ -1138,11 +2188,11 @@
           "quote": "Data platforms such as Databricks and Microsoft Fabric now include semantic or ontology features, while Stardog, Graphwise GraphDB, Neo4j, and Fluree serve the graph layer. None is a one-for-one replacement.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S18.8"
+          "id": "S32.8"
         }
       ],
       "dropped": 0,
-      "n": 18
+      "n": 32
     },
     {
       "id": "2ee7d2fe2b",
@@ -1164,7 +2214,7 @@
             "five"
           ],
           "corroborated_by": [],
-          "id": "S19.1"
+          "id": "S33.1"
         },
         {
           "question": "q1",
@@ -1176,7 +2226,7 @@
             "weeks"
           ],
           "corroborated_by": [],
-          "id": "S19.2"
+          "id": "S33.2"
         },
         {
           "question": "q1",
@@ -1184,7 +2234,7 @@
           "quote": "We have a growing backlog of AIP Bootcamps due to the overwhelming demand.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S19.3"
+          "id": "S33.3"
         },
         {
           "question": "q1",
@@ -1192,7 +2242,7 @@
           "quote": "AIP comes fully integrated and interoperable; it's enterprise-grade software that's equipped to handle your most sensitive data and primed for your fingertips.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S19.4"
+          "id": "S33.4"
         },
         {
           "question": "q1",
@@ -1200,7 +2250,7 @@
           "quote": "AI use cases require a thoughtful blending of stochastic foundation models, calculus-driven enterprise data and tools, and expert feedback loops.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S19.5"
+          "id": "S33.5"
         },
         {
           "question": "q1",
@@ -1210,7 +2260,7 @@
             "100%"
           ],
           "corroborated_by": [],
-          "id": "S19.6"
+          "id": "S33.6"
         },
         {
           "question": "q1",
@@ -1218,7 +2268,7 @@
           "quote": "When participants build with prompts derived from real world events translated through the Ontology — not only user input — they become exceptionally creative and ambitious.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S19.7"
+          "id": "S33.7"
         },
         {
           "question": "q1",
@@ -1230,11 +2280,11 @@
             "a few"
           ],
           "corroborated_by": [],
-          "id": "S19.8"
+          "id": "S33.8"
         }
       ],
       "dropped": 0,
-      "n": 19
+      "n": 33
     },
     {
       "id": "40f86fa2d0",
@@ -1256,7 +2306,7 @@
             "5"
           ],
           "corroborated_by": [],
-          "id": "S20.1"
+          "id": "S34.1"
         },
         {
           "question": "q1",
@@ -1266,7 +2316,7 @@
             "1"
           ],
           "corroborated_by": [],
-          "id": "S20.2"
+          "id": "S34.2"
         },
         {
           "question": "q1",
@@ -1276,7 +2326,7 @@
             "2"
           ],
           "corroborated_by": [],
-          "id": "S20.3"
+          "id": "S34.3"
         },
         {
           "question": "q1",
@@ -1286,7 +2336,7 @@
             "3"
           ],
           "corroborated_by": [],
-          "id": "S20.4"
+          "id": "S34.4"
         },
         {
           "question": "q1",
@@ -1294,7 +2344,7 @@
           "quote": "Defining Your Architecture Empirically",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S20.5"
+          "id": "S34.5"
         },
         {
           "question": "q1",
@@ -1302,27 +2352,31 @@
           "quote": "Activate LLMs and other AI on your private network, safely and securely.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S20.6"
+          "id": "S34.6"
         },
         {
           "question": "q1",
           "claim": "As evidence of results, Palantir cites a news report that its software halved sepsis deaths at a US hospital, with the Sepsis Hub built with Tampa General Hospital in Florida detecting subtle changes in vital signs so antibiotics are given early.",
           "quote": "Palantir software halves sepsis deaths at US hospital The Sepsis Hub, developed with Tampa General Hospital in Florida, detects subtle changes in vital signs so antibiotics are given early",
           "numbers": [],
-          "corroborated_by": [],
-          "id": "S20.7"
+          "corroborated_by": [
+            47
+          ],
+          "id": "S34.7"
         },
         {
           "question": "q5",
           "claim": "Palantir's site highlights a CNBC segment in which CEO Alex Karp says something has gone completely wrong with how AI is sold, implying a critique of enterprise AI sales practice.",
           "quote": "Palantir CEO Alex Karp says 'something has gone completely wrong' with how AI is sold",
           "numbers": [],
-          "corroborated_by": [],
-          "id": "S20.8"
+          "corroborated_by": [
+            47
+          ],
+          "id": "S34.8"
         }
       ],
       "dropped": 0,
-      "n": 20
+      "n": 34
     },
     {
       "id": "68e94ee2f1",
@@ -1341,7 +2395,7 @@
           "quote": "The OpenAI Deployment Company will extend OpenAI’s ability to embed engineers specialized in frontier AI deployment, known as Forward Deployed Engineers, or FDEs, into organizations working on complex problems in demanding environments. These FDEs will work closely with business leaders, operators, and frontline teams to identify where AI can make the biggest impact, redesign organizational infrastructure and critical workflows around it, and turn those gains into durable systems.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S21.1"
+          "id": "S35.1"
         },
         {
           "question": "q2",
@@ -1351,9 +2405,9 @@
             "150"
           ],
           "corroborated_by": [
-            38
+            64
           ],
-          "id": "S21.2"
+          "id": "S35.2"
         },
         {
           "question": "q3",
@@ -1363,7 +2417,7 @@
             "19"
           ],
           "corroborated_by": [],
-          "id": "S21.3"
+          "id": "S35.3"
         },
         {
           "question": "q3",
@@ -1373,7 +2427,7 @@
             "4 billion"
           ],
           "corroborated_by": [],
-          "id": "S21.4"
+          "id": "S35.4"
         },
         {
           "question": "q3",
@@ -1383,7 +2437,7 @@
             "2,000"
           ],
           "corroborated_by": [],
-          "id": "S21.5"
+          "id": "S35.5"
         },
         {
           "question": "q5",
@@ -1393,7 +2447,7 @@
             "one million"
           ],
           "corroborated_by": [],
-          "id": "S21.6"
+          "id": "S35.6"
         },
         {
           "question": "q1",
@@ -1401,7 +2455,7 @@
           "quote": "A typical OpenAI Deployment Company engagement will begin with a focused diagnostic of where AI can create the most value, followed by a small number of priority workflows selected with the customer’s leadership and operating teams. The OpenAI Deployment Company FDEs will then work inside the organization to design, build, test, and deploy production systems, connecting OpenAI models to the customer’s data, tools, controls, and business processes so teams can use them reliably in day-to-day work.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S21.7"
+          "id": "S35.7"
         },
         {
           "question": "q5",
@@ -1409,11 +2463,96 @@
           "quote": "“AI is becoming capable of doing increasingly meaningful work inside organizations. The challenge now is helping companies integrate these systems into the infrastructure and workflows that power their businesses. DeployCo is designed to help organizations bridge that gap and turn AI capability into real operational impact.”",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S21.8"
+          "id": "S35.8"
         }
       ],
       "dropped": 0,
-      "n": 21
+      "n": 35
+    },
+    {
+      "id": "83525a7c67",
+      "url": "https://www.salesforce.com/news/stories/salesforce-launches-forward-deployed-engineer-partner-network-announcement/",
+      "title": "Salesforce Launches the Forward Deployed Engineering Partner Network",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-04-15",
+      "org": "Salesforce",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Salesforce launched a Forward Deployed Engineering Partner Network with launch partners Accenture and Deloitte plus over 30 firms including PwC, Slalom, and IBM Consulting, selected for proven Agentforce success.",
+          "quote": "Launch partners Accenture and Deloitte are joined by over 30 firms, including PwC, Slalom, and IBM Consulting, all selected for their proven success with Agentforce.",
+          "numbers": [
+            "30"
+          ],
+          "corroborated_by": [],
+          "id": "S36.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Firms in Salesforce's FDE Partner Network have driven one-third of all successful Agentforce implementations to date.",
+          "quote": "Every member is a vetted partner with a proven track record of delivering Agentforce; to date, firms in the FDE Partner Network have driven one-third of all successful Agentforce implementations.",
+          "numbers": [
+            "one-third"
+          ],
+          "corroborated_by": [],
+          "id": "S36.2"
+        },
+        {
+          "question": "q2",
+          "claim": "Salesforce's FDE delivery model uses specialized, outcome-based teams that work side by side with customers from a priority use case to a live, compliant agent.",
+          "quote": "Whether through Salesforce Professional Services or the FDE Partner Network, the delivery model relies on specialized, outcome-based teams that work side by side with customers to drive a sprint from priority use case to a live, compliant agent.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.3"
+        },
+        {
+          "question": "q5",
+          "claim": "IDC reports over one-third of organizations will be stuck in the experimental, point-solution phase of AI experimentation, requiring a shift to enterprise use cases to deliver ROI.",
+          "quote": "IDC FutureScape* reports “over one-third of organizations will be stuck in the experimental, point solution phase of AI experimentation, requiring a shift of focus to enterprise use cases to deliver ROI.”",
+          "numbers": [
+            "one-third"
+          ],
+          "corroborated_by": [],
+          "id": "S36.4"
+        },
+        {
+          "question": "q5",
+          "claim": "Salesforce says most businesses can build an initial proof of concept, but few have the technical foundation to scale pilots into systems the business can run on.",
+          "quote": "Most businesses can build an initial proof of concept, but few have the technical foundation required to scale those pilots into systems that the business can actually run on.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Salesforce says FDEs stay engaged after launch to monitor agentic behavior, resolve production-only issues, and tune for sustained performance.",
+          "quote": "FDEs stay engaged after launch to monitor agentic behavior, resolve issues that only surface in production, and fine-tune for sustained performance.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.6"
+        },
+        {
+          "question": "q5",
+          "claim": "Salesforce argues that even a technically perfect agent fails if users do not trust it, so FDEs build adoption plans for readiness, onboarding, and long-term usage.",
+          "quote": "The most technically perfect agent fails if users don’t trust it. FDEs build and execute adoption plans for readiness, onboarding, and long-term usage.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.7"
+        },
+        {
+          "question": "q2",
+          "claim": "Accenture said it embeds Salesforce-trained engineers directly into its delivery teams and moves beyond traditional implementation.",
+          "quote": "By embedding Salesforce-trained engineers directly into our delivery teams, we are moving beyond traditional implementation to true ecosystem orchestration.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S36.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 36
     },
     {
       "id": "b93c791500",
@@ -1434,7 +2573,7 @@
             "2006"
           ],
           "corroborated_by": [],
-          "id": "S22.1"
+          "id": "S37.1"
         },
         {
           "question": "q4",
@@ -1444,7 +2583,7 @@
             "2006"
           ],
           "corroborated_by": [],
-          "id": "S22.2"
+          "id": "S37.2"
         },
         {
           "question": "q4",
@@ -1454,7 +2593,7 @@
             "1-year"
           ],
           "corroborated_by": [],
-          "id": "S22.3"
+          "id": "S37.3"
         },
         {
           "question": "q4",
@@ -1464,7 +2603,7 @@
             "2"
           ],
           "corroborated_by": [],
-          "id": "S22.4"
+          "id": "S37.4"
         },
         {
           "question": "q4",
@@ -1472,7 +2611,7 @@
           "quote": "Stardog suits use cases that need provable logical inference, entailment, and consistency checking, for example classifying a transaction against a regulatory taxonomy and being able to show the proof.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S22.5"
+          "id": "S37.5"
         },
         {
           "question": "q4",
@@ -1480,7 +2619,7 @@
           "quote": "Neo4j suits use cases that need fast graph traversal without a formal semantics layer on top.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S22.6"
+          "id": "S37.6"
         },
         {
           "question": "q4",
@@ -1488,7 +2627,7 @@
           "quote": "Scale model | Single-node-sized datasets; no sharding, per Stardog's own documentation | Horizontally scalable via Aura and Fabric",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S22.7"
+          "id": "S37.7"
         },
         {
           "question": "q5",
@@ -1496,11 +2635,95 @@
           "quote": "Where the marketing gets ahead of the docs: \"hallucination-free\" is a system-property claim, and Stardog's own docs flag the External LLM Agent's output with \"Note: This may contain Hallucinations.\"",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S22.8"
+          "id": "S37.8"
         }
       ],
       "dropped": 0,
-      "n": 22
+      "n": 37
+    },
+    {
+      "id": "be304294d7",
+      "url": "https://flur.ee/blog/enterprise-kg-buyers-guide-2026",
+      "title": "Best Enterprise Knowledge Graph Software in 2026 — Fluree",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-06-10",
+      "org": "Kevin Doubleday (Fluree)",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q4",
+          "claim": "The source defines a graph database as storing nodes and relationships, while a knowledge graph adds shared meaning via an ontology that defines what each thing is and how it relates in a standard format other systems can read.",
+          "quote": "A graph database stores nodes and relationships. A knowledge graph adds shared meaning: an ontology that defines what each thing is and how it relates, in a standard format other systems can read.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.1"
+        },
+        {
+          "question": "q4",
+          "claim": "Stardog's distinguishing capability is a virtual graph engine that federates SPARQL queries across more than 20 relational databases and NoSQL stores without ETL, leaving data in place behind one endpoint.",
+          "quote": "Stardog’s distinguishing capability is its virtual graph engine: it federates SPARQL queries across more than 20 relational databases and NoSQL stores such as MongoDB without ETL, so data stays in place behind a single endpoint.",
+          "numbers": [
+            "20"
+          ],
+          "corroborated_by": [],
+          "id": "S38.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Neo4j is positioned as property-graph-first and lacks native ontology reasoning and as-of queries.",
+          "quote": "Property graph first, with no native ontology reasoning or as-of queries.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.3"
+        },
+        {
+          "question": "q4",
+          "claim": "The guide positions Graphwise for packaged semantic search and GraphRAG, eccenca for ontology-first governance, AWS Neptune for AWS-native teams, and Fluree for governed, auditable data queried by AI agents.",
+          "quote": "Graphwise for packaged semantic search and GraphRAG, eccenca for ontology-first governance, AWS Neptune for AWS-native teams, and Fluree for governed, auditable data that AI agents query.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Fluree is described as a verifiable knowledge graph database with an immutable ledger and triple-level access control.",
+          "quote": "Fluree is a verifiable knowledge graph database with an immutable ledger and triple-level access control.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.5"
+        },
+        {
+          "question": "q4",
+          "claim": "AWS Neptune is described as a managed service supporting three query languages across two graph models.",
+          "quote": "AWS Neptune is a managed service that speaks three query languages across two graph models.",
+          "numbers": [
+            "three",
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S38.6"
+        },
+        {
+          "question": "q5",
+          "claim": "Ontology modeling requires domain expertise and upfront investment, both of which should be factored into build cost.",
+          "quote": "Ontology modeling requires domain expertise and upfront investment. Factor both into the build cost.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.7"
+        },
+        {
+          "question": "q5",
+          "claim": "Stardog's virtual-graph approach can eliminate significant ETL cost but requires a SPARQL-capable team to exploit fully.",
+          "quote": "The virtual-graph approach can eliminate significant ETL cost, but it needs a SPARQL-capable team to exploit fully.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S38.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 38
     },
     {
       "id": "c299f707a3",
@@ -1524,7 +2747,7 @@
             "hundreds"
           ],
           "corroborated_by": [],
-          "id": "S23.1"
+          "id": "S39.1"
         },
         {
           "question": "q2",
@@ -1536,7 +2759,7 @@
             "hundreds"
           ],
           "corroborated_by": [],
-          "id": "S23.2"
+          "id": "S39.2"
         },
         {
           "question": "q2",
@@ -1549,7 +2772,7 @@
             "2020–22"
           ],
           "corroborated_by": [],
-          "id": "S23.3"
+          "id": "S39.3"
         },
         {
           "question": "q3",
@@ -1563,7 +2786,7 @@
             "five"
           ],
           "corroborated_by": [],
-          "id": "S23.4"
+          "id": "S39.4"
         },
         {
           "question": "q3",
@@ -1573,7 +2796,7 @@
             "Oct 2026"
           ],
           "corroborated_by": [],
-          "id": "S23.5"
+          "id": "S39.5"
         },
         {
           "question": "q5",
@@ -1581,7 +2804,7 @@
           "quote": "OpenAI says a typical engagement starts with a focused diagnostic of where AI can create the most value, followed by a small number of priority workflows chosen with the customer's leadership and operating teams. FDEs then work inside the organization to design, build, test and deploy production systems, connecting OpenAI models to the customer's data, tools, controls and business processes.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S23.6"
+          "id": "S39.6"
         },
         {
           "question": "q1",
@@ -1596,7 +2819,7 @@
             "90%"
           ],
           "corroborated_by": [],
-          "id": "S23.7"
+          "id": "S39.7"
         },
         {
           "question": "q2",
@@ -1606,11 +2829,96 @@
             "2,000"
           ],
           "corroborated_by": [],
-          "id": "S23.8"
+          "id": "S39.8"
         }
       ],
       "dropped": 0,
-      "n": 23
+      "n": 39
+    },
+    {
+      "id": "d83b760816",
+      "url": "https://joinplank.com/research/palantir",
+      "title": "Palantir Technologies: FDE Profile — Plank",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-10-31",
+      "org": "JoinPlank",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Palantir originated forward-deployed engineering around 2006; its senior engineers called Deltas embed with customers for 6 to 18 months to put Foundry and AIP into production and feed lessons back into software.",
+          "quote": "Palantir originated forward-deployed engineering around 2006. Its senior engineers (\"Deltas\") embed with government and enterprise customers for 6 to 18 months to put Foundry and AIP into production, and fold what they learn back into the software.",
+          "numbers": [
+            "2006",
+            "6",
+            "18"
+          ],
+          "corroborated_by": [],
+          "id": "S40.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Each Delta is paired with an Echo deployment strategist; engagements run through Acquire, Expand, and Scale phases, with Palantir absorbing pilot costs, developing use cases at a loss, then reaching positive contribution margin.",
+          "quote": "Each Delta works with an Echo, a strategist who maps institutional politics, barriers to adoption and executive alignment. Engagements run in three phases: Acquire, where Palantir absorbs pilot costs; Expand, where the two sides develop use cases together at a loss to Palantir; and Scale, where the account reaches positive contribution margin.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.2"
+        },
+        {
+          "question": "q1",
+          "claim": "AIP Bootcamps are short pilots on prospects' own data; by February 2024 Palantir had run more than 560 across 465 organizations, exceeding its goal of 500 within a year.",
+          "quote": "AIP Bootcamps are short pilots built on a prospect's own data; Palantir calls them its go-to-market approach for AIP. By February 2024 it had run more than 560 across 465 organizations, past its goal of 500 within a year.",
+          "numbers": [
+            "February 2024",
+            "560",
+            "465",
+            "500"
+          ],
+          "corroborated_by": [],
+          "id": "S40.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Palantir uses custom contracts with no published list prices, charging for multi-year software subscriptions, usage-based compute and storage, and FDE services bundled into early-phase costs and absorbed upfront rather than billed by time and materials.",
+          "quote": "Custom contracts with no published list prices, built from three charges: multi-year software subscriptions for platform access; usage-based compute and storage fees; and forward-deployed engineering services, bundled into early-phase contract costs and absorbed upfront rather than billed by time and materials.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Palantir's Foundry centers on an Ontology defined as a semantic representation of an organization's data, logic, and actions that ties raw data to live operations.",
+          "quote": "Foundry handles enterprise data integration, workflow orchestration and AI deployment, centered on the Ontology, a semantic representation of an organization's data, logic and actions that ties raw data to live operations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.5"
+        },
+        {
+          "question": "q5",
+          "claim": "A 2025 MIT study found 95% of enterprise AI pilots fail to deliver business value; Palantir argues its bootcamps and FDE engagements put working prototypes on real customer data from day one.",
+          "quote": "A 2025 MIT study found 95% of enterprise AI pilots fail to deliver business value; Palantir's Bootcamps and forward-deployed engagements put working prototypes on real customer data from day one.",
+          "numbers": [
+            "2025",
+            "95%"
+          ],
+          "corroborated_by": [],
+          "id": "S40.6"
+        },
+        {
+          "question": "q2",
+          "claim": "Fujitsu signed a new AIP and Foundry agreement and became a Global Forward Deployed Engineering Partner on Sep 10, 2026.",
+          "quote": "Fujitsu signed a new AIP and Foundry agreement and became a Global Forward Deployed Engineering Partner (Sep 10, 2026)",
+          "numbers": [
+            "Sep 10, 2026"
+          ],
+          "corroborated_by": [],
+          "id": "S40.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 40
     },
     {
       "id": "dbe63ac354",
@@ -1629,7 +2937,7 @@
           "quote": "Palantir is a broad enterprise platform and not a single product. It covers data management, analytics, AI, intelligence, workflows, visualization and software deployment.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S24.1"
+          "id": "S41.1"
         },
         {
           "question": "q1",
@@ -1637,7 +2945,7 @@
           "quote": "Foundry is Palantir’s data operations platform. It provides data integration and transformation, analytics, ontology development, application development, logic, and workflows. The ontology maps data to real-world objects and relationships and can expose those concepts to applications and AI.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S24.2"
+          "id": "S41.2"
         },
         {
           "question": "q1",
@@ -1645,7 +2953,7 @@
           "quote": "Artificial Intelligence Platform (AIP) connects generative AI to enterprise data and operations. Its capabilities include LLM connectivity, context engineering, agent development, AI-powered workflows, automation, observability, and evaluation. AIP is designed to operate on top of the Ontology rather than treating an LLM as a standalone interface to enterprise data.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S24.3"
+          "id": "S41.3"
         },
         {
           "question": "q1",
@@ -1653,7 +2961,7 @@
           "quote": "Gotham is oriented toward defense, intelligence, investigations, and operational decision-making. Its APIs expose capabilities around a dynamic ontology and applications for working with connected information.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S24.4"
+          "id": "S41.4"
         },
         {
           "question": "q1",
@@ -1661,7 +2969,7 @@
           "quote": "Apollo is the software delivery and operations layer. It manages deployments across cloud, on-premises, hybrid, disconnected, and air-gapped environments, including environments where continuous connectivity is not available.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S24.5"
+          "id": "S41.5"
         },
         {
           "question": "q4",
@@ -1669,7 +2977,7 @@
           "quote": "No single product replaces Foundry, AIP, Gotham, and Apollo equally well.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S24.6"
+          "id": "S41.6"
         },
         {
           "question": "q4",
@@ -1677,7 +2985,7 @@
           "quote": "Stardog is strongest where semantic interoperability, federation, and trusted AI context are the priority.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S24.7"
+          "id": "S41.7"
         },
         {
           "question": "q4",
@@ -1685,11 +2993,11 @@
           "quote": "Data portability is not the same as semantic or workflow portability. Moving data out of a platform doesn’t move the meaning or logic attached to it.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S24.8"
+          "id": "S41.8"
         }
       ],
       "dropped": 0,
-      "n": 24
+      "n": 41
     },
     {
       "id": "f8286e9704",
@@ -1708,7 +3016,7 @@
           "quote": "Stardog alternatives include d.AP, GraphDB, Neo4j, eccenca, TopBraid EDG, Amazon Neptune, Denodo, and TigerGraph.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S25.1"
+          "id": "S42.1"
         },
         {
           "question": "q4",
@@ -1716,7 +3024,7 @@
           "quote": "An AI context platform focused on making explicit business meaning usable by agents through ontology-guided context assembly.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S25.2"
+          "id": "S42.2"
         },
         {
           "question": "q4",
@@ -1724,7 +3032,7 @@
           "quote": "Stardog is a semantic platform that combines knowledge graph storage, ontology-based modeling, inference, and data virtualization.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S25.3"
+          "id": "S42.3"
         },
         {
           "question": "q4",
@@ -1732,7 +3040,7 @@
           "quote": "An RDF database with SPARQL, rule-based inference, management tools, and AI integration capabilities.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S25.4"
+          "id": "S42.4"
         },
         {
           "question": "q4",
@@ -1740,7 +3048,7 @@
           "quote": "A property-graph platform for graph applications, analytics, and graph-grounded AI.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S25.5"
+          "id": "S42.5"
         },
         {
           "question": "q4",
@@ -1748,7 +3056,7 @@
           "quote": "An enterprise knowledge graph platform for semantic integration, modeling, and governance.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S25.6"
+          "id": "S42.6"
         },
         {
           "question": "q4",
@@ -1756,7 +3064,7 @@
           "quote": "Semantic governance and knowledge modeling, with the current TQ Data Foundation offering extending into agent context delivery.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S25.7"
+          "id": "S42.7"
         },
         {
           "question": "q4",
@@ -1764,11 +3072,82 @@
           "quote": "Formal inference, context selection, and action authorization are different capabilities. A platform can perform well on one without satisfying the others.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S25.8"
+          "id": "S42.8"
         }
       ],
       "dropped": 0,
-      "n": 25
+      "n": 42
+    },
+    {
+      "id": "29894efc93",
+      "url": "https://www.stardog.com/blog/best-knowledge-graph-software-tools-platforms/",
+      "title": "Best Knowledge Graph Tools & Platforms for 2026 — Stardog",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-10-28",
+      "org": "Stardog Team",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Palantir Foundry is an enterprise data platform whose ontology is an operational layer over integrated digital assets.",
+          "quote": "Palantir Foundry is an enterprise data platform built around its ontology, an operational layer that sits on top of the digital assets integrated into the platform.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S43.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Palantir's ontology combines semantic elements such as objects, properties, and links with kinetic elements such as actions and functions to dynamically represent a business.",
+          "quote": "The ontology combines semantic elements such as objects, properties, links, and kinetic elements such as actions and functions to create a dynamic representation of the business.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S43.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Stardog says Palantir Foundry's ontology gives technical and non-technical users a shared vocabulary but is confined to Foundry, cannot relate separate ontologies, and requires adopting the full ecosystem.",
+          "quote": "Palantir Foundry’s ontology gives technical and non-technical users a shared vocabulary backed by strong workflow tooling. That ontology only works inside Foundry; relationships can’t cross separate ontologies, and adopting it means buying into the full ecosystem.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S43.3"
+        },
+        {
+          "question": "q4",
+          "claim": "Stardog positions its own standards-based model as interoperable with existing tools rather than requiring a single closed platform.",
+          "quote": "Stardog’s standards-based model is built for interoperability, so it fits alongside existing tools instead of requiring a single closed platform.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S43.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Stardog says Neo4j lacks native reasoning and ontology support, so semantic consistency must be engineered.",
+          "quote": "Neo4j suits developer teams building graph-powered applications that need fast, multi-hop traversals and mature tooling. Reasoning and ontology support aren’t native, so semantic consistency across systems has to be engineered rather than provided out of the box.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S43.5"
+        },
+        {
+          "question": "q4",
+          "claim": "Stardog says Amazon Neptune has no native reasoning or ontology layer and is AWS-only, making migration difficult.",
+          "quote": "Neptune is an easy entry point for teams already standardized on AWS who want a managed graph database with minimal setup. It has no native reasoning or ontology layer, and being AWS-only means moving elsewhere later requires a real migration.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S43.6"
+        },
+        {
+          "question": "q4",
+          "claim": "Stardog says PuppyGraph lacks reasoning, ontology modeling, and entity resolution, making it better for exploration than as a system of record.",
+          "quote": "PuppyGraph’s query-in-place model suits teams that want lightweight graph queries over data they don’t want to move. It doesn’t provide reasoning, ontology modeling, or entity resolution, so it works better for exploration than as a system of record.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S43.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 43
     },
     {
       "id": "440c3160b8",
@@ -1787,7 +3166,7 @@
           "quote": "At Palantir, we help companies leverage their data for a deep understanding of their business and build a digital twin of their operations. To solve our clients’ toughest problems, we often embed closely with them to design, configure and implement innovative workflows and applications.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.1"
+          "id": "S44.1"
         },
         {
           "question": "q1",
@@ -1795,7 +3174,7 @@
           "quote": "On a typical project, you’ll find a mix of Deployment Strategists and Forward-Deployed Engineers (commonly dubbed “Deltas”).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.2"
+          "id": "S44.2"
         },
         {
           "question": "q1",
@@ -1803,7 +3182,7 @@
           "quote": "Theoretically, Echos are more product-managers while Deltas are more technical, but in reality, both roles are a mix between product manager, software engineer and strategist and the lines between the two roles blur heavily quite often.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.3"
+          "id": "S44.3"
         },
         {
           "question": "q1",
@@ -1811,7 +3190,7 @@
           "quote": "*   Understanding the client’s operations and figuring out where Palantir software can have the biggest impact\n*   Designing and implementing user-centric workflows and applications around problems or gaps in the existing systems\n*   Iterating rapidly with users to make sure the solution is what they want and need\n*   Implementing and scaling developed solutions",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.4"
+          "id": "S44.4"
         },
         {
           "question": "q1",
@@ -1821,7 +3200,7 @@
             "4–12"
           ],
           "corroborated_by": [],
-          "id": "S26.5"
+          "id": "S44.5"
         },
         {
           "question": "q1",
@@ -1829,7 +3208,7 @@
           "quote": "Getting to work on Palantir Foundry has given me the opportunity to create things from scratch, and Foundry makes it easy to be iterative and rapidly build up, tear down, and adapt solutions.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.6"
+          "id": "S44.6"
         },
         {
           "question": "q5",
@@ -1837,11 +3216,197 @@
           "quote": "As an Echo, I have tangible output — I’m actually designing and implementing applications that will make clients’ jobs easier and more efficient — and I get to work side-by-side with the future users instead of working in a black box.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.7"
+          "id": "S44.7"
         }
       ],
       "dropped": 0,
-      "n": 26
+      "n": 44
+    },
+    {
+      "id": "f3078fc19e",
+      "url": "https://joinplank.com/fde/guides/when-ai-startups-need-fdes",
+      "title": "When does an AI startup need forward-deployed engineers? — Plank",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-10-30",
+      "org": "Anusheel Bhushan, co-founder of Plank",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q5",
+          "claim": "An AI startup needs FDEs when the product works in demos but each customer requires engineering to run it in their systems, and that deployment work pulls the core team off the roadmap.",
+          "quote": "An AI startup needs forward-deployed engineers when the product works in the demo but each customer needs engineering to get it running in their systems, and that work is pulling the core team off the roadmap.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S45.1"
+        },
+        {
+          "question": "q1",
+          "claim": "At an AI startup, FDEs work inside the startup's team on customer deployments: integrations with systems of record, mapping customer data into the product, customer-specific workflows, evals on customer data, and production rollout; deployment lessons feed back into the product to reduce custom work next time.",
+          "quote": "Forward-deployed engineers work inside the startup's team on its customers' deployments: integrations with each customer's systems of record, mapping their data into the product, the customer-specific workflows the product needs, evals on the customer's data, and the production rollout. What each deployment teaches goes back to the product team, so the next one needs less custom work.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S45.2"
+        },
+        {
+          "question": "q2",
+          "claim": "In Plank's census of 904 FDE job descriptions, 51% ask for API integration work and 27% ask for data pipelines.",
+          "quote": "In Plank's census of 904 FDE job descriptions, 51% ask for API integration work and 27% for data pipelines.",
+          "numbers": [
+            "904",
+            "51%",
+            "27%"
+          ],
+          "corroborated_by": [],
+          "id": "S45.3"
+        },
+        {
+          "question": "q5",
+          "claim": "A sign deployment is the bottleneck is that deals close but deployments stall or never go live.",
+          "quote": "Deals close, but deployments stall or never go live.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S45.4"
+        },
+        {
+          "question": "q5",
+          "claim": "Pilots can succeed and still fail to turn into production contracts, which the source lists as an FDE-need signal.",
+          "quote": "Pilots succeed and still do not turn into production contracts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S45.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The source distinguishes a solutions engineer, who helps win a deal through demos, proofs of concept, and the technical case before signature, from an FDE, who delivers production code in customer systems after signature and is accountable for whether it works.",
+          "quote": "A solutions engineer helps win the deal: demos, proofs of concept and the technical case before signature. An FDE delivers it: production code in the customer's systems after signature, and accountability for whether it works.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S45.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Plank says FDE as a service is not outsourcing: it places engineers inside the company's own team, in its repositories and under its brand, accountable for its customers' deployments, with learnings going back into the product.",
+          "quote": "Outsourcing hands a scoped project to another team. FDE as a service places engineers inside the company's own team, in its repositories and under its brand, accountable for its customers' deployments, with what they learn going back into the product.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S45.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 45
+    },
+    {
+      "id": "286d1c524f",
+      "url": "https://www.salesforce.com/blog/forward-deployed-engineer/",
+      "title": "Today's Hottest Role: Forward Deployed Engineer — Salesforce",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2025-11-19",
+      "org": "Laura Hilgers / Salesforce",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Salesforce committed to building a team of 1,000 FDEs.",
+          "quote": "Salesforce alone has committed to building a team of 1,000 FDEs.",
+          "numbers": [
+            "1,000"
+          ],
+          "corroborated_by": [],
+          "id": "S46.1"
+        },
+        {
+          "question": "q2",
+          "claim": "At Salesforce, some FDEs work in pods consisting of one deployment strategist and two FDEs.",
+          "quote": "Many work individually with a customer, but some are starting to work in pods that consist of one deployment strategist and two FDEs.",
+          "numbers": [
+            "one",
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S46.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Salesforce's FDE program is currently free for select nominated customers, but the company plans to let customers purchase FDE services next year.",
+          "quote": "At the moment, they must be nominated by their account executive to be in the Momentum program, offered to select customers for free. “It’s an investment by Salesforce in our customers,” said Paige Elia, senior consultant, FDE programs, at Salesforce. Sometime in the next year, however, customers will also have the option to purchase FDE services.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S46.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Salesforce says FDEs are in many ways like traditional tech consultants, but differ in the agility and speed at which they move.",
+          "quote": "In many ways, forward deployed engineers are like traditional tech consultants. “But the biggest difference is the agility and speed at which we move,” said Khalid.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S46.4"
+        },
+        {
+          "question": "q5",
+          "claim": "A Salesforce FDE director says that without FDEs, thousands of customers risk being stuck in pilot purgatory — signed up but not successfully deployed.",
+          "quote": "“Without FDEs, we risk having thousands of customers stuck in pilot purgatory — signed up, but not successfully deployed,” said Khalid.",
+          "numbers": [
+            "thousands"
+          ],
+          "corroborated_by": [],
+          "id": "S46.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Salesforce's FDE team got a booking platform's AI agent back on track and resolved all its issues within a week by listening to concerns, enlisting the product team, and fixing glitches.",
+          "quote": "So, Salesforce offered a team of forward deployed engineers (FDEs). The FDEs listened to the company’s concerns, enlisted Salesforce’s product team to fix glitches, and got the agent back on track. “We were able to resolve all their issues within a week,” said Sarah Khalid, forward deployed engineer director at Salesforce.",
+          "numbers": [
+            "a week"
+          ],
+          "corroborated_by": [],
+          "id": "S46.6"
+        }
+      ],
+      "dropped": 2,
+      "n": 46
+    },
+    {
+      "id": "be96f260f5",
+      "url": "https://www.palantir.com/partnerships/elite/",
+      "title": "Palantir Vanguard: Elite",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": null,
+      "org": "Palantir Technologies Inc.",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Palantir markets its Vanguard Elite partners as building AI-native companies with AI FDE at the center of their forward deployed engineering efforts.",
+          "quote": "Partners at the bleeding edge, building AI-native companies with AI FDE at the heart of their forward deployed engineering efforts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S47.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The Vanguard Elite partner page's learn-more link directs to Aplos Data's website.",
+          "quote": "Learn more\n\n[Visit aplosdata.com →](https://www.aplosdata.com/)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S47.2"
+        },
+        {
+          "question": "q4",
+          "claim": "Palantir's site navigation lists AIP, Foundry, Gotham, Ontology, and Apollo as platforms.",
+          "quote": "*   [↳ AIP](https://www.palantir.com/platforms/aip/)\n*   [↳ Foundry](https://www.palantir.com/platforms/foundry/)\n*   [↳ Gotham](https://www.palantir.com/platforms/gotham/)\n*   [↳ Ontology](https://www.palantir.com/platforms/ontology/)\n*   [↳ Apollo](https://www.palantir.com/platforms/apollo/)",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S47.3"
+        }
+      ],
+      "dropped": 0,
+      "n": 47
     },
     {
       "id": "de595af5c1",
@@ -1860,7 +3425,7 @@
           "quote": "Palantir invented the role, OpenAI and Anthropic ported it to the frontier-model era, and the pattern now defines how every serious AI-application company sells, ships, and learns.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S27.1"
+          "id": "S48.1"
         },
         {
           "question": "q1",
@@ -1868,7 +3433,7 @@
           "quote": "an engineer who embeds with the customer, builds the integration, owns the deployment, and carries the learning back to the product team.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S27.2"
+          "id": "S48.2"
         },
         {
           "question": "q1",
@@ -1878,7 +3443,7 @@
             "5–10x"
           ],
           "corroborated_by": [],
-          "id": "S27.3"
+          "id": "S48.3"
         },
         {
           "question": "q3",
@@ -1890,7 +3455,7 @@
             "$450k"
           ],
           "corroborated_by": [],
-          "id": "S27.4"
+          "id": "S48.4"
         },
         {
           "question": "q5",
@@ -1898,11 +3463,62 @@
           "quote": "A strong AE cannot substitute for an FDE because the bottleneck at Series A is workflow integration, not pipeline volume.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S27.5"
+          "id": "S48.5"
         }
       ],
       "dropped": 3,
-      "n": 27
+      "n": 48
+    },
+    {
+      "id": "492e076e0c",
+      "url": "https://www.sigmoid.com/forward-deployed-engineering/",
+      "title": "Forward Deployed Engineering and AI Agents — Sigmoid",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-09-10",
+      "org": "Sigmoid",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Sigmoid markets a forward-deployed engineering model in which FDEs are paired with prebuilt production agents and data-engineering accelerators, with one engineer orchestrating many agents.",
+          "quote": "Sigmoid pairs Forward Deployed Engineers with a pre-built arsenal of production agents, data-engineering accelerators and frameworks, on a foundation we have been building since before \"agentic\" was a word. One engineer, orchestrating many agents, delivering the end-to-end enterprise product that used to take a room full of specialists.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S49.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Sigmoid says other firms are only now discovering the FDE model, while it has used it for a decade.",
+          "quote": "Others are discovering the FDE model now. For Sigmoid it is simply how we have built for a decade, and our FDEs never arrive empty-handed.",
+          "numbers": [
+            "a decade"
+          ],
+          "corroborated_by": [],
+          "id": "S49.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Sigmoid positions its FDE offering between linear services and pure product, retaining consulting depth and customization while using a digital workforce for leverage.",
+          "quote": "This is not a volume play. It sits between the linear services model and pure product, keeping the consulting depth and customization enterprises need while adding the leverage of a digital workforce, so a focused FDE team ships what once took a small army.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S49.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Sigmoid claims one FDE can span an entire enterprise build that previously needed six or seven specialist skill sets and separate pods.",
+          "quote": "An end-to-end enterprise product, the workflows, the pipelines, the models and the app, once needed six or seven specialist skill sets and a pod for each. Sigmoid codifies what each team does into a production agent, so a single Forward Deployed Engineer can span the whole build.",
+          "numbers": [
+            "six or seven"
+          ],
+          "corroborated_by": [],
+          "id": "S49.4"
+        }
+      ],
+      "dropped": 0,
+      "n": 49
     },
     {
       "id": "d292f3161d",
@@ -1921,11 +3537,11 @@
           "quote": "Timbr vs. Palantir vs. Stardog - how we're different",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S28.1"
+          "id": "S50.1"
         }
       ],
       "dropped": 0,
-      "n": 28
+      "n": 50
     },
     {
       "id": "126257b737",
@@ -1951,7 +3567,7 @@
             "150"
           ],
           "corroborated_by": [],
-          "id": "S29.1"
+          "id": "S51.1"
         },
         {
           "question": "q2",
@@ -1962,7 +3578,7 @@
             "$1.5 billion"
           ],
           "corroborated_by": [],
-          "id": "S29.2"
+          "id": "S51.2"
         },
         {
           "question": "q2",
@@ -1973,7 +3589,7 @@
             "2024"
           ],
           "corroborated_by": [],
-          "id": "S29.3"
+          "id": "S51.3"
         },
         {
           "question": "q3",
@@ -1986,7 +3602,7 @@
             "40%"
           ],
           "corroborated_by": [],
-          "id": "S29.4"
+          "id": "S51.4"
         },
         {
           "question": "q3",
@@ -2002,7 +3618,7 @@
             "75"
           ],
           "corroborated_by": [],
-          "id": "S29.5"
+          "id": "S51.5"
         },
         {
           "question": "q3",
@@ -2019,7 +3635,7 @@
             "11-13x"
           ],
           "corroborated_by": [],
-          "id": "S29.6"
+          "id": "S51.6"
         },
         {
           "question": "q5",
@@ -2027,7 +3643,7 @@
           "quote": "All directed at the same prize: the implementation layer that turns frontier models into production enterprise systems.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S29.7"
+          "id": "S51.7"
         },
         {
           "question": "q2",
@@ -2035,11 +3651,11 @@
           "quote": "There is no Nobel-track research and no frontier model. There is a sharp thesis, a credible team, and clients willing to pay for it.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S29.8"
+          "id": "S51.8"
         }
       ],
       "dropped": 0,
-      "n": 29
+      "n": 51
     },
     {
       "id": "262997f2c8",
@@ -2058,7 +3674,7 @@
           "quote": "**Software Engineers**and**Forward Deployed Software Engineers**are our biggest engineering roles by headcount. Internally, we call them “Devs” and “Deltas.”",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S30.1"
+          "id": "S52.1"
         },
         {
           "question": "q1",
@@ -2066,7 +3682,7 @@
           "quote": "**Deltas (Forward Deployed Software Engineers) deploy our software platforms to customers**. Deltas are part of Business Development, and their mandate is to achieve technical outcomes for our customers. As part of a team that directly supports one customer, a Delta focuses on technology-driven value creation: deploying and customizing Palantir platforms to tackle critical business problems.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S30.2"
+          "id": "S52.2"
         },
         {
           "question": "q1",
@@ -2077,9 +3693,9 @@
             "one"
           ],
           "corroborated_by": [
-            37
+            62
           ],
-          "id": "S30.3"
+          "id": "S52.3"
         },
         {
           "question": "q3",
@@ -2089,7 +3705,7 @@
             "one-time"
           ],
           "corroborated_by": [],
-          "id": "S30.4"
+          "id": "S52.4"
         },
         {
           "question": "q3",
@@ -2097,7 +3713,7 @@
           "quote": "“A Delta does significantly more engineering and technical work than a consultant,” adds G.M., who works in São Paulo. Being a Delta “requires a degree of technical experience that is rare to see in consulting work.”",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S30.5"
+          "id": "S52.5"
         },
         {
           "question": "q3",
@@ -2105,7 +3721,7 @@
           "quote": "“In my mind, the critical difference is that we are actually deploying existing software products to achieve the customer’s outcomes,” says Dyon, a Delta who works in our Abu Dhabi office.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S30.6"
+          "id": "S52.6"
         },
         {
           "question": "q1",
@@ -2113,7 +3729,7 @@
           "quote": "Several of the Deltas I spoke to also mentioned that they often contribute code back to the core product. “If what’s standing between a Business Development team and a successful outcome is a missing feature, capability, or bug fix in one of our platforms, it may make sense for them to spend time doing it,” says Ian, a Washington D.C.-based Dev who previously worked as a Delta, adding that it’s “important that they coordinate with the product team.”",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S30.7"
+          "id": "S52.7"
         },
         {
           "question": "q5",
@@ -2123,11 +3739,11 @@
             "a couple"
           ],
           "corroborated_by": [],
-          "id": "S30.8"
+          "id": "S52.8"
         }
       ],
       "dropped": 0,
-      "n": 30
+      "n": 52
     },
     {
       "id": "2ce0d51ab1",
@@ -2149,7 +3765,7 @@
             "311"
           ],
           "corroborated_by": [],
-          "id": "S31.1"
+          "id": "S53.1"
         },
         {
           "question": "q2",
@@ -2157,7 +3773,7 @@
           "quote": "Take a company like Decagon, whose agents automate customer support. The company has a sizable team of human “Agent Product Managers” who work closely with customers to stand up AI support agents.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S31.2"
+          "id": "S53.2"
         },
         {
           "question": "q3",
@@ -2169,7 +3785,7 @@
             "~80%"
           ],
           "corroborated_by": [],
-          "id": "S31.3"
+          "id": "S53.3"
         },
         {
           "question": "q3",
@@ -2181,7 +3797,7 @@
             "75%"
           ],
           "corroborated_by": [],
-          "id": "S31.4"
+          "id": "S53.4"
         },
         {
           "question": "q3",
@@ -2189,7 +3805,7 @@
           "quote": "Instead, design incentive structures that allow services to be sold at cost. As ACVs grow, all that matters is success (and retention).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S31.5"
+          "id": "S53.5"
         },
         {
           "question": "q3",
@@ -2199,7 +3815,7 @@
             "80%"
           ],
           "corroborated_by": [],
-          "id": "S31.6"
+          "id": "S53.6"
         },
         {
           "question": "q5",
@@ -2207,7 +3823,7 @@
           "quote": "Companies attempting to replace core workflows owned by legacy systems of record with lightweight, wrapper-like integrations too often see their agents break or fail outright.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S31.7"
+          "id": "S53.7"
         },
         {
           "question": "q5",
@@ -2215,11 +3831,104 @@
           "quote": "Without hands-on implementation support, AI risks falling short of the standards set by a dedicated employee.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S31.8"
+          "id": "S53.8"
         }
       ],
       "dropped": 0,
-      "n": 31
+      "n": 53
+    },
+    {
+      "id": "3fd6d3e84f",
+      "url": "https://builders.ramp.com/post/forward-deployed-engineering",
+      "title": "Forward Deployed Engineering — Ramp Builders Blog",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "blog",
+      "published": "2025-08-05",
+      "org": "Leo Mehr (Ramp Builders Blog)",
+      "quality": 0.5,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Palantir created the FDE role after its 2003 founding for software engineers deployed at military sites and customer offices, to work closely with customers and iterate quickly.",
+          "quote": "Palantir famously created the role after its founding in 2003 for software engineers _literally deployed_ at military sites and customer offices. This allowed engineers to work extremely closely with customers, understand their problems, and iterate quickly.",
+          "numbers": [
+            "2003"
+          ],
+          "corroborated_by": [],
+          "id": "S54.1"
+        },
+        {
+          "question": "q2",
+          "claim": "After over 10 years as niche and Palantir-specific, FDE proliferated in the late 2010s; Scale AI and C3.ai adopted the exact title, while Databricks and Snowflake built similar functions.",
+          "quote": "For over 10 years, it was niche and specific to Palantir, but in the late 2010s it started to proliferate. Scale AI and C3.ai adopted the exact same title, and Databricks and Snowflake built similar functions.",
+          "numbers": [
+            "10",
+            "2010s"
+          ],
+          "corroborated_by": [],
+          "id": "S54.2"
+        },
+        {
+          "question": "q2",
+          "claim": "The role and variants of customer engineering are becoming ubiquitous in top B2B companies, including OpenAI, Anthropic, Databricks, Ramp, Sierra, Decagon, LangChain, and ElevenLabs.",
+          "quote": "Now, the role and variants of customer engineering are becoming _ubiquitous_ in nearly every top B2B company — OpenAI, Anthropic, Databricks, Ramp, and countless earlier-stage AI startups such as Sierra, Decagon, LangChain, ElevenLabs, etc.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S54.3"
+        },
+        {
+          "question": "q5",
+          "claim": "The source cites Foundation Capital arguing B2B businesses deliver outcomes, not software, and integration, embedding, and operation become the moat.",
+          "quote": "B2B businesses are not delivering software, but _outcomes_, and \"how you integrate, embed, and operate becomes the moat.\"",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S54.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Average CAGR is 15.2% for non-enterprise B2B SaaS and 29.6% for enterprise B2B SaaS.",
+          "quote": "The average CAGR (compound annual growth rate) of the non-enterprise group is 15.2%, and of the enterprise group is 29.6%.",
+          "numbers": [
+            "15.2%",
+            "29.6%"
+          ],
+          "corroborated_by": [],
+          "id": "S54.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Ramp's FDE team grew from 2 to 16 FDEs in the last year and a half and expanded into multiple product domains and verticals.",
+          "quote": "In the last year and a half, our team grew from 2 to 16 FDEs and expanded to multiple new product domains and verticals.",
+          "numbers": [
+            "2",
+            "16"
+          ],
+          "corroborated_by": [],
+          "id": "S54.6"
+        },
+        {
+          "question": "q2",
+          "claim": "At Ramp, 7 of 16 FDEs were previous founders.",
+          "quote": "Of the 16 FDEs on the team, 7 of us are previous founders!",
+          "numbers": [
+            "16",
+            "7"
+          ],
+          "corroborated_by": [],
+          "id": "S54.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The source states customer proximity drives better outcomes and that embedding engineers across the customer lifecycle ensures deeper understanding, better scoping, and faster delivery.",
+          "quote": "**Customer proximity drives better outcomes.** Embedding engineers across the customer lifecycle (from sales to support) ensures deeper understanding, better scoping, and faster delivery.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S54.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 54
     },
     {
       "id": "6ee96d839c",
@@ -2240,7 +3949,7 @@
             "2010s"
           ],
           "corroborated_by": [],
-          "id": "S32.1"
+          "id": "S55.1"
         },
         {
           "question": "q1",
@@ -2250,7 +3959,7 @@
             "2016"
           ],
           "corroborated_by": [],
-          "id": "S32.2"
+          "id": "S55.2"
         },
         {
           "question": "q1",
@@ -2258,7 +3967,7 @@
           "quote": "Echo teams are domain experts embedded from the client's own field, such as former military officers or healthcare practitioners, who act as product discovery leads and account managers. Delta teams are rapid prototyping engineers who turn Echo team insights into functional solutions quickly.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S32.3"
+          "id": "S55.3"
         },
         {
           "question": "q3",
@@ -2266,7 +3975,7 @@
           "quote": "The gravel road to paved highway is a metaphor for how FDE field work feeds into core product development. FDEs build custom, rough solutions for individual clients, the gravel road. The core engineering team at headquarters observes these solutions and converts them into standardised product features that work for many customers, the paved highway. This feedback loop is what separates FDE from traditional consulting, where one-off work rarely influences the core product.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S32.4"
+          "id": "S55.4"
         },
         {
           "question": "q3",
@@ -2274,7 +3983,7 @@
           "quote": "However, this system requires discipline. If not managed well, it can become pure custom work which is hard to scale. Palantir was successful because it struck a balance.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S32.5"
+          "id": "S55.5"
         },
         {
           "question": "q2",
@@ -2284,7 +3993,7 @@
             "2025"
           ],
           "corroborated_by": [],
-          "id": "S32.6"
+          "id": "S55.6"
         },
         {
           "question": "q2",
@@ -2294,7 +4003,7 @@
             "15"
           ],
           "corroborated_by": [],
-          "id": "S32.7"
+          "id": "S55.7"
         },
         {
           "question": "q5",
@@ -2302,11 +4011,94 @@
           "quote": "AI systems face the same challenges Palantir faced in the early 2000s. There are no mature products to benchmark against, customer environments vary enormously, and AI models that work in research settings frequently fail in production due to messy real-world data and legacy infrastructure. The FDE model is the most effective way to do product discovery at scale in a market where customer needs are unclear and highly variable.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S32.8"
+          "id": "S55.8"
         }
       ],
       "dropped": 0,
-      "n": 32
+      "n": 55
+    },
+    {
+      "id": "7d7ec137e5",
+      "url": "https://www.crv.com/content/forward-deployed-engineer",
+      "title": "Forward Deployed Engineer: When Startups Should Hire One — CRV",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "blog",
+      "published": "2026-05-18",
+      "org": "CRV",
+      "quality": 0.5,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Palantir created the forward-deployed engineer role after its founding in 2003.",
+          "quote": "[Palantir created the FDE role](https://blog.palantir.com/a-day-in-the-life-of-a-palantir-forward-deployed-software-engineer-45ef2de257b1) after its founding in 2003.",
+          "numbers": [
+            "2003"
+          ],
+          "corroborated_by": [],
+          "id": "S56.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Until roughly 2016, Palantir had more forward-deployed engineers than traditional software engineers.",
+          "quote": "Until roughly 2016, the company [had more FDEs](https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers) than traditional software engineers.",
+          "numbers": [
+            "2016"
+          ],
+          "corroborated_by": [],
+          "id": "S56.2"
+        },
+        {
+          "question": "q1",
+          "claim": "A forward-deployed engineer embeds directly with customers and writes and ships production code inside the customer's environment rather than building generalized core product features.",
+          "quote": "A forward-deployed engineer is a software engineer who embeds directly with customers to bridge the gap between what a product does today and what a specific customer needs, writing and shipping production code inside the customer's environment rather than building generalized core product features.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S56.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The forward-deployed engineer role has spread beyond defense, and demand has grown alongside broader growth in AI engineer roles.",
+          "quote": "The role has since spread well beyond defense. Demand for forward-deployed engineers has grown in recent years, alongside broader growth in artificial intelligence (AI) engineer roles.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S56.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Vercel consolidated sales engineering, developer success, professional services and customer support engineering under a unified Global Field Engineering organization.",
+          "quote": "One of the [companies we backed](https://www.crv.com/companies), Vercel, consolidated its sales engineering, developer success, professional services and customer support engineering under a unified Global Field Engineering organization.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S56.5"
+        },
+        {
+          "question": "q3",
+          "claim": "The FDE model's unit economics only work at high deal sizes and collapse if the FDE spends most time on small accounts.",
+          "quote": "The unit economics of the FDE model only function at high deal sizes. If that person spends most of their time on small accounts, the math collapses.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S56.6"
+        },
+        {
+          "question": "q3",
+          "claim": "The FDE model risks drifting into services work when one-off customer systems do not generalize back into the product; the diagnostic is whether custom engineering effort per customer declines over time.",
+          "quote": "When the core product isn't modular enough, the FDE gets pulled into building one-off systems for each customer. None of that work generalizes back into the product, and the company gradually drifts from a product company to a services firm. The diagnostic is clear: if custom engineering effort per customer isn't declining over time, the model is masking a product problem, not solving one.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S56.7"
+        },
+        {
+          "question": "q5",
+          "claim": "Many AI projects stall before production due to integration headaches tied to messy data and incompatible systems, and FDEs are presented as the bridge from demo capability to the customer's actual environment.",
+          "quote": "A large fraction of AI projects still stall before reaching production, often due to integration headaches tied to messy data and incompatible systems. FDEs look like the missing bridge between what AI can do in a demo and what it can do inside a customer's actual environment.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S56.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 56
     },
     {
       "id": "83ae9599c1",
@@ -2325,7 +4117,7 @@
           "quote": "The distinction between FDEs and solution architects that vendors might point to can be traced back to Palantir, which popularized the role through its high-touch, FDE-led operating model. Each Palantir engagement starts with the company’s portfolio of modular microservices, and the solution that comes out of the engagement is a unique configuration of these microservices combined with custom-built microservices to form a bespoke platform.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S33.1"
+          "id": "S57.1"
         },
         {
           "question": "q1",
@@ -2333,7 +4125,7 @@
           "quote": "In TBR’s opinion, the push toward FDEs does not represent an industrywide shift toward Palantir’s operating model, and TBR expects the company to remain an “n of 1.”",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S33.2"
+          "id": "S57.2"
         },
         {
           "question": "q2",
@@ -2341,7 +4133,7 @@
           "quote": "Against this backdrop, hyperscalers, ISVs and model leaders have begun rapidly positioning forward-deployed engineers (FDEs) as embedded technical builders who work directly inside customer environments to identify high-value AI use cases, build or configure agentic systems, contextualize those systems on enterprise data, and help move deployments from pilot to production.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S33.3"
+          "id": "S57.3"
         },
         {
           "question": "q2",
@@ -2349,7 +4141,7 @@
           "quote": "Salesforce was early with its launch of a new FDE Partner Program. Microsoft’s Frontier announcement followed the launch of Accenture’s formal Microsoft FDE practice, as well as Microsoft’s FDE-oriented partnership expansion with EY.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S33.4"
+          "id": "S57.4"
         },
         {
           "question": "q3",
@@ -2357,7 +4149,7 @@
           "quote": "For technology vendors, FDE or FDE-like support is unlikely to appear as a stand-alone line item in every engagement. Instead, the cost can be embedded in broader software, cloud consumption, enterprise agreement, marketplace, premium support or strategic account economics.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S33.5"
+          "id": "S57.5"
         },
         {
           "question": "q3",
@@ -2365,7 +4157,7 @@
           "quote": "SIs and consulting firms cannot usually recover FDE investment through core platform pricing, model usage or cloud consumption in the same way a hyperscaler, AI model provider or enterprise software vendor can. Their FDE-like resources, therefore, need to be monetized more directly through advisory, implementation, managed services, engineering, governance or transformation fees.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S33.6"
+          "id": "S57.6"
         },
         {
           "question": "q5",
@@ -2373,7 +4165,7 @@
           "quote": "In other cases, agentic engagements are stalling because the value is not proven.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S33.7"
+          "id": "S57.7"
         },
         {
           "question": "q5",
@@ -2381,11 +4173,11 @@
           "quote": "By putting boots on the ground, vendors are betting that the right FDE paired with the customer’s technical talent can identify the opportunities for agentic automation that overcome these adoption hurdles, expand usage, and convert AI experimentation into repeatable commercial value.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S33.8"
+          "id": "S57.8"
         }
       ],
       "dropped": 0,
-      "n": 33
+      "n": 57
     },
     {
       "id": "b29619f6be",
@@ -2404,7 +4196,7 @@
           "quote": "Because the margin you give up early can buy you the customer.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S34.1"
+          "id": "S58.1"
         },
         {
           "question": "q2",
@@ -2412,7 +4204,7 @@
           "quote": "So why does everyone from Palantir to the AI labs do it anyway?",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S34.2"
+          "id": "S58.2"
         },
         {
           "question": "q5",
@@ -2420,7 +4212,7 @@
           "quote": "Its argument: enterprise AI products are too complex to sell like self-serve software, so hands-on services are worth the cost early.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S34.3"
+          "id": "S58.3"
         },
         {
           "question": "q2",
@@ -2430,7 +4222,7 @@
             "60%"
           ],
           "corroborated_by": [],
-          "id": "S34.4"
+          "id": "S58.4"
         },
         {
           "question": "q3",
@@ -2448,7 +4240,7 @@
             "25 percent"
           ],
           "corroborated_by": [],
-          "id": "S34.5"
+          "id": "S58.5"
         },
         {
           "question": "q3",
@@ -2462,7 +4254,7 @@
             "$845K"
           ],
           "corroborated_by": [],
-          "id": "S34.6"
+          "id": "S58.6"
         },
         {
           "question": "q3",
@@ -2478,7 +4270,7 @@
             "$500K"
           ],
           "corroborated_by": [],
-          "id": "S34.7"
+          "id": "S58.7"
         },
         {
           "question": "q1",
@@ -2494,11 +4286,100 @@
             "87%"
           ],
           "corroborated_by": [],
-          "id": "S34.8"
+          "id": "S58.8"
         }
       ],
       "dropped": 0,
-      "n": 34
+      "n": 58
+    },
+    {
+      "id": "ca71550621",
+      "url": "https://falkster.com/blog/the-sierra-playbook",
+      "title": "The Sierra Playbook: What They Actually Do Differently",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "blog",
+      "published": "2026-08-12",
+      "org": "Falk Gottlob",
+      "quality": 0.5,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Sierra uses forward-deployed agent engineers who sit with customer systems, wire integrations into CRM, billing, and ERP, and remain accountable for resolution rate after go-live because Sierra does not get paid otherwise.",
+          "quote": "That is a forward-deployed model. Sierra engineers sit with the customer's systems, wire the integrations into the CRM and billing and ERP, and stay accountable for the resolution rate after go-live, because, per choice 1, Sierra does not get paid otherwise.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S59.1"
+        },
+        {
+          "question": "q3",
+          "claim": "Sierra charges a pre-negotiated rate per AI-resolved case, makes human escalations free, reports around $1.50 per resolution, and contracts typically start around $150,000 per year.",
+          "quote": "Sierra's model, in Taylor's words: \"If the AI agent resolves the case, no human intervention, there's a pre-negotiated rate for that. If we do have to escalate to a person, that's free.\" Reported rates are around $1.50 per resolution in support contexts. Contracts are custom, typically starting around $150,000 a year, and blend volume-based pricing for routine interactions with pay-per-resolution for complex ones.",
+          "numbers": [
+            "$1.50",
+            "$150,000"
+          ],
+          "corroborated_by": [],
+          "id": "S59.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Because escalations are free, every failed resolution costs Sierra revenue and compute, so Sierra loses money in proportion to how often its product fails.",
+          "quote": "First, escalations are free. That is not a discount, it is an incentive structure. Every failed resolution costs Sierra the revenue and still costs Sierra the compute. The company loses money on its own product's failures, in direct proportion to how often it fails.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S59.3"
+        },
+        {
+          "question": "q3",
+          "claim": "High-touch deployment compresses margins and gates growth on engineer hiring; Sierra’s response is to productize the last mile with Agent Studio 2.0’s no-code workflow building and Ghostwriter’s generation of production-ready agents from SOPs, transcripts, and process docs.",
+          "quote": "Sacra flags implementation intensity as Sierra's biggest scaling risk, and the concern is fair: high-touch deployment compresses margins and gates growth on engineer hiring. Sierra's answer is to productize the last mile from the inside. Agent Studio 2.0 moved workflow-building to a no-code interface that customer-experience teams operate themselves. Ghostwriter, their agent-building agent, generates production-ready agents from SOPs, transcripts, and process docs.",
+          "numbers": [
+            "2.0"
+          ],
+          "corroborated_by": [],
+          "id": "S59.4"
+        },
+        {
+          "question": "q5",
+          "claim": "Sierra says agents break the software development lifecycle because they are non-deterministic and lack a change-management story; model upgrades silently change behavior.",
+          "quote": "agents break the software development lifecycle. Traditional software is deterministic, structured, fast, and cheap. Agents are goal-based, non-deterministic, conversational, slow, expensive, and, worst of all, have no change management story, because a model upgrade silently changes behavior.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S59.5"
+        },
+        {
+          "question": "q5",
+          "claim": "Sierra turns annotated failures from real conversations into simulated regression tests, and before upgrading its platform it runs every customer’s regression suite.",
+          "quote": "Every annotated failure becomes a simulated conversation test against mock APIs, reproducible and runnable in parallel. Thousands of annotations become thousands of regression tests, so \"your AI agent never makes the same mistake twice.\" And before Sierra upgrades its own platform, it runs every customer's regression suite.",
+          "numbers": [
+            "Thousands",
+            "thousands"
+          ],
+          "corroborated_by": [],
+          "id": "S59.6"
+        },
+        {
+          "question": "q2",
+          "claim": "Sierra deliberately owns the last mile with forward-deployed agent engineers, absorbing implementation risk that SaaS vendors spent two decades pushing onto customers.",
+          "quote": "They own the last mile with forward-deployed agent engineers, deliberately absorbing the implementation risk every SaaS vendor spent two decades pushing onto the customer.",
+          "numbers": [
+            "two"
+          ],
+          "corroborated_by": [],
+          "id": "S59.7"
+        },
+        {
+          "question": "q3",
+          "claim": "Outcome pricing deletes the separation between software and implementation, making the vendor accountable until the customer can use the product and giving the vendor skin in the game to navigate the last mile.",
+          "quote": "The deeper effect is cultural, and Taylor names it directly: the separation between software and implementation, where the vendor ships and the customer's failure to adopt is the customer's problem, is \"the essence of so many of the problems in the software industry.\" Outcome pricing deletes that separation. \"You become more accountable to help them be successful because until they do, they can't use it,\" and there is \"a strong incentive for the software company to have skin in the game to navigate that last mile.\"",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S59.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 59
     },
     {
       "id": "cafa71fbe9",
@@ -2517,7 +4398,7 @@
           "quote": "Forward-deployed engineers (“Deltas” and “Echoes” in Palantir’s internal jargon) sit inside the customer’s organization (often for months), to understand domain context, stitch systems together, and ship custom workflows on top of Foundry (or Gotham in higher-security situations). Since pricing is fixed fee, there are no “SKUs” in a traditional sense. Engineers are responsible for building and maintaining those capabilities.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S35.1"
+          "id": "S60.1"
         },
         {
           "question": "q1",
@@ -2525,7 +4406,7 @@
           "quote": "Palantir’s contracts start small. A first engagement might cover a short bootcamp and limited licenses. If value is proven, additional use cases, workflows, and data domains are layered in. Over time, the revenue mix tilts toward software subscription rather than services. Unlike consulting firms, services are a means to drive product adoption, not the primary revenue stream.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S35.2"
+          "id": "S60.2"
         },
         {
           "question": "q2",
@@ -2535,7 +4416,7 @@
             "800–1000%"
           ],
           "corroborated_by": [],
-          "id": "S35.3"
+          "id": "S60.3"
         },
         {
           "question": "q2",
@@ -2545,7 +4426,7 @@
             "hundreds of percent"
           ],
           "corroborated_by": [],
-          "id": "S35.4"
+          "id": "S60.4"
         },
         {
           "question": "q3",
@@ -2555,7 +4436,7 @@
             "$1M+"
           ],
           "corroborated_by": [],
-          "id": "S35.5"
+          "id": "S60.5"
         },
         {
           "question": "q3",
@@ -2565,7 +4446,7 @@
             "thousands"
           ],
           "corroborated_by": [],
-          "id": "S35.6"
+          "id": "S60.6"
         },
         {
           "question": "q5",
@@ -2573,11 +4454,11 @@
           "quote": "[A large fraction of AI projects still stall](https://www.crewscale.com/blog/forward-deployed-engineers-in-ai-saas-startups?utm_source=chatgpt.com)before they[ever reach production environments](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf), often due to messy data, integration headaches, and lack of internal ownership.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S35.7"
+          "id": "S60.7"
         }
       ],
       "dropped": 0,
-      "n": 35
+      "n": 60
     },
     {
       "id": "df68998a58",
@@ -2598,7 +4479,7 @@
             "95%"
           ],
           "corroborated_by": [],
-          "id": "S36.1"
+          "id": "S61.1"
         },
         {
           "question": "q5",
@@ -2610,7 +4491,7 @@
             "5%"
           ],
           "corroborated_by": [],
-          "id": "S36.2"
+          "id": "S61.2"
         },
         {
           "question": "q5",
@@ -2620,7 +4501,7 @@
             "90 days"
           ],
           "corroborated_by": [],
-          "id": "S36.3"
+          "id": "S61.3"
         },
         {
           "question": "q5",
@@ -2628,7 +4509,7 @@
           "quote": "Successful teams focused on narrow, workflow-specific use cases with clearly defined operational outcomes, rather than broad or generalized AI deployments.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S36.4"
+          "id": "S61.4"
         },
         {
           "question": "q5",
@@ -2638,7 +4519,7 @@
             "twice"
           ],
           "corroborated_by": [],
-          "id": "S36.5"
+          "id": "S61.5"
         },
         {
           "question": "q5",
@@ -2646,7 +4527,7 @@
           "quote": "Additionally, successful buyers treated AI vendors less like SaaS providers and more like service partners. They demanded deep customization, evaluated tools based on measurable outcomes, and expected systems to integrate into existing workflows with minimal disruption.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S36.6"
+          "id": "S61.6"
         },
         {
           "question": "q5",
@@ -2657,7 +4538,7 @@
             "90%"
           ],
           "corroborated_by": [],
-          "id": "S36.7"
+          "id": "S61.7"
         },
         {
           "question": "q5",
@@ -2665,11 +4546,11 @@
           "quote": "Ultimately, the dividing line between human and agent isn’t just “intelligence,” it’s context. Engineers don’t just generate code; they maintain a mental model of the codebase, the business requirements, and the team’s historical preferences, culture, and style. Current AI solutions lack the contextual adaptability and true persistent memory necessary to perform complex human tasks.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S36.8"
+          "id": "S61.8"
         }
       ],
       "dropped": 0,
-      "n": 36
+      "n": 61
     },
     {
       "id": "458bafa3fa",
@@ -2690,7 +4571,7 @@
             "early 2010s"
           ],
           "corroborated_by": [],
-          "id": "S37.1"
+          "id": "S62.1"
         },
         {
           "question": "q2",
@@ -2701,7 +4582,7 @@
             "more than 10"
           ],
           "corroborated_by": [],
-          "id": "S37.2"
+          "id": "S62.2"
         },
         {
           "question": "q2",
@@ -2713,7 +4594,7 @@
             "four"
           ],
           "corroborated_by": [],
-          "id": "S37.3"
+          "id": "S62.3"
         },
         {
           "question": "q3",
@@ -2721,7 +4602,7 @@
           "quote": "Basically, when a customer is undecided on whether they can effectively use a product, Sales offers to provide an FDE to help them successfully integrate it.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S37.4"
+          "id": "S62.4"
         },
         {
           "question": "q3",
@@ -2729,7 +4610,7 @@
           "quote": "FDEs are sometimes mistakenly thought of as consultants, but the difference between consultants and FDEs is that the former make one-off recommendations, whereas FDEs generally work with customers, long-term.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S37.5"
+          "id": "S62.5"
         },
         {
           "question": "q5",
@@ -2737,11 +4618,82 @@
           "quote": "By sending in empowered engineers whose mission is to integrate Palantir’s software in a way that delivers customer value, Palantir “kills two birds with one stone”: they don’t need to worry too much about internal bureaucracy because they are blissfully unaware of it, and they send a “startup-minded” dev for the integration with the mindset of “how can I get this to work”, not “what are reasons this won’t work.” Companies contracting with Palantir see faster progress in software integration than by doing it themselves.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S37.6"
+          "id": "S62.6"
         }
       ],
       "dropped": 1,
-      "n": 37
+      "n": 62
+    },
+    {
+      "id": "b3101033a4",
+      "url": "https://cxfoundation.com/blog/outcome-based-pricing",
+      "title": "Outcome-Based Pricing Models: Examples — CX Foundation",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "blog",
+      "published": "2026-08-21",
+      "org": "Charlie Mitchell / CX Foundation",
+      "quality": 0.5,
+      "claims": [
+        {
+          "question": "q3",
+          "claim": "Outcome-based pricing charges a customer only after a pre-agreed, measurable result has been achieved.",
+          "quote": "Outcome-based pricing is a model in which a seller charges a customer only after a pre-agreed, measurable result has been achieved.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S63.1"
+        },
+        {
+          "question": "q3",
+          "claim": "76% of enterprise CX buyers are open to outcome-based pricing, but as of July 2026 only 5% were contracted on it, a 15x gap.",
+          "quote": "These companies typically sell to enterprise CX buyers, 76% of whom are open to outcome-based pricing models, according to HFS Research.\n\nStill, as of July 2026,[only 5% are contracted on outcome-based pricing.](https://www.hfsresearch.com/research/outcome-based-pricing-effort-based-contracts/)\n\nUltimately, that reveals a 15x gap in what the market says it wants and what it has signed.",
+          "numbers": [
+            "76%",
+            "July 2026",
+            "5%",
+            "15x"
+          ],
+          "corroborated_by": [],
+          "id": "S63.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Fin AI Agent counts explicit satisfaction or no human escalation within 24 hours as a resolution and lists $0.99 per successful resolution.",
+          "quote": "**Fin AI Agent**If the customer explicitly confirms satisfaction with the conversation or leaves without escalating to a human within 24 hours, that’s a resolution.$0.99 per successful resolution",
+          "numbers": [
+            "24 hours",
+            "$0.99"
+          ],
+          "corroborated_by": [],
+          "id": "S63.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Outcome-based sellers typically charge a flat fee per outcome regardless of how many steps the AI agent takes.",
+          "quote": "Sellers typically charge a flat fee per outcome, regardless of how many steps the AI agent takes to achieve it.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S63.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Sierra and Fin AI use a consultative approach and forward-deploy engineers to improve implementation success.",
+          "quote": "Indeed, companies using outcome-based pricing, like Sierra and Fin AI, often take a more consultative approach, forward-deploying engineers to increase the chances of a successful implementation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S63.5"
+        },
+        {
+          "question": "q5",
+          "claim": "A key challenge is that buyers and sellers may define outcomes differently and providers may not track outcomes aligned with buyer definitions.",
+          "quote": "Given this, significant negotiation is often involved, and buyers should be wary that the provider may not be able to track outcomes in a way that aligns with their definition.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S63.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 63
     },
     {
       "id": "1201bfd69f",
@@ -2760,7 +4712,7 @@
           "quote": "Cooley advised OpenAI on the formation of OpenAI Deployment Company, a private-equity backed joint venture designed to help organizations build and deploy AI systems they can rely on every day across their most important work.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S38.1"
+          "id": "S64.1"
         },
         {
           "question": "q2",
@@ -2770,7 +4722,7 @@
             "19"
           ],
           "corroborated_by": [],
-          "id": "S38.2"
+          "id": "S64.2"
         },
         {
           "question": "q2",
@@ -2780,11 +4732,99 @@
             "150"
           ],
           "corroborated_by": [],
-          "id": "S38.3"
+          "id": "S64.3"
         }
       ],
       "dropped": 0,
-      "n": 38
+      "n": 64
+    },
+    {
+      "id": "f7abd30113",
+      "url": "https://research.contrary.com/company/invisible",
+      "title": "Report: Invisible Business Breakdown & Founding Story — Contrary Research",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "other",
+      "published": "2026-10-15",
+      "org": "Contrary Research / Kate Ferrer",
+      "quality": 0.3,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Invisible uses forward-deployed engineers to connect its enterprise platform surfaces to customer systems, beginning with one workflow and expanding from there.",
+          "quote": "Forward-deployed engineers [connect](https://invisibletech.ai/how-we-work) these to a customer's systems, starting with one workflow and expanding from there.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S65.1"
+        },
+        {
+          "question": "q2",
+          "claim": "Invisible appointed a CEO who had been Global Head of QuantumBlack Labs at McKinsey, overseeing 1K engineers and product leaders and helping scale AI projects from proof of concept to production.",
+          "quote": "Fitzpatrick was previously Global Head of QuantumBlack Labs at McKinsey, where he oversaw [1K](https://www.businesswire.com/news/home/20250121103218/en/Invisible-Technologies-Appoints-McKinsey-AI-Leader-as-Chief-Executive-Officer) engineers and product leaders across QuantumBlack Labs and McKinsey and helped organizations [scale](https://www.businesswire.com/news/home/20250121103218/en/Invisible-Technologies-Appoints-McKinsey-AI-Leader-as-Chief-Executive-Officer) AI projects from proof of concept to production, the same work Invisible sells.",
+          "numbers": [
+            "1K"
+          ],
+          "corroborated_by": [],
+          "id": "S65.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Invisible decomposes customer workflows into discrete steps, automates as many as possible, and routes the remainder to human experts through its Meridial network.",
+          "quote": "Across both halves, Invisible [breaks down](https://www.inc.com/ben-sherry/francis-pedraza-invisible-technologies-founder-ai-unicorn-journey/91258221) customer workflows into discrete steps, automates as many as possible, and routes the rest to human experts through Meridial, its expert network.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S65.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Invisible positions itself as owning both the software and human-execution layers, unlike BPOs that profit from inefficiency and pure software platforms that sell tools without executing work.",
+          "quote": "Where legacy BPOs [profit](https://www.youtube.com/watch?v=F1DpDRuqd1o&t=267s) from inefficiency and pure software platforms sell the tool without executing the work, Invisible owns both layers, combining proprietary software for data readiness, workflow mapping, model evaluation, and agent execution with a human layer that handles what automation still cannot.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S65.4"
+        },
+        {
+          "question": "q4",
+          "claim": "Invisible's Neuron data platform ingests messy multi-source enterprise data and organizes it into a governed, AI-ready layer so models and agents know where to look without custom engineering per deployment.",
+          "quote": "Neuron is Invisible's data platform. It [ingests](https://invisibletech.ai/) messy, multi-source data across enterprise systems and organizes it into a governed, AI-ready layer, so that models and agents know where to look without custom engineering for each deployment.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S65.5"
+        },
+        {
+          "question": "q4",
+          "claim": "Invisible's enterprise platform has five surfaces: Neuron for data readiness, Atomic for workflow mapping, Meridial for human expertise, Synapse for model evaluation, and Axon for agent execution.",
+          "quote": "The enterprise platform consists of five surfaces, which the [site](https://invisibletech.ai/) lists as Neuron for data readiness, Atomic for workflow mapping, Meridial for human expertise, Synapse for model evaluation, and Axon for agent execution.",
+          "numbers": [
+            "five"
+          ],
+          "corroborated_by": [],
+          "id": "S65.6"
+        },
+        {
+          "question": "q5",
+          "claim": "A March 2025 study found that 88% of AI proofs of concept never reached wide-scale deployment.",
+          "quote": "A March 2025 study found that [88%](https://www.cio.com/article/3850763/88-of-ai-pilots-fail-to-reach-production-but-thats-not-all-on-it.html) of AI proofs of concept never reached wide-scale deployment.",
+          "numbers": [
+            "88%"
+          ],
+          "corroborated_by": [],
+          "id": "S65.7"
+        },
+        {
+          "question": "q5",
+          "claim": "Invisible agreed to acquire WeCP, a skills assessment platform with over 2 million technical interviews and over 18K assessment frameworks, to strengthen expert validation for high-precision workflows.",
+          "quote": "In [March 2026](https://invisibletech.ai/newsroom/invisible-acquires-wecp), Invisible agreed to acquire WeCP, a skills assessment platform that had conducted over [2 million](https://invisibletech.ai/newsroom/invisible-acquires-wecp) technical interviews and built over [18K](https://invisibletech.ai/newsroom/invisible-acquires-wecp) assessment frameworks, to strengthen expert validation for high-precision workflows.",
+          "numbers": [
+            "2 million",
+            "18K"
+          ],
+          "corroborated_by": [],
+          "id": "S65.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 65
     },
     {
       "id": "c130a17a2b",
@@ -2806,7 +4846,7 @@
             "2009"
           ],
           "corroborated_by": [],
-          "id": "S39.1"
+          "id": "S66.1"
         },
         {
           "question": "q1",
@@ -2816,7 +4856,7 @@
             "five-day"
           ],
           "corroborated_by": [],
-          "id": "S39.2"
+          "id": "S66.2"
         },
         {
           "question": "q1",
@@ -2826,7 +4866,7 @@
             "two years"
           ],
           "corroborated_by": [],
-          "id": "S39.3"
+          "id": "S66.3"
         },
         {
           "question": "q5",
@@ -2834,7 +4874,7 @@
           "quote": "Palantir said computers alone using artificial intelligence could not defeat an adaptive adversary. Instead, it proposed using human analysts to explore data from many sources, called intelligence augmentation.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S39.4"
+          "id": "S66.4"
         },
         {
           "question": "q1",
@@ -2845,7 +4885,7 @@
             "$31 million"
           ],
           "corroborated_by": [],
-          "id": "S39.5"
+          "id": "S66.5"
         },
         {
           "question": "q3",
@@ -2860,7 +4900,7 @@
             "3,600"
           ],
           "corroborated_by": [],
-          "id": "S39.6"
+          "id": "S66.6"
         },
         {
           "question": "q4",
@@ -2872,11 +4912,11 @@
             "a decade"
           ],
           "corroborated_by": [],
-          "id": "S39.7"
+          "id": "S66.7"
         }
       ],
       "dropped": 0,
-      "n": 39
+      "n": 66
     },
     {
       "id": "ef10c40975",
@@ -2895,7 +4935,7 @@
           "quote": "It provides software, consulting, and services related to [artificial intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence \"Artificial intelligence\").",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S40.1"
+          "id": "S67.1"
         },
         {
           "question": "q3",
@@ -2903,7 +4943,7 @@
           "quote": "Faculty clients typically own the models that are developed for them, though Faculty retains the right to use certain algorithms and libraries for other clients.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S40.2"
+          "id": "S67.2"
         },
         {
           "question": "q3",
@@ -2914,7 +4954,7 @@
             "740"
           ],
           "corroborated_by": [],
-          "id": "S40.3"
+          "id": "S67.3"
         },
         {
           "question": "q3",
@@ -2927,7 +4967,7 @@
             "400"
           ],
           "corroborated_by": [],
-          "id": "S40.4"
+          "id": "S67.4"
         },
         {
           "question": "q3",
@@ -2938,7 +4978,7 @@
             "80"
           ],
           "corroborated_by": [],
-          "id": "S40.5"
+          "id": "S67.5"
         },
         {
           "question": "q3",
@@ -2950,11 +4990,11 @@
             "2020"
           ],
           "corroborated_by": [],
-          "id": "S40.6"
+          "id": "S67.6"
         }
       ],
       "dropped": 0,
-      "n": 40
+      "n": 67
     },
     {
       "id": "d42e55abc6",
@@ -2973,7 +5013,7 @@
           "quote": "A **forward-deployed engineer** (**FDE**), also called a **forward-deployed software engineer** (**FDSE**), is a customer-facing [software engineer](https://en.wikipedia.org/wiki/Software_engineer \"Software engineer\") who works for a company that makes a product and helps implement that product within a client company, often working alongside the client's employees for a defined period of time.[[1]](https://en.wikipedia.org/wiki/Forward_deployed_engineer#cite_note-NewStack-1)[[2]](https://en.wikipedia.org/wiki/Forward_deployed_engineer#cite_note-MarketWatchFDE-2)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S41.1"
+          "id": "S68.1"
         },
         {
           "question": "q1",
@@ -2981,7 +5021,7 @@
           "quote": "The responsibilities of forward-deployed engineers overlap with those of [solutions architects](https://en.wikipedia.org/wiki/Solutions_architect \"Solutions architect\"), [sales engineers](https://en.wikipedia.org/wiki/Sales_engineer \"Sales engineer\"), [customer engineers](https://en.wikipedia.org/wiki/Customer_engineer \"Customer engineer\"), [professional services](https://en.wikipedia.org/wiki/Professional_services \"Professional services\") engineers, [systems integrators](https://en.wikipedia.org/wiki/Systems_integrator \"Systems integrator\"), and [information technology consultants](https://en.wikipedia.org/wiki/Information_technology_consulting \"Information technology consulting\").[[1]](https://en.wikipedia.org/wiki/Forward_deployed_engineer#cite_note-NewStack-1)[[2]](https://en.wikipedia.org/wiki/Forward_deployed_engineer#cite_note-MarketWatchFDE-2)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S41.2"
+          "id": "S68.2"
         },
         {
           "question": "q1",
@@ -2989,11 +5029,11 @@
           "quote": "The term \"[forward-deployed](https://en.wikipedia.org/wiki/Forward-basing \"Forward-basing\")\" comes from U.S. military jargon.[[3]](https://en.wikipedia.org/wiki/Forward_deployed_engineer#cite_note-3)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S41.3"
+          "id": "S68.3"
         }
       ],
       "dropped": 0,
-      "n": 41
+      "n": 68
     },
     {
       "id": "7784797538",
@@ -3014,7 +5054,7 @@
             "June 2025"
           ],
           "corroborated_by": [],
-          "id": "S42.1"
+          "id": "S69.1"
         },
         {
           "question": "q2",
@@ -3022,11 +5062,11 @@
           "quote": "aiming to pivot the company towards a \"[forward deployed engineers](https://en.wikipedia.org/wiki/Forward_deployed_engineer \"Forward deployed engineer\")\" model.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S42.2"
+          "id": "S69.2"
         }
       ],
       "dropped": 0,
-      "n": 42
+      "n": 69
     },
     {
       "id": "953ec8eb51",
@@ -3045,11 +5085,11 @@
           "quote": "Stop treating FDE as optional: Your AI Flywheel will not spin without it",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S43.1"
+          "id": "S70.1"
         }
       ],
       "dropped": 0,
-      "n": 43
+      "n": 70
     }
   ]
 }

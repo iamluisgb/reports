@@ -1,0 +1,49 @@
+{
+  "relevant": true,
+  "source_type": "news",
+  "published": "2025-09-23",
+  "author_or_org": "Mike Wheatley, SiliconANGLE",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Distyl AI was founded in 2022 by Arjun Prakash and Derek Ho, who had previously worked at Palantir.",
+      "quote": "The company was founded in 2022 by Arjun Prakash and Derek Ho, who previously made their names at the data mining firm Palantir Technologies Inc.",
+      "numbers": [
+        "2022"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Distyl’s founders combined Palantir data-platform experience with AI engineers and researchers from OpenAI and Apple.",
+      "quote": "The founders say they’ve combined their years of experience in building complex data platforms at Palantir with a staff of talented AI engineers and researchers who earned their chops at companies like OpenAI and Apple Inc.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Distyl’s stated advantage over traditional consultancies is implementing AI more successfully with smaller teams and lower costs.",
+      "quote": "The startup’s advantage over traditional consultancies is that it helps enterprises implement AI more successfully, with smaller teams, and at lower costs.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Distyl positions itself as the consultancy enterprises call when they are not getting enough from endless AI pilots and need results.",
+      "quote": "It has forged a growing reputation as the consultancy to call when enterprises realize that they’re not getting enough out of their endless AI pilots, and that it’s time to start showing results.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Distyl says it builds outcome-driven partnerships focused on immediately automating workloads rather than having consultants spend months in boardrooms discussing possibilities.",
+      "quote": "Chief Executive Prakash told The Information that the startup builds “outcome-driven partnerships” with its clients. The focus is on integrating AI in such a way that it can immediately begin automating workloads and solving their biggest business challenges, rather than having consultants sit in boardrooms for months on end just talking about how it might be done.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The Distillery engine taps customers’ proprietary data so AI agents can possess organizational knowledge needed for work.",
+      "quote": "The engine taps into each customer’s proprietary data to ensure these agents possess the “organizational knowledge” needed to do this work.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://siliconangle.com/2025/09/22/enterprise-ai-consultancy-distyl-ais-valuation-soars-1-8b-bumper-funding-round/"
+}

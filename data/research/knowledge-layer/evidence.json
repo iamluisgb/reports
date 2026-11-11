@@ -14,7 +14,8 @@
           "enterprise ontology knowledge graph semantic layer",
           "semantic layer LLM agents",
           "context engineering LLM agents",
-          "semantic layer context layer ontology for AI agents"
+          "semantic layer context layer ontology for AI agents",
+          "semantic layer tools and standards for AI agents"
         ],
         "providers": [
           "wikipedia",
@@ -31,7 +32,8 @@
           "GraphRAG evaluation",
           "knowledge graph retrieval augmented generation benchmark",
           "GraphRAG versus vector RAG",
-          "GraphRAG versus vector RAG cost in production"
+          "GraphRAG versus vector RAG cost in production",
+          "knowledge graph RAG production case studies"
         ],
         "providers": [
           "arxiv",
@@ -83,7 +85,8 @@
           "knowledge graph link prediction",
           "graph neural networks knowledge graph completion",
           "automatic ontology learning LLM",
-          "LLM knowledge graph extraction entity resolution production"
+          "LLM knowledge graph extraction entity resolution production",
+          "knowledge graph construction effort and cost"
         ],
         "providers": [
           "arxiv",
@@ -113,15 +116,15 @@
       "tinyfish"
     ]
   },
-  "generated": "2026-11-10",
+  "generated": "2026-11-11",
   "stats": {
-    "searched": 281,
-    "candidates": 87,
+    "searched": 295,
+    "candidates": 101,
     "web_search": true,
-    "read": 87,
-    "sources_with_evidence": 83,
-    "claims": 549,
-    "quotes_dropped_as_unverified": 27
+    "read": 101,
+    "sources_with_evidence": 97,
+    "claims": 635,
+    "quotes_dropped_as_unverified": 29
   },
   "sources": [
     {
@@ -306,7 +309,7 @@
           "quote": "GraphRAG enhances large language models (LLMs) to generate quality answers for user questions by retrieving related facts from external knowledge graphs.",
           "numbers": [],
           "corroborated_by": [
-            31
+            32
           ],
           "id": "S3.1"
         },
@@ -2172,6 +2175,75 @@
       "n": 25
     },
     {
+      "id": "a5e7496d44",
+      "url": "https://arxiv.org/abs/2404.17723",
+      "title": "Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering — LinkedIn",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "academic",
+      "published": "2024-04-26",
+      "org": null,
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "Conventional RAG retrieval for LLMs treats a large corpus of past issue tracking tickets as plain text, ignoring intra-issue structure and inter-issue relations, which limits performance.",
+          "quote": "The conventional retrieval methods in retrieval-augmented generation (RAG) for large language models (LLMs) treat a large corpus of past issue tracking tickets as plain text, ignoring the crucial intra-issue structure and inter-issue relations, which limits performance.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.1"
+        },
+        {
+          "question": "q5",
+          "claim": "The method constructs a knowledge graph from historical issues for retrieval, retaining intra-issue structure and inter-issue relations.",
+          "quote": "Our method constructs a KG from historical issues for use in retrieval, retaining the intra-issue structure and inter-issue relations.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.2"
+        },
+        {
+          "question": "q2",
+          "claim": "During question answering, the method parses consumer queries and retrieves related sub-graphs from the knowledge graph to generate answers.",
+          "quote": "During the question-answering phase, our method parses consumer queries and retrieves related sub-graphs from the KG to generate answers.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.3"
+        },
+        {
+          "question": "q2",
+          "claim": "Integrating a knowledge graph improves retrieval accuracy by preserving customer service structure information and enhances answering quality by mitigating text segmentation effects.",
+          "quote": "This integration of a KG not only improves retrieval accuracy by preserving customer service structure information but also enhances answering quality by mitigating the effects of text segmentation.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S26.4"
+        },
+        {
+          "question": "q2",
+          "claim": "On its benchmark datasets, the KG-RAG method outperformed the baseline by 77.6% in MRR and 0.32 in BLEU.",
+          "quote": "Empirical assessments on our benchmark datasets, utilizing key retrieval (MRR, Recall@K, NDCG@K) and text generation (BLEU, ROUGE, METEOR) metrics, reveal that our method outperforms the baseline by 77.6% in MRR and by 0.32 in BLEU.",
+          "numbers": [
+            "77.6%",
+            "0.32"
+          ],
+          "corroborated_by": [],
+          "id": "S26.5"
+        },
+        {
+          "question": "q2",
+          "claim": "The method was deployed within LinkedIn's customer service team for approximately six months and reduced median per-issue resolution time by 28.6%.",
+          "quote": "Our method has been deployed within LinkedIn's customer service team for approximately six months and has reduced the median per-issue resolution time by 28.6%.",
+          "numbers": [
+            "six",
+            "28.6%"
+          ],
+          "corroborated_by": [],
+          "id": "S26.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 26
+    },
+    {
       "id": "e60477cde5",
       "url": "https://www.semanticscholar.org/paper/28bf587adc26e4bbd1987f1e19d66b8c87dd752d",
       "title": "A Systematic Comparison of RAG Architectures for Geographic POI Question Answering Using OpenStreetMap Data",
@@ -2188,7 +2260,7 @@
           "quote": "It is suggested that, in dense-urban POI settings where coordinates are reliable, the marginal benefit of explicit graph edges shrinks for coordinate-computable relationships, while structured spatial processing complements vector retrieval.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.1"
+          "id": "S27.1"
         },
         {
           "question": "q2",
@@ -2196,7 +2268,7 @@
           "quote": "A Systematic Comparison of RAG Architectures for Geographic POI Question Answering Using OpenStreetMap Data",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.2"
+          "id": "S27.2"
         },
         {
           "question": "q2",
@@ -2204,7 +2276,7 @@
           "quote": "A comprehensive benchmark study comparing RAG and GraphRAG on established text-based tasks, including question answering and query-based summarization is presented and a unified evaluation protocol is introduced that standardizes data preprocessing, retrieval configurations, and generation settings, enabling fair and reproducible comparisons.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.3"
+          "id": "S27.3"
         },
         {
           "question": "q2",
@@ -2212,7 +2284,7 @@
           "quote": "A novel approach based on a combination, called HybridRAG, of the Knowledge Graphs based RAG techniques (called GraphRAG) and VectorRAG techniques to enhance question-answer (Q&A) systems for information extraction from financial documents that is shown to be capable of generating accurate and contextually relevant answers.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.4"
+          "id": "S27.4"
         },
         {
           "question": "q2",
@@ -2220,7 +2292,7 @@
           "quote": "Spatial-RAG, a Retrieval-Augmented Generation (RAG) framework designed for geospatial question answering, formulates the answering process as a multi-objective optimization over spatial and semantic relevance, identifying Pareto-optimal candidates and dynamically selecting the best response based on user intent.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.5"
+          "id": "S27.5"
         },
         {
           "question": "q2",
@@ -2228,11 +2300,11 @@
           "quote": "A real-time spatial RAG architecture that defines the necessary components for the effective integration of generative AI into cities, leveraging temporal and spatial filtering capabilities through linked data is proposed.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S26.6"
+          "id": "S27.6"
         }
       ],
       "dropped": 0,
-      "n": 26
+      "n": 27
     },
     {
       "id": "f669b37439",
@@ -2251,7 +2323,7 @@
           "quote": "There is increasing evidence that question-answering (QA) systems with Large Language Models (LLMs), which employ a knowledge graph/semantic representation of an enterprise SQL database (i.e. Text-to-SPARQL), achieve higher accuracy compared to systems that answer questions directly on SQL databases (i.e. Text-to-SQL).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S27.1"
+          "id": "S28.1"
         },
         {
           "question": "q3",
@@ -2259,7 +2331,7 @@
           "quote": "There is increasing evidence that question-answering (QA) systems with Large Language Models (LLMs), which employ a knowledge graph/semantic representation of an enterprise SQL database (i.e. Text-to-SPARQL), achieve higher accuracy compared to systems that answer questions directly on SQL databases (i.e. Text-to-SQL).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S27.2"
+          "id": "S28.2"
         },
         {
           "question": "q3",
@@ -2270,7 +2342,7 @@
             "54%"
           ],
           "corroborated_by": [],
-          "id": "S27.3"
+          "id": "S28.3"
         },
         {
           "question": "q3",
@@ -2281,7 +2353,7 @@
             "8%"
           ],
           "corroborated_by": [],
-          "id": "S27.4"
+          "id": "S28.4"
         },
         {
           "question": "q3",
@@ -2291,7 +2363,7 @@
             "20%"
           ],
           "corroborated_by": [],
-          "id": "S27.5"
+          "id": "S28.5"
         },
         {
           "question": "q3",
@@ -2299,11 +2371,11 @@
           "quote": "These results provide further evidence that investing knowledge graphs, namely the ontology, provides higher accuracy for LLM powered question answering systems.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S27.6"
+          "id": "S28.6"
         }
       ],
       "dropped": 1,
-      "n": 27
+      "n": 28
     },
     {
       "id": "17dc487179",
@@ -2322,7 +2394,7 @@
           "quote": "Traditional knowledge graphs often struggle with implicit relationship discovery and lack sufficient semantic understanding for complex question answering.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S28.1"
+          "id": "S29.1"
         },
         {
           "question": "q1",
@@ -2330,7 +2402,7 @@
           "quote": "We first build a dual-layer enterprise ontology from structured databases and unstructured text, subsequently fusing these sources into a comprehensive enterprise ontology.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S28.2"
+          "id": "S29.2"
         },
         {
           "question": "q3",
@@ -2342,7 +2414,7 @@
             "DeepSeek-V3.2"
           ],
           "corroborated_by": [],
-          "id": "S28.3"
+          "id": "S29.3"
         },
         {
           "question": "q5",
@@ -2352,7 +2424,7 @@
             "three-stage"
           ],
           "corroborated_by": [],
-          "id": "S28.4"
+          "id": "S29.4"
         },
         {
           "question": "q5",
@@ -2360,11 +2432,11 @@
           "quote": "We also construct comprehensive training and evaluation datasets covering diverse ontology reasoning tasks.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S28.5"
+          "id": "S29.5"
         }
       ],
       "dropped": 0,
-      "n": 28
+      "n": 29
     },
     {
       "id": "2d44d2e2e5",
@@ -2388,7 +2460,7 @@
             "[2]"
           ],
           "corroborated_by": [],
-          "id": "S29.1"
+          "id": "S30.1"
         },
         {
           "question": "q6",
@@ -2396,7 +2468,7 @@
           "quote": "A KylinRCA framework integrating the ideas of both is proposed, which depicts the propagation chain through temporal causal discovery, realizes global root cause localization and type identification through cross-modal graph learning, and outputs auditable evidence chains combined with mask-based explanation methods.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S29.2"
+          "id": "S30.2"
         },
         {
           "question": "q6",
@@ -2404,7 +2476,7 @@
           "quote": "How to achieve efficient, accurate, and interpretable Root Cause Analysis (RCA) based on observability data (metrics, logs, traces) has become a core issue in AIOps.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S29.3"
+          "id": "S30.3"
         },
         {
           "question": "q6",
@@ -2412,7 +2484,7 @@
           "quote": "With the rapid development of cloud computing and ultra-large-scale data centers, the scale and complexity of systems have increased significantly, leading to frequent faults that often show cascading propagation.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S29.4"
+          "id": "S30.4"
         },
         {
           "question": "q6",
@@ -2420,11 +2492,11 @@
           "quote": "A multi-dimensional experimental scheme is designed, evaluation indicators are clarified, and engineering challenges are discussed, providing an effective solution for fault diagnosis under full-stack observability.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S29.5"
+          "id": "S30.5"
         }
       ],
       "dropped": 0,
-      "n": 29
+      "n": 30
     },
     {
       "id": "96aa54a29c",
@@ -2443,7 +2515,7 @@
           "quote": "We present a semantic-layer-mediated NL2SQL agent that decouples semantic intent from physical SQL execution. Rather than generating SQL directly over raw schemas, the agent reasons over a curated semantic layer through a compact intermediate representation called the Semantic Model Query (SMQ).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S30.1"
+          "id": "S31.1"
         },
         {
           "question": "q1",
@@ -2451,7 +2523,7 @@
           "quote": "A deterministic compiler translates each SMQ into dialect-specific SQL, providing verified building blocks that the agent composes into the final query.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S30.2"
+          "id": "S31.2"
         },
         {
           "question": "q3",
@@ -2464,7 +2536,7 @@
             "third"
           ],
           "corroborated_by": [],
-          "id": "S30.3"
+          "id": "S31.3"
         },
         {
           "question": "q3",
@@ -2472,7 +2544,7 @@
           "quote": "The system employs a constrained think-act loop, supports SQLite, BigQuery, and Snowflake backends, and is integrated into an end-to-end evaluation framework.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S30.4"
+          "id": "S31.4"
         },
         {
           "question": "q3",
@@ -2480,11 +2552,11 @@
           "quote": "We describe the system architecture, SMQ representation, agent workflow, evaluation results, and discuss semantic-layer quality and the trade-off between improved grounding and overfitting.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S30.5"
+          "id": "S31.5"
         }
       ],
       "dropped": 0,
-      "n": 30
+      "n": 31
     },
     {
       "id": "a6647837b9",
@@ -2505,7 +2577,7 @@
             "two"
           ],
           "corroborated_by": [],
-          "id": "S31.1"
+          "id": "S32.1"
         },
         {
           "question": "q2",
@@ -2513,7 +2585,7 @@
           "quote": "To tackle the two flaws, we propose an unbiased evaluation framework that uses graph-text-grounded question generation to produce questions that are more related to the underlying dataset and an unbiased evaluation procedure to eliminate the biases in LLM-based answer assessment.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S31.2"
+          "id": "S32.2"
         },
         {
           "question": "q2",
@@ -2523,7 +2595,7 @@
             "3"
           ],
           "corroborated_by": [],
-          "id": "S31.3"
+          "id": "S32.3"
         },
         {
           "question": "q2",
@@ -2531,11 +2603,11 @@
           "quote": "Although our evaluation framework may still have flaws, it calls for scientific evaluations to lay solid foundations for GraphRAG research.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S31.4"
+          "id": "S32.4"
         }
       ],
       "dropped": 0,
-      "n": 31
+      "n": 32
     },
     {
       "id": "c8168e0923",
@@ -2554,7 +2626,7 @@
           "quote": "Traditional Retrieval-Augmented Generation (RAG) systems treat documents in isolation, failing to capture hierarchical relationships between concepts in complex scientific corpora.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S32.1"
+          "id": "S33.1"
         },
         {
           "question": "q2",
@@ -2562,7 +2634,7 @@
           "quote": "This limitation compromises answer quality in specialized domains such as climatology, where conceptual dependencies frequently traverse multiple articles.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S32.2"
+          "id": "S33.2"
         },
         {
           "question": "q2",
@@ -2570,7 +2642,7 @@
           "quote": "We propose a hybrid architecture that integrates vector search with GraphRAG, Leiden community detection, and cross-encoder re-ranking, achieving gains of 160\\% in contextual relevance and 177\\% in contextual recall compared to classical RAG.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S32.3"
+          "id": "S33.3"
         },
         {
           "question": "q2",
@@ -2581,7 +2653,7 @@
             "177\\%"
           ],
           "corroborated_by": [],
-          "id": "S32.4"
+          "id": "S33.4"
         },
         {
           "question": "q2",
@@ -2589,11 +2661,72 @@
           "quote": "These results demonstrate that unifying local and global retrieval significantly outperforms text-span isolation, paving the way for more effective question-answering systems over dispersed scientific literature.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S32.5"
+          "id": "S33.5"
         }
       ],
       "dropped": 0,
-      "n": 32
+      "n": 33
+    },
+    {
+      "id": "cc2574d8f4",
+      "url": "https://arxiv.org/abs/2501.13956",
+      "title": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "academic",
+      "published": "2025-01-20",
+      "org": null,
+      "quality": 1.0,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Zep's core component Graphiti is described as a temporally-aware knowledge graph engine that dynamically combines unstructured conversational data and structured business data while preserving historical relationships.",
+          "quote": "Zep addresses this fundamental limitation through its core component Graphiti -- a temporally-aware knowledge graph engine that dynamically synthesizes both unstructured conversational data and structured business data while maintaining historical relationships.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.1"
+        },
+        {
+          "question": "q2",
+          "claim": "The source states that existing RAG frameworks for LLM-based agents are limited to static document retrieval, whereas enterprise applications require dynamic knowledge integration from conversations and business data.",
+          "quote": "While existing retrieval-augmented generation (RAG) frameworks for large language model (LLM)-based agents are limited to static document retrieval, enterprise applications demand dynamic knowledge integration from diverse sources including ongoing conversations and business data.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.2"
+        },
+        {
+          "question": "q2",
+          "claim": "In the Deep Memory Retrieval benchmark, Zep reports 94.8% versus MemGPT's 93.4%.",
+          "quote": "In the DMR benchmark, which the MemGPT team established as their primary evaluation metric, Zep demonstrates superior performance (94.8% vs 93.4%).",
+          "numbers": [
+            "94.8%",
+            "93.4%"
+          ],
+          "corroborated_by": [],
+          "id": "S34.3"
+        },
+        {
+          "question": "q2",
+          "claim": "On the LongMemEval benchmark, Zep reports accuracy improvements of up to 18.5% and response latency reductions of 90% compared with baseline implementations.",
+          "quote": "In this evaluation, Zep achieves substantial results with accuracy improvements of up to 18.5% while simultaneously reducing response latency by 90% compared to baseline implementations.",
+          "numbers": [
+            "18.5%",
+            "90%"
+          ],
+          "corroborated_by": [],
+          "id": "S34.4"
+        },
+        {
+          "question": "q5",
+          "claim": "Graphiti is presented as a knowledge graph engine that constructs a temporally aware graph by synthesizing both unstructured conversational data and structured business data while maintaining historical relationships.",
+          "quote": "Zep addresses this fundamental limitation through its core component Graphiti -- a temporally-aware knowledge graph engine that dynamically synthesizes both unstructured conversational data and structured business data while maintaining historical relationships.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S34.5"
+        }
+      ],
+      "dropped": 0,
+      "n": 34
     },
     {
       "id": "5d4f2b78d8",
@@ -2612,7 +2745,7 @@
           "quote": "Toward a Hybrid Ontology Framework for Semantic Data Understanding in AI-Augmented Data Warehousing",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S33.1"
+          "id": "S35.1"
         },
         {
           "question": "q1",
@@ -2620,7 +2753,7 @@
           "quote": "This work presents a hybrid ontology framework that integrates deterministic schema metadata with flexible semantic enrichment derived from documentation, ETL scripts, and business glossaries, and demonstrates improvements in entity disambiguation, catalog enrichment, and cross-system understanding.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S33.2"
+          "id": "S35.2"
         },
         {
           "question": "q3",
@@ -2628,11 +2761,11 @@
           "quote": "This work presents a hybrid ontology framework that integrates deterministic schema metadata with flexible semantic enrichment derived from documentation, ETL scripts, and business glossaries, and demonstrates improvements in entity disambiguation, catalog enrichment, and cross-system understanding.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S33.3"
+          "id": "S35.3"
         }
       ],
       "dropped": 0,
-      "n": 33
+      "n": 35
     },
     {
       "id": "2c5b0f3cd4",
@@ -2654,7 +2787,7 @@
             "96"
           ],
           "corroborated_by": [],
-          "id": "S34.1"
+          "id": "S36.1"
         },
         {
           "question": "q5",
@@ -2662,11 +2795,11 @@
           "quote": "The emergence of large language models (LLMs) capable of zero-shot and few-shot structured generation has introduced a different paradigm for KG construction. Instead of training task-specific extraction models, LLMs can directly generate typed entities and relations from raw text.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S34.2"
+          "id": "S36.2"
         }
       ],
       "dropped": 6,
-      "n": 34
+      "n": 36
     },
     {
       "id": "68dda4faec",
@@ -2685,7 +2818,7 @@
           "quote": "Activating context by integrating disparate data, logic, action, and security into a unified representation of enterprise decision-making.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S35.1"
+          "id": "S37.1"
         },
         {
           "question": "q1",
@@ -2693,7 +2826,7 @@
           "quote": "Equipping developers with no-, low-, and pro-code tools for integrating the contextual data, logic, action that power the Ontology and all dependent workflows.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S35.2"
+          "id": "S37.2"
         },
         {
           "question": "q1",
@@ -2701,7 +2834,7 @@
           "quote": "The Ontology’s language models the \"nouns\" and \"verbs\" of operational processes into a legible form for both humans and agents.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S35.3"
+          "id": "S37.3"
         },
         {
           "question": "q4",
@@ -2712,7 +2845,7 @@
             "tens-of-thousands"
           ],
           "corroborated_by": [],
-          "id": "S35.4"
+          "id": "S37.4"
         },
         {
           "question": "q4",
@@ -2720,7 +2853,7 @@
           "quote": "The Ontology’s toolchain empowers developers to build diverse and complex AI-powered applications, atop a common foundation.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S35.5"
+          "id": "S37.5"
         },
         {
           "question": "q4",
@@ -2728,7 +2861,7 @@
           "quote": "Regardless of the modality, every automation can leverage the rich set of data, logic, and action primitives in the Ontology system, and a wide array of execution and notification configurations.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S35.6"
+          "id": "S37.6"
         },
         {
           "question": "q4",
@@ -2736,7 +2869,7 @@
           "quote": "This includes fine-grained monitoring for all data flows that feed the Ontology, logging for every action taken by human users or AI agents, and the ability to trace the cascade of chained executions in a workflow.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S35.7"
+          "id": "S37.7"
         },
         {
           "question": "q4",
@@ -2744,11 +2877,11 @@
           "quote": "Ensuring that every operation made by humans and agents abides by rigorous role-, marking-, and purpose-based controls.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S35.8"
+          "id": "S37.8"
         }
       ],
       "dropped": 0,
-      "n": 35
+      "n": 37
     },
     {
       "id": "9839be0ed7",
@@ -2767,7 +2900,7 @@
           "quote": "The **ontology (preview)** item in Microsoft Fabric IQ provides a shared, machine-understandable representation of your business. It defines the concepts that matter to your organization, such as customers, products, assets, orders, and locations, along with their properties, how they relate, and the rules and metrics that give them business meaning. You then bind these definitions to enterprise data so people, applications, and AI agents can use the same vocabulary and context.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S36.1"
+          "id": "S38.1"
         },
         {
           "question": "q1",
@@ -2775,7 +2908,7 @@
           "quote": "Ontology is the **business context and semantic modeling layer** between enterprise data and the experiences that consume it. It stores and serves ontology definitions and bindings (it isn't itself a general-purpose data-query engine). Agent and visualization experiences use the ontology as context and execute against the appropriate bound data sources.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S36.2"
+          "id": "S38.2"
         },
         {
           "question": "q1",
@@ -2783,7 +2916,7 @@
           "quote": "Ontology aligns with familiar semantic-model constructs while extending them with ontology-specific modeling concepts. You can represent tables, columns, measures, and relationships alongside entity hierarchies, business rules, source bindings, namespaces, and other semantic metadata.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S36.3"
+          "id": "S38.3"
         },
         {
           "question": "q1",
@@ -2791,7 +2924,7 @@
           "quote": "One way to create an ontology is to generate it from a Power BI semantic model to reuse existing business definitions. Semantic-model tables and relationships provide the starting structure, while ontology adds business context and capabilities for operational and agent-based consumption. The updated experience expands semantic-model alignment to include calculated columns and DAX measures.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S36.4"
+          "id": "S38.4"
         },
         {
           "question": "q3",
@@ -2799,7 +2932,7 @@
           "quote": "Measures from a source semantic model appear in ontology as **metrics** associated with the relevant entities. The source semantic model remains the owner of the DAX expression, while ontology retains the metric's source and business context so agents can recognize and use the organization's defined calculations rather than recreating them.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S36.5"
+          "id": "S38.5"
         },
         {
           "question": "q4",
@@ -2807,7 +2940,7 @@
           "quote": "A **data binding** connects an ontology definition to real data. Bindings describe which source supplies an entity's properties, metrics, instances, or relationships and preserve the mapping between business terminology and source structures. During preview, source options include semantic models, lakehouses, eventhouses, warehouses, SQL databases, mirrored databases, and supported OneLake constructs such as shortcuts, views, and materialized views.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S36.6"
+          "id": "S38.6"
         },
         {
           "question": "q4",
@@ -2815,7 +2948,7 @@
           "quote": "Ontology acts as a virtual semantic and context layer over these sources. Source data remains in the system that owns it, and consuming experiences can query the live bound source rather than copying all data into the ontology.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S36.7"
+          "id": "S38.7"
         },
         {
           "question": "q4",
@@ -2823,11 +2956,11 @@
           "quote": "**Rules** capture business logic in natural language and link it to entities, properties, and relationships. Representing a rule in the ontology makes the same rule context available to multiple consumers, which reduces the need to duplicate business instructions across individual prompts, agents, and applications.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S36.8"
+          "id": "S38.8"
         }
       ],
       "dropped": 0,
-      "n": 36
+      "n": 38
     },
     {
       "id": "ce50938124",
@@ -2846,7 +2979,7 @@
           "quote": "**从零开始复现 GraphRAG**：完整实现了 GraphRAG 的核心功能，将知识表示为图结构",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S37.1"
+          "id": "S39.1"
         },
         {
           "question": "q1",
@@ -2854,7 +2987,7 @@
           "quote": "本项目聚焦于结合 **GraphRAG** 与 **私域 Deep Search** 的方式，实现可解释、可推理的智能问答系统，同时结合多 Agent 协作与知识图谱增强，构建完整的 RAG 智能交互解决方案。",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S37.2"
+          "id": "S39.2"
         },
         {
           "question": "q2",
@@ -2862,7 +2995,7 @@
           "quote": "**多级检索策略**：支持本地搜索、全局搜索、混合搜索等多种模式",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S37.3"
+          "id": "S39.3"
         },
         {
           "question": "q2",
@@ -2872,7 +3005,7 @@
             "20+"
           ],
           "corroborated_by": [],
-          "id": "S37.4"
+          "id": "S39.4"
         },
         {
           "question": "q5",
@@ -2880,7 +3013,7 @@
           "quote": "**LLM 驱动的实体关系提取**：利用大语言模型从文本中识别实体与关系",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S37.5"
+          "id": "S39.5"
         },
         {
           "question": "q5",
@@ -2888,7 +3021,7 @@
           "quote": "**实体消歧（Entity Disambiguation）**：使用字符串召回、向量重排和NIL检测将mention映射到规范实体",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S37.6"
+          "id": "S39.6"
         },
         {
           "question": "q5",
@@ -2896,7 +3029,7 @@
           "quote": "**实体对齐（Entity Alignment）**：智能检测和解决同一canonical实体下的冲突，保留所有关系信息",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S37.7"
+          "id": "S39.7"
         },
         {
           "question": "q5",
@@ -2904,11 +3037,90 @@
           "quote": "**增量更新机制**：支持知识图谱的动态增量构建与智能去重",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S37.8"
+          "id": "S39.8"
         }
       ],
       "dropped": 0,
-      "n": 37
+      "n": 39
+    },
+    {
+      "id": "e77a920483",
+      "url": "https://docs.databricks.com/aws/en/uc-semantics/metric-views/",
+      "title": "Unity Catalog metric views — Databricks docs",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "official",
+      "published": "2026-10-29",
+      "org": "Databricks",
+      "quality": 0.9,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Metric views separate measure definitions from dimensions used to group, filter, and aggregate, so metrics can be defined once and queried at runtime.",
+          "quote": "They provide a centralized way to define and manage business metrics by separating measure definitions from the fields (also called dimensions) used to group, filter, and aggregate them, so you can define metrics once and query them at runtime.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.1"
+        },
+        {
+          "question": "q1",
+          "claim": "With a metric view, a metric is defined once and users can group by any available field, with the query engine generating the computation.",
+          "quote": "With a metric view, you define the metric once, for example _sum of revenue divided by distinct customer count_, and users can group by any available field.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Metric views can be queried from SQL editors, notebooks, dashboards, Genie Agents, and alerts.",
+          "quote": "Query metric views from SQL editors, notebooks, dashboards, Genie Agents, and alerts.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.3"
+        },
+        {
+          "question": "q1",
+          "claim": "Metric views support modeling star and snowflake schemas with multi-level joins.",
+          "quote": "Model star and snowflake schemas with multi-level joins.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.4"
+        },
+        {
+          "question": "q1",
+          "claim": "Metric views can bind parameter values at query time to serve many query variants from one metric view.",
+          "quote": "Bind values at query time with parameters to serve many query variants from a single metric view.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Agent metadata in metric views lets modelers add synonyms, display names, and formatting rules intended to improve agent accuracy and consistent formatting across tools.",
+          "quote": "Add synonyms, display names, and formatting rules to improve agent accuracy and display consistent formats across tools.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Databricks states that metric-view relationships, in Beta, can be declared so AI assistants and BI tools choose the right join path.",
+          "quote": "(Beta) Declare how metric views relate to each other so that AI assistants and BI tools choose the right join path.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.7"
+        },
+        {
+          "question": "q1",
+          "claim": "Metric views support precomputed aggregations with incremental refresh, and the query engine can automatically rewrite queries to use materialized views when appropriate.",
+          "quote": "Pre-compute and incrementally refresh aggregations. The query engine automatically rewrites queries to use materialized views when appropriate.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S40.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 40
     },
     {
       "id": "980126f8da",
@@ -2929,7 +3141,7 @@
             "three"
           ],
           "corroborated_by": [],
-          "id": "S38.1"
+          "id": "S41.1"
         },
         {
           "question": "q1",
@@ -2937,7 +3149,7 @@
           "quote": "[Ontology (preview)](https://learn.microsoft.com/en-us/fabric/iq/ontology/overview) is a shared, machine-understandable representation of your business. It defines entity types, properties, relationships, rules, and metrics, and binds them to live enterprise data so people, applications, and AI agents share the same vocabulary and context.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S38.2"
+          "id": "S41.2"
         },
         {
           "question": "q3",
@@ -2945,7 +3157,7 @@
           "quote": "Fabric IQ provides structured grounding for copilots and agents, so answers reflect your enterprise language as defined in your [ontology (preview)](https://learn.microsoft.com/en-us/fabric/iq/ontology/overview).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S38.3"
+          "id": "S41.3"
         },
         {
           "question": "q4",
@@ -2953,7 +3165,7 @@
           "quote": "You can create ontology items from scratch or generate them from existing Power BI semantic models to bootstrap from trusted logic already in production. This process also carries over calculated columns and source-owned DAX measures as metrics. You can also generate ontology details with the ontology agent or import them from open standards like RDF or OWL.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S38.4"
+          "id": "S41.4"
         },
         {
           "question": "q4",
@@ -2961,7 +3173,7 @@
           "quote": "With this shared language, agents can monitor live data, detect anomalies, and take governed action.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S38.5"
+          "id": "S41.5"
         },
         {
           "question": "q5",
@@ -2969,7 +3181,7 @@
           "quote": "After an ontology is created, you can optionally generate a built-in graph model from its business entities, relationships, rules, and source bindings to help answer relationship-centric questions.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S38.6"
+          "id": "S41.6"
         },
         {
           "question": "q5",
@@ -2977,11 +3189,11 @@
           "quote": "The built-in ontology agent supports the ontology lifecycle through natural-language interactions: it generates definitions and data bindings, answers business questions against your ontology context, and proposes changes for your review under a proposal-first model.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S38.7"
+          "id": "S41.7"
         }
       ],
       "dropped": 1,
-      "n": 38
+      "n": 41
     },
     {
       "id": "8206eeb11f",
@@ -3000,7 +3212,7 @@
           "quote": "An ontology (preview) item gives AI agents a governed, shared understanding of your business, including key entity types, relationships, definitions, rules, and source mappings.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S39.1"
+          "id": "S42.1"
         },
         {
           "question": "q1",
@@ -3008,7 +3220,7 @@
           "quote": "When an agent uses an ontology as context, it produces responses that are more grounded, explainable, and consistent across systems instead of relying only on raw data or prompts.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S39.2"
+          "id": "S42.2"
         },
         {
           "question": "q1",
@@ -3016,7 +3228,7 @@
           "quote": "Foundry IQ exposes the ontology as a reusable knowledge source and knowledge base that the agent queries at runtime, which gives the agent a semantically rich, governed view of your Fabric data as a single source of truth.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S39.3"
+          "id": "S42.3"
         },
         {
           "question": "q3",
@@ -3024,7 +3236,7 @@
           "quote": "You create the agent directly in Fabric and add your ontology as a data source, so users can ask business questions in natural language and receive answers grounded in the ontology's definitions and bindings.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S39.4"
+          "id": "S42.4"
         },
         {
           "question": "q4",
@@ -3032,7 +3244,7 @@
           "quote": "Connecting external or custom AI systems and tools to ontology through the Model Context Protocol (MCP)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S39.5"
+          "id": "S42.5"
         },
         {
           "question": "q5",
@@ -3040,11 +3252,11 @@
           "quote": "The agent can describe the ontology, query the data behind it by using Data Analysis Expressions (DAX), Kusto Query Language (KQL), SQL, or Graph Query Language (GQL), and improve it as your sources evolve.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S39.6"
+          "id": "S42.6"
         }
       ],
       "dropped": 1,
-      "n": 39
+      "n": 42
     },
     {
       "id": "f271dd1598",
@@ -3063,7 +3275,7 @@
           "quote": "    *   [Actions on interfaces](https://www.palantir.com/docs/foundry/action-types/actions-on-interfaces/)\n    *   [Actions on structs](https://www.palantir.com/docs/foundry/action-types/actions-on-structs/)\n    *   Function-backed actions \n        *   [Overview](https://www.palantir.com/docs/foundry/action-types/function-actions-overview/)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S40.1"
+          "id": "S43.1"
         },
         {
           "question": "q4",
@@ -3071,7 +3283,7 @@
           "quote": "    *   Side effects \n        *   [Overview](https://www.palantir.com/docs/foundry/action-types/side-effects-overview/)\n        *   [Notifications](https://www.palantir.com/docs/foundry/action-types/notifications/)\n        *   [Set up a notification](https://www.palantir.com/docs/foundry/action-types/set-up-notification/)\n        *   [Webhooks](https://www.palantir.com/docs/foundry/action-types/webhooks/)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S40.2"
+          "id": "S43.2"
         },
         {
           "question": "q4",
@@ -3079,7 +3291,7 @@
           "quote": "    *   [Read and write authorizations](https://www.palantir.com/docs/foundry/action-types/read-write-authorizations/)\n    *   [Consistency and isolation](https://www.palantir.com/docs/foundry/action-types/consistency-guarantees/)\n    *   [Monitoring](https://www.palantir.com/docs/foundry/action-types/monitoring/)\n    *   [Undo or revert Actions](https://www.palantir.com/docs/foundry/action-types/action-reverts/)\n    *   [Branching action types](https://www.palantir.com/docs/foundry/action-types/branching-action-types/)\n    *   [Action metrics](https://www.palantir.com/docs/foundry/action-types/action-metrics/)\n    *   [Action log](https://www.palantir.com/docs/foundry/action-types/action-log/)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S40.3"
+          "id": "S43.3"
         },
         {
           "question": "q4",
@@ -3087,7 +3299,7 @@
           "quote": "    *   TypeScript v2 \n        *   [Getting started](https://www.palantir.com/docs/foundry/functions/typescript-v2-getting-started/)\n        *   [Local Ontology SDKs](https://www.palantir.com/docs/foundry/functions/local-sdks/)\n        *   [Migrate from TypeScript v1 to TypeScript v2](https://www.palantir.com/docs/foundry/functions/typescript-v2-migration/)\n        *   [Ontology edits](https://www.palantir.com/docs/foundry/functions/typescript-v2-ontology-edits/)\n        *   [Staged writes](https://www.palantir.com/docs/foundry/functions/typescript-v2-staged-writes/)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S40.4"
+          "id": "S43.4"
         },
         {
           "question": "q1",
@@ -3095,7 +3307,7 @@
           "quote": "*   Semantic search \n    *   [Overview](https://www.palantir.com/docs/foundry/ontology/overview-semantic-search/)\n    *   [Document processing](https://www.palantir.com/docs/foundry/ontology/document-processing/)\n    *   [Choose multimodal and embedding models](https://www.palantir.com/docs/foundry/ontology/aip-multimodal-and-embedding-models/)\n    *   [Ontology augmented generation](https://www.palantir.com/docs/foundry/ontology/ontology-augmented-generation/)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S40.5"
+          "id": "S43.5"
         },
         {
           "question": "q4",
@@ -3103,11 +3315,11 @@
           "quote": "    *   Language-agnostic features \n        *   [Ontology edits](https://www.palantir.com/docs/foundry/functions/edits-overview/)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S40.6"
+          "id": "S43.6"
         }
       ],
       "dropped": 0,
-      "n": 40
+      "n": 43
     },
     {
       "id": "fee6ad72b9",
@@ -3126,9 +3338,9 @@
           "quote": "Dynatrace Intelligence causal AI root cause analysis automatically evaluates all captured and ingested information and highlights entities within the causal topology identified as the root cause of a complex situation.",
           "numbers": [],
           "corroborated_by": [
-            41
+            44
           ],
-          "id": "S41.1"
+          "id": "S44.1"
         },
         {
           "question": "q6",
@@ -3136,7 +3348,7 @@
           "quote": "It offers a context-aware approach that uses available context information, such as the code-level information topology, to determine the precise cause of the issue.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S41.2"
+          "id": "S44.2"
         },
         {
           "question": "q6",
@@ -3144,7 +3356,7 @@
           "quote": "Reduce the alert load by combining multiple connected anomalies into a single problem.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S41.3"
+          "id": "S44.3"
         },
         {
           "question": "q6",
@@ -3152,11 +3364,11 @@
           "quote": "Improve the precision of root cause analysis using all the available data from multiple sources.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S41.4"
+          "id": "S44.4"
         }
       ],
       "dropped": 0,
-      "n": 41
+      "n": 44
     },
     {
       "id": "0630fc1ce4",
@@ -3175,7 +3387,7 @@
           "quote": "Microsoft's [standard method](https://microsoft.github.io/graphrag/index/methods/) \"uses a language model for all reasoning tasks\": entity extraction, relationship extraction, description summarisation and community reports.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S42.1"
+          "id": "S45.1"
         },
         {
           "question": "q2",
@@ -3186,7 +3398,7 @@
             "2,000x"
           ],
           "corroborated_by": [],
-          "id": "S42.2"
+          "id": "S45.2"
         },
         {
           "question": "q2",
@@ -3198,7 +3410,7 @@
             "377"
           ],
           "corroborated_by": [],
-          "id": "S42.3"
+          "id": "S45.3"
         },
         {
           "question": "q2",
@@ -3209,7 +3421,7 @@
             "49.29"
           ],
           "corroborated_by": [],
-          "id": "S42.4"
+          "id": "S45.4"
         },
         {
           "question": "q2",
@@ -3220,7 +3432,7 @@
             "50.93"
           ],
           "corroborated_by": [],
-          "id": "S42.5"
+          "id": "S45.5"
         },
         {
           "question": "q2",
@@ -3228,7 +3440,7 @@
           "quote": "A hybrid stack of dense vectors, BM25 keyword search and a reranker closes most of the gap that teams try to fix with a graph.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S42.6"
+          "id": "S45.6"
         },
         {
           "question": "q5",
@@ -3236,7 +3448,7 @@
           "quote": "The quality of a GraphRAG answer is decided by extraction accuracy, entity resolution and deduplication, and none of those comes with the database licence.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S42.7"
+          "id": "S45.7"
         },
         {
           "question": "q1",
@@ -3247,11 +3459,11 @@
             "20"
           ],
           "corroborated_by": [],
-          "id": "S42.8"
+          "id": "S45.8"
         }
       ],
       "dropped": 0,
-      "n": 42
+      "n": 45
     },
     {
       "id": "122edfb357",
@@ -3270,7 +3482,7 @@
           "quote": "**Nodes**: Key entities in the documents, such as characters, objects, and places (e.g. Dorothy, the main character, or Toto, her dog).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S43.1"
+          "id": "S46.1"
         },
         {
           "question": "q1",
@@ -3278,7 +3490,7 @@
           "quote": "**Edges**: The relationships between these entities, such as the connection between Toto and Dorothy (friends, pet).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S43.2"
+          "id": "S46.2"
         },
         {
           "question": "q2",
@@ -3286,7 +3498,7 @@
           "quote": "This limitation arises because traditional retrieval systems return only isolated chunks of information. In contrast, a knowledge graph captures the relationships between various entities, objects, and systems, thereby providing a holistic understanding of the documents in a memory-efficient manner.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S43.3"
+          "id": "S46.3"
         },
         {
           "question": "q2",
@@ -3294,7 +3506,7 @@
           "quote": "However, they struggle when it comes to answering questions that require a comprehensive understanding of an entire document or a set of documents:",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S43.4"
+          "id": "S46.4"
         },
         {
           "question": "q2",
@@ -3304,7 +3516,7 @@
             "0.0056"
           ],
           "corroborated_by": [],
-          "id": "S43.5"
+          "id": "S46.5"
         },
         {
           "question": "q2",
@@ -3312,7 +3524,7 @@
           "quote": "Proper benchmarking was not conducted in this work, to compare the performance of the different models.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S43.6"
+          "id": "S46.6"
         },
         {
           "question": "q5",
@@ -3320,7 +3532,7 @@
           "quote": "Documents are analyzed in chunks, and nodes and edges are created through the clever use of Large Language Models (LLMs).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S43.7"
+          "id": "S46.7"
         },
         {
           "question": "q5",
@@ -3328,11 +3540,11 @@
           "quote": "One key area of research combines traditional NLP techniques with new techniques to develop graphs at a significantly reduced cost, rather than relying solely on LLMs to generate every entity and relationship.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S43.8"
+          "id": "S46.8"
         }
       ],
       "dropped": 0,
-      "n": 43
+      "n": 46
     },
     {
       "id": "4ae9ddd91a",
@@ -3351,7 +3563,7 @@
           "quote": "A semantic layer is a governed set of metric, dimension, and entity definitions that sits between your warehouse and every tool that queries it.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S44.1"
+          "id": "S47.1"
         },
         {
           "question": "q1",
@@ -3359,7 +3571,7 @@
           "quote": "A context layer is the business knowledge an AI agent reads before it writes SQL or answers a question. It usually bundles semantic models, model and column documentation, lineage, glossary terms, example queries, and unstructured knowledge from wikis and tickets, then exposes all of it to agents, often over MCP.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S44.2"
+          "id": "S47.2"
         },
         {
           "question": "q1",
@@ -3367,7 +3579,7 @@
           "quote": "In most stacks, the semantic layer is one input to the context layer.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S44.3"
+          "id": "S47.3"
         },
         {
           "question": "q1",
@@ -3375,7 +3587,7 @@
           "quote": "A Definition of Record is a plain-English, versioned, attributed statement of what an organization has agreed a business term means, published so that people and AI agents use the same meaning.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S44.4"
+          "id": "S47.4"
         },
         {
           "question": "q3",
@@ -3387,7 +3599,7 @@
             "21"
           ],
           "corroborated_by": [],
-          "id": "S44.5"
+          "id": "S47.5"
         },
         {
           "question": "q3",
@@ -3399,7 +3611,7 @@
             "34"
           ],
           "corroborated_by": [],
-          "id": "S44.6"
+          "id": "S47.6"
         },
         {
           "question": "q3",
@@ -3407,7 +3619,7 @@
           "quote": "A semantic layer will compute whichever one you encode, consistently, forever.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S44.7"
+          "id": "S47.7"
         },
         {
           "question": "q3",
@@ -3415,11 +3627,11 @@
           "quote": "More context about an undecided term gives an agent more ways to be confidently wrong.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S44.8"
+          "id": "S47.8"
         }
       ],
       "dropped": 0,
-      "n": 44
+      "n": 47
     },
     {
       "id": "4ccbeb94b7",
@@ -3438,7 +3650,7 @@
           "quote": "Code and Data for the paper \"[LLMs for Knowledge Graph Construction and Reasoning: Recent Capabilities and Future Opportunities](https://github.com/zjunlp/AutoKG/blob/main/Pdf/LLMs_for_Knowledge_Graph_Construction_and_Reasoning__Recent_Capabilities_and_Future_Opportunities1.pdf)\"",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S45.1"
+          "id": "S48.1"
         },
         {
           "question": "q5",
@@ -3452,7 +3664,7 @@
             "GPT-4"
           ],
           "corroborated_by": [],
-          "id": "S45.2"
+          "id": "S48.2"
         },
         {
           "question": "q5",
@@ -3463,7 +3675,7 @@
             "GPT-4"
           ],
           "corroborated_by": [],
-          "id": "S45.3"
+          "id": "S48.3"
         },
         {
           "question": "q5",
@@ -3471,7 +3683,7 @@
           "quote": "the proposal of utilizing multiple agents to facilitate the construction and reasoning of KGs.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S45.4"
+          "id": "S48.4"
         },
         {
           "question": "q5",
@@ -3481,7 +3693,7 @@
             "2.0"
           ],
           "corroborated_by": [],
-          "id": "S45.5"
+          "id": "S48.5"
         },
         {
           "question": "q5",
@@ -3492,7 +3704,7 @@
             "ATOMIC2020"
           ],
           "corroborated_by": [],
-          "id": "S45.6"
+          "id": "S48.6"
         },
         {
           "question": "q5",
@@ -3500,7 +3712,7 @@
           "quote": "Our AutoKG code is based on [CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society](https://github.com/lightaime/camel) and a [LangChain](https://python.langchain.com.cn/docs/use_cases/agent_simulations/camel_role_playing) implementation of the paper, you can get more details through this link.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S45.7"
+          "id": "S48.7"
         },
         {
           "question": "q5",
@@ -3508,11 +3720,11 @@
           "quote": "The VINE dataset we built is available **[here](https://github.com/zjunlp/AutoKG/tree/94d1a9450cc55fc162366f5ba7d7a6d5b54c0236/Virtual%20Knowledge%20Extraction).**",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S45.8"
+          "id": "S48.8"
         }
       ],
       "dropped": 0,
-      "n": 45
+      "n": 48
     },
     {
       "id": "68754cc2cd",
@@ -3531,7 +3743,7 @@
           "quote": "A context layer is the persistent, governed tier of your enterprise architecture that delivers business meaning, relationships, policies, and history to AI systems at runtime.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S46.1"
+          "id": "S49.1"
         },
         {
           "question": "q1",
@@ -3539,7 +3751,7 @@
           "quote": "A context layer sits between your data estate and your AI estate, encoding what your business knows in a form machines can use.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S46.2"
+          "id": "S49.2"
         },
         {
           "question": "q1",
@@ -3547,7 +3759,7 @@
           "quote": "A semantic layer is content-centric: it standardizes how business terms and metrics (like “active customer” or “net revenue”) are defined, historically for BI tools and human analysts.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S46.3"
+          "id": "S49.3"
         },
         {
           "question": "q1",
@@ -3555,7 +3767,7 @@
           "quote": "A context layer is usage-centric: it takes those semantic definitions and maps them directly to the operational, real-time environment an AI agent needs to execute a task.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S46.4"
+          "id": "S49.4"
         },
         {
           "question": "q1",
@@ -3563,7 +3775,7 @@
           "quote": "The third is **knowledge graphs** i.e., the structural representation of entities, relationships, and the rules that connect them, which is the natural shape semantic reasoning takes when made queryable across systems.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S46.5"
+          "id": "S49.5"
         },
         {
           "question": "q1",
@@ -3571,7 +3783,7 @@
           "quote": "You cannot build a reliable context layer without a disciplined, [ontology-driven knowledge graph](https://www.digetiers.com/en/product) as its core.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S46.6"
+          "id": "S49.6"
         },
         {
           "question": "q2",
@@ -3579,7 +3791,7 @@
           "quote": "Raw RAG retrieves documents based on keyword or vector similarity, but it lacks a conceptual understanding of your business structure.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S46.7"
+          "id": "S49.7"
         },
         {
           "question": "q2",
@@ -3592,11 +3804,102 @@
             "1 minute 22 seconds"
           ],
           "corroborated_by": [],
-          "id": "S46.8"
+          "id": "S49.8"
         }
       ],
       "dropped": 0,
-      "n": 46
+      "n": 49
+    },
+    {
+      "id": "6a090610f7",
+      "url": "https://colrows.com/blogs/open-semantic-interchange/",
+      "title": "Apache Ossie (Open Semantic Interchange) Explained",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-08-21",
+      "org": "Nilesh Kumar (Colrows)",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The Open Semantic Interchange is a vendor-neutral YAML standard for writing semantic definitions such as measures, dimensions and metadata, intended to make definitions portable between tools; its v1.0 spec shipped 27 January 2026 under Apache 2.0, and it entered the Apache Incubator as Apache Ossie in June 2026 with more than 50 backers.",
+          "quote": "The OSI v1.0 spec was released on 27 January 2026 under Apache 2.0, and the project entered the Apache Incubator in June 2026. More than 50 organizations back it.",
+          "numbers": [
+            "v1.0",
+            "27 January 2026",
+            "2.0",
+            "June 2026",
+            "50"
+          ],
+          "corroborated_by": [],
+          "id": "S50.1"
+        },
+        {
+          "question": "q1",
+          "claim": "OSI defines meaning only: it has no execution engine, and its v1.0 core does not codify access policy as a first-class element.",
+          "quote": "OSI has no execution engine, and its v1.0 core does not codify access policy.",
+          "numbers": [
+            "v1.0"
+          ],
+          "corroborated_by": [],
+          "id": "S50.2"
+        },
+        {
+          "question": "q1",
+          "claim": "A semantic execution layer is distinguished from an interchange format: a format carries definitions, while an execution engine resolves requests into queries, proves join paths, applies row/column policy and emits dialect-specific SQL.",
+          "quote": "Something has to resolve the request into a query. Something has to choose the correct join path and prove it is valid. Something has to apply the row-level rule that hides the other regions. Something has to emit SQL in the exact dialect of the target engine.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S50.3"
+        },
+        {
+          "question": "q1",
+          "claim": "A definition, regardless of how it is authored, must land in a typed semantic graph before it can be executed; from there the layer adds compile-time RBAC/ABAC and row/column predicates so filtered rows are never read.",
+          "quote": "The definition, however it is written, still has to land in a typed semantic graph before it can be executed.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S50.4"
+        },
+        {
+          "question": "q1",
+          "claim": "The proposed runtime pipeline for a governed semantic layer is: intent, then context resolution, then constrained planning, then governed execution; it claims one graph compiles to the exact SQL of 16+ engines with point-in-time reproducibility.",
+          "quote": "The runtime is one line: intent → context resolution → constrained planning → governed execution.",
+          "numbers": [
+            "16+"
+          ],
+          "corroborated_by": [],
+          "id": "S50.5"
+        },
+        {
+          "question": "q3",
+          "claim": "The source's stated position is that a well-governed semantic layer that understands business context yields more reliable AI-driven analytics than fine-tuning the model itself.",
+          "quote": "A well-governed semantic layer that understands business context creates more reliable AI-driven analytics than fine-tuning the model itself.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S50.6"
+        },
+        {
+          "question": "q1",
+          "claim": "Adoption of the interchange standard is shallow in practice: many of the 50-plus backers have joined but fewer ship a lossless production reader/writer, with broad phase-2 adoption framed as the 2026 test and de-facto-standard status targeted for 2027.",
+          "quote": "Many of the 50-plus organizations have signed on. Fewer have shipped a production reader and writer that round-trips real definitions without loss.",
+          "numbers": [
+            "50-plus"
+          ],
+          "corroborated_by": [],
+          "id": "S50.7"
+        },
+        {
+          "question": "q1",
+          "claim": "Converters bridging existing tool formats into OSI had been merged for dbt MetricFlow, GoodData, Salesforce and Apache Polaris, which is how portability starts to become concrete.",
+          "quote": "There are converters for dbt MetricFlow, GoodData, Salesforce, and Apache Polaris.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S50.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 50
     },
     {
       "id": "959cc8e910",
@@ -3615,7 +3918,7 @@
           "quote": "A [semantic compiler](https://colrows.com/docs/saas/) resolves your business metrics into governed SQL at compile time, with policies injected before the warehouse is touched.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S47.1"
+          "id": "S51.1"
         },
         {
           "question": "q2",
@@ -3627,7 +3930,7 @@
             "54.2%"
           ],
           "corroborated_by": [],
-          "id": "S47.2"
+          "id": "S51.2"
         },
         {
           "question": "q3",
@@ -3641,7 +3944,7 @@
             "8.5×"
           ],
           "corroborated_by": [],
-          "id": "S47.3"
+          "id": "S51.3"
         },
         {
           "question": "q3",
@@ -3652,7 +3955,7 @@
             "2.0%"
           ],
           "corroborated_by": [],
-          "id": "S47.4"
+          "id": "S51.4"
         },
         {
           "question": "q3",
@@ -3663,7 +3966,7 @@
             "150"
           ],
           "corroborated_by": [],
-          "id": "S47.5"
+          "id": "S51.5"
         },
         {
           "question": "q3",
@@ -3679,7 +3982,7 @@
             "11"
           ],
           "corroborated_by": [],
-          "id": "S47.6"
+          "id": "S51.6"
         },
         {
           "question": "q3",
@@ -3691,7 +3994,7 @@
             "70-96%"
           ],
           "corroborated_by": [],
-          "id": "S47.7"
+          "id": "S51.7"
         },
         {
           "question": "q3",
@@ -3701,11 +4004,169 @@
             "1,400"
           ],
           "corroborated_by": [],
-          "id": "S47.8"
+          "id": "S51.8"
         }
       ],
       "dropped": 0,
-      "n": 47
+      "n": 51
+    },
+    {
+      "id": "96cd5f87e3",
+      "url": "https://www.databricks.com/blog/redefining-semantics-data-layer-future-bi-and-ai",
+      "title": "Unity Catalog Business Semantics: Now GA and Open — Databricks",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-04-02",
+      "org": "Databricks",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Databricks positions business semantics as governed metrics, dimensions, and rules defined once at the data layer so dashboards, SQL queries, notebooks, and AI agents use the same trusted definitions.",
+          "quote": "Unity Catalog Business Semantics is now GA. Define governed metrics, dimensions, and rules once at the data layer so every dashboard, SQL query, notebook, and AI agent works from the same trusted definitions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S52.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The source says BI tool-specific semantic layers are fragmented in multi-tool, multi-agent environments, locking definitions inside dashboards, models, and spreadsheets and making governance, access policies, and lineage difficult.",
+          "quote": "In a multi-tool, multi-agent world, each BI model speaks its own language. As a result, definitions get locked inside dashboards, models, and spreadsheets, making it nearly impossible to govern, enforce access policies, or trace lineage across the organization.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S52.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Metric Views provide semantic metadata such as display names, formats, and synonyms intended to help both humans and AI interpret and apply KPI definitions.",
+          "quote": "Metric Views, which establish trusted, consistent definitions of business KPIs with semantic metadata like display names, formats, and synonyms that help both humans and AI interpret and apply those definitions with confidence.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S52.3"
+        },
+        {
+          "question": "q1",
+          "claim": "Databricks is open sourcing the core Metric View implementation in Apache Spark to make business semantics portable beyond a single platform.",
+          "quote": "The core implementation is being open sourced in Apache Spark, extending business semantics beyond a single platform and reinforcing a commitment to openness and interoperability.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S52.4"
+        },
+        {
+          "question": "q1",
+          "claim": "Databricks says business semantics are unified and governed at the platform core, built into Unity Catalog and inheriting governance, security, and lineage.",
+          "quote": "semantics are now unified and governed at the core of the Databricks Data + AI Platform. Built directly into Unity Catalog, they extend the same governance, security, and lineage you already rely on and make those definitions available everywhere you work.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S52.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Databricks claims Genie spaces built on Metric Views ground natural-language queries in governed deterministic definitions rather than inferred logic, and says Genie is no longer hallucinating metrics.",
+          "quote": "Genie spaces can be created directly on top of Metric Views, which means every natural-language query Genie answers is grounded in governed, deterministic definitions, not inferred logic. Because Metric Views are compiled into logical queries at runtime, users always get correct, consistent results. Genie is no longer hallucinating metrics; it's resolving them from a single source of truth.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S52.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Metric Views compile each metric definition into deterministic SQL that the engine executes the same way regardless of which tool or agent issues the query.",
+          "quote": "Metric Views compile each metric definition into deterministic SQL that the engine executes the same way every time, regardless of which tool or agent issues the query.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S52.7"
+        },
+        {
+          "question": "q5",
+          "claim": "Databricks says its Genie Code agentic AI can suggest measures, dimensions, synonyms, and documentation to bootstrap semantic models in minutes instead of weeks.",
+          "quote": "Suggest measures, dimensions, synonyms, and documentation so teams get started in minutes instead of weeks",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S52.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 52
+    },
+    {
+      "id": "be304294d7",
+      "url": "https://flur.ee/blog/enterprise-kg-buyers-guide-2026",
+      "title": "Best Enterprise Knowledge Graph Software in 2026 — Fluree",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-06-10",
+      "org": "Fluree (Kevin Doubleday)",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The source distinguishes a graph database, which stores nodes and relationships, from a knowledge graph, which adds an ontology defining what things are and how they relate in a machine-readable standard format.",
+          "quote": "**A graph database stores nodes and relationships. A knowledge graph adds shared meaning: an ontology that defines what each thing is and how it relates, in a standard format other systems can read.**",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S53.1"
+        },
+        {
+          "question": "q1",
+          "claim": "Semantic knowledge graphs represent facts as subject-predicate-object triples conforming to a shared ontology that encodes domain meaning.",
+          "quote": "**Semantic knowledge graphs** (Stardog, Fluree, Graphwise, eccenca, and AWS Neptune in RDF mode) represent data using the [RDF vs. LPG](https://flur.ee/blog/rdf-versus-lpg) model: every fact is a subject–predicate–object triple, and those triples conform to a shared [ontology](https://flur.ee/blog/taxonomies-versus-ontologies-a-short-guide) that encodes domain meaning.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S53.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The source says an LLM querying a semantic graph gets data with meaning because the ontology lets the graph infer relationships implied by the data model.",
+          "quote": "An LLM querying a semantic graph gets data _with meaning_ back: the graph can infer relationships the data model implies, because the ontology defines what “supplier” means and how it relates to “contract” and “compliance requirement.”",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S53.3"
+        },
+        {
+          "question": "q1",
+          "claim": "The source says a semantic layer is needed to unify enterprise data across systems such as SAP, Salesforce, a data warehouse, and a document repository around a shared vocabulary.",
+          "quote": "When enterprise data spans SAP, Salesforce, a data warehouse, and a document repository, the semantic layer needs to unify these sources around a shared vocabulary.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S53.4"
+        },
+        {
+          "question": "q2",
+          "claim": "The source positions semantic graph reasoning as the foundation of accurate GraphRAG on complex, multi-domain enterprise data.",
+          "quote": "This is the foundation of accurate [GraphRAG](https://flur.ee/blog/graphrag-vs-vector-rag-when-knowledge-graphs-outperform-semantic-search) on complex, multi-domain enterprise data.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S53.5"
+        },
+        {
+          "question": "q2",
+          "claim": "Fluree says GraphRAG retrieval is native and combines graph traversal, BM25 full-text search, and HNSW vector search in one governed query against the same engine.",
+          "quote": "GraphRAG retrieval is native: graph traversal, [BM25 full-text and HNSW vector search](https://labs.flur.ee/docs/db/indexing-and-search) compose in one governed query against the same engine.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S53.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Stardog's Voicebox turns plain-language questions into SPARQL over the graph and its virtual sources and adds a document RAG pipeline.",
+          "quote": "Query-time reasoning plus Voicebox, which turns plain-language questions into SPARQL over the graph and its virtual sources and adds a document RAG pipeline.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S53.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The source states that ontology modeling requires domain expertise and upfront investment.",
+          "quote": "Ontology modeling requires domain expertise and upfront investment.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S53.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 53
     },
     {
       "id": "e3e6d4e9c8",
@@ -3724,7 +4185,7 @@
           "quote": "Our pipeline involves formulating competency questions (CQs), developing an ontology (TBox) based on these CQs, constructing KGs using the developed ontology, and evaluating the resultant KG with minimal to no involvement of human experts.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S48.1"
+          "id": "S54.1"
         },
         {
           "question": "q5",
@@ -3738,7 +4199,7 @@
             "GPT-3.5"
           ],
           "corroborated_by": [],
-          "id": "S48.2"
+          "id": "S54.2"
         },
         {
           "question": "q5",
@@ -3746,7 +4207,7 @@
           "quote": "We showcase the feasibility of our semi-automated pipeline by creating a KG on deep learning methodologies by exploiting scholarly publications.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S48.3"
+          "id": "S54.3"
         },
         {
           "question": "q5",
@@ -3756,7 +4217,7 @@
             "four"
           ],
           "corroborated_by": [],
-          "id": "S48.4"
+          "id": "S54.4"
         },
         {
           "question": "q5",
@@ -3764,7 +4225,7 @@
           "quote": "NER_prompt/: Contains the prompts for all the selected publications, which have the instructions that are passed to different LLMs to extract named entities",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S48.5"
+          "id": "S54.5"
         },
         {
           "question": "q5",
@@ -3775,7 +4236,7 @@
             "4"
           ],
           "corroborated_by": [],
-          "id": "S48.6"
+          "id": "S54.6"
         },
         {
           "question": "q5",
@@ -3786,7 +4247,7 @@
             "2403.08345"
           ],
           "corroborated_by": [],
-          "id": "S48.7"
+          "id": "S54.7"
         },
         {
           "question": "q5",
@@ -3796,11 +4257,96 @@
             "2024"
           ],
           "corroborated_by": [],
-          "id": "S48.8"
+          "id": "S54.8"
         }
       ],
       "dropped": 0,
-      "n": 48
+      "n": 54
+    },
+    {
+      "id": "e42bdac0aa",
+      "url": "https://atlan.com/know/ai-agent/knowledge-graph/knowledge-graph-construction-for-ai/",
+      "title": "Knowledge Graph Construction for AI — Atlan",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-07-22",
+      "org": "Emily Winks (Atlan)",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The source describes knowledge graph construction for AI as a five-stage process: assess/scope, design ontology and schema, extract entities and relationships, resolve duplicate entities, and validate/activate before agents or guardrails query it.",
+          "quote": "Knowledge graph construction for AI runs through five stages: assess and scope, design the ontology and schema, extract entities and relationships from structured and unstructured sources, resolve duplicate entities into a golden record, then validate and activate the graph before any agent or guardrail queries it.",
+          "numbers": [
+            "five"
+          ],
+          "corroborated_by": [],
+          "id": "S55.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The source frames ontology/schema design as defining the vocabulary layer, the entity and relationship model, and the boundary between an entity and a property.",
+          "quote": "Define the vocabulary layer, the entity and relationship model, and the boundary between an entity and a property, a judgment call for any business term that could be modeled either way.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S55.2"
+        },
+        {
+          "question": "q1",
+          "claim": "A graph supports multi-hop reasoning by tracing from a table through lineage to dependent metrics because the answer resides in the relationship structure.",
+          "quote": "A graph supports multi-hop reasoning, tracing from a table through lineage to every dependent metric, because the answer lives in the structure of relationships.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S55.3"
+        },
+        {
+          "question": "q2",
+          "claim": "The source cites LlamaIndex's CEO arguing pure vector-based RAG is often good enough, and says graphs earn their cost when a use case needs multi-hop reasoning or governed reuse across agents.",
+          "quote": "Jerry Liu, co-founder and CEO of LlamaIndex, has argued pure vector-based [RAG](https://atlan.com/know/what-is-rag/) is often good enough, weakening the case for heavy construction. Graphs earn their cost when a use case needs multi-hop reasoning or governed reuse across agents; readers evaluating [knowledge graphs against RAG for AI](https://atlan.com/know/knowledge-graphs-vs-rag-for-ai/) should scope the investment to that narrower case.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S55.4"
+        },
+        {
+          "question": "q3",
+          "claim": "In dbt Labs' 2026 test, semantic-layer grounding achieved 98.2% accuracy versus 90% for raw text-to-SQL.",
+          "quote": "Semantic-layer grounding hit 98.2% vs 90% raw text-to-SQL in dbt Labs' own 2026 test of its Semantic Layer.",
+          "numbers": [
+            "98.2%",
+            "90%",
+            "2026"
+          ],
+          "corroborated_by": [],
+          "id": "S55.5"
+        },
+        {
+          "question": "q5",
+          "claim": "The source says extraction is cheap with today's LLMs, but entity resolution and ontology alignment at scale are the hard parts where enterprise builds stall.",
+          "quote": "Whatever the tooling, Neo4j, GraphRAG, or Atlan’s **Context Lakehouse**, the same wall shows up: extraction is cheap with today’s LLMs, but entity resolution and ontology alignment at scale are not.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S55.6"
+        },
+        {
+          "question": "q5",
+          "claim": "A validation gate such as SHACL is recommended to keep ungoverned LLM-extracted relationships out of production graphs.",
+          "quote": "A validation gate such as SHACL keeps ungoverned LLM-extracted relationships out of production graphs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S55.7"
+        },
+        {
+          "question": "q5",
+          "claim": "The source advises against authoring a full RDF/OWL ontology before touching real data and says teams should model iteratively instead.",
+          "quote": "Common mistakes: authoring a full RDF/OWL ontology before touching real data rarely survives contact with production sources; model iteratively instead.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S55.8"
+        }
+      ],
+      "dropped": 0,
+      "n": 55
     },
     {
       "id": "eebc67cdc1",
@@ -3819,7 +4365,7 @@
           "quote": "A semantic view is a top-level object that sits between the downstream consumers and raw data tables, translating governed business language into physical database schemas.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S49.1"
+          "id": "S56.1"
         },
         {
           "question": "q1",
@@ -3827,7 +4373,7 @@
           "quote": "Every interface needs consistent meaning, or context, for its data, which can be achieved by using a semantic layer.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S49.2"
+          "id": "S56.2"
         },
         {
           "question": "q1",
@@ -3835,7 +4381,7 @@
           "quote": "Instead of exposing raw tables to dashboards or AI agents directly, the semantic view standardizes the data flow from physical tables to facts, dimensions and metrics.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S49.3"
+          "id": "S56.3"
         },
         {
           "question": "q3",
@@ -3847,7 +4393,7 @@
             "40"
           ],
           "corroborated_by": [],
-          "id": "S49.4"
+          "id": "S56.4"
         },
         {
           "question": "q3",
@@ -3861,7 +4407,7 @@
             "320,000"
           ],
           "corroborated_by": [],
-          "id": "S49.5"
+          "id": "S56.5"
         },
         {
           "question": "q1",
@@ -3869,7 +4415,7 @@
           "quote": "Agents querying raw data spend time finding, understanding and sampling multiple data sources. At scale, these processes can dominate runtime. Instead, agents can use semantic views to go directly to SQL execution.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S49.6"
+          "id": "S56.6"
         },
         {
           "question": "q1",
@@ -3877,7 +4423,7 @@
           "quote": "Agents are significantly more token-efficient when using table relationships and join data in semantic views. With materialization, semantic SQL natively leverages preaggregated data, reducing repeated computation.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S49.7"
+          "id": "S56.7"
         },
         {
           "question": "q1",
@@ -3885,11 +4431,153 @@
           "quote": "Now we can query the semantic view directly using standard SQL, without ever having to worry about underlying joins or raw column names:",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S49.8"
+          "id": "S56.8"
         }
       ],
       "dropped": 0,
-      "n": 49
+      "n": 56
+    },
+    {
+      "id": "05fd884caa",
+      "url": "https://atlan.com/know/ai-agent/semantic-layer/unity-catalog-semantic-layer/",
+      "title": "Unity Catalog Semantic Layer: Metric Views vs. dbt, Cube — Atlan",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-08-11",
+      "org": "Emily Winks (Atlan)",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Unity Catalog's semantic layer combines metric views, which are reusable SQL objects separating measures from dimensions and materializing for performance, with a business-semantics and agent-metadata layer that makes definitions legible to BI tools, SQL, and AI agents.",
+          "quote": "Unity Catalog's semantic layer combines metric views, reusable SQL objects that separate measures from dimensions and materialize them for performance, with a business-semantics and agent-metadata layer that makes those definitions legible to BI tools, SQL, and AI agents like Genie.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S57.1"
+        },
+        {
+          "question": "q1",
+          "claim": "A metric view defines a calculation once, lets any query group by whichever dimension it needs, and materializes the result so repeated queries do not re-scan underlying tables.",
+          "quote": "A metric view defines the calculation once and lets any query group by whatever dimension it needs, then materializes the result so repeated queries don’t re-scan the underlying tables.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S57.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Business semantics and agent metadata supply synonyms, display names, and formatting so agents can interpret a metric correctly.",
+          "quote": "Business semantics and agent metadata: synonyms, display names, and formatting that make a metric legible to Genie and other agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S57.3"
+        },
+        {
+          "question": "q1",
+          "claim": "A context layer sits above the set of platform-specific semantic layers and keeps a metric such as revenue consistent across Databricks Genie and dbt-based agents.",
+          "quote": "It sits above the whole set, keeping “revenue” consistent whether the question comes from Genie inside Databricks or an agent working against dbt on the other side of the estate.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S57.4"
+        },
+        {
+          "question": "q1",
+          "claim": "Metric definitions are queryable from outside Databricks via MCP, SQL, and APIs, but the definitions themselves are not yet portable.",
+          "quote": "Metrics are queryable via MCP, SQL, and APIs from outside Databricks, but the definitions themselves are not yet portable.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S57.5"
+        },
+        {
+          "question": "q1",
+          "claim": "Metric views inherit Unity Catalog's existing governance rather than creating a separate parallel governance system.",
+          "quote": "Metric views don’t create a parallel governance system; they inherit the one Unity Catalog already has.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S57.6"
+        },
+        {
+          "question": "q1",
+          "claim": "Unity Catalog supports attribute-based access control in beta and full read/write governance for Apache Iceberg tables on par with Delta Lake.",
+          "quote": "Unity Catalog now supports attribute-based access control in beta, alongside “full read/write governance support for Apache Iceberg tables, on par with Delta Lake.”",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S57.7"
+        }
+      ],
+      "dropped": 0,
+      "n": 57
+    },
+    {
+      "id": "60aa36fe47",
+      "url": "https://cube.dev/articles/semantic-layer-for-ai-agents-2026",
+      "title": "Semantic Layer for AI Agents (2026) — Cube",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-10-19",
+      "org": "Cube",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "A semantic layer encodes business metrics with exact definitions, dimensions, join paths, and governing access policies once, rather than leaving metric logic to prompts.",
+          "quote": "A semantic layer is a layer of understanding. It encodes, once, what the business actually means: metrics (revenue, active users, churn) with their exact definitions, dimensions and the entities they belong to, the join paths between them, and the access policies that govern them.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S58.1"
+        },
+        {
+          "question": "q1",
+          "claim": "A semantic layer exposed through an MCP server acts as an AI context layer by letting agents introspect and call governed measures and dimensions.",
+          "quote": "A semantic layer that ships an MCP server exposes its model as something the agent can introspect and call — this is what serving it as an [AI context layer](https://cube.dev/product/ai-context-layer) means in practice.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S58.2"
+        },
+        {
+          "question": "q3",
+          "claim": "Raw text-to-SQL lets the model guess metric semantics such as gross versus net revenue, tax and refund treatment, and recognition timing, producing plausible but varying answers.",
+          "quote": "**Semantics aren't in the schema.** A table named `orders` doesn't tell the model whether \"revenue\" is gross or net, includes tax, excludes refunds, or is recognized at order time or ship time. The model guesses — plausibly, and differently each time.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S58.3"
+        },
+        {
+          "question": "q3",
+          "claim": "Raw text-to-SQL over real warehouses risks wrong join paths and grain, which can silently double-count numbers without the model detecting the error.",
+          "quote": "**The join graph is a minefield.** Real warehouses have fan-out joins, slowly-changing dimensions, and three tables that all look like they could be \"the customer table.\" Get the grain wrong and the number is silently double-counted. The model has no way to know it was wrong.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S58.4"
+        },
+        {
+          "question": "q3",
+          "claim": "Semantic-layer-grounded agents define metrics once and select them, so the same question returns the same number, unlike raw text-to-SQL.",
+          "quote": "Metrics are defined once; the agent selects them, so the same question returns the same number",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S58.5"
+        },
+        {
+          "question": "q3",
+          "claim": "Semantic-layer governance is applied at query compile time, so row-level and role-based restrictions are built into every query and prevent an agent from constructing cross-tenant queries.",
+          "quote": "Row-level and role-based rules become a property of how every query is built, not a gate you hope runs afterward. An agent acting for a single-tenant user cannot construct a query that returns another tenant's rows, because the layer never compiles one.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S58.6"
+        },
+        {
+          "question": "q3",
+          "claim": "Semantic-layer deployments should validate agent answers with known-answer evals covering ambiguous wording, subtle joins, empty results, and denied-access cases.",
+          "quote": "Run known-answer evals. Test representative business questions against values verified by the data team, including ambiguous wording, subtle joins, empty results, and denied-access cases.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S58.7"
+        }
+      ],
+      "dropped": 1,
+      "n": 58
     },
     {
       "id": "903b0e6992",
@@ -3908,7 +4596,7 @@
           "quote": "A context layer is the dedicated architectural component that curates, integrates, and delivers the information AI agents need to interpret, decide, and act reliably.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S50.1"
+          "id": "S59.1"
         },
         {
           "question": "q1",
@@ -3916,7 +4604,7 @@
           "quote": "It includes the development and use of ontologies and knowledge graphs, which act as the connective tissue linking data, metrics, rules, security, ownership, and policies.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S50.2"
+          "id": "S59.2"
         },
         {
           "question": "q1",
@@ -3924,7 +4612,7 @@
           "quote": "An agent’s ability to access right-time information about key business entities such as customers, products, or suppliers, as well as the current status of business processes and environmental conditions.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S50.3"
+          "id": "S59.3"
         },
         {
           "question": "q1",
@@ -3932,7 +4620,7 @@
           "quote": "The ability to systematically track data lineage, decisions, actions, outcomes, and feedback throughout the life cycle of AI agent operations.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S50.4"
+          "id": "S59.4"
         },
         {
           "question": "q1",
@@ -3940,7 +4628,7 @@
           "quote": "The context layer sits between your data infrastructure and your agent infrastructure.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S50.5"
+          "id": "S59.5"
         },
         {
           "question": "q3",
@@ -3952,7 +4640,7 @@
             "60%"
           ],
           "corroborated_by": [],
-          "id": "S50.6"
+          "id": "S59.6"
         },
         {
           "question": "q5",
@@ -3960,11 +4648,11 @@
           "quote": "Context Intelligence runs continuously, generating semantic context automatically from behavioral signals already embedded in the data estate: query logs, dbt semantic models, BI dashboard patterns, and usage patterns.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S50.7"
+          "id": "S59.7"
         }
       ],
       "dropped": 1,
-      "n": 50
+      "n": 59
     },
     {
       "id": "c9d802c044",
@@ -3983,7 +4671,7 @@
           "quote": "Semantic layer over raw data. This provides a bridge between complex data structures and the everyday language used by the customer",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S51.1"
+          "id": "S60.1"
         },
         {
           "question": "q3",
@@ -3991,7 +4679,7 @@
           "quote": "Just like data analysts or engineers, LLMs need significant amounts of knowledge or \"context\" to generate accurate SQL. The context can be both explicit (what does the schema look like, what are the relevant columns, and what does the data itself look like?) or more implicit (what is the precise semantic meaning of a piece of data? what does it mean for the specific business case?).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S51.2"
+          "id": "S60.2"
         },
         {
           "question": "q3",
@@ -3999,7 +4687,7 @@
           "quote": "Specialized model training, or fine tuning, is typically not a scalable solution to this problem. Training on the shape of every database or dataset, and keeping up with schema or data changes, is both difficult and cost-prohibitive. Business knowledge and semantics are often not well documented in the first place, and difficult to turn into training data.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S51.3"
+          "id": "S60.3"
         },
         {
           "question": "q3",
@@ -4007,7 +4695,7 @@
           "quote": "We use a variety of indexing and retrieval techniques — first to identify relevant datasets, tables and columns, typically using vector search for multi-stage semantic matching, then to load additional useful context.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S51.4"
+          "id": "S60.4"
         },
         {
           "question": "q3",
@@ -4015,7 +4703,7 @@
           "quote": "To address this we have found that non-AI approaches like query parsing or doing a dry run of the generated SQL complements model-based workflows well. We can get a clear, deterministic signal if the LLM has missed something crucial, which we then pass back to the model for a second pass.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S51.5"
+          "id": "S60.5"
         },
         {
           "question": "q3",
@@ -4023,7 +4711,7 @@
           "quote": "The idea of self-consistency is to not depend on a single round of generation, but to generate multiple queries for the same user question, potentially using different prompting techniques or model variants, and picking the best one from all candidates.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S51.6"
+          "id": "S60.6"
         },
         {
           "question": "q3",
@@ -4031,11 +4719,11 @@
           "quote": "We combine user metrics and offline eval metrics, and employ both human and automated evaluation, particularly using LLM-as-a-judge techniques, which reduce cost but still allow us to understand performance on ambiguous and unclear tasks.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S51.7"
+          "id": "S60.7"
         }
       ],
       "dropped": 0,
-      "n": 51
+      "n": 60
     },
     {
       "id": "ecae8eb802",
@@ -4054,7 +4742,7 @@
           "quote": "At its core, it combines these LLMs with a detailed semantic model of data sources. This semantic model acts like a knowledge base, giving LLMs the context they need to understand user questions accurately — similar to how a human analyst would.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S52.1"
+          "id": "S61.1"
         },
         {
           "question": "q1",
@@ -4062,7 +4750,7 @@
           "quote": "Cortex Analyst helps businesses query their data using natural language by translating it into SQL. This works thanks to a semantic model that connects business terms to database schema. It guides LLMs to build more accurate SQL queries by including the right elements, such as joins and filters.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S52.2"
+          "id": "S61.2"
         },
         {
           "question": "q1",
@@ -4070,7 +4758,7 @@
           "quote": "The [semantic model](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst/semantic-model-spec) captures important details, such as:\n\n*   Descriptive names for database elements\n\n*   Metrics/filters specific to the data and the business\n\n*   Synonyms for fields and business terms\n\n*   Relationships between tables\n\n*   Custom instructions for specific queries",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S52.3"
+          "id": "S61.3"
         },
         {
           "question": "q3",
@@ -4080,7 +4768,7 @@
             "20%"
           ],
           "corroborated_by": [],
-          "id": "S52.4"
+          "id": "S61.4"
         },
         {
           "question": "q3",
@@ -4092,7 +4780,7 @@
             "21%"
           ],
           "corroborated_by": [],
-          "id": "S52.5"
+          "id": "S61.5"
         },
         {
           "question": "q5",
@@ -4100,7 +4788,7 @@
           "quote": "**Relationships Agent:**This agent looks at the correct SQL and primary keys to figure out how tables are connected. It can do this even without explicit database definitions.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S52.6"
+          "id": "S61.6"
         },
         {
           "question": "q5",
@@ -4108,11 +4796,11 @@
           "quote": "**Semantic Model Editor:**This agent reviews the current model, correct SQL and generated SQL, and then evaluates the results. It suggests edits to align with business logic and fix errors. It also uses question evidence to improve column and metric descriptions.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S52.7"
+          "id": "S61.7"
         }
       ],
       "dropped": 0,
-      "n": 52
+      "n": 61
     },
     {
       "id": "1450a981aa",
@@ -4131,7 +4819,7 @@
           "quote": "Vector RAG uses semantic similarity to find the text most relevant to a question.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S53.1"
+          "id": "S62.1"
         },
         {
           "question": "q1",
@@ -4139,7 +4827,7 @@
           "quote": "Instead of ranking by similarity, [GraphRAG](https://neo4j.com/blog/genai/what-is-graphrag/) follows relationships in a graph. The graph can be a [knowledge graph](https://neo4j.com/blog/knowledge-graph/what-is-knowledge-graph/) that captures facts and relationships between them, or a [context graph](https://neo4j.com/blog/agentic-ai/what-is-context-graph/) that also includes situational information such as current state, conversation history, prior decisions, and reasoning traces.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S53.2"
+          "id": "S62.2"
         },
         {
           "question": "q2",
@@ -4147,7 +4835,7 @@
           "quote": "A vector-only pipeline can be a great fit for your agentic AI project — right up until an accurate, explainable response depends on how disparate facts connect.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S53.3"
+          "id": "S62.3"
         },
         {
           "question": "q2",
@@ -4157,7 +4845,7 @@
             "three"
           ],
           "corroborated_by": [],
-          "id": "S53.4"
+          "id": "S62.4"
         },
         {
           "question": "q2",
@@ -4167,7 +4855,7 @@
             "more than double"
           ],
           "corroborated_by": [],
-          "id": "S53.5"
+          "id": "S62.5"
         },
         {
           "question": "q2",
@@ -4177,11 +4865,11 @@
             "a dozen"
           ],
           "corroborated_by": [],
-          "id": "S53.6"
+          "id": "S62.6"
         }
       ],
       "dropped": 0,
-      "n": 53
+      "n": 62
     },
     {
       "id": "709c21a50a",
@@ -4203,7 +4891,7 @@
             "14%"
           ],
           "corroborated_by": [],
-          "id": "S54.1"
+          "id": "S63.1"
         },
         {
           "question": "q3",
@@ -4213,7 +4901,7 @@
             "51%"
           ],
           "corroborated_by": [],
-          "id": "S54.2"
+          "id": "S63.2"
         },
         {
           "question": "q3",
@@ -4221,7 +4909,7 @@
           "quote": "One of the standout features of Cortex Analyst is its semantic model, which guarantees that user-defined measures and filters are applied highly consistently in the generated SQL queries.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S54.3"
+          "id": "S63.3"
         },
         {
           "question": "q3",
@@ -4229,7 +4917,7 @@
           "quote": "filters:\n- name: North America\nsynonyms:\n- NA region\nexpr: region in (\"United States\", \"Canada\", \"Mexico\")",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S54.4"
+          "id": "S63.4"
         },
         {
           "question": "q3",
@@ -4237,7 +4925,7 @@
           "quote": "GPT-4o and Other Solution were missing the client's specific metric definition.Cortex Analyst captures the specific metric definition with the semantic model.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S54.5"
+          "id": "S63.5"
         },
         {
           "question": "q3",
@@ -4245,11 +4933,11 @@
           "quote": "To address this, we introduced integration with Cortex Search, which allows Cortex Analyst to retrieve the correct literals for SQL generation by performing a semantic search over the data stored in those columns. This functionality is currently in private preview.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S54.6"
+          "id": "S63.6"
         }
       ],
       "dropped": 1,
-      "n": 54
+      "n": 63
     },
     {
       "id": "442631fd6c",
@@ -4268,7 +4956,7 @@
           "quote": "Causal AI draws on supporting data, such as relationships, dependencies, and other context among network entities and events. With this context, causal AI determines the precise root cause of an issue.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S55.1"
+          "id": "S64.1"
         },
         {
           "question": "q6",
@@ -4276,7 +4964,7 @@
           "quote": "Correlation-based AI is probabilistic and requires humans to verify the accuracy of results.Causal AI is fact-based and thus can do automated analyses.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S55.2"
+          "id": "S64.2"
         },
         {
           "question": "q6",
@@ -4284,7 +4972,7 @@
           "quote": "Using fault-tree analysis, this causal AI approach seamlessly combines topological context with metric data to quickly identify observability signals for any behavior of interest. The analysis provides insights into every entity a problem affects, enabling developers to solve problems without having to reproduce errors.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S55.3"
+          "id": "S64.3"
         },
         {
           "question": "q6",
@@ -4292,7 +4980,7 @@
           "quote": "Predictive analysis can observe an event and predict an outcome will occur, but it can’t show that the outcome occurred because of the event. In other words, correlation doesn’t equal causation.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S55.4"
+          "id": "S64.4"
         },
         {
           "question": "q6",
@@ -4300,11 +4988,11 @@
           "quote": "Fault-tree analysis uses boolean logic to explore system-level failures. It’s a top-down approach used to identify the component-level failure, or basic event, that caused the system-level failure, or top event.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S55.5"
+          "id": "S64.5"
         }
       ],
       "dropped": 2,
-      "n": 55
+      "n": 64
     },
     {
       "id": "4cac261323",
@@ -4323,7 +5011,7 @@
           "quote": "LLMs automate entity and relationship extraction from unstructured text, but they do not store, validate, or reason over that data – that is the knowledge graph’s job.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S56.1"
+          "id": "S65.1"
         },
         {
           "question": "q1",
@@ -4333,7 +5021,7 @@
             "five"
           ],
           "corroborated_by": [],
-          "id": "S56.2"
+          "id": "S65.2"
         },
         {
           "question": "q1",
@@ -4341,7 +5029,7 @@
           "quote": "Schema design must happen before ingestion begins. Retrofitting a schema at enterprise scale requires full re-extraction and re-ingestion – a remediation effort that typically takes months.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S56.3"
+          "id": "S65.3"
         },
         {
           "question": "q2",
@@ -4349,7 +5037,7 @@
           "quote": "Vector search returns semantically similar text; it cannot follow a chain of relationships, enforce access controls, or explain why a result was returned.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S56.4"
+          "id": "S65.4"
         },
         {
           "question": "q2",
@@ -4357,11 +5045,11 @@
           "quote": "GraphRAG grounds LLM responses in verified, relationship-structured facts rather than statistical patterns, making enterprise AI systems accurate, explainable, and auditable.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S56.5"
+          "id": "S65.5"
         }
       ],
       "dropped": 1,
-      "n": 56
+      "n": 65
     },
     {
       "id": "7ee9989159",
@@ -4380,7 +5068,7 @@
           "quote": "A semantic layer is the shared dictionary for a company’s business — the one governed place where metrics like revenue, active customers, and margin are defined once, so every tool and every AI answers with the same number.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S57.1"
+          "id": "S66.1"
         },
         {
           "question": "q3",
@@ -4396,7 +5084,7 @@
             "31"
           ],
           "corroborated_by": [],
-          "id": "S57.2"
+          "id": "S66.2"
         },
         {
           "question": "q3",
@@ -4407,7 +5095,7 @@
             "4.4"
           ],
           "corroborated_by": [],
-          "id": "S57.3"
+          "id": "S66.3"
         },
         {
           "question": "q3",
@@ -4415,7 +5103,7 @@
           "quote": "Full documentation was not enough. The no-layer arm received the schema, a plain-English meaning for every column, and a knowledge base with every formula the questions rely on. It still scored about half as well.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S57.4"
+          "id": "S66.4"
         },
         {
           "question": "q3",
@@ -4430,11 +5118,11 @@
             "26.1"
           ],
           "corroborated_by": [],
-          "id": "S57.5"
+          "id": "S66.5"
         }
       ],
       "dropped": 2,
-      "n": 57
+      "n": 66
     },
     {
       "id": "eeafc47c18",
@@ -4453,7 +5141,7 @@
           "quote": "AIP Logic provides an intuitive interface to leverage the Ontology and LLMs via a Logic function that takes inputs (like Ontology objects or text strings) and can return an output (objects and/or strings) or make edits to the Ontology.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S58.1"
+          "id": "S67.1"
         },
         {
           "question": "q4",
@@ -4461,7 +5149,7 @@
           "quote": "Logic functions can also be [automated](https://www.palantir.com/docs/foundry/automate/overview/) so that [Ontology edits can be automatically applied or staged for human review](https://www.palantir.com/docs/foundry/logic/aip-logic-integration-automate/).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S58.2"
+          "id": "S67.2"
         },
         {
           "question": "q4",
@@ -4469,7 +5157,7 @@
           "quote": "These platform security controls grant an LLM access only to what is necessary to complete a task.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S58.3"
+          "id": "S67.3"
         },
         {
           "question": "q4",
@@ -4477,7 +5165,7 @@
           "quote": "The model can never see data the user is not authorized to read.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S58.4"
+          "id": "S67.4"
         },
         {
           "question": "q4",
@@ -4485,11 +5173,60 @@
           "quote": "These controls do not extend to the model's output or any Ontology edits it composes.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S58.5"
+          "id": "S67.5"
         }
       ],
       "dropped": 0,
-      "n": 58
+      "n": 67
+    },
+    {
+      "id": "cb0c150c29",
+      "url": "https://www.snowflake.com/en/blog/open-semantic-interchanges-specs-finalized/",
+      "title": "Open Semantic Interchange (OSI) Specification Finalized — Snowflake",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": "2026-01-28",
+      "org": "Snowflake (Josh Klahr, Khushboo Bhatia, Yogitha Chilukuri, Nick El-Rayess)",
+      "quality": 0.6,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "The OSI specification defines a vendor-neutral, extensible model for semantic-layer constructs such as data sets, metrics, dimensions, relationships, and contexts so they can be interpreted consistently across tools, platforms, and agentic applications.",
+          "quote": "This specification defines a vendor-neutral, extensible model for representing semantic layer constructs such as data sets, metrics, dimensions, relationships and contexts in a way that can be consistently interpreted across tools, platforms and agentic applications.",
+          "numbers": [],
+          "corroborated_by": [
+            79
+          ],
+          "id": "S68.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The source frames lack of shared meaning—business logic and definitions trapped in proprietary silos—as a main enterprise AI/analytics hurdle, causing repeated semantic-context rebuilding and likely inconsistency and waste.",
+          "quote": "In the modern enterprise, one of the main hurdles to effective AI and analytics isn’t a lack of data, it’s a _lack of shared meaning._ For too long, business logic and definitions (such as churn rate or net margin) have been locked inside proprietary silos. This forces teams to rebuild the same semantic context over and over again, likely leading to inconsistency and wasted effort.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S68.2"
+        },
+        {
+          "question": "q1",
+          "claim": "OSI is described as an open-source standard intended to act as a universal translator for data semantics.",
+          "quote": "We recently introduced the vision for [Open Semantic Interchange (OSI)](https://www.snowflake.com/en/blog/open-semantic-interchange-ai-standard/), an open source standard designed to act as the universal translator for data semantics.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S68.3"
+        },
+        {
+          "question": "q1",
+          "claim": "The OSI specification is positioned as a starting point rather than an endpoint, with community feedback, discussion, and contributions shaping its evolution.",
+          "quote": "We view this specification as a starting point, not an endpoint. Feedback, discussion and contributions from the community will shape its evolution.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S68.4"
+        }
+      ],
+      "dropped": 0,
+      "n": 68
     },
     {
       "id": "23af99dfb3",
@@ -4510,7 +5247,7 @@
             "2.0"
           ],
           "corroborated_by": [],
-          "id": "S59.1"
+          "id": "S69.1"
         },
         {
           "question": "q1",
@@ -4518,11 +5255,11 @@
           "quote": "The install route calls the same `assertProtocolCompat` before anything is registered, written or synced.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S59.2"
+          "id": "S69.2"
         }
       ],
       "dropped": 0,
-      "n": 59
+      "n": 69
     },
     {
       "id": "58339000be",
@@ -4541,11 +5278,11 @@
           "quote": "Title: Ontologies: the missing layer for trustworthy AI in consumer products",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S60.1"
+          "id": "S70.1"
         }
       ],
       "dropped": 0,
-      "n": 60
+      "n": 70
     },
     {
       "id": "098d619912",
@@ -4566,7 +5303,7 @@
             "one"
           ],
           "corroborated_by": [],
-          "id": "S61.1"
+          "id": "S71.1"
         },
         {
           "question": "q4",
@@ -4574,7 +5311,7 @@
           "quote": "A user’s edit to an Ontology object is not written to the dataset backing the object type.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S61.2"
+          "id": "S71.2"
         },
         {
           "question": "q4",
@@ -4582,7 +5319,7 @@
           "quote": "With a writeback webhook, the outside system can succeed while the Ontology fails.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S61.3"
+          "id": "S71.3"
         },
         {
           "question": "q4",
@@ -4590,7 +5327,7 @@
           "quote": "A newly added webhook is configured as a side effect by default (set-up-a-webhook page). It runs after the objects have changed. Its failure is not shown to the user, who may already have seen a success message by the time it runs. Several can be attached to one action, in no guaranteed order.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S61.4"
+          "id": "S71.4"
         },
         {
           "question": "q4",
@@ -4598,7 +5335,7 @@
           "quote": "An action revert only reverts the edits to the object instance, but it will not revert side effects, such as notifications or webhooks, nor will it call them in the same way that the applied action would have.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S61.5"
+          "id": "S71.5"
         },
         {
           "question": "q4",
@@ -4606,7 +5343,7 @@
           "quote": "Note that storing properties of edited objects other than the primary key is not supported.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S61.6"
+          "id": "S71.6"
         },
         {
           "question": "q4",
@@ -4616,7 +5353,7 @@
             "200"
           ],
           "corroborated_by": [],
-          "id": "S61.7"
+          "id": "S71.7"
         },
         {
           "question": "q4",
@@ -4624,11 +5361,11 @@
           "quote": "Effects follow at-least-once execution semantics rather than exactly-once guarantees.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S61.8"
+          "id": "S71.8"
         }
       ],
       "dropped": 0,
-      "n": 61
+      "n": 71
     },
     {
       "id": "21a2b92c2f",
@@ -4650,7 +5387,7 @@
             "200"
           ],
           "corroborated_by": [],
-          "id": "S62.1"
+          "id": "S72.1"
         },
         {
           "question": "q5",
@@ -4661,7 +5398,7 @@
             "20–25%"
           ],
           "corroborated_by": [],
-          "id": "S62.2"
+          "id": "S72.2"
         },
         {
           "question": "q5",
@@ -4672,7 +5409,7 @@
             "cust_8821"
           ],
           "corroborated_by": [],
-          "id": "S62.3"
+          "id": "S72.3"
         },
         {
           "question": "q5",
@@ -4680,7 +5417,7 @@
           "quote": "3.   **Inconsistent relation labels**: \"works at\", \"employed by\", \"employee of\" → three edges. → Predefined relation vocabularies or LLM-based label mapping as post-processing.\n4.   **Schema drift over time**: new document types → new fields. → Versioned schemas, regular sample audits.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S62.4"
+          "id": "S72.4"
         },
         {
           "question": "q5",
@@ -4696,7 +5433,7 @@
             "100"
           ],
           "corroborated_by": [],
-          "id": "S62.5"
+          "id": "S72.5"
         },
         {
           "question": "q5",
@@ -4704,7 +5441,7 @@
           "quote": "| **Microsoft GraphRAG** | community detection built in, batch-oriented | Python-only, opinionated |",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S62.6"
+          "id": "S72.6"
         },
         {
           "question": "q5",
@@ -4712,7 +5449,7 @@
           "quote": "Our default for prototypes: **LlamaIndex KG Index**. For production: **Instructor + custom pipeline + Neo4j**.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S62.7"
+          "id": "S72.7"
         },
         {
           "question": "q5",
@@ -4722,11 +5459,11 @@
             "1.0"
           ],
           "corroborated_by": [],
-          "id": "S62.8"
+          "id": "S72.8"
         }
       ],
       "dropped": 0,
-      "n": 62
+      "n": 72
     },
     {
       "id": "c8a33f97a5",
@@ -4745,7 +5482,7 @@
           "quote": "Knowledge graphs extracted from text power most autonomous agents, but these contain many duplicates.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S63.1"
+          "id": "S73.1"
         },
         {
           "question": "q1",
@@ -4753,7 +5490,7 @@
           "quote": "When concepts are split across multiple entities, wrong answers emerge. This limits raw, extracted graphs’ ability to power agents.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S63.2"
+          "id": "S73.2"
         },
         {
           "question": "q1",
@@ -4761,7 +5498,7 @@
           "quote": "This forms clusters of connected nodes called connected components. One component corresponds to one resolved record.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S63.3"
+          "id": "S73.3"
         },
         {
           "question": "q5",
@@ -4769,7 +5506,7 @@
           "quote": "Nodes in components are merged — fields may become lists, which are then deduplicated.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S63.4"
+          "id": "S73.4"
         },
         {
           "question": "q5",
@@ -4777,7 +5514,7 @@
           "quote": "Edges are then merged using rules for how to combine properties like weights.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S63.5"
+          "id": "S73.5"
         },
         {
           "question": "q5",
@@ -4785,7 +5522,7 @@
           "quote": "Semantic clustering is an efficient method of blocking that results in smaller blocks with more positive matches because unlike traditional syntactic blocking methods that employ string similarity measures to form blocking keys to group records, semantic clustering leverages the rich contextual understanding of modern language models to capture deeper relationships between the fields of records, even when their strings differ dramatically.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S63.6"
+          "id": "S73.6"
         },
         {
           "question": "q5",
@@ -4793,7 +5530,7 @@
           "quote": "The latest generation of Large Language Models is surprisingly powerful for matching JSON records, which shouldn’t be surprising given how well they can perform information extraction.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S63.7"
+          "id": "S73.7"
         },
         {
           "question": "q5",
@@ -4804,11 +5541,11 @@
             "2021"
           ],
           "corroborated_by": [],
-          "id": "S63.8"
+          "id": "S73.8"
         }
       ],
       "dropped": 0,
-      "n": 63
+      "n": 73
     },
     {
       "id": "f6e1b03a88",
@@ -4827,7 +5564,7 @@
           "quote": "Instead of asking the LLM to write raw SQL, you define a structured ontology (metrics, dimensions, entities, and the relationships between them) that encodes your business logic. The LLM's job is then reduced to decomposing a natural language question into the correct combination of metrics and dimensions. dbt's Semantic Layer uses its engine MetricFlow to handle the actual query generation deterministically.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S64.1"
+          "id": "S74.1"
         },
         {
           "question": "q3",
@@ -4837,7 +5574,7 @@
             "100%"
           ],
           "corroborated_by": [],
-          "id": "S64.2"
+          "id": "S74.2"
         },
         {
           "question": "q3",
@@ -4848,7 +5585,7 @@
             "64.5%"
           ],
           "corroborated_by": [],
-          "id": "S64.3"
+          "id": "S74.3"
         },
         {
           "question": "q3",
@@ -4858,7 +5595,7 @@
             "100%"
           ],
           "corroborated_by": [],
-          "id": "S64.4"
+          "id": "S74.4"
         },
         {
           "question": "q3",
@@ -4866,7 +5603,7 @@
           "quote": "With text-to-SQL, failure looks like a plausible but incorrect answer. With the Semantic Layer, failure looks like an error message.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S64.5"
+          "id": "S74.5"
         },
         {
           "question": "q3",
@@ -4874,7 +5611,7 @@
           "quote": "The trade-off is coverage: the Semantic Layer can only answer questions that fall within the scope of what's been modeled.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S64.6"
+          "id": "S74.6"
         },
         {
           "question": "q3",
@@ -4884,7 +5621,7 @@
             "3"
           ],
           "corroborated_by": [],
-          "id": "S64.7"
+          "id": "S74.7"
         },
         {
           "question": "q3",
@@ -4892,11 +5629,80 @@
           "quote": "This makes it flexible (any question is fair game as long as the data exists), but also fragile. The LLM might join tables incorrectly, misinterpret a column's meaning, or produce a query that runs successfully but returns wrong results.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S64.8"
+          "id": "S74.8"
         }
       ],
       "dropped": 0,
-      "n": 64
+      "n": 74
+    },
+    {
+      "id": "2d29a0a703",
+      "url": "https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost/",
+      "title": "LazyGraphRAG: Setting a new standard for quality and cost — Microsoft Research",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "blog",
+      "published": "2024-11-25",
+      "org": "Microsoft Research Blog",
+      "quality": 0.5,
+      "claims": [
+        {
+          "question": "q2",
+          "claim": "GraphRAG is positioned as better than conventional vector RAG for global queries over an entire dataset, while vector RAG is better for local queries whose answers resemble the query and sit in specific text regions.",
+          "quote": "A key advantage of GraphRAG over conventional vector RAG (or “semantic search”) is its ability to answer _global_ _queries_ that address the entire dataset, such as “what are the main themes in the data?”, or “what are the most important implications for X?”. Conversely, vector RAG excels for _local_ _queries_ where the answer resembles the query and can be found within specific text regions, as is typically the case for “who”, “what”, “when”, and “where” questions.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S75.1"
+        },
+        {
+          "question": "q2",
+          "claim": "LazyGraphRAG has data indexing costs equal to vector RAG and 0.1% of full GraphRAG indexing costs.",
+          "quote": "LazyGraphRAG data indexing costs are identical to vector RAG and 0.1% of the costs of full GraphRAG.",
+          "numbers": [
+            "0.1%"
+          ],
+          "corroborated_by": [],
+          "id": "S75.2"
+        },
+        {
+          "question": "q2",
+          "claim": "At comparable query costs to vector RAG, LazyGraphRAG outperforms vector RAG and other competing methods on local queries.",
+          "quote": "For comparable query costs to vector RAG, LazyGraphRAG outperforms all competing methods on local queries, including long-context vector RAG and GraphRAG [DRIFT](https://www.microsoft.com/en-us/research/blog/introducing-drift-search-combining-global-and-local-search-methods-to-improve-quality-and-efficiency/) search (our recently introduced RAG approach shown to outperform vector RAG) as well as GraphRAG local search.",
+          "numbers": [],
+          "corroborated_by": [
+            75
+          ],
+          "id": "S75.3"
+        },
+        {
+          "question": "q2",
+          "claim": "LazyGraphRAG achieves comparable answer quality to GraphRAG Global Search on global queries while using more than 700 times lower query cost.",
+          "quote": "The same LazyGraphRAG configuration also shows comparable answer quality to GraphRAG Global Search for global queries, but _more than 700 times lower query cost_.",
+          "numbers": [
+            "700"
+          ],
+          "corroborated_by": [],
+          "id": "S75.4"
+        },
+        {
+          "question": "q2",
+          "claim": "Vector RAG is best-first search using query similarity to select matching text chunks, but it lacks a sense of dataset breadth for global queries.",
+          "quote": "Vector RAG is a form of _best-first_ _search_ that uses the similarity with the query to select the best-matching source text chunks. However, it has no sense of the breadth of the dataset to consider for global queries.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S75.5"
+        },
+        {
+          "question": "q2",
+          "claim": "GraphRAG global search is breadth-first search using the community structure of source-text entities to cover the full dataset, but it lacks a sense of the best communities for local queries.",
+          "quote": "GraphRAG global search is a form of _breadth-first search_ that uses the community structure of source text entities to ensure that queries are answered considering the full breadth of the dataset. However, it has no sense of the best communities to consider for local queries.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S75.6"
+        }
+      ],
+      "dropped": 0,
+      "n": 75
     },
     {
       "id": "3f14e8a4d7",
@@ -4915,7 +5721,7 @@
           "quote": "a more accurate way of doing RAG is with a knowledge graph – thus GraphRAG",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S65.1"
+          "id": "S76.1"
         },
         {
           "question": "q2",
@@ -4923,7 +5729,7 @@
           "quote": "For many practitioners, this means taking a corpus of text and converting it to a series of word embeddings.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S65.2"
+          "id": "S76.2"
         },
         {
           "question": "q2",
@@ -4931,7 +5737,7 @@
           "quote": "Knowledge graphs can be hard to assemble.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S65.3"
+          "id": "S76.3"
         },
         {
           "question": "q2",
@@ -4939,7 +5745,7 @@
           "quote": "However, like many cases in data science, the data associated with knowledge graphs still suffer from the problem of GIGO: “garbage in, garbage out.”",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S65.4"
+          "id": "S76.4"
         },
         {
           "question": "q2",
@@ -4947,7 +5753,7 @@
           "quote": "One of the most common sources of data “garbage,” which is particularly true for knowledge graphs, is lack of quality entity resolution.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S65.5"
+          "id": "S76.5"
         },
         {
           "question": "q2",
@@ -4955,7 +5761,7 @@
           "quote": "No RegEx in the world is going to save you in this case! Neither will an edit distance algorithm.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S65.6"
+          "id": "S76.6"
         },
         {
           "question": "q1",
@@ -4963,11 +5769,11 @@
           "quote": "For example, consider the retail company of Kroger. They operate many grocery stores called “Kroger,” but they also own a variety of other stores including City Market, Smith’s, and Harris Teeter, to name a few.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S65.7"
+          "id": "S76.7"
         }
       ],
       "dropped": 1,
-      "n": 65
+      "n": 76
     },
     {
       "id": "990b778071",
@@ -4989,7 +5795,7 @@
             "57%"
           ],
           "corroborated_by": [],
-          "id": "S66.1"
+          "id": "S77.1"
         },
         {
           "question": "q2",
@@ -5000,7 +5806,7 @@
             "$50-200"
           ],
           "corroborated_by": [],
-          "id": "S66.2"
+          "id": "S77.2"
         },
         {
           "question": "q2",
@@ -5014,7 +5820,7 @@
             "1/100th"
           ],
           "corroborated_by": [],
-          "id": "S66.3"
+          "id": "S77.3"
         },
         {
           "question": "q2",
@@ -5022,7 +5828,7 @@
           "quote": "Vector RAG handles direct factual lookups efficiently: “What is our return policy?” “When does the contract expire?” These queries map cleanly to single chunks. Adding a knowledge graph to this use case adds cost and complexity without improving accuracy.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S66.4"
+          "id": "S77.4"
         },
         {
           "question": "q1",
@@ -5030,7 +5836,7 @@
           "quote": "Graph RAG adds a knowledge graph layer between your documents and the retrieval step. Instead of searching for similar text, the system traverses relationships between entities: people, companies, concepts, events.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S66.5"
+          "id": "S77.5"
         },
         {
           "question": "q5",
@@ -5038,7 +5844,7 @@
           "quote": "Microsoft GraphRAG sidesteps this by using LLM-powered open-ended extraction: the model decides what entities and relationships exist. This works for exploration but produces noisy graphs at scale.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S66.6"
+          "id": "S77.6"
         },
         {
           "question": "q5",
@@ -5046,11 +5852,11 @@
           "quote": "The hardest part of Graph RAG is not the framework. It is designing the ontology: which entity types matter, what relationship types to extract, how granular to go.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S66.7"
+          "id": "S77.7"
         }
       ],
       "dropped": 1,
-      "n": 66
+      "n": 77
     },
     {
       "id": "d8f6bb4e6e",
@@ -5069,7 +5875,7 @@
           "quote": "While effective for localized fact retrieval, this approach struggles with global, corpus-wide synthesis and multi-hop relationship tracking.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S67.1"
+          "id": "S78.1"
         },
         {
           "question": "q2",
@@ -5082,7 +5888,7 @@
             "5 and 15"
           ],
           "corroborated_by": [],
-          "id": "S67.2"
+          "id": "S78.2"
         },
         {
           "question": "q2",
@@ -5093,7 +5899,7 @@
             "2"
           ],
           "corroborated_by": [],
-          "id": "S67.3"
+          "id": "S78.3"
         },
         {
           "question": "q2",
@@ -5101,7 +5907,7 @@
           "quote": "Standard vector databases allow simple insert, update, and delete operations on single document chunks. In contrast, adding new documents to a knowledge graph can alter graph connectivity, requiring graph re-clustering and updating community summaries across parent hierarchical levels.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S67.4"
+          "id": "S78.4"
         },
         {
           "question": "q2",
@@ -5111,7 +5917,7 @@
             "0 to 100"
           ],
           "corroborated_by": [],
-          "id": "S67.5"
+          "id": "S78.5"
         },
         {
           "question": "q2",
@@ -5119,11 +5925,50 @@
           "quote": "When to Standardize on Vector RAG (or Hybrid BM25 + Vector) *   **Point-lookup fact retrieval:** When user queries target specific, localized facts contained within single sections or paragraphs. *   **Streaming or high-velocity ingestion:** When new documents arrive continuously and must be indexed within seconds.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S67.6"
+          "id": "S78.6"
         }
       ],
       "dropped": 2,
-      "n": 67
+      "n": 78
+    },
+    {
+      "id": "7d1ed3c498",
+      "url": "https://www.getdbt.com/blog/the-osi-spec-updates",
+      "title": "What the Open Semantic Interchange (OSI) spec means — dbt Labs",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "blog",
+      "published": "2026-01-29",
+      "org": "Dave Connors (dbt Labs)",
+      "quality": 0.5,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "OSI provides a vendor-neutral interchange format for semantic definitions, including metrics, dimensions, datasets, relationships, and interpretive context, so definitions can move between tools without being re-authored or re-interpreted.",
+          "quote": "OSI provides a vendor-neutral interchange format for semantic definitions—metrics, dimensions, datasets, relationships, and the context needed to interpret them—so those definitions can be transferred between tools without being re-authored or re-interpreted.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S79.1"
+        },
+        {
+          "question": "q1",
+          "claim": "dbt makes semantic definitions operational by letting teams define and govern metrics in the dbt Semantic Layer and execute them consistently with MetricFlow, while OSI moves those definitions across tools such as Snowflake and Tableau.",
+          "quote": "dbt complements the OSI spec by making semantic definitions operational: teams can define and govern metrics in the dbt Semantic Layer, and execute them consistently with MetricFlow. OSI provides the interchange format to move those definitions across tools (like Snowflake and Tableau). Together, they let teams author once and adopt interoperable semantics incrementally.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S79.2"
+        },
+        {
+          "question": "q1",
+          "claim": "Organizations often define business metrics in multiple places, leading to rebuilt metrics, definition debates, and dashboard drift, which OSI is designed to address.",
+          "quote": "Organizations often define business metrics in multiple places. If you've ever rebuilt the same metrics across tools, debated which \"active users\" definition is correct, or watched dashboards drift after silent changes, you understand the problem OSI is designed to address.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S79.3"
+        }
+      ],
+      "dropped": 0,
+      "n": 79
     },
     {
       "id": "7c3fc8ce8d",
@@ -5142,7 +5987,7 @@
           "quote": "It is the package that makes an ontology *operational*: where ontologySpecR describes what actions exist and objectSetsR queries data, actionTypesR actually *executes* changes.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S68.1"
+          "id": "S80.1"
         },
         {
           "question": "q4",
@@ -5150,7 +5995,7 @@
           "quote": "**Resolve → validate → execute → record** lifecycle for ontology actions.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S68.2"
+          "id": "S80.2"
         },
         {
           "question": "q4",
@@ -5158,7 +6003,7 @@
           "quote": "Multiple backends: R, SQL, HTTP, and plugin dispatch.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S68.3"
+          "id": "S80.3"
         },
         {
           "question": "q4",
@@ -5166,7 +6011,7 @@
           "quote": "Append-only `action_log` table created automatically in the connected database.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S68.4"
+          "id": "S80.4"
         },
         {
           "question": "q4",
@@ -5176,7 +6021,7 @@
             "3"
           ],
           "corroborated_by": [],
-          "id": "S68.5"
+          "id": "S80.5"
         },
         {
           "question": "q4",
@@ -5184,7 +6029,7 @@
           "quote": "Approval gate hook for governance integration (approved / denied / pending).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S68.6"
+          "id": "S80.6"
         },
         {
           "question": "q4",
@@ -5192,7 +6037,7 @@
           "quote": "Replay any logged submission with `resubmit_action()`.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S68.7"
+          "id": "S80.7"
         },
         {
           "question": "q4",
@@ -5200,11 +6045,11 @@
           "quote": "An approval gate lets an external system (e.g. `auditR`) intercept actions before dispatch. Register a gate function that returns `\"approved\"`, `\"denied\"`, or `\"pending\"`:",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S68.8"
+          "id": "S80.8"
         }
       ],
       "dropped": 0,
-      "n": 68
+      "n": 80
     },
     {
       "id": "848ba99cd5",
@@ -5223,7 +6068,7 @@
           "quote": "An independent reference implementation of a lightweight operational ontology inspired by Palantir Foundry Ontology concepts.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S69.1"
+          "id": "S81.1"
         },
         {
           "question": "q1",
@@ -5231,7 +6076,7 @@
           "quote": "This repository demonstrates how supply-chain data can be modeled as connected business objects with typed properties, relationships, read-only functions, governed actions, permissions, execution evidence, audit history, and safe AI-accessible tools.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S69.2"
+          "id": "S81.2"
         },
         {
           "question": "q4",
@@ -5239,7 +6084,7 @@
           "quote": "*   business object types such as `Supplier`, `Part`, `Product`, `Warehouse`, `InventoryPosition`, `CustomerOrder`, `RiskEvent`, and `MitigationPlan`",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S69.3"
+          "id": "S81.3"
         },
         {
           "question": "q4",
@@ -5247,7 +6092,7 @@
           "quote": "*   stored properties mapped to PostgreSQL tables and columns",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S69.4"
+          "id": "S81.4"
         },
         {
           "question": "q4",
@@ -5255,7 +6100,7 @@
           "quote": "*   read-only functions for impact analysis, inventory availability, stockout risk, order ranking, and mitigation recommendation",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S69.5"
+          "id": "S81.5"
         },
         {
           "question": "q4",
@@ -5263,7 +6108,7 @@
           "quote": "*   governed actions such as `createRiskEvent`, `generateMitigationPlan`, `approveMitigationPlan`, `reallocateInventory`, and `expeditePurchaseOrder`",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S69.6"
+          "id": "S81.6"
         },
         {
           "question": "q4",
@@ -5271,7 +6116,7 @@
           "quote": "*   role-based permissions for `Viewer`, `Planner`, `OperationsManager`, `Admin`, and restricted `AIAgent`",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S69.7"
+          "id": "S81.7"
         },
         {
           "question": "q4",
@@ -5279,11 +6124,84 @@
           "quote": "MCP / AI layer\n  exposes approved ontology capabilities without allowing autonomous critical writes",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S69.8"
+          "id": "S81.8"
         }
       ],
       "dropped": 0,
-      "n": 69
+      "n": 81
+    },
+    {
+      "id": "a3a1fb3436",
+      "url": "https://github.com/cube-js/cube",
+      "title": "cube-js/cube: open-source semantic layer",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "vendor",
+      "published": null,
+      "org": "cube-js",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Cube Core is an open-source semantic layer; users define metrics, dimensions, joins, and access rules once in code and expose them via SQL, REST, and GraphQL APIs to BI tools, custom applications, or AI agents.",
+          "quote": "**Cube Core is the open-source semantic layer.** Define metrics, dimensions, joins, and access rules once in code, then expose them through SQL, REST, and GraphQL APIs to anything downstream — BI tools, custom applications, or AI agents.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S82.1"
+        },
+        {
+          "question": "q1",
+          "claim": "The source defines a semantic layer as the core engine of BI tools that defines metrics, dimensions, and business logic and hides underlying data source complexity.",
+          "quote": "Every BI tool relies on a semantic layer as its core engine — the component that defines metrics, dimensions, and business logic and hides the complexity of the underlying data sources.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S82.2"
+        },
+        {
+          "question": "q1",
+          "claim": "The source contrasts most semantic layers as proprietary and single-BI-coupled with Cube Core as an open standalone semantic layer consumable by analytics applications or AI agents via standard APIs.",
+          "quote": "Most semantic layers are proprietary, tightly coupled to a single BI platform, and can't be reused across other tools. Cube Core is an open, standalone semantic layer that any analytics application or AI agent can consume through standard APIs.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S82.3"
+        },
+        {
+          "question": "q1",
+          "claim": "Cube says metrics defined once can be used across internal BI, embedded analytics, and AI agents without reimplementing the model in each place.",
+          "quote": "Define your metrics once and use them everywhere — internal BI, embedded analytics, AI agents — without re-implementing the model in each place.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S82.4"
+        },
+        {
+          "question": "q1",
+          "claim": "Cube Core supports all SQL data sources, naming Snowflake, Databricks, BigQuery, Presto, Amazon Athena, and Postgres.",
+          "quote": "Cube Core works with all SQL data sources, including cloud data warehouses like Snowflake, Databricks, and BigQuery; query engines like Presto and Amazon Athena; and application databases like Postgres.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S82.5"
+        },
+        {
+          "question": "q1",
+          "claim": "Cube Core includes a built-in relational caching engine intended to provide sub-second latency and high concurrency for API requests.",
+          "quote": "It has a built-in relational caching engine to provide sub-second latency and high concurrency for API requests.",
+          "numbers": [
+            "sub-second"
+          ],
+          "corroborated_by": [],
+          "id": "S82.6"
+        },
+        {
+          "question": "q1",
+          "claim": "Cube Core and the commercial Cube product share a fully compatible data model in both directions.",
+          "quote": "The data model is fully compatible both ways: a model you build in Cube Core runs unchanged in Cube, and vice versa.",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S82.7"
+        }
+      ],
+      "dropped": 1,
+      "n": 82
     },
     {
       "id": "b7812517b4",
@@ -5302,7 +6220,7 @@
           "quote": "Research and hands-on demo project exploring Palantir-style operational knowledge graphs for factory/manufacturing intelligence — covering ontology design, live data ingestion, decision logic, and governed actions using open datasets.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S70.1"
+          "id": "S83.1"
         },
         {
           "question": "q1",
@@ -5312,7 +6230,7 @@
             "two"
           ],
           "corroborated_by": [],
-          "id": "S70.2"
+          "id": "S83.2"
         },
         {
           "question": "q4",
@@ -5320,7 +6238,7 @@
           "quote": "Core framework (Phases 0–1): - core/ontology: ObjectType, LinkType, GraphSession with Pydantic validation - core/governance: RBAC permission checks + Postgres audit log - core/actions: Action base class (preconditions → execute → audit → rollback) - core/functions: RuleBasedFunction base class with optional Neo4j store-back",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S70.3"
+          "id": "S83.3"
         },
         {
           "question": "q4",
@@ -5332,7 +6250,7 @@
             ":8502"
           ],
           "corroborated_by": [],
-          "id": "S70.4"
+          "id": "S83.4"
         },
         {
           "question": "q4",
@@ -5344,7 +6262,7 @@
             ":8504"
           ],
           "corroborated_by": [],
-          "id": "S70.5"
+          "id": "S83.5"
         },
         {
           "question": "q6",
@@ -5356,7 +6274,7 @@
             "6,115"
           ],
           "corroborated_by": [],
-          "id": "S70.6"
+          "id": "S83.6"
         },
         {
           "question": "q4",
@@ -5366,11 +6284,11 @@
             "149"
           ],
           "corroborated_by": [],
-          "id": "S70.7"
+          "id": "S83.7"
         }
       ],
       "dropped": 0,
-      "n": 70
+      "n": 83
     },
     {
       "id": "ceff763164",
@@ -5389,7 +6307,7 @@
           "quote": "**PO-to-Fulfillment Control Tower** treats each *PO line* as the atomic “case” to track end-to-end. Every upstream system tells part of the story; Foundry translates them into a single language (ontology) and surfaces **actionable** insights in a **Workshop App**, while an **AIP automation agent** proposes next-best-actions based on live context and user inputs.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S71.1"
+          "id": "S84.1"
         },
         {
           "question": "q4",
@@ -5397,7 +6315,7 @@
           "quote": "Central object `PurchaseOrderLine` linked to `MetricsTable`, `EventLog`, `Shipment`, `Receipt`, and `Allocation`. Configure **filter propagation** from PO Line to linked datasets.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S71.2"
+          "id": "S84.2"
         },
         {
           "question": "q4",
@@ -5405,7 +6323,7 @@
           "quote": "Build a single “movie reel” per PO line with schema: `event_id`, `po_line_id`, `event_type`, `event_ts`, `source_system`, `is_authoritative`, `note`. Apply precedence + dedupe rules (e.g., Receipt > Shipment for DC arrival).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S71.3"
+          "id": "S84.3"
         },
         {
           "question": "q4",
@@ -5413,7 +6331,7 @@
           "quote": "A reasoning agent that consumes a `po_line_id`, fetches context via the ontology, and returns a structured recommendation (`recommended_action`, `rationale_md`, `confidence`, `expected_impact_value`).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S71.4"
+          "id": "S84.4"
         },
         {
           "question": "q4",
@@ -5421,7 +6339,7 @@
           "quote": "Row click sets `selectedPOLineID` → passed to AIP Logic → recommendation displays inline.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S71.5"
+          "id": "S84.5"
         },
         {
           "question": "q4",
@@ -5429,7 +6347,7 @@
           "quote": "Ontology Actions / Write-back: apply recommendations (update promise date, create supplier task) directly from the app and log to an audit dataset.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S71.6"
+          "id": "S84.6"
         },
         {
           "question": "q4",
@@ -5437,11 +6355,11 @@
           "quote": "Standardize and clean each domain dataset, cast timestamps to UTC, compute durations (Ex-Factory→Hub, Hub→DC, Ex-Factory→DC), and flag SLA breaches.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S71.7"
+          "id": "S84.7"
         }
       ],
       "dropped": 0,
-      "n": 71
+      "n": 84
     },
     {
       "id": "dad3ccc764",
@@ -5460,7 +6378,7 @@
           "quote": "The system extracts concepts, taxonomic relations, non-taxonomic relations, and OWL ontology structures from technical documentation such as **SLURM** and **IBM Spectrum LSF**.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S72.1"
+          "id": "S85.1"
         },
         {
           "question": "q1",
@@ -5468,7 +6386,7 @@
           "quote": "Extracted concepts and relations are converted into OWL classes, properties, domain/range constraints, and other ontology elements.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S72.2"
+          "id": "S85.2"
         },
         {
           "question": "q1",
@@ -5476,7 +6394,7 @@
           "quote": "Taxonomy Extraction: Hierarchical is-a relations are identified and converted into subclass relations.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S72.3"
+          "id": "S85.3"
         },
         {
           "question": "q5",
@@ -5484,7 +6402,7 @@
           "quote": "This approach combines classical NLP, statistical methods, rule-based filtering, and LLMs support.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S72.4"
+          "id": "S85.4"
         },
         {
           "question": "q5",
@@ -5492,7 +6410,7 @@
           "quote": "The model supports concept identification, enrichment, taxonomy construction, relation extraction, and axiom generation through task-specific prompts.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S72.5"
+          "id": "S85.5"
         },
         {
           "question": "q5",
@@ -5500,7 +6418,7 @@
           "quote": "It uses contextual chunks and prompts to directly generate OWL-compatible ontology structures.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S72.6"
+          "id": "S85.6"
         },
         {
           "question": "q5",
@@ -5508,11 +6426,11 @@
           "quote": "Sample-based precision: manual validation of extracted concepts, taxonomy relations, and non-taxonomic relations.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S72.7"
+          "id": "S85.7"
         }
       ],
       "dropped": 0,
-      "n": 72
+      "n": 85
     },
     {
       "id": "f9fbb37dce",
@@ -5537,7 +6455,7 @@
             "64.3"
           ],
           "corroborated_by": [],
-          "id": "S73.1"
+          "id": "S86.1"
         },
         {
           "question": "q2",
@@ -5549,7 +6467,7 @@
             "3x"
           ],
           "corroborated_by": [],
-          "id": "S73.2"
+          "id": "S86.2"
         },
         {
           "question": "q2",
@@ -5559,7 +6477,7 @@
             "2"
           ],
           "corroborated_by": [],
-          "id": "S73.3"
+          "id": "S86.3"
         },
         {
           "question": "q2",
@@ -5567,7 +6485,7 @@
           "quote": "## What this benchmark does not claim\n\n- GraphRAG beats vector RAG in general. We tested one corpus (AI/ML Wikipedia). It will likely behave differently on legal documents, support tickets, or sparse-relationship scientific papers.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S73.4"
+          "id": "S86.4"
         },
         {
           "question": "q2",
@@ -5578,7 +6496,7 @@
             "+35.8pp"
           ],
           "corroborated_by": [],
-          "id": "S73.5"
+          "id": "S86.5"
         },
         {
           "question": "q2",
@@ -5589,7 +6507,7 @@
             "100+"
           ],
           "corroborated_by": [],
-          "id": "S73.6"
+          "id": "S86.6"
         },
         {
           "question": "q2",
@@ -5600,11 +6518,11 @@
             "90%"
           ],
           "corroborated_by": [],
-          "id": "S73.7"
+          "id": "S86.7"
         }
       ],
       "dropped": 0,
-      "n": 73
+      "n": 86
     },
     {
       "id": "45407cd99d",
@@ -5623,7 +6541,7 @@
           "quote": "**Traditional RAG** — chunk the corpus, then retrieve the top-`k` by **dense** (cosine), **BM25** (lexical), or **hybrid** (reciprocal rank fusion) search, and feed them to the LLM.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S74.1"
+          "id": "S87.1"
         },
         {
           "question": "q1",
@@ -5631,7 +6549,7 @@
           "quote": "**GraphRAG** — use an LLM to extract entities and relationships, store them as a **knowledge graph in Neo4j** (with vector indexes for chunk/entity/community embeddings), then retrieve by _walking the graph_ and by _community summaries_.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S74.2"
+          "id": "S87.2"
         },
         {
           "question": "q2",
@@ -5639,7 +6557,7 @@
           "quote": "Multi-hop questions (e.g. _\"Were Scott Derrickson and Ed Wood of the same nationality?\"_) can only be answered by **combining facts from two or more passages**. Flat top-`k` retrieval often grabs only one of the required passages, because the question embedding doesn't point at both.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S74.3"
+          "id": "S87.3"
         },
         {
           "question": "q2",
@@ -5650,7 +6568,7 @@
             "0.98"
           ],
           "corroborated_by": [],
-          "id": "S74.4"
+          "id": "S87.4"
         },
         {
           "question": "q2",
@@ -5658,7 +6576,7 @@
           "quote": "Dataset by default: **HotpotQA** (hard multi-hop QA).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S74.5"
+          "id": "S87.5"
         },
         {
           "question": "q1",
@@ -5666,11 +6584,11 @@
           "quote": "**Observability / evaluation / orchestration** — **Langfuse** (tracing), **DeepEval** (LLM-as-judge metrics), **Prefect** (flows + UI).",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S74.6"
+          "id": "S87.6"
         }
       ],
       "dropped": 0,
-      "n": 74
+      "n": 87
     },
     {
       "id": "fd3ba0ac33",
@@ -5689,7 +6607,7 @@
           "quote": "Payment settlement control system: Python source contracts, SQL reconciliation, an operational ontology, version-checked actions with independent approval, and a transactional outbox to a mock ERP.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S75.1"
+          "id": "S88.1"
         },
         {
           "question": "q4",
@@ -5697,7 +6615,7 @@
           "quote": "Aster Reconcile: payment settlement control system Python source contracts and ingestion, SQL reconciliation at a declared settlement grain, an executable object and link contract, version-checked actions with independent approval, a transactional outbox to a separate mock ERP, and a React investigation interface over generated TypeScript types.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S75.2"
+          "id": "S88.2"
         },
         {
           "question": "q4",
@@ -5705,7 +6623,7 @@
           "quote": "Payment settlement control system: Python source contracts, SQL reconciliation, an operational ontology, version-checked actions with independent approval, and a transactional outbox to a mock ERP.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S75.3"
+          "id": "S88.3"
         },
         {
           "question": "q4",
@@ -5713,7 +6631,7 @@
           "quote": "Aster Reconcile: payment settlement control system Python source contracts and ingestion, SQL reconciliation at a declared settlement grain, an executable object and link contract, version-checked actions with independent approval, a transactional outbox to a separate mock ERP, and a React investigation interface over generated TypeScript types.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S75.4"
+          "id": "S88.4"
         },
         {
           "question": "q4",
@@ -5721,7 +6639,7 @@
           "quote": "Palantir-inspired simulation on synthetic data.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S75.5"
+          "id": "S88.5"
         },
         {
           "question": "q4",
@@ -5729,11 +6647,34 @@
           "quote": "Does not run on Foundry.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S75.6"
+          "id": "S88.6"
         }
       ],
       "dropped": 0,
-      "n": 75
+      "n": 88
+    },
+    {
+      "id": "e2d5bfbb2f",
+      "url": "https://github.com/getzep/graphiti",
+      "title": "getzep/graphiti: Build Real-Time Knowledge Graphs for AI Agents",
+      "provider": "tinyfish",
+      "discussion": null,
+      "type": "primary",
+      "published": null,
+      "org": "getzep",
+      "quality": 0.4,
+      "claims": [
+        {
+          "question": "q1",
+          "claim": "Graphiti is a project for building real-time knowledge graphs intended for AI agents.",
+          "quote": "Build Real-Time Knowledge Graphs for AI Agents",
+          "numbers": [],
+          "corroborated_by": [],
+          "id": "S89.1"
+        }
+      ],
+      "dropped": 0,
+      "n": 89
     },
     {
       "id": "0f0ae4143d",
@@ -5754,7 +6695,7 @@
             "3.0"
           ],
           "corroborated_by": [],
-          "id": "S76.1"
+          "id": "S90.1"
         },
         {
           "question": "q1",
@@ -5762,7 +6703,7 @@
           "quote": "To enable the encoding of [semantics](https://en.wikipedia.org/wiki/Semantics \"Semantics\") with the data, technologies such as [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework \"Resource Description Framework\") (RDF)[[2]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-2) and [Web Ontology Language](https://en.wikipedia.org/wiki/Web_Ontology_Language \"Web Ontology Language\") (OWL)[[3]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-3) are used.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S76.2"
+          "id": "S90.2"
         },
         {
           "question": "q1",
@@ -5770,7 +6711,7 @@
           "quote": "For example, [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science) \"Ontology (information science)\") can describe [concepts](https://en.wikipedia.org/wiki/Concept \"Concept\"), relationships between [entities](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model \"Entity–relationship model\"), and categories of things.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S76.3"
+          "id": "S90.3"
         },
         {
           "question": "q1",
@@ -5778,7 +6719,7 @@
           "quote": "These embedded semantics offer significant advantages such as [reasoning](https://en.wikipedia.org/wiki/Reasoning_engine \"Reasoning engine\") over data and operating with heterogeneous data sources.[[4]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-4)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S76.4"
+          "id": "S90.4"
         },
         {
           "question": "q1",
@@ -5786,7 +6727,7 @@
           "quote": "These standards promote common data formats and exchange protocols on the Web, fundamentally the RDF.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S76.5"
+          "id": "S90.5"
         },
         {
           "question": "q1",
@@ -5794,7 +6735,7 @@
           "quote": "According to the W3C, \"The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries.\"[[5]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-W3C-SWA-5)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S76.6"
+          "id": "S90.6"
         },
         {
           "question": "q1",
@@ -5802,7 +6743,7 @@
           "quote": "The Semantic Web is therefore regarded as an integrator across different content and information applications and systems.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S76.7"
+          "id": "S90.7"
         },
         {
           "question": "q1",
@@ -5810,11 +6751,11 @@
           "quote": "The term was coined by [Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee \"Tim Berners-Lee\") for a web of data (or **data web**)[[6]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-6) that can be processed by machines[[7]](https://en.wikipedia.org/wiki/Semantic_Web#cite_note-Berners-Lee-7)—that is, one in which much of the [meaning](https://en.wikipedia.org/wiki/Meaning_(linguistics) \"Meaning (linguistics)\") is [machine-readable](https://en.wikipedia.org/wiki/Machine-readable_data \"Machine-readable data\").",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S76.8"
+          "id": "S90.8"
         }
       ],
       "dropped": 0,
-      "n": 76
+      "n": 90
     },
     {
       "id": "1d767baa4a",
@@ -5835,7 +6776,7 @@
             "three-layer"
           ],
           "corroborated_by": [],
-          "id": "S77.1"
+          "id": "S91.1"
         },
         {
           "question": "q4",
@@ -5843,7 +6784,7 @@
           "quote": "A lightweight Python library that mirrors Foundry's Object Types, Link Types, Action Types, and Functions — **plus** OWL/RDF and SHACL export, and an MCP server for AI agents.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S77.2"
+          "id": "S91.2"
         },
         {
           "question": "q4",
@@ -5851,7 +6792,7 @@
           "quote": "Palantir Foundry's Ontology is powerful but proprietary. You can't export to W3C standards.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S77.3"
+          "id": "S91.3"
         },
         {
           "question": "q4",
@@ -5859,7 +6800,7 @@
           "quote": "Core: ObjectType, Property, LinkType, ActionType, Function, Interface",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S77.4"
+          "id": "S91.4"
         },
         {
           "question": "q4",
@@ -5867,7 +6808,7 @@
           "quote": "Engine: ObjectStore, QueryEngine, ActionExecutor, AuditLog",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S77.5"
+          "id": "S91.5"
         },
         {
           "question": "q4",
@@ -5875,7 +6816,7 @@
           "quote": "Governance: Roles, Markings, Permissions",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S77.6"
+          "id": "S91.6"
         },
         {
           "question": "q4",
@@ -5883,7 +6824,7 @@
           "quote": "MCP server for AI agent integration",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S77.7"
+          "id": "S91.7"
         },
         {
           "question": "q4",
@@ -5891,11 +6832,11 @@
           "quote": "Execute Actions with Validation",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S77.8"
+          "id": "S91.8"
         }
       ],
       "dropped": 0,
-      "n": 77
+      "n": 91
     },
     {
       "id": "206de91706",
@@ -5914,7 +6855,7 @@
           "quote": "An **ontology** is a formal model of a _domain_ — the entity types that exist (customer, order, aircraft), their properties, the relationships between them, and the **actions** that can be taken on them. It captures _meaning_, not just storage structure. For AI agents this matters because agents that reason over **defined business concepts** — rather than raw tables and schemas \"built for machines, not meaning\" — can act reliably and be governed. The ontology is the semantic grounding layer that makes agent actions trustworthy.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S78.1"
+          "id": "S92.1"
         },
         {
           "question": "q1",
@@ -5922,7 +6863,7 @@
           "quote": "ontology  = the blueprint / type system   (objects, links, actions, rules)\nknowledge graph = that blueprint populated with live instances",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S78.2"
+          "id": "S92.2"
         },
         {
           "question": "q2",
@@ -5930,7 +6871,7 @@
           "quote": "The ontology is **not** an empty organizing shell filled on demand, and it is **not** a RAG-style \"retrieve chunks and stuff them into the prompt\" store. It is a **live, continuously-fed, bidirectional** layer that many systems read and write at once.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S78.3"
+          "id": "S92.3"
         },
         {
           "question": "q2",
@@ -5938,7 +6879,7 @@
           "quote": "> **Not RAG.** In RAG you _retrieve → stuff into the prompt → reason over pasted text_. Here the objects are already there and continuously maintained; the agent **queries a live typed object graph** with permissions baked in. That's _why_ it's safe for governed action — the agent acts on real current state, not a stale retrieved snapshot.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S78.4"
+          "id": "S92.4"
         },
         {
           "question": "q4",
@@ -5946,7 +6887,7 @@
           "quote": "flowchart TD\n    A[Agent proposes an Action] --> B{Validate:<br/>action logic + security scopes}\n    B --> C[Optional human confirmation]\n    C --> D[Commit as a single transaction<br/>= an edit to the ontology]\n    D --> E[Instantly visible to every<br/>app / human reading those objects]\n    D --> F[Propagated BACK to source /<br/>operational systems in real time via CDC]",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S78.5"
+          "id": "S92.5"
         },
         {
           "question": "q4",
@@ -5954,7 +6895,7 @@
           "quote": "| **Agent action** | Write-back by design — agents execute transactional ontology edits | Read-only data agents (NL2SQL/DAX/KQL) vs. separate action-capable operations agents |",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S78.6"
+          "id": "S92.6"
         },
         {
           "question": "q4",
@@ -5962,7 +6903,7 @@
           "quote": "| **Shape** | One centralized \"kinetic\" ontology fusing data + logic + actions + security | Federated across products (Fabric IQ, Azure Digital Twins/DTDL, Graph) |",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S78.7"
+          "id": "S92.7"
         },
         {
           "question": "q2",
@@ -5970,11 +6911,11 @@
           "quote": "*   All vendor claims are **self-descriptive documentation** — architectural, not independently benchmarked.\n*   Several Microsoft features are in **preview** (Fabric IQ ontology, Graph item); framing may change. The Fabric data agent is GA.\n*   Fast-moving area — Microsoft docs were updated within days of research (Jul 2026); naming shifts often.\n*   The cross-vendor \"philosophy\" comparison is a **synthesis** across primary docs, not a single sourced statement.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S78.8"
+          "id": "S92.8"
         }
       ],
       "dropped": 0,
-      "n": 78
+      "n": 92
     },
     {
       "id": "869581c699",
@@ -5993,7 +6934,7 @@
           "quote": "A digital structure that represents knowledge as concepts and the relationships between them (facts). A knowledge graph can include an ontology that allows both humans and machines to understand and reason about its contents.[[23]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-23)[[24]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-24)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S79.1"
+          "id": "S93.1"
         },
         {
           "question": "q1",
@@ -6001,7 +6942,7 @@
           "quote": "A knowledge graph formally represents semantics by describing entities and their relationships.[[32]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-32)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S79.2"
+          "id": "S93.2"
         },
         {
           "question": "q1",
@@ -6009,7 +6950,7 @@
           "quote": "_Supporting reasoning over inferred ontologies_: A knowledge graph acquires and integrates information into an ontology and applies a reasoner to derive new knowledge.[[3]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-Ref1-3)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S79.3"
+          "id": "S93.3"
         },
         {
           "question": "q1",
@@ -6017,7 +6958,7 @@
           "quote": "In contrast, virtual knowledge graphs do not store information in specialized databases.[[30]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-30) They rely on an underlying relational database or data lake to answer queries on the graph. Such a virtual knowledge graph system must be properly configured in order to answer the queries correctly. This specific configuration is done through a set of mappings that define the relationship between the elements of the data source and the structure and ontology of the virtual knowledge graph.[[31]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-31)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S79.4"
+          "id": "S93.4"
         },
         {
           "question": "q1",
@@ -6025,7 +6966,7 @@
           "quote": "These graph databases allow users to easily store data as entities and their interrelationships, and facilitate operations such as data reasoning, node embedding, and ontology development on knowledge bases.[[29]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-29)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S79.5"
+          "id": "S93.5"
         },
         {
           "question": "q5",
@@ -6033,7 +6974,7 @@
           "quote": "Recent developments in data science and [machine learning](https://en.wikipedia.org/wiki/Machine_learning \"Machine learning\"), particularly in [graph neural networks](https://en.wikipedia.org/wiki/Graph_neural_network \"Graph neural network\"), representation learning, and machine learning, have broadened the scope of knowledge graphs beyond their traditional use in search engines and [recommender systems](https://en.wikipedia.org/wiki/Recommender_system \"Recommender system\"). They are increasingly used in scientific research, with notable applications in fields such as [genomics](https://en.wikipedia.org/wiki/Genomics \"Genomics\"), [proteomics](https://en.wikipedia.org/wiki/Proteomics \"Proteomics\"), and [systems biology](https://en.wikipedia.org/wiki/Systems_biology \"Systems biology\").[[5]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-5)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S79.6"
+          "id": "S93.6"
         },
         {
           "question": "q5",
@@ -6041,7 +6982,7 @@
           "quote": "The development of large language models expanded interest in knowledge graphs as a way to structure information from unstructured text, with advances in language processing enabling their automatic or semi-automatic generation and expansion.[[16]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-16)[[17]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-17)[[18]](https://en.wikipedia.org/wiki/Knowledge_graph#cite_note-18)",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S79.7"
+          "id": "S93.7"
         },
         {
           "question": "q2",
@@ -6051,11 +6992,11 @@
             "2024"
           ],
           "corroborated_by": [],
-          "id": "S79.8"
+          "id": "S93.8"
         }
       ],
       "dropped": 0,
-      "n": 79
+      "n": 93
     },
     {
       "id": "d85ad15684",
@@ -6074,7 +7015,7 @@
           "quote": "A semantic layer maps complex data into familiar business terms such as product, customer, or revenue to offer a unified, consolidated view of data across the organization.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S80.1"
+          "id": "S94.1"
         },
         {
           "question": "q1",
@@ -6082,7 +7023,7 @@
           "quote": "These semantic layers are built using semantic standards such as [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework \"Resource Description Framework\"), [SKOS](https://en.wikipedia.org/wiki/SKOS \"SKOS\"), and [OWL](https://en.wikipedia.org/wiki/Web_Ontology_Language \"Web Ontology Language\").",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S80.2"
+          "id": "S94.2"
         },
         {
           "question": "q1",
@@ -6090,7 +7031,7 @@
           "quote": "RDF represents information as statements linking a subject, a predicate, and an object, and is designed to let data from different sources be combined and merged even when the underlying schemas were created independently.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S80.3"
+          "id": "S94.3"
         },
         {
           "question": "q1",
@@ -6098,7 +7039,7 @@
           "quote": "OWL extends this foundation with a more expressive, logic-based vocabulary for defining classes, properties, and the relationships between them; because OWL is a computational logic-based language, knowledge expressed in it can be reasoned over by computer programs to verify consistency or make implicit knowledge explicit.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S80.4"
+          "id": "S94.4"
         },
         {
           "question": "q1",
@@ -6106,7 +7047,7 @@
           "quote": "an [ontology](https://en.wikipedia.org/wiki/Ontology \"Ontology\") model and [knowledge graph](https://en.wikipedia.org/wiki/Knowledge_graph \"Knowledge graph\") represent relationships between assets and concepts.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S80.5"
+          "id": "S94.5"
         },
         {
           "question": "q3",
@@ -6114,7 +7055,7 @@
           "quote": "Interest in standalone semantic layers has grown alongside the adoption of generative AI tools for data analysis, which draw on centrally defined metrics to produce consistent results when querying enterprise data.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S80.6"
+          "id": "S94.6"
         },
         {
           "question": "q3",
@@ -6122,11 +7063,11 @@
           "quote": "Research briefings from MIT's Center for Information Systems Research have argued that organizations face increasing pressure to invest in semantic technologies capable of making data assets usable by both business users and AI models or [AI agents](https://en.wikipedia.org/wiki/AI_agents \"AI agents\").",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S80.7"
+          "id": "S94.7"
         }
       ],
       "dropped": 1,
-      "n": 80
+      "n": 94
     },
     {
       "id": "a4bc100c1a",
@@ -6145,7 +7086,7 @@
           "quote": "在信息科学中，本体论是对特定领域内概念和关系的正式表示。它定义了：\n\n*   **类/类型** - 事物的种类\n*   **属性** - 类的特征\n*   **关系** - 类之间的联系\n*   **约束** - 规则和限制",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S81.1"
+          "id": "S95.1"
         },
         {
           "question": "q1",
@@ -6157,7 +7098,7 @@
             "多对多"
           ],
           "corroborated_by": [],
-          "id": "S81.2"
+          "id": "S95.2"
         },
         {
           "question": "q4",
@@ -6165,7 +7106,7 @@
           "quote": "一个现代化的本体论建模工具，灵感来自 Palantir Ontology。支持可视化设计对象类型、属性、关系和接口。",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S81.3"
+          "id": "S95.3"
         },
         {
           "question": "q4",
@@ -6173,11 +7114,11 @@
           "quote": "本工具参考 Palantir Foundry 的本体论模式：\n\n*   将数据表映射为对象类型\n*   将外键关系映射为链接\n*   支持接口实现多态性\n*   动作定义业务操作",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S81.4"
+          "id": "S95.4"
         }
       ],
       "dropped": 0,
-      "n": 81
+      "n": 95
     },
     {
       "id": "7f77985824",
@@ -6199,7 +7140,7 @@
             "2009"
           ],
           "corroborated_by": [],
-          "id": "S82.1"
+          "id": "S96.1"
         },
         {
           "question": "q1",
@@ -6207,11 +7148,11 @@
           "quote": "OWL and RDF have attracted significant academic, medical and commercial interest.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S82.2"
+          "id": "S96.2"
         }
       ],
       "dropped": 6,
-      "n": 82
+      "n": 96
     },
     {
       "id": "3d7e093e7c",
@@ -6230,11 +7171,11 @@
           "quote": "A semantic layer tells an agent what the numbers mean. It will not tell it who owns the work, or what breaks when that work changes.",
           "numbers": [],
           "corroborated_by": [],
-          "id": "S83.1"
+          "id": "S97.1"
         }
       ],
       "dropped": 0,
-      "n": 83
+      "n": 97
     }
   ]
 }

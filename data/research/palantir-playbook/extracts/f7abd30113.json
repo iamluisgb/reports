@@ -1,0 +1,68 @@
+{
+  "relevant": true,
+  "source_type": "other",
+  "published": "2026-10-15",
+  "author_or_org": "Contrary Research / Kate Ferrer",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Invisible uses forward-deployed engineers to connect its enterprise platform surfaces to customer systems, beginning with one workflow and expanding from there.",
+      "quote": "Forward-deployed engineers [connect](https://invisibletech.ai/how-we-work) these to a customer's systems, starting with one workflow and expanding from there.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Invisible appointed a CEO who had been Global Head of QuantumBlack Labs at McKinsey, overseeing 1K engineers and product leaders and helping scale AI projects from proof of concept to production.",
+      "quote": "Fitzpatrick was previously Global Head of QuantumBlack Labs at McKinsey, where he oversaw [1K](https://www.businesswire.com/news/home/20250121103218/en/Invisible-Technologies-Appoints-McKinsey-AI-Leader-as-Chief-Executive-Officer) engineers and product leaders across QuantumBlack Labs and McKinsey and helped organizations [scale](https://www.businesswire.com/news/home/20250121103218/en/Invisible-Technologies-Appoints-McKinsey-AI-Leader-as-Chief-Executive-Officer) AI projects from proof of concept to production, the same work Invisible sells.",
+      "numbers": [
+        "1K"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Invisible decomposes customer workflows into discrete steps, automates as many as possible, and routes the remainder to human experts through its Meridial network.",
+      "quote": "Across both halves, Invisible [breaks down](https://www.inc.com/ben-sherry/francis-pedraza-invisible-technologies-founder-ai-unicorn-journey/91258221) customer workflows into discrete steps, automates as many as possible, and routes the rest to human experts through Meridial, its expert network.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Invisible positions itself as owning both the software and human-execution layers, unlike BPOs that profit from inefficiency and pure software platforms that sell tools without executing work.",
+      "quote": "Where legacy BPOs [profit](https://www.youtube.com/watch?v=F1DpDRuqd1o&t=267s) from inefficiency and pure software platforms sell the tool without executing the work, Invisible owns both layers, combining proprietary software for data readiness, workflow mapping, model evaluation, and agent execution with a human layer that handles what automation still cannot.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Invisible's Neuron data platform ingests messy multi-source enterprise data and organizes it into a governed, AI-ready layer so models and agents know where to look without custom engineering per deployment.",
+      "quote": "Neuron is Invisible's data platform. It [ingests](https://invisibletech.ai/) messy, multi-source data across enterprise systems and organizes it into a governed, AI-ready layer, so that models and agents know where to look without custom engineering for each deployment.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Invisible's enterprise platform has five surfaces: Neuron for data readiness, Atomic for workflow mapping, Meridial for human expertise, Synapse for model evaluation, and Axon for agent execution.",
+      "quote": "The enterprise platform consists of five surfaces, which the [site](https://invisibletech.ai/) lists as Neuron for data readiness, Atomic for workflow mapping, Meridial for human expertise, Synapse for model evaluation, and Axon for agent execution.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A March 2025 study found that 88% of AI proofs of concept never reached wide-scale deployment.",
+      "quote": "A March 2025 study found that [88%](https://www.cio.com/article/3850763/88-of-ai-pilots-fail-to-reach-production-but-thats-not-all-on-it.html) of AI proofs of concept never reached wide-scale deployment.",
+      "numbers": [
+        "88%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Invisible agreed to acquire WeCP, a skills assessment platform with over 2 million technical interviews and over 18K assessment frameworks, to strengthen expert validation for high-precision workflows.",
+      "quote": "In [March 2026](https://invisibletech.ai/newsroom/invisible-acquires-wecp), Invisible agreed to acquire WeCP, a skills assessment platform that had conducted over [2 million](https://invisibletech.ai/newsroom/invisible-acquires-wecp) technical interviews and built over [18K](https://invisibletech.ai/newsroom/invisible-acquires-wecp) assessment frameworks, to strengthen expert validation for high-precision workflows.",
+      "numbers": [
+        "2 million",
+        "18K"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://research.contrary.com/company/invisible"
+}

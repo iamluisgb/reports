@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-08-12",
+  "author_or_org": "Falk Gottlob",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Sierra uses forward-deployed agent engineers who sit with customer systems, wire integrations into CRM, billing, and ERP, and remain accountable for resolution rate after go-live because Sierra does not get paid otherwise.",
+      "quote": "That is a forward-deployed model. Sierra engineers sit with the customer's systems, wire the integrations into the CRM and billing and ERP, and stay accountable for the resolution rate after go-live, because, per choice 1, Sierra does not get paid otherwise.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Sierra charges a pre-negotiated rate per AI-resolved case, makes human escalations free, reports around $1.50 per resolution, and contracts typically start around $150,000 per year.",
+      "quote": "Sierra's model, in Taylor's words: \"If the AI agent resolves the case, no human intervention, there's a pre-negotiated rate for that. If we do have to escalate to a person, that's free.\" Reported rates are around $1.50 per resolution in support contexts. Contracts are custom, typically starting around $150,000 a year, and blend volume-based pricing for routine interactions with pay-per-resolution for complex ones.",
+      "numbers": [
+        "$1.50",
+        "$150,000"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Because escalations are free, every failed resolution costs Sierra revenue and compute, so Sierra loses money in proportion to how often its product fails.",
+      "quote": "First, escalations are free. That is not a discount, it is an incentive structure. Every failed resolution costs Sierra the revenue and still costs Sierra the compute. The company loses money on its own product's failures, in direct proportion to how often it fails.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "High-touch deployment compresses margins and gates growth on engineer hiring; Sierra’s response is to productize the last mile with Agent Studio 2.0’s no-code workflow building and Ghostwriter’s generation of production-ready agents from SOPs, transcripts, and process docs.",
+      "quote": "Sacra flags implementation intensity as Sierra's biggest scaling risk, and the concern is fair: high-touch deployment compresses margins and gates growth on engineer hiring. Sierra's answer is to productize the last mile from the inside. Agent Studio 2.0 moved workflow-building to a no-code interface that customer-experience teams operate themselves. Ghostwriter, their agent-building agent, generates production-ready agents from SOPs, transcripts, and process docs.",
+      "numbers": [
+        "2.0"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Sierra says agents break the software development lifecycle because they are non-deterministic and lack a change-management story; model upgrades silently change behavior.",
+      "quote": "agents break the software development lifecycle. Traditional software is deterministic, structured, fast, and cheap. Agents are goal-based, non-deterministic, conversational, slow, expensive, and, worst of all, have no change management story, because a model upgrade silently changes behavior.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Sierra turns annotated failures from real conversations into simulated regression tests, and before upgrading its platform it runs every customer’s regression suite.",
+      "quote": "Every annotated failure becomes a simulated conversation test against mock APIs, reproducible and runnable in parallel. Thousands of annotations become thousands of regression tests, so \"your AI agent never makes the same mistake twice.\" And before Sierra upgrades its own platform, it runs every customer's regression suite.",
+      "numbers": [
+        "Thousands",
+        "thousands"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Sierra deliberately owns the last mile with forward-deployed agent engineers, absorbing implementation risk that SaaS vendors spent two decades pushing onto customers.",
+      "quote": "They own the last mile with forward-deployed agent engineers, deliberately absorbing the implementation risk every SaaS vendor spent two decades pushing onto the customer.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Outcome pricing deletes the separation between software and implementation, making the vendor accountable until the customer can use the product and giving the vendor skin in the game to navigate the last mile.",
+      "quote": "The deeper effect is cultural, and Taylor names it directly: the separation between software and implementation, where the vendor ships and the customer's failure to adopt is the customer's problem, is \"the essence of so many of the problems in the software industry.\" Outcome pricing deletes that separation. \"You become more accountable to help them be successful because until they do, they can't use it,\" and there is \"a strong incentive for the software company to have skin in the game to navigate that last mile.\"",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://falkster.com/blog/the-sierra-playbook"
+}

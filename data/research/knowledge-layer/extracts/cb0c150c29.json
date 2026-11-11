@@ -1,0 +1,35 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-01-28",
+  "author_or_org": "Snowflake (Josh Klahr, Khushboo Bhatia, Yogitha Chilukuri, Nick El-Rayess)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The OSI specification defines a vendor-neutral, extensible model for semantic-layer constructs such as data sets, metrics, dimensions, relationships, and contexts so they can be interpreted consistently across tools, platforms, and agentic applications.",
+      "quote": "This specification defines a vendor-neutral, extensible model for representing semantic layer constructs such as data sets, metrics, dimensions, relationships and contexts in a way that can be consistently interpreted across tools, platforms and agentic applications.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source frames lack of shared meaning—business logic and definitions trapped in proprietary silos—as a main enterprise AI/analytics hurdle, causing repeated semantic-context rebuilding and likely inconsistency and waste.",
+      "quote": "In the modern enterprise, one of the main hurdles to effective AI and analytics isn’t a lack of data, it’s a _lack of shared meaning._ For too long, business logic and definitions (such as churn rate or net margin) have been locked inside proprietary silos. This forces teams to rebuild the same semantic context over and over again, likely leading to inconsistency and wasted effort.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "OSI is described as an open-source standard intended to act as a universal translator for data semantics.",
+      "quote": "We recently introduced the vision for [Open Semantic Interchange (OSI)](https://www.snowflake.com/en/blog/open-semantic-interchange-ai-standard/), an open source standard designed to act as the universal translator for data semantics.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The OSI specification is positioned as a starting point rather than an endpoint, with community feedback, discussion, and contributions shaping its evolution.",
+      "quote": "We view this specification as a starting point, not an endpoint. Feedback, discussion and contributions from the community will shape its evolution.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.snowflake.com/en/blog/open-semantic-interchanges-specs-finalized/"
+}

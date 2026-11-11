@@ -1,0 +1,56 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2025-11-19",
+  "author_or_org": "Laura Hilgers / Salesforce",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Salesforce committed to building a team of 1,000 FDEs.",
+      "quote": "Salesforce alone has committed to building a team of 1,000 FDEs.",
+      "numbers": [
+        "1,000"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "At Salesforce, some FDEs work in pods consisting of one deployment strategist and two FDEs.",
+      "quote": "Many work individually with a customer, but some are starting to work in pods that consist of one deployment strategist and two FDEs.",
+      "numbers": [
+        "one",
+        "two"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Salesforce's FDE program is currently free for select nominated customers, but the company plans to let customers purchase FDE services next year.",
+      "quote": "At the moment, they must be nominated by their account executive to be in the Momentum program, offered to select customers for free. “It’s an investment by Salesforce in our customers,” said Paige Elia, senior consultant, FDE programs, at Salesforce. Sometime in the next year, however, customers will also have the option to purchase FDE services.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Salesforce says FDEs are in many ways like traditional tech consultants, but differ in the agility and speed at which they move.",
+      "quote": "In many ways, forward deployed engineers are like traditional tech consultants. “But the biggest difference is the agility and speed at which we move,” said Khalid.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A Salesforce FDE director says that without FDEs, thousands of customers risk being stuck in pilot purgatory — signed up but not successfully deployed.",
+      "quote": "“Without FDEs, we risk having thousands of customers stuck in pilot purgatory — signed up, but not successfully deployed,” said Khalid.",
+      "numbers": [
+        "thousands"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Salesforce's FDE team got a booking platform's AI agent back on track and resolved all its issues within a week by listening to concerns, enlisting the product team, and fixing glitches.",
+      "quote": "So, Salesforce offered a team of forward deployed engineers (FDEs). The FDEs listened to the company’s concerns, enlisted Salesforce’s product team to fix glitches, and got the agent back on track. “We were able to resolve all their issues within a week,” said Sarah Khalid, forward deployed engineer director at Salesforce.",
+      "numbers": [
+        "a week"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.salesforce.com/blog/forward-deployed-engineer/"
+}

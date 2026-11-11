@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-10-29",
+  "author_or_org": "Databricks",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Metric views separate measure definitions from dimensions used to group, filter, and aggregate, so metrics can be defined once and queried at runtime.",
+      "quote": "They provide a centralized way to define and manage business metrics by separating measure definitions from the fields (also called dimensions) used to group, filter, and aggregate them, so you can define metrics once and query them at runtime.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "With a metric view, a metric is defined once and users can group by any available field, with the query engine generating the computation.",
+      "quote": "With a metric view, you define the metric once, for example _sum of revenue divided by distinct customer count_, and users can group by any available field.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Metric views can be queried from SQL editors, notebooks, dashboards, Genie Agents, and alerts.",
+      "quote": "Query metric views from SQL editors, notebooks, dashboards, Genie Agents, and alerts.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Metric views support modeling star and snowflake schemas with multi-level joins.",
+      "quote": "Model star and snowflake schemas with multi-level joins.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Metric views can bind parameter values at query time to serve many query variants from one metric view.",
+      "quote": "Bind values at query time with parameters to serve many query variants from a single metric view.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Agent metadata in metric views lets modelers add synonyms, display names, and formatting rules intended to improve agent accuracy and consistent formatting across tools.",
+      "quote": "Add synonyms, display names, and formatting rules to improve agent accuracy and display consistent formats across tools.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Databricks states that metric-view relationships, in Beta, can be declared so AI assistants and BI tools choose the right join path.",
+      "quote": "(Beta) Declare how metric views relate to each other so that AI assistants and BI tools choose the right join path.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Metric views support precomputed aggregations with incremental refresh, and the query engine can automatically rewrite queries to use materialized views when appropriate.",
+      "quote": "Pre-compute and incrementally refresh aggregations. The query engine automatically rewrites queries to use materialized views when appropriate.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://docs.databricks.com/aws/en/uc-semantics/metric-views/"
+}

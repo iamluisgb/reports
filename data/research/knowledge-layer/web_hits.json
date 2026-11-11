@@ -264,5 +264,109 @@
    "provider": "tinyfish",
    "published": "2023-08-24"
   }
+ ],
+ "knowledge graph RAG production case studies": [
+  {
+   "url": "https://arxiv.org/abs/2404.17723",
+   "title": "Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering \u2014 LinkedIn",
+   "snippet": "Combines RAG with a knowledge graph built from issue tickets.",
+   "provider": "tinyfish",
+   "published": "2024-04-26"
+  },
+  {
+   "url": "https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost/",
+   "title": "LazyGraphRAG: Setting a new standard for quality and cost \u2014 Microsoft Research",
+   "snippet": "For 4% of the query cost of GraphRAG global search.",
+   "provider": "tinyfish",
+   "published": "2024-11-25"
+  },
+  {
+   "url": "https://arxiv.org/abs/2501.13956",
+   "title": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
+   "snippet": "Zep 94.8% vs 93.4%; accuracy improvements up to 18.5%.",
+   "provider": "tinyfish",
+   "published": "2025-01-20"
+  },
+  {
+   "url": "https://github.com/getzep/graphiti",
+   "title": "getzep/graphiti: Build Real-Time Knowledge Graphs for AI Agents",
+   "snippet": "Temporal knowledge graph framework for agent memory.",
+   "provider": "tinyfish",
+   "published": ""
+  }
+ ],
+ "semantic layer tools and standards for AI agents": [
+  {
+   "url": "https://www.databricks.com/blog/redefining-semantics-data-layer-future-bi-and-ai",
+   "title": "Unity Catalog Business Semantics: Now GA and Open \u2014 Databricks",
+   "snippet": "Metrics that humans and AI agents can discover and use.",
+   "provider": "tinyfish",
+   "published": "2026-04-02"
+  },
+  {
+   "url": "https://docs.databricks.com/aws/en/uc-semantics/metric-views/",
+   "title": "Unity Catalog metric views \u2014 Databricks docs",
+   "snippet": "Metric views are the core implementation of Unity Catalog semantics.",
+   "provider": "tinyfish",
+   "published": "2026-10-29"
+  },
+  {
+   "url": "https://cube.dev/articles/semantic-layer-for-ai-agents-2026",
+   "title": "Semantic Layer for AI Agents (2026) \u2014 Cube",
+   "snippet": "Cube Core is the layer agents query over an MCP server.",
+   "provider": "tinyfish",
+   "published": "2026-10-19"
+  },
+  {
+   "url": "https://github.com/cube-js/cube",
+   "title": "cube-js/cube: open-source semantic layer",
+   "snippet": "Cube Core is an open, standalone semantic layer.",
+   "provider": "tinyfish",
+   "published": ""
+  },
+  {
+   "url": "https://www.snowflake.com/en/blog/open-semantic-interchanges-specs-finalized/",
+   "title": "Open Semantic Interchange (OSI) Specification Finalized \u2014 Snowflake",
+   "snippet": "Vendor-neutral model for semantic layer constructs.",
+   "provider": "tinyfish",
+   "published": "2026-01-27"
+  },
+  {
+   "url": "https://www.getdbt.com/blog/the-osi-spec-updates",
+   "title": "What the Open Semantic Interchange (OSI) spec means \u2014 dbt Labs",
+   "snippet": "Open OSI spec for semantic portability.",
+   "provider": "tinyfish",
+   "published": "2026-01-29"
+  },
+  {
+   "url": "https://colrows.com/blogs/open-semantic-interchange/",
+   "title": "Apache Ossie (Open Semantic Interchange) Explained",
+   "snippet": "An interchange format is not an execution engine.",
+   "provider": "tinyfish",
+   "published": "2026-08-21"
+  },
+  {
+   "url": "https://atlan.com/know/ai-agent/semantic-layer/unity-catalog-semantic-layer/",
+   "title": "Unity Catalog Semantic Layer: Metric Views vs. dbt, Cube \u2014 Atlan",
+   "snippet": "Unity Catalog pairs metric views with a business-semantics layer.",
+   "provider": "tinyfish",
+   "published": "2026-08-11"
+  }
+ ],
+ "knowledge graph construction effort and cost": [
+  {
+   "url": "https://atlan.com/know/ai-agent/knowledge-graph/knowledge-graph-construction-for-ai/",
+   "title": "Knowledge Graph Construction for AI \u2014 Atlan",
+   "snippet": "6 to 12 weeks for one domain, 2 to 3 months for enterprise-wide ontology work.",
+   "provider": "tinyfish",
+   "published": "2026-07-22"
+  },
+  {
+   "url": "https://flur.ee/blog/enterprise-kg-buyers-guide-2026",
+   "title": "Best Enterprise Knowledge Graph Software in 2026 \u2014 Fluree",
+   "snippet": "Neo4j, Memgraph, Stardog, Fluree, Graphwise, eccenca, AWS Neptune compared.",
+   "provider": "tinyfish",
+   "published": "2026-06-10"
+  }
  ]
 }

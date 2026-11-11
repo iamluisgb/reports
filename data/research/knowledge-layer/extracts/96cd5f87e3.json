@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "Databricks",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Databricks positions business semantics as governed metrics, dimensions, and rules defined once at the data layer so dashboards, SQL queries, notebooks, and AI agents use the same trusted definitions.",
+      "quote": "Unity Catalog Business Semantics is now GA. Define governed metrics, dimensions, and rules once at the data layer so every dashboard, SQL query, notebook, and AI agent works from the same trusted definitions.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source says BI tool-specific semantic layers are fragmented in multi-tool, multi-agent environments, locking definitions inside dashboards, models, and spreadsheets and making governance, access policies, and lineage difficult.",
+      "quote": "In a multi-tool, multi-agent world, each BI model speaks its own language. As a result, definitions get locked inside dashboards, models, and spreadsheets, making it nearly impossible to govern, enforce access policies, or trace lineage across the organization.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Metric Views provide semantic metadata such as display names, formats, and synonyms intended to help both humans and AI interpret and apply KPI definitions.",
+      "quote": "Metric Views, which establish trusted, consistent definitions of business KPIs with semantic metadata like display names, formats, and synonyms that help both humans and AI interpret and apply those definitions with confidence.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Databricks is open sourcing the core Metric View implementation in Apache Spark to make business semantics portable beyond a single platform.",
+      "quote": "The core implementation is being open sourced in Apache Spark, extending business semantics beyond a single platform and reinforcing a commitment to openness and interoperability.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Databricks says business semantics are unified and governed at the platform core, built into Unity Catalog and inheriting governance, security, and lineage.",
+      "quote": "semantics are now unified and governed at the core of the Databricks Data + AI Platform. Built directly into Unity Catalog, they extend the same governance, security, and lineage you already rely on and make those definitions available everywhere you work.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Databricks claims Genie spaces built on Metric Views ground natural-language queries in governed deterministic definitions rather than inferred logic, and says Genie is no longer hallucinating metrics.",
+      "quote": "Genie spaces can be created directly on top of Metric Views, which means every natural-language query Genie answers is grounded in governed, deterministic definitions, not inferred logic. Because Metric Views are compiled into logical queries at runtime, users always get correct, consistent results. Genie is no longer hallucinating metrics; it's resolving them from a single source of truth.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Metric Views compile each metric definition into deterministic SQL that the engine executes the same way regardless of which tool or agent issues the query.",
+      "quote": "Metric Views compile each metric definition into deterministic SQL that the engine executes the same way every time, regardless of which tool or agent issues the query.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Databricks says its Genie Code agentic AI can suggest measures, dimensions, synonyms, and documentation to bootstrap semantic models in minutes instead of weeks.",
+      "quote": "Suggest measures, dimensions, synonyms, and documentation so teams get started in minutes instead of weeks",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.databricks.com/blog/redefining-semantics-data-layer-future-bi-and-ai"
+}

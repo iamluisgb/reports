@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "cube-js",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Cube Core is an open-source semantic layer; users define metrics, dimensions, joins, and access rules once in code and expose them via SQL, REST, and GraphQL APIs to BI tools, custom applications, or AI agents.",
+      "quote": "**Cube Core is the open-source semantic layer.** Define metrics, dimensions, joins, and access rules once in code, then expose them through SQL, REST, and GraphQL APIs to anything downstream — BI tools, custom applications, or AI agents.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source defines a semantic layer as the core engine of BI tools that defines metrics, dimensions, and business logic and hides underlying data source complexity.",
+      "quote": "Every BI tool relies on a semantic layer as its core engine — the component that defines metrics, dimensions, and business logic and hides the complexity of the underlying data sources.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source contrasts most semantic layers as proprietary and single-BI-coupled with Cube Core as an open standalone semantic layer consumable by analytics applications or AI agents via standard APIs.",
+      "quote": "Most semantic layers are proprietary, tightly coupled to a single BI platform, and can't be reused across other tools. Cube Core is an open, standalone semantic layer that any analytics application or AI agent can consume through standard APIs.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Cube says metrics defined once can be used across internal BI, embedded analytics, and AI agents without reimplementing the model in each place.",
+      "quote": "Define your metrics once and use them everywhere — internal BI, embedded analytics, AI agents — without re-implementing the model in each place.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Cube Core supports all SQL data sources, naming Snowflake, Databricks, BigQuery, Presto, Amazon Athena, and Postgres.",
+      "quote": "Cube Core works with all SQL data sources, including cloud data warehouses like Snowflake, Databricks, and BigQuery; query engines like Presto and Amazon Athena; and application databases like Postgres.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Cube Core includes a built-in relational caching engine intended to provide sub-second latency and high concurrency for API requests.",
+      "quote": "It has a built-in relational caching engine to provide sub-second latency and high concurrency for API requests.",
+      "numbers": [
+        "sub-second"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Cube Core and the commercial Cube product share a fully compatible data model in both directions.",
+      "quote": "The data model is fully compatible both ways: a model you build in Cube Core runs unchanged in Cube, and vice versa.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/cube-js/cube"
+}

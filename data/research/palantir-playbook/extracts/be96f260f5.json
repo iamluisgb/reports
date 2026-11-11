@@ -1,0 +1,41 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "Palantir Technologies Inc.",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir markets its Vanguard Elite partners as building AI-native companies with AI FDE at the center of their forward deployed engineering efforts.",
+      "quote": "Partners at the bleeding edge, building AI-native companies with AI FDE at the heart of their forward deployed engineering efforts.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir's page highlights a news item claiming Palantir software halves sepsis deaths at a US hospital and that the Sepsis Hub was developed with Tampa General Hospital in Florida.",
+      "quote": "Palantir software halves sepsis deaths at US hospital The Sepsis Hub, developed with Tampa General Hospital in Florida, detects subtle changes in vital signs so antibiotics are given early ↳Read Here",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The Vanguard Elite partner page's learn-more link directs to Aplos Data's website.",
+      "quote": "Learn more\n\n[Visit aplosdata.com →](https://www.aplosdata.com/)",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Palantir's site navigation lists AIP, Foundry, Gotham, Ontology, and Apollo as platforms.",
+      "quote": "*   [↳ AIP](https://www.palantir.com/platforms/aip/)\n*   [↳ Foundry](https://www.palantir.com/platforms/foundry/)\n*   [↳ Gotham](https://www.palantir.com/platforms/gotham/)\n*   [↳ Ontology](https://www.palantir.com/platforms/ontology/)\n*   [↳ Apollo](https://www.palantir.com/platforms/apollo/)",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Palantir's page highlights a CNBC interview in which CEO Alex Karp says something has gone completely wrong with how AI is sold.",
+      "quote": "Palantir CEO Alex Karp says 'something has gone completely wrong' with how AI is sold Palantir CEO Alex Karp joins CNBC's 'Squawk Box' to discuss the new Nvidia partnership, frontier AI models, and more.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.palantir.com/partnerships/elite/"
+}

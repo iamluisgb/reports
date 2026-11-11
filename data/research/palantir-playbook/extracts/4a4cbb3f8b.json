@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-06-30",
+  "author_or_org": "Francessca Vasquez, Vice President of Frontier AI Engineering and Services, AWS",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "AWS announced a dedicated Forward Deployed Engineering organization to embed thousands of experts with customers to co-develop and deploy agentic AI solutions in days.",
+      "quote": "A new AWS Forward Deployed Engineering organization will embed thousands of experts with customers to co-develop and deploy agentic AI solutions in days.",
+      "numbers": [
+        "thousands",
+        "days"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "AWS backs its FDE model with a $1 billion investment and says it differs in three key ways: agentic-first, compressing timelines from months to days, and customer self-sufficiency after deployment.",
+      "quote": "Backed by a $1 billion investment, the AWS FDE model is different in three key ways: it is agentic-first, it compresses timelines from months to days, and it is designed so customers are self-sufficient when a deployment ends.",
+      "numbers": [
+        "1 billion",
+        "three",
+        "months",
+        "days"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "AWS says FDE deployments are structured around shared goals and business results, not billable hours.",
+      "quote": "Deployments are structured around shared goals and business results, not billable hours.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "AWS FDE deploys a semantic layer into the customer's AWS account that connects enterprise data sources, enriches metadata, and publishes a governed, versioned knowledge graph over which agents reason.",
+      "quote": "At the heart of this is a semantic layer that FDE teams deploy into the customer's own AWS account. It connects to enterprise data sources, enriches metadata, and uses AI to publish a governed, versioned knowledge graph. Agents reason over that knowledge graph, so domain expertise lives in the customer’s code, not in institutional knowledge that could rotate off.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "AWS says many customers need expert AI engineers working directly with their teams to build and become AI-native organizations.",
+      "quote": "I have also heard loud and clear that many customers need expert AI engineers working directly with their teams to help them build and become AI-native organizations.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "AWS FDEs are already embedded with customers including the Allen Institute, Cox Automotive, the NBA, Ricoh, Southwest Airlines, and the NFL.",
+      "quote": "AWS FDEs are already embedded and working with customers such as the Allen Institute, Cox Automotive, the NBA, Ricoh, Southwest Airlines, and the NFL.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The NFL partnered with AWS FDE and got engineers building alongside its team to launch into production in just weeks; it created NFL Fantasy AI and NFL IQ, with fan and broadcaster engagement measurable from day one.",
+      "quote": "To create new digital experiences for our fans, the NFL partnered with AWS FDE and got engineers building alongside our team to launch into production in just weeks. Together, we created new fan-facing products like NFL Fantasy AI and NFL IQ that allow fans to interact with NFL data like never before. The engagement from fans and broadcasters was measurable from day one and was made possible by AWS’s delivery model.",
+      "numbers": [
+        "weeks",
+        "day one"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers"
+}

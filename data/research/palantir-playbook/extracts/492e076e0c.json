@@ -1,0 +1,39 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-09-10",
+  "author_or_org": "Sigmoid",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Sigmoid markets a forward-deployed engineering model in which FDEs are paired with prebuilt production agents and data-engineering accelerators, with one engineer orchestrating many agents.",
+      "quote": "Sigmoid pairs Forward Deployed Engineers with a pre-built arsenal of production agents, data-engineering accelerators and frameworks, on a foundation we have been building since before \"agentic\" was a word. One engineer, orchestrating many agents, delivering the end-to-end enterprise product that used to take a room full of specialists.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Sigmoid says other firms are only now discovering the FDE model, while it has used it for a decade.",
+      "quote": "Others are discovering the FDE model now. For Sigmoid it is simply how we have built for a decade, and our FDEs never arrive empty-handed.",
+      "numbers": [
+        "a decade"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Sigmoid positions its FDE offering between linear services and pure product, retaining consulting depth and customization while using a digital workforce for leverage.",
+      "quote": "This is not a volume play. It sits between the linear services model and pure product, keeping the consulting depth and customization enterprises need while adding the leverage of a digital workforce, so a focused FDE team ships what once took a small army.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Sigmoid claims one FDE can span an entire enterprise build that previously needed six or seven specialist skill sets and separate pods.",
+      "quote": "An end-to-end enterprise product, the workflows, the pipelines, the models and the app, once needed six or seven specialist skill sets and a pod for each. Sigmoid codifies what each team does into a production agent, so a single Forward Deployed Engineer can span the whole build.",
+      "numbers": [
+        "six or seven"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.sigmoid.com/forward-deployed-engineering/"
+}

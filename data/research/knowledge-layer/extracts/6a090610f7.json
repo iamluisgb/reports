@@ -1,0 +1,71 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-08-21",
+  "author_or_org": "Nilesh Kumar (Colrows)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The Open Semantic Interchange is a vendor-neutral YAML standard for writing semantic definitions such as measures, dimensions and metadata, intended to make definitions portable between tools; its v1.0 spec shipped 27 January 2026 under Apache 2.0, and it entered the Apache Incubator as Apache Ossie in June 2026 with more than 50 backers.",
+      "quote": "The OSI v1.0 spec was released on 27 January 2026 under Apache 2.0, and the project entered the Apache Incubator in June 2026. More than 50 organizations back it.",
+      "numbers": [
+        "v1.0",
+        "27 January 2026",
+        "2.0",
+        "June 2026",
+        "50"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "OSI defines meaning only: it has no execution engine, and its v1.0 core does not codify access policy as a first-class element.",
+      "quote": "OSI has no execution engine, and its v1.0 core does not codify access policy.",
+      "numbers": [
+        "v1.0"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "A semantic execution layer is distinguished from an interchange format: a format carries definitions, while an execution engine resolves requests into queries, proves join paths, applies row/column policy and emits dialect-specific SQL.",
+      "quote": "Something has to resolve the request into a query. Something has to choose the correct join path and prove it is valid. Something has to apply the row-level rule that hides the other regions. Something has to emit SQL in the exact dialect of the target engine.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A definition, regardless of how it is authored, must land in a typed semantic graph before it can be executed; from there the layer adds compile-time RBAC/ABAC and row/column predicates so filtered rows are never read.",
+      "quote": "The definition, however it is written, still has to land in a typed semantic graph before it can be executed.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The proposed runtime pipeline for a governed semantic layer is: intent, then context resolution, then constrained planning, then governed execution; it claims one graph compiles to the exact SQL of 16+ engines with point-in-time reproducibility.",
+      "quote": "The runtime is one line: intent → context resolution → constrained planning → governed execution.",
+      "numbers": [
+        "16+"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The source's stated position is that a well-governed semantic layer that understands business context yields more reliable AI-driven analytics than fine-tuning the model itself.",
+      "quote": "A well-governed semantic layer that understands business context creates more reliable AI-driven analytics than fine-tuning the model itself.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Adoption of the interchange standard is shallow in practice: many of the 50-plus backers have joined but fewer ship a lossless production reader/writer, with broad phase-2 adoption framed as the 2026 test and de-facto-standard status targeted for 2027.",
+      "quote": "Many of the 50-plus organizations have signed on. Fewer have shipped a production reader and writer that round-trips real definitions without loss.",
+      "numbers": [
+        "50-plus"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Converters bridging existing tool formats into OSI had been merged for dbt MetricFlow, GoodData, Salesforce and Apache Polaris, which is how portability starts to become concrete.",
+      "quote": "There are converters for dbt MetricFlow, GoodData, Salesforce, and Apache Polaris.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://colrows.com/blogs/open-semantic-interchange/"
+}

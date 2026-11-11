@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "news",
+  "published": "2026-01-30",
+  "author_or_org": "Amit Chowdhry, Pulse 2.0",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Northslope, an applied AI company built specifically on Palantir's operating system, raised a $22 million Series A to scale its forward-deployed engineering model and expand a Palantir-native AI application platform.",
+      "quote": "Northslope, an applied AI company built specifically for the Palantir operating system, has raised $22 million in a Series A financing to scale its forward-deployed engineering model and expand its Palantir-native AI application platform.",
+      "numbers": [
+        "$22 million"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Northslope was founded by former Palantir Forward-Deployed Engineers and builds connected AI application suites that aim to combine custom-software precision with SaaS-like speed, cost structure and maintainability.",
+      "quote": "Founded by former Palantir Forward-Deployed Engineers, Northslope develops connected AI application suites that deliver the precision and control of custom software while maintaining the speed, cost structure, and maintainability typically associated with enterprise SaaS.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Northslope said it delivered production customer outcomes across multiple industries and grew revenue nearly 7x in its most recent year.",
+      "quote": "The Denver-based company said the round follows a “breakout year,” during which it delivered production customer outcomes across multiple industries and grew revenue nearly 7x.",
+      "numbers": [
+        "7x"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The round was co-led by Friends & Family Capital, founded by former Palantir CFO Colin Anderson, and Goldcrest Capital, founded by Adam Ross, Palantir's first independent board member.",
+      "quote": "The Series A was co-led by Friends & Family Capital, founded by former Palantir CFO Colin Anderson, and Goldcrest Capital, founded by Adam Ross, Palantir’s first independent board member.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Northslope was named Palantir's first and only 'Vanguard: Elite' partner, a designation tied to delivering customer outcomes on Palantir's platform.",
+      "quote": "The financing also comes after Northslope was named Palantir’s first and only Vanguard: Elite partner, a designation the company said reflects its effectiveness in delivering customer outcomes on Palantir’s platform.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Northslope's software runs on Palantir AIP, Foundry and Gotham, and the company operates hub offices in New York, London and Denver.",
+      "quote": "Northslope stated its software runs on Palantir AIP, Foundry, and Gotham, and that it operates hub offices in New York, London, and Denver.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Investor Adam Ross argues that the winners in enterprise AI will be those able to deploy deep inside the most important institutions.",
+      "quote": "The winners of Enterprise AI will be the ones who know how to deploy deep inside the most important institutions in the world.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Northslope positions itself as an alternative to generic enterprise SaaS, arguing organizations need mission-specific software rather than standardized tools that push companies toward the same operating model.",
+      "quote": "Northslope positions its platform as an alternative to generic enterprise SaaS, arguing that leading organizations increasingly need software tailored to their missions rather than standardized tools that push companies toward the same operating model.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://pulse2.com/northslope-22-million-series-a-raised-to-scale-palantir-native-and-mission-specific-ai-applications/"
+}

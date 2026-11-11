@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-05-18",
+  "author_or_org": "CRV",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir created the forward-deployed engineer role after its founding in 2003.",
+      "quote": "[Palantir created the FDE role](https://blog.palantir.com/a-day-in-the-life-of-a-palantir-forward-deployed-software-engineer-45ef2de257b1) after its founding in 2003.",
+      "numbers": [
+        "2003"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Until roughly 2016, Palantir had more forward-deployed engineers than traditional software engineers.",
+      "quote": "Until roughly 2016, the company [had more FDEs](https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers) than traditional software engineers.",
+      "numbers": [
+        "2016"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "A forward-deployed engineer embeds directly with customers and writes and ships production code inside the customer's environment rather than building generalized core product features.",
+      "quote": "A forward-deployed engineer is a software engineer who embeds directly with customers to bridge the gap between what a product does today and what a specific customer needs, writing and shipping production code inside the customer's environment rather than building generalized core product features.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The forward-deployed engineer role has spread beyond defense, and demand has grown alongside broader growth in AI engineer roles.",
+      "quote": "The role has since spread well beyond defense. Demand for forward-deployed engineers has grown in recent years, alongside broader growth in artificial intelligence (AI) engineer roles.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Vercel consolidated sales engineering, developer success, professional services and customer support engineering under a unified Global Field Engineering organization.",
+      "quote": "One of the [companies we backed](https://www.crv.com/companies), Vercel, consolidated its sales engineering, developer success, professional services and customer support engineering under a unified Global Field Engineering organization.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The FDE model's unit economics only work at high deal sizes and collapse if the FDE spends most time on small accounts.",
+      "quote": "The unit economics of the FDE model only function at high deal sizes. If that person spends most of their time on small accounts, the math collapses.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The FDE model risks drifting into services work when one-off customer systems do not generalize back into the product; the diagnostic is whether custom engineering effort per customer declines over time.",
+      "quote": "When the core product isn't modular enough, the FDE gets pulled into building one-off systems for each customer. None of that work generalizes back into the product, and the company gradually drifts from a product company to a services firm. The diagnostic is clear: if custom engineering effort per customer isn't declining over time, the model is masking a product problem, not solving one.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Many AI projects stall before production due to integration headaches tied to messy data and incompatible systems, and FDEs are presented as the bridge from demo capability to the customer's actual environment.",
+      "quote": "A large fraction of AI projects still stall before reaching production, often due to integration headaches tied to messy data and incompatible systems. FDEs look like the missing bridge between what AI can do in a demo and what it can do inside a customer's actual environment.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.crv.com/content/forward-deployed-engineer"
+}

@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-08-11",
+  "author_or_org": "Emily Winks (Atlan)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Unity Catalog's semantic layer combines metric views, which are reusable SQL objects separating measures from dimensions and materializing for performance, with a business-semantics and agent-metadata layer that makes definitions legible to BI tools, SQL, and AI agents.",
+      "quote": "Unity Catalog's semantic layer combines metric views, reusable SQL objects that separate measures from dimensions and materialize them for performance, with a business-semantics and agent-metadata layer that makes those definitions legible to BI tools, SQL, and AI agents like Genie.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A metric view defines a calculation once, lets any query group by whichever dimension it needs, and materializes the result so repeated queries do not re-scan underlying tables.",
+      "quote": "A metric view defines the calculation once and lets any query group by whatever dimension it needs, then materializes the result so repeated queries don’t re-scan the underlying tables.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Business semantics and agent metadata supply synonyms, display names, and formatting so agents can interpret a metric correctly.",
+      "quote": "Business semantics and agent metadata: synonyms, display names, and formatting that make a metric legible to Genie and other agents.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A context layer sits above the set of platform-specific semantic layers and keeps a metric such as revenue consistent across Databricks Genie and dbt-based agents.",
+      "quote": "It sits above the whole set, keeping “revenue” consistent whether the question comes from Genie inside Databricks or an agent working against dbt on the other side of the estate.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Metric definitions are queryable from outside Databricks via MCP, SQL, and APIs, but the definitions themselves are not yet portable.",
+      "quote": "Metrics are queryable via MCP, SQL, and APIs from outside Databricks, but the definitions themselves are not yet portable.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Metric views inherit Unity Catalog's existing governance rather than creating a separate parallel governance system.",
+      "quote": "Metric views don’t create a parallel governance system; they inherit the one Unity Catalog already has.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Unity Catalog supports attribute-based access control in beta and full read/write governance for Apache Iceberg tables on par with Delta Lake.",
+      "quote": "Unity Catalog now supports attribute-based access control in beta, alongside “full read/write governance support for Apache Iceberg tables, on par with Delta Lake.”",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://atlan.com/know/ai-agent/semantic-layer/unity-catalog-semantic-layer/"
+}

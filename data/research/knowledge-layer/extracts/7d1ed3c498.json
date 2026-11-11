@@ -1,0 +1,35 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-01-29",
+  "author_or_org": "Dave Connors (dbt Labs)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "OSI defines a vendor-neutral, extensible model for semantic layer constructs such as datasets, metrics, dimensions, relationships, and context so they can be interpreted consistently across tools, platforms, and AI-enabled applications.",
+      "quote": "OSI defines a vendor-neutral, extensible model for representing semantic layer constructs, including datasets, metrics, dimensions, relationships, and context, so they can be interpreted consistently across tools, platforms, and AI-enabled applications.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "OSI provides a vendor-neutral interchange format for semantic definitions, including metrics, dimensions, datasets, relationships, and interpretive context, so definitions can move between tools without being re-authored or re-interpreted.",
+      "quote": "OSI provides a vendor-neutral interchange format for semantic definitions—metrics, dimensions, datasets, relationships, and the context needed to interpret them—so those definitions can be transferred between tools without being re-authored or re-interpreted.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "dbt makes semantic definitions operational by letting teams define and govern metrics in the dbt Semantic Layer and execute them consistently with MetricFlow, while OSI moves those definitions across tools such as Snowflake and Tableau.",
+      "quote": "dbt complements the OSI spec by making semantic definitions operational: teams can define and govern metrics in the dbt Semantic Layer, and execute them consistently with MetricFlow. OSI provides the interchange format to move those definitions across tools (like Snowflake and Tableau). Together, they let teams author once and adopt interoperable semantics incrementally.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Organizations often define business metrics in multiple places, leading to rebuilt metrics, definition debates, and dashboard drift, which OSI is designed to address.",
+      "quote": "Organizations often define business metrics in multiple places. If you've ever rebuilt the same metrics across tools, debated which \"active users\" definition is correct, or watched dashboards drift after silent changes, you understand the problem OSI is designed to address.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.getdbt.com/blog/the-osi-spec-updates"
+}

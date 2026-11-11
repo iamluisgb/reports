@@ -1,0 +1,65 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-04-15",
+  "author_or_org": "Salesforce",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Salesforce launched a Forward Deployed Engineering Partner Network with launch partners Accenture and Deloitte plus over 30 firms including PwC, Slalom, and IBM Consulting, selected for proven Agentforce success.",
+      "quote": "Launch partners Accenture and Deloitte are joined by over 30 firms, including PwC, Slalom, and IBM Consulting, all selected for their proven success with Agentforce.",
+      "numbers": [
+        "30"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Firms in Salesforce's FDE Partner Network have driven one-third of all successful Agentforce implementations to date.",
+      "quote": "Every member is a vetted partner with a proven track record of delivering Agentforce; to date, firms in the FDE Partner Network have driven one-third of all successful Agentforce implementations.",
+      "numbers": [
+        "one-third"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Salesforce's FDE delivery model uses specialized, outcome-based teams that work side by side with customers from a priority use case to a live, compliant agent.",
+      "quote": "Whether through Salesforce Professional Services or the FDE Partner Network, the delivery model relies on specialized, outcome-based teams that work side by side with customers to drive a sprint from priority use case to a live, compliant agent.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "IDC reports over one-third of organizations will be stuck in the experimental, point-solution phase of AI experimentation, requiring a shift to enterprise use cases to deliver ROI.",
+      "quote": "IDC FutureScape* reports “over one-third of organizations will be stuck in the experimental, point solution phase of AI experimentation, requiring a shift of focus to enterprise use cases to deliver ROI.”",
+      "numbers": [
+        "one-third"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Salesforce says most businesses can build an initial proof of concept, but few have the technical foundation to scale pilots into systems the business can run on.",
+      "quote": "Most businesses can build an initial proof of concept, but few have the technical foundation required to scale those pilots into systems that the business can actually run on.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Salesforce says FDEs stay engaged after launch to monitor agentic behavior, resolve production-only issues, and tune for sustained performance.",
+      "quote": "FDEs stay engaged after launch to monitor agentic behavior, resolve issues that only surface in production, and fine-tune for sustained performance.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Salesforce argues that even a technically perfect agent fails if users do not trust it, so FDEs build adoption plans for readiness, onboarding, and long-term usage.",
+      "quote": "The most technically perfect agent fails if users don’t trust it. FDEs build and execute adoption plans for readiness, onboarding, and long-term usage.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Accenture said it embeds Salesforce-trained engineers directly into its delivery teams and moves beyond traditional implementation.",
+      "quote": "By embedding Salesforce-trained engineers directly into our delivery teams, we are moving beyond traditional implementation to true ecosystem orchestration.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.salesforce.com/news/stories/salesforce-launches-forward-deployed-engineer-partner-network-announcement/"
+}

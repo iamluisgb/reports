@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": null,
+  "author_or_org": null,
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Conventional RAG retrieval for LLMs treats a large corpus of past issue tracking tickets as plain text, ignoring intra-issue structure and inter-issue relations, which limits performance.",
+      "quote": "The conventional retrieval methods in retrieval-augmented generation (RAG) for large language models (LLMs) treat a large corpus of past issue tracking tickets as plain text, ignoring the crucial intra-issue structure and inter-issue relations, which limits performance.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The method constructs a knowledge graph from historical issues for retrieval, retaining intra-issue structure and inter-issue relations.",
+      "quote": "Our method constructs a KG from historical issues for use in retrieval, retaining the intra-issue structure and inter-issue relations.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "During question answering, the method parses consumer queries and retrieves related sub-graphs from the knowledge graph to generate answers.",
+      "quote": "During the question-answering phase, our method parses consumer queries and retrieves related sub-graphs from the KG to generate answers.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Integrating a knowledge graph improves retrieval accuracy by preserving customer service structure information and enhances answering quality by mitigating text segmentation effects.",
+      "quote": "This integration of a KG not only improves retrieval accuracy by preserving customer service structure information but also enhances answering quality by mitigating the effects of text segmentation.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "On its benchmark datasets, the KG-RAG method outperformed the baseline by 77.6% in MRR and 0.32 in BLEU.",
+      "quote": "Empirical assessments on our benchmark datasets, utilizing key retrieval (MRR, Recall@K, NDCG@K) and text generation (BLEU, ROUGE, METEOR) metrics, reveal that our method outperforms the baseline by 77.6% in MRR and by 0.32 in BLEU.",
+      "numbers": [
+        "77.6%",
+        "0.32"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The method was deployed within LinkedIn's customer service team for approximately six months and reduced median per-issue resolution time by 28.6%.",
+      "quote": "Our method has been deployed within LinkedIn's customer service team for approximately six months and has reduced the median per-issue resolution time by 28.6%.",
+      "numbers": [
+        "six",
+        "28.6%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2404.17723"
+}

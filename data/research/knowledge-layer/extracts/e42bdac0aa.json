@@ -1,0 +1,65 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-07-22",
+  "author_or_org": "Emily Winks (Atlan)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source describes knowledge graph construction for AI as a five-stage process: assess/scope, design ontology and schema, extract entities and relationships, resolve duplicate entities, and validate/activate before agents or guardrails query it.",
+      "quote": "Knowledge graph construction for AI runs through five stages: assess and scope, design the ontology and schema, extract entities and relationships from structured and unstructured sources, resolve duplicate entities into a golden record, then validate and activate the graph before any agent or guardrail queries it.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The source frames ontology/schema design as defining the vocabulary layer, the entity and relationship model, and the boundary between an entity and a property.",
+      "quote": "Define the vocabulary layer, the entity and relationship model, and the boundary between an entity and a property, a judgment call for any business term that could be modeled either way.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A graph supports multi-hop reasoning by tracing from a table through lineage to dependent metrics because the answer resides in the relationship structure.",
+      "quote": "A graph supports multi-hop reasoning, tracing from a table through lineage to every dependent metric, because the answer lives in the structure of relationships.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The source cites LlamaIndex's CEO arguing pure vector-based RAG is often good enough, and says graphs earn their cost when a use case needs multi-hop reasoning or governed reuse across agents.",
+      "quote": "Jerry Liu, co-founder and CEO of LlamaIndex, has argued pure vector-based [RAG](https://atlan.com/know/what-is-rag/) is often good enough, weakening the case for heavy construction. Graphs earn their cost when a use case needs multi-hop reasoning or governed reuse across agents; readers evaluating [knowledge graphs against RAG for AI](https://atlan.com/know/knowledge-graphs-vs-rag-for-ai/) should scope the investment to that narrower case.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In dbt Labs' 2026 test, semantic-layer grounding achieved 98.2% accuracy versus 90% for raw text-to-SQL.",
+      "quote": "Semantic-layer grounding hit 98.2% vs 90% raw text-to-SQL in dbt Labs' own 2026 test of its Semantic Layer.",
+      "numbers": [
+        "98.2%",
+        "90%",
+        "2026"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The source says extraction is cheap with today's LLMs, but entity resolution and ontology alignment at scale are the hard parts where enterprise builds stall.",
+      "quote": "Whatever the tooling, Neo4j, GraphRAG, or Atlan’s **Context Lakehouse**, the same wall shows up: extraction is cheap with today’s LLMs, but entity resolution and ontology alignment at scale are not.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A validation gate such as SHACL is recommended to keep ungoverned LLM-extracted relationships out of production graphs.",
+      "quote": "A validation gate such as SHACL keeps ungoverned LLM-extracted relationships out of production graphs.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source advises against authoring a full RDF/OWL ontology before touching real data and says teams should model iteratively instead.",
+      "quote": "Common mistakes: authoring a full RDF/OWL ontology before touching real data rarely survives contact with production sources; model iteratively instead.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://atlan.com/know/ai-agent/knowledge-graph/knowledge-graph-construction-for-ai/"
+}

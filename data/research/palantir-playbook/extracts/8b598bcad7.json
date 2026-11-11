@@ -1,0 +1,87 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": null,
+  "author_or_org": "Palantir Technologies Inc.",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir reported Q2 2026 total revenue of $1.94 billion, up 93% year over year and 19% quarter over quarter.",
+      "quote": "Revenue grew +93% Y/Y and +19% Q/Q to $1.94 billion",
+      "numbers": [
+        "93%",
+        "19%",
+        "$1.94 billion"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir reported its highest-ever quarter of US commercial total contract value at $2.13 billion, up 153% year over year.",
+      "quote": "Highest ever quarter of US commercial total contract value (“TCV”) of $2.13 billion; +153% Y/Y",
+      "numbers": [
+        "$2.13 billion",
+        "153%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "US commercial revenue grew 149% year over year and 28% quarter over quarter to $764 million.",
+      "quote": "US commercial revenue grew +149% Y/Y  and +28% Q/Q to $764 million",
+      "numbers": [
+        "149%",
+        "28%",
+        "$764 million"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Palantir reported adjusted free cash flow of $1.22 billion at a 63% margin.",
+      "quote": "Adjusted free cash ﬂow of $1.22 billion; 63% margin",
+      "numbers": [
+        "$1.22 billion",
+        "63%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Palantir reported adjusted operating income of $1.19 billion at a 62% margin.",
+      "quote": "Adjusted opera/t_ing income of $1.19 billion; 62% margin",
+      "numbers": [
+        "$1.19 billion",
+        "62%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Palantir reported net dollar retention of 157% in Q2 2026.",
+      "quote": "Net dollar retention was 157% in Q2 2026.",
+      "numbers": [
+        "157%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Palantir cites USDA as using AIP to turn hundreds of fragmented legacy systems into a single governed Ontology.",
+      "quote": "USDA used AIP to turn hundreds of fragmented legacy systems into a single, governed Ontology.",
+      "numbers": [
+        "hundreds"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir closed 220 deals of at least $1 million in Q2 2026, including 98 at least $5 million and 73 at least $10 million.",
+      "quote": "Closed 220 deals of at least $1 million, 98 deals of at least $5 million, and 73 deals of at least $10 million",
+      "numbers": [
+        "220",
+        "$1 million",
+        "98",
+        "$5 million",
+        "73",
+        "$10 million"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://investors.palantir.com/files/Palantir%20-%20Q2%202026%20Business%20Update.pdf"
+}

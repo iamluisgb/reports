@@ -1,0 +1,57 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-10-30",
+  "author_or_org": "Anusheel Bhushan, co-founder of Plank",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "An AI startup needs FDEs when the product works in demos but each customer requires engineering to run it in their systems, and that deployment work pulls the core team off the roadmap.",
+      "quote": "An AI startup needs forward-deployed engineers when the product works in the demo but each customer needs engineering to get it running in their systems, and that work is pulling the core team off the roadmap.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "At an AI startup, FDEs work inside the startup's team on customer deployments: integrations with systems of record, mapping customer data into the product, customer-specific workflows, evals on customer data, and production rollout; deployment lessons feed back into the product to reduce custom work next time.",
+      "quote": "Forward-deployed engineers work inside the startup's team on its customers' deployments: integrations with each customer's systems of record, mapping their data into the product, the customer-specific workflows the product needs, evals on the customer's data, and the production rollout. What each deployment teaches goes back to the product team, so the next one needs less custom work.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "In Plank's census of 904 FDE job descriptions, 51% ask for API integration work and 27% ask for data pipelines.",
+      "quote": "In Plank's census of 904 FDE job descriptions, 51% ask for API integration work and 27% for data pipelines.",
+      "numbers": [
+        "904",
+        "51%",
+        "27%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A sign deployment is the bottleneck is that deals close but deployments stall or never go live.",
+      "quote": "Deals close, but deployments stall or never go live.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Pilots can succeed and still fail to turn into production contracts, which the source lists as an FDE-need signal.",
+      "quote": "Pilots succeed and still do not turn into production contracts.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source distinguishes a solutions engineer, who helps win a deal through demos, proofs of concept, and the technical case before signature, from an FDE, who delivers production code in customer systems after signature and is accountable for whether it works.",
+      "quote": "A solutions engineer helps win the deal: demos, proofs of concept and the technical case before signature. An FDE delivers it: production code in the customer's systems after signature, and accountability for whether it works.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Plank says FDE as a service is not outsourcing: it places engineers inside the company's own team, in its repositories and under its brand, accountable for its customers' deployments, with learnings going back into the product.",
+      "quote": "Outsourcing hands a scoped project to another team. FDE as a service places engineers inside the company's own team, in its repositories and under its brand, accountable for its customers' deployments, with what they learn going back into the product.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://joinplank.com/fde/guides/when-ai-startups-need-fdes"
+}

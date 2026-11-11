@@ -1,0 +1,47 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": null,
+  "author_or_org": null,
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Zep's core component Graphiti is described as a temporally-aware knowledge graph engine that dynamically combines unstructured conversational data and structured business data while preserving historical relationships.",
+      "quote": "Zep addresses this fundamental limitation through its core component Graphiti -- a temporally-aware knowledge graph engine that dynamically synthesizes both unstructured conversational data and structured business data while maintaining historical relationships.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The source states that existing RAG frameworks for LLM-based agents are limited to static document retrieval, whereas enterprise applications require dynamic knowledge integration from conversations and business data.",
+      "quote": "While existing retrieval-augmented generation (RAG) frameworks for large language model (LLM)-based agents are limited to static document retrieval, enterprise applications demand dynamic knowledge integration from diverse sources including ongoing conversations and business data.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "In the Deep Memory Retrieval benchmark, Zep reports 94.8% versus MemGPT's 93.4%.",
+      "quote": "In the DMR benchmark, which the MemGPT team established as their primary evaluation metric, Zep demonstrates superior performance (94.8% vs 93.4%).",
+      "numbers": [
+        "94.8%",
+        "93.4%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "On the LongMemEval benchmark, Zep reports accuracy improvements of up to 18.5% and response latency reductions of 90% compared with baseline implementations.",
+      "quote": "In this evaluation, Zep achieves substantial results with accuracy improvements of up to 18.5% while simultaneously reducing response latency by 90% compared to baseline implementations.",
+      "numbers": [
+        "18.5%",
+        "90%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Graphiti is presented as a knowledge graph engine that constructs a temporally aware graph by synthesizing both unstructured conversational data and structured business data while maintaining historical relationships.",
+      "quote": "Zep addresses this fundamental limitation through its core component Graphiti -- a temporally-aware knowledge graph engine that dynamically synthesizes both unstructured conversational data and structured business data while maintaining historical relationships.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2501.13956"
+}

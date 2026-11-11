@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "Northslope",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Northslope describes itself as the AI application layer for a customer’s Palantir operating system.",
+      "quote": "The AI Application Layer for your Palantir Operating System",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Northslope states it is Palantir’s first and only Vanguard: Elite partner, citing expanding AI outcomes for customers on Palantir platforms.",
+      "quote": "Northslope is Palantir’s first and only Vanguard: Elite partner, reflecting Northslope’s expanding AI outcomes for customers on Palantir platforms.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir’s global commercial head is quoted saying Northslope enables customers to win with AIP and dominate their industry.",
+      "quote": "Northslope enables customers to win with AIP and dominate their industry.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Northslope says all of its people are forward deployed engineers and that enduring software is built in the field with operators.",
+      "quote": "At Northslope we are all Forward Deployed Engineers. We believe that enduring software is built in the field, with operators, tackling problems that previously seemed impossible.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Northslope says it is backed by former Palantir leadership, including a co-founder, board member, CFO, director, and many FDEs.",
+      "quote": "Proudly backed by former Palantir leadership who know what it takes to build world-changing software; including a co-founder, board member, CFO, director (and many FDEs).",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Northslope advertises a healthcare utilization-review application that cuts diligence time by 50–60%.",
+      "quote": "Auto-prioritises cases by denial risk, flags missing docs before deadlines, and cuts diligence time by 50–60%.",
+      "numbers": [
+        "50–60%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Northslope advertises 40% fewer denied days without adding headcount for its utilization-review application.",
+      "quote": "40% fewer denied days without adding headcount",
+      "numbers": [
+        "40%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Northslope argues that generic tools fail adoption when they skip mapping data and rules to a customer’s specific workflows.",
+      "quote": "Building a working rules engine means mapping all of that to your specific workflows. Generic tools skip this step, which is why adoption fails.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.northslope.com/"
+}

@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "news",
+  "published": "2026-06-30",
+  "author_or_org": "Makenzie Holland / CIO Dive",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "AWS is investing $1 billion in a dedicated forward deployed engineering organization that combines software engineers with AI agents to build and deploy AI systems inside customer environments.",
+      "quote": "AWS i s investing $1 billion into a dedicated [forward deployed engineering organization](https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers) that combines its frontier teams, composed of software engineers, with AI agents to build and deploy AI systems within a customer’s environment, the cloud giant shared in a Tuesday announcement.",
+      "numbers": [
+        "$1 billion"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The AWS FDE model is agentic-first: pods of five to six human engineers initially work inside the customer organization to compress deployment timelines, while AI agents are meant to keep running long-term.",
+      "quote": "The AWS FDE model is designed to be agentic-first, meaning that while pods of five to six human engineers will work within a customer’s organization initially to compress deployment timelines, the goal is for AI agents to continue running in a business environment long-term to support continued innovation, said Francessca Vasquez, VP of frontier AI engineering and services, at AWS.",
+      "numbers": [
+        "five to six"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "AWS positions its FDE execution around compressed timelines and 45-day sprints with human experts plus agents to accelerate customer value.",
+      "quote": "“We definitely see a differentiator in our execution of FDE in being able to bring the power of both human expertise alongside agents in very short, compressed timelines, 45-day sprints, as a way to help our customers accelerate value,” Vasquez told CIO Dive.",
+      "numbers": [
+        "45-day"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "AWS, Google and Microsoft are heavily investing in FDE programs to help customers address enterprise AI adoption pain points.",
+      "quote": "As enterprises scale AI across their environments, companies such as AWS, Google and Microsoft are heavily investing in FDE programs to help customers address adoption pain points.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Accenture announced plans with Microsoft in March to launch a forward deployed engineering practice.",
+      "quote": "Meanwhile, Accenture in March shared plans with Microsoft to launch a forward deployed engineering practice.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "AWS FDE includes a semantic layer deployed into customer AWS accounts that connects to enterprise data sources and publishes a knowledge graph for AI agents to reason from.",
+      "quote": "A core component of the effort includes a semantic layer deployed into customers’ AWS accounts, which will connect to enterprise data sources and use AI to publish a structured web of data called a knowledge graph, which AI agents will reason from to create long-standing expertise living in customer’s code, the announcement said.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "AWS FDE is already being used by Cox Automotive, the NBA and the NFL, and the NFL built NFL Fantasy AI and NFL IQ with AWS FDE in weeks.",
+      "quote": "AWS customers including Cox Automotive, the NBA and the NFL a re already tapping into the AWS FDE organization resource. The NFL partnered with AWS FDE to build new customer-facing features including NFL Fantasy AI and NFL IQ alongside their tech teams in weeks, Gary Brantley, CIO of the NFL, said in the announcement.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.ciodive.com/news/aws-creates-forward-deployed-engineering-hub/824109/"
+}

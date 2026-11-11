@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2024-11-25",
+  "author_or_org": "Microsoft Research Blog",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "GraphRAG is positioned as better than conventional vector RAG for global queries over an entire dataset, while vector RAG is better for local queries whose answers resemble the query and sit in specific text regions.",
+      "quote": "A key advantage of GraphRAG over conventional vector RAG (or “semantic search”) is its ability to answer _global_ _queries_ that address the entire dataset, such as “what are the main themes in the data?”, or “what are the most important implications for X?”. Conversely, vector RAG excels for _local_ _queries_ where the answer resembles the query and can be found within specific text regions, as is typically the case for “who”, “what”, “when”, and “where” questions.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "LazyGraphRAG has data indexing costs equal to vector RAG and 0.1% of full GraphRAG indexing costs.",
+      "quote": "LazyGraphRAG data indexing costs are identical to vector RAG and 0.1% of the costs of full GraphRAG.",
+      "numbers": [
+        "0.1%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "At comparable query costs to vector RAG, LazyGraphRAG outperforms vector RAG and other competing methods on local queries.",
+      "quote": "For comparable query costs to vector RAG, LazyGraphRAG outperforms all competing methods on local queries, including long-context vector RAG and GraphRAG [DRIFT](https://www.microsoft.com/en-us/research/blog/introducing-drift-search-combining-global-and-local-search-methods-to-improve-quality-and-efficiency/) search (our recently introduced RAG approach shown to outperform vector RAG) as well as GraphRAG local search.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "LazyGraphRAG achieves comparable answer quality to GraphRAG Global Search on global queries while using more than 700 times lower query cost.",
+      "quote": "The same LazyGraphRAG configuration also shows comparable answer quality to GraphRAG Global Search for global queries, but _more than 700 times lower query cost_.",
+      "numbers": [
+        "700"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "At 4% of the query cost of GraphRAG global search, LazyGraphRAG significantly outperforms all competing methods on both local and global query types, including GraphRAG global search at C2.",
+      "quote": "For 4% of the query cost of GraphRAG global search, LazyGraphRAG _significantly outperforms all competing methods_ on both local and global query types, including GraphRAG global search at the C2 level (the third level of the community hierarchy recommended for most applications).",
+      "numbers": [
+        "4%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Vector RAG is best-first search using query similarity to select matching text chunks, but it lacks a sense of dataset breadth for global queries.",
+      "quote": "Vector RAG is a form of _best-first_ _search_ that uses the similarity with the query to select the best-matching source text chunks. However, it has no sense of the breadth of the dataset to consider for global queries.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "GraphRAG global search is breadth-first search using the community structure of source-text entities to cover the full dataset, but it lacks a sense of the best communities for local queries.",
+      "quote": "GraphRAG global search is a form of _breadth-first search_ that uses the community structure of source text entities to ensure that queries are answered considering the full breadth of the dataset. However, it has no sense of the best communities to consider for local queries.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost/"
+}

@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-10-19",
+  "author_or_org": "Cube",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "A semantic layer encodes business metrics with exact definitions, dimensions, join paths, and governing access policies once, rather than leaving metric logic to prompts.",
+      "quote": "A semantic layer is a layer of understanding. It encodes, once, what the business actually means: metrics (revenue, active users, churn) with their exact definitions, dimensions and the entities they belong to, the join paths between them, and the access policies that govern them.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A semantic layer exposed through an MCP server acts as an AI context layer by letting agents introspect and call governed measures and dimensions.",
+      "quote": "A semantic layer that ships an MCP server exposes its model as something the agent can introspect and call — this is what serving it as an [AI context layer](https://cube.dev/product/ai-context-layer) means in practice.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Raw text-to-SQL lets the model guess metric semantics such as gross versus net revenue, tax and refund treatment, and recognition timing, producing plausible but varying answers.",
+      "quote": "**Semantics aren't in the schema.** A table named `orders` doesn't tell the model whether \"revenue\" is gross or net, includes tax, excludes refunds, or is recognized at order time or ship time. The model guesses — plausibly, and differently each time.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Raw text-to-SQL over real warehouses risks wrong join paths and grain, which can silently double-count numbers without the model detecting the error.",
+      "quote": "**The join graph is a minefield.** Real warehouses have fan-out joins, slowly-changing dimensions, and three tables that all look like they could be \"the customer table.\" Get the grain wrong and the number is silently double-counted. The model has no way to know it was wrong.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Semantic-layer-grounded agents define metrics once and select them, so the same question returns the same number, unlike raw text-to-SQL.",
+      "quote": "Metrics are defined once; the agent selects them, so the same question returns the same number",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Semantic-layer governance is applied at query compile time, so row-level and role-based restrictions are built into every query and prevent an agent from constructing cross-tenant queries.",
+      "quote": "Row-level and role-based rules become a property of how every query is built, not a gate you hope runs afterward. An agent acting for a single-tenant user cannot construct a query that returns another tenant's rows, because the layer never compiles one.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Semantic-layer deployments should validate agent answers with known-answer evals covering ambiguous wording, subtle joins, empty results, and denied-access cases.",
+      "quote": "Run known-answer evals. Test representative business questions against values verified by the data team, including ambiguous wording, subtle joins, empty results, and denied-access cases.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://cube.dev/articles/semantic-layer-for-ai-agents-2026"
+}

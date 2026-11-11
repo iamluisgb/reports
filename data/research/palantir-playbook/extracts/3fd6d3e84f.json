@@ -1,0 +1,73 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2025-08-05",
+  "author_or_org": "Leo Mehr (Ramp Builders Blog)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir created the FDE role after its 2003 founding for software engineers deployed at military sites and customer offices, to work closely with customers and iterate quickly.",
+      "quote": "Palantir famously created the role after its founding in 2003 for software engineers _literally deployed_ at military sites and customer offices. This allowed engineers to work extremely closely with customers, understand their problems, and iterate quickly.",
+      "numbers": [
+        "2003"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "After over 10 years as niche and Palantir-specific, FDE proliferated in the late 2010s; Scale AI and C3.ai adopted the exact title, while Databricks and Snowflake built similar functions.",
+      "quote": "For over 10 years, it was niche and specific to Palantir, but in the late 2010s it started to proliferate. Scale AI and C3.ai adopted the exact same title, and Databricks and Snowflake built similar functions.",
+      "numbers": [
+        "10",
+        "2010s"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The role and variants of customer engineering are becoming ubiquitous in top B2B companies, including OpenAI, Anthropic, Databricks, Ramp, Sierra, Decagon, LangChain, and ElevenLabs.",
+      "quote": "Now, the role and variants of customer engineering are becoming _ubiquitous_ in nearly every top B2B company — OpenAI, Anthropic, Databricks, Ramp, and countless earlier-stage AI startups such as Sierra, Decagon, LangChain, ElevenLabs, etc.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source cites Foundation Capital arguing B2B businesses deliver outcomes, not software, and integration, embedding, and operation become the moat.",
+      "quote": "B2B businesses are not delivering software, but _outcomes_, and \"how you integrate, embed, and operate becomes the moat.\"",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Average CAGR is 15.2% for non-enterprise B2B SaaS and 29.6% for enterprise B2B SaaS.",
+      "quote": "The average CAGR (compound annual growth rate) of the non-enterprise group is 15.2%, and of the enterprise group is 29.6%.",
+      "numbers": [
+        "15.2%",
+        "29.6%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Ramp's FDE team grew from 2 to 16 FDEs in the last year and a half and expanded into multiple product domains and verticals.",
+      "quote": "In the last year and a half, our team grew from 2 to 16 FDEs and expanded to multiple new product domains and verticals.",
+      "numbers": [
+        "2",
+        "16"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "At Ramp, 7 of 16 FDEs were previous founders.",
+      "quote": "Of the 16 FDEs on the team, 7 of us are previous founders!",
+      "numbers": [
+        "16",
+        "7"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The source states customer proximity drives better outcomes and that embedding engineers across the customer lifecycle ensures deeper understanding, better scoping, and faster delivery.",
+      "quote": "**Customer proximity drives better outcomes.** Embedding engineers across the customer lifecycle (from sales to support) ensures deeper understanding, better scoping, and faster delivery.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://builders.ramp.com/post/forward-deployed-engineering"
+}

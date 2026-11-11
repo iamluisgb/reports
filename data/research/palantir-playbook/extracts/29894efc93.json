@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-10-28",
+  "author_or_org": "Stardog Team",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir Foundry is an enterprise data platform whose ontology is an operational layer over integrated digital assets.",
+      "quote": "Palantir Foundry is an enterprise data platform built around its ontology, an operational layer that sits on top of the digital assets integrated into the platform.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir's ontology combines semantic elements such as objects, properties, and links with kinetic elements such as actions and functions to dynamically represent a business.",
+      "quote": "The ontology combines semantic elements such as objects, properties, links, and kinetic elements such as actions and functions to create a dynamic representation of the business.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog says Palantir Foundry's ontology gives technical and non-technical users a shared vocabulary but is confined to Foundry, cannot relate separate ontologies, and requires adopting the full ecosystem.",
+      "quote": "Palantir Foundry’s ontology gives technical and non-technical users a shared vocabulary backed by strong workflow tooling. That ontology only works inside Foundry; relationships can’t cross separate ontologies, and adopting it means buying into the full ecosystem.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog positions its own standards-based model as interoperable with existing tools rather than requiring a single closed platform.",
+      "quote": "Stardog’s standards-based model is built for interoperability, so it fits alongside existing tools instead of requiring a single closed platform.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog says Neo4j lacks native reasoning and ontology support, so semantic consistency must be engineered.",
+      "quote": "Neo4j suits developer teams building graph-powered applications that need fast, multi-hop traversals and mature tooling. Reasoning and ontology support aren’t native, so semantic consistency across systems has to be engineered rather than provided out of the box.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog says Amazon Neptune has no native reasoning or ontology layer and is AWS-only, making migration difficult.",
+      "quote": "Neptune is an easy entry point for teams already standardized on AWS who want a managed graph database with minimal setup. It has no native reasoning or ontology layer, and being AWS-only means moving elsewhere later requires a real migration.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Stardog says PuppyGraph lacks reasoning, ontology modeling, and entity resolution, making it better for exploration than as a system of record.",
+      "quote": "PuppyGraph’s query-in-place model suits teams that want lightweight graph queries over data they don’t want to move. It doesn’t provide reasoning, ontology modeling, or entity resolution, so it works better for exploration than as a system of record.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.stardog.com/blog/best-knowledge-graph-software-tools-platforms/"
+}
