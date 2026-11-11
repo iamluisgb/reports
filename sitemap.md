@@ -24,12 +24,12 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### Enterprise & Adoption
 
-- [What AI Startups Stole From Palantir's Playbook](https://luisgonzalezbernal.com/reports/reports/palantir-playbook-2026.md) — 2026-05-29 · 13 min
+- [What AI Startups Stole From Palantir's Playbook](https://luisgonzalezbernal.com/reports/reports/palantir-playbook-2026.md) — 2026-05-29 · 21 min
 - [AI Adoption in Engineering Teams: What the Evidence Says](https://luisgonzalezbernal.com/reports/reports/ai-engineering-adoption-frameworks-2026-en.md) — 2026-05-20 · 10 min
 
 ### Memory & Knowledge
 
-- [The Knowledge Layer for Agents: Ontologies, Graphs and Where ML Fits](https://luisgonzalezbernal.com/reports/reports/knowledge-layer-2026-10-02.md) — 2026-10-02 · 21 min
+- [The Knowledge Layer for Agents: Ontologies, Graphs and Where ML Fits](https://luisgonzalezbernal.com/reports/reports/knowledge-layer-2026-10-02.md) — 2026-10-02 · 29 min
 - [Context Lakes: What Multi-Agent Systems Need to Share](https://luisgonzalezbernal.com/reports/reports/context-lake-2026-07-27.md) — 2026-07-27 · 12 min
 - [Agent Memory: What Works, What It Costs, What Breaks](https://luisgonzalezbernal.com/reports/reports/ai-agent-memory-2026-06-28.md) — 2026-06-28 · 12 min
 

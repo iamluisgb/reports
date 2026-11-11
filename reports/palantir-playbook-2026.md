@@ -3,9 +3,9 @@ title: "What AI Startups Stole From Palantir's Playbook"
 date: 2026-05-29
 type: special
 url: https://luisgonzalezbernal.com/reports/reports/palantir-playbook-2026.html
-summary: "Forward Deployed Engineers · Ontological/Semantic Layers · Agentic Orchestration on Enterprise Legacy Systems · Market Map 2025-2026"
-tags: [agents, business, memory]
-reading_time_minutes: 13
+summary: "The playbook · The market map · What an FDE does · The economics · Ontology platforms · Why deployments fail"
+tags: [business, funding]
+reading_time_minutes: 21
 ---
 Market Analysis · Special Report
 

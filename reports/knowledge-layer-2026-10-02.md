@@ -3,9 +3,9 @@ title: "The Knowledge Layer for Agents: Ontologies, Graphs and Where ML Fits"
 date: 2026-10-02
 type: special
 url: https://luisgonzalezbernal.com/reports/reports/knowledge-layer-2026-10-02.html
-summary: "What the layer is · GraphRAG versus vector RAG · Accuracy on enterprise data · Operational ontologies and actions · Where ML goes · Graphs in root cause analysis"
-tags: [research, memory]
-reading_time_minutes: 21
+summary: "What the layer is · GraphRAG versus vector RAG · Accuracy on enterprise data · Cases in production · Operational ontologies and actions · Where ML goes · Graphs in root cause analysis · Tools and standards"
+tags: [memory, research]
+reading_time_minutes: 29
 ---
 Memory & Knowledge · Special Report
 
