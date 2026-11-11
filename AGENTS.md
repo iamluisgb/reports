@@ -207,8 +207,9 @@ point of view, a signed "What I would do", and sources that check out**. The pro
    source at a time**, each with a verbatim quote; quotes not found in the page are
    dropped. Output: `evidence.json` + `evidence.md`. Resumable; 20–60 min.
 3. **Write** from the evidence pack only, with `templates/special.html`: key findings
-   first, one part per question, "What I would do" (Luis), "Method and limits" (from
-   the pack's stats), numbered Sources matching the pack. Every factual sentence cites
+   first, one part per question, "What I would do" (Luis), "Method and limits" (written
+   for outside readers: source count and kinds, period, figures checked, link to the public
+   evidence pack, limits; never model names or pipeline internals), numbered Sources matching the pack. Every factual sentence cites
    `<sup class="cite"><a href="#source-n">n</a></sup>`.
 4. **Verify** — `python3 scripts/research/verify.py reports/<slug>.html data/research/<slug>/evidence.json`:
    every cited figure must appear in its source; every URL must resolve (or be archived).

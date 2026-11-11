@@ -75,13 +75,13 @@
       </div>
     </div>
 
-    <!-- How this was made and what it cannot tell you. Fill from evidence.json → stats. -->
+    <!-- How this was made, for OUTSIDE readers: no model names, pipeline stages or dropped quotes. -->
     <div class="section">
       <div class="section-label">Method and limits</div>
       <div class="special-content">
-<p>Researched {{dates}} with the reports research pipeline: {{searched}} search results across {{providers}}, {{read}} sources read, {{sources_with_evidence}} with usable evidence. Each source was read on its own by an open model (NaN: {{models}}), which extracted claims with verbatim quotes; claims whose quote did not appear in the source were discarded ({{quotes_dropped}}). The synthesis was written by Claude from that evidence and every cited figure was checked against its source; the conclusions in "What I would do" are mine.</p>
+<p>This report draws on {{N}} sources published {{period}}: {{e.g. research papers, company filings, official documentation, press and practitioner writing}}. Every figure cited in the text was checked against its source. The full evidence (sources, extracted claims and verbatim quotes) is public in the <a href="https://github.com/iamluisgb/reports/tree/master/data/research/{{slug}}">evidence pack</a>. The recommendations in "What I would do" are mine.</p>
 <ul>
-<li><strong>Limits:</strong> {{e.g. vendor figures not independently verified; no general web search; period covered}}.</li>
+<li><strong>{{Limit}}.</strong> {{What a reader should discount, e.g. vendor figures measure the vendor's own product}}.</li>
 </ul>
       </div>
     </div>
