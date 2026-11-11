@@ -195,12 +195,17 @@ But people are not the whole answer. MIT names learning as the core barrier, not
 
 ## What I would do
 
-1. **Start with a bootcamp, not a transformation.** Prove one workflow on the customer's own data in days. Expand only use case by use case.
-2. **Do not hire FDEs before you have a product to feed.** Each engagement must leave a reusable piece behind. Measure the share of field work that becomes product every quarter.
-3. **Track custom effort per customer.** It must fall with each deployment. If it does not, you are running a services firm.
-4. **Match the model to the deal size.** Put FDEs on large accounts. Below about $500K a year, use lighter onboarding and templates.
-5. **Choose an ontology platform by capability.** Decide if you need inference, context for agents or authorized actions. No platform does all three like Foundry.
-6. **Build for learning, not only for the launch.** Capture corrections and feedback in the platform, so the system improves after the engineer leaves.
+**If you are building an FDE-led company:**
+
+1. **Sell a result in two weeks, not a transformation.** One workflow, the customer's own data, and a number before and after. Palantir's bootcamps take one to five days; two weeks is enough to know.
+2. **Make every engagement leave code in your product, not in the customer's.** A connector, an ontology type or an evaluation, merged before you leave. Measure custom hours per new customer every quarter. If they do not fall, you are a consultancy, and you should price like one.
+3. **Price on the outcome only when both sides can measure it.** Per-resolution pricing works for Sierra because a resolved case is easy to count. Where the outcome is hard to define, charge for the engagement and agree the metric first.
+4. **Below about $500K a year, replace the FDE with a playbook.** Templates, a short onboarding and an engineer on call, not on site. Keep FDEs for the accounts that can pay for them.
+
+**If you are buying from one:**
+
+1. **Ask what stays when the engineer leaves.** The ontology, the evaluations and the feedback loop should be yours, in your systems. If the answer is the engineer, you are buying a person, not a product.
+2. **Judge an ontology platform by its write path, not its model.** Can agents act through it with permissions, approval and an audit log? Reading is easy to copy; governed actions are where Foundry still has no equal.
 
 *— Luis González*
 
