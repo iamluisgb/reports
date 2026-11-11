@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Anthropic ships Fable 5.2 and Mythos 5.2](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-10.md) — 2026-11-10 · 8 min
+- [AlphaProof turns its prover to code](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-11.md) — 2026-11-11 · 8 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### November 2026
 
+- [AlphaProof turns its prover to code](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-11.md) — 2026-11-11 · 8 min
 - [Anthropic ships Fable 5.2 and Mythos 5.2](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-10.md) — 2026-11-10 · 8 min
 - [Goldman Sachs pulls Claude Code from its bankers](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-09.md) — 2026-11-09 · 8 min
 - [Claude Code's 'don't ask again' leaks 1,122 secrets](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-08.md) — 2026-11-08 · 8 min

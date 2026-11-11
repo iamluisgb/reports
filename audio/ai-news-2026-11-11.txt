@@ -1,0 +1,31 @@
+[HOST_A] AI News Daily, Wednesday the eleventh of November, twenty twenty-six. Lead story: DeepMind has extended the AlphaProof formal-mathematics line to code, announcing AlphaProof Code. The announcement itself is thin — no benchmarks, no architecture, no comparison against existing coding agents.
+
+[HOST_B] Which is exactly why it matters. A prover turned onto code, if real, means machine-checked correctness rather than plausible-looking output. But treat it as a direction-setting post until evidence lands. Confirmation looks like published evals; silence means it's a teaser. The comment thread will do the analytical work today.
+
+[HOST_A] VulnCheck's November update now maintains a running index of security vulnerabilities discovered by Anthropic's models. There are enough A I-found C VEs to warrant a dedicated tracker, updated monthly.
+
+[HOST_B] That's a milestone worth pausing on. AI-discovered vulnerabilities have crossed from novelty to pipeline. The December update is the test — if the count keeps climbing at this rate, model-driven security research is a routine part of the disclosure economy, not an anomaly. It also raises attribution questions: who triages, who validates, who coordinates disclosure.
+
+[HOST_A] Notion has disclosed a security incident originating at Fireworks AI, its third-party inference vendor, affecting Notion customers. Customer impact is not yet quantified.
+
+[HOST_B] The A I supply chain is now a standard incident vector, same as any SaaS dependency. Watch two things: a Notion follow-up detailing affected data, and other Fireworks customers coming forward. Fireworks' own postmortem — or its absence — settles how serious this is. If you route customer data through an inference vendor, this is your threat model now.
+
+[HOST_A] Papers. ReTrace distils tool-using agents into planner-free workflows — it extracts the condition behind each tool call from the agent's reasoning, merges conditions across logged runs into a rule document, and compiles it so code, not a model, picks the next step. Validated on seventy-nine procedures from a production platform, and the rule documents port across orchestration platforms.
+
+[HOST_B] This is the quietest important idea today. Once an agent's behaviour repeats, compile it into a deterministic artifact and stop paying for inference at every step. The model stays for the long tail, not the hot path. It's the same instinct behind the B P M N-to-agentic-workflow proposals and, arguably, behind Anthropic shipping whiteboards and sheets — chat is a poor interface for repeatable process.
+
+[HOST_A] ExpertCrowd-S W E benchmarks coding agents on one hundred expert-authored, multi-file change requests against pinned commits of real repositories — median ticket one hundred and forty-eight words, median reference solution touching four hundred and seventy-one lines across eighty-seven projects and eleven languages, with calibrated graders awarding partial credit.
+
+[HOST_B] Synthetic tickets understate what maintainers actually refuse to merge; expert-authored tasks with sealed solutions fix that. Note the broader pattern: five of today's six papers are about harnesses, graders, D S Ls and orchestration, not new models. The centre of gravity has moved from capability to the machinery around it.
+
+[HOST_A] Crustify generates safe Rust bindings for C libraries at repository level, deriving ownership contracts and validating with coverage-guided tests under sanitizers and Miri. AgentScript-Eval grades one hundred real tasks in Salesforce's enterprise D S L, where zero-shot transfer from general coding skill drops sharply. WorkflowArena isolates orchestration itself — one hundred and forty-five long-horizon tasks across eight domains.
+
+[HOST_B] And WikiTrace closes the set: it links each stored agent lesson back to a summary of its source trajectory, so the agent can verify a lesson before applying it. The finding that the evidence usually survives in the original trajectory turns memory from a liability into an auditable artifact. Verification is becoming the load-bearing wall across all of it.
+
+[HOST_A] Sweep of the rest. Synaptics patent claims have halted open-source DisplayLink driver development, per L W N. Microsoft ships .NET eleven and a runtime changelog. Blender five point three adds native Gaussian Splatting. 9to5Mac reports a first-party Apple Mac app for running local models — unconfirmed, watch for M L X backing. GoogleChrome published prompt-ready rules steering coding agents off twenty-nineteen JavaScript.
+
+[HOST_B] The day's top story argues smart home devices should work without the internet — local-first as the only durable design. Also: a four-hundred-and-fifty-eight-comment fight over whether L L M code is structurally fragile, Terence Tao's six math essentials, S S H keys in the Mac Secure Enclave at rank one, Microsoft's Process Explorer ported to macOS, Canada's real-time rail payment system going live, and Neil Fraser on dot name grandfathering.
+
+[HOST_A] That's the briefing. The written report has every link, the paper abstracts, and the full watch list.
+
+[HOST_B] Read it there. Back tomorrow.
