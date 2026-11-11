@@ -1,0 +1,72 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-06-12",
+  "author_or_org": "Perspective AI Team",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The forward deployed engineer playbook is defined as an operating manual for embedding engineers inside customer environments to discover, prototype, deploy, and feed learnings back into the core product.",
+      "quote": "A forward deployed engineer playbook is the operating manual for a function that embeds engineers inside customer environments to discover problems, prototype solutions, deploy them, and feed the learnings back into the core product.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir originated the model, and its dual Echo/Delta team structure reportedly helped drive a 640% return on its embedded approach.",
+      "quote": "The model originated at Palantir — whose dual Echo/Delta team structure helped drive a reported 640% return on its embedded approach — and is now standard at Anthropic, OpenAI, Scale AI, and most Series A AI startups.",
+      "numbers": [
+        "640%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The source says the FDE model is now standard at Anthropic, OpenAI, Scale AI, and most Series A AI startups.",
+      "quote": "and is now standard at Anthropic, OpenAI, Scale AI, and most Series A AI startups.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "FDE functions differ from professional services because services are measured on billable hours and bespoke delivery, while FDEs are measured on what returns to the product.",
+      "quote": "This is the structural difference from professional services. A services team is measured on billable hours and bespoke delivery; an FDE function is measured on what comes back to the product.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The FDE engagement lifecycle has five phases with owners, deliverables, gates, and a 30-60-90-120 structure.",
+      "quote": "The FDE engagement lifecycle runs through five distinct phases, each with an owner, a deliverable, and a gate that must clear before the next phase starts. Run it as a 30-60-90-120 structure with explicit exit criteria; skipping a gate is how engagements drift into open-ended consulting.",
+      "numbers": [
+        "30-60-90-120"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "By day 90, an engagement must produce at least one generalized feature merged into the core product.",
+      "quote": "The deliverable is a merged, generalized capability in the core product. The gate, by day 90: at least one productized feature traceable to this engagement.",
+      "numbers": [
+        "90",
+        "one"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Teams under pressure skip discovery and prototype before mapping the real problem, building the wrong thing fast; week-1/week-4/week-12 interviews are meant to prevent this.",
+      "quote": "Teams under pressure jump to prototyping before mapping the real problem, then build the wrong thing fast. The week-1/week-4/week-12 interview cadence exists to prevent this.",
+      "numbers": [
+        "week-1",
+        "week-4",
+        "week-12"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Handoff includes documentation, coaching the customer's internal team, and transferring the relationship to customer success and product engineering, typically within 120 days of go-live.",
+      "quote": "The FDE writes comprehensive documentation, coaches the customer's internal DevOps or data engineering team on maintaining and scaling the system, and hands the relationship to customer success and product engineering — typically within 120 days of go-live.",
+      "numbers": [
+        "120"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://getperspective.ai/blog/the-forward-deployed-engineer-playbook-how-to-structure-run-and-scale-an-fde-function-in-2026"
+}

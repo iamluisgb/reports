@@ -1,0 +1,77 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "ZenML LLMOps Database",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "OpenAI's Forward Deployed Engineering team grew from 2 engineers at the start of 2025 to 52 by year-end, reflecting demand for hands-on LLM deployment expertise in enterprises.",
+      "quote": "Starting with just 2 engineers at the beginning of 2025, the team has grown to 52 by year-end, reflecting the massive demand for hands-on expertise in deploying LLMs at scale in enterprise environments.",
+      "numbers": [
+        "2",
+        "2025",
+        "52"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "OpenAI's FDE model targets problems worth tens of millions to low billions, with the dual mandate of getting customers to production and extracting learnings for OpenAI's product roadmap.",
+      "quote": "The forward deployed engineering model at OpenAI deliberately targets high-value problems—typically generating or saving tens of millions to low billions in value—with the dual mandate of getting customers to production while extracting learnings that can inform OpenAI’s product roadmap.",
+      "numbers": [
+        "tens of millions",
+        "low billions"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "At Morgan Stanley, the core LLM pipeline was operational in six to eight weeks, but adoption required an additional four months of piloting and evaluation, resulting in 98% advisor adoption and 3x research report usage.",
+      "quote": "While the core technical pipeline—including retrieval, guardrails, and basic functionality—was operational within six to eight weeks, it took an additional four months of piloting, collecting evaluations, and iterative refinement to build sufficient trust among wealth advisors for actual adoption. The payoff was substantial: 98% adoption among advisors and a 3x increase in research report usage.",
+      "numbers": [
+        "six to eight weeks",
+        "four months",
+        "98%",
+        "3x"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "In the semiconductor FDE engagement, the team forked Codex, added telemetry for evaluation tracking, and built labeled evaluation sets capturing human debugging trajectories of about 20 actions.",
+      "quote": "They started by forking Codex (OpenAI’s code generation model) and adding extensive telemetry to enable detailed evaluation tracking. Working with customer experts, they created labeled evaluation sets that captured the trajectory a human engineer would follow when debugging—typically a sequence of about 20 different actions checking various logs and system states.",
+      "numbers": [
+        "20"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "The FDE deployment progressed from advisory bug triage to model-generated fixes and pull requests, then to an execution environment where the model could test its own code.",
+      "quote": "Initially, the system would investigate bugs and create tickets for human engineers with preliminary analysis. Once this advisory mode built sufficient trust, the team progressed to having the model attempt fixes and raise pull requests. This then revealed the need for an execution environment where the model could test its own code, leading to further iteration.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "OpenAI does not treat FDE as primary services revenue; it funds FDE as bets on future product revenue and research insights, allowing the team to refuse lucrative but misaligned work.",
+      "quote": "Rather than relying on services revenue as a primary income stream, OpenAI views FDE investments as bets on future product revenue and research insights. This positioning gives the team permission to say no to lucrative opportunities that don’t align with strategic objectives.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "OpenAI aims for FDE reuse where the first engagement yields 20% reusable components, the next two or three reach 50% reusability, then the solution is pushed to scaled business operations.",
+      "quote": "The team explicitly aims for a pattern where the first customer engagement might yield 20% reusable components, the next two or three engagements push that to 50% reusability, and at that point the solution gets pushed to OpenAI’s scaled business operations for broader deployment.",
+      "numbers": [
+        "20%",
+        "two or three",
+        "50%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The FDE team's most significant anti-pattern is generalizing too early by building horizontal solutions before deeply understanding specific customer problems.",
+      "quote": "The most significant anti-pattern is generalizing too early—attempting to build horizontal solutions before deeply understanding specific customer problems.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.zenml.io/llmops-database/forward-deployed-engineering-for-enterprise-llm-deployments"
+}

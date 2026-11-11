@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2024-12-21",
+  "author_or_org": "Hamel Husain",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "A common evaluation failure mode is starting with metrics and tests before examining real data, which can lead teams to measure what is easy rather than what matters to users.",
+      "quote": "But this top-down approach often leads us to measure what’s easy to measure, not what actually matters to users.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Many teams are unsure which part of their LLM application to evaluate.",
+      "quote": "However, like many teams, he wasn’t sure if this was the right place to start: “I don’t know what part of my application to evaluate since there are many different parts”.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "For LLM application evaluation, the source recommends starting with a simple spreadsheet to analyze real conversations instead of immediately jumping to metrics or tests.",
+      "quote": "Instead of immediately jumping to metrics or tests, start by creating a simple spreadsheet to analyze real conversations.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Off-the-shelf metrics such as coherence or fluency often do not capture what matters for a specific use case.",
+      "quote": "While these tools offer metrics like “coherence” or “fluency”, they often don’t capture what actually matters for your specific use case.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Generic metric score changes are problematic because it is unclear whether a higher score means the system is actually better.",
+      "quote": "As I mentioned to Ali: “If you get a score of 3.72 today and a score of 4.2 tomorrow, does it really mean your system is better? We don’t know. That’s the problem with generic metrics.”",
+      "numbers": [
+        "3.72",
+        "4.2"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "After understanding real failure modes, synthetic data should be used to expand test coverage, starting with 1-2 test cases for each identified issue and then gradually expanding.",
+      "quote": "Once you understand your real failure modes, you can use synthetic data to expand your test coverage. But start small: 1.   Generate 1-2 test cases for each identified issue 2.   Run them through your system 3.   Analyze the results 4.   Gradually expand based on what you learn",
+      "numbers": [
+        "1-2"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "The source’s key takeaways are to start by analyzing real conversations rather than writing tests, track and categorize issues in a spreadsheet, let data patterns guide evaluation, write tests for specific observed failure modes, and use synthetic data to expand coverage but start small.",
+      "quote": "1.   Start by analyzing real conversations, not writing tests 2.   Use a simple spreadsheet or similar tools to track and categorize issues 3.   Let patterns in the data guide your evaluation strategy 4.   Write tests for specific, observed failure modes 5.   Use synthetic data to expand coverage, but start small",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Looking at data may feel clerical, but the source argues it is often the highest-leverage activity.",
+      "quote": "Remember that looking at data might feel like a clerical task, but as we discussed, it’s often “the highest leverage thing you can do.”",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://hamel.dev/notes/llm/officehours/erroranalysis.html"
+}

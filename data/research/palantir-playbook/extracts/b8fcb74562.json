@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-09-18",
+  "author_or_org": "Hamel Husain and Shreya Shankar",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "The source is a guide for engineers and product managers on testing AI systems, analyzing failures, and improving retrieval, agents, and AI products.",
+      "quote": "A guide to AI and LLM evals for engineers and product managers. Learn how to test AI systems, analyze failures, and improve retrieval, agents, and AI products.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source treats error analysis as an important part of AI evals and addresses how it is performed.",
+      "quote": "Q: Why is \"error analysis\" so important in AI evals, and how is it performed?",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The source recommends binary pass/fail evaluations rather than 1-5 Likert ratings.",
+      "quote": "Q: Why do you recommend binary (pass/fail) evaluations instead of 1-5 ratings (Likert scales)?",
+      "numbers": [
+        "1-5"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "The source addresses how to evaluate a coding agent.",
+      "quote": "Q: How should I evaluate a coding agent?",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The source addresses how to evaluate agentic workflows.",
+      "quote": "Q: How do I evaluate agentic workflows?",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The source addresses how to evaluate complex multi-step workflows.",
+      "quote": "Q: How do I evaluate complex multi-step workflows?",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The source addresses how to evaluate sessions with human handoffs.",
+      "quote": "Q: How do I evaluate sessions with human handoffs?",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The source addresses how evaluations are used differently in CI/CD versus monitoring production.",
+      "quote": "Q: How are evaluations used differently in CI/CD vs.monitoring production?",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://hamel.dev/blog/posts/evals-faq/"
+}

@@ -1,0 +1,60 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-02-11",
+  "author_or_org": "Jina Yoon / PostHog",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Palantir learned that even simple demos for intelligence software customers could require weeks of NDAs and security clearances, and it found success by sending engineers to customer sites to work side-by-side for product discovery and development.",
+      "quote": "The role originates from [Palantir](https://blog.palantir.com/a-day-in-the-life-of-a-palantir-forward-deployed-software-engineer-45ef2de257b1), who learned that even simple demos for intelligence software customers could require weeks of NDAs and security clearances. They found success with a model where engineers are “forward deployed” to customer sites where they work side-by-side with customers for product discovery and development with the right approvals and processes in place.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Companies hiring or that have hired FDEs include OpenAI, Anthropic, Databricks, Ramp, and PostHog.",
+      "quote": "Companies that are hiring (or have hired) for this position include [OpenAI](https://openai.com/careers/forward-deployed-engineer-(fde)-sf-san-francisco/), [Anthropic](https://job-boards.greenhouse.io/anthropic/jobs/5079562008), [Databricks](https://www.databricks.com/company/careers/professional-services-operations/forward-deployed-engineer-fde-8251119002), [Ramp](https://builders.ramp.com/post/forward-deployed-engineering), and even [yours truly](https://posthog.com/community/profiles/32997).",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "OpenAI sent FDEs to a call-center-automation customer for voice models; they built evals, fed data back to core research, and the customer became the first production deployment before improvements reached the Realtime API.",
+      "quote": "For example, [when OpenAI was working on their voice models](https://newsletter.pragmaticengineer.com/i/170794709/3-the-fde-role-at-openai), they sent FDEs to a customer working on call center automation. They built [evals](https://youtu.be/cBD7_R-Cizg?si=mgLw_sSyw9ln3zsD&t=540) to verify its performance and took that data back to the core research team to improve it further. Eventually, the customer became the first to deploy it in production, and these improvements became generally available in OpenAI's [Realtime API](https://platform.openai.com/docs/guides/realtime).",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "AI deals can be six-, seven-, or eight-figures, which lets AI companies afford to send engineers onsite for months.",
+      "quote": "AI deals are huge. Like six, seven, eight-figures huge. When AI companies charge that much $$$, they can afford to send engineers onsite for months to make sure the product actually works the way it's supposed to.",
+      "numbers": [
+        "six",
+        "seven",
+        "eight-figures",
+        "months"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The FDE strategy can take years for even a single customer and has huge initial costs, aiming to land contracts that grow more valuable over time.",
+      "quote": "The [FDE strategy](https://www.futureventures.ca/insights/understanding-the-forward-deployed-engineering-model) starts by solving one problem and earning the right to solve bigger ones, and that can take years for even a single customer. The goal is to land contracts that grow more valuable over time, but it has huge initial costs.",
+      "numbers": [
+        "years"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Executive skepticism means sales calls and demos are insufficient, so FDEs bridge the gap by working with the customer until they see real results with actual data.",
+      "quote": "Most people – especially executives at traditional companies — don't fully believe in AI's usefulness yet and need to see it to believe it. Sales calls and demos aren't enough when there's so much at stake. FDEs bridge that gap by doing the work with the customer until they see real results with actual data.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "At Palantir, an FDE's day-to-day includes meeting customers to understand the problem, designing/writing/testing software, configuring existing products such as AI models, and communicating customer feedback to product teams.",
+      "quote": "At [Palantir](https://blog.palantir.com/a-day-in-the-life-of-a-palantir-forward-deployed-software-engineer-45ef2de257b1), an FDE's day to day looks like something like:\n\n1.   Meeting with customers to understand the problem\n2.   Designing, writing, and testing software according to those needs\n3.   Configuring existing products (like AI models, or stability improvements) to unlock functionality for a customer \n4.   Communicating with product teams “back home” about customer feedback",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://posthog.com/blog/forward-deployed-engineer"
+}

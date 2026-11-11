@@ -1,0 +1,79 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-10-22",
+  "author_or_org": "Colin Jarvis, OpenAI",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "OpenAI founded its FDE team in early 2025 to close the 'deployment gap' between model capability and reliable use at work.",
+      "quote": "I founded the team in early 2025 to close what we call**“the deployment gap”:**the distance between what models appear capable of and what people can reliably use to do their work.",
+      "numbers": [
+        "early 2025"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "In mid-2025, OpenAI had around 15 FDEs working with a large semiconductor customer on more than 10 use cases.",
+      "quote": "In mid-2025, we had around 15 FDEs working with a large semiconductor customer on 10+ use cases.",
+      "numbers": [
+        "mid-2025",
+        "15",
+        "10+"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Some OpenAI FDEs joined days before and had no semiconductor experience; they embedded with the customer’s verification team, studied chip design, and built evals with customer engineers.",
+      "quote": "Some FDEs had joined OpenAI just days earlier and had never worked in semiconductors. They embedded with the customer’s verification team, studied chip design in their spare time, and built evals with the engineers to test whether the AI could generate useful tests and correctly diagnose chip failures.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "OpenAI was able to remove roughly 90% of custom code from each project as it standardized workflows.",
+      "quote": "We were able to remove roughly 90% of the custom code from each project, and this changed how we built, maintained and scaled these workflows:",
+      "numbers": [
+        "90%"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "In one August 2026 example, the initial deployment took two months, while extending the solution to a second team took one day.",
+      "quote": "In one August 2026 example, the initial deployment took two months. Extending the solution to a second team took one day.",
+      "numbers": [
+        "August 2026",
+        "two months",
+        "one day"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "OpenAI says sometimes the missing piece is a product, and a model that performs well on a benchmark may fail with real-life variables and constraints.",
+      "quote": "Sometimes the missing piece is a product. Sometimes a model performs well on a benchmark but cannot do the job with real-life variables and constraints.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "In a telecom voice engagement, key eval performance rose from around 60% to 80% and then 90%+ over six months, reaching production levels.",
+      "quote": "Over six months, performance on the key evals rose from around 60% to 80% and then 90%+, reaching the levels needed for production.",
+      "numbers": [
+        "six months",
+        "60%",
+        "80%",
+        "90%+"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "During the Tax AI pilot, the system processed 7,000 tax returns and increased throughput by about 50%.",
+      "quote": "During its pilot, Tax AI processed 7,000 tax returns and increased throughput by about 50%.",
+      "numbers": [
+        "7,000",
+        "50%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://openai.com/index/forward-deployed-engineering-means/"
+}

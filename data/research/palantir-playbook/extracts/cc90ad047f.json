@@ -1,0 +1,65 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-06-16",
+  "author_or_org": "R&D, FDE Academy",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "The FDE playbook is described as a six-phase deployment process: discovery, MVP scoping, prototyping with real customer data, building an evaluation framework, deploying to production, and continuously improving through feedback.",
+      "quote": "The Forward Deployed Engineer Playbook outlines the practical workflow experienced FDEs use to deliver successful customer deployments. It breaks the process into six key phases: discovery, MVP scoping, prototyping with real customer data, building an evaluation framework, deploying to production, and continuously improving the solution through feedback.",
+      "numbers": [
+        "six"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Discovery should end with a specific, falsifiable definition of success rather than a vague mission statement.",
+      "quote": "The goal is to leave discovery with a specific, falsifiable definition of success, not a vague mission statement. If you can't write down a sentence like \"this system succeeds if it reduces X by Y amount, measured how,\" discovery isn't done yet, no matter how many calls have already happened.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "MVP scoping requires explicitly naming what is out of scope for phase one and getting the customer stakeholder to agree to that boundary before building starts.",
+      "quote": "Scoping the MVP well requires explicitly naming what's out of scope for phase one, and getting the customer stakeholder to agree to that boundary before building starts, not after.",
+      "numbers": [
+        "one"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "FDEs prototype against the customer's actual messy data from day one to surface real integration problems early rather than in week eight.",
+      "quote": "A product engineer usually prototypes against synthetic or sanitized test data. An FDE prototypes against the customer's actual data from day one, messy, inconsistently formatted, full of edge cases nobody documented, because that's the only way to surface the real integration problems early rather than discovering them in week eight.",
+      "numbers": [
+        "one",
+        "eight"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "For AI-native deployments, model outputs are non-deterministic, so there is no fixed expected value to assert against like a traditional unit test.",
+      "quote": "For AI-native deployments specifically, this is not optional. Model outputs are non-deterministic, which means there's no fixed expected value to assert against the way a traditional unit test works.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The first two to three weeks after go-live are disproportionately important for revealing unanticipated edge cases and shaping user trust.",
+      "quote": "The first two to three weeks after go-live are disproportionately important. This is when real usage patterns reveal edge cases the evaluation set didn't anticipate, when the customer's actual users form their first impression of whether the system is trustworthy, and when an FDE's observability and incident-response instincts matter more than raw coding speed.",
+      "numbers": [
+        "two",
+        "three"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The source states that Salesforce runs new FDEs through a structured six-week onboarding, Palantir pairs newer engineers with senior ones, and AI-native startups often assign a new FDE a customer with no playbook.",
+      "quote": "The specific tools and company processes vary- Salesforce runs new FDEs througTools Used by Forward Deployed Engineeh a structured six-week onboarding, Palantir pairs newer engineers with senior ones, and AI-native startups often hand a new FDE a customer with no playbook at all- but the underlying sequence is remarkably consistent across every company that operates this model.",
+      "numbers": [
+        "six"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://fde.academy/blog/forward-deployed-engineer-playbook"
+}

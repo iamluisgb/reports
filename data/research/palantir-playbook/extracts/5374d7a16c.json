@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-01-09",
+  "author_or_org": "Anthropic Engineering",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Without evaluations, AI agent teams fall into reactive loops, finding problems only in production and fixing one failure can create others.",
+      "quote": "Without them, it’s easy to get stuck in reactive loops—catching issues only in production, where fixing one failure creates others.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "After prototyping and once an agent is in production and scaling, building without evals breaks down; the breaking point is when users report degradation and the team is flying blind.",
+      "quote": "The breaking point often comes when users report the agent feels worse after changes, and the team is “flying blind” with no way to verify except to guess and check.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Evals make problems and behavioral changes visible before they affect users, and their value compounds over an agent’s lifecycle.",
+      "quote": "Evals make problems and behavioral changes visible before they affect users, and their value compounds over the lifecycle of an agent.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Early evals force product teams to specify what success means for the agent; later they help maintain a consistent quality bar.",
+      "quote": "Early on, evals force product teams to specify what success means for the agent, while later they help uphold a consistent quality bar.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Agent evaluations typically combine three grader types—code-based, model-based, and human—and each grader evaluates part of either the transcript or the outcome.",
+      "quote": "Agent evaluations typically combine three types of graders: code-based, model-based, and human. Each grader evaluates some portion of either the transcript or the outcome.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Capability evals ask what an agent can do well and should start at a low pass rate, targeting tasks the agent struggles with.",
+      "quote": "**Capability or “quality” evals** ask, “What can this agent do well?” They should start at a low pass rate, targeting tasks the agent struggles with and giving teams a hill to climb.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Teams without evals face weeks of testing when new models arrive, while teams with evals can determine model strengths, tune prompts, and upgrade in days.",
+      "quote": "When more powerful models come out, teams without evals face weeks of testing while competitors with evals can quickly determine the model’s strengths, tune their prompts, and upgrade in days.",
+      "numbers": [
+        "weeks",
+        "days"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Descript evolved from manual grading to LLM graders with product-team criteria and periodic human calibration, and now runs two separate suites for quality benchmarking and regression testing.",
+      "quote": "They evolved from manual grading to LLM graders with criteria defined by the product team and periodic human calibration, and now regularly run two separate suites for quality benchmarking and regression testing.",
+      "numbers": [
+        "two"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.anthropic.com/research/demystifying-evals-for-ai-agents"
+}

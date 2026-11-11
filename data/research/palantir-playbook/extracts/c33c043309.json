@@ -1,0 +1,49 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2025-09-17",
+  "author_or_org": "Per Aspera (Mark Scianna and Ryan Duffy)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source defines a forward deployed engineer as someone stationed at the customer site to bridge the gap between product capabilities and customer needs.",
+      "quote": "McGrew defines a forward deployed engineer as someone “who sits at the customer site and fills the gap between what the product does and what the customer needs.”",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Palantir's model uses Echo teams of domain insiders to find high-leverage customer problems and Delta teams of rapid-prototyping engineers to ship a scrappy initial version in weeks rather than quarters.",
+      "quote": "Echo teams are domain insiders with a rebellious streak, embedded with customers to unearth real, high-leverage problems and manage relationships; Delta teams are rapid-prototyping engineers who build and deploy fast, working hand-in-hand with Echo to ship the scrappy v0 in weeks, not quarters.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The source states that forward-deployed headcount sits in COGS and compresses gross margin while discovery work is heavy.",
+      "quote": "A forward function lives in COGS (even if it’s actually R&D) and compresses gross margin while discovery is heavy.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The source says a healthy FDE loop raises revenue per FDE as software replaces engineers bridging the product-customer gap.",
+      "quote": "If it’s working, in a healthy loop, revenue per FDE will rise as software replaces the engineers who are bridging the gap between what the product can do and what the customer needs.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source says most organizations cannot stomach FDE because they want routine check-ins, approvals for technical choices, predictable roadmaps, and tight budget controls.",
+      "quote": "Most organizations simply can’t stomach this model. The average corporation, organization, or bureaucracy wants routine check-ins, approvals for every technical choice, predictable roadmaps, and tight budget controls. FDE affords no such creature comforts.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The source recommends working quickly—within 10 days—toward a live demo using real data as a specification.",
+      "quote": "**Demo as spec:** Work quickly (≤10 days) towards a live demo that relies on real data and creates _desire_ for your user(s).",
+      "numbers": [
+        "10"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://peraspera.us/forward-deployed/"
+}

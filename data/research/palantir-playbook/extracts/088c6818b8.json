@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-11-04",
+  "author_or_org": "Modus Create",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The article defines a forward deployed engineer as an engineer who works inside the customer's environment, uses the customer's systems and data, and scopes, builds, and ships software with a short feedback loop.",
+      "quote": "A forward deployed engineer works inside a customer's environment, using their systems and data while navigating their specific constraints. They scope, build, and ship software with a short feedback loop to the people who requested it.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The article says the forward deployed engineer role has spread across AI platforms and enterprise software.",
+      "quote": "The role has since spread across AI platforms and enterprise software.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The author attributes the growing use of FDEs to a gap between what platforms can technically do and what can actually be delivered inside a specific customer environment.",
+      "quote": "I believe the role is becoming more common because a gap has opened up between what platforms are technically capable of doing and what they can actually deliver inside one specific customer's environment.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The article says AI pilots often work in isolation but production introduces real data, permissions, and compliance, and it calls this last mile where FDEs can earn their keep.",
+      "quote": "*   **A pilot worked well in isolation, but production is a different world.** This comes up frequently with AI initiatives. The pilot works, but production introduces real data, real permissions, and real compliance requirements.\n\nThat last mile is exactly where a forward deployed engineer can earn their keep.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Modus Create describes FDE engagements in four stages: Understand, Build, Validate, and Deploy and transfer.",
+      "quote": "We think about a forward deployed engineering engagement in four stages:\n\n*   **Understand:** We become familiar with the business goals, the technical environment, the users, and the real constraints—not the idealized versions of them.\n*   **Build:** We define the approach and develop and integrate the solution directly inside the customer's environment. We're not building in a sandbox that doesn't look anything like production.\n*   **Validate:** We test against real users, real workflows, and real data, along with the operational requirements that actually matter, such as security and compliance.\n*   **Deploy and transfer:** We move the solution into production and ensure the customer's own team has the context to continue developing it independently.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "FDEs typically work on one of two project types, prototyping or production builds, and sometimes a prototype leads to a production build.",
+      "quote": "Forward deployed engineers typically work on one of two types of projects: prototyping or production builds. Sometimes a prototype leads to a production build.",
+      "numbers": [
+        "two"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "The article says many FDE engagements are prototype-oriented and may be disposable proofs of concept or architectural runway.",
+      "quote": "Many engagements are prototype-oriented, and the goal isn't necessarily to ship a system. It might be a fast, sometimes disposable proof of concept or a way to build architectural runway.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The article says the key scoping skill is knowing whether an engagement is a prototype or production build before starting, because overengineering a prototype wastes time and underengineering production creates a liability.",
+      "quote": "The real skill is knowing which mode you're in before you start. If we overengineer a prototype, we're wasting the customer's time. Underengineer something meant for production, and we've built a liability.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.moduscreate.com/blog/forward-deployed-engineering"
+}

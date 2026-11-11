@@ -1,0 +1,75 @@
+{
+  "relevant": true,
+  "source_type": "data",
+  "published": "2026-07-25",
+  "author_or_org": "Plank Research",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "AWS launched an internal forward-deployed engineering unit on June 30, 2026 with $1B in investment, embedding teams of five or six engineers with enterprises to build agentic AI in the customers' own AWS accounts.",
+      "quote": "AWS launched an internal forward-deployed engineering unit on Jun 30, 2026 with a $1B investment. It embeds teams of five or six engineers with enterprises to build agentic AI in their own AWS accounts; VP Asa Kalavade has led it since Aug 2026.",
+      "numbers": [
+        "Jun 30, 2026",
+        "$1B",
+        "five or six",
+        "Aug 2026"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "AWS FDE engagements follow a 45-minute ideation, 45-hour validation, and 45-day shipping cadence.",
+      "quote": "Engagements follow a 45-minute, 45-hour, 45-day cadence for ideating, validating and shipping.",
+      "numbers": [
+        "45-minute",
+        "45-hour",
+        "45-day"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "AWS FDE teams deploy a semantic layer and governed, versioned knowledge graph into the customer's AWS account, and customers keep the deployed systems, runbooks, architectural documentation, and trained internal champions.",
+      "quote": "Teams deploy a semantic layer and a governed, versioned knowledge graph into the customer's own AWS account; customers keep the deployed systems, runbooks, architectural documentation and trained internal champions.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "AWS says customer engineers progress from observers to co-builders to autonomous operators, and engagements are designed to leave customers self-sufficient.",
+      "quote": "AWS says customer engineers move from observers to co-builders to autonomous operators, and that engagements are designed to leave the customer self-sufficient.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Named AWS FDE customers include the NFL, NBA, Southwest Airlines, Cox Automotive, and Hoxton Wealth; NFL CIO Gary Brantley says AWS engineers got NFL Fantasy AI and NFL IQ into production in just weeks.",
+      "quote": "FDE customers include the NFL, NBA, Southwest Airlines, Cox Automotive and Hoxton Wealth; NFL CIO Gary Brantley says AWS engineers got NFL Fantasy AI and NFL IQ into production “in just weeks.”",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "AWS publishes no rate card for direct FDE engagements and says deployments are structured around shared goals and business results rather than billable hours; partner Innovative Solutions offers a fixed-price AI Assessment, a fixed-price POD for one production outcome with optional success bonus, and a monthly FDS Retainer with optional cost-efficiency bonuses.",
+      "quote": "AWS publishes no rate card for direct engagements and says deployments are structured around shared goals and business results, not billable hours. Innovative Solutions, an AWS Premier Tier Services Partner, prices its partner offering in three tiers: (1) AI Assessment, a fixed-price engagement in which an embedded engineer evaluates generative AI readiness, identifies use cases and builds a proof of concept on the customer's data; (2) POD (Product-Oriented Delivery), a fixed-price engagement to deliver one defined production outcome, with an optional success bonus; (3) FDS Retainer, a monthly retainer that keeps an engineer on the account, with optional bonuses tied to cost-efficiency goals.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "AWS launched a partner-led FDE tier on June 30, 2026; partners build ring-fenced, AWS-credentialed engineering teams that pass an AWS-defined production-engineering bar, and partners permanently own a reusable delivery harness covering domain ontologies, evaluation frameworks, MCP servers, and agent-operations tooling.",
+      "quote": "AWS launched the partner-led tier through the AWS Partner Network on Jun 30, 2026, with a limited set of partners. Partners build ring-fenced, AWS-credentialed engineering teams, and their engineers must pass an AWS-defined production-engineering bar before working with any customer. Partners permanently own a reusable delivery harness covering domain ontologies, evaluation frameworks, MCP servers and agent-operations tooling.",
+      "numbers": [
+        "Jun 30, 2026"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "AWS's FDE capacity constraint is people: it started with hundreds of engineers in pods of five or six per customer, and VP Asa Kalavade calls qualified FDE candidates “unicorns”; customers without direct access go through partners such as Innovative Solutions.",
+      "quote": "The catch Capacity. AWS is starting with hundreds of engineers, in pods of five or six per customer, and VP Asa Kalavade calls qualified FDE candidates “unicorns.” Customers without direct access go through partners such as Innovative Solutions.",
+      "numbers": [
+        "hundreds",
+        "five or six"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://joinplank.com/research/aws-fde"
+}

@@ -1,0 +1,66 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-10-24",
+  "author_or_org": "Arushi Jain (Quivly)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source defines forward deployed engineering as embedding vendor engineers inside a customer's environment to configure, integrate, and adapt complex software until it works, rather than handing over documentation and support.",
+      "quote": "Forward deployed engineering is a way of landing complex software with enterprise customers. Instead of handing a customer documentation and a support queue, a vendor embeds engineers who configure, integrate and adapt the product inside the customer's environment until it works.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The source says an FDE team typically needs an FDE lead, forward deployed engineers, an implementation plan owner, a named customer success partner, and a defined escalation path into core engineering.",
+      "quote": "Most teams need an FDE lead, forward deployed engineers, someone who owns the implementation plan, a named customer success partner and a defined escalation path into core engineering.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In the dedicated engagement model, one engineer is assigned to a single large customer for the rollout, giving the deepest context and strongest relationship but the highest cost per account.",
+      "quote": "One engineer is assigned to a single large customer for the length of the rollout. This gives the deepest context and the strongest relationship, at the highest cost per account.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The source says there is no universal ratio for how many accounts one forward deployed engineer should handle and recommends reasoning from the team's own data.",
+      "quote": "There is no universal number, and it is better to reason from your own data than to borrow someone else's ratio.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Quivly reports that FDE teams using its tooling see 3× more accounts covered per FDE, a 65% reduction in reactive escalations, 4× faster detection of integration failures, and 50% of technical issues resolved before customer notice.",
+      "quote": "Quivly reports that FDE teams using it see 3× more accounts covered per FDE, a 65% reduction in reactive escalations, 4× faster detection of integration failures and 50% of technical issues resolved before customer notice.",
+      "numbers": [
+        "3×",
+        "65%",
+        "4×",
+        "50%"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Quivly's example rollout plan splits ownership across four phases: discovery scope/questionnaire owned by the FDE, integration connectors/mappings owned by the FDE, validation UAT/data checks shared by FDE and CS, and cutover production go-live owned by CS.",
+      "quote": "Quivly's example rollout plan shows a clean split across four phases:\n\n*   **Discovery:** scope and questionnaire, owned by the FDE.\n*   **Integrate:** connectors and mappings, owned by the FDE.\n*   **Validate:** user acceptance testing and data checks, shared between FDE and CS.\n*   **Cutover:** production go-live, owned by CS.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "The source recommends a shared validation phase where FDE and CS work the account together, then transferring ownership to CS at production cutover after readiness gates such as SSO, migration dry-run, and training are complete.",
+      "quote": "Plan a shared validation phase where FDE and CS work the account together, then move ownership to CS at production cutover once readiness gates such as SSO, a migration dry-run and training are complete.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source argues FDEs sit between product and customer reality and are often the first to see technical problems that later become adoption or renewal risk.",
+      "quote": "The FDE team sits in the middle. It translates the product into the customer's reality, and it is often the first to see technical problems that will later show up as adoption or renewal risk.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.quivly.ai/blog/structure-forward-deployed-engineering-team"
+}

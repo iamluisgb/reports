@@ -1,0 +1,40 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-09-23",
+  "author_or_org": "Varsity on Behalf of CEP IIT Delhi",
+  "claims": [
+    {
+      "question": "q6",
+      "claim": "The FDE lifecycle runs from scoping the customer problem through mapping actual work, prototyping on real data, hardening for production, deploying in the customer environment, and handing off ownership; it usually takes weeks to a few months, not days.",
+      "quote": "The forward deployed engineer lifecycle is the arc of a single customer engagement: you scope a problem with the customer, map how the work actually happens, build a prototype against their real data, harden it into something production-grade, deploy it inside their environment, and hand it over to the people who will own it after you leave. Typically weeks to a few months, not days. The stage names vary by company, but the underlying sequence is what stays stable.",
+      "numbers": [
+        "weeks",
+        "months",
+        "days"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "AWS announced a $1 billion investment in June 2026 to create a dedicated Forward Deployed Engineering organization that embeds engineers inside customer teams.",
+      "quote": "[AWS announced a $1 billion investment in June 2026](https://www.aboutamazon.com/news/aws/aws-1-billion-forward-deployed-ai-engineers) to build a dedicated Forward Deployed Engineering organisation, embedding engineers directly inside customer teams.",
+      "numbers": [
+        "$1 billion",
+        "June 2026"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Self-reported FDE pay in India is typically about ₹10–30 LPA, with a middle market around ₹15–18 LPA and a top quarter reaching about ₹42 LPA.",
+      "quote": "Typical Forward Deployed Engineer pay in India is about ₹10–30 LPA, blended from salaries people report on Glassdoor and Levels.fyi. The middle of the market sits around ₹15–18 LPA; the top quarter reaches about ₹42 LPA.",
+      "numbers": [
+        "₹10–30 LPA",
+        "₹15–18 LPA",
+        "₹42 LPA"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.interviewbit.com/varsity/blog/the-forward-deployed-engineer-lifecycle/"
+}

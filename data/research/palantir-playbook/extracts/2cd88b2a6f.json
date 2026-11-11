@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-06-30",
+  "author_or_org": "Amazon Web Services (AWS); Chandra Pinapala, Erik Farr, Karthik Sonti",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "AWS announced a dedicated Forward Deployed Engineering organization backed by a $1 billion investment to embed thousands of engineers directly with customers to co-develop and deploy agentic AI solutions quickly.",
+      "quote": "a dedicated organization backed by a $1 billion investment to embed thousands of engineers directly with customers to co-develop and deploy agentic AI solutions at speed.",
+      "numbers": [
+        "$1 billion",
+        "thousands"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "AWS extended its FDE investment to strategic partners through a Partner-Led Forward Deployed Engineering Motion, described as a durable embedded delivery capability inside consulting firms rather than a certification or training program.",
+      "quote": "The new Partner-Led Forward Deployed Engineering Motion extends that investment to our most strategic partners. Not as a certification. Not as a training program. As a durable, embedded delivery capability inside the consulting firms our customers already rely on — the same methodology, the same production bar, operating at the same velocity.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source states that agentic AI has moved from strategy and proof-of-concept into execution, and demand for production-grade agentic systems has outpaced any single organization's delivery capacity.",
+      "quote": "Agentic AI has moved past strategy and proof-of-concept into execution. Demand for production-grade agentic systems has outpaced the delivery capacity of any single organization.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Each partner-led FDE engagement builds a reusable harness including domain ontologies, evaluation frameworks, MCP servers, agent operations tooling, and a context graph recording architecture choices, evaluation criteria, and domain patterns.",
+      "quote": "Every Partner-Led FDE engagement builds a reusable harness the partner owns permanently: domain ontologies, evaluation frameworks, MCP servers, agent operations tooling, and a context graph that records the architecture choices, evaluation criteria, and domain patterns applied during each build.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "AWS describes FDE teams as operating under actual customer constraints from day one and delivering systems designed for self-sufficiency rather than ongoing dependency.",
+      "quote": "FDE teams operate under actual customer constraints from day one and deliver systems structured for self-sufficiency, not ongoing dependency.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Partners build ring-fenced, AWS-credentialed engineering teams; AWS engineers are deeply embedded in early customer engagements, then AWS support shifts toward helping partners scale their FDE practice as work becomes reusable patterns.",
+      "quote": "Partners will build ring-fenced, AWS-credentialed engineering teams with AWS support to deliver production agentic systems with AWS services. In early customer engagements, AWS engineers are deeply embedded with the partner to support the build journey. As more of the work moves into reusable patterns, AWS support will shift to helping the partner scale their FDE practice.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "AWS launched the Partner-Led FDE Motion with a limited set of partners and plans to extend it to the broader partner network after validating the delivery model and scaling the harness.",
+      "quote": "We are launching the Partner-Led FDE Motion with a limited set of partners. As we validate the delivery model, sharpen the harness, and scale it, we will extend it to the broader partner network.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source says enterprise AI has outgrown the advisory model because customers want production agentic systems running under real governance, on real data, in weeks, rather than roadmaps.",
+      "quote": "Enterprise AI has outgrown the advisory model. Customers are not asking for roadmaps. They are asking who can put production agentic systems into their environment — running under real governance, on real data, in weeks.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://aws.amazon.com/blogs/apn/introducing-forward-deployed-engineering-for-partners-winning-the-future-of-enterprise-ai/"
+}
