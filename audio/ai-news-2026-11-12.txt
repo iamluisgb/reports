@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Thursday the twelfth of November, twenty twenty-six. Lead story: the Wall Street Journal reports Nvidia's board is working to remove Jensen Huang, the co-founder who has led the company through the entire AI buildout. Hacker News logged one thousand one hundred and fifty-seven comments within hours — the industry is reading this as regime change at the centre of the GPU economy.
+
+[HOST_B] Treat it as unconfirmed until the company speaks. A named successor or an explicit rebuttal settles it — silence strengthens the report. Watch for board filings over the coming days. If it lands, every pricing assumption downstream of Nvidia's roadmap — including the cost work later in this briefing — gets repriced.
+
+[HOST_A] Tim Peters has died. Python core developer, author of the Zen of Python, and creator of Timsort — the algorithm behind list dot sort in Python and Arrays dot sort in Java since version seven. Nineteen fifty-two to twenty twenty-six.
+
+[HOST_B] The obituary carries a lesson: invisible primitives outlast product cycles. Timsort has sorted the world's data for two decades without most users ever naming it. Whoever replaces Huang inherits infrastructure that durable — the person is not the moat.
+
+[HOST_A] Security. Wiz details a critical unauthenticated remote code execution flaw in Apache HTTP Server, tracked as C V E twenty twenty-six, one one nine six one eight. The disclosure is hours old at ninety-seven points. Check your versions against the advisory and patch.
+
+[HOST_B] Watch patch uptake, not the score. Severity revisions and patched release notes are the immediate signal — whether the flaw survives common module configurations decides how many deployments are actually exposed. Assume yours is one of them until proven otherwise.
+
+[HOST_A] Amazon has published an official cloud emulator under its own GitHub org — A W S APIs running locally, without the cloud. Seven hundred and seventy-nine points in a day. LocalStack's moat just acquired a competitor with the real API surface.
+
+[HOST_B] Watch LocalStack's positioning, and whether the official emulator covers the API surface customers actually pay for — that decides whether paid tiers survive. For anyone running agent loops against cloud APIs, free local emulation becoming table stakes is a cost cut.
+
+[HOST_A] Two agent-commerce stories. United Airlines is blocking bookings made by AI agents on travellers' behalf — four hundred and eighty-nine comments on who the customer is when software buys the ticket. And Google shipped a Gemini Decisions API, three hundred and sixty-five points and one hundred and fourteen comments in a day, positioned as a product rather than a demo.
+
+[HOST_B] Both point the same way: the agent stack is moving from capability demos to control surfaces. The product is now the boundary, policy and verification layer, not the model call. A second airline banning agents, or a booking API change, confirms industry policy rather than a United one-off.
+
+[HOST_A] Papers, quickly. A bits-versus-permutations study on Qwen three at zero point six and one point seven billion parameters finds six-bit weights lose no accuracy, whilst four bits raises answer-slot skew from zero point one five to zero point five three on the smaller model. SafeRoute-M A S reports one point eight percentage points gained on a sealed cache whilst cutting twelve point seven six percent of message tokens — but a controlled run shows no selector advantage. A world-model benchmark: one hundred and thirty-four of one hundred and thirty-five generations pass a strict mechanical audit, yet structural and semantic checks still separate plausible from faithful. SteerDistill offers a correction loop with no headline delta — promising, not proven.
+
+[HOST_B] The pattern across all four: cost work getting honest about where losses appear. Quantisation savings can quietly break order sensitivity — routing wins can be workload-specific — mechanical validity is not faithfulness. Apple's retrieval research attacks the same economics from the token end. Read the tables, not the abstracts.
+
+[HOST_A] Sweep. Agent pipelines reportedly found an unmapped Maya settlement — nine hundred and sixty-five points, the comment section doing the peer review — read the thread before citing. Atuin now syncs agent sessions across machines. Yogurt is an open-source, local-first Granola clone. Jane Street details a false smoke alarm that nearly drowned its only New York datacentre. Plus a guide to locking GitHub Actions, Chips and Cheese on Zen six, voltage glitching to unlock an A one hundred from a mining card, The Verge's seventeen questions to every TV maker about surveillance, ninety-three percent of paint splatters parsing as valid Perl, and the Utah Teapot, officially.
+
+[HOST_B] Close. The written report carries every link, the full numbers and the watchlist — Nvidia's board, the Apache patch, LocalStack's answer, United's ban, and independent verification of the Maya claim. Read it at the briefing page. Back tomorrow.
