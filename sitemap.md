@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Jensen Huang resigns as Nvidia CEO](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-13.md) — 2026-11-13 · 8 min
+- [ggml hits 1.0](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-14.md) — 2026-11-14 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### November 2026
 
+- [ggml hits 1.0](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-14.md) — 2026-11-14 · 9 min
 - [Jensen Huang resigns as Nvidia CEO](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-13.md) — 2026-11-13 · 8 min
 - [Nvidia board prepares to oust Jensen Huang](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-12.md) — 2026-11-12 · 9 min
 - [AlphaProof turns its prover to code](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-11.md) — 2026-11-11 · 8 min
