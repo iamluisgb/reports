@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Sunday the fifteenth of November, twenty twenty-six. Lead story — SpaceX has caught the Starship booster, closing out Flight Fifteen. The catch sits at the top of Hacker News with one thousand one hundred and nineteen points, ahead of everything else today by a wide margin.
+
+[HOST_B] That margin is the signal — the community reads booster recovery as the story of the day, not the upper stage. Reuse cadence is the whole economic case for Starship. Watch what changes between Flight Fifteen and Sixteen — turnaround time, refurbishment scope, whether the same booster flies again.
+
+[HOST_A] A systematic audit of apps built on Lovable has found passport scans and more than two hundred thousand private messages exposed. The audit treats the leaks as a recurring failure mode of generated apps, not isolated mistakes.
+
+[HOST_B] That's insecure-by-default output at platform scale. Generated apps wire up databases and authorisation wrong in the same ways, repeatedly. Watch Lovable's response — if fixes ship app by app, nothing structural has changed. Defaults and authorisation primitives are the test.
+
+[HOST_A] Two governance items. Italy has fined Meta eight hundred and eighty-seven million dollars over access to Android users' data — another nine-figure European privacy penalty. And Google Project Zero has restored a fixed ninety-day disclosure deadline, ending severity-based variable windows.
+
+[HOST_B] Both are process constraints, not model problems. The ninety-day clock matters because it's unforgiving — if a vendor misses it, disclosure lands unpatched. Watch the first report published under the restored policy — that case defines how hard the rule bites. Meta's appeal will test how far member-state regulators can act alongside the E U regime.
+
+[HOST_A] The Federal Aviation Administration paused the entire United States national airspace today — a nationwide ground stop, tracked live on a flight map as it clears.
+
+[HOST_B] Ground stops of this scope usually mean a single systemic failure, not weather. The number to watch is the stated cause once flights resume — that decides whether it's a one-off or something structural in the airspace system.
+
+[HOST_A] In models and tooling — a two-hundred-line pure JAX implementation of DeepSeek V three compresses the architecture to a single sitting's read. A Jonathan Blow talk asking why shipped software looks unchanged if AI solved coding drew six hundred and ninety-four comments, the day's biggest argument. And a University of Michigan study quantifies the energy penalty of non-English text — tokenisation inefficiency measured in watts.
+
+[HOST_B] The Michigan result deserves attention — the same prompt costs measurably more energy in most of the world's languages, a deployment cost, not a research curiosity. The Blow argument measures shipped software, not constrained agent execution — a different question, and the papers answer the better one.
+
+[HOST_A] Three papers. EvoX recasts the agent harness as an operational policy in Rust — action realisation, execution continuity, outcome grounding — and introduces Contrast to evaluate harnesses across five benchmarks and six foundation models. Drydock-eval runs Gemma four E four B at about two hundred and fifty runs an hour on one R T X fifty ninety, contains each job in a networkless container that passed two hundred scripted escape tests, and releases nine thousand six hundred and sixty agent-run rows.
+
+[HOST_B] All three agent papers converge on one claim — capability is not the only bottleneck. Runtime control as policy, containment with scorer conformance, evaluation beyond Python leaderboards — engineering controls ahead of another model point. Networkless containers and escape tests are the agent equivalent of a disclosure deadline — an external constraint that makes claims checkable.
+
+[HOST_A] The other two papers. AgentScript-Eval grades one hundred real Agentforce tasks in a private enterprise D S L no public model has seen. AstroMemBench scores memory systems in spacecraft agents — sixteen subchallenges, two thousand two hundred and forty instances — under delay, power and safety constraints. And MVDriveBench tests surround-view driving reasoning across twelve question categories, where front-camera benchmarks stop.
+
+[HOST_B] The pattern across all five is evaluation matching deployment conditions — stateful, safety-constrained operation instead of static question answering. Now the sweep. Google detailed slash-teamwork for coordinating multiple Antigravity agents — watch whether it ships. Turbo-Browser-MCP drives real browsers for agents. Memory-safety bugs surfaced in Rust's standard library. P Y P I's redesigned project pages put security signals in the default view. The I R S Direct File source code is public on GitHub. Wozniak's hand-assembled Apple One BASIC got a retrocomputing deep dive. LinkedIn and Monster pulled over a thousand fake job postings after a CBC investigation. Islamic Fiqh rulings reduce to finite state automata, and Stanford's Protégé ontology tutorial still holds up a decade on. Full detail in the written report — link in the show notes.

@@ -1,0 +1,906 @@
+{
+  "day": "2026-11-15",
+  "weekday": "Sunday",
+  "collected_at": "2026-11-15T08:14:12+00:00",
+  "stories": [
+    {
+      "id": "hn-50500963",
+      "story_id": "50500963",
+      "rank": 1,
+      "title": "SpaceX catches the Starship to end Flight 15",
+      "url": "https://www.spacex.com/launches/starship-flight-15",
+      "points": 1119,
+      "comments": 734,
+      "hn_url": "https://news.ycombinator.com/item?id=50500963"
+    },
+    {
+      "id": "hn-50478701",
+      "story_id": "50478701",
+      "rank": 2,
+      "title": "Memory Safety Bugs in Rust Standard Library",
+      "url": "https://forge-blog.github.io/posts/rust-std-memory-safety/",
+      "points": 95,
+      "comments": 29,
+      "hn_url": "https://news.ycombinator.com/item?id=50478701"
+    },
+    {
+      "id": "hn-50499017",
+      "story_id": "50499017",
+      "rank": 3,
+      "title": "Lovable apps expose passport details and more than 200K private messages",
+      "url": "https://www.crissyfield.de/research/lovable-en/",
+      "points": 782,
+      "comments": 305,
+      "hn_url": "https://news.ycombinator.com/item?id=50499017"
+    },
+    {
+      "id": "hn-50443331",
+      "story_id": "50443331",
+      "rank": 4,
+      "title": "A rare glimpse inside the high-risk, high-reward Hormuz trade",
+      "url": "https://www.lloydslist.com/LL1158922/A-rare-glimpse-inside-the-highrisk-highreward-Hormuz-trade",
+      "points": 34,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50443331"
+    },
+    {
+      "id": "hn-50502988",
+      "story_id": "50502988",
+      "rank": 5,
+      "title": "Court denies motion to dismiss DRAM price fixing case",
+      "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
+      "points": 91,
+      "comments": 19,
+      "hn_url": "https://news.ycombinator.com/item?id=50502988"
+    },
+    {
+      "id": "hn-50501594",
+      "story_id": "50501594",
+      "rank": 6,
+      "title": "How did Woz write the Apple 1 BASIC before building the computer?",
+      "url": "https://retrocomputing.stackexchange.com/questions/17957",
+      "points": 195,
+      "comments": 93,
+      "hn_url": "https://news.ycombinator.com/item?id=50501594"
+    },
+    {
+      "id": "hn-50504072",
+      "story_id": "50504072",
+      "rank": 7,
+      "title": "Show HN: Gawain – Require type hints on all Python variables",
+      "url": "https://github.com/matheuzgomes/gawain",
+      "points": 41,
+      "comments": 16,
+      "hn_url": "https://news.ycombinator.com/item?id=50504072"
+    },
+    {
+      "id": "hn-50503465",
+      "story_id": "50503465",
+      "rank": 8,
+      "title": "My favourite modern NES games",
+      "url": "https://jordi.inversethought.com/blog/25-of-my-favourite-modern-nes-games/",
+      "points": 51,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50503465"
+    },
+    {
+      "id": "hn-50482222",
+      "story_id": "50482222",
+      "rank": 9,
+      "title": "The Evolving Story of How Chemistry Became Biology",
+      "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/",
+      "points": 39,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50482222"
+    },
+    {
+      "id": "hn-50452037",
+      "story_id": "50452037",
+      "rank": 10,
+      "title": "Open-Source HF Communications for Remote Communities and Experimenters",
+      "url": "https://www.ardc.net/rhizomaticas-hermes-and-mercury-expand-open-source-hf-communications-for-remote-communities-while-appealing-to-experimenters/",
+      "points": 7,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50452037"
+    },
+    {
+      "id": "hn-50504277",
+      "story_id": "50504277",
+      "rank": 11,
+      "title": "Disk encryption on NetBSD – achieving secrecy",
+      "url": "https://netbsd.org/~nia/disk-encrypt/",
+      "points": 8,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50504277"
+    },
+    {
+      "id": "hn-50499038",
+      "story_id": "50499038",
+      "rank": 12,
+      "title": "A family tree of software job titles",
+      "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+      "points": 286,
+      "comments": 141,
+      "hn_url": "https://news.ycombinator.com/item?id=50499038"
+    },
+    {
+      "id": "hn-50496976",
+      "story_id": "50496976",
+      "rank": 13,
+      "title": "KDE: The documentary [video]",
+      "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+      "points": 449,
+      "comments": 99,
+      "hn_url": "https://news.ycombinator.com/item?id=50496976"
+    },
+    {
+      "id": "hn-50503255",
+      "story_id": "50503255",
+      "rank": 14,
+      "title": "We're Asking an Appeals Court to Require a Warrant for ALPR Searches",
+      "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
+      "points": 208,
+      "comments": 55,
+      "hn_url": "https://news.ycombinator.com/item?id=50503255"
+    },
+    {
+      "id": "hn-50503930",
+      "story_id": "50503930",
+      "rank": 15,
+      "title": "Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP",
+      "url": "https://github.com/Tthanh2k6/turbo-browser-mcp",
+      "points": 29,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50503930"
+    },
+    {
+      "id": "hn-50440709",
+      "story_id": "50440709",
+      "rank": 16,
+      "title": "Why get an expensive Pi when I have an old phone?",
+      "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
+      "points": 549,
+      "comments": 298,
+      "hn_url": "https://news.ycombinator.com/item?id=50440709"
+    },
+    {
+      "id": "hn-50483431",
+      "story_id": "50483431",
+      "rank": 17,
+      "title": "500 Lines or Less A 3D Modeller",
+      "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
+      "points": 47,
+      "comments": 8,
+      "hn_url": "https://news.ycombinator.com/item?id=50483431"
+    },
+    {
+      "id": "hn-50497892",
+      "story_id": "50497892",
+      "rank": 18,
+      "title": "PyPI's redesigned project pages with clearer security signals are now live",
+      "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+      "points": 234,
+      "comments": 99,
+      "hn_url": "https://news.ycombinator.com/item?id=50497892"
+    },
+    {
+      "id": "hn-50486880",
+      "story_id": "50486880",
+      "rank": 19,
+      "title": "One Man's Quest to Create the Perfect Whiskey Glass",
+      "url": "https://www.nytimes.com/2026/11/13/dining/drinks/kurt-josef-zalto-whiskey-glass.html",
+      "points": 26,
+      "comments": 11,
+      "hn_url": "https://news.ycombinator.com/item?id=50486880"
+    },
+    {
+      "id": "hn-50497589",
+      "story_id": "50497589",
+      "rank": 20,
+      "title": "Show HN: DeepSeek V3 in ~200 lines of pure Jax",
+      "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+      "points": 226,
+      "comments": 21,
+      "hn_url": "https://news.ycombinator.com/item?id=50497589"
+    },
+    {
+      "id": "hn-50496051",
+      "story_id": "50496051",
+      "rank": 21,
+      "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
+      "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+      "points": 234,
+      "comments": 100,
+      "hn_url": "https://news.ycombinator.com/item?id=50496051"
+    },
+    {
+      "id": "hn-50455732",
+      "story_id": "50455732",
+      "rank": 22,
+      "title": "Oxford Molecular Motors",
+      "url": "https://www.physics.ox.ac.uk/research/group/oxford-molecular-motors/research/bacterial-flagellar-motor",
+      "points": 43,
+      "comments": 9,
+      "hn_url": "https://news.ycombinator.com/item?id=50455732"
+    },
+    {
+      "id": "hn-50496811",
+      "story_id": "50496811",
+      "rank": 23,
+      "title": "Advancing science and engineering with Antigravity's /teamwork",
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+      "points": 193,
+      "comments": 41,
+      "hn_url": "https://news.ycombinator.com/item?id=50496811"
+    },
+    {
+      "id": "hn-50475692",
+      "story_id": "50475692",
+      "rank": 24,
+      "title": "Astro Spiral: Greatest Car Stunt Was Also First Computer-Modeled Stunt",
+      "url": "https://boldentrance.com/astro-spiral-the-greatest-car-stunt/",
+      "points": 28,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50475692"
+    },
+    {
+      "id": "hn-50441444",
+      "story_id": "50441444",
+      "rank": 25,
+      "title": "Generative AI uses more energy on non-English text",
+      "url": "https://news.umich.edu/generative-ai-uses-more-energy-on-non-english-text/",
+      "points": 203,
+      "comments": 105,
+      "hn_url": "https://news.ycombinator.com/item?id=50441444"
+    },
+    {
+      "id": "hn-50504077",
+      "story_id": "50504077",
+      "rank": 26,
+      "title": "Kiri – The Modern Container Runtime",
+      "url": "https://runkiri.com/",
+      "points": 24,
+      "comments": 13,
+      "hn_url": "https://news.ycombinator.com/item?id=50504077"
+    },
+    {
+      "id": "hn-50448895",
+      "story_id": "50448895",
+      "rank": 27,
+      "title": "The Sicilian Citrus Family Tree",
+      "url": "https://www.notesfromtheroad.com/europa/citrus-family-tree.html",
+      "points": 72,
+      "comments": 24,
+      "hn_url": "https://news.ycombinator.com/item?id=50448895"
+    },
+    {
+      "id": "hn-50453901",
+      "story_id": "50453901",
+      "rank": 28,
+      "title": "Seagate's new hybrid drive raises some old questions",
+      "url": "https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/",
+      "points": 93,
+      "comments": 43,
+      "hn_url": "https://news.ycombinator.com/item?id=50453901"
+    },
+    {
+      "id": "hn-50502839",
+      "story_id": "50502839",
+      "rank": 29,
+      "title": "Show HN: A custom font based on the Jamaican flag alphabet",
+      "url": "https://bobbiec.github.io/jamaican-font.html",
+      "points": 31,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50502839"
+    },
+    {
+      "id": "hn-50467278",
+      "story_id": "50467278",
+      "rank": 30,
+      "title": "Testing a trash can Faraday cage",
+      "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
+      "points": 75,
+      "comments": 58,
+      "hn_url": "https://news.ycombinator.com/item?id=50467278"
+    },
+    {
+      "id": "hn-50497132",
+      "story_id": "50497132",
+      "rank": 31,
+      "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
+      "url": "https://gitlab.com/snipedbywifi/terminactory",
+      "points": 155,
+      "comments": 39,
+      "hn_url": "https://news.ycombinator.com/item?id=50497132"
+    },
+    {
+      "id": "hn-50416011",
+      "story_id": "50416011",
+      "rank": 32,
+      "title": "Reverse engineering a vintage diode-transistor logic chip",
+      "url": "https://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
+      "points": 107,
+      "comments": 9,
+      "hn_url": "https://news.ycombinator.com/item?id=50416011"
+    },
+    {
+      "id": "hn-50471874",
+      "story_id": "50471874",
+      "rank": 33,
+      "title": "'Grey Rocking': The Life-Improving Power of Being Really, Really Boring (2021)",
+      "url": "https://www.esquire.com/uk/life/a38473153/grey-rock-technique-being-boring/",
+      "points": 140,
+      "comments": 84,
+      "hn_url": "https://news.ycombinator.com/item?id=50471874"
+    },
+    {
+      "id": "hn-50503588",
+      "story_id": "50503588",
+      "rank": 34,
+      "title": "The Single Router in Southern Arkansas That Ground Air Travel to a Halt",
+      "url": "https://www.wsj.com/business/airlines/the-single-router-in-southern-arkansas-that-ground-air-travel-to-a-halt-eedc326c",
+      "points": 55,
+      "comments": 37,
+      "hn_url": "https://news.ycombinator.com/item?id=50503588"
+    },
+    {
+      "id": "hn-50497416",
+      "story_id": "50497416",
+      "rank": 35,
+      "title": "Demystifying phone unlocking tools: A technical overview",
+      "url": "https://osservatorionessuno.org/blog/2026/05/demystifying-phone-unlocking-tools-a-technical-overview/",
+      "points": 108,
+      "comments": 8,
+      "hn_url": "https://news.ycombinator.com/item?id=50497416"
+    },
+    {
+      "id": "hn-50499723",
+      "story_id": "50499723",
+      "rank": 37,
+      "title": "LinkedIn, Monster take down over 1000 fake job postings after CBC investigation",
+      "url": "https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379",
+      "points": 243,
+      "comments": 139,
+      "hn_url": "https://news.ycombinator.com/item?id=50499723"
+    },
+    {
+      "id": "hn-50496602",
+      "story_id": "50496602",
+      "rank": 38,
+      "title": "Tech companies are trying to shift the concept of privacy again",
+      "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+      "points": 535,
+      "comments": 184,
+      "hn_url": "https://news.ycombinator.com/item?id=50496602"
+    },
+    {
+      "id": "hn-50478632",
+      "story_id": "50478632",
+      "rank": 39,
+      "title": "Let's Write a PostScript Interpreter",
+      "url": "https://beyondloom.com/blog/postscript.html",
+      "points": 123,
+      "comments": 20,
+      "hn_url": "https://news.ycombinator.com/item?id=50478632"
+    },
+    {
+      "id": "hn-50496885",
+      "story_id": "50496885",
+      "rank": 40,
+      "title": "A visual explanation of reinforcement learning",
+      "url": "https://aatishb.com/myriad/how-brains-learn/",
+      "points": 137,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50496885"
+    },
+    {
+      "id": "hn-50503097",
+      "story_id": "50503097",
+      "rank": 41,
+      "title": "Show HN: Umbrella – macOS app to capture audio from any app",
+      "url": "https://umbrella.pixelegg.me/",
+      "points": 11,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50503097"
+    },
+    {
+      "id": "hn-50497009",
+      "story_id": "50497009",
+      "rank": 42,
+      "title": "Italy fines Meta $887M over Android users' data access",
+      "url": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
+      "points": 364,
+      "comments": 258,
+      "hn_url": "https://news.ycombinator.com/item?id=50497009"
+    },
+    {
+      "id": "hn-50497137",
+      "story_id": "50497137",
+      "rank": 43,
+      "title": "Show HN: Fursoy – Out-of-order RV64IMAFDV core in SystemVerilog (Linux 6.6)",
+      "url": "https://github.com/FURSOY/fursoy-cpu",
+      "points": 77,
+      "comments": 26,
+      "hn_url": "https://news.ycombinator.com/item?id=50497137"
+    },
+    {
+      "id": "hn-50503241",
+      "story_id": "50503241",
+      "rank": 44,
+      "title": "What a task costs on Opus 5.5",
+      "url": "https://claude.dev/blog/what-a-task-costs-on-opus-5-5/",
+      "points": 6,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50503241"
+    },
+    {
+      "id": "hn-50504251",
+      "story_id": "50504251",
+      "rank": 45,
+      "title": "B.C. arbitrator imposes first union contract for Amazon workers in North America",
+      "url": "https://www.cbc.ca/news/canada/british-columbia/amazon-union-contract-b-c-first-north-america-9.7421834",
+      "points": 19,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50504251"
+    },
+    {
+      "id": "hn-50497147",
+      "story_id": "50497147",
+      "rank": 46,
+      "title": "Show HN: Agweb – a browser for agents that stays out of your way",
+      "url": "https://github.com/paul-nameless/agweb",
+      "points": 96,
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=50497147"
+    },
+    {
+      "id": "hn-50467987",
+      "story_id": "50467987",
+      "rank": 47,
+      "title": "C3 0.8.6:Library fetching,30% smaller safe-mode binaries,and stricter type rules",
+      "url": "https://c3-lang.org/blog/c3_0_8_6_fetching_libraries/",
+      "points": 47,
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=50467987"
+    },
+    {
+      "id": "hn-50444891",
+      "story_id": "50444891",
+      "rank": 48,
+      "title": "Write your own kernel optimiser",
+      "url": "https://blog.csongor.co.uk/cachet-grids-and-tiles/",
+      "points": 30,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50444891"
+    },
+    {
+      "id": "hn-50493904",
+      "story_id": "50493904",
+      "rank": 50,
+      "title": "Monkey Island: all 13 versions side by side",
+      "url": "https://monkeyisland.pages.dev/",
+      "points": 476,
+      "comments": 152,
+      "hn_url": "https://news.ycombinator.com/item?id=50493904"
+    },
+    {
+      "id": "hn-50498073",
+      "story_id": "50498073",
+      "rank": 51,
+      "title": "How to Create Your Own Decentralized Messenger Protocol",
+      "url": "https://karboosx.net/post/5j7jdDM3/how-to-create-your-own-decentralized-messenger-protocol",
+      "points": 67,
+      "comments": 15,
+      "hn_url": "https://news.ycombinator.com/item?id=50498073"
+    },
+    {
+      "id": "hn-50498295",
+      "story_id": "50498295",
+      "rank": 52,
+      "title": "Creating a self booting ZIP archive",
+      "url": "https://goliath32.com/blog/ziphead.html",
+      "points": 62,
+      "comments": 9,
+      "hn_url": "https://news.ycombinator.com/item?id=50498295"
+    },
+    {
+      "id": "hn-50499945",
+      "story_id": "50499945",
+      "rank": 53,
+      "title": "Dartmouth (Guarini) will not admit math PhD cohort this year",
+      "url": "https://www.thedartmouth.com/article/2026/11/gandhi-fagell-guarini-will-not-admit-math-ph-d-cohort-this-year",
+      "points": 93,
+      "comments": 37,
+      "hn_url": "https://news.ycombinator.com/item?id=50499945"
+    },
+    {
+      "id": "hn-50502659",
+      "story_id": "50502659",
+      "rank": 54,
+      "title": "The NBA player who got hooked on sports betting",
+      "url": "https://www.newyorker.com/magazine/2026/11/16/the-nba-player-who-got-hooked-on-sports-betting",
+      "points": 10,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50502659"
+    },
+    {
+      "id": "hn-50496870",
+      "story_id": "50496870",
+      "rank": 55,
+      "title": "Probabilistic Data Structures in Go",
+      "url": "https://antonz.org/probabilistic-data-structures/",
+      "points": 44,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50496870"
+    },
+    {
+      "id": "hn-50497155",
+      "story_id": "50497155",
+      "rank": 56,
+      "title": "Serving GLM-5.3 at 607.8 tok/s across two Nvidia DGX stations with vLLM",
+      "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+      "points": 136,
+      "comments": 65,
+      "hn_url": "https://news.ycombinator.com/item?id=50497155"
+    },
+    {
+      "id": "hn-50499083",
+      "story_id": "50499083",
+      "rank": 57,
+      "title": "US IRS free online tax filing open source repo (2025)",
+      "url": "https://github.com/IRS-Public/direct-file",
+      "points": 163,
+      "comments": 98,
+      "hn_url": "https://news.ycombinator.com/item?id=50499083"
+    },
+    {
+      "id": "hn-50444761",
+      "story_id": "50444761",
+      "rank": 59,
+      "title": "Show HN: I have trained 15 blood glucose forecasting models on my own data",
+      "url": "https://github.com/0xdeadf1sh/T1DMAI",
+      "points": 109,
+      "comments": 56,
+      "hn_url": "https://news.ycombinator.com/item?id=50444761"
+    },
+    {
+      "id": "hn-50464467",
+      "story_id": "50464467",
+      "rank": 60,
+      "title": "Possible Futures",
+      "url": "https://borretti.me/article/possible-futures",
+      "points": 77,
+      "comments": 82,
+      "hn_url": "https://news.ycombinator.com/item?id=50464467"
+    },
+    {
+      "id": "hn-50497900",
+      "story_id": "50497900",
+      "rank": 61,
+      "title": "Formalizing US Tax Code (Using Lean)",
+      "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
+      "points": 144,
+      "comments": 95,
+      "hn_url": "https://news.ycombinator.com/item?id=50497900"
+    },
+    {
+      "id": "hn-50502957",
+      "story_id": "50502957",
+      "rank": 62,
+      "title": "Nozzle: A streaming library that emits when possible and buffers where necessary",
+      "url": "https://github.com/Robert-Cunningham/nozzle",
+      "points": 3,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50502957"
+    },
+    {
+      "id": "hn-50502990",
+      "story_id": "50502990",
+      "rank": 63,
+      "title": "US aviation shutdown blamed on L3 Harris installed router",
+      "url": "https://www.reuters.com/business/aerospace-defense/us-aviation-shutdown-blamed-l3-harris-installed-router-2026-11-14/",
+      "points": 21,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50502990"
+    },
+    {
+      "id": "hn-50491423",
+      "story_id": "50491423",
+      "rank": 65,
+      "title": "Terminal borders that don't cost a cell",
+      "url": "https://www.joshka.net/cell-borders/",
+      "points": 411,
+      "comments": 201,
+      "hn_url": "https://news.ycombinator.com/item?id=50491423"
+    },
+    {
+      "id": "hn-50484658",
+      "story_id": "50484658",
+      "rank": 66,
+      "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+      "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+      "points": 468,
+      "comments": 694,
+      "hn_url": "https://news.ycombinator.com/item?id=50484658"
+    },
+    {
+      "id": "hn-50497656",
+      "story_id": "50497656",
+      "rank": 67,
+      "title": "Too Many Stadiums with Roofs",
+      "url": "https://sharptext.net/2026/too-many-stadiums-with-roofs/",
+      "points": 20,
+      "comments": 9,
+      "hn_url": "https://news.ycombinator.com/item?id=50497656"
+    },
+    {
+      "id": "hn-50484007",
+      "story_id": "50484007",
+      "rank": 68,
+      "title": "Lonewolf 0.3 – A standalone XMPP server written in Rust",
+      "url": "https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0",
+      "points": 158,
+      "comments": 54,
+      "hn_url": "https://news.ycombinator.com/item?id=50484007"
+    },
+    {
+      "id": "hn-50496590",
+      "story_id": "50496590",
+      "rank": 72,
+      "title": "Open-source AI without Jensen",
+      "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+      "points": 23,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50496590"
+    },
+    {
+      "id": "hn-50466069",
+      "story_id": "50466069",
+      "rank": 74,
+      "title": "The curious case of the north-east arrow",
+      "url": "https://arsh.zip/posts/north-east-arrow/",
+      "points": 44,
+      "comments": 14,
+      "hn_url": "https://news.ycombinator.com/item?id=50466069"
+    },
+    {
+      "id": "hn-50488470",
+      "story_id": "50488470",
+      "rank": 75,
+      "title": "Found: A protein that drives ageing without unleashing inflammation",
+      "url": "https://www.nature.com/articles/d41586-026-03638-3",
+      "points": 253,
+      "comments": 91,
+      "hn_url": "https://news.ycombinator.com/item?id=50488470"
+    },
+    {
+      "id": "hn-50465926",
+      "story_id": "50465926",
+      "rank": 76,
+      "title": "Bilingualism and Denaskuleco",
+      "url": "https://pgadey.ca/notes/bilingualism-and-denaskuleco/",
+      "points": 21,
+      "comments": 21,
+      "hn_url": "https://news.ycombinator.com/item?id=50465926"
+    },
+    {
+      "id": "hn-50503269",
+      "story_id": "50503269",
+      "rank": 77,
+      "title": "Game Repacker DODI Retires Ahead of Wedding, Hands Site to New Team",
+      "url": "https://torrentfreak.com/game-repacker-dodi-retires-ahead-of-wedding-hands-site-to-new-team/",
+      "points": 11,
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=50503269"
+    },
+    {
+      "id": "hn-50487605",
+      "story_id": "50487605",
+      "rank": 78,
+      "title": "Ctrl+C, Ctrl+v, Ctrl+cve: Bypassing Android's Clipboard Read Security Measures",
+      "url": "https://toninoble.com/post/ctrlc-ctrlv-ctrlcve",
+      "points": 101,
+      "comments": 57,
+      "hn_url": "https://news.ycombinator.com/item?id=50487605"
+    },
+    {
+      "id": "hn-50491545",
+      "story_id": "50491545",
+      "rank": 79,
+      "title": "Show HN: Live map of U.S. flights during tonight's FAA nationwide ground stop",
+      "url": "https://grounds.top/",
+      "points": 213,
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=50491545"
+    },
+    {
+      "id": "hn-50491830",
+      "story_id": "50491830",
+      "rank": 80,
+      "title": "What happened to 3Com?",
+      "url": "https://dfarq.homeip.net/what-happened-to-3com/",
+      "points": 199,
+      "comments": 127,
+      "hn_url": "https://news.ycombinator.com/item?id=50491830"
+    },
+    {
+      "id": "hn-50454791",
+      "story_id": "50454791",
+      "rank": 81,
+      "title": "Service Crew Discovers Rare Yellow Burbot in Oswego Harbor",
+      "url": "https://www.fws.gov/story/2026-11/service-crew-discovers-rare-yellow-burbot-oswego-harbor",
+      "points": 30,
+      "comments": 20,
+      "hn_url": "https://news.ycombinator.com/item?id=50454791"
+    },
+    {
+      "id": "hn-50498945",
+      "story_id": "50498945",
+      "rank": 82,
+      "title": "Will we put data centers in space?",
+      "url": "https://www.forethought.org/research/will-we-really-put-data-centers-in-space",
+      "points": 62,
+      "comments": 187,
+      "hn_url": "https://news.ycombinator.com/item?id=50498945"
+    },
+    {
+      "id": "hn-50496159",
+      "story_id": "50496159",
+      "rank": 83,
+      "title": "Light Pollution Map",
+      "url": "https://lightpollutionmap.app/",
+      "points": 35,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50496159"
+    },
+    {
+      "id": "hn-50483959",
+      "story_id": "50483959",
+      "rank": 84,
+      "title": "CERN Built the Large Hadron Collider's Next-Gen Magnets",
+      "url": "https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets",
+      "points": 96,
+      "comments": 11,
+      "hn_url": "https://news.ycombinator.com/item?id=50483959"
+    },
+    {
+      "id": "hn-50503577",
+      "story_id": "50503577",
+      "rank": 86,
+      "title": "Italy fines Meta $887M for accessing Android users' photos and videos",
+      "url": "https://www.theguardian.com/technology/2026/nov/15/italy-fines-meta-887m-for-accessing-android-users-photos-and-videos",
+      "points": 7,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50503577"
+    },
+    {
+      "id": "hn-50492860",
+      "story_id": "50492860",
+      "rank": 88,
+      "title": "Elephants found to be increasingly isolated leading to fractured social networks",
+      "url": "https://today.ucsd.edu/story/elephants-found-to-be-increasingly-isolated-leading-to-fractured-social-networks",
+      "points": 191,
+      "comments": 47,
+      "hn_url": "https://news.ycombinator.com/item?id=50492860"
+    },
+    {
+      "id": "hn-50501809",
+      "story_id": "50501809",
+      "rank": 89,
+      "title": "Brave removes tracking metadata from Instagram and Facebook photos",
+      "url": "https://brave.com/privacy-updates/40-remove-tracking-metadata/",
+      "points": 6,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50501809"
+    },
+    {
+      "id": "hn-50488325",
+      "story_id": "50488325",
+      "rank": 90,
+      "title": "FM-1 Workbench",
+      "url": "https://open.m-vave.com/fm1-workbench",
+      "points": 269,
+      "comments": 177,
+      "hn_url": "https://news.ycombinator.com/item?id=50488325"
+    }
+  ],
+  "papers": [
+    {
+      "id": "arxiv-2611.16590",
+      "cat": "cs.AI",
+      "title": "AstroMemBench: A Benchmark for Memory Systems in Embodied Spacecraft Agents",
+      "abstract": "Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical operations, environmental uncertainty, complex physical interactions, power and computational constraints, and safety and reliability requirements. We introduce AstroMemBench and a Scenario-Challenge-Capability design method that maps these requirements to executable memory tests. The benchmark covers 16 memory subchallenges through 140 templates and 2240 instances across nine tasks in planetary surface operations, on-orbit servicing, and deep-space exploration. A deterministic environment scores actions for task completion, state changes, safety, and resource use. Ablations under nine conditions show that the benchmark is sensitive to how accurately agents recover and use historical information and to differences in memory-system design. Main experiments compare six configurations. Mem0, Chain-of-Memory, LightMem, and retrieval-augmented generation (RAG) improve same-session mean scores over native Pi Agent, with no clear advantage of the three memory systems over RAG. After a session restart, Mem0 outperforms RAG by 12.25 points. Benefits favor instruction retention and result reuse over ongoing state tracking and energy reservation. AstroMemBench supports the design, development, and selection of memory systems for embodied spacecraft agents. AstroMemBench 1.0 and its evaluation code are publicly available: this https URL.",
+      "url": "http://arxiv.org/abs/2611.16590v1"
+    },
+    {
+      "id": "arxiv-2611.16485",
+      "cat": "cs.AI",
+      "title": "Contain, Conform, Compare (Extended Version): A Red-Teamed Evaluation Kit for Small Coding Agents and the Full Record of Its Experiments",
+      "abstract": "A hosted score in the Gemma 4 Developer Agent competition is one noisy number, so development needs a local evaluator that is fast, safe for agent-written code, and matching the hosted scorer's prompts. drydock-eval evaluates a small coding agent (Gemma 4 E4B) at about 250 runs per hour on one RTX 5090. Contain runs each job in a fresh container without network and passed 200 scripted escape tests; conform provides eight checks that compare a local stack's requests with the scorer's configuration, down to rendered tokens; compare provides paired statistics that respect repository clusters. AI agents built and attacked the kit; a human owner approved machine use and release. This extended version repeats the short paper and adds the full record of the experiments made with and around the kit: 9,660 rows of agent runs, 2,494 grading controls and 72 serving measurements, all released. On four L4 GPUs the 31B model decodes 38.1 tokens per second in one stream and E4B 105.8. Six configurations of a 31B agent solved between 37 and 44 of 70 development tasks, and no pairwise difference was detected. A pre-registered five-arm experiment (231 tasks, 4,620 jobs) measured four prompt divergences: no E4B solve-rate change was detected (largest estimate -2.1 points, 95% interval -4.4 to +0.4). Three changes of the E4B agent led their screens by +1.0 to +6.2 points; each was then tested once on new tasks under a frozen pass rule, and none was confirmed (gains -0.35, -0.39 and +4.10 points). The unchanged baseline, run again on the same 128 tasks, moved by 1.17 points, and 65% of these tasks were solved in none of eight runs. Prompts and agent bundles are withheld; every run-level result is public.",
+      "url": "http://arxiv.org/abs/2611.16485v1"
+    },
+    {
+      "id": "arxiv-2611.15515",
+      "cat": "cs.AI",
+      "title": "Incentive-Responsive Agents: A Principal-Agent Framework, Metric Suite, and Runtime Architecture for Long-Lived Personal AI Agents",
+      "abstract": "Personal AI agents now persist: they hold accounts, mailboxes, long-term memory, and open-ended task streams, yet the dominant way to improve them remains capability-side: prompt engineering, larger models, longer thinking, and retrieval. We argue that long-lived agents are missing an incentive layer. We formalize an incentive not as text in a prompt but as a runtime contract over the agent's operating point (model tier, test-time compute, memory budget, tool authority, task priority, verification, and compensation) that the agent's policy must causally consume. We develop a principal-agent model with hidden effort, a contractible operating point, and costly verification. We derive (i) a non-consumption invariance principle separating genuine incentives from prompt-level persuasion, (ii) a persistence-as-discount theorem making identity continuity a precondition for sustained effort, (iii) an incentive-capability exchange-rate frontier yielding a per-task routing rule, and (iv) a Goodhart bound for multi-channel verification, plus a three-channel decomposition of mechanism gains (allocation, verification, continuation). A 240-run real-LLM experiment with two models and 60 verifiable tasks shows that prompt-level incentive framing has no detectable effect (p = 0.62), whereas runtime allocation raises success on the hardest task family from 0.60 to 1.00 (p = 0.008) at 4.8x price-weighted cost; the exchange-rate theorem predicts the break-even baseline at 0.21. A 20-seed, 3,000-task simulation shows resource ROI rising from 7.09 to 16.67 and gaming falling from 0.333 to 0.115. Code, simulator, and all results are released; live deployment remains future work.",
+      "url": "http://arxiv.org/abs/2611.15515v1"
+    },
+    {
+      "id": "arxiv-2611.15225",
+      "cat": "cs.AI",
+      "title": "Can MLLMs Reason over Surround-View Driving Videos? A Multi-View Autonomous Driving QA Benchmark",
+      "abstract": "Surround-view video understanding in autonomous driving is a crucial capability for Multimodal Large Language Models (MLLMs) to achieve reliable driving reasoning. Real-world driving often requires information beyond the front-view camera. Existing MLLMs primarily focus on front-view information, while their spatio-temporal understanding and reasoning abilities remain unknown. To address this gap, we propose MVDriveBench, a high-information-density video QA benchmark for autonomous driving, characterized by synchronized surround-view inputs, spatio-temporal understanding, and reasoning-chain-oriented evaluation. We design 12 categories of QA tasks that cover the complete reasoning pipeline from low-level visual perception to high-level driving decision-making, enabling a systematic evaluation of MLLMs surround-view spatio-temporal understanding and reasoning capabilities in complex driving environments. We conduct a comprehensive evaluation of 23 open-source, closed-source, and expert MLLMs on MVDriveBench. The results show that current MLLMs still exhibit insufficient surround-view spatio-temporal reasoning ability. Meanwhile, closed-loop evaluations of specialist models in AlpaSim reveal a correlation between surround-view spatio-temporal reasoning capabilities and closed-loop driving performance, highlighting the importance of comprehensive multi-view understanding for reliable vehicle control.",
+      "url": "http://arxiv.org/abs/2611.15225v1"
+    },
+    {
+      "id": "arxiv-2611.13183",
+      "cat": "cs.SE",
+      "title": "AgentScript-Eval: Benchmarking LLMs and Agents for Code Generation in an Enterprise DSL",
+      "abstract": "Domain-specific languages (DSLs) are widely used in enterprise software, giving a compact interface to complex tasks, from data access to infrastructure automation. Platforms increasingly extend them to agents, where a developer declares the topics, permitted actions, and guardrails of an agent rather than writing general-purpose code. Large language models (LLMs) write general-purpose code well, but that ability has been measured almost entirely on languages abundant in public pretraining data, and enterprise DSLs are neither abundant nor public. We introduce AgentScript-Eval, an execution-graded benchmark of 100 real tasks for AgentScript, the declarative DSL that Salesforce uses in Agentforce to build conversational agents. Tasks span authoring an agent from a specification, debugging a broken definition, and optimizing a working one. Evaluating five models zero-shot, we find that the regime is hard: the best model reaches only 25.0% pass@3, and every model scores 0% on authoring from scratch. We further find that model scale and price are weak predictors of success -- a 31B open-weight model attains the highest compilation rate of any model tested (48.0%) and matches the strongest frontier model on partial-credit accuracy at the lowest token cost. Adding an agentic compile-and-edit loop is the single largest lever, roughly doubling partial-credit accuracy. Beyond that gain, the wording of domain guidance matters more than its packaging. The same skill pack scores 28% as plain documentation but only 14% as a live plugin. Rewriting one skill inside that plugin then raises it to 37%, our best result, with catalog and tooling untouched. Larger models did not reliably outperform smaller ones; what mattered was the harness surrounding the model and the guidance supplied to it.",
+      "url": "http://arxiv.org/abs/2611.13183v1"
+    },
+    {
+      "id": "arxiv-2611.15006",
+      "cat": "cs.SE/cs.MA",
+      "title": "EvoX: Rethinking the Agent Harness as a Runtime Policy",
+      "abstract": "Large language model (LLM) agents increasingly interact with tools and environments, yet plausible model decisions do not always translate into successful execution due to tool-call mismatches, interrupted workflows, and unsupported completion claims. We present EvoX, a Rust-based, multi-model agent runtime guided by The Second Policy, which views the harness as an Operational Policy complementing the foundation model's Semantic Policy. EvoX combines model-facing guidance with deterministic runtime control through three complementary mechanisms: Action Realization, Execution Continuity, and Outcome Grounding. To evaluate harnesses without suppressing their native behaviors, we introduce Contrast, a controlled and auditable framework integrating explicit fairness constraints, provider-bound request verification, and evidence-based adjudication. Across five benchmarks, six foundation models, and six agent harnesses, EvoX achieves the highest numerical success rate of 56.2% over 691 common task--model pairs, exceeding the average of the other five harnesses by approximately 3.0 percentage points. Its larger advantages on GLM-5.3 (+10.7 points) and Kimi K3 (+7.9 points) highlight the model-dependent effectiveness of harness design and the potential for cross-provider adaptability. Achieved without memory, evolution, or extensions, these results establish EvoX as a competitive multi-model agent runtime and underscore the importance of harness-level operational control in realizing foundation-model capabilities.",
+      "url": "https://arxiv.org/abs/2611.15006v1",
+      "published": "2026-11-11"
+    }
+  ],
+  "topic": [
+    {
+      "id": "kg-arxiv-2611.17235v1",
+      "title": "Al-Ghasali: A Computational Framework for Simulating Islamic Jurisprudential Rulings via Finite State Automata and Large Language Models",
+      "abstract": "This paper presents Al Ghasali, a computational framework designed to formalize and simulate Islamic jurisprudential (Fiqh) rulings. Building upon recent set theoretic formalizations of al sabr wa al Taqsim that extract minimal operational rules as simple Horn clause logical programs, this work proves that the semantics of closed Fiqh chapters collapse completely to deterministic Finite State Automata (FSA). We establish a formal computational hierarchy, demonstrating that restricting formalization to finite propositional Horn theories guarantees decidability and constant time (O(1)) verdict extraction after offline compilation. The framework formally proves that hierarchical compositions of sub-chapter FSAs preserve this O(1) complexity, and that temporal juristic requirements, such as Tartib (order), are deterministically flattened into static ontological states, preserving the memoryless property of the automaton. To generate human-readable juristic summaries, Al Ghasali incorporates Large Language Models (LLMs) via an architecture where the deterministic FSA strictly controls the probabilistic LLM. Crucially, the paper formulates sufficient design safety conditions for this FSA LLM integration, ensuring strict adherence to the epistemological boundaries of Usul al Fiqh. To neutralize the risk of LLM hallucination, the system employs a Grammar Guided Constrained Decoding mechanism. We formally define the mapping function that dynamically constructs unambiguous right linear grammars from the FSA execution history. The paper mathematically proves that this architecture, augmented by a Bounded Neutral Lexicon and Valence Locking, guarantees the absolute absence of Decisional Hallucination, Juristic Factual Hallucination, and Semantic Inversion reducing the LLM to a pure linguistic transformer of deterministic juristic facts",
+      "url": "https://arxiv.org/abs/2611.17235v1",
+      "published": "2026-11-12",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-hn-50454823",
+      "story_id": "50454823",
+      "title": "The Computer Graphics Book of Knowledge (1999)",
+      "url": "https://www.cs.cmu.edu/~ph/nyit/masson/history.htm",
+      "hn_url": "https://news.ycombinator.com/item?id=50454823",
+      "points": 81,
+      "comments": 19,
+      "created": "2026-11-11",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50499448",
+      "story_id": "50499448",
+      "title": "The Ontological Divergence of Artificial Intelligence",
+      "url": "https://medium.com/@smoking2man/the-ontological-divergence-of-artificial-intelligence-from-personal-contextualization-to-the-cb7f96eef3c3",
+      "hn_url": "https://news.ycombinator.com/item?id=50499448",
+      "points": 1,
+      "comments": 0,
+      "created": "2026-11-14",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50497796",
+      "story_id": "50497796",
+      "title": "Ontology Development 101 (2014)",
+      "url": "https://protegewiki.stanford.edu/wiki/Ontology101",
+      "hn_url": "https://news.ycombinator.com/item?id=50497796",
+      "points": 1,
+      "comments": 0,
+      "created": "2026-11-14",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50469605",
+      "story_id": "50469605",
+      "title": "Show HN: Armin – Modern Anki alternative with prerrequisite graphs",
+      "url": "https://armincards.app/",
+      "hn_url": "https://news.ycombinator.com/item?id=50469605",
+      "points": 1,
+      "comments": 0,
+      "created": "2026-11-12",
+      "kind": "story"
+    }
+  ]
+}
