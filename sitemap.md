@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [SpaceX catches Starship to close Flight 15](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-15.md) — 2026-11-15 · 8 min
+- [Universal XSS in uBlock Origin](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-16.md) — 2026-11-16 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### November 2026
 
+- [Universal XSS in uBlock Origin](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-16.md) — 2026-11-16 · 9 min
 - [SpaceX catches Starship to close Flight 15](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-15.md) — 2026-11-15 · 8 min
 - [ggml hits 1.0](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-14.md) — 2026-11-14 · 9 min
 - [Jensen Huang resigns as Nvidia CEO](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-13.md) — 2026-11-13 · 8 min
