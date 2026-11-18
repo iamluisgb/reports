@@ -1,7 +1,20 @@
 {
-  "generated": "2026-11-17T06:41:48+00:00",
-  "count": 204,
+  "generated": "2026-11-18T06:39:32+00:00",
+  "count": 205,
   "reports": [
+    {
+      "file": "ai-news-2026-11-18.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-11-18",
+      "summary": "GPT-6.2 Astra and Sol ship · Java4Shell RCE in OpenJDK · ONNX Runtime vanishes from GitHub · classified US comms network down",
+      "readingTime": 9,
+      "tags": [
+        "infrastructure",
+        "coding"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-11-17.html",
       "type": "daily",
@@ -2238,6 +2251,7 @@
       "summary": "Claude Corps · White House AI Executive Order · LinkedIn Backdoor · LLM Agent RL Breakthroughs",
       "readingTime": 5,
       "tags": [
+        "models",
         "research",
         "security",
         "regulation"

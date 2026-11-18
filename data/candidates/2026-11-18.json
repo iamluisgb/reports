@@ -1,0 +1,941 @@
+{
+  "day": "2026-11-18",
+  "weekday": "Wednesday",
+  "collected_at": "2026-11-18T06:33:25+00:00",
+  "stories": [
+    {
+      "id": "hn-50538240",
+      "story_id": "50538240",
+      "rank": 1,
+      "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+      "url": "https://calif.io/java4shell/",
+      "points": 751,
+      "comments": 200,
+      "hn_url": "https://news.ycombinator.com/item?id=50538240"
+    },
+    {
+      "id": "hn-50540437",
+      "story_id": "50540437",
+      "rank": 2,
+      "title": "ID.me terms required for IRS sign-in",
+      "url": "https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in",
+      "points": 278,
+      "comments": 115,
+      "hn_url": "https://news.ycombinator.com/item?id=50540437"
+    },
+    {
+      "id": "hn-50535230",
+      "story_id": "50535230",
+      "rank": 3,
+      "title": "GPT‑6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "points": 1200,
+      "comments": 751,
+      "hn_url": "https://news.ycombinator.com/item?id=50535230"
+    },
+    {
+      "id": "hn-50540178",
+      "story_id": "50540178",
+      "rank": 4,
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "url": "https://revscope.co/blog/search-seo-geo-2026/",
+      "points": 276,
+      "comments": 200,
+      "hn_url": "https://news.ycombinator.com/item?id=50540178"
+    },
+    {
+      "id": "hn-50538994",
+      "story_id": "50538994",
+      "rank": 5,
+      "title": "Quad9's withdrawal from France: A canary in the coal mine",
+      "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
+      "points": 444,
+      "comments": 139,
+      "hn_url": "https://news.ycombinator.com/item?id=50538994"
+    },
+    {
+      "id": "hn-50542135",
+      "story_id": "50542135",
+      "rank": 6,
+      "title": "Interviewed at a YC startup, found out they used my LinkedIn without permission",
+      "url": "https://reddit.com/r/recruitinghell/comments/1xyr6ml/interviewed_at_a_yc_startup_spent_30_hours/",
+      "points": 130,
+      "comments": 12,
+      "hn_url": "https://news.ycombinator.com/item?id=50542135"
+    },
+    {
+      "id": "hn-50539610",
+      "story_id": "50539610",
+      "rank": 7,
+      "title": "Microsoft's ONNX Runtime has disappeared from GitHub",
+      "url": "https://github.com/microsoft/onnxruntime",
+      "points": 247,
+      "comments": 59,
+      "hn_url": "https://news.ycombinator.com/item?id=50539610"
+    },
+    {
+      "id": "hn-50534631",
+      "story_id": "50534631",
+      "rank": 8,
+      "title": "Nvidia stopped disclosing Singapore sales as revenues hit $104B",
+      "url": "https://www.ft.com/content/dbde7a30-548c-4f9d-a4be-7898a0c24dcf",
+      "points": 482,
+      "comments": 221,
+      "hn_url": "https://news.ycombinator.com/item?id=50534631"
+    },
+    {
+      "id": "hn-50539747",
+      "story_id": "50539747",
+      "rank": 9,
+      "title": "Archive Team is archiving the Apple Support Community (closes November 20, 2026)",
+      "url": "https://wiki.archiveteam.org/index.php/Apple_Discussions",
+      "points": 155,
+      "comments": 53,
+      "hn_url": "https://news.ycombinator.com/item?id=50539747"
+    },
+    {
+      "id": "hn-50541790",
+      "story_id": "50541790",
+      "rank": 10,
+      "title": "Why is Gemini 4 Carbon taking so long?",
+      "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
+      "points": 33,
+      "comments": 13,
+      "hn_url": "https://news.ycombinator.com/item?id=50541790"
+    },
+    {
+      "id": "hn-50542264",
+      "story_id": "50542264",
+      "rank": 11,
+      "title": "Why Fibonacci?",
+      "url": "https://www.evilgeniuslabs.org/why-fibonacci",
+      "points": 7,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50542264"
+    },
+    {
+      "id": "hn-50532849",
+      "story_id": "50532849",
+      "rank": 13,
+      "title": "Highly classified US national security communications network goes down",
+      "url": "https://www.cnn.com/2026/11/17/politics/highly-classified-national-security-communications-network-goes-down",
+      "points": 544,
+      "comments": 627,
+      "hn_url": "https://news.ycombinator.com/item?id=50532849"
+    },
+    {
+      "id": "hn-50537156",
+      "story_id": "50537156",
+      "rank": 14,
+      "title": "jQuery 4.1.0",
+      "url": "https://github.com/jquery/jquery/releases/tag/4.1.0",
+      "points": 298,
+      "comments": 158,
+      "hn_url": "https://news.ycombinator.com/item?id=50537156"
+    },
+    {
+      "id": "hn-50536813",
+      "story_id": "50536813",
+      "rank": 15,
+      "title": "350 years ago, Ole Rømer discovered that light has a finite speed",
+      "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
+      "points": 302,
+      "comments": 88,
+      "hn_url": "https://news.ycombinator.com/item?id=50536813"
+    },
+    {
+      "id": "hn-50535885",
+      "story_id": "50535885",
+      "rank": 16,
+      "title": "MAI Code 2 and Code 2 Flash",
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+      "points": 328,
+      "comments": 145,
+      "hn_url": "https://news.ycombinator.com/item?id=50535885"
+    },
+    {
+      "id": "hn-50535992",
+      "story_id": "50535992",
+      "rank": 17,
+      "title": "Phrack 73 Released",
+      "url": "https://phrack.org/issues/73/introduction_md",
+      "points": 347,
+      "comments": 49,
+      "hn_url": "https://news.ycombinator.com/item?id=50535992"
+    },
+    {
+      "id": "hn-50538303",
+      "story_id": "50538303",
+      "rank": 18,
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "points": 137,
+      "comments": 185,
+      "hn_url": "https://news.ycombinator.com/item?id=50538303"
+    },
+    {
+      "id": "hn-50541619",
+      "story_id": "50541619",
+      "rank": 19,
+      "title": "Claude was trained on protein sequences at scale",
+      "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
+      "points": 14,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50541619"
+    },
+    {
+      "id": "hn-50540472",
+      "story_id": "50540472",
+      "rank": 20,
+      "title": "Cerebras Disaggregated Inference",
+      "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
+      "points": 62,
+      "comments": 15,
+      "hn_url": "https://news.ycombinator.com/item?id=50540472"
+    },
+    {
+      "id": "hn-50503492",
+      "story_id": "50503492",
+      "rank": 21,
+      "title": "Fun with Constrained Programming",
+      "url": "https://blog.cmpxchg8b.com/2012/09/fun-with-constrained-programming.html",
+      "points": 50,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50503492"
+    },
+    {
+      "id": "hn-50536387",
+      "story_id": "50536387",
+      "rank": 22,
+      "title": "Solid 2.0",
+      "url": "https://www.solidjs.com/blog/solid-2-0-the-long-hold/",
+      "points": 278,
+      "comments": 79,
+      "hn_url": "https://news.ycombinator.com/item?id=50536387"
+    },
+    {
+      "id": "hn-50541550",
+      "story_id": "50541550",
+      "rank": 23,
+      "title": "H-1B Executive Actions in 2026 [pdf]",
+      "url": "https://www.everycrsreport.com/files/2026-10-14_IN12747_fcb1389788aa7b9102b795882af042e85d20532c.pdf",
+      "points": 22,
+      "comments": 23,
+      "hn_url": "https://news.ycombinator.com/item?id=50541550"
+    },
+    {
+      "id": "hn-50532191",
+      "story_id": "50532191",
+      "rank": 24,
+      "title": "What is the best harness for each model?",
+      "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+      "points": 358,
+      "comments": 125,
+      "hn_url": "https://news.ycombinator.com/item?id=50532191"
+    },
+    {
+      "id": "hn-50538184",
+      "story_id": "50538184",
+      "rank": 25,
+      "title": "Tencent Hy4 Flash",
+      "url": "https://hy.tencent.ai/research/hy4-flash",
+      "points": 99,
+      "comments": 14,
+      "hn_url": "https://news.ycombinator.com/item?id=50538184"
+    },
+    {
+      "id": "hn-50541897",
+      "story_id": "50541897",
+      "rank": 26,
+      "title": "Hex: Voice Dictation",
+      "url": "https://anoma.ly/hex/",
+      "points": 11,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50541897"
+    },
+    {
+      "id": "hn-50536468",
+      "story_id": "50536468",
+      "rank": 27,
+      "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+      "url": "https://starsling.dev",
+      "points": 64,
+      "comments": 37,
+      "hn_url": "https://news.ycombinator.com/item?id=50536468"
+    },
+    {
+      "id": "hn-50542181",
+      "story_id": "50542181",
+      "rank": 28,
+      "title": "Optimjack from the Outside: The Hijacked Script Was on Our Radar",
+      "url": "https://blog.fortirix.com/blog/optimjack/",
+      "points": 3,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50542181"
+    },
+    {
+      "id": "hn-50537290",
+      "story_id": "50537290",
+      "rank": 29,
+      "title": "Web Browser Engineering (2021)",
+      "url": "https://browser.engineering/",
+      "points": 151,
+      "comments": 20,
+      "hn_url": "https://news.ycombinator.com/item?id=50537290"
+    },
+    {
+      "id": "hn-50535238",
+      "story_id": "50535238",
+      "rank": 30,
+      "title": "Apple Services Down",
+      "url": "https://developer.apple.com/system-status/",
+      "points": 674,
+      "comments": 375,
+      "hn_url": "https://news.ycombinator.com/item?id=50535238"
+    },
+    {
+      "id": "hn-50501205",
+      "story_id": "50501205",
+      "rank": 31,
+      "title": "A repo of information for Zoom R8 firmware development",
+      "url": "https://github.com/aturley/zoom-r8-hardware-and-firmware",
+      "points": 6,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50501205"
+    },
+    {
+      "id": "hn-50501829",
+      "story_id": "50501829",
+      "rank": 32,
+      "title": "Duality of Quadrilaterals via Quaternions [pdf]",
+      "url": "https://scholarworks.uni.edu/cgi/viewcontent.cgi?article=1193&context=surp",
+      "points": 10,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50501829"
+    },
+    {
+      "id": "hn-50535740",
+      "story_id": "50535740",
+      "rank": 33,
+      "title": "Not Everything Needs an LLM",
+      "url": "https://newsletter.posthog.com/p/decision-models",
+      "points": 141,
+      "comments": 56,
+      "hn_url": "https://news.ycombinator.com/item?id=50535740"
+    },
+    {
+      "id": "hn-50542120",
+      "story_id": "50542120",
+      "rank": 34,
+      "title": "Horizon Opens to Early Users: America's Most Powerful Academic Supercomputer",
+      "url": "https://news.utexas.edu/2026/11/17/horizon-opens-to-early-users-americas-most-powerful-academic-supercomputer-begins-serving-science/",
+      "points": 4,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50542120"
+    },
+    {
+      "id": "hn-50539039",
+      "story_id": "50539039",
+      "rank": 35,
+      "title": "Latent Lattice Language Models",
+      "url": "https://shivamduggal4.github.io/latent-lattice-language-models/",
+      "points": 45,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50539039"
+    },
+    {
+      "id": "hn-50535208",
+      "story_id": "50535208",
+      "rank": 36,
+      "title": "Who Builds the Machines That Build the Machines?",
+      "url": "https://read.corematter.com/p/section-232-us-machine-tools",
+      "points": 123,
+      "comments": 39,
+      "hn_url": "https://news.ycombinator.com/item?id=50535208"
+    },
+    {
+      "id": "hn-50537120",
+      "story_id": "50537120",
+      "rank": 37,
+      "title": "Effects of a Nuclear Detonation in Low Earth Orbit",
+      "url": "https://arxiv.org/abs/2611.09827",
+      "points": 94,
+      "comments": 70,
+      "hn_url": "https://news.ycombinator.com/item?id=50537120"
+    },
+    {
+      "id": "hn-50530163",
+      "story_id": "50530163",
+      "rank": 38,
+      "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+      "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+      "points": 1209,
+      "comments": 602,
+      "hn_url": "https://news.ycombinator.com/item?id=50530163"
+    },
+    {
+      "id": "hn-50497872",
+      "story_id": "50497872",
+      "rank": 39,
+      "title": "Mouse Party",
+      "url": "https://aboard.com/lets-have-a-mouse-party/",
+      "points": 83,
+      "comments": 15,
+      "hn_url": "https://news.ycombinator.com/item?id=50497872"
+    },
+    {
+      "id": "hn-50541983",
+      "story_id": "50541983",
+      "rank": 40,
+      "title": "LeetCode adds vibe coding challenges now",
+      "url": "https://leetcode.com/discuss/post/8614473/project-challenge-can-you-build-a-produc-27kz/",
+      "points": 4,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50541983"
+    },
+    {
+      "id": "hn-50532385",
+      "story_id": "50532385",
+      "rank": 41,
+      "title": "Show HN: Alloy CSS, dialogs, menus and tabs that work with JavaScript off",
+      "url": "https://alloyhtml.com/example.html",
+      "points": 191,
+      "comments": 33,
+      "hn_url": "https://news.ycombinator.com/item?id=50532385"
+    },
+    {
+      "id": "hn-50542361",
+      "story_id": "50542361",
+      "rank": 43,
+      "title": "Interesting Learnings Working for a Startup",
+      "url": "https://news.ycombinator.com/item?id=50542361",
+      "points": 4,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50542361"
+    },
+    {
+      "id": "hn-50540836",
+      "story_id": "50540836",
+      "rank": 44,
+      "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
+      "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
+      "points": 57,
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=50540836"
+    },
+    {
+      "id": "hn-50541665",
+      "story_id": "50541665",
+      "rank": 45,
+      "title": "How Warp Speed Works (2023)",
+      "url": "https://science.howstuffworks.com/warp-speed.htm",
+      "points": 6,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50541665"
+    },
+    {
+      "id": "hn-50537962",
+      "story_id": "50537962",
+      "rank": 46,
+      "title": "Human.md",
+      "url": "https://www.human-md.ai/",
+      "points": 89,
+      "comments": 59,
+      "hn_url": "https://news.ycombinator.com/item?id=50537962"
+    },
+    {
+      "id": "hn-50533270",
+      "story_id": "50533270",
+      "rank": 47,
+      "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+      "url": "https://github.com/RunanywhereAI/trnrt",
+      "points": 47,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50533270"
+    },
+    {
+      "id": "hn-50518328",
+      "story_id": "50518328",
+      "rank": 48,
+      "title": "First Photos of the Poles of a Rod-Shaped Bacterium",
+      "url": "https://nautil.us/check-out-the-first-photos-of-the-poles-of-a-rod-shaped-bacterium-1286664",
+      "points": 114,
+      "comments": 23,
+      "hn_url": "https://news.ycombinator.com/item?id=50518328"
+    },
+    {
+      "id": "hn-50511874",
+      "story_id": "50511874",
+      "rank": 49,
+      "title": "VisualBasic.World: A gallery of Planet Source Code programs from 1997 to 2012",
+      "url": "https://visualbasic.world/",
+      "points": 218,
+      "comments": 89,
+      "hn_url": "https://news.ycombinator.com/item?id=50511874"
+    },
+    {
+      "id": "hn-50515291",
+      "story_id": "50515291",
+      "rank": 50,
+      "title": "Elephant-Goldfish Model",
+      "url": "https://egm.dev/",
+      "points": 86,
+      "comments": 30,
+      "hn_url": "https://news.ycombinator.com/item?id=50515291"
+    },
+    {
+      "id": "hn-50542084",
+      "story_id": "50542084",
+      "rank": 51,
+      "title": "Microsoft's agent-framework PyPI package Compromised with Credential Stealer",
+      "url": "https://socket.dev/blog/agent-framework-pypi-package-compromised-with-credential-stealer",
+      "points": 10,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50542084"
+    },
+    {
+      "id": "hn-50541613",
+      "story_id": "50541613",
+      "rank": 52,
+      "title": "Climate change is making some African deserts greener",
+      "url": "https://www.economist.com/middle-east-and-africa/2026/11/17/climate-change-is-making-some-african-deserts-greener",
+      "points": 12,
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=50541613"
+    },
+    {
+      "id": "hn-50535898",
+      "story_id": "50535898",
+      "rank": 53,
+      "title": "Advancing computer-use agents for healthcare teams",
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams/",
+      "points": 47,
+      "comments": 30,
+      "hn_url": "https://news.ycombinator.com/item?id=50535898"
+    },
+    {
+      "id": "hn-50470523",
+      "story_id": "50470523",
+      "rank": 54,
+      "title": "Rows vs. Columns: How different are they, really?",
+      "url": "https://spiraldb.com/blog/rows-vs-columns",
+      "points": 162,
+      "comments": 54,
+      "hn_url": "https://news.ycombinator.com/item?id=50470523"
+    },
+    {
+      "id": "hn-50511657",
+      "story_id": "50511657",
+      "rank": 55,
+      "title": "Zoltraak and the Dynamics of Military Innovation",
+      "url": "https://jgeekstudies.org/2026/11/15/zoltraak-military-innovation-in-frieren/",
+      "points": 48,
+      "comments": 13,
+      "hn_url": "https://news.ycombinator.com/item?id=50511657"
+    },
+    {
+      "id": "hn-50541296",
+      "story_id": "50541296",
+      "rank": 56,
+      "title": "Sharpe Ratio from First Principles",
+      "url": "https://shivanshuag.com/blog/sharpe-ratio-from-first-principles/",
+      "points": 4,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50541296"
+    },
+    {
+      "id": "hn-50512779",
+      "story_id": "50512779",
+      "rank": 57,
+      "title": "Nimony: A New Compiler for Nim",
+      "url": "https://nimony.org/",
+      "points": 188,
+      "comments": 100,
+      "hn_url": "https://news.ycombinator.com/item?id=50512779"
+    },
+    {
+      "id": "hn-50509456",
+      "story_id": "50509456",
+      "rank": 58,
+      "title": "Turbo Pascal Compiler Written in Turbo Pascal",
+      "url": "https://turbo51.com/compiler-design/tpc16-turbo-pascal-compiler-written-in-turbo-pascal",
+      "points": 110,
+      "comments": 43,
+      "hn_url": "https://news.ycombinator.com/item?id=50509456"
+    },
+    {
+      "id": "hn-50542363",
+      "story_id": "50542363",
+      "rank": 59,
+      "title": "Why They Are Marrying Younger (1955)",
+      "url": "https://www.nytimes.com/1955/01/30/archives/why-they-are-marrying-younger-uncertainties-about-the-future-might.html",
+      "points": 3,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50542363"
+    },
+    {
+      "id": "hn-50539947",
+      "story_id": "50539947",
+      "rank": 60,
+      "title": "Performance of a formally-verified C compiler vs. GCC -O2",
+      "url": "https://ut-infraai.github.io/2026/11/13/trying-to-make-compcert-as-fast-as-gcc-o2/",
+      "points": 10,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50539947"
+    },
+    {
+      "id": "hn-50502957",
+      "story_id": "50502957",
+      "rank": 61,
+      "title": "Nozzle: A streaming library that emits when possible and buffers where necessary",
+      "url": "https://github.com/Robert-Cunningham/nozzle",
+      "points": 12,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50502957"
+    },
+    {
+      "id": "hn-50499520",
+      "story_id": "50499520",
+      "rank": 62,
+      "title": "Fixing a WebKit bug to see if promises are made of train tracks",
+      "url": "https://alistair.sh/thenables",
+      "points": 33,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50499520"
+    },
+    {
+      "id": "hn-50529612",
+      "story_id": "50529612",
+      "rank": 63,
+      "title": "How the Claude Code team thinks about verification",
+      "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+      "points": 278,
+      "comments": 224,
+      "hn_url": "https://news.ycombinator.com/item?id=50529612"
+    },
+    {
+      "id": "hn-50504105",
+      "story_id": "50504105",
+      "rank": 64,
+      "title": "Munich Laser Emits a Beam of Matter Waves (1999)",
+      "url": "https://www.sciencedaily.com/releases/1999/03/990317060831.htm",
+      "points": 12,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50504105"
+    },
+    {
+      "id": "hn-50542314",
+      "story_id": "50542314",
+      "rank": 65,
+      "title": "Ignite 2026: Copilot is \"the new OS for work,\" and now Office runs inside of it",
+      "url": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote/",
+      "points": 3,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50542314"
+    },
+    {
+      "id": "hn-50517375",
+      "story_id": "50517375",
+      "rank": 66,
+      "title": "Exploiting Replay Protected Monotonic Counters to Brute-Force Windows Hello PINs",
+      "url": "https://arxiv.org/abs/2611.18126",
+      "points": 64,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50517375"
+    },
+    {
+      "id": "hn-50508845",
+      "story_id": "50508845",
+      "rank": 67,
+      "title": "Japan's Hometown Tax (2018)",
+      "url": "https://www.kalzumeus.com/2018/10/19/japanese-hometown-tax/",
+      "points": 133,
+      "comments": 75,
+      "hn_url": "https://news.ycombinator.com/item?id=50508845"
+    },
+    {
+      "id": "hn-50537832",
+      "story_id": "50537832",
+      "rank": 69,
+      "title": "Computer Graphics from Scratch",
+      "url": "https://www.gabrielgambetta.com/computer-graphics-from-scratch/index.html",
+      "points": 24,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50537832"
+    },
+    {
+      "id": "hn-50541325",
+      "story_id": "50541325",
+      "rank": 71,
+      "title": "AI borrowers pay more for debt as cash burn mounts, yields rise and tech falters",
+      "url": "https://greyswansignals.com",
+      "points": 10,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50541325"
+    },
+    {
+      "id": "hn-50532773",
+      "story_id": "50532773",
+      "rank": 72,
+      "title": "Antfly learned to stop worrying and love Apache 2.0",
+      "url": "https://antfly.io/thoughts/how-antfly-learned-to-stop-worrying-and-love-apache-2",
+      "points": 53,
+      "comments": 11,
+      "hn_url": "https://news.ycombinator.com/item?id=50532773"
+    },
+    {
+      "id": "hn-50496787",
+      "story_id": "50496787",
+      "rank": 73,
+      "title": "Show HN: Zigzag, a native Mac browser for people leaving Arc",
+      "url": "https://github.com/ZigaoWang/zigzag",
+      "points": 115,
+      "comments": 70,
+      "hn_url": "https://news.ycombinator.com/item?id=50496787"
+    },
+    {
+      "id": "hn-50514093",
+      "story_id": "50514093",
+      "rank": 74,
+      "title": "Stop Filming in Log?",
+      "url": "https://digitalfilms.wordpress.com/2026/11/15/stop-filming-in-log/",
+      "points": 105,
+      "comments": 103,
+      "hn_url": "https://news.ycombinator.com/item?id=50514093"
+    },
+    {
+      "id": "hn-50516689",
+      "story_id": "50516689",
+      "rank": 76,
+      "title": "Do Repeat Yourself",
+      "url": "https://arcentry.com/blog/do-repeat-yourself/",
+      "points": 150,
+      "comments": 51,
+      "hn_url": "https://news.ycombinator.com/item?id=50516689"
+    },
+    {
+      "id": "hn-50497656",
+      "story_id": "50497656",
+      "rank": 77,
+      "title": "Too Many Stadiums with Roofs",
+      "url": "https://sharptext.net/2026/too-many-stadiums-with-roofs/",
+      "points": 53,
+      "comments": 59,
+      "hn_url": "https://news.ycombinator.com/item?id=50497656"
+    },
+    {
+      "id": "hn-50541023",
+      "story_id": "50541023",
+      "rank": 78,
+      "title": "Did IBM originally plan to use the 68000 in the PC? (2020)",
+      "url": "https://retrocomputing.stackexchange.com/questions/16912",
+      "points": 10,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50541023"
+    },
+    {
+      "id": "hn-50538942",
+      "story_id": "50538942",
+      "rank": 79,
+      "title": "Nvidia Chair Harvey Jones says board doesn't intend to reinstate Huang as CEO",
+      "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html",
+      "points": 52,
+      "comments": 32,
+      "hn_url": "https://news.ycombinator.com/item?id=50538942"
+    },
+    {
+      "id": "hn-50497621",
+      "story_id": "50497621",
+      "rank": 80,
+      "title": "Formal Verification Is Not Verifiable",
+      "url": "https://alperenkeles.com/posts/formal-verification-is-not-verifiable/",
+      "points": 161,
+      "comments": 59,
+      "hn_url": "https://news.ycombinator.com/item?id=50497621"
+    },
+    {
+      "id": "hn-50530114",
+      "story_id": "50530114",
+      "rank": 82,
+      "title": "My Empire of Dirt",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026/11/17/my-empire-of-dirt.html",
+      "points": 129,
+      "comments": 169,
+      "hn_url": "https://news.ycombinator.com/item?id=50530114"
+    },
+    {
+      "id": "hn-50515151",
+      "story_id": "50515151",
+      "rank": 84,
+      "title": "Squircles",
+      "url": "https://linebender.org/wiki/curves/squircle/",
+      "points": 224,
+      "comments": 56,
+      "hn_url": "https://news.ycombinator.com/item?id=50515151"
+    },
+    {
+      "id": "hn-50538537",
+      "story_id": "50538537",
+      "rank": 85,
+      "title": "Goose Typing – Python Morsels",
+      "url": "https://www.pythonmorsels.com/goose-typing/",
+      "points": 12,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50538537"
+    },
+    {
+      "id": "hn-50536565",
+      "story_id": "50536565",
+      "rank": 86,
+      "title": "Anthropic Paid Rubio's Ex-Chief of Staff's Firm $740k.it Lobbied His NSC",
+      "url": "https://www.zerohedge.com/political/anthropic-paid-rubios-ex-chief-staffs-firm-740000-after-jensen-memo-it-lobbied-his-nsc",
+      "points": 86,
+      "comments": 15,
+      "hn_url": "https://news.ycombinator.com/item?id=50536565"
+    },
+    {
+      "id": "hn-50522776",
+      "story_id": "50522776",
+      "rank": 87,
+      "title": "Launch HN: Axonnic (YC F26) – Sleeves that track fingers and estimate force",
+      "url": "https://news.ycombinator.com/item?id=50522776",
+      "points": 56,
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=50522776"
+    },
+    {
+      "id": "hn-50538841",
+      "story_id": "50538841",
+      "rank": 88,
+      "title": "California bans Waymo autonomous vehicles from state freeways",
+      "url": "https://apnews.com/article/waymo-driverless-vehicle-california-freeway-ban-37bcd5371a4699a1850b7666b271946b",
+      "points": 54,
+      "comments": 24,
+      "hn_url": "https://news.ycombinator.com/item?id=50538841"
+    },
+    {
+      "id": "hn-50523784",
+      "story_id": "50523784",
+      "rank": 89,
+      "title": "Spamhaus new email sender requirements in November",
+      "url": "https://www.spamhaus.org/sender-guidelines/",
+      "points": 145,
+      "comments": 145,
+      "hn_url": "https://news.ycombinator.com/item?id=50523784"
+    },
+    {
+      "id": "hn-50540770",
+      "story_id": "50540770",
+      "rank": 90,
+      "title": "Calgary high school says too many students are getting food delivered",
+      "url": "https://www.cbc.ca/news/canada/calgary/st-francis-high-school-calgary-food-delivery-app-9.7425320",
+      "points": 13,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50540770"
+    }
+  ],
+  "papers": [
+    {
+      "id": "arxiv-2611.22991",
+      "cat": "cs.AI",
+      "title": "RagHarnessDebugger: Jev-Guided Agentic RAG in Contract Inference Repair Auditing",
+      "abstract": "Agentic systems using retrieval-augmented generation (RAG) must repair their own answers by gathering more evidence, testing alternative policies and deciding if, when, and what repairs are needed. Yet how do we know if a system's repairs are working when metrics like accuracy can be misleading? We present RagHarnessDebugger, a framework that records every repair decision in a Jev-guided harness for contract inference and audits the record to facilitate complete debugging of all decisions taken during a RAG repair journey. RagHarnessDebugger checks that each trace is intact, that each validation applies to the candidate it is counted for, and which answers the acceptance rule can reach. We tested our approach on ContractNLI non-disclosure agreements with two reader models and a replication set of separate contracts. Our debugger's audit layer exposed failure patterns that were hidden under aggregate metrics, policies acceptance cost of repairs vs regressions and policy acceptance gap of 77% and 76% of available but unrealised repairs on development and replication sets. Our audit, together with a labeled error analysis and replay mechanism, allowed following the execution path all the way to the terminal decision - uncovering where missing repairs became lost. Our revised harness improved accuracy over the initial BM25-only baseline by 3.6 points on development contracts and 3.7 points on the replication set, and even improved our full contract access reference score by 1.1 on development and 2.4 on replication set. While our work here demonstrates how the debugger can conduct decision root-cause analysis for missed repairs, the true value lies with providing this debugger for judgment visibility serving continuous improvement of RAG decisions and their explainability. Keywords: agentic RAG, AI evidence repair, harness explainability, counterfactual replay, Jev, ContractNLI",
+      "url": "http://arxiv.org/abs/2611.22991v1"
+    },
+    {
+      "id": "arxiv-2611.22309",
+      "cat": "cs.AI",
+      "title": "Efficient Wide-Beam Generative Retrieval with Model-Native Trie Decoding and Shared-Context Attention",
+      "abstract": "Generative retrieval (GR) predicts catalog entries as short semantic identifiers (SIDs). Trie-constrained beam search keeps these identifiers valid, but wide beams expose two serving costs: vocabulary-wide score tensors that are mostly discarded, and repeated attention over the same prompt. We present Trie-Head, a model-native output interface that stores the identifier trie as validated GPU tensors. Compared with a Python custom logit processor (CLP), it reduces CPU--GPU coordination and memory traffic by avoiding Python constraint callbacks and vocabulary-wide candidate buffers. It scores compact codebook candidates and streams the full-vocabulary normalizer, preserving the original model's valid-token scores in real arithmetic without retraining. Shared-context attention complements this output path by reusing prompt key/value blocks across beams while preserving their private decode tails. We implement both mechanisms in SGLang and evaluate candidate sourcing for LinkedIn Hiring Assistant and qualification retrieval for the Qualification Retrieval Platform. The combined system improves closed-loop throughput by up to 5.57x over the CLP baseline and up to 2.63x over BF16 FlashRec at a common beam width of 200 on the Qualification Retrieval Platform workload.",
+      "url": "http://arxiv.org/abs/2611.22309v1"
+    },
+    {
+      "id": "arxiv-2611.22245",
+      "cat": "cs.AI",
+      "title": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+      "abstract": "Multi-agent delegation lets LLM systems distribute evidence collection across workers with separate contexts. This creates a consistency challenge: facts retrieved by workers may be missing from the evidence available to the lead for a joint conclusion. We introduce a benchmark and evidence-flow profiler for studying multi-agent memory inconsistency through controlled factual conflicts in Harvey LAB document-review tasks. Pooled across three models with comparable generation spending, requiring delegation increases retrieval of both conflicting claims from 50.2% to 68.7% relative to single-agent execution, yet conflict detection falls from 16.2% to 13.2%. Within this setting, workers report both claims for only 35.2% of retrieved pairs, and pooled matched comparisons show higher detection than single-agent execution when one worker reads both claims but lower detection when the claims are split across workers. Worker-to-lead handoffs are a central target for improving conflict detection in multi-agent LLMs.",
+      "url": "http://arxiv.org/abs/2611.22245v1"
+    },
+    {
+      "id": "arxiv-2611.22238",
+      "cat": "cs.AI",
+      "title": "Context Has a Price: Adding and Removing Context for LLM Coding Agents under Prefix Caching",
+      "abstract": "Coding agents repeatedly send their conversation history to a language model. Adding useful code may reduce search, while removing old tool outputs may shorten later prompts. But do these changes reduce the cost of solving a task? We study this as a measurement problem in more than 20,000 runs of open models on SWE-bench Verified, SWE-bench and Loc-Bench. We account separately for uncached input, cached input and output tokens. Three findings emerge. First, in our main evidence-package experiments, retrieved code reduces read and search commands by 18--34%, but increases cost by 33--42% when cached input costs one tenth of uncached input, without a measurable improvement in resolution. Second, removing old observations can either save money or increase cost: the same approach saves 19--36% without a cache discount but increases cost by 38--116% with a tenth-price cache. Third, shorter prompts do not guarantee cheaper runs because agents may respond by taking more steps. We also find that concurrent experiments can share cached prefixes and distort cost comparisons. These results show why context-management methods should be evaluated using both token prices and the agent's subsequent behavior.",
+      "url": "http://arxiv.org/abs/2611.22238v1"
+    },
+    {
+      "id": "arxiv-2611.22171",
+      "cat": "cs.AI",
+      "title": "Readie: Low-Latency Code Sandboxes for AI Agents",
+      "abstract": "From quantitative research to personal assistance, AI agents act by iteratively generating and executing code. To decouple the agent harness from code execution, many agents offload execution to dedicated systems called code sandboxes. However, existing code sandboxes suffer from slow startup. Whether they rely on custom snapshots or a single fat image, the root cause is the same: it is hard to build a compact, pre-warmed snapshot that can be shared across diverse agent-generated code while covering nearly all the artifacts (e.g., packages, datasets) it requires. In this work, we propose learned startup snapshots for low-latency code sandboxes. Our insight is that while it is hard for a single snapshot to be both compact and cover most workloads, a set of snapshots can achieve both. Each snapshot is small, initializes quickly, and covers a fraction of agent-generated code; together, the set covers most of it. We learn this set from a large training workload by formulating snapshot construction as an optimization problem and solving it with an approximation algorithm. Planned on 15K public and LLM-synthesized scripts, our system, Readie, reduces startup latency by 3-22$\\times$ and end-to-end runtime by 1.3-3.3$\\times$ compared to existing approaches at the same storage budget.",
+      "url": "http://arxiv.org/abs/2611.22171v1"
+    },
+    {
+      "id": "arxiv-2611.23010",
+      "cat": "cs.AI",
+      "title": "PhysScope: Agentic Multimodal Physics Reasoning with Grounded Visual Memory",
+      "abstract": "Vision-language models (VLMs) can correctly interpret physics diagrams yet apply constraints outside the states or conditions in which they hold, causing premise errors to propagate through subsequent calculations. We introduce PhysScope, an inference-time visual harness that supports self-correction of these scope mismatches without updating model weights. PhysScope enables the model to link physical scopes directly to its visual observations and explicitly constructs derived views to support reasoning. The harness imposes explicit constraints on state distinctions, conditions, and physical scopes during model reasoning, and checks agent-proposed revisions against sources and scopes. Accepted revisions invalidate registered dependents, thereby maintaining scope-aware working memory. On PhysAlign, PhysScope achieves higher solving scores than direct solving across all six evaluated VLMs. With Gemini-3.8-flash, it outperforms Canvas-CoT by 9.34 percentage points and substantially improves solving accuracy on the out-of-distribution (OOD) PhysUniBench benchmark. Ablation studies support explicit scope management and dependency maintenance as design principles for multimodal physics reasoning agents.",
+      "url": "http://arxiv.org/abs/2611.23010v1"
+    },
+    {
+      "id": "arxiv-2611.22901",
+      "cat": "cs.AI",
+      "title": "Done, But Still Working: Anytime Evaluation of When Coding Agents Should Stop",
+      "abstract": "Coding agents often continue working after their own tests pass. Does this additional work improve the patch, and how much could be saved by stopping earlier? We study these questions through anytime evaluation: replaying recorded runs, scoring intermediate patches with hidden tests, and measuring the cost incurred at each step. For policies that only stop a run or select an earlier patch, this allows paired comparisons without generating new trajectories, provided replay preserves the relevant states. Across about 6,000 runs of eight open models in two scaffolds on SWE-bench Verified, we find substantial differences in the value of continued work. The hindsight saving available at passing self-tests ranges from under 1% to 57%, depending on the model and scaffold. A rule that stops after the same patch passes twice saves 23% in a preregistered replication, but the preregistered quality test does not establish non-inferiority. We explain these differences by measuring how often a rule fires, how often the patch changes afterwards, and whether those changes repair or break it. Fine-tuning agents to imitate the rule saves 30% over six seeds, while quality preservation remains uncertain. Our results help identify both the opportunities and the risks of early stopping.",
+      "url": "http://arxiv.org/abs/2611.22901v1"
+    },
+    {
+      "id": "arxiv-2611.19086",
+      "cat": "cs.SE",
+      "title": "Beyond Benchmarks: Evaluating Large Language Models and Agentic Patterns for Static Code Analysis Warning Classification",
+      "abstract": "Context: Static Code Analysis (SCA) tools support software verification and validation, reducing the time and cost of code reviews. However, the best SCA tools in the practitioner community generate a high volume of false positives, which developers tend to ignore, leading to genuine warnings being overlooked. Accordingly, studies increasingly adopt Large Language Models (LLMs) to identify and reduce false positives. Existing studies have produced promising results on public datasets, but underperformed on unseen datasets. Moreover, researchers do not leverage the full potential of Agentic patterns in LLMs or incorporate established code quality standards for warning classification. Objectives: This study utilises four manually annotated datasets to evaluate the performance of three contemporary LLMs for SCA warning classification in real-world applications, and incorporates Agentic patterns and established coding standards to enhance models' performance, addressing gaps identified in existing studies. Method: Three LLMs were selected using the LiveCodeBench benchmark, and the Structured Chain-of-Thought (SCoT) prompting technique was used to evaluate these LLMs. Furthermore, we incorporated Agentic patterns, such as Debating and Self-Consistency, to potentially improve performance in SCA warning classification. Results: Our results show that the performance of different LLMs varies with the characteristics of the dataset, ranging from 0.52 to 0.96 F1-Score for the best models. Additionally, the use of Agentic patterns does not improve LLMs' performance in most scenarios. Conclusions: SCA warning classification using LLMs works best only with certain warning types. We recommend evaluating LLMs in real-world applications rather than using publicly available datasets/benchmarks to understand their full utility.",
+      "url": "http://arxiv.org/abs/2611.19086v1"
+    }
+  ],
+  "topic": [
+    {
+      "id": "kg-hn-50525052",
+      "story_id": "50525052",
+      "title": "Show HN: Sutra-OS – A self-hosted ontology platform",
+      "url": "https://github.com/0nelight/sutra-os",
+      "hn_url": "https://news.ycombinator.com/item?id=50525052",
+      "points": 69,
+      "comments": 36,
+      "created": "2026-11-16",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50533836",
+      "story_id": "50533836",
+      "title": "An Ontology That Holds",
+      "url": "https://typegraph.dev/blog/an-ontology-that-holds/",
+      "hn_url": "https://news.ycombinator.com/item?id=50533836",
+      "points": 1,
+      "comments": 0,
+      "created": "2026-11-17",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50516658",
+      "story_id": "50516658",
+      "title": "Ontology in the Age of AI",
+      "url": "https://safdarali2.substack.com/p/ontology-in-the-age-of-ai",
+      "hn_url": "https://news.ycombinator.com/item?id=50516658",
+      "points": 1,
+      "comments": 0,
+      "created": "2026-11-16",
+      "kind": "story"
+    },
+    {
+      "id": "kg-hn-50499448",
+      "story_id": "50499448",
+      "title": "The Ontological Divergence of Artificial Intelligence",
+      "url": "https://medium.com/@smoking2man/the-ontological-divergence-of-artificial-intelligence-from-personal-contextualization-to-the-cb7f96eef3c3",
+      "hn_url": "https://news.ycombinator.com/item?id=50499448",
+      "points": 1,
+      "comments": 0,
+      "created": "2026-11-14",
+      "kind": "story"
+    }
+  ]
+}
