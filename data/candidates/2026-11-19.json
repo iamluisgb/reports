@@ -1,0 +1,944 @@
+{
+  "day": "2026-11-19",
+  "weekday": "Thursday",
+  "collected_at": "2026-11-19T07:59:06+00:00",
+  "stories": [
+    {
+      "id": "hn-50552424",
+      "story_id": "50552424",
+      "rank": 1,
+      "title": "Gemini 4 Neon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "points": 738,
+      "comments": 619,
+      "hn_url": "https://news.ycombinator.com/item?id=50552424"
+    },
+    {
+      "id": "hn-50547374",
+      "story_id": "50547374",
+      "rank": 2,
+      "title": "Unauthenticated remote code execution in Nginx",
+      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+      "points": 1318,
+      "comments": 577,
+      "hn_url": "https://news.ycombinator.com/item?id=50547374"
+    },
+    {
+      "id": "hn-50556533",
+      "story_id": "50556533",
+      "rank": 3,
+      "title": "15M web servers on one VM – smoltcp, DPDK, AF_XDP",
+      "url": "https://kapteko.com/15-million-webservers/",
+      "points": 48,
+      "comments": 8,
+      "hn_url": "https://news.ycombinator.com/item?id=50556533"
+    },
+    {
+      "id": "hn-50554038",
+      "story_id": "50554038",
+      "rank": 4,
+      "title": "Multiple vulnerabilities in Regexp and String case conversion",
+      "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+      "points": 213,
+      "comments": 69,
+      "hn_url": "https://news.ycombinator.com/item?id=50554038"
+    },
+    {
+      "id": "hn-50553843",
+      "story_id": "50553843",
+      "rank": 5,
+      "title": "Anthropic prices initial public offering",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "points": 172,
+      "comments": 175,
+      "hn_url": "https://news.ycombinator.com/item?id=50553843"
+    },
+    {
+      "id": "hn-50548021",
+      "story_id": "50548021",
+      "rank": 6,
+      "title": "Seven new models at scalable price-performance",
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "points": 521,
+      "comments": 344,
+      "hn_url": "https://news.ycombinator.com/item?id=50548021"
+    },
+    {
+      "id": "hn-50547620",
+      "story_id": "50547620",
+      "rank": 7,
+      "title": "Inside Deutsche Bank",
+      "url": "https://www.inside-db.com/",
+      "points": 656,
+      "comments": 219,
+      "hn_url": "https://news.ycombinator.com/item?id=50547620"
+    },
+    {
+      "id": "hn-50518303",
+      "story_id": "50518303",
+      "rank": 8,
+      "title": "Axelera Titania Brings Native FP8 and FP4 to In-Memory Compute",
+      "url": "https://futurumgroup.com/insights/axelera-titania-brings-native-fp8-and-fp4-to-in-memory-compute/",
+      "points": 21,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50518303"
+    },
+    {
+      "id": "hn-50553225",
+      "story_id": "50553225",
+      "rank": 9,
+      "title": "LLM assisted reverse engineering",
+      "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+      "points": 175,
+      "comments": 44,
+      "hn_url": "https://news.ycombinator.com/item?id=50553225"
+    },
+    {
+      "id": "hn-50550415",
+      "story_id": "50550415",
+      "rank": 10,
+      "title": "Genie 4 is now available",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
+      "points": 238,
+      "comments": 161,
+      "hn_url": "https://news.ycombinator.com/item?id=50550415"
+    },
+    {
+      "id": "hn-50551046",
+      "story_id": "50551046",
+      "rank": 11,
+      "title": "DaisyRose-27B",
+      "url": "https://www.radixark.com/blog/daisyrose-27b",
+      "points": 191,
+      "comments": 62,
+      "hn_url": "https://news.ycombinator.com/item?id=50551046"
+    },
+    {
+      "id": "hn-50525260",
+      "story_id": "50525260",
+      "rank": 12,
+      "title": "Dumping an AES key from a MyQ garage opener to stop rebooting when offline",
+      "url": "https://kusha.me/blog/stop_myq_homebridge_819lmb_rebooting/",
+      "points": 112,
+      "comments": 37,
+      "hn_url": "https://news.ycombinator.com/item?id=50525260"
+    },
+    {
+      "id": "hn-50530088",
+      "story_id": "50530088",
+      "rank": 13,
+      "title": "Camera Index",
+      "url": "https://www.cameraindex.co.uk/",
+      "points": 22,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50530088"
+    },
+    {
+      "id": "hn-50542441",
+      "story_id": "50542441",
+      "rank": 14,
+      "title": "Mosquitoes are Ladakh's latest tourists",
+      "url": "https://ruralindiaonline.org/article/mosquitoes-are-ladakh-s-latest-tourists",
+      "points": 41,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50542441"
+    },
+    {
+      "id": "hn-50519778",
+      "story_id": "50519778",
+      "rank": 15,
+      "title": "Logitech Harmony IR code online database archive",
+      "url": "https://github.com/pickysysadmin/logitech-harmony-ir-archive",
+      "points": 13,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50519778"
+    },
+    {
+      "id": "hn-50546914",
+      "story_id": "50546914",
+      "rank": 16,
+      "title": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
+      "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+      "points": 272,
+      "comments": 196,
+      "hn_url": "https://news.ycombinator.com/item?id=50546914"
+    },
+    {
+      "id": "hn-50532515",
+      "story_id": "50532515",
+      "rank": 17,
+      "title": "Show HN: An API for word timestamps from speech, 75% within 20ms",
+      "url": "https://quebec.yarn.so",
+      "points": 5,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50532515"
+    },
+    {
+      "id": "hn-50554935",
+      "story_id": "50554935",
+      "rank": 18,
+      "title": "Unreal Tournament 2004 in the Browser",
+      "url": "https://ut2004.dev/",
+      "points": 148,
+      "comments": 63,
+      "hn_url": "https://news.ycombinator.com/item?id=50554935"
+    },
+    {
+      "id": "hn-50554009",
+      "story_id": "50554009",
+      "rank": 19,
+      "title": "Palo Alto Networks to Acquire Applied Compute for $4.5B",
+      "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-acquire-applied-compute-bringing-secure-open",
+      "points": 53,
+      "comments": 12,
+      "hn_url": "https://news.ycombinator.com/item?id=50554009"
+    },
+    {
+      "id": "hn-50547980",
+      "story_id": "50547980",
+      "rank": 20,
+      "title": "Show HN: ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
+      "url": "https://exitpath-ruddy.vercel.app/",
+      "points": 203,
+      "comments": 62,
+      "hn_url": "https://news.ycombinator.com/item?id=50547980"
+    },
+    {
+      "id": "hn-50549493",
+      "story_id": "50549493",
+      "rank": 21,
+      "title": "Advancing chip design with OpenAI models",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "points": 200,
+      "comments": 132,
+      "hn_url": "https://news.ycombinator.com/item?id=50549493"
+    },
+    {
+      "id": "hn-50547583",
+      "story_id": "50547583",
+      "rank": 22,
+      "title": "F-22 Next-Generation micro–Data Transfer Cartridge (mDTC)",
+      "url": "https://sam.gov/workspace/contract/opp/8948e8601e964c6aba9c801eee16b1be/view",
+      "points": 168,
+      "comments": 109,
+      "hn_url": "https://news.ycombinator.com/item?id=50547583"
+    },
+    {
+      "id": "hn-50548161",
+      "story_id": "50548161",
+      "rank": 23,
+      "title": "Show HN: Take Voyager 1 apart, down to a single memory chip",
+      "url": "https://rshekhar.com/voyager/",
+      "points": 187,
+      "comments": 46,
+      "hn_url": "https://news.ycombinator.com/item?id=50548161"
+    },
+    {
+      "id": "hn-50554045",
+      "story_id": "50554045",
+      "rank": 24,
+      "title": "We need smart people who give a shit",
+      "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+      "points": 476,
+      "comments": 246,
+      "hn_url": "https://news.ycombinator.com/item?id=50554045"
+    },
+    {
+      "id": "hn-50523377",
+      "story_id": "50523377",
+      "rank": 25,
+      "title": "Show HN: Open-source, real-time object tracking for live video feeds",
+      "url": "https://github.com/aryamandarda/tamserve",
+      "points": 78,
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=50523377"
+    },
+    {
+      "id": "hn-50554374",
+      "story_id": "50554374",
+      "rank": 26,
+      "title": "Gemini 4 Neon looks like an Opus 5.5 competitor",
+      "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/",
+      "points": 213,
+      "comments": 68,
+      "hn_url": "https://news.ycombinator.com/item?id=50554374"
+    },
+    {
+      "id": "hn-50510385",
+      "story_id": "50510385",
+      "rank": 27,
+      "title": "Cuttlefish on Mac: Android's Virtual Device Framework on Apple Silicon",
+      "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
+      "points": 63,
+      "comments": 12,
+      "hn_url": "https://news.ycombinator.com/item?id=50510385"
+    },
+    {
+      "id": "hn-50547777",
+      "story_id": "50547777",
+      "rank": 28,
+      "title": "AI agents ask better questions than KPMG accountants in audit trial",
+      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+      "points": 445,
+      "comments": 195,
+      "hn_url": "https://news.ycombinator.com/item?id=50547777"
+    },
+    {
+      "id": "hn-50545958",
+      "story_id": "50545958",
+      "rank": 29,
+      "title": "DNS resolvers are the wrong place to fight piracy",
+      "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+      "points": 653,
+      "comments": 263,
+      "hn_url": "https://news.ycombinator.com/item?id=50545958"
+    },
+    {
+      "id": "hn-50554076",
+      "story_id": "50554076",
+      "rank": 30,
+      "title": "Pushing WireGuard on macOS to 5 Gbit/s",
+      "url": "https://www.firezone.dev/blog/apple-client-performance",
+      "points": 35,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50554076"
+    },
+    {
+      "id": "hn-50546967",
+      "story_id": "50546967",
+      "rank": 31,
+      "title": "The x86 CPU: From 4004 to 486",
+      "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
+      "points": 167,
+      "comments": 52,
+      "hn_url": "https://news.ycombinator.com/item?id=50546967"
+    },
+    {
+      "id": "hn-50549188",
+      "story_id": "50549188",
+      "rank": 32,
+      "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
+      "url": "https://news.ycombinator.com/item?id=50549188",
+      "points": 52,
+      "comments": 48,
+      "hn_url": "https://news.ycombinator.com/item?id=50549188"
+    },
+    {
+      "id": "hn-50548004",
+      "story_id": "50548004",
+      "rank": 33,
+      "title": "KVM: x86: Unconditionally reset MMU context when emulating INIT (CVE-2026-99312)",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2026-99312",
+      "points": 184,
+      "comments": 121,
+      "hn_url": "https://news.ycombinator.com/item?id=50548004"
+    },
+    {
+      "id": "hn-50524227",
+      "story_id": "50524227",
+      "rank": 34,
+      "title": "A Collage Showing 49 Drill Holes Made by NASA's Curiosity Mars Rover",
+      "url": "https://science.nasa.gov/photojournal/a-collage-showing-49-drill-holes-made-by-nasas-curiosity-mars-rover/",
+      "points": 51,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50524227"
+    },
+    {
+      "id": "hn-50554908",
+      "story_id": "50554908",
+      "rank": 35,
+      "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
+      "url": "https://arxiv.org/abs/2607.29378",
+      "points": 43,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50554908"
+    },
+    {
+      "id": "hn-50544261",
+      "story_id": "50544261",
+      "rank": 36,
+      "title": "Codeberg.org Not Reachable",
+      "url": "https://social.anoxinon.de/@codebergstatus/117636437840688845",
+      "points": 302,
+      "comments": 304,
+      "hn_url": "https://news.ycombinator.com/item?id=50544261"
+    },
+    {
+      "id": "hn-50554941",
+      "story_id": "50554941",
+      "rank": 37,
+      "title": "FailTrace – Reproduce a failed GitHub Actions run locally from its URL",
+      "url": "https://github.com/Ri4dH/failtrace",
+      "points": 24,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50554941"
+    },
+    {
+      "id": "hn-50546922",
+      "story_id": "50546922",
+      "rank": 38,
+      "title": "A Primer on Fourier Series (2025)",
+      "url": "https://arxiv.org/abs/2510.18203",
+      "points": 120,
+      "comments": 34,
+      "hn_url": "https://news.ycombinator.com/item?id=50546922"
+    },
+    {
+      "id": "hn-50548991",
+      "story_id": "50548991",
+      "rank": 39,
+      "title": "CrossPoint Reader",
+      "url": "https://crosspointreader.com",
+      "points": 119,
+      "comments": 58,
+      "hn_url": "https://news.ycombinator.com/item?id=50548991"
+    },
+    {
+      "id": "hn-50548660",
+      "story_id": "50548660",
+      "rank": 40,
+      "title": "Show HN: Mastra Factory, the open-source software factory we use to build Mastra",
+      "url": "https://news.ycombinator.com/item?id=50548660",
+      "points": 91,
+      "comments": 32,
+      "hn_url": "https://news.ycombinator.com/item?id=50548660"
+    },
+    {
+      "id": "hn-50550096",
+      "story_id": "50550096",
+      "rank": 41,
+      "title": "The Magic of Partial Evaluation",
+      "url": "https://jimmyhmiller.com/magic-of-partial-evaluation",
+      "points": 108,
+      "comments": 30,
+      "hn_url": "https://news.ycombinator.com/item?id=50550096"
+    },
+    {
+      "id": "hn-50553852",
+      "story_id": "50553852",
+      "rank": 42,
+      "title": "Ergodicity: What Does It Mean?",
+      "url": "https://leonlins.com/writing/ergodicity",
+      "points": 19,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50553852"
+    },
+    {
+      "id": "hn-50554759",
+      "story_id": "50554759",
+      "rank": 43,
+      "title": "Recurrent Interface Networks",
+      "url": "https://arxiv.org/abs/2212.11972",
+      "points": 10,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50554759"
+    },
+    {
+      "id": "hn-50551359",
+      "story_id": "50551359",
+      "rank": 45,
+      "title": "Sexp Matrix",
+      "url": "https://lisper.cc/ideas/entangle.html",
+      "points": 46,
+      "comments": 11,
+      "hn_url": "https://news.ycombinator.com/item?id=50551359"
+    },
+    {
+      "id": "hn-50554641",
+      "story_id": "50554641",
+      "rank": 46,
+      "title": "Black high school students sue after AI mistakes Doritos bag for gun",
+      "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
+      "points": 83,
+      "comments": 43,
+      "hn_url": "https://news.ycombinator.com/item?id=50554641"
+    },
+    {
+      "id": "hn-50544821",
+      "story_id": "50544821",
+      "rank": 48,
+      "title": "Show HN: Type Fighter 2",
+      "url": "https://typefighter2.com/",
+      "points": 133,
+      "comments": 59,
+      "hn_url": "https://news.ycombinator.com/item?id=50544821"
+    },
+    {
+      "id": "hn-50555093",
+      "story_id": "50555093",
+      "rank": 49,
+      "title": "AI will not make you rich (2025)",
+      "url": "https://colossus.com/article/ai-will-not-make-you-rich/",
+      "points": 93,
+      "comments": 55,
+      "hn_url": "https://news.ycombinator.com/item?id=50555093"
+    },
+    {
+      "id": "hn-50551398",
+      "story_id": "50551398",
+      "rank": 51,
+      "title": "Search Browser – Minimalist WebKit browser with Chrome extension support",
+      "url": "https://searchbrowser.app/",
+      "points": 59,
+      "comments": 35,
+      "hn_url": "https://news.ycombinator.com/item?id=50551398"
+    },
+    {
+      "id": "hn-50554973",
+      "story_id": "50554973",
+      "rank": 52,
+      "title": "Show HN: ADE Index – a sourced and ranked index of 975 agentic coding tools",
+      "url": "https://adeindex.com",
+      "points": 16,
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=50554973"
+    },
+    {
+      "id": "hn-50554010",
+      "story_id": "50554010",
+      "rank": 53,
+      "title": "Software companies are trying to kill home computing?",
+      "url": "https://lateblt.livejournal.com/526188.html",
+      "points": 156,
+      "comments": 99,
+      "hn_url": "https://news.ycombinator.com/item?id=50554010"
+    },
+    {
+      "id": "hn-50553964",
+      "story_id": "50553964",
+      "rank": 54,
+      "title": "Oops All Shells – Stupid Vulnerability Name Generator",
+      "url": "https://oops-all-shells.netlify.app/",
+      "points": 14,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50553964"
+    },
+    {
+      "id": "hn-50505310",
+      "story_id": "50505310",
+      "rank": 55,
+      "title": "The First Revolver: How We Got from Blackbeard's Six Pistols to the Six-Shooter",
+      "url": "https://americanhandgunner.com/handguns/revolvers/the-first-revolver/",
+      "points": 61,
+      "comments": 45,
+      "hn_url": "https://news.ycombinator.com/item?id=50505310"
+    },
+    {
+      "id": "hn-50552140",
+      "story_id": "50552140",
+      "rank": 56,
+      "title": "Show HN: Robotics needs better CAD, so I wrote a B-rep kernel and 3,487 tests",
+      "url": "https://springcraft-ai.github.io/springrep/",
+      "points": 29,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50552140"
+    },
+    {
+      "id": "hn-50526087",
+      "story_id": "50526087",
+      "rank": 57,
+      "title": "Collisions in Hash Functions",
+      "url": "https://collisions.zksecurity.xyz/",
+      "points": 15,
+      "comments": 8,
+      "hn_url": "https://news.ycombinator.com/item?id=50526087"
+    },
+    {
+      "id": "hn-50548038",
+      "story_id": "50548038",
+      "rank": 59,
+      "title": "SuperEMeans: Making e-means 3× faster",
+      "url": "https://www.lkuffo.com/superemeans/",
+      "points": 56,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50548038"
+    },
+    {
+      "id": "hn-50551509",
+      "story_id": "50551509",
+      "rank": 60,
+      "title": "Horizon Labs Report",
+      "url": "https://horizon-labs.ai/",
+      "points": 23,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50551509"
+    },
+    {
+      "id": "hn-50543989",
+      "story_id": "50543989",
+      "rank": 61,
+      "title": "Energy-Based Reasoners: 385x more efficient inference",
+      "url": "https://energy-based-reasoners.github.io/",
+      "points": 309,
+      "comments": 55,
+      "hn_url": "https://news.ycombinator.com/item?id=50543989"
+    },
+    {
+      "id": "hn-50541619",
+      "story_id": "50541619",
+      "rank": 62,
+      "title": "Claude was trained on protein sequences at scale",
+      "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
+      "points": 173,
+      "comments": 74,
+      "hn_url": "https://news.ycombinator.com/item?id=50541619"
+    },
+    {
+      "id": "hn-50509980",
+      "story_id": "50509980",
+      "rank": 63,
+      "title": "A live service duress prototype",
+      "url": "https://github.com/Ymsniper/vault-share",
+      "points": 15,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50509980"
+    },
+    {
+      "id": "hn-50529101",
+      "story_id": "50529101",
+      "rank": 64,
+      "title": "My computer misbehaved so I went down a rabbit hole (2019)",
+      "url": "https://leonwu.tech/posts/my_computer_misbehaved_so_i_went_down_a_rabbit_hole",
+      "points": 8,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50529101"
+    },
+    {
+      "id": "hn-50550461",
+      "story_id": "50550461",
+      "rank": 66,
+      "title": "Octopus, Gecko and Tortoise: the 3 scanners hunting your AI keys",
+      "url": "https://tin.computer/blog/fake-ai-crawler-secrets-scanners",
+      "points": 28,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50550461"
+    },
+    {
+      "id": "hn-50540178",
+      "story_id": "50540178",
+      "rank": 67,
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "url": "https://revscope.co/blog/search-seo-geo-2026/",
+      "points": 697,
+      "comments": 544,
+      "hn_url": "https://news.ycombinator.com/item?id=50540178"
+    },
+    {
+      "id": "hn-50517929",
+      "story_id": "50517929",
+      "rank": 69,
+      "title": "My Emacs 31 contributions",
+      "url": "https://xenodium.com/my-emacs-31-contributions",
+      "points": 119,
+      "comments": 24,
+      "hn_url": "https://news.ycombinator.com/item?id=50517929"
+    },
+    {
+      "id": "hn-50536468",
+      "story_id": "50536468",
+      "rank": 70,
+      "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+      "url": "https://news.ycombinator.com/item?id=50536468",
+      "points": 87,
+      "comments": 48,
+      "hn_url": "https://news.ycombinator.com/item?id=50536468"
+    },
+    {
+      "id": "hn-50504373",
+      "story_id": "50504373",
+      "rank": 72,
+      "title": "A Perfect SimCity",
+      "url": "https://www.jeffquast.com/post/a-perfect-simcity/",
+      "points": 229,
+      "comments": 124,
+      "hn_url": "https://news.ycombinator.com/item?id=50504373"
+    },
+    {
+      "id": "hn-50556339",
+      "story_id": "50556339",
+      "rank": 73,
+      "title": "Will Wright's next simulation will use AI to mine content from your memories",
+      "url": "https://arstechnica.com/gaming/2026/11/will-wrights-next-simulation-will-use-ai-to-mine-content-from-your-memories/",
+      "points": 9,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50556339"
+    },
+    {
+      "id": "hn-50538184",
+      "story_id": "50538184",
+      "rank": 74,
+      "title": "Tencent Hy4 Flash",
+      "url": "https://hy.tencent.ai/research/hy4-flash",
+      "points": 170,
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=50538184"
+    },
+    {
+      "id": "hn-50551503",
+      "story_id": "50551503",
+      "rank": 75,
+      "title": "When Everything Has Changed, What Do We Do Next?",
+      "url": "https://css-tricks.com/when-everything-has-changed/",
+      "points": 23,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50551503"
+    },
+    {
+      "id": "hn-50530163",
+      "story_id": "50530163",
+      "rank": 76,
+      "title": "New Evidence Shows School Phone Bans Are Gradually Improving Test Scores",
+      "url": "https://www.nytimes.com/2026/11/17/upshot/school-phone-bans-study-scores.html",
+      "points": 1292,
+      "comments": 643,
+      "hn_url": "https://news.ycombinator.com/item?id=50530163"
+    },
+    {
+      "id": "hn-50551614",
+      "story_id": "50551614",
+      "rank": 78,
+      "title": "Show HN: PocketOps for SigNoz: The Open Source Datadog Alternative",
+      "url": "https://github.com/avens19/pocketops",
+      "points": 9,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50551614"
+    },
+    {
+      "id": "hn-50542705",
+      "story_id": "50542705",
+      "rank": 79,
+      "title": "AI is killing All About Berlin",
+      "url": "https://nicolasbouliane.com/blog/death-by-ai",
+      "points": 779,
+      "comments": 693,
+      "hn_url": "https://news.ycombinator.com/item?id=50542705"
+    },
+    {
+      "id": "hn-50537290",
+      "story_id": "50537290",
+      "rank": 81,
+      "title": "Web Browser Engineering (2021)",
+      "url": "https://browser.engineering/",
+      "points": 198,
+      "comments": 29,
+      "hn_url": "https://news.ycombinator.com/item?id=50537290"
+    },
+    {
+      "id": "hn-50546900",
+      "story_id": "50546900",
+      "rank": 83,
+      "title": "Can Universities Survive? AI vs. Higher Education [audio]",
+      "url": "https://www.ppfideas.com/episodes/can-universities-survive-ai-vs-higher-education",
+      "points": 31,
+      "comments": 39,
+      "hn_url": "https://news.ycombinator.com/item?id=50546900"
+    },
+    {
+      "id": "hn-50548491",
+      "story_id": "50548491",
+      "rank": 85,
+      "title": "M.C. Escher's Art Creates Mathematical Worlds",
+      "url": "https://www.quantamagazine.org/how-m-c-eschers-art-creates-bizarre-mathematical-worlds-20261118/",
+      "points": 24,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50548491"
+    },
+    {
+      "id": "hn-50538303",
+      "story_id": "50538303",
+      "rank": 86,
+      "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+      "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+      "points": 320,
+      "comments": 441,
+      "hn_url": "https://news.ycombinator.com/item?id=50538303"
+    },
+    {
+      "id": "hn-50506430",
+      "story_id": "50506430",
+      "rank": 87,
+      "title": "What is the randomart image for? (2023)",
+      "url": "https://bytes.zone/posts/what-is-the-randomart-image-for/",
+      "points": 22,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50506430"
+    },
+    {
+      "id": "hn-50550829",
+      "story_id": "50550829",
+      "rank": 88,
+      "title": "VB Harness – Make local coding agents verify their own work",
+      "url": "https://github.com/Viktotovich/vb-harness-for-agentic-building",
+      "points": 10,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50550829"
+    },
+    {
+      "id": "hn-50508356",
+      "story_id": "50508356",
+      "rank": 89,
+      "title": "New FreeBSD Pkgbase(8) Tool",
+      "url": "https://vermaden.wordpress.com/2026/11/10/freebsd-pkgbase-update-tool/",
+      "points": 49,
+      "comments": 22,
+      "hn_url": "https://news.ycombinator.com/item?id=50508356"
+    }
+  ],
+  "papers": [
+    {
+      "id": "arxiv-2611.23990",
+      "cat": "cs.AI",
+      "title": "SCAFFOLD: Toward Warrant-Preserving Evidence Transport for Reusable LLM-Agent Skills",
+      "abstract": "An agent skill that succeeded yesterday may be executable today without being justified for reuse today. Tests may cover only observable contract clauses, outcome oracles may be absent, evaluations may inherit the same erroneous specification, and permissions or dependencies may change between validation and invocation. We argue that the appropriate unit of prospective trust is a Warranted Reuse Claim (WRC): a defeasible, claim-specific authorization tied to a versioned skill, target context, evidence, assumptions, and identified defeaters. The paper sharpens this position through Warrant-Preserving Evidence Transport (WPET), a proposed discipline for deciding which historical evidence remains admissible after context change. It distinguishes evidence admissibility from truth of the supported safety or effectiveness claim; states a conditional preservation result and its limits; specifies three-valued applicability and asymmetric context-transfer judgments; and illustrates how provenance dependence and policy-invalidating changes alter authorization. We explicitly relate the proposal to assurance cases, contracts, and skill-library maintenance rather than claiming novelty for their ingredients. A falsifiable longitudinal evaluation would compare WRC-guided policies with strong version-aware baselines at matched coverage, utility, and review cost. This paper contributes a formalized problem statement, testable design obligations, and reporting protocol, not an implemented verifier, empirical superiority result, or proof of universal agent safety.",
+      "url": "http://arxiv.org/abs/2611.23990v1"
+    },
+    {
+      "id": "arxiv-2611.24422",
+      "cat": "cs.AI",
+      "title": "Resolution as Attention for Efficient Agent Memory Perception",
+      "abstract": "LLM-based agents accumulate extensive interaction histories when solving complex, long-horizon tasks, making efficient memory management critical to their performance and scalability. While existing memory management methods primarily focus on what to retain or retrieve, they often overlook how much perceptual detail should be allocated to individual past interactions. We posit that effective agent memory depends not only on the information preserved, but also on the granularity at which each past interaction is perceived. Motivated by this insight, we propose Resolution as Attention (RAA), a memory perception mechanism that uses visual resolution as a means of attention allocation across interaction histories. RAA renders past interactions as images and dynamically adjusts their resolution at every step according to their relevance to the agent's upcoming decision, preserving fine-grained information for critical interactions while reducing visual-token consumption for less relevant ones. To adaptively determine the perceptual fidelity of each interaction, we train a lightweight relevance estimator with teacher-model guidance and further optimize it to preserve the agent's decision consistency at a reduced visual-token cost. Experiments across multiple tasks and backbones show that RAA reduces token consumption by over 50% without compromising task performance. Moreover, RAA can be integrated as a plug-in perception layer with existing memory management methods, yielding further token savings and revealing adaptive perception as a complementary dimension of agent memory.",
+      "url": "http://arxiv.org/abs/2611.24422v1"
+    },
+    {
+      "id": "arxiv-2611.24324",
+      "cat": "cs.AI",
+      "title": "Reducing Inference Cost of Coding Agents with Timeout Cascades",
+      "abstract": "AI coding agents have become one of the most popular applications of large language models. Yet, agentic AI comes at the cost of a tremendous amount of GPU compute resources, which limits its profitability and its viability at scale. In this paper, we investigate whether smaller, cheaper models can cut this cost without sacrificing accuracy. We evaluate 36 popular large and small open-weight models released since 2024 on a software engineering benchmark, and find that recent small models are closing the accuracy gap compared to their large counterparts. We investigate the structure of this gap and find that the gap is highly concentrated around hard tasks that small language models fail to solve while achieving remarkably good accuracy for easy and medium complexity tasks. Following this observation, we show that by utilizing a hybrid inference strategy that tries a small model first and escalates to a large one only when needed, we can achieve up to 33% reduction in total GPU-hour costs and 16.4% on all tasks from SWE-bench Verified, without sacrificing accuracy. Strikingly, this simple cascade nearly matches an oracle-style task router, highlighting a practical path for deploying cost-aware coding agents in production without complex learned task routers and with minimal engineering complexity.",
+      "url": "http://arxiv.org/abs/2611.24324v1"
+    },
+    {
+      "id": "arxiv-2611.24073",
+      "cat": "cs.AI",
+      "title": "3D GameDev Arena: Benchmarking Coding Agents That Plan, Build, and Playtest extreme Long-Horizon Browser Games",
+      "abstract": "Coding agents now resolve repository issues and generate compact playable games, but whether they can build a large 3D game from scratch remains open. Such games tightly couple mechanics, scenes, assets, and interaction logic, and their quality rests on player enjoyment, which existing benchmarks rarely assess. Thus, we introduce 3D GameDev Arena, a first extreme long-horizon benchmark of 108 from-scratch game-development tasks across 14 genres. Given only a text specification and UI/UX reference images, a fully automated plan--implement--test--repair pipeline builds each task into a self-contained browser game. Runs average $\\sim$1,000 LLM calls ; the longest uses 14,407 calls, 2.13B tokens, and 608 assets. Evaluation spans (1) objective code-level functional acceptance against the game specification, (2) agent-based QA and playtesting of 3D presentation and playability, and (3) blind pairwise Bradley-Terry human preference in a public arena. The preliminary findings indicate that long-horizon 3D game development remains far from solved, and code-level correctness alone does not dictate player preference. The public arena is hosted online.",
+      "url": "http://arxiv.org/abs/2611.24073v1"
+    },
+    {
+      "id": "arxiv-2611.24867",
+      "cat": "cs.AI",
+      "title": "Choosing What to Observe: Budget-Paired Counterfactual Audits for Credible Evaluation of Visual Agents",
+      "abstract": "Visual agents that read dense documents must ration a finite observation budget across candidate regions, yet answer accuracy conflates where an agent looks, how it adapts to the reads that remain, and how it an?swers once observation stops. We introduce budget-paired counterfactual audits, an evaluation protocol that holds public evidence and region bindings fixed while perturbing only the remaining budget or de?clared task parameters, and credits every acquired history with exact continuation values. The resulting accounting decomposes lost expected accuracy into stepwise acquisition loss and terminal decision loss, separating planning from fixed-role heuristics. Across forty paired routing anchors, five open-weight",
+      "url": "http://arxiv.org/abs/2611.24867v1"
+    },
+    {
+      "id": "arxiv-2611.24697",
+      "cat": "cs.AI",
+      "title": "Depth Before Breadth: Reverse-to-Forward Curriculum with Advantage Decomposition for LLM Agent",
+      "abstract": "Reinforcement learning (RL) has become a common approach for training large language model (LLM) agents on long-horizon tasks. However, learning from sparse terminal rewards makes credit assignment and exploration difficult. We approach these challenges through a policy-induced capability region, the set of states from which the current policy can reliably complete a task. Near its boundary, an agent may need only a few actions to reach a more solvable state, even when the goal remains distant. This reduces long-horizon learning to two coupled subproblems of reaching that state and completing the task from there. We address them with paired advantages and a progressive reverse-to-forward curriculum. The advantages provide separate signals for reaching more solvable states and completing the task from them, while the curriculum expands the capability region backward along successful reference trajectories and then into off-reference states through on-policy exploration. On ALFWorld and WebShop, our method outperforms competitive agentic RL methods at both model scales, achieving success rates of 90.1%/96.1% and 80.2%/82.6% with Qwen2.5-1.5B/7B-Instruct, respectively.",
+      "url": "http://arxiv.org/abs/2611.24697v1"
+    },
+    {
+      "id": "arxiv-2611.24650",
+      "cat": "cs.AI",
+      "title": "Self-Rewarded Reinforcement Learning for Better-Structured Medical Explanations in Small Language Models",
+      "abstract": "Small language models (SLMs) can run on commodity hardware and support privacy-preserving, on-premises clinical deployment, but their medical explanations are often short and poorly structured compared with large language models. Recent supervised approaches such as Meerkat transfer chain-of-thought reasoning into 7B-8B backbones, yet their training objective does not directly target the style or organization of the generated rationales. Building on the instruction-tuned Mistral-7B backbone, we investigate whether a lightweight reinforcement learning (RL) step can improve explanation structure without human preference this http URL apply Proximal Policy Optimization (PPO) with LoRA adaptation to 2,000 Meerkat-derived medical prompts, guided by a simple self-supervised reward that favors longer, lexically diverse, and well-punctuated responses while penalizing very short ones. Training for about 170 PPO steps on a single NVIDIA A100 GPU yields a stable increase in the average reward. Quantitative and qualitative comparisons show that the RL-tuned model produces longer, more organized, multi-point explanations while preserving the underlying medical this http URL discuss the promise and the limitations of self-rewarded RL for shaping the style of medical explanations.",
+      "url": "http://arxiv.org/abs/2611.24650v1"
+    },
+    {
+      "id": "arxiv-2611.23309",
+      "cat": "cs.SE",
+      "title": "Repository-Grounded Rubrics for Execution-Free Evaluation of Coding Agents",
+      "abstract": "Coding agents are usually evaluated by running task-specific tests, but tests may be missing or incomplete, and running them requires a working environment for each repository. We adapt agentic rubrics, introduced for selecting among candidate patches, into an execution-free measure of how far a patch satisfies a task's requirements. An agent explores the repository before the change and writes weighted binary criteria, and a judge without tools scores a diff by the weighted share of criteria it satisfies. We validate the ordering this score produces against test outcomes on SWE-bench Verified, using 7,291 labeled patches from fifteen systems. Within the 400 tasks that have both resolved and unresolved patches, the mean per-task AUROC is 0.826 (0.838 on tasks not used to tune the rubric-generation prompt), and ranking systems by their failing patches closely agrees with ranking them by resolve rate (Spearman 0.968). Case analyses trace disagreements to tests that do not match the task, execution-blocking defects that the textual assessment misses, and errors in criteria or verdicts. The validation does not establish absolute score magnitudes or requirement satisfaction beyond agreement with tests, but rubric scores could complement tests where tests or execution environments cannot be assumed.",
+      "url": "http://arxiv.org/abs/2611.23309v1"
+    },
+    {
+      "id": "arxiv-2611.23299",
+      "cat": "cs.SE",
+      "title": "When Code Works but the License Doesn't: Evaluating License Constraint Handling in Coding Agents",
+      "abstract": "Coding agents increasingly undertake repository-level development, including dependency selection, source modification, and software deployment. However, existing evaluations prioritize functional success over licensing correctness and commercial suitability. We investigate whether agents recognize and preserve software-license constraints when developing proprietary software. Experiments across multiple agents examine permissive and copyleft licenses, missing licensing information, transitive dependencies, source modification, dual licensing, vendoring, and distribution contexts. Agent traces, repository changes, and final artifacts are evaluated against licensing ground truth. Results reveal a persistent gap between functional and licensing correctness. Agents can successfully build and test software while overlooking licensing constraints involving provenance, authorization, and distribution. Better outcomes emerge when licensing information translates into engineering actions such as dependency substitution, architectural changes, and release gating. We argue that licensing in agentic development requires contextual constraint recognition and preservation across the software lifecycle, not merely license classification.",
+      "url": "http://arxiv.org/abs/2611.23299v1"
+    },
+    {
+      "id": "arxiv-2611.24165",
+      "cat": "cs.SE",
+      "title": "MemoSync: Co-Managing Developer-Agent Metamemory Across Contexts",
+      "abstract": "AI coding agents increasingly manage what context carries across sessions and projects, but developers have limited visibility into what these agents store, retrieve, and apply. This opacity creates a metamemory problem: the developer's meta-level judgments about what should be remembered are separated from the agent's object-level memory operations, disrupting the monitoring and control that keep the two levels aligned. We conducted a formative study with 12 developers and identified what they want to monitor and control across four dimensions of agent memory use. Based on these findings, we designed MemoSync, a co-management system that treats agent memory as a shared, operable representation: the agent proposes memory candidates and reports which items it uses, and the developer reviews, edits, and scopes them. In a between-subjects study (N=132) against two baselines, MemoSync participants achieved significantly higher task performance and the highest mean developer-agent memory alignment. In an exploratory mediation analysis, the alignment advantage was primarily driven by improved monitoring accuracy. Despite performing substantially more monitoring and control actions, participants reported no increase in perceived workload. A week-long deployment with nine developers showed that memory monitoring and control fit into everyday development work. MemoSync is open-sourced at this https URL.",
+      "url": "http://arxiv.org/abs/2611.24165v1"
+    },
+    {
+      "id": "arxiv-2611.24924",
+      "cat": "cs.SE/cs.MA",
+      "title": "Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses",
+      "abstract": "Real-world harness engineering is driven by explicit and implicit user requirements, which guide development and validation. However, existing harness evolution methods often overlook implicit requirements and interaction needs, while using a single evolution agent to modify the harness and benchmark scores to select changes. This process often produces narrow patches and leads to benchmark-specific local optima. We introduce Agentic Harness Engineering Beta (AHE-Beta), a requirement-centered loop that brings real-world engineering practices into harness evolution. The loop consists of three steps: (1) User-driven evaluation lets simulated users raise their requirements as issues while they work with the harness over multiple turns. (2) Team-based modification implements those requirements as generalizable changes rather than task-specific patches. (3) Requirement-driven selection merges a change only when it resolves a verified requirement and passes review. Empirically, on held-out tasks, AHE-Beta raises pass@1 from 21.9% to 33.3% while using 40.8% fewer tokens than Base Harness, and achieves higher pass@1 than Claude Code, Meta-Harness, and AHE. In a blind human A/B test, real users prefer AHE-Beta in 31 of 48 valid pairs and rate it higher on all five dimensions, matching the directional preference of the user simulator. The human A/B results show that AHE-Beta achieves its goal of aligning harness evolution with real-world user requirements. Without further evolution, the gains transfer to GLM-5.3 and DeepSeek-V4.1-Flash with pass@1 improvements of 15.8% and 5.3% over Base Harness. Together, these results show that requirement-centered harness evolution is a more general method for improving agent capabilities.",
+      "url": "https://arxiv.org/abs/2611.24924v1",
+      "published": "2026-11-18"
+    }
+  ],
+  "topic": [
+    {
+      "id": "kg-arxiv-2611.24552v1",
+      "title": "NaviGATE: Noise-Aware Dual-View Generation for Multimodal Knowledge Graph Reasoning",
+      "abstract": "Multimodal knowledge graph reasoning (MKGR) aims to infer missing facts by jointly exploiting relational structures, textual descriptions, and visual evidence. Existing embedding-based methods effectively capture graph topology, but their fixed multimodal representations are less effective for query-specific fine-grained semantic reasoning, while generation-based methods are vulnerable to noisy retrieval and may produce invalid entities. To address these challenges, we propose NaviGATE, a noise-aware generative framework for MKGR. NaviGATE first aligns graph-derived structural representations with textual semantics, then performs structure-aware internal knowledge activation by fine-tuning the multimodal language model with multimodal entity summaries and injected structural tokens. In the noise-aware dual-view instruction tuning stage, NaviGATE jointly optimizes retrieval-free and retrieval-aware views: reliable retrieved candidates are reinforced through contrastive logit sharpening, while misleading candidates are suppressed through parametric consistency distillation. In inference, structure-constrained decoding restricts generation to valid entities in the target knowledge graph. Experiments on standard benchmarks show that NaviGATE consistently outperforms strong unimodal, multimodal, and generation-based baselines, and remains robust under noisy retrieval scenarios.",
+      "url": "https://arxiv.org/abs/2611.24552v1",
+      "published": "2026-11-18",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.24302v1",
+      "title": "OpenKAGE: Open-Ended Lifelong Learning in the Open World via Knowledge-Sharing Agent-Group Evolution",
+      "abstract": "Building autonomous agents that continually explore open worlds and acquire new capabilities through experience is a long-standing aspiration in artificial intelligence. Existing research often pursues lifelong learning within predefined tasks, curricula, or objectives, with self-improvement largely confined to individual agents. We introduce OpenKAGE, an agent-group evolution framework for open-ended lifelong learning. Within this framework, agents autonomously explore open worlds and continually acquire new capabilities by accumulating and reusing knowledge from their own interactions and the experience of others. OpenKAGE builds on two key mechanisms: (1) a two-layer knowledge representation, with a memory layer for situated memories and an experience layer for transferable experience and skills that retains the applicability conditions needed for reuse; and (2) a knowledge-sharing mechanism that semantically consolidates textual experience into a continuously evolving shared knowledge graph, while executable skills are shared verbatim. In Minecraft, OpenKAGE supports open-ended lifelong learning, enabling agent groups to sustain exploration and reach advanced technological milestones. Furthermore, the accumulated knowledge can be transferred to a newly initialized agent group on a different backbone model, improving its survival and exploration progress.",
+      "url": "https://arxiv.org/abs/2611.24302v1",
+      "published": "2026-11-18",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.22485v1",
+      "title": "Growing Clusters Lower the Bar: Profile Accretion in LLM-Based Incremental Entity Resolution",
+      "abstract": "Incremental entity resolution pipelines ask a large language model (LLM) whether a new record belongs to an existing cluster and show it the records already linked. Analyses of matching oracles assume that the answer depends only on the records compared. For the LLM matchers we test, it depends on cluster size, and the model lowers its bar for joining a cluster as the cluster grows. On French procurement suppliers from FOPPA, with SIREN identifiers as ground truth, we hold the new record fixed and vary only the number of verified members shown. Sixteen members instead of one raise the false match rate on similarly named companies by \\dfmrMin--\\dfmrMax{} percentage points in six open-weight models, while their area under the ROC curve rises by only \\aucGainMin--\\aucGainMax. In Claude Sonnet~5 and Haiku~5.5 the rise is \\clSonD{} and \\clHaiD{} points. The shift persists with street addresses, prompt variants and the BatchER and ComEM formats, and one false merge raises acceptance of the intruder's other records in every open model. It does not arise on Czech and Bulgarian TED notices, where one record with its full address already identifies the company. In online linking on confusable blocks, a single threshold set on labelled data raises recall by a factor of \\fxRRmin--\\fxRRmax{} for five models with no detectable loss of precision and no extra LLM calls.",
+      "url": "https://arxiv.org/abs/2611.22485v1",
+      "published": "2026-11-17",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.20976v1",
+      "title": "Living Context Graphs: Continual Semantic Learning for Enterprise Data Reasoning",
+      "abstract": "Enterprise AI can now perform analytics, reporting, and data-driven workflows, yet the data foundations it relies on remain hard to operationalize: business meaning, relationships, metric definitions, and reporting conventions are absent from database schemas and scattered across undocumented systems and tribal knowledge. We introduce the Living Context Graph (LCG), a continually learned context layer that makes existing enterprise data operational for AI without requiring a copy or transformation of the underlying warehouse. LCG bootstraps base semantics and relationships from the data itself, builds a concept graph that indexes business context as queries are served, writes durable semantic learnings from verified outcomes, and withdraws or re-earns context when later outcomes contradict prior routes. We evaluate LCG through text-to-SQL, a core data-reasoning task, on a transfer-aware split of three BIRD databases comprising 499 questions: 353 form the learning history and 146 are held out and never used to update the context layer. Bootstrapping alone improves overall accuracy by +4.6 percentage points. Learning only from the history raises accuracy on the untouched held-out transfer set by +22.6 points (95% CI [+14.4, +30.8]), exceeding five-shot retrieval from the same history by +12.3 points. Incremental learning reaches the one-shot endpoint within observed evaluation noise on every database. Ablating the graph changes held-out accuracy by at most one question per database but increases per-query cost 2.3-3.3x and median latency 1.8-3.4x: continually learned semantics drive accuracy, while the graph makes that context efficient to serve.",
+      "url": "https://arxiv.org/abs/2611.20976v1",
+      "published": "2026-11-16",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.24887v1",
+      "title": "Ground, Iterate, Trace: Decomposing AI Research Ideation",
+      "abstract": "Large language models have been widely used to generate plausible research ideas, yet it remains unclear what makes automated ideation effective and how generated novel proposals arise from prior scientific work. We introduce the Creative AI Researcher (CAR), an agentic framework combining literature grounding, iterative development and explicit conceptual operators. CAR constructs a semantic knowledge graph from retrieved literature and equips an ideation agent with graph-retrieval tools and four operators: bisociation, analogy, exploration and elaboration. Each operator call is checked against structural acceptance conditions and recorded, producing a trace of intermediate transformations and declared literature sources. We evaluate CAR with two language-model backbones across 40 LiveIdeaBench research topics and two execution benchmarks. CAR achieves significantly higher methodological novelty (MN) than single-shot prompting and The AI Scientist. Its methodological novelty does not differ significantly from the Research Ideation Agent, while its feasibility scores are higher on both backbones. With a shared experiment executor, CAR achieves the highest pairwise win rate among the evaluated AI methods on FML-bench-Lite and BioXArena. In a ten-condition ablation study, MN point estimates favor CAR over one-step proposal on both backbones, but no MN contrast survives correction for multiple comparisons. The results do not establish a consistent quality benefit from explicit operators beyond free-form iteration. CAR makes the sequence of operations and declared literature sources inspectable, separating judged idea quality from procedural traceability.",
+      "url": "https://arxiv.org/abs/2611.24887v1",
+      "published": "2026-11-18",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.24535v1",
+      "title": "ProbMedTOD: A Bayesian Network Guided Task-Oriented Dialogue System for Patient History Taking",
+      "abstract": "Patient history taking is a strategic, multi-turn process that refines diagnostic hypotheses through iterative questioning, mirroring clinical reasoning where each inquiry updates beliefs over candidate diagnoses. Deploying AI in this setting is constrained by privacy, cost, and latency, making Small Language Models (SLMs) a more desirable backbone compared to larger LLMs. However, SLMs capture only the fast, intuitive \"System 1\" side of this process and lack explicit mechanisms for the deliberative \"System 2\" reasoning needed to maintain and update diagnostic uncertainty over time. Bayesian Networks (BayesNets) offer a natural complement, providing an interpretable framework for auditable probabilistic belief tracking. Yet, clinical BayesNets are difficult to construct due to their reliance on expert curated structure, dependencies, and parameters. We introduce ProbMedTOD, which automatically synthesizes a clinical BayesNet from a small number of clinical notes in three stages: ontology building, structure prediction, and parameter estimation. ProbMedTOD then integrates the resulting BayesNet with SLMs, enabling probabilistic reasoning in multi-turn dialogues. A BayesNet Agent maintains real-time posterior distributions over diagnoses, while a Policy Agent picks diagnostically informative questions. Experiments on DDXPlus and MIMIC-IV Notes show that ProbMedTOD outperforms LLM-only and retrieval-based baselines, with especially strong gains for smaller models.",
+      "url": "https://arxiv.org/abs/2611.24535v1",
+      "published": "2026-11-18",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.23629v1",
+      "title": "The Value Semantics Layer: Enabling Machine-Understandable Databases for Agentic AI",
+      "abstract": "As data systems increasingly support autonomous LLM-powered agents alongside human analysts, they require richer semantic infrastructure bridging analytical concepts and analytical operations. Existing metadata systems expose schemas, catalogs, lineage, and governance information, but provide limited support for representing operational semantics. We propose the Value Semantics Layer (VSL), an architectural abstraction that externalizes value semantics as persistent, planner-visible infrastructure. VSL introduces Value Semantic Types (VSTs), reusable operational semantic assertions capturing distributional, relational, process, quantitative, and policy-grounded semantics. Unlike descriptive metadata, VSTs enable planners to validate analytical operations, select appropriate operators, and guide analytical workflows. We present the motivation, formalization, architecture, and prototype realizations of VSL, and outline a research agenda toward AI-native semantic infrastructure for analytical systems.",
+      "url": "https://arxiv.org/abs/2611.23629v1",
+      "published": "2026-11-17",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.23507v1",
+      "title": "ACaM: Automated Capability Modeling for Agentic AI Security",
+      "abstract": "In agentic AI systems, an LLM invokes tools that hold standing access to credentials, private data, filesystems, and external services. Such agents are increasingly deployed without an answer to a basic question: what can an agent access, exfiltrate, and propagate, independent of what it is designed for or is observed to do? The question goes unanswered because existing approaches trust a tool's natural-language description as a proxy for its behavior. But nothing enforces that the description and its implementation agree. This gap is known as Description-Code Inconsistency (DCI). DCI enables a threat class called capability laundering, in which a tool's implementation contains dangerous behavior that its description omits. The behavior may come from incidental drift or a supply-chain compromise. It runs silently whenever an LLM invokes the tool for its stated, benign purpose. We present ACaM, a neurosymbolic approach to capability modeling that derives each tool's capabilities from its code, so a laundered capability cannot hide behind a benign description. In ACaM, static analysis grounds an LLM in code-derived facts, and no LLM output can override a fact that static analysis has established. The LLM supplies only the behavioral meaning that those facts cannot express. ACaM compiles agent source code into the Agent Capability Property Graph (ACPG) and uses it to reconstruct threat chains that span multiple tool calls. We evaluate ACaM on 43 real-world agents, including 9 multi-agent systems. On 24 manually annotated agents, it recovers capability properties with 98.3% macro-F1 and reconstructs injected threat chains with a score of 0.980, 8 points above the strongest baseline. Applied to all 43 unmodified agents, it discovers hundreds of structural vulnerabilities, ten of which we confirm with proof-of-concept exploits.",
+      "url": "https://arxiv.org/abs/2611.23507v1",
+      "published": "2026-11-17",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-hn-50516658",
+      "story_id": "50516658",
+      "title": "Ontology in the Age of AI",
+      "url": "https://safdarali2.substack.com/p/ontology-in-the-age-of-ai",
+      "hn_url": "https://news.ycombinator.com/item?id=50516658",
+      "points": 1,
+      "comments": 0,
+      "created": "2026-11-16",
+      "kind": "story"
+    }
+  ]
+}

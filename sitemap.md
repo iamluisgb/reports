@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [GPT-6.2 Astra and Sol ship](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-18.md) — 2026-11-18 · 9 min
+- [Gemini 4 Neon lands](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-19.md) — 2026-11-19 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### November 2026
 
+- [Gemini 4 Neon lands](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-19.md) — 2026-11-19 · 9 min
 - [GPT-6.2 Astra and Sol ship](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-18.md) — 2026-11-18 · 9 min
 - [Windows 11 telemetry profiles which coding agents you run](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-17.md) — 2026-11-17 · 8 min
 - [Universal XSS in uBlock Origin](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-16.md) — 2026-11-16 · 9 min

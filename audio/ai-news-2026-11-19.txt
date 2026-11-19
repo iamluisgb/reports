@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Thursday the nineteenth of November, twenty twenty-six. Lead story: Google ships Gemini 4 Neon, its newest frontier model, rank one on the front page and already drawing direct comparisons to Opus five point five on capability and price. The launch of the week for anyone wiring a model into production.
+
+[HOST_B] Treat the Opus comparison as vendor-adjacent until independent evals land. The signal is third-party benchmarks on capability and real production cost — not list price. If parity at lower cost holds, expect pricing pressure on Azure and Anthropic within weeks.
+
+[HOST_A] Wiz documents unauthenticated remote code execution in Nginx — flaws in its H T T P version two handling, reachable without credentials, up to full R C E. Nginx fronts a large fraction of the web.
+
+[HOST_B] Exposure is a function of patch velocity. Vendor advisories will refine severity and scope over the next forty-eight hours; scan results showing active exploitation would settle it decisively — and badly. Patch your fleet today.
+
+[HOST_A] Anthropic has priced its I P O — the last step before listing. Microsoft announced seven new models at Ignite, pitching scalable price-performance across the range rather than a single flagship. DeepMind's Genie four is now generally available.
+
+[HOST_B] The listing matters ecosystem-wide: what the float reveals about compute-supply commitments and secondary holders. Weak demand or revised terms would undercut that read. Benchmark Microsoft's range against current deployments if you run Azure-hosted inference. Genie shows interactive world models moving from demo to product.
+
+[HOST_A] In research: OpenAI is applying its models to chip design — a signal of where the next compute-efficiency gains come from. An energy-based reasoner effort claims three hundred and eighty-five x inference efficiency gains; replication pending. A write-up argues Opus five point five was trained on protein sequences at significant scale. And in a KPMG audit trial, agents produced better questions than the human accountants they were paired against.
+
+[HOST_B] Two reads. The three hundred and eighty-five x number only changes architecture decisions if it survives independent reproduction — no replication within the usual two-week window effectively kills it. The protein story reframes what these models generalise over, and what data owners should expect to leak into them. The KPMG result lands harder than a benchmark table: auditing is a questioning profession.
+
+[HOST_A] Papers. Timeout cascades: across thirty-six open-weight models, the accuracy gap versus large models sits almost entirely in hard tasks — easy and medium tasks near parity — and routing small-model failures upward recovers accuracy while cutting G P U cost. Three D GameDev Arena: one hundred and eight from-scratch game-building tasks across fourteen genres; runs average roughly a thousand L L M calls, the longest hitting fourteen thousand four hundred and seven calls and two point one three billion tokens. Repository-grounded rubrics score diffs without executing anything, validated on seven thousand two hundred and ninety-one S W E-bench Verified patches at a mean A U R O C of zero point eight two six.
+
+[HOST_B] The cascade paper is the actionable one. Per-task cost is now an engineering decision, not a line item — routing, not architecture, is where the savings are. Run small models on the easy tail and escalate; you capture most of the win without betting a stack on an unreplicated number. Execution-free evaluation matters where tests are missing or environments won't build.
+
+[HOST_A] Three more. When Code Works but the Licence Doesn't finds agents shipping working, tested software while overlooking provenance, authorisation and distribution obligations. MemoSync makes agent memory a shared artefact — the agent proposes candidates, the developer reviews and scopes them — validated with one hundred and thirty-two developers. A H E-Beta evolves harnesses against raised requirements rather than raw benchmark scores.
+
+[HOST_B] Strip out the launch headlines and today's crop is almost entirely audit infrastructure — rubrics that score without running tests, licence ground truth, developer-governed memory. The field conceding that the capability curve has outrun the trust curve. Provenance is hardening into a runtime constraint: agents act on whatever they can reach, so semantics and rights must travel with the data. Expect provenance checks and machine-readable semantics in harnesses — as standard as schema validation in APIs.
+
+[HOST_A] Quick sweep. Ruby patched Regexp and String case-conversion vulnerabilities — update Rails hosts. K V M fixed an unconditional M M U context reset on INIT emulation, relevant to multi-tenant virtualisation. Codeberg remains unreachable, three hundred plus comments on the outage thread — check Forgejo fallbacks. Quad9 exited France rather than comply with D N S blocking orders. A Deutsche Bank deep dive at six hundred and fifty-six points. An interactive Voyager one teardown to individual memory chips. Cambridge Dictionary named human word of the year.
+
+[HOST_B] Watch the Codeberg post-mortem — a multi-day outage forces single-hosted Forgejo users to formalise fallbacks. That's the briefing; the full written report has the papers, the links and the watchlist.
