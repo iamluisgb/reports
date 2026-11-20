@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Friday the twentieth of November, twenty twenty-six. Lead story: Anthropic lists on Nasdaq today — the year's most anticipated AI initial public offering, and the day's dominant thread at one thousand and thirty-seven points and two thousand and forty-eight comments. Reuters frames the listing as Wall Street's first real test of AI's promise against its peril.
+
+[HOST_B] The aftermarket matters more than the open. A durable premium reads as market conviction in frontier-lab economics; a weak debut hands the perils camp its exhibit A. Note the framing, too — the market is pricing the gap between model capability and operability, which is precisely what today's papers cluster on.
+
+[HOST_A] Also from Anthropic: two verified solutions to open problems in black-hole physics. Four hundred and fifty-six points on the thread, write-up public.
+
+[HOST_B] Verified by whom is the live question. Watch for physicists publishing assessments in the coming days. Independent confirmation would be the strongest data point yet on frontier models doing genuine research work; a found flaw does the opposite. Read the proofs before repeating the claim.
+
+[HOST_A] Security. OpenSSL patched a buffer overflow in E V P Encode Block — C V E twenty twenty-six dash one two one four eight one, C V S S nine point eight, fixed in pull request thirty-three thousand six hundred and fifty-two. Separately, Verial Labs documents unauthenticated remote code execution on default Rails configurations, dubbed Ruby two S shell.
+
+[HOST_B] Both are races against the scanners. If your stack terminates T L S or does base sixty-four encoding through OpenSSL, upgrade now; audit internet-facing Rails apps and watch the logs for probing. Add the jurisdictional layer: the U K government has confirmed a previously secret encryption order to Apple, setting precedent for anyone shipping end-to-end encrypted products into that market.
+
+[HOST_A] Benchmarks. Gemini four Neon takes number one on the Models Engineering Index, with three hundred and thirty-one points of debate about methodology. Alongside: a five-hundred-and-nineteen-point teardown of guardrail layers in frontier models, and the Coxon versus Hanson video debate on whether governments should slow frontier AI.
+
+[HOST_B] Check the index before your next model pin — this quarter's differentiator is degradation under realistic harness conditions, not leaderboard position on clean inputs. The guardrail teardown is required reading if you ship safety controls: what the layers check, where they sit, and how they fail.
+
+[HOST_A] Papers, first pair. How Much Should an Agent Remember mines lessons from an agent's own trajectories and consolidates them into guidelines; on AppWorld, across models at forty to ninety-two percent baseline completion, it shows memory is a tunable optimum, not a monotone gain — shipped in the open-source A L T K evolve library. Second, validation-driven deployment: replaying captured traces reproduces per-session load within one point one eight times at the ninety-fifth percentile, against four point nine eight for live re-runs.
+
+[HOST_B] Both are deployment scaffolding, not capability work. The memory result says more context is not automatically better — treat retention as a tuned parameter. The replay result gives a repeatable token-load profile for sizing self-hosted infrastructure before rollout. And the coverage finding matters: live, replayed and synthetic workloads exercise complementary code paths, so no single workload type validates a platform.
+
+[HOST_A] Two evaluation benchmarks. S W E Recreation: fifty-four real applications — twenty-eight websites, twenty-six Android apps — one thousand four hundred and forty-six hidden requirements, where the agent uses an unfamiliar product through rendered pixels, pointer and keyboard, then rebuilds it. Five frontier systems top out at a modest completion rate. CompAct-Bench scores compaction by whether the same executor still finishes the task, not by summary fidelity.
+
+[HOST_B] S W E Recreation is the sharper critique — coding agents are always told what to build, and they fail when the specification is hidden inside a running product. CompAct-Bench's downstream-survival metric is the right one and should change how you pick a compaction strategy. Both are benchmark results that shift which systems people choose.
+
+[HOST_A] Sweeping the papers. DriftGuard detects agent memory drift at real-time latency via causal attribution — retrieved memory treated as an injection surface. S C A F F O L D proposes warrant-preserving evidence transport for skill reuse; formal, but it names the reuse-trust problem precisely. Gen S P A R Q L binds L L M-predicted values to query variables in incomplete knowledge graphs — the most actionable semantic-layer paper. Plus L S P R A G, P L A N T A, and a Cypher-based M C P graph server for agents.
+
+[HOST_B] Infra and the rest: PostgreSQL nineteen released — pair it with Snowflake's write-up on the new repack for bloat. Fifteen million web servers on a single V M through kernel-bypass networking and userspace T C P. The European Commission's Matrix rollout to forty thousand plus staff, the largest public-sector deployment. Zerodha's blob storage on SQLite. PHP eight point six. F F mpeg nine point one. G I M P gains U I tests. Vint Cerf on why T C P I P was never patented. And internet-connected garage doors spamming their owners. Full details in the written report.

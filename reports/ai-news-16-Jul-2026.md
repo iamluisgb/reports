@@ -4,7 +4,7 @@ date: 2026-07-16
 type: daily
 url: https://luisgonzalezbernal.com/reports/reports/ai-news-16-Jul-2026.html
 summary: "Agent infra · AI model wave · Open weights · Security guidance"
-tags: [agents, open-source, infrastructure]
+tags: [agents, models, open-source, infrastructure]
 reading_time_minutes: 4
 ---
 AI NEWS DAILY

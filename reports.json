@@ -1,7 +1,19 @@
 {
-  "generated": "2026-11-19T08:05:02+00:00",
-  "count": 206,
+  "generated": "2026-11-20T06:37:33+00:00",
+  "count": 207,
   "reports": [
+    {
+      "file": "ai-news-2026-11-20.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-11-20",
+      "summary": "Anthropic debuts on Nasdaq · Claude claims two black-hole proofs · OpenSSL patches a CVSS 9.8 overflow · Ruby2ßhell gives pre-auth RCE on stock Rails",
+      "readingTime": 10,
+      "tags": [
+        "memory"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-11-19.html",
       "type": "daily",
@@ -1805,6 +1817,7 @@
       "readingTime": 4,
       "tags": [
         "agents",
+        "models",
         "open-source",
         "infrastructure"
       ]
