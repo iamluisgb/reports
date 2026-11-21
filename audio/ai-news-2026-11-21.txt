@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Saturday the twenty-first of November, twenty twenty-six. The lead: Levent Alpöge has posted a claimed proof of the Generalised Riemann Hypothesis — not through a journal, but as a P D F on his own site. It sits at two thousand six hundred and fifty-four points and one thousand eight hundred and thirty-seven comments and climbing.
+
+[HOST_B] Treat it as a preprint under scrutiny, nothing more. A proof of G R H would settle results across number theory in one stroke, which is exactly why the bar for belief is so high. The interesting signal is the shape of the release — claim first, verification later. Watch for expert commentary on the central lemmas; a confirmed gap kills it, formal verification makes it the story of the year.
+
+[HOST_A] Terry Tao has published the mathematical companion. He sets out how an unforced Euler and Navier–Stokes singularity — building on Buckmaster's finite-time blow-up construction — would imply the Generalised Riemann Hypothesis. Two Millennium Prize problems in a single argument.
+
+[HOST_B] Note the direction of the implication: a blow-up result would give you G R H, which is a startling bridge between fluid dynamics and the primes. But it is a sketch, not a checked theorem, and it inherits every open question in Alpöge's manuscript. Neither item is wrong yet; neither is right yet either.
+
+[HOST_A] Thinking Machines Lab shipped Inkling two Mini, the newest entry in its Inkling line. It hit third on the front page within hours.
+
+[HOST_B] The thread is thin on benchmarks so far, so hold judgement until independent numbers land. What matters is cadence — a second-tier lab shipping on a schedule while the market wobbles beneath it.
+
+[HOST_A] Which brings us to markets. The Nasdaq has erased every point of its twenty twenty-six gains, with the S and P and the Dow in correction territory, as the A I sell-off runs into Anthropic's second session as a public company. Separately, sources say the S E C's Nvidia probe now has an accounting dimension, beyond the competition questions previously reported.
+
+[HOST_B] A sell-off triggered by verification questions rather than a capability miss is a different animal — it reprices claims, not products, and it ends when audits do, not when demos do. Watch for subpoenas or disclosed document requests; revenue recognition in scope would compound the sector's concentration worries. A third down day for Anthropic confirms the de-rating has legs.
+
+[HOST_A] Three papers worth your time. Q L V L M handles latent chain-of-thought in vision-language models — it profiles which operators the reasoning actually depends on, then quantises around that sensitivity, holding reasoning together at four-bit where naive quantisation wrecks it. Reasoning-Trace Analysis forces a model to emit attribute-labelled reasoning steps before building Q-matrices, then audits each assignment. HabitusMem treats agent memory as belief about a latent preference state — every retrieved belief carries its own evidence and scope, so the agent can tell current from expired.
+
+[HOST_B] The common thread is provenance. Each paper attaches justification to what the model acts on — a quantised thought, a diagnostic assignment, a stored preference. Against that, the weight-rewriting paper on arXiv treats weight modification as a first-class capability, and the open question is iteration two: stability, and what happens when a model edits itself twice. Provenance stops being optional the moment weights are writable.
+
+[HOST_A] Infra sweep. Valkey has replaced the skiplist with a B plus tree for sorted sets, cutting memory overhead by up to forty-three percent. A remote code execution vulnerability in GnuPG was disclosed on the announce list hours ago — patch whatever signs or verifies on your fleet. A Show H N post demonstrates audio-to-MIDI transcription at a sixty-times efficiency gain, same output, fraction of the compute. And Architect Labs claims Frostbite, a C P U architecture discovered, designed and verified end-to-end by A I — six hundred and forty-eight points arguing over how much of that survives the details.
+
+[HOST_B] Frostbite is the week's loudest claim wearing the same clothes as the G R H proof — published ahead of its verification. The scarce resource in twenty twenty-six is not claim generation but audit capacity, and the gap widens on every front at once.
+
+[HOST_A] Quick sweep of the rest. Signal argues mobile platforms should constrain what A I agents can capture across apps. Mozilla explains why every iOS browser remains a WebKit skin. A Framework warranty account sits at seven hundred and ninety-seven points; a piece on zram-style compression asks whether you should buy RAM at all; and a post warns that stopping daily coding degrades your code review within weeks.
+
+[HOST_B] That's the briefing. The full written report — with the papers, the watch list and the links — is in today's edition of AI News Daily. Read it before you repeat any of these claims.

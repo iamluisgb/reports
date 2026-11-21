@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Anthropic debuts on Nasdaq](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-20.md) — 2026-11-20 · 10 min
+- [Alpöge claims a proof of the Generalized Riemann Hypothesis](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-21.md) — 2026-11-21 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### November 2026
 
+- [Alpöge claims a proof of the Generalized Riemann Hypothesis](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-21.md) — 2026-11-21 · 9 min
 - [Anthropic debuts on Nasdaq](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-20.md) — 2026-11-20 · 10 min
 - [Gemini 4 Neon lands](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-19.md) — 2026-11-19 · 9 min
 - [GPT-6.2 Astra and Sol ship](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-18.md) — 2026-11-18 · 9 min
