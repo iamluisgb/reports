@@ -1,7 +1,21 @@
 {
-  "generated": "2026-11-21T10:51:21+00:00",
-  "count": 208,
+  "generated": "2026-11-22T06:34:23+00:00",
+  "count": 209,
   "reports": [
+    {
+      "file": "ai-news-2026-11-22.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-11-22",
+      "summary": "Lean verification of the Riemann Hypothesis · OpenRouter discloses data-processing incidents at inference providers · FBI investigates hack of its criminal database · LLMs edit executables byte by byte from hex dumps",
+      "readingTime": 7,
+      "tags": [
+        "agents",
+        "security",
+        "infrastructure"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-11-21.html",
       "type": "daily",
@@ -599,7 +613,6 @@
       "readingTime": 8,
       "tags": [
         "models",
-        "agents",
         "research",
         "coding"
       ],
@@ -1816,7 +1829,6 @@
       "readingTime": 3,
       "tags": [
         "models",
-        "agents",
         "open-source"
       ],
       "audio": true
