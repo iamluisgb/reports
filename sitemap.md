@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [Lean verification of the Riemann Hypothesis](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-22.md) — 2026-11-22 · 7 min
+- [OpenAI essays on Perplexity](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-23.md) — 2026-11-23 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### November 2026
 
+- [OpenAI essays on Perplexity](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-23.md) — 2026-11-23 · 9 min
 - [Lean verification of the Riemann Hypothesis](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-22.md) — 2026-11-22 · 7 min
 - [Alpöge claims a proof of the Generalized Riemann Hypothesis](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-21.md) — 2026-11-21 · 9 min
 - [Anthropic debuts on Nasdaq](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-20.md) — 2026-11-20 · 10 min
