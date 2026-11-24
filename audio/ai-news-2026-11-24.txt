@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Tuesday the twenty-fourth of November, twenty twenty-six. Lead story: Nvidia has reinstated Jensen Huang as chief executive. It sits at rank one with two thousand four hundred and fourteen points on Hacker News.
+
+[HOST_B] A reinstatement is never just a personnel story — either Huang never really left in any operational sense, or the board wanted a visible reset. Watch capital allocation over the next quarter, not the announcement.
+
+[HOST_A] Ladybird, the independent browser built from scratch, has hit its first alpha. The announcement drew one thousand six hundred and seventy-seven points.
+
+[HOST_B] An alpha from a from-scratch engine is a decade-scale milestone. It does not threaten Chromium tomorrow, but every independent engine needs a moment where ordinary people can try it — this is that moment. Watch crash rates and site breakage, not benchmarks.
+
+[HOST_A] Z.ai shipped GLM five point four, its first model built on a loop transformer architecture, pitched at generalised coding. One thousand and ninety-eight points and three hundred and fifty-nine comments within a day.
+
+[HOST_B] The architecture claim is the interesting part, not the benchmark chart. Loop transformers trade depth for iteration, which suits agentic coding where a model revisits its own work. Three hundred and fifty-nine comments arguing is not evidence — wait for independent runs against real workloads.
+
+[HOST_A] Yann LeCun accused Dario Amodei of hyping the dangers of open models so that open weights become illegal and closed labs stay in control. One thousand four hundred and eighty points, eight hundred and thirty-four comments, top of the front page.
+
+[HOST_B] This is the open-weights governance fight argued in public by senior figures, and both things are true at once — frontier labs have real safety concerns, and open weights are closing the gap on commodity hardware. A twenty-seven B class model at B F sixteen-level quality in ten gigabytes shipped the same week. Watch for a direct response from Amodei, and whether the argument moves from posts to lobbying over open-weights rules.
+
+[HOST_A] Papers. One team audited forty-one thousand and ninety path claims and one hundred and eighty-four dependency rules from three thousand six hundred and two context files — the Claude dot M D and Agents dot M D files coding agents treat as ground truth. Only two point two percent of path claims were real errors. But eighteen percent of dependency rules were already broken the day they were written.
+
+[HOST_B] That eighteen percent is the week's headline number — agents inherit stale assumptions and propagate them into generated code, and no amount of scale fixes a wrong fact in the prompt. T E A Bench B R tested coding agents on a Brazilian clinical pathway against six thousand seven hundred and ninety-eight hidden cases. The thirty-one B model passed over ninety-nine percent, failing mostly on input validation — the twelve B managed thirty-eight percent and nothing at F H I R level.
+
+[HOST_A] Two more papers. A schema-validation study ran five workflow tasks across six implementations — PydanticAI, LangGraph, D S Py, CrewAI, Agno and a framework-free reference — and confirmed structural validity and task correctness are separable, with failures concentrating in condition-by-task interactions. And S L P Bench graded each acoustic claim in reasoning audio models' chain of thought against speech-language pathologists' ratings — ten open-weight models, zero-shot, and the narration did not survive claim-level checking.
+
+[HOST_B] Three papers, one finding — the artefacts agents trust are weaker than the agents using them. Schema-valid output is not correct output, and chain-of-thought narration fails audit. The leverage is not a bigger model — it is the harness with executable checks.
+
+[HOST_A] Quick sweep. Nari Labs published a G G U F quantisation of Qwen three point eight, twenty-seven B, claiming B F sixteen-level quality in ten gigabytes — no third-party evals yet. New work shows models can detect prior concept injections from their own internal states. David Temkin's Declare is a U I language for humans and models — thirty-four points, early. Ontologies: dynamic Datalog as an agent action language, in-process small models for graph databases, zero-training cross-ontology medical coding, and GraphSeer for photo-to-entity linking. Infra: Stalwart is now a drop-in Microsoft Exchange replacement at three hundred and sixty-one points, a case against on-disk S S H keys, and modernised iperf plus a new fireperf. Hacker News: Kagi Mail's public beta at three hundred and ninety-three points, Apple pulling F S Notes from E U App Stores after nine years at five hundred and fifty-six, a treemap of the Riemann Hypothesis Lean proof, and X N U Linux — full macOS graphical userspace on the Linux kernel.
+
+[HOST_B] The watch list, and we are done. Arm has asked Jon Palmisciano to shut down his widely used A R M documentation site on the fourth of December — watch whether Arm offers an official replacement or licensing path, and whether mirrors appear. Also watch independent evals of that ten gigabyte quant, and Apple's justification for the F S Notes removal. The full written report — every paper, every link — is in the post: AI News Daily, twenty-fourth of November, twenty twenty-six.
