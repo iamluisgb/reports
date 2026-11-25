@@ -1,0 +1,955 @@
+{
+  "day": "2026-11-25",
+  "weekday": "Wednesday",
+  "collected_at": "2026-11-25T06:32:11+00:00",
+  "stories": [
+    {
+      "id": "hn-50637220",
+      "story_id": "50637220",
+      "rank": 1,
+      "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "points": 428,
+      "comments": 205,
+      "hn_url": "https://news.ycombinator.com/item?id=50637220"
+    },
+    {
+      "id": "hn-50638032",
+      "story_id": "50638032",
+      "rank": 2,
+      "title": "Button Sounds – collection of professionally-recorded button clicks and presses",
+      "url": "https://buttons.joshwcomeau.com/",
+      "points": 165,
+      "comments": 14,
+      "hn_url": "https://news.ycombinator.com/item?id=50638032"
+    },
+    {
+      "id": "hn-50637686",
+      "story_id": "50637686",
+      "rank": 3,
+      "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
+      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+      "points": 138,
+      "comments": 54,
+      "hn_url": "https://news.ycombinator.com/item?id=50637686"
+    },
+    {
+      "id": "hn-50638647",
+      "story_id": "50638647",
+      "rank": 4,
+      "title": "Treasury CIO is too busy vibecoding instead of doing his job #147",
+      "url": "https://github.com/samcorcos/legatum/issues/147",
+      "points": 82,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50638647"
+    },
+    {
+      "id": "hn-50638503",
+      "story_id": "50638503",
+      "rank": 5,
+      "title": "Show HN: Old Nvidia and ATI tech demos, running again in the browser",
+      "url": "https://gpu-demo-gallery.pages.dev/",
+      "points": 32,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50638503"
+    },
+    {
+      "id": "hn-50633922",
+      "story_id": "50633922",
+      "rank": 6,
+      "title": "Ternary Bonsai 2.5 27B",
+      "url": "https://prismml.com/news/bonsai-2-5-27b",
+      "points": 409,
+      "comments": 134,
+      "hn_url": "https://news.ycombinator.com/item?id=50633922"
+    },
+    {
+      "id": "hn-50637056",
+      "story_id": "50637056",
+      "rank": 7,
+      "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
+      "url": "https://greydanus.github.io/2026/11/12/pengpt/",
+      "points": 181,
+      "comments": 31,
+      "hn_url": "https://news.ycombinator.com/item?id=50637056"
+    },
+    {
+      "id": "hn-50638220",
+      "story_id": "50638220",
+      "rank": 8,
+      "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
+      "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
+      "points": 54,
+      "comments": 11,
+      "hn_url": "https://news.ycombinator.com/item?id=50638220"
+    },
+    {
+      "id": "hn-50638320",
+      "story_id": "50638320",
+      "rank": 9,
+      "title": "Gemini refused to give me the lyrics to Twinkle Twinkle Little Star",
+      "url": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
+      "points": 104,
+      "comments": 71,
+      "hn_url": "https://news.ycombinator.com/item?id=50638320"
+    },
+    {
+      "id": "hn-50637890",
+      "story_id": "50637890",
+      "rank": 10,
+      "title": "Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native",
+      "url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
+      "points": 86,
+      "comments": 21,
+      "hn_url": "https://news.ycombinator.com/item?id=50637890"
+    },
+    {
+      "id": "hn-50638478",
+      "story_id": "50638478",
+      "rank": 11,
+      "title": "Taking over US Treasury subdomains for $3 each",
+      "url": "https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each",
+      "points": 22,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50638478"
+    },
+    {
+      "id": "hn-50637888",
+      "story_id": "50637888",
+      "rank": 12,
+      "title": "Lua for Data Representation",
+      "url": "https://citrons.xyz/journal/2025-07-23",
+      "points": 39,
+      "comments": 8,
+      "hn_url": "https://news.ycombinator.com/item?id=50637888"
+    },
+    {
+      "id": "hn-50638070",
+      "story_id": "50638070",
+      "rank": 13,
+      "title": "Serving Qwen via AWS Lambdas for fun and 80x negative profit",
+      "url": "https://noahbuilt.it/writing/qwen-on-5600-lambdas",
+      "points": 39,
+      "comments": 8,
+      "hn_url": "https://news.ycombinator.com/item?id=50638070"
+    },
+    {
+      "id": "hn-50634658",
+      "story_id": "50634658",
+      "rank": 14,
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+      "points": 234,
+      "comments": 73,
+      "hn_url": "https://news.ycombinator.com/item?id=50634658"
+    },
+    {
+      "id": "hn-50598555",
+      "story_id": "50598555",
+      "rank": 15,
+      "title": "The Spray Bottle",
+      "url": "https://mechanical-pencil.com/products/spray-bottle",
+      "points": 438,
+      "comments": 107,
+      "hn_url": "https://news.ycombinator.com/item?id=50598555"
+    },
+    {
+      "id": "hn-50627079",
+      "story_id": "50627079",
+      "rank": 16,
+      "title": "The Shapes of Rivers",
+      "url": "https://dominicroye.github.io/shapes-of-rivers/",
+      "points": 23,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50627079"
+    },
+    {
+      "id": "hn-50638075",
+      "story_id": "50638075",
+      "rank": 17,
+      "title": "A faster algorithm for extracting hexadecimal digits of π",
+      "url": "https://www.stylewarning.com/posts/faster-digit-extraction/",
+      "points": 19,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50638075"
+    },
+    {
+      "id": "hn-50637871",
+      "story_id": "50637871",
+      "rank": 18,
+      "title": "Top open problems in mathematics ranked by LLM-assessed importance",
+      "url": "https://www.proofatlas.ai/open-problems/",
+      "points": 28,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50637871"
+    },
+    {
+      "id": "hn-50634426",
+      "story_id": "50634426",
+      "rank": 19,
+      "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
+      "url": "https://news.ycombinator.com/item?id=50634426",
+      "points": 82,
+      "comments": 65,
+      "hn_url": "https://news.ycombinator.com/item?id=50634426"
+    },
+    {
+      "id": "hn-50626430",
+      "story_id": "50626430",
+      "rank": 20,
+      "title": "New Rewritable Antimony Selenide Display Shows an Image for Months Without Power",
+      "url": "https://tmos.org.au/news/new-rewritable-displays-can-show-an-image-for-months-without-power/",
+      "points": 26,
+      "comments": 11,
+      "hn_url": "https://news.ycombinator.com/item?id=50626430"
+    },
+    {
+      "id": "hn-50637891",
+      "story_id": "50637891",
+      "rank": 21,
+      "title": "Macrohistory in Six Facts",
+      "url": "https://basilhalperin.com/essays/macrohistory.html",
+      "points": 39,
+      "comments": 10,
+      "hn_url": "https://news.ycombinator.com/item?id=50637891"
+    },
+    {
+      "id": "hn-50630594",
+      "story_id": "50630594",
+      "rank": 22,
+      "title": "Active intrusion campaign against Check Point security management servers",
+      "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+      "points": 276,
+      "comments": 141,
+      "hn_url": "https://news.ycombinator.com/item?id=50630594"
+    },
+    {
+      "id": "hn-50637874",
+      "story_id": "50637874",
+      "rank": 23,
+      "title": "I've been drinking wine in my kitchen",
+      "url": "https://scottaaronson.blog/?p=10362",
+      "points": 117,
+      "comments": 75,
+      "hn_url": "https://news.ycombinator.com/item?id=50637874"
+    },
+    {
+      "id": "hn-50627891",
+      "story_id": "50627891",
+      "rank": 24,
+      "title": "Adding some funk to an old Vtech toy",
+      "url": "https://boyesm.ca/vtech",
+      "points": 9,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50627891"
+    },
+    {
+      "id": "hn-50637863",
+      "story_id": "50637863",
+      "rank": 25,
+      "title": "Bo3mac: Static ARM64 Recompiler and Direct Metal Port of Black Ops III",
+      "url": "https://github.com/mawlicious/bo3mac",
+      "points": 22,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50637863"
+    },
+    {
+      "id": "hn-50625265",
+      "story_id": "50625265",
+      "rank": 26,
+      "title": "Gödel Enigma",
+      "url": "https://www.helsinki.fi/en/researchgroups/godel-enigma/research/project-description",
+      "points": 119,
+      "comments": 38,
+      "hn_url": "https://news.ycombinator.com/item?id=50625265"
+    },
+    {
+      "id": "hn-50638523",
+      "story_id": "50638523",
+      "rank": 27,
+      "title": "Show HN: U.S. Interstate Weather",
+      "url": "https://www.interstateweather.com/",
+      "points": 21,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50638523"
+    },
+    {
+      "id": "hn-50636925",
+      "story_id": "50636925",
+      "rank": 28,
+      "title": "Here in the World: Letters of Albert Camus, 1944–1959",
+      "url": "https://literaryreview.co.uk/here-in-the-world",
+      "points": 45,
+      "comments": 3,
+      "hn_url": "https://news.ycombinator.com/item?id=50636925"
+    },
+    {
+      "id": "hn-50610820",
+      "story_id": "50610820",
+      "rank": 29,
+      "title": "An Italian folding bicycle design that fits into a suitcase",
+      "url": "https://www.core77.com/posts/145766/An-Italian-Folding-Bicycle-Design-that-Fits-Into-a-Suitcase",
+      "points": 162,
+      "comments": 104,
+      "hn_url": "https://news.ycombinator.com/item?id=50610820"
+    },
+    {
+      "id": "hn-50627783",
+      "story_id": "50627783",
+      "rank": 30,
+      "title": "GTA 6 Running on Windows",
+      "url": "https://twitter.com/raul_bs3/status/2125213756238291075",
+      "points": 344,
+      "comments": 435,
+      "hn_url": "https://news.ycombinator.com/item?id=50627783"
+    },
+    {
+      "id": "hn-50637936",
+      "story_id": "50637936",
+      "rank": 31,
+      "title": "Show HN: Sliding-panes React UI library (inspired by WebOS Enyo)",
+      "url": "https://vcarl.com/sashay/",
+      "points": 20,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50637936"
+    },
+    {
+      "id": "hn-50609483",
+      "story_id": "50609483",
+      "rank": 32,
+      "title": "Calculate how many mesh radio nodes your city needs",
+      "url": "https://meshcoveragecalculator.lalala.ing/",
+      "points": 94,
+      "comments": 22,
+      "hn_url": "https://news.ycombinator.com/item?id=50609483"
+    },
+    {
+      "id": "hn-50629231",
+      "story_id": "50629231",
+      "rank": 34,
+      "title": "A training engine for your local model, using your idle compute",
+      "url": "https://github.com/sous-labs/songe",
+      "points": 210,
+      "comments": 64,
+      "hn_url": "https://news.ycombinator.com/item?id=50629231"
+    },
+    {
+      "id": "hn-50633424",
+      "story_id": "50633424",
+      "rank": 35,
+      "title": "From CUDA and Jax to TorchTPU: Lessons from a Cayley Graph Solver",
+      "url": "https://andlukyane.com/blog/cayley-graphs-and-torchtpu",
+      "points": 82,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50633424"
+    },
+    {
+      "id": "hn-50630462",
+      "story_id": "50630462",
+      "rank": 36,
+      "title": "Jetty Pro",
+      "url": "http://hypercritical.co/2026/11/23/jetty-pro",
+      "points": 296,
+      "comments": 132,
+      "hn_url": "https://news.ycombinator.com/item?id=50630462"
+    },
+    {
+      "id": "hn-50606655",
+      "story_id": "50606655",
+      "rank": 37,
+      "title": "Hierarchical Bayesian Neural Networks: When Structure Meets Flexibility",
+      "url": "https://statwonk.com/hierarchical-bayesian-neural-network.html",
+      "points": 35,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50606655"
+    },
+    {
+      "id": "hn-50604355",
+      "story_id": "50604355",
+      "rank": 38,
+      "title": "Cento fine foods has been sued for “tomato fraud”",
+      "url": "https://slate.com/life/2026/11/cento-san-marzano-tomato-sauce-recipes-lawsuit.html",
+      "points": 148,
+      "comments": 198,
+      "hn_url": "https://news.ycombinator.com/item?id=50604355"
+    },
+    {
+      "id": "hn-50635271",
+      "story_id": "50635271",
+      "rank": 39,
+      "title": "Heart attack and stroke risk detectable decades in advance",
+      "url": "https://www.ed.ac.uk/news/heart-attack-and-stroke-risk-detectable-decades-in-advance",
+      "points": 207,
+      "comments": 101,
+      "hn_url": "https://news.ycombinator.com/item?id=50635271"
+    },
+    {
+      "id": "hn-50629106",
+      "story_id": "50629106",
+      "rank": 40,
+      "title": "Splitting USB-C: USB 3 and USB 2 on one port",
+      "url": "https://www.frankchiarulli.com/blog/splitting-usb-c/",
+      "points": 146,
+      "comments": 94,
+      "hn_url": "https://news.ycombinator.com/item?id=50629106"
+    },
+    {
+      "id": "hn-50637866",
+      "story_id": "50637866",
+      "rank": 41,
+      "title": "Network Researchers Nail Down Theory of 'Perfect Resilience'",
+      "url": "https://www.quantamagazine.org/network-researchers-nail-down-theory-of-perfect-resilience-20261120/",
+      "points": 10,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50637866"
+    },
+    {
+      "id": "hn-50591024",
+      "story_id": "50591024",
+      "rank": 42,
+      "title": "Show HN: PQCrypta Proxy: Rust proxy with HTTP/3, QUIC, hybrid post-quantum TLS",
+      "url": "https://github.com/PQCrypta/pqcrypta-proxy",
+      "points": 40,
+      "comments": 18,
+      "hn_url": "https://news.ycombinator.com/item?id=50591024"
+    },
+    {
+      "id": "hn-50626413",
+      "story_id": "50626413",
+      "rank": 44,
+      "title": "Worshipping at the altar of Brendan Gregg",
+      "url": "https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg",
+      "points": 230,
+      "comments": 45,
+      "hn_url": "https://news.ycombinator.com/item?id=50626413"
+    },
+    {
+      "id": "hn-50599458",
+      "story_id": "50599458",
+      "rank": 45,
+      "title": "How a Mechanical Watch Keeps Time",
+      "url": "https://martincmartin.github.io/slidev-stem/watches/article/1/",
+      "points": 241,
+      "comments": 59,
+      "hn_url": "https://news.ycombinator.com/item?id=50599458"
+    },
+    {
+      "id": "hn-50637344",
+      "story_id": "50637344",
+      "rank": 46,
+      "title": "How PyTorch's autograd works, rebuilt in 60 lines of Python",
+      "url": "https://farid-alexander.github.io/autograd-from-scratch/",
+      "points": 7,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50637344"
+    },
+    {
+      "id": "hn-50622638",
+      "story_id": "50622638",
+      "rank": 47,
+      "title": "GTA 6 Recomp (Leonida) banned from GitHub while lead dev was in school",
+      "url": "https://github.com/ItsNotRexed/Leonida/issues",
+      "points": 357,
+      "comments": 635,
+      "hn_url": "https://news.ycombinator.com/item?id=50622638"
+    },
+    {
+      "id": "hn-50627340",
+      "story_id": "50627340",
+      "rank": 48,
+      "title": "LLM agents work for their parent companies, not for you",
+      "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+      "points": 960,
+      "comments": 396,
+      "hn_url": "https://news.ycombinator.com/item?id=50627340"
+    },
+    {
+      "id": "hn-50638885",
+      "story_id": "50638885",
+      "rank": 49,
+      "title": "GTA 6 player gets 30-day PSN ban for sharing in-game nudist photo with a friend",
+      "url": "https://www.eurogamer.net/gta-6-psn-ban-nude-photos-nudist-resort",
+      "points": 10,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50638885"
+    },
+    {
+      "id": "hn-50624497",
+      "story_id": "50624497",
+      "rank": 50,
+      "title": "2035 came early",
+      "url": "https://fzakaria.com/2026/11/23/2035-came-early",
+      "points": 988,
+      "comments": 371,
+      "hn_url": "https://news.ycombinator.com/item?id=50624497"
+    },
+    {
+      "id": "hn-50626620",
+      "story_id": "50626620",
+      "rank": 51,
+      "title": "The Artificial Monkey Mind",
+      "url": "https://eamonnsullivan.co.uk/posts/the-artificial-monkey-mind/",
+      "points": 12,
+      "comments": 1,
+      "hn_url": "https://news.ycombinator.com/item?id=50626620"
+    },
+    {
+      "id": "hn-50627836",
+      "story_id": "50627836",
+      "rank": 52,
+      "title": "Anthropic breaks below $83 IPO price",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+      "points": 377,
+      "comments": 733,
+      "hn_url": "https://news.ycombinator.com/item?id=50627836"
+    },
+    {
+      "id": "hn-50605361",
+      "story_id": "50605361",
+      "rank": 53,
+      "title": "The new set of problems for engineers to solve",
+      "url": "https://www.katelynlesse.com/blog/new-problems-for-engineers-to-solve",
+      "points": 137,
+      "comments": 118,
+      "hn_url": "https://news.ycombinator.com/item?id=50605361"
+    },
+    {
+      "id": "hn-50633159",
+      "story_id": "50633159",
+      "rank": 55,
+      "title": "Grafana 12.4.16, 13.0.14, 13.1.11, 13.2.7 and 13.3.2 (multiple CVEs)",
+      "url": "https://grafana.com/grafana/download",
+      "points": 150,
+      "comments": 25,
+      "hn_url": "https://news.ycombinator.com/item?id=50633159"
+    },
+    {
+      "id": "hn-50637661",
+      "story_id": "50637661",
+      "rank": 56,
+      "title": "A 1:1 replica of the London DLR",
+      "url": "https://jabza.github.io/labs/dlr-rider/",
+      "points": 11,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50637661"
+    },
+    {
+      "id": "hn-50620831",
+      "story_id": "50620831",
+      "rank": 57,
+      "title": "The search for a top dark matter candidate",
+      "url": "https://www.smithsonianmag.com/science-nature/the-search-for-a-top-dark-matter-candidate-was-losing-hope-then-came-a-potential-signal-will-it-be-enough-to-energize-the-struggling-field-180989923/",
+      "points": 68,
+      "comments": 62,
+      "hn_url": "https://news.ycombinator.com/item?id=50620831"
+    },
+    {
+      "id": "hn-50624061",
+      "story_id": "50624061",
+      "rank": 58,
+      "title": "AMD EPYC Zen 6 vs. Zen 1 Performance: 12.1x Geo Mean in Less Than 10 Years",
+      "url": "https://www.phoronix.com/review/amd-epyc-9006-7601",
+      "points": 223,
+      "comments": 131,
+      "hn_url": "https://news.ycombinator.com/item?id=50624061"
+    },
+    {
+      "id": "hn-50638940",
+      "story_id": "50638940",
+      "rank": 59,
+      "title": "Pop Goes the Bubble",
+      "url": "https://paulkrugman.substack.com/p/pop-goes-the-bubble",
+      "points": 5,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50638940"
+    },
+    {
+      "id": "hn-50637995",
+      "story_id": "50637995",
+      "rank": 60,
+      "title": "Show HN: Carry – Save every AI conversations as Markdown, in a folder you Own",
+      "url": "https://carry.md/",
+      "points": 8,
+      "comments": 4,
+      "hn_url": "https://news.ycombinator.com/item?id=50637995"
+    },
+    {
+      "id": "hn-50620530",
+      "story_id": "50620530",
+      "rank": 61,
+      "title": "The Beauty of Artists' Studios",
+      "url": "https://spectator.com/article/the-beauty-of-artists-studios/",
+      "points": 17,
+      "comments": 2,
+      "hn_url": "https://news.ycombinator.com/item?id=50620530"
+    },
+    {
+      "id": "hn-50634933",
+      "story_id": "50634933",
+      "rank": 62,
+      "title": "An unclassified CIA system was breached in a cyberattack",
+      "url": "https://apnews.com/article/cia-cyberattack-unclassified-system-bfa6d3b02e3b0e2779dfb613c900bd77",
+      "points": 124,
+      "comments": 42,
+      "hn_url": "https://news.ycombinator.com/item?id=50634933"
+    },
+    {
+      "id": "hn-50629962",
+      "story_id": "50629962",
+      "rank": 63,
+      "title": "The KL Divergence Is Never Negative, Except in PyTorch",
+      "url": "https://arxiv.org/abs/2611.30835",
+      "points": 91,
+      "comments": 37,
+      "hn_url": "https://news.ycombinator.com/item?id=50629962"
+    },
+    {
+      "id": "hn-50606192",
+      "story_id": "50606192",
+      "rank": 64,
+      "title": "Free alternative TV network built from the Internet Archive's forgotten videos",
+      "url": "https://spelunkr.tv",
+      "points": 1074,
+      "comments": 181,
+      "hn_url": "https://news.ycombinator.com/item?id=50606192"
+    },
+    {
+      "id": "hn-50625953",
+      "story_id": "50625953",
+      "rank": 65,
+      "title": "Just a Few Bugs",
+      "url": "https://www.justafewbugs.xyz/",
+      "points": 143,
+      "comments": 53,
+      "hn_url": "https://news.ycombinator.com/item?id=50625953"
+    },
+    {
+      "id": "hn-50598094",
+      "story_id": "50598094",
+      "rank": 66,
+      "title": "An anti-slavery sugar bowl (2024)",
+      "url": "https://www.vam.ac.uk/blog/museum-life/an-anti-slavery-sugar-bowl",
+      "points": 119,
+      "comments": 75,
+      "hn_url": "https://news.ycombinator.com/item?id=50598094"
+    },
+    {
+      "id": "hn-50630294",
+      "story_id": "50630294",
+      "rank": 67,
+      "title": "Show HN: Mason – A lightweight Postgres read-replica, built on columnar storage",
+      "url": "https://masondata.ai/",
+      "points": 89,
+      "comments": 16,
+      "hn_url": "https://news.ycombinator.com/item?id=50630294"
+    },
+    {
+      "id": "hn-50637887",
+      "story_id": "50637887",
+      "rank": 68,
+      "title": "Show HN: Mergeon – A native desktop Git client written in Rust with GPUI",
+      "url": "https://github.com/Spilveru/mergeon",
+      "points": 6,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50637887"
+    },
+    {
+      "id": "hn-50625384",
+      "story_id": "50625384",
+      "rank": 69,
+      "title": "Quad9 pulled their DNS service from France",
+      "url": "https://quad9.net/news/blog/quad9-service-deactivation-in-france/",
+      "points": 371,
+      "comments": 230,
+      "hn_url": "https://news.ycombinator.com/item?id=50625384"
+    },
+    {
+      "id": "hn-50608343",
+      "story_id": "50608343",
+      "rank": 70,
+      "title": "SeaStore: Redesigning Ceph's Storage Back End for CPU-Efficient NVMe Performance",
+      "url": "https://dl.acm.org/doi/10.1145/3828523.3857112",
+      "points": 72,
+      "comments": 5,
+      "hn_url": "https://news.ycombinator.com/item?id=50608343"
+    },
+    {
+      "id": "hn-50632883",
+      "story_id": "50632883",
+      "rank": 71,
+      "title": "Cloudflare hides shortcomings of the underlying infrastructure",
+      "url": "https://charlie.fish/posts/2026/11/what-cloudflare-doesnt-tell-you/",
+      "points": 153,
+      "comments": 98,
+      "hn_url": "https://news.ycombinator.com/item?id=50632883"
+    },
+    {
+      "id": "hn-50635698",
+      "story_id": "50635698",
+      "rank": 72,
+      "title": "Fable 5.2 tries less on some hard tasks when a shortcut is available",
+      "url": "https://goodhartlabs.com/blog/fable-5-2-tries-less-on-some-hard-tasks-when-a-shortcut-is-available",
+      "points": 53,
+      "comments": 48,
+      "hn_url": "https://news.ycombinator.com/item?id=50635698"
+    },
+    {
+      "id": "hn-50631157",
+      "story_id": "50631157",
+      "rank": 73,
+      "title": "Microsoft declares 'Code Red' after historic outage, internal memos show",
+      "url": "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/",
+      "points": 238,
+      "comments": 221,
+      "hn_url": "https://news.ycombinator.com/item?id=50631157"
+    },
+    {
+      "id": "hn-50636257",
+      "story_id": "50636257",
+      "rank": 75,
+      "title": "Thoughts on making (and selling) retrocomputing hardware devices",
+      "url": "https://www.colino.net/wordpress/archives/2026/11/19/thoughts-on-making-and-selling-retrocomputing-hardware-devices/",
+      "points": 7,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50636257"
+    },
+    {
+      "id": "hn-50623515",
+      "story_id": "50623515",
+      "rank": 76,
+      "title": "Drone Maps of Salvage Yards",
+      "url": "https://salvageyarddrone.wordpress.com/",
+      "points": 171,
+      "comments": 73,
+      "hn_url": "https://news.ycombinator.com/item?id=50623515"
+    },
+    {
+      "id": "hn-50622774",
+      "story_id": "50622774",
+      "rank": 77,
+      "title": "New York Bans Subscription and Post-Purchase Fees on Cars",
+      "url": "https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-signs-bill-restricting-exploitative-vehicle-subscription",
+      "points": 787,
+      "comments": 416,
+      "hn_url": "https://news.ycombinator.com/item?id=50622774"
+    },
+    {
+      "id": "hn-50629936",
+      "story_id": "50629936",
+      "rank": 79,
+      "title": "Show HN: Brickie – Deploy sandboxes in your own AWS account",
+      "url": "https://github.com/hatchet-dev/brickie",
+      "points": 29,
+      "comments": 7,
+      "hn_url": "https://news.ycombinator.com/item?id=50629936"
+    },
+    {
+      "id": "hn-50638839",
+      "story_id": "50638839",
+      "rank": 80,
+      "title": "New York Times Prohibits Photographers from Using Photoshop 2027",
+      "url": "https://petapixel.com/2026/11/24/new-york-times-prohibits-photographers-from-using-photoshop-2027/",
+      "points": 6,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50638839"
+    },
+    {
+      "id": "hn-50611613",
+      "story_id": "50611613",
+      "rank": 81,
+      "title": "Gnomon: Git for Postgres Data",
+      "url": "https://gnomon.bitsinfra.com/",
+      "points": 40,
+      "comments": 6,
+      "hn_url": "https://news.ycombinator.com/item?id=50611613"
+    },
+    {
+      "id": "hn-50598679",
+      "story_id": "50598679",
+      "rank": 82,
+      "title": "Del Casher–guitarist who was driving force behind the wah-wah pedal–dies at 88",
+      "url": "https://www.nytimes.com/2026/11/17/obituaries/del-casher-dead.html",
+      "points": 68,
+      "comments": 23,
+      "hn_url": "https://news.ycombinator.com/item?id=50598679"
+    },
+    {
+      "id": "hn-50622934",
+      "story_id": "50622934",
+      "rank": 83,
+      "title": "Making a dumb TV just smart enough",
+      "url": "https://qsantos.fr/2026/11/19/making-a-dumb-tv-just-smart-enough/",
+      "points": 170,
+      "comments": 56,
+      "hn_url": "https://news.ycombinator.com/item?id=50622934"
+    },
+    {
+      "id": "hn-50634369",
+      "story_id": "50634369",
+      "rank": 84,
+      "title": "Claude artifacts can now be installed as desktop apps on Mac and Windows",
+      "url": "https://claude.com/resources/articles/install-as-app",
+      "points": 15,
+      "comments": 0,
+      "hn_url": "https://news.ycombinator.com/item?id=50634369"
+    },
+    {
+      "id": "hn-50592307",
+      "story_id": "50592307",
+      "rank": 85,
+      "title": "Arctic: A Practical Lock-Free Adaptive Radix Tree",
+      "url": "https://www.usenix.org/conference/osdi26/presentation/ni",
+      "points": 99,
+      "comments": 12,
+      "hn_url": "https://news.ycombinator.com/item?id=50592307"
+    },
+    {
+      "id": "hn-50630809",
+      "story_id": "50630809",
+      "rank": 86,
+      "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+      "url": "https://news.ycombinator.com/item?id=50630809",
+      "points": 239,
+      "comments": 182,
+      "hn_url": "https://news.ycombinator.com/item?id=50630809"
+    },
+    {
+      "id": "hn-50605479",
+      "story_id": "50605479",
+      "rank": 88,
+      "title": "Nespresso's project to reduce grams of coffee per capsule",
+      "url": "https://alvinbunk.wordpress.com/2026/11/01/nespresso-project-olympus/",
+      "points": 350,
+      "comments": 382,
+      "hn_url": "https://news.ycombinator.com/item?id=50605479"
+    },
+    {
+      "id": "hn-50634780",
+      "story_id": "50634780",
+      "rank": 90,
+      "title": "Why Is TikTok a National Security Threat, but Jensen Huang Is Fine?",
+      "url": "https://www.techdirt.com/2026/11/24/ive-been-under-a-rock-why-is-tiktok-a-national-security-threat-but-jensen-huang-is-fine/",
+      "points": 58,
+      "comments": 27,
+      "hn_url": "https://news.ycombinator.com/item?id=50634780"
+    }
+  ],
+  "papers": [
+    {
+      "id": "arxiv-2611.32954",
+      "cat": "cs.AI",
+      "title": "LoomKV: Lossless KV Cache Compression from GPU Memory to SSD for LLM Serving",
+      "abstract": "Large language model (LLM) serving engines offload the key/value (KV) cache from GPU memory to host DRAM and SSD so multi-turn and agent requests can reuse prompt prefixes. Capacity then limits service at two levels: external tiers govern prefix reuse before eviction, while the GPU KV pool bounds concurrent long requests, and lossy compression alters KV values and outputs. LoomKV brings lossless KV compression to both external tiers (tier mode) and the GPU pool (pool mode) on an unmodified engine. Using a calibrated per-head two-level 3-bit code over BF16 high bytes (sign and upper seven exponent bits), LoomKV stores BF16 KV at 0.71 of its raw size across nine models and FP8 KV at 0.85-0.87. In tier mode, TileStream writes exact-length records with length readback off the load path, leaving tier storage, eviction, and prefetch unchanged, and decompresses fetched records straight into scattered GPU pages. In pool mode, FragPack packs variable-length records into smaller shared-budget GPU pages read in place by a fused decode-attention kernel faster than FlashAttention-3 on BF16. Built with LMCache and vLLM, LoomKV makes compressed tiers act as 1.4x larger raw tiers on AgentX: across LMCache's LRU cliff, tier mode delivers 2.7-3.6x raw's goodput and 1.9-3.1x lower mean time-to-first-token (TTFT), shifts the cliff identically under other simulated replacement policies, and cuts repeated-prompt TTFT up to 1.7x via SSD-to-DRAM promotion. When tiers hold the working set, pool mode fits 1.31-1.34x as many GPU tokens, admitting 12 long requests with roughly raw's queue and goodput at 8. On an AI IDE trace where both tiers and the GPU pool are constrained, tier and pool modes raise goodput by 1.24x and 1.59x. Where raw capacity suffices, compression costs at most 2.2% throughput; tier mode is bit-exact with raw tiers, and pool mode matches FlashAttention-3's numerical accuracy.",
+      "url": "http://arxiv.org/abs/2611.32954v1"
+    },
+    {
+      "id": "arxiv-2611.32848",
+      "cat": "cs.AI",
+      "title": "Measurement Artifacts in Trustworthiness Evaluations of Quantized Small Language Models",
+      "abstract": "Evaluations of quantized language models attribute the change in a benchmark score to quantization. We write the measured change as the true change plus a term contributed by the instrument. Instrument error that is the same at every precision can shrink a paired comparison but cannot create or reverse an effect. Error that interacts with quantization can do both, and it is reported as an effect of quantization. We estimate this interaction for four measurement choices in 8 instruction-tuned models below two billion parameters, at float16, LLM.int8() and NF4, on identical items. Measured against labels from two human annotators, the 4-bit rise in harmful compliance is about half to two-thirds of the rise in non-refusal that a corrected key word detector records. Cloze and lettered multiple-choice scoring disagree about the effect of quantization far more than their noise allows: their estimates correlate at \\r{ho} = 0.10, against a ceiling of about 0.77. LLM.int8() answers and generations depend on which items share a batch, and padding alone changes its answers. Rounding activations to 8 bits is enough to produce this dependence. NF4 is batch-invariant. The two largest reported calibration losses are response-bias shifts. We release item-level predictions, option scores and human annotations, and give recommendations for evaluating compressed small models.",
+      "url": "http://arxiv.org/abs/2611.32848v1"
+    },
+    {
+      "id": "arxiv-2611.32365",
+      "cat": "cs.AI",
+      "title": "The Control-Flow Tax: Specialized Decision Routing for LLM Agent Workflows",
+      "abstract": "An agent can spend almost as much deciding what to do as doing it. In our documentation workflow, control-flow routing accounts for 42.5% of baseline reference cost on the initial task. Lower token prices alone do not solve this control-flow tax: inexpensive general-purpose routers can trigger additional calls to the expensive generator. We evaluate a heterogeneous architecture in which Jev, a specialized System 1 decision model, controls finite actions while Sol generates documents. Across four software tasks, 480 valid runs comprise 470 completions and ten request-limit endpoints. Jev full routing achieves the lowest mean cost and elapsed time on every task, completing all 40 specialist-controlled runs along the shortest trajectory. On the initial task, mean cost falls by 49.6% (95% paired-bootstrap interval: 42.9% to 56.3%) and elapsed time by 33.2% (19.6% to 46.7%). Across three further tasks, cost reductions are 40.5% to 42.9% and concurrent elapsed-time reductions are 12.9% to 14.4%. Existence-only specialization saves just 1.8% on the initial task. Separately, Sol and Jev each select accepted actions on 100/100 reviewed retail states, with Jev using 97.88% less reference cost and 72.30% less mean request time. The results identify two requirements for efficient agent control: inexpensive decisions and trajectories that preserve those savings.",
+      "url": "http://arxiv.org/abs/2611.32365v1"
+    },
+    {
+      "id": "arxiv-2611.32321",
+      "cat": "cs.AI",
+      "title": "FigmaEval: A Benchmark for Evaluating AI Agents in Professional UI Design",
+      "abstract": "Recent advances in AI agents have enabled autonomous UI design using professional tools such as Figma, yet evaluating their design capabilities remains challenging due to the open-ended nature of design tasks and the absence of unique ground truths. We introduce FigmaEval, a benchmark for evaluating AI agents on professional UI design tasks, comprising 84 tasks and 783 screens derived from real-world Figma design files. FigmaEval adopts a constrained-specification, open-solution paradigm, standardizing task requirements and design resources while allowing agents to independently determine layouts, visual hierarchies, component composition, and visual presentation. To assess design quality beyond reference similarity, we develop 22 expert-grounded evaluation rubrics across six dimensions and introduce a human evaluation arena where professional designers compare agent-generated designs through blinded pairwise judgments. Evaluating eleven models under a unified Figma agent setup, we find substantial agreement between rubric-based assessments and human preferences, alongside distinct differences in design practices and quality--efficiency trade-offs. FigmaEval provides a framework for systematically assessing professional UI design capabilities and understanding the strengths and limitations of current AI agents.",
+      "url": "http://arxiv.org/abs/2611.32321v1"
+    },
+    {
+      "id": "arxiv-2611.32209",
+      "cat": "cs.AI",
+      "title": "XMind: Thinking Twice via Cross-Memory Reasoning for LLM-Based Autonomous Driving",
+      "abstract": "Memory-augmented large language model (LLM) driving agents can reuse past experience, yet previously learned corrections often fail to transfer when traffic conditions change. A key limitation is that existing memories mainly record observed outcomes, providing little evidence about alternative actions. We introduce XMind, a training-free framework that enables LLM-based driving to \"Think Twice\" through cross-memory reasoning. XMind integrates working memory of recent traffic states with episodic memory of critical risk events. The agent first makes an initial decision from the current context and then cross-checks it against retrieved historical experience. If a conflict arises, it makes a second decision guided by the retrieved evidence. To construct reliable episodic memory, XMind evaluates alternative actions through counterfactual rollouts under perturbed traffic conditions and stores the verified outcomes as structured risk capsules. These capsules are retrieved by jointly matching spatial risk patterns and scenario semantics. Across closed-loop highway simulations, XMind achieves success rates of 83.3-93.3%, exceeding the strong baseline by 6.6 percentage points on average. Evaluation on K-Risk further demonstrates lower decision risk on unseen real-world high-risk interactions. Ablation studies confirm the complementary benefits of working memory, risk-text retrieval, and counterfactual verification. Code is available at this https URL",
+      "url": "http://arxiv.org/abs/2611.32209v1"
+    },
+    {
+      "id": "arxiv-2611.31794",
+      "cat": "cs.AI",
+      "title": "AGL-SKILL: Coding Harnesses as Agentic Optimizers",
+      "abstract": "Frontier models are increasingly used through harnesses as agents, with growing autonomy to do useful work. Agent performance can often be enhanced by the use of skills: reusable workflows, code, and prompts that provide task-related information or guide the behaviour of the model. Skills, being textual in nature, present themselves as another editable surface to be optimized; current methods have improved on handcrafting and one-shot generation by treating skill development as an iterative process, using score-driven search to tweak and improve performance. In this paper, we demonstrate the efficacy of the agents themselves as optimizers: across five benchmarks, a coding agent without guidance substantially improves every target and outperforms published skill-optimization methods. More broadly, this shows the capability of agents to do such work and to refine their own behaviour to provide task-specific context, as long as they are given a metric to measure against.",
+      "url": "http://arxiv.org/abs/2611.31794v1"
+    },
+    {
+      "id": "arxiv-2611.31737",
+      "cat": "cs.AI",
+      "title": "GreenDynaMix: Thermal-Aware Dynamic Mixed-Precision MoE LLM Inference Systems",
+      "abstract": "Sustained Large Language Model (LLM) inference generates significant heat that exacerbates silicon aging and reduces GPU reliability. Because GPU temperature fluctuates continuously with workload intensity and ambient conditions, keeping it in a safe range requires real-time frequency scaling, which inevitably comes at the cost of either throughput or accuracy. To address this tightly coupled challenge, we propose GreenDynaMix, the first runtime system to jointly integrate a DVFS-based thermal manager with a dynamic precision-tuning throughput compensator. A sensitivity-aware allocator leverages intrinsic importance signals from the Mixture-of-Experts (MoE) router to assign higher precision to critical experts, preserving accuracy. Experiments on server, desktop, and embedded platforms demonstrate that GreenDynaMix reduces the temperature-induced aging rate of GPUs during LLM inference by 25-33%. Without offline profiling or model retraining, it recovers throughput at a perplexity cost of 0.9-1.6% with 8-bit/4-bit mixed precision, rising to 9.4% where memory forces 4-bit/2-bit.",
+      "url": "http://arxiv.org/abs/2611.31737v1"
+    },
+    {
+      "id": "arxiv-2611.30350",
+      "cat": "cs.SE",
+      "title": "RepoClean: Evaluating Coding Agents on Repository-Level Obsolete Code Cleanup",
+      "abstract": "Large language model (LLM) agents have demonstrated strong repository-level programming capabilities. However, as software evolves, repository code may become redundant or obsolete, increasing maintenance costs and potentially introducing functional issues. Agents must therefore identify and remove unnecessary code safely, yet autonomous repository-level code cleanup remains insufficiently evaluated in isolation. To evaluate this capability, we introduce RepoClean, a benchmark of 200 cleanup tasks from 34 popular open-source Python repositories. RepoClean is constructed by automatically reintroducing deleted code from real repository histories into newer versions, preserving current implementations and retaining instances where previously passing tests consequently fail. To restore existing functionality without new feature development, agents must use repository interfaces and cross-file dependencies to determine which historical code to remove and which implementations to preserve. Evaluation of seven models shows that even the best-performing model, GPT-6 Astra, resolves only 23% of tasks. Further analysis reveals that agents remove substantially less obsolete code when cleanup is not explicitly requested. RepoClean provides a foundation for systematically studying these cleanup challenges and advancing coding agents toward autonomous software maintenance.",
+      "url": "http://arxiv.org/abs/2611.30350v1"
+    },
+    {
+      "id": "arxiv-2611.32973",
+      "cat": "cs.SE",
+      "title": "SpecEngineeringBench: Evaluating Coding Agents as Autonomous Specification Engineers",
+      "abstract": "Autonomous specification engineering requires coding agents to translate functional requirements into executable tests and use the results to discover and validate defects. However, existing benchmarks evaluate coding agents on explicitly specified test generation tasks, commonly providing an issue description, a designated test entry point, or files to inspect, leaving the ability to determine what to test and where to investigate insufficiently evaluated. Relying on such clues bypasses the challenge of mapping requirements to implementations and proactively uncovering unknown defects. We propose SpecEngineeringBench, comprising 100 instances from 78 open-source Python repositories across 16 application categories, with multiple recorded defects in each instance. Two independent tasks evaluate complementary capabilities: generating test suites and discovering defects through execution analysis. The evaluation combines test validity, defect detection, and coverage with localization precision and recall. Across seven frontier coding agents, results reveal that test validity and coverage decouple from defect exposure: agents achieve a 91.47% Head Pass Rate and 80.48% Change-focused Coverage alongside a 26.36% Fail-to-Pass Rate, while localization recall drops from 78.11% at the file level to 51.29% at the function level. Autonomous test generation improves file, function, and hunk localization recall by 4.99, 2.77, and 2.69 percentage points over relying solely on existing repository test suites.",
+      "url": "http://arxiv.org/abs/2611.32973v1"
+    }
+  ],
+  "topic": [
+    {
+      "id": "kg-arxiv-2611.31771v1",
+      "title": "SPARQL-Planned Single-Hop Traversal over a Live Knowledge Graph for Multi-Hop Question Answering",
+      "abstract": "Semantic retrieval struggles with multi-hop question answering on both recall and precision: gold passages are buried among distractors that degrade the reader's answer, and retrieving them requires reasoning over the query rather than matching it. GraphRAG techniques expand semantic retrieval by connecting passages to graph nodes and performing one or more hops of expansion after initial retrieval. This improves recall, but multi-hop expansion becomes expensive and brings additional noise into the retrieved set. We break this tradeoff by \\emph{interleaving} dense retrieval with knowledge-graph traversal for complex multi-hop questions. Dense retrieval locates the first relevant regions of the search space at good recall, while traversal of a pre-existing external KG (Wikidata) restores precision and improves recall by confirming retrieved passages against a reasoning path through the KG. To keep traversal both question-adaptive and reliable, we have an LLM plan it as code generation task for graph traversal in SPARQL format but \\emph{parse rather than execute} the query. On full 1{,}000-question splits under a shared corpus and reader, and with a single configuration applied identically to every dataset, we reach \\textbf{62.5 / 75.1} EM/F1 on HotpotQA, \\textbf{73.5 / 81.0} on 2WikiMultiHopQA, and \\textbf{37.1 / 50.0} on MuSiQue, ahead of reproduced HippoRAG2, T\\textsuperscript{2}RAG, and IRCoT on all three benchmarks. A second, token-matched setting stays ahead of T\\textsuperscript{2}RAG on HotpotQA and 2Wiki while spending roughly its per-query budget. Executing the generated SPARQL instead of parsing it costs up to 11.4 EM, mostly because raw queries return empty results, not because of syntax errors.",
+      "url": "https://arxiv.org/abs/2611.31771v1",
+      "published": "2026-11-24",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.31614v1",
+      "title": "Tablassert: Declarative Extraction of Knowledge Graphs from Biomedical Tables",
+      "abstract": "Tables published in biomedical research papers, particularly supplemental tables, capture knowledge assertions that may not be in the main text of the manuscript for several reasons, including low statistical significance, space limitations, and narrative scope. These tables include data (e.g., association statistics, assay readouts, curated gene lists, and omics) encoding relationships between biological entities. Tablassert converts such tabular data (Excel, CSV, TSV, Parquet) into knowledge graphs ready for the NCATS Biomedical Data Translator (Fecho et al. 2025). A user declares in YAML how each table's data map to subject-predicate-object-qualifier statements; Tablassert resolves free text (e.g., ''lung cancer'') to standard identifiers, attaches provenance and statistics, and emits graph files conforming to Translator standards (D. Unni, Bruskiewich, and Moxon 2026; D. R. Unni et al. 2022).",
+      "url": "https://arxiv.org/abs/2611.31614v1",
+      "published": "2026-11-23",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.29596v1",
+      "title": "Similarity-Constrained Reweighting for Complex Query Answering on Knowledge Graphs",
+      "abstract": "Machine learning models for Complex Query Answering (CQA) on knowledge graphs estimate the likelihood of answers that are not reachable via direct traversal. Recent work has proposed extending such queries with soft entity constraints, which require the target variable to be similar or dissimilar to specified sets of entities. We study a more general formulation where similarity constraints are specified on an arbitrary variable in a query, and introduce SCORE: a computationally efficient and interpretable method for incorporating similarity constraints on an arbitrary variable of a query. SCORE is based on a lightweight and interpretable score adjustment function that only requires tuning two hyperparameters on a validation set. Our experiments show that SCORE effectively incorporates preferences while maintaining strong query answering performance. It significantly improves ranking quality when constraints apply to the target variable and performs effectively in the more general case involving constraints on intermediate variables, and its performance remains robust when applied to several existing methods for CQA. Our implementation is available at https://github.com/dfdazac/score.",
+      "url": "https://arxiv.org/abs/2611.29596v1",
+      "published": "2026-11-22",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.30796v1",
+      "title": "PestWeave: Linking Semantic Modeling and Evidence-Guided Text Modulation through Visual Prototypes for Fine-Grained Pest Learning",
+      "abstract": "Agricultural pests threaten crop yield and quality, making accurate pest recognition essential for targeted management and sustainable agriculture. Their diverse appearances complicate recognition and motivate multimodal approaches incorporating complementary species knowledge from text. However, complex backgrounds can obscure discriminative visual cues, while textual descriptions may contain information unsupported by the current image, limiting effective cross-modal fusion. To address these challenges, we propose PestWeave, a multimodal framework connecting content-adaptive visual organization with text fusion through visual prototypes. Its visual pathway augments a Receptance Weighted Key Value (RWKV) architecture with semantic token grouping and three types of auxiliary tokens, enabling content-adaptive scanning and contextual modeling while preserving spatial structure. Feature-similar tokens are reordered into adjacent scanning positions, while cluster prototype, global, and register tokens provide group-level summaries, global context, and additional interaction capacity, respectively. These prototypes also guide text modulation by assessing visual support for semantic components and regulating their relative contributions and overall fusion strength, reducing interference from unsupported descriptions. Extensive experiments on multiple pest recognition datasets demonstrate the effectiveness of PestWeave and its potential for practical pest management.",
+      "url": "https://arxiv.org/abs/2611.30796v1",
+      "published": "2026-11-23",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-arxiv-2611.33086v1",
+      "title": "Uncertainty-Aware Candidate Generation for Entity Linking in Cyber Threat Intelligence",
+      "abstract": "Entity Resolution (ER) pipelines often collapse ambiguity into early hard decisions: upstream Named Entity Recognition (NER) selects a single span and type, and downstream Entity Linking (EL) treats that choice as ground truth. This discards valuable information about the ambiguity of the underlying data (e.g., span boundary disagreement and type confusion), leading to brittle systems that fail unpredictably when faced with uncertainty in inputs. Therefore, this work presents a proof-of-concept for uncertainty-aware ER that treats uncertainty as native data that should be preserved and exploited throughout ER pipelines. We (i) capture uncertainty signals in the NER stage and (ii) leverage these signals into the EL stage to improve candidate retrieval under ambiguity. Using a BERT-based NER model augmented with two auxiliary span-boundary prediction heads, we apply Monte Carlo (MC) dropout at inference time to derive three mention-level proxy signals: the MC-averaged start-boundary probability, the MC-averaged end-boundary probability, and De Luca-Termini fuzzy entropy computed over the Begin-Inside-Outside (BIO) predictive distribution. These signals are used to adapt the fuzzy cutoff in candidate generation (CG) for EL. Because CG is treated as a blocking step, we evaluate retrieval recall. On the AnnoCTR dataset linked to the MITRE ATTCK knowledge base, the boundary-aware and dual-signal fuzzy linking approaches improve Recall@10 from 0.6186 to 0.7966. The contribution lies not in an end-to-end optimised ER pipeline but in establishing uncertainty preservation as a viable and beneficial component of ER pipelines, enabling downstream EL to make better-informed decisions under uncertainty.",
+      "url": "https://arxiv.org/abs/2611.33086v1",
+      "published": "2026-11-24",
+      "kind": "paper"
+    },
+    {
+      "id": "kg-hn-50633636",
+      "story_id": "50633636",
+      "title": "From knowledge graph to topological data analysis",
+      "url": "https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.71382",
+      "hn_url": "https://news.ycombinator.com/item?id=50633636",
+      "points": 1,
+      "comments": 1,
+      "created": "2026-11-24",
+      "kind": "story"
+    }
+  ]
+}
