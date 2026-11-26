@@ -1,7 +1,21 @@
 {
-  "generated": "2026-11-26T06:43:52+00:00",
-  "count": 213,
+  "generated": "2026-11-26T16:00:08+00:00",
+  "count": 214,
   "reports": [
+    {
+      "file": "when-the-bottleneck-moves-2026-11.html",
+      "type": "special",
+      "title": "When the bottleneck moves: how engineering teams reorganise around agents",
+      "date": "2026-11-26",
+      "summary": "The measured queue · The artifact that carries intent · Review by risk · Tiny teams and their platform · The numbers that do not survive",
+      "readingTime": 24,
+      "tags": [
+        "agents",
+        "research",
+        "coding"
+      ],
+      "series": "Enterprise & Adoption"
+    },
     {
       "file": "ai-news-2026-11-26.html",
       "type": "daily",
@@ -982,6 +996,7 @@
       "summary": "Nvidia ships CUDA in Rust · a 4B model out-plans Postgres · AWS admits unrecoverable Middle East data · Flock cameras cracked open",
       "readingTime": 8,
       "tags": [
+        "models",
         "infrastructure",
         "hardware"
       ],
@@ -1048,7 +1063,6 @@
       "readingTime": 4,
       "tags": [
         "research",
-        "agents",
         "memory",
         "multimodal"
       ],
@@ -1163,7 +1177,6 @@
       "readingTime": 3,
       "tags": [
         "research",
-        "agents",
         "infrastructure"
       ],
       "audio": true

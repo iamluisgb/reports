@@ -24,6 +24,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### Enterprise & Adoption
 
+- [When the bottleneck moves: how engineering teams reorganise around agents](https://luisgonzalezbernal.com/reports/reports/when-the-bottleneck-moves-2026-11.md) — 2026-11-26 · 24 min
 - [What AI Startups Stole From Palantir's Playbook](https://luisgonzalezbernal.com/reports/reports/palantir-playbook-2026.md) — 2026-05-29 · 28 min
 - [AI Adoption in Engineering Teams: What the Evidence Says](https://luisgonzalezbernal.com/reports/reports/ai-engineering-adoption-frameworks-2026-en.md) — 2026-05-20 · 10 min
 
