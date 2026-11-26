@@ -1,0 +1,27 @@
+[HOST_A] AI News Daily, Thursday the twenty-sixth of November, twenty twenty-six. Lead story: Scott Aaronson on the magnitude of what is now happening — the title, four expletives in a row, is doing the work. One thousand two hundred and seventy-three points on Hacker News, one thousand one hundred and twenty-three comments. The front page has spoken.
+
+[HOST_B] When someone of Aaronson's standing posts like that, the signal is not the post — it is the comment section treating the urgency as shared rather than dunking on it. Whatever your priors on timelines, the mood has shifted. Watch what he follows up with.
+
+[HOST_A] OnePassword has published an update on its November security incident — a postmortem still in progress, from a vendor that sits under every corporate vault.
+
+[HOST_B] Read the primary source before the secondhand summaries; the full account of what was exposed is still outstanding. Watch for the follow-up naming affected systems and a remediation timeline — until then, summaries are noise.
+
+[HOST_A] Verification is the spine of the day. Anthropic has shipped a drastically condensed Lean formalisation of the Generalized Riemann Hypothesis effort, days after the original. Clojure's core library, formally checked against Lean, yielded real bugs nobody had reported. And an OpenAI maths preprint has settled the polynomial Hirsch conjecture — a named conjecture, settled by a lab, not a mathematics department.
+
+[HOST_B] Three data points, one direction: proof assistants are becoming an eval harness with a public scoreboard. Formal verification is turning into an L L M benchmark, and Merlin-Bench makes the general form explicit — score agents on evidence a verifier accepts, not on fluent answers. If you build evals, that is where the field is heading.
+
+[HOST_A] OpenAI has tightened G P T six point two limits: Astra users hit their caps forty percent sooner, Sol users twenty-five percent sooner. Separately, Astra has become the first model to beat the Googlers' hand-tuned Go code-golf records — three hundred and forty-two points.
+
+[HOST_B] If your agent budgets assume last week's quotas, they are now wrong, silently. Watch whether OpenAI frames this as permanent rebalancing or a temporary measure — and whether third-party wrappers publish revised quota tables first.
+
+[HOST_A] Google Research has released the Cogentic papers on integer factorisation and discrete logarithms — the concrete artefact behind today's factoring-in-polynomial-time rumour mill.
+
+[HOST_B] Crypto people should start with the papers, not the Reddit thread. Watch for working cryptographers to state whether the results imply anything practical for deployed key sizes — that verdict settles it, not the noise.
+
+[HOST_A] Operational news. C V E twenty twenty-six, nine nine three six two: an unauthenticated remote root in the Linux kernel's N F S server, unpatched for twelve years — check exposure and patch. Ubuntu's slow C V E turnaround is being called out publicly on the oss security list. And GitHub is investigating degraded experiences across products — if continuous integration misbehaves, it may not be you.
+
+[HOST_B] The operational layer is rotting faster than the model layer. A twelve-year-old pre-auth root means the exploitation window is wide; treat containment as real only when admins confirm patched, internet-reachable hosts. Model capability gets the Aaronson thread; uptime, quotas and patch lag are where your agents actually break.
+
+[HOST_A] Papers, quickly. Delta Residue Attribution replays agent trajectories and reverts each patch block across seven thousand six hundred and sixty Copilot C L I trajectories from eighteen frontier models: agent code is at least as necessary as developer code — the extra bulk is mostly tests, sixty-one percent, and documentation, thirteen percent, on S W E bench Verified. An Agent Experience paper rates eight hundred and eighty-two sessions: Actionability is the weak point, with fifty-nine point six percent of ratings at or below three. Solve Vision with Code shows a coding agent beating a video model across five hundred visual-reasoning instances. And a temporal knowledge-graph oracle for drug targets is a clean eval design worth stealing. Swept up: the mystery Jev model is, by latency fingerprinting, Qwen three point five at thirty-five billion parameters; someone ran Qwen bare-metal with no operating system between model and silicon; the New York Times has told staff not to update Photoshop over its A I features; and Minipg ships PostgreSQL as a single executable.
+
+[HOST_B] The harness papers dismantle a comfortable narrative — agents thrash does not survive contact with attribution, and output-only evals miss the context you feed the agent, which is what actually determines outcomes. Agent engineering is converging on measurement engineering; teams that instrument trajectories and context will out-evaluate teams that eyeball diffs. That is the briefing — the full written report carries the links, the numbers and the watchlist.

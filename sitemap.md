@@ -6,7 +6,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ## Latest briefing
 
-- [OpenAI claims the matrix multiplication exponent is 9/4](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-25.md) — 2026-11-25 · 10 min
+- [1Password discloses its November incident](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-26.md) — 2026-11-26 · 9 min
 
 ## Special reports
 
@@ -47,6 +47,7 @@ Every report has an HTML page and a markdown twin at the same path (`.html` / `.
 
 ### November 2026
 
+- [1Password discloses its November incident](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-26.md) — 2026-11-26 · 9 min
 - [OpenAI claims the matrix multiplication exponent is 9/4](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-25.md) — 2026-11-25 · 10 min
 - [Nvidia reinstates Huang as CEO](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-24.md) — 2026-11-24 · 9 min
 - [OpenAI essays on Perplexity](https://luisgonzalezbernal.com/reports/reports/ai-news-2026-11-23.md) — 2026-11-23 · 9 min
