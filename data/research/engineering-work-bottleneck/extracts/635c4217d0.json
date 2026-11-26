@@ -1,0 +1,49 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-02",
+  "author_or_org": "Jessica Diaz, Joaquin Gayoso, Andrea Cimminio, Jorge Perez (arXiv)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper reports an industry productivity paradox in which individual developer productivity rises while team throughput, review capacity, and stability degrade because team-scale software engineering discipline is neglected.",
+      "quote": "However, industry reports a productivity paradox: as individual productivity increases, team throughput, review capacity, and stability degrade because team-scale software engineering discipline is neglected.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper's proposed intent artifact is the specification, described as the contract substrate between humans and agents within a socio-technical model of SDD.",
+      "quote": "Using a comparative characterization of the paradigm progression as conceptual framing, the article presents (i) a socio-technical model of SDD in which specifications act as the contract substrate between humans and agents; (ii) an operational characterization of the harness, distinguishing the technical harness around the agent from the methodological harness around the team, with worked examples; and (iii) a typology of five human--agent interaction patterns through which the human role is redefined.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Review capacity is explicitly named as a team-scale capacity that degrades under the AI productivity paradox.",
+      "quote": "However, industry reports a productivity paradox: as individual productivity increases, team throughput, review capacity, and stability degrade because team-scale software engineering discipline is neglected.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper proposes a methodological harness around the team and a typology of five human-agent interaction patterns through which the human role is redefined.",
+      "quote": "Using a comparative characterization of the paradigm progression as conceptual framing, the article presents (i) a socio-technical model of SDD in which specifications act as the contract substrate between humans and agents; (ii) an operational characterization of the harness, distinguishing the technical harness around the agent from the methodological harness around the team, with worked examples; and (iii) a typology of five human--agent interaction patterns through which the human role is redefined.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper is a conceptual analysis based predominantly on gray literature because peer-reviewed evidence and a shared academic-industrial vocabulary are not yet established.",
+      "quote": "We conducted a conceptual analysis drawing predominantly on gray literature, including ASE vision and roadmap papers, practitioner reports, talks, and tooling, because peer-reviewed evidence and a shared academic-industrial vocabulary are not yet established.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The paper presents its work as a first step rather than a validated theory and calls for future empirical validation.",
+      "quote": "Given the immaturity of the evidence base, this work is presented as a first step toward academic-industrial consensus rather than a validated theory, and outlines a research agenda for future empirical validation.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.00252"
+}

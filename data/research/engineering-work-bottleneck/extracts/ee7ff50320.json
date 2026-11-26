@@ -1,0 +1,52 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-27",
+  "author_or_org": "Jonysberg Quintino, Hermano Moura, Filipe Calegário (arXiv, cs.SE)",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The paper states that integrating LLMs into the SDLC can improve developer productivity but simultaneously introduces security, privacy and compliance risks at the point of model selection.",
+      "quote": "Integrating Large Language Models (LLMs) into the Software Development Life Cycle (SDLC) can improve developer productivity, but it also introduces security, privacy, and compliance risks during model selection.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A pilot evaluation using 20 adversarial scenarios drawn from CWE and the OWASP Top 10 found differing risk profiles between commercial cloud-based LLMs and locally hosted open-source LLMs.",
+      "quote": "A pilot evaluation with 20 adversarial scenarios based on Common Weakness Enumeration (CWE) and the OWASP Top 10 suggests distinct risk profiles between commercial cloud-based LLMs and local open-source LLMs.",
+      "numbers": [
+        "20",
+        "10"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The authors report preliminary evidence that knock-out (disqualification) criteria can block technically competitive models that carry unacceptable compliance risk.",
+      "quote": "The results provide preliminary evidence that regulatory disqualification logic, particularly K.O. criteria, can prevent the selection of technically competitive models that nonetheless pose unacceptable compliance risks, demonstrating the feasibility of governance-oriented LLM selection in software engineering projects.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The proposed governance model has three layers: regulatory requirements; organisational governance capabilities operationalised as a multi-criteria decision matrix with knock-out and weighted scoring; and productivity/sustainability outcomes measured by a named assessment protocol (PAG-LLM).",
+      "quote": "The model is developed through Design Science Research (DSR) and is structured in three layers: (i) regulatory requirements, (ii) organizational governance capabilities, instantiated by a multi-criteria decision matrix with knock-out and weighted scoring criteria, and (iii) productivity and sustainability outcomes, operationalized by the LLM governance assessment protocol (PAG-LLM).",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "A regulatory feedback loop routes operational results back to the normative layer so the model can be iteratively refined — a governance ritual rather than a delivery-flow mechanism.",
+      "quote": "A regulatory feedback loop connects operational results back to the normative layer, enabling iterative refinement of the model.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper positions existing regulation and framework obligations (EU AI Act, NIST AI RMF, GDPR, LGPD, ISO/IEC 42001) as hard to translate into operational technical decision criteria, which is the gap its model addresses.",
+      "quote": "Regulations and frameworks such as the EU AI Act, the NIST AI Risk Management Framework (RMF), the General Data Protection Regulation (GDPR), the Lei Geral de Proteção de Dados (LGPD), and ISO/IEC 42001 establish obligations that are often difficult to translate into operational criteria for technical decision-making.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.27703"
+}

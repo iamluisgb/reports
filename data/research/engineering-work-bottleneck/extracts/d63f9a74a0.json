@@ -1,0 +1,38 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-25",
+  "author_or_org": "Hartwig Grabowski",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The proposed framework carries intent in a machine-readable spec graph with explicit contract/design separation and uses a context assembler, vertical-slice protocol, and blocking drift gate.",
+      "quote": "We present the Spec Growth Engine, a lightweight framework that addresses both failure modes through a machine-readable spec graph whose nodes carry explicit contract/design separation, a Spine context assembler that scopes agent context to an ownership path, a vertical-slice growth protocol that enforces hardest-first ordering, and a drift gate that makes spec-code divergence a blocking merge condition.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper identifies two AI-agent failure modes: context explosion degrading output quality as context fills, and silent spec-code drift becoming costly to repair.",
+      "quote": "AI coding agents dramatically accelerate implementation speed but introduce two structural failure modes that existing spec-driven approaches do not fully solve: (1) context explosion -- the agent must reason over an entire repository at once, degrading output quality as the context window fills; and (2) silent spec-code drift -- code evolves, the specification does not, and the divergence becomes invisible until it is costly to repair.",
+      "numbers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The design explicitly synthesises ADRs and fitness functions into a code-coupled, machine-enforced framework without heavyweight RUP/MDA overhead.",
+      "quote": "The design synthesises well-established software engineering principles (Parnas information hiding, C4, ADRs, Walking Skeleton, Reflexion Models, Fitness Functions) into a lean, code-coupled, machine-enforced whole -- without the overhead of heavy-weight frameworks such as RUP or MDA.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The framework makes spec-code divergence a blocking merge condition via a drift gate.",
+      "quote": "We present the Spec Growth Engine, a lightweight framework that addresses both failure modes through a machine-readable spec graph whose nodes carry explicit contract/design separation, a Spine context assembler that scopes agent context to an ownership path, a vertical-slice growth protocol that enforces hardest-first ordering, and a drift gate that makes spec-code divergence a blocking merge condition.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.27045"
+}

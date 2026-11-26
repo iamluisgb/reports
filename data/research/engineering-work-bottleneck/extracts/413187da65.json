@@ -1,0 +1,76 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-02-24",
+  "author_or_org": "METR (Joel Becker, Nate Rush, Tom Cunningham, David Rein, Khalid Mahamud)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "METR's earlier paper found that AI tools caused a 20% slowdown in completing tasks among experienced open-source developers, using data from February to June 2025.",
+      "quote": "which found the use of AI tools caused a 20% slowdown in completing tasks among experienced open-source developers, using data from February to June 2025.",
+      "numbers": [
+        "20%",
+        "February to June 2025"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "METR's early 2025 study found AI use caused tasks to take 19% longer, with a confidence interval from +2% to +39%.",
+      "quote": "Our early 2025 study found the use of AI causes tasks to take 19% longer, with a confidence interval between +2% and +39%.",
+      "numbers": [
+        "19%",
+        "+2%",
+        "+39%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "For the subset of original developers in the later study, METR estimated a speedup of -18%, with a confidence interval from -38% to +9%.",
+      "quote": "For the subset of the original developers who participated in the later study, we now estimate a speedup of -18% with a confidence interval between -38% and +9%.",
+      "numbers": [
+        "-18%",
+        "-38%",
+        "+9%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Among newly recruited developers, METR estimated a speedup of -4%, with a confidence interval from -15% to +9%.",
+      "quote": "Among newly-recruited developers the estimated speedup is -4%, with a confidence interval between -15% and +9%.",
+      "numbers": [
+        "-4%",
+        "-15%",
+        "+9%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "METR observed more developers declining to participate because they did not want to work without AI, which likely biases the AI-assisted speedup estimate downward.",
+      "quote": "The primary reason is that we have observed a significant increase in developers choosing not to participate in the study because they do not wish to work without AI, which likely biases downwards our estimate of AI-assisted speedup.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "When surveyed, 30% to 50% of developers reported withholding some tasks because they did not want to do them without AI.",
+      "quote": "When surveyed, 30% to 50% of developers told us that they were choosing not to submit some tasks because they did not want to do them without AI.",
+      "numbers": [
+        "30% to 50%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Some developers reported that final work quality differed between AI-allowed and AI-disallowed conditions, including subjective code quality and the amount of documentation or tests created.",
+      "quote": "Some developers told us the quality of the final work, for a given task, was different between AI-allowed and AI-disallowed conditions, e.g. differences in subjective code quality, or the amount of documentation or tests they chose to create.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Developers sometimes self-report very high speedups, but METR says those estimates can be quite unreliable.",
+      "quote": "Some developers self-report very high speedups, though as we documented in our earlier study those estimates can be quite unreliable.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://metr.org/blog/2026-02-24-uplift-update"
+}

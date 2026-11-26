@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-03",
+  "author_or_org": "Sanderson Oliveira de Macedo",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper does not report measured delivery-flow outcomes; it identifies a lack of benchmarks for the complete process.",
+      "quote": "We also found recurring risks: drift between specification and code, excessive trust in generated artifacts, fragility of community extensions, platform dependence and a lack of benchmarks for the complete process.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Among process-adopting frameworks, the isolated prompt loses centrality, while persistent artifacts, work contracts, traceability, and human review become ambiguity-reducing coordination mechanisms.",
+      "quote": "Among frameworks that already adopt some process there is convergence: the isolated prompt loses centrality, and persistent artifacts, work contracts, traceability and human review become mechanisms that reduce ambiguity and coordinate agents.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper proposes a six-dimension taxonomy covering specification, context, roles, execution, validation, and portability.",
+      "quote": "Our central contribution is a six-dimension process taxonomy: specification, context, roles, execution, validation and portability, with a scoring rubric that turns it into a replicable instrument.",
+      "numbers": [
+        "six"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Framework paths include worktree isolation and review, along with spec-driven development, agent-driven agile planning, context engineering, and legacy-spec recovery.",
+      "quote": "Each attacks AI development through a different path: spec-driven development in full and lightweight variants, agent-driven agile planning, context engineering over the agent, worktree isolation and review, and recovery of operational specifications from legacy systems.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper defines AI programming tools as development frameworks that include process, roles, artifacts, and verification.",
+      "quote": "AI tools for programming are no longer just autocomplete or chat assistants: they organize themselves as development frameworks, with process, roles, artifacts and verification.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "No framework strongly covers all six dimensions; the paper reports a structural trade-off between process depth and portability across agents.",
+      "quote": "And no framework strongly covers all six dimensions, exposing a structural trade-off between process depth and portability across agents.",
+      "numbers": [
+        "six"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Recurring risks found include specification-code drift, excessive trust in generated artifacts, fragile community extensions, platform dependence, and lack of complete-process benchmarks.",
+      "quote": "We also found recurring risks: drift between specification and code, excessive trust in generated artifacts, fragility of community extensions, platform dependence and a lack of benchmarks for the complete process.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The research agenda calls for empirical evaluation using intermediate-quality metrics, context governance, installation security, and reproducibility.",
+      "quote": "We close with a research agenda for empirical evaluation, focused on intermediate-quality metrics, context governance, installation security and reproducibility.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.04967"
+}

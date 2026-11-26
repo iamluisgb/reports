@@ -1,0 +1,35 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-02-20",
+  "author_or_org": "Jorge Melegati (arXiv preprint; accepted to CHASE 2026)",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "This is a conceptual/position paper that argues GenAI adoption affects human as well as technical aspects, specifically how software professionals perceive their work identity and the identity work they perform to form, adapt and reject those identities.",
+      "quote": "The adoption of Generative AI (GenAI) suggests major changes for software engineering, including technical aspects but also human aspects of the professionals involved. One of these aspects is how individuals perceive themselves regarding their work, i.e., their work identity, and the processes they perform to form, adapt and reject these identities, i.e., identity work.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Existing studies give evidence of GenAI-triggered identity work among software professionals, but they do not differentiate between roles such as developers and testers.",
+      "quote": "Existent studies provide evidence of such identity work of software professionals triggered by the adoption of GenAI, however they do not consider differences among diverse roles, such as developers and testers.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper's central position is that role should be treated as a factor defining the identity work of software professionals under GenAI adoption.",
+      "quote": "In this paper, we argue the need for considering the role as a factor defining the identity work of software professionals.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Rather than reporting measurements, the paper proposes a research agenda to understand how role influences identity work and to propose new artifacts supporting GenAI adoption; it discusses potential implications for practice of results yet to be obtained.",
+      "quote": "Then, we propose a research agenda to better understand how the role influences identity work of software professionals triggered by the adoption of GenAI, and, based on that, to propose new artifacts to support this adoption. We also discuss the potential implications for practice of the results to be obtained.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2602.18190"
+}

@@ -1,0 +1,50 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-05",
+  "author_or_org": "Vu Hung Nguyen; Thanh Nguyen",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The paper formalises SDAD as combining disciplined up-front formalisation with high-velocity implementation through intent capture, machine-readable specification, agentic synthesis, and independent multi-agent verification under human sign-off.",
+      "quote": "This report formalises Spec-Driven Agentic Development (SDAD) as a synthesis of disciplined up-front formalisation and high-velocity implementation: intent capture, machine-readable specification, agentic synthesis, and independent multi-agent verification under human sign-off.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The paper argues that specification quality becomes the execution fuel for autonomous delivery because agents can ingest substantial Functional Requirement Documents and repository context in one workflow.",
+      "quote": "Rich context handling and multi-step reasoning now allow substantial Functional Requirement Documents (FRDs) and repository context to be ingested in a single workflow, making specification quality the execution fuel for autonomous delivery.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper uses evidence on AI-augmented testing and verification to motivate separating synthesis from release authority.",
+      "quote": "Industrial and research evidence on AI-augmented testing and verification is integrated to motivate separation between synthesis and release authority.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The model extends to team role metamorphosis across engineer, QA, platform, and product functions, plus quantitative governance metrics and staged adoption.",
+      "quote": "Beyond process description, we extend the model to team role metamorphosis (engineer, QA, platform, and product functions), quantitative governance (Ambiguity Tax, Spec Fidelity, SER, and TCI_agentic with repair multiplier phi), and pragmatic adoption via hybrid estimation and a staged migration blueprint.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper positions AI-code as a fourth production paradigm and compares Human-Agile circa 2020 with Agentic-SDAD circa 2026 across artefacts, cadence, accountability, and security posture.",
+      "quote": "We revisit the historical pendulum between Waterfall and Agile, introduce AI-code as a fourth production paradigm, and compare Human-Agile (circa 2020) with Agentic-SDAD (circa 2026) across artefacts, cadence, accountability, and security posture.",
+      "numbers": [
+        "2020",
+        "2026"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The paper's stated position is that agentic speed does not eliminate engineering discipline but relocates it upstream into specification precision, explicit gates, and auditable provenance.",
+      "quote": "Overall, the paper argues that agentic speed does not eliminate engineering discipline; it relocates discipline upstream into specification precision, explicit gates, and auditable provenance.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.20341"
+}

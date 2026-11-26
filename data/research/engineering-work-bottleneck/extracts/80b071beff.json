@@ -1,0 +1,74 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-05-11",
+  "author_or_org": "Alessandro Rodi, Adam Wolf (Coinbase)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "By April 2026, in one month, Mux had 600+ users including engineers, PMs, and designers, with 335 active and 197 power users; it powered 5,068 merged PRs across 461 repositories and 10 orgs.",
+      "quote": "By April 2026 - in one month - Mux had already powered:\n\n*   **600+ users** including engineers, PMs, and designers, with 335 active and 197 power users. \n*   **5,068 merged PRs** across 461 repositories and 10 orgs.",
+      "numbers": [
+        "April 2026",
+        "600+",
+        "335",
+        "197",
+        "5,068",
+        "461",
+        "10"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Mux users had 3.5x more merged PRs per engineer than baseline, with 39.6 versus 11.4.",
+      "quote": "*   **3.5x more merged PRs per engineer** for Mux users compared to baseline: 39.6 vs 11.4.",
+      "numbers": [
+        "3.5x",
+        "39.6",
+        "11.4"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The authors caveat that Mux users likely skew toward engineers who were already high-output and AI-forward, so they do not claim Mux is the sole cause.",
+      "quote": "These numbers come with caveats. Mux users likely skew toward engineers who were already high-output and AI-forward, so we don't claim Mux is the sole cause.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The bottleneck moved from how fast code could be written to how many things one engineer could orchestrate at once.",
+      "quote": "The bottleneck had moved. It was no longer how fast we could write code. It was how many things one engineer could orchestrate at once.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "When code becomes cheap, engineering work shifts upward to scoping problems, designing solutions, reviewing output, and catching edge cases, while implementation becomes the easy part.",
+      "quote": "When code becomes cheap, the engineer's job changes. The work that matters shifts upward: scoping problems, designing solutions, reviewing output, catching edge cases. The implementation becomes the easy part.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A typical workflow has one engineer supervising three or four agents working in parallel, reviewing each agent's output as it finishes, giving feedback, and merging.",
+      "quote": "One engineer might have three or four agents working in parallel: one implementing an API, one writing integration tests, one fixing a bug, one refactoring a legacy module. The engineer reviews each as it finishes, provides feedback, and merges.",
+      "numbers": [
+        "three",
+        "four"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Mux's value is in plugins, skills, and integrations that encode Coinbase shipping practices and repo conventions into reusable commands, including team-specific review automation.",
+      "quote": "It's in the institutional knowledge that gets baked in. The plugins, skills, and integrations engineers built on top of Mux encode how Coinbase actually ships software: dispatching to our internal cloud agent fleet, deploying through Codeflow, automating team-specific review flows, encoding repo conventions into reusable commands.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Engineers report a qualitative shift toward attempting work they would not have before, including multi-service refactors, batches of bug fixes, features plus test suites, and multi-day efforts becoming single-session workflows.",
+      "quote": "Beyond the metrics, engineers consistently report a qualitative shift: they attempt work they wouldn't have before. Refactors that touch multiple services, batches of bug fixes, features plus their test suites. Multi-day efforts become single-session workflows.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.coinbase.com/blog/coding-had-a-concurrency-problem-how-mux-helped-solve-it"
+}

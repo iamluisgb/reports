@@ -1,0 +1,77 @@
+{
+  "relevant": true,
+  "source_type": "news",
+  "published": "2026-11-23",
+  "author_or_org": "Andrew Hoblitzell (InfoQ)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Netflix Commerce reported 32% more pull requests year over year, no Sev 1 incidents in 2026 on a core service, and developer NPS rising from -3 to +25 over three quarters.",
+      "quote": "Khuzam reported no Sev 1 incidents in 2026 on a core service and 32% more pull requests year over year. Developer NPS rose from -3 to +25 over three quarters.",
+      "numbers": [
+        "2026",
+        "32%",
+        "-3",
+        "+25",
+        "three"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The team created 45 architecture decision records written for both people and agents, covering context, decision, pattern, anti-pattern, AI usage notes, and links to docs/code, and shipping in almost every repository.",
+      "quote": "The team wrote 45 [architecture decision records](https://adr.github.io/), each \"written for people and for agents.\" Each record covers the context, the decision, a pattern and an anti-pattern, and AI usage notes on what an agent should do. It also links to related docs and code, and the records now ship inside almost every repository.",
+      "numbers": [
+        "45"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "AGENTS.md acts like robots.txt to keep the ADRs and more than 300 other documents findable, and coding agents read it before anything else.",
+      "quote": "To keep those records and more than 300 other documents findable, the team borrowed from how search engines read a site. An AGENTS.md file, the [project instructions file](https://www.infoq.com/news/2025/08/agents-md/) that coding agents read before anything else, plays the part of robots.txt.",
+      "numbers": [
+        "300"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "A review agent pre-reviews each PR against docs/ADRs, flags anti-patterns and dependencies; after an early version posted 23 comments on one PR, it now posts only verified blockers with evidence, fix, and broken ADR rule; a revise label lets an agent push a fix, but auto-merge is off and engineers own code.",
+      "quote": "A review agent pre-reviews each pull request against the docs and ADRs, flags anti-patterns and looks at what depends on the change.\n\nIts first version left 23 comments on a single PR, starting with \"Overall this PR looks great!\" It now posts only verified blockers, each with evidence, a fix and the ADR rule it breaks. Engineers can add a revise label to have an agent read the review and push a fix to the same PR. Changes aren't yet auto-merged, and engineers own the code.",
+      "numbers": [
+        "23"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "For cross-service features, a product engineer touches payment API, billing, gateway, and every client, forcing the team to define who owns context and how it follows the work.",
+      "quote": "A product engineer building one feature touches the payment API, billing, the gateway and every client, so the team had to decide who owns the context and how it follows the work.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Early agent test migration required four tries; docs were hard to find because the context window ran out, tests were inconsistent, and developers rated the internal framework NPS -3.",
+      "quote": "The team's first attempt was having an agent migrate tests, and it took four tries. The team started with \"migrate this file,\" then added instructions, then the APIs to use, then how to mock data.\n\nThe docs were also hard to find, since the agent's context window ran out before it found the right page. And they were inconsistent, because tests were not written the same way across the codebase.\n\nDevelopers rated the internal framework at a [Net Promoter Score](https://en.wikipedia.org/wiki/Net_promoter_score) of -3.",
+      "numbers": [
+        "four",
+        "-3"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "CI remains deterministic and runs builds, tests, screenshot diffing, merge queues, and canaries.",
+      "quote": "Khuzam noted that the CI pipeline is still deterministic, running builds, tests, screenshot diffing, merge queues and canaries.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The documented Netflix Commerce case increased pull requests 32% year over year while reporting no Sev 1 incidents on a core service in 2026, indicating throughput rose without stability loss on that service.",
+      "quote": "Khuzam reported no Sev 1 incidents in 2026 on a core service and 32% more pull requests year over year. Developer NPS rose from -3 to +25 over three quarters.",
+      "numbers": [
+        "2026",
+        "32%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/"
+}

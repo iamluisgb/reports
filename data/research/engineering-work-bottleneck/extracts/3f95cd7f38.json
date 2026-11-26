@@ -1,0 +1,47 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-04-15",
+  "author_or_org": "Thoughtworks",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Thoughtworks Technology Radar volume 34 warns that AI generates increasingly larger amounts of code, causing accumulating cognitive debt and a wider gap between humans and software systems.",
+      "quote": "The report notably warns of accumulating cognitive debt as AI generates increasingly larger amounts of code and, in so doing, introduces a wider gap between humans and software systems.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source frames a paradox: agentic systems make code creation quicker, but established practices for discipline and rigor are more vital than ever.",
+      "quote": "The takeaway for technologists and business leaders is a striking paradox; as agentic systems make it easier to create code quickly, traditional and established practices that ensure discipline and rigor are more vital than ever.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The report says teams are beginning to iterate on coding-agent harnesses with feedforward controls such as Agent Skills and spec-driven development, plus feedback controls such as mutation testing.",
+      "quote": "Teams are beginning to iterate on coding agent harnesses. These include feedforward controls like Agent Skills and spec-driven development, as well as feedback controls like mutation testing, which trigger self-correction before human review.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The source states that as coding agents become more powerful, humans are dangerously tempted to step out of the loop, and teams are beginning to iterate on coding-agent harnesses.",
+      "quote": "As coding agents become more powerful, humans are dangerously tempted to step out of the loop. Teams are beginning to iterate on coding agent harnesses.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The report says permission-hungry agents create a core tension by seeking maximum access to private data and external systems, making zero trust, sandboxed execution, and defense in depth non-negotiable.",
+      "quote": "The permission-hungry agents are most useful because they seek the maximum access to private data and external systems, creating a core tension. Zero trust architectures, sandboxed execution, and defense in depth are now non-negotiable table stakes.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source says AI speed is driving a return to zero trust architecture, DORA metrics, and testability, including managing cognitive debt so developers still understand the systems they build.",
+      "quote": "The speed of AI is driving a return to well-established techniques like zero trust architecture, DORA metrics, and testability to manage complexity. This includes managing cognitive debt to ensure developers still understand the systems they are building.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34"
+}

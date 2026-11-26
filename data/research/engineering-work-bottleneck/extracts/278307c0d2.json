@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-02-19",
+  "author_or_org": "Alistair Gray / Stripe",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Stripe says more than 1,300 PRs merged weekly are completely minion-produced and human-reviewed, with no human-written code, up from 1,000 as of Part 1.",
+      "quote": "Over 1,300 Stripe pull requests (up from 1,000 as of Part 1) merged each week are completely minion-produced, human-reviewed, but containing no human-written code.",
+      "numbers": [
+        "1,300",
+        "1,000"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "In the standard minion flow, Stripe runs one full-CI iteration, auto-applies test fixes, gives one additional local fix attempt for non-autofix failures, then sends the branch to a human operator for manual scrutiny after the second push and CI run.",
+      "quote": "we also include one iteration against the full CI suite into the standard minion blueprint. After a minion pushes a change, we run CI and auto-apply any autofixes for failing tests. If there are failures with no autofix, we send the failure back to a blueprint agent node and give the minion one more chance to fix the failing test locally. After the second push and CI run, we send the branch back to its human operator for manual scrutiny.",
+      "numbers": [
+        "one",
+        "one",
+        "second"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Stripe caps CI retry loops at one or two rounds because CI consumes tokens, compute, and time and yields diminishing returns beyond that.",
+      "quote": "Why have only one or two rounds of CI? There’s a balancing act between speed and completeness here; CI runs cost tokens, compute, and time, and we think there are diminishing marginal returns if an LLM is running against indefinitely many rounds of a full CI loop.",
+      "numbers": [
+        "one",
+        "two"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Agent rule files such as CLAUDE.md or AGENTS.md are used to give agents codebase guidance automatically as they traverse the directory structure.",
+      "quote": "various agent rule formats—think CLAUDE.md or AGENTS.md—allow agents to “learn” about the codebase automatically as they traverse its directory structure.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Stripe avoids unconditional global rules due to repository size and almost exclusively gives minions context from rule files scoped to subdirectories or file patterns, attached automatically during traversal.",
+      "quote": "Due to the size of our repositories, we use unconditional global rules very judiciously, since otherwise the agent’s whole context window would fill with rules before the agent even starts. Instead, we almost exclusively give minions context from files that are scoped to specific subdirectories or file patterns, automatically attached as the agent traverses the filesystem.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Stripe orchestrates minions with 'blueprints', code-defined workflows that combine deterministic code nodes with agent loops for flexibility.",
+      "quote": "Blueprints are workflows defined in code that direct a minion run. Blueprints combine the determinism of workflows with agents’ flexibility in dealing with the unknown: a given node can run either deterministic code or an agent loop focused on a task.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Minions run fully unattended, so Stripe’s harness omits interruptibility and human-triggered commands to initiate or steer the run.",
+      "quote": "Minions, however, are fully unattended, so our agent harness can’t use human-facing features such as interruptibility or human-triggered commands to initiate or steer the agent run.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Stripe’s minions run in QA devboxes without real user data, production services, or arbitrary network egress, and an internal security framework prevents destructive tool actions.",
+      "quote": "Since minions operate autonomously with full freedom to call their MCP tools, we also have an internal security control framework that ensures they can’t use their tools to perform destructive actions. As a first line of defense, though, our devboxes already run in our QA environment, and consequently, minions don’t have access to real user data, Stripe’s production services, or arbitrary network egress.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2"
+}

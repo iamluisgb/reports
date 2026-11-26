@@ -1,0 +1,55 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-20",
+  "author_or_org": "Mohamed Almukhtar, Anwar Ghammam, Hua Ming",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "In an empirical study of agentic Python refactoring pull requests, agentic commits improved a quality attribute in 22.5% of studied changes on average, with usability improving most frequently at 36.5%.",
+      "quote": "Our results show that, on average, agentic commits improve a quality attribute in 22.5% of the studied changes, with usability improving most frequently (36.5%).",
+      "numbers": [
+        "22.5%",
+        "36.5%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "24.17% of modified files introduced new Pylint issues, predominantly convention-level violations such as long lines, while 4.7% introduced new Bandit findings.",
+      "quote": "At the same time, 24.17% of modified files introduce new Pylint issues predominantly convention level violations such as long lines-while 4.7% introduce new Bandit findings.",
+      "numbers": [
+        "24.17%",
+        "4.7%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Despite mixed quality and security outcomes, developer acceptance was high: 73.5% of analyzed agentic refactoring PRs were merged, including cases introducing new lint or security findings.",
+      "quote": "Despite these mixed outcomes, developer acceptance is high: 73.5% of the analyzed PRs are merged, including cases that introduce new lint or security findings, often alongside the removal of existing issues.",
+      "numbers": [
+        "73.5%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The authors conclude that agentic refactoring shows both promise and current limitations, and they call for stronger tool-in-the-loop quality and security gating for AI-driven workflows.",
+      "quote": "Overall, these findings highlight both the promise and current limitations of agentic refactoring, and motivate stronger tool-in-the-loop quality and security gating for AI-driven development workflows.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The study measures code quality and security issues before and after each change using PyQu plus Pylint and Bandit static analysis.",
+      "quote": "We analyze agentic refactoring PRs using PyQu, an ML-based quality assessment tool for Python, to quantify changes across five quality attributes, and we complement PyQu with domain-independent static analysis (Pylint and Bandit) to measure code quality and security issues before and after each change.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The empirical study examines Python refactoring pull requests from the AIDev dataset.",
+      "quote": "To address this gap, we conduct an empirical study of Python refactoring pull requests (PRs) from the AIDev dataset.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.21453"
+}

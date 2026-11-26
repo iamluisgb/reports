@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "primary",
+  "published": "2025-07-10",
+  "author_or_org": "Joel Becker, Nate Rush, Beth Barnes, David Rein / METR",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "In the randomized controlled trial, experienced open-source developers allowed to use AI tools took 19% longer to complete issues, a significant slowdown.",
+      "quote": "When developers are allowed to use AI tools, they take 19% longer to complete issues—a significant slowdown that goes against developer beliefs and expert forecasts.",
+      "numbers": [
+        "19%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Developers expected AI to speed them up by 24%, and even after experiencing the slowdown they still believed AI had sped them up by 20%.",
+      "quote": "This gap between perception and reality is striking: developers expected AI to speed them up by 24%, and even after experiencing the slowdown, they still believed AI had sped them up by 20%.",
+      "numbers": [
+        "24%",
+        "20%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The RCT recruited 16 experienced open-source developers, used 246 real issues averaging two hours each, randomized AI use per issue, and paid developers $150/hr.",
+      "quote": "To directly measure the real-world impact of AI tools on software development, we recruited 16 experienced developers from large open-source repositories (averaging 22k+ stars and 1M+ lines of code) that they’ve contributed to for multiple years. Developers provide lists of real issues (246 total) that would be valuable to the repository—bug fixes, features, and refactors that would normally be part of their regular work. Then, we randomly assign each issue to either allow or disallow use of AI while working on the issue. When AI is allowed, developers can use any tools they choose (primarily Cursor Pro with Claude 3.5/3.7 Sonnet—frontier models at the time of the study); when disallowed, they work without generative AI assistance. Developers complete these tasks (which average two hours each) while recording their screens, then self-report the total implementation time they needed. We pay developers $150/hr as compensation for their participation in the study.",
+      "numbers": [
+        "16",
+        "246",
+        "two",
+        "$150/hr"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The study ruled out differential issue dropping and found that developers submitted similar quality PRs with and without AI.",
+      "quote": "We rule out many experimental artifacts—developers used frontier models, complied with their treatment assignment, didn’t differentially drop issues (e.g. dropping hard AI-disallowed issues, reducing the average AI-disallowed difficulty), and submitted similar quality PRs with and without AI.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The authors argue benchmarks may overestimate model capabilities by measuring only well-scoped, algorithmically scorable tasks, and that anecdotal speed-up estimates can be very inaccurate.",
+      "quote": "On the other hand, benchmarks may overestimate model capabilities by only measuring performance on well-scoped, algorithmically scorable tasks. And we now have strong evidence that anecdotal reports/estimates of speed-up can be very inaccurate.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The authors explicitly limit generalizability, saying they do not claim their developers or repositories represent a majority or plurality of software development work.",
+      "quote": "We do not claim that our developers or repositories represent a majority or plurality of software development work",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The authors note that their tool setup may not use optimal prompting or scaffolding, and that domain- or repository-specific training could yield positive speedup.",
+      "quote": "Cursor does not sample many tokens from LLMs, it may not use optimal prompting/scaffolding, and domain/repository-specific training/finetuning/few-shot learning could yield positive speedup",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The authors suggest AI capabilities may be comparatively lower in settings with very high quality standards or many implicit documentation, testing, and linting requirements.",
+      "quote": "Our results also suggest that AI capabilities may be comparatively lower in settings with very high quality standards, or with many implicit requirements (e.g. relating to documentation, testing coverage, or linting/formatting) that take humans substantial time to learn.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"
+}

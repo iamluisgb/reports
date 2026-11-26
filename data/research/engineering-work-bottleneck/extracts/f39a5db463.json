@@ -1,0 +1,71 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-22",
+  "author_or_org": "Om Nepal, Sushant Aryal, Oluseyi Olukola, Nick Rahimi",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The paper argues that compile rate is a scientifically unreliable metric for single-function vulnerability repair, based on five controlled experiments over 203 vulnerable functions, three open-source code LLMs ranging from 350M to 6.7B parameters, and three prompting strategies.",
+      "quote": "We argue that compile rate is a scientifically unreliable metric for single-function vulnerability repair, and we support this with five controlled experiments over 203 vulnerable functions from Big-Vul, three open-source code LLMs (350M to 6.7B parameters), and three prompting strategies.",
+      "numbers": [
+        "five",
+        "203",
+        "three",
+        "350M",
+        "6.7B",
+        "three"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "About 64% of compile failures are not attributable to the model and that share is nearly invariant across models, with compile rate dominated by evaluation-harness and dataset artifacts rather than model quality.",
+      "quote": "Compile rate (i) barely responds to an intervention that substantially improves the generated code; (ii) is dominated by evaluation-harness and dataset artifacts rather than model quality, with about 64% of compile failures not attributable to the model, a share that is nearly invariant across models;",
+      "numbers": [
+        "64%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Compile rate shifts by 1.8 to 2.7 times on identical patches under a single compiler-standard flag, with zero regressions.",
+      "quote": "(iii) shifts by 1.8 to 2.7 times on identical patches under a single compiler-standard flag, with zero regressions;",
+      "numbers": [
+        "1.8",
+        "2.7",
+        "zero"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Compile rate ranks the three models in the opposite order to reference-similarity metrics.",
+      "quote": "(iv) ranks the three models in the opposite order to reference-similarity metrics;",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "When used as an optimization target, compile rate rewards non-repairs: a compiler-feedback loop raises compile rate while similarity to the human fix falls, and manual inspection finds deletion- and placeholder-style non-repairs among newly compiling outputs.",
+      "quote": "(v) rewards non-repairs when used as an optimization target, since a compiler-feedback loop raises compile rate while similarity to the human fix falls, with manual inspection finding deletion- and placeholder-style non-repairs among the newly compiling outputs.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The whole-function CodeBLEU fallback also fails because an unchanged copy of the vulnerable input outscores every model.",
+      "quote": "The natural fallback, whole-function CodeBLEU, also fails: an unchanged copy of the vulnerable input outscores every model.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "diff_F1, a change-aware screen that scores only the edited region, gives exactly zero credit to a no-op and near-zero credit to some deletion-based gaming patches while still crediting genuine partial edits, but it is not a repair-quality metric.",
+      "quote": "We also examine diff_F1, a change-aware screen that scores only the edited region. It gives exactly zero credit to a no-op and near-zero credit to some, though not all, of the deletion-based gaming patches we observed, while still crediting genuine partial edits, so it may serve as a cheap screen before deeper, execution-based analysis. It is not a repair-quality metric, and we report where it falls short.",
+      "numbers": [
+        "zero",
+        "near-zero"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.26749"
+}

@@ -1,0 +1,49 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-01-27",
+  "author_or_org": "Shamse Tasnim Cynthia, Al Muttakin, Banani Roy",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The increasing adoption of AI coding agents has increased the number of agent-generated pull requests merged with little or no human intervention.",
+      "quote": "The increasing adoption of AI coding agents has increased the number of agent-generated pull requests (PRs) merged with little or no human intervention.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Prior work on agent productivity has largely relied on benchmarks and controlled tasks rather than large-scale post-merge analyses.",
+      "quote": "Although such PRs promise productivity gains, their post-merge code quality remains underexplored, as prior work has largely relied on benchmarks and controlled tasks rather than large-scale post-merge analyses.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The study analyzes 1,210 merged agent-generated bug-fix PRs from Python repositories in the AIDev dataset and uses SonarQube differential analysis to identify newly introduced code quality issues.",
+      "quote": "To address this gap, we analyze 1,210 merged agent-generated bug-fix PRs from Python repositories in the AIDev dataset. Using SonarQube, we perform a differential analysis between base and merged commits to identify code quality issues newly introduced by PR changes.",
+      "numbers": [
+        "1,210"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Raw issue-count differences across agents largely disappear after normalizing by code churn, indicating that higher issue counts are primarily driven by larger PRs.",
+      "quote": "Our results show that apparent differences in raw issue counts across agents largely disappear after normalizing by code churn, indicating that higher issue counts are primarily driven by larger PRs.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Across all agents, code smells dominate newly introduced issues, particularly at critical and major severities, while bugs are less frequent but often severe.",
+      "quote": "Across all agents, code smells dominate, particularly at critical and major severities, while bugs are less frequent but often severe.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Merge success does not reliably reflect post-merge code quality for agent-generated bug-fix PRs, and the authors highlight the need for systematic quality checks.",
+      "quote": "Overall, our findings show that merge success does not reliably reflect post-merge code quality, highlighting the need for systematic quality checks for agent-generated bug-fix PRs.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2601.20109"
+}

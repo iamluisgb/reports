@@ -1,0 +1,57 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-10-20",
+  "author_or_org": "Tianqi Liu, Yandong Guan, Songze Li, Wenkai Wang, Gang Yu, Chengfei Lv",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Across 11 model-scaffold configurations, most benchmark scores fall between 52.1 and 78.1, and the highest complete-delivery rate is 14.0%.",
+      "quote": "Across 11 model--scaffold configurations, most scores fall between 52.1 and 78.1; GPT-5.6-Sol achieves the highest complete-delivery rate of 14.0\\%.",
+      "numbers": [
+        "11",
+        "52.1",
+        "78.1",
+        "14.0\\%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Incomplete implementation and missing integration are the principal delivery bottlenecks; producing individual components does not ensure complete delivery.",
+      "quote": "Incomplete implementation and missing integration are the principal bottlenecks: producing individual components does not ensure a complete delivery.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The benchmark targets incremental PRD fulfillment, where issue resolution, development from scratch, and isolated tests leave important requirements underexplored or incompletely evidenced.",
+      "quote": "Issue resolution and development from scratch leave incremental PRD fulfillment underexplored, while isolated tests provide incomplete evidence of business and integration requirements.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The benchmark measures PRD fulfillment by combining requirement reconstruction, criterion construction, and evidence-based evaluation.",
+      "quote": "It combines requirement reconstruction, criterion construction, and evidence-based evaluation to measure PRD fulfillment and connect delivery gaps to agent behavior.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The benchmark evaluation agrees with expert consensus 95.2% of the time and has lower case-level variation across judging records than across repeated executions.",
+      "quote": "Evaluation achieves 95.2\\% agreement with expert consensus, with lower case-level variation across judging records than repeated executions.",
+      "numbers": [
+        "95.2\\%"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Successive harness releases raised mean performance from 59.4 to 63.0 using the same model and task suite.",
+      "quote": "Beyond model comparison, the benchmark provides actionable feedback for harness refinement: diagnosis guides targeted improvements, and successive harness releases raise mean performance from 59.4 to 63.0 using the same model and task suite.",
+      "numbers": [
+        "59.4",
+        "63.0"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2610.26394"
+}

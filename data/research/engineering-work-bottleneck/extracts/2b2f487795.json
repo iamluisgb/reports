@@ -1,0 +1,67 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-10-29",
+  "author_or_org": "Sreeja Thummala, Sophie Zeng, Mark Harman, Weini Liu, Eric Liu (Engineering at Meta)",
+  "claims": [
+    {
+      "question": "q3",
+      "claim": "Meta uses a human-on-the-loop model for JiTTests: engineers set criteria and review aggregate outcomes rather than supervising every output.",
+      "quote": "Rather than a human-in-the-loop approach, where a human engineer reviews every output, we’ve reduced friction through a human-on-the-loop approach, where human engineers set criteria and review outcomes at an aggregate level rather than supervising every output.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Catching JiTTests focuses test generation on diffs most likely to contain severe regressions.",
+      "quote": "This helps ensure test generation is focused on diffs that are most likely to contain severe regressions.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "False positives are filtered with a rule-based approach plus an LLM-as-Judge ensemble that classifies weak catches as likely true or false positives.",
+      "quote": "To filter false positives, we employed a traditional rule-based approach combined with an ensemble approach we call “LLM-as-Judge,” which aggregates judgements from several state-of-the-art (SOTA) LLMs, all tasked with classifying weak catches as likely true or false positives.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The system uses the ranking from LLM-as-Judge and RubFake to decide whether to bring in a human engineer.",
+      "quote": "Based on the ranking from LLM-as-Judge and RubFake, the system then decides whether to reach out to human engineers.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "As of the article, 589 Meta engineers had engaged with Catching JiTTests, representing 64% of outreach, and the reported true-positive rate was 60%.",
+      "quote": "As of this writing, 589 engineers at Meta (64% of our outreach) have engaged with Catching JiTTests. These engineers have reported that Catching JiTTests surfaces genuinely actionable findings, with a 60% rate of true positives.",
+      "numbers": [
+        "589",
+        "64%",
+        "60%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "In the first half of 2026, Catching JiTTests caught 74 serious privacy bugs at the diff stage and lowered overall privacy SEVs by 20%.",
+      "quote": "In the first half of 2026, Catching JiTTests played a key role in catching 74 serious (SEV) privacy bugs at the diff stage, before they landed in production and lowering the overall occurrence of privacy SEVs by 20% during that timeframe.",
+      "numbers": [
+        "2026",
+        "74",
+        "20%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Catching JiTTests generates executable tests that demonstrate a concrete behavioral difference and can catch bug classes that LLM- or agent-based code review might miss, at the cost of more computational steps.",
+      "quote": "It generates executable tests that demonstrate a concrete behavioral difference introduced by the change. While it requires more computational steps, it catches classes of bugs that LLM- or agent-based code reviews might not.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Meta describes the approach as generalizable: engineers define success criteria early, AI executes testing, engineers monitor aggregate outcomes, and intervention happens at the policy level rather than per item.",
+      "quote": "The approach is generalizable: Engineers define success criteria early, let AI execute the testing, monitor the outcomes at an aggregate level, and intervene at the policy level rather than per item.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/"
+}

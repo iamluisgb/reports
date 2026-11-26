@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-25",
+  "author_or_org": "Shyam Agarwal, Anmol Singhal, Andrew Macvean, Bogdan Vasilescu, Travis Breaux",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "Practitioners agreed specifications should capture intent, but many also included implementation details and used spec-driven development selectively, mainly for new features.",
+      "quote": "Practitioners agreed that specs should capture intent, but many also included implementation details, used SDD selectively and mainly for new features, and reported more reliable agent behavior alongside greater planning and review costs.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Practitioners reported more reliable agent behavior but also greater planning and review costs.",
+      "quote": "Practitioners agreed that specs should capture intent, but many also included implementation details, used SDD selectively and mainly for new features, and reported more reliable agent behavior alongside greater planning and review costs.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Implementation detail may help agents while making specifications prone to decay; tool-specific record structures shape what people and agents see; spec-code checks were described mainly when changes were completed rather than over time.",
+      "quote": "Our findings show that implementation detail may help agents while making specs prone to decay, that tool-specific record structures shape what people and agents see, and that participants described spec-code checks mainly when changes are completed rather than over time.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Evidence on the use of spec-driven development comes largely from tool vendors.",
+      "quote": "Spec-driven development (SDD) addresses this by having developers and agents write specifications that guide implementation, yet evidence on its use comes largely from tool vendors.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The authors find that individual benefits may come from clarifying intent before delegation, while team benefits may depend on spec-driven development becoming a shared process.",
+      "quote": "We also find that individual benefits may come from clarifying intent before delegation, while team benefits may depend on SDD becoming a shared process.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The study's evidence base includes thematic analysis of Reddit discussions, interviews with 21 practitioners including eight tool makers, and 266 active and popular repositories from a corpus of 470,795 spec files across 73,030 public GitHub repositories.",
+      "quote": "We study SDD in practice through a thematic analysis of Reddit discussions, interviews with 21 practitioners, including eight tool makers, and 266 active and popular repositories in SpecMine, a corpus of 470,795 spec files from 73,030 public GitHub repositories that we release.",
+      "numbers": [
+        "21",
+        "eight",
+        "266",
+        "470,795",
+        "73,030"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.25202"
+}

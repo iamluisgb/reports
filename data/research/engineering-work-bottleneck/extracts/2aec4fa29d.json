@@ -1,0 +1,76 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-01-16",
+  "author_or_org": "Atlassian",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Atlassian's 2025 developer survey reports that 68% of developers and 70% of managers save at least 10 hours per week with AI tools.",
+      "quote": "**68% of developers and 70% of managers report saving 10 or more hours per week with AI tools.**",
+      "numbers": [
+        "68%",
+        "70%",
+        "10"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "At the same time, 50% of developers report losing at least 10 hours per week to non-coding tasks caused by poor information access, fragmented tools, and context switching.",
+      "quote": "At the same time, **50% of developers report losing 10 or more hours per week to non-coding tasks** driven by poor information access, fragmented tools, and constant context switching.",
+      "numbers": [
+        "50%",
+        "10"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Developers spend around 16% of their time coding, and Atlassian says the bottleneck is usually the other 84% of their week.",
+      "quote": "Developers spend **around 16% of their time actually coding**, which is already the fastest part of the software delivery process. The bottleneck is almost always in the **other 84%** of their week.",
+      "numbers": [
+        "16%",
+        "84%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Atlassian recommends capturing decisions and tradeoffs in a place where AI can later retrieve and summarize them for new stakeholders.",
+      "quote": "**Capturing** decisions and tradeoffs in a place where AI can later retrieve and summarize them for new stakeholders",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Atlassian's internal AutoReview agent reviews code changes, flags potential issues, and suggests improvements before a human reviewer starts.",
+      "quote": "The resulting AutoReview agent:\n\n*   Reviews code changes and flags potential issues\n*   Suggests improvements before a human reviewer even starts",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Atlassian reports over a 45% reduction in PR cycle time.",
+      "quote": "Atlassian reports **over a 45% reduction in PR cycle time**.",
+      "numbers": [
+        "45%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Atlassian describes a 20-person, multi-country project run with no real-time meetings using Loom videos and Confluence pages, with discussions and decisions recorded as they happened.",
+      "quote": "Boyagi described running a 20-person, multi-country project with **no real-time meetings** by combining Loom videos for async communication with Confluence pages for shared context. Discussions and decisions were recorded as they happened.",
+      "numbers": [
+        "20"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Atlassian reports that 96% of companies are not experiencing AI-driven transformation at the organizational level, while only about 4% describe meaningful company-wide impact.",
+      "quote": "**96% of companies report that they are not experiencing an AI-driven transformation at the organizational level**. Only about 4% describe meaningful, company-wide impact.",
+      "numbers": [
+        "96%",
+        "4%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.atlassian.com/blog/development/how-tech-leaders-can-turn-ai-hype-into-real-team-productivity"
+}

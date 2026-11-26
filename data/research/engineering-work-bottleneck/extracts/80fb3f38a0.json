@@ -1,0 +1,78 @@
+{
+  "relevant": true,
+  "source_type": "news",
+  "published": "2026-05-11",
+  "author_or_org": "Matt Saunders / InfoQ",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "DORA says most organisations will see a temporary productivity dip before long-term AI gains, with three causes: workflow learning curve, verification tax from reviewing AI-generated code, and adapting testing/change approval to increased code volume.",
+      "quote": "The authors argue that most organisations will experience a temporary productivity dip before achieving long-term gains from AI adoption. This dip has three main causes: the learning curve as teams adapt their workflows, the verification tax imposed by reviewing AI-generated code, and the need to adapt downstream processes such as testing and change approval to handle increased code volumes.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "2025 DORA research links AI adoption to increased individual effectiveness and code quality but also to rising software delivery instability; more code moving faster can overwhelm deployment pipelines and manual review gates.",
+      "quote": "Drawing on the 2025 DORA research, it notes that while AI adoption is associated with increased individual effectiveness and code quality, it is also associated with a rise in software delivery instability. More code moving faster can overwhelm existing deployment pipelines and manual review gates.",
+      "numbers": [
+        "2025"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "The report says AI inference costs fell by a factor of 280 between November 2022 and October 2024, shifting the true financial burden to governance: managing the verification tax, adjusting workflows, and upskilling staff.",
+      "quote": "They note that inference costs for AI models have fallen dramatically; dropping by a factor of 280 between November 2022 and October 2024 according to the Stanford Artificial Intelligence Index. This means that the true financial burden of adoption has shifted to governance: managing the verification tax, adjusting workflows, and upskilling staff.",
+      "numbers": [
+        "280",
+        "November 2022",
+        "October 2024"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "DORA's sample calculator shows a negative downtime impact of $344,000 because the assumed change failure rate rises from 5% to 6% after AI adoption.",
+      "quote": "The model accounts for this as a cost, and the sample calculator actually shows a negative downtime impact of $344,000 because the assumed change failure rate rises from 5% to 6% after AI adoption.",
+      "numbers": [
+        "$344,000",
+        "5%",
+        "6%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Stanford research cited by DORA found AI yields a 35 to 40% productivity gain on simple greenfield tasks but often 10% or less on complex legacy code.",
+      "quote": "Research cited in the report from Stanford University's Software Engineering Productivity programme found that while AI yields a 35 to 40% productivity gain on simple, greenfield tasks, its impact on complex legacy code is often 10% or less; a finding that matters for the many organisations working primarily on existing systems.",
+      "numbers": [
+        "35 to 40%",
+        "10%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The report cites Google Cloud data showing an average 727% return on Google Cloud AI over three years and an average payback period of around eight months.",
+      "quote": "For the longer term, the authors point to Google Cloud data showing an average 727% return on investment in Google Cloud AI over three years, and an average payback period of around eight months.",
+      "numbers": [
+        "727%",
+        "three",
+        "eight"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The report strongly discourages headcount reduction, arguing retaining and training existing staff is more cost-effective and preserves institutional knowledge.",
+      "quote": "The report strongly discourages headcount reduction as a strategy, arguing that retaining and training existing staff is more cost-effective and preserves institutional knowledge.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "DORA's team lead says the greatest AI returns come from the underlying organizational system—internal platform quality, workflow clarity, and team alignment—not the tools; without that foundation, AI creates localized productivity lost downstream.",
+      "quote": "\"The greatest returns on AI investment come not from the tools themselves but from a strategic focus on the underlying organizational system: the quality of the internal platform, the clarity of workflows, and the alignment of teams,\" writes Nathen Harvey, the DORA team lead at Google Cloud. \"Without this foundation, AI creates localized pockets of productivity that are often lost in downstream chaos.\"",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.infoq.com/news/2026/05/dora-roi-ai-assisted-dev-report"
+}

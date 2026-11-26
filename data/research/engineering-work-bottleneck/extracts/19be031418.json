@@ -1,0 +1,49 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-17",
+  "author_or_org": "Hüseyin Özgür Kamalı, Erdem Tuna, Vahid Haratian, Eray Tüzün",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "AI coding assistants increase code production velocity while expanding the volume of code requiring review, making code review a growing bottleneck.",
+      "quote": "The rise of Artificial Intelligence (AI) coding assistants has intensified this challenge: while these tools increase code production velocity, they also expand the volume of code requiring review, turning code review into a growing bottleneck.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Current AI support for code review is fragmented across isolated tasks such as reviewer recommendation, PR description generation, and comment suggestion rather than supporting the end-to-end PR review workflow.",
+      "quote": "Current AI support in code review remains fragmented, with tools focusing on isolated tasks such as reviewer recommendation, PR description generation, or comment suggestion rather than the end-to-end PR review workflow.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The proposed review framework spans five stages: PR Creation, PR Augmentation, Reviewer Selection, AI-Assisted Code Review, and PR Retrospective, retaining humans at key decision points.",
+      "quote": "Our framework spans five stages: PR Creation, PR Augmentation, Reviewer Selection, AI-Assisted Code Review, and PR Retrospective, with humans retained at key decision points to preserve judgment, accountability, and team-level understanding.",
+      "numbers": [
+        "five"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The paper envisions reviewers shifting from manual inspectors to supervisory operators of agents.",
+      "quote": "We propose a future vision for code review in which reviewers transition from manual inspectors into supervisory operators of agents.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "It proposes an AI-powered code review workflow that combines specialized agents with human-controlled quality gates.",
+      "quote": "We then present a vision for an AI-powered code review workflow combining specialized agents with human-controlled quality gates.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The vision uses staged AI-powered workflows to align the pace of code generation with shared understanding and accountable engineering.",
+      "quote": "In this vision, staged, AI-powered workflows aim to align the pace of code generation with shared understanding and accountable engineering.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.17548"
+}

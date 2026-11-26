@@ -1,0 +1,43 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": null,
+  "author_or_org": "GitHub (github/spec-kit)",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The repository describes itself as a toolkit for getting started with Spec-Driven Development (SDD) or other processes.",
+      "quote": "💫 Toolkit to help you get started with SDD or any other process!",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "A commit message records running the full SDD workflow to produce spec.md with 4 user stories, 31 functional requirements, and 8 success criteria, plus plan.md, research.md, data-model.md, contracts/, quickstart.md, tasks.md with 43 dependency-ordered tasks, and a v1.0.0 Spec Kit Constitution.",
+      "quote": "spec.md (4 user stories, 31 FRs, 8 success criteria) + clarifications - plan.md, research.md, data-model.md, contracts/, quickstart.md - tasks.md (43 dependency-ordered tasks, organized by user story) - Spec Kit Constitution v1.0.0",
+      "numbers": [
+        "4",
+        "31",
+        "8",
+        "43",
+        "1.0.0"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The repository's commit history records an AGENTS.md pitfall about a test-venv gotcha, showing AGENTS.md is used as an agent/contributor guidance artifact.",
+      "quote": "AGENTS.md pitfall on the test-venv gotcha",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The toolkit includes sample role bundles named product-manager, business-analyst, security-researcher, and developer.",
+      "quote": "four sample role bundles (product-manager, business-analyst, security-researcher, developer)",
+      "numbers": [
+        "four"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://github.com/github/spec-kit"
+}

@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "data",
+  "published": null,
+  "author_or_org": "Stack Overflow",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "73% of respondents use coding assistants and agents daily, and nearly a third of daily users spend upwards of four hours per day using them.",
+      "quote": "The overwhelming majority of respondents now use coding assistants and agents daily (73%), with nearly a third of daily users spending upwards of four hours.",
+      "numbers": [
+        "73%",
+        "third",
+        "four"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "AI is seeing meaningful adoption in secondary review functions, including analyzing telemetry, reviewing pull requests, and hunting for security issues.",
+      "quote": "Even secondary review functions—analyzing telemetry, reviewing pull requests, hunting for security issues—are seeing meaningful AI adoption.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "48% of respondents trust AI when they can easily validate the answers, while only 16% extend that trust to most tasks that are not important work decisions.",
+      "quote": "When asked when it’s acceptable to trust AI, 48% indicate they trust AI when they can easily validate the answers and only 16% extend that trust to most tasks that are not important work decisions.",
+      "numbers": [
+        "48%",
+        "16%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Human-in-the-loop is the dominant mode of working with AI tools.",
+      "quote": "That’s why human-in-the-loop is the dominant mode of working with these tools.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Six out of ten users cite a reason to avoid using AI at work or school, and losing job skills is a top concern.",
+      "quote": "6 out of 10 users cite a reason to avoid using AI at work or school, losing job skills is a top concern.",
+      "numbers": [
+        "6",
+        "10"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Among users who avoid AI, concern over losing job skills is 17.1%, moral/ethical concerns 15.2%, privacy/security issues 13.0%, and environmental concerns 8.2%.",
+      "quote": "| Concern over losing job skills or training an AI to replace you | 2,367 | 17.1% |\n| Moral or ethical concerns | 2,108 | 15.2% |\n| Issues with privacy or security | 1,802 | 13.0% |\n| Environmental concerns | 1,129 | 8.2% |",
+      "numbers": [
+        "17.1%",
+        "15.2%",
+        "13.0%",
+        "8.2%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://survey.stackoverflow.co/2026/ai"
+}

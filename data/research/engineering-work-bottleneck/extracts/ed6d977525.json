@@ -1,0 +1,46 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-17",
+  "author_or_org": "Dipankar Sarkar (arXiv:2606.19616, cs.SE)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper states that large-scale studies find autonomous coding agents' pull requests are produced faster but accepted less often, a coordination and trust gap that PR-level telemetry cannot explain.",
+      "quote": "Autonomous coding agents now open millions of pull requests, yet large-scale studies find their PRs are produced faster but accepted less often - a coordination and trust gap that pull-request-level telemetry cannot explain.",
+      "numbers": [
+        "millions"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Using the grite coordination substrate, the share of work that merely re-does a teammate's task fell from 78% to 0% while useful throughput more than tripled, at bounded overhead.",
+      "quote": "We show that (i) this shared substrate reduces duplicate and conflicting work at bounded overhead - the share of work that merely re-does a teammate's task falls from 78% to 0% while useful throughput more than triples;",
+      "numbers": [
+        "78%",
+        "0%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Every agent's copy of the grite event log converges to the same state with no write silently dropped, whereas a file-based tracker loses concurrent writes.",
+      "quote": "(ii) every agent's copy of the log converges to the same state with no write silently dropped, where a file-based tracker loses concurrent writes;",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "grite is an open-source coordination substrate requiring no central server, storing append-only signed event records inside git itself so the coordination process is captured directly.",
+      "quote": "We study this process through grite, our open-source coordination substrate that needs no central server and stores its records inside git itself, so its append-only, signed event log captures the coordination process directly.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The coordination log is a mineable artefact from which failure modes such as conflicting edits, lock starvation, redundant rediscovery and race-to-close are recoverable with provenance, several of them invisible in pull-request history.",
+      "quote": "(iii) the log is a mineable artefact from which concrete failure modes - conflicting edits, lock starvation, redundant rediscovery, race-to-close - are automatically recoverable with provenance, several invisible in pull-request history.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.19616"
+}

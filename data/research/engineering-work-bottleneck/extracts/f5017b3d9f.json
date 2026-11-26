@@ -1,0 +1,48 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Preet Jhanglani, Zeel Kaushal Desai, Vidhi Kansara, Eman Abdullah AlOmar",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The study compares 204,673 test artifacts: 24,941 human-authored files and 179,732 agent-generated files from the AIDev dataset.",
+      "quote": "We address this methodological gap through a large-scale, empirical comparison of 204,673 test artifacts which comprises of 24,941 human-authored files and 179,732 agent-generated files; sourced from the AIDev dataset.",
+      "numbers": [
+        "204,673",
+        "24,941",
+        "179,732"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Agent-generated tests had a higher flakiness candidate rate of 0.41 versus 0.30 for human-authored tests, attributed mostly to file I/O and non-deterministic logic.",
+      "quote": "But this thoroughness comes at a price: due mostly to their reliance on file I/O and non-deterministic logic, agent-generated tests exhibited a higher risk of flakiness (Candidate Rate: 0.41 vs. 0.30).",
+      "numbers": [
+        "0.41",
+        "0.30"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The authors warn about 'stealth technical debt' in which test suites pass execution but do not provide comprehensive coverage or semantic value.",
+      "quote": "This raises the possibility of \"stealth technical debt\", in which test suites pass execution but do not offer comprehensive coverage or semantic value.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper concludes that AI agents lack the environmental awareness needed to write stable, hermetic tests.",
+      "quote": "These findings suggest that while AI agents excel at rigorous boundary testing, they lack the \"environmental awareness\" needed to write stable, hermetic tests.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper states that coding agents in CI/CD have altered verification, but benchmarks such as SWE-bench focus on pass rates rather than the intrinsic quality of generated tests.",
+      "quote": "The integration of AI-powered coding agents into Continuous Integration/Continuous Delivery (CI/CD) pipelines has fundamentally altered how software verification is conducted. While these agents successfully automate the test generation, current evaluation benchmarks (e.g., SWE-bench) largely focus on pass-rates rather than the intrinsic quality of the generated tests.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.12068"
+}

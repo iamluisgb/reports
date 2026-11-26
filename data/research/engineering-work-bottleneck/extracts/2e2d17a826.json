@@ -1,0 +1,79 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Kowshik Chowdhury, Dipayan Banik, K M Ferdous, Shazibul Islam Shamim",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "OpenAI Codex reportedly created over 400,000 pull requests in two months, illustrating the scale of autonomous coding agent output.",
+      "quote": "Autonomous coding agents are generating code at an unprecedented scale, with OpenAI Codex alone creating over 400,000 pull requests (PRs) in two months.",
+      "numbers": [
+        "400,000",
+        "two"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The study analyzes 3,109 unique PRs in commented review state from AIDev's 19,450 PRs, comparing human-only versus CRA-only reviews.",
+      "quote": "From AIDev's 19,450 PRs, we analyze 3,109 unique PRs in the commented review state, comparing human-only versus CRA-only reviews.",
+      "numbers": [
+        "19,450",
+        "3,109"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "CRA-only PRs had a 45.20% merge rate, 23.17 percentage points lower than the 68.37% human-only rate, and significantly higher abandonment.",
+      "quote": "CRA-only PRs achieve a 45.20% merge rate, 23.17 percentage points lower than human-only PRs (68.37%), with significantly higher abandonment.",
+      "numbers": [
+        "45.20%",
+        "23.17",
+        "68.37%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The authors examined 98 closed CRA-only PRs to test whether low signal-to-noise ratios contribute to abandonment.",
+      "quote": "We examine 98 closed CRA-only PRs to assess whether low signal-to-noise ratios contribute to abandonment.",
+      "numbers": [
+        "98"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Among closed CRA-only PRs, 60.2% fell in the 0-30% signal range, and 12 of 13 CRAs had average signal ratios below 60%, indicating substantial noise in automated review feedback.",
+      "quote": "Our signal-to-noise analysis reveals that 60.2% of closed CRA-only PRs fall into the 0-30% signal range, and 12 of 13 CRAs exhibit average signal ratios below 60%, indicating substantial noise in automated review feedback.",
+      "numbers": [
+        "60.2%",
+        "0-30%",
+        "12",
+        "13",
+        "60%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper suggests CRAs without human oversight often produce low-signal feedback associated with higher abandonment.",
+      "quote": "These findings suggest that CRAs without human oversight often generate low-signal feedback associated with higher abandonment.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The authors recommend CRAs augment rather than replace human reviewers, with human involvement remaining critical.",
+      "quote": "For practitioners, our results indicate that CRAs should augment rather than replace human reviewers and that human involvement remains critical for effective and actionable code review.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Industry reports claim CRAs can manage 80% of PRs in open source repositories without human involvement.",
+      "quote": "Industry reports claim that CRAs can manage 80% of PRs in open source repositories without human involvement.",
+      "numbers": [
+        "80%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.03196"
+}

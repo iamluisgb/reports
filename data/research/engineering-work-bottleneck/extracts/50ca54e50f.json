@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-09-03",
+  "author_or_org": "Neil Orint and David Hirning / Microsoft",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Microsoft Digital found that improving individual developer productivity did not produce a corresponding boost in team productivity.",
+      "quote": "“We quickly identified that improving the individual productivity of a developer was not resulting in a boost to team productivity. That was our hard lesson.”",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source states that AI tools can generate large amounts of code quickly, but without clear instructions and guardrails, increased coding velocity produces more variability and additional rework.",
+      "quote": "While AI tools can generate large amounts of code quickly, they depend on clear instructions and guardrails. Teams that can’t consistently communicate intent typically discover that increased coding velocity simply produces more variability and additional rework.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Microsoft Digital adopted spec-driven development, treating specifications as the primary artifact and anchoring development around a living specification that captures business intent and acceptance criteria before implementation.",
+      "quote": "Exploring that concept led us to spec-driven development (SDD), an AI-native engineering approach that treats specifications as the primary artifact in the software development lifecycle. Instead of relying on code, documents, or prompts as the main source of truth, our teams now anchor development around a living specification, which captures the business intent and acceptance criteria before implementation begins.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "In Microsoft Digital's SDD workflow, specifications capture business goals, user requirements, edge cases, and acceptance tests; they are version-controlled, continuously updated, and guide major lifecycle decisions.",
+      "quote": "At Microsoft Digital, our developers and PMs begin by creating specifications that capture business goals, user requirements, edge cases, and acceptance tests. These specifications are version-controlled and continuously updated as the project evolves. Rather than serving as static documentation, they guide every major decision throughout the lifecycle.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Under spec-driven development, product managers become owners of the specification rather than only being responsible for planning and prioritization.",
+      "quote": "“In spec-driven development, PMs become the owners of the spec; they’re no longer just responsible for planning and prioritization. Everything starts with the spec, so they become the starting point for the entire system. If the specs are right, then everything falls into place.”",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Microsoft Digital engineers shifted from producing every line of code toward refining requirements, identifying edge cases, evaluating plans, and validating AI-generated outputs against intent.",
+      "quote": "Our Microsoft Digital engineers now spend more time refining requirements, identifying edge cases, evaluating plans, and validating AI-generated outputs. Their role has shifted away from producing every line of code to making sure that code implementation accurately reflects intent.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Microsoft Digital engineers describe prior “vibe coding” as expensive chaos and say they learned from those traps that SDD provides both velocity and direction.",
+      "quote": "“Speed without direction is just expensive chaos—and we learned that the hard way through vibe coding. After burning our hands on those traps, we realized that SDD gives you both velocity and vector.”",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Microsoft Digital asserts that its SDD process helps teams align stakeholders earlier, reduce rework, and use AI coding agents more effectively while keeping a connection to business goals.",
+      "quote": "The result is a development process that helps teams align stakeholders earlier, reduce rework, and make more effective use of AI coding agents while maintaining a clear connection to business goals.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.microsoft.com/insidetrack/blog/engineering-the-frontier-firm-sharing-our-ai-native-approach-to-software-development/"
+}

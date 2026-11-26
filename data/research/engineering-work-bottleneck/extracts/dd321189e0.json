@@ -1,0 +1,47 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-05-10",
+  "author_or_org": "Elyson De La Cruz",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The analysis characterizes GenAI as lowering the cost of producing plausible code while increasing the importance of intent specification, context curation, architecture knowledge, verification, security, provenance, governance, and accountable human judgment.",
+      "quote": "The analysis shows that GenAI lowers the cost of producing plausible code while increasing the importance of intent specification, context curation, architecture knowledge, verification, security, provenance, governance, and accountable human judgment.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The source frames intent-centric human-agent work as shaped by natural language, repository context, tools, tests, and governance.",
+      "quote": "Generative artificial intelligence (GenAI) and agentic systems are moving software engineering from code-centric production toward intent-centric human-agent work in which natural language, repository context, tools, tests, and governance shape delivery.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The analysis says verification and accountable human judgment become more important in agentic software engineering.",
+      "quote": "The analysis shows that GenAI lowers the cost of producing plausible code while increasing the importance of intent specification, context curation, architecture knowledge, verification, security, provenance, governance, and accountable human judgment.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The findings describe software engineering as shifting from isolated code authorship toward supervising, validating, and governing socio-technical systems of humans, agents, tools, and evidence gates.",
+      "quote": "The findings indicate that software engineering is becoming less about isolated code authorship and more about supervising, validating, and governing socio-technical systems of humans, agents, tools, and evidence gates.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The study bases its claims on reflexive thematic analysis and IPA-informed public-discourse/document analysis of peer-reviewed literature, benchmarks, talks, interviews, essays, announcements, and X-originated discourse.",
+      "quote": "This study addresses that gap through a reflexive thematic analysis (RTA) dominant and interpretative phenomenological analysis (IPA) informed public-discourse and document analysis. The corpus combines peer-reviewed software engineering and AI literature, technical benchmarks, public talks and interviews, essays, product-facing technical announcements, and X-originated discourse from prominent AI and software engineering voices.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source warns that speed-focused adoption can accumulate hidden technical debt and accountability gaps, while bounded autonomy can preserve quality, security, maintainability, and trust.",
+      "quote": "This matters because speed-focused adoption can accumulate hidden technical debt and accountability gaps, whereas bounded autonomy can preserve quality, security, maintainability, and trust.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2605.11027"
+}

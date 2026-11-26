@@ -1,0 +1,71 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-02-11",
+  "author_or_org": "Ryan Lopopolo / OpenAI",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The team’s repository reached about one million lines and roughly 1,500 merged pull requests in five months with three engineers, averaging 3.5 PRs per engineer per day; throughput increased after the team grew to seven.",
+      "quote": "Five months later, the repository contains on the order of a million lines of code across application logic, infrastructure, tooling, documentation, and internal developer utilities. Over that period, roughly 1,500 pull requests have been opened and merged with a small team of just three engineers driving Codex. This translates to an average throughput of 3.5 PRs per engineer per day, and surprisingly the throughput has _increased_ as the team has grown to now seven engineers.",
+      "numbers": [
+        "million",
+        "1,500",
+        "three",
+        "3.5",
+        "seven"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The team estimates it built the product in about one-tenth the time hand-writing the code would have taken.",
+      "quote": "We estimate that we built this in about 1/10th the time it would have taken to write the code by hand.",
+      "numbers": [
+        "1/10th"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "As code throughput increased, the team’s bottleneck shifted to human QA capacity.",
+      "quote": "As code throughput increased, our bottleneck became human QA capacity.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Instead of a monolithic AGENTS.md encyclopedia, a roughly 100-line AGENTS.md is injected as a table-of-contents map, while a structured docs/ directory is the system of record.",
+      "quote": "So instead of treating `AGENTS.md` as the encyclopedia, we treat it as **the table of contents**.\n\nThe repository’s knowledge base lives in a structured `docs/` directory treated as the system of record. A short `AGENTS.md` (roughly 100 lines) is injected into context and serves primarily as a map, with pointers to deeper sources of truth elsewhere.",
+      "numbers": [
+        "100"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The team enforces the knowledge base with linters and CI checks, plus a recurring doc-gardening agent that opens fix-up PRs for stale documentation.",
+      "quote": "We enforce this mechanically. Dedicated linters and CI jobs validate that the knowledge base is up to date, cross-linked, and structured correctly. A recurring “doc-gardening” agent scans for stale or obsolete documentation that does not reflect the real code behavior and opens fix-up pull requests.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Human PR review is optional, and almost all review effort has been shifted to agent-to-agent review.",
+      "quote": "Humans may review pull requests, but aren’t required to. Over time, we’ve pushed almost all review effort towards being handled agent-to-agent.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Humans remain in the loop at a different abstraction layer: prioritizing work, translating user feedback into acceptance criteria, and validating outcomes.",
+      "quote": "Humans always remain in the loop, but work at a different layer of abstraction than we used to. We prioritize work, translate user feedback into acceptance criteria, and validate outcomes.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Agent autonomy produced drift and “AI slop”; the team initially spent every Friday, 20% of the week, cleaning it up, then encoded golden principles and a recurring cleanup process.",
+      "quote": "Initially, humans addressed this manually. Our team used to spend every Friday (20% of the week) cleaning up “AI slop.” Unsurprisingly, that didn’t scale.\n\nInstead, we started encoding what we call “golden principles” directly into the repository and built a recurring cleanup process.",
+      "numbers": [
+        "20%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://openai.com/index/harness-engineering/"
+}

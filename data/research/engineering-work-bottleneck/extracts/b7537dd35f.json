@@ -1,0 +1,89 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "GitClear",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Heavy AI users out-produce non-users by 4–10x, but most of that gap predates AI; versus their own past performance, the velocity gain is 25%.",
+      "quote": "heavy AI users out-produce non-users by 4–10x, but most of that gap pre-dated AI — compared to their past selves, heavy AI users enjoyed a more modest 25% velocity gain.",
+      "numbers": [
+        "4–10x",
+        "25%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The source reports concurrent increases in within-commit copy/paste (+41%), code block duplication (+81%), error-masking constructs (+47%), and two-week code churn (+15%).",
+      "quote": "Concurrently, we observe a concerning rise in within-commit copy/paste (**+41%**), code block duplication (**+81%**), error-masking constructs (**+47%**), and two-week code churn (**+15%**).",
+      "numbers": [
+        "+41%",
+        "+81%",
+        "+47%",
+        "+15%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Block duplication rose from 40.3 to 73.0 per million changed lines between 2023 and 2026 year-to-date, an 81% increase and the highest level on record.",
+      "quote": "Measured per million changed lines, block duplication climbed from 40.3 in 2023 to 73.0 year-to-date in 2026 — an 81% increase over 2023 and the highest level on record.",
+      "numbers": [
+        "40.3",
+        "2023",
+        "73.0",
+        "2026",
+        "81%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Moved/refactored code fell from 21% in 2022 to 3.8% year-to-date in 2026, while copy/paste rose from 9.4% in 2022 to 15.7% in the first half of 2026.",
+      "quote": "After clocking in at 21% in 2022, the percentage of moved code dropped to 13% of changed lines in 2023, before freefalling to 3.8% year-to-date in 2026. Over the same window, copy/paste climbed from 9.4% (in 2022) to 15.7% in the first half of 2026.",
+      "numbers": [
+        "21%",
+        "2022",
+        "13%",
+        "2023",
+        "3.8%",
+        "2026",
+        "9.4%",
+        "2022",
+        "15.7%",
+        "2026"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Function connectivity fell 35% since 2023, from 343 method calls per thousand changed lines to 223 year-to-date.",
+      "quote": "Function connectivity — how often newly authored code connects to a different method or function — has fallen 35% since 2023, from 343 method calls per thousand changed lines to 223 year-to-date.",
+      "numbers": [
+        "35%",
+        "2023",
+        "343",
+        "223"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Long-term update percent fell 74%, from 1.7% in 2023 to 0.46% year-to-date in 2026.",
+      "quote": "\"Long-term update percent\" — the share of changes that remove or update code last touched more than twelve months ago — has fallen 74%, from 1.7% in 2023 to 0.46% year-to-date in 2026.",
+      "numbers": [
+        "74%",
+        "1.7%",
+        "2023",
+        "0.46%",
+        "2026"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "The source states that throughput is real but so is the accrued debt, which concentrates among developers who have not recognized the failure modes threatening long-term maintainability.",
+      "quote": "The throughput is real, but so is the debt it accrues, and that debt concentrates among developers who haven’t recognized the failure modes that endanger long-term repo maintainability.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://gitclear.com/the_ai_code_quality_maintainability_gap"
+}

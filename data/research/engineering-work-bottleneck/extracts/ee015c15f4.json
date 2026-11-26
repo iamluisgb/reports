@@ -1,0 +1,71 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-07-22",
+  "author_or_org": "Shanna M. Kahn, John D. Hastings",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "In a study of AI-generated automation scripts, every script contained exploitable vulnerabilities.",
+      "quote": "Every script contained exploitable vulnerabilities.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Nine of 17 identified vulnerability classes appeared across all three models, and 14 of 17 appeared in at least two models.",
+      "quote": "Nine of the 17 identified vulnerability classes appeared in code from all three models, while 14 of the 17 vulnerability classes appeared in at least two models.",
+      "numbers": [
+        "Nine",
+        "17",
+        "three",
+        "14",
+        "17",
+        "two"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Weighted CVSS scores across the three AI platforms differed by less than 10%.",
+      "quote": "The weighted CVSS scores across platforms differed by less than 10%.",
+      "numbers": [
+        "10%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The study concludes the security risk is tied to task category rather than to a particular AI model.",
+      "quote": "The risk is not tied to any particular model but rather to the task category.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The paper argues organizations should ask whether LLM-generated automation code should be deployed without review, not which tool to trust.",
+      "quote": "Organizations should therefore ask not which tool to trust, but instead whether LLM-generated automation code should be deployed without review.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "LLM-based coding tools can let non-expert users generate routine automation scripts that enter enterprise workflows without meaningful security review.",
+      "quote": "LLM-based coding tools enable non-expert users to generate routine automation scripts that may enter enterprise workflows without meaningful security review.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In the study, Claude Code performed a standardized vulnerability review of the generated code.",
+      "quote": "Claude Code performed a standardized vulnerability review.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Identified vulnerabilities were scored with CVSS v3.1 and mapped to OWASP Top 10:2021 and MITRE ATT&CK.",
+      "quote": "Each identified vulnerability was scored using CVSS v3.1 and mapped to the OWASP Top 10:2021 and the MITRE ATT&CK frameworks.",
+      "numbers": [
+        "3.1",
+        "10:2021"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2607.20713"
+}

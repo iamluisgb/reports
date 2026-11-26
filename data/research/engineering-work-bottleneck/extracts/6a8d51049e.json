@@ -1,0 +1,63 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-10-15",
+  "author_or_org": "Meta Engineering (Shengbo Guo et al.)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Meta says its success metric for AI-native engineering was not code volume but verified, production-ready outcomes that build, pass tests, and survive review.",
+      "quote": "That experiment needed a definition of success, and ours wasn’t code volume. We measured verified, production-ready outcomes — changes that build, pass tests, and survive review.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source states that without verification, AI-generated code shifts the constraint from writing code to reviewing plausible-looking code that may not work, leading engineers to read, debug, and discard output.",
+      "quote": "Without verification, AI-generated code creates a familiar problem — plausible output that no one has confirmed actually works, which an engineer then has to read, debug, and often discard. Weak signals don’t remove the constraint; they move it from writing code to reviewing code that looks finished and isn’t.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Agents check their own work before human review, so review receives a smaller set of higher-confidence results, and less code is generated and discarded.",
+      "quote": "Agents check their own work before an engineer sees it, which means what reaches review is a smaller set of higher-confidence results rather than a pile of output to sift through. Less gets generated, and less gets discarded.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Meta treats planning as technical specification and invests in precise upstream decomposition and machine-readable context because ambiguity causes agent failure.",
+      "quote": "Agentic execution requires extreme precision. Ambiguity that an engineer might resolve through intuition results in agent failure. We invested in rigorous upstream decomposition and machine-readable context, which tightened the engineering loop for engineers and agents alike.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Human sign-off remains on every shipped outcome, but Meta tries to make that sign-off fast and evidence-backed with build results, test outcomes, and recorded verification sessions attached.",
+      "quote": "Every shipped outcome still carries an engineer’s sign-off; our effort went into making that sign-off fast and well-evidenced, with build results, test outcomes, and recorded verification sessions attached to the change.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "In the human-on-the-loop model, the agent runs the iteration while the engineer sets the goal, watches the run, intervenes when needed, and approves the result; the engineer’s job moves from executing steps to owning the outcome and quality bar.",
+      "quote": "With **human-on-the-loop**, the agent runs the iteration itself — plan, implement, build, test, correct, repeat — while the engineer sets the goal, watches the run, steps in when it drifts, and approves the result. The person’s job moves from executing the steps to owning the outcome and holding the quality bar.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Meta reports that Forum reached core feature parity with Facebook Groups in eight weeks, with AI handling much routine implementation so engineers could focus on architecture, product decisions, and quality.",
+      "quote": "**Velocity:** Forum reached core feature parity with Facebook Groups in eight weeks, with AI handling much of the routine implementation so engineers could focus on architecture, product decisions, and quality.",
+      "numbers": [
+        "eight weeks"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Meta reports that its autonomous stress-testing loop caught and fixed a memory issue during development rather than after launch, roughly halving memory use and page faults.",
+      "quote": "**Quality, found early:** The autonomous stress-testing loop caught and fixed the aforementioned memory issue during development rather than post-launch, roughly halving memory use and page faults.",
+      "numbers": [
+        "roughly halving"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/"
+}

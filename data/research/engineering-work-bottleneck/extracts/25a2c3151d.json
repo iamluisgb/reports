@@ -1,0 +1,75 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-04-09",
+  "author_or_org": "Faros AI",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Task completion rose 34%, epics completed per developer rose 66%, and code-specific tasks rose 210%.",
+      "quote": "Task completion is up 34%. Epics completed per developer are up 66%. Tasks involving code speci fi cally have increased 210%.",
+      "numbers": [
+        "34%",
+        "66%",
+        "210%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Code churn, defined as lines deleted to lines added for merged code per quarter, increased 861% under high AI adoption.",
+      "quote": "Code churn, de fi ned as the ratio of lines deleted to lines added for merged code in a given quarter, has increased 861% under high AI adoption.",
+      "numbers": [
+        "861%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Median review time increased 5X and 31% more PRs merged without any review.",
+      "quote": "Median review time has increased 5X. 31% more PRs are merging without any review.",
+      "numbers": [
+        "5X",
+        "31%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Pre-merge review load rose: review comments per PR +25%, average review comment length +22.7%, and PRs merged without any review +31.3%.",
+      "quote": "+25%  average review comments per PR\n\n+22.7%  average length of PR review comments\n\n+31.3%  PRs merged without any review",
+      "numbers": [
+        "+25%",
+        "+22.7%",
+        "+31.3%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Agentic review covers 25% of PRs, while less than 1% of PRs are opened by AI agents.",
+      "quote": "25%  of PRs are reviewed by AI agents (up from zero in prior dataset)\n\n<1%  of PRs are opened by AI agents",
+      "numbers": [
+        "25%",
+        "<1%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "The report characterizes AI as having moved from assistant to author at scale, with humans moved into review and oversight rather than creation.",
+      "quote": "In the organizations we studied, AI has moved from a tool that assists engineers to one that authors code at scale, with humans increasingly in a review and oversight role rather than a creation role.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The report says survey-based findings capture developers feeling more productive at the individual level, because task completion is up and code is flowing faster.",
+      "quote": "DORA's  fi ndings are based on surveys. Surveys capture how developers feel about their work. And right now, developers feel more productive, because at the individual level, they are. Task completion is up. Code is  fl owing faster. The tools feel powerful.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The report states all organizations suffer the Acceleration Whiplash regardless of engineering maturity; strong pre-AI practices show the same quality degradation.",
+      "quote": "One  fi nding holds across all segments of data: All organizations suffer from the Acceleration Whiplash, irrespective of their engineering maturity. The organizations with strong pre-AI engineering practices see the same quality degradation as those without.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://pages.faros.ai/hubfs/AI%5FEngineering%5FReport%5F2026%5FThe%5FAcceleration%5FWhiplash%5FFaros.pdf"
+}

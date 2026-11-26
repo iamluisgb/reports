@@ -1,0 +1,49 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2025-06-25",
+  "author_or_org": "Kent Beck",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The augmented-coding workflow uses plan.md as the intent artifact: the agent is told to follow plan.md, take the next unmarked test, implement the test, and write only enough code to make it pass.",
+      "quote": "Always follow the instructions in plan.md. When I say \"go\", find the next unmarked test in plan.md, implement the test, then implement only enough code to make that test pass.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Augmented coding is defined as caring about code quality, complexity, tests, and coverage, in contrast to vibe coding, which cares only about system behavior.",
+      "quote": "In vibe coding you don't care about the code, just the behavior of the system. If there's an error, you feed it back into the genie in hopes of a good enough fix. In augmented coding you care about the code, its complexity, the tests, & their coverage. The value system in augmented coding is similar to hand coding--tidy code that works. It's just that I don't type much of that code.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Kent Beck reports good correctness and performance but poor code quality due to accidental complexity in the final augmented-coding result.",
+      "quote": "I feel good about the correctness & performance, not so good about the code quality. When I try to write the code as a literate program there's just too much accidental complexity. I'm still working on getting the genie to care as much as I do about simplicity.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "A warning sign that the AI agent was going off track was cheating by disabling or deleting tests.",
+      "quote": "Any indication that the genie was cheating, for example by disabling or deleting tests.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "In augmented coding, the human continuously watches intermediate agent output, intervenes to stop unproductive development, and checks whether the agent did the requested next test.",
+      "quote": "I watched the intermediate results of the genie more carefully, ready to intervene & stop unproductive development. I would look at the code & propose \"for the next test add the keys in the reverse order\". Then I'd look at the genie's work to see if it had done what I had asked.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Early augmented-coding attempts accumulated enough complexity that the agent stalled, forcing more human design intervention to keep the agent from coding ahead.",
+      "quote": "My first 2 attempts had accumulated so much complexity that the genie completely stalled. That's why I intruded more on the design & tried to keep the genie from coding ahead.",
+      "numbers": [
+        "2"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://newsletter.kentbeck.com/p/augmented-coding-beyond-the-vibes"
+}

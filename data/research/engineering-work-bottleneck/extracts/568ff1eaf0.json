@@ -1,0 +1,59 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-11-26",
+  "author_or_org": "Anthropic (Claude Code Docs)",
+  "claims": [
+    {
+      "question": "q2",
+      "claim": "The docs recommend turning an interview into SPEC.md, starting a fresh session to build from it, and later pointing the reviewer at that file as the written definition of done.",
+      "quote": "Once `SPEC.md` exists, start a fresh session to build from it, so the build begins with a clean context and a written definition of done. It’s also the file you’ll point the reviewer at later, in [Give Claude a check to run](https://code.claude.com/docs/en/best-practices#give-claude-a-check-to-run).",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "CLAUDE.md is loaded into every session, so the docs advise keeping it to non-code-discoverable project facts rather than general guidance.",
+      "quote": "Claude Code loads [`CLAUDE.md`](https://code.claude.com/docs/en/memory) into every session, which means every line in it takes a little of Claude’s attention on _every_ task, whether it’s relevant or not. That’s why the file works best when it only holds what Claude couldn’t work out from the code itself:",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Team procedures and knowledge are stored as skills in `.claude/skills/<name>/SKILL.md`.",
+      "quote": "That kind of knowledge goes in a [skill](https://code.claude.com/docs/en/skills): a procedure or a piece of team knowledge saved at `.claude/skills/<name>/SKILL.md`.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The docs classify evidence requests, `/goal`, and `/code-review` as non-deterministic done-checks, while tests, typecheck, a Stop hook, and CI are deterministic.",
+      "quote": "| When it’s done | A request for evidence, `/goal`, `/code-review` | Tests, typecheck, a `Stop` hook, CI |",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Human merge approval and branch protection are positioned as the deterministic final authority over Claude’s summary.",
+      "quote": "| Who has the last word | Claude’s summary of what it did | Branch protection, a person who approves the merge |",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Docs name a common failure mode where Claude reports completion even though the work is not done because it could not check its own work.",
+      "quote": "Claude said it was done and it wasn’t quite, usually because it had no way to check its own work.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Prompt, CLAUDE.md, and skills are non-deterministic because the model decides whether to follow them; there is no guarantee.",
+      "quote": "Non-deterministic: you write the instruction, and Claude (the model) reads it. This can be your prompt, `CLAUDE.md`, or a skill. The model then decides what to do with this information. It usually follows your commands, and current models are good at understanding your intent without much context, but there’s no _guarantee_ that it’ll follow your instructions.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The page directs whole-team setup to a separate organization page.",
+      "quote": "Setup for a whole team is on a separate page: [Set up Claude Code for your organization](https://code.claude.com/docs/en/admin-setup).",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.anthropic.com/engineering/claude-code-best-practices"
+}

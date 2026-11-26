@@ -1,0 +1,35 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2025-06-01",
+  "author_or_org": "Microsoft Research",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "In three randomized field experiments combined across 4,867 developers, use of an AI coding assistant increased completed tasks by 26.08% (SE 10.3%).",
+      "quote": "Though each experiment is noisy, when data is combined across three experiments and 4,867 developers, our analysis reveals a 26.08% increase (SE: 10.3%) in completed tasks among developers using the AI tool.",
+      "numbers": [
+        "4,867",
+        "26.08%",
+        "10.3%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Less experienced developers had higher adoption rates and greater productivity gains from the AI coding assistant.",
+      "quote": "Notably, less experienced developers had higher adoption rates and greater productivity gains.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The study used randomized controlled trials at Microsoft, Accenture, and an anonymous Fortune 100 company, giving a random subset of developers access to an AI coding assistant as part of ordinary business.",
+      "quote": "This study evaluates the impact of generative AI on software developer productivity via randomized controlled trials at Microsoft, Accenture, and an anonymous Fortune 100 company. These field experiments, run by the companies as part of their ordinary course of business, provided a random subset of developers with access to an AI-based coding assistant suggesting intelligent code completions.",
+      "numbers": [
+        "100"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.microsoft.com/en-us/research/publication/the-effects-of-generative-ai-on-high-skilled-work-evidence-from-three-field-experiments-with-software-developers/"
+}

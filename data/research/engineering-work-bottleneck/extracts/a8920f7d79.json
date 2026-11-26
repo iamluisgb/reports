@@ -1,0 +1,39 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-01-23",
+  "author_or_org": "Anwar Ghammam, Mohamed Almukhtar",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The study identified 364 maintainability and security-related build smells across severity levels, indicating AI-generated build code can introduce quality issues such as missing error handling and hardcoded paths or URLs while sometimes removing existing smells through refactorings.",
+      "quote": "We identified 364 maintainability and security-related build smells across varying severity levels, indicating that AI-generated build code can introduce quality issues-such as lack of error handling, and hardcoded paths or URLs-while also, in some cases, removing existing smells through refactorings (e.g., Pull Up Module and Externalize Properties).",
+      "numbers": [
+        "364"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "More than 61% of agent-authored pull requests in the AIDev dataset were approved and merged with minimal human intervention.",
+      "quote": "Notably, more than 61\\% of Agentic-PRs are approved and merged with minimal human intervention.",
+      "numbers": [
+        "61\\%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper explicitly investigates whether AI coding agents generate build code with quality issues, how well AI agents can eliminate build-code smells, and how often developers accept agent-authored pull requests.",
+      "quote": "Our paper leverages this dataset to investigate (RQ1) whether AI coding agents generate build code with quality issues (e.g., code smells), (RQ2) to what extent AI agents can eliminate code smells from build code, and (RQ3) to what extent Agentic-PRs are accepted by developers.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The study relies on AIDev, described as the first large-scale, openly available dataset of agent-authored pull requests from real-world GitHub repositories.",
+      "quote": "This data mining challenge focuses on AIDev, the first large-scale, openly available dataset capturing agent-authored pull requests (Agentic-PRs) from real-world GitHub repositories.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2601.16839"
+}

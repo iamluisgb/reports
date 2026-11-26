@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-06-21",
+  "author_or_org": "Richard Kang",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The reported productivity result comes from analytical productivity modeling rather than a measured delivery-flow study; it estimates that graduated oversight preserves 84–97% of agentic coding velocity, with a central estimate of 91%.",
+      "quote": "Evaluation through regulatory coverage analysis, comparative framework analysis, and analytical productivity modeling suggests that graduated oversight preserves 84--97% of agentic coding velocity (central estimate: 91%) while maintaining compliance evidence coverage for regulated functions.",
+      "numbers": [
+        "84--97%",
+        "91%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Each oversight tier is required to define evidence artifacts for compliance auditability; the source does not name specification, ADR, or AGENTS.md as the intent artifact.",
+      "quote": "Each tier defines required evidence artifacts for compliance auditability.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The framework uses a deterministic Oversight Classification Model to route code-generation tasks into three oversight tiers based on regulatory impact, customer proximity, reversibility, and data sensitivity.",
+      "quote": "GAIE introduces the Oversight Classification Model (OCM), a deterministic decision function that classifies code generation tasks by regulatory impact, customer proximity, reversibility, and data sensitivity to route them through one of three oversight tiers: human-in-the-loop (strategic functions), human-over-the-loop (customer-impacting), or automated-with-monitoring (internal).",
+      "numbers": [
+        "three-tier",
+        "three"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Human oversight roles are differentiated by tier: strategic functions get human-in-the-loop, customer-impacting work gets human-over-the-loop, and internal work gets automated-with-monitoring.",
+      "quote": "human-in-the-loop (strategic functions), human-over-the-loop (customer-impacting), or automated-with-monitoring (internal).",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The paper maps the framework to the Bank of Thailand’s 2025 AI risk-management policy and claims cross-jurisdiction applicability to MAS Singapore, NIST AI RMF, ISO/IEC 42001, and the EU AI Act.",
+      "quote": "We map GAIE against the Bank of Thailand's 2025 AI risk-management policy and demonstrate cross-jurisdiction applicability to MAS (Singapore), NIST AI RMF, ISO/IEC 42001, and the EU AI Act.",
+      "numbers": [
+        "2025"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The source frames a productivity–reliability tension and says existing frameworks offer no mechanism for calibrating human oversight intensity to regulatory impact.",
+      "quote": "Existing frameworks address AI-assisted development maturity or the productivity-reliability tension but offer no mechanism for calibrating human oversight intensity to regulatory impact.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "The source does not present documented cases of throughput rising without stability loss; its outcome claim is modeled velocity preservation plus compliance evidence coverage.",
+      "quote": "Evaluation through regulatory coverage analysis, comparative framework analysis, and analytical productivity modeling suggests that graduated oversight preserves 84--97% of agentic coding velocity (central estimate: 91%) while maintaining compliance evidence coverage for regulated functions.",
+      "numbers": [
+        "84--97%",
+        "91%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.22484"
+}

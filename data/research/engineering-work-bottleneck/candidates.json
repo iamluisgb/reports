@@ -1,0 +1,1367 @@
+{
+  "searched": 119,
+  "kept": 77,
+  "web_search": true,
+  "candidates": [
+    {
+      "url": "https://fion.ac/jellyfish.pdf",
+      "title": "Chen & Stratton: AI in the Firm, Bottlenecks in Software Production",
+      "snippet": "Chen & Stratton: AI in the Firm, Bottlenecks in Software Production",
+      "provider": "web",
+      "published": "2026-11-19",
+      "id": "c12d78f0e5",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding agents review bottleneck software production"
+      ],
+      "relevance": {
+        "q1": 0.4071
+      }
+    },
+    {
+      "url": "https://pages.faros.ai/hubfs/AI%5FEngineering%5FReport%5F2026%5FThe%5FAcceleration%5FWhiplash%5FFaros.pdf",
+      "title": "Faros AI Engineering Report 2026: The Acceleration Whiplash",
+      "snippet": "Faros AI Engineering Report 2026: The Acceleration Whiplash",
+      "provider": "web",
+      "published": "2026-03-01",
+      "id": "25a2c3151d",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding agents review bottleneck software production"
+      ],
+      "relevance": {
+        "q1": 0.4846
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.19616",
+      "title": "Before the Pull Request: Mining Multi-Agent Coordination",
+      "snippet": "Before the Pull Request: Mining Multi-Agent Coordination",
+      "provider": "web",
+      "published": "2026-06-17",
+      "id": "ed6d977525",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding agents review bottleneck software production"
+      ],
+      "relevance": {
+        "q1": 0.0046
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.22534",
+      "title": "Why Are Agentic Pull Requests Merged or Rejected",
+      "snippet": "Why Are Agentic Pull Requests Merged or Rejected",
+      "provider": "web",
+      "published": "2026-05-21",
+      "id": "bc14f570af",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding agents review bottleneck software production"
+      ],
+      "relevance": {
+        "q1": 0.0027
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.03196",
+      "title": "From Industry Claims to Empirical Reality: code review of AI code",
+      "snippet": "From Industry Claims to Empirical Reality: code review of AI code",
+      "provider": "web",
+      "published": "2026-04-03",
+      "id": "2e2d17a826",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding agents review bottleneck software production"
+      ],
+      "relevance": {
+        "q1": 0.7269
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.04681",
+      "title": "Beyond Code Generation: Reliability, Verification, and Cost Economics in the Agentic Software Development Lifecycle",
+      "snippet": "AI coding systems are moving from autocomplete and chat toward agents that can inspect repositories, edit multiple files, run tools, write tests, open pull requests, and work for long periods with limited supervision. This capability changes the bottleneck in software delivery. Recent field studies show meaningful gains in coding activity, but newer evidence also shows that those gains attenuate sharply between writing code and shipping reliable software. Review, integration, testing, security, ",
+      "provider": "arxiv",
+      "published": "2026-09-04",
+      "id": "9fa7a07923",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding agents review bottleneck software production"
+      ],
+      "relevance": {
+        "q1": 0.9602
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.17548",
+      "title": "Rethinking Code Review in the Age of AI: A Vision for Agentic Code Review",
+      "snippet": "Code review has evolved for decades, from informal peer checking to today's pull request (PR) workflows, yet it remains a largely manual and cognitively demanding process. The rise of Artificial Intelligence (AI) coding assistants has intensified this challenge: while these tools increase code production velocity, they also expand the volume of code requiring review, turning code review into a growing bottleneck. Current AI support in code review remains fragmented, with tools focusing on isolat",
+      "provider": "arxiv",
+      "published": "2026-05-17",
+      "id": "19be031418",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding agents review bottleneck software production"
+      ],
+      "relevance": {
+        "q1": 0.9314
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.30208",
+      "title": "Automating Low-Risk Code Review at Meta: RADAR, Risk Calibration, and Review Efficiency",
+      "snippet": "AI-assisted coding tools have altered software production. At Meta, significant lines of code per human-landed diff grew by 105.9% year over year and per-developer diff volume rose 51%, with agentic AI responsible for over 80% of that growth. Meanwhile, the share of diffs receiving timely review has declined, exposing a widening gap between code supply and reviewer bandwidth. We ask three questions that progress from feasibility through calibration to impact: (1) can risk-stratified automation o",
+      "provider": "arxiv",
+      "published": "2026-05-28",
+      "id": "da046dbe31",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding agents review bottleneck software production"
+      ],
+      "relevance": {
+        "q1": 0.9758
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.26394",
+      "title": "When Coding Agents Outpace Review: Evaluating PRD-Driven Development in Mature Enterprise Repositories",
+      "snippet": "Coding agents increasingly undertake development tasks in mature enterprise repositories, yet existing benchmarks offer limited insight into whether they fulfill complete Product Requirement Documents (PRDs) and where delivery breaks down. Issue resolution and development from scratch leave incremental PRD fulfillment underexplored, while isolated tests provide incomplete evidence of business and integration requirements. We introduce PACE, a benchmark of 43 enterprise tasks with 750 expert-audi",
+      "provider": "arxiv",
+      "published": "2026-10-19",
+      "id": "0125d5ac94",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI coding agents review bottleneck software production"
+      ],
+      "relevance": {
+        "q1": 0.7345
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.22721",
+      "title": "Habituation at the Gate: rising approval and declining scrutiny in review of agent code",
+      "snippet": "Habituation at the Gate: rising approval and declining scrutiny in review of agent code",
+      "provider": "web",
+      "published": "2026-06-21",
+      "id": "e52f456cc5",
+      "questions": [
+        "q1",
+        "q3"
+      ],
+      "queries": [
+        "generative AI code review queue latency empirical evidence",
+        "AI code review reviewer scrutiny approval fatigue",
+        "just-in-time test generation diff risk score"
+      ],
+      "relevance": {
+        "q1": 0.276,
+        "q3": 0.8197
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.00917",
+      "title": "Investigating Autonomous Agent Contributions in the Wild",
+      "snippet": "Investigating Autonomous Agent Contributions in the Wild",
+      "provider": "web",
+      "published": "2026-04-01",
+      "id": "b8084ce3da",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "generative AI code review queue latency empirical evidence"
+      ],
+      "relevance": {
+        "q1": 0.0124
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.20109",
+      "title": "Beyond Bug Fixes: post-merge code quality issues",
+      "snippet": "Beyond Bug Fixes: post-merge code quality issues",
+      "provider": "web",
+      "published": "2026-01-27",
+      "id": "f94af8aa76",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "generative AI code review queue latency empirical evidence"
+      ],
+      "relevance": {
+        "q1": 0.019
+      }
+    },
+    {
+      "url": "https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews",
+      "title": "The Pragmatic Engineer: what is happening with code reviews",
+      "snippet": "The Pragmatic Engineer: what is happening with code reviews",
+      "provider": "web",
+      "published": "2026-09-08",
+      "id": "8fca408ec7",
+      "questions": [
+        "q1",
+        "q3"
+      ],
+      "queries": [
+        "generative AI code review queue latency empirical evidence",
+        "agentic code review risk tiered human review"
+      ],
+      "relevance": {
+        "q1": 0.0348,
+        "q3": 0.1967
+      }
+    },
+    {
+      "url": "https://services.google.com/fh/files/misc/2025_state_of_ai_assisted_software_development.pdf",
+      "title": "DORA: State of AI-assisted Software Development 2025",
+      "snippet": "DORA: State of AI-assisted Software Development 2025",
+      "provider": "web",
+      "published": "2025-09-23",
+      "id": "49a183a090",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI adoption software delivery throughput instability DORA"
+      ],
+      "relevance": {
+        "q1": 0.8118
+      }
+    },
+    {
+      "url": "https://dora.dev/ai/gen-ai-report",
+      "title": "DORA: Impact of Generative AI in Software Development",
+      "snippet": "DORA: Impact of Generative AI in Software Development",
+      "provider": "web",
+      "published": "2026-04-13",
+      "id": "bfb402c58b",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI adoption software delivery throughput instability DORA"
+      ],
+      "relevance": {
+        "q1": 0.7572
+      }
+    },
+    {
+      "url": "https://cloud.google.com/resources/content/dora-roi-of-ai-assisted-software-development",
+      "title": "DORA: ROI of AI-assisted Software Development",
+      "snippet": "DORA: ROI of AI-assisted Software Development",
+      "provider": "web",
+      "published": "2026-04-22",
+      "id": "aaea30bd18",
+      "questions": [
+        "q1",
+        "q6"
+      ],
+      "queries": [
+        "AI adoption software delivery throughput instability DORA",
+        "AI adoption change failure rate improvement case study"
+      ],
+      "relevance": {
+        "q1": 0.6775,
+        "q6": 0.0007
+      }
+    },
+    {
+      "url": "https://www.infoq.com/news/2026/05/dora-roi-ai-assisted-dev-report",
+      "title": "InfoQ: DORA ROI report coverage",
+      "snippet": "InfoQ: DORA ROI report coverage",
+      "provider": "web",
+      "published": "2026-05-11",
+      "id": "80fb3f38a0",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI adoption software delivery throughput instability DORA"
+      ],
+      "relevance": {
+        "q1": 0.0293
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.00364",
+      "title": "Measuring Delivery Consistency in Practice: a DORA extension",
+      "snippet": "Measuring Delivery Consistency in Practice: a DORA extension",
+      "provider": "web",
+      "published": "2026-05-29",
+      "id": "5b6fe64539",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI adoption software delivery throughput instability DORA"
+      ],
+      "relevance": {
+        "q1": 0.1397
+      }
+    },
+    {
+      "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+      "title": "METR: measuring the impact of early-2025 AI on experienced developers",
+      "snippet": "METR: measuring the impact of early-2025 AI on experienced developers",
+      "provider": "web",
+      "published": "2025-07-10",
+      "id": "3f83aa12cc",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI agents pull request merge time large scale telemetry"
+      ],
+      "relevance": {
+        "q1": 0.7676
+      }
+    },
+    {
+      "url": "https://metr.org/blog/2026-02-24-uplift-update",
+      "title": "METR: uplift update, February 2026",
+      "snippet": "METR: uplift update, February 2026",
+      "provider": "web",
+      "published": "2026-02-24",
+      "id": "413187da65",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI agents pull request merge time large scale telemetry"
+      ],
+      "relevance": {
+        "q1": 0.0032
+      }
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/research/publication/the-effects-of-generative-ai-on-high-skilled-work-evidence-from-three-field-experiments-with-software-developers/",
+      "title": "Microsoft Research: three field experiments with developers",
+      "snippet": "Microsoft Research: three field experiments with developers",
+      "provider": "web",
+      "published": "2026-11-01",
+      "id": "0c9b0910d7",
+      "questions": [
+        "q1",
+        "q6"
+      ],
+      "queries": [
+        "AI agents pull request merge time large scale telemetry",
+        "measured productivity gain AI software team case"
+      ],
+      "relevance": {
+        "q1": 0.3238,
+        "q6": 0.0005
+      }
+    },
+    {
+      "url": "https://survey.stackoverflow.co/2026/ai",
+      "title": "Stack Overflow Developer Survey 2026: AI",
+      "snippet": "Stack Overflow Developer Survey 2026: AI",
+      "provider": "web",
+      "published": "2026-07-01",
+      "id": "c180dd387a",
+      "questions": [
+        "q1"
+      ],
+      "queries": [
+        "AI agents pull request merge time large scale telemetry"
+      ],
+      "relevance": {
+        "q1": 0.1558
+      }
+    },
+    {
+      "url": "https://getdx.com/blog/the-ai-efficiency-plateau",
+      "title": "DX: the AI efficiency plateau",
+      "snippet": "DX: the AI efficiency plateau",
+      "provider": "web",
+      "published": "2026-06-01",
+      "id": "ca44bcd408",
+      "questions": [
+        "q1",
+        "q6"
+      ],
+      "queries": [
+        "AI agents pull request merge time large scale telemetry",
+        "AI coding tools team quality regression reverted"
+      ],
+      "relevance": {
+        "q1": 0.0686,
+        "q6": 0.0004
+      }
+    },
+    {
+      "url": "https://uplevelteam.com/blog/genai-developers",
+      "title": "Uplevel: GenAI developers, no delivery gain and higher bug rate",
+      "snippet": "Uplevel: GenAI developers, no delivery gain and higher bug rate",
+      "provider": "web",
+      "published": "2024-09-17",
+      "id": "6a8db5dc84",
+      "questions": [
+        "q1",
+        "q6"
+      ],
+      "queries": [
+        "AI agents pull request merge time large scale telemetry",
+        "AI coding tools team quality regression reverted"
+      ],
+      "relevance": {
+        "q1": 0.9271,
+        "q6": 0.0005
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.00252",
+      "title": "Spec-Driven Development for Agentic Software Engineering",
+      "snippet": "Spec-Driven Development for Agentic Software Engineering",
+      "provider": "web",
+      "published": "2026-08-31",
+      "id": "635c4217d0",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "spec-driven development agentic software engineering",
+        "spec-driven development agentic software engineering"
+      ],
+      "relevance": {
+        "q2": 0.1346
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.25202",
+      "title": "Spec-Driven Development as Prescribed and as Practiced",
+      "snippet": "Spec-Driven Development as Prescribed and as Practiced",
+      "provider": "web",
+      "published": "2026-11-16",
+      "id": "536d59fb51",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "spec-driven development agentic software engineering",
+        "spec-driven development agentic software engineering"
+      ],
+      "relevance": {
+        "q2": 0.0095
+      }
+    },
+    {
+      "url": "https://www.infoq.com/articles/when-spec-driven-development-pays-off/",
+      "title": "When Spec-Driven Development Pays off (GAISS 2026)",
+      "snippet": "When Spec-Driven Development Pays off (GAISS 2026)",
+      "provider": "web",
+      "published": "2026-09-10",
+      "id": "2668f2866c",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "spec-driven development agentic software engineering",
+        "specification governance AI generated code attribution"
+      ],
+      "relevance": {
+        "q2": 0.0043
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.01087",
+      "title": "Cheap Code, Costly Judgment: governable agentic software engineering",
+      "snippet": "Cheap Code, Costly Judgment: governable agentic software engineering",
+      "provider": "web",
+      "published": "2026-07-01",
+      "id": "4d28b275af",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "spec-driven development agentic software engineering"
+      ],
+      "relevance": {
+        "q2": 0.0682
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.11027",
+      "title": "From Code-Centric to Intent-Centric Software Engineering",
+      "snippet": "From Code-Centric to Intent-Centric Software Engineering",
+      "provider": "web",
+      "published": "2026-05-10",
+      "id": "dd321189e0",
+      "questions": [
+        "q2",
+        "q5"
+      ],
+      "queries": [
+        "spec-driven development agentic software engineering",
+        "verification debt generative AI software"
+      ],
+      "relevance": {
+        "q2": 0.2822,
+        "q5": 0.0062
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.27045",
+      "title": "The Spec Growth Engine: Spec-Anchored, Code-Coupled, Drift-Enforced Architecture for AI-Assisted Software Development",
+      "snippet": "AI coding agents dramatically accelerate implementation speed but introduce two structural failure modes that existing spec-driven approaches do not fully solve: (1) context explosion -- the agent must reason over an entire repository at once, degrading output quality as the context window fills; and (2) silent spec-code drift -- code evolves, the specification does not, and the divergence becomes invisible until it is costly to repair. We present the Spec Growth Engine, a lightweight framework ",
+      "provider": "arxiv",
+      "published": "2026-06-25",
+      "id": "d63f9a74a0",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "spec-driven development agentic software engineering"
+      ],
+      "relevance": {
+        "q2": 0.0473
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20341",
+      "title": "SDAD: Spec-Driven Agentic Development for the AI-Native SDLC",
+      "snippet": "Frontier coding agents backed by large language models with context windows from hundreds of thousands to millions of tokens are restructuring the Software Development Life Cycle (SDLC). Rich context handling and multi-step reasoning now allow substantial Functional Requirement Documents (FRDs) and repository context to be ingested in a single workflow, making specification quality the execution fuel for autonomous delivery. This report formalises Spec-Driven Agentic Development (SDAD) as a synt",
+      "provider": "arxiv",
+      "published": "2026-05-05",
+      "id": "d58515c75f",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "spec-driven development agentic software engineering"
+      ],
+      "relevance": {
+        "q2": 0.0639
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.04967",
+      "title": "From Prompt to Process: a Process Taxonomy and Comparative Assessment of Frameworks Supporting AI Software Development Agents",
+      "snippet": "AI tools for programming are no longer just autocomplete or chat assistants: they organize themselves as development frameworks, with process, roles, artifacts and verification. Recent surveys map agents and LLMs for software engineering, but a study centered on the operational frameworks that turn these capabilities into process is missing. We ran a directed search of primary sources, with a functional inclusion criterion and traction measurement, and selected six frameworks: GitHub Spec Kit, O",
+      "provider": "arxiv",
+      "published": "2026-06-03",
+      "id": "f144a00865",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "spec-driven development agentic software engineering"
+      ],
+      "relevance": {
+        "q2": 0.0391
+      }
+    },
+    {
+      "url": "https://openai.com/index/harness-engineering/",
+      "title": "OpenAI: harness engineering, leveraging Codex in an agent-first world",
+      "snippet": "OpenAI: harness engineering, leveraging Codex in an agent-first world",
+      "provider": "web",
+      "published": "2026-02-11",
+      "id": "989e332f83",
+      "questions": [
+        "q2",
+        "q6"
+      ],
+      "queries": [
+        "AGENTS.md repository context for coding agents",
+        "measured productivity gain AI software team case"
+      ],
+      "relevance": {
+        "q2": 0.0014,
+        "q6": 0.0003
+      }
+    },
+    {
+      "url": "https://github.com/github/spec-kit",
+      "title": "GitHub Spec Kit",
+      "snippet": "GitHub Spec Kit",
+      "provider": "web",
+      "published": "2025-09-01",
+      "id": "4d766eb799",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "AGENTS.md repository context for coding agents"
+      ],
+      "relevance": {
+        "q2": 0.0146
+      }
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/claude-code-best-practices",
+      "title": "Anthropic: Claude Code best practices",
+      "snippet": "Anthropic: Claude Code best practices",
+      "provider": "web",
+      "published": "2026-11-01",
+      "id": "568ff1eaf0",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "AGENTS.md repository context for coding agents"
+      ],
+      "relevance": {
+        "q2": 0.0001
+      }
+    },
+    {
+      "url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "title": "Stripe: minions, one-shot end-to-end coding agents, part 2",
+      "snippet": "Stripe: minions, one-shot end-to-end coding agents, part 2",
+      "provider": "web",
+      "published": "2026-02-19",
+      "id": "278307c0d2",
+      "questions": [
+        "q2",
+        "q3"
+      ],
+      "queries": [
+        "AGENTS.md repository context for coding agents",
+        "agentic code review risk tiered human review"
+      ],
+      "relevance": {
+        "q2": 0.0488,
+        "q3": 0.1545
+      }
+    },
+    {
+      "url": "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/",
+      "title": "Netflix at QCon SF: retrofitting the SDLC for AI coding agents",
+      "snippet": "Netflix at QCon SF: retrofitting the SDLC for AI coding agents",
+      "provider": "web",
+      "published": "2026-11-23",
+      "id": "6589772bb7",
+      "questions": [
+        "q2",
+        "q3",
+        "q6"
+      ],
+      "queries": [
+        "architecture decision records agents codebase context",
+        "agentic code review risk tiered human review",
+        "AI adoption change failure rate improvement case study"
+      ],
+      "relevance": {
+        "q2": 0.0378,
+        "q3": 0.3886,
+        "q6": 0.001
+      }
+    },
+    {
+      "url": "https://shopify.engineering/under-the-river",
+      "title": "Shopify: Under the River",
+      "snippet": "Shopify: Under the River",
+      "provider": "web",
+      "published": "2026-05-28",
+      "id": "f7059052e5",
+      "questions": [
+        "q2",
+        "q6"
+      ],
+      "queries": [
+        "architecture decision records agents codebase context",
+        "measured productivity gain AI software team case"
+      ],
+      "relevance": {
+        "q2": 0.0024,
+        "q6": 0.0002
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.26721",
+      "title": "Knowledge-Based Pull Requests: a trusted workflow",
+      "snippet": "Knowledge-Based Pull Requests: a trusted workflow",
+      "provider": "web",
+      "published": "2026-06-25",
+      "id": "436ca37067",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "architecture decision records agents codebase context"
+      ],
+      "relevance": {
+        "q2": 0.1352
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.13662",
+      "title": "Ontology-Grounded Project Memory for Coding Agents",
+      "snippet": "Coding agents have become the primary means of generating new code in many software projects, and the resulting velocity of changes makes keeping track of the reasons behind those changes challenging. This paper introduces MOOSEDev, a system designed to give coding agents structured, ontology-grounded project memory. The system captures architectural decisions, lessons, constraints, and rationales in a knowledge graph exposed to agents via a Model Context Protocol (MCP) interface. Records carry ",
+      "provider": "arxiv",
+      "published": "2026-08-13",
+      "id": "53cde67d22",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "architecture decision records agents codebase context"
+      ],
+      "relevance": {
+        "q2": 0.2965
+      }
+    },
+    {
+      "url": "https://www.microsoft.com/insidetrack/blog/engineering-the-frontier-firm-sharing-our-ai-native-approach-to-software-development/",
+      "title": "Microsoft Digital: spec-driven development at Microsoft",
+      "snippet": "Microsoft Digital: spec-driven development at Microsoft",
+      "provider": "web",
+      "published": "2026-09-03",
+      "id": "50ca54e50f",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "specification governance AI generated code attribution"
+      ],
+      "relevance": {
+        "q2": 0.0008
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.27703",
+      "title": "Operationalizing Regulations into Code",
+      "snippet": "Operationalizing Regulations into Code",
+      "provider": "web",
+      "published": "2026-08-27",
+      "id": "ee7ff50320",
+      "questions": [
+        "q2"
+      ],
+      "queries": [
+        "specification governance AI generated code attribution"
+      ],
+      "relevance": {
+        "q2": 0.0022
+      }
+    },
+    {
+      "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+      "title": "Meta: how Meta built Forum with AI-native engineering",
+      "snippet": "Meta: how Meta built Forum with AI-native engineering",
+      "provider": "web",
+      "published": "2026-10-15",
+      "id": "6a8d51049e",
+      "questions": [
+        "q3",
+        "q6"
+      ],
+      "queries": [
+        "human on the loop code review AI agents",
+        "AI adoption change failure rate improvement case study"
+      ],
+      "relevance": {
+        "q3": 0.0047,
+        "q6": 0.0003
+      }
+    },
+    {
+      "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/",
+      "title": "Meta: catching bugs before they land, JiTTests at full scale",
+      "snippet": "Meta: catching bugs before they land, JiTTests at full scale",
+      "provider": "web",
+      "published": "2026-10-29",
+      "id": "2b2f487795",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "human on the loop code review AI agents",
+        "just-in-time test generation diff risk score"
+      ],
+      "relevance": {
+        "q3": 0.009
+      }
+    },
+    {
+      "url": "https://cloud.google.com/transform/when-ai-writes-the-code-who-reviews-it-cto-google-cloud",
+      "title": "Google Cloud: when AI writes the code, who reviews it",
+      "snippet": "Google Cloud: when AI writes the code, who reviews it",
+      "provider": "web",
+      "published": "2026-04-28",
+      "id": "6ea47d1188",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "human on the loop code review AI agents",
+        "AI code review reviewer scrutiny approval fatigue"
+      ],
+      "relevance": {
+        "q3": 0.0947
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.22484",
+      "title": "Governed AI-Assisted Engineering: Graduated Human Oversight for Agentic Code Generation in Regulated Domains",
+      "snippet": "The adoption of agentic AI coding systems -- where autonomous agents generate, review, test, and deploy code with minimal human intervention -- creates a governance challenge in regulated industries. Existing frameworks address AI-assisted development maturity or the productivity-reliability tension but offer no mechanism for calibrating human oversight intensity to regulatory impact. We present the Governed AI-Assisted Engineering (GAIE) framework, a three-tier graduated human oversight model f",
+      "provider": "arxiv",
+      "published": "2026-06-21",
+      "id": "302a3417c0",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "agentic code review risk tiered human review"
+      ],
+      "relevance": {
+        "q3": 0.8008
+      }
+    },
+    {
+      "url": "https://www.atlassian.com/blog/development/how-tech-leaders-can-turn-ai-hype-into-real-team-productivity",
+      "title": "Atlassian: State of Developer Experience",
+      "snippet": "Atlassian: State of Developer Experience",
+      "provider": "web",
+      "published": "2025-09-01",
+      "id": "2aec4fa29d",
+      "questions": [
+        "q3"
+      ],
+      "queries": [
+        "AI code review reviewer scrutiny approval fatigue"
+      ],
+      "relevance": {
+        "q3": 0.0123
+      }
+    },
+    {
+      "url": "https://www.geekwire.com/2026/how-agentic-ai-is-rewiring-amazons-teams-and-upending-its-traditions/",
+      "title": "GeekWire: how agentic AI is rewiring Amazon teams",
+      "snippet": "GeekWire: how agentic AI is rewiring Amazon teams",
+      "provider": "web",
+      "published": "2026-06-16",
+      "id": "f749cf603a",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "AI native engineering teams smaller org design",
+        "tiny teams software engineering AI"
+      ],
+      "relevance": {
+        "q4": 0.0002
+      }
+    },
+    {
+      "url": "https://engineering.block.xyz/blog/ai-assisted-development-at-block",
+      "title": "Block: AI-assisted development",
+      "snippet": "Block: AI-assisted development",
+      "provider": "web",
+      "published": "2026-01-18",
+      "id": "8c4ef76ab5",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "AI native engineering teams smaller org design"
+      ],
+      "relevance": {
+        "q4": 0.0
+      }
+    },
+    {
+      "url": "https://www.coinbase.com/blog/coding-had-a-concurrency-problem-how-mux-helped-solve-it",
+      "title": "Coinbase: engineers as orchestrators of agent fleets",
+      "snippet": "Coinbase: engineers as orchestrators of agent fleets",
+      "provider": "web",
+      "published": "2026-05-11",
+      "id": "80b071beff",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "AI native engineering teams smaller org design",
+        "engineering roles AI agents orchestrator job change"
+      ],
+      "relevance": {
+        "q4": 0.0
+      }
+    },
+    {
+      "url": "https://teamtopologies.com/news-blogs-newsletters/team-topologies-for-the-ai-age-stewardship-of-value-flow",
+      "title": "Team Topologies: stewardship of value flow",
+      "snippet": "Team Topologies: stewardship of value flow",
+      "provider": "web",
+      "published": "2026-08-18",
+      "id": "d845c7eab7",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "AI native engineering teams smaller org design"
+      ],
+      "relevance": {
+        "q4": 0.0161
+      }
+    },
+    {
+      "url": "https://lethain.com/revised-rules-of-engineering-leadership",
+      "title": "Will Larson: revised rules of engineering leadership",
+      "snippet": "Will Larson: revised rules of engineering leadership",
+      "provider": "web",
+      "published": "2026-06-15",
+      "id": "25463855a0",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "AI native engineering teams smaller org design",
+        "agentic software development lifecycle sprints replaced"
+      ],
+      "relevance": {
+        "q4": 0.0
+      }
+    },
+    {
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-07-gartner-predicts-60-percent-of-organizations-will-adopt-smaller-software-engineering-teams-by-2029",
+      "title": "Gartner: 60% of organisations adopt smaller engineering teams by 2029",
+      "snippet": "Gartner: 60% of organisations adopt smaller engineering teams by 2029",
+      "provider": "web",
+      "published": "2026-07-07",
+      "id": "0c683d2213",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "tiny teams software engineering AI"
+      ],
+      "relevance": {
+        "q4": 0.0011
+      }
+    },
+    {
+      "url": "https://zapier.com/blog/ai-transformation-leader/",
+      "title": "Zapier: AI fluency in hiring, Chief People & AI Transformation Officer",
+      "snippet": "Zapier: AI fluency in hiring, Chief People & AI Transformation Officer",
+      "provider": "web",
+      "published": "2025-10-29",
+      "id": "fbb6fc0647",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "engineering roles AI agents orchestrator job change"
+      ],
+      "relevance": {
+        "q4": 0.0002
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2602.18190",
+      "title": "Role and Identity Work of Software Engineering Professionals",
+      "snippet": "Role and Identity Work of Software Engineering Professionals",
+      "provider": "web",
+      "published": "2026-02-20",
+      "id": "cf451368f0",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "engineering roles AI agents orchestrator job change"
+      ],
+      "relevance": {
+        "q4": 0.0005
+      }
+    },
+    {
+      "url": "https://www.thoughtworks.com/about-us/news/2026/combat-ai-cognitive-debt-radar-v34",
+      "title": "Thoughtworks Radar v34: cognitive debt and harnesses",
+      "snippet": "Thoughtworks Radar v34: cognitive debt and harnesses",
+      "provider": "web",
+      "published": "2026-04-15",
+      "id": "3f95cd7f38",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "engineering roles AI agents orchestrator job change"
+      ],
+      "relevance": {
+        "q4": 0.001
+      }
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/",
+      "title": "AWS: AI-Driven Development Life Cycle (AI-DLC)",
+      "snippet": "AWS: AI-Driven Development Life Cycle (AI-DLC)",
+      "provider": "web",
+      "published": "2025-07-31",
+      "id": "dc3d728cc2",
+      "questions": [
+        "q4"
+      ],
+      "queries": [
+        "agentic software development lifecycle sprints replaced"
+      ],
+      "relevance": {
+        "q4": 0.0
+      }
+    },
+    {
+      "url": "https://gitclear.com/the_ai_code_quality_maintainability_gap",
+      "title": "GitClear: the AI code quality maintainability gap",
+      "snippet": "GitClear: the AI code quality maintainability gap",
+      "provider": "web",
+      "published": "2026-06-01",
+      "id": "b7537dd35f",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "AI generated code quality duplication refactoring decline"
+      ],
+      "relevance": {
+        "q5": 0.0197
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2408.10758",
+      "title": "Does Co-Development with AI Assistants Lead to More Maintainable Code",
+      "snippet": "Does Co-Development with AI Assistants Lead to More Maintainable Code",
+      "provider": "web",
+      "published": "2024-08-20",
+      "id": "afbf216668",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "AI generated code quality duplication refactoring decline"
+      ],
+      "relevance": {
+        "q5": 0.0057
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2507.00788",
+      "title": "Echoes of AI: downstream effects of AI assistants",
+      "snippet": "Echoes of AI: downstream effects of AI assistants",
+      "provider": "web",
+      "published": "2025-07-01",
+      "id": "3252c951aa",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "AI generated code quality duplication refactoring decline"
+      ],
+      "relevance": {
+        "q5": 0.0032
+      }
+    },
+    {
+      "url": "https://www.semanticscholar.org/paper/903c070886aafa53933290d3f0594ab26d16d0cc",
+      "title": "Evaluating AI-Generated Code Quality across Prompting Strategies",
+      "snippet": "Large language model (LLM) code generation is increasingly adopted, with developers employing different LLM interaction strategies from basic prompts to various context-rich strategies. This study empirically compares three strategies, Basic Prompting, Context Engineering, and Specification-Driven Development, on a controlled web application testbed. Nine code versions were evaluated using functional testing, static analysis via SonarQube, static application security testing (SAST) via CodeQL, a (0 citations)",
+      "provider": "semantic_scholar",
+      "published": "2026",
+      "id": "c24de8aa06",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "AI generated code quality duplication refactoring decline"
+      ],
+      "relevance": {
+        "q5": 0.1239
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.21453",
+      "title": "Quality and Security Signals in AI-Generated Python Refactoring Pull Requests",
+      "snippet": "As AI agents increasingly contribute to code development and maintenance, there is still limited empirical evidence on the quality and risk characteristics of their changes in real-world projects, particularly for refactoring-oriented contributions. It remains unclear how agent-authored refactoring edits affect maintainability, code quality, and security once merged into GitHub repositories. To address this gap, we conduct an empirical study of Python refactoring pull requests (PRs) from the AID (0 citations)",
+      "provider": "semantic_scholar",
+      "published": "2026",
+      "id": "946d7bb23a",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "AI generated code quality duplication refactoring decline"
+      ],
+      "relevance": {
+        "q5": 0.7454
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.27130",
+      "title": "A Large-Scale Comprehensive Measurement of AI-Generated Code in Real-World Repositories A Large-Scale Comprehensive Measurement of AI-Generated Code in Real-World Repositories",
+      "snippet": "Large language models (LLMs) are rapidly transforming software engineering by enabling developers to generate code ranging from small snippets to entire projects. As AI-assisted code becomes increasingly integrated into real-world systems, understanding its characteristics and impact is critical. Existing study on AI-generated code is usually limited in the lab setting with synthetic benchmarks and small-scale coding tasks and covers limited metrics. AI-assisted code's manifestation in real-worl (2 citations)",
+      "provider": "semantic_scholar",
+      "published": "2026",
+      "id": "5d5ec0f047",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "AI generated code quality duplication refactoring decline"
+      ],
+      "relevance": {
+        "q5": 0.2066
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.16839",
+      "title": "AI builds, We Analyze: An Empirical Study of AI-Generated Build Code Quality",
+      "snippet": "The rapid adoption of AI coding agents for software development has raised important questions about the quality and maintainability of the code they produce. While prior studies have examined AI-generated source code, the impact of AI coding agents on build systems—a critical yet understudied component of the software lifecycle—remains largely unexplored. This data mining challenge focuses on AIDev, the first large-scale, openly available dataset capturing agent-authored pull requests (Agentic- (4 citations)",
+      "provider": "semantic_scholar",
+      "published": "2026",
+      "id": "a8920f7d79",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "AI generated code quality duplication refactoring decline"
+      ],
+      "relevance": {
+        "q5": 0.117
+      }
+    },
+    {
+      "url": "https://cacm.acm.org/blogcacm/verification-debt-when-generative-ai-speeds-change-faster-than-proof/",
+      "title": "Communications of the ACM: verification debt",
+      "snippet": "Communications of the ACM: verification debt",
+      "provider": "web",
+      "published": "2026-01-16",
+      "id": "085a4dbc02",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "verification debt generative AI software"
+      ],
+      "relevance": {
+        "q5": 0.1521
+      }
+    },
+    {
+      "url": "https://charity.wtf/p/ai-demands-more-engineering-discipline",
+      "title": "Charity Majors: AI demands more engineering discipline",
+      "snippet": "Charity Majors: AI demands more engineering discipline",
+      "provider": "web",
+      "published": "2026-06-15",
+      "id": "e12724fda6",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "verification debt generative AI software"
+      ],
+      "relevance": {
+        "q5": 0.0021
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.12068",
+      "title": "Beyond Test Presence: Assessing the Quality and Robustness of Agent-Generated Tests in Open-Source Projects",
+      "snippet": "The integration of AI-powered coding agents into Continuous Integration/Continuous Delivery (CI/CD) pipelines has fundamentally altered how software verification is conducted. While these agents successfully automate the test generation, current evaluation benchmarks (e.g., SWE-bench) largely focus on pass-rates rather than the intrinsic quality of the generated tests. This raises the possibility of \"stealth technical debt\", in which test suites pass execution but do not offer comprehensive cove",
+      "provider": "arxiv",
+      "published": "2026-07-13",
+      "id": "f5017b3d9f",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "verification debt generative AI software"
+      ],
+      "relevance": {
+        "q5": 0.1763
+      }
+    },
+    {
+      "url": "https://veracode.com/blog/genai-code-security-report",
+      "title": "Veracode: GenAI code security report",
+      "snippet": "Veracode: GenAI code security report",
+      "provider": "web",
+      "published": "2025-07-30",
+      "id": "2c3bd935a2",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "security vulnerabilities LLM generated code study"
+      ],
+      "relevance": {
+        "q5": 0.0175
+      }
+    },
+    {
+      "url": "https://llvm.org/docs/AIToolPolicy.html",
+      "title": "LLVM: AI tool policy",
+      "snippet": "LLVM: AI tool policy",
+      "provider": "web",
+      "published": "2026-01-16",
+      "id": "494452459f",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "security vulnerabilities LLM generated code study"
+      ],
+      "relevance": {
+        "q5": 0.0018
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.05292",
+      "title": "Broken by Default: A Formal Verification Study of Security Vulnerabilities in AI-Generated Code",
+      "snippet": "AI coding assistants are now used to generate production code in security-sensitive domains, yet the exploitability of their outputs remains unquantified. We address this gap with Broken by Default: a formal verification study of 3,500 code artifacts generated by seven widely-deployed LLMs across 500 security-critical prompts (five CWE categories, 100 prompts each). Each artifact is subjected to the Z3 SMT solver via the COBALT analysis pipeline, producing mathematical satisfiability witnesses r",
+      "provider": "arxiv",
+      "published": "2026-04-07",
+      "id": "71b22b4cc8",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "security vulnerabilities LLM generated code study"
+      ],
+      "relevance": {
+        "q5": 0.2738
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2512.04259",
+      "title": "WildCode Revisited: A Comprehensive Empirical Study on the Security of LLM-Generated Code",
+      "snippet": "LLM models are increasingly used to generate code, but the quality and security of this code are often uncertain. Several recent studies have raised alarm bells, indicating that such AI-generated code may be particularly vulnerable to cyberattacks. However, most of these studies rely on code that is generated specifically for the study, which raises questions about the realism of such experiments. In this study, we perform a large-scale empirical analysis of real-life code generated by ChatGPT. ",
+      "provider": "arxiv",
+      "published": "2025-12-03",
+      "id": "dbfa98b206",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "security vulnerabilities LLM generated code study"
+      ],
+      "relevance": {
+        "q5": 0.5676
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.26749",
+      "title": "Metrics Failure in LLM-Based Code Vulnerability Repair: An Empirical Study and a Change-Aware Screen",
+      "snippet": "Large language models (LLMs) are increasingly applied to the automated repair of C/C++ security vulnerabilities, and compile rate is a commonly reported proxy for progress: whether the generated patch compiles. We argue that compile rate is a scientifically unreliable metric for single-function vulnerability repair, and we support this with five controlled experiments over 203 vulnerable functions from Big-Vul, three open-source code LLMs (350M to 6.7B parameters), and three prompting strategies",
+      "provider": "arxiv",
+      "published": "2026-09-22",
+      "id": "f39a5db463",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "security vulnerabilities LLM generated code study"
+      ],
+      "relevance": {
+        "q5": 0.1679
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.20713",
+      "title": "Security Vulnerability Patterns in AI-Generated Code: A Cross-Model Comparative Study",
+      "snippet": "LLM-based coding tools enable non-expert users to generate routine automation scripts that may enter enterprise workflows without meaningful security review. This study examines that risk directly. Code was collected from ChatGPT, Microsoft Copilot, and Google Gemini using identical prompts across three automation domains. Claude Code performed a standardized vulnerability review. Each identified vulnerability was scored using CVSS v3.1 and mapped to the OWASP Top 10:2021 and the MITRE ATT&CK fr",
+      "provider": "arxiv",
+      "published": "2026-07-22",
+      "id": "ee015c15f4",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "security vulnerabilities LLM generated code study"
+      ],
+      "relevance": {
+        "q5": 0.0711
+      }
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.10279",
+      "title": "We Have a Package for You: package hallucinations across LLMs (USENIX 2025)",
+      "snippet": "We Have a Package for You: package hallucinations across LLMs (USENIX 2025)",
+      "provider": "web",
+      "published": "2024-06-14",
+      "id": "b850c7f14e",
+      "questions": [
+        "q5"
+      ],
+      "queries": [
+        "hallucinated packages slopsquatting supply chain"
+      ],
+      "relevance": {
+        "q5": 0.0699
+      }
+    },
+    {
+      "url": "https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/",
+      "title": "curl: the end of the bug bounty",
+      "snippet": "curl: the end of the bug bounty",
+      "provider": "web",
+      "published": "2026-01-26",
+      "id": "77d6903ab5",
+      "questions": [
+        "q5",
+        "q6"
+      ],
+      "queries": [
+        "hallucinated packages slopsquatting supply chain",
+        "AI coding tools team quality regression reverted"
+      ],
+      "relevance": {
+        "q5": 0.0036,
+        "q6": 0.0002
+      }
+    },
+    {
+      "url": "https://newsletter.kentbeck.com/p/augmented-coding-beyond-the-vibes",
+      "title": "Kent Beck: augmented coding beyond the vibes",
+      "snippet": "Kent Beck: augmented coding beyond the vibes",
+      "provider": "web",
+      "published": "2025-06-25",
+      "id": "82b621e830",
+      "questions": [
+        "q6"
+      ],
+      "queries": [
+        "measured productivity gain AI software team case"
+      ],
+      "relevance": {
+        "q6": 0.0002
+      }
+    },
+    {
+      "url": "https://simonwillison.net/2025/Oct/5/parallel-coding-agents",
+      "title": "Simon Willison: parallel coding agents",
+      "snippet": "Simon Willison: parallel coding agents",
+      "provider": "web",
+      "published": "2025-10-05",
+      "id": "3dfce0ec40",
+      "questions": [
+        "q6"
+      ],
+      "queries": [
+        "measured productivity gain AI software team case"
+      ],
+      "relevance": {
+        "q6": 0.0
+      }
+    }
+  ]
+}

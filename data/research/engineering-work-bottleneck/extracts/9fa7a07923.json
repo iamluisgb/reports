@@ -1,0 +1,52 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-09-04",
+  "author_or_org": "Happy Bhati",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Recent field studies show meaningful gains in coding activity, but the evidence indicates those gains attenuate sharply between writing code and shipping reliable software.",
+      "quote": "Recent field studies show meaningful gains in coding activity, but newer evidence also shows that those gains attenuate sharply between writing code and shipping reliable software.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Review, integration, testing, security, deployment, and production operations remain constraining stages, while costs shift from per-seat licensing to variable token, tool, sandbox, CI, and rework costs.",
+      "quote": "Review, integration, testing, security, deployment, and production operations remain constraining stages, while the economics are shifting from predictable per-seat licensing toward variable token, tool, sandbox, CI, and rework costs.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The paper proposes an Agentic SDLC Control Plane that allocates autonomy subject to cost, reliability, and human-attention budgets, alongside concepts including the Verification Tax and Production-Qualified Change.",
+      "quote": "The synthesis proposes four engineering concepts: the Agentic SDLC Throughput Paradox, Production-Qualified Change (PQC), the Verification Tax, and an Agentic SDLC Control Plane that allocates autonomy subject to cost, reliability, and human-attention budgets.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper is a synthesis of peer-reviewed software-engineering research, university studies, benchmark audits, production reports, developer telemetry, and cost-management evidence mainly from 2024 through September 2026.",
+      "quote": "This paper synthesizes peer-reviewed software-engineering research, university studies, benchmark audits, production reports from major technology companies, developer telemetry, and cost-management evidence released primarily from 2024 through September 2026.",
+      "numbers": [
+        "2024",
+        "September 2026"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The paper claims no new model experiment and attributes numerical findings to the original studies.",
+      "quote": "No new model experiment is claimed; numerical findings remain attributed to their original studies.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The central research question shifts from how much code an agent can generate to production-qualified value per dollar, per reviewer-hour, and per unit of operational risk.",
+      "quote": "The central research question shifts from how much code an agent can generate to how much production-qualified value an engineering system can deliver per dollar, per reviewer-hour, and per unit of operational risk.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2609.04681"
+}

@@ -1,0 +1,75 @@
+{
+  "relevant": true,
+  "source_type": "news",
+  "published": "2026-09-08",
+  "author_or_org": "Gergely Orosz",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "GitHub data cited in the article shows PRs opened increased fivefold, with PRs and commits nearly doubling from the end of 2025.",
+      "quote": "Over that time, the number of PRs opened has increased fivefold, which is a lot! And growth sped up from the end of 2025, when PRs and commits nearly doubled _just_ in that period alone!",
+      "numbers": [
+        "fivefold",
+        "2025",
+        "doubled"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "Duckbill improved guardrails including unit and end-to-end testing, post-deploy observability, stricter linting and type checking, and 85% unit test coverage, and reported merged PRs rising from 353 to 684 (+94%).",
+      "quote": "*   **Improve our guardrails** (unit and end-to-end testing, post-deploy observability, stricter linting and type checking, etc). Improving guardrails was pretty easy, just expensive in tokens and attention. We enabled nearly every rule in ruff/prettier/eslint/ty, and we improved our unit test coverage to a floor of 85%.\n\nResults before vs after:\n\n*   PRs merged: 353 → 684 (80/wk → 154/wk, +94%)",
+      "numbers": [
+        "85%",
+        "353",
+        "684",
+        "80/wk",
+        "154/wk",
+        "+94%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Duckbill reported median merge time of 26h for human-reviewed PRs versus 1h for PRs with no human review.",
+      "quote": "*   Human-reviewed PRs median merge time: 26h\n\n*   No human-review median merge time: 1h.",
+      "numbers": [
+        "26h",
+        "1h"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "One approach is to spend much more time on the plan upfront to produce a detailed spec before implementation.",
+      "quote": "**Review the plan:**spend a lot more time on the plan than before, to get a much more detailed spec.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "A common pattern is for engineers to review the AI review rather than usually reading the code.",
+      "quote": "In the above cases, engineers typically review the _review_ itself, and not usually the code.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Low-risk changes can ship with only AI review once agents are satisfied, while high-risk changes require human review.",
+      "quote": "*   **Low-risk change:** only AI, without human review. It can ship to production once AI agents are happy\n\n*   **High-risk change:**mandatory human review",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Weaviate's CTO describes leaving about 90% to agents, with humans in the loop for critical scope decisions and exit criteria.",
+      "quote": "So basically, 90% is left to agents, with humans in the loop for critical scope decisions and exit criteria.",
+      "numbers": [
+        "90%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "WeTravel decided not to use AI for code reviews because it generated too much noise.",
+      "quote": "WeTravel, a Series C travel tech company, [decided](https://newsletter.pragmaticengineer.com/i/186760687/5-how-one-company-accurately-measures-code-review-usefulness) to not use AI for code reviews because of the amount of noise it generated.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews"
+}

@@ -1,0 +1,54 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-24",
+  "author_or_org": "Haoran Yu, Lifei Liu, Xiaochong Jiang, Yuwen Jia, Su Wang, Pin Qian, Yihang Chen",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "In a longitudinal within-reviewer analysis of 400 repeat reviewers and 11,429 reviews over seven months, the population-level approval rate for AI-agent code rose from 30.1% to 36.8%, with Wilcoxon signed-rank p <10^{-6} on paired shifts.",
+      "quote": "We conduct a longitudinal within-reviewer analysis using the AIDev dataset, studying 400 repeat reviewers who collectively submitted 11,429 reviews over a seven-month observation period. Comparing each reviewer's early and late review episodes, we observe a population-level shift in approval rate from 30.1% to 36.8% (Wilcoxon signed-rank p <10^{-6} on paired shifts).",
+      "numbers": [
+        "400",
+        "11,429",
+        "seven-month",
+        "30.1%",
+        "36.8%",
+        "10^{-6}"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Pooled by within-reviewer experience decile, the cumulative approval-rate gap reached +14.5 percentage points from the first to the tenth decile.",
+      "quote": "Pooled by within-reviewer experience decile, the cumulative gap reaches +14.5 pp from first to tenth decile.",
+      "numbers": [
+        "+14.5 pp"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The approval shift is experience-driven and persists after controlling for calendar time; it is agent-specific because human PR approval rates decline over the same period, and it is not explained by PR difficulty because median PR size is flat.",
+      "quote": "This shift is experience-driven (persists after controlling for calendar time), agent-specific (human PR approval rates decline over the same period), and not explained by PR difficulty (median PR size is flat).",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The measured review cost moves in the opposite direction from faster approval: review latency increases by 3.5x while inline comment volume decreases by 22% (p=0.0014), suggesting more time in queue but less active code inspection.",
+      "quote": "However, review latency increases rather than decreases (+3.5x), while inline comment volume decreases (-22%, p=0.0014), suggesting reviewers spend more time in queue but less time actively inspecting code.",
+      "numbers": [
+        "+3.5x",
+        "-22%",
+        "p=0.0014"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The authors interpret rising approval, declining comment effort, and increasing queue time as most consistent with reflexive habituation under growing workload rather than rational trust calibration alone.",
+      "quote": "The combination of rising approval, declining comment effort, and increasing queue time is most consistent with reflexive habituation under growing workload rather than rational trust calibration alone.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2606.22721"
+}

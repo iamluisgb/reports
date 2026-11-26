@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-04-07",
+  "author_or_org": "Dominik Blain and Maxime Noiseux",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Across all models tested, 55.8% of generated artifacts contained at least one COBALT-identified vulnerability, with 1,055 formally proven via Z3 satisfiability witnesses.",
+      "quote": "Across all models, 55.8% of artifacts contain at least one COBALT-identified vulnerability; of these, 1,055 are formally proven via Z3 satisfiability witnesses.",
+      "numbers": [
+        "55.8%",
+        "1,055"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "GPT-4o had the highest vulnerability rate at 62.4% (grade F), Gemini 2.5 Flash performed best at 48.4% (grade D), and no model achieved a grade better than D.",
+      "quote": "GPT-4o leads at 62.4% (grade F); Gemini 2.5 Flash performs best at 48.4% (grade D). No model achieves a grade better than D.",
+      "numbers": [
+        "62.4%",
+        "2.5",
+        "48.4%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Explicit security instructions reduced the mean vulnerability rate by only 4 percentage points.",
+      "quote": "explicit security instructions reduce the mean rate by only 4 points;",
+      "numbers": [
+        "4"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Six industry tools combined missed 97.8% of findings proven by Z3.",
+      "quote": "six industry tools combined miss 97.8% of Z3-proven findings;",
+      "numbers": [
+        "97.8%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Models identified their own vulnerable outputs 78.7% of the time in review mode, but generated them at 55.8% by default.",
+      "quote": "models identify their own vulnerable outputs 78.7% of the time in review mode yet generate them at 55.8% by default.",
+      "numbers": [
+        "78.7%",
+        "55.8%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Six of seven representative findings were confirmed with runtime crashes under GCC AddressSanitizer.",
+      "quote": "Six of seven representative findings are confirmed with runtime crashes under GCC AddressSanitizer.",
+      "numbers": [
+        "Six",
+        "seven"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2604.05292"
+}

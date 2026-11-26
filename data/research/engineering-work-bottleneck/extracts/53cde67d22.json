@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-08-13",
+  "author_or_org": "James Adam",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper asserts that coding agents have become the primary means of generating new code in many software projects, and that the resulting change velocity makes tracking the reasons behind changes difficult.",
+      "quote": "Coding agents have become the primary means of generating new code in many software projects, and the resulting velocity of changes makes keeping track of the reasons behind those changes challenging.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "MOOSEDev captures architectural decisions, lessons, constraints, and rationales in a knowledge graph exposed to coding agents through an MCP interface.",
+      "quote": "The system captures architectural decisions, lessons, constraints, and rationales in a knowledge graph exposed to agents via a Model Context Protocol (MCP) interface.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The project-memory records carry lifecycle status, provenance, and supersession links and are queried through MOOSE, a neurosymbolic engine that treats the symbolic layer as primary.",
+      "quote": "Records carry lifecycle status, provenance, and supersession links, queryable via MOOSE, a proprietary neurosymbolic engine that treats the symbolic layer as the primary reasoning substrate.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The evaluation compared MOOSEDev with a production vector-memory tool on a neutral public corpus of 835 typed records.",
+      "quote": "We compared MOOSEDev against a production vector-memory tool on a neutral public corpus of 835 typed records.",
+      "numbers": [
+        "835"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "MOOSEDev returned the expected answer set essentially in full, scoring 0.98 to 1.00 on supersession, set-completeness, and negation questions, while the baseline's top-k retrieval surfaced only 6% to 27%.",
+      "quote": "MOOSEDev returned the expected answer set essentially in full (0.98-1.00) on supersession, set-completeness, and negation questions, whereas the baseline's top-k retrieval surfaced between 6% and 27%.",
+      "numbers": [
+        "0.98-1.00",
+        "6%",
+        "27%"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Relevance recall and token cost were largely equivalent between MOOSEDev and the baseline vector-memory system.",
+      "quote": "Conversely, relevance recall and token cost were largely equivalent between the two systems.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2608.13662"
+}

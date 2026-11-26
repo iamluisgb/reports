@@ -1,0 +1,74 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2025-07-30",
+  "author_or_org": "Jens Wessling / Veracode",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "Veracode's 2025 GenAI Code Security Report tested over 100 large language models across Java, Python, C#, and JavaScript to see if advanced AI systems can write secure code.",
+      "quote": "In our new **2025 GenAI Code Security Report**, we tested over **100 large language models** across **Java, Python, C#, and JavaScript**. The goal? To see if today’s most advanced AI systems can write **secure** code.",
+      "numbers": [
+        "2025",
+        "100"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "45% of code samples failed security tests and introduced OWASP Top 10 vulnerabilities.",
+      "quote": "45% of code samples failed security tests and introduced OWASP Top 10 security vulnerabilities into the code.",
+      "numbers": [
+        "45%",
+        "10"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Java was the riskiest language, with a 72% security failure rate across tasks.",
+      "quote": "**Java** was the riskiest language, with a **72% security failure****rate**across tasks.",
+      "numbers": [
+        "72%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Python had a 38% security failure rate, JavaScript 43%, and C# 45%.",
+      "quote": "*   Python: 38%\n*   JavaScript: 43%\n*   C#: 45%",
+      "numbers": [
+        "38%",
+        "43%",
+        "45%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Cross-Site Scripting (CWE-80) was a frequent issue; AI tools failed to defend against it in 86% of relevant code samples.",
+      "quote": "In fact, one of the most frequent issues was:**Cross-Site Scripting (CWE-80)**: AI tools failed to defend against it in 86**%** of relevant code samples.",
+      "numbers": [
+        "80",
+        "86%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Newer or larger models improved functional or syntactically correct code but not secure code; security performance stayed flat regardless of model size or training.",
+      "quote": "While the models got better at writing **functional** or syntactically correct code, they were **no better at writing secure code**. Security performance remained **flat,**regardless of model size or training sophistication.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "AI-generated code can enter a stack through open-source maintainers, third-party vendors, low-code/no-code platforms, and outsourced contractors using GenAI behind the scenes.",
+      "quote": "*   Open-source software maintainers\n*   Third-party vendors\n*   Low-code/no-code platforms\n*   Outsourced contractors using GenAI behind the scenes",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source's takeaway is that speed without security is an unaffordable risk.",
+      "quote": "The takeaway is simple: **Speed without security is a risk you can’t afford.**",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://veracode.com/blog/genai-code-security-report"
+}

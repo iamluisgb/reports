@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2024-08-20",
+  "author_or_org": "Markus Borg, Dave Hewett, Donald Graham, Noric Couderc, Emma Söderberg, Luke Church, Dave Farley",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source states that several studies have highlighted productivity improvements from AI assistants such as GitHub Copilot.",
+      "quote": "AI assistants like GitHub Copilot are transforming software engineering; several studies have highlighted productivity improvements.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source states that the impact of AI assistants on code quality, especially maintainability, needs further investigation.",
+      "quote": "However, their impact on code quality, particularly in terms of maintainability, requires further investigation.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The planned study aims to examine how AI assistants influence software maintainability, including developers' ability to evolve code.",
+      "quote": "This study aims to examine the influence of AI assistants on software maintainability, specifically assessing how these tools affect the ability of developers to evolve code.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The planned experiment will use Bayesian analysis to evaluate differences in completion time, perceived productivity, code quality, and test coverage.",
+      "quote": "We will employ Bayesian analysis to evaluate differences in completion time, perceived productivity, code quality, and test coverage.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The study design is a two-phase controlled experiment with professional developers, where Phase 1 adds a feature to a Java project with or without an AI assistant.",
+      "quote": "[Method] We will conduct a two-phased controlled experiment involving professional developers. In Phase 1, developers will add a new feature to a Java project, with or without the aid of an AI assistant.",
+      "numbers": [
+        "Phase 1"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Phase 2 is a randomized controlled trial in which different developers evolve random Phase 1 projects without AI assistants.",
+      "quote": "Phase 2, a randomized controlled trial, will involve a different set of developers evolving random Phase 1 projects - working without AI assistants.",
+      "numbers": [
+        "Phase 2",
+        "Phase 1"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "The source is a Stage 1 registered report accepted in principle for the 40th ICSME, not a completed results paper.",
+      "quote": "Accepted as In-Principal Acceptance (IPA) for a Stage 1 registration of the Registered Report Track at the 40th IEEE International Conference on Software Maintenance and Evolution (ICSME)",
+      "numbers": [
+        "Stage 1",
+        "40th"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2408.10758"
+}

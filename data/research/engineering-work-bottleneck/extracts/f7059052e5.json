@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-05-28",
+  "author_or_org": "Burke Libbey, Javier Moreno, River (Shopify Engineering)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Shopify says one in eight merged pull requests across the company is coauthored by River.",
+      "quote": "Now, one in eight merged pull requests across Shopify is coauthored by it.",
+      "numbers": [
+        "one in eight"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "In a recent 30 day period, Shopify recorded 59,918 River sessions in 5,170 Slack channels touching 7,000+ people, with 3,536 River-coauthored pull requests merged.",
+      "quote": "In a recent 30 day period: **59,918**River sessions happened in **5,170** Slack channels, touching the work of **7,000+** people inside the company (~1,200 more than when Tobi posted about River in early May). **3,536**River-coauthored pull requests merged in that window.",
+      "numbers": [
+        "30",
+        "59,918",
+        "5,170",
+        "7,000+",
+        "1,200",
+        "3,536"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Shopify’s monorepo World contains code plus skills, conventions, intent documents, runbooks, AGENTS.md files, and written-down zone knowledge.",
+      "quote": "World contains code. It also contains skills, conventions, intent documents, runbooks, `AGENTS.md` files, and written-down zone knowledge.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "When a River problem is solved, the team leaves a memory that later sessions reuse, such as a skill update or an AGENTS.md diff.",
+      "quote": "When someone solves a problem with River, they leave a memory behind: a pebble, a skill update, an `AGENTS.md` diff, sometimes a whole new shared skill. The next session uses it.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Shopify treats PR review as an automated Aquifer profile that can run with no human in the loop.",
+      "quote": "**Mode · Automation:** PR review. Durable session, woken by an external system, often no human in the loop.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "River is constrained to public Slack channels; direct messages are disallowed, and every conversation becomes a public transcript open by default to other employees.",
+      "quote": "One constraint: River only works in the open. No direct messages. Every conversation with River becomes a public Slack transcript, open by default to other Shopify employees.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Aquifer’s architecture puts the agent harness outside the sandbox so the agent loop is not in the same blast radius as destructive commands.",
+      "quote": "**Safety:** the agent loop is not in the same blast radius as `rm -rf`",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://shopify.engineering/under-the-river"
+}

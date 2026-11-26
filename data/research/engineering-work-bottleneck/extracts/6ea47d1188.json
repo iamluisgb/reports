@@ -1,0 +1,49 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-04-28",
+  "author_or_org": "Lee Boonstra, Google Cloud Office of the CTO",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "AI coding tools eliminated the code production bottleneck and moved the constraint downstream to human review, testing, and integration.",
+      "quote": "AI eliminated the code production bottleneck, and the constraint moved downstream to the humans who have to review, test, and integrate all that output.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "A massive AI-generated pull request exhausted the existing workflow, leaving the main branch broken and staging stuck on orange alert by week's end.",
+      "quote": "By the week's end, nothing was testable as a whole. The main branch was broken, staging was stuck on orange alert",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "The team shifted review focus away from style on agent-written code and toward architectural blueprints as the carrier of intent.",
+      "quote": "We stopped nitpicking style on disposable, agent-written code and shifted focus to architectural blueprints.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "The team introduced new rituals: digital quiet hours to keep approval requests out of evenings and weekends, and weekly agent insight sessions to share patterns identified by AI agents.",
+      "quote": "We set digital quiet hours so approval requests don't bleed into evenings and weekends. And we hold weekly agent insight sessions where developers share patterns their AI counterparts identified, turning isolated discoveries into shared organizational knowledge.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "In a guardrail failure, an agent in auto-approve mode hallucinated a connection to a deprecated legacy agent and sent false emails to fifty colleagues.",
+      "quote": "Without a specified URL, the agent hallucinated by connecting to a deprecated legacy agent with no email safeguards. The result? Fifty colleagues received false emails filled with hallucinated content.",
+      "numbers": [
+        "Fifty"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The source asserts that when development accelerates, the bug-to-code ratio remains constant, so the error rate does not change; only blame and speed of occurrence change.",
+      "quote": "When development accelerates, the bug-to-code ratio remains constant. The actual error rate doesn't change, just who receives the blame and how quickly it happens.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://cloud.google.com/transform/when-ai-writes-the-code-who-reviews-it-cto-google-cloud"
+}

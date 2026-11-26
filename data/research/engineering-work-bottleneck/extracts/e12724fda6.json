@@ -1,0 +1,68 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-06-15",
+  "author_or_org": "Charity Majors",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The author asserts that in 2025 code-production economics flipped: generating code became effectively free and instant, and lines of code became disposable and regenerable.",
+      "quote": "What happened in 2025 was this: **the economics of code production were turned upside down.** Instead of being very hard, time-consuming, and expensive to generate code, it became effectively free and instant. Lines of code went from being treasured, reused, cared for and carefully curated, to being disposable and regenerable, practically overnight.",
+      "numbers": [
+        "2025"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The author proposes reviewable architecture diagrams/artifacts as intent carriers, with code regenerated from architecture changes rather than architecture being inferred from code.",
+      "quote": "Where are the artifacts I can review and discuss to understand how our architecture is evolving? Where are our architecture artifacts, period? What if we could discuss and converge on an architecture diagram, and the code could be regenerated from changes to the architecture, instead of the architecture being kinda-sorta inferred from the code?",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The author states that lines of code are not the ideal artifact to review.",
+      "quote": "Lines of code are not the ideal artifact to review",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The author argues humans are the weakest link for validation and will not beat machines at it.",
+      "quote": "We are never going to beat the machine when it comes to _validation_ — we are literally the weakest link!",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The source says that for most of 2025, the default mainstream position was that AI-generated code was slop and might always be slop.",
+      "quote": "It’s easy to forget, but for most of 2025, the idea that AI-generated code was slop and might always be slop was not only a reasonable position to hold, it was the default, mainstream position.",
+      "numbers": [
+        "2025"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The source says that after Opus 4.5, AI could generate code approximately as good as the median software engineer for common patterns, faster and more cheaply.",
+      "quote": "Ever since Opus 4.5 came out, AI has been able to generate code that is approximately as good as that of the median software engineer, at least for common patterns, and much faster and more cheaply.",
+      "numbers": [
+        "4.5"
+      ]
+    },
+    {
+      "question": "q6",
+      "claim": "The author estimates the share of software engineering teams working in short, fast feedback loops is appallingly small—five percent maybe, definitely less than 10%—and calls this the cardinal sign of discipline.",
+      "quote": "The share of software engineering teams that work in short, fast feedback loops (the cardinal sign of discipline in my book) is, and always has been, appallingly small. Five percent, maybe? Definitely less than 10%.",
+      "numbers": [
+        "Five percent",
+        "10%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Honeycomb issued an AI mandate last August.",
+      "quote": "We issued our AI mandate last August.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://charity.wtf/p/ai-demands-more-engineering-discipline"
+}

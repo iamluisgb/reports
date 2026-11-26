@@ -1,0 +1,35 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": null,
+  "author_or_org": "Google Cloud / DORA",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The source states that initial AI coding-speed gains are promising but do not automatically translate into bottom-line results.",
+      "quote": "While initial gains in coding speed are promising, they don't automatically translate to the bottom line.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source describes an initial “productivity dip” during a new AI rollout.",
+      "quote": "Whether you are managing the initial \"productivity dip\" of a new rollout or looking to defend your budget for the next fiscal year, this guide provides the calculations and conversation starters you need.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source frames an explicit “tuition cost” budget as necessary before long-term ROI materializes.",
+      "quote": "Learn why explicitly budgeting for this \"tuition cost\" is a necessary investment in learning before long-term ROI materializes.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source claims the greatest returns come from reducing unnecessary rework to reclaim engineering capacity and expand output without increasing overhead.",
+      "quote": "Discover why the greatest returns come from reducing unnecessary rework to reclaim engineering capacity—effectively expanding your team’s output without increasing overhead.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://cloud.google.com/resources/content/dora-roi-of-ai-assisted-software-development"
+}

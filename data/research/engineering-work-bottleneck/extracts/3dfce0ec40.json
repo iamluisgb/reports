@@ -1,0 +1,51 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2025-10-05",
+  "author_or_org": "Simon Willison",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The author identifies code review speed as the natural bottleneck for AI-generated code, especially when agents can churn out changes faster than one person can keep up.",
+      "quote": "I was pretty skeptical about this at first. AI-generated code needs to be reviewed, which means the natural bottleneck on all of this is how fast I can review the results. It’s tough keeping up with just a single LLM given how fast they can churn things out, where’s the benefit from running more than one at a time if it just leaves me further behind?",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The author says he can only review and land one significant change at a time, and parallel agent tasks are acceptable only when they add little cognitive overhead to his primary work.",
+      "quote": "I can only focus on reviewing and landing one significant change at a time, but I’m finding an increasing number of tasks that can still be fired off in parallel without adding too much cognitive overhead to my primary work.",
+      "numbers": [
+        "one"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Code generated from the reviewer’s own detailed specification is less effort to review because the goals and approach are already decided.",
+      "quote": "Code that started from your own specification is a lot less effort to review. If you already decided what to solve, picked the approach and worked out a detailed specification for the work itself, confirming it was built to your needs can take a lot less time.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Telling the model exactly how to build something reduces the review burden for the resulting changes.",
+      "quote": "If I tell them _exactly_ how to build something the work needed to review the resulting changes is a whole lot less taxing.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Jesse Vincent’s September 2025 workflow uses an architect agent to iterate on a plan, which is then reviewed and implemented by fresh Claude Code instances.",
+      "quote": "Jesse Vincent wrote [How I’m using coding agents in September, 2025](https://blog.fsck.com/2025/10/05/how-im-using-coding-agents-in-september-2025/) which describes his workflow for parallel agents in detail, including having an architect agent iterate on a plan which is then reviewed and implemented by fresh instances of Claude Code.",
+      "numbers": [
+        "2025"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "For riskier tasks the author uses asynchronous coding agents with network access, accepting source-code leakage as the stated worst-case risk.",
+      "quote": "For riskier tasks I’m currently using asynchronous coding agents—usually Codex Cloud—so if anything goes wrong the worst that can happen is my source code getting leaked (since [I allow it to have network access](https://simonwillison.net/2025/Jun/3/codex-agent-internet-access/) while running).",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://simonwillison.net/2025/Oct/5/parallel-coding-agents"
+}

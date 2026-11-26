@@ -1,0 +1,53 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2025-07-31",
+  "author_or_org": "Raja SP on AWS DevOps Blog (Amazon Web Services)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "AI-DLC is claimed to accelerate development velocity by generating and refining requirements, stories, designs, code, and tests, letting tasks that took weeks be done in hours or days.",
+      "quote": "****Velocity:**** The foremost benefit that AI-DLC offers is acceleration in development velocity, as AI rapidly generates and refines artifacts, such as requirements, stories, designs, code, and tests allowing product owners, architects, and developers to complete tasks in hours or days that previously took weeks.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The source states that AI-assisted and AI-autonomous development approaches have both produced suboptimal velocity and software quality.",
+      "quote": "Both these approaches have produced suboptimal results in terms of velocity and software quality that AI-DLC aims to address.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "AI-DLC maintains persistent context by storing plans, requirements, and design artifacts in the project repository across phases.",
+      "quote": "AI saves and maintains persistent context across all phases by storing plans, requirements, and design artifacts to your project repository, ensuring seamless continuation of work across multiple sessions.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "AI-DLC's operating pattern has AI create a plan, ask clarifying questions, and implement only after human validation, repeated for every SDLC activity.",
+      "quote": "This pattern, where AI creates a plan, asks clarifying questions to seek context, and implements solutions only after receiving human validation, repeats rapidly for every SDLC activity, to provide a unified vision and approach for all development pathways.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "AI-DLC replaces sprints with bolts measured in hours or days, and epics with Units of Work.",
+      "quote": "Traditional ‘sprints’ are replaced by ‘bolts’ – shorter, more intense work cycles measured in hours or days rather than weeks; Epics are replaced by Units of Work.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Inception uses Mob Elaboration, where the entire team validates AI's questions and proposals.",
+      "quote": "In the **Inception phase**, AI transforms business intent into detailed requirements, stories and units through “Mob Elaboration” – where the entire team actively validates AI’s questions and proposals.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "AI-DLC claims quality improves by applying organization-specific coding, design, and security standards and generating comprehensive test suites, improving traceability from requirements to deployment.",
+      "quote": "AI enhances quality by consistently applying organization-specific standards – your coding practices, design patterns, and security requirements – while generating comprehensive test suites. This end-to-end AI integration improves coherence and traceability from requirements to deployment.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://aws.amazon.com/blogs/devops/ai-driven-development-life-cycle/"
+}

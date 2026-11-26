@@ -1,0 +1,104 @@
+{
+  "slug": "engineering-work-bottleneck",
+  "title": "When the bottleneck moves: how engineering teams reorganise around agents",
+  "thesis": "AI raised the volume of code but not the output. The constraint moved from writing to review. The teams that improved delivery without degrading stability moved intent into a verifiable artifact and changed who owns what; teams that only added agents got the volume without the gain.",
+  "audience": "Engineering leaders and senior engineers deciding how to reorganise delivery with coding agents, 2026-2027",
+  "since": "2024-06-01",
+  "per_question": 10,
+  "keep_providers": [
+    "web"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the measured effect of AI coding tools on delivery flow: code output, final output, review queue and rework?",
+      "queries": [
+        "AI coding agents review bottleneck software production",
+        "generative AI code review queue latency empirical evidence",
+        "AI adoption software delivery throughput instability DORA",
+        "AI agents pull request merge time large scale telemetry"
+      ],
+      "providers": [
+        "web",
+        "arxiv",
+        "semantic_scholar",
+        "hn"
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Which artifact carries intent in teams that ship with agents (specification, ADR, AGENTS.md) and what evidence says it works?",
+      "queries": [
+        "spec-driven development agentic software engineering",
+        "AGENTS.md repository context for coding agents",
+        "architecture decision records agents codebase context",
+        "specification governance AI generated code attribution"
+      ],
+      "providers": [
+        "web",
+        "arxiv",
+        "semantic_scholar",
+        "hn"
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "How is code review reorganised (risk tiers, agent pre-review, human-on-the-loop) and what does the new review cost?",
+      "queries": [
+        "human on the loop code review AI agents",
+        "agentic code review risk tiered human review",
+        "AI code review reviewer scrutiny approval fatigue",
+        "just-in-time test generation diff risk score"
+      ],
+      "providers": [
+        "web",
+        "arxiv",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "How do team shape, roles and rituals change, and what do the organisation-level claims actually measure?",
+      "queries": [
+        "AI native engineering teams smaller org design",
+        "tiny teams software engineering AI",
+        "engineering roles AI agents orchestrator job change",
+        "agentic software development lifecycle sprints replaced"
+      ],
+      "providers": [
+        "web",
+        "arxiv",
+        "hn"
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "What is the counter-evidence on quality, security and verification, and where do the large productivity numbers come from?",
+      "queries": [
+        "AI generated code quality duplication refactoring decline",
+        "verification debt generative AI software",
+        "security vulnerabilities LLM generated code study",
+        "hallucinated packages slopsquatting supply chain"
+      ],
+      "providers": [
+        "web",
+        "arxiv",
+        "semantic_scholar"
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Are there documented cases where throughput rose without a stability loss, and what distinguished them?",
+      "queries": [
+        "AI adoption change failure rate improvement case study",
+        "AI coding tools team quality regression reverted",
+        "measured productivity gain AI software team case"
+      ],
+      "providers": [
+        "web",
+        "arxiv",
+        "hn"
+      ]
+    }
+  ]
+}

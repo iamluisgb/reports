@@ -1,0 +1,35 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-03-28",
+  "author_or_org": "Tianhao Mao, Dongfang Zhao, Haixu Tang, Xiaofeng Wang, Hang Zhang",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The paper performs a large-scale real-world repository measurement comparing AI-assisted and human-written code, covering code-level and commit-level metrics such as commit size, frequency, post-commit stability, and security quality.",
+      "quote": "To close this gap, we perform a first large-scale measurement study of AI-assisted code, in comparison with the human-written, in real-world repositories. We study a comprehensive set of metrics including both code-level aspects (e.g., structural and graph-level complexity, coding style, security quality, etc.) and commit-level characteristics (e.g., commit size, frequency, post-commit stability, etc.).",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The study concludes that real-world AI-human differences on code-level metrics are rather small, contrasting lab observations, and finds language-dependent variance in security quality.",
+      "quote": "Our results provide new findings and insights: some contrast previous observations in the lab setting (e.g., we conclude that real-world AI-Human differences on code-level metrics are rather small instead of more pronounced), some extend prior results with finer-grained observations (e.g., the variance of security quality across different programming languages), yet more are presented for the first time on aspects not covered before (e.g., code duplication rate, commit size and stability, etc.).",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Existing studies of AI-generated code are usually limited to lab settings, synthetic benchmarks, small coding tasks, and limited metrics.",
+      "quote": "Existing study on AI-generated code is usually limited in the lab setting with synthetic benchmarks and small-scale coding tasks and covers limited metrics.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The paper reports first-time observations on code duplication rate, commit size, and stability, extending prior measurement work beyond code-level metrics.",
+      "quote": "Our results provide new findings and insights: some contrast previous observations in the lab setting (e.g., we conclude that real-world AI-Human differences on code-level metrics are rather small instead of more pronounced), some extend prior results with finer-grained observations (e.g., the variance of security quality across different programming languages), yet more are presented for the first time on aspects not covered before (e.g., code duplication rate, commit size and stability, etc.).",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://arxiv.org/abs/2603.27130"
+}

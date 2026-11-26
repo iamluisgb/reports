@@ -1,0 +1,65 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-01-26",
+  "author_or_org": "Daniel Stenberg",
+  "claims": [
+    {
+      "question": "q5",
+      "claim": "The curl bug bounty produced 87 confirmed vulnerabilities and paid over 100,000 USD in rewards.",
+      "quote": "We have certainly made curl better as a direct result of this: **87 confirmed vulnerabilities and over 100,000 USD** paid as rewards to researchers.",
+      "numbers": [
+        "87",
+        "100,000 USD"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The share of curl security submissions confirmed as real vulnerabilities fell from above 15% in prior years to below 5% starting in 2025.",
+      "quote": "Previous years we have had a rate of somewhere north of 15% of the submissions ending up confirmed vulnerabilities. Starting 2025, the confirmed-rate plummeted to below 5%. Not even one in twenty was _real_.",
+      "numbers": [
+        "15%",
+        "2025",
+        "5%",
+        "twenty"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "curl saw an explosion in AI slop reports and lower quality even among non-obvious slop reports, presumably because reporters were misled by AI.",
+      "quote": "We saw an [explosion in AI slop reports](https://daniel.haxx.se/blog/2025/07/14/death-by-a-thousand-slops/) combined with a lower quality even in the reports that were not obvious slop – presumably because they too were actually misled by AI but with that fact just hidden better.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Over four quarters, curl’s inbound security report volume rose sharply while peer open source bounty programs such as Ruby, Node, and Rails stayed mostly flat or declined slightly.",
+      "quote": "Over the past four quarters, curl’s inbound report volume has risen sharply, while other bounty-paying open source programs in the cohort, such as Ruby, Node, and Rails, have not seen a meaningful increase and have remained mostly flat or declined slightly.",
+      "numbers": [
+        "four"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "curl removed monetary rewards for security reports of any severity to remove incentives for submitting made-up reports.",
+      "quote": "We no longer offer any monetary rewards for security reports – no matter which severity. In an attempt to remove the incentives for submitting made up lies.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "Handling never-ending slop submissions imposes a serious mental toll and can take a long time to debunk, wasting maintainer time and energy.",
+      "quote": "The never-ending slop submissions take a serious mental toll to manage and sometimes also a long time to debunk. Time and energy that is completely wasted while also hampering our will to live.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "For pull requests, curl relies on automated tools, tests, and scanners, and does not spend human time until contributions pass 200 CI jobs.",
+      "quote": "I believe that for PRs we have much better means to sort out the weed with automatic means, since we have tools, tests and scanners to verify such contributions. We don’t need to waste any human time on pull requests until the quality is good enough to get green check-marks from 200 CI jobs.",
+      "numbers": [
+        "200"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/"
+}

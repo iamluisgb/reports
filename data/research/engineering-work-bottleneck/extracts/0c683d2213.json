@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "official",
+  "published": "2026-07-07",
+  "author_or_org": "Gartner, Inc.",
+  "claims": [
+    {
+      "question": "q4",
+      "claim": "Gartner predicts that by 2029, 60% of organizations will adopt smaller software engineering teams at scale, up from 15% in 2026.",
+      "quote": "By 2029, 60% of organizations will adopt smaller software engineering teams at scale, up from 15% in 2026, according to Gartner, Inc.",
+      "numbers": [
+        "2029",
+        "60%",
+        "15%",
+        "2026"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Gartner states that AI is redefining roles and teams while increasing demand for software engineers, and that resources required for growing software demand will outpace AI efficiency gains.",
+      "quote": "\"AI is reshaping software engineering. It is redefining roles, reinventing teams, and fueling the demand for more software engineers, not fewer,\" said Aliyah Camacho, Principal Analyst at Gartner. \"The resources required to meet the growing demand for software and complex AI-enabled applications will outpace the efficiency gains from AI.\"",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Gartner says tiny teams are not a cost-optimization tactic but a restructuring to use both human and AI capabilities and strengths.",
+      "quote": "\"Tiny teams are not a cost optimization tactic,\" said Camacho. \"This is a restructuring of teams to best take advantage of both human and AI capabilities and strengths.\"",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Gartner reports that today's tiny teams typically have 4-5 members, with some requiring as few as 2-3 members, which will become more common as skills and AI capabilities mature.",
+      "quote": "\"Today's tiny teams typically have 4-5 members, but some require as few as 2-3, which will become more common as employee skills and AI capabilities mature,\" said Camacho.",
+      "numbers": [
+        "4-5",
+        "2-3"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Gartner says tiny teams are supported by robust platform engineering teams providing standardized, automated workflows and self-service AI tools so tiny teams can focus on high-value work.",
+      "quote": "As tiny teams are supported by robust platform engineering teams, they can focus on high-value work by providing standardized, automated workflows and self-service AI tools and capabilities.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Gartner says tiny teams require versatile engineers including a product manager, a UX/AX designer, and at least one AI-native software engineer, and that traditional role boundaries collapse as members oversee AI agents and broader responsibilities.",
+      "quote": "Tiny teams require versatile and skilled engineers such as a product manager, a user experience (UX)/agent experience (AX) designer, and at least one AI-native software engineer. However, software engineering leaders should not stop hiring and developing junior-level talent.\nIn a tiny team, traditional software engineering role boundaries collapse, as each team member manages a variety of responsibilities, from understanding business goals to product design and overseeing AI agents.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Gartner warns that slowing junior-level hiring can inhibit knowledge transfer, restrict the internal talent pipeline, and limit recruitment to more expensive and competitive senior roles.",
+      "quote": "\"Slowing junior-level hiring could lead to significant pitfalls, including inhibiting knowledge transfer, restricting the internal talent pipeline, and limiting recruitment to more expensive and competitive senior roles,\" said Camacho.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Gartner predicts that by 2028, organizations relying on AI to cut junior roles will hollow out their own software engineering talent pipeline.",
+      "quote": "Gartner predicts that by 2028, organizations that rely on AI to cut junior roles will hollow out their own software engineering talent pipeline.",
+      "numbers": [
+        "2028"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-07-gartner-predicts-60-percent-of-organizations-will-adopt-smaller-software-engineering-teams-by-2029"
+}

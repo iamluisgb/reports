@@ -1,0 +1,65 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-06-15",
+  "author_or_org": "Will Larson",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Deploy frequency rose from about ~6 per week to 200-400 per week; headcount doubled; even doubling prior deploys left 20-30x year-over-year growth; the author attributes this to a two-month deployment/run-migration overhaul done 90% by two infrastructure staff.",
+      "quote": "A year ago, we deployed manually, and deployed ~6 times a week, and now we deploy 200-400 times a week. Our engineering headcount has doubled, but even if we double the prior deploys, we’re still up 20-30x year-over-year. This is due to a complete overhaul of how we deploy and run migrations, and this migration was done over two months and done 90% by two folks on our infrastructure team.",
+      "numbers": [
+        "~6",
+        "200-400",
+        "20-30x",
+        "two months",
+        "90%",
+        "two"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Daily use of Claude Code or Cursor rose from about 25% in early January to 100% by end February without a top-down mandate; nearly every PR is now written by harnesses at least in the first pass.",
+      "quote": "The first day of January, about 25% of folks on our team used Claude Code or Cursor every day. By the end of February, 100% did. We did this without any top-down mandate, just by making the tooling good and chatting with non-adopters to remove sources of friction. Pretty much every PR is written by harnesses now, at least in the first pass.",
+      "numbers": [
+        "25%",
+        "100%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "First-pass code is nearly free, but working code is not free and its cost depends on the development harness.",
+      "quote": "While 1st-pass code is nearly free, the cost of working code depends on your development harness, and is not free.",
+      "numbers": [
+        "1st"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Design documents and PRs thrown over the wall to other teams did not go anywhere; slop PRs and design documents are cheap but actively harmful, requiring cleanup and poisoning the LLM context.",
+      "quote": "Where we’ve tried to throw design documents and PRs “over the wall” to engineers on other teams, they’ve never gone anywhere. Slop pull requests and design documents are cheap, but are actively harmful. They not only have to be cleaned up and repaired, their context poisons the LLM, leading to worse outcomes than starting over.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Human base-case code review is slower and less effective than good harness review; harnesses miss things, but so do humans, and most areas are relatively safe while some higher-risk areas are exceptions.",
+      "quote": "For example, the base case of code review from a human is slower and less effective than a good harness’ code review. Of course, the harness will miss things, but so will human reviewers, and most areas are relatively safe to make changes. Of course, there are some higher risk areas, where this doesn’t hold true.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The first pass of code review is done by the same harness that implements the change, with the writing context cleared, so humans can focus on higher-value feedback.",
+      "quote": "The first pass of code review is done by the same harness that implements the changes, cleared of the context used to write the change, allowing humans to focus on higher value feedback.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Quick, good, durable decision-making is a prerequisite to benefit from AI, and the author says the average CTO role has become substantially more technical and less bureaucratic than a year ago.",
+      "quote": "Your team and company can only benefit from this increased pace of execution if you can make durable decisions quickly, and those decisions are good. This is the primary reason, in my opinion, why the average CTO role has necessarily become substantially more technical and less bureaucratic than a year ago.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://lethain.com/revised-rules-of-engineering-leadership"
+}

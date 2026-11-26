@@ -1,0 +1,84 @@
+{
+  "relevant": true,
+  "source_type": "news",
+  "published": "2026-06-16",
+  "author_or_org": "Todd Bishop, GeekWire",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Sivasubramanian’s blog post reported that teams across Amazon that restructured workflows around AI saw a median 4.5x productivity gain, with some exceeding 10x, while teams that simply added AI tools to existing workflows did not see the same results.",
+      "quote": "In [a blog post](https://aws.amazon.com/blogs/machine-learning/how-frontier-teams-are-reinventing-ai-native-development/) published last week, Sivasubramanian wrote that teams across the company that restructured their workflows around AI saw a median 4.5x productivity gain, with some exceeding 10x gains. The teams that simply added AI tools to their existing way of working didn’t see the same results.",
+      "numbers": [
+        "4.5x",
+        "10x"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The Bedrock inference engine rebuild was done by six engineers in 76 days, versus an original expectation of 30 developers over 12 to 18 months.",
+      "quote": "The internal Amazon team that rebuilt the inference engine for the company’s Bedrock platform for AI models did it with six engineers in 76 days, a project originally expected to take 30 developers 12 to 18 months.",
+      "numbers": [
+        "six",
+        "76 days",
+        "30 developers",
+        "12 to 18 months"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "One engineer shipped a complex cross-platform notification feature for Kiro in a day and a half after it had been estimated at four weeks.",
+      "quote": "One engineer prototyped a complex cross-platform notification feature for Kiro that had been estimated at four weeks of work, and shipped it in a day and a half.",
+      "numbers": [
+        "four weeks",
+        "a day and a half"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "The Amazon Quick desktop app was built by about six engineers, reached 200 internal users in six weeks and 10,000 in ten weeks, and shipped on April 28, three months after starting.",
+      "quote": "He pulled together a team of about six engineers to build it. Six weeks later, 200 people inside Amazon were using it. Ten weeks in, it was up to 10,000 internally. The team circled back to write the PRFAQ after the product was already in beta, to help refine their approach to the external launch. They shipped on April 28, three months after they got started.",
+      "numbers": [
+        "six",
+        "200",
+        "10,000",
+        "April 28",
+        "three months"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Sivasubramanian said the bottleneck is not build time but crafting the right specification, tests, and product/customer experience.",
+      "quote": "“The bottleneck is not about the time it takes to build something,” Sivasubramanian said. “The bottleneck is about crafting the right specification and the tests and the right product and customer experience.”",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "In his Kiro rebuild, Sivasubramanian spent four nights babysitting the agent; after realizing it lacked tools to test its own output, he wrote the right spec and set up the testing environment, and the task finished in about two hours.",
+      "quote": "He and one of Amazon’s earliest distinguished engineers, Allan Vermeulen, had spent four months on the original. Sivasubramanian figured the agent would make quick work of it. Instead, he spent four nights going back and forth, babysitting each step. On the fifth night, he realized the problem: he hadn’t given the agent the tools to test its own output. Once he wrote the right spec and set up the testing environment, it was done in about two hours.",
+      "numbers": [
+        "four months",
+        "four nights",
+        "fifth",
+        "two hours"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "Amazon is moving testing to the moment of coding so agents can check their own work before production, because faster code generation fails without upfront specs, tests, and edge cases.",
+      "quote": "Teams can generate code faster than ever, but if they don’t define what success looks like up front — the specs, the tests, the edge cases — the agents don’t have as much chance of success. Amazon is now pushing testing to the moment of coding rather than handling it in stages, so agents can check their own work before anything reaches production.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Sivasubramanian says projects that once required 30 to 40 people can now be done by teams of six to eight.",
+      "quote": "It matches the new reality of the AI era: projects that once required 30 to 40 people, he said, can now be done by teams of six to eight.",
+      "numbers": [
+        "30 to 40",
+        "six to eight"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.geekwire.com/2026/how-agentic-ai-is-rewiring-amazons-teams-and-upending-its-traditions/"
+}

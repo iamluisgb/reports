@@ -1,0 +1,62 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2026-05-27",
+  "author_or_org": "Brian Houck / DX",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "DX's prior research found that the median engineering organization sees a 7.8% increase in PR throughput from AI, which it describes as real but more modest than headline claims.",
+      "quote": "Our prior research found that the median engineering organization sees a 7.8% increase in PR throughput from AI. Real, but more modest than headline claims would suggest, and consistent with the idea that the surrounding system is absorbing much of the individual-level efficiency.",
+      "numbers": [
+        "7.8%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Among developers who reached peak time savings from AI, two-thirds reported lower time savings in subsequent quarters.",
+      "quote": "Of those developers who reached peak time savings, two-thirds (66.1%) reported lower time savings in the quarters that followed.",
+      "numbers": [
+        "two-thirds",
+        "66.1%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "Among developers who hit the highest time-savings band in one quarter or less, just over half did not report that level of savings in future quarters.",
+      "quote": "Among developers who hit the highest time-savings band in one quarter or less, just over half (50.5%) did not report that level of savings in future quarters.",
+      "numbers": [
+        "50.5%"
+      ]
+    },
+    {
+      "question": "q1",
+      "claim": "For developers who took two quarters to reach peak savings, 79% did not report high time savings in future quarters.",
+      "quote": "For developers who took two quarters to reach peak savings, the drop-off is even steeper. 79% did not report high time savings in future quarters.",
+      "numbers": [
+        "79%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "DX suggests the bottleneck may be moving from code production to system coordination, with engineering teams sometimes shipping faster than product management and verification processes can support.",
+      "quote": "We may be observing a shift where the bottleneck moves from code production to system coordination. In some cases, engineering teams appear to be shipping faster than the surrounding product management and verification processes can support.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Developers producing code faster often hit ceilings such as slower code reviews and architectural bottlenecks that neutralize individual gains.",
+      "quote": "As developers produce code faster, they often hit ceilings, like slower code reviews and architectural bottlenecks, that neutralize individual gains.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "DX cautions that its study covers a limited number of quarters, so the observed patterns are early observations rather than settled conclusions.",
+      "quote": "Before exploring potential causes, an important caveat to mention is that our study covers a limited number of quarters, so the patterns we’re seeing here are early observations rather than settled conclusions.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://getdx.com/blog/the-ai-efficiency-plateau"
+}

@@ -1,0 +1,50 @@
+{
+  "relevant": true,
+  "source_type": "vendor",
+  "published": "2024-09-16",
+  "author_or_org": "Uplevel (Lauren Lang)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Developers with Copilot showed no significant change in coding speed, PR cycle time, or PR throughput; Copilot neither helped nor hurt these efficiency metrics.",
+      "quote": "**No significant change to efficiency metrics with GenAI** — Developers with Copilot did not see an increase in **coding speed**. In terms of **pull request (PR) cycle time** (the time to merge code into a repository) and **PR throughput** (number of pull requests merged), Copilot neither helped nor hurt developers.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "After Copilot implementation, developers saw a 41% increase in bugs within pull requests, suggesting a possible impact on code quality.",
+      "quote": "**41% increase in bug rate** — Post-Copilot implementation, developers saw a 41% increase in bugs within pull requests — suggesting the tool may impact code quality.",
+      "numbers": [
+        "41%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Uplevel's Sustained Always On metric, measuring working time outside standard hours as a burnout indicator, fell 17% for Copilot users and 28% for non-users, so Copilot was not the most effective way to alleviate burnout.",
+      "quote": "**Doesn’t mitigate risk of burnout** — Uplevel’s [“Sustained Always On” metric](https://uplevelteam.com/blog/why-dora-metrics-are-only-part-of-the-equation) (measuring working time outside of standard hours: a leading indicator of burnout) decreased for both control and test groups during the course of the study. But it decreased by 17% for those with Copilot access and, notably, 28% for those without — showing Copilot isn’t the most effective way to alleviate burnout.",
+      "numbers": [
+        "17%",
+        "28%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "The study examined 800 software developers on large engineering teams using GitHub Copilot, with a test group that had access and a control group without access, matched on similar roles, working days, and coding volume.",
+      "quote": "It examined a sample of 800 software developers on large engineering teams whose organizations had adopted Microsoft’s GitHub Copilot, a GenAI-based coding assistant and developer tool. Uplevel’s study looked at key engineering metrics pre and post Copilot implementation. The developers studied were segmented into a test group (those with Copilot access) and control group (those without access) — both with similar roles, working days and coding volume.",
+      "numbers": [
+        "800"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "A cited survey says 97% of software developers, programmers, and engineers have used AI-powered coding tools at work.",
+      "quote": "And with [97% of software developers](https://github.blog/news-insights/research/survey-ai-wave-grows/), programmers and engineers having used AI-powered coding tools at work, businesses want to understand whether these tools improve outcomes.",
+      "numbers": [
+        "97%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://uplevelteam.com/blog/genai-developers"
+}

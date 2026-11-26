@@ -1,0 +1,64 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2026-01-18",
+  "author_or_org": "Angie Jones / Block Engineering",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Within three months of launching Block's AI Champions program, AI-authored code increased by 69%, reported time savings increased by 37%, and automated PRs increased 21×.",
+      "quote": "Within three months of launching the Champions program, AI-authored code jumped by 69%, reported time savings increased 37%, and automated PRs increased 21×.",
+      "numbers": [
+        "69%",
+        "37%",
+        "21×"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "About 95% of Block engineers regularly use AI; the largest group runs a single agent mostly outside an IDE, and the second-largest runs 3-5 agents in parallel.",
+      "quote": "About 95% of our engineers are regularly using AI to assist with their development efforts. The largest population is at Stage 5, running a single agent mostly outside of an IDE. The second largest population is at Stage 6 and is running 3-5 agent instances in parallel.",
+      "numbers": [
+        "95%",
+        "Stage 5",
+        "Stage 6",
+        "3-5"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "Block adopted the RPI context-engineering approach and says it gave teams a consistent way to get high-quality PRs from agents and prevented AI drift.",
+      "quote": "It gave teams a consistent way to get [high quality PRs](https://block.github.io/goose/docs/tutorials/rpi/#final-result) out of agents and prevented the usual AI drift.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "Block's AI Champions enabled automated AI code review on PRs with customizable focus areas and headless AI assistance that can iterate on tasks, fix CI failures, and push changes.",
+      "quote": "Enable automated AI code review on PRs with customizable focus areas. Set up headless AI assistance that can autonomously iterate on tasks, fix CI failures, and push changes.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "For some automated PRs, an agent reads the ticket, plans, creates a branch, writes code, opens a PR, watches CI, and fixes its own mistakes, with humans stepping in only at review time.",
+      "quote": "The agent reads the ticket, makes a plan, creates the branch, writes the code, opens the pull request, watches CI fail, and fixes its own mistakes. Humans only step in at review time.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "Block reports that mobile and JVM backend developers have particular difficulty using frontier AI models and tools, and that tooling working for web developers does not necessarily work as well for them.",
+      "quote": "For example, our mobile and JVM backend devs have quite the challenge with the frontier models and tools. What works for web developers doesn't necessarily work as well for them.",
+      "numbers": []
+    },
+    {
+      "question": "q6",
+      "claim": "Block teams reported pulling in more tickets mid-sprint because an agent had already completed 15 days of engineering work.",
+      "quote": "Teams even reported pulling in more tickets mid-sprint because their agent had already completed 15 days of engineering work.",
+      "numbers": [
+        "15"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 1,
+  "model": "deepseek-v4-flash",
+  "url": "https://engineering.block.xyz/blog/ai-assisted-development-at-block"
+}

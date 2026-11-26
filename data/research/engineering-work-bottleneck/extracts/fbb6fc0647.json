@@ -1,0 +1,54 @@
+{
+  "relevant": true,
+  "source_type": "blog",
+  "published": "2025-10-29",
+  "author_or_org": "Wade Foster",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "Zapier reports an 11% increase in developer productivity in 2025 from tools and processes around Cursor, Claude Code, and GitHub Copilot.",
+      "quote": "We've increased developer productivity by 11% in 2025 with tools and processes around Cursor, Claude Code, and GitHub Copilot.",
+      "numbers": [
+        "11%",
+        "2025"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Zapier reports that 97% of its team uses AI in daily work.",
+      "quote": "Nearly everyone—97% of our team—uses AI in their daily work.",
+      "numbers": [
+        "97%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Zapier evaluates AI fluency for 100% of job candidates across every department.",
+      "quote": "We evaluate the AI fluency of 100% of job candidates across every department.",
+      "numbers": [
+        "100%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Zapier created a Chief People & AI Transformation Officer role to guide its AI transformation.",
+      "quote": "That's why we've created a new role to guide that transformation at Zapier: Chief People & AI Transformation Officer.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Zapier frames its AI transformation approach around four pillars: leadership, culture, tools, and governance.",
+      "quote": "Zapier's approach to AI transformation centers on four key pillars: leadership, culture, tools, and governance.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Zapier's CEO states that AI adoption alone is not transformation; transformation occurs when AI reshapes how teams think, collaborate, and create value.",
+      "quote": "But as our CEO, Wade Foster puts it: \"AI adoption alone isn't transformation.\" Real transformation happens when AI reshapes how teams think, collaborate, and create value.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://zapier.com/blog/ai-transformation-leader/"
+}

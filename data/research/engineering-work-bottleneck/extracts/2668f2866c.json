@@ -1,0 +1,61 @@
+{
+  "relevant": true,
+  "source_type": "news",
+  "published": "2026-09-10",
+  "author_or_org": "Nitin Garg / InfoQ",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "The article states that with AI coding assistants, the bottleneck moved from code writing to code verification.",
+      "quote": "With AI coding assistants, the bottleneck has moved from code writing to code verification.",
+      "numbers": []
+    },
+    {
+      "question": "q1",
+      "claim": "The article asserts that AI raised the volume of code without raising confidence that the code is correct, secure, or aligned with intent.",
+      "quote": "The uncomfortable part is that AI raised the volume of code without raising anyone’s confidence that the code is correct, secure, or aligned with what was actually intended.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "In the author's study, a specification has three layers: business requirements and rules, a high-level design defining components and interfaces, and a low-level design pinning down method invariants.",
+      "quote": "In this study a specification has three layers: the specification itself (the business requirements and rules), a high-level design (HLD) that defines the components and their interfaces, and a low-level design (LLD) that pins down the concrete invariants each method must uphold.",
+      "numbers": [
+        "three"
+      ]
+    },
+    {
+      "question": "q2",
+      "claim": "The study found that a specification baseline did not make reviewers better bug-finders, but made drift review contract-anchored, attributable, and higher-confidence at measurable time and cost.",
+      "quote": "A specification baseline did not make reviewers better bug-finders. It turned drift review into a contract-anchored, attributable, higher-confidence activity, but at a measurable time and cost.",
+      "numbers": []
+    },
+    {
+      "question": "q2",
+      "claim": "Authoring the specification and then implementing from it in a fresh generation step moved the outcome by treating the spec as a governing artifact rather than inline prompt text.",
+      "quote": "The approach of authoring the specification and then implementing from it in a fresh generation step moved the outcome, by treating the spec as a governing artifact rather than inline prompt text.",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "On easier tasks, the dramatic gains attributed to specifying first are largely a reasoning effect in disguise, so quality claims should control for reasoning first.",
+      "quote": "On easier tasks, the dramatic gains people attribute to \"specifying first\" are largely a reasoning effect in disguise. If you are going to claim specification prompting improves quality, control for reasoning first.",
+      "numbers": []
+    },
+    {
+      "question": "q3",
+      "claim": "The governance model keeps a human in the loop for judgment rather than volume; automation flags divergence and a named human decides what is correct.",
+      "quote": "keep a human in the loop for judgment, not volume (automation flags divergence, while a named human decides what is correct)",
+      "numbers": []
+    },
+    {
+      "question": "q5",
+      "claim": "The author describes the study findings as preliminary and directional, based on small samples and a few tasks.",
+      "quote": "They are preliminary and directional with small samples and a few tasks.",
+      "numbers": []
+    }
+  ],
+  "dropped_unverified_quotes": 0,
+  "model": "deepseek-v4-flash",
+  "url": "https://www.infoq.com/articles/when-spec-driven-development-pays-off/"
+}

@@ -1,0 +1,69 @@
+{
+  "relevant": true,
+  "source_type": "academic",
+  "published": "2026-11-21",
+  "author_or_org": "Fiona Chen and James Stratton (Harvard University)",
+  "claims": [
+    {
+      "question": "q1",
+      "claim": "AI agents produced larger additional increases in code output: 44.0% for lines of code, 36.0% for commits, and 35.7% for pull requests opened.",
+      "quote": "AI agents lead to larger additional increases in all three measures — 44.0% for lines of code, 36.0% for commits, and 35.7% for pull requests opened.",
+      "numbers": [
+        "44.0%",
+        "36.0%",
+        "35.7%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "After AI agent adoption, review time from submission to merge rose 56.1%, backlog wait rose 59.9%, active review time rose 58.5%, the share of code changes receiving comments rose 13.1%, and comments per code change rose 38.6%.",
+      "quote": "after adoption of AI agents, the average time from the code’s review submission to its merge increases by 56.1%. This change represents both an increase in the time that code waits in a “backlog,” by 59.9%, and an increase in the time after code has begun active review, by 58.5%. The latter is consistent with a decline in review productivity, i.e., an increase in the review intensity. The share of code changes that receive at least one review comment increases by 13.1%, and the number of comments on each code change increases by 38.6%.",
+      "numbers": [
+        "56.1%",
+        "59.9%",
+        "58.5%",
+        "13.1%",
+        "38.6%"
+      ]
+    },
+    {
+      "question": "q3",
+      "claim": "AI code review tools were adopted by 79.1% of firms, but firms still largely kept humans in the loop and humans wrote the overwhelming majority of reviews and comments.",
+      "quote": "This bottleneck is not eliminated by adoption of AI tools in the review process — 79.1% of firms have adopted AI code review tools, but still largely keep humans in the loop, with the overwhelming majority of reviews and comments being written by humans.",
+      "numbers": [
+        "79.1%"
+      ]
+    },
+    {
+      "question": "q4",
+      "claim": "Model estimates imply AI agents raised coding productivity by 73.7%, slightly lowered review productivity by −7.0%, reduced coding labor by −22.7%, and increased review labor by 43.4%.",
+      "quote": "AI agents raise coding productivity by 73.7% and slightly lower review productivity ( −7.0%), and firms shift labor from coding to review: coding labor changes by −22.7% and review labor by 43.4%.",
+      "numbers": [
+        "73.7%",
+        "−7.0%",
+        "−22.7%",
+        "43.4%"
+      ]
+    },
+    {
+      "question": "q5",
+      "claim": "Qualitative interviews report that outages caused by AI-generated commits led to new rules requiring senior engineer approval for AI-generated code, which created more review bottlenecks.",
+      "quote": "After some outages that were caused by AI-generated commits, there were also new rules requiring senior engineer approval for AI-generated code, which created even more review bottlenecks.",
+      "numbers": []
+    },
+    {
+      "question": "q4",
+      "claim": "Firm-level employment effects of AI adoption were not statistically significant in noisy estimates: assistants 3.0% with changes below −4.7% ruled out, and agents −2.6% with changes below −15.6% ruled out.",
+      "quote": "We cannot attribute significant employment changes to AI, though our estimates are noisy. With AI assistants, we estimate an effect of 3.0%, ruling out changes below −4.7%. For AI agents, we estimate an effect of −2.6%, ruling out changes below −15.6%.",
+      "numbers": [
+        "3.0%",
+        "−4.7%",
+        "−2.6%",
+        "−15.6%"
+      ]
+    }
+  ],
+  "dropped_unverified_quotes": 2,
+  "model": "deepseek-v4-flash",
+  "url": "https://fion.ac/jellyfish.pdf"
+}
