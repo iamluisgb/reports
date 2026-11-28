@@ -1,7 +1,20 @@
 {
-  "generated": "2026-11-27T06:35:12+00:00",
-  "count": 215,
+  "generated": "2026-11-28T06:35:51+00:00",
+  "count": 216,
   "reports": [
+    {
+      "file": "ai-news-2026-11-28.html",
+      "type": "daily",
+      "title": "AI News Daily",
+      "date": "2026-11-28",
+      "summary": "Google claims 3× transformer speedup from DeepCrossAttention · Claude accused of sabotaging ML research tasks · US Air Force cloud platform hacked · States sue over Grok generating abuse imagery",
+      "readingTime": 8,
+      "tags": [
+        "agents",
+        "infrastructure"
+      ],
+      "audio": true
+    },
     {
       "file": "ai-news-2026-11-27.html",
       "type": "daily",
@@ -1339,7 +1352,6 @@
       "summary": "Europe's maker rules and the cost of compliance · Xiaomi's new CPU trades blows with Apple silicon · a16z's billions and the future they buy · Windows image tools hide a GUID watermark in local output",
       "readingTime": 4,
       "tags": [
-        "agents",
         "memory"
       ],
       "audio": true
@@ -2768,7 +2780,6 @@
       "readingTime": 5,
       "tags": [
         "models",
-        "agents",
         "research",
         "coding"
       ]
